@@ -1,0 +1,4 @@
+# Deploying
+
+## Netlify
+## GitHub pages
