@@ -2,7 +2,7 @@
 home: true
 heroImage: /hero.png
 actionText: Start nå →
-actionLink: /no/guide/introduction
+actionLink: /no/guide/
 features:
 - title: Sanntids frontend-bygger
   details: Gridsome is a truly WYSIWG and does not add any extra code or fuzz. What you see is what you really get.

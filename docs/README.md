@@ -2,7 +2,7 @@
 home: true
 heroImage: /hero.png
 actionText: Get Started →
-actionLink: /guide/introduction
+actionLink: /guide/
 features:
 - title: Real-time frontend builder
   details: Gridsome is a truly WYSIWG and does not add any extra code or fuzz. What you see is what you really get.

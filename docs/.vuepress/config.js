@@ -50,8 +50,9 @@ module.exports = {
 function createGuideSidebar (title) {
   return [
     '',
-    'introduction',
     'installation',
+    'content',
+    ['plugins', 'Plugins'],
     'deploy'
   ]
 }
@@ -60,6 +61,7 @@ function createAdvancedSidebar (title) {
   return [
     '',
     'components',
-    'plugins'
+    'plugins',
+    ['contribute', 'Contribute']
   ]
 }

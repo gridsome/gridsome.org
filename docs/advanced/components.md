@@ -12,11 +12,92 @@
 - styles
 - mixins
 
-## Custom styles
+## Generate CSS
+
+- `watch`
+- `selector`
+- `property`
+- `value`
+- `suffix`
 
 ```js
 {
-  selector: '.foo',
-  prop: 'color',
+  styles: [
+    {
+      watch: 'font_color',
+      selector: '.my-font',
+      property: 'color',
+    }
+  ]
+}
+```
+
+Will generate:
+
+```css
+.element-id .my-font {
+  color: red;
+}
+```
+
+Modify the output by defining a `value` function:
+
+```js
+{
+  styles: [
+    {
+      watch: 'size',
+      selector: '.my-font',
+      property: 'font-size',
+      value: size => `${size}px`
+    }
+  ]
+}
+```
+
+Add a suffix to the output:
+
+```js
+{
+  styles: [
+    {
+      watch: 'size',
+      selector: '.my-font',
+      property: 'font-size',
+      suffix: 'px'
+    }
+  ]
+}
+```
+
+Generate CSS from multiple props:
+
+```js
+{
+  styles: [
+    {
+      watch: ['rotate', 'from_color', 'to_color'],
+      selector: '.my-font',
+      property: 'font-size',
+      value ({ rotate, from_color, to_color }) {
+        return `linear-gradient(${rotate}deg, ${from_color} 0%, ${to_color} 100%)`
+      }
+    }
+  ]
+}
+```
+
+Generate responsive CSS:
+
+```js
+{
+  styles: [
+    {
+      responsive: true,
+      watch: 'space',
+      selector: '.my-font',
+      property: 'padding'
+    }
+  ]
 }
 ```
