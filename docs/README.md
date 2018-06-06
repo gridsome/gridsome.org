@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://avatars2.githubusercontent.com/u/17981963?s=400&u=9fc398bb43017c2dc52d72f1801282d4a6626a5e&v=4
+heroImage: /hero.png
 actionText: Get Started →
 actionLink: /guide/introduction
 features:

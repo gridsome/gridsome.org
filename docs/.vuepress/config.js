@@ -6,6 +6,7 @@ module.exports = {
   themeConfig: {
     repo: 'gridsome/gridsome',
     docsRepo: 'gridsome/docs',
+    docsBranch: 'master',
     docsDir: 'docs',
     editLinks: true,
     nav: [
