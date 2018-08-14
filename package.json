@@ -1,12 +1,18 @@
 {
   "private": true,
-  "name": "gridsome-docs",
-  "version": "0.1.0",
+  "name": "gridsome.org",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "build": "gridsome build"
+  },
+  "dependencies": {
+    "gridsome": "^0.0.1",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1"
   },
   "devDependencies": {
-    "vuepress": "^0.10.0"
+    "vue-server-renderer": "^2.5.17",
+    "vue-template-compiler": "^2.5.17"
   }
 }
