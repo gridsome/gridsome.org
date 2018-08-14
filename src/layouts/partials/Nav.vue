@@ -3,18 +3,8 @@
     <Link to="docs">
       Docs
     </Link>
-    <Link to="Tutorial">
+    <Link to="tutorial">
       Tutorial
     </Link>
   </nav>
 </template>
-
-<script>
-import { Link } from '@gridsome/components'
-
-export default {
-  components: {
-    Link
-  }
-}
-</script>
