@@ -1,29 +1,21 @@
 <template>
   <div>
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/docs">Docs</Link>
-        </li>
-        <li>
-          <Link to="/get-started">Get started</Link>
-        </li>
-      </ul>
-    </nav>
-
-    <slot/>
+    <Header />
+    <main>
+      <slot/>
+    </main>
+    <Footer />
   </div>
 </template>
 
 <script>
-import { Link } from '@gridsome/components'
+import Header from './partials/Header'
+import Footer from './partials/Footer'
 
 export default {
   components: {
-    Link
+    Header,
+    Footer
   }
 }
 </script>
