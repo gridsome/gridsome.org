@@ -1,3 +1,12 @@
 module.exports = {
-  plugins: []
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        type: 'page',
+        typeNamePrefix: 'Doc',
+        path: 'docs/**/*.md'
+      }
+    }
+  ]
 }

@@ -1,9 +1,9 @@
 <template>
   <nav>
-    <Link to="docs">
+    <Link to="/docs">
       Docs
     </Link>
-    <Link to="tutorial">
+    <Link to="/tutorial">
       Tutorial
     </Link>
   </nav>
