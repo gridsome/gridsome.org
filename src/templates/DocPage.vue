@@ -1,7 +1,7 @@
 <template>
-  <Layout>
+  <DocsLayout>
     <div v-html="$page.doc.content"></div>
-  </Layout>
+  </DocsLayout>
 </template>
 
 <graphql>
