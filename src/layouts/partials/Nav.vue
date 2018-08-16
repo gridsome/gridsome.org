@@ -12,6 +12,10 @@
       Benefits
     </Link>
 
+    <Link to="/how-it-works">
+      How it works
+    </Link>
+
     <Link to="/plugins">
       Plugins
     </Link>

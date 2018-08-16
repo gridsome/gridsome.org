@@ -6,7 +6,7 @@
       <div class="container-md">
         <h1 class="fade-up">Build better, faster, mobile-first websites with Vue.js</h1>
         
-        <p class="container-sm">Gridsome is a static JAMstack framework for building blazing fast, offline-ready, PWA frontends with <strong>Vue.js</strong> and <strong>GraphQL</strong></p>
+        <p class="container-sm lead">Gridsome is a <strong>static JAMstack framework</strong> for building blazing-fast, offline-ready, PWA front-ends with <strong>Vue.js</strong> and <strong>GraphQL</strong></p>
       </div>
       <div class="container">
         <Source-animation />
@@ -15,22 +15,10 @@
     </Section>
 
     <Section dots="true" dark="true">
-      <div class="container-md">
+      <div class="container">
         DARK SECTIONGridsome is a static JAMstack framework for building blazing fast, offline-ready, PWA frontends with Vue.js and GraphQL
       </div>
-      <div class="container-md">
-        DARK SECTIONGridsome is a static JAMstack framework for building blazing fast, offline-ready, PWA frontends with Vue.js and GraphQL
-      </div>
-      <div class="container-md">
-        DARK SECTIONGridsome is a static JAMstack framework for building blazing fast, offline-ready, PWA frontends with Vue.js and GraphQL
-      </div>
-      <div class="container-md">
-        DARK SECTIONGridsome is a static JAMstack framework for building blazing fast, offline-ready, PWA frontends with Vue.js and GraphQL
-      </div>
-      <div class="container-md">
-        DARK SECTIONGridsome is a static JAMstack framework for building blazing fast, offline-ready, PWA frontends with Vue.js and GraphQL
-      </div>
-      <div class="container-md">
+      <div class="container">
         DARK SECTIONGridsome is a static JAMstack framework for building blazing fast, offline-ready, PWA frontends with Vue.js and GraphQL
       </div>
     </Section>
