@@ -1,7 +1,20 @@
 <template>
-  <div class="logo">
-    <Link to="/">
-      LOGO
-    </Link>
-  </div>
+  <Link class="logo" to="/">
+    <Logo />
+  </Link>
 </template>
+
+<script>
+import Logo from '@/components/logos/gridsome'
+export default {
+  components: {
+    Logo
+  }
+}
+</script>
+
+<style>
+ .logo {
+  margin-top: -5px;
+ }
+</style>

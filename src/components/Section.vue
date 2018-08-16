@@ -30,6 +30,12 @@ export default {
     bottom: 30px;
     left: 10px;
     right: 10px;
+    z-index: 1;
+  }
+
+  &--inner {
+    position: relative;
+    z-index: 2;
   }
 
   &--dark {

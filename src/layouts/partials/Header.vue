@@ -1,7 +1,7 @@
 <template>
-  <header class="grid-x gap-30 container">
+  <header class="flex-x flex-x--60 container">
     <Logo/>
-    <Nav/>
+    <Nav class="flex-fit" />
     <div> test </div>
   </header>
 </template>
@@ -17,3 +17,11 @@ export default {
   }
 }
 </script>
+
+<style>
+header {
+  z-index: 20;
+  position: relative;
+  min-height: 80px;
+}
+</style>

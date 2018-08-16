@@ -19,7 +19,8 @@ import Typography from 'typography'
 
 const typography = new Typography({
   baseFontSize: '18px',
-  baseLineHeight: 1.6,
+  baseLineHeight: 1.666,
+  scaleRatio: 1.5,
   headerFontFamily: ['League Spartan', 'Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
   bodyFontFamily: ['Avenir', 'Helvetica'],
 })

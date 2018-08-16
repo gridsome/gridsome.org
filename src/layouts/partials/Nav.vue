@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav class="main-nav flex-x flex-x--30 flex-no-wrap">
     <Link to="/docs">
       Docs
     </Link>
@@ -21,3 +21,9 @@
     </Link>
   </nav>
 </template>
+
+<style lang="scss">
+  .main-nav a:not(.active) {
+    color: currentColor;
+  }
+</style>
