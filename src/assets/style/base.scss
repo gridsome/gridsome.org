@@ -13,6 +13,6 @@ a {
   transition: color .3s, opacity .3s;
 }
 
-a:hover {
+a:hover:not(.active) {
   color: currentColor;
 }
