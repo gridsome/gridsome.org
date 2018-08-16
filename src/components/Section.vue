@@ -1,0 +1,40 @@
+<template>
+  <section class="section" :class="sectionClass">
+    <div class="section--inner container">
+      <slot/>
+    </div>
+    <div class="dots-bg" v-if="dots"></div>
+  </section>
+</template>
+
+<script>
+export default {
+  props: ['dark', 'dots'],
+  computed: {
+    sectionClass() {
+      let classes = []
+      if(this.dark) classes.push('section--dark')
+      return classes
+    }
+  }
+}
+</script>
+
+<style lang="scss">
+.section {
+  padding: 10% 0;
+  position: relative;
+
+  .dots-bg {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    right: 10px;
+  }
+
+  &--dark {
+    color: #FFF;
+    background: linear-gradient(180deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+  }
+}
+</style>

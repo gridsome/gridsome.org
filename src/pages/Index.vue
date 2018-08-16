@@ -1,11 +1,21 @@
 <template>
   <Layout>
-    <h1>Build better, faster, mobile-first websites with Vue.js</h1>
-    
-    <p class="lead">Gridsome is a static JAMstack framework for building blazing fast, offline-ready, PWA frontends with Vue.js and GraphQL</p>
-    <Source-animation />
 
-    <div class="dots-bg"></div>
+    <Section dots="true" class="text-center">
+
+      <div class="container-md">
+        <h1 >Build better, faster, mobile-first websites with Vue.js</h1>
+        
+        <p>Gridsome is a static JAMstack framework for building blazing fast, offline-ready, PWA frontends with Vue.js and GraphQL</p>
+        <Source-animation />
+      </div>
+      
+    </Section>
+
+    <Section dots="true" dark="true">
+      DARK SECTIONGridsome is a static JAMstack framework for building blazing fast, offline-ready, PWA frontends with Vue.js and GraphQL
+    </Section>
+
   </Layout>
 </template>
 

@@ -1,19 +1,14 @@
 <template>
   <div class="source-animation">
-
     <svg width="100" height="20" viewBox="0 0 100 20" class="dot">
       <path d="M1 9.5H99" />
     </svg>
-
     <div class="gridsome-logo">
       <Logo />
     </div>
-
     <svg width="100" height="20" viewBox="0 0 100 20" class="dot after">
       <path d="M1 9.5H99" />
     </svg>
-
-
   </div>
 </template>
 
@@ -62,7 +57,7 @@ export default {
       fill: #fff;
     }
   }
-
+  
   @keyframes stroke {
     to{stroke-dashoffset:-15;}
   }
