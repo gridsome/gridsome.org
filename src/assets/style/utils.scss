@@ -1,0 +1,14 @@
+.flex-x {
+  display: flex;
+}
+
+.grid-x {
+  display: grid;
+  align-items: center;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content 1fr;
+}
+
+.gap-30 {
+  grid-gap: 30px;
+}

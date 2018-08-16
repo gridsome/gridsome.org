@@ -1,5 +1,5 @@
 <template>
-  <div class="g-logo">
+  <div class="logo">
     <Link to="/">
       LOGO
     </Link>

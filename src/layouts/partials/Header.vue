@@ -1,7 +1,8 @@
 <template>
-  <header>
+  <header class="grid-x gap-30 container">
     <Logo/>
     <Nav/>
+    <div> test </div>
   </header>
 </template>
 

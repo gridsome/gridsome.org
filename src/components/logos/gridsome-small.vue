@@ -1,0 +1,3 @@
+<template>
+  <svg viewBox="0 0 53 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 100%; "><defs><path d="M40.6821196,14.2130045 L40.6968696,14.1982545 L53,26.501385 L26.501385,53 L-1.42108547e-13,26.498615 L26.498615,7.10542736e-15 L30.4760128,3.97739781 L26.526295,7.92711562 L26.4990279,7.89984849 L7.89984849,26.4990279 L26.5009721,45.1001515 L45.1001515,26.5009721 L37.9981034,19.398924 L37.8254926,19.569396 L26.3921309,31.0539588 L22.6811377,27.3429656 L38.2466092,11.7774941 L40.6821196,14.2130045 Z" id="path-1"></path></defs> <g stroke="none" stroke-width="1" fill-rule="evenodd"><use id="Combined-Shape"  xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#path-1"></use></g></svg>
+</template>

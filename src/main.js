@@ -1,6 +1,6 @@
 import Vue from 'vue'
 
-// Make components global
+// Add global components
 import { Link } from '@gridsome/components'
 import Layout from '@/layouts/Default.vue'
 import Docs from '@/layouts/Docs.vue'
@@ -9,16 +9,20 @@ Vue.component('Link', Link)
 Vue.component('Layout', Layout)
 Vue.component('DocsLayout', Docs)
 
+// Import global CSS
+require('@/assets/style/index.scss')
 
 // Setup typography
 import Typography from 'typography'
 
 const typography = new Typography({
   baseFontSize: '18px',
-  baseLineHeight: 1.45,
+  baseLineHeight: 1.6,
   headerFontFamily: ['League Spartan', 'Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
-  bodyFontFamily: ['Georgia', 'serif'],
+  bodyFontFamily: ['Avenir', 'Helvetica'],
 })
 
 typography.injectStyles()
+
+// Import font
 require('typeface-league-spartan')
