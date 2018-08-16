@@ -1,14 +1,20 @@
 <template>
   <div class="source-animation">
-    <svg width="100" height="20" viewBox="0 0 100 20" class="dot">
+    <div>
+      <img class="cms" src="../assets/images/CMS.png" />
+    </div>
+    <svg width="60" height="20" viewBox="0 0 60 20" class="dot">
       <path d="M1 9.5H99" />
     </svg>
     <div class="gridsome-logo">
       <Logo />
     </div>
-    <svg width="100" height="20" viewBox="0 0 100 20" class="dot after">
+    <svg width="60" height="20" viewBox="0 0 60 20" class="dot after">
       <path d="M1 9.5H99" />
     </svg>
+    <div>
+      <img class="cms" src="../assets/images/device.png" />
+    </div>
   </div>
 </template>
 
@@ -24,6 +30,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .source-animation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cms {
+    max-width: 320px;
+    margin: 10px 10px 0 10px;
+    display: block;
+  }
+
   .dot {
     stroke: #ccc;
     stroke-width: 5px;
@@ -34,11 +53,6 @@ export default {
 
   .after {
      stroke: var(--primary-color);
-  }
-
-  .source-animation {
-    display: flex;
-    align-items: center;
   }
 
   .gridsome-logo {
@@ -60,20 +74,6 @@ export default {
   
   @keyframes stroke {
     to{stroke-dashoffset:-15;}
-  }
-
-  @keyframes pulse {
-    0% {
-      box-shadow: 0 0 0 0 var(--primary-color);
-    }
-    70% {
-      box-shadow: 0 0 0 10px transparent;
-
-    }
-    100% {
-      box-shadow: 0 0 0 0 transparent;
-
-    }
   }
 </style>
 

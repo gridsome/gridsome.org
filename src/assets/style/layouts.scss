@@ -1,10 +1,22 @@
 .container {
   max-width: 1200px;
   padding: 0 30px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-full {
+  padding: 0 30px;
 }
 
 .container-md {
   max-width: 800px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-sm {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
 }

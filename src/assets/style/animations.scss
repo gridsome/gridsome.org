@@ -1,0 +1,27 @@
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--primary-color);
+  }
+  70% {
+    box-shadow: 0 0 0 10px transparent;
+
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(5px)
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-up {
+  animation: fadeUp .6s;
+}

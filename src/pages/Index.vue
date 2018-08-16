@@ -4,9 +4,9 @@
     <Section dots="true" class="text-center">
 
       <div class="container-md">
-        <h1 >Build better, faster, mobile-first websites with Vue.js</h1>
+        <h1 class="fade-up">Build better, faster, mobile-first websites with Vue.js</h1>
         
-        <p>Gridsome is a static JAMstack framework for building blazing fast, offline-ready, PWA frontends with Vue.js and GraphQL</p>
+        <p class="container-sm">Gridsome is a static JAMstack framework for building blazing fast, offline-ready, PWA frontends with <strong>Vue.js</strong> and <strong>GraphQL</strong></p>
       </div>
       <div class="container">
         <Source-animation />
@@ -15,7 +15,24 @@
     </Section>
 
     <Section dots="true" dark="true">
-      DARK SECTIONGridsome is a static JAMstack framework for building blazing fast, offline-ready, PWA frontends with Vue.js and GraphQL
+      <div class="container-md">
+        DARK SECTIONGridsome is a static JAMstack framework for building blazing fast, offline-ready, PWA frontends with Vue.js and GraphQL
+      </div>
+      <div class="container-md">
+        DARK SECTIONGridsome is a static JAMstack framework for building blazing fast, offline-ready, PWA frontends with Vue.js and GraphQL
+      </div>
+      <div class="container-md">
+        DARK SECTIONGridsome is a static JAMstack framework for building blazing fast, offline-ready, PWA frontends with Vue.js and GraphQL
+      </div>
+      <div class="container-md">
+        DARK SECTIONGridsome is a static JAMstack framework for building blazing fast, offline-ready, PWA frontends with Vue.js and GraphQL
+      </div>
+      <div class="container-md">
+        DARK SECTIONGridsome is a static JAMstack framework for building blazing fast, offline-ready, PWA frontends with Vue.js and GraphQL
+      </div>
+      <div class="container-md">
+        DARK SECTIONGridsome is a static JAMstack framework for building blazing fast, offline-ready, PWA frontends with Vue.js and GraphQL
+      </div>
     </Section>
 
   </Layout>

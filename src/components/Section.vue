@@ -22,7 +22,7 @@ export default {
 
 <style lang="scss">
 .section {
-  padding: 10% 0;
+  padding: 5% 0;
   position: relative;
 
   .dots-bg {

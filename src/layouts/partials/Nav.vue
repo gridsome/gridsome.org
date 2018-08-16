@@ -8,6 +8,10 @@
       Tutorial
     </Link>
 
+    <Link to="/benefits">
+      Benefits
+    </Link>
+
     <Link to="/plugins">
       Plugins
     </Link>
@@ -15,15 +19,18 @@
     <Link to="/blog">
       Blog
     </Link>
-
-    <Link to="/docs">
-      Get started
-    </Link>
   </nav>
 </template>
 
 <style lang="scss">
-  .main-nav a:not(.active) {
+  .main-nav a {
+    text-transform: uppercase;
+    font-size: .8em;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+  .main-nav a:not(.active):not(:hover) {
     color: currentColor;
+    opacity: .7;
   }
 </style>
