@@ -19,5 +19,6 @@
     "@gridsome/transformer-remark": "^0.0.1",
     "vue-server-renderer": "^2.5.17",
     "vue-template-compiler": "^2.5.17"
-  }
+  },
+  "version": "1.0.0"
 }
