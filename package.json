@@ -10,6 +10,8 @@
     "gridsome": "^0.0.1",
     "node-sass": "^4.9.3",
     "sass-loader": "^7.1.0",
+    "typeface-league-spartan": "0.0.44",
+    "typography": "^0.16.17",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1"
   },
