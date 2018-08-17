@@ -1,5 +1,5 @@
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
@@ -12,7 +12,7 @@
 }
 
 .container-md {
-  max-width: 760px;
+  max-width: 770px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -30,5 +30,6 @@
 .sidebar {
   position: sticky;
   top: 30px;
+  margin-bottom: 30px;
   background-color: var(--primary-bg)
 }

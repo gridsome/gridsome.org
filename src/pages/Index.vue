@@ -60,7 +60,34 @@
     <Section dots="true">
       <div class="container-md text-center">
         <h2>How Gridsome works</h2>
-        <p class="lead">The future of the web is mobile, JavaScript and APIs — the JAMstack. Gridsome uses the power of blazing-fast static site generation</p>
+        <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+        <hr />
+        <h3><span class="gradient-3" style="display:inline-block; vertical-align:middle; line-height: 80px; width: 80px; height: 80px; margin-right: 20px; border-radius: 999px; text-align:center;">1.</span> Connect to CMS using Source plugins</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        
+      <svg width="386" height="74" viewBox="0 0 386 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="stroke-anim" d="M1.69481 1.2182C41.8439 19.8865 129.224 40.2118 188.128 41.16C248.667 42.1345 334.969 43.4097 384.45 73.2535" stroke="black"/>
+      </svg>
+
+
+
+
+        <h3>Access and use data from GraphQL<span class="gradient-2" style="display:inline-block; vertical-align:middle; line-height: 80px; width: 80px; height: 80px; margin-left: 20px; border-radius: 999px; text-align:center;">2.</span></h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+         <svg width="215" height="64" viewBox="0 0 215 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="stroke-anim" d="M213.721 1.01564C191.069 18.673 142.278 36.8063 109.706 36.282C76.2304 35.7431 28.511 34.8609 0.42388 63.456" stroke="black"/>
+        </svg>
+
+
+        <h3><span class="gradient-4" style="display:inline-block; vertical-align:middle; line-height: 80px; width: 80px; height: 80px; margin-right: 20px; border-radius: 999px; text-align:center;">3.</span>Build websites with Vue.js</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        
+      <svg width="124" height="50" viewBox="0 0 124 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <path class="stroke-anim" d="M0.388268 0.76767C12.9278 13.0338 40.7333 26.6027 59.8012 27.5046C79.3978 28.4315 107.337 29.6792 122.618 49.216" stroke="black"/>
+      </svg>
+
+      <h3>Deploy to CDN <span class="gradient-5" style="display:inline-block; vertical-align:middle; line-height: 80px; width: 80px; height: 80px; margin-left: 20px; border-radius: 999px; text-align:center;">3.</span></h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
       </div>
     </Section>
 
@@ -87,3 +114,19 @@ export default {
   }
 }
 </script>
+
+<style>
+hr {
+  opacity: .3;
+  margin: 3rem 0;
+}
+
+.stroke-anim {
+  stroke: #ccc;
+  stroke-width: 5px;
+  stroke-linecap: round;
+  stroke-dasharray: 0 15;
+  animation: stroke 300ms linear infinite;
+}
+
+</style>

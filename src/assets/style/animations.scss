@@ -26,3 +26,6 @@
   animation: fadeUp .6s;
 }
 
+@keyframes stroke {
+  to{stroke-dashoffset:-15;}
+}

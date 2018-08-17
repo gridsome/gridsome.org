@@ -42,6 +42,9 @@ export default {
   &--dark {
     color: #FFF;
     background: linear-gradient(180deg, var(--primary-color) 0%,  var(--secondary-color) 100%);
+    p {
+      opacity: .85;
+    }
   }
 }
 </style>

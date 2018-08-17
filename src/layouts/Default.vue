@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <main class="fade-up">
+    <main>
       <slot />
     </main>
     <Footer />

@@ -82,10 +82,7 @@ export default {
     right:0;
     top: 120%;
   }
-  
-  @keyframes stroke {
-    to{stroke-dashoffset:-15;}
-  }
+
 </style>
 
 

@@ -8,7 +8,7 @@
           </li>
         </ul>
       </div>
-      <Section class="flex-fit">
+      <Section class="flex-fit" container="sm">
         <slot />
       </Section>
     </div>
