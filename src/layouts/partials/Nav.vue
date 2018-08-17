@@ -8,9 +8,7 @@
       Tutorial
     </Link>
 
-    <Link to="/benefits">
-      Benefits
-    </Link>
+
 
     <Link to="/how-it-works">
       How it works
