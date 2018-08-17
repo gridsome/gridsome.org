@@ -6,7 +6,7 @@
       <div class="container-md">
         <h1 class="fade-up gradient-text">Build better, faster, mobile-first websites</h1>
         
-        <p class="container-md lead">Gridsome is a <strong>static JAMstack framework</strong> for building blazing-fast <strong>PWA</strong> front-ends for any CMS with <strong>Vue.js</strong> and <strong>GraphQL</strong></p>
+        <p class="container-md lead">Gridsome is a <strong>static JAMstack framework</strong> for building blazing-fast <strong>PWA</strong> front-ends for any CMS with <strong>Vue.js</strong> <vue-logo style="margin-top:-4px;" width="30px" height="30px" /> and <strong>GraphQL</strong> <graph-ql-logo style="margin-top:-5px; margin-left: 5px;" width="20px" height="20px" /></p>
       </div>
       <div class="container">
         <Source-animation />
@@ -31,7 +31,7 @@
 
         <Feature gradient="3">
           <h3>Connect to any CMS or data source</h3>
-          <p>Use any CMS or data source for content. Pull data from WordPress, Contentful, local Markdown, or any other headless CMS or APIs and access it with GraphQL in your components and pages
+          <p>Use any CMS or data source for content. Pull data from WordPress, Contentful, local Markdown, or any other headless CMS or APIs and access it with <strong>GraphQL</strong> in your components and pages
           </p>     
         </Feature>
 
@@ -62,10 +62,14 @@
 
 <script>
 import SourceAnimation from '@/components/SourceAnimation.vue'
+import VueLogo from '@/components/logos/vue'
+import GraphQlLogo from '@/components/logos/graphql'
 
 export default {
   components: {
-    SourceAnimation
+    SourceAnimation,
+    VueLogo,
+    GraphQlLogo
   }
 }
 </script>
