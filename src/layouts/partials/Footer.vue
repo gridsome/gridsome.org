@@ -10,8 +10,7 @@
 <style lang="scss">
 footer {
   font-size: .75rem;
-  background-color: rgba(0,0,0,.03);
-  border-top: 1px solid rgba(0,0,0,.04);
+  background-color: var(--primary-bg);
   padding: 20px;
 }
 </style>

@@ -18,7 +18,7 @@
       <div class="container grid-cols">
         <Feature gradient="1">
           <h3>A static JAMstack framework</h3>
-          <p>The future of the web is mobile, JavaScript and APIs—the JAMstack. Gridsome uses the power of blazing-fast <strong>static site generation</strong>, JavaScript and APIs to create stunning, fast & dynamic web experiences.
+          <p>The future of the web is mobile, JavaScript and APIs <strong>— the JAMstack</strong>. Gridsome uses the power of blazing-fast <strong>static site generation</strong>, JavaScript and APIs to create stunning dynamic web experiences.
           </p>
         </Feature>
  
@@ -57,6 +57,20 @@
       </div>
     </Section>
 
+    <Section dots="true">
+      <div class="container-md text-center">
+        <h2>How Gridsome works</h2>
+        <p class="lead">The future of the web is mobile, JavaScript and APIs — the JAMstack. Gridsome uses the power of blazing-fast static site generation</p>
+      </div>
+    </Section>
+
+
+    <Section dots="true">
+      <div class="container-sm text-center">
+        <h2>Signup for News</h2>
+        <p>We're on a mission to change how we build websites and landing pages for the future & mobile web. <strong>Follow us on our journey 🙌</strong></p>
+      </div>
+    </Section>
   </Layout>
 </template>
 

@@ -28,9 +28,9 @@ query Docs {
 </static-query>
 
 <style>
-.sidebar {
-  padding: 30px;
-  width: 300px;
-  border-radius: 5px;
-}
+  .sidebar {
+    padding: 30px;
+    width: 300px;
+    border-radius: 5px;
+  }
 </style>

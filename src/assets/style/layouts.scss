@@ -26,3 +26,9 @@
   margin-right: auto;
   padding: 0 20px;
 }
+
+.sidebar {
+  position: sticky;
+  top: 30px;
+  background-color: var(--primary-bg)
+}
