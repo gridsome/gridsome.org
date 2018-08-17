@@ -6,7 +6,7 @@
       <div class="container-md">
         <h1 class="fade-up gradient-text">Build better, faster, mobile-first websites</h1>
         
-        <p class="container-md lead">Gridsome is a <strong>static JAMstack framework</strong> for building blazing-fast, offline-ready, <strong>PWA</strong> front-ends for any CMS with <strong>Vue.js</strong> and <strong>GraphQL</strong></p>
+        <p class="container-md lead">Gridsome is a <strong>static JAMstack framework</strong> for building blazing-fast <strong>PWA</strong> front-ends for any CMS with <strong>Vue.js</strong> and <strong>GraphQL</strong></p>
       </div>
       <div class="container">
         <Source-animation />
