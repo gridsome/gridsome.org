@@ -1,8 +1,8 @@
 <template>
   <Layout>
-    <div class="container">
-      <h1>Why Gridsome?</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores ab harum aliquid dignissimos neque.</p>
-    </div>
+	  <Section container="md" dots="true">
+	      <h1 class="fade-up">Why Gridsome?</h1>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores ab harum aliquid dignissimos neque.</p>
+	  </Section>
   </Layout>
 </template>

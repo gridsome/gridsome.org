@@ -1,6 +1,6 @@
 <template>
   <section class="section" :class="sectionClass">
-    <div class="section--inner container">
+    <div class="section--inner" :class="sectionClassInner">
       <slot/>
     </div>
     <div class="dots-bg" v-if="dots"></div>
@@ -9,11 +9,20 @@
 
 <script>
 export default {
-  props: ['dark', 'dots'],
+  props: ['dark', 'dots', 'container'],
   computed: {
     sectionClass() {
       let classes = []
       if(this.dark) classes.push('section--dark')
+      return classes
+    },
+    sectionClassInner() {
+      let classes = []
+      if(this.container) {
+        classes.push('container-' + this.container)
+      } else {
+        classes.push('container')
+      }
       return classes
     }
   }

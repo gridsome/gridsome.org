@@ -1,5 +1,5 @@
 <template>
-  <nav class="main-nav flex-x flex-x--30 flex-no-wrap">
+  <nav class="main-nav flex-x flex-x--20 flex-no-wrap">
     <Link to="/docs">
       Docs
     </Link>
@@ -18,6 +18,10 @@
 
     <Link to="/plugins">
       Plugins
+    </Link>
+
+    <Link to="/showcase">
+      Showcase
     </Link>
 
     <Link to="/blog">

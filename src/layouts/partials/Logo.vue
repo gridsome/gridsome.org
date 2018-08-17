@@ -15,7 +15,7 @@ export default {
 
 <style>
  .logo {
-  margin-top: -5px;
+  margin-top: -4px;
  }
  .logo:hover {
  	opacity: .8;
