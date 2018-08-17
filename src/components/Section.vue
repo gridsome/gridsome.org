@@ -31,7 +31,7 @@ export default {
 
 <style lang="scss">
 .section {
-  padding: 3.33% 0;
+  padding: 5% 0;
   position: relative;
 
   .dots-bg {
@@ -49,7 +49,7 @@ export default {
 
   &--dark {
     color: #FFF;
-    background: linear-gradient(180deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    background: linear-gradient(180deg, var(--primary-color) 0%,  var(--secondary-color) 100%);
   }
 }
 </style>

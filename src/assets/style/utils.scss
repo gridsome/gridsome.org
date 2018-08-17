@@ -37,6 +37,10 @@
   flex:1;
 }
 
+.flex-align-top {
+  align-items: flex-start;
+}
+
 .grid-cols{
   display: grid;
   grid-template-columns: repeat(3, auto);

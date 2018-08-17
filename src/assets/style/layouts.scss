@@ -3,14 +3,17 @@
   padding: 0 20px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 .container-full {
   padding: 0 20px;
+  width: 100%;
 }
 
 .container-md {
   max-width: 800px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0 20px;
@@ -18,6 +21,7 @@
 
 .container-sm {
   max-width: 650px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0 20px;

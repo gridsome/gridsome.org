@@ -1,7 +1,10 @@
+html, body {
+  background-color: #fff;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 
 svg {
   vertical-align: middle;
@@ -13,6 +16,12 @@ a {
   transition: color .3s, opacity .3s;
 }
 
+a.plain {
+  color: currentColor;
+  opacity: .8;
+}
+
 a:hover:not(.active) {
   color: currentColor;
+  opacity: 1;
 }

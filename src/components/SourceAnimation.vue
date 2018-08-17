@@ -8,6 +8,9 @@
     </svg>
     <div class="gridsome-logo">
       <Logo />
+      <div class="text-rotate">
+        <span>Vue.js</span>
+      </div>
     </div>
     <svg width="60" height="20" viewBox="0 0 60 20" class="dot after">
       <path d="M1 9.5H99" />
@@ -65,11 +68,19 @@ export default {
     margin: 10px;
     animation: pulse 2s infinite;
     box-sizing: border-box;
-    background: linear-gradient(180deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    background: linear-gradient(180deg, var(--primary-color) 0%,  var(--secondary-color) 100%);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.09);
     svg {
       fill: #fff;
     }
+  }
+
+  .text-rotate {
+    position: absolute;
+    left:0;
+    font-size: .9rem;
+    right:0;
+    top: 120%;
   }
   
   @keyframes stroke {

@@ -30,6 +30,7 @@ export default {
       height: 50px;
       border-radius: 99px;
       margin: 0 auto 30px;
+      background-color: #ccc;
     }
 
     &__inner {
@@ -38,6 +39,7 @@ export default {
 
     h3 {
       margin-bottom: 1rem;
+      padding: 0 1rem;
       line-height: 1.4;
     }
   }

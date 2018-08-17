@@ -4,9 +4,9 @@
     <Section dots="true" class="text-center">
 
       <div class="container-md">
-        <h1 class="fade-up">Build better, faster, mobile-first websites with Vue.js</h1>
+        <h1 class="fade-up gradient-text">Build better, faster, mobile-first websites</h1>
         
-        <p class="container-sm lead">Gridsome is a <strong>static JAMstack framework</strong> for building blazing-fast, offline-ready, PWA front-ends with <strong>Vue.js</strong> and <strong>GraphQL</strong></p>
+        <p class="container-md lead">Gridsome is a <strong>static JAMstack framework</strong> for building blazing-fast, offline-ready, <strong>PWA</strong> front-ends for any CMS with <strong>Vue.js</strong> and <strong>GraphQL</strong></p>
       </div>
       <div class="container">
         <Source-animation />
@@ -18,19 +18,19 @@
       <div class="container grid-cols">
         <Feature gradient="1">
           <h3>A static JAMstack framework</h3>
-          <p>The future of the web is mobile, JavaScript and APIs—the JAMstack. Gridsome uses the power of static site generation, JavaScript and APIs to create stunning-fast & dynamic web experiences.
-          </p>     
+          <p>The future of the web is mobile, JavaScript and APIs—the JAMstack. Gridsome uses the power of blazing-fast <strong>static site generation</strong>, JavaScript and APIs to create stunning, fast & dynamic web experiences.
+          </p>
         </Feature>
  
         <Feature gradient="2">
           <h3>Enjoy modern development tools</h3>
           <p>Build websites using latest web tech tools that you love.
-            Vue.js and Components, Webpack, Node. Hot-reloading, modern JavaScript & CSS tools are at your desposal. <strong>Gridsome makes building websites fun again.</strong>
+            Vue.js, Webpack, Node. Hot-reloading, modern JavaScript & CSS tools are at your desposal. <strong>Gridsome makes building websites fun again.</strong>
           </p>     
         </Feature>
 
         <Feature gradient="3">
-          <h3>Integrates to any CMS or data source</h3>
+          <h3>Connect to any CMS or data source</h3>
           <p>Use any CMS or data source for content. Pull data from WordPress, Contentful, local Markdown, or any other headless CMS or APIs and access it with GraphQL in your components and pages
           </p>     
         </Feature>
@@ -69,7 +69,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

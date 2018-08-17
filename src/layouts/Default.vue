@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div id="app">
     <Header />
-      <main class="fade-up">
-        <slot />
-      </main>
+    <main class="fade-up">
+      <slot />
+    </main>
     <Footer />
   </div>
 </template>
@@ -19,3 +19,16 @@ export default {
   }
 }
 </script>
+
+<style>
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#app main {
+  flex: 1;
+}
+
+</style>
