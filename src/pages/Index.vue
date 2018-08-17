@@ -30,7 +30,7 @@
         </Feature>
 
         <Feature gradient="3">
-          <h3>Connect to any CMS or data source</h3>
+          <h3>The frontend for the Headless</h3>
           <p>Use any CMS or data source for content. Pull data from WordPress, Contentful, local Markdown, or any other headless CMS or APIs and access it with <strong>GraphQL</strong> in your components and pages
           </p>     
         </Feature>
@@ -62,7 +62,7 @@
         <h2>How Gridsome works</h2>
         <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
         <hr />
-        <h3><span class="gradient-3" style="display:inline-block; vertical-align:middle; line-height: 80px; width: 80px; height: 80px; margin-right: 20px; border-radius: 999px; text-align:center;">1.</span> Connect to CMS using Source plugins</h3>
+        <h3><span class="gradient-3" style="display:inline-block; vertical-align:middle; line-height: 80px; width: 80px; height: 80px; margin-right: 20px; border-radius: 999px; text-align:center;">1.</span>Connect to any CMS or Data Source</h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
         
       <svg width="386" height="74" viewBox="0 0 386 74" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,13 +80,13 @@
 
 
         <h3><span class="gradient-4" style="display:inline-block; vertical-align:middle; line-height: 80px; width: 80px; height: 80px; margin-right: 20px; border-radius: 999px; text-align:center;">3.</span>Build websites with Vue.js</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        <p>With clean and standard code syntax makes Vue.js very simple to understand for any web designers and web developers. Vue Components give you extreme flexibility. Vue-Router is used to make fast navigation between pages without reloading.</p>
         
       <svg width="124" height="50" viewBox="0 0 124 50" fill="none" xmlns="http://www.w3.org/2000/svg">
        <path class="stroke-anim" d="M0.388268 0.76767C12.9278 13.0338 40.7333 26.6027 59.8012 27.5046C79.3978 28.4315 107.337 29.6792 122.618 49.216" stroke="black"/>
       </svg>
 
-      <h3>Deploy to CDN <span class="gradient-5" style="display:inline-block; vertical-align:middle; line-height: 80px; width: 80px; height: 80px; margin-left: 20px; border-radius: 999px; text-align:center;">3.</span></h3>
+      <h3>Generate & Deploy<span class="gradient-5" style="display:inline-block; vertical-align:middle; line-height: 80px; width: 80px; height: 80px; margin-left: 20px; border-radius: 999px; text-align:center;">3.</span></h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
       </div>
     </Section>
