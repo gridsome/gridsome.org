@@ -2,10 +2,14 @@
   <header class="flex-x flex-x--60 container">
     <Logo/>
     <Nav class="flex-fit" />
-    <div class="header-social">
+    <div class="header-actions">
+      
       <a href="https://github.com/gridsome/gridsome">
         <github-logo class="github-logo" />
       </a>
+
+      <a href="#" class="button"> Get started </a>
+    
     </div>
   </header>
 </template>
@@ -36,5 +40,6 @@ export default {
   .github-logo {
     max-width: 20px;
     height: 20px;
+    margin-top: -6px;
   }
 </style>

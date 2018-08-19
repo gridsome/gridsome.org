@@ -41,7 +41,7 @@ export default {
   }
 
   .cms {
-    max-width: 320px;
+    max-width: 330px;
     margin: 10px 10px 0 10px;
     display: block;
   }
@@ -59,8 +59,8 @@ export default {
   }
 
   .gridsome-logo {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     border-radius: 100%;
     position: relative;
     text-align: center;

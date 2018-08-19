@@ -25,3 +25,5 @@ a:hover:not(.active) {
   color: currentColor;
   opacity: 1;
 }
+
+::selection { background: var(--primary-bg); }
