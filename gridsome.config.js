@@ -5,8 +5,8 @@ module.exports = {
       options: {
         type: 'page',
         index: ['README'],
-        typeNamePrefix: 'Doc',
-        path: 'docs/**/*.md'
+        path: 'docs/**/*.md',
+        typeName: 'Doc'
       }
     }
   ]

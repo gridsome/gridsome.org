@@ -4,7 +4,12 @@
       <div class="sidebar">
         <ul>
           <li v-for="{ node } in $static.docs.edges">
-            <Link :to="node.path">{{ node.path }}</Link>
+            <Link :to="node.path">
+              {{ node.title[0] ? node.title[0].value : node.path }}
+            </Link>
+            <div v-for="heading in node.headings">
+              {{ heading.value }}
+            </div>
           </li>
         </ul>
       </div>
@@ -21,6 +26,8 @@ query Docs {
     edges {
       node {
         path
+        title: headings (depth: h1) { value }
+        headings (depth: h2) { value }
       }
     }
   },
