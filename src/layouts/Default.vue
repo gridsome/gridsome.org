@@ -4,7 +4,7 @@
     <main>
       <slot />
     </main>
-    <Footer />
+    <Footer v-if="footer !== false" />
   </div>
 </template>
 
@@ -13,6 +13,7 @@ import Header from './partials/Header'
 import Footer from './partials/Footer'
 
 export default {
+  props: ['footer'],
   components: {
     Header,
     Footer

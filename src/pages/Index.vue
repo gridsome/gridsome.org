@@ -82,7 +82,7 @@
 
 
         <h3><span class="gradient-4" style="display:inline-block; vertical-align:middle; line-height: 80px; width: 80px; height: 80px; margin-right: 20px; border-radius: 999px; text-align:center;">3</span>Build websites with Vue.js</h3>
-        <p>With clean and standard code syntax makes Vue.js very simple to understand for any web designers and web developers. Vue Components give you extreme flexibility. Vue-Router is used to make fast navigation between pages without reloading.</p>
+        <p>With clean and standard code syntax makes Vue.js very simple to understand for any web designers and web developers. Vue.js Single File Components lets you add HTML, CSS and JavaScript all in the same file</p>
         
       <svg width="124" height="50" viewBox="0 0 124 50" fill="none" xmlns="http://www.w3.org/2000/svg">
        <path class="stroke-anim" d="M0.388268 0.76767C12.9278 13.0338 40.7333 26.6027 59.8012 27.5046C79.3978 28.4315 107.337 29.6792 122.618 49.216" stroke="black"/>
@@ -99,7 +99,7 @@
     <Section dots="true">
       <div class="container-sm text-center">
         <h2>Signup for News</h2>
-        <p>We're on a mission to change how designers, marketers & developers build websites together for the modern web. <strong>Follow us on our journey 🙌</strong></p>
+        <p>We're on a mission to change how designers, marketers & developers build websites together for the modern mobile web. <strong>Follow our journey 🙌</strong></p>
       </div>
     </Section>
   </Layout>

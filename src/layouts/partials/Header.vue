@@ -1,5 +1,5 @@
 <template>
-  <header class="flex-x flex-x--60 container">
+  <header class="flex-x flex-x--60 container-full">
     <Logo/>
     <Nav class="flex-fit" />
     <div class="header-actions">
@@ -33,8 +33,16 @@ export default {
     z-index: 20;
     position: relative;
     top:0;
-    min-height: 90px;
+    min-height: 75px;
     background-color: #FFF;
+    border-bottom: 1px solid transparent;
+
+    .has-sidebar & {
+      border-color: rgba(0,0,0,.06);
+      box-shadow: 1px 1px 5px 0px var(--primary-bg);
+      position: sticky;
+      top:0;
+    }
   }
 
   .github-logo {

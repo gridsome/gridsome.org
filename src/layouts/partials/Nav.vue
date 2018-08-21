@@ -8,15 +8,10 @@
       Tutorial
     </Link>
 
-
-    <Link to="/benefits">
-      Benefits
+    <Link to="/features">
+      Features
     </Link>
-
-    <Link to="/integrations">
-      Integrations
-    </Link>
-
+    
     <Link to="/plugins">
       Plugins
     </Link>

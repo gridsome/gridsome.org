@@ -1,7 +1,7 @@
 <template>
-  <Layout>
-    <div class="container flex-x flex-x--60 flex-align-top">
-      <div class="sidebar">
+  <Layout class="has-sidebar" :footer="false">
+    <div class="flex-x flex-x--60 flex-align-top">
+      <div class="sidebar dots-bg">
         <ul>
           <li v-for="{ node } in $static.docs.edges">
             <Link :to="node.path">
@@ -33,11 +33,3 @@ query Docs {
   },
 }
 </static-query>
-
-<style>
-.sidebar {
-  padding: 30px;
-  width: 300px;
-  border-radius: 5px;
-}
-</style>
