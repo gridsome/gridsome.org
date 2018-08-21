@@ -10,9 +10,13 @@
             <Link :to="node.path">
               {{ node.title[0] ? node.title[0].value : node.path }}
             </Link>
-            <div v-for="heading in node.headings">
-              {{ heading.value }}
-            </div>
+            <ul>
+              <li v-for="heading in node.headings">
+                <Link :to="`${node.path}${heading.anchor}`">
+                  {{ heading.value }}
+                </Link>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -29,8 +33,13 @@ query Docs {
     edges {
       node {
         path
-        title: headings (depth: h1) { value }
-        headings (depth: h2) { value }
+        title: headings (depth: h1) {
+          value
+        }
+        headings (depth: h2) {
+          value
+          anchor
+        }
       }
     }
   },
