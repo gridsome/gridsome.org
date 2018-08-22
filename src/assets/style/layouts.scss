@@ -1,13 +1,13 @@
 .container {
   max-width: 1200px;
-  padding: 0 20px;
+  padding: 0 var(--space);
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
 
 .container-full {
-  padding: 0 20px;
+  padding: 0 var(--space);
   width: 100%;
 }
 
@@ -16,7 +16,7 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px;
+  padding: 0 var(--space);
 }
 
 .container-sm {
@@ -24,19 +24,21 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px;
+  padding: 0 var(--space);
 }
 
 .sidebar {
   width: 300px;
-  padding: 30px;
+  padding: var(--space);
   z-index: 10;
   left:0;
   background-color: var(--primary-bg);
   position: fixed;
   bottom:0;
   overflow:auto;
+  border-right: 1px solid var(--border-color);
   top:75px;
+  -webkit-overflow-scrolling: touch;
 
   + .section {
     margin-left: 300px;
@@ -51,10 +53,10 @@
   }
 
   &::-webkit-scrollbar-thumb {
-      background: rgba(0,0,0,.05); 
+      background: var(--border-color);
   }
 
   &::-webkit-scrollbar-thumb:hover {
-      background: rgba(0,0,0,.5); 
+      background: var(--border-color);
   }
 }

@@ -3,6 +3,10 @@
     <Link to="/docs">
       Docs
     </Link>
+
+    <Link to="/plugins">
+      Plugins
+    </Link>
     
     <Link to="/tutorial">
       Tutorial
@@ -12,10 +16,6 @@
       Features
     </Link>
     
-    <Link to="/plugins">
-      Plugins
-    </Link>
-
     <Link to="/showcase">
       Showcase
     </Link>

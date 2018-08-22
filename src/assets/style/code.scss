@@ -1,0 +1,22 @@
+#app pre,
+#app code {
+  background-color: var(--code-color);
+  border: 1px solid var(--code-color-dark);
+  border-radius: 3px;
+  font-family: Space Mono,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+  padding: 0 5px;
+  color: var(--code-color-text);
+  padding-bottom: 0.1em;
+  font-size: 85%;
+  font-variant: none;
+  font-feature-settings: "clig" 0, "calt" 0;
+}
+
+#app pre {
+  padding: 10px 20px;
+
+  code {
+    background: none;
+    border:0;
+  }
+}

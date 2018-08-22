@@ -38,8 +38,7 @@ export default {
     border-bottom: 1px solid transparent;
 
     .has-sidebar & {
-      border-color: rgba(0,0,0,.06);
-      box-shadow: 1px 1px 5px 0px var(--primary-bg);
+      border-bottom: 1px solid var(--border-color);
       position: sticky;
       top:0;
     }

@@ -3,8 +3,8 @@
     <div class="flex-x flex-x--60 flex-align-top">
       <div class="sidebar dots-bg">
         
-        <input type="search" autofocus="true" placeholder="Search docs..." />
-
+        <input type="search" placeholder="Search docs..." />
+        
         <ul>
           <li v-for="{ node } in $static.docs.edges">
             <Link :to="node.path">

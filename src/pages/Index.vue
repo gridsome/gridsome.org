@@ -100,6 +100,7 @@
       <div class="container-sm text-center">
         <h2>Signup for News</h2>
         <p>We're on a mission to change how designers, marketers & developers build websites together for the modern mobile web. <strong>Follow our journey 🙌</strong></p>
+        <input placeholder="Sign up for newsletter" type="email" />
       </div>
     </Section>
   </Layout>
