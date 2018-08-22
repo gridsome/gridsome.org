@@ -4,10 +4,13 @@
 
 h2, h3, h4 {
   letter-spacing: 1px;
+  opacity: .8;
 }
+
 
 .gradient-text {
   background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  line-height: 135%;
 }

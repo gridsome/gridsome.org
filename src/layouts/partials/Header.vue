@@ -1,5 +1,5 @@
 <template>
-  <header class="flex-x flex-x--60 container-full">
+  <header class="flex-x flex-x--30 container-full">
     <Logo/>
     <Nav class="flex-fit" />
     <div class="header-actions">

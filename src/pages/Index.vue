@@ -4,9 +4,9 @@
     <Section dots="true" class="text-center">
 
       <div class="container-md">
-        <h1 class="fade-up gradient-text">Build better, faster, mobile-first websites</h1>
+        <h1 class="fade-up">Build faster, better websites with Vue.js</h1>
         
-        <p class="container-md lead">Gridsome is a <strong>static JAMstack framework</strong> for building blazing-fast <strong>PWA</strong> front-ends for any CMS with <strong>Vue.js</strong> <vue-logo style="margin-top:-4px;" width="30px" height="30px" /> and <strong>GraphQL</strong> <graph-ql-logo style="margin-top:-5px; margin-left: 5px;" width="20px" height="20px" /></p>
+        <p class="container-md lead">Gridsome is a static JAMstack framework for building PWA front-ends for any CMS or data source with Vue.js<vue-logo style="margin-top:-2px;margin-left:-5px;" width="30px" height="30px" /> and GraphQL<graph-ql-logo style="margin-top:-5px; margin-left: 6px;" width="20px" height="20px" /></p>
 
       </div>
     
@@ -20,7 +20,7 @@
       <div class="container grid-cols">
         <Feature gradient="1">
           <h3>A static JAMstack framework</h3>
-          <p>The future of the web is mobile, JavaScript and APIs <strong>— the JAMstack</strong>. Gridsome uses the power of blazing-fast <strong>static site generation</strong>, JavaScript and APIs to create stunning dynamic web experiences.
+          <p>The future of the web is mobile, JavaScript and APIs <strong>— the JAMstack</strong>. Gridsome uses the power of super fast <strong>static site generation</strong>, JavaScript and APIs to create stunning dynamic web experiences.
           </p>
         </Feature>
  
@@ -32,13 +32,13 @@
         </Feature>
 
         <Feature gradient="3">
-          <h3>The frontend for the Headless</h3>
+          <h3>Connect to any CMS or data source</h3>
           <p>Use any CMS or data source for content. Pull data from WordPress, Contentful, local Markdown, or any other headless CMS or APIs and access it with <strong>GraphQL</strong> in your components and pages
           </p>     
         </Feature>
 
         <Feature gradient="4">
-          <h3>Mobile-first architecture</h3>
+          <h3>PWA Mobile-first architecture</h3>
           <p>Only critical HTML, CSS and JavaScript are loaded at first, and then the next pages are prefetched in the background so users can click around extremely fast without page reloads and even when offline.
           </p>     
         </Feature>
@@ -89,7 +89,7 @@
       </svg>
 
       <h3>Generate & Deploy<span class="gradient-5" style="display:inline-block; vertical-align:middle; line-height: 80px; width: 80px; height: 80px; margin-left: 20px; border-radius: 999px; text-align:center;">3</span></h3>
-        <p>The Blazing-fast static site engine creates HTML files of all pages & content that SEO engines can crawl - ready to be deployed and hosted safely on any global CDN or FTP. You can also use CI service like <strong>Netlify</strong> that generates, deploy and host your websites from a selected Git-repo automatically. <Link to="docs/deploy"> Learn more about deploying here </Link></p>
+        <p>The powerful <strong>static site generator</strong> creates HTML files of all pages & content that SEO engines can crawl - ready to be deployed and hosted safely on any global CDN or FTP. You can also use CI service like <strong>Netlify</strong> that generates, deploy and host your websites from a selected Git-repo automatically. <Link to="docs/deploy"> Learn more about deploying here </Link></p>
 
         <Link to="/docs" class="button lead"> Get started </Link>
       </div>

@@ -4,21 +4,14 @@
       Docs
     </Link>
 
-    <Link to="/plugins">
-      Plugins
-    </Link>
-    
     <Link to="/tutorial">
       Tutorial
     </Link>
 
-    <Link to="/features">
-      Features
+    <Link to="/plugins">
+      Plugins
     </Link>
-    
-    <Link to="/showcase">
-      Showcase
-    </Link>
+
 
     <Link to="/blog">
       Blog
