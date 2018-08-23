@@ -6,7 +6,7 @@
       <div class="container-md">
         <h1 class="fade-up">Build faster, better websites with Vue.js</h1>
         
-        <p class="container-sm lead">Gridsome is an <strong>open-source</strong> JAMstack framework for building PWA front-ends for any CMS or data source with Vue.js<vue-logo style="margin-top:-2px;margin-left:-5px;" width="30px" height="30px" /> and GraphQL<graph-ql-logo style="margin-top:-5px; margin-left: 6px;" width="20px" height="20px" /></p>
+        <p class="container-sm lead">Gridsome is a blazing-fast <strong>static site generator</strong> for building PWA & SPA frontends for any CMS or data source with <strong>Vue.js</strong><vue-logo style="margin-top:-2px;margin-left:-5px;" width="30px" height="30px" /> and <strong>GraphQL</strong><graph-ql-logo style="margin-top:-5px; margin-left: 6px;" width="20px" height="20px" /></p>
 
       </div>
     
@@ -20,7 +20,7 @@
       <div class="container grid-cols">
         <Feature gradient="1">
           <h3>A static JAMstack framework</h3>
-          <p>The future of the web is mobile, JavaScript and APIs <strong>— the JAMstack</strong>. Gridsome uses the power of super fast <strong>static site generation</strong>, JavaScript and APIs to create stunning dynamic web experiences.
+          <p>The future of the web is mobile, JavaScript and APIs <strong>— the JAMstack</strong>. Gridsome uses the power of blazing-fast <strong>static site generator</strong>, JavaScript and APIs to create stunning dynamic web experiences.
           </p>
         </Feature>
  
