@@ -6,7 +6,7 @@
       <div class="container-md">
         <h1 class="fade-up">Build faster, better websites with Vue.js</h1>
         
-        <p class="container-md lead">Gridsome is a static JAMstack framework for building PWA front-ends for any CMS or data source with Vue.js<vue-logo style="margin-top:-2px;margin-left:-5px;" width="30px" height="30px" /> and GraphQL<graph-ql-logo style="margin-top:-5px; margin-left: 6px;" width="20px" height="20px" /></p>
+        <p class="container-sm lead">Gridsome is an <strong>open-source</strong> JAMstack framework for building PWA front-ends for any CMS or data source with Vue.js<vue-logo style="margin-top:-2px;margin-left:-5px;" width="30px" height="30px" /> and GraphQL<graph-ql-logo style="margin-top:-5px; margin-left: 6px;" width="20px" height="20px" /></p>
 
       </div>
     

@@ -1,12 +1,11 @@
 .lead {
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 }
 
-h2, h3, h4 {
-  letter-spacing: 1px;
-  opacity: .8;
+h1, h2, h3, .lead {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
 
 .gradient-text {
   background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
