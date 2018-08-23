@@ -32,7 +32,7 @@
         </Feature>
 
         <Feature gradient="3">
-          <h3>Connect to any CMS or data source</h3>
+          <h3>GraphQL layer for any CMS or data source</h3>
           <p>Use any CMS or data source for content. Pull data from WordPress, Contentful, local Markdown, or any other headless CMS or APIs and access it with <strong>GraphQL</strong> in your components and pages
           </p>     
         </Feature>
@@ -99,8 +99,11 @@
     <Section dots="true">
       <div class="container-sm text-center">
         <h2>Signup for News</h2>
-        <p>We're on a mission to change how designers, marketers & developers build websites together for the modern mobile web. <strong>Follow our journey 🙌</strong></p>
-        <input placeholder="Sign up for newsletter" type="email" />
+        <p>We're on a mission to change how designers, marketers & developers build websites together for the modern mobile web</p>
+        <div class="container-mini flex gap-15">
+          <input class="flex-fit" placeholder="Sign up for newsletter" type="email" />
+          <a class="button">Submit </a>
+        </div>
       </div>
     </Section>
   </Layout>

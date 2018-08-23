@@ -1,35 +1,37 @@
-.flex-x {
+.flex {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  
+  > *:last-child {
+    margin:0;
+  }
+}
 
-  &--15 {
+.gap {
+  &-15 {
     > * {
       margin-right: 15px;
     }
   }
 
-  &--20 {
+  &-20 {
     > * {
       margin-right: 20px;
     }
   }
 
 
-  &--30 {
+  &-30 {
     > * {
       margin-right: 30px;
     }
   }
 
-  &--60 {
+  &-60 {
     > * {
       margin-right: 60px;
     }
-  }
-
-  > *:last-child {
-    margin:0;
   }
 }
 

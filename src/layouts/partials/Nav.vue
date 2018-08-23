@@ -1,5 +1,5 @@
 <template>
-  <nav class="main-nav flex-x flex-x--20 flex-no-wrap">
+  <nav class="main-nav flex gap-20 flex-no-wrap">
     <Link to="/docs">
       Docs
     </Link>
