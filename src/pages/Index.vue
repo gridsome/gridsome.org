@@ -7,7 +7,7 @@
         <h1 class="fade-up">Build faster, better websites with Vue.js</h1>
         
         <p class="container-sm lead">Gridsome is a blazing-fast <strong>static site generator</strong> for building PWA & SPA frontends for any CMS or data source with <strong>Vue.js</strong><vue-logo style="margin-top:-2px;margin-left:-5px;" width="30px" height="30px" /> and <strong>GraphQL</strong><graph-ql-logo style="margin-top:-5px; margin-left: 6px;" width="20px" height="20px" /></p>
-
+        <Link to="/docs" class="button"> Get started </Link>
       </div>
     
       <div class="container">

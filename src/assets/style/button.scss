@@ -1,6 +1,9 @@
 .button {
 	display: inline-block;
-	padding: .2rem .6rem;
-	border: 1px solid currentColor;
+	padding: .3rem .8rem;
+  text-transform:uppercase;
+  font-size: .8rem;
+  font-weight: bold;
+	border: 2px solid currentColor;
 	border-radius: 5px;
 }
