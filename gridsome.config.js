@@ -1,5 +1,6 @@
 module.exports = {
   plugins: [
+    '@gridsome/plugin-critical',
     {
       use: '@gridsome/source-filesystem',
       options: {
