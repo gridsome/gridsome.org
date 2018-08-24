@@ -7,6 +7,10 @@ h1, h2, h3, .lead, .button {
   -moz-osx-font-smoothing: grayscale;
 }
 
+p:last-child {
+  margin:0;
+}
+
 .gradient-text {
   background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
   -webkit-background-clip: text;
