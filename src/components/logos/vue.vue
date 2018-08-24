@@ -1,13 +1,12 @@
 <template>
   <svg
+   style="margin-top:-2px;margin-left:-5px;" width="30px" height="30px"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    viewBox="0 0 400 400"
-   height="400"
-   width="400"
    xml:space="preserve"
    id="svg2"
    version="1.1"><metadata

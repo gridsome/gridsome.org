@@ -4,9 +4,9 @@
     <Section dots="true" class="text-center">
 
       <div class="container-md">
-        <h1 class="fade-up">Build faster, better websites with Vue.js</h1>
+        <h1 class="fade-up">Build better, faster websites with <span class="gradient-text">Vue.js</span></h1>
         
-        <p class="container-sm lead">Gridsome is a blazing-fast <strong>static site generator</strong> for building <strong><small>PWA</small> & <small>SPA</small></strong> front-ends for any CMS or data source with <strong>Vue.js</strong><vue-logo style="margin-top:-2px;margin-left:-5px;" width="30px" height="30px" /> and <strong>GraphQL</strong><graph-ql-logo style="margin-top:-5px; margin-left: 6px;" width="20px" height="20px" /></p>
+        <p class="container-sm lead">Gridsome is a blazing-fast <strong>static site generator</strong> for building <strong><small>PWA</small> & <small>SPA</small></strong> front-ends for any CMS or data source with <strong class="no-wrap">Vue.js <vue-logo/> </strong> and <strong class="no-wrap">GraphQL<graph-ql-logo /></strong></p>
         <Link to="/docs" class="button"> Get started </Link>
       </div>
     
