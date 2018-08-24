@@ -13,8 +13,6 @@ Vue.component('DocsLayout', Docs)
 Vue.component('Section', Section)
 Vue.component('Feature', Feature)
 
-// Import global CSS
-require('@/assets/style/index.scss')
 
 // Setup typography
 import Typography from 'typography'
@@ -32,3 +30,7 @@ typography.injectStyles()
 
 // Import font
 require('typeface-league-spartan')
+
+// Import global styles
+require('@/assets/style/index.scss')
+

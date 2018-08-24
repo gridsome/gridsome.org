@@ -1,3 +1,10 @@
+/* Smaller text for mobile */
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 99%;  
+  }
+}
+
 .lead {
 	font-size: 1.18rem;
 }

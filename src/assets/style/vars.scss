@@ -1,5 +1,6 @@
 :root {
   --primary-color: #4DBA87;
+  --header-height: 60px;
   --secondary-color: #8FD46A;
   --primary-bg: rgb(237, 243, 240);
   --border-color: rgb(223, 234, 219);
@@ -9,7 +10,7 @@
   --code-color-text: #756952;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   :root {
     --space: 15px;
   }

@@ -6,7 +6,7 @@
       <div class="container-md">
         <h1 class="fade-up">Build faster, better websites with Vue.js</h1>
         
-        <p class="container-sm lead">Gridsome is a blazing-fast <strong>static site generator</strong> for building PWA & SPA frontends for any CMS or data source with <strong>Vue.js</strong><vue-logo style="margin-top:-2px;margin-left:-5px;" width="30px" height="30px" /> and <strong>GraphQL</strong><graph-ql-logo style="margin-top:-5px; margin-left: 6px;" width="20px" height="20px" /></p>
+        <p class="container-sm lead">Gridsome is a blazing-fast <strong>static site generator</strong> for building <strong><small>PWA</small> & <small>SPA</small></strong> front-ends for any CMS or data source with <strong>Vue.js</strong><vue-logo style="margin-top:-2px;margin-left:-5px;" width="30px" height="30px" /> and <strong>GraphQL</strong><graph-ql-logo style="margin-top:-5px; margin-left: 6px;" width="20px" height="20px" /></p>
         <Link to="/docs" class="button"> Get started </Link>
       </div>
     
@@ -92,18 +92,6 @@
         <p>The powerful <strong>static site generator</strong> creates HTML files of all pages & content that SEO engines can crawl - ready to be deployed and hosted safely on any global CDN or FTP. You can also use CI service like <strong>Netlify</strong> that generates, deploy and host your websites from a selected Git-repo automatically. <Link to="docs/deploy"> Learn more about deploying here </Link></p>
 
         <Link to="/docs" class="button lead"> Get started </Link>
-      </div>
-    </Section>
-
-
-    <Section dots="true">
-      <div class="container-sm text-center">
-        <h2>Signup for News</h2>
-        <p>We're on a mission to change how designers, marketers & developers build websites together for the modern mobile web</p>
-        <div class="container-mini flex gap-15">
-          <input class="flex-fit" placeholder="Sign up for newsletter" type="email" />
-          <a class="button">Submit </a>
-        </div>
       </div>
     </Section>
   </Layout>

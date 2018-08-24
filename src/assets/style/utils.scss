@@ -46,7 +46,28 @@
 .grid-cols{
   display: grid;
   grid-template-columns: repeat(3, auto);
-  grid-gap: 50px;
+  grid-gap: calc( var(--space) * 2);
+
+  &--2 {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  &--4 {
+    grid-template-columns: repeat(4, auto);
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  .grid-cols{
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .grid-cols{
+    grid-template-columns: repeat(1, auto);
+  }
 }
 
 .text-center {

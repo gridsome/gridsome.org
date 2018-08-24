@@ -9,6 +9,7 @@
   "dependencies": {
     "gridsome": "^0.0.1",
     "node-sass": "^4.9.3",
+    "postcss-media-variables": "^2.0.1",
     "sass-loader": "^7.1.0",
     "typeface-league-spartan": "0.0.44",
     "typography": "^0.16.17",

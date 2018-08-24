@@ -1,0 +1,15 @@
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color .3s, opacity .3s;
+}
+
+a.plain {
+  color: currentColor;
+  opacity: .8;
+}
+
+a:hover:not(.active) {
+  color: currentColor;
+  opacity: 1;
+}

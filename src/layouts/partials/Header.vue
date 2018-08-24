@@ -3,14 +3,14 @@
     <Logo/>
 
     <Nav class="flex-fit" />
-
+    
     <div class="header-actions flex gap-15">
     
     <a href="https://github.com/gridsome/gridsome">
       <github-logo class="github-logo" />
     </a>
 
-    <Link to="/docs" class="button"> Get started </Link>
+    <Link to="/docs" class="button small hide-for-small"> Get started </Link>
   
     </div>
   </header>
@@ -35,7 +35,7 @@ export default {
     z-index: 20;
     position: relative;
     top:0;
-    min-height: 75px;
+    min-height: var(--header-height);
     background-color: #FFF;
     border-bottom: 1px solid transparent;
 
@@ -43,6 +43,12 @@ export default {
       border-bottom: 1px solid var(--border-color);
       position: sticky;
       top:0;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    header {
+      box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
     }
   }
 

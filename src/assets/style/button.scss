@@ -3,6 +3,11 @@
 	padding: .35rem .8rem;
   font-weight: bold;
   letter-spacing: .5px;
-	border: 1px solid currentColor;
+	border: 2px solid currentColor;
 	border-radius: 5px;
+
+  &.small {
+    font-size: .9rem;
+    padding: .2rem .5rem;
+  }
 }
