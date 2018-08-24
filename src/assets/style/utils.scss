@@ -52,3 +52,10 @@
 .text-center {
   text-align: center;
 }
+
+
+@media screen and (max-width: 750px) {
+  .hide-for-small {
+    display: none!important;
+  }
+}

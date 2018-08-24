@@ -1,15 +1,17 @@
 <template>
   <header class="flex gap-30 container-full">
     <Logo/>
-    <Nav class="flex-fit" />
-    <div class="header-actions flex gap-15">
-      
-      <a href="https://github.com/gridsome/gridsome">
-        <github-logo class="github-logo" />
-      </a>
 
-      <Link to="/docs" class="button"> Get started </Link>
+    <Nav class="flex-fit" />
+
+    <div class="header-actions flex gap-15">
     
+    <a href="https://github.com/gridsome/gridsome">
+      <github-logo class="github-logo" />
+    </a>
+
+    <Link to="/docs" class="button"> Get started </Link>
+  
     </div>
   </header>
 </template>
@@ -42,6 +44,10 @@ export default {
       position: sticky;
       top:0;
     }
+  }
+
+  .header-actions {
+    margin-left: auto!important;
   }
 
   .github-logo {

@@ -8,3 +8,9 @@
   --code-color-dark: #f3eadc;
   --code-color-text: #756952;
 }
+
+@media screen and (max-width: 600px) {
+  :root {
+    --space: 15px;
+  }
+}
