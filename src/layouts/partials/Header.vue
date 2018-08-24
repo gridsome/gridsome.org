@@ -38,7 +38,7 @@ export default {
     min-height: var(--header-height);
     background-color: #FFF;
     border-bottom: 1px solid transparent;
-
+    
     .has-sidebar & {
       border-bottom: 1px solid var(--border-color);
       position: sticky;
