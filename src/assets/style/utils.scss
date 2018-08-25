@@ -6,6 +6,11 @@
   > *:last-child {
     margin:0;
   }
+
+
+  &--no-wrap {
+    flex-wrap: no-wrap;
+  }
 }
 
 .gap {

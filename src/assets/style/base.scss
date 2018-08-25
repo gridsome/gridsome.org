@@ -10,6 +10,7 @@ html, body {
 
 svg {
   vertical-align: middle;
+  max-width: 100%;
 }
 
 ::selection { background: var(--primary-bg); }
