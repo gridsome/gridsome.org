@@ -31,5 +31,4 @@ export default {
 #app main {
   flex: 1;
 }
-
 </style>

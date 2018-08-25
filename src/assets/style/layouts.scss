@@ -28,6 +28,7 @@
 .sidebar {
   width: 300px;
   padding: var(--space);
+  max-width: 100%;
   z-index: 10;
   left:0;
   background-color: var(--primary-bg);
@@ -42,19 +43,12 @@
     margin-left: 300px;
   }
 
-  &::-webkit-scrollbar {
-      width: 5px;
-  }
 
-  &::-webkit-scrollbar-track {
-      background: rgba(0,0,0,.0); 
-  }
+  &.wide {
+    width: 400px;
 
-  &::-webkit-scrollbar-thumb {
-      background: var(--border-color);
-  }
-
-  &::-webkit-scrollbar-thumb:hover {
-      background: var(--border-color);
+    + .section {
+      margin-left: 400px;
+    }
   }
 }
