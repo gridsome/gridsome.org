@@ -3,3 +3,4 @@
 src/.temp
 node_modules
 dist
+.cache

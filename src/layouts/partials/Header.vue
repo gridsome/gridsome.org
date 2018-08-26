@@ -1,16 +1,18 @@
 <template>
   <header class="flex gap-30 container-full">
-    <Logo/>
+    <Logo />
 
     <Nav class="flex-fit" />
     
     <div class="header-actions flex gap-15">
     
     <a href="https://github.com/gridsome/gridsome">
-      <github-logo class="github-logo" />
+      <github-logo />
     </a>
 
-    <Link to="/docs" class="button small hide-for-small"> Get started </Link>
+    <g-link to="/docs" class="button small hide-for-small">
+      Get started
+    </g-link>
   
     </div>
   </header>

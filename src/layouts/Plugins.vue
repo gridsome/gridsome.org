@@ -7,14 +7,14 @@
         
         <ul>
           <li v-for="{ node } in $static.docs.edges">
-            <Link :to="node.path">
+            <g-link :to="node.path">
               {{ node.title[0] ? node.title[0].value : node.path }}
-            </Link>
+            </g-link>
             <ul>
               <li v-for="heading in node.headings">
-                <Link :to="`${node.path}${heading.anchor}`">
+                <g-link :to="`${node.path}${heading.anchor}`">
                   {{ heading.value }}
-                </Link>
+                </g-link>
               </li>
             </ul>
           </li>

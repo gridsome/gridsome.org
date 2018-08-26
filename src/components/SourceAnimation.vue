@@ -1,7 +1,7 @@
 <template>
   <div class="source-animation">
     <div>
-      <img class="cms" src="../assets/images/CMS.png" />
+      <g-image class="cms" src="../assets/images/CMS.png" />
     </div>
     <svg width="60" height="20" viewBox="0 0 60 20" class="dot">
       <path d="M1 9.5H99" />
@@ -16,7 +16,7 @@
       <path d="M1 9.5H99" />
     </svg>
     <div>
-      <img class="cms" src="../assets/images/device.png" />
+      <g-image class="cms" src="../assets/images/device.png" />
     </div>
   </div>
 </template>

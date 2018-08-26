@@ -1,14 +1,14 @@
 <template>
-  <Link class="logo" to="/">
-    <Logo />
-  </Link>
+  <g-link class="logo" to="/">
+    <GridsomeLogo />
+  </g-link>
 </template>
 
 <script>
-import Logo from '@/components/logos/gridsome'
+import GridsomeLogo from '@/components/logos/gridsome'
 export default {
   components: {
-    Logo
+    GridsomeLogo
   }
 }
 </script>

@@ -4,7 +4,7 @@
       <div class="sidebar dots-bg">
         <ul>
           <li v-for="{ node } in $static.docs.edges">
-            <Link :to="node.path">{{ node.path }}</Link>
+            <g-link :to="node.path">{{ node.path }}</g-link>
           </li>
         </ul>
       </div>

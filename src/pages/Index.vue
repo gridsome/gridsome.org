@@ -7,7 +7,7 @@
         <h1 class="fade-up">Build better, faster websites with <span class="gradient-text">Vue.js</span></h1>
         
         <p class="container-sm lead">Gridsome is a beaming-fast <strong>static site generator</strong> for building <strong><small>PWA</small> & <small>SPA</small></strong> front-ends for any CMS or data source with <strong class="no-wrap">Vue.js<vue-logo/> </strong> and <strong class="no-wrap">GraphQL<graph-ql-logo /></strong></p>
-        <Link to="/docs" class="button"> Get started </Link>
+        <g-link to="/docs" class="button"> Get started </g-link>
       </div>
     
       <div class="container">
@@ -89,9 +89,9 @@
       </svg>
 
       <h3>Generate & Deploy<span class="gradient-5" style="display:inline-block; vertical-align:middle; line-height: 80px; width: 80px; height: 80px; margin-left: 20px; border-radius: 999px; text-align:center;">3</span></h3>
-        <p>The powerful <strong>static site generator</strong> creates HTML files of all pages & content that SEO engines can crawl - ready to be deployed and hosted safely on any global CDN or FTP. You can also use CI service like <strong>Netlify</strong> that generates, deploy and host your websites from a selected Git-repo automatically. <Link to="docs/deploy"> Learn more about deploying here </Link></p>
+        <p>The powerful <strong>static site generator</strong> creates HTML files of all pages & content that SEO engines can crawl - ready to be deployed and hosted safely on any global CDN or FTP. You can also use CI service like <strong>Netlify</strong> that generates, deploy and host your websites from a selected Git-repo automatically. <g-link to="docs/deploy"> Learn more about deploying here </g-link></p>
 
-        <Link to="/docs" class="button lead"> Get started </Link>
+        <g-link to="/docs" class="button lead"> Get started </g-link>
       </div>
     </Section>
   </Layout>
