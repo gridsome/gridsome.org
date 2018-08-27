@@ -53,6 +53,10 @@
   grid-template-columns: repeat(3, auto);
   grid-gap: calc( var(--space) * 2);
 
+  &--gap-small {
+    grid-gap: calc( var(--space) );
+  }
+
   &--2 {
     grid-template-columns: repeat(2, auto);
   }

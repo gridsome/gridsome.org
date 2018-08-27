@@ -1,11 +1,12 @@
 #app pre,
 #app code {
   background-color: var(--code-color);
-  border: 1px solid var(--code-color-dark);
+  border: 1px dashed var(--code-color-dark);
   border-radius: 3px;
   font-family: Space Mono,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
-  padding: 0 5px;
-  color: var(--code-color-text);
+  padding: 4px 8px 3px;
+  display:inline-block;
+  color: #000;
   padding-bottom: 0.1em;
   font-size: 85%;
   font-variant: none;
@@ -14,6 +15,7 @@
 
 #app pre {
   padding: 10px 20px;
+    display: block;
 
   code {
     background: none;
