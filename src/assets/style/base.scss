@@ -13,4 +13,13 @@ svg {
   max-width: 100%;
 }
 
+.g-image--lazy {
+  opacity: 0.0;
+  transition: opacity 600ms;
+
+  &.g-image--loaded {
+    opacity: 1.0;
+  }
+}
+
 ::selection { background: var(--primary-bg); }
