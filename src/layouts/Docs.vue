@@ -4,8 +4,7 @@
       <div class="sidebar dots-bg">
         
         <input type="search" placeholder="Search docs..." />
-
-        <h3>
+        <h3 style="margin-top: 5px">
           Gettings started
         </h3>
         <p>Install Gridsome CLI</p>
@@ -24,9 +23,9 @@
 
         <h3> Guides </h3>
         <p>Install plugins</p>
-        <p>Add Critical CSS</p>
+        <p>Add critical CSS</p>
         <p>Add custom fonts</p>
-        <p>How to add pagination</p>
+        <p>Add pagination to Source</p>
         <p>Add a Source template</p>
 
         <h3>API Reference</h3>
@@ -42,6 +41,7 @@
         <p>Image</p>
         <p>Pagination</p>
         <p>Slots</p>
+        <p>Transition</p>
 
         <h3>Deploy</h3>
         
@@ -71,14 +71,17 @@
 </template>
 
 <style>
-.sidebar h3 {
-  font-size: 16px;
-  margin: 20px 0 15px;
-}
-.sidebar p {
-  margin-bottom: 5px;
-}
-
+  .sidebar h3 {
+    font-size: .7rem;
+    color: #7a9a8a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 35px 0 15px;
+  }
+  .sidebar p {
+    margin-bottom: 5px;
+    font-size: .9rem;
+  }
 </style>
 
 <static-query>

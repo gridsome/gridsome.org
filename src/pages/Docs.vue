@@ -13,7 +13,7 @@
       <li>Happy coding 🙌</li>
     </ol>
     <h3>Next steps...</h3>
-    <p>Learn about the core concepts of building Gridsome sites</p>
+    <p>Learn about the <strong>core concepts</strong> of building Gridsome sites</p>
     <div class="grid-cols grid-cols--2 grid-cols--gap-small">
       <div> 
         <h4 style="margin-bottom: 10px;">How Gridsome works</h4>
