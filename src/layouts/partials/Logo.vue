@@ -1,6 +1,6 @@
 <template>
-  <g-link class="logo" to="/">
-    <GridsomeLogo />
+  <g-link class="logo" to="/" title="Back to home">
+    <GridsomeLogo alt="Gridsome.org" />
   </g-link>
 </template>
 

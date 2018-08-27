@@ -8,7 +8,7 @@
         <h3>
           Gettings started
         </h3>
-        <p>Install CLI</p>
+        <p>Install Gridsome CLI</p>
         <p>Starter kits</p>
 
         <h3>
@@ -17,7 +17,7 @@
         <p>How Gridsome works</p>
         <p>Pages, layouts & templates</p>
         <p>Vue Components</p>
-        <p>Data Sources</p>
+        <p>Data Sources (GraphQL)</p>
         <p>Images & Links</p>
         <p>Static Site Generation</p>
         <p>Hosting & Deploying</p>

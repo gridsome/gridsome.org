@@ -1,8 +1,8 @@
 <template>
   <DocsLayout>
-    <h1>Get started with Gridsome</h1>
+    <h1>Getting started with Gridsome</h1>
     <p>Gridsome is a framework for building blazing-fast websites with Vue.js and GraphQL. This guide will help you get quickly up and running with your first Gridsome site.</p>
-    <h3>Install the Gridsome CLI tool</h3>
+    <h3>Install Gridsome CLI tool</h3>
     <code>npm install --global gridsome-cli</code><br>
     <p><small><i>If you're not sure where to put this we recommend you follow the Tutorial.</i></small></p>
     <h3>Start use the CLI</h3>
@@ -28,7 +28,7 @@
         <p>Learn the concept of Vue and its Single File Components</p>
       </div>
       <div>
-        <h4 style="margin-bottom: 10px;">Data Sources</h4>
+        <h4 style="margin-bottom: 10px;">Data Sources (GraphQL)</h4>
         <p>Learn how to add source plugins and get data with GraphQL</p>
       </div>
       

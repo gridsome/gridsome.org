@@ -1,5 +1,6 @@
 <template>
   <svg
+   alt="Vue"
    style="margin-top:-2px;margin-left:-5px;" width="30px" height="30px"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"

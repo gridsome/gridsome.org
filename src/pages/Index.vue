@@ -71,17 +71,14 @@
         <path class="stroke-anim" d="M1.69481 1.2182C41.8439 19.8865 129.224 40.2118 188.128 41.16C248.667 42.1345 334.969 43.4097 384.45 73.2535" stroke="black"/>
       </svg>
 
-
-
-
-        <h3>Access and use data from GraphQL<span class="gradient-2" style="display:inline-block; vertical-align:middle; line-height: 80px; width: 80px; height: 80px; margin-left: 20px; border-radius: 999px; text-align:center;">2</span></h3>
+      <h3>Access and use data from GraphQL<span class="gradient-2" style="display:inline-block; vertical-align:middle; line-height: 80px; width: 80px; height: 80px; margin-left: 20px; border-radius: 999px; text-align:center;">2</span></h3>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
          <svg width="215" height="64" viewBox="0 0 215 64" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path class="stroke-anim" d="M213.721 1.01564C191.069 18.673 142.278 36.8063 109.706 36.282C76.2304 35.7431 28.511 34.8609 0.42388 63.456" stroke="black"/>
         </svg>
 
 
-        <h3><span class="gradient-4" style="display:inline-block; vertical-align:middle; line-height: 80px; width: 80px; height: 80px; margin-right: 20px; border-radius: 999px; text-align:center;">3</span>Build websites with Vue.js</h3>
+      <h3><span class="gradient-4" style="display:inline-block; vertical-align:middle; line-height: 80px; width: 80px; height: 80px; margin-right: 20px; border-radius: 999px; text-align:center;">3</span>Build websites with Vue.js</h3>
         <p>With clean and standard code syntax makes Vue.js very simple to understand for any web designers and web developers. Vue.js Single File Components lets you add HTML, CSS and JavaScript all in the same file</p>
         
       <svg width="124" height="50" viewBox="0 0 124 50" fill="none" xmlns="http://www.w3.org/2000/svg">
