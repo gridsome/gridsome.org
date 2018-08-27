@@ -15,6 +15,11 @@
   &-md { max-width: 770px }
   &-sm { max-width: 630px }
   &-mini { max-width: 460px }
+
+  &--push {
+    margin-left: -30px;
+    margin-right:-30px;
+  }
 }
 
 .sidebar {

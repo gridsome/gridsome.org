@@ -2,19 +2,23 @@
   <DocsLayout>
     <h1>Getting started with Gridsome</h1>
     <p>Gridsome is a framework for building blazing-fast websites with Vue.js and GraphQL. This guide will help you get quickly up and running with your first Gridsome site.</p>
-    <h3>Install Gridsome CLI tool</h3>
-    <code>npm install --global gridsome-cli</code><br>
-    <p><small><i>If you're not sure where to put this we recommend you follow the Tutorial.</i></small></p>
-    <h3>Start use the CLI</h3>
+    <p>You don't need to know Vue.js to get started with Gridsome, but it's  recommended to start with the <a>Tutorial</a> if you don't.</p>
+    
+
+    <h3>1. Install Gridsome CLI tool</h3>
+    <p><code>npm install --global <b>gridsome-cli</b></code><br></p>
+
+    <h3>2. Create a Gridsome project</h3>
     <ol>
-      <li>Create a new site: <code>gridsome create my-gridsome-site</code> </li>
-      <li><code>cd my-gridsome-site</code></li>
-      <li><code>gridsome develop</code> to start local dev server at <code>localhost:8080</code></li>
-      <li>Happy coding 🙌</li>
+      <li><code>gridsome <b>create</b> my-gridsome-site</code> to create a new project </li>
+      <li><code>cd my-gridsome-site</code> to open folder</li>
+      <li><code>gridsome <b>develop</b></code> to start local dev server at <code><b>http://localhost:8080</b></code></li>
+      <li>Happy coding 🎉🙌</li>
     </ol>
-    <h3>Next steps...</h3>
+
+    <h3>3. Next steps...</h3>
     <p>Learn about the <strong>core concepts</strong> of building Gridsome sites</p>
-    <div class="grid-cols grid-cols--2 grid-cols--gap-small">
+    <div class="grid-cols container--push grid-cols--2 grid-cols--gap-small">
       <div> 
         <h4 style="margin-bottom: 10px;">How Gridsome works</h4>
         <p>Detailed explenation of how Gridsome works</p>

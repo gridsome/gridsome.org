@@ -46,22 +46,11 @@
         <h3>Deploy</h3>
         
         <p>Netlify</p>
-        <p>Zeit</p>
+        <p>Zeit Now</p>
+        <p>Amazon S3</p>
+        <p>GitHub Pages</p>
+        <p>GitLab Pages</p>
 
-        <ul>
-          <li v-for="{ node } in $static.docs.edges">
-            <g-link :to="node.path">
-              {{ node.title[0] ? node.title[0].value : node.path }}
-            </g-link>
-            <ul>
-              <li v-for="heading in node.headings">
-                <g-link :to="`${node.path}${heading.anchor}`">
-                  {{ heading.value }}
-                </g-link>
-              </li>
-            </ul>
-          </li>
-        </ul>
       </div>
       <Section class="flex-fit" container="md">
         <slot />
@@ -72,7 +61,7 @@
 
 <style>
   .sidebar h3 {
-    font-size: .7rem;
+    font-size: .75rem;
     color: #7a9a8a;
     text-transform: uppercase;
     letter-spacing: 1px;
