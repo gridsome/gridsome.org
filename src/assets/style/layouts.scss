@@ -11,18 +11,10 @@
     margin-right: auto;
     width: 100%;
   }
-}
 
-.container-md {
-  max-width: 770px;
-}
-
-.container-sm {
-  max-width: 630px;
-}
-
-.container-mini {
-  max-width: 460px;
+  &-md { max-width: 770px }
+  &-sm { max-width: 630px }
+  &-mini { max-width: 460px }
 }
 
 .sidebar {
@@ -41,8 +33,8 @@
 
   + .section {
     margin-left: 300px;
+    margin-top: var(--header-height);
   }
-
 
   &.wide {
     width: 400px;

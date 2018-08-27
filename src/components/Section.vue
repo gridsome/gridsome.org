@@ -31,7 +31,7 @@ export default {
 
 <style lang="scss">
 .section {
-  padding: 7% 0;
+  padding: calc(5% + var(--space)) 0;
   position: relative;
 
   &__dots-bg {

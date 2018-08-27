@@ -43,14 +43,14 @@ export default {
     
     .has-sidebar & {
       border-bottom: 1px solid var(--border-color);
-      position: sticky;
+      position: fixed;
       top:0;
     }
   }
 
   @media screen and (max-width: 750px) {
     header {
-      box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+      box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
     }
   }
 

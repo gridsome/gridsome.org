@@ -4,7 +4,7 @@
     <Section dots="true" class="text-center">
 
       <div class="container-md fade-up">
-        <h1 class="fade-up">Build better, faster websites with <span class="gradient-text">Vue.js</span></h1>
+        <h1 class="fade-up">Build faster, better websites with <span class="gradient-text">Vue.js</span></h1>
         
         <p class="container-sm lead">Gridsome is a beaming-fast <strong>static site generator</strong> for building <strong><small>PWA</small> & <small>SPA</small></strong> front-ends for any CMS or data source with <strong class="no-wrap">Vue.js<vue-logo/> </strong> and <strong class="no-wrap">GraphQL<graph-ql-logo /></strong></p>
         <g-link to="/docs" class="button"> Get started </g-link>
