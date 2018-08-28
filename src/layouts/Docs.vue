@@ -5,7 +5,7 @@
         
         <input type="search" placeholder="Search docs..." />
         <h3 style="margin-top: 5px">
-          Gettings started
+          Getting started
         </h3>
         <p>Install Gridsome CLI</p>
         <p>Starter kits</p>
@@ -13,16 +13,17 @@
         <h3>
           Core concepts
         </h3>
-        <p>How Gridsome works</p>
+        <p>Introduction</p>
         <p>Pages, layouts & templates</p>
         <p>Vue Components</p>
         <p>Data Sources (GraphQL)</p>
         <p>Images & Links</p>
-        <p>Static Site Generation</p>
-        <p>Hosting & Deploying</p>
+        <p>Generate & Deploy</p>
+        <p>Developer Tools</p>
 
         <h3> Guides </h3>
         <p>Install plugins</p>
+        <p>Add custom CSS</p>
         <p>Add critical CSS</p>
         <p>Add custom fonts</p>
         <p>Add pagination to Source</p>

@@ -2,12 +2,11 @@
   <DocsLayout>
     <h1>Getting started with Gridsome</h1>
     <p>Gridsome is a framework for building blazing-fast websites with Vue.js and GraphQL. This guide will help you get quickly up and running with your first Gridsome site.</p>
-    <p>You don't need to know Vue.js to get started with Gridsome, but it's  recommended to start with the <a>Tutorial</a> if you don't.</p>
+    <p>You don't need to know Vue.js to get started with Gridsome, but it's  recommended to start with the <a>Gridsome Tutorial</a> if you don't.</p>
     
 
     <h3>1. Install Gridsome CLI tool</h3>
-    <p><code>npm install --global <b>gridsome-cli</b></code><br></p>
-
+    <p><code>npm install --global <b>gridsome-cli</b></code></p>
     <h3>2. Create a Gridsome project</h3>
     <ol>
       <li><code>gridsome <b>create</b> my-gridsome-site</code> to create a new project </li>
@@ -20,8 +19,8 @@
     <p>Learn about the <strong>core concepts</strong> of building Gridsome sites</p>
     <div class="grid-cols container--push grid-cols--2 grid-cols--gap-small">
       <div> 
-        <h4 style="margin-bottom: 10px;">How Gridsome works</h4>
-        <p>Detailed explenation of how Gridsome works</p>
+        <h4 style="margin-bottom: 10px;">Introduction</h4>
+        <p>How Gridsome works and why you should use it for your websites</p>
       </div>
       <div> 
         <h4 style="margin-bottom: 10px;">Pages, layouts & templates</h4>
@@ -33,21 +32,16 @@
       </div>
       <div>
         <h4 style="margin-bottom: 10px;">Data Sources (GraphQL)</h4>
-        <p>Learn how to add source plugins and get data with GraphQL</p>
+        <p>How to add source plugins and get data with GraphQL</p>
       </div>
       
       <div> 
         <h4 style="margin-bottom: 10px;">Images & Links</h4>
         <p>Learn how to use the built-in Image & link components</p>
       </div>
-
-      <div> 
-        <h4 style="margin-bottom: 10px;">Static Site Generation</h4>
-        <p>Learn how Gridsome builds and optimize the website</p>
-      </div>
   
       <div> 
-        <h4 style="margin-bottom: 10px;">Hosting & Deploying</h4>
+        <h4 style="margin-bottom: 10px;">Generate & Deploy</h4>
         <p>Learn how to generate, deploy and host your website</p>
       </div>
     </div>
