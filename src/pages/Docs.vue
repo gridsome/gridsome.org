@@ -18,7 +18,7 @@
     <h3>3. Next steps...</h3>
     <p>Learn about the <strong>core concepts</strong> of building Gridsome sites</p>
     
-    <div class="grid-cols grid-cols--2 grid-cols--gap-small">
+    <div class="grid-cols container--push grid-cols--2 grid-cols--gap-small">
       
       <g-link>
         <Card> 
