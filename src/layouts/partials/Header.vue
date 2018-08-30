@@ -6,7 +6,7 @@
     
     <div class="header-actions flex gap-15">
     
-    <a href="https://github.com/gridsome/gridsome">
+    <a aria-label="GitHub" href="https://github.com/gridsome/gridsome">
       <github-logo />
     </a>
 

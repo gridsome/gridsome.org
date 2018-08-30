@@ -8,10 +8,15 @@ html, body {
   box-sizing: inherit;
 }
 
+
+img,
 svg {
   vertical-align: middle;
+  with: 100%;
   max-width: 100%;
 }
+
+
 
 .g-image--lazy {
   opacity: 0.0;
