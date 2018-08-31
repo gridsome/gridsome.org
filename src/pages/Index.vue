@@ -11,7 +11,7 @@
       </div>
     
       <div class="container">
-        <Source-animation />
+        <SourceAnimation />
       </div>
       
     </Section>
@@ -104,6 +104,15 @@ export default {
     SourceAnimation,
     VueLogo,
     GraphQlLogo
+  },
+  metaInfo: {
+    title: 'Gridsome - Built faster, better websites with Vue.js',
+    meta: [
+      {
+        name: 'description',
+        content: 'Gridsome is a blazing-fast static site generator for building PWA & SPA front-ends for any CMS or data source with Vue.js and GraphQL'
+      }
+    ]
   }
 }
 </script>

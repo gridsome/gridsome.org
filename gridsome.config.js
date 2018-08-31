@@ -1,4 +1,8 @@
 module.exports = {
+  siteName: 'Gridsome',
+  siteUrl: `https://www.gridsome.org`,
+  titleTemplate: '%s - Gridsome',
+
   plugins: [
     '@gridsome/plugin-critical',
     {

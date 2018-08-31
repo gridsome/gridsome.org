@@ -6,8 +6,8 @@
     
     <div class="header-actions flex gap-15">
     
-    <a aria-label="GitHub" href="https://github.com/gridsome/gridsome">
-      <github-logo />
+    <a aria-label="Visit Gridsome on GitHub" href="https://github.com/gridsome/gridsome">
+      <GithubLogo />
     </a>
 
     <g-link to="/docs" class="button small hide-for-small">
