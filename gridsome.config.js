@@ -5,6 +5,7 @@ module.exports = {
 
   plugins: [
     '@gridsome/plugin-critical',
+    '@gridsome/plugin-typography',
     {
       use: '@gridsome/source-filesystem',
       options: {
