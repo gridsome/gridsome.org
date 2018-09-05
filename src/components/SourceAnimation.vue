@@ -1,22 +1,19 @@
 <template>
   <div class="source-animation">
-    <div>
-      <g-image alt="cms" class="cms" src="../assets/images/CMS.png" />
+    <div class="source-animation__image">
+      <g-image alt="cms" class="source-animation__image-cms" src="../assets/images/CMS.png" />
     </div>
-    <svg width="60" height="20" viewBox="0 0 60 20" class="dot">
+    <svg width="60" height="20" viewBox="0 0 60 20" class="source-animation__dot">
       <path d="M1 9.5H99" />
     </svg>
-    <div class="gridsome-logo">
+    <div class="source-animation__logo">
       <Logo />
-      <div class="text-rotate">
-        <span>Vue.js</span>
-      </div>
     </div>
-    <svg width="60" height="20" viewBox="0 0 60 20" class="dot after">
+    <svg width="60" height="20" viewBox="0 0 60 20" class="source-animation__dot source-animation__dot--after">
       <path d="M1 9.5H99" />
     </svg>
-    <div>
-      <g-image alt="devices" class="cms" src="../assets/images/device.png" />
+    <div class="source-animation__image">
+      <g-image alt="devices" class="source-animation__image-device" src="../assets/images/device.png" />
     </div>
   </div>
 </template>
@@ -32,57 +29,50 @@ export default {
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   .source-animation {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-  }
 
-  .cms {
-    max-width: 330px;
-    margin: 10px 10px 0 10px;
-    display: block;
-  }
+    &__image {
+      max-width: 320px;
+      margin: 0 10px;
+    }
 
-  .dot {
-    stroke: #ccc;
-    stroke-width: 5px;
-    stroke-linecap: round;
-    stroke-dasharray: 0 15;
-    animation: stroke 300ms linear infinite;
-  }
+    &__logo {
+      width: 80px;
+      min-width: 80px;
+      min-height: 80px;
+      height: 80px;
+      border-radius: 100%;
+      display:flex;
+      align-items:center;
+      justify-content: center;
+      margin: 10px;
+      position: relative;
+      animation: pulse 2s infinite;
+      box-sizing: border-box;
+      background: linear-gradient(180deg, var(--primary-color) 0%,  var(--secondary-color) 100%);
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.09);
+      svg {
+        fill: #fff;
+        max-width: 40px;
+      }
+    }
 
-  .after {
-     stroke: var(--primary-color);
-  }
+    &__dot {
+      stroke: #ccc;
+      stroke-width: 5px;
+      stroke-linecap: round;
+      stroke-dasharray: 0 15;
+      animation: stroke 300ms linear infinite;
+    }
 
-  .gridsome-logo {
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    position: relative;
-    text-align: center;
-    padding: 15px;
-    margin: 10px;
-    animation: pulse 2s infinite;
-    box-sizing: border-box;
-    background: linear-gradient(180deg, var(--primary-color) 0%,  var(--secondary-color) 100%);
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.09);
-    svg {
-      fill: #fff;
+    &__dot--after {
+       stroke: var(--primary-color);
     }
   }
-
-  .text-rotate {
-    position: absolute;
-    left:0;
-    font-size: .9rem;
-    right:0;
-    top: 120%;
-  }
-
 </style>
 
 

@@ -18,8 +18,8 @@
         <p>Vue Components</p>
         <p>Data Sources (GraphQL)</p>
         <p>Images & Links</p>
-        <p>Generate & Deploy</p>
-        <p>Developer Tools</p>
+        <p>Static Site Generation</p>
+        <p>Deploying</p>
 
         <h3> Guides </h3>
         <p>Install plugins</p>
@@ -51,6 +51,7 @@
         <p>Amazon S3</p>
         <p>GitHub Pages</p>
         <p>GitLab Pages</p>
+        <p>Up (Aws)</p>
 
       </div>
       <Section class="flex-fit" container="md">
