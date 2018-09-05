@@ -33,9 +33,11 @@
     align-items:center;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 5px;
     svg {
       margin: 3px 6px;
       opacity: .5;
+      display: none;
     }
     &.active {
       svg {
@@ -47,6 +49,7 @@
     color: currentColor;
     opacity: .7;
   }
+
 
   @media screen and (max-width: 750px) {
     .main-nav {
@@ -61,6 +64,10 @@
       min-height: 60px;
       flex-wrap: nowrap!important;
       padding: 10px var(--space);
+
+      a svg {
+        display:block;
+      }
     }
   }
 </style>
