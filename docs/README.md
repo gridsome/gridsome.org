@@ -22,7 +22,7 @@ Learn about the *core concepts* of building Gridsome sites
   <g-link>
     <Card> 
       <h4>Introduction</h4>
-      <p>How Gridsome works and why you should use it for your websites</p>
+      <p>Why Gridsome was built, how it works, and the alternatives</p>
     </Card>
   </g-link>
   
