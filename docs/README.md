@@ -5,7 +5,7 @@ You don't need to know Vue.js to get started with Gridsome, but it's  recommende
 
 
 ### 1. Install Gridsome CLI tool
-`npm install --global gridsome-cli`
+`npm install --global @gridsome/cli`
 
 ### 2. Create a Gridsome project
 1. `gridsome  my-gridsome-site` to create a new project </li>
