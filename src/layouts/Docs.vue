@@ -4,54 +4,15 @@
       <div class="sidebar dots-bg">
         
         <input type="search" placeholder="Search docs..." />
-        <h3 style="margin-top: 5px">
-          Getting started
-        </h3>
-        <p>Install Gridsome CLI</p>
-        <p>Starter kits</p>
 
-        <h3>
-          Core concepts
-        </h3>
-        <p>Introduction</p>
-        <p>Pages, layouts & templates</p>
-        <p>Vue Components</p>
-        <p>Data Sources (GraphQL)</p>
-        <p>Images & Links</p>
-        <p>Static Site Generation</p>
-        <p>Deploying</p>
-
-        <h3> Guides </h3>
-        <p>Install plugins</p>
-        <p>Add custom CSS</p>
-        <p>Add critical CSS</p>
-        <p>Add custom fonts</p>
-        <p>Add pagination to Source</p>
-        <p>Add a Source template</p>
-
-        <h3>API Reference</h3>
-        <p>CLI</p>
-        <p>Config</p>
-        <p>Head</p>
-        <p>Pages</p>
-        <p>Plugins</p>
-        <p>Components</p>
-
-        <h3>Global Components</h3>
-        <p>Link</p>
-        <p>Image</p>
-        <p>Pagination</p>
-        <p>Slots</p>
-        <p>Transition</p>
-
-        <h3>Deploy</h3>
-        
-        <p>Netlify</p>
-        <p>Zeit Now</p>
-        <p>Amazon S3</p>
-        <p>GitHub Pages</p>
-        <p>GitLab Pages</p>
-        <p>Up (Aws)</p>
+        <template v-for="group in links">
+          <h3>{{ group.title }}</h3>
+          <p v-for="item in group.items">
+            <g-link :to="item.link">
+              {{ item.title }}
+            </g-link>
+          </p>
+        </template>
 
       </div>
       <Section class="flex-fit" container="md">
@@ -93,3 +54,15 @@ query Docs {
   },
 }
 </static-query>
+
+<script>
+import links from '@/data/doc-links.yaml'
+
+export default {
+  computed: {
+    links () {
+      return links
+    }
+  }
+}
+</script>

@@ -1,0 +1,77 @@
+- title: Gettings started
+  items:
+    - title: Install Gridsome CLI
+      link: /docs
+    - title: Starter kits
+      link: /docs/starters
+
+- title : Core concepts
+  items:
+    - title: Introduction
+      link: /docs/introduction
+    - title: Pages, layouts & templates
+      link: /docs/pages-layouts-templates
+    - title: Vue Components
+      link: /docs/vue-components
+    - title: Sources & GraphQL
+      link: /docs/sources-graphql
+    - title: Images & Links
+      link: /docs/images-links
+    - title: Static Site Generation
+      link: /docs/generation
+    - title: Deploying
+      link: /docs/deploying
+
+- title: Guides
+  items:
+    - title: Install plugins
+      link: /docs/guide/install-plugins
+    - title: Custom CSS
+      link: /docs/guide/custom-css
+    - title: Inlining critical CSS
+      link: /docs/guide/critical-css
+    - title: Custom fonts
+      link: /docs/guide/custom-fonts
+    - title: Source templates
+      link: /docs/guide/templates
+    - title: Pagination for source lists
+      link: /docs/guide/pagination
+
+- title: API Reference
+  items:
+    - title: Gridsome CLI
+      link: /docs/api/cli
+    - title: Project config
+      link: /docs/api/config
+    - title: Head
+      link: /docs/api/head
+    - title: Pages
+      link: /docs/api/pages
+    - title: Plugins
+      link: /docs/api/plugins
+    - title: Components
+      link: /docs/api/components
+
+- title: Core components
+  items:
+    - title: Link
+      link: /docs/components/link
+    - title: Image
+      link: /docs/components/image
+    - title: Pagination
+      link: /docs/components/pagination
+
+- title: Deploy
+  items:
+    - title: Netlify
+      link: /docs/deploy/netlify
+    - title: Zeit Now
+      link: /docs/deploy/now
+    - title: Amazon S3
+      link: /docs/deploy/amazon-s3
+    - title: GitHub Pages
+      link: /docs/deploy/github-pages
+    - title: GitLab Pages
+      link: /docs/deploy/gitlab-pages
+    - title: Up (aws)
+      link: /docs/deploy/up
