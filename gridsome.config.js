@@ -32,9 +32,9 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        type: 'page',
-        index: ['README'],
-        path: 'blog/**/*.md',
+        type: 'post',
+        path: 'blog/*/index.md',
+        route: '/blog/:year/:month/:day/:slug+',
         typeName: 'Blog'
       }
     }

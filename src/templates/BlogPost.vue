@@ -1,0 +1,47 @@
+<template>
+  <Layout>
+    <div class="post">
+      <h1 v-html="$page.post.title"/>
+      <PostMeta :post="$page.post"/>
+      <p class="lead" v-html="$page.post.fields.excerpt"/>
+      <div v-html="$page.post.content"/>
+    </div>
+  </Layout>
+</template>
+
+<graphql>
+query BlogPost ($path: String!) {
+  post: blogPost (path: $path) {
+    title
+    date (format: "D. MMMM YYYY")
+    timeToRead
+    content
+    fields {
+      author
+      excerpt
+    }
+  }
+}
+</graphql>
+
+<script>
+import PostMeta from '@/components/PostMeta.vue'
+
+export default {
+  components: {
+    PostMeta
+  },
+  metaInfo () {
+    return {
+      title: this.$page.post.title
+    }
+  }
+}
+</script>
+
+<style scoped>
+.post {
+  margin: 8% auto 5.0em;
+  max-width: 650px;
+}
+</style>
