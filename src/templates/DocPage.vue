@@ -1,12 +1,18 @@
 <template>
   <DocsLayout>
     <div v-html="$page.doc.content"></div>
+    <p>
+      <a :href="editLink" target="_blank">
+        Edit this page on GitHub
+      </a>
+    </p>
   </DocsLayout>
 </template>
 
 <graphql>
 query DocPage ($path: String!) {
   doc: docPage (path: $path) {
+    path
     content
     title: headings (depth: h1) {
       value
@@ -17,6 +23,12 @@ query DocPage ($path: String!) {
 
 <script>
 export default {
+  computed: {
+    editLink () {
+      const path = this.$page.doc.path
+      return `https://github.com/gridsome/gridsome.org/blob/master${path}.md`
+    }
+  },
   metaInfo () {
     const { title } = this.$page.doc
 
