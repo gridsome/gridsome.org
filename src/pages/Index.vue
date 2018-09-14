@@ -67,7 +67,7 @@
         </p>
           <hr />
         <h3>Connect to any CMS or Data Source <span class="gradient-3" style="display:inline-block; vertical-align:middle; line-height: 50px; width: 60px; height: 60px; margin-left: 20px; border-radius: 999px; text-align:center;">1</span></h3>
-        <p>Use Gridsome source plugins to connect to any CMS or data source. Get data from local Markdown files, WordPress, Contentful or any headless CMS & content APIs. Data are pulled into a universal <g-link to="docs/source"><strong>GraphQL </strong> <graph-ql-logo style="margin-left:0" /></g-link> interface that any Compnents, <g-link to="docs/layouts-pages-templates">Page, Layout or Template</g-link> can access and add data from.</p>
+        <p>Use Gridsome source plugins to connect to any CMS or data source. Get data from local Markdown files, WordPress, Contentful or any headless CMS & content APIs. Data are pulled into a universal <g-link to="docs/sources"><strong>GraphQL </strong> <graph-ql-logo style="margin-left:0" /></g-link> interface that any Compnents, <g-link to="docs/layouts-pages-templates">Page, Layout or Template</g-link> can access and add data from.</p>
 
 
          <svg width="255" height="80" viewBox="0 0 215 64" fill="none" xmlns="http://www.w3.org/2000/svg">

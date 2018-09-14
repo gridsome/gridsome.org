@@ -15,8 +15,6 @@
       link: /docs/layouts-pages-templates
     - title: Data Sources (GraphQL)
       link: /docs/sources
-    - title: Images & Links
-      link: /docs/images-links
     - title: Static Site Generator
       link: /docs/static-site-generator
     - title: Hosting & Deployment

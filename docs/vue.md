@@ -6,7 +6,7 @@ Take a look at this video to learn quickly about Vue:
 
 <iframe src="https://player.vimeo.com/video/247494684?color=4fc08d&title=0&byline=0&portrait=0" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-<a href="https://vuejs.org/v2/guide/" class="external"> Go to Vue.js documentation</a>
+[Go to Vue.js documentation](https://vuejs.org/v2/guide)
 
 
 ## Single File Components
@@ -18,57 +18,53 @@ Here is an example of a Single File Component .vue file
 
 ```javascript
 <template>
-	<div class="card">
-		{{ reactiveData }}
-		<button @click="clickMe">Change</button>
-	</div>
+  <div class="card">
+    {{ reactiveData }}
+    <button @click="clickMe">Change</button>
+  </div>
 </template>
 
 <script>
 export default {
-	name: 'Card',
-	data() {
-		return {
-			reactiveData: 'Try change me!'
-		}
-	},
-	metohds: {
-		clickMe() {
-			this.reactiveData = 'Here you go :)'
-		}
-	}
+  name: 'Card',
+  data() {
+    return {
+      reactiveData: 'Try change me!'
+    }
+  },
+  metohds: {
+    clickMe() {
+      this.reactiveData = 'Here you go :)'
+    }
+  }
 }
 </script>
 
 <style>
-	.card {
-		padding: 20px;
-		background: #FFF;
-	}
+.card {
+  padding: 20px;
+  background: #FFF;
+}
 </style>
 
 ```
 
-
-<a href="https://vuejs.org/v2/guide/single-file-components.html" class="external">
-	Learn more about Single File Components
-</a>
-
+[Learn more about Single File Components](https://vuejs.org/v2/guide/single-file-components.html)
 
 ### Import to other Pages or Components
 When you have created a component you can easily import into your pages. In Gridsome projects it's recommended to put all your .vue components in the **src/components** folder and import them into Pages or Layouts like this:
 
 ```javascript
 <template>
-	<Card />
+  <Card />
 </template>
 
 <script>
 import Card from '@/components/card'
 export default {
-	components: {
-		Card
-	}
+  components: {
+    Card
+  }
 }
 </script>
 
@@ -81,20 +77,17 @@ Install <br> `npm install -D sass-loader node-sass` to your project and use it l
 
 ```javascript
 <style lang="scss">
-	.card {
-		background:#FFF;
+.card {
+  background:#FFF;
 
-		&__inner {
-			padding: 20px;
-		}
-	}
+  &__inner {
+    padding: 20px;
+  }
+}
 </style>
 ```
 
-
-<a href="https://vue-loader.vuejs.org/guide/pre-processors.html" class="external">
-	Learn more about using Using Pre-Processors in Vue.js
-</a>
+[Learn more about using Using Pre-Processors in Vue.js](https://vue-loader.vuejs.org/guide/pre-processors.html)
 
 
 
@@ -105,16 +98,12 @@ Its very easy to add scoped styles in vue. Simple add "scoped" to the style tag 
 
 ```javascript
 <style scoped>
-	.card {
-		background:#FFF;
-	}
+.card {
+  background:#FFF;
+}
 </style>
 ```
 
 This will change the .card class in current component automatically to f.ex **.card[x5u123sc5s1]** and only apply style to that class.
 
-
-<a href="https://vue-loader.vuejs.org/guide/scoped-css.html" class="external">
-	Learn more about Scoped styles in Vue
-</a>
-
+[Learn more about Scoped styles in Vue](https://vue-loader.vuejs.org/guide/scoped-css.html)
