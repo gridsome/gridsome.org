@@ -2,7 +2,7 @@
   <Layout transparent="true">
     
     <Section dark="true" class="text-center" dots="true" container="md">
-      <h1>The Gridsome Blog</h1>
+      <h1>Gridsome Blog</h1>
       <p class="lead">Follow our mission to make building websites fun again.</p>
     </Section>
     
@@ -42,7 +42,7 @@
         <h4>So whats next...</h4>
 
         <p>
-          We believe the SSG / JAMstack trend is just getting started. When you have first started to make websites this way there is no way back. You will feel almost "dirty" when going back to setup a traditional WordPress / CMS setup. Try run the new Chrome "Audit" testing tool on a WordPress site. It is impossible to get good scores even with the best caching plugins and hosting. With Gridsome you don't even need caching plugins. Website optimsation is taken care of at build time.
+          We believe the SSG / JAMstack trend is just getting started. When you have first started to make websites this way there is no way back. You will feel almost "dirty" when going back to a traditional WordPress / CMS setup. Try run the new Chrome "Audit" testing tool on a WordPress site. It is impossible to get good scores even with the best caching plugins and hosting. With Gridsome you don't even need caching plugins. Website optimsation is taken care of at build time.
         </p>
 
 
