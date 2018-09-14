@@ -16,7 +16,7 @@
 
         <h4>There are so many Static Site generators. Why another one?</h4>
 
-        <p>We think Gridsome is a missing piece to the Vue.js ecosystem. What Gatsby.js does for React.js is a game changer in how we build websites. Our goal is to do this for Vue.js. With Gridsome you get an universal GraphQL interface where all your connected data sources is. Its like a single source of truth for your website data ready to be inserted anywhere. This and Vue.js makes it extremely fun and fast to build websites. You don't need to know GraphQL to get started with Gridsome - It's a great way to get introduced to it.</p>
+        <p>We think Gridsome is a missing piece to the Vue.js ecosystem. What Gatsby.js does for React.js is a game changer in how we build websites. The goal is to do this for Vue.js. With Gridsome you get an universal GraphQL interface where all your connected data sources is. Its like a single source of truth for your website data ready to be inserted anywhere. This and Vue.js makes it extremely fun and fast to build websites. You don't need to know GraphQL or Vue.js to get started with Gridsome - It's a great way to get introduced to both.</p>
 
         <h4>Top scores on any speed testing tool - automagically ⚡️</h4>
 

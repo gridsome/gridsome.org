@@ -1,8 +1,8 @@
-# Vue.js
+# Vue.js-powered Static Site Generator
 
-Gridsome is powered by Vue.js - The Progressive JavaScript Framework. It's high performant, lightweight and perfect for building fast websites (Only 20kb min+gzip).
+Gridsome is powered by Vue.js. It's high performant, approachable, lightweight and perfect for building blazing fast websites (Only 20kb min+gzip). It's the front-end framework on GitHub with the most stars, used by big companies, and is here to stay.
 
-Take a look at this video to learn quickly about Vue:
+Take a look at this video to learn the basic concepts of Vue:
 
 <iframe src="https://player.vimeo.com/video/247494684?color=4fc08d&title=0&byline=0&portrait=0" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -13,7 +13,7 @@ Take a look at this video to learn quickly about Vue:
 
 Gridsome recommends to use Single File Components in your projects. This means you add Markdown, JavaScript and CSS all in the same file. This makes your projects easier to maintain and test and your components more reusable. You also get code-splitting out-of-the-box.
 
-Here is an example of a Single File Component .vue file
+Here is an example of a Single File Component file.
 
 
 ```html
