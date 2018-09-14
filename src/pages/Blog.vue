@@ -20,7 +20,7 @@
 
 <graphql>
 query BlogPosts {
-   posts: allBlogPost {
+  posts: allBlogPost {
     edges {
       node {
         _id
@@ -35,7 +35,7 @@ query BlogPosts {
         }
       }
     }
-  },
+  }
 }
 </graphql>
 
