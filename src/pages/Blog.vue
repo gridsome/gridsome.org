@@ -8,8 +8,49 @@
     
     <div class="blog-posts">
       <div class="blog-posts__post container container-md  container--framed">
-        <h2>Just another Static Site Generator?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores ab harum aliquid dignissimos neque.</p>
+        <h2>Say hello to Gridsome 0.0.1 👶🎉💚</h2>
+        <p class="lead">
+          A new static site generator (SSG) baby is born. It's highly inspired by Gatsby.js (React based) but it's built on top of Vue.js. You can expect this cool baby to grow up really fast!
+        </p>
+
+
+        <h4>There are so many Static Site generators. Why another one?</h4>
+
+        <p>We think Gridsome is a missing piece to the Vue.js ecosystem. What Gatsby.js does for React.js is a game changer in how we build websites. Our goal is to do this for Vue.js. With Gridsome you get an universal GraphQL interface where all your connected data sources is. Its like a single source of truth for your website data. This togheter with Vue.js makes it extremely fun and fast to build websites. You don't need to know GraphQL to get started with Gridsome - It's a great way to get introduced to it</p>
+
+        <h4>Top scores on any speed testing tool - automagically ⚡️</h4>
+
+        <p>One of the main goals with Gridsome is to make a framework that let you build websites that are optimized "out-of-the-box". A Gridsome site should get almost top scores on Lighthouse or Google Page Speed testing tools. It follows the <a href="https://developers.google.com/web/fundamentals/performance/prpl-pattern/">PRPL-pattern by Google.</a> Images are automatically optimized and lazy-loaded with the built-in Image component.</p>
+
+
+
+        <h4>A Static JAMstack framework</h4>
+
+        <p>
+          JAMstack is a new way to build websites that gives you better performance, higher security, cheaper hosting and better developer experience. In a Static JAMstack framework the pages are created at build-time, but very easy to change or update data with APIs thanks to Vue.js and the reactive data model when users browse around. 
+        </p>
+
+
+        <p>Imagine a static Shopify store where prices and QTY gets pulled from API when users open product page. This gives you extreme page speed, thanks to static site generation, but still be able get real-time prices and qty.</p>
+
+        <p>This is what we think are really exiting with SSGs / JAMstack and why we are building Gridsome. <strong>We think Gridsome could be the best front-end solution</strong> for any headless CMS or content APIs</p>
+
+
+        <h4>Whats next...</h4>
+
+        <p>We believe the SSG / JAMstack trend is just getting started. When you have first started to make websites this way there is no way back. You will feel almost "dirty" when going back to setup a traditional WordPress setup. SSG is the future of website building.</p>
+
+        <p>We think Gridsome could be the go-to framework for Vue.js powered PWA & SPA for any CMS or data source.</p>
+
+
+        <p>In the next couple of months we're going to continue to improve the docs, add more Source & transformer plugins and fix bugs.</p>
+
+
+        <h4>Help this baby grow!</h4>
+
+        <p>It's just me and my brother working on this now, so any contribution is very welcome!</p>
+
+
       </div>
     </div>
 

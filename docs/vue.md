@@ -1,6 +1,6 @@
 # Vue.js
 
-Gridsome is powered by Vue.js - The Progressive JavaScript Framework. It's high performant, lightweight and perfect for fast websites (Only 20kb min+gzip).
+Gridsome is powered by Vue.js - The Progressive JavaScript Framework. It's high performant, lightweight and perfect for building fast websites (Only 20kb min+gzip).
 
 Take a look at this video to learn quickly about Vue:
 
