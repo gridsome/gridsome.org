@@ -60,7 +60,7 @@
     - title: Zeit Now
       link: /docs/deploy-to-zeit-now
     - title: Amazon S3
-      link: /docs/deploy-to-amazon
+      link: /docs/deploy-to-amazon-s3
     - title: GitHub Pages
       link: /docs/deploy-to-github-pages
     - title: GitLab Pages

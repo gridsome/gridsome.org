@@ -1,0 +1,22 @@
+- title: Sources
+  items:
+    - title: File system
+      link: /plugins/source-filesystem
+    - title: WordPress
+      link: /plugins/source-wordpress
+    - title: Contentful
+      link: /plugins/source-contentful
+    - title: Faker
+      link: /plugins/source-faker
+
+- title : Transformers
+  items:
+    - title: Remark
+      link: /plugins/transformer-remark
+
+- title : Plugins
+  items:
+    - title: Critial CSS
+      link: /plugins/plugin-critical-css
+    - title: Typography
+      link: /plugins/plugin-typography

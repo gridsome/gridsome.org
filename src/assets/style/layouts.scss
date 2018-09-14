@@ -20,6 +20,12 @@
     margin-left: -15px;
     margin-right: -15px;
   }
+
+  &--framed {
+    box-shadow: 1px 1px 15px rgba(0,0,0,.1);
+    padding: var(--space);
+    background-color: #FFF;
+  }
 }
 
 .sidebar {
@@ -41,11 +47,32 @@
     margin-top: var(--header-height);
   }
 
-  &.wide {
-    width: 400px;
+  h3 {
+    font-size: .75rem;
+    color: #7a9a8a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 35px 0 15px;
+  }
 
-    + .section {
-      margin-left: 400px;
+  p {
+    margin-bottom: 5px;
+    font-size: .9rem;
+  }
+
+  a {
+    color: currentColor;
+    opacity: 1;
+
+    &:hover {
+      opacity: .6;
+    }
+
+    &.active--exact {
+      color: #000;
+      opacity: 1;
+      font-weight: 600;
     }
   }
+
 }

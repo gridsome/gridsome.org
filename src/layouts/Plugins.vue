@@ -1,24 +1,17 @@
 <template>
   <Layout class="has-sidebar" :footer="false">
     <div class="flex gap-60 flex-align-top">
-      <div class="sidebar wide dots-bg">
+      <div class="sidebar dots-bg">
         
-        <input type="search" placeholder="Search plugins..." />
-        
-        <ul>
-          <li v-for="{ node } in $static.docs.edges">
-            <g-link :to="node.path">
-              {{ node.title[0] ? node.title[0].value : node.path }}
+        <template v-for="group in links">
+          <h3>{{ group.title }}</h3>
+          <p v-for="item in group.items">
+            <g-link :to="item.link">
+              {{ item.title }}
             </g-link>
-            <ul>
-              <li v-for="heading in node.headings">
-                <g-link :to="`${node.path}${heading.anchor}`">
-                  {{ heading.value }}
-                </g-link>
-              </li>
-            </ul>
-          </li>
-        </ul>
+          </p>
+        </template>
+
       </div>
       <Section class="flex-fit" container="md">
         <slot />
@@ -27,21 +20,15 @@
   </Layout>
 </template>
 
-<static-query>
-query Docs {
-  docs: allDocPage {
-    edges {
-      node {
-        path
-        title: headings (depth: h1) {
-          value
-        }
-        headings (depth: h2) {
-          value
-          anchor
-        }
-      }
+
+<script>
+import links from '@/data/plugin-links.yaml'
+
+export default {
+  computed: {
+    links () {
+      return links
     }
-  },
+  }
 }
-</static-query>
+</script>

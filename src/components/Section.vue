@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  props: ['dark', 'dots', 'container'],
+  props: ['dark', 'dots', 'container', 'framed'],
   computed: {
     sectionClass() {
       let classes = []
@@ -18,6 +18,9 @@ export default {
     },
     sectionClassInner() {
       let classes = []
+      if(this.framed) {
+        classes.push('container--framed')
+      }
       if(this.container) {
         classes.push('container-' + this.container)
       } else {
@@ -31,7 +34,7 @@ export default {
 
 <style lang="scss">
 .section {
-  padding: calc(5% + var(--space)) 0;
+  padding: calc(3.33% + var(--space)) 0;
   position: relative;
 
   &__dots-bg {
