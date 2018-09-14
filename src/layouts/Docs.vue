@@ -22,7 +22,7 @@
   </Layout>
 </template>
 
-<style>
+<style lang="scss">
   .sidebar h3 {
     font-size: .75rem;
     color: #7a9a8a;
@@ -34,6 +34,22 @@
     margin-bottom: 5px;
     font-size: .9rem;
   }
+
+  .sidebar a {
+    color: currentColor;
+    opacity: 1;
+
+    &:hover {
+      opacity: .6;
+    }
+
+    &.active--exact {
+      color: #000;
+      opacity: 1;
+      font-weight: 600;
+    }
+  }
+
 </style>
 
 <static-query>

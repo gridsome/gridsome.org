@@ -9,69 +9,59 @@
   items:
     - title: Introduction
       link: /docs/introduction
-    - title: Pages, layouts & templates
-      link: /docs/pages-layouts-templates
     - title: Vue Components
-      link: /docs/vue-components
-    - title: Sources & GraphQL
-      link: /docs/sources-graphql
+      link: /docs/vue
+    - title: Layouts, Pages & Templates
+      link: /docs/layouts-pages-templates
+    - title: Data Sources (GraphQL)
+      link: /docs/sources
     - title: Images & Links
       link: /docs/images-links
-    - title: Static Site Generation
-      link: /docs/generation
-    - title: Deploying
-      link: /docs/deploying
+    - title: Static Site Generator
+      link: /docs/static-site-generator
+    - title: Hosting & Deployment
+      link: /docs/deployment
 
 - title: Guides
   items:
     - title: Install plugins
-      link: /docs/guide/install-plugins
+      link: /docs/install-plugins
     - title: Custom CSS
-      link: /docs/guide/custom-css
+      link: /docs/custom-css
     - title: Inlining critical CSS
-      link: /docs/guide/critical-css
+      link: /docs/critical-css
     - title: Custom fonts
-      link: /docs/guide/custom-fonts
-    - title: Source templates
-      link: /docs/guide/templates
-    - title: Pagination for source lists
-      link: /docs/guide/pagination
+      link: /docs/custom-fonts
+    - title: Custom head meta
+      link: /docs/custom-head-meta
 
 - title: API Reference
   items:
     - title: Gridsome CLI
-      link: /docs/api/cli
+      link: /docs/gridsome-cli
     - title: Project config
-      link: /docs/api/config
-    - title: Head
-      link: /docs/api/head
-    - title: Pages
-      link: /docs/api/pages
+      link: /docs/config
     - title: Plugins
-      link: /docs/api/plugins
-    - title: Components
-      link: /docs/api/components
+      link: /docs/plugins
 
 - title: Core components
   items:
     - title: Link
-      link: /docs/components/link
+      link: /docs/link
     - title: Image
-      link: /docs/components/image
+      link: /docs/image
     - title: Pagination
-      link: /docs/components/pagination
+      link: /docs/pagination
 
 - title: Deploy
   items:
     - title: Netlify
-      link: /docs/deploy/netlify
+      link: /docs/deploy-to-netlify
     - title: Zeit Now
-      link: /docs/deploy/now
+      link: /docs/deploy-to-zeit-now
     - title: Amazon S3
-      link: /docs/deploy/amazon-s3
+      link: /docs/deploy-to-amazon
     - title: GitHub Pages
-      link: /docs/deploy/github-pages
+      link: /docs/deploy-to-github-pages
     - title: GitLab Pages
-      link: /docs/deploy/gitlab-pages
-    - title: Up (aws)
-      link: /docs/deploy/up
+      link: /docs/deploy-to-gitlab-pages

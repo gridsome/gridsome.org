@@ -37,7 +37,6 @@
     svg {
       margin: 3px 6px;
       opacity: .5;
-      display: none;
     }
     &.active {
       svg {
@@ -65,9 +64,7 @@
       flex-wrap: nowrap!important;
       padding: 10px var(--space);
 
-      a svg {
-        display:block;
-      }
+ 
     }
   }
 </style>

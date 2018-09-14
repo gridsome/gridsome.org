@@ -1,6 +1,5 @@
 <template>
   <DocsLayout>
-    asdfasdf
     <div v-html="$page.doc.content"></div>
   </DocsLayout>
 </template>

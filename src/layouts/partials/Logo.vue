@@ -13,11 +13,12 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
  .logo {
-  margin-top: -4px;
- }
- .logo:hover {
- 	opacity: .8;
+  margin-top: -1px;
+  
+  &:hover {
+ 		opacity: .8;
+ 	}
  }
 </style>
