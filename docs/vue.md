@@ -1,4 +1,4 @@
-# Vue.js-powered Static Site Generator
+# Vue.js
 
 Gridsome is powered by Vue.js. It's high performant, approachable, lightweight and perfect for building blazing fast websites (Only 20kb min+gzip). It's the front-end framework on GitHub with the most stars, used by big companies, and is here to stay.
 
