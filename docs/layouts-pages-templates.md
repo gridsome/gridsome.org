@@ -47,7 +47,7 @@ to fetch data from data sources. The results will be stored in a
   <Layout>
     <h2>Latest blog posts</h2>
     <ul>
-      <li v-for="edge in $page.allBlogPost.edges" :key="edge.node._id">
+      <li v-for="edge in $page.allWordPressPost.edges" :key="edge.node._id">
         {{ edge.node.title }}
       </li>
     </ul>
@@ -56,7 +56,7 @@ to fetch data from data sources. The results will be stored in a
 
 <graphql>
 query Blog {
-  allBlogPost (limit: 5) {
+  allWordPressPost (limit: 5) {
     edges {
       node {
         _id
