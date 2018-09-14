@@ -19,6 +19,7 @@
     "@gridsome/plugin-critical": "^0.0.1",
     "@gridsome/plugin-typography": "^0.0.1",
     "@gridsome/transformer-remark": "^0.0.1",
+    "@gridsome/remark-prismjs": "^0.0.1",
     "vue-server-renderer": "^2.5.17",
     "vue-template-compiler": "^2.5.17"
   },

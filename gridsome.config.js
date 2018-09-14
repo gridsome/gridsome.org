@@ -12,7 +12,12 @@ module.exports = {
         type: 'page',
         index: ['README'],
         path: 'docs/**/*.md',
-        typeName: 'Doc'
+        typeName: 'Doc',
+        remark: {
+          plugins: [
+            '@gridsome/remark-prismjs'
+          ]
+        }
       }
     }
   ]

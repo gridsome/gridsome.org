@@ -1,20 +1,15 @@
-#app pre,
 #app code {
-  background-color: var(--code-color);
+}
+
+#app code {
+  padding: 8px 12px;
   font-family: Space Mono,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
-  padding: 4px 8px 3px;
-  display:inline-block;
-  color: #000;
-  padding-bottom: 0.1em;
-  font-size: 85%;
 }
 
 #app pre {
-  padding: 10px 20px;
-    display: block;
+  margin-bottom: 2.0em;
 
-  code {
-    background: none;
-    border:0;
+  > code {
+    padding: 0;
   }
 }
