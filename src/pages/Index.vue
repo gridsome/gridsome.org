@@ -67,18 +67,18 @@
         </p>
           <hr />
         <h3>Connect to any CMS or Data Source <span class="gradient-3" style="display:inline-block; vertical-align:middle; line-height: 50px; width: 60px; height: 60px; margin-left: 20px; border-radius: 999px; text-align:center;">1</span></h3>
-        <p>Use Gridsome source plugins to connect to any CMS or data source. Get data from local Markdown files, WordPress, Contentful or any headless CMS & content APIs. Data is pulled into a universal <g-link to="docs/source"><strong>GraphQL </strong> <graph-ql-logo style="margin-left:0" /></g-link> interface that any <g-link to="docs/layouts-pages-templates">Page, Layout or Template</g-link> can access.</p>
+        <p>Use Gridsome source plugins to connect to any CMS or data source. Get data from local Markdown files, WordPress, Contentful or any headless CMS & content APIs. Data are pulled into a universal <g-link to="docs/source"><strong>GraphQL </strong> <graph-ql-logo style="margin-left:0" /></g-link> interface that any Compnents, <g-link to="docs/layouts-pages-templates">Page, Layout or Template</g-link> can access and add data from.</p>
 
 
-         <svg width="215" height="64" viewBox="0 0 215 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <svg width="255" height="80" viewBox="0 0 215 64" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path class="stroke-anim" d="M213.721 1.01564C191.069 18.673 142.278 36.8063 109.706 36.282C76.2304 35.7431 28.511 34.8609 0.42388 63.456" stroke="black"/>
         </svg>
 
 
       <h3><span class="gradient-4" style="display:inline-block; vertical-align:middle; line-height: 50px; width: 60px; height: 60px; margin-right: 20px; border-radius: 999px; text-align:center;">2</span>Build websites with Vue.js</h3>
-        <p>With clean and standard code syntax makes Vue.js very simple to understand for any web designers and web developers. Vue Single File Components lets you edit Markup, CSS and JavaScript all in the same file and get hot-reloading and automatic code-splitting. <g-link to="docs/sources">Learn more about Vue Components</g-link></p>
+        <p>With clean and standard code syntax makes Vue.js very approachable for any web designers and web developers. Vue Single File Components lets you edit Markup, CSS and JavaScript all in the same file and get hot-reloading and automatic code-splitting. Vue also gives you SPA features like instant page loading and page transitions.  <g-link to="docs/vue">Learn more about Vue</g-link></p>
         
-      <svg width="124" height="50" viewBox="0 0 124 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="154" height="70" viewBox="0 0 124 50" fill="none" xmlns="http://www.w3.org/2000/svg">
        <path class="stroke-anim" d="M0.388268 0.76767C12.9278 13.0338 40.7333 26.6027 59.8012 27.5046C79.3978 28.4315 107.337 29.6792 122.618 49.216" stroke="black"/>
       </svg>
 

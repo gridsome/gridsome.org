@@ -9,7 +9,7 @@
   items:
     - title: Introduction
       link: /docs/introduction
-    - title: Vue Components
+    - title: Vue & Single File Components
       link: /docs/vue
     - title: Layouts, Pages & Templates
       link: /docs/layouts-pages-templates
