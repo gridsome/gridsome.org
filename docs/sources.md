@@ -1,1 +1,1 @@
-# Introduction to Gridsome
+# Data Sources & the GraphQL layer

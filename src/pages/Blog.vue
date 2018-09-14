@@ -9,10 +9,13 @@
     <div class="blog-posts">
       <div class="blog-posts__post container container-md  container--framed">
         <h2>Say hello to Gridsome 0.0.1 👶🎉💚</h2>
+        <p><small>Posted 14. September 2018 by <a href="#">Tommy.</a> 3 min read</small></p>
+
+
         <p class="lead">
           A new static site generator (SSG) baby is born. It's highly inspired by Gatsby.js (React based) but it's built on top of Vue.js. You can expect this baby to grow up really fast!
         </p>
-
+        
 
         <h4>There are so many SSGs. Why another one?</h4>
 
@@ -54,6 +57,7 @@
         <h4>Help this baby grow!</h4>
 
         <p>It's just me and my brother working on this now, so any contribution is very welcome!</p>
+
 
 
       </div>
