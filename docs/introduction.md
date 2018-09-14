@@ -3,7 +3,7 @@
 	⚡️ A blazing fast static site generator powered by Vue.js
 </p>
 
-Gridsome uses GraphQL for a single source of truth for all the website data. You can add one or many sources that pulls data from any CMS, local Markdown or content APIs into the GraphQL layer. Data from the GraphQL interface can be inserted anywhere quickly. It also has Tranformer plugins that can manipulate the data coming out of GraphQL. Gridsome is highly inspired by Gatsby (A React.js alternative).
+Gridsome is a static site generator powered by GraphQL and Vue.js. It uses GraphQL as a single source of truth for all the data connected to the website. You can add one or many sources that pulls data from any CMS, local Markdown or content APIs into the GraphQL layer. Data from the GraphQL interface can be inserted anywhere quickly. It also has Tranformer plugins that can manipulate the data coming out of GraphQL. Gridsome is highly inspired by Gatsby (A React.js alternative).
 
 Gridsome was built because there was no good Vue.js alternative to Gatsby.
 
