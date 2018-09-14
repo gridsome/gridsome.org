@@ -59,34 +59,31 @@
       </div>
     </Section>
 
-    <Section dots="true">
+    <Section dots="true" container="md">
       <div class="container-md text-center">
         <h2>How Gridsome works</h2>
-        <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
-        <hr />
-        <h3><span class="gradient-3" style="display:inline-block; vertical-align:middle; line-height: 80px; width: 80px; height: 80px; margin-right: 20px; border-radius: 999px; text-align:center;">1</span>Connect to any CMS or Data Source</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-        
-      <svg width="386" height="74" viewBox="0 0 386 74" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path class="stroke-anim" d="M1.69481 1.2182C41.8439 19.8865 129.224 40.2118 188.128 41.16C248.667 42.1345 334.969 43.4097 384.45 73.2535" stroke="black"/>
-      </svg>
+        <p class="lead">
+          Build PWA & SPA-ready websites with perfect lighthouse and Google Page Speed scores in minutes
+        </p>
+          <hr />
+        <h3>Connect to any CMS or Data Source <span class="gradient-3" style="display:inline-block; vertical-align:middle; line-height: 50px; width: 60px; height: 60px; margin-left: 20px; border-radius: 999px; text-align:center;">1</span></h3>
+        <p>Use Gridsome source plugins to connect to any CMS or data source. Get data from local Markdown files, WordPress, Contentful or any headless CMS & content APIs. Data is pulled into a universal <g-link to="docs/source"><strong>GraphQL </strong> <graph-ql-logo style="margin-left:0" /></g-link> interface that any <g-link to="docs/layouts-pages-templates">Page, Layout or Template</g-link> can access.</p>
 
-      <h3>Access and use data from GraphQL<span class="gradient-2" style="display:inline-block; vertical-align:middle; line-height: 80px; width: 80px; height: 80px; margin-left: 20px; border-radius: 999px; text-align:center;">2</span></h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+
          <svg width="215" height="64" viewBox="0 0 215 64" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path class="stroke-anim" d="M213.721 1.01564C191.069 18.673 142.278 36.8063 109.706 36.282C76.2304 35.7431 28.511 34.8609 0.42388 63.456" stroke="black"/>
         </svg>
 
 
-      <h3><span class="gradient-4" style="display:inline-block; vertical-align:middle; line-height: 80px; width: 80px; height: 80px; margin-right: 20px; border-radius: 999px; text-align:center;">3</span>Build websites with Vue.js</h3>
-        <p>With clean and standard code syntax makes Vue.js very simple to understand for any web designers and web developers. Vue.js Single File Components lets you add HTML, CSS and JavaScript all in the same file</p>
+      <h3><span class="gradient-4" style="display:inline-block; vertical-align:middle; line-height: 50px; width: 60px; height: 60px; margin-right: 20px; border-radius: 999px; text-align:center;">2</span>Build websites with Vue.js</h3>
+        <p>With clean and standard code syntax makes Vue.js very simple to understand for any web designers and web developers. Vue Single File Components lets you edit Markup, CSS and JavaScript all in the same file and get hot-reloading and automatic code-splitting. <g-link to="docs/sources">Learn more about Vue Components</g-link></p>
         
       <svg width="124" height="50" viewBox="0 0 124 50" fill="none" xmlns="http://www.w3.org/2000/svg">
        <path class="stroke-anim" d="M0.388268 0.76767C12.9278 13.0338 40.7333 26.6027 59.8012 27.5046C79.3978 28.4315 107.337 29.6792 122.618 49.216" stroke="black"/>
       </svg>
 
-      <h3>Generate & Deploy<span class="gradient-5" style="display:inline-block; vertical-align:middle; line-height: 80px; width: 80px; height: 80px; margin-left: 20px; border-radius: 999px; text-align:center;">3</span></h3>
-        <p>The powerful <strong>static site generator</strong> creates HTML files of all pages & content that SEO engines can crawl - ready to be deployed and hosted safely on any global CDN or FTP. You can also use CI service like <strong>Netlify</strong> that generates, deploy and host your websites from a selected Git-repo automatically. <g-link to="docs/deploy"> Learn more about deploying here </g-link></p>
+      <h3>Generate & Deploy<span class="gradient-5" style="display:inline-block; vertical-align:middle; line-height: 60px; width: 60px; height: 60px; margin-left: 20px; border-radius: 999px; text-align:center;">3</span></h3>
+        <p>The blazing fast <strong>static site generator</strong> creates HTML files of all pages & content that SEO engines can crawl - ready to be deployed and hosted safely on any global CDN or FTP. You can also use CI service like <strong>Netlify</strong> that generates, deploy and host your websites from a selected Git-repo automatically. <g-link to="docs/deployment"> Learn more about deplolyment here </g-link></p>
 
         <g-link to="/docs" class="button lead"> Get started </g-link>
       </div>
