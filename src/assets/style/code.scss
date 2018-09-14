@@ -1,15 +1,17 @@
+#app pre,
 #app code {
-}
-
-#app code {
-  padding: 8px 12px;
   font-family: Space Mono,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+  background-color: var(--code-color);
 }
 
+// code blocks
 #app pre {
+  padding: 1.0em 1.4em;
   margin-bottom: 2.0em;
-
-  > code {
-    padding: 0;
-  }
 }
+
+// inline code
+#app code {
+  padding: 0.2em 0.4em;
+}
+
