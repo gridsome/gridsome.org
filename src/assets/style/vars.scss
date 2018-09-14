@@ -6,12 +6,15 @@
   --primary-link-color: #33845E;
   --border-color: rgb(223, 234, 219);
   --space: 30px;
+  --space-x2: 60px;
   --code-color: #dbe4de52;
 }
 
 @media screen and (max-width: 750px) {
   :root {
     --space: 15px;
+    --space-x2: 30px;
     --header-height: 50px;
+
   }
 }

@@ -14,7 +14,7 @@
         </p>
 
 
-        <h4>There are so many Static Site generators. Why another one?</h4>
+        <h4>There are so many SSGs. Why another one?</h4>
 
         <p>We think Gridsome is a missing piece to the Vue.js ecosystem. What Gatsby.js does for React.js is a game changer in how we build websites. The goal is to do this for Vue.js. With Gridsome you get an universal GraphQL interface where all your connected data sources is. Its like a single source of truth for your website data ready to be inserted anywhere. This and Vue.js makes it extremely fun and fast to build websites. You don't need to know GraphQL or Vue.js to get started with Gridsome - It's a great way to get introduced to both.</p>
 
@@ -27,22 +27,22 @@
         <h4>A better way to build websites</h4>
 
         <p>
-          JAMstack is a new way to build websites that gives you better performance, higher security, cheaper hosting and better developer experience. In a Static JAMstack framework like Gridsome the pages are created at build time, but can easily add dynamic functionality with Vue.js.
+          Gridsome is a JAMstack framework - a new way to build websites that gives you better performance, higher security, cheaper hosting and better developer experience. While pages are static generated at build time, for SEO & speed purpose, you can add powerful dynamic functionality with Vue.js.
         </p>
 
 
         <p>
-          Imagine a static Shopify store where prices and Qty. gets pulled from an API when users open product page. This gives you extreme page speed, thanks to static site generation, but still be able get real-time prices and qty.
+          Imagine a static generated Shopify store where prices and Qty. gets pulled from an API when users open the static optimized product page. You get the best from both worlds, and an extremely fast website.
         </p>
 
         <p>
-          This is what we think are really exiting with SSGs / JAMstack and is why we are building Gridsome. <strong>The goal is to be the perfect front-end solution</strong> for any headless CMS or content APIs.
+          This is what we think are really exiting with SSGs / JAMstack and is why we are building Gridsome. <strong>Its the perfect SPA & PWA front-end solution</strong> for any headless CMS or content APIs.
         </p>
 
         <h4>So whats next...</h4>
 
         <p>
-          We believe the SSG / JAMstack trend is just getting started. When you have first started to make websites this way there is no way back. You will feel almost "dirty" when going back to setup a traditional WordPress / CMS setup. SSGs are the future of website building, and makes website building fun again.
+          We believe the SSG / JAMstack trend is just getting started. When you have first started to make websites this way there is no way back. You will feel almost "dirty" when going back to setup a traditional WordPress / CMS setup. Try run the new Chrome "Audit" testing tool on a WordPress site. It is impossible to get good scores even with the best caching plugins and hosting. With Gridsome you don't even need caching plugins. Website optimsation is taken care of at build time.
         </p>
 
 
@@ -64,7 +64,7 @@
 
 <style lang="scss">
 .blog-posts {
-  padding: 2rem;
+  padding: 2rem 1rem;
 
   &__post {
     margin-bottom: 2rem;
