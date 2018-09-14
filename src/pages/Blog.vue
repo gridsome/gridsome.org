@@ -3,7 +3,7 @@
     
     <Section dark="true" class="text-center" dots="true" container="md">
       <h1>The Gridsome Blog</h1>
-      <p class="lead">We're on a mission to make building websites fun again.</p>
+      <p class="lead">Follow our mission to make building websites fun again.</p>
     </Section>
     
     <div class="blog-posts">
@@ -14,7 +14,7 @@
     </div>
 
   </Layout>
-</template>
+</template> 
 
 <style lang="scss">
 .blog-posts {
