@@ -16,7 +16,7 @@ Gridsome recommends to use Single File Components in your projects. This means y
 Here is an example of a Single File Component .vue file
 
 
-```javascript
+```html
 <template>
   <div class="card">
     {{ reactiveData }}
@@ -54,7 +54,7 @@ export default {
 ### Import to other Pages or Components
 When you have created a component you can easily import into your pages. In Gridsome projects it's recommended to put all your .vue components in the **src/components** folder and import them into Pages or Layouts like this:
 
-```javascript
+```html
 <template>
   <Card />
 </template>
@@ -75,7 +75,7 @@ export default {
 You can use Sass in your Single File Components.
 Install <br> `npm install -D sass-loader node-sass` to your project and use it like this:
 
-```javascript
+```html
 <style lang="scss">
 .card {
   background:#FFF;
@@ -96,7 +96,7 @@ Install <br> `npm install -D sass-loader node-sass` to your project and use it l
 Its very easy to add scoped styles in vue. Simple add "scoped" to the style tag to automatically add suffix to any CSS class in Markup. This means that styles here will only be applied to current component regardless of the class names you use.
 
 
-```javascript
+```html
 <style scoped>
 .card {
   background:#FFF;

@@ -1,5 +1,6 @@
 .button {
-	display: inline-block;
+	display: inline-flex;
+  align-items:center;
 	padding: .35rem .8rem;
   font-weight: bold;
   letter-spacing: .5px;

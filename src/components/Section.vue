@@ -36,6 +36,8 @@ export default {
 .section {
   padding: calc(3.33% + var(--space)) 0;
   position: relative;
+  width: 100%;
+
 
   &__dots-bg {
     height: 600px;

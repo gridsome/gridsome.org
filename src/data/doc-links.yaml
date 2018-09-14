@@ -19,6 +19,8 @@
       link: /docs/static-site-generator
     - title: Hosting & Deployment
       link: /docs/deployment
+    - title: Directory structure
+      link: /docs/directory-structure
 
 - title: Guides
   items:
