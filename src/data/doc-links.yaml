@@ -9,14 +9,12 @@
   items:
     - title: Introduction
       link: /docs/introduction
-    - title: Vue & Single File Components
-      link: /docs/vue
-    - title: Layouts, Pages & Templates
-      link: /docs/layouts-pages-templates
     - title: Data Sources (GraphQL)
       link: /docs/sources
-    - title: Static Site Generator
-      link: /docs/static-site-generator
+    - title: Layouts, Pages & Templates
+      link: /docs/layouts-pages-templates
+    - title: Vue & Single File Components
+      link: /docs/vue
     - title: Hosting & Deployment
       link: /docs/deployment
     - title: Directory structure
