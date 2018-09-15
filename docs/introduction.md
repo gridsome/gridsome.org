@@ -6,7 +6,7 @@ Gridsome was built because there was no good Vue.js alternative to Gatsby.
 
 
 ## How it works
-Gridsome builds all pages and endpoints at build time. It creates two versions of every page. One HTML page that search engines can crawl for SEO-purpose, and one JavaScript file that Gridsome uses for SPA after first page load. Next pages are loaded in the background with Service workers. This makes browsing around extremely fast and your site is 100%-SEO friendly. It even works offline.
+Gridsome genreates all pages and endpoints at build time. It creates two versions of every page. One HTML page that search engines can crawl for SEO-purpose, and one JavaScript file that Gridsome uses for SPA after first page load. Next pages are loaded in the background with Service workers. This makes browsing around extremely fast and your site is 100%-SEO friendly. It even works offline.
 
 Gridsome follows the [PRPL-pattern by Google.](https://developers.google.com/web/fundamentals/performance/prpl-pattern/) and optimizes your site automatic. You don't need to be a performance expert to make fast websites with Gridsome. Your site gets almost perfect scores on Google lighthouse out-of-the-box. These are some of the performance steps that Gridsome takes care of:
 
