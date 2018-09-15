@@ -22,7 +22,7 @@
       <div class="container grid-cols">
         <Feature gradient="1">
           <h3>A static JAMstack framework</h3>
-          <p>The future of the web is mobile, JavaScript and APIs <strong>— the JAMstack</strong>. Gridsome uses the power of blazing-fast <strong>static site generator</strong>, JavaScript and APIs to create stunning dynamic web experiences.
+          <p>The future of the web is mobile, JavaScript, and APIs <strong>— the JAMstack</strong>. Gridsome uses the power of blazing-fast <strong>static site generator</strong>, JavaScript and APIs to create stunning dynamic web experiences.
           </p>
         </Feature>
  
@@ -86,7 +86,7 @@
 
 
       <h3><span class="gradient-4" style="display:inline-block; vertical-align:middle; line-height: 50px; width: 60px; height: 60px; margin-right: 20px; border-radius: 999px; text-align:center;">2</span>Build websites with Vue.js</h3>
-        <p>With clean and standard code syntax makes Vue.js very approachable for any web designers and web developers. Vue Single File Components lets you edit Markup, CSS and JavaScript all in the same file and get hot-reloading and automatic code-splitting. Vue also gives you SPA features like instant page loading and page transitions.  <g-link to="docs/vue">Learn more about Vue</g-link></p>
+        <p>With clean and standard code syntax makes Vue.js very approachable for any web designers and web developers. Vue Single File Components lets you edit Markup, CSS and JavaScript all in the same file and get hot-reloading, and automatic code-splitting. Vue also gives you SPA features like instant page loading and page transitions.  <g-link to="docs/vue">Learn more about Vue</g-link></p>
         
       <svg width="154" height="70" viewBox="0 0 124 50" fill="none" xmlns="http://www.w3.org/2000/svg">
        <path class="stroke-anim" d="M0.388268 0.76767C12.9278 13.0338 40.7333 26.6027 59.8012 27.5046C79.3978 28.4315 107.337 29.6792 122.618 49.216" stroke="black"/>
