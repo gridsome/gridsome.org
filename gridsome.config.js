@@ -4,7 +4,7 @@ module.exports = {
   titleTemplate: '%s - Gridsome',
 
   plugins: [
-    '@gridsome/plugin-critical',
+    // '@gridsome/plugin-critical',
     {
       use: '@gridsome/source-filesystem',
       options: {
