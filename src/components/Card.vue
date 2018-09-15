@@ -43,7 +43,7 @@ export default {
       opacity: .7;
     }
 
-    h2, h4 {
+    h2, h3, h4 {
       margin-bottom: .66rem;
     }
   }

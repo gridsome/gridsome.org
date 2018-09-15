@@ -99,18 +99,18 @@
       </div>
     </Section>
 
-    <Section dots="true">
+    <Section dots="true" primary="true">
 
       <div class="container text-center container-sm mb">
         <h2>Latest posts</h2>
-        <p class="lead">Follow our mission to save the web from bloat and make building websites fun again.</p>
+   
       </div>
 
       <g-link v-for="edge in $page.posts.edges" :key="edge.node._id" :to="edge.node.path">
-        <Card class="blog-posts__post container container-sm">
-          <h2 v-html="edge.node.title"/>
+        <Card class="blog-posts__post container container-md">
+          <h3 v-html="edge.node.title"/>
           <PostMeta :post="edge.node"/>
-          <p class="lead" v-html="edge.node.fields.excerpt"/>
+          <p v-html="edge.node.fields.excerpt"/>
           <p class="card__read-more"> Read more </p>
         </Card>
       </g-link>
