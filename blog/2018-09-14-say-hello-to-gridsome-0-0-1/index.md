@@ -15,7 +15,7 @@ You don't need to know GraphQL or Vue to get started with Gridsome - It's a grea
 This is an example on how to query posts from the GraphQL layer in Gridsome inside a Vue component:
 
 
-```js
+```html
 <template>
   <Layout>
     <h2>Latest blog posts</h2>
@@ -69,12 +69,15 @@ Try run the new Chrome Lighthouse (Audit tab in Developer tools) on a WordPress 
 
 This is what we think are really exiting and is why we are building Gridsome. It will be the **perfect SPA & PWA front-end solution** for any headless CMS or content APIs.
 
-#### So whats next...
 
-In the next couple of months we're going to continue to improve the docs, add more Source & transformer plugins and fix reported bugs.
+#### Whats next
+
+In the next couple of months we're going to continue to improve the docs, create tutorials, add more source & transformer plugins and fix bugs.
 
 The project is more mature than the version tells you, but we're starting here and will try to get to 1.0 as fast as possible.
 
-#### Help this baby grow!
+#### Contribute to Gridsome
 
-It's just me and my brother working on this now, so any contribution is very welcome!
+It's currenly just two brothers working on this, so any contribution is very welcome. We're passionate about building a faster web and make website building fun again. Help us save the web from bloat!
+
+You can also support us by giving [a star on GitHub](https://github.com/gridsome/gridsome/stargazers) and spread the word :)
