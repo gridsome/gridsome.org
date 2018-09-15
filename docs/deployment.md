@@ -5,7 +5,7 @@ Gridsome sites are static generated at build time. This mean that the site can b
 
 ### Git-based deploying
 
-The best practice when working with Gridsome sites is to have your project hosted a Git-service like GitHub and connect a deploy service that auto builds your site from a selected repository. Netlify is the best solution for this now. They also have free plan for static website hosting.
+The best practice when working with Gridsome sites is to have your project hosted a Git-service like GitHub and connect a deploy service that auto builds your site from a selected repository. [Netlify](//www.netlify.com/) is the best solution for this now. They also have free plan for static website hosting.
 
 ![Git workflow](./images/git-workflow.png)
 
@@ -16,11 +16,14 @@ These services is great for Git-based deploying:
 
 - [Netlify](/docs/deploy-to-netlify)
 
+- [Zeit Now](/docs/deploy-to-netlify)
+
 
 ### Deploy from terminal
 Many services let you deploy your static Gridsome site from the terminal. Here are some:
 
 - [Amazon S3](/docs/deploy-to-amazon-s3)
+
 - [Zeit Now](/docs/deploy-to-zeit-now)
 
 

@@ -78,6 +78,6 @@ The project is more mature than the version tells you, but we're starting here a
 
 #### Contribute to Gridsome
 
-It's currenly just two brothers working on this, so any contribution is very welcome. We're passionate about building a faster web and make website building fun again. Help us save the web from bloat!
+It's currenly just two brothers working on this, so any contribution is very welcome. We're passionate about building a faster web and make website building fun again.
 
 You can also support us by giving [a star on GitHub](https://github.com/gridsome/gridsome/stargazers) and spread the word :)
