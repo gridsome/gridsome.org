@@ -1,12 +1,12 @@
 # Vue.js
 
-Gridsome is powered by Vue.js. It's high performant, approachable, lightweight and perfect for building blazing fast websites (Only 20kb min+gzip). It's the front-end framework on GitHub with the most stars, used by big companies, and is here to stay.
+Gridsome is powered by Vue.js. It's high performant, approachable, lightweight and perfect for building blazing fast websites (Only 20kb min+gzip). It's the front-end framework on GitHub with the most stars and used by big companies.
 
 Take a look at this video to learn the basic concepts of Vue:
 
 <iframe src="https://player.vimeo.com/video/247494684?color=4fc08d&title=0&byline=0&portrait=0" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-[Go to Vue.js documentation](https://vuejs.org/v2/guide)
+[Learn more at Vue.js documentation](https://vuejs.org/v2/guide)
 
 
 ## Single File Components
