@@ -30,36 +30,36 @@
 
         <Feature gradient="3">
           <h3>Pull data from any CMS or data source</h3>
-          <p>Use any CMS or data source for content. Pull data from WordPress, Contentful, local Markdown, or any other headless CMS or APIs and access it with <strong>GraphQL</strong> in your components and pages
+          <p>Use any CMS or data source for content. Pull data from WordPress, Contentful, local Markdown, or any other headless CMS or APIs and access it with <strong>GraphQL</strong> in your components and pages.
           </p>     
         </Feature>
 
 
         <Feature gradient="5">
           <h3>Perfect page speed scores out-of-the-box</h3>
-          <p>Gridsome automatically optimises your frontend
-            to load and perform blazing fast with top lighthouse scores. You get image compressing, asset minification, code-splitting, critical CSS and lazy-loading out-of-the-box
+          <p>Gridsome automatically optimizes your frontend
+            to load and perform blazing fast with top lighthouse scores. You get image compressing, asset minification, code-splitting, critical CSS and lazy-loading out-of-the-box.
           </p>     
         </Feature>
     
 
         <Feature gradient="2">
           <h3>Enjoy modern development tools</h3>
-          <p>Build websites using latest web tech tools that you love.
-            Vue.js, Webpack, Node. Hot-reloading, modern JavaScript & CSS tools are at your desposal.
+          <p>Build websites using the latest web tech tools that you love.
+            Vue.js, Webpack, Node. Hot-reloading, modern JavaScript & CSS tools are at your disposal.
           </p>     
         </Feature>
 
 
         <Feature gradient="4">
           <h3>PWA Mobile-first architecture</h3>
-          <p>Only critical HTML, CSS and JavaScript are loaded at first, and then the next pages are prefetched so users can click around without page reloads and even when offline.
+          <p>Only critical HTML, CSS, and JavaScript are loaded at first, and then the next pages are prefetched so users can click around without page reloads and even when offline.
           </p>     
         </Feature>
 
         <Feature gradient="6">
           <h3>Ready for global domination</h3>
-          <p>Gridsome sites does not require any database and can be entirely hosted on a CDN. It can handle thousands to millions of hits without breaking - and no expensive server costs.
+          <p>Gridsome sites do not require any database and can be hosted entirely on a global CDN. It can handle thousands to millions of hits without breaking - and no expensive server costs.
           </p>     
         </Feature>
       </div>
@@ -77,8 +77,7 @@
         </p>
 
         <h3>Connect to any CMS or Data Source <span class="gradient-3" style="display:inline-block; vertical-align:middle; line-height: 50px; width: 60px; height: 60px; margin-left: 20px; border-radius: 999px; text-align:center;">1</span></h3>
-        <p>Use Gridsome source plugins to get data from local Markdown files, WordPress, Contentful or any headless CMS & content APIs. Data are pulled into a <g-link to="docs/sources"><span class="no-wrap"><strong>GraphQL</strong> <graph-ql-logo style="margin-left:0" /></span></g-link> interface that any Compnents, <g-link to="docs/layouts-pages-templates">Page, Layout or Template</g-link> can access and add data from.</p>
-
+        <p>Use Gridsome source plugins to get data from local Markdown files, WordPress, Contentful or any headless CMS & content APIs. Data are pulled into a <g-link to="docs/sources"><span class="no-wrap"><strong>GraphQL</strong> <graph-ql-logo style="margin-left:0" /></span></g-link> layer that any Components, <g-link to="docs/layouts-pages-templates">Pages, Layouts or Templates</g-link> can access.</p>
 
          <svg width="255" height="80" viewBox="0 0 215 64" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path class="stroke-anim" d="M213.721 1.01564C191.069 18.673 142.278 36.8063 109.706 36.282C76.2304 35.7431 28.511 34.8609 0.42388 63.456" stroke="black"/>
@@ -86,14 +85,14 @@
 
 
       <h3><span class="gradient-4" style="display:inline-block; vertical-align:middle; line-height: 50px; width: 60px; height: 60px; margin-right: 20px; border-radius: 999px; text-align:center;">2</span>Build websites with Vue.js</h3>
-        <p>With clean and standard code syntax makes Vue.js very approachable for any web designers and web developers. Vue Single File Components lets you edit Markup, CSS and JavaScript all in the same file and get hot-reloading, and automatic code-splitting. Vue also gives you SPA features like instant page loading and page transitions.  <g-link to="docs/vue">Learn more about Vue</g-link></p>
+        <p>With clean and standard code syntax makes Vue.js very approachable for any web designers and web developers. Vue Single File Components lets you edit Markup, CSS, and JavaScript all in the same file. You also get automatic code-splitting and hot-reloading. Vue also gives you SPA features like instant page loading and page transitions.  <g-link to="docs/vue">Learn more about Vue</g-link></p>
         
       <svg width="154" height="70" viewBox="0 0 124 50" fill="none" xmlns="http://www.w3.org/2000/svg">
        <path class="stroke-anim" d="M0.388268 0.76767C12.9278 13.0338 40.7333 26.6027 59.8012 27.5046C79.3978 28.4315 107.337 29.6792 122.618 49.216" stroke="black"/>
       </svg>
 
       <h3>Generate & Deploy<span class="gradient-5" style="display:inline-block; vertical-align:middle; line-height: 60px; width: 60px; height: 60px; margin-left: 20px; border-radius: 999px; text-align:center;">3</span></h3>
-        <p>The blazing fast <strong>static site generator</strong> creates HTML files of all pages & content that SEO engines can crawl - ready to be deployed and hosted safely on any global CDN or FTP. You can also use CI service like <strong>Netlify</strong> that generates, deploy and host your websites from a selected Git-repo automatically. <g-link to="docs/deployment"> Learn more about deplolyment here </g-link></p>
+        <p>The blazing fast <strong>static site generator</strong> creates HTML files of all pages & content that SEO engines can crawl - ready to be deployed and hosted safely on any global CDN or FTP. You can also use CI service like <strong>Netlify</strong> that generates, deploy and host your websites from a selected Git-repo automatically. <g-link to="docs/deployment"> Learn more about deployment</g-link></p>
 
         <g-link to="/docs" class="button lead"> Get started </g-link>
       </div>

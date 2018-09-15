@@ -8,7 +8,7 @@ excerpt: "A new static site generator baby is born. It's highly inspired by Gats
 
 We think Gridsome is a missing piece to the Vue.js ecosystem. What Gatsby.js does for React.js is a game changer in how we build websites. Gridsome is the Vue.js alternative. React.js is excellent, but we think Vue.js is more approachable for most web designers and devs getting started with JAMstack.
 
-With Gridsome you get an **universal GraphQL layer** for all your connected data sources. It's like a single source of truth for your website data ready to be used in Gridsome. Connect to any CMS or APIs like Google Spreadsheet, Airtable, Instagram Feed, local markdown files, etc. This and Vue makes it extremely fun and fast to build websites. 
+With Gridsome you get a **universal GraphQL layer** for all your connected data sources. It's like a single source of truth for your website data ready to be used in Gridsome. Connect to any CMS or APIs like Google Spreadsheet, Airtable, Instagram Feed, local markdown files, etc. This and Vue makes it extremely fun and fast to build websites. 
 
 You don't need to know GraphQL or Vue to get started with Gridsome - It's a great way to get introduced to both.
 
