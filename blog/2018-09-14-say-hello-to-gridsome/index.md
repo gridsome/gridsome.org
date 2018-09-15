@@ -1,5 +1,5 @@
 ---
-title: Say hello to Gridsome 0.0.1 👶🎉💚
+title: Say hello to Gridsome 👶🎉💚
 author: Tommy Vedvik
 date: 2018-09-14
 excerpt: "A new static site generator baby is born. It's highly inspired by Gatsby.js (React based) but it's built on top of Vue.js. We have been working on it for a year and finally have a beta ready. You can expect this baby to grow up really fast!"

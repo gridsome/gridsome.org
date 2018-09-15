@@ -39,9 +39,7 @@
       link: /docs/gridsome-cli
     - title: Project config
       link: /docs/config
-    - title: Plugins
-      link: /docs/plugins
-
+      
 - title: Core components
   items:
     - title: Link

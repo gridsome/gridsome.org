@@ -11,7 +11,7 @@ Take a look at this video to learn the basic concepts of Vue:
 
 ## Single File Components
 
-Gridsome recommends to use Single File Components in your projects. This means you add Markdown, JavaScript and CSS all in the same file. This makes your projects easier to maintain and test and your components more reusable. You also get code-splitting out-of-the-box.
+Gridsome recommends to use Single File Components in your projects. This means you add HTML, JavaScript and CSS all in the same file. This makes your projects easier to maintain and test and your components more reusable. You also get code-splitting out-of-the-box.
 
 Here is an example of a Single File Component file.
 
