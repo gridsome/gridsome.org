@@ -13,51 +13,7 @@ If you want to learn more about Gridsome and its core concepts [go here](/docs/i
 
 
 ### 3. Next steps..
-Learn about the *core concepts* of building Gridsome sites
+- [Get a introduction to Gridsome](/docs/introduction)
+- [Learn how to deploy and host a Gridsome site ](/docs/deployment)
 
-<div class="grid-cols container--push grid-cols--2 grid-cols--gap-small">
-
-  <g-link>
-    <Card> 
-      <h4>Introduction</h4>
-      <p>Why Gridsome was built, how it works, and the alternatives</p>
-    </Card>
-  </g-link>
-
-
-  <g-link>  
-    <Card> 
-      <h4>Data Sources (GraphQL)</h4>
-      <p>How to add source plugins and get data with GraphQL</p>
-    </Card>
-  </g-link>
-  
-  <g-link>
-    <Card> 
-      <h4>Layouts, pages & templates</h4>
-      <p>Learn how to add pages and layouts to Gridsome</p>
-    </Card>
-  </g-link>
-  
-  <g-link>
-    <Card>  
-      <h4>Vue Components</h4>
-      <p>Learn the concept of Vue and its Single File Components</p>
-    </Card>
-  </g-link>
-
-
-  <g-link>  
-    <Card>  
-      <h4>Images & Links</h4>
-      <p>Learn how to use the built-in Image & link components</p>
-    </Card>
-  </g-link>
-  
-  <g-link>  
-    <Card>  
-      <h4>Generate & Deploy</h4>
-      <p>Learn how to generate, deploy and host your website</p>
-    </Card>
-  </g-link>
-</div>
+---
