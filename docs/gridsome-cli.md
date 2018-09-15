@@ -8,14 +8,13 @@ globally with `npm install --global @gridsome/cli`.
 Usage `gridsome create {name} {starter}`
 
 - **name** - directory name to create the project in
-- **starter** - optional name or a URL to a Git repository.
+- **starter** - optional starter kit name
 
-|Starter kits                                          |
-|-----------------|------------------------------------|
-|Default          |`gridsome create my-website`        |
-|WordPress        |`gridsome create my-blog wordpress` |
-|Contentful       |`gridsome create my-blog contentful`|
-
+| Official starter kits |                                         |
+| --------------------- | --------------------------------------- |
+| Default               | `gridsome create my-website`            |
+| WordPress             | `gridsome create my-blog wordpress`     |
+| Contentful            | `gridsome create my-blog contentful`    |
 
 [Read more about starter kits](/docs/starters)
 
