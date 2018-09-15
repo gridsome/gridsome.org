@@ -47,9 +47,9 @@ The GraphQL layer and all the data can be explored in a local GraphQL playground
 
 
 
-#### Top score on Google Lighthouse - automagically
+#### Perfect scores on Google Lighthouse - automagically 💚
 
-One of the main goals with Gridsome is to make a framework that let you build websites that are optimized "out-of-the-box". It follows the [PRPL-pattern by Google.](https://developers.google.com/web/fundamentals/performance/prpl-pattern/). You don't need to be a performance export to make fast websites with Gridsome. Your site should get almost top scores on Google lighthouse as default. 
+One of the main goals with Gridsome is to make a framework that let you build websites that are optimized "out-of-the-box". It follows the [PRPL-pattern by Google.](https://developers.google.com/web/fundamentals/performance/prpl-pattern/) You don't need to be a performance expert to make fast websites with Gridsome. Your site gets almost perfect scores on Google lighthouse out-of-the-box. These are some of the performance steps that Gridsome takes care of:
 
 - Image compressing & lazy-loading ⚡️ 
 - CSS & JS minification ⚡️ 

@@ -8,7 +8,7 @@
       </template>
 
       <template v-if="post.timeToRead">
-        {{ post.timeToRead }} min read
+        <strong>{{ post.timeToRead }} min read</strong>
       </template>
     </small>
   </p>

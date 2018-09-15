@@ -40,7 +40,7 @@ export default {
       font-size: .7rem;
       font-weight: 500;
       letter-spacing: 2px;
-      color: var(--primary-color);
+      opacity: .7;
     }
 
     h2, h4 {

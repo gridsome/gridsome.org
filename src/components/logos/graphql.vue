@@ -1,7 +1,7 @@
 <template>
 <svg alt="GraphQL"
 style="margin-top:-5px; margin-left: 6px;" width="20px" height="20px"
-version="1.1" id="GraphQL_Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
    y="0px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
 <g>
   <g>

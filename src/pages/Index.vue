@@ -36,7 +36,7 @@
 
 
         <Feature gradient="5">
-          <h3>Top Page Speed scores out-of-the-box</h3>
+          <h3>Perfect page speed scores out-of-the-box</h3>
           <p>Gridsome automatically optimises your frontend
             to load and perform blazing fast with top lighthouse scores. You get image compressing, asset minification, code-splitting, critical CSS and lazy-loading out-of-the-box
           </p>     
@@ -73,7 +73,7 @@
         <h2>How Gridsome works</h2>
 
         <p class="lead">
-          Build PWA & SPA-ready websites with perfect lighthouse and Google Page Speed scores in minutes
+          Build PWA & SPA-ready websites in minutes
         </p>
 
         <h3>Connect to any CMS or Data Source <span class="gradient-3" style="display:inline-block; vertical-align:middle; line-height: 50px; width: 60px; height: 60px; margin-left: 20px; border-radius: 999px; text-align:center;">1</span></h3>
