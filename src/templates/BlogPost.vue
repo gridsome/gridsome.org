@@ -1,11 +1,11 @@
 <template>
   <Layout>
-    <div class="post">
+    <Section container="md" dots="true">
       <h1 v-html="$page.post.title"/>
       <PostMeta :post="$page.post"/>
       <p class="lead" v-html="$page.post.fields.excerpt"/>
       <div v-html="$page.post.content"/>
-    </div>
+    </Section>
   </Layout>
 </template>
 
@@ -42,10 +42,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.post {
-  margin: 8% auto 5.0em;
-  max-width: 650px;
-}
-</style>

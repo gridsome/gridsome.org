@@ -3,7 +3,7 @@
 
     <Section dots="true" class="text-center">
 
-      <div class="container-md fade-up">
+      <div class="container-md fade-up mb">
         <h1 class="fade-up">Build faster, better websites with <span class="gradient-text">Vue.js</span></h1>
         
         <p class="container-sm lead">Gridsome is a blazing fast <strong>static site generator</strong> for building <strong><small>PWA</small> & <small>SPA</small></strong> front-ends for any CMS or data source with <strong class="no-wrap">Vue.js<vue-logo/> </strong> and <strong class="no-wrap">GraphQL<graph-ql-logo /></strong></p>
@@ -99,16 +99,14 @@
         <p class="lead">Follow our mission to save the web from bloat and make building websites fun again.</p>
       </div>
 
-      <div>
-        <g-link v-for="edge in $page.posts.edges" :key="edge.node._id" :to="edge.node.path">
-          <Card class="blog-posts__post container container-md">
-            <h2 v-html="edge.node.title"/>
-            <PostMeta :post="edge.node"/>
-            <p class="lead" v-html="edge.node.fields.excerpt"/>
-            <p class="card__read-more"> Read more </p>
-          </Card>
-        </g-link>
-      </div>
+      <g-link v-for="edge in $page.posts.edges" :key="edge.node._id" :to="edge.node.path">
+        <Card class="blog-posts__post container container-sm">
+          <h2 v-html="edge.node.title"/>
+          <PostMeta :post="edge.node"/>
+          <p class="lead" v-html="edge.node.fields.excerpt"/>
+          <p class="card__read-more"> Read more </p>
+        </Card>
+      </g-link>
     </Section>
   </Layout>
 </template>
