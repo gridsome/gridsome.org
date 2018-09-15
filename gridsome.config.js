@@ -26,7 +26,12 @@ module.exports = {
         type: 'page',
         index: ['README'],
         path: 'plugins/**/*.md',
-        typeName: 'Plugin'
+        typeName: 'Plugin',
+        remark: {
+          plugins: [
+            '@gridsome/remark-prismjs'
+          ]
+        }
       }
     },
     {
@@ -35,7 +40,12 @@ module.exports = {
         type: 'post',
         path: 'blog/*/index.md',
         route: '/blog/:year/:month/:day/:slug+',
-        typeName: 'Blog'
+        typeName: 'Blog',
+        remark: {
+          plugins: [
+            '@gridsome/remark-prismjs'
+          ]
+        }
       }
     }
   ]

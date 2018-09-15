@@ -1,8 +1,6 @@
 # Getting started with Gridsome
-Gridsome is a framework for building blazing-fast websites with Vue.js and GraphQL. This guide will help you get quickly up and running with your first Gridsome site.
-
-You don't need to know Vue.js to get started with Gridsome, but it's  recommended to start with the <g-link to="/tutorial">asdf</g-link> if you don't.
-
+This guide will help you get quickly up and running with your first Gridsome project.
+If you want to learn more about Gridsome and its core concepts [go here](/docs/introduction).
 
 ### 1. Install Gridsome CLI tool
 `npm install --global @gridsome/cli`
@@ -25,10 +23,18 @@ Learn about the *core concepts* of building Gridsome sites
       <p>Why Gridsome was built, how it works, and the alternatives</p>
     </Card>
   </g-link>
+
+
+  <g-link>  
+    <Card> 
+      <h4>Data Sources (GraphQL)</h4>
+      <p>How to add source plugins and get data with GraphQL</p>
+    </Card>
+  </g-link>
   
   <g-link>
     <Card> 
-      <h4>Pages, layouts & templates</h4>
+      <h4>Layouts, pages & templates</h4>
       <p>Learn how to add pages and layouts to Gridsome</p>
     </Card>
   </g-link>
@@ -40,12 +46,6 @@ Learn about the *core concepts* of building Gridsome sites
     </Card>
   </g-link>
 
-  <g-link>  
-    <Card> 
-      <h4>Data Sources (GraphQL)</h4>
-      <p>How to add source plugins and get data with GraphQL</p>
-    </Card>
-  </g-link>
 
   <g-link>  
     <Card>  
