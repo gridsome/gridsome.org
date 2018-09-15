@@ -62,10 +62,11 @@
     <Section dots="true" container="md">
       <div class="container-md text-center">
         <h2>How Gridsome works</h2>
+
         <p class="lead">
           Build PWA & SPA-ready websites with perfect lighthouse and Google Page Speed scores in minutes
         </p>
-          <hr />
+
         <h3>Connect to any CMS or Data Source <span class="gradient-3" style="display:inline-block; vertical-align:middle; line-height: 50px; width: 60px; height: 60px; margin-left: 20px; border-radius: 999px; text-align:center;">1</span></h3>
         <p>Use Gridsome source plugins to get data from local Markdown files, WordPress, Contentful or any headless CMS & content APIs. Data are pulled into a <g-link to="docs/sources"><span class="no-wrap"><strong>GraphQL</strong> <graph-ql-logo style="margin-left:0" /></span></g-link> interface that any Compnents, <g-link to="docs/layouts-pages-templates">Page, Layout or Template</g-link> can access and add data from.</p>
 
@@ -88,6 +89,25 @@
         <g-link to="/docs" class="button lead"> Get started </g-link>
       </div>
     </Section>
+
+    <Section dots="true">
+
+      <div class="container text-center container-sm mb">
+        <h2>Latest posts</h2>
+        <p class="lead">Follow our mission to save the web from bloat and make building websites fun again.</p>
+      </div>
+
+      <div>
+        <g-link v-for="edge in $page.posts.edges" :key="edge.node._id" :to="edge.node.path">
+          <Card class="blog-posts__post container container-md">
+            <h2 v-html="edge.node.title"/>
+            <PostMeta :post="edge.node"/>
+            <p class="lead" v-html="edge.node.fields.excerpt"/>
+            <p class="card__read-more"> Read more </p>
+          </Card>
+        </g-link>
+      </div>
+    </Section>
   </Layout>
 </template>
 
@@ -95,12 +115,14 @@
 import SourceAnimation from '@/components/SourceAnimation.vue'
 import VueLogo from '@/components/logos/vue'
 import GraphQlLogo from '@/components/logos/graphql'
+import PostMeta from '@/components/PostMeta.vue'
 
 export default {
   components: {
     SourceAnimation,
     VueLogo,
-    GraphQlLogo
+    GraphQlLogo,
+    PostMeta
   },
   metaInfo: {
     title: 'Gridsome - Built faster, better websites with Vue.js',
@@ -113,6 +135,28 @@ export default {
   }
 }
 </script>
+
+<graphql>
+query BlogPosts {
+  posts: allBlogPost {
+    edges {
+      node {
+        _id
+        title
+        path
+        date (format: "D. MMMM YYYY")
+        timeToRead
+        content
+        fields {
+          author
+          excerpt
+        }
+      }
+    }
+  }
+}
+</graphql>
+
 
 <style>
 hr {

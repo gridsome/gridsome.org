@@ -9,10 +9,11 @@
 
 <script>
 export default {
-  props: ['dark', 'dots', 'container', 'framed'],
+  props: ['dark', 'dots', 'container', 'framed', 'primary'],
   computed: {
     sectionClass() {
       let classes = []
+      if(this.primary) classes.push('section--primary')
       if(this.dark) classes.push('section--dark')
       return classes
     },
@@ -37,6 +38,11 @@ export default {
   padding: calc(3.33% + var(--space)) 0;
   position: relative;
   width: 100%;
+
+
+  &--primary {
+    background-color: var(--primary-bg);
+  }
 
 
   &__dots-bg {

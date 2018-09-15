@@ -15,10 +15,10 @@
       link: /docs/layouts-pages-templates
     - title: Vue & Single File Components
       link: /docs/vue
-    - title: Hosting & Deployment
-      link: /docs/deployment
     - title: Directory structure
       link: /docs/directory-structure
+    - title: Hosting & Deployment
+      link: /docs/deployment
 
 - title: Guides
   items:

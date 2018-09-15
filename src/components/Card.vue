@@ -19,11 +19,11 @@ export default {
 </script>
 
 <style lang="scss">
-
   .card {
     border: 1px solid #ddd;
     padding: var(--space);
     border-radius: 4px;
+    background-color: #FFF;
     transition: color.3s, box-shadow .3s, transform .3s;
     color: #444;
     box-shadow: 2px 2px 5px 0 rgba(0,0,0,.05);
@@ -34,7 +34,16 @@ export default {
       color: currentColor;
     }
 
-    h4 {
+    
+    &__read-more {
+      text-transform: uppercase;
+      font-size: .7rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      color: var(--primary-color);
+    }
+
+    h2, h4 {
       margin-bottom: .66rem;
     }
   }

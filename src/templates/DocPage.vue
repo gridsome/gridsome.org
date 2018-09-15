@@ -1,6 +1,6 @@
 <template>
   <DocsLayout>
-    <div v-html="$page.doc.content"></div>
+    <div class="docs-page mb" v-html="$page.doc.content"></div>
     <p>
       <a :href="editLink" target="_blank">
         Edit this page on GitHub
@@ -20,6 +20,7 @@ query DocPage ($path: String!) {
   }
 }
 </graphql>
+
 
 <script>
 export default {

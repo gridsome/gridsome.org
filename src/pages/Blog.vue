@@ -1,19 +1,20 @@
 <template>
   <Layout transparent="true">
     
-    <Section dark="true" class="text-center" dots="true" container="md">
+    <Section dark="true" class="text-center" dots="true" container="sm">
       <h1>Gridsome Blog</h1>
-      <p class="lead">Follow our mission to make building websites fun again.</p>
+      <p class="lead">Follow our mission to save the web from bloat and make building websites fun again.</p>
     </Section>
 
     <div class="blog-posts">
-      <div class="blog-posts__post container container-md  container--framed"
-        v-for="edge in $page.posts.edges" :key="edge.node._id">
-        <h2 v-html="edge.node.title"/>
-        <PostMeta :post="edge.node"/>
-        <p class="lead" v-html="edge.node.fields.excerpt"/>
-        <g-link :to="edge.node.path">Read</g-link>
-      </div>
+      <g-link v-for="edge in $page.posts.edges" :key="edge.node._id" :to="edge.node.path">
+        <Card class="blog-posts__post container container-md">
+          <h2 v-html="edge.node.title"/>
+          <PostMeta :post="edge.node"/>
+          <p class="lead" v-html="edge.node.fields.excerpt"/>
+          <p class="card__read-more"> Read more </p>
+        </Card>
+      </g-link>
     </div>
   </Layout>
 </template> 
