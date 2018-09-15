@@ -70,11 +70,7 @@
 
     <Section dots="true" container="md">
       <div class="container-md text-center">
-        <h2>How Gridsome works</h2>
-
-        <p class="lead">
-          Build PWA & SPA-ready websites in minutes
-        </p>
+        <p class="uppercase"><strong>How Gridsome works</strong></p>
 
         <h3>Connect to any CMS or Data Source <span class="gradient-3" style="display:inline-block; vertical-align:middle; line-height: 50px; width: 60px; height: 60px; margin-left: 20px; border-radius: 999px; text-align:center;">1</span></h3>
         <p>Use Gridsome source plugins to get data from local Markdown files, WordPress, Contentful or any headless CMS & content APIs. Data are pulled into a <g-link to="docs/sources"><span class="no-wrap"><strong>GraphQL</strong> <graph-ql-logo style="margin-left:0" /></span></g-link> layer that any Components, <g-link to="docs/layouts-pages-templates">Pages, Layouts or Templates</g-link> can access.</p>
@@ -85,7 +81,7 @@
 
 
       <h3><span class="gradient-4" style="display:inline-block; vertical-align:middle; line-height: 50px; width: 60px; height: 60px; margin-right: 20px; border-radius: 999px; text-align:center;">2</span>Build websites with Vue.js</h3>
-        <p>With clean and standard code syntax makes Vue.js very approachable for any web designers and web developers. Vue Single File Components lets you edit Markup, CSS, and JavaScript all in the same file. You also get automatic code-splitting and hot-reloading. Vue also gives you SPA features like instant page loading and page transitions.  <g-link to="docs/vue">Learn more about Vue</g-link></p>
+        <p>With clean and standard code syntax makes Vue.js very approachable for any web designers and web developers. Vue Single File Components lets you edit Markup, CSS, and JavaScript all in the same file. <g-link to="docs/vue">Learn more about Vue</g-link></p>
         
       <svg width="154" height="70" viewBox="0 0 124 50" fill="none" xmlns="http://www.w3.org/2000/svg">
        <path class="stroke-anim" d="M0.388268 0.76767C12.9278 13.0338 40.7333 26.6027 59.8012 27.5046C79.3978 28.4315 107.337 29.6792 122.618 49.216" stroke="black"/>

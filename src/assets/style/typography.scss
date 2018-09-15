@@ -9,6 +9,13 @@
 	font-size: 1.18rem;
 }
 
+.uppercase {
+  text-transform: uppercase;
+  font-size: .9rem;
+  letter-spacing: 1px;
+  opacity: .7;
+}
+
 h1, h2, h3, .lead, .button {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
