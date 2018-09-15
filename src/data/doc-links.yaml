@@ -20,6 +20,14 @@
     - title: Hosting & Deployment
       link: /docs/deployment
 
+- title: API Reference
+  items:
+    - title: Gridsome config
+      link: /docs/config
+    - title: Gridsome CLI
+      link: /docs/gridsome-cli
+      
+
 - title: Guides
   items:
     - title: Install plugins
@@ -33,13 +41,7 @@
     - title: Custom head meta
       link: /docs/custom-head-meta
 
-- title: API Reference
-  items:
-    - title: Gridsome CLI
-      link: /docs/gridsome-cli
-    - title: Project config
-      link: /docs/config
-      
+
 - title: Core components
   items:
     - title: Link
