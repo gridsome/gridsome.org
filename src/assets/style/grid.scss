@@ -50,7 +50,7 @@
 
 .grid-cols{
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: calc( var(--space) * 2);
 
   &--gap-small {
@@ -58,23 +58,23 @@
   }
 
   &--2 {
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   &--4 {
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 
 @media screen and (max-width: 750px) {
   .grid-cols{
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 550px) {
   .grid-cols{
-    grid-template-columns: repeat(1, auto);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
