@@ -8,9 +8,11 @@
         
         <p class="container-sm lead">Gridsome is a blazing fast <strong>static site generator</strong> for building <strong><small>PWA</small> & <small>SPA</small></strong> front-ends for any CMS or data source with <strong class="no-wrap">Vue.js<vue-logo/> </strong> and <strong class="no-wrap">GraphQL<graph-ql-logo /></strong></p>
         <g-link to="/docs" class="button"> Get started </g-link>
+        <a href="//github.com/gridsome/gridsome" class="button plain">GitHub</a>
+
       </div>
     
-      <div class="container">
+      <div class="container hide-for-small">
         <SourceAnimation />
       </div>
       

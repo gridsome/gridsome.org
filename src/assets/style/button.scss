@@ -1,14 +1,19 @@
 .button {
 	display: inline-flex;
   align-items:center;
-	padding: .35rem .8rem;
+	padding: .29rem .8rem;
   font-weight: bold;
   letter-spacing: .5px;
 	border: 2px solid currentColor;
 	border-radius: 5px;
 
+
   &.small {
-    font-size: .9rem;
-    padding: .2rem .5rem;
+    font-size: .85rem;
+    padding: .15rem .5rem;
+  }
+
+  + .button {
+    margin-left: var(--space);
   }
 }
