@@ -4,6 +4,15 @@ Gridsome is a static site generator powered by GraphQL and Vue.js. It uses Graph
 
 We built Gridsome because there was no Vue.js alternative to Gatsby.
 
+## Build a website that...
+- Load blazing fast on any network connection
+- Get perfect scores on Google Lighthouse
+- Is automatically optimized at build time
+- Can be hosted on a global CDN
+- Is impossible to hack and don't need any security plugins
+- Can be installed as a PWA-app
+- Can have transitions & animations between pages
+
 
 ## How it works
 Gridsome generates all pages and endpoints at build time. It creates two versions of every page. One HTML page that search engines can crawl for SEO-purpose, and one JavaScript file that Gridsome uses for SPA after first page load. Next pages are loaded in the background with Service workers. That makes browsing around extremely fast, and your site is 100%-SEO friendly. It even works offline.
