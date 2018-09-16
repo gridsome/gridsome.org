@@ -15,5 +15,3 @@ If you want to learn more about Gridsome and its core concepts [go here](/docs/i
 ### 3. Next steps..
 - [Get a introduction to Gridsome](/docs/introduction)
 - [Learn how to deploy and host a Gridsome site ](/docs/deployment)
-
----

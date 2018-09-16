@@ -1,16 +1,32 @@
 .button {
 	display: inline-flex;
   align-items:center;
-	padding: .29rem .8rem;
+	padding: .5rem 1rem;
   font-weight: bold;
   letter-spacing: .5px;
-	border: 2px solid currentColor;
-	border-radius: 5px;
+  position: relative;
+
+  &:after {
+    content: " ";
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    position: absolute;
+    border: 2px solid currentColor;
+    border-radius: 5px;
+    opacity: .5;
+    transition: opacity .3s;
+  }
+
+  &:hover:after {
+    opacity: 1;
+  }
 
 
   &.small {
     font-size: .85rem;
-    padding: .15rem .5rem;
+    padding: .35rem .7rem;
   }
 
   + .button {

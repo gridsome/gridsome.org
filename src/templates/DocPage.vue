@@ -1,6 +1,6 @@
 <template>
   <DocsLayout>
-    <div class="docs-page mb" v-html="$page.doc.content"></div>
+    <div class="post docs-page mb" v-html="$page.doc.content"></div>
     <p>
       <a :href="editLink" target="_blank">
         Edit this page on GitHub

@@ -1,15 +1,15 @@
 ---
 title: Say hello to Gridsome 👶🎉💚
 author: Tommy Vedvik
-date: 2018-09-16
+date: 2018-09-17
 excerpt: "A new static site generator baby is born. It's highly inspired by Gatsby.js (React based) but built on top of Vue.js. We have been working on it for a year and finally have a beta ready. You can expect this baby to grow up fast!"
 ---
 
 #### There are so many Static Site Generators. Why another one?
 
-We think **Gridsome** is a missing piece to the Vue.js ecosystem. What Gatsby.js does for React.js is a game changer in how we build websites.  React.js is excellent, but we think Vue.js is more approachable for most web designers and devs getting started with JAMstack. **Gridsome** is the Vue.js alternative to Gatsby, and that is what we're building.
+We think **Gridsome** is a missing piece to the Vue.js ecosystem. What Gatsby.js does for React.js is a game changer in how we build websites.  React.js is excellent, but we think Vue.js is more approachable for most web designers and devs getting started with JAMstack. Gridsome is the Vue.js alternative to Gatsby.
 
-With **Gridsome** you get a **universal GraphQL layer** for all your connected data sources. It's like a single source of truth for your website data ready to be used in Gridsome. Connect to any CMS or APIs like Google Spreadsheet, Airtable, Instagram Feed, local markdown files, etc. This and Vue makes it extremely fun and fast to build websites. 
+With **Gridsome** you get a **universal GraphQL layer** for all your connected data sources. It's like a single source of truth for your website data ready to be used in any page or components. Connect to any CMS or APIs like Google Spreadsheet, Airtable, Instagram Feed, local markdown files, etc. This and Vue makes it extremely fun and fast to build websites. 
 
 You don't need to know GraphQL or Vue to get started with Gridsome - It's a great way to get introduced to both.
 
@@ -81,4 +81,4 @@ The project is more mature than the version tells you, but we're starting here a
 
 We're currently just two brothers working on this, so any contribution is very welcome. We're passionate about building a faster web and make website building fun again.
 
-You can also support us by giving [a star on GitHub](https://github.com/gridsome/gridsome/stargazers) and spread the word :)
+You can also support us by giving [a GitHub star ★](https://github.com/gridsome/gridsome/stargazers) and spread the word :)

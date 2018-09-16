@@ -18,7 +18,7 @@
       
     </Section>
 
-    <Section dots="true" dark="true">
+    <Section dots="true" dark="true" class="post">
       <div class="container grid-cols">
         <Feature gradient="1">
           <h3>A static JAMstack framework</h3>
@@ -37,8 +37,7 @@
 
         <Feature gradient="5">
           <h3>Perfect page speed scores out-of-the-box</h3>
-          <p>Gridsome automatically optimizes your frontend
-            to load and perform blazing fast with top lighthouse scores. You get image compressing, asset minification, code-splitting, critical CSS and lazy-loading out-of-the-box.
+          <p>Gridsome automatically optimises your frontend to load and perform blazing fast. You get code-splitting, asset optimisation, lazy-loading, and almost perfect Lighthouse scores out-of-the-box.
           </p>     
         </Feature>
     
@@ -68,11 +67,11 @@
       </div>
     </Section>
 
-    <Section dots="true" container="md">
+    <Section dots="true" container="md" class="post">
       <div class="container-md text-center">
-        <p class="uppercase"><strong>How Gridsome works</strong></p>
+        <p class="uppercase">How Gridsome works</p>
 
-        <h3>Connect to any CMS or Data Source <span class="gradient-3" style="display:inline-block; vertical-align:middle; line-height: 50px; width: 60px; height: 60px; margin-left: 20px; border-radius: 999px; text-align:center;">1</span></h3>
+        <h3>Connect to any CMS or Data Source <span class="gradient-3" style="display:inline-block; vertical-align:middle; line-height: 60px; width: 60px; height: 60px; margin-left: 20px; border-radius: 999px; text-align:center;">1</span></h3>
         <p>Use Gridsome source plugins to get data from local Markdown files, WordPress, Contentful or any headless CMS & content APIs. Data are pulled into a <g-link to="docs/sources"><span class="no-wrap"><strong>GraphQL</strong> <graph-ql-logo style="margin-left:0" /></span></g-link> layer that any Components, <g-link to="docs/layouts-pages-templates">Pages, Layouts or Templates</g-link> can access.</p>
 
          <svg width="255" height="80" viewBox="0 0 215 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,7 +79,7 @@
         </svg>
 
 
-      <h3><span class="gradient-4" style="display:inline-block; vertical-align:middle; line-height: 50px; width: 60px; height: 60px; margin-right: 20px; border-radius: 999px; text-align:center;">2</span>Build websites with Vue.js</h3>
+      <h3><span class="gradient-4" style="display:inline-block; vertical-align:middle; line-height: 60px; width: 60px; height: 60px; margin-right: 20px; border-radius: 999px; text-align:center;">2</span>Build websites with Vue.js</h3>
         <p>With clean and standard code syntax makes Vue.js very approachable for any web designers and web developers. Vue Single File Components lets you edit Markup, CSS, and JavaScript all in the same file. <g-link to="docs/vue">Learn more about Vue</g-link></p>
         
       <svg width="154" height="70" viewBox="0 0 124 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -98,17 +97,17 @@
 
       <div class="container text-center container-sm mb">
         <h2>Latest posts</h2>
-   
       </div>
-
-      <g-link v-for="edge in $page.posts.edges" :key="edge.node._id" :to="edge.node.path">
-        <Card class="blog-posts__post container container-md">
-          <h3 v-html="edge.node.title"/>
-          <PostMeta :post="edge.node"/>
-          <p v-html="edge.node.fields.excerpt"/>
-          <p class="card__read-more"> Read more </p>
-        </Card>
-      </g-link>
+      <div class="blog-posts container container-md">
+        <g-link v-for="edge in $page.posts.edges" :key="edge.node._id" :to="edge.node.path">
+          <Card class="blog-posts__post post">
+            <h3 v-html="edge.node.title"/>
+            <PostMeta :post="edge.node"/>
+            <p v-html="edge.node.fields.excerpt"/>
+            <p class="card__read-more"> Read more </p>
+          </Card>
+        </g-link>
+      </div>
     </Section>
   </Layout>
 </template>

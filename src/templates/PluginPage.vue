@@ -1,6 +1,6 @@
 <template>
   <PluginsLayout>
-    <div v-html="$page.doc.content"></div>
+    <div class="post" v-html="$page.doc.content"></div>
   </PluginsLayout>
 </template>
 

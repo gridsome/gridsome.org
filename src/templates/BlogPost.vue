@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <Section container="md" dots="true">
+    <Section class="post" container="md" dots="true" >
       <h1 v-html="$page.post.title"/>
       <PostMeta :post="$page.post"/>
       <p class="lead" v-html="$page.post.fields.excerpt"/>

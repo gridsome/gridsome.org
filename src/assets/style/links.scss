@@ -2,6 +2,27 @@ a {
   color: var(--primary-link-color);
   text-decoration: none;
   transition: color .3s, opacity .3s;
+  display: inline-block;
+  position: relative;
+
+  .post &:not(.button):after {
+  	content: "";
+  	top: calc(100% - 2px);
+  	opacity: 1;
+  	left:2px;
+  	right:2px;
+  	width:100%;
+  	position: absolute;
+  	opacity: .15;
+  	border-bottom: 2px solid currentColor;
+  	z-index: -1;
+  	transition: opacity .3s;
+  }
+
+  .post &:not(.button):hover:after {
+    opacity: 1;
+  }
+
 }
 
 a.plain {

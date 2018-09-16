@@ -6,12 +6,12 @@
       <p class="lead">Follow our mission to save the web from bloat and make building websites fun again.</p>
     </Section>
 
-    <div class="blog-posts">
+    <div class="blog-posts container container-md">
       <g-link v-for="edge in $page.posts.edges" :key="edge.node._id" :to="edge.node.path">
-        <Card class="blog-posts__post container container-md">
-          <h2 v-html="edge.node.title"/>
+        <Card class="blog-posts__post">
+          <h3 v-html="edge.node.title"/>
           <PostMeta :post="edge.node"/>
-          <p class="lead" v-html="edge.node.fields.excerpt"/>
+          <p v-html="edge.node.fields.excerpt"/>
           <p class="card__read-more"> Read more </p>
         </Card>
       </g-link>
