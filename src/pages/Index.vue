@@ -127,6 +127,7 @@ export default {
   },
   metaInfo: {
     title: 'Gridsome - Built faster, better websites with Vue.js',
+    titleTemplate: '%s',
     meta: [
       {
         name: 'description',
