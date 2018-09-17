@@ -47,6 +47,52 @@ locally.
 Set a template for the title tag. The `%s` placeholder is replaced with title
 from metaInfo you set in your pages.
 
+#### icon
+
+- Type `string | Object`
+- Default `src/favicon.png`
+
+Gridsome will use any image located at `src/favicon.png` as favicon and
+touchicon by default, but you can define another path or sizes etc. The icon
+should be a square and minimum 16 pixels. The favicon will be resized to 16, 32,
+96 pixels. And the touchicon will be resized to 76, 152, 120, 167, 180 pixels by
+default.
+
+```js
+{
+  icon: 'src/my-icon.png'
+}
+```
+
+Use a different image for touch icons:
+
+```js
+{
+  icon: {
+    favicon: 'src/my-favicon.png',
+    touchicon: 'src/my-touchicon.png'
+  }
+}
+```
+
+Define custom sizes and disable effects on iOS < 7 devices:
+
+```js
+{
+  icon: {
+    favicon: {
+      src: 'src/my-favicon.png',
+      sizes: [16, 32, 96]
+    },
+    touchicon: {
+      src: 'src/my-touchicon.png',
+      sizes: [76, 152, 120, 167],
+      precomposed: true
+    }
+  }
+}
+```
+
 #### chainWebpack
 
 - Type `Function`
