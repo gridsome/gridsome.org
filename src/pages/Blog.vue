@@ -7,14 +7,7 @@
     </Section>
 
     <div class="blog-posts container container-md">
-      <g-link v-for="edge in $page.posts.edges" :key="edge.node._id" :to="edge.node.path">
-        <Card class="blog-posts__post">
-          <h3 v-html="edge.node.title"/>
-          <PostMeta :post="edge.node"/>
-          <p v-html="edge.node.fields.excerpt"/>
-          <p class="card__read-more"> Read more </p>
-        </Card>
-      </g-link>
+      <PostCard v-for="edge in $page.posts.edges" :key="edge.node._id" :post="edge.node"/>
     </div>
   </Layout>
 </template> 
@@ -41,11 +34,11 @@ query BlogPosts {
 </graphql>
 
 <script>
-import PostMeta from '@/components/PostMeta.vue'
+import PostCard from '@/components/PostCard.vue'
 
 export default {
   components: {
-    PostMeta
+    PostCard
   }
 }
 </script>
@@ -53,9 +46,5 @@ export default {
 <style lang="scss">
 .blog-posts {
   padding: 2rem 1rem;
-
-  &__post {
-    margin-bottom: 2rem;
-  }
 }
 </style>

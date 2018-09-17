@@ -94,36 +94,28 @@
     </Section>
 
     <Section dots="true" primary="true">
-
       <div class="container text-center container-sm mb">
         <h2>Latest posts</h2>
       </div>
       <div class="blog-posts container container-md">
-        <g-link v-for="edge in $page.posts.edges" :key="edge.node._id" :to="edge.node.path">
-          <Card class="blog-posts__post post">
-            <h3 v-html="edge.node.title"/>
-            <PostMeta :post="edge.node"/>
-            <p v-html="edge.node.fields.excerpt"/>
-            <p class="card__read-more"> Read more </p>
-          </Card>
-        </g-link>
+        <PostCard v-for="edge in $page.posts.edges" :key="edge.node._id" :post="edge.node"/>
       </div>
     </Section>
   </Layout>
 </template>
 
 <script>
-import SourceAnimation from '@/components/SourceAnimation.vue'
 import VueLogo from '@/components/logos/vue'
+import SourceAnimation from '@/components/SourceAnimation.vue'
 import GraphQlLogo from '@/components/logos/graphql'
-import PostMeta from '@/components/PostMeta.vue'
+import PostCard from '@/components/PostCard.vue'
 
 export default {
   components: {
-    SourceAnimation,
     VueLogo,
+    SourceAnimation,
     GraphQlLogo,
-    PostMeta
+    PostCard
   },
   metaInfo: {
     title: 'Gridsome - Built faster, better websites with Vue.js',
