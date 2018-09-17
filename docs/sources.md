@@ -62,7 +62,7 @@ Gridsome has built-in component and functionality to paginate GraphQL queries.
 </template>
 
 <script>
-import { Pager } from '@gridsome/components'
+import { Pager } from 'gridsome'
 
 export default {
   components: {

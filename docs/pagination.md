@@ -16,7 +16,7 @@ Use the `@paginate` directive in your GraphQL query to add pagination for a list
 </template>
 
 <script>
-import { Pager } from '@gridsome/components'
+import { Pager } from 'gridsome'
 
 export default {
   components: {
