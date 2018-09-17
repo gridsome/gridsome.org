@@ -50,7 +50,7 @@ from metaInfo you set in your pages.
 #### icon
 
 - Type `string | Object`
-- Default `src/favicon.png`
+- Default `'src/favicon.png'`
 
 Gridsome will use any image located at `src/favicon.png` as favicon and
 touchicon by default, but you can define another path or sizes etc. The icon
