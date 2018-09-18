@@ -3,7 +3,7 @@
 Gridsome template system is divided into 3 parts:
 
 - **Pages:** This is the main pages and endpoints for your site. F.ex mywebsite.com/blog
-- **Layouts:** These are used for to wrap Pages and Templates. Like header and footer.
+- **Layouts:** Used for wrapping Pages and Templates. Usually includes header and footer.
 - **Templates:** Used for single source endpoints. F.ex a blog post template for WordPress
 
 ## Pages

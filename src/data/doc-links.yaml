@@ -9,10 +9,10 @@
   items:
     - title: Introduction
       link: /docs/introduction
-    - title: Data Sources (GraphQL)
-      link: /docs/sources
     - title: Layouts, Pages & Templates
       link: /docs/layouts-pages-templates
+    - title: Data Sources (GraphQL)
+      link: /docs/sources
     - title: Vue & Single File Components
       link: /docs/vue
     - title: Directory structure
