@@ -32,4 +32,6 @@ export default function (Vue, { head }) {
     type: 'text/css',
     cssText: typography.toString()
   })
+
+  head.__dangerouslyDisableSanitizers = ['style']
 }
