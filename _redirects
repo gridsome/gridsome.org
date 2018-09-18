@@ -1,0 +1,2 @@
+https://gridsome-org-live.netlify.com/* https://gridsome.org/:splat 301!
+https://gridsome-org-dev.netlify.com/* https://next.gridsome.org/:splat 301!
