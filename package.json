@@ -8,7 +8,7 @@
     "build": "gridsome build"
   },
   "dependencies": {
-    "gridsome": "^0.0.5",
+    "gridsome": "^0.0.6",
     "typeface-league-spartan": "0.0.44",
     "typography": "^0.16.17"
   },
