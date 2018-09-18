@@ -1,10 +1,10 @@
-# Introduction to Gridsome
+# Introduction
 
 Gridsome is a static site generator powered by GraphQL and Vue.js. It uses GraphQL as a single source of truth for all data connected to the website. You can pull data from any CMS, local Markdown or content APIs into the GraphQL layer. Data can be explored in a local GraphQL playground and be inserted into any component quickly. It also has Transformer plugins that can manipulate the data pulled to GraphQL. Gridsome is inspired by Gatsby (A React.js alternative).
 
 We built Gridsome because there was no Vue.js alternative to Gatsby.
 
-## Build a website that...
+## Build a websites that...
 - Load blazing fast on any network connection
 - Get perfect scores on Google Lighthouse
 - Is automatically optimized at build time
@@ -12,7 +12,6 @@ We built Gridsome because there was no Vue.js alternative to Gatsby.
 - Is impossible to hack and don't need any security plugins
 - Can be installed as a PWA-app
 - Can have transitions & animations between pages
-
 
 ## How it works
 Gridsome generates all pages and endpoints at build time. It creates two versions of every page. One HTML page that search engines can crawl for SEO-purpose, and one JavaScript file that Gridsome uses for SPA after first page load. Next pages are loaded in the background with Service workers. That makes browsing around extremely fast, and your site is 100%-SEO friendly. It even works offline.
@@ -34,3 +33,7 @@ Gridsome follows the [PRPL-pattern by Google.](https://developers.google.com/web
 
 -	**[Gatsby.js](https://www.gatsbyjs.org/)**  Gridsome is highly inspired by Gatsby.js (React.js based). Gridsome is the Vue.js alternative to this framework.
 
+## Next steps..
+- [How Pages, Layouts and Templates works](/docs/layouts-pages-templates)
+- [How Data Sources & GraphQL works](/docs/sources)
+- [Learn how to deploy and host a Gridsome site ](/docs/deployment)

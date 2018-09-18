@@ -12,6 +12,7 @@ If you want to learn more about Gridsome and its core concepts [go here](/docs/i
 4. Happy coding 🎉🙌
 
 ### 3. Next steps..
-- [How Pages, Layouts and Templates works](/docs/layouts-pages-templates)
 - [Get an introduction to Gridsome](/docs/introduction)
+- [How Pages, Layouts and Templates works](/docs/layouts-pages-templates)
+- [How Data Sources & GraphQL works](/docs/sources)
 - [Learn how to deploy and host a Gridsome site ](/docs/deployment)

@@ -1,14 +1,14 @@
 - title: Getting started
   items:
-    - title: Install Gridsome CLI
+    - title: Install Gridsome
       link: /docs
+    - title: Introduction
+      link: /docs/introduction
     - title: Starter kits
       link: /docs/starters
 
 - title : Core concepts
   items:
-    - title: Introduction
-      link: /docs/introduction
     - title: Layouts, Pages & Templates
       link: /docs/layouts-pages-templates
     - title: Data Sources (GraphQL)
