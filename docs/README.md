@@ -11,7 +11,7 @@ If you want to learn more about Gridsome and its core concepts [go here](/docs/i
 3. `gridsome develop` to start local dev server at `http://localhost:8080`
 4. Happy coding 🎉🙌
 
-
 ### 3. Next steps..
-- [Get a introduction to Gridsome](/docs/introduction)
+- [How Pages, Layouts and Templates works](/docs/layouts-pages-templates)
+- [Get an introduction to Gridsome](/docs/introduction)
 - [Learn how to deploy and host a Gridsome site ](/docs/deployment)
