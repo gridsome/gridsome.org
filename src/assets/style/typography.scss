@@ -21,6 +21,10 @@ h1, h2, h3, .lead, .button {
   -moz-osx-font-smoothing: grayscale;
 }
 
+p {
+  font-weight: 300;
+}
+
 p:last-child {
   margin:0;
 }
