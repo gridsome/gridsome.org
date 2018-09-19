@@ -3,7 +3,6 @@
     <h3 v-html="post.title"/>
     <PostMeta :post="post"/>
     <p v-html="post.fields.excerpt"/>
-    <span class="card__read-more">Read more</span>
     <g-link class="blog-posts__post-link" :to="post.path">
       Read more
     </g-link>

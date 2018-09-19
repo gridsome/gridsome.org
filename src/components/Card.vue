@@ -34,17 +34,8 @@ export default {
       color: currentColor;
     }
 
-    
-    &__read-more {
-      text-transform: uppercase;
-      font-size: .7rem;
-      font-weight: 500;
-      letter-spacing: 2px;
-      opacity: .7;
-    }
-
-    h2, h3, h4 {
-      margin-bottom: .66rem;
+    h2, h3, h4, p {
+      margin-bottom: 1rem;
     }
   }
 </style>
