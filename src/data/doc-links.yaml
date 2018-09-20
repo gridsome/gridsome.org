@@ -26,6 +26,16 @@
       link: /docs/config
     - title: Gridsome CLI
       link: /docs/gridsome-cli
+
+- title: Core components
+  items:
+    - title: Link
+      link: /docs/link
+    - title: Image
+      link: /docs/image
+    - title: Pagination
+      link: /docs/pagination
+
       
 
 - title: Guides
@@ -41,15 +51,6 @@
     - title: Custom head meta
       link: /docs/custom-head-meta
 
-
-- title: Core components
-  items:
-    - title: Link
-      link: /docs/link
-    - title: Image
-      link: /docs/image
-    - title: Pagination
-      link: /docs/pagination
 
 - title: Deploy
   items:
