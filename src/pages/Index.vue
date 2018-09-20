@@ -15,7 +15,36 @@
       
     </Section>
 
-    <Section dots="true" dark="true" class="post">
+    <Section dots="true" dark="true">
+      <div class="container text-center">
+        <div class="tabs flex gap-30 flex--center">
+          <a class="active">Use GraphQL for data</a>
+          <a>Automatic Page Routing</a>
+          <a>Smart Template System</a>
+          <a>Generate SEO-friendly HTML</a>
+          <a>More...</a>
+
+        </div>
+      </div>
+      <div class="container grid-cols grid-cols--2">
+          <div>
+            <div class="frame">
+
+            </div>
+            <p>
+              Pull data from any source into a internal GraphQL layer
+            </p>
+          </div>
+          <div>
+            <div class="frame">
+                asdfsadf
+            </div>
+            <p>Add GraphQL queries to any pages & templates</p>
+          </div>
+      </div>
+    </Section>
+
+    <Section dots="true" featured="true" class="post">
       <div class="container grid-cols">
    
         <Feature gradient="4">
@@ -25,13 +54,13 @@
         </Feature>
 
         <Feature gradient="3">
-          <h3>Pull data from any data source or CMS</h3>
+          <h3>Connect to any CMS or data source</h3>
           <p>Use any CMS or data source for content. Pull data from WordPress, Contentful, local Markdown, or any other headless CMS or APIs and access it with <strong>GraphQL</strong> in your components and pages.
           </p>
         </Feature>
 
          <Feature gradient="2">
-          <h3>Enjoy a modern development stack</h3>
+          <h3>Modern dev stack with zero setup</h3>
           <p>Build websites with modern tools like Vue.js, Webpack and Node.js. Get hot-reloading and access to any packages from npm and write CSS in your favorite preprocessor.
           </p>
         </Feature>
@@ -60,14 +89,15 @@
           </p>     
         </Feature>
       </div>
-      <div class="container">
-   
-      </div>
     </Section>
 
     <Section dots="true" container="md" class="post">
       <div class="container-md text-center">
-        <p class="uppercase">How Gridsome works</p>
+        
+        <div class="container text-center mb">
+          <h2>How Gridsome works</h2>
+          <p>Lorem ipsium</p>
+        </div>
 
         <h3>Connect to any CMS or Data Source <span class="gradient-3" style="display:inline-block; vertical-align:middle; line-height: 60px; width: 60px; height: 60px; margin-left: 20px; border-radius: 999px; text-align:center;">1</span></h3>
         <p>Use Gridsome source plugins to get data from local Markdown files, WordPress, Contentful or any headless CMS & content APIs. Data are pulled into a <g-link to="docs/sources"><span class="no-wrap"><strong>GraphQL</strong> <graph-ql-logo style="margin-left:0" /></span></g-link> layer that any Components, <g-link to="docs/layouts-pages-templates">Pages, Layouts or Templates</g-link> can access.</p>
@@ -151,17 +181,11 @@ query BlogPosts {
 
 
 <style>
-hr {
-  opacity: .3;
-  margin: 3rem 0;
+.frame {
+  background-color: rgba(0,0,0,.2);
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1rem;
 }
-
-.stroke-anim {
-  stroke: #ccc;
-  stroke-width: 5px;
-  stroke-linecap: round;
-  stroke-dasharray: 0 15;
-  animation: stroke 300ms linear infinite;
-}
-
 </style>

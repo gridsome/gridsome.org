@@ -1,0 +1,14 @@
+.tabs {
+	margin-top: -5%;
+	margin-bottom: 3%;
+
+	a {
+		padding: 4px 10px;
+	}
+
+	a.active {
+		border-radius: 6px;
+		color:#FFF;
+		background-color:rgba(0,0,0,.6);
+	}
+}
