@@ -11,10 +11,7 @@
         <a href="//github.com/gridsome/gridsome" class="button plain">GitHub</a>
 
       </div>
-    
-      <div class="container hide-for-small">
-        <SourceAnimation />
-      </div>
+  
       
     </Section>
 

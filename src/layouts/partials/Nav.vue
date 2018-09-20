@@ -13,9 +13,9 @@
     </g-link>
 
 
-    <g-link to="/tutorial">
+    <g-link to="/learn">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-compass"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
-      <span>Tutorial</span>
+      <span>Learn</span>
     </g-link>
 
 
@@ -27,6 +27,10 @@
 </template>
 
 <style lang="scss">
+
+  .main-nav svg {
+      display: none;
+  }
 
   @media screen and (max-width: 750px) {
     .main-nav {
@@ -41,6 +45,11 @@
       min-height: 60px;
       flex-wrap: nowrap!important;
       padding: 10px var(--space);
+
+      svg {
+        display: block;
+      }
+
     }
   }
 </style>
