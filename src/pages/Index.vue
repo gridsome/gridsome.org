@@ -19,22 +19,21 @@
       <div class="container grid-cols">
    
         <Feature gradient="4">
-          <h3>PWA-ready mobile first architecture</h3>
+          <h3>PWA mobile first architecture</h3>
           <p>Only critical HTML, CSS, and JavaScript are loaded at first, and then the next pages are prefetched so users can click around without page reloads and even when offline. Follows the <a href="https://developers.google.com/web/fundamentals/performance/prpl-pattern/">PRPL-pattern</a> by Google.
           </p>     
         </Feature>
 
         <Feature gradient="3">
-          <h3>Pull data from any CMS or data source</h3>
+          <h3>Pull data from any data source or CMS</h3>
           <p>Use any CMS or data source for content. Pull data from WordPress, Contentful, local Markdown, or any other headless CMS or APIs and access it with <strong>GraphQL</strong> in your components and pages.
-          </p>     
+          </p>
         </Feature>
 
          <Feature gradient="2">
-          <h3>Enjoy modern development tools</h3>
-          <p>Build websites using the latest web tech tools that you love.
-            Vue.js, Webpack, Node. Hot-reloading, modern JavaScript & CSS tools are at your disposal. Make website building fun again.
-          </p>     
+          <h3>Enjoy a modern development stack</h3>
+          <p>Build websites with modern tools like Vue.js, Webpack and Node.js. Get hot-reloading and access to any packages from npm and write CSS in your favorite preprocessor.
+          </p>
         </Feature>
 
 
