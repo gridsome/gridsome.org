@@ -5,6 +5,7 @@ a {
   display: inline-block;
   position: relative;
 
+
   .post &:not(.button):after {
   	content: "";
   	top: calc(100% - 2px);

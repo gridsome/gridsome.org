@@ -17,13 +17,12 @@
 
     <Section dots="true" dark="true" class="post">
       <div class="container grid-cols">
-        <Feature gradient="1">
-          <h3>A static JAMstack framework</h3>
-          <p>The future of the web is mobile, JavaScript, and APIs <strong>— the JAMstack</strong>. Gridsome uses the power of blazing-fast <strong>static site generator</strong>, JavaScript and APIs to create stunning dynamic web experiences.
-          </p>
+   
+        <Feature gradient="4">
+          <h3>PWA-ready mobile first architecture</h3>
+          <p>Only critical HTML, CSS, and JavaScript are loaded at first, and then the next pages are prefetched so users can click around without page reloads and even when offline. Follows the <a href="https://developers.google.com/web/fundamentals/performance/prpl-pattern/">PRPL-pattern</a> by Google.
+          </p>     
         </Feature>
- 
-
 
         <Feature gradient="3">
           <h3>Pull data from any CMS or data source</h3>
@@ -31,27 +30,30 @@
           </p>     
         </Feature>
 
+         <Feature gradient="2">
+          <h3>Enjoy modern development tools</h3>
+          <p>Build websites using the latest web tech tools that you love.
+            Vue.js, Webpack, Node. Hot-reloading, modern JavaScript & CSS tools are at your disposal. Make website building fun again.
+          </p>     
+        </Feature>
+
 
         <Feature gradient="5">
-          <h3>Perfect page speed scores out-of-the-box</h3>
+          <h3>Perfect page speed scores as default</h3>
           <p>Gridsome automatically optimises your frontend to load and perform blazing fast. You get code-splitting, asset optimisation, lazy-loading, and almost perfect Lighthouse scores out-of-the-box.
           </p>     
         </Feature>
     
 
-        <Feature gradient="2">
-          <h3>Enjoy modern development tools</h3>
-          <p>Build websites using the latest web tech tools that you love.
-            Vue.js, Webpack, Node. Hot-reloading, modern JavaScript & CSS tools are at your disposal.
-          </p>     
-        </Feature>
+   
 
-
-        <Feature gradient="4">
-          <h3>PWA Mobile-first architecture</h3>
-          <p>Only critical HTML, CSS, and JavaScript are loaded at first, and then the next pages are prefetched so users can click around without page reloads and even when offline.
-          </p>     
+        <Feature gradient="1">
+          <h3>A static JAMstack framework</h3>
+          <p>The future of the web is mobile, JavaScript, and APIs <strong>— the JAMstack</strong>. Gridsome uses the power of blazing-fast <strong>static site generator</strong>, JavaScript and APIs to create stunning dynamic web experiences.
+          </p>
         </Feature>
+ 
+
 
         <Feature gradient="6">
           <h3>Ready for global domination</h3>
