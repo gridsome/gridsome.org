@@ -65,31 +65,58 @@
       </div>
     </Section>
 
-    <Section dots="true" container="md" class="post">
-      <div class="container-md text-center">
-        <p class="uppercase">How Gridsome works</p>
+    <Section dots="true" class="post">
+      <div class="container grid-cols grid-cols--2">
+        <div style="width: 480px;">
 
-        <h3>Connect to any CMS or Data Source <span class="gradient-3" style="display:inline-block; vertical-align:middle; line-height: 60px; width: 60px; height: 60px; margin-left: 20px; border-radius: 999px; text-align:center;">1</span></h3>
-        <p>Use Gridsome source plugins to get data from local Markdown files, WordPress, Contentful or any headless CMS & content APIs. Data are pulled into a <g-link to="docs/sources"><span class="no-wrap"><strong>GraphQL</strong> <graph-ql-logo style="margin-left:0" /></span></g-link> layer that any Components, <g-link to="docs/layouts-pages-templates">Pages, Layouts or Templates</g-link> can access.</p>
+          <div class="mb">
+            <h4 style="margin-bottom: .5rem">Use GraphQL for data</h4>
+            <p>Pull data from any CMS or sources into a internal GraphQL layer, and access it in any page or components with a query. Data sources is added with Gridsome Source Plugins</p>
+          </div>
 
-         <svg width="255" height="80" viewBox="0 0 215 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path class="stroke-anim" d="M213.721 1.01564C191.069 18.673 142.278 36.8063 109.706 36.282C76.2304 35.7431 28.511 34.8609 0.42388 63.456" stroke="black"/>
-        </svg>
+          <div  class="mb">
+            <h4 style="margin-bottom: .5rem">Automatic Page Routing</h4>
+            <p>Add a .vue file in <code>/pages</code> and it will automatically be a route. F.ex <code>pages/About.vue</code> will be <strong>website.com/about</strong></p>
+          </div>
 
 
-      <h3><span class="gradient-4" style="display:inline-block; vertical-align:middle; line-height: 60px; width: 60px; height: 60px; margin-right: 20px; border-radius: 999px; text-align:center;">2</span>Build websites with Vue.js</h3>
-        <p>With clean and standard code syntax makes Vue.js very approachable for any web designers and web developers. Vue Single File Components lets you edit Markup, CSS, and JavaScript all in the same file. <g-link to="docs/vue">Learn more about Vue</g-link></p>
-        
-      <svg width="154" height="70" viewBox="0 0 124 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-       <path class="stroke-anim" d="M0.388268 0.76767C12.9278 13.0338 40.7333 26.6027 59.8012 27.5046C79.3978 28.4315 107.337 29.6792 122.618 49.216" stroke="black"/>
-      </svg>
+          <div  class="mb">
+            <h4 style="margin-bottom: .5rem">Smart template system</h4>
+            <p>Any .vue files added to <code>/templates</code> will be the template to a GraphQL collection. F.ex <code>templates/WordPressPost.vue</code> will be the single page template for <strong>WordPressPost</strong> collection</p>
+          </div>
 
-      <h3>Generate & Deploy<span class="gradient-5" style="display:inline-block; vertical-align:middle; line-height: 60px; width: 60px; height: 60px; margin-left: 20px; border-radius: 999px; text-align:center;">3</span></h3>
-        <p>The blazing fast <strong>static site generator</strong> creates HTML files of all pages & content that SEO engines can crawl - ready to be deployed and hosted safely on any global CDN or FTP. You can also use CI service like <strong>Netlify</strong> that generates, deploy and host your websites from a selected Git-repo automatically. <g-link to="docs/deployment"> Learn more about deployment</g-link></p>
 
-        <g-link to="/docs" class="button lead"> Get started </g-link>
+          <div class="mb">
+            <h4 style="margin-bottom: .5rem">Dynamic Routes for data sources</h4>
+            <p>
+              Data sources added to Gridsome gets automatic routing from plugin settings. F.ex, a source plugin can have <code>route: '/blog/:year/:month/:day/:slug'</code> as settings.
+            </p>
+          </div>
+
+
+
+          <div>
+            <h4 style="margin-bottom: .5rem">Generate SEO-friendly HTML</h4>
+            <p>
+              Gridsome generates optimized HTML that any SEO engine can read. The static site generation is blazing fast because it uses a in-memory database for all content.
+            </p>
+          </div>
+        </div>
+
+        <div>
+            <pre v-text="example" />
+        </div>
+
       </div>
     </Section>
+
+    <Section>
+      <div class="text-center">
+        <h2>How Gridsome works</h2>
+      </div>
+      <SourceAnimation />
+    </Section>
+
 
     <Section dots="true" primary="true">
       <div class="container text-center container-sm mb">
@@ -107,14 +134,22 @@ import VueLogo from '@/components/logos/vue'
 import SourceAnimation from '@/components/SourceAnimation.vue'
 import GraphQlLogo from '@/components/logos/graphql'
 import PostCard from '@/components/PostCard.vue'
+import Example from 'raw-loader!@/data/graphql-example.txt'
 
 export default {
   components: {
     VueLogo,
     SourceAnimation,
     GraphQlLogo,
-    PostCard
+    PostCard,
   },
+
+  computed: {
+    example() {
+      return  Example
+    }
+  },
+
   metaInfo: {
     title: 'Gridsome - Built faster, better websites with Vue.js',
     titleTemplate: '%s',
@@ -148,20 +183,3 @@ query BlogPosts {
   }
 }
 </graphql>
-
-
-<style>
-hr {
-  opacity: .3;
-  margin: 3rem 0;
-}
-
-.stroke-anim {
-  stroke: #ccc;
-  stroke-width: 5px;
-  stroke-linecap: round;
-  stroke-dasharray: 0 15;
-  animation: stroke 300ms linear infinite;
-}
-
-</style>

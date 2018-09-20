@@ -1,19 +1,24 @@
 <template>
-  <div class="source-animation">
+  <div class="source-animation text-center">
     <div class="source-animation__image">
       <g-image alt="cms" class="source-animation__image-cms" src="../assets/images/CMS.png" />
+      <p>1. Connect to any data source</p>
     </div>
     <svg width="60" height="20" viewBox="0 0 60 20" class="source-animation__dot">
       <path d="M1 9.5H99" />
     </svg>
-    <div class="source-animation__logo">
-      <Logo />
+    <div>
+      <div class="source-animation__logo">
+        <Logo />
+      </div>
+      <p>2. Build. Vue.js, GraphQL, Webpack</p>
     </div>
     <svg width="60" height="20" viewBox="0 0 60 20" class="source-animation__dot source-animation__dot--after">
       <path d="M1 9.5H99" />
     </svg>
     <div class="source-animation__image">
       <g-image alt="devices" class="source-animation__image-device" src="../assets/images/device.png" />
+      <p>3. Deploy static site</p>
     </div>
   </div>
 </template>
