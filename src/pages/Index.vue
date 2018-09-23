@@ -8,7 +8,7 @@
           <span style="font-size: 75%;">The Vue framework for</span>
           <transition name="rotate">
             <div v-if="currentText == 0" class="gradient-text" style="font-size: 140%;" key="0">Blazing fast websites</div>
-            <div v-else-if="currentText == 1" key="1" class="gradient-text" style="font-size: 140%;">the Headless CMS</div>
+            <div v-else-if="currentText == 1" key="1" class="gradient-text" style="font-size: 140%;">any Headless CMS</div>
             <div v-else-if="currentText == 2" key="2" class="gradient-text" style="font-size: 140%;">Static Websites
             </div>
             <div v-else-if="currentText == 3" key="3" class="gradient-text" style="font-size: 140%;">eCommerce PWAs
@@ -20,7 +20,7 @@
           </transition>
         </h1>
 
-        <p class="container-sm lead">Build blazing fast websites & apps with<br> <strong class="no-wrap">Vue.js<vue-logo/> </strong> and <strong class="no-wrap">GraphQL<graph-ql-logo /></strong></p>
+        <p class="container-sm lead" style="font-size: 130%">Build blazing fast websites with<br> <strong class="no-wrap">Vue.js<vue-logo/> </strong> and <strong class="no-wrap">GraphQL<graph-ql-logo /></strong></p>
         <g-link to="/docs" class="button"> Get started </g-link>
         <a href="//github.com/gridsome/gridsome" class="button plain">GitHub</a>
 
@@ -33,7 +33,7 @@
       <div class="container grid-cols">
    
         <Feature gradient="4">
-          <h3>PWA mobile first architecture</h3>
+          <h3>Mobile first architecture</h3>
           <p>Only critical HTML, CSS, and JavaScript are loaded at first, and then the next pages are prefetched so users can click around without page reloads and even when offline. Follows the <a href="https://developers.google.com/web/fundamentals/performance/prpl-pattern/">PRPL-pattern</a> by Google.
           </p>     
         </Feature>
@@ -61,8 +61,8 @@
    
 
         <Feature gradient="1">
-          <h3>A static JAMstack framework</h3>
-          <p>The future of the web is mobile, JavaScript, and APIs <strong>— the JAMstack</strong>. Gridsome uses the power of blazing-fast <strong>static site generator</strong>, JavaScript and APIs to create stunning dynamic web experiences.
+          <h3>A JAMstack framework</h3>
+          <p>The future of the web is mobile, JavaScript, and APIs <strong>— the JAMstack</strong>. Gridsome uses the power of blazing-fast <strong>static site generator</strong> or <strong>server-side rendering</strong>, JavaScript and APIs to create stunning dynamic web experiences.
           </p>
         </Feature>
  
@@ -96,15 +96,7 @@
 
           <div  class="mb">
             <h4 style="margin-bottom: .5rem">Smart template system</h4>
-            <p>Any .vue files added to <code>/templates</code> will be the template to a GraphQL collection. F.ex <code>templates/WordPressPost.vue</code> will be the single page template for <strong>WordPressPost</strong> collection</p>
-          </div>
-
-
-          <div class="mb">
-            <h4 style="margin-bottom: .5rem">Dynamic Routes for data sources</h4>
-            <p>
-              Data sources added to Gridsome gets automatic routing from plugin settings. F.ex, a source plugin can have <code>route: '/blog/:year/:month/:day/:slug'</code> as settings.
-            </p>
+            <p>Any .vue files added to <code>/templates</code> will be the template to a GraphQL collection. F.ex <code>templates/WordPressPost.vue</code> will be the single page template for <strong>allWordPressPost</strong> collection</p>
           </div>
 
 
@@ -112,7 +104,7 @@
           <div>
             <h4 style="margin-bottom: .5rem">Generate SEO-friendly HTML</h4>
             <p>
-              Gridsome generates optimized HTML that any SEO engine can read. The static site generation is blazing fast because it uses a in-memory database for all content.
+              Gridsome generates optimized HTML that any SEO engine can read. The static site generation is extremely fast because it uses a in-memory database for all content.
             </p>
           </div>
         </div>
@@ -182,7 +174,7 @@ export default {
 
 
   metaInfo: {
-    title: 'Gridsome - Built faster, better websites with Vue.js',
+    title: 'Gridsome - Build blazing fast websites with Vue.js and GraphQL',
     titleTemplate: '%s',
     meta: [
       {
