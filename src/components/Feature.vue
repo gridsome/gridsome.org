@@ -1,8 +1,5 @@
 <template>
   <div class="feature">
-    <div class="feature__icon" :class="iconClasses">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-    </div>
     <div class="feature__inner">
       <slot />
     </div>
@@ -15,7 +12,7 @@ export default {
   computed: {
     iconClasses() {
       let classes = []
-      if(this.gradient) classes.push('gradient-' + this.gradient)
+      if(this.gradient) classes.push('gradint-' + this.gradient)
       return classes
     }
   }
@@ -31,7 +28,7 @@ export default {
       height: 50px;
       border-radius: 99px;
       margin: 0 auto 30px;
-      background-color: #ccc;
+      background-color: #FFF;
       display:flex;
       align-items:center;
       justify-content:center;
