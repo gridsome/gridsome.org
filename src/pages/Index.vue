@@ -15,8 +15,6 @@
             </div>
             <div v-else-if="currentText == 4" key="4" class="gradient-text" style="font-size: 140%;">SEO-friendly SPAs
             </div>
-            <div v-else-if="currentText == 5" key="5" class="gradient-text" style="font-size: 140%;">Documentation
-            </div>
             <div v-else-if="currentText == 6" key="6" class="gradient-text" style="font-size: 140%;">Perfect speed scores
             </div>
           </transition>
@@ -164,7 +162,7 @@ export default {
 
   mounted () {
     this._counter = setInterval(() => {
-      this.currentText = (this.currentText + 1) % 6
+      this.currentText = (this.currentText + 1) % 5
     }, 2000)
   },
 
