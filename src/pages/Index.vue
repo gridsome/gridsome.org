@@ -3,10 +3,24 @@
 
     <Section dots="true" class="text-center">
 
-      <div class="container-md fade-up mb">
-        <h1 class="fade-up">Build faster, better websites with <span class="gradient-text">Vue.js</span></h1>
-        
-        <p class="container-sm lead">Gridsome is a blazing fast <strong>static site generator</strong> for building <strong><small>PWA</small> & <small>SPA</small></strong> front-ends for any CMS or data source with <strong class="no-wrap">Vue.js<vue-logo/> </strong> and <strong class="no-wrap">GraphQL<graph-ql-logo /></strong></p>
+      <div class="container-md mb" style="position: relative;">
+        <h1>
+          <span style="font-size: 75%;">The Vue framework for</span>
+          <transition name="rotate">
+            <div v-if="currentText == 0" class="gradient-text" style="font-size: 140%;" key="0">Blazing fast websites</div>
+            <div v-else-if="currentText == 1" key="1" class="gradient-text" style="font-size: 140%;">the Headless CMS</div>
+            <div v-else-if="currentText == 2" key="2" class="gradient-text" style="font-size: 140%;">Static Websites
+            </div>
+            <div v-else-if="currentText == 3" key="3" class="gradient-text" style="font-size: 140%;">eCommerce PWAs
+            </div>
+            <div v-else-if="currentText == 4" key="4" class="gradient-text" style="font-size: 140%;">SEO-friendly SPAs
+            </div>
+            <div v-else-if="currentText == 5" key="5" class="gradient-text" style="font-size: 140%;">Perfect speed scores
+            </div>
+          </transition>
+        </h1>
+
+        <p class="container-sm lead">Build blazing fast websites & apps with<br> <strong class="no-wrap">Vue.js<vue-logo/> </strong> and <strong class="no-wrap">GraphQL<graph-ql-logo /></strong></p>
         <g-link to="/docs" class="button"> Get started </g-link>
         <a href="//github.com/gridsome/gridsome" class="button plain">GitHub</a>
 
@@ -144,11 +158,28 @@ export default {
     PostCard,
   },
 
+  data() {
+    return {
+      currentText: 0
+    }
+  },
+
   computed: {
     example() {
       return  Example
-    }
+    },
   },
+
+  mounted () {
+    this._counter = setInterval(() => {
+      this.currentText = (this.currentText + 1) % 5
+    }, 2000)
+  },
+
+  destroyed () {
+    clearTimeout(this._counter)
+  },
+
 
   metaInfo: {
     title: 'Gridsome - Built faster, better websites with Vue.js',
@@ -183,3 +214,33 @@ query BlogPosts {
   }
 }
 </graphql>
+
+<style>
+
+.rotate-enter-active {
+  transition: all 1s ease;  
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.rotate-leave-active {
+  transition: all 1s ease;  
+}
+
+.rotate-enter-to {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.rotate-leave-to {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.rotate-leave-active{
+  left:0;
+  right:0;
+  position: absolute;
+}
+
+</style>
