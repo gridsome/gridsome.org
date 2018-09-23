@@ -63,9 +63,10 @@ export default {
   }
 
   &--dark {
-    color: rgba(255,255,255,.9);
+    color: rgba(255,255,255,.95);
     text-shadow: 1px 1px 2px rgba(0,0,0,.1);
     background: linear-gradient(180deg, var(--primary-color) 0%,  var(--secondary-color) 100%);
+    
     h1,h2,h3,h4, a {
       color: #FFF;
     }
