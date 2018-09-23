@@ -20,7 +20,7 @@
           </transition>
         </h1>
 
-        <p class="container-md lead" style="font-size: 130%">Build blazing fast websites & apps with <strong>Vue.js<vue-logo/></strong></p>
+        <p class="container-sm lead" style="font-size: 130%">Build blazing fast websites & apps with <br class="hide-for-small" /> <strong>Vue.js</strong><vue-logo/> & <strong>GraphQL</strong><graph-ql-logo style="color:#E535AB" /></p>
         <g-link to="/docs" class="button"> Get started </g-link>
         <a href="//github.com/gridsome/gridsome" class="button plain">GitHub</a>
 
