@@ -53,7 +53,7 @@
         </Feature>
     
         <Feature gradient="4">
-          <h3>Smooth mobile user experience</h3>
+          <h3>PWA Mobile-first architecture</h3>
           <p>Only critical HTML, CSS, and JavaScript are loaded at first, and then the next pages are prefetched so users can click around incredible fast without page reloads and even when offline. 
           </p>     
         </Feature>
