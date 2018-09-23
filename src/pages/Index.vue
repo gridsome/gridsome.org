@@ -37,7 +37,7 @@
 
         <Feature gradient="3">
           <h3>Connect to any CMS or data source</h3>
-          <p>Use any CMS or data source for content. Pull data from WordPress, Contentful, local Markdown, or any other headless CMS or APIs and access it with <strong>GraphQL<graph-ql-logo style="color:#E535AB" /></strong>
+          <p>Use any CMS or data source for content. Pull data from WordPress, Contentful, local Markdown, or any other headless CMS or APIs and access it with <strong>GraphQL<graph-ql-logo style="color:#E535AB" /></strong> in your pages and components.
           </p>
         </Feature>
 
@@ -86,7 +86,7 @@
 
           <div class="mb">
             <h4 style="margin-bottom: .5rem">Use GraphQL for data</h4>
-            <p>Pull data from any CMS or sources into a internal GraphQL database, and access it in any page or components with a query.</p>
+            <p>Pull data from any CMS or sources into a internal GraphQL database, and access it in any page or components with a query. Queries are added with a simple Query tag.</p>
           </div>
 
           <div  class="mb">
@@ -104,7 +104,7 @@
           <div>
             <h4 style="margin-bottom: .5rem">SEO-friendly HTML output</h4>
             <p>
-              Gridsome generates optimized HTML that any SEO engine can read. The static site generation is extremely fast because it uses a in-memory database for all content. You can also use Server-side rendering for SEO support.
+              Gridsome generates optimized HTML that any SEO engine can read. The static site generation is extremely fast because of the internal GraphQL database.
             </p>
           </div>
         </div>
