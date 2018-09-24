@@ -12,12 +12,11 @@
         <a href="#" @click="tab = 'templates'" :class="{active: tab == 'templates'}">
           Smart template system
         </a>
-        <a href="#" @click="tab = 'seo'" :class="{active: tab == 'seo'}">
-          SEO-friendly HTML
-        </a>
         <a href="#" @click="tab = 'images'" :class="{active: tab == 'images'}">
-          Auto image optimizing
+          Auto Image Resize
         </a>
+ 
+  
       </nav>
     </div>
 
@@ -66,6 +65,7 @@ export default {
   background-color: rgba(255,255,255,.9);
   position: sticky; 
   top:-1px;
+  z-index: 100;
 
   &__tabs {
     padding: 10px 0;
