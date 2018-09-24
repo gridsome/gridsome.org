@@ -45,19 +45,19 @@
           </p>
         </Feature>
 
-
-        <Feature>
-          <h3>Get perfect page <br class="hide-for-small"/>speed scores</h3>
-          <p>Gridsome automatically optimises your frontend to load and perform blazing fast. You get code-splitting, asset optimisation, lazy-loading, and almost perfect lighthouse scores out-of-the-box.
-          </p>     
-        </Feature>
-    
         <Feature>
           <h3>PWA Mobile-first architecture</h3>
           <p>Only critical HTML, CSS, and JavaScript are loaded at first, and then the next pages are prefetched so users can click around incredible fast without page reloads and even when offline. 
           </p>     
         </Feature>
    
+
+        <Feature>
+          <h3>Get perfect page <br class="hide-for-small"/>speed scores</h3>
+          <p>Gridsome automatically optimises your frontend to load and perform blazing fast. You get code-splitting, image optimisation, lazy-loading, and almost perfect lighthouse scores out-of-the-box.
+          </p>     
+        </Feature>
+    
 
         <Feature>
           <h3>Build future ready websites</h3>
@@ -75,35 +75,20 @@
       </div>
     </Section>
 
-    <Section dots="true" class="post">
-      <div class="container flex flex-align-top gap-60 mb">
-        <div style="max-width: 400px">
-
-          <div class="mb">
-            <h4 style="margin-bottom: .5rem">Use GraphQL for data</h4>
-            <p>Pull data from any CMS or sources into a internal GraphQL database, and access it in any page or components with a query. Queries are added with a simple Query tag.</p>
-          </div>
-
-          <div  class="mb">
-            <h4 style="margin-bottom: .5rem">Automatic Page Routing</h4>
-            <p>Add a .vue file in <code>/pages</code> and it will automatically be a route. F.ex <code>pages/About.vue</code> will be <strong>website.com/about</strong>.</p>
-          </div>
-
-
-          <div  class="mb">
-            <h4 style="margin-bottom: .5rem">Smart template system</h4>
-            <p>Any .vue files added to <code>/templates</code> will be the template to a GraphQL collection. F.ex <code>templates/WordPressPost.vue</code> will be the single page template for <strong>allWordPressPost</strong> collection.</p>
-          </div>
-
-
-          <div>
-            <h4 style="margin-bottom: .5rem">SEO-friendly HTML output</h4>
-            <p>
-              Gridsome generates optimized HTML that any SEO engine can read. The static site generation is extremely fast because of the internal GraphQL database.
-            </p>
-          </div>
+    <Section dots="true">
+      <div class="container text-center">
+        <nav class="tabs flex gap-30 flex--no-wrap flex--center mb" style="margin-top:-3%">
+          <a class="active">Use GraphQL for data</a>
+          <a>Automatic Page Routing</a>
+          <a>Smart template system</a>
+          <a>SEO-friendly HTML</a>
+        </nav>
+      </div>
+      <div class="container container-md mb">
+        <div class="mb text-center">
+          <p class="lead">Pull data from any CMS or sources into a internal GraphQL database, and access it in any page or components with a query. </p>
         </div>
-
+   
         <div class="flex-fit">
             <pre v-text="example" />
         </div>
@@ -114,16 +99,6 @@
         <g-link to="/docs" class="button"> Get started </g-link>
         <a href="//github.com/gridsome/gridsome" class="button plain">GitHub</a>
       </div>
-    </Section>
-
-    <Section>
-      <div class="text-center">
-        <h2>How Gridsome works</h2>
-      </div>
-
-      <SourceAnimation class="mb" />
-
-
     </Section>
 
 
