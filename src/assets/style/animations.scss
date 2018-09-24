@@ -35,13 +35,13 @@
 
 
 .rotate-enter-active {
-  transition: all 1s ease;  
+  transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);  
   transform: translateY(20px);
   opacity: 0;
 }
 
 .rotate-leave-active {
-  transition: all 1s ease;  
+  transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);  
 }
 
 .rotate-enter-to {
@@ -62,13 +62,13 @@
 
 
 .rotate-x-enter-active {
-  transition: all 1s ease;  
+  transition: all .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);  
   transform: translateX(50px);
   opacity: 0;
 }
 
 .rotate-x-leave-active {
-  transition: all 1s ease;  
+  transition: all .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);  
 }
 
 .rotate-x-enter-to {
