@@ -11,16 +11,16 @@
             <div v-else-if="currentText == 1" key="1" class="gradient-text" style="font-size: 140%;">any Headless CMS</div>
             <div v-else-if="currentText == 2" key="2" class="gradient-text" style="font-size: 140%;">Static Websites
             </div>
-            <div v-else-if="currentText == 3" key="3" class="gradient-text" style="font-size: 140%;">eCommerce PWAs
+            <div v-else-if="currentText == 3" key="3" class="gradient-text" style="font-size: 140%;">eCommerce PWA
             </div>
-            <div v-else-if="currentText == 4" key="4" class="gradient-text" style="font-size: 140%;">SEO-friendly SPAs
+            <div v-else-if="currentText == 4" key="4" class="gradient-text" style="font-size: 140%;">SEO-friendly SPA
             </div>
-            <div v-else-if="currentText == 6" key="6" class="gradient-text" style="font-size: 140%;">Perfect speed scores
+            <div v-else-if="currentText == 5" key="5" class="gradient-text" style="font-size: 140%;">Markdown files
             </div>
           </transition>
         </h1>
 
-        <p class="container-sm lead" style="font-size: 130%">Build blazing fast websites & apps with <br class="hide-for-small" /> <strong>Vue.js</strong><vue-logo/> & <strong>GraphQL</strong><graph-ql-logo style="color:#E535AB" /></p>
+        <p class="container-sm lead" style="font-size: 130%">Build blazing fast websites with <br class="hide-for-small" /> <strong>Vue.js</strong><vue-logo/> & <strong>GraphQL</strong><graph-ql-logo style="color:#E535AB" /></p>
         <g-link to="/docs" class="button"> Get started </g-link>
         <a href="//github.com/gridsome/gridsome" class="button plain">GitHub</a>
 
@@ -33,33 +33,33 @@
       <div class="container grid-cols">
    
 
-        <Feature gradient="3">
+        <Feature>
           <h3>Connect to any CMS or data source</h3>
           <p>Use any CMS or data source for content. Pull data from WordPress, Contentful, local Markdown, or any other headless CMS or APIs and access it with <strong>GraphQL<graph-ql-logo style="color:#E535AB" /></strong> in your pages and components.
           </p>
         </Feature>
 
-         <Feature gradient="2">
+         <Feature>
           <h3>Enjoy a modern development stack</h3>
           <p>Build websites with modern tools like Vue.js, Webpack and Node.js. Get hot-reloading and access to any packages from npm and write CSS in your favorite preprocessor.
           </p>
         </Feature>
 
 
-        <Feature gradient="5">
+        <Feature>
           <h3>Get perfect page <br class="hide-for-small"/>speed scores</h3>
           <p>Gridsome automatically optimises your frontend to load and perform blazing fast. You get code-splitting, asset optimisation, lazy-loading, and almost perfect lighthouse scores out-of-the-box.
           </p>     
         </Feature>
     
-        <Feature gradient="4">
+        <Feature>
           <h3>PWA Mobile-first architecture</h3>
           <p>Only critical HTML, CSS, and JavaScript are loaded at first, and then the next pages are prefetched so users can click around incredible fast without page reloads and even when offline. 
           </p>     
         </Feature>
    
 
-        <Feature gradient="1">
+        <Feature>
           <h3>Build future ready websites</h3>
           <p>The future of the web is mobile, JavaScript, and APIs <strong>— the JAMstack</strong>. Gridsome uses the power of blazing-fast <strong>static site generator</strong> or <strong>server-side rendering</strong>, JavaScript and APIs to create stunning dynamic web experiences.
           </p>
@@ -67,7 +67,7 @@
  
 
 
-        <Feature gradient="6">
+        <Feature>
           <h3>Ready for global domination</h3>
           <p>Gridsome sites are usually not connected to any database and can be hosted entirely on a global CDN. It can handle thousands to millions of hits without breaking - and no expensive server costs.
           </p>     
@@ -162,8 +162,8 @@ export default {
 
   mounted () {
     this._counter = setInterval(() => {
-      this.currentText = (this.currentText + 1) % 5
-    }, 2000)
+      this.currentText = (this.currentText + 1) % 6
+    }, 1700)
   },
 
   destroyed () {

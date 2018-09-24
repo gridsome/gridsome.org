@@ -11,13 +11,13 @@
 
 <graphql>
 query Blog {
-allWordPressPost (limit: 5) {
-  edges {
-    node {
-      _id
-      title
+  allWordPressPost (limit: 5) {
+    edges {
+      node {
+        _id
+        title
+      }
     }
   }
-}
 }
 </graphql>
