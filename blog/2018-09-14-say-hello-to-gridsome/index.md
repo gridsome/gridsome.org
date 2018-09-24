@@ -13,7 +13,7 @@ With **Gridsome** you get a **universal GraphQL layer** for all your connected d
 
 You don't need to know GraphQL or Vue to get started with Gridsome - It's a great way to get introduced to both.
 
-Here is an example on how to query posts from the GraphQL layer in Gridsome inside a Vue component:
+Here is an example on how to query posts from the GraphQL layer in a page:
 
 
 ```html

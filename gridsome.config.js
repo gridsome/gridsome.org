@@ -36,6 +36,20 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
+        type: 'page',
+        index: ['README'],
+        path: 'examples/*.md',
+        typeName: 'Example',
+        remark: {
+          plugins: [
+            '@gridsome/remark-prismjs'
+          ]
+        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
         type: 'post',
         path: 'blog/*/index.md',
         route: '/blog/:year/:month/:day/:slug+',
