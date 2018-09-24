@@ -7,21 +7,21 @@
         <h1>
           <span style="font-size: 75%;">The Vue framework for</span>
           <transition name="rotate">
-            <div v-if="currentText == 0" class="gradient-text" style="font-size: 140%;" key="0">Blazing fast websites</div>
-            <div v-else-if="currentText == 1" key="1" class="gradient-text" style="font-size: 140%;">any Headless CMS</div>
-            <div v-else-if="currentText == 2" key="2" class="gradient-text" style="font-size: 140%;">Static Websites
+            <div v-if="currentText == 0" class="gradient-text" style="font-size: 140%;" key="0">Static Websites</div>
+            <div v-else-if="currentText == 1" key="1" class="gradient-text" style="font-size: 140%;">any CMS</div>
+            <div v-else-if="currentText == 2" key="2" class="gradient-text" style="font-size: 140%;">PWAs
             </div>
-            <div v-else-if="currentText == 3" key="3" class="gradient-text" style="font-size: 140%;">eCommerce PWA
+            <div v-else-if="currentText == 3" key="3" class="gradient-text" style="font-size: 140%;">the JAMstack
             </div>
-            <div v-else-if="currentText == 4" key="4" class="gradient-text" style="font-size: 140%;">SEO-friendly SPA
+            <div v-else-if="currentText == 4" key="4" class="gradient-text" style="font-size: 140%;">SEO-friendly sites
             </div>
             <div v-else-if="currentText == 5" key="5" class="gradient-text" style="font-size: 140%;">Markdown files
             </div>
           </transition>
         </h1>
 
-        <p class="container-sm lead" style="font-size: 130%">Build blazing fast websites with <br class="hide-for-small" /> <strong>Vue.js</strong><vue-logo/> & <strong>GraphQL</strong><graph-ql-logo style="color:#E535AB" /></p>
-        <g-link to="/docs" class="button"> Get started </g-link>
+        <p class="container-sm lead" style="font-size: 130%">Build blazing fast websites with <br class="hide-for-small" /> <strong>Vue.js</strong><vue-logo/> & <strong>GraphQL</strong><graph-ql-logo style="color:#E535AB; margin-right: -8px;" /></p>
+        <g-link  to="/docs" class="button"> Get started </g-link>
         <a href="//github.com/gridsome/gridsome" class="button plain">GitHub</a>
 
       </div>
@@ -35,7 +35,7 @@
 
         <Feature>
           <h3>Connect to any CMS or data source</h3>
-          <p>Use any CMS or data source for content. Pull data from WordPress, Contentful, local Markdown, or any other headless CMS or APIs and access it with <strong>GraphQL<graph-ql-logo style="color:#E535AB" /></strong> in your pages and components.
+          <p>Use any CMS or data source for content. Pull data from WordPress, Contentful, local Markdown, or any other headless CMS or APIs and access it with <strong>GraphQL<graph-ql-logo /></strong> in your pages and components.
           </p>
         </Feature>
 
@@ -73,13 +73,10 @@
           </p>     
         </Feature>
       </div>
-      <div class="container">
-   
-      </div>
     </Section>
 
     <Section dots="true" class="post">
-      <div class="container flex flex-align-top gap-60">
+      <div class="container flex flex-align-top gap-60 mb">
         <div style="max-width: 400px">
 
           <div class="mb">
@@ -112,13 +109,21 @@
         </div>
 
       </div>
+
+      <div class="container text-center">
+        <g-link to="/docs" class="button"> Get started </g-link>
+        <a href="//github.com/gridsome/gridsome" class="button plain">GitHub</a>
+      </div>
     </Section>
 
     <Section>
       <div class="text-center">
         <h2>How Gridsome works</h2>
       </div>
-      <SourceAnimation />
+
+      <SourceAnimation class="mb" />
+
+
     </Section>
 
 
@@ -163,7 +168,7 @@ export default {
   mounted () {
     this._counter = setInterval(() => {
       this.currentText = (this.currentText + 1) % 6
-    }, 1700)
+    }, 2500)
   },
 
   destroyed () {
