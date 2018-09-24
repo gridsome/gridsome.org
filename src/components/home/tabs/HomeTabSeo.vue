@@ -5,7 +5,7 @@
     <p class="lead">Pull data from any CMS or sources into a GraphQL layer, that can be explored in a local GraphQL Playground, and access it in any page or components. </p>
   </div>
 
-  <div class="container-md" v-html="$static.example.content" />
+  <div v-html="$static.example.content" />
 
 </div>
 </template>
