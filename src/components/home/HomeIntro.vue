@@ -9,10 +9,10 @@
           Static Websites
         </div>
         <div v-else-if="currentText == 1" key="1" class="home-title__main gradient-text">
-          any CMS
+          any Headless CMS
         </div>
         <div v-else-if="currentText == 2" key="2" class="home-title__main gradient-text">
-          PWAs
+          eCommerce PWAs
         </div>
         <div v-else-if="currentText == 3" key="3" class="home-title__main gradient-text">
           the JAMstack

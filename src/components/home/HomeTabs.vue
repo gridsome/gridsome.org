@@ -1,18 +1,17 @@
 <template>
-  <Section dots="true">
-
+  <Section id="top" dots="true">
     <div class="home-tabs container text-center">
       <nav class="home-tabs__tabs tabs flex gap-15 flex--no-wrap flex--center mb" style="margin-top:-3%">
-        <a href="#" @click="tab = 'graphql'" :class="{active: tab == 'graphql'}">
+        <a href="#" v-scroll-to="{ el: '#top' }"  @click="tab = 'graphql'" :class="{active: tab == 'graphql'}">
           Use GraphQL for data
         </a>
-        <a href="#" @click="tab = 'pages'" :class="{active: tab == 'pages'}">
+        <a href="#" v-scroll-to="{ el: '#top' }" @click="tab = 'pages'" :class="{active: tab == 'pages'}">
           Automatic Page Routing
         </a>
-        <a href="#" @click="tab = 'templates'" :class="{active: tab == 'templates'}">
+        <a href="#" v-scroll-to="{ el: '#top' }" @click="tab = 'templates'" :class="{active: tab == 'templates'}">
           Smart template system
         </a>
-        <a href="#" @click="tab = 'images'" :class="{active: tab == 'images'}">
+        <a href="#" v-scroll-to="{ el: '#top' }" @click="tab = 'images'" :class="{active: tab == 'images'}">
           Auto Image Resize
         </a>
  

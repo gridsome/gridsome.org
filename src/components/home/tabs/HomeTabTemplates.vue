@@ -2,7 +2,7 @@
  <div class="container container-md mb">
   
   <div class="mb text-center">
-    <p class="lead">Any .vue files added to <code>/templates</code> will be the template to a GraphQL collection. F.ex <code>templates/WordPressPost.vue</code> will be the single page template for <strong>allWordPressPost</strong> collection.</p>
+    <p class="lead">Any .vue files added to <code>/templates</code> directory will be the template to a GraphQL collection. F.ex <code>templates/WordPressPost.vue</code> will be the single page template for <strong>allWordPressPost</strong> collection.</p>
   </div>
 
   <div v-html="$static.example.content" />

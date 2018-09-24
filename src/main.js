@@ -10,6 +10,7 @@ import Feature from '@/components/Feature.vue'
 import Card from '@/components/Card'
 import VueLogo from '@/components/logos/vue'
 import GraphQlLogo from '@/components/logos/graphql'
+import VueScrollTo from 'vue-scrollto'
 
 import 'typeface-league-spartan'
 import 'typeface-nunito'
@@ -33,7 +34,8 @@ export default function (Vue, { head }) {
   Vue.component('Card', Card)
   Vue.component('VueLogo', VueLogo)
   Vue.component('GraphQlLogo', GraphQlLogo)
-
+  Vue.use(VueScrollTo)
+  
   head.style.push({
     type: 'text/css',
     cssText: typography.toString()
