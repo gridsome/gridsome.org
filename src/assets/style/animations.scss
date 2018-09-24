@@ -31,3 +31,58 @@
 @keyframes stroke {
   to{stroke-dashoffset:-15;}
 }
+
+
+
+.rotate-enter-active {
+  transition: all 1s ease;  
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.rotate-leave-active {
+  transition: all 1s ease;  
+}
+
+.rotate-enter-to {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.rotate-leave-to {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.rotate-leave-active{
+  left:0;
+  right:0;
+  position: absolute;
+}
+
+
+.rotate-x-enter-active {
+  transition: all 1s ease;  
+  transform: translateX(50px);
+  opacity: 0;
+}
+
+.rotate-x-leave-active {
+  transition: all 1s ease;  
+}
+
+.rotate-x-enter-to {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.rotate-x-leave-to {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+.rotate-x-leave-active{
+  left:0;
+  right:0;
+  position: absolute;
+}

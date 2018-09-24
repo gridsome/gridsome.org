@@ -78,30 +78,4 @@ export default {
   font-size: 130%;
 }
 
-.rotate-enter-active {
-  transition: all 1s ease;  
-  transform: translateY(20px);
-  opacity: 0;
-}
-
-.rotate-leave-active {
-  transition: all 1s ease;  
-}
-
-.rotate-enter-to {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.rotate-leave-to {
-  transform: translateY(-20px);
-  opacity: 0;
-}
-
-.rotate-leave-active{
-  left:0;
-  right:0;
-  position: absolute;
-}
-
 </style>

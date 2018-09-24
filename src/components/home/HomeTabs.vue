@@ -3,24 +3,31 @@
 
     <div class="home-tabs container text-center">
       <nav class="home-tabs__tabs tabs flex gap-15 flex--no-wrap flex--center mb" style="margin-top:-3%">
-        <a class="active">Use GraphQL for data</a>
-        <a>Automatic Page Routing</a>
-        <a>Smart template system</a>
-        <a>SEO-friendly HTML</a>
-        <a>Auto image optimizing</a>
+        <a href="#" @click="tab = 'graphql'" :class="{active: tab == 'graphql'}">
+          Use GraphQL for data
+        </a>
+        <a href="#" @click="tab = 'pages'" :class="{active: tab == 'pages'}">
+          Automatic Page Routing
+        </a>
+        <a href="#" @click="tab = 'templates'" :class="{active: tab == 'templates'}">
+          Smart template system
+        </a>
+        <a href="#" @click="tab = 'seo'" :class="{active: tab == 'seo'}">
+          SEO-friendly HTML
+        </a>
+        <a href="#" @click="tab = 'images'" :class="{active: tab == 'images'}">
+          Auto image optimizing
+        </a>
       </nav>
     </div>
 
-    <div class="container container-md mb">
-      <div class="mb text-center">
-        <p class="lead">Pull data from any CMS or sources into a GraphQL layer, that can be explored in a local GraphQL Playground, and access it in any page or components. </p>
-      </div>
 
-      <div v-html="$static.example.content" />
+    <transition name="rotate-x">
+      <component :is="tab" />
+    </transition>
 
-    </div>
 
-    <div class="container text-center">
+    <div class="text-center">
       <g-link to="/docs" class="button">Get started</g-link>
       <a href="//github.com/gridsome/gridsome" class="button plain">GitHub</a>
     </div>
@@ -28,15 +35,31 @@
   </Section>
 </template>
 
+<script>
+import TabGraphQL from './tabs/HomeTabGraphQL'
+import TabPages from './tabs/HomeTabPages'
+import TabSeo from './tabs/HomeTabSeo'
+import TabTemplates from './tabs/HomeTabTemplates'
+import TabImages from './tabs/HomeTabImages'
 
+export default {
+  components: {
+    'graphql' : TabGraphQL,
+    'pages' : TabPages,
+    'seo' :TabSeo,
+    'templates' : TabTemplates,
+    'images' : TabImages
+  },
 
-<static-query>
-query Example {
-  example: examplePage (path: "/examples/graphql-example") {
-    content
+  data() {
+    return {
+      tab: 'graphql'
+    }
   }
 }
-</static-query>
+
+</script>
+
 
 <style lang="scss">
 .home-tabs {
