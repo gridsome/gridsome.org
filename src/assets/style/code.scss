@@ -5,6 +5,21 @@
   border: 1px solid rgba(0,0,0,0.1);
 }
 
+#app pre {
+  // fix for accessbility
+  .token.punctuation {
+    color: #5f5f5f;
+  }
+  .token.attr-name,
+  .token.builtin,
+  .token.char,
+  .token.inserted,
+  .token.selector,
+  .token.string {
+    color: #007900;
+  }
+}
+
 // code blocks
 #app pre {
   padding: 1em 0 1em 1em;
