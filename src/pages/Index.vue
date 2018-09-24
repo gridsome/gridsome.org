@@ -1,153 +1,26 @@
 <template>
   <Layout>
-
-    <Section dots="true" class="text-center">
-
-      <div class="container-md mb" style="position: relative;">
-        <h1>
-          <span style="font-size: 75%;">The Vue framework for</span>
-          <transition name="rotate">
-            <div v-if="currentText == 0" class="gradient-text" style="font-size: 140%;" key="0">Static Websites</div>
-            <div v-else-if="currentText == 1" key="1" class="gradient-text" style="font-size: 140%;">any CMS</div>
-            <div v-else-if="currentText == 2" key="2" class="gradient-text" style="font-size: 140%;">PWAs
-            </div>
-            <div v-else-if="currentText == 3" key="3" class="gradient-text" style="font-size: 140%;">the JAMstack
-            </div>
-            <div v-else-if="currentText == 4" key="4" class="gradient-text" style="font-size: 140%;">SEO-friendly sites
-            </div>
-            <div v-else-if="currentText == 5" key="5" class="gradient-text" style="font-size: 140%;">Markdown files
-            </div>
-          </transition>
-        </h1>
-
-        <p class="container-sm lead" style="font-size: 130%">Build blazing fast websites with <br class="hide-for-small" /> <strong>Vue.js</strong><vue-logo/> & <strong>GraphQL</strong><graph-ql-logo style="color:#E535AB; margin-right: -8px;" /></p>
-        <g-link  to="/docs" class="button"> Get started </g-link>
-        <a href="//github.com/gridsome/gridsome" class="button plain">GitHub</a>
-
-      </div>
-  
-      
-    </Section>
-
-    <Section dots="true" dark="true" class="post">
-      <div class="container grid-cols">
-   
-
-        <Feature>
-          <h3>Connect to any CMS or data source</h3>
-          <p>Use any CMS or data source for content. Pull data from WordPress, Contentful, local Markdown, or any other headless CMS or APIs and access it with <strong>GraphQL<graph-ql-logo /></strong> in your pages and components.
-          </p>
-        </Feature>
-
-         <Feature>
-          <h3>Enjoy a modern development stack</h3>
-          <p>Build websites with modern tools like Vue.js, Webpack and Node.js. Get hot-reloading and access to any packages from npm and write CSS in your favorite preprocessor.
-          </p>
-        </Feature>
-
-        <Feature>
-          <h3>PWA Mobile-first architecture</h3>
-          <p>Only critical HTML, CSS, and JavaScript are loaded at first, and then the next pages are prefetched so users can click around incredible fast without page reloads and even when offline. 
-          </p>     
-        </Feature>
-   
-
-        <Feature>
-          <h3>Get perfect page <br class="hide-for-small"/>speed scores</h3>
-          <p>Gridsome automatically optimises your frontend to load and perform blazing fast. You get code-splitting, image optimisation, lazy-loading, and almost perfect lighthouse scores out-of-the-box.
-          </p>     
-        </Feature>
-    
-
-        <Feature>
-          <h3>Build future ready websites</h3>
-          <p>The future of the web is mobile, JavaScript, and APIs <strong>— the JAMstack</strong>. Gridsome uses the power of blazing-fast <strong>static site generator</strong> or <strong>server-side rendering</strong>, JavaScript and APIs to create stunning dynamic web experiences.
-          </p>
-        </Feature>
- 
-
-
-        <Feature>
-          <h3>Ready for global domination</h3>
-          <p>Gridsome sites are usually not connected to any database and can be hosted entirely on a global CDN. It can handle thousands to millions of hits without breaking - and no expensive server costs.
-          </p>     
-        </Feature>
-      </div>
-    </Section>
-
-    <Section dots="true">
-      <div class="container text-center">
-        <nav class="tabs flex gap-30 flex--no-wrap flex--center mb" style="margin-top:-3%">
-          <a class="active">Use GraphQL for data</a>
-          <a>Automatic Page Routing</a>
-          <a>Smart template system</a>
-          <a>SEO-friendly HTML</a>
-        </nav>
-      </div>
-      <div class="container container-md mb">
-        <div class="mb text-center">
-          <p class="lead">Pull data from any CMS or sources into a internal GraphQL database, and access it in any page or components with a query. </p>
-        </div>
-   
-        <div class="flex-fit">
-            <pre v-text="example" />
-        </div>
-
-      </div>
-
-      <div class="container text-center">
-        <g-link to="/docs" class="button"> Get started </g-link>
-        <a href="//github.com/gridsome/gridsome" class="button plain">GitHub</a>
-      </div>
-    </Section>
-
-
-    <Section dots="true" primary="true">
-      <div class="container text-center container-sm mb">
-        <h2>Latest posts</h2>
-      </div>
-      <div class="blog-posts container container-md">
-        <PostCard v-for="edge in $page.posts.edges" :key="edge.node._id" :post="edge.node"/>
-      </div>
-    </Section>
+    <home-intro />
+    <home-features />
+    <home-tabs />
+    <home-blog />
   </Layout>
 </template>
 
 <script>
-import VueLogo from '@/components/logos/vue'
-import SourceAnimation from '@/components/SourceAnimation.vue'
-import GraphQlLogo from '@/components/logos/graphql'
-import PostCard from '@/components/PostCard.vue'
-import Example from 'raw-loader!@/data/graphql-example.txt'
+
+import HomeIntro from '@/components/home/HomeIntro.vue'
+import HomeFeatures from '@/components/home/HomeFeatures.vue'
+import HomeTabs from '@/components/home/HomeTabs.vue'
+import HomeBlog from '@/components/home/HomeBlog.vue'
+
 
 export default {
   components: {
-    VueLogo,
-    SourceAnimation,
-    GraphQlLogo,
-    PostCard,
-  },
-
-  data() {
-    return {
-      currentText: 0
-    }
-  },
-
-  computed: {
-    example() {
-      return  Example
-    },
-  },
-
-  mounted () {
-    this._counter = setInterval(() => {
-      this.currentText = (this.currentText + 1) % 6
-    }, 2500)
-  },
-
-  destroyed () {
-    clearTimeout(this._counter)
+    HomeIntro,
+    HomeFeatures,
+    HomeTabs,
+    HomeBlog
   },
 
 
@@ -163,54 +36,3 @@ export default {
   }
 }
 </script>
-
-<graphql>
-query BlogPosts {
-  posts: allBlogPost {
-    edges {
-      node {
-        _id
-        title
-        path
-        date (format: "D. MMMM YYYY")
-        timeToRead
-        content
-        fields {
-          author
-          excerpt
-        }
-      }
-    }
-  }
-}
-</graphql>
-
-<style>
-
-.rotate-enter-active {
-  transition: all 1s ease;  
-  transform: translateY(20px);
-  opacity: 0;
-}
-
-.rotate-leave-active {
-  transition: all 1s ease;  
-}
-
-.rotate-enter-to {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.rotate-leave-to {
-  transform: translateY(-20px);
-  opacity: 0;
-}
-
-.rotate-leave-active{
-  left:0;
-  right:0;
-  position: absolute;
-}
-
-</style>
