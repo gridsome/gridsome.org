@@ -4,7 +4,7 @@
       <h2>Latest posts</h2>
     </div>
     <div class="blog-posts container container-md">
-      <PostCard v-for="edge in $page.posts.edges" :key="edge.node._id" :post="edge.node"/>
+      <PostCard v-for="edge in $static.posts.edges" :key="edge.node._id" :post="edge.node"/>
     </div>
   </Section>
 </template>
