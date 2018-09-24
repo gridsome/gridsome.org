@@ -37,7 +37,6 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         type: 'page',
-        index: ['README'],
         path: 'examples/*.md',
         typeName: 'Example',
         remark: {

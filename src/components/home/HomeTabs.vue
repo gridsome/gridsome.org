@@ -16,9 +16,7 @@
         <p class="lead">Pull data from any CMS or sources into a GraphQL layer, that can be explored in a local GraphQL Playground, and access it in any page or components. </p>
       </div>
 
-      <div class="flex-fit">
-        <pre v-text="example" />
-      </div>
+      <div v-html="$static.example.content" />
 
     </div>
 
@@ -30,21 +28,10 @@
   </Section>
 </template>
 
-<script>
-import Example from 'raw-loader!@/data/graphql-example.txt'
-
-export default {
-  computed: {
-    example() {
-      return  Example
-    },
-  },
-}
-</script>
 
 <static-query>
 query Example {
-  example: examplePage (path: '/examples/graphql-example') {
+  example: examplePage (path: "/examples/graphql-example") {
     content
   }
 }
