@@ -3,7 +3,7 @@
   
   <div class="mb text-center">
     <p class="lead">
-      Connect to any CMS or sources and access data with <strong>GraphQL</strong>. <br class="hide-for-small" />This enabled you to only work with the data you need.
+      Connect to any CMS, APIs or local files, like Markdown, and access it from a <strong>GraphQL layer</strong>. Insert data to any <strong>.vue</strong> file with only the fields you need.
     </p>
   </div>
 

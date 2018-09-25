@@ -3,7 +3,7 @@
   
   <div class="mb text-center">
     <p class="lead">
-      Use the built-in component <strong>g-image</strong> to add images that automatically resize, compress and lazy loads. It also adds responsive <strong>srcset</strong> versions.
+      Use the built-in global component <code>&#x3C;g-image&#x3E;</code> to add images that automatically resizes, compress and lazy loads. Images are compressed to a 100px blurred version before it's lazy loaded into view.
     </p>
   </div>
 

@@ -12,7 +12,7 @@
           Smart template system
         </a>
         <a href="#" v-scroll-to="{ el: '#top' }" @click="tab = 'images'" :class="{active: tab == 'images'}">
-          Auto Image Resize
+          Auto Optimized Images
         </a>
       </nav>
     </div>
