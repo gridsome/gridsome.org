@@ -6,7 +6,7 @@
           Use GraphQL for data
         </a>
         <a href="#" v-scroll-to="{ el: '#top' }" @click="tab = 'pages'" :class="{active: tab == 'pages'}">
-          Automatic Page Routing
+          Auto Page Routing
         </a>
         <a href="#" v-scroll-to="{ el: '#top' }" @click="tab = 'templates'" :class="{active: tab == 'templates'}">
           Smart template system
@@ -14,8 +14,6 @@
         <a href="#" v-scroll-to="{ el: '#top' }" @click="tab = 'images'" :class="{active: tab == 'images'}">
           Auto Image Resize
         </a>
- 
-  
       </nav>
     </div>
 

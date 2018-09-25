@@ -3,25 +3,25 @@
   <div class="container-md mb">
     
     <h1 class="home-title">
-      <span class="home-title__top">The Vue framework for</span>
+      <span class="home-title__top">A Vue framework for</span>
       <transition name="rotate">
         <div v-if="currentText == 0" class="home-title__main gradient-text" key="0">
           Static Websites
         </div>
         <div v-else-if="currentText == 1" key="1" class="home-title__main gradient-text">
-          any Headless CMS
+          PWAs
         </div>
         <div v-else-if="currentText == 2" key="2" class="home-title__main gradient-text">
-          eCommerce PWAs
+          any Headless CMS
         </div>
         <div v-else-if="currentText == 3" key="3" class="home-title__main gradient-text">
-          the JAMstack
-        </div>
-        <div v-else-if="currentText == 4" key="4" class="home-title__main gradient-text">
-          SEO-friendly sites
+          the #JAMstack
         </div>
         <div v-else-if="currentText == 5" key="5" class="home-title__main gradient-text">
-          Markdown files
+          Documentation
+        </div>
+        <div v-else-if="currentText == 4" key="4" class="home-title__main gradient-text">
+          SEO-friendly SPAs
         </div>
       </transition>
     </h1>
