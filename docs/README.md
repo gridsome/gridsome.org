@@ -1,6 +1,6 @@
-# Getting started with Gridsome
-This guide will help you get quickly up and running with your first Gridsome project.
-If you want to learn more about Gridsome and its core concepts [go here](/docs/introduction).
+# Quick start
+**Gridsome is a Vue framework for building fast websites**. It uses an internal GraphQL layer for all data. Gridsome is heavily inspired by **[Gatsby](https://gatsbyjs.org)** (A React.js alternative). Gridsome sites can be static generated, and hosted anywhere, or server-side rendered on a Node.js server.
+
 
 ### 1. Install Gridsome CLI tool
 `npm install --global @gridsome/cli`
@@ -11,8 +11,13 @@ If you want to learn more about Gridsome and its core concepts [go here](/docs/i
 3. `gridsome develop` to start local dev server at `http://localhost:8080`
 4. Happy coding 🎉🙌
 
-### 3. Next steps..
-- [Get an introduction to Gridsome](/docs/introduction)
-- [How Pages, Layouts and Templates works](/docs/layouts-pages-templates)
-- [How Data Sources & GraphQL works](/docs/sources)
-- [Learn how to deploy and host a Gridsome site ](/docs/deployment)
+### 3. Next steps
+1. Add .vue files to `/pages` directory to create pages.
+2. Use `gridsome build` to generate static files.
+3. Use `gridsome serve` for server-side rendering
+
+
+### Learn more...
+
+- [How it works](/docs/how-it-works)
+- [How to deploy](/docs/deployment)

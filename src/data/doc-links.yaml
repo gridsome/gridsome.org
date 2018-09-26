@@ -1,33 +1,35 @@
-- title: Getting started
+- title: Introduction
   items:
-    - title: Install Gridsome
+    - title: Quick start
       link: /docs
-    - title: Introduction
-      link: /docs/introduction
+    - title: How it works
+      link: /docs/how-it-works
     - title: Starter kits
       link: /docs/starters
-
-- title : Core concepts
-  items:
-    - title: Layouts, Pages & Templates
-      link: /docs/layouts-pages-templates
-    - title: Data Sources (GraphQL)
-      link: /docs/sources
-    - title: Vue & Single File Components
-      link: /docs/vue
-    - title: Directory structure
-      link: /docs/directory-structure
-    - title: Hosting & Deployment
+    - title: Deployment
       link: /docs/deployment
 
-- title: API Reference
+- title : BASICS
   items:
-    - title: Gridsome config
+    - title: Directory structure
+      link: /docs/directory-structure
+    - title: Project Config
       link: /docs/config
-    - title: Gridsome CLI
+    - title: GraphQL layer
+      link: /docs/graphql
+    - title: Pages
+      link: /docs/pages
+    - title: Templates
+      link: /docs/templates
+    - title: Layouts
+      link: /docs/layouts
+    - title: Components
+      link: /docs/components
+    - title: CLI
       link: /docs/gridsome-cli
 
-- title: Core components
+
+- title: Components
   items:
     - title: Link
       link: /docs/link

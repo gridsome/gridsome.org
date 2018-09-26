@@ -9,7 +9,7 @@
   </Layout>
 </template>
 
-<graphql>
+<page-query>
 query BlogPost ($path: String!) {
   post: blogPost (path: $path) {
     title
@@ -22,7 +22,7 @@ query BlogPost ($path: String!) {
     }
   }
 }
-</graphql>
+</page-query>
 
 <script>
 import PostMeta from '@/components/PostMeta.vue'

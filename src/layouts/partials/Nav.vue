@@ -44,7 +44,7 @@
       box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
       min-height: 60px;
       flex-wrap: nowrap!important;
-      padding: 10px var(--space);
+      padding: 0 var(--space);
 
       svg {
         display: block;

@@ -1,6 +1,8 @@
-# Data Sources & the GraphQL layer
+# The GraphQL layer
 
 Gridsome lets you connect to any data source by using **Source plugins**. This is the core functionality of Gridsome. All data coming from sources are pulled into a GraphQL layer that the Vue components can access.
+
+**The GraphQL layer is only used in development and not not used in production for static sites. It only uses the GraphQL data for generating HTML files blazing fast**
 
 ![Git workflow](./images/graphql.png)
 
@@ -11,9 +13,9 @@ Gridsome lets you connect to any data source by using **Source plugins**. This i
 Every Gridsome project has a GraphQL playground they can use to explore and test queries when in development mode. This can usually be opened by going to `http://localhost:8080/___explore`.
 
 
-## Add GraphQL to pages & components
+## Add GraphQL to Pages
 
-Every **Vue component** can have a `<graphql>` block with a GraphQL query
+Every **Page** can have a `<page-query>` block with a GraphQL query
 to fetch data from data sources. The results will be stored in a
 `$page` property inside the page component.
 
@@ -29,7 +31,7 @@ to fetch data from data sources. The results will be stored in a
   </Layout>
 </template>
 
-<graphql>
+<page-query>
 query Blog {
   allWordPressPost (limit: 5) {
     edges {
@@ -40,7 +42,7 @@ query Blog {
     }
   }
 }
-</graphql>
+</page-query>
 ```
 
 
@@ -71,7 +73,7 @@ export default {
 }
 </script>
 
-<graphql>
+<page-query>
 query Blog ($page: Int) {
   allWordPressPost (perPage: 10, page: $page) @paginate {
     pageInfo {
@@ -87,9 +89,31 @@ query Blog ($page: Int) {
     }
   }
 }
-</graphql>
+</page-query>
 ```
 Learn more about pagination [here](/docs/pagination)
+
+
+## Add GraphQL to Components
+
+Every **Component** can have a `<static-query>` block with a GraphQL query
+to fetch data from data sources. The results will be stored in a
+`$static` property inside the component.
+
+```html
+<template>
+  <div v-html="$static.example" />
+</template>
+
+<static-query>
+query Example {
+  example: examplePage (path: "/docs/example") {
+    content
+  }
+}
+</static-query>
+
+```
 
 
 ## Add GraphQL to templates
@@ -105,14 +129,14 @@ in `src/templates/WordPressPost.vue`.
   </Layout>
 </template>
 
-<graphql>
+<page-query>
 query Post ($path: String!) {
   wordPressPost (path: $path) {
     title
     content
   }
 }
-</graphql>
+</page-query>
 
 <script>
 export default {

@@ -1,0 +1,19 @@
+
+  <div  class="mb">
+    <h4 style="margin-bottom: .5rem">Automatic Page Routing</h4>
+    <p>Add a .vue file in <code>/pages</code> and it will automatically be a route. F.ex <code>pages/About.vue</code> will be <strong>website.com/about</strong>.</p>
+  </div>
+
+
+  <div  class="mb">
+    <h4 style="margin-bottom: .5rem">Smart template system</h4>
+    <p>Any .vue files added to <code>/templates</code> will be the template to a GraphQL collection. F.ex <code>templates/WordPressPost.vue</code> will be the single page template for <strong>allWordPressPost</strong> collection.</p>
+  </div>
+
+
+  <div>
+    <h4 style="margin-bottom: .5rem">SEO-friendly HTML output</h4>
+    <p>
+      Gridsome generates optimized HTML that any SEO engine can read. The static site generation is extremely fast because of the internal GraphQL database.
+    </p>
+  </div>

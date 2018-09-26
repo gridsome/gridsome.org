@@ -25,7 +25,7 @@ export default {
 }
 </script>
 
-<graphql>
+<page-query>
 query Blog ($page: Int) {
   allBlogPost (perPage: 10, page: $page) @paginate {
     pageInfo {
@@ -41,7 +41,7 @@ query Blog ($page: Int) {
     }
   }
 }
-</graphql>
+</page-query>
 ```
 
 |Property         |Default| |

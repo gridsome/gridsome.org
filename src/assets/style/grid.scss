@@ -7,6 +7,10 @@
     margin:0;
   }
 
+  &--center {
+    justify-content: center;
+  }
+
 
   &--no-wrap {
     flex-wrap: no-wrap;

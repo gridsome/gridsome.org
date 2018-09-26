@@ -9,7 +9,7 @@
   </DocsLayout>
 </template>
 
-<graphql>
+<page-query>
 query DocPage ($path: String!) {
   doc: docPage (path: $path) {
     path
@@ -19,8 +19,7 @@ query DocPage ($path: String!) {
     }
   }
 }
-</graphql>
-
+</page-query>
 
 <script>
 export default {
