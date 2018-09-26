@@ -10,9 +10,7 @@ The best practice when working with Gridsome sites is to have your project hoste
 ![Git workflow](./images/git-workflow.png)
 
 
-This gets you whole team in sync, and is the perfect modern workflow for building websites.
-
-These services is great for Git-based deploying:
+This gets you whole team in sync, and is the perfect modern workflow for building websites. These services is great for Git-based deploying:
 
 - [Netlify](/docs/deploy-to-netlify)
 

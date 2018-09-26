@@ -1,7 +1,7 @@
 ```html
-<g-image width="1000" src="/src/assets/image.jpg" />
+<g-image width="760" src="/src/assets/image.jpg" />
 ```
 
 ```html
-<img width="1000" src="/src/assets/image-1000px.jpg" /> <!-- compressed -->
+<img width="760" src="/src/assets/image-760px.jpg" /> <!-- compressed -->
 ```
