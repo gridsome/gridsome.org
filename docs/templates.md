@@ -1,4 +1,4 @@
-## Templates
+# Templates
 
 Templates are just like pages, except they will not get a path based on the file
 location. Instead, they'll be used to render pages from data sources in your

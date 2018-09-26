@@ -59,6 +59,28 @@ export default {
 
 ```
 
+### Add GraphQL to Components
+
+Every **Component** can have a `<static-query>` block with a GraphQL query
+to fetch data from data sources. The results will be stored in a
+`$static` property inside the component.
+
+```html
+<template>
+  <div v-html="$static.example" />
+</template>
+
+<static-query>
+query Example {
+  example: examplePage (path: "/docs/example") {
+    content
+  }
+}
+</static-query>
+
+```
+
+
 ### Add Sass to .vue files
 
 You can use Sass in your Single File Components.

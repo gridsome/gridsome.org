@@ -1,1 +1,2 @@
-# Introduction to Gridsome
+# Critical CSS
+...

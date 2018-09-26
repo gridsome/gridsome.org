@@ -11,9 +11,9 @@ Gridsome lets you connect to any data source by using **Source plugins**. This i
 Every Gridsome project has a GraphQL playground they can use to explore and test queries when in development mode. This can usually be opened by going to `http://localhost:8080/___explore`.
 
 
-## Add GraphQL to pages & components
+## Add GraphQL to Pages
 
-Every **Vue component** can have a `<graphql>` block with a GraphQL query
+Every **Page** can have a `<graphql>` block with a GraphQL query
 to fetch data from data sources. The results will be stored in a
 `$page` property inside the page component.
 
@@ -90,6 +90,28 @@ query Blog ($page: Int) {
 </graphql>
 ```
 Learn more about pagination [here](/docs/pagination)
+
+
+## Add GraphQL to Components
+
+Every **Component** can have a `<static-query>` block with a GraphQL query
+to fetch data from data sources. The results will be stored in a
+`$static` property inside the component.
+
+```html
+<template>
+  <div v-html="$static.example" />
+</template>
+
+<static-query>
+query Example {
+  example: examplePage (path: "/docs/example") {
+    content
+  }
+}
+</static-query>
+
+```
 
 
 ## Add GraphQL to templates

@@ -1,8 +1,5 @@
 # Quick start
-
-Gridsome is a universal Vue.js framework powered by GraphQL. It uses GraphQL as a single source of truth for all data connected to the website. You can pull data from any CMS, local Markdown or content APIs into the GraphQL layer. Data can be explored in a local GraphQL playground and be inserted into any component quickly. 
-
-Gridsome is heavily inspired by **Gatsby** (A React.js alternative).
+**Gridsome is a Vue framework for building fast websites**. It uses an internal GraphQL layer for all data. Gridsome is heavily inspired by **[Gatsby](https://gatsbyjs.org)** (A React.js alternative). Gridsome sites can be static generated, and hosted anywhere, or server-side rendered on a Node.js server.
 
 
 ### 1. Install Gridsome CLI tool
@@ -15,6 +12,12 @@ Gridsome is heavily inspired by **Gatsby** (A React.js alternative).
 4. Happy coding 🎉🙌
 
 ### 3. Next steps
+1. Add .vue files to `/pages` directory to create pages.
+2. Use `gridsome build` to generate static files.
+3. Use `gridsome serve` for server-side rendering
+
+
+### Learn more...
 
 - [How it works](/docs/how-it-works)
 - [How to deploy](/docs/deployment)

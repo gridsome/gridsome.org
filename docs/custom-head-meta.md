@@ -1,1 +1,1 @@
-# Introduction to Gridsome
+# Custom Head meta
