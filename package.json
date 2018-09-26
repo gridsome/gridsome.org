@@ -8,17 +8,17 @@
     "build": "gridsome build"
   },
   "dependencies": {
-    "gridsome": "^0.0.6",
+    "gridsome": "^0.1.0",
     "typeface-league-spartan": "0.0.44",
     "typeface-nunito": "0.0.54",
     "typography": "^0.16.17",
     "vue-scrollto": "^2.13.0"
   },
   "devDependencies": {
-    "@gridsome/plugin-critical": "^0.0.2",
+    "@gridsome/plugin-critical": "^0.0.3",
     "@gridsome/remark-prismjs": "^0.0.2",
-    "@gridsome/source-filesystem": "^0.0.2",
-    "@gridsome/transformer-remark": "^0.0.2",
+    "@gridsome/source-filesystem": "^0.0.3",
+    "@gridsome/transformer-remark": "^0.0.3",
     "node-sass": "^4.9.3",
     "raw-loader": "^0.5.1",
     "sass-loader": "^7.1.0"

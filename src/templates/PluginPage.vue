@@ -4,7 +4,7 @@
   </PluginsLayout>
 </template>
 
-<graphql>
+<page-query>
 query PluginPage ($path: String!) {
   doc: pluginPage (path: $path) {
     content
@@ -13,10 +13,9 @@ query PluginPage ($path: String!) {
     }
   }
 }
-</graphql>
+</page-query>
 
 <script>
-
 import PluginsLayout from '@/layouts/Plugins'
 
 export default {

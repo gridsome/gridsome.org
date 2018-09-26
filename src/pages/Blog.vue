@@ -12,7 +12,7 @@
   </Layout>
 </template> 
 
-<graphql>
+<page-query>
 query BlogPosts {
   posts: allBlogPost {
     edges {
@@ -31,7 +31,7 @@ query BlogPosts {
     }
   }
 }
-</graphql>
+</page-query>
 
 <script>
 import PostCard from '@/components/PostCard.vue'
