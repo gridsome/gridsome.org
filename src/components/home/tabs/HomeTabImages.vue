@@ -9,6 +9,7 @@
 
   <div v-html="$static.example.content" />
 
+  <g-image width="760" src="~/assets/images/example.jpg" />
 
 </div>
 </template>

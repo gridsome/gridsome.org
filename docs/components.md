@@ -1,17 +1,6 @@
-# Vue.js
+# Components
 
-Gridsome is powered by Vue.js. It's high performant, approachable, lightweight and perfect for building blazing fast websites (Only 20kb min+gzip). It's the front-end framework on GitHub with the most stars and used by big companies.
-
-Take a look at this video to learn the basic concepts of Vue:
-
-<iframe src="https://player.vimeo.com/video/247494684?color=4fc08d&title=0&byline=0&portrait=0" width="100%" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-[Learn more at Vue.js documentation](https://vuejs.org/v2/guide)
-
-
-## Single File Components
-
-Gridsome recommends to use Single File Components in your projects. This means you add HTML, JavaScript and CSS all in the same file. This makes your projects easier to maintain and test and your components more reusable. You also get code-splitting out-of-the-box.
+Gridsome uses Vue Single File Components. This means you add HTML, JavaScript and CSS all in the same file. This makes your projects easier to maintain and test and your components more reusable. You also get **code-splitting** out-of-the-box.
 
 Here is an example of a Single File Component file.
 
