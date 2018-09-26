@@ -6,6 +6,10 @@ Quick introduction to core Gridsome concepts
 ### The GraphQL layer
 The GraphQL layer is powered by a in-memory database and is only available in development & serve mode. Static generating uses the database to quickly generate hundreds to thousands of HTML pages in seconds. Data are pulled into the GraphQL layer with Source plugins.
 
+![Git workflow](./images/graphql.png)
+
+[Learn more](/docs/graphql)
+
 
 ### Static site generation
 Gridsome generates all pages and endpoints at build time. It can generate big sites extremely fast thanks to the internal GraphQL database.

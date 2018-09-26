@@ -2,7 +2,7 @@
  <div class="container container-md mb">
   
   <div class="mb text-center">
-    <p class="lead">
+    <p>
       Connect to any CMS, APIs or local files, like Markdown, and access it from a <strong>GraphQL layer</strong>. Insert data to any <strong>.vue</strong> file with only the fields you need.
     </p>
   </div>

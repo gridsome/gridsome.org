@@ -15,8 +15,8 @@
       link: /docs/directory-structure
     - title: Project Config
       link: /docs/config
-    - title: GraphQL
-      link: /docs/sources
+    - title: GraphQL layer
+      link: /docs/graphql
     - title: Pages
       link: /docs/pages
     - title: Templates
