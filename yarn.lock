@@ -552,38 +552,37 @@
     resolve-cwd "^2.0.0"
     sort-package-json "^1.15.0"
 
-"@gridsome/plugin-critical@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@gridsome/plugin-critical/-/plugin-critical-0.0.2.tgz#5e40e58a1c0f1d561b945a623f2061a80b6d3e10"
+"@gridsome/plugin-critical@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@gridsome/plugin-critical/-/plugin-critical-0.0.3.tgz#bc4691797131b6cb7d880e597144ab8c2640dd16"
   dependencies:
     critical "^1.3.4"
-    detect-indent "^5.0.0"
     fs-extra "^7.0.0"
     get-stream "^4.0.0"
-    indent-string "^3.2.0"
     micromatch "^3.1.10"
     parse5 "^5.1.0"
     replacestream "^4.0.3"
 
-"@gridsome/remark-prismjs@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@gridsome/remark-prismjs/-/remark-prismjs-0.0.2.tgz#2f14dd26cfe7bed1b569331f07bda879434f75f8"
+"@gridsome/remark-prismjs@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@gridsome/remark-prismjs/-/remark-prismjs-0.0.3.tgz#2195672e20e162f745868ef9b7bb2b6f1cada28c"
   dependencies:
     escape-html "^1.0.3"
     prismjs "^1.15.0"
     unist-util-visit "^1.4.0"
 
-"@gridsome/source-filesystem@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@gridsome/source-filesystem/-/source-filesystem-0.0.2.tgz#be6f974384e68ff3c182dc20920e95fcf4d75ac2"
+"@gridsome/source-filesystem@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@gridsome/source-filesystem/-/source-filesystem-0.0.3.tgz#bc3b577446571129b9cf320f5966f37ddf546540"
   dependencies:
     chokidar "^2.0.4"
     fs-extra "^7.0.0"
     globby "^8.0.1"
+    lodash "^4.17.10"
 
-"@gridsome/transformer-remark@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@gridsome/transformer-remark/-/transformer-remark-0.0.2.tgz#f25f25b436b88a922f3b1c88049307ea380712c5"
+"@gridsome/transformer-remark@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@gridsome/transformer-remark/-/transformer-remark-0.0.3.tgz#7d32572fe621cf440dc56d901f39e9b3874b639c"
   dependencies:
     gray-matter "^4.0.1"
     hast-util-to-html "^4.0.1"
@@ -3828,9 +3827,9 @@ gray-percentage@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/gray-percentage/-/gray-percentage-2.0.0.tgz#b72a274d1b1379104a0050b63b207dc53fe56f99"
 
-gridsome@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.0.6.tgz#a046b7f343b5faf9c668ff202e9655e661bd4f7b"
+gridsome@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.1.1.tgz#bc500cf70b1d2f483d1350d82dc2065f8b1516e2"
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/plugin-syntax-dynamic-import" "^7.0.0"
@@ -3896,7 +3895,7 @@ gridsome@^0.0.6:
     uuid "^3.3.2"
     vue "^2.5.17"
     vue-loader "^15.3.0"
-    vue-meta "^1.5.3"
+    vue-meta "^1.5.4"
     vue-router "^3.0.1"
     vue-server-renderer "^2.5.17"
     vue-template-compiler "^2.5.17"
@@ -8811,7 +8810,7 @@ vue-loader@^15.3.0:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
-vue-meta@^1.5.3:
+vue-meta@^1.5.4:
   version "1.5.4"
   resolved "https://registry.yarnpkg.com/vue-meta/-/vue-meta-1.5.4.tgz#966e37a58c0eff43411eac5894ebc6836a451744"
   dependencies:
