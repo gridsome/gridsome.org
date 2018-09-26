@@ -55,7 +55,7 @@ export default {
   mounted () {
     this._counter = setInterval(() => {
       this.currentText = (this.currentText + 1) % 6
-    }, 2500)
+    }, 1500)
   },
 
   destroyed () {
