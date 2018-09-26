@@ -13,7 +13,7 @@ Every Gridsome project has a GraphQL playground they can use to explore and test
 
 ## Add GraphQL to Pages
 
-Every **Page** can have a `<graphql>` block with a GraphQL query
+Every **Page** can have a `<page-query>` block with a GraphQL query
 to fetch data from data sources. The results will be stored in a
 `$page` property inside the page component.
 
@@ -29,7 +29,7 @@ to fetch data from data sources. The results will be stored in a
   </Layout>
 </template>
 
-<graphql>
+<page-query>
 query Blog {
   allWordPressPost (limit: 5) {
     edges {
@@ -40,7 +40,7 @@ query Blog {
     }
   }
 }
-</graphql>
+</page-query>
 ```
 
 
@@ -71,7 +71,7 @@ export default {
 }
 </script>
 
-<graphql>
+<page-query>
 query Blog ($page: Int) {
   allWordPressPost (perPage: 10, page: $page) @paginate {
     pageInfo {
@@ -87,7 +87,7 @@ query Blog ($page: Int) {
     }
   }
 }
-</graphql>
+</page-query>
 ```
 Learn more about pagination [here](/docs/pagination)
 
@@ -127,14 +127,14 @@ in `src/templates/WordPressPost.vue`.
   </Layout>
 </template>
 
-<graphql>
+<page-query>
 query Post ($path: String!) {
   wordPressPost (path: $path) {
     title
     content
   }
 }
-</graphql>
+</page-query>
 
 <script>
 export default {

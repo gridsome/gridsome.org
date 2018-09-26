@@ -1,1 +1,1 @@
-# Gridsome starters
+# Starters

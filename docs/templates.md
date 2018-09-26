@@ -6,7 +6,7 @@ project. The filename must match the GraphQl node type it will be a template
 for. If you have a node type called `WordPressPost`, then you can create a file
 in `src/templates/WordPressPost.vue`.
 
-Template components must have a `<graphql>` block which fetches the source node
+Template components must have a `<page-query>` block which fetches the source node
 for the current page. You can use the `path` variable to get the node.
 
 ```html
@@ -18,14 +18,14 @@ for the current page. You can use the `path` variable to get the node.
   </Layout>
 </template>
 
-<graphql>
+<page-query>
 query Post ($path: String!) {
   wordPressPost (path: $path) {
     title
     content
   }
 }
-</graphql>
+</page-query>
 
 <script>
 export default {

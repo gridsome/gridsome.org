@@ -26,7 +26,7 @@ Here is an example on how to query posts from the GraphQL layer in a page:
   </Layout>
 </template>
 
-<graphql>
+<page-query>
 query Blog {
   allWordPressPost (limit: 5) {
     edges {
@@ -37,7 +37,7 @@ query Blog {
     }
   }
 }
-</graphql>
+</page-query>
 ```
 
 You don't need to know GraphQL or Vue to get started with Gridsome - It's a great way to get introduced to both.

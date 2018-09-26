@@ -1,6 +1,6 @@
 # How it works
 
-Quick introduction to core concepts
+Quick introduction to core Gridsome concepts
 
 
 ### The GraphQL layer

@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<graphql>
+<page-query>
 query Blog {
   posts: allWordPressPost (limit: 5) {
     edges {
@@ -21,5 +21,5 @@ query Blog {
     }
   }
 }
-</graphql>
+</page-query>
 ```
