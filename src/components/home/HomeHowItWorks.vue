@@ -1,5 +1,5 @@
 <template>
-  <Section>
+  <Section dots="true">
       <h2 class="text-center">
         How Gridsome works
       </h2>
@@ -79,6 +79,7 @@ export default {
 .well {
   border: 3px solid var(--primary-bg);
   border-radius: 10px;
+  background-color: rgba(255,255,255,.7);
   width: 100%;
   padding: var(--space-x2);
   position: relative;
@@ -107,7 +108,7 @@ export default {
 }
 
 .dots {
-  width: 60px;
+  width: 50px;
   position: relative;
 }
 
