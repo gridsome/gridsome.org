@@ -19,7 +19,7 @@
               <p><b>APIs</b> <br>AirTable, Google Spreadsheet, MongoDB, Firebase etc.</p>
           </div>
           <div class="dots">
-              <svg style="top: 30%" width="100%" height="20" viewBox="0 0 60 20" class="dot">
+              <svg  width="100%" height="20" viewBox="0 0 60 20" class="dot">
                 <path d="M1 9.5H99" />
               </svg>
           </div>
@@ -47,7 +47,7 @@
               </div>
           </div>
           <div class="dots">
-             <svg style="top: 53%" width="100%" height="20" viewBox="0 0 60 20" class="dot dot--after">
+             <svg  width="100%" height="20" viewBox="0 0 60 20" class="dot dot--after">
                 <path d="M1 9.5H99" />
               </svg>
           </div>
@@ -118,7 +118,7 @@ export default {
   stroke-linecap: round;
   stroke-dasharray: 0 15;
   position: absolute;
-  top: 40%;
+  top: 48%;
   animation: stroke 300ms linear infinite;
 
   &--after {
