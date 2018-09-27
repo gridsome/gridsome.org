@@ -15,7 +15,9 @@
               <p><b>Data</b> <br>JSON, AirTable, Google Spreadsheet, YAML, CSV etc.</p>
           </div>
           <div class="dots">
-            
+              <svg width="100%" height="20" viewBox="0 0 60 20" class="dot">
+                <path d="M1 9.5H99" />
+              </svg>
           </div>
           <div class="center flex-fit well">
               <div class="layers">
@@ -40,7 +42,9 @@
               </div>
           </div>
           <div class="dots">
-            
+             <svg width="100%" height="20" viewBox="0 0 60 20" class="dot dot--after">
+                <path d="M1 9.5H99" />
+              </svg>
           </div>
           <div class="well right flex-fit">
               <p>
@@ -82,6 +86,21 @@ export default {
 
 .dots {
   width: 60px;
+  position: relative;
+}
+
+.dot {
+  stroke: #E535AB;
+  stroke-width: 5px;
+  stroke-linecap: round;
+  stroke-dasharray: 0 15;
+  position: absolute;
+  top: 40%;
+  animation: stroke 300ms linear infinite;
+
+  &--after {
+    stroke: var(--primary-color);
+  }
 }
 
 .layer {
