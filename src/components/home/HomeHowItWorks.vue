@@ -1,6 +1,6 @@
 <template>
   <Section>
-      <h2 class="text-center">How it works</h2>
+      <h2 class="text-center">How Gridsome works</h2>
       <p class="lead text-center comtainer-md">
         asfasfasd
       </p>
@@ -23,10 +23,9 @@
                   <div class="text-wrapper">
                     <span class="text">
                       <graph-ql-logo width="50px" height="50px"  style="color:#fff;" /><br/>
-                      GraphQL <br>Layer
+                      GraphQL <br>data layer
                     </span>
                   </div>
-
                 </div>
                 <div class="layer layer__vue">
                   <div class="text-wrapper">
@@ -64,7 +63,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped="scoped">
 .well {
   border: 3px solid var(--primary-bg);
   border-radius: 10px;
@@ -73,8 +72,8 @@ export default {
 }
 
 .layers {
-  transform: rotateX(60deg);
-  margin-top: -30%;
+  transform: rotateX(55deg);
+  margin-top: -39%;
   margin-bottom: -50%;
   margin-left: -5%;
   margin-right: -5%;
@@ -93,13 +92,13 @@ export default {
   transform: rotate(45deg);
 
   &__graphql {
-    background: linear-gradient(180deg, #E535AB 0%, rgba(229, 53, 171, 0.49) 100%);
+    background: linear-gradient(-80deg, #E535AB 0%, rgba(229, 53, 171, 0.49) 100%);
     position: relative;
     padding-top: 80%;
     width: 80%;
     margin-left: 10%;
     z-index: 10;
-    margin-bottom: -15%;
+    margin-bottom: -5%;
   }
 
   &__vue {
@@ -122,6 +121,7 @@ export default {
     width: 100%;
     transform: translateX(-50%) translateY(-50%) rotate(-90deg);
     font-size: 1.4rem;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.1);
   }
 
 }
