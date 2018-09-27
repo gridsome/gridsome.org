@@ -8,7 +8,7 @@ The GraphQL layer is powered by a in-memory database and is only available in de
 
 ![Git workflow](./images/graphql.png)
 
-[Learn more](/docs/graphql)
+[Learn more about the GraphQL layer](/docs/graphql)
 
 
 ### Static site generation

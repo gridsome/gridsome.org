@@ -1,7 +1,7 @@
 <template>
   <svg
    alt="Vue"
-   style="margin-top:-2px;margin-left:-5px;" width="30px" height="30px"
+   style="margin-top:-2px;margin-left:-2px;" width="30px" height="30px"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"

@@ -13,7 +13,7 @@
 
 ### 3. Next steps
 1. Add .vue files to `/pages` directory to create pages.
-2. Use `gridsome build` to generate static files.
+2. Use `gridsome build` to generate static files in a `/dist` folder
 3. Use `gridsome serve` for server-side rendering
 
 

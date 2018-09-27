@@ -43,7 +43,7 @@ query Blog {
 You don't need to know GraphQL or Vue to get started with Gridsome - It's a great way to get introduced to both.
 
 
-The GraphQL layer and all the data can be explored in a local GraphQL playground. The playground can usually be explored by opening `https://localhost:8080/___explore`.
+The GraphQL layer and all the data can be explored in a local GraphQL playground. The playground can usually located at `https://localhost:8080/___explore` when a Gridsome development project is running.
 
 
 
