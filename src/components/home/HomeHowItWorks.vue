@@ -1,25 +1,30 @@
 <template>
   <Section>
-      <h2 class="text-center">How Gridsome works</h2>
-      <p class="lead text-center comtainer-md">
-        asfasfasd
+      <h2 class="text-center">
+        How Gridsome works
+      </h2>
+      <p class="lead text-center mb">
+        A better way to build websites
       </p>
+
       <div class="flex flex--align-equal flex--space-between">
           <div class="well left flex-fit">
+              <div class="well__title">Data sources</div>
               <p><b>CMSs</b> <br>WordPress, Drupal,
-              Contentful, Shopify etc.</p>
+              Contentful, Shopify, Magento etc.</p>
 
-              <p><b>Markdown</b> <br>
-              Documentation, Jekyll, GitBook etc.</p>
+              <p><b>Files</b> <br>
+              Markdown, YAML, CSV, JSON, Image folders, etc</p>
 
-              <p><b>Data</b> <br>JSON, AirTable, Google Spreadsheet, YAML, CSV etc.</p>
+              <p><b>APIs</b> <br>AirTable, Google Spreadsheet, MongoDB, Firebase etc.</p>
           </div>
           <div class="dots">
-              <svg width="100%" height="20" viewBox="0 0 60 20" class="dot">
+              <svg style="top: 30%" width="100%" height="20" viewBox="0 0 60 20" class="dot">
                 <path d="M1 9.5H99" />
               </svg>
           </div>
           <div class="center flex-fit well">
+              <div class="well__title">Build</div>
               <div class="layers">
                 <div class="layer layer__graphql text-center">
                   <div class="text-wrapper">
@@ -42,20 +47,23 @@
               </div>
           </div>
           <div class="dots">
-             <svg width="100%" height="20" viewBox="0 0 60 20" class="dot dot--after">
+             <svg style="top: 53%" width="100%" height="20" viewBox="0 0 60 20" class="dot dot--after">
                 <path d="M1 9.5H99" />
               </svg>
           </div>
           <div class="well right flex-fit">
+              <div class="well__title">Deploy</div>
               <p>
-                <strong>Server-side render</strong>
-                Any Node.js server
+                <strong>Static site generation</strong><br>
+                Generate static files and deploy to any CDN service. Netlify, Zeit Now, GitHub Pages, GitLab Pages, Surge.sh, Now.sh and many more.
               </p>
 
               <p>
-              <strong>Static web host</strong>
-                Netlify, Zeit Now, GitHub Pages, GitLab Pages, Surge.sh, Now.sh ++
+                <strong>Server-side rendering</strong><br>
+                Deploy Gridsome and the GraphQL layer to any Node.js server
               </p>
+
+
           </div>
       </div>
   </Section>
@@ -73,11 +81,25 @@ export default {
   border-radius: 10px;
   width: 100%;
   padding: var(--space-x2);
+  position: relative;
+  &__title {
+    position: absolute;
+    top:-19px;
+    left:50%;
+    transform: translateX(-50%);
+    background: var(--primary-bg);
+    padding: 4px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: .85rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    }
 }
 
 .layers {
   transform: rotateX(55deg);
-  margin-top: -39%;
+  margin-top: -33%;
   margin-bottom: -50%;
   margin-left: -5%;
   margin-right: -5%;
@@ -112,6 +134,8 @@ export default {
 
   &__graphql {
     background: linear-gradient(-80deg, #E535AB 0%, rgba(229, 53, 171, 0.49) 100%);
+    animation: pulseAlt 2s infinite;
+
     position: relative;
     padding-top: 80%;
     width: 80%;
@@ -123,6 +147,9 @@ export default {
   &__vue {
     background: linear-gradient(180deg, #4DBA87 0%, #8FD46A 100%);
     position: relative;
+    animation: pulse 2s infinite;
+    animation-delay: .3s;
+
     .dots-bg {
       position: absolute;
       top: 20px;
