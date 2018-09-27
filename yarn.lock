@@ -552,9 +552,9 @@
     resolve-cwd "^2.0.0"
     sort-package-json "^1.15.0"
 
-"@gridsome/plugin-critical@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@gridsome/plugin-critical/-/plugin-critical-0.0.3.tgz#bc4691797131b6cb7d880e597144ab8c2640dd16"
+"@gridsome/plugin-critical@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@gridsome/plugin-critical/-/plugin-critical-0.0.4.tgz#93ade9ad0b26bd64650ffb9ea3f878758efcd6ed"
   dependencies:
     critical "^1.3.4"
     fs-extra "^7.0.0"
@@ -3827,9 +3827,9 @@ gray-percentage@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/gray-percentage/-/gray-percentage-2.0.0.tgz#b72a274d1b1379104a0050b63b207dc53fe56f99"
 
-gridsome@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.1.1.tgz#bc500cf70b1d2f483d1350d82dc2065f8b1516e2"
+gridsome@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.1.2.tgz#644b224eb40816595c70dfa9475da474fe9fecd5"
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/plugin-syntax-dynamic-import" "^7.0.0"
