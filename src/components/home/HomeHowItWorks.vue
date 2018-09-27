@@ -114,12 +114,12 @@ export default {
 
 .dot {
   stroke: #E535AB;
-  stroke-width: 5px;
+  stroke-width: 8px;
   stroke-linecap: round;
-  stroke-dasharray: 0 15;
+  stroke-dasharray: 0 20;
   position: absolute;
   top: 48%;
-  animation: stroke 300ms linear infinite;
+  animation: stroke 400ms linear infinite;
 
   &--after {
     stroke: var(--primary-color);
