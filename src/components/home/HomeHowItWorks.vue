@@ -4,7 +4,7 @@
         How Gridsome works
       </h2>
       <p class="lead text-center mb">
-        A better way to build websites
+        All your website data in one place
       </p>
 
       <div class="flex flex--align-equal flex--space-between">
@@ -57,14 +57,14 @@
               <div class="well__title">Deploy</div>
                 <h4>Static site generation</h4>
               <p>
-                Generate static files and deploy to any CDN service. For example, Netlify, Zeit Now, GitHub Pages, GitLab Pages, Surge.sh, Now.sh and many more.</p>           
+                Generate static files and deploy to any CDN service. For example, Netlify, Zeit Now, GitHub Pages, GitLab Pages, Surge.sh, Now.sh and many more.</p>
+
+              <div class="or">--- Or ---</div>        
 
               <h4>Server-side rendering</h4>
               <p>
-                Deploy Gridsome and the GraphQL layer to any Node.js server
+                Deploy Gridsome and the in-memory GraphQL database to any Node.js server.
               </p>
-
-
           </div>
       </div>
   </Section>
@@ -90,7 +90,6 @@ export default {
 
   h4{
     margin-bottom: .5rem;
-    font-size: .9rem;
   }
 
   &__title {
@@ -102,9 +101,17 @@ export default {
     padding: 4px 10px;
     border-radius: 5px;
     text-transform: uppercase;
-    font-size: .85rem;
+    font-size: .8rem;
     letter-spacing: 1px;
     font-weight: 600;
+  }
+
+  .or {
+    text-transform: uppercase;
+    font-size: .8rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    opacity: .5;
   }
 }
 
@@ -140,7 +147,7 @@ export default {
   border-radius: 10px;
   padding-top: 100%;
   width: 100%;
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
 
   &__graphql {
     background: linear-gradient(-80deg, #E535AB 0%, rgba(229, 53, 171, 0.49) 100%);
@@ -174,7 +181,7 @@ export default {
     left: 50%;
     top: 50%;
     width: 100%;
-    transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    transform: translateX(-50%) translateY(-50%);
     font-size: 1.4rem;
     text-shadow: 1px 1px 1px rgba(0,0,0,.1);
   }
