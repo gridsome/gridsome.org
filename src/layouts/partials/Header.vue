@@ -48,6 +48,7 @@ header {
   min-height: var(--header-height);
   background-color: #FFF;
   border-bottom: 1px solid transparent;
+  flex-wrap: nowrap;
   
   .has-sidebar & {
     border-bottom: 1px solid var(--border-color);
@@ -60,6 +61,9 @@ header {
 @media screen and (max-width: 750px) {
   header {
     box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
+    .logo {
+      margin-right: 0;
+    }
   }
   .header-actions {
     margin-left: auto!important;
