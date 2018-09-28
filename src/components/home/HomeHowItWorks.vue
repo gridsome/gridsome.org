@@ -59,7 +59,7 @@
               <p>
                 Generate static files and deploy to any CDN service. For example, Netlify, Zeit Now, GitHub Pages, GitLab Pages, Surge.sh, Now.sh and many more.</p>
 
-              <div class="or">--- Or ---</div>        
+              <div class="or">- Or -</div>        
 
               <h4>Server-side rendering</h4>
               <p>
