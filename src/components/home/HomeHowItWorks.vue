@@ -3,22 +3,22 @@
       <h2 class="text-center">
         How Gridsome works
       </h2>
+
       <p class="lead text-center mb">
-        All your website data in one place
+        All your website data in a universal GraphQL interface
       </p>
 
       <div class="flex flex--align-equal flex--space-between">
           <div class="well">
               <div class="well__title">Data sources</div>
               <h4>CMSs</h4>
-              <p>WordPress, Drupal,
-              Contentful, Shopify, Magento etc.</p>
+              <p>WordPress, Contentful, Drupal, Prismic, GraphCMS, etc.</p>
 
               <h4>Files</h4>
               <p>Markdown, YAML, CSV, JSON, Image folders, etc</p>
 
               <h4>APIs</h4>
-              <p>AirTable, Google Spreadsheet, MongoDB, Firebase etc.</p>
+              <p>AirTable, Google Spreadsheet, MongoDB, Prisma, etc.</p>
           </div>
           <div class="dots hide-for-small">
               <svg  width="100%" height="20" viewBox="0 0 60 20" class="dot">
@@ -117,11 +117,15 @@ export default {
 
 .layers {
   position: absolute;
-  max-width: 290px;
-  width: 100%;
+  max-width: 100%;
+  width: 85%;
   top: 50%;
   left:50%;
   transform: translateX(-50%) translateY(-50%) rotateX(55deg);
+
+  @media screen and (max-width: 650px) {
+    max-width: 70%;
+  }
 }
 
 .dots {
