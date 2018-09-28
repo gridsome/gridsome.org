@@ -8,7 +8,7 @@
       </p>
 
       <div class="flex flex--align-equal flex--space-between">
-          <div class="well left flex-fit">
+          <div class="well">
               <div class="well__title">Data sources</div>
               <p><b>CMSs</b> <br>WordPress, Drupal,
               Contentful, Shopify, Magento etc.</p>
@@ -18,13 +18,13 @@
 
               <p><b>APIs</b> <br>AirTable, Google Spreadsheet, MongoDB, Firebase etc.</p>
           </div>
-          <div class="dots">
+          <div class="dots hide-for-small">
               <svg  width="100%" height="20" viewBox="0 0 60 20" class="dot">
                 <path d="M1 9.5H99" />
               </svg>
           </div>
-          <div class="center flex-fit well">
-              <div class="well__title">Build</div>
+          <div class="well" style="min-height: 400px">
+              <div class="well__title">Develop</div>
               <div class="layers">
                 <div class="layer layer__graphql text-center">
                   <div class="text-wrapper">
@@ -46,12 +46,12 @@
                 </div>
               </div>
           </div>
-          <div class="dots">
+          <div class="dots hide-for-small">
              <svg  width="100%" height="20" viewBox="0 0 60 20" class="dot dot--after">
                 <path d="M1 9.5H99" />
               </svg>
           </div>
-          <div class="well right flex-fit">
+          <div class="well">
               <div class="well__title">Deploy</div>
               <p>
                 <strong>Static site generation</strong><br>
@@ -83,6 +83,9 @@ export default {
   width: 100%;
   padding: var(--space-x2);
   position: relative;
+  flex:1;
+  min-width: 300px;
+  margin-bottom: var(--space-x2);
   &__title {
     position: absolute;
     top:-19px;
@@ -99,12 +102,12 @@ export default {
 }
 
 .layers {
-  transform: rotateX(55deg);
-  margin-top: -33%;
-  margin-bottom: -50%;
-  margin-left: -5%;
-  margin-right: -5%;
-  position: relative;
+  position: absolute;
+  max-width: 290px;
+  width: 100%;
+  top: 50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%) rotateX(55deg);
 }
 
 .dots {
@@ -118,7 +121,7 @@ export default {
   stroke-linecap: round;
   stroke-dasharray: 0 20;
   position: absolute;
-  top: 48%;
+  top: 42%;
   animation: stroke 400ms linear infinite;
 
   &--after {

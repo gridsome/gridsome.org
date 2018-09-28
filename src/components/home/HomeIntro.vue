@@ -74,6 +74,13 @@ export default {
   }
 }
 
+@media screen and (max-width: 650px) {
+  .home-title__main {
+    font-size: 90%;
+  }
+}
+
+
 .home-intro {
   font-size: 130%;
 }
