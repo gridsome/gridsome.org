@@ -30,7 +30,7 @@
 
       <Feature>
         <h3>Build future ready websites</h3>
-        <p>The future of the web is mobile, JavaScript, and APIs <strong>— the JAMstack</strong>. Gridsome uses the power of blazing-fast <strong>static site generator</strong> or <strong>server-side rendering</strong>, JavaScript and APIs to create stunning dynamic web experiences.
+        <p>The future of the web is JavaScript, API's, and Markup - the <strong><a href="https://jamstack.org">JAMstack</a></strong>. Gridsome uses the power of blazing-fast <strong>static site generator</strong> or <strong>server-side rendering</strong>, JavaScript and APIs to create stunning dynamic web experiences.
         </p>
       </Feature>
 
