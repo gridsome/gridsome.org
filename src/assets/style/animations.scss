@@ -12,6 +12,20 @@
   }
 }
 
+@keyframes pulseAlt {
+  0% {
+    box-shadow: 0 0 0 0 #E535AB;
+  }
+  70% {
+    box-shadow: 0 0 0 10px transparent;
+
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+
+  }
+}
+
 @keyframes fadeUp {
   0% {
     opacity: 0;
@@ -29,7 +43,7 @@
 
 
 @keyframes stroke {
-  to{stroke-dashoffset:-15;}
+  to{stroke-dashoffset:-20;}
 }
 
 

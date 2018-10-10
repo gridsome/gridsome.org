@@ -7,13 +7,11 @@
   --border-color: rgb(223, 234, 219);
   --space: 20px;
   --space-x2: 40px;
-  --code-color: #f5f7f5;
+  --code-color: #f8f7f8;
 }
 
 @media screen and (max-width: 750px) {
   :root {
-    --space: 10px;
-    --space-x2: 20px;
     --header-height: 50px;
   }
 }
