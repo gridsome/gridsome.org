@@ -1,5 +1,5 @@
 <template>
-  <header class="flex gap-30 container-full">
+  <header class="flex gap-30 container">
     <Logo />
 
     <Nav class="flex-fit" />
@@ -51,6 +51,7 @@ header {
   flex-wrap: nowrap;
   
   .has-sidebar & {
+    max-width: 100%;
     border-bottom: 1px solid var(--border-color);
     position: fixed;
     top:0;
