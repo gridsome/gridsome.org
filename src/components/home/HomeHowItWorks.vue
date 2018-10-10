@@ -4,9 +4,6 @@
         How Gridsome works
       </h2>
 
-      <p class="lead text-center mb">
-        All your website data in a universal GraphQL interface
-      </p>
 
       <div class="source-animation flex flex--align-equal flex--space-between">
           <div class="well">
