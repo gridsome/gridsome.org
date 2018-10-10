@@ -8,7 +8,7 @@
         All your website data in a universal GraphQL interface
       </p>
 
-      <div class="flex flex--align-equal flex--space-between">
+      <div class="source-animation flex flex--align-equal flex--space-between">
           <div class="well">
               <div class="well__title">Data sources</div>
               <h4>CMSs</h4>
@@ -25,6 +25,13 @@
                 <path d="M1 9.5H99" />
               </svg>
           </div>
+
+          <div class="dots-vertical show-for-small">
+              <svg  width="100%" height="37" viewBox="0 0 1 37" class="dot">
+                <path d="M0.5 0L0.500002 37"/>
+              </svg>
+          </div>
+
           <div class="well" style="min-height: 400px">
               <div class="well__title">Develop</div>
               <div class="layers">
@@ -53,6 +60,14 @@
                 <path d="M1 9.5H99" />
               </svg>
           </div>
+
+          <div class="dots-vertical show-for-small">
+              <svg  width="100%" height="37" viewBox="0 0 1 37" class="dot dot--after">
+                <path d="M0.5 0L0.500002 37"/>
+              </svg>
+          </div>
+
+
           <div class="well">
               <div class="well__title">Deploy</div>
                 <h4>Static site generation</h4>
@@ -77,6 +92,12 @@ export default {
 </script>
 
 <style lang="scss" scoped="scoped">
+
+.source-animation {
+  overflow: hidden;
+  padding-top: 15px
+}
+
 .well {
   border: 3px solid var(--primary-bg);
   border-radius: 10px;
@@ -87,6 +108,7 @@ export default {
   flex:1;
   min-width: 280px;
   margin-bottom: var(--space-x2);
+
 
   h4{
     margin-bottom: .5rem;
@@ -117,15 +139,14 @@ export default {
 
 .layers {
   position: absolute;
-  max-width: 100%;
+  max-width: 290px;
+
   width: 85%;
   top: 50%;
   left:50%;
   transform: translateX(-50%) translateY(-50%) rotateX(55deg);
 
-  @media screen and (max-width: 650px) {
-    max-width: 70%;
-  }
+
 }
 
 .dots {
@@ -133,17 +154,31 @@ export default {
   position: relative;
 }
 
+.dots-vertical {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  margin-top: -40px;
+
+  .dot {
+    height: 100%;
+  }
+}
+
 .dot {
   stroke: #E535AB;
   stroke-width: 8px;
   stroke-linecap: round;
   stroke-dasharray: 0 20;
-  position: absolute;
-  top: 42%;
   animation: stroke 400ms linear infinite;
   &--after {
     stroke: var(--primary-color);
   }
+}
+
+.dots .dot {
+  position: absolute;
+  top: 42%;
 }
 
 .layer {
