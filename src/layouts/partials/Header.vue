@@ -1,5 +1,5 @@
 <template>
-  <header class="flex gap-30 container">
+  <header class="flex gap-30 container-full">
     <Logo />
 
     <Nav class="flex-fit" />
