@@ -21,7 +21,7 @@ export default {
       reactiveData: 'Try change me!'
     }
   },
-  metohds: {
+  methods: {
     clickMe() {
       this.reactiveData = 'Here you go :)'
     }
