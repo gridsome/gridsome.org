@@ -6,7 +6,7 @@ Gridsome lets you connect to any data source by using **Source plugins**. This i
 
 ![Git workflow](./images/graphql.png)
 
-**Transformer plugins** is used to transform the content (Nodes) coming from the data sources. F.ex for Filesystem source we have a Remark plugin that adds extra functionality to Markdown files.
+**Transformer plugins** is used to transform the content (Nodes) coming from the data sources. For example, for Filesystem source we have a Remark plugin that adds extra functionality to Markdown files.
 
 
 ## The GraphQL playground
