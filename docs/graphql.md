@@ -118,7 +118,7 @@ query Example {
 
 ## Add GraphQL to templates
 
-Templates are used for page layout for the "single" endpoint of a data source like f.ex a WordPress blog post. If you have a node type called `WordPressPost`, then you can create a file
+Templates are used for page layout for the "single" endpoint of a data source like for example a WordPress blog post. If you have a node type called `WordPressPost`, then you can create a file
 in `src/templates/WordPressPost.vue`.
 
 ```html
