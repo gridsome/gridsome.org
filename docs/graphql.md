@@ -6,7 +6,7 @@ Gridsome lets you connect to any data source by using **Source plugins**. This i
 
 ![Git workflow](./images/graphql.png)
 
-**Transformer plugins** is used to transform the content (Nodes) coming from the data sources. F.ex for Filesystem source we have a Remark plugin that adds extra functionality to Markdown files.
+**Transformer plugins** is used to transform the content (Nodes) coming from the data sources. For example, for Filesystem source we have a Remark plugin that adds extra functionality to Markdown files.
 
 
 ## The GraphQL playground
@@ -118,7 +118,7 @@ query Example {
 
 ## Add GraphQL to templates
 
-Templates are used for page layout for the "single" endpoint of a data source like f.ex a WordPress blog post. If you have a node type called `WordPressPost`, then you can create a file
+Templates are used for page layout for the "single" endpoint of a data source like for example a WordPress blog post. If you have a node type called `WordPressPost`, then you can create a file
 in `src/templates/WordPressPost.vue`.
 
 ```html
