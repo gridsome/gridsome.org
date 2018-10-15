@@ -16,7 +16,7 @@
 
       <Feature>
         <h3>PWA Mobile-first architecture</h3>
-        <p>Only critical HTML, CSS, and JavaScript are loaded at first, and then the next pages are prefetched so users can click around incredible fast without page reloads and even when offline. 
+        <p>Only critical HTML, CSS, and JavaScript get loaded first. The next pages are then prefetched so users can click around incredibly fast without page reloads, even when offline. 
         </p>     
       </Feature>
 
