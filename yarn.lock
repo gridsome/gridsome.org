@@ -539,9 +539,10 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@gridsome/cli@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@gridsome/cli/-/cli-0.0.5.tgz#f30c72dea11754a4a626cd404c280c58aeda7417"
+"@gridsome/cli@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@gridsome/cli/-/cli-0.0.6.tgz#4c349b936faec9a6049c7955678c6786901a78d1"
+  integrity sha512-AnhJ58O+W0Ri97BzepePPqr3H2kO7iWWk4On3T6TIVpQuZZUS/k8+NzQcqQkamrbI/xp0/d2LdQhgJlH9NO/6Q==
   dependencies:
     "@hjvedvik/tasks" "^0.0.8"
     chalk "^2.4.1"
@@ -550,11 +551,13 @@
     find-up "^2.1.0"
     fs-extra "^6.0.1"
     resolve-cwd "^2.0.0"
+    semver "^5.6.0"
     sort-package-json "^1.15.0"
 
-"@gridsome/plugin-critical@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@gridsome/plugin-critical/-/plugin-critical-0.0.4.tgz#93ade9ad0b26bd64650ffb9ea3f878758efcd6ed"
+"@gridsome/plugin-critical@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@gridsome/plugin-critical/-/plugin-critical-0.0.5.tgz#3058807e6e3c31a9187ed910352e401ec52b2df8"
+  integrity sha512-ScoVE/PuXtwH1tXVQxyaBZc7W5K62DTsStMp5L384dJ925UOvA8Ac5ha6AzJ7MVYj1GT+dDdj5GoBJwc3pqc4A==
   dependencies:
     critical "^1.3.4"
     fs-extra "^7.0.0"
@@ -3827,16 +3830,17 @@ gray-percentage@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/gray-percentage/-/gray-percentage-2.0.0.tgz#b72a274d1b1379104a0050b63b207dc53fe56f99"
 
-gridsome@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.1.2.tgz#644b224eb40816595c70dfa9475da474fe9fecd5"
+gridsome@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.2.0.tgz#4a459596afa4a984a88e53c187daa4957bc7c836"
+  integrity sha512-tv+UZ2jpcBjVtFxdAk0fcWddAFpt4f9h4anDqxaC66G5IHkBQ5Uhw3LcAwHEAsZDxkR1qU4gknnsRDRMlrGxbg==
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/plugin-syntax-dynamic-import" "^7.0.0"
     "@babel/plugin-transform-runtime" "^7.0.0"
     "@babel/preset-env" "^7.0.0"
     "@babel/runtime" "^7.0.0"
-    "@gridsome/cli" "^0.0.5"
+    "@gridsome/cli" "^0.0.6"
     "@sindresorhus/slugify" "^0.3.0"
     "@vue/component-compiler-utils" "^2.1.0"
     auto-bind "^1.2.1"
@@ -3876,6 +3880,7 @@ gridsome@^0.1.2:
     lodash.uniq "^4.5.0"
     lokijs "^1.5.5"
     lru-cache "^4.1.3"
+    md5-file "^4.0.0"
     mime-types "^2.1.19"
     mini-css-extract-plugin "^0.4.1"
     mini-svg-data-uri "^1.0.1"
@@ -5355,6 +5360,11 @@ math-expression-evaluator@^1.2.14:
 math-random@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/math-random/-/math-random-1.0.1.tgz#8b3aac588b8a66e4975e3cdea67f7bb329601fac"
+
+md5-file@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/md5-file/-/md5-file-4.0.0.tgz#f3f7ba1e2dd1144d5bf1de698d0e5f44a4409584"
+  integrity sha512-UC0qFwyAjn4YdPpKaDNw6gNxRf7Mcx7jC1UGCY4boCzgvU2Aoc1mOGzTtrjjLKhM5ivsnhoKpQVxKPp+1j1qwg==
 
 md5.js@^1.3.4:
   version "1.3.4"
@@ -7524,6 +7534,11 @@ semver-truncate@^1.0.0:
 semver@^4.0.3:
   version "4.3.6"
   resolved "https://registry.yarnpkg.com/semver/-/semver-4.3.6.tgz#300bc6e0e86374f7ba61068b5b1ecd57fc6532da"
+
+semver@^5.6.0:
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-5.6.0.tgz#7e74256fbaa49c75aa7c7a205cc22799cac80004"
+  integrity sha512-RS9R6R35NYgQn++fkDWaOmqGoj4Ek9gGs+DPxNUZKuwE183xjJroKvyo1IzVFeXvUrvmALy6FWD5xrdJT25gMg==
 
 semver@~5.3.0:
   version "5.3.0"
