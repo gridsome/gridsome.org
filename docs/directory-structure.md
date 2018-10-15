@@ -58,7 +58,7 @@ component file must match the node type in your GraphQL schema.
 
 [Read more about layouts, pages and templates](/docs/layouts-pages-templates)
 
-## Recomendations
+## Recommendation
 
 #### Shared or global components
 
