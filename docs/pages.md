@@ -13,7 +13,7 @@ Page templates should be wrapped in a layout component like:
 ```html
 <template>
   <Layout title="Hello">
-    Welcome to mye website...
+    Welcome to my website...
   </Layout>
 </template>
 ```
