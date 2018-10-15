@@ -14,15 +14,17 @@ for the current page. You can use the `path` variable to get the node.
 
 <template>
   <Layout :title="$page.post.title">
-    <div v-html="$page.post.content">
+    <div v-html="$page.post.fields.content">
   </Layout>
 </template>
 
 <page-query>
 query Post ($path: String!) {
-  wordPressPost (path: $path) {
+  post: wordPressPost (path: $path) {
     title
-    content
+    fields {
+      content
+    }
   }
 }
 </page-query>
