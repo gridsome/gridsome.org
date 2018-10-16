@@ -1,6 +1,6 @@
 # Gridsome configuration
 
-A basic `gridsome.config.js` file would look somthing like this:
+A basic `gridsome.config.js` file would look something like this:
 
 ```js
 export default {
@@ -34,9 +34,9 @@ The description is used as description on your frontpage.
 - Type `string`
 - Default `'/'`
 
-Gridsome assumes your project is serverd from the root of your domain.
+Gridsome assumes your project is served from the root of your domain.
 Change this option to `'/my-app/'` if your project will be hosted in a
-subdirectory called `my-app`. The baseUrl is allways `'/'` when developing
+subdirectory called `my-app`. The baseUrl is always `'/'` when developing
 locally.
 
 #### titleTemplate

@@ -1,6 +1,6 @@
 # Pagination
 
-Use the `@paginate` directive in your GraphQL query to add pagination for a list of source nodes. The query will recieve a `$page` variable you can use to load sources for a specific page.
+Use the `@paginate` directive in your GraphQL query to add pagination for a list of source nodes. The query will receive a `$page` variable you can use to load sources for a specific page.
 
 ```html
 <template>
