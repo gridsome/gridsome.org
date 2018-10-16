@@ -31,6 +31,6 @@ Gridsome follows the [PRPL-pattern by Google.](https://developers.google.com/web
 ## Alternatives
 -	**[VuePress.](//https://vuepress.vuejs.org/)** Another static site generator for Vue.js. It uses local markdown files for content and is perfect for documentation sites. It is possible to build anything in VuePress and Markdown (Like a blog f.ex), but it does not have the GraphQL layer that Gridsome has.
 
--	**[Nuxt.](https://nuxtjs.org/)**  A Universal Vue.js Framework that makes building Server side rendered (SSR) apps and websites easy. It also has a static site generator feature, but the main focus is SSR. It does have a GraphQL layer like Gridsome.
+-	**[Nuxt.](https://nuxtjs.org/)**  A Universal Vue.js Framework that makes building Server side rendered (SSR) apps and websites easy. It also has a static site generator feature, but the main focus is SSR. It doesn't have a GraphQL layer like Gridsome.
 
 -	**[Gatsby.js](https://www.gatsbyjs.org/)**  Gridsome is highly inspired by Gatsby.js (React.js based). Gridsome is the Vue.js alternative to this framework.
