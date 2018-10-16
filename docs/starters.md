@@ -18,9 +18,3 @@ The default project that is created with Gridsome CLI.
 `gridsome create my-website wordpress`
 
 [Learn more](https://github.com/gridsome/gridsome-starter-wordpress)
-
-
-### Contentful
-`gridsome create my-website contentful`
-
-[Learn more](https://github.com/gridsome/gridsome-starter-contentful)
