@@ -16,7 +16,6 @@ import 'typeface-league-spartan'
 import 'typeface-nunito'
 
 import VueAnalytics from 'vue-analytics'
-
 import Typography from 'typography'
 
 const typography = new Typography({
@@ -28,7 +27,7 @@ const typography = new Typography({
   bodyFontFamily: ['Nunito', 'Helvetica','Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
 })
 
-export default function (Vue, { head }) {
+export default function (Vue, { head, router, isServer }) {
   Vue.component('Layout', Layout)
   Vue.component('DocsLayout', Docs)
   Vue.component('Section', Section)
@@ -36,16 +35,20 @@ export default function (Vue, { head }) {
   Vue.component('Card', Card)
   Vue.component('VueLogo', VueLogo)
   Vue.component('GraphQlLogo', GraphQlLogo)
+
   Vue.use(VueScrollTo)
 
   Vue.use(VueAnalytics, {
-    id: 'UA-127625720-1'
+    id: 'UA-127625720-1',
+    disabled: isServer,
+    debug: {
+      sendHitTask: process.env.NODE_ENV === 'production'
+    },
+    router
   })
   
   head.style.push({
     type: 'text/css',
     cssText: typography.toString()
   })
-
-  head.__dangerouslyDisableSanitizers = ['style']
 }
