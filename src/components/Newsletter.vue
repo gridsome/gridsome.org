@@ -5,8 +5,7 @@
 		<div id="mc_embed_signup_scroll" class="flex">
 			
 			<div class="newsletter__field mc-field-group flex-fit" style="margin-right: 15px">
-				<label for="mce-EMAIL" style="position: absolute; left: -5000px;" aria-hidden="true">Email Address</label>
-				<input  type="email" placeholder="your@email.com" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+				<input  type="email" aria-label="Email" placeholder="your@email.com" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 			</div>
 
 			<div class="newsletter__button">
