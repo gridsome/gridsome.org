@@ -23,7 +23,7 @@ export default {
     HomeFeatures,
     HomeTabs,
     HomeBlog,
-    HomeHowItWorks
+    HomeHowItWorks,
   },
 
 

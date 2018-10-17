@@ -6,15 +6,20 @@
     <div class="blog-posts container container-md">
       <PostCard v-for="edge in $static.posts.edges" :key="edge.node._id" :post="edge.node"/>
     </div>
+    <div class="container text-center container-sm md">
+      <Newsletter />
+    </div>
   </Section>
 </template>
 
 <script>
 import PostCard from '@/components/PostCard.vue'
+import Newsletter from '~/components/Newsletter'
 
 export default {
   components: {
-    PostCard
+    PostCard,
+    Newsletter
   }
 }
 </script>
