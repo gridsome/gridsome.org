@@ -542,7 +542,6 @@
 "@gridsome/cli@^0.0.6":
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/@gridsome/cli/-/cli-0.0.6.tgz#4c349b936faec9a6049c7955678c6786901a78d1"
-  integrity sha512-AnhJ58O+W0Ri97BzepePPqr3H2kO7iWWk4On3T6TIVpQuZZUS/k8+NzQcqQkamrbI/xp0/d2LdQhgJlH9NO/6Q==
   dependencies:
     "@hjvedvik/tasks" "^0.0.8"
     chalk "^2.4.1"
@@ -557,7 +556,6 @@
 "@gridsome/plugin-critical@^0.0.5":
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/@gridsome/plugin-critical/-/plugin-critical-0.0.5.tgz#3058807e6e3c31a9187ed910352e401ec52b2df8"
-  integrity sha512-ScoVE/PuXtwH1tXVQxyaBZc7W5K62DTsStMp5L384dJ925UOvA8Ac5ha6AzJ7MVYj1GT+dDdj5GoBJwc3pqc4A==
   dependencies:
     critical "^1.3.4"
     fs-extra "^7.0.0"
@@ -3833,7 +3831,6 @@ gray-percentage@^2.0.0:
 gridsome@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.2.0.tgz#4a459596afa4a984a88e53c187daa4957bc7c836"
-  integrity sha512-tv+UZ2jpcBjVtFxdAk0fcWddAFpt4f9h4anDqxaC66G5IHkBQ5Uhw3LcAwHEAsZDxkR1qU4gknnsRDRMlrGxbg==
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/plugin-syntax-dynamic-import" "^7.0.0"
@@ -5364,7 +5361,6 @@ math-random@^1.0.1:
 md5-file@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/md5-file/-/md5-file-4.0.0.tgz#f3f7ba1e2dd1144d5bf1de698d0e5f44a4409584"
-  integrity sha512-UC0qFwyAjn4YdPpKaDNw6gNxRf7Mcx7jC1UGCY4boCzgvU2Aoc1mOGzTtrjjLKhM5ivsnhoKpQVxKPp+1j1qwg==
 
 md5.js@^1.3.4:
   version "1.3.4"
@@ -7538,7 +7534,6 @@ semver@^4.0.3:
 semver@^5.6.0:
   version "5.6.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.6.0.tgz#7e74256fbaa49c75aa7c7a205cc22799cac80004"
-  integrity sha512-RS9R6R35NYgQn++fkDWaOmqGoj4Ek9gGs+DPxNUZKuwE183xjJroKvyo1IzVFeXvUrvmALy6FWD5xrdJT25gMg==
 
 semver@~5.3.0:
   version "5.3.0"
@@ -8810,6 +8805,10 @@ vm-browserify@0.0.4:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-0.0.4.tgz#5d7ea45bbef9e4a6ff65f95438e0a87c357d5a73"
   dependencies:
     indexof "0.0.1"
+
+vue-analytics@^5.16.0:
+  version "5.16.0"
+  resolved "https://registry.yarnpkg.com/vue-analytics/-/vue-analytics-5.16.0.tgz#82e88703a0678cba076d51acacd6569bc8f7d54c"
 
 vue-hot-reload-api@^2.3.0:
   version "2.3.1"

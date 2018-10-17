@@ -15,6 +15,8 @@ import VueScrollTo from 'vue-scrollto'
 import 'typeface-league-spartan'
 import 'typeface-nunito'
 
+import VueAnalytics from 'vue-analytics'
+
 import Typography from 'typography'
 
 const typography = new Typography({
@@ -35,6 +37,10 @@ export default function (Vue, { head }) {
   Vue.component('VueLogo', VueLogo)
   Vue.component('GraphQlLogo', GraphQlLogo)
   Vue.use(VueScrollTo)
+
+  Vue.use(VueAnalytics, {
+    id: 'UA-127625720-1'
+  })
   
   head.style.push({
     type: 'text/css',
