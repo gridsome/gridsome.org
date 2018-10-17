@@ -36,8 +36,7 @@ The description is used as description on your frontpage.
 
 Gridsome assumes your project is served from the root of your domain.
 Change this option to `'/my-app'` if your project will be hosted in a
-subdirectory called `my-app`. The pathPrefix is always `'/'` when developing
-locally.
+subdirectory called `my-app`.
 
 #### titleTemplate
 
