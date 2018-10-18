@@ -3828,9 +3828,9 @@ gray-percentage@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/gray-percentage/-/gray-percentage-2.0.0.tgz#b72a274d1b1379104a0050b63b207dc53fe56f99"
 
-gridsome@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.2.0.tgz#4a459596afa4a984a88e53c187daa4957bc7c836"
+gridsome@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.2.2.tgz#8317ddd832102347651d6838b83423c33f23c98d"
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/plugin-syntax-dynamic-import" "^7.0.0"
@@ -3891,6 +3891,7 @@ gridsome@^0.2.0:
     probe-image-size "^4.0.0"
     querystring "^0.2.0"
     sharp "^0.20.8"
+    slash "^2.0.0"
     sockjs "^0.3.19"
     sockjs-client "^1.1.5"
     url-loader "^1.1.1"
