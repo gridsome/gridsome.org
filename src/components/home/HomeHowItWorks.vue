@@ -48,7 +48,6 @@
                         Hot-reloading<br/>
                     </div>
                  </div>
-                 <div class="dots-bg"></div>
                 </div>
               </div>
           </div>
@@ -201,14 +200,6 @@ export default {
     position: relative;
     animation: pulse 2s infinite;
     animation-delay: .3s;
-
-    .dots-bg {
-      position: absolute;
-      top: 20px;
-      left:20px;
-      right:20px;
-      bottom:20px;
-    }
   }
 
   .text {
