@@ -15,7 +15,11 @@ export default {
 
 <style lang="scss">
  .logo {
-  
+  svg{
+  	max-width: 160px;
+  	height: auto;
+  	margin-top: -4px;
+  }
   &:hover {
  		opacity: .8;
  	}

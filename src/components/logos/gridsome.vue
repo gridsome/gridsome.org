@@ -26,11 +26,3 @@
 </svg>
 
 </template>
-
-<style scoped>
- svg {
-    max-width: 160px;
-    height: auto;
-    margin-top: -2px;
- }
-</style>
