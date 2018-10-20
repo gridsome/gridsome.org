@@ -15,7 +15,6 @@ export default {
 
 <style lang="scss">
  .logo {
-  margin-top: -1px;
   
   &:hover {
  		opacity: .8;
