@@ -11,10 +11,12 @@
 
 - title : Transformers
   items:
-    - title: Remark
+    - title: Markdown (Remark)
       link: /plugins/transformer-remark
 
 - title : Plugins
   items:
     - title: Critial CSS
       link: /plugins/plugin-critical-css
+    - title: Remark PrismJS
+      link: /plugins/plugin-remark-prismjs
