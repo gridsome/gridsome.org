@@ -47,7 +47,7 @@ export default {
 
   &__dots-bg {
     height: 600px;
-    max-width: 1240px;
+    max-width: 1247px;
     max-height: 100%;
     margin: 0 auto;
     position: absolute;
