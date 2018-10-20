@@ -9,7 +9,7 @@ a {
 
   .post &:not(.button):after {
   	content: "";
-  	top: calc(100% - 2px);
+  	top: calc(100% - 5px);
   	opacity: 1;
   	left:2px;
   	right:2px;
