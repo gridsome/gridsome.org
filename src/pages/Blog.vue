@@ -1,7 +1,7 @@
 <template>
   <Layout transparent="true">
     
-    <Section dark="true" class="text-center" dots="true" container="sm">
+    <Section primary="true" class="text-center" dots="true" container="sm">
       <h1>Gridsome Blog</h1>
       <p class="lead">Follow our mission to save the web from bloat and make building websites fun again.</p>
     </Section>

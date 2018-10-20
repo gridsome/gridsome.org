@@ -32,7 +32,7 @@
       <strong>GraphQL</strong><graph-ql-logo style="color:#E535AB;" />
     </p>
 
-    <g-link  to="/docs" class="button">
+    <g-link  to="/docs" class="button primary">
       Get started
     </g-link>
 
@@ -71,6 +71,7 @@ export default {
   }
   &__main {
     font-size: 130%;
+    color: var(--primary-color);
   }
 }
 

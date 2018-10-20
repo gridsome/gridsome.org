@@ -16,6 +16,10 @@
   opacity: .7;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: var(--secondary-color)!important;
+}
+
 h1, h2, h3, .button {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -27,11 +31,4 @@ p:last-child {
 
 p {
   font-weight: 300;
-}
-
-.gradient-text {
-  background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  line-height: 135%;
 }

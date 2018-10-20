@@ -1,7 +1,7 @@
 a {
   color: var(--primary-link-color);
   text-decoration: none;
-  transition: color .3s, opacity .3s;
+  transition: color .3s, opacity .3s, background-color .3s;
   display: inline-block;
   position: relative;
 
@@ -32,6 +32,6 @@ a.plain {
 }
 
 a:hover:not(.active) {
-  color: currentColor;
+  color: var(--secondary-color);
   opacity: 1;
 }

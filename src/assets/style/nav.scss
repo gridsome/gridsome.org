@@ -34,7 +34,7 @@ nav.tabs {
   a.active {
     color:#FFF;
     background-color: var(--primary-color);
-    background: linear-gradient(360deg, var(--primary-color) 0%,  var(--secondary-color) 100%);
+    background:  var(--primary-color);
     box-shadow: var(--shadow);
   }
 
