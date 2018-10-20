@@ -1,8 +1,10 @@
 <template>
   <Layout>
     <Section class="post" container="md" dots="true" >
-      <h1 v-html="$page.post.title"/>
-      <PostMeta :post="$page.post"/>
+      <div class="post-header container-sm text-center mb">
+        <h1 v-html="$page.post.title"/>
+        <PostMeta :post="$page.post"/>
+      </div>
       <p class="lead" v-html="$page.post.fields.excerpt"/>
       <div v-html="$page.post.content"/>
     </Section>
