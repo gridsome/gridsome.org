@@ -13,7 +13,7 @@
 
 <static-query>
 query Example {
-  example: examplePage (path: "/examples/templates") {
+  example (path: "/examples/templates") {
     content
   }
 }

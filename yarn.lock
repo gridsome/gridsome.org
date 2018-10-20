@@ -572,14 +572,15 @@
     prismjs "^1.15.0"
     unist-util-visit "^1.4.0"
 
-"@gridsome/source-filesystem@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@gridsome/source-filesystem/-/source-filesystem-0.0.3.tgz#bc3b577446571129b9cf320f5966f37ddf546540"
+"@gridsome/source-filesystem@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@gridsome/source-filesystem/-/source-filesystem-0.1.0.tgz#ed4cb551ea4cc7658b0b38206ae92b86bfc8ceeb"
   dependencies:
     chokidar "^2.0.4"
     fs-extra "^7.0.0"
     globby "^8.0.1"
     lodash "^4.17.10"
+    slash "^2.0.0"
 
 "@gridsome/transformer-remark@^0.0.3":
   version "0.0.3"
@@ -3828,9 +3829,9 @@ gray-percentage@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/gray-percentage/-/gray-percentage-2.0.0.tgz#b72a274d1b1379104a0050b63b207dc53fe56f99"
 
-gridsome@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.2.2.tgz#8317ddd832102347651d6838b83423c33f23c98d"
+gridsome@^0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.2.3.tgz#10b480a4e95458a27a96694a91a435a941beab25"
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/plugin-syntax-dynamic-import" "^7.0.0"

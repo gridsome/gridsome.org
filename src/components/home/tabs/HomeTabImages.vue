@@ -17,7 +17,7 @@
 
 <static-query>
 query Example {
-  example: examplePage (path: "/examples/g-image") {
+  example (path: "/examples/g-image") {
     content
   }
 }

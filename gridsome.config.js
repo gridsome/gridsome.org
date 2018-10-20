@@ -8,10 +8,9 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        type: 'page',
         index: ['README'],
         path: 'docs/**/*.md',
-        typeName: 'Doc',
+        typeName: 'DocPage',
         remark: {
           plugins: [
             '@gridsome/remark-prismjs'
@@ -22,10 +21,9 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        type: 'page',
         index: ['README'],
         path: 'plugins/**/*.md',
-        typeName: 'Plugin',
+        typeName: 'PluginPage',
         remark: {
           plugins: [
             '@gridsome/remark-prismjs'
@@ -36,7 +34,6 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        type: 'page',
         path: 'examples/*.md',
         typeName: 'Example',
         remark: {
@@ -49,10 +46,9 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        type: 'post',
         path: 'blog/*/index.md',
         route: '/blog/:year/:month/:day/:slug+',
-        typeName: 'Blog',
+        typeName: 'BlogPost',
         remark: {
           plugins: [
             '@gridsome/remark-prismjs'

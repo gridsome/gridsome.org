@@ -15,7 +15,7 @@
 
 <static-query>
 query Example {
-  example: examplePage (path: "/examples/graphql") {
+  example (path: "/examples/graphql") {
     content
   }
 }
