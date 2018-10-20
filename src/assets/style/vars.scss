@@ -3,7 +3,7 @@
   --header-height: 75px;
   --secondary-color: #435466;
   --primary-bg: #f3f5f5;
-  --primary-link-color: #236948;
+  --primary-link-color: #3a966b;
   --border-color: rgb(223, 234, 219);
   --space: 20px;
   --space-x2: 40px;
@@ -12,6 +12,6 @@
 
 @media screen and (max-width: 750px) {
   :root {
-    --header-height: 50px;
+    --header-height: 60px;
   }
 }

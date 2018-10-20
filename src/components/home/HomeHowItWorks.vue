@@ -12,7 +12,7 @@
               <p>WordPress, Contentful, Drupal, Prismic, GraphCMS, etc.</p>
 
               <h4>Files</h4>
-              <p>Markdown, YAML, CSV, JSON, Image folders, etc</p>
+              <p>Markdown, YAML, CSV, JSON, Image folders, etc.</p>
 
               <h4>APIs</h4>
               <p>AirTable, Google Spreadsheet, MongoDB, Prisma, etc.</p>

@@ -10,14 +10,20 @@ nav a {
 
   svg {
     margin: 3px 6px;
-    opacity: .5;
   }
 
   &.active {
+    color:#000;
     svg {
       opacity: 1;
     }
   }
+
+  &:not(.active):not(:hover):not(.button) {
+    color: var(--secondary-color);
+    opacity: .7;
+  }
+
 }
 
 nav.tabs {
@@ -45,7 +51,3 @@ nav.tabs {
 }
 
 
-nav a:not(.active):not(:hover):not(.button) {
-  color: currentColor;
-  opacity: .7;
-}
