@@ -54,10 +54,10 @@
       link: /docs/config
     - title: Plugin API
       link: /docs/plugin-api
-    - title: Data store API
+    - title: Data Store API
       link: /docs/data-store-api
-    - title: Meta API
-      link: /docs/meta-api
+    - title: Page Meta API
+      link: /docs/page-meta-api
     - title: CLI
       link: /docs/gridsome-cli
 
