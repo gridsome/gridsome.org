@@ -28,7 +28,7 @@ export default {
 
 
   metaInfo: {
-    title: 'Gridsome - Build blazing fast websites with Vue.js and GraphQL',
+    title: 'Gridsome - Build blazing fast websites for any CMS or data with Vue.js',
     titleTemplate: '%s',
     meta: [
       {

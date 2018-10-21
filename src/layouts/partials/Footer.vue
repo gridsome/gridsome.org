@@ -2,7 +2,8 @@
   <footer class="text-center">
     Made in ❄️ Norway by
     <a class="plain" href="//twitter.com/hjvedvik">@hjvedvik</a> &
-    <a class="plain" href="//twitter.com/tommyvedvik">@tommyvedvik</a>.
+    <a class="plain" href="//twitter.com/tommyvedvik">@tommyvedvik</a> and
+    <a class="plain" href="//github.com/gridsome/gridsome/graphs/contributors">Contributors 💚</a>.
     <a class="plain" href="//github.com/gridsome/gridsome/blob/master/LICENSE"><strong>MIT Licensed </strong></a>
   </footer>
 </template>

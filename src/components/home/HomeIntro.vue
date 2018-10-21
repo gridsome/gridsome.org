@@ -27,9 +27,8 @@
     </h1>
 
     <p class="home-intro container-sm">
-      Build blazing fast websites with <br class="hide-for-small" />
-      <strong class="no-wrap">Vue.js<vue-logo/></strong> & 
-      <strong class="no-wrap">GraphQL <graph-ql-logo style="color:#E535AB;" /></strong>
+      Build blazing fast websites for any CMS<br class="hide-for-small" /> or data with 
+      <strong class="no-wrap">Vue.js<vue-logo/></strong>
     </p>
 
     <g-link  to="/docs" class="button primary">
