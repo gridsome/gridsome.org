@@ -23,23 +23,16 @@ export default {
   .feature {
     text-align:center; 
 
-    &__icon {
-      width: 50px;
-      height: 50px;
+    svg.icon {
+      width: 32px;
+      height: 32px;
       border-radius: 99px;
-      margin: 0 auto 30px;
-      background-color: #FFF;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      svg {
-        margin-top:-3px;
-      }
+      margin: 0 auto var(--space);
+      color: var(--secondary-color);
+      opacity: .6;
+      overflow: visible!important;
     }
 
-    &__inner {
-      flex: 1;
-    }
 
     h3 {
       margin-bottom: 1rem;

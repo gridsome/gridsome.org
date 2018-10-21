@@ -1,14 +1,12 @@
 <template>
   <Layout transparent="true">
-    
-    <Section dark="true" class="text-center" dots="true" container="sm">
-      <h1>Gridsome Blog</h1>
-      <p class="lead">Follow our mission to save the web from bloat and make building websites fun again.</p>
-    </Section>
-
-    <div class="blog-posts container container-md">
+     <Section container="md" class="blog-posts">
+      <div class="mb container-sm text-center">
+          <h1>Gridsome Blog</h1>
+          <p class="lead">Follow our mission to save the web from bloat and make building websites fun again.</p>
+      </div>
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node._id" :post="edge.node"/>
-    </div>
+    </Section>
   </Layout>
 </template> 
 
@@ -42,9 +40,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-.blog-posts {
-  padding: 2rem 1rem;
-}
-</style>

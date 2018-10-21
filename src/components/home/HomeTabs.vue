@@ -24,7 +24,7 @@
 
 
     <div class="text-center">
-      <g-link to="/docs" class="button">Get started</g-link>
+      <g-link to="/docs" class="button primary">Get started</g-link>
       <a href="//github.com/gridsome/gridsome" class="button plain">GitHub</a>
     </div>
 

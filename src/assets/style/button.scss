@@ -5,6 +5,7 @@
   font-weight: bold;
   letter-spacing: .5px;
   position: relative;
+  border-radius: 5px;
 
   &:after {
     content: " ";
@@ -23,6 +24,17 @@
     opacity: 1;
   }
 
+  &.primary {
+    color:#FFF;
+    background-color: var(--primary-color);
+    &:after {
+      border-color: rgba(0,0,0,.1);
+    }
+    &:hover {
+      color:#FFF;
+      background-color: var(--secondary-color);
+    }
+  }
 
   &.small {
     font-size: .85rem;

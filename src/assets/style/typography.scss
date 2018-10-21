@@ -27,11 +27,5 @@ p:last-child {
 
 p {
   font-weight: 300;
-}
-
-.gradient-text {
-  background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  line-height: 135%;
+  color: var(--secondary-color);
 }

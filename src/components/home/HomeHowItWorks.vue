@@ -12,7 +12,7 @@
               <p>WordPress, Contentful, Drupal, Prismic, GraphCMS, etc.</p>
 
               <h4>Files</h4>
-              <p>Markdown, YAML, CSV, JSON, Image folders, etc</p>
+              <p>Markdown, YAML, CSV, JSON, Image folders, etc.</p>
 
               <h4>APIs</h4>
               <p>AirTable, Google Spreadsheet, MongoDB, Prisma, etc.</p>
@@ -48,7 +48,6 @@
                         Hot-reloading<br/>
                     </div>
                  </div>
-                 <div class="dots-bg"></div>
                 </div>
               </div>
           </div>
@@ -197,18 +196,10 @@ export default {
   }
 
   &__vue {
-    background: linear-gradient(180deg, #4DBA87 0%, #8FD46A 100%);
+    background: var(--primary-color);
     position: relative;
     animation: pulse 2s infinite;
     animation-delay: .3s;
-
-    .dots-bg {
-      position: absolute;
-      top: 20px;
-      left:20px;
-      right:20px;
-      bottom:20px;
-    }
   }
 
   .text {

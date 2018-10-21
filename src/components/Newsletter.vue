@@ -40,12 +40,10 @@
   &__button {
   	margin: 0 auto;
   	margin-bottom: 1rem;
-
   }
   
   p {
   	margin-bottom: .5rem;
-  	opacity: .6;
   }
 }
 </style>

@@ -50,7 +50,6 @@
 
   h3 {
     font-size: .75rem;
-    color: #7a9a8a;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin: 30px 0 15px;
@@ -64,6 +63,7 @@
   a {
     color: currentColor;
     opacity: 1;
+    font-weight: normal;
 
     &:hover {
       opacity: .6;

@@ -27,12 +27,11 @@
     </h1>
 
     <p class="home-intro container-sm">
-      Build blazing fast websites with <br class="hide-for-small" />
-      <strong>Vue.js</strong><vue-logo/> & 
-      <strong>GraphQL</strong><graph-ql-logo style="color:#E535AB;" />
+      Build blazing fast websites for any CMS<br class="hide-for-small" /> or data with 
+      <strong class="no-wrap">Vue.js<vue-logo/></strong>
     </p>
 
-    <g-link  to="/docs" class="button">
+    <g-link  to="/docs" class="button primary">
       Get started
     </g-link>
 
@@ -71,6 +70,7 @@ export default {
   }
   &__main {
     font-size: 130%;
+    color: var(--primary-color);
   }
 }
 
