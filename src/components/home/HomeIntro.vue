@@ -9,18 +9,18 @@
           Static Websites
         </div>
         <div v-else-if="currentText == 1" key="1" class="home-title__main gradient-text">
-          PWAs
+          any CMS or data
         </div>
         <div v-else-if="currentText == 2" key="2" class="home-title__main gradient-text">
-          any Headless CMS
+         PWAs
         </div>
         <div v-else-if="currentText == 3" key="3" class="home-title__main gradient-text">
           the #JAMstack
         </div>
-        <div v-else-if="currentText == 5" key="5" class="home-title__main gradient-text">
-          Documentation
-        </div>
         <div v-else-if="currentText == 4" key="4" class="home-title__main gradient-text">
+          Markdown files
+        </div>
+        <div v-else-if="currentText == 5" key="5" class="home-title__main gradient-text">
           SEO-friendly SPAs
         </div>
       </transition>
