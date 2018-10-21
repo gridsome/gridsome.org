@@ -50,16 +50,16 @@
 
 - title : API
   items: 
-    - title: Project Config
+    - title: Gridsome Config
       link: /docs/config
+    - title: Gridsome CLI
+      link: /docs/gridsome-cli
     - title: Plugin API
       link: /docs/plugin-api
     - title: Data Store API
       link: /docs/data-store-api
     - title: Page Meta API
       link: /docs/page-meta-api
-    - title: CLI
-      link: /docs/gridsome-cli
 
 - title: Deploy
   items:
