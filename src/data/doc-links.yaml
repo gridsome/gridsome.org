@@ -9,12 +9,10 @@
     - title: Deployment
       link: /docs/deployment
 
-- title : BASICS
+- title : BASIC
   items:
     - title: Directory structure
       link: /docs/directory-structure
-    - title: Project Config
-      link: /docs/config
     - title: GraphQL layer
       link: /docs/graphql
     - title: Pages
@@ -25,8 +23,6 @@
       link: /docs/layouts
     - title: Components
       link: /docs/components
-    - title: CLI
-      link: /docs/gridsome-cli
 
 
 - title: Components
@@ -38,7 +34,6 @@
     - title: Pagination
       link: /docs/pagination
 
-      
 
 - title: Guides
   items:
@@ -53,6 +48,18 @@
     - title: Custom head meta
       link: /docs/custom-head-meta
 
+- title : API
+  items: 
+    - title: Project Config
+      link: /docs/config
+    - title: Plugin API
+      link: /docs/plugin-api
+    - title: Data store API
+      link: /docs/data-store-api
+    - title: Meta API
+      link: /docs/meta-api
+    - title: CLI
+      link: /docs/gridsome-cli
 
 - title: Deploy
   items:
