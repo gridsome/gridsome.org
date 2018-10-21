@@ -1,4 +1,4 @@
-# Gridsome configuration
+# Gridsome Config
 
 A basic `gridsome.config.js` file would look something like this:
 
