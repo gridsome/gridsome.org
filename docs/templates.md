@@ -2,7 +2,7 @@
 
 Templates are just like pages, except they will not get a path based on the file
 location. Instead, they'll be used to render pages from data sources in your
-project. The filename must match the GraphQl node type it will be a template
+project. The filename must match the GraphQL node type it will be a template
 for. If you have a node type called `WordPressPost`, then you can create a file
 in `src/templates/WordPressPost.vue`.
 
