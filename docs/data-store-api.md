@@ -1,16 +1,16 @@
 # Data Store API
 
-> The store is available in the `api.loadSources` API hook.
-
 ```js
-// server.js
+// gridsome.server.js
 
 module.exports = function (api) {
-  api.loadSources(({ store }) => {
+  api.loadSource(store => {
     // add your sources here
   })
 }
 ```
+
+## Create content types and nodes
 
 **store.addContentType(options)**
 
@@ -32,6 +32,16 @@ Options:
 - excerpt `string` *Optional excerpt.*
 - fields `object` *Custom fields.*
 
+## Taxonomies and terms
+
+**store.addTaxonomy(options)**
+
+*Comming soon...*
+
+**taxonomy.addTerm(options)**
+
+*Comming soon...*
+
 ## Examples
 
 ### Basic usage
@@ -40,7 +50,7 @@ This example creates a `MyData` content type and just adds a single node to it.
 
 ```js
 module.exports = function (api) {
-  api.loadSources(({ store }) => {
+  api.loadSource(store => {
     const contentType = store.addContentType({
       typeName: 'MyData'
     })
@@ -80,7 +90,7 @@ You can also fetch external data and add it to the store.
 const axios = require('axios')
 
 module.exports = function (api) {
-  api.loadSources(async ({ store }) => {
+  api.loadSource(async store => {
     const { data } = await axios.get('https://api.example.com/posts')
 
     const contentType = store.addContentType({
@@ -104,7 +114,7 @@ This example creates two content types: `Author` and `BlogPost`. The `ref` optio
 
 ```js
 module.exports = function (api) {
-  api.loadSources(({ store }) => {
+  api.loadSource(store => {
     const authors = store.addContentType({
       typeName: 'Author'
     })

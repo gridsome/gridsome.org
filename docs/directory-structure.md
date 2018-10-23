@@ -6,14 +6,16 @@ A basic Gridsome project would be structured like this:
 .
 ├── package.json
 ├── gridsome.config.js
-└── src
+├── gridsome.server.js
+├── static/
+└── src/
     ├── main.js
-    ├── layouts
+    ├── layouts/
     │   └── Default.vue
-    ├── pages
+    ├── pages/
     │   ├── Index.vue
     │   └── Blog.vue
-    └── templates
+    └── templates/
         └── BlogPost.vue
 ```
 
@@ -28,6 +30,12 @@ Contains information about which plugins is installed in your project.
 This file contains configuration and options for installed plugins.
 
 [Read more about project config](/docs/config)
+
+#### gridsome.server.js
+
+This file is optional and is used to hook into various parts of the Gridsome server. The file must export a function which will recieve a plugin API.
+
+[Read more about the plugin API](/docs/plugin-api)
 
 ## The src directory
 
@@ -58,6 +66,10 @@ component file must match the node type in your GraphQL schema.
 
 [Read more about layouts, pages and templates](/docs/layouts-pages-templates)
 
+#### Static directory
+
+Files in this directory will be copied directly to `dist` during build.
+
 ## Recommendation
 
 #### Shared or global components
@@ -67,5 +79,4 @@ in a `src/components` directory.
 
 #### Data files
 
-Data files like `.json` or `.yaml` can be stored in a `src/data`
-directory.
+Data files like `.json` or `.yaml` that you want to import into your components, can be stored in a `src/data` directory.
