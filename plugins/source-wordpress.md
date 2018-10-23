@@ -10,6 +10,8 @@ API might change before v1 is released.
 ## Usage
 
 ```js
+// gridsome.config.js
+
 module.exports = {
   plugins: [
     {
