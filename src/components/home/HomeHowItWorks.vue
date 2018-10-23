@@ -5,7 +5,7 @@
       </h2>
 
       <p class="lead text-center container-sm">
-        Gridsome connects to one or multiple  data sources and imports data into an internal GraphQL layer.</p>
+        Connect to one or multiple data sources and access data from a internal GraphQL layer.</p>
       </p>
 
 
