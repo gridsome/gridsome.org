@@ -11,7 +11,7 @@
       <div class="source-animation__logo">
         <Logo />
       </div>
-      <p>2. Build. Vue.js, GraphQL, Webpack</p>
+      <p>2. Build. Vue.js, GraphQL, webpack</p>
     </div>
     <svg width="60" height="20" viewBox="0 0 60 20" class="source-animation__dot source-animation__dot--after">
       <path d="M1 9.5H99" />
