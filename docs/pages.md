@@ -8,9 +8,11 @@ are treated like `index.html` files and will not get a slug. As an example:
 `src/pages/features/Index.vue` will become `/features` and
 `src/pages/features/Awesome.vue` will become `/features/awesome`.
 
-Page templates should be wrapped in a layout component like:
+Page templates should be wrapped in a **layout** component like:
 
 ```html
+<!-- scr/pages/Index.vue -->
+
 <template>
   <Layout title="Hello">
     Welcome to my website...
@@ -41,6 +43,8 @@ to fetch data from data sources. The results will be stored in a
 `$page` property inside the page component.
 
 ```html
+<!-- scr/pages/Blog.vue -->
+
 <template>
   <Layout>
     <h2>Latest blog posts</h2>

@@ -9,12 +9,10 @@
     - title: Deployment
       link: /docs/deployment
 
-- title : BASIC
+- title : Basics
   items:
     - title: Directory structure
       link: /docs/directory-structure
-    - title: GraphQL layer
-      link: /docs/graphql
     - title: Pages
       link: /docs/pages
     - title: Templates
@@ -23,6 +21,19 @@
       link: /docs/layouts
     - title: Components
       link: /docs/components
+
+- title : Data layer
+  items:
+    - title: GraphQL data layer
+      link: /docs/graphql
+    - title: Adding data sources
+      link: /docs/data-sources
+    - title: Import custom data
+      link: /docs/custom-data
+    - title: Querying data
+      link: /docs/query-data
+    - title: Paginate Queries
+      link: /docs/query-paginate
 
 
 - title: Components
@@ -37,6 +48,7 @@
 
 - title: Guides
   items:
+
     - title: Install plugins
       link: /docs/install-plugins
     - title: Custom CSS

@@ -5,7 +5,7 @@
       </h2>
 
       <p class="lead text-center container-sm">
-        Connect to one or multiple data sources and access data from a internal GraphQL layer.</p>
+        Connect to one or multiple data sources and access data from a internal GraphQL layer.
       </p>
 
 
@@ -80,6 +80,11 @@
                 <a href="//surge.sh">Surge.sh</a> and many more.</p>
           </div>
       </div>
+
+      <p class="text-center container-sm">
+        Use the same front-end framework for any project.<br class="hide-for-small" /> It's time to <strong>sanitize your stack.</strong>
+      </p>
+
   </Section>
 </template>
 

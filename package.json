@@ -12,8 +12,7 @@
     "typeface-league-spartan": "0.0.44",
     "typeface-nunito": "0.0.54",
     "typography": "^0.16.17",
-    "vue-analytics": "^5.16.0",
-    "vue-scrollto": "^2.13.0"
+    "vue-analytics": "^5.16.0"
   },
   "devDependencies": {
     "@gridsome/plugin-critical": "^0.0.5",
