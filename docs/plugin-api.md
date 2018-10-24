@@ -26,6 +26,10 @@ Load data from local files or external APIs and create content types and nodes o
 
 #### api.createSchema(fn)
 
+#### api.extendContentType(fn)
+
+#### api.extendTaxonomy(fn)
+
 #### api.beforeBuild(fn)
 
 #### api.afterBuild(fn)
