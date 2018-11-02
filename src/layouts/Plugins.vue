@@ -1,6 +1,6 @@
 <template>
   <Layout class="has-sidebar" :footer="false">
-    <div class="flex gap-60 flex-align-top">
+    <div class="container flex gap-60 flex-align-top">
       <div class="sidebar dots-bg">
         
         <template v-for="group in links">
