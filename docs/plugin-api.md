@@ -1,8 +1,10 @@
 # Plugin API
 
+A Gridsome plugin should have a `gridsome.server.js` file in its root folder to use the Server API. And a `gridsome.client.js` if it needs to interact with the Vue app.
+
 ## Server API
 
-Create a file named `gridsome.server.js` in your plugin root folder which exports a function. The function will receive an API which allows you to hook into various parts of Gridsome. The second argument is options from the plugin entry in `gridsome.config.js`.
+The `gridsome.server.js` file must export a function that will receive an API which allows it to hook into various parts of Gridsome. The second argument is options from the plugin entry in `gridsome.config.js`.
 
 ```js
 function MyPlugin (api, options) {
@@ -16,7 +18,7 @@ MyPlugin.defaultOptions = () => ({
 module.exports = MyPlugin
 ```
 
-The file can also export a class:
+The file can also export a class instead.
 
 ```js
 class MyPlugin {
@@ -97,7 +99,7 @@ module.exports = function (api, options) {
 
 ## Client API
 
-Create a file named `gridsome.client.js` in your plugin root folder which exports a function. The function will receive the Vue instance, plugin options and a context. The context has references to options for the Vue app, the VueRouter instance and VueMeta settings. The file is loaded on the server and in the browser as default.
+The `gridsome.client.js` must also export a function. The function will receive the Vue instance, plugin options and a context. The context has references to options for the Vue app, the VueRouter instance and VueMeta settings. The file is loaded on the server and in the browser as default.
 
 ```js
 /**

@@ -3,13 +3,13 @@
 The Data Store API lets you insert your own data into the Gridsome store. You will then be able to access it through GraphQL in your components.
 
 ```js
-// gridsome.server.js
-
-module.exports = function (api) {
+function MySourcePlugin (api) {
   api.loadSource(store => {
     // add your sources here
   })
 }
+
+module.exports = MySourcePlugin
 ```
 
 ## Create content types and nodes
@@ -28,13 +28,12 @@ Add a new content type to store. Create a Vue components in the `src/templates` 
 ###### Usage
 
 ```js
-module.exports = function (api) {
-  api.loadSource(store => {
-    const posts = store.addContentType({
-      typeName: 'BlogPost'
-    })
+api.loadSource(store => {
+  store.addContentType({
+    typeName: 'BlogPost',
+    route: '/:year/:month/:day/:slug'
   })
-}
+})
 ```
 
 ### store.getContentType(typeName)
@@ -61,22 +60,20 @@ Get a content type previously created.
 ###### Usage
 
 ```js
-module.exports = function (api) {
-  api.loadSource(store => {
-    const posts = store.addContentType({
-      typeName: 'BlogPost'
-    })
-
-    posts.addNode({
-      title: 'My first blog post',
-      date: '2018-11-02',
-      content: 'Lorem ipsum dolor sit amet, consectetur...',
-      fields: {
-        tags: ['awesome-post']
-      }
-    })
+api.loadSource(store => {
+  const posts = store.addContentType({
+    typeName: 'BlogPost'
   })
-}
+
+  posts.addNode({
+    title: 'My first blog post',
+    date: '2018-11-02',
+    content: 'Lorem ipsum dolor sit amet, consectetur...',
+    fields: {
+      tags: ['awesome-post']
+    }
+  })
+})
 ```
 
 ### collection.addReference(fieldName, options)
@@ -93,35 +90,33 @@ module.exports = function (api) {
 This example creates two content types: `Author` and `BlogPost`. The `ref` option for `BlogPost` is using its `author` field to make a reference to an `Author` node. The `author` field contains an author ID, so we use `'id'` as `key` to make the store look for an author with that ID.
 
 ```js
-module.exports = function (api) {
-  api.loadSource(store => {
-    const authors = store.addContentType({
-      typeName: 'Author'
-    })
-
-    const posts = store.addContentType({
-      typeName: 'BlogPost',
-      refs: {
-        author: {
-          key: 'id',
-          typeName: 'Author'
-        }
-      }
-    })
-
-    authors.addNode({
-      id: '1',
-      title: item.title
-    })
-
-    posts.addNode({
-      title: item.title,
-      fields: {
-        author: '1'
-      }
-    })
+api.loadSource(store => {
+  const authors = store.addContentType({
+    typeName: 'Author'
   })
-}
+
+  const posts = store.addContentType({
+    typeName: 'BlogPost',
+    refs: {
+      author: {
+        key: 'id',
+        typeName: 'Author'
+      }
+    }
+  })
+
+  authors.addNode({
+    id: '1',
+    title: item.title
+  })
+
+  posts.addNode({
+    title: item.title,
+    fields: {
+      author: '1'
+    }
+  })
+})
 ```
 
 The referring node will be available in a `ref` field in your schema.
@@ -152,18 +147,16 @@ Extend the GraphQL schema with a custom field for a node type.
 ###### Usage
 
 ```js
-module.exports = function (api) {
-  api.loadSource(({ getContentType }) => {
-    const contentType = getContentType('OtherType')
+api.loadSource(store => {
+  const contentType = store.getContentType('OtherType')
 
-    contentType.addSchemaField('myField', ({ graphql }) => ({
-      type: graphql.GraphQLString,
-      resolve () {
-        return 'value'
-      }
-    }))
-  })
-}
+  contentType.addSchemaField('myField', ({ graphql }) => ({
+    type: graphql.GraphQLString,
+    resolve () {
+      return 'value'
+    }
+  }))
+})
 ```
 
 ## Taxonomies and terms
@@ -183,20 +176,18 @@ module.exports = function (api) {
 This example creates a `MyData` content type and just adds a single node to it.
 
 ```js
-module.exports = function (api) {
-  api.loadSource(store => {
-    const contentType = store.addContentType({
-      typeName: 'MyData'
-    })
-
-    contentType.addNode({
-      title: 'Lorem ipsum dolor sit amet.',
-      fields: {
-        customField: '...'
-      }
-    })
+api.loadSource(store => {
+  const contentType = store.addContentType({
+    typeName: 'MyData'
   })
-}
+
+  contentType.addNode({
+    title: 'Lorem ipsum dolor sit amet.',
+    fields: {
+      customField: '...'
+    }
+  })
+})
 ```
 
 You will then be able to query that data in the `page-query` and `static-query` tags in your Vue components with a query like this:
