@@ -48,7 +48,7 @@
                   <div class="text-wrapper">
                     <div class="text text-center">
                         <strong>Vue.js</strong><br/>
-                        Webpack<br/>
+                        webpack<br/>
                         Hot-reloading<br/>
                     </div>
                  </div>

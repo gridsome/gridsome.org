@@ -18,7 +18,7 @@
       </svg>
 
         <h3>Enjoy a modern development stack</h3>
-        <p>Build websites with modern tools like <strong>Vue.js, Webpack and Node.js</strong>. Get hot-reloading and access to any packages from npm and write CSS in your favorite preprocessor like Sass or Less with autoprefixing.
+        <p>Build websites with modern tools like <strong>Vue.js, webpack and Node.js</strong>. Get hot-reloading and access to any packages from npm and write CSS in your favorite preprocessor like Sass or Less with autoprefixing.
         </p>
       </Feature>
 
