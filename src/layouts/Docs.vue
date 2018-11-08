@@ -1,6 +1,6 @@
 <template>
   <Layout class="has-sidebar" :footer="false">
-    <div class="flex gap-60 flex-align-top">
+    <div class="container flex gap-60 flex-align-top">
       <div class="sidebar dots-bg">
         
         <!-- <input type="search" placeholder="Search docs..." /> -->
@@ -18,6 +18,7 @@
       <Section class="flex-fit" container="md">
         <slot />
       </Section>
+
     </div>
   </Layout>
 </template>

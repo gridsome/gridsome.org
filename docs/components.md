@@ -115,6 +115,6 @@ Its very easy to add scoped styles in vue. Simple add "scoped" to the style tag 
 </style>
 ```
 
-This will change the .card class in current component automatically to f.ex **.card[x5u123sc5s1]** and only apply style to that class.
+This will change the .card class in current component automatically to **.card[x5u123sc5s1]** and only apply style to that class.
 
 [Learn more about Scoped styles in Vue](https://vue-loader.vuejs.org/guide/scoped-css.html)
