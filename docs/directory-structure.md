@@ -56,8 +56,6 @@ WordPress blog, into your project. Then each post would look for a
 component in this directory for its template. The name of the
 component file must match the node type in your GraphQL schema.
 
-[Read more about layouts, pages and templates](/docs/layouts-pages-templates)
-
 ## Recommendation
 
 #### Shared or global components
