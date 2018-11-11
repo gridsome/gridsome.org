@@ -33,11 +33,11 @@ This file contains configuration and options for installed plugins.
 
 #### gridsome.server.js
 
-This file is optional and is used to hook into various parts of the Gridsome server. The file must export a function which will recieve a plugin API.
+This file is optional and is used to hook into various parts of the Gridsome server. The file must export a function which will have access to the API.
 
-[Read more about the plugin API](/docs/plugin-api)
+[Read more about the Server API](/docs/server-api)
 
-## The src directory
+## The `src` directory
 
 #### main.js
 
