@@ -5,9 +5,8 @@
       </h2>
 
       <p class="lead text-center container-sm">
-        Connect to one or multiple data sources and access data from a internal GraphQL layer.</p>
+        Use local files or any external API as data source and access the data from an internal GraphQL layer</p>
       </p>
-
 
       <div class="source-animation flex flex--align-equal flex--space-between">
           <div class="well">
@@ -15,7 +14,7 @@
               <h4>CMSs</h4>
               <p>WordPress, Contentful, Drupal, Prismic, GraphCMS, etc.</p>
 
-              <h4>Files</h4>
+              <h4>Local files</h4>
               <p>Markdown, YAML, CSV, JSON, Image folders, etc.</p>
 
               <h4>APIs</h4>
