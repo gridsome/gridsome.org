@@ -1,10 +1,8 @@
-# Plugin API
+# Server API
 
-A Gridsome plugin should have a `gridsome.server.js` file in its root folder to use the Server API. And a `gridsome.client.js` if it needs to interact with the Vue app.
+Create a `gridsome.server.js` at root in your project or plugin in order to use the Server API. The file must export a function that will receive an API which allows it to hook into various parts of Gridsome. The second argument is options from the plugin entry in `gridsome.config.js`.
 
-## Server API
-
-The `gridsome.server.js` file must export a function that will receive an API which allows it to hook into various parts of Gridsome. The second argument is options from the plugin entry in `gridsome.config.js`.
+> Gridsome will look for an `index.js` file if no `gridsome.server.js` file is found.
 
 ```js
 function MyPlugin (api, options) {
@@ -40,7 +38,7 @@ module.exports = MyPlugin
 
 Load data from local files or external APIs and create content types and nodes of it. The data will then be available in your GraphQL queries.
 
-[Read more about the Data Store API](/docs/data-store-api)
+[Read more about the Data Store API](/docs/api/data-store)
 
 ### api.chainWebpack(fn)
 
@@ -96,22 +94,3 @@ module.exports = function (api, options) {
 ### api.beforeBuild(fn)
 
 ### api.afterBuild(fn)
-
-## Client API
-
-The `gridsome.client.js` must also export a function. The function will receive the Vue instance, plugin options and a context. The context has references to options for the Vue app, the VueRouter instance and VueMeta settings. The file is loaded on the server and in the browser as default.
-
-```js
-/**
- * @param Vue                 Vue instance
- * @param options             Plugin options
- * @param context.appOptions  Options for the Vue instance
- * @param context.router      The router instance
- * @param context.head        VueMeta info objet
- * @param context.isClient
- * @param context.isServer
- */
-export default function (Vue, options, context) {
-  // ...
-}
-```

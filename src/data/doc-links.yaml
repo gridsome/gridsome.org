@@ -48,16 +48,18 @@
     - title: Custom head meta
       link: /docs/custom-head-meta
 
-- title : API
+- title: API
   items: 
-    - title: Gridsome Config
+    - title: Project configuration
       link: /docs/config
     - title: Gridsome CLI
       link: /docs/gridsome-cli
-    - title: Plugin API
-      link: /docs/plugin-api
+    - title: Server API
+      link: /docs/server-api
     - title: Data Store API
       link: /docs/data-store-api
+    - title: Client API
+      link: /docs/client-api
     - title: Page Meta API
       link: /docs/page-meta-api
 

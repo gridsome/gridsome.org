@@ -125,11 +125,9 @@ The referring node will be available in a `ref` field in your schema.
 query BlogPost ($path: String!) {
   blogPost (path: $path) {
     title
-    refs {
-      author {
-        title
-        path
-      }
+    author {
+      title
+      path
     }
   }
 }
@@ -198,9 +196,7 @@ query MyData {
     edges {
       node {
         title
-        fields {
-          customField
-        }
+        customField
       }
     }
   }
@@ -224,6 +220,7 @@ module.exports = function (api) {
 
     for (const item of data) {
       contentType.addNode({
+        id: item.id,
         title: item.title,
         date: item.date,
         content: item.content

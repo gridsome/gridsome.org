@@ -44,7 +44,14 @@ export default {
   h2::before, h3::before {
     content: "";
     display: block;
-    height: 2.0em;
+  }
+
+  h2::before {
+    height: 3.0em;
+  }
+
+  h3::before {
+    height: 1.5em;
   }
 
   ul > li > p {

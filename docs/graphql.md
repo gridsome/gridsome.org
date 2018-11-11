@@ -36,7 +36,7 @@ query Blog {
   allWordPressPost (limit: 5) {
     edges {
       node {
-        _id
+        id
         title
       }
     }
@@ -82,7 +82,7 @@ query Blog ($page: Int) {
     }
     edges {
       node {
-        _id
+        id
         title
         path
       }

@@ -41,9 +41,9 @@ This file is optional and is used to hook into various parts of the Gridsome ser
 
 #### main.js
 
-Install Vue plugins etc. in this file if you want to. This file is
-also the place to register layouts or components that you want to be
-globally available.
+Export a function in this file to get access to the [Client API](/docs/client-api). This file is the place to install Vue plugins, register components and directives etc.
+
+[Read more about using the Client API in main.js](/docs/client-api#using-the-client-api-in-srcmainjs)
 
 #### Layouts directory
 
