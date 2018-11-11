@@ -1,3 +1,0 @@
-# Using local plugins
-
-sdfggsdfg
