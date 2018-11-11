@@ -3,7 +3,7 @@
   <div>
     <h2>Latest blog posts</h2>
     <ul>
-      <li v-for="edge in $page.allWordPressPost.edges" :key="edge.node._id">
+      <li v-for="edge in $page.posts.edges" :key="edge.node.id">
         {{ edge.node.title }}
       </li>
     </ul>
@@ -12,10 +12,10 @@
 
 <page-query>
 query Blog {
-  allWordPressPost (limit: 5) {
+  posts: allWordPressPost (limit: 5) {
     edges {
       node {
-        _id
+        id
         title
       }
     }

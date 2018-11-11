@@ -1,15 +1,15 @@
 // Import global styles
 import 'prismjs/themes/prism.css'
-import '@/assets/style/index.scss'
+import '~/assets/style/index.scss'
 
 // Add global components
-import Layout from '@/layouts/Default.vue'
-import Docs from '@/layouts/Docs.vue'
-import Section from '@/components/Section.vue'
-import Feature from '@/components/Feature.vue'
-import Card from '@/components/Card'
-import VueLogo from '@/components/logos/vue'
-import GraphQlLogo from '@/components/logos/graphql'
+import Layout from '~/layouts/Default.vue'
+import Docs from '~/layouts/Docs.vue'
+import Section from '~/components/Section.vue'
+import Feature from '~/components/Feature.vue'
+import Card from '~/components/Card'
+import VueLogo from '~/components/logos/vue'
+import GraphQlLogo from '~/components/logos/graphql'
 import VueScrollTo from 'vue-scrollto'
 
 import 'typeface-league-spartan'

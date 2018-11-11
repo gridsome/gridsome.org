@@ -34,7 +34,7 @@ query Blog ($page: Int) {
     }
     edges {
       node {
-        _id
+        id
         title
         path
       }

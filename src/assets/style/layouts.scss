@@ -32,17 +32,18 @@
 .sidebar {
   width: 260px;
   z-index: 10;
-  overflow:auto;
+  overflow: auto;
+  position: relative;
   border-right: 1px solid var(--border-color);
   -webkit-overflow-scrolling: touch;
-  top:0;
-  position: relative;
+  top: 0;
 
   @media screen and (min-width: 750px) {
     position: sticky;
     height: calc(100vh);
     margin-top: calc(var(--header-height) * -1);
     padding: calc(var(--header-height) + var(--space)) 0 var(--space);
+    padding-bottom: 100px;
   }
 
   h3 {
@@ -60,7 +61,7 @@
   a {
     color: currentColor;
     opacity: 1;
-    font-weight: normal;
+    font-weight: 300;
 
     &:hover {
       opacity: .6;

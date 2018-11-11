@@ -38,3 +38,24 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.docs-page {
+  h2::before, h3::before {
+    content: "";
+    display: block;
+  }
+
+  h2::before {
+    height: 3.0em;
+  }
+
+  h3::before {
+    height: 1.5em;
+  }
+
+  ul > li > p {
+    font-weight: 400;
+  }
+}
+</style>

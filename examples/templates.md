@@ -1,18 +1,16 @@
 ```html
 <template>
   <Layout>
-    <h1 v-html="$page.wordPressPost.title"/>
-    <div v-html="$page.wordPressPost.fields.content"/>
+    <h1 v-html="$page.post.title"/>
+    <div v-html="$page.post.content"/>
   </Layout>
 </template>
 
 <page-query>
-query Post ($path: String!) {
-  wordPressPost (path: $path) {
+query WordPressPost ($path: String!) {
+  post: wordPressPost (path: $path) {
     title
-    fields {
-      content
-    }
+    content
   }
 }
 </page-query>

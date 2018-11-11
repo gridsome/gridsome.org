@@ -14,7 +14,6 @@ Usage `gridsome create {name} {starter}`
 | --------------------- | --------------------------------------- |
 | Default               | `gridsome create my-website`            |
 | WordPress             | `gridsome create my-blog wordpress`     |
-| Contentful            | `gridsome create my-blog contentful`    |
 
 [Read more about starter kits](/docs/starters)
 
