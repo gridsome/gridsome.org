@@ -50,12 +50,16 @@ Export a function in this file to get access to the [Client API](/docs/client-ap
 Create components in this directory if you want to share one or more
 layouts for your pages or templates.
 
+[Read more about layouts](/docs/layouts)
+
 #### Pages directory
 
 All components in this directory becomes the pages for your website.
 Each page will get its path based on the location of its `.vue` file.
 `src/pages/Index.vue` will become the homepage for your website,
 while `src/pages/AboutUs.vue` will be `example.com/about-us`.
+
+[Read more about pages](/docs/pages)
 
 #### Templates directory
 
@@ -64,7 +68,7 @@ WordPress blog, into your project. Then each post would look for a
 component in this directory for its template. The name of the
 component file must match the node type in your GraphQL schema.
 
-[Read more about layouts, pages and templates](/docs/layouts-pages-templates)
+[Read more about templates](/docs/templates)
 
 #### Static directory
 
