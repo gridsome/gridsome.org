@@ -49,7 +49,7 @@ header {
   background-color: #FFF;
   border-bottom: 1px solid transparent;
   flex-wrap: nowrap;
-  padding-top: 8px;
+  padding-top: 5px;
 
   .header-inner {
     min-height: var(--header-height);
@@ -67,7 +67,7 @@ header {
     width: 100%;
     left:0;
     right:0;
-    height: 8px;
+    height: 5px;
     background: linear-gradient(90deg, #53D096 -5.92%, #8DD6F9 48.99%, #E535AB 123.16%);
   }
 }
