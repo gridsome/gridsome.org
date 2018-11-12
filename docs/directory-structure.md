@@ -72,7 +72,7 @@ component file must match the node type in your GraphQL schema.
 
 #### Static directory
 
-Files in this directory will be copied directly to `dist` during build.
+Files in this directory will be copied directly to `dist` during build. For example /static/robots.txt will be https://yoursite.com/robots.txt
 
 ## Recommendation
 
