@@ -21,3 +21,34 @@ hr {
 }
 
 ::selection { background: var(--border-color); }
+
+
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * neuzeit-grotesk:
+ *   - http://typekit.com/eulas/0000000000000000000178a6
+ *   - http://typekit.com/eulas/0000000000000000000178a7
+ *
+ * © 2009-2018 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2018-11-10 17:48:43 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=rav1lzg&ht=tk&f=12102.12103&a=4277848&app=typekit&e=css");
+
+@font-face {
+	font-family:"neuzeit-grotesk";
+	src:url("https://use.typekit.net/af/cde90e/0000000000000000000178a6/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/cde90e/0000000000000000000178a6/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/cde90e/0000000000000000000178a6/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+	font-style:normal;font-weight:400;
+}
+
+@font-face {
+	font-family:"neuzeit-grotesk";
+	src:url("https://use.typekit.net/af/d7bb7b/0000000000000000000178a7/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/d7bb7b/0000000000000000000178a7/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/d7bb7b/0000000000000000000178a7/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+	font-style:normal;font-weight:700;
+}
+
+.tk-neuzeit-grotesk { font-family: "neuzeit-grotesk",sans-serif; }
