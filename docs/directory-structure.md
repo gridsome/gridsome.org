@@ -37,7 +37,7 @@ This file is optional and is used to hook into various parts of the Gridsome ser
 
 [Read more about the Server API](/docs/server-api)
 
-## The `src` directory
+## The `/src` directory
 
 #### main.js
 
@@ -70,9 +70,15 @@ component file must match the node type in your GraphQL schema.
 
 [Read more about templates](/docs/templates)
 
-#### Static directory
 
-Files in this directory will be copied directly to `dist` during build. For example /static/robots.txt will be https://yoursite.com/robots.txt
+## Aliases
+In Gridsome you can use the aliases `~` or `@` to link to files inside `/src` folder. You can import for example a Vue component by using `import Card from '~/components/Card'`
+
+
+## The `/static` directory
+
+Files in this directory will be copied directly to `dist` during build. For example **/static/robots.txt** will be located at https://yoursite.com/robots.txt
+
 
 ## Recommendation
 
