@@ -40,7 +40,7 @@
 
   @media screen and (min-width: 750px) {
     position: sticky;
-    height: calc(100vh);
+    height: calc(100vh - 11px);
     margin-top: calc(var(--header-height) * -1);
     padding: calc(var(--header-height) + var(--space)) 0 var(--space);
     padding-bottom: 100px;

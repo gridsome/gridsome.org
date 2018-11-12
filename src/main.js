@@ -12,11 +12,9 @@ import VueLogo from '~/components/logos/vue'
 import GraphQlLogo from '~/components/logos/graphql'
 import VueScrollTo from 'vue-scrollto'
 
-import 'typeface-league-spartan'
-import 'typeface-nunito'
-
 import VueAnalytics from 'vue-analytics'
 import Typography from 'typography'
+import 'typeface-nunito'
 
 const typography = new Typography({
   baseFontSize: '18px',

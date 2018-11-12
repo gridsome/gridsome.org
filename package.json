@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "gridsome": "^0.3.0",
-    "typeface-league-spartan": "0.0.44",
     "typeface-nunito": "0.0.54",
     "typography": "^0.16.17",
     "vue-analytics": "^5.16.0",
