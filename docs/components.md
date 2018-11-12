@@ -8,22 +8,24 @@ Here is an example of a Single File Component file.
 ```html
 <template>
   <div class="card">
-    {{ reactiveData }}
-    <button @click="clickMe">Change</button>
+    {{ message }}
+    <button @click="onClick">
+      Change
+    </button>
   </div>
 </template>
 
 <script>
 export default {
   name: 'Card',
-  data() {
+  data () {
     return {
-      reactiveData: 'Try change me!'
+      message: 'Try change me!'
     }
   },
   methods: {
-    clickMe() {
-      this.reactiveData = 'Here you go :)'
+    onClick () {
+      this.message = 'Here you go :)'
     }
   }
 }
@@ -49,7 +51,8 @@ When you have created a component you can easily import into your pages. In Grid
 </template>
 
 <script>
-import Card from '@/components/card'
+import Card from '~/components/Card.vue'
+
 export default {
   components: {
     Card
@@ -67,7 +70,7 @@ to fetch data from data sources. The results will be stored in a
 
 ```html
 <template>
-  <div v-html="$static.example" />
+  <div v-html="$static.example.content" />
 </template>
 
 <static-query>
@@ -81,15 +84,15 @@ query Example {
 ```
 
 
-### Add Sass to .vue files
+### Using Sass in .vue components
 
 You can use Sass in your Single File Components.
-Install <br> `npm install -D sass-loader node-sass` to your project and use it like this:
+Install `sass-loader` and `node-sass` as dev dependencies and use Sass like this:
 
 ```html
 <style lang="scss">
 .card {
-  background:#FFF;
+  background: red;
 
   &__inner {
     padding: 20px;
@@ -100,21 +103,18 @@ Install <br> `npm install -D sass-loader node-sass` to your project and use it l
 
 [Learn more about using Using Pre-Processors in Vue.js](https://vue-loader.vuejs.org/guide/pre-processors.html)
 
-
-
 ### Scoped styles
 
 Its very easy to add scoped styles in vue. Simple add "scoped" to the style tag to automatically add suffix to any CSS class in Markup. This means that styles here will only be applied to current component regardless of the class names you use.
 
-
 ```html
 <style scoped>
 .card {
-  background:#FFF;
+  background: blue;
 }
 </style>
 ```
 
-This will change the .card class in current component automatically to **.card[x5u123sc5s1]** and only apply style to that class.
+This will change the `.card` class in current component automatically to **.card[x5u123sc5s1]** and only apply style to that class.
 
 [Learn more about Scoped styles in Vue](https://vue-loader.vuejs.org/guide/scoped-css.html)

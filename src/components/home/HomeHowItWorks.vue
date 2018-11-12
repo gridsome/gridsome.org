@@ -4,6 +4,9 @@
         How Gridsome works
       </h2>
 
+      <p class="lead text-center container-sm">
+        Use local files or any external API as a data source and access the data from a unified GraphQL layer</p>
+      </p>
 
       <div class="source-animation flex flex--align-equal flex--space-between">
           <div class="well">
@@ -11,7 +14,7 @@
               <h4>CMSs</h4>
               <p>WordPress, Contentful, Drupal, Prismic, GraphCMS, etc.</p>
 
-              <h4>Files</h4>
+              <h4>Local files</h4>
               <p>Markdown, YAML, CSV, JSON, Image folders, etc.</p>
 
               <h4>APIs</h4>
@@ -66,16 +69,14 @@
 
           <div class="well">
               <div class="well__title">Deploy</div>
-                <h4>Static site generation</h4>
-              <p>
-                Generate static files and deploy to any CDN service. For example, Netlify, Zeit Now, GitHub Pages, GitLab Pages, Surge.sh, Now.sh and many more.</p>
-
-              <div class="or">- Or -</div>        
-
-              <h4>Server-side rendering</h4>
-              <p>
-                Deploy Gridsome and the in-memory GraphQL database to any Node.js server.
-              </p>
+              <h4>Static site generation</h4>
+              <p>Generate static files and deploy to any global CDN service or FTP at blazing speed.</p>
+              <p>For example, 
+                <a href="//netlify.com">Netlify</a>,
+                <a href="//zeit.co/now">Zeit Now</a>,
+                <a href="//pages.github.com/">GitHub Pages</a>,
+                <a href="//docs.gitlab.com/ee/user/project/pages/">GitLab Pages</a>,
+                <a href="//surge.sh">Surge.sh</a> and many more.</p>
           </div>
       </div>
   </Section>

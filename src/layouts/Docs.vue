@@ -23,7 +23,6 @@
   </Layout>
 </template>
 
-
 <script>
 import links from '@/data/doc-links.yaml'
 

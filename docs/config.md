@@ -1,4 +1,4 @@
-# Gridsome configuration
+# Project configuration
 
 A basic `gridsome.config.js` file would look something like this:
 
@@ -104,7 +104,7 @@ A function that will receive an instance of ChainableConfig powered by
 - Type `Array`
 - Default `[]`
 
-[Read more about using plugins](/docs/plugins)
+[Read more about using plugins](/docs/install-plugins)
 
 ## Advanced
 

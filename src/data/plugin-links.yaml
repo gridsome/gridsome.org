@@ -4,6 +4,8 @@
       link: /plugins/source-filesystem
     - title: WordPress
       link: /plugins/source-wordpress
+    - title: DatoCMS
+      link: /plugins/source-datocms
     - title: Contentful
       link: /plugins/source-contentful
     - title: Faker

@@ -6,14 +6,16 @@ A basic Gridsome project would be structured like this:
 .
 ├── package.json
 ├── gridsome.config.js
-└── src
+├── gridsome.server.js
+├── static/
+└── src/
     ├── main.js
-    ├── layouts
+    ├── layouts/
     │   └── Default.vue
-    ├── pages
+    ├── pages/
     │   ├── Index.vue
     │   └── Blog.vue
-    └── templates
+    └── templates/
         └── BlogPost.vue
 ```
 
@@ -29,18 +31,26 @@ This file contains configuration and options for installed plugins.
 
 [Read more about project config](/docs/config)
 
-## The src directory
+#### gridsome.server.js
+
+This file is optional and is used to hook into various parts of the Gridsome server. The file must export a function which will have access to the API.
+
+[Read more about the Server API](/docs/server-api)
+
+## The `src` directory
 
 #### main.js
 
-Install Vue plugins etc. in this file if you want to. This file is
-also the place to register layouts or components that you want to be
-globally available.
+Export a function in this file to get access to the [Client API](/docs/client-api). This file is the place to install Vue plugins, register components and directives etc.
+
+[Read more about using the Client API in main.js](/docs/client-api#using-the-client-api-in-srcmainjs)
 
 #### Layouts directory
 
 Create components in this directory if you want to share one or more
 layouts for your pages or templates.
+
+[Read more about layouts](/docs/layouts)
 
 #### Pages directory
 
@@ -49,6 +59,8 @@ Each page will get its path based on the location of its `.vue` file.
 `src/pages/Index.vue` will become the homepage for your website,
 while `src/pages/AboutUs.vue` will be `example.com/about-us`.
 
+[Read more about pages](/docs/pages)
+
 #### Templates directory
 
 If you are importing an external data source, like posts from a
@@ -56,7 +68,11 @@ WordPress blog, into your project. Then each post would look for a
 component in this directory for its template. The name of the
 component file must match the node type in your GraphQL schema.
 
-[Read more about layouts, pages and templates](/docs/layouts-pages-templates)
+[Read more about templates](/docs/templates)
+
+#### Static directory
+
+Files in this directory will be copied directly to `dist` during build.
 
 ## Recommendation
 
@@ -67,5 +83,4 @@ in a `src/components` directory.
 
 #### Data files
 
-Data files like `.json` or `.yaml` can be stored in a `src/data`
-directory.
+Data files like `.json` or `.yaml` that you want to import into your components, can be stored in a `src/data` directory.

@@ -9,7 +9,9 @@
 ## Usage
 
 ```js
-export default {
+// gridsome.config.js
+
+module.exports = {
   plugins: [
     {
       use: '@gridsome/source-faker',

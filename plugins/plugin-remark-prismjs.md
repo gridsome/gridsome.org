@@ -11,6 +11,8 @@
 Add syntax highlighter to a single markdown source:
 
 ```js
+// gridsome.config.js
+
 module.exports = {
   plugins: [
     {

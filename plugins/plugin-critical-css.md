@@ -9,6 +9,8 @@
 ## Usage
 
 ```js
+// gridsome.config.js
+
 module.exports = {
   plugins: [
     {
