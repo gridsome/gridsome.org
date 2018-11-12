@@ -15,13 +15,15 @@ import VueScrollTo from 'vue-scrollto'
 import VueAnalytics from 'vue-analytics'
 import Typography from 'typography'
 import 'typeface-nunito'
+import 'typeface-league-spartan'
+
 
 const typography = new Typography({
   baseFontSize: '18px',
   baseLineHeight: 1.666,
   scaleRatio: 2,
   bodyGray: 40,
-  headerFontFamily: ['neuzeit-grotesk', 'sans-serif'],
+  headerFontFamily: ['League Spartan', 'sans-serif'],
   bodyFontFamily: ['Nunito', 'Helvetica','Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
 })
 
