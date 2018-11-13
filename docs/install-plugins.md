@@ -23,7 +23,7 @@ module.exports = {
 
 ## Using local plugins
 
-Create a folder with an `index.js` file somewhere in your project. The `use` property can have han absolute path to the folder or a relative path starting with `~/`, where `~` is an alias for your project root folder.
+Create a folder with an `index.js` file somewhere in your project. The `use` property can have an absolute path to the folder or a relative path starting with `~/`, where `~` is an alias for your project root folder.
 
 ```js
 module.exports = {
