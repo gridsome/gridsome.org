@@ -47,11 +47,11 @@ export default {
   }
 
   h2::before {
-    height: 3.0em;
+    height: 2.0em;
   }
 
   h3::before {
-    height: 1.5em;
+    height: 1em;
   }
 
   ul > li > p {

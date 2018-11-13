@@ -1,17 +1,21 @@
 <template>
-  <Section id="top" dots="true">
-    <div class="home-tabs container text-center">
+  <Section dots="true">
+    <h2 class="text-center pb">
+      Build faster and better without limitations
+    </h2>
+
+    <div id="top" class="home-tabs container text-center">
       <nav class="home-tabs__tabs tabs flex gap-15 flex--no-wrap flex--center mb" style="margin-top:-3%">
-        <a href="#" v-scroll-to="{ el: '#top' }"  @click="tab = 'graphql'" :class="{active: tab == 'graphql'}">
+        <a href="#"  @click="tab = 'graphql'" :class="{active: tab == 'graphql'}">
           Use GraphQL for data
         </a>
-        <a href="#" v-scroll-to="{ el: '#top' }" @click="tab = 'pages'" :class="{active: tab == 'pages'}">
+        <a href="#" @click="tab = 'pages'" :class="{active: tab == 'pages'}">
           Auto Page Routing
         </a>
-        <a href="#" v-scroll-to="{ el: '#top' }" @click="tab = 'templates'" :class="{active: tab == 'templates'}">
+        <a href="#" @click="tab = 'templates'" :class="{active: tab == 'templates'}">
           Smart template system
         </a>
-        <a href="#" v-scroll-to="{ el: '#top' }" @click="tab = 'images'" :class="{active: tab == 'images'}">
+        <a href="#" @click="tab = 'images'" :class="{active: tab == 'images'}">
           Auto Optimized Images
         </a>
       </nav>
