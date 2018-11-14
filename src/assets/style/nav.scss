@@ -12,7 +12,8 @@ nav a {
   }
 
   &.active {
-    color:#000;
+    color: currentColor;
+    
     svg {
       opacity: 1;
     }
@@ -37,6 +38,8 @@ nav.tabs {
   a {
     background-color: var(--primary-bg);
     border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     white-space: nowrap;
   }
   

@@ -6,7 +6,7 @@
 
     <div id="top" class="home-tabs container text-center">
       <nav class="home-tabs__tabs tabs flex gap-15 flex--no-wrap flex--center mb" style="margin-top:-3%">
-        <a href="#"  @click="tab = 'graphql'" :class="{active: tab == 'graphql'}">
+        <a href="#" @click="tab = 'graphql'" :class="{active: tab == 'graphql'}">
           Use GraphQL for data
         </a>
         <a href="#" @click="tab = 'pages'" :class="{active: tab == 'pages'}">
@@ -59,17 +59,3 @@ export default {
 }
 
 </script>
-
-
-<style lang="scss">
-.home-tabs {
-  background-color: rgba(255,255,255,.9);
-  position: sticky; 
-  top:-1px;
-  z-index: 100;
-
-  &__tabs {
-    padding: 10px 0;
-  }
-}
-</style>
