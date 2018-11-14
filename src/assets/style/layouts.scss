@@ -27,4 +27,12 @@
     padding: var(--space-x2);
     background-color: #FFF;
   }
+
+
+  // nested
+  .container {
+    padding-left:0;
+    padding-right:0;
+  }
+
 }

@@ -1,6 +1,6 @@
 <template>
   <section class="section" :class="sectionClass">
-    <div class="section--inner" :class="sectionClassInner">
+    <div class="section--inner container" :class="sectionClassInner">
       <slot/>
     </div>
     <div class="section__dots-bg dots-bg" v-if="dots"></div>
@@ -24,8 +24,6 @@ export default {
       }
       if(this.container) {
         classes.push('container-' + this.container)
-      } else {
-        classes.push('container')
       }
       return classes
     }
