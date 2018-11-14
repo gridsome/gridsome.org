@@ -4,15 +4,14 @@
   z-index: 10;
   overflow: auto;
   position: relative;
-  border-right: 1px solid var(--border-color);
   -webkit-overflow-scrolling: touch;
-  top: 0;
 
   @media screen and (min-width: 750px) {
     position: sticky;
-    height: 100vh;
-    margin-top: calc(var(--header-height) * -1);
-    padding: calc(var(--header-height) + var(--space)) 0 100px;
+    border-right: 1px solid var(--border-color);
+    top: var(--header-height);
+    height: calc(100vh + (var(--header-height) * -1));
+    padding-bottom: 30px;
   }
 
   h3 {
