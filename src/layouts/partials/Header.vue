@@ -46,17 +46,17 @@ header {
   z-index: 20;
   position: relative;
   top:0;
-  background-color: #FFF;
+  background-color: rgba(255,255,255,.9);
   border-bottom: 1px solid transparent;
   flex-wrap: nowrap;
   padding-top: 5px;
+  position: sticky;
 
   .header-inner {
     min-height: var(--header-height);
   }
   
   .has-sidebar & {
-    position: sticky;
     border-bottom: 1px solid var(--border-color);
   }
 
