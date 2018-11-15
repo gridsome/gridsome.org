@@ -1,6 +1,8 @@
-- title: Introduction
+- title: Quick start
   items:
-    - title: Quick start
+    - title: Prerequisites
+      link: /docs/prerequisites
+    - title: Getting started
       link: /docs
     - title: How it works
       link: /docs/how-it-works
@@ -9,44 +11,77 @@
     - title: Deployment
       link: /docs/deployment
 
-- title : BASIC
+- title : Basics
   items:
     - title: Directory structure
       link: /docs/directory-structure
-    - title: GraphQL layer
-      link: /docs/graphql
+    - title: Project configuration
+      link: /docs/config
     - title: Pages
       link: /docs/pages
     - title: Templates
       link: /docs/templates
     - title: Layouts
       link: /docs/layouts
+    - title: Routing
+      link: /docs/routing
+    - title: Linking
+      link: /docs/linking
+    - title: Images
+      link: /docs/images
     - title: Components
       link: /docs/components
+    - title: Populating <head>
+      link: /docs/head
+    - title: RPLP-pattern
+      link: /docs/rplp-pattern
+    - title: Code-splitting
+      link: /docs/code-splitting
+    - title: Prerendering
+      link: /docs/prerendering
 
+- title : Data
+  items: 
+    - title: The GraphQL layer
+      link: /docs/graphql
+    - title: Install a source plugin
+      link: /docs/graphql
+    - title: Query data in pages
+      link: /docs/graphql 
+    - title: Query data in components
+      link: /docs/graphql 
+    - title: Querying local files
+      link: /docs/paginate-queries
+    - title: Querying external data
+      link: /docs/paginate-queries
+    - title: Paginate Queries
+      link: /docs/paginate-queries
 
-- title: Components
-  items:
-    - title: Link
-      link: /docs/link
-    - title: Image
-      link: /docs/image
-    - title: Pagination
-      link: /docs/pagination
+- title : Styling
+  items: 
+    - title: Add global styles
+      link: /docs/12
+    - title: Add external styles
+      link: /docs/123
+    - title: Add style in components
+      link: /docs/123
+    - title: Use SASS or LESS
+      link: /docs/asdf
+    - title: Add Critical CSS
+      link: /asdf/asdf
+    - title: Add custom fonts
+      link: Add Critical CSS
 
-
-- title: Guides
-  items:
-    - title: Install plugins
-      link: /docs/install-plugins
-    - title: Custom CSS
-      link: /docs/custom-css
-    - title: Inlining critical CSS
-      link: /docs/critical-css
-    - title: Custom fonts
-      link: /docs/custom-fonts
-    - title: Custom head meta
-      link: /docs/custom-head-meta
+- title : Scripts
+  items: 
+    - title: Custom global JS
+      link: /docs/12
+    - title: Custom meta tags
+      link: /docs/123
+    - title: Add an external JS file
+      link: /docs/123
+    - title: Add script from Npm
+      link: /docs/asdf
 
 - title: API
   items: 
@@ -62,6 +97,12 @@
       link: /docs/client-api
     - title: Page Meta API
       link: /docs/page-meta-api
+    - title: <g-link>
+      link: /docs/link
+    - title: <g-image>
+      link: /docs/image
+    - title: <g-pagination>
+      link: /docs/pagination
 
 - title: Deploy
   items:
@@ -75,3 +116,13 @@
       link: /docs/deploy-to-github-pages
     - title: GitLab Pages
       link: /docs/deploy-to-gitlab-pages
+
+
+- title: Advanced
+  items: 
+    - title: How to make a source plugin
+      link: /docs/config
+    - title: How to make a transformer plugin
+      link: /docs/config
+    - title: How to make a plugin
+      link: /docs/config
