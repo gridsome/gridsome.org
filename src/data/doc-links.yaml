@@ -10,6 +10,9 @@
       link: /docs/starters
     - title: Deployment
       link: /docs/deployment
+    - title: Contribute
+      link: /docs/contribute
+
 
 - title : Basics
   items:
@@ -39,38 +42,42 @@
       link: /docs/code-splitting
     - title: Prerendering
       link: /docs/prerendering
+    - title: Main.js
+      link: /docs/main-js
 
 - title : Data
   items: 
     - title: The GraphQL layer
       link: /docs/graphql
     - title: Install a source plugin
-      link: /docs/graphql
+      link: /docs/graphql-source-plugin
     - title: Query data in pages
-      link: /docs/graphql 
+      link: /docs/graphql-query-in-pages
+    - title: Query data in templates
+      link: /docs/graphql-query-in-templates
     - title: Query data in components
-      link: /docs/graphql 
+      link: /docs/graphql-query-in-components
     - title: Querying local files
-      link: /docs/paginate-queries
+      link: /docs/graphql-query-local-files
     - title: Querying external data
-      link: /docs/paginate-queries
+      link: /docs/graphql-query-external-data
     - title: Paginate Queries
-      link: /docs/paginate-queries
+      link: /docs/graphql-paginate-queries
 
 - title : Styling
   items: 
     - title: Add global styles
-      link: /docs/12
-    - title: Add external styles
-      link: /docs/123
+      link: /docs/styling-global-styles
+    - title: Add a CSS library
+      link: /docs/styling-global-styles
     - title: Add style in components
-      link: /docs/123
+      link: /docs/styling-in-components
     - title: Use SASS or LESS
-      link: /docs/asdf
+      link: /docs/styling-sass-less
     - title: Add Critical CSS
-      link: /asdf/asdf
+      link: /docs/styling-critical-css
     - title: Add custom fonts
-      link: Add Critical CSS
+      link: /docs/styling-custom-fonts
 
 - title : Scripts
   items: 

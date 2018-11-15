@@ -1,0 +1,1 @@
+graphql-query-in-pages

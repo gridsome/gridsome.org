@@ -12,3 +12,11 @@ Layout components are used to wrap pages and templates. Layouts should contain c
   </div>
 </template>
 ```
+
+
+## Import a layout to a page or template
+...
+
+
+## Make a layout global
+...
