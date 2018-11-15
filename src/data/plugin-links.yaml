@@ -1,4 +1,4 @@
-- title: Sources
+- title: Data Sources
   items:
     - title: File system
       link: /plugins/source-filesystem
