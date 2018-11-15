@@ -2,6 +2,8 @@
 
 Layout components are used to wrap pages and templates. Layouts should contain components like headers, footers or sidebars that will be used across the site.
 
+> Every layout should have a `<slot />` component. This is where the page and template content will be inserted.
+
 ```html
 <template>
   <div>
@@ -14,9 +16,103 @@ Layout components are used to wrap pages and templates. Layouts should contain c
 ```
 
 
-## Import a layout to a page or template
-...
+## Add layout to a page or template
+When you have created a layout you need to import to your pages and templates. This is done inside the `<script>` tag.
+
+```html
+<!-- scr/pages/Page.vue -->
+
+<template>
+  <Layout>
+    Add page content here
+  </Layout>
+</template>
+
+<script>
+  import Layout from '~/layouts/Default.vue'
+  export default {
+  	components {
+  	 Layout
+  	}
+  }
+</script>
+
+```
 
 
 ## Make a layout global
-...
+If you don't want to import the layout into every page or template you can make a layout global. To make a layout global go to `src/main.js` and import your layout file into this file.
+
+For example: 
+```javascript
+// src/main.js
+
+import Layout from '~/layouts/Default.vue'
+```
+
+Then make the layout global inside the export function.
+
+```javascript
+// src/main.js
+
+import Layout from '~/layouts/Default.vue'
+
+export default function (Vue, { head, router, isServer }) {
+  Vue.component('Layout', Layout)
+}
+```
+
+You can now use `<Layout>` anywhere in your Gridsome project without importing it to every page:
+
+```html
+<!-- scr/pages/Page.vue -->
+
+<template>
+  <Layout>
+    Add page content here
+  </Layout>
+</template>
+
+<script>
+  export default {
+  }
+</script>
+
+```
+
+
+## Passing props to layouts
+Since layouts work like components is it possible pass Props to layouts from Pages. For example a page can look like this:
+
+
+```html
+<!-- src/pages/Page.vue -->
+
+<template>
+  <Layout :sidebar="true">
+    Add page content here
+  </Layout>
+</template>
+```
+
+This will pass a Prop to a layout with `sidebar = true`. In the Layout component this could look like this: 
+
+```html
+<!-- src/layouts/Default.vue -->
+
+<template>
+  <div class="layout">
+    <div class="main-content">
+      <slot />
+    </div>
+    <div v-if="sidebar">
+      Lets show the sidebar!
+    </div>
+  </div>
+</template>
+<script>
+  export default {
+    props: ['sidebar']
+  }
+</script>
+```

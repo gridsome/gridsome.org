@@ -1,4 +1,4 @@
-- title: Quick start
+- title: Introduction
   items:
     - title: Prerequisites
       link: /docs/prerequisites
@@ -10,8 +10,12 @@
       link: /docs/starters
     - title: Deployment
       link: /docs/deployment
-    - title: Contribute
+    - title: How to contribute
       link: /docs/contribute
+    - title: RPLP-pattern
+      link: /docs/rplp-pattern
+    - title: Pre-rendering
+      link: /docs/prerendering
 
 
 - title : Basics
@@ -36,12 +40,6 @@
       link: /docs/components
     - title: Populating <head>
       link: /docs/head
-    - title: RPLP-pattern
-      link: /docs/rplp-pattern
-    - title: Code-splitting
-      link: /docs/code-splitting
-    - title: Prerendering
-      link: /docs/prerendering
     - title: Main.js
       link: /docs/main-js
 
