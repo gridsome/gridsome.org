@@ -1,9 +1,9 @@
 <template>
-  <Section dots="true" class="text-center">
+  <Section dots="true" dark="true" class="text-center">
   <div class="container-md mb">
     
     <h1 class="home-title">
-      <span class="home-title__top">A framework for</span>
+      <span class="home-title__top">A JS framework for</span>
       <transition name="rotate">
         <div v-if="currentText == 0" class="home-title__main gradient-text" key="0">
           Static Websites

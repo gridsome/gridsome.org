@@ -28,7 +28,6 @@ export default {
       height: 32px;
       border-radius: 99px;
       margin: 0 auto var(--space);
-      color: var(--secondary-color);
       opacity: .6;
       overflow: visible!important;
     }

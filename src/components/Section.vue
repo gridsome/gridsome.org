@@ -33,7 +33,7 @@ export default {
 
 <style lang="scss">
 .section {
-  padding: calc(2% + var(--space)) 0;
+  padding: calc(2.66% + var(--space)) 0;
   position: relative;
   width: 100%;
 
@@ -44,7 +44,7 @@ export default {
 
 
   &__dots-bg {
-    height: 600px;
+    height: 700px;
     max-width: 1247px;
     max-height: 100%;
     margin: 0 auto;
@@ -63,7 +63,11 @@ export default {
   &--dark {
     color: rgba(255,255,255,.95);
     text-shadow: 1px 1px 2px rgba(0,0,0,.1);
-    background: var(--secondary-color);
+    background: var(--secondary-bg);
+
+    p {
+      color: currentColor;
+    }
     
     h1,h2,h3,h4, a {
       color: #FFF;

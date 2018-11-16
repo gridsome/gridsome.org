@@ -46,7 +46,8 @@ header {
   z-index: 20;
   position: relative;
   top:0;
-  background-color: rgba(255,255,255,.9);
+  background: var(--secondary-bg);
+  color:#FFF;
   border-bottom: 1px solid transparent;
   flex-wrap: nowrap;
   padding-top: 5px;

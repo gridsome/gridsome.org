@@ -97,7 +97,7 @@ export default {
 
 .well {
   border: 3px solid var(--primary-bg);
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: rgba(255,255,255,.7);
   width: 100%;
   padding: var(--space-x2);

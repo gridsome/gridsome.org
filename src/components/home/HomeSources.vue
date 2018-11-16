@@ -58,7 +58,6 @@ export default {
       position: relative;
       animation: pulse 2s infinite;
       box-sizing: border-box;
-      background: linear-gradient(180deg, var(--primary-color) 0%,  var(--secondary-color) 100%);
       box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.09);
       svg {
         fill: #fff;

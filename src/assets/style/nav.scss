@@ -20,7 +20,7 @@ nav a {
   }
 
   &:not(.active):not(:hover):not(.button) {
-    color: var(--secondary-color);
+    color: currentColor;
     opacity: .7;
   }
 

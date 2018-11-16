@@ -39,12 +39,13 @@
       left:0;
       right:0;
       background: #FFF;
+      color: var(--secondary-bg);
       margin-right:0!important;
       justify-content: center;
       box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
       min-height: 60px;
       flex-wrap: nowrap!important;
-      padding: 0 var(--space);
+      padding: 5px var(--space);
 
       svg {
         display: block;

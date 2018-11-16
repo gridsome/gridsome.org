@@ -17,6 +17,7 @@
     border: 1px solid currentColor;
     border-radius: 5px;
     transition: opacity .3s;
+    opacity: .6;
   }
 
   &:hover:after {
@@ -31,8 +32,7 @@
     }
     &:hover {
       color:#FFF;
-      
-      background-color: var(--secondary-color);
+      background-color: var(--primary-link-color);
     }
   }
 
