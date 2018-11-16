@@ -64,6 +64,7 @@ export default {
     color: rgba(255,255,255,.95);
     text-shadow: 1px 1px 2px rgba(0,0,0,.1);
     background: var(--secondary-bg);
+    background: linear-gradient(180deg, var(--secondary-bg) 27.73%, #94176B 300%);
 
     p {
       color: currentColor;
