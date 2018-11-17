@@ -97,13 +97,42 @@ Define custom sizes and disable effects on iOS < 7 devices:
 A function that will receive an instance of ChainableConfig powered by
 [webpack-chain](https://github.com/neutrinojs/webpack-chain).
 
+## css.loaderOptions
+
+- Type `Object`
+- Default `{ sass: { indentedSyntax: true }, stylus: { preferPathResolver: 'webpack' } }`
+
+Pass options to CSS-related loaders. For example:
+
+```js
+{
+  css: {
+    loaderOptions: {
+      scss: {
+        // options here will be passed to sass-loader
+      },
+      less: {
+        // options here will be passed to less-loader
+      }
+    }
+  }
+}
+```
+
+Supported loaders are:
+
+- [css-loader](https://github.com/webpack-contrib/css-loader)
+- [postcss-loader](https://github.com/postcss/postcss-loader)
+- [sass-loader](https://github.com/webpack-contrib/sass-loader)
+- [less-loader](https://github.com/webpack-contrib/less-loader)
+- [stylus-loader](https://github.com/shama/stylus-loader)
+
 ## plugins
 
 - Type `Array`
 - Default `[]`
 
 [Read more about using plugins](/docs/install-plugins)
-
 
 ## host
 
