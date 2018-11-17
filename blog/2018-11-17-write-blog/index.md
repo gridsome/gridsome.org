@@ -1,5 +1,8 @@
 ---
-title:write-blog
+title:write-blog-with-emacs
+author: Xingwenju
+date: 2018-11-19
+excerpt: "write blog with emacs"
 ---
 # Document Title
 
