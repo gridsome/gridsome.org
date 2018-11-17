@@ -30,8 +30,10 @@ in a specific hugo post directory"
         (find-file gridsome-post-filepath)
         (goto-char (point-min))
         (insert "---\n")
-        (insert (concat "title:" gridsome-post-filename "\n"))
+        (insert (concat "title: " gridsome-post-filename "\n"))
+        (insert "author: Xing Wenju\n")
+        (insert (concat "date: " daily-name "\n"))
+        (insert "excerpt: \n")
         (insert "---\n")))
-
 ```
 
