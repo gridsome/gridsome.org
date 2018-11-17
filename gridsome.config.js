@@ -1,5 +1,5 @@
 module.exports = {
-  siteName: "Linuxing3's Gridsome on Netlify",
+  siteName: "Linuxing3 Gridsome on Netlify",
   siteUrl: `https://gridsome.netlify.com`,
   titleTemplate: "%s - Gridsome",
 
@@ -32,16 +32,6 @@ module.exports = {
       options: {
         path: "examples/*.md",
         typeName: "Example",
-        remark: {
-          plugins: ["@gridsome/remark-prismjs"],
-        },
-      },
-    },
-    {
-      use: "@gridsome/source-filesystem",
-      options: {
-        path: "blog/*.md",
-        typeName: "BlogPost",
         remark: {
           plugins: ["@gridsome/remark-prismjs"],
         },
