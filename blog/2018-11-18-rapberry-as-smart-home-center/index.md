@@ -7,9 +7,9 @@ excerpt: "There raspberry 3 with node and mongodb"
 
 # Raspberry Pi Documentation
 
-> Raspberry is the wonderful device for personal development training
+> Raspberry is the wonderful device for personal development training :)
 
-(document)[https://github.com/raspberrypi/documentation]
+[document](https://github.com/raspberrypi/documentation)
 
 This is the official documentation for the Raspberry Pi, written by the [Raspberry Pi Foundation](https://www.raspberrypi.org/) with community contributions.
 
