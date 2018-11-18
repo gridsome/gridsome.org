@@ -6,6 +6,14 @@ excerpt: "Awesome and fluid workflow with emacs when developing"
 ---
 # Emacs workflow
 
+## Writing a blog
+
+`SPC SPC` to call my-gridsome-create-newpost-empty
+
+`SPC p !` to call projectile-run-command-in-root and then type `deploy-master`,
+this will push to `github` and deploy directly in [My Gridsome Blog](https://gridsome.netlify.com)
+
+## Doom Emacs
 As you know, I’m fond of the notion of living in Emacs to the greatest extent
 possible. For me, that’s an ongoing process:a process that is always seeking
 perfection but that is never complete.
@@ -20,8 +28,8 @@ workflow—even most of his Web browsing. Those modules are supported with a
 powerful configuration made by doom emacs, a configuration for stuborn emacs
 user.
 
-To get started, make sure you have Emacs installed and then follow the Doom
-installation guide: https://github.com/hlissner/.emacs.d#installation
+To get started, make sure you have Emacs installed and then follow the [Doom
+installation guide](https://github.com/hlissner/.emacs.d#installation)
 
 The module setup is nice because it allows you to choose the parts that support
 your workflow while ignoring the rest. If you have a minimal configuration, a
@@ -55,7 +63,7 @@ will convert to INSERT mode and you can type text as you normally would in vi.
 To go back to normal mode, hit the Escape key. Once you’re back in normal mode,
 you can navigate to other files within the same project by using the sequence:
 
-## SPC SPC
+### SPC SPC
 
 This opens up the already familiar navigator and lets you pick another
 file to switch to within the same project. If you want to open a file from a
@@ -63,7 +71,7 @@ different project, you can use the “SPC p p” sequence from earlier again. If
 would like to switch between files that you have already opened (these currently
 open screens are called “buffers” in Emacs) then you can use:
 
-## SPC ,
+### SPC ,
 
 Evil mode emacs is so vi-esque that your old friends “:w” and “:q” are
 available to save and quit as well.
@@ -83,7 +91,7 @@ want to look at one part of it while you edit the other part.
 So how do you create these new windows? To split your current window into two
 side-by-side windows with Doom, press:
 
-## SPC w v
+### SPC w v
 
 This will open up a split window for you like this with the same buffer
 open in both windows:
@@ -179,3 +187,7 @@ always press Ctrl-G to cancel whatever you were in the middle of doing.
 This is only barely scratching the surface of what kind of power you have
 available, but hopefully it can help you get over the initial learning curve and
 start down the path of Emacs wizardry!
+
+## Ref:
+
+1. [Doom Emacs for Newbies](https://medium.com/urbint-engineering/emacs-doom-for-newbies-1f8038604e3b)
