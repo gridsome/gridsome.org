@@ -58,8 +58,6 @@ Blog](https://gridsome.netlify.com)
 `ctrl-c ctrl-c` in `org` file and generate a `plantuml` image and sync to
 `dropbox` and insert in this blog
 
-![plantuml](/blog/images/dev7.png)
-
 ## Start a agenda and capture
 
 `f9` to quickly capture anything, `blog`, `billing`, `bookmark`, `gtd`, etc.
@@ -70,14 +68,6 @@ All changes will be saved to my `dropbox/org` directory and automatically
 synchronized.
 
 ## Frontend Development
-
-![editing3](/blog/images/dev3.png)
-
-![editing4](/blog/images/dev4.png)
-
-![editing5](/blog/images/dev5.png)
-
-![editing6](/blog/images/dev6.png)
 
 `ctrl+enter` to jump to my project
 
