@@ -18,7 +18,7 @@
 
 - title : Plugins
   items:
-    - title: Critial CSS
+    - title: Critical CSS
       link: /plugins/plugin-critical-css
     - title: Remark PrismJS
       link: /plugins/plugin-remark-prismjs
