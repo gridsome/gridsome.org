@@ -1,5 +1,5 @@
 {
-  "version": "0.1.3",
+  "version": "0.1.4",
   "name": "gridsome-source-lowdb",
   "description": "Lowdb source for Gridsome",
   "license": "MIT",
