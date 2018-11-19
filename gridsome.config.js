@@ -53,13 +53,13 @@ module.exports = {
         },
       },
     },
-    {
-      use: "gridsome-source-lowdb",
-      options: {
-        path: "src/data/data.json",
-        entityName: "posts",
-        typeName: "LowdbPost",
-      },
-    },
+    // {
+    //   use: "gridsome-source-lowdb",
+    //   options: {
+    //     path: "src/data/data.json",
+    //     entityName: "posts",
+    //     typeName: "LowdbPost",
+    //   },
+    // },
   ],
 };
