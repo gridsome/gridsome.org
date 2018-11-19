@@ -4,190 +4,114 @@ author: Xing Wenju
 date: 2018-11-18
 excerpt: "Awesome and fluid workflow with emacs when developing"
 ---
-# Emacs workflow
 
-## Writing a blog
-
-`SPC SPC` to call my-gridsome-create-newpost-empty
-
-`SPC p !` to call projectile-run-command-in-root and then type `deploy-master`,
-this will push to `github` and deploy directly in [My Gridsome Blog](https://gridsome.netlify.com)
+# My Daily Emacs workflow
 
 ## Doom Emacs
+
 As you know, I’m fond of the notion of living in Emacs to the greatest extent
 possible. For me, that’s an ongoing process:a process that is always seeking
 perfection but that is never complete.
 
 One of the highest learning curves I have ever had to deal with was getting into
-Emacs. Doom is very much built around Evil Mode and is meant to make VI users
-feel at home.
-
-I also would like to call my Emacs configuration EOS, The Emacs Operating
-System. It’s a thing of beauty. I have modules for nearly every component of his
-workflow—even most of his Web browsing. Those modules are supported with a
-powerful configuration made by doom emacs, a configuration for stuborn emacs
-user.
+`Emacs`. `Doom` is very much built around Evil Mode. I also would like to call
+my Emacs configuration EOS, The Emacs Operating System. It’s a thing of beauty.
+Those modules are supported with a powerful configuration made by `doom emacs`,
+a configuration for stuborn emacs user.
 
 To get started, make sure you have Emacs installed and then follow the [Doom
 installation guide](https://github.com/hlissner/.emacs.d#installation)
 
-The module setup is nice because it allows you to choose the parts that support
-your workflow while ignoring the rest. If you have a minimal configuration, a
-good strategy would be to clone EOS, make the changes that are sensible for your
-workflow, and then install it. If you already have an extensive configuration,
-doom’s configuration will serve as a model for rationalizing your
-configuration’s structure and as a source of ideas for additions to your
-configuration.
+The `module` setup is nice because it allows you to choose the parts that
+support your workflow while ignoring the rest. If you have a minimal
+configuration, a good strategy would be to clone EOS, make the changes that are
+sensible for your workflow, and then install it.
+
+If you already have an extensive configuration, `doom’s configuration` will
+serve as a model for rationalizing your configuration’s structure and as a
+source of ideas for additions to your configuration.
 
 Even if you aren’t interested in moving your life into Emacs, doom’s
 configuration is worth looking at for the many ideas you can mine from it. It’s
 an excellent resource.
 
-<p>
-<img class="progressiveMedia-image js-progressiveMedia-image"
-data-src="https://cdn-images-1.medium.com/max/1000/1*I6svBlHhkufsMTYbC5YFUw.png"
-src="https://cdn-images-1.medium.com/max/1000/1*I6svBlHhkufsMTYbC5YFUw.png">
-</p>
+## Edit my `doom` configuration
 
+`ctrl-enter` to jump to `doom emacs private dir`, like `~/.doom.d`
 
-<p>
-<img class="progressiveMedia-image js-progressiveMedia-image"
-data-src="https://cdn-images-1.medium.com/max/1000/1*IV-oNecF-hVgi9vInBxWZA.png"
-src="https://cdn-images-1.medium.com/max/1000/1*IV-oNecF-hVgi9vInBxWZA.png">
-</p>
+`SPC-p-/` to find and edit `module`, like the `config` files
 
+`ctrl-enter` to jump to `user emacs dir`, like `~/.emacs.d`
 
-By default, the screen will be in “normal” mode, which means that it is
-expecting commands (just like if you opened up vi). If you hit the “i” key, it
-will convert to INSERT mode and you can type text as you normally would in vi.
-To go back to normal mode, hit the Escape key. Once you’re back in normal mode,
-you can navigate to other files within the same project by using the sequence:
+`SPC-p-!` to run `bin/doom refresh` to start install and generate autoloads
 
-### SPC SPC
+`SPC-r` to reload settings
 
-This opens up the already familiar navigator and lets you pick another
-file to switch to within the same project. If you want to open a file from a
-different project, you can use the “SPC p p” sequence from earlier again. If you
-would like to switch between files that you have already opened (these currently
-open screens are called “buffers” in Emacs) then you can use:
+## Writing a blog
 
-### SPC ,
+`SPC-SPC` to call `my-gridsome-create-newpost-empty`
 
-Evil mode emacs is so vi-esque that your old friends “:w” and “:q” are
-available to save and quit as well.
+`SPC-p-!` to call `projectile-run-command-in-root` and then type
+`deploy-master`, this will push to `github` and deploy directly in [My Gridsome
+Blog](https://gridsome.netlify.com)
 
-Window Management and Navigation What good is an editor if you can only have a
-single thing on screen at one time? Not much good, and it makes your 4k monitor
-cry to be so underutilized. In Emacs, you can easily split the screen
-horizontally and/or vertically into different windows that contain different
-data. In the background, Emacs has a bunch of buffers open, one for each file
-you have opened to edit. When you open a window, it assigns a buffer to that
-window. If you happen to have the same file open in two different windows, then
-you are actually editing the same buffer! So if you edit the contents of one
-window, you’d see that change happening on all of the other windows with that
-same file. This can actually be super useful if you have a long file and you
-want to look at one part of it while you edit the other part.
+`ctrl-c ctrl-c` in `org` file and generate a `plantuml` image and sync to
+`dropbox` and insert in this blog
 
-So how do you create these new windows? To split your current window into two
-side-by-side windows with Doom, press:
+(plantuml)[https://www.dropbox.com/s/9c0tewnhc6st34r/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202018-11-18%2021.11.38.png?dl=0]
 
-### SPC w v
+## Start a agenda and capture
 
-This will open up a split window for you like this with the same buffer
-open in both windows:
+`f9` to quickly capture anything, `blog`, `billing`, `bookmark`, `gtd`, etc.
 
-You may be starting to see a pattern in these key presses. They are actually
-categorized! SPC is the evil leader, so it indicates that you want to execute
-some command. “w” is actually for the “window” category. If you forget exactly
-which key to press, but you can remember the category, then Doom has the plugins
-set up to guide you through the process. For example, pressing:
+`f10` to open my `agenda`
 
-### SPC w
-will open up this guidance section in the minibuffer:
+All changes will be saved to my `dropbox/org` directory and automatically
+synchronized.
 
+## Frontend Development
 
-You can see that “v” executes evil-window-vsplit. Can you see what key to press
-instead of “v” if you wanted to split the window into top and bottom? I’ll give
-you a hint — it’s just called evil-window-split.
+[editing3](https://www.dropbox.com/s/eruprwitzttfuli/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202018-11-18%2021.08.32.png?dl=0)
 
-Once you have some windows open, you need to be able to move in between them.
-Your mouse will actually work, but that’s not very Emacs-esque. There are a few
-different ways, but my favorites to move around are:
+[editing1](https://www.dropbox.com/s/d6fd2pp50js4wcd/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202018-11-18%2020.57.43.png?dl=0)
 
+[editing2](https://www.dropbox.com/s/z64hl19njf66gi2/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202018-11-18%2021.07.22.png?dl=0)
 
-And what if you want to get rid of some of these windows? To close the currently
-selected window:
+[editing4](https://www.dropbox.com/s/yx0ssjomfiqexax/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202018-11-18%2021.09.36.png?dl=0)
 
-### SPC w c
+`ctrl+enter` to jump to my project
 
-You can also use Ctrl-X 0 (zero). There are a ton of other things you
-can do with these windows. Go through the list of options shown after pressing
-“SPC w” and try them out!
+`f4` to review the directory structure
 
-File Structure Navigation (neotree) What if you don’t quite know what your
-project layout looks like and you’re more comfortable seeing a tree of your file
-system? Fear not! Neotree is one of the most widely used file system tree views
-in Emacs, and it comes preconfigured with Doom.
+`SPC-.` to open files under my project
 
-To open the Neotree view:
+`SPC-p-/` to find files under my project
 
-### SPC o n
-You can do this from pretty much anywhere (except insert mode — so think
-anywhere you would be able to use :w or :q). The really great part is that this
-is actually a smart open! If you are not currently inside of a Projectile
-project, then it will start with your home folder. If, however, you already
-selected a project and are working in that context, it will open up the tree
-view of just that project.
+`i` start the `insert` mode and start editing a `store.ts` in my `vue` project
 
+`jk` to exit to `normal` mode
 
-You can use the arrow keys to move up and down on tree, or if you’re already
-used to it — h,j,k and l also work. Pressing ENTER on a file will open it up in
-the original window and move the focus of your cursor over to that window.
+`f12` to jump to the definition of a variable or methods
 
-To create a new file in neotree so you can start editing it, press the “c” key.
-It will open up a dialog in the minibuffer to let you specify the path to the
-file. Once you are done typing the path, hit enter and it will close the
-minibuffer and create the file (and any parent folders) in neotree for you to
-select and open.
+`SPC-w-v` to vertically split a window and refer to `component.vue` file
 
-To delete a file or folder that you have selected in neotree, press:
+`SPC-w-v` to vertically split a window and refer to `router.ts` file
 
-C-c C-d If you are currently in the neotree window and you want to close it, you
-can just press the Escape key or the “q” key. “SPC w c” will still work, but
-escape is a lot more intuitive to me since I feel like I am closing out a
-temporary dialog.
+`/**` to trigger `js-doc` to write a function doc
 
-Using the terminal Finally, what if you want to do something in the CLI that you
-don’t have (or don’t know) the keybinding for yet? Do you have to leave Emacs
-for this? Fear not!! You can open up a terminal instance right in Emacs as one
-of its windows. I personally find this handy for doing git-related commands
-since my muscle memory for git is much more tied to the CLI than to the editor.
+`SPC-p-!` to call `yarn test:unit` to start a test or `yarn story` to start a
+`storybook`. Another way is to `SPC-SPC-eshell` to call a `eshell`
 
-To open up a CLI window, press:
+`SPC-p-p` to switch to another project
 
-SPC o t You may have gotten the idea of those categories from earlier. Since we
-use “SPC o t” for the terminal and “SPC o n” for neotree, you can probably guess
-that “o” is the category for opening popup windows.
+`Meta-t` to open a new workspace
 
+`[-b` to switch to previews buffer and `]-b` to switch to next buffer
 
-You can perform whatever CLI operations you want in here, and even use the
-window navigation keys to switch between your editing windows and the CLI
-window. Once you are done with the terminal, you can close it by pressing:
+`SPC-b-k` to kill the buffer
 
-C-x 0 (zero) This will close it back out and return you to your normal editing.
+`Meta-number` to go back to any workspace
 
-Conclusion One final tip — if you are sure that a command must exist for
-something but you aren’t sure what it’s called, press Alt-X (or “M-x”) on your
-keyboard and you will get the buffer to actually type the named commands into
-Emacs. Each of the key sequences listed here is actually tied to essentially a
-function name, and you can call that function by searching for it as well. If
-you decide that you don’t actually want to call a function after all, you can
-always press Ctrl-G to cancel whatever you were in the middle of doing.
+Continue the workflow...
 
-This is only barely scratching the surface of what kind of power you have
-available, but hopefully it can help you get over the initial learning curve and
-start down the path of Emacs wizardry!
-
-## Ref:
-
-1. [Doom Emacs for Newbies](https://medium.com/urbint-engineering/emacs-doom-for-newbies-1f8038604e3b)
+``
