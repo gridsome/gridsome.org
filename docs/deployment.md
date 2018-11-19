@@ -1,6 +1,6 @@
-# Hosting & Deployment
+# Deployment
 
-Gridsome sites are static generated at build time. This mean that the site can be hosted anywhere, and does not require any database. It can be hosted on a global CDN or even a simple FTP. Your site will also be un-hackable since there is no database connected. With Gridsome you don't need any caching or security plugins like you do in a traditional CMS like WordPress.
+Gridsome sites are static generated (pre-rendered) at build time. This mean that the site can be hosted anywhere, and does not require any database. It can be hosted on a global CDN or even a simple FTP. Your site will also be un-hackable since there is no database connected. With Gridsome you don't need any caching or security plugins like you do in a traditional CMS like WordPress.
 
 
 ### Git-based deploying

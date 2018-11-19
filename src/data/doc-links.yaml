@@ -12,17 +12,13 @@
       link: /docs/deployment
     - title: How to contribute
       link: /docs/contribute
-    - title: RPLP-pattern
-      link: /docs/rplp-pattern
-    - title: Pre-rendering
-      link: /docs/prerendering
 
 
 - title : Basics
   items:
     - title: Directory structure
       link: /docs/directory-structure
-    - title: Project configuration
+    - title: Configuration
       link: /docs/config
     - title: Pages
       link: /docs/pages
@@ -30,48 +26,52 @@
       link: /docs/templates
     - title: Layouts
       link: /docs/layouts
-    - title: Routing
+    - title: Routing *
       link: /docs/routing
-    - title: Linking
+    - title: Linking *
       link: /docs/linking
-    - title: Images
+    - title: Images *
       link: /docs/images
     - title: Components
       link: /docs/components
-    - title: Populating <head>
-      link: /docs/head
-    - title: Main.js
+    - title: Populating <head> *
+      link: /docs/head *
+    - title: Using main.js *
       link: /docs/main-js
 
 - title : Data
   items: 
-    - title: The GraphQL layer
+    - title: The GraphQL data layer
       link: /docs/graphql
-    - title: Install a source plugin
+    - title: Install a source plugin *
       link: /docs/graphql-source-plugin
-    - title: Query data in pages
+    - title: Query data in pages *
       link: /docs/graphql-query-in-pages
-    - title: Query data in templates
+    - title: Query data in templates *
       link: /docs/graphql-query-in-templates
-    - title: Query data in components
+    - title: Query data in components *
       link: /docs/graphql-query-in-components
-    - title: Querying local files
+    - title: Query local files * 
       link: /docs/graphql-query-local-files
-    - title: Querying external data
+    - title: Query external data *
       link: /docs/graphql-query-external-data
-    - title: Paginate Queries
+    - title: Query dynamic data *
+      link: /docs/graphql-query-dynamic
+    - title: Paginate Queries *
+      link: /docs/graphql-paginate-queries
+    - title: Create custom source plugin *
       link: /docs/graphql-paginate-queries
 
 - title : Styling
   items: 
+    - title: Add style in components
+      link: /docs/styling-in-components
+    - title: Use CSS preprocessors (Sass)
+      link: /docs/styling-sass-less
     - title: Add global styles
       link: /docs/styling-global-styles
     - title: Add a CSS library
       link: /docs/styling-global-styles
-    - title: Add style in components
-      link: /docs/styling-in-components
-    - title: Use SASS or LESS
-      link: /docs/styling-sass-less
     - title: Add Critical CSS
       link: /docs/styling-critical-css
     - title: Add custom fonts

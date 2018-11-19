@@ -1,8 +1,13 @@
 # How it works
 
-> Gridsome generates & **pre-renders** all pages at build time. This means that your site does not require any back-end and can be entirely hosted on any CDN or FTP. It can generate big sites fast thanks to the unified GraphQL data layer.
+> Gridsome is a static site generator that **pre-renders** all pages at build time. This means that your site does not require any back-end and can be entirely hosted on any CDN or FTP. 
 
-**It creates two versions of every page**. One HTML page that search engines can crawl for SEO-purpose, and one JavaScript file that Gridsome uses for SPA after first page load. Next pages are loaded in the background with Service workers. That makes browsing around extremely fast, and your site is 100%-SEO friendly. It even works offline.
+### GraphQL for data
+Gridsome pulls in content from **data sources** into a unified **GraphQL data layer**. You can add multiple data source plugins. Data are pulled in when you start dev project and at build time. **The GraphQL layer is not used in production. It's there to make it easier to work with data in development mode and for fast static site generation.**
+
+### The build process (Pre-rendering)
+
+**Gridsome builds two versions of every page**. One HTML page that search engines can crawl for SEO-purpose, and one JavaScript file that Gridsome uses for SPA after first page load. Next pages are loaded in the background with Service workers. That makes browsing around extremely fast, and your site is 100%-SEO friendly. It even works offline and can be entirely hosted on a CDN.
 
 
 ### Fast by default
