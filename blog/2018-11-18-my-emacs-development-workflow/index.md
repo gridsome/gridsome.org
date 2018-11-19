@@ -113,5 +113,3 @@ synchronized.
 `Meta-number` to go back to any workspace
 
 Continue the workflow...
-
-``
