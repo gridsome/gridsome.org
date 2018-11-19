@@ -26,7 +26,7 @@
       link: /docs/templates
     - title: Layouts
       link: /docs/layouts
-    - title: Linking *
+    - title: Linking
       link: /docs/linking
     - title: Routing *
       link: /docs/routing
@@ -45,21 +45,21 @@
       link: /docs/graphql-source-plugin
     - title: Querying data *
       link: /docs/graphql-query-data
-    - title: Paginate queries *
+    - title: Paginate queries
       link: /docs/graphql-paginate-queries
-    - title: Create custom source *
+    - title: Add a custom source *
       link: /docs/graphql-source-custom
     - title: Dynamic data *
       link: /docs/graphql-dynamic
 
 - title : Styling
   items: 
-    - title: Add style in components *
+    - title: Add global style sheet *
+      link: /docs/style-global-styles
+    - title: Style in components *
       link: /docs/style-components
     - title: Use CSS preprocessors *
       link: /docs/style-preprocessors
-    - title: Add global styles *
-      link: /docs/style-global-styles
     - title: Add a CSS library *
       link: /docs/style-css-libraries
     - title: Add critical CSS *
@@ -90,11 +90,11 @@
       link: /docs/client-api
     - title: Page meta API *
       link: /docs/page-meta-api
-    - title: <g-link>
+    - title: Link API
       link: /docs/link
-    - title: <g-image>
+    - title: Image API
       link: /docs/image
-    - title: <g-pagination>
+    - title: Pagination API
       link: /docs/pagination
 
 - title: Deploy
