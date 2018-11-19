@@ -1,7 +1,7 @@
 <template>
   <Section dots="true" class="text-center">
   <div class="container-md mb">
-    
+
     <h1 class="home-title">
       <span class="home-title__top">A Vue framework for</span>
       <transition name="rotate">
@@ -28,7 +28,7 @@
 
     <p class="home-intro container-sm">
       Build blazing fast websites with <br class="hide-for-small" />
-      <strong>Vue.js</strong><vue-logo/> & 
+      <strong>Vue.js</strong><vue-logo/> &
       <strong>GraphQL</strong><graph-ql-logo style="color:#E535AB;" />
     </p>
 

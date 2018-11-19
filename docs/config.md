@@ -1,4 +1,4 @@
-# Gridsome configuration
+# Gridsome configuration 配置
 
 A basic `gridsome.config.js` file would look something like this:
 
@@ -10,27 +10,27 @@ export default {
 }
 ```
 
-## Configuration options
+## Configuration options 选项
 
-#### siteName
+#### siteName 站点名称
 
 - Type `string`
 - Default `<dirname>`
 
 Set a name for your project. The name is typically used in the title tag.
 
-#### siteDescription
+#### siteDescription 站点描述
 - Type `string`
 - Default `''`
 
 The description is used as description on your frontpage.
 
-#### siteUrl
+#### siteUrl 站点网址
 
 - Type `string`
 - Default `''`
 
-#### pathPrefix
+#### pathPrefix 路径前缀
 - Type `string`
 - Default `'/'`
 
@@ -38,7 +38,7 @@ Gridsome assumes your project is served from the root of your domain.
 Change this option to `'/my-app'` if your project will be hosted in a
 subdirectory called `my-app`.
 
-#### titleTemplate
+#### titleTemplate 标题模板
 
 - Type `string`
 - Default `%s - <siteName>`
@@ -46,7 +46,7 @@ subdirectory called `my-app`.
 Set a template for the title tag. The `%s` placeholder is replaced with title
 from metaInfo you set in your pages.
 
-#### icon
+#### icon 图标
 
 - Type `string | Object`
 - Default `'src/favicon.png'`
@@ -92,14 +92,14 @@ Define custom sizes and disable effects on iOS < 7 devices:
 }
 ```
 
-#### chainWebpack
+#### chainWebpack 链式配置
 
 - Type `Function`
 
 A function that will receive an instance of ChainableConfig powered by
 [webpack-chain](https://github.com/neutrinojs/webpack-chain).
 
-#### plugins
+#### plugins 插件
 
 - Type `Array`
 - Default `[]`
@@ -108,12 +108,12 @@ A function that will receive an instance of ChainableConfig powered by
 
 ## Advanced
 
-#### host
+#### host 主机
 
 - Type `string`
 - Default `'localhost'`
 
-#### port
+#### port 端口
 
 - Type `number`
 - Default `8080`

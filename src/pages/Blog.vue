@@ -1,8 +1,8 @@
 <template>
   <Layout transparent="true">
-    
+
     <Section dark="true" class="text-center" dots="true" container="sm">
-      <h1>Gridsome Blog</h1>
+      <h1>Emacser & Vimer's Personal Blog</h1>
       <p class="lead">Follow our mission to save the web from bloat and make building websites fun again.</p>
     </Section>
 
@@ -10,7 +10,7 @@
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node._id" :post="edge.node"/>
     </div>
   </Layout>
-</template> 
+</template>
 
 <page-query>
 query BlogPosts {

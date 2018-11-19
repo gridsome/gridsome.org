@@ -16,15 +16,15 @@
 
       <Feature>
         <h3>PWA Mobile-first architecture</h3>
-        <p>Only critical HTML, CSS, and JavaScript get loaded first. The next pages are then prefetched so users can click around incredibly fast without page reloads, even when offline. 
-        </p>     
+        <p>Only critical HTML, CSS, and JavaScript get loaded first. The next pages are then prefetched so users can click around incredibly fast without page reloads, even when offline.
+        </p>
       </Feature>
 
 
       <Feature>
         <h3>Get perfect page <br class="hide-for-small"/>speed scores</h3>
         <p>Gridsome automatically optimises your frontend to load and perform blazing fast. You get code-splitting, image optimisation, lazy-loading, and almost perfect lighthouse scores out-of-the-box.
-        </p>     
+        </p>
       </Feature>
 
 
@@ -39,7 +39,7 @@
       <Feature>
         <h3>Ready for global domination</h3>
         <p>Gridsome sites are usually not connected to any database and can be hosted entirely on a global CDN. It can handle thousands to millions of hits without breaking - and no expensive server costs.
-        </p>     
+        </p>
       </Feature>
     </div>
   </Section>
