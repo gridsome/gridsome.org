@@ -2,7 +2,12 @@ module.exports = {
   siteName: "Linuxing3 Gridsome on Netlify",
   siteUrl: `https://gridsome.netlify.com`,
   titleTemplate: "%s - Gridsome",
-
+  icon: {
+    favicon: {
+      src: 'src/favicon.png',
+      sizes: [16, 32, 96]
+    },
+  },
   plugins: [
     "@gridsome/plugin-critical",
     {
