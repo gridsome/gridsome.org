@@ -1,8 +1,8 @@
 # Components
 
-Gridsome uses Vue Single File Components. This means you add HTML, JavaScript and CSS all in the same file. This makes your projects easier to maintain and test and your components more reusable. You also get **code-splitting** out-of-the-box.
+Gridsome uses [Vue Single File Components] (https://vuejs.org/v2/guide/single-file-components.html). This means you add HTML, JavaScript and CSS in the same file. This makes your projects easier to maintain and test and your components more reusable. This is also used for **code-splitting** in the build process.
 
-Here is an example of a Single File Component file.
+Here is an example:
 
 
 ```html
@@ -43,7 +43,7 @@ export default {
 [Learn more about Single File Components](https://vuejs.org/v2/guide/single-file-components.html)
 
 ### Import to other Pages or Components
-When you have created a component you can easily import into your pages. In Gridsome projects it's recommended to put all your .vue components in the **src/components** folder and import them into Pages or Layouts like this:
+When you have created a component you can easily import into your pages. In Gridsome projects it's recommended to put all your .vue components in the **src/components** folder and import them into **Pages** or **Layouts** like this:
 
 ```html
 <template>
