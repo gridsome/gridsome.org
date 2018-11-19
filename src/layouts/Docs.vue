@@ -2,7 +2,7 @@
   <Layout class="has-sidebar" :footer="false">
     <div class="flex gap-60 flex-align-top">
       <div class="sidebar dots-bg">
-        
+
         <!-- <input type="search" placeholder="Search docs..." /> -->
 
         <template v-for="group in links">
@@ -24,13 +24,13 @@
 
 
 <script>
-import links from '@/data/doc-links.yaml'
+import links from "@/data/doc-links.yaml";
 
 export default {
   computed: {
-    links () {
-      return links
-    }
-  }
-}
+    links() {
+      return links;
+    },
+  },
+};
 </script>

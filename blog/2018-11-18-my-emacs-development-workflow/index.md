@@ -58,7 +58,7 @@ Blog](https://gridsome.netlify.com)
 `ctrl-c ctrl-c` in `org` file and generate a `plantuml` image and sync to
 `dropbox` and insert in this blog
 
-![plantuml](https://gridsome.netlify.com/blog/images/dev7.png)
+![plantuml](/blog/images/dev7.png)
 
 ## Start a agenda and capture
 
@@ -71,13 +71,13 @@ synchronized.
 
 ## Frontend Development
 
-![editing3](https://gridsome.netlify.com/blog/images/dev3.png)
+![editing3](/blog/images/dev3.png)
 
-![editing4](https://gridsome.netlify.com/blog/images/dev4.png)
+![editing4](/blog/images/dev4.png)
 
-![editing5](https://gridsome.netlify.com/blog/images/dev5.png)
+![editing5](/blog/images/dev5.png)
 
-![editing6](https://gridsome.netlify.com/blog/images/dev6.png)
+![editing6](/blog/images/dev6.png)
 
 `ctrl+enter` to jump to my project
 
