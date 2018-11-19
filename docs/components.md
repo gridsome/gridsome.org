@@ -1,6 +1,10 @@
-# Components
+# Components 组件
+
+Gridsome使用Vue单组件文件，将html、javascript和css组合到一个文件中，易于维护项目并提高组件复用性。Gridsome同样原生支持代码分割。
 
 Gridsome uses Vue Single File Components. This means you add HTML, JavaScript and CSS all in the same file. This makes your projects easier to maintain and test and your components more reusable. You also get **code-splitting** out-of-the-box.
+
+请看单组件文件的安利：
 
 Here is an example of a Single File Component file.
 
@@ -102,7 +106,9 @@ Install <br> `npm install -D sass-loader node-sass` to your project and use it l
 
 
 
-### Scoped styles
+### Scoped styles 内部样式
+
+你可以通过`scoped`，很容易地添加本组件样式，不会影响到全局样式。
 
 Its very easy to add scoped styles in vue. Simple add "scoped" to the style tag to automatically add suffix to any CSS class in Markup. This means that styles here will only be applied to current component regardless of the class names you use.
 
@@ -115,6 +121,8 @@ Its very easy to add scoped styles in vue. Simple add "scoped" to the style tag 
 </style>
 ```
 
+上面的样式只会更改当前组件的风格。
+
 This will change the .card class in current component automatically to f.ex **.card[x5u123sc5s1]** and only apply style to that class.
 
-[Learn more about Scoped styles in Vue](https://vue-loader.vuejs.org/guide/scoped-css.html)
+[更多指南请查看Vue文档](https://vue-loader.vuejs.org/guide/scoped-css.html)

@@ -1,5 +1,7 @@
 # Gridsome configuration 配置
 
+一个基本的配置如下：
+
 A basic `gridsome.config.js` file would look something like this:
 
 ```js
@@ -17,11 +19,15 @@ export default {
 - Type `string`
 - Default `<dirname>`
 
+选择站点的名称
+
 Set a name for your project. The name is typically used in the title tag.
 
 #### siteDescription 站点描述
 - Type `string`
 - Default `''`
+
+给你的站点一个很好的描述
 
 The description is used as description on your frontpage.
 
@@ -34,6 +40,8 @@ The description is used as description on your frontpage.
 - Type `string`
 - Default `'/'`
 
+网站默认使用域名根目录
+
 Gridsome assumes your project is served from the root of your domain.
 Change this option to `'/my-app'` if your project will be hosted in a
 subdirectory called `my-app`.
@@ -43,6 +51,8 @@ subdirectory called `my-app`.
 - Type `string`
 - Default `%s - <siteName>`
 
+设置标题模板，可以依次自定义标题
+
 Set a template for the title tag. The `%s` placeholder is replaced with title
 from metaInfo you set in your pages.
 
@@ -50,6 +60,8 @@ from metaInfo you set in your pages.
 
 - Type `string | Object`
 - Default `'src/favicon.png'`
+
+默认网页图标是`src/favicon.png`，触摸屏也是一样。你可以自定义图标，网页图标尺寸会自动压缩为16，32，96。触摸屏为 76, 152, 120, 167, 180。
 
 Gridsome will use any image located at `src/favicon.png` as favicon and
 touchicon by default, but you can define another path or sizes etc. The icon
@@ -63,7 +75,7 @@ default.
 }
 ```
 
-Use a different image for touch icons:
+触摸屏不同尺寸定义方法 Use a different image for touch icons:
 
 ```js
 {
@@ -74,7 +86,7 @@ Use a different image for touch icons:
 }
 ```
 
-Define custom sizes and disable effects on iOS < 7 devices:
+旧设备定义方法 Define custom sizes and disable effects on iOS < 7 devices:
 
 ```js
 {
@@ -96,6 +108,8 @@ Define custom sizes and disable effects on iOS < 7 devices:
 
 - Type `Function`
 
+使用`chainWebpack`更新设置，类型为函数。
+
 A function that will receive an instance of ChainableConfig powered by
 [webpack-chain](https://github.com/neutrinojs/webpack-chain).
 
@@ -103,6 +117,8 @@ A function that will receive an instance of ChainableConfig powered by
 
 - Type `Array`
 - Default `[]`
+
+请查看插件部分
 
 [Read more about using plugins](/docs/plugins)
 

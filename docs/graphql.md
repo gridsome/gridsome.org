@@ -1,4 +1,6 @@
-# The GraphQL layer
+# The GraphQL layer 查询层
+
+Gridsome可以通过“源插件”使用任何数据源，这也是核心功能。所有数据通过`graphql`数据层处理，可以在`vue`组件中访问
 
 Gridsome lets you connect to any data source by using **Source plugins**. This is the core functionality of Gridsome. All data coming from sources are pulled into a GraphQL layer that the Vue components can access.
 
@@ -6,14 +8,21 @@ Gridsome lets you connect to any data source by using **Source plugins**. This i
 
 ![Git workflow](./images/graphql.png)
 
+转换插件用于转换数据源中的内容节点。比如文件系统数据源中，我们使用`remark`插件添加对`markdown`文件的支持。
+
 **Transformer plugins** is used to transform the content (Nodes) coming from the data sources. For example, for Filesystem source we have a Remark plugin that adds extra functionality to Markdown files.
 
 
-## The GraphQL playground
+## The GraphQL playground 游戏场
+
+原生支持`graphql`游戏场，用于在开发模式下探索和测试查询。默认入口为`http://localhost:8080/___explore`
+
 Every Gridsome project has a GraphQL playground they can use to explore and test queries when in development mode. This can usually be opened by going to `http://localhost:8080/___explore`.
 
 
-## Add GraphQL to Pages
+## Add GraphQL to Pages 将数据添加到页面
+
+每一个页面可以包含一个`<page-query>`块，使用`graphql`语言查询数据。结果存储在组件的`$page`属性中。
 
 Every **Page** can have a `<page-query>` block with a GraphQL query
 to fetch data from data sources. The results will be stored in a
@@ -46,9 +55,11 @@ query Blog {
 ```
 
 
-## Add pagination to GraphQL queries
-Gridsome has built-in component and functionality to paginate GraphQL queries.
+## Add pagination to GraphQL queries 添加分页
 
+组件中内置了`graqhql`的分页查询功能。
+
+Gridsome has built-in component and functionality to paginate GraphQL queries.
 
 ```html
 <template>
@@ -115,8 +126,9 @@ query Example {
 
 ```
 
-
 ## Add GraphQL to templates
+
+对于`wordpress`类的数据源，可以使用模板用于页面布局。如果查询定义了节点`WordPressPost`，可以创建对应的`src/templates/WordPressPost.vue`模板文件。
 
 Templates are used for page layout for the "single" endpoint of a data source like for example a WordPress blog post. If you have a node type called `WordPressPost`, then you can create a file
 in `src/templates/WordPressPost.vue`.
@@ -148,6 +160,3 @@ export default {
 }
 </script>
 ```
-
-
-

@@ -1,12 +1,12 @@
 # @gridsome/transformer-remark
 
-> Markdown transformer for Gridsome
+> Markdown 转换器 Markdown transformer for Gridsome
 
-## Install
+## Install 安装
 - `yarn add @gridsome/transformer-remark`
 - `npm install @gridsome/transformer-remark`
 
-## Usage
+## Usage 使用
 
 ```js
 module.exports = {
