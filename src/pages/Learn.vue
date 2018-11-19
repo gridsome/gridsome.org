@@ -1,21 +1,26 @@
 <template>
   <Layout>
+    <home-features />
+    <home-how-it-works />
+    <home-tabs />
   	<Section container="md" class="post">
-    <h1>Tutorial coming soon...</h1>
-    <p class="lead">We're writing an in-depth tutorial on how to build blazing fast websites that have top scores on Lighthouse with Gridsome & Vue.js.</p> 
-
-    <Newsletter />
-
-		</div>
-
+			<div>
+				<Newsletter />
+			</div>
   	</Section>
   </Layout>
 </template>
 
 <script>
+import HomeFeatures from '@/components/home/HomeFeatures.vue'
+import HomeHowItWorks from '@/components/home/HomeHowItWorks.vue'
+import HomeTabs from '@/components/home/HomeTabs.vue'
 import Newsletter from '~/components/Newsletter'
 export default {
 	components: {
+		HomeFeatures,
+    HomeHowItWorks,
+    HomeTabs,
 		Newsletter
 	}
 }
