@@ -1,0 +1,24 @@
+{
+  "version": "0.1.1",
+  "name": "gridsome-source-lowdb",
+  "description": "Lowdb source for Gridsome",
+  "license": "MIT",
+  "homepage": "https://github.com/linuxing3/gridsome.org/tree/master/lib/plugin-lowdb#readme",
+  "repository": "https://github.com/linuxing3/gridsome.org/tree/master/lib/plugin-lowdb",
+  "main": "index.js",
+  "keywords": [
+    "gridsome",
+    "gridsome-plugin",
+    "gridsome-source",
+    "lowdb"
+  ],
+  "dependencies": {
+    "lowdb": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8"
+  }
+}
