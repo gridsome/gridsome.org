@@ -43,24 +43,16 @@
   items: 
     - title: The GraphQL data layer
       link: /docs/graphql
-    - title: Install a source plugin *
+    - title: Add a source plugin *
       link: /docs/graphql-source-plugin
-    - title: Query data in pages *
-      link: /docs/graphql-query-in-pages
-    - title: Query data in templates *
-      link: /docs/graphql-query-in-templates
-    - title: Query data in components *
-      link: /docs/graphql-query-in-components
-    - title: Query local files * 
-      link: /docs/graphql-query-local-files
-    - title: Query external data *
-      link: /docs/graphql-query-external-data
-    - title: Query dynamic data *
-      link: /docs/graphql-query-dynamic
+    - title: Querying data *
+      link: /docs/graphql-query-data
     - title: Paginate Queries *
       link: /docs/graphql-paginate-queries
     - title: Create custom source *
-      link: /docs/graphql-paginate-queries
+      link: /docs/graphql-source-custom
+    - title: Dynamic data *
+      link: /docs/graphql-dynamic
 
 - title : Styling
   items: 

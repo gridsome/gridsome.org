@@ -2,7 +2,7 @@
 
 Gridsome lets you connect to any data source by using **Source plugins**. This is the core functionality of Gridsome. All data coming from sources are pulled into a unified GraphQL layer that the Vue components can access.
 
-> **!! The GraphQL data layer is only used in development and not used in production. The static site generator uses the data layer to generate the pages fast. There is no connection to the data layer after the site has been built.**
+> **The GraphQL data layer is only used in development and not used in production. The static site generator uses the data layer to generate the pages fast. There is no connection to the data layer after the site has been built.**
 
 ![Git workflow](./images/graphql.png)
 
