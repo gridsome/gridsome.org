@@ -1,16 +1,20 @@
 # How it works
 
-> Gridsome is a static site generator that **pre-renders** all pages at build time. This means that your site does not require any back-end and can be entirely hosted on any CDN or FTP. 
 
-### GraphQL for data
-Gridsome pulls in content from **data sources** into a unified **GraphQL data layer**. You can add multiple data source plugins. Data are pulled in when you start dev project and at build time. **The GraphQL layer is not used in production. It's there to make it easier to work with data in development mode and for fast static site generation.**
 
-### The build process (Pre-rendering)
+## GraphQL for data
+Gridsome pulls in content from **data sources** into a unified **GraphQL data layer**. Content are pulled in to the data layer when you start development project and at build time. **The GraphQL layer is only used in development and the build step.** There is no connection between the GraphQL data layer and a site in production. To update site in production with latest content you need to re-build your site. This is how static site generators works. This can be done automatically with services like [Netlify](https://netlify.com).
+
+- Learn more about [The GraphQL data layer](/docs/graphql).
+
+## Static site generation (Pre-rendering)
 
 **Gridsome builds two versions of every page**. One HTML page that search engines can crawl for SEO-purpose, and one JavaScript file that Gridsome uses for SPA after first page load. Next pages are loaded in the background with Service workers. That makes browsing around extremely fast, and your site is 100%-SEO friendly. It even works offline and can be entirely hosted on a CDN.
 
+- Learn more about [Deploying](/docs/deployment).
 
-### Fast by default
+
+## PRPL-pattern
 
 Gridsome follows the [PRPL-pattern by Google.](https://developers.google.com/web/fundamentals/performance/prpl-pattern/) and optimizes your site automatically. You don't need to be a performance expert to make fast websites with Gridsome. Your site gets almost perfect scores on Google lighthouse out-of-the-box. These are some of the performance steps that Gridsome takes care of:
 

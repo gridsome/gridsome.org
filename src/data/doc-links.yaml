@@ -59,7 +59,7 @@
       link: /docs/graphql-query-dynamic
     - title: Paginate Queries *
       link: /docs/graphql-paginate-queries
-    - title: Create custom source plugin *
+    - title: Create custom source *
       link: /docs/graphql-paginate-queries
 
 - title : Styling

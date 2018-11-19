@@ -41,17 +41,15 @@ export default {
 
 <style lang="scss">
 .docs-page {
-  h2::before, h3::before {
-    content: "";
-    display: block;
+
+  h2{
+    padding-top: 1.5rem;
+    margin-top: 1rem;
+    border-top: 1px solid var(--border-color);
   }
 
-  h2::before {
-    height: 3.0em;
-  }
-
-  h3::before {
-    height: 1.5em;
+  h3 {
+    padding-top: 1rem;
   }
 
   ul > li > p {

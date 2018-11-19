@@ -18,7 +18,7 @@ Page templates should be wrapped in a layout component like:
 </template>
 ```
 
-#### Setting the HTML head title
+## Setting the HTML head title
 
 Gridsome uses **vue-meta** to manage meta info.
 
@@ -34,7 +34,7 @@ export default {
 
 [Read more about vue-meta.](https://github.com/declandewet/vue-meta)
 
-#### Querying data with GraphQL
+## Querying data with GraphQL
 
 Every page component can have a `<page-query>` block with a GraphQL query
 to fetch data from data sources. The results will be stored in a

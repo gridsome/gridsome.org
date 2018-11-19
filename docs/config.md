@@ -1,6 +1,6 @@
 # Project configuration
 
-A basic `gridsome.config.js` file would look something like this:
+Gridsome requires `/gridsome.config.js` to work. Plugin and project settings is located here. A basic config file would look something like this:
 
 ```js
 export default {
@@ -9,9 +9,7 @@ export default {
   siteDescription: 'Gridsome is a blazing-fast static site generator...'
 }
 ```
-
-## Configuration options
-
+  
 #### siteName
 
 - Type `string`
