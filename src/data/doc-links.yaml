@@ -26,10 +26,10 @@
       link: /docs/templates
     - title: Layouts
       link: /docs/layouts
-    - title: Routing *
-      link: /docs/routing
     - title: Linking *
       link: /docs/linking
+    - title: Routing *
+      link: /docs/routing
     - title: Images *
       link: /docs/images
     - title: Components
@@ -69,7 +69,7 @@
 
 - title : Scripts
   items: 
-    - title: Add Custom global JS *
+    - title: Add custom global JS *
       link: /docs/script-global
     - title: Include external JS file *
       link: /docs/script-external 

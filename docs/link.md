@@ -13,6 +13,9 @@ The `g-link` component is available globally in all your templates. It's a wrapp
 <g-link :to="node.path">Read more</g-link>
 ```
 
-|Property |Default| |
-|---------|-------|-|
-|to       |*required*
+|Property |Default|Description|
+|---------|-------|-----------|
+|to       |*required*|[Guide →](https://router.vuejs.org/api/#to)|
+|exact    |				|[Guide →](https://router.vuejs.org/api/#exact)|
+|active-class|active				|[Guide →](https://router.vuejs.org/api/#active-class)|
+|exact-active-class|active--exact				|[Guide →](https://router.vuejs.org/api/#exact-active-class)|
