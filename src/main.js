@@ -25,8 +25,6 @@ const typography = new Typography({
   bodyGray: 60,
   headerFontFamily: ["League Spartan", "sans-serif"],
   bodyFontFamily: [
-    "Fira Code",
-    "Sans Code Pro",
     "Nunito",
     "Helvetica",
     "Helvetica Neue",
