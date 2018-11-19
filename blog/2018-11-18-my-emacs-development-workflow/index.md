@@ -35,6 +35,8 @@ Even if you aren’t interested in moving your life into Emacs, doom’s
 configuration is worth looking at for the many ideas you can mine from it. It’s
 an excellent resource.
 
+![dev](../images/dev6.png)
+
 ## Edit my `doom` configuration
 
 `ctrl-enter` to jump to `doom emacs private dir`, like `~/.doom.d`
@@ -48,6 +50,8 @@ an excellent resource.
 `SPC-r` to reload settings
 
 ## Writing a blog
+
+![dev](../images/dev5.png)
 
 `SPC-SPC` to call `my-gridsome-create-newpost-empty`
 
@@ -77,6 +81,8 @@ synchronized.
 
 `SPC-p-/` to find files under my project
 
+![dev](../images/dev3.png)
+
 `i` start the `insert` mode and start editing a `store.ts` in my `vue` project
 
 `jk` to exit to `normal` mode
@@ -91,6 +97,8 @@ synchronized.
 
 `SPC-p-!` to call `yarn test:unit` to start a test or `yarn story` to start a
 `storybook`. Another way is to `SPC-SPC-eshell` to call a `eshell`
+
+![dev](../images/dev4.png)
 
 `SPC-p-p` to switch to another project
 
