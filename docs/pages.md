@@ -65,3 +65,7 @@ query Blog {
 }
 </page-query>
 ```
+
+
+## Add a 404 page
+...

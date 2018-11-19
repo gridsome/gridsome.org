@@ -1,2 +1,2 @@
-# Page Meta API
+# Page meta API
 ...

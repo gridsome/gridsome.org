@@ -35,9 +35,7 @@
     - title: Components
       link: /docs/components
     - title: Populating <head> *
-      link: /docs/head *
-    - title: Using main.js *
-      link: /docs/main-js
+      link: /docs/head
 
 - title : Data
   items: 
@@ -47,7 +45,7 @@
       link: /docs/graphql-source-plugin
     - title: Querying data *
       link: /docs/graphql-query-data
-    - title: Paginate Queries *
+    - title: Paginate queries *
       link: /docs/graphql-paginate-queries
     - title: Create custom source *
       link: /docs/graphql-source-custom
@@ -56,43 +54,41 @@
 
 - title : Styling
   items: 
-    - title: Add style in components
-      link: /docs/styling-in-components
-    - title: Use CSS preprocessors (Sass)
-      link: /docs/styling-sass-less
-    - title: Add global styles
-      link: /docs/styling-global-styles
-    - title: Add a CSS library
-      link: /docs/styling-global-styles
-    - title: Add Critical CSS
-      link: /docs/styling-critical-css
-    - title: Add custom fonts
-      link: /docs/styling-custom-fonts
+    - title: Add style in components *
+      link: /docs/style-components
+    - title: Use CSS preprocessors *
+      link: /docs/style-preprocessors
+    - title: Add global styles *
+      link: /docs/style-global-styles
+    - title: Add a CSS library *
+      link: /docs/style-css-libraries
+    - title: Add critical CSS *
+      link: /docs/style-critical-css
+    - title: Add custom fonts *
+      link: /docs/style-custom-fonts
 
 - title : Scripts
   items: 
-    - title: Custom global JS
-      link: /docs/12
-    - title: Custom meta tags
-      link: /docs/123
-    - title: Add an external JS file
-      link: /docs/123
-    - title: Add script from Npm
-      link: /docs/asdf
+    - title: Add Custom global JS *
+      link: /docs/script-global
+    - title: Include external JS file *
+      link: /docs/script-external 
+    - title: Add script from Npm *
+      link: /docs/script-npm
 
 - title: API
   items: 
-    - title: Project configuration
-      link: /docs/config
     - title: Gridsome CLI
       link: /docs/gridsome-cli
+    - title: Configuration API
+      link: /docs/config
     - title: Server API
       link: /docs/server-api
-    - title: Data Store API
+    - title: Data store API
       link: /docs/data-store-api
     - title: Client API
       link: /docs/client-api
-    - title: Page Meta API
+    - title: Page meta API *
       link: /docs/page-meta-api
     - title: <g-link>
       link: /docs/link
@@ -113,13 +109,3 @@
       link: /docs/deploy-to-github-pages
     - title: GitLab Pages
       link: /docs/deploy-to-gitlab-pages
-
-
-- title: Advanced
-  items: 
-    - title: How to make a source plugin
-      link: /docs/config
-    - title: How to make a transformer plugin
-      link: /docs/config
-    - title: How to make a plugin
-      link: /docs/config
