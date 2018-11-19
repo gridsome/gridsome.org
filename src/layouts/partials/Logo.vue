@@ -1,14 +1,14 @@
 <template>
   <g-link class="logo" to="/" title="Back to home">
-    <GridsomeLogo alt="Gridsome.org" />
+    <Logo alt="gridsome.netlify.com" />
   </g-link>
 </template>
 
 <script>
-import GridsomeLogo from '@/components/logos/gridsome'
+import Logo from '@/components/logos/linuxing3'
 export default {
   components: {
-    GridsomeLogo
+    Logo
   }
 }
 </script>
@@ -16,7 +16,7 @@ export default {
 <style lang="scss">
  .logo {
   margin-top: -1px;
-  
+
   &:hover {
  		opacity: .8;
  	}

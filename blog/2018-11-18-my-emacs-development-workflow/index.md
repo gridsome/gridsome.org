@@ -58,7 +58,7 @@ Blog](https://gridsome.netlify.com)
 `ctrl-c ctrl-c` in `org` file and generate a `plantuml` image and sync to
 `dropbox` and insert in this blog
 
-![plantuml](https://www.dropbox.com/s/9c0tewnhc6st34r/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202018-11-18%2021.11.38.png?dl=0)
+![plantuml](https://gridsome.netlify.com/blog/images/dev7.png)
 
 ## Start a agenda and capture
 
@@ -71,13 +71,13 @@ synchronized.
 
 ## Frontend Development
 
-![editing1](https://www.dropbox.com/s/d6fd2pp50js4wcd/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202018-11-18%2020.57.43.png?dl=0)
+![editing3](https://gridsome.netlify.com/blog/images/dev3.png)
 
-![editing3](https://www.dropbox.com/s/eruprwitzttfuli/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202018-11-18%2021.08.32.png?dl=0)
+![editing4](https://gridsome.netlify.com/blog/images/dev4.png)
 
-![editing2](https://www.dropbox.com/s/z64hl19njf66gi2/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202018-11-18%2021.07.22.png?dl=0)
+![editing5](https://gridsome.netlify.com/blog/images/dev5.png)
 
-![editing4](https://www.dropbox.com/s/yx0ssjomfiqexax/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202018-11-18%2021.09.36.png?dl=0)
+![editing6](https://gridsome.netlify.com/blog/images/dev6.png)
 
 `ctrl+enter` to jump to my project
 

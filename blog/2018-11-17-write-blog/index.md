@@ -8,7 +8,7 @@ excerpt: "write blog with emacs"
 
 Write a simple function to quickly add gridsome blog file
 
-```emacs-lisp
+```lisp
  (defun my-gridsome-create-newpost-empty (gridsome-post-subdir)
 	"Saving the current buffer as a gridsome post
 in a specific hugo post directory"
