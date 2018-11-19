@@ -13,16 +13,17 @@ import HomeBlog from '@/components/home/HomeBlog.vue'
 export default {
   components: {
     HomeIntro,
+    HomeBlog
   },
 
 
   metaInfo: {
-    title: 'Gridsome - Build blazing fast websites with Vue.js and GraphQL',
+    title: 'Emacser & Vimer Gridsome Blog',
     titleTemplate: '%s',
     meta: [
       {
         name: 'description',
-        content: 'Gridsome is a blazing-fast static site generator for building PWA & SPA front-ends for any CMS or data source with Vue.js and GraphQL'
+        content: 'Emacser and Vimer Development Map'
       }
     ]
   }
