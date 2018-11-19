@@ -1,6 +1,6 @@
 # @gridsome/source-lowdb
 
-> [Lowdb](https://github.com/marak/Faker.js/) source for Gridsome
+> Lowdb source for Gridsome
 
 ## Install
 - `yarn add @gridsome/source-lowdb`
