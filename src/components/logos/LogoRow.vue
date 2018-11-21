@@ -1,3 +1,4 @@
+<template>
   <div class="logos">
 
     <div>
@@ -22,4 +23,23 @@
     <svg version="1.1" x="0px" y="0px" viewBox="0 0 353.4 73" fill="currentColor"><g><polygon class="st0" points="264,25.6 286.2,14.1 280,3.4 249.6,18.6 264,25.5"></polygon><polygon class="st1" points="249.6,18.6 249.6,33.1 249.6,70.2 264,70.2 264,25.6 264,25.5"></polygon><polygon class="st1" points="146.6,22 146.6,70.2 132.8,70.2 132.8,1.5"></polygon><polygon class="st0" points="111.8,36.3 78.3,52.9 71,71.3 116.5,47.6"></polygon><polygon class="st1" points="85.1,1.5 60.2,61.9 71,71.3 78.3,52.9 91.8,19.3"></polygon><polygon class="st2" points="85.1,1.5 99.3,1.5 125.6,70.2 111,70.2"></polygon><polygon class="st2" points="148.7,1.5 179,48.5 179,70.2 132.8,1.5"></polygon><rect x="205" y="1.5" class="st2" width="14.3" height="68.7"></rect><polygon class="st2" points="249.6,14.1 227.6,14.1 227.6,1.5 278.9,1.5 286.2,14.1 264,14.1"></polygon><polyline class="st0" points="328.5,44.2 328.5,70.2 314.3,70.2 314.3,44.2"></polyline><polygon class="st2" points="338.3,1.5 314.3,44.2 328.5,44.2 353.4,1.5"></polygon><polygon class="st1" points="314.3,44.2 289.5,1.5 305.1,1.5 321.8,30.7"></polygon><polygon class="st1" points="179,44.9 179,1.5 192.8,1.5 192.8,70.2 179,70.2"></polygon><path class="st1" d="M43.3,47.4c5.3,3.4,7.7,8.2,7.7,15.1c-4.5,5.7-12.2,8.8-21.3,8.8c-15.3,0-26.2-7.6-28.5-20.7h14.7c1.9,6,6.9,8.8,13.7,8.8C37.7,59.5,43.2,55.1,43.3,47.4"></path><path class="st1" d="M14.6,23.6c-5-3-7.9-8.4-7.7-14.2c4.3-5.6,11.7-9,20.7-9c15.7,0,24.7,8.3,27,19.9H40.4c-1.6-4.6-5.5-8.2-12.6-8.2C20.1,12.2,14.9,16.6,14.6,23.6"></path><path class="st2" d="M6.9,9.5c0,9.5,5.9,15.2,17.7,18.2l12.5,2.9c11.2,2.6,18,9,18,19.4c0.1,4.5-1.4,8.9-4.1,12.5c0-10.4-5.4-16-18.3-19.4l-12.3-2.8c-9.9-2.2-17.5-7.5-17.5-18.8C2.9,17.2,4.3,12.9,6.9,9.5"></path></g></svg>
 </div>
 
-  </div>
+</div>
+</template>
+
+<style lang="scss">
+.logos {
+	opacity: .3;
+	> div {
+		display: inline-flex;
+		max-height: 60px;
+		vertical-align: middle;
+		align-items: center;
+		padding: 0 15px;
+	}
+	svg {
+		height: 25px;
+		width: auto;
+	}
+}
+
+</style>

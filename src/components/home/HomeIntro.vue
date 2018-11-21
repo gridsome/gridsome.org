@@ -1,34 +1,15 @@
 <template>
-  <Section dots="true" dark="true" class="text-center">
+  <Section dots="true" dark="true" dots-animation="true" class="text-center">
   <div class="container-md mb">
     
     <h1 class="home-title">
-      <span class="home-title__top">A JS framework for</span>
-      <transition name="rotate">
-        <div v-if="currentText == 0" class="home-title__main gradient-text" key="0">
-          Static Websites
-        </div>
-        <div v-else-if="currentText == 1" key="1" class="home-title__main gradient-text">
-          any CMS or data
-        </div>
-        <div v-else-if="currentText == 2" key="2" class="home-title__main gradient-text">
-         PWAs
-        </div>
-        <div v-else-if="currentText == 3" key="3" class="home-title__main gradient-text">
-          the JAMstack
-        </div>
-        <div v-else-if="currentText == 4" key="4" class="home-title__main gradient-text">
-          Markdown files
-        </div>
-        <div v-else-if="currentText == 5" key="5" class="home-title__main gradient-text">
-          SEO-friendly SPAs
-        </div>
-      </transition>
+      <div>
+        Build modern websites with Vue.js
+      </div>
     </h1>
 
-    <p class="home-intro container-sm">
-      Build blazing fast websites for any CMS<br class="hide-for-small" /> or data with 
-      <strong class="no-wrap">Vue.js<vue-logo/></strong>
+    <p class="home-lead lead  container-sm">
+      Gridsome is a blazing-fast <strong>Vue-powered static site generator</strong> for building front-ends for any headless CMS or data
     </p>
 
     <g-link  to="/docs" class="button primary">
@@ -40,52 +21,18 @@
     </a>
   </div>
 
+  <logo-row style="margin-bottom: -30px; padding-top: 50px" />
+
+
   </Section>
 </template>
 
 <script>
+import LogoRow from '~/components/logos/LogoRow.vue'
+
 export default {
-  data() {
-    return {
-      currentText: 0
-    }
-  },
-
-  mounted () {
-    this._counter = setInterval(() => {
-      this.currentText = (this.currentText + 1) % 6
-    }, 1500)
-  },
-
-  destroyed () {
-    clearTimeout(this._counter)
-  },
+  components: {
+    LogoRow
+  }
 }
 </script>
-
-<style lang="scss">
-.home-title {
-  &__top {
-    font-size: 75%;
-  }
-  &__main {
-    font-size: 130%;
-    color: var(--primary-color);
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .home-title__top {
-    font-size: 55%;
-  }
-  .home-title__main {
-    font-size: 80%;
-  }
-}
-
-
-.home-intro {
-  font-size: 130%;
-}
-
-</style>

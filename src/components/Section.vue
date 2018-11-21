@@ -3,13 +3,20 @@
     <div class="section--inner container" :class="sectionClassInner">
       <slot/>
     </div>
-    <div class="section__dots-bg dots-bg" v-if="dots"></div>
+    <div class="section__dots-bg dots-bg" v-if="dots">
+      <Dots v-if="dotsAnimation" />
+    </div>
+   
   </section>
 </template>
 
 <script>
+import Dots from '@/components/Dots.vue';
 export default {
-  props: ['dark', 'dots', 'container', 'framed', 'primary'],
+  components: {
+    Dots
+  },
+  props: ['dark', 'dots', 'container', 'framed', 'primary', 'dots-animation'],
   computed: {
     sectionClass() {
       let classes = []
@@ -61,7 +68,7 @@ export default {
   }
 
   &--dark {
-    color: rgba(255,255,255,.95);
+    color: rgba(255,255,255,.8);
     text-shadow: 1px 1px 2px rgba(0,0,0,.1);
     background: var(--secondary-bg);
     background: linear-gradient(180deg, var(--secondary-bg) 33.333%, #435466 300%);
