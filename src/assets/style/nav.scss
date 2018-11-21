@@ -6,6 +6,7 @@ nav a {
   align-items:center;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 5px 5px;
 
   svg {
     margin: 3px 6px;
@@ -24,9 +25,8 @@ nav a {
     opacity: .7;
   }
 
-  @media (min-width: 450px) {
-    padding: 5px 5px;
-  }
+ 
+ 
 }
 
 nav.tabs {

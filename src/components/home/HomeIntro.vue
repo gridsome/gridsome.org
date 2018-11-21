@@ -23,7 +23,7 @@
 
   </div>
 
-  <logo-row style="margin-bottom: -30px; " />
+  <logo-row style="margin-bottom: -40px; " />
 
 
   </Section>
@@ -38,3 +38,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.home-info {
+  font-size: .85rem;
+}
+</style>

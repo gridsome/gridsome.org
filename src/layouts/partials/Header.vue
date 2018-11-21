@@ -76,8 +76,6 @@ header {
 
 @media screen and (max-width: 750px) {
   header {
-    box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
-
     .logo {
       margin-right: 0;
     }
