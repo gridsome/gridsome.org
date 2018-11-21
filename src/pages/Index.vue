@@ -3,7 +3,6 @@
     <home-intro />
     <home-features />
     <home-how-it-works />
-    <home-fast />
     <home-tabs />
     <home-blog />
   </Layout>
@@ -13,7 +12,6 @@
 
 import HomeIntro from '@/components/home/HomeIntro.vue'
 import HomeFeatures from '@/components/home/HomeFeatures.vue'
-import HomeFast from '@/components/home/HomeFast.vue'
 import HomeTabs from '@/components/home/HomeTabs.vue'
 import HomeBlog from '@/components/home/HomeBlog.vue'
 import HomeHowItWorks from '@/components/home/HomeHowItWorks.vue'
@@ -23,7 +21,6 @@ export default {
   components: {
     HomeIntro,
     HomeFeatures,
-    HomeFast,
     HomeTabs,
     HomeBlog,
     HomeHowItWorks,
