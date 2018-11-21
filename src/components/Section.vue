@@ -4,7 +4,7 @@
       <slot/>
     </div>
  
-    <div class="section__dots-bg dots-bg" :class="{'dots-bg--animated': dotsAnimation}" />
+    <div v-if="dots" class="section__dots-bg dots-bg" :class="{'dots-bg--animated': dotsAnimation}" />
 
   </section>
 </template>

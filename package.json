@@ -9,8 +9,8 @@
   },
   "dependencies": {
     "gridsome": "^0.3.0",
-    "typeface-nunito": "0.0.54",
     "typeface-league-spartan": "0.0.44",
+    "typeface-nunito": "0.0.54",
     "typography": "^0.16.17",
     "vue-analytics": "^5.16.0",
     "vue-scrollto": "^2.13.0"
@@ -22,6 +22,7 @@
     "@gridsome/transformer-remark": "^0.1.1",
     "node-sass": "^4.9.3",
     "raw-loader": "^0.5.1",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "svg-to-vue-component": "^0.2.2"
   }
 }
