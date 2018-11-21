@@ -1,3 +1,12 @@
+@keyframes animatedDots {
+  0% {
+    background-position: -32px 100%;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 0 var(--primary-color);
@@ -22,7 +31,6 @@
   }
   100% {
     box-shadow: 0 0 0 0 transparent;
-
   }
 }
 

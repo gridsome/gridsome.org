@@ -3,19 +3,14 @@
     <div class="section--inner container" :class="sectionClassInner">
       <slot/>
     </div>
-    <div class="section__dots-bg dots-bg" v-if="dots">
-      <Dots v-if="dotsAnimation" />
-    </div>
+ 
+    <div class="section__dots-bg dots-bg" :class="{'dots-bg--animated': dotsAnimation}" />
    
   </section>
 </template>
 
 <script>
-import Dots from '@/components/Dots.vue';
 export default {
-  components: {
-    Dots
-  },
   props: ['dark', 'dots', 'container', 'framed', 'primary', 'dots-animation'],
   computed: {
     sectionClass() {
