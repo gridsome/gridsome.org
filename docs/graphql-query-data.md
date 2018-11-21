@@ -1,16 +1,16 @@
 # Querying data
 You can query data into any **Page, Template or Component** from the GraphQL data layer. There are two ways to query data. You can use `<page-query>` or `<static-query>`. 
 
-**Working with GraphQL in Gridsome is easy and you don't need to know much about GraphQL.**
-
-TODO: Explain difference between page and static.
 
 
 ## How to query with GraphQL
 **With GraphQL you only query the data you need.** This makes it easier and more tidy to work with data.
 A query always starts with `query` and then something like `Posts` (This can be anything. Its only for you to understand what you query). Then you write something like `posts: allWordPressPosts`. **This is the important part.** The `allWordPressPosts` is the name of the GraphQL collection you want to query. The `post:` is optional. If you add that your query will be added to `$page.posts` or `$static.posts` if you use `<static-query>`. If its not added and you only use `allWordPressPosts` your post will be added to `$page.allWordPressPosts`.
 
-Here is an example of a GraphQL query in a page:
+  **Working with GraphQL in Gridsome is easy and you don't need to know much about GraphQL.**
+
+
+Here is an example of a GraphQL query in a Page:
 
 ```html
 <template>

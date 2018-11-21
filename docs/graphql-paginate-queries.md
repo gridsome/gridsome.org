@@ -44,4 +44,4 @@ query Blog ($page: Int) {
 }
 </page-query>
 ```
-Learn more about pagination [here](/docs/pagination)
+Learn more about the Pagination API here [here](/docs/pagination)
