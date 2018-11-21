@@ -1,9 +1,9 @@
 @keyframes animatedDots {
   0% {
-    background-position: 0% calc(100% + 32px);
+    background-position: -32px bottom;
   }
   100% {
-    background-position: 0% calc(100%);
+    background-position: 0 bottom;
   }
 }
 
