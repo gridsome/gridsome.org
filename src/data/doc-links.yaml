@@ -28,7 +28,7 @@
       link: /docs/layouts
     - title: Linking
       link: /docs/linking
-    - title: Routing *
+    - title: Routing
       link: /docs/routing
     - title: Images *
       link: /docs/images
@@ -39,11 +39,11 @@
 
 - title : Data
   items: 
-    - title: The GraphQL data layer
+    - title: How data sources works
       link: /docs/graphql
     - title: Add a source plugin *
       link: /docs/graphql-source-plugin
-    - title: Querying data *
+    - title: Querying data
       link: /docs/graphql-query-data
     - title: Paginate queries
       link: /docs/graphql-paginate-queries
@@ -76,6 +76,15 @@
     - title: Add script from Npm *
       link: /docs/script-npm
 
+- title : Guides
+  items: 
+    - title: How to add a form
+      link: /docs/gridsome-cli123
+    - title: How to add comments *
+      link: /docs/config123
+    - title: How to add payments *
+      link: /docs/config12313
+
 - title: API
   items: 
     - title: Gridsome CLI
@@ -96,6 +105,7 @@
       link: /docs/image
     - title: Pagination API
       link: /docs/pagination
+
 
 - title: Deploy
   items:

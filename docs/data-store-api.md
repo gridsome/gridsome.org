@@ -1,6 +1,6 @@
 # Data Store API
 
-The Data Store API lets you insert your own data into the Gridsome store. You will then be able to access it through GraphQL in your components.
+The Data Store API lets you insert your own data into the Gridsome store. You will then be able to access it through GraphQL in your components. Use this is you want to build a custom data source connection or a plugin.
 
 ```js
 function MySourcePlugin (api) {

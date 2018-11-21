@@ -1,5 +1,7 @@
 # Pages
 
+> **Pages are usually used for normal pages or for listing items from a GraphQL collection.**
+
 All `.vue` files in the `src/pages` directory will become the pages for your
 website. The page URL is generated based on the location and name of the file.
 The path will be lowercased and slugified automatically. So if have a file with

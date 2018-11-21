@@ -1,6 +1,6 @@
-# Project configuration
+# Configuration
 
-Gridsome requires `/gridsome.config.js` to work. Plugin and project settings is located here. A basic config file would look something like this:
+Gridsome requires `/gridsome.config.js` to work. Plugin and project settings is located here. A basic configuration file would look something like this:
 
 ```js
 export default {
