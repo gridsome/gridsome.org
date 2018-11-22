@@ -1,0 +1,24 @@
+{
+  "version": "0.1.4",
+  "name": "gridsome-source-storyblok",
+  "description": "storyblok source for Gridsome",
+  "license": "MIT",
+  "homepage": "https://github.com/linuxing3/gridsome.org/tree/master/src/plugins/source-storyblok#readme",
+  "repository": "https://github.com/linuxing3/gridsome.org/tree/master/src/plugins/source-storyblok",
+  "main": "index.js",
+  "keywords": [
+    "gridsome",
+    "gridsome-plugin",
+    "gridsome-source",
+    "storyblok"
+  ],
+  "dependencies": {
+    "storyblok-js-client": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=8"
+  }
+}
