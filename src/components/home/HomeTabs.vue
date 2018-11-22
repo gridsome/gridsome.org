@@ -1,7 +1,7 @@
 <template>
   <Section dots="true">
 
-    <h2 class="text-center mb pb">Superb dev experience</h2>
+    <h2 class="text-center mb pb">Better development experience</h2>
 
     <div id="top" class="home-tabs container text-center">
       <nav class="home-tabs__tabs tabs flex gap-15 flex--no-wrap flex--center mb" style="margin-top:-3%">
