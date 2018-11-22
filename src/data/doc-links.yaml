@@ -39,7 +39,7 @@
 
 - title : Data
   items: 
-    - title: How data sources works
+    - title: The GraphQL data layer
       link: /docs/graphql
     - title: Add a source plugin *
       link: /docs/graphql-source-plugin
