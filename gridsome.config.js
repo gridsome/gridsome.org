@@ -4,10 +4,7 @@ module.exports = {
   titleTemplate: '%s - Gridsome',
 
   chainWebpack(config) {
-    // Remove existing SVG rule which uses file-loader
     config.module.rules.delete('svg')
-
-    // Use our loader instead
     config.module.rule('svg')
       .test(/\.svg$/)
       .use('vue')

@@ -1,5 +1,4 @@
-<template>
-  <svg
+<svg
    alt="Vue"
    style="margin-top:-2px;margin-left:-2px;" width="30px" height="30px"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -27,4 +26,3 @@
          id="path18"
          style="fill:#435466;fill-opacity:1;fill-rule:nonzero;stroke:none"
          d="M 0,0 -22.669,-39.264 -45.338,0 H -81.565 L -22.669,-102.01 36.227,0 Z" /></g></g></svg>
-</template>
