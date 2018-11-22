@@ -1,6 +1,9 @@
-# Link
+# Link API
 
 The `g-link` component is available globally in all your templates. It's a wrapper for [router-link](https://router.vuejs.org/api/#router-link-props) from Vue Router.
+
+`g-link` uses Intersection Observer to prefetch linked pages when link is in view. This makes browsing around in Gridsome very fast because the clicked page is already downloaded.
+
 
 ```html
 <!-- Link with string path -->

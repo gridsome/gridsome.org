@@ -13,7 +13,6 @@ Gridsome pulls in content from **data sources** into a unified **GraphQL data la
 
 - Learn more about [Deploying](/docs/deployment).
 
-
 ## PRPL-pattern
 
 Gridsome follows the [PRPL-pattern by Google.](https://developers.google.com/web/fundamentals/performance/prpl-pattern/) and optimizes your site automatically. You don't need to be a performance expert to make fast websites with Gridsome. Your site gets almost perfect scores on Google lighthouse out-of-the-box. These are some of the performance steps that Gridsome takes care of:
@@ -24,6 +23,7 @@ Gridsome follows the [PRPL-pattern by Google.](https://developers.google.com/web
 - HTML compressing ⚡️ 
 - Critical CSS (Plugin) ⚡️ 
 - Full PWA & Offline-support (plugin) ⚡️
+
 
 ## Alternatives
 

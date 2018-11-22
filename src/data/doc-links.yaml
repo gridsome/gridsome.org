@@ -26,14 +26,14 @@
       link: /docs/templates
     - title: Layouts
       link: /docs/layouts
-    - title: Linking
-      link: /docs/linking
-    - title: Routing *
-      link: /docs/routing
-    - title: Images *
-      link: /docs/images
     - title: Components
       link: /docs/components
+    - title: Linking
+      link: /docs/linking
+    - title: Images
+      link: /docs/images
+    - title: Routing
+      link: /docs/routing
     - title: Populating <head> *
       link: /docs/head
 
