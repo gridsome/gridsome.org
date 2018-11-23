@@ -36,6 +36,8 @@
       link: /docs/routing
     - title: Populating <head> *
       link: /docs/head
+    - title: Plugins *
+      link: /docs/plugins
 
 - title : Data
   items: 
@@ -45,14 +47,14 @@
       link: /docs/graphql-query-data
     - title: Paginate queries
       link: /docs/graphql-paginate-queries
-    - title: Add dynamic data *
-      link: /docs/graphql-dynamic
     - title: Add a source plugin *
       link: /docs/graphql-source-plugin
-    - title: Add site meta data
-      link: /docs/graphql-paginate-queries
+    - title: Add custom site meta data *
+      link: /docs/graphql-site-meta
     - title: Add a custom source *
       link: /docs/graphql-source-custom
+    - title: Add dynamic data *
+      link: /docs/graphql-dynamic
 
 - title : Styles and Assets
   items: 
@@ -72,12 +74,10 @@
 
 - title : Guides
   items: 
-    - title: Add forms
+    - title: Add a form
       link: /docs/gridsome-cli123
     - title: Add comments *
       link: /docs/config123
-    - title: Add a shopping cart *
-      link: /docs/config12313
 
 - title: API
   items: 
