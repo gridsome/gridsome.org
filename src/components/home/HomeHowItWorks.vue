@@ -70,8 +70,8 @@
 
           <div class="well">
               <div class="well__title">Deploy</div>
-              <h4>Static site generation</h4>
-              <p>Generate static files and deploy to any global CDN service or FTP at blazing speed.</p>
+              <h4>Pre-rendering</h4>
+              <p>Generate static files and deploy to any global CDN or FTP.</p>
               <p>For example, 
                 <a href="//netlify.com">Netlify</a>,
                 <a href="//zeit.co/now">Zeit Now</a>,

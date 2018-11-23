@@ -9,7 +9,7 @@
     </h1>
 
     <p class="home-lead lead  container-md">
-      Gridsome is a <strong>Vue-powered static site generator</strong> for building blazing-fast decoupled front-ends for any headless CMS or data API
+      Gridsome is a <strong>Vue-powered static site generator</strong> for building decoupled front-ends for any headless CMS or data API
     </p>
 
     <p class="home-links">
