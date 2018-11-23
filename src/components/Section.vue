@@ -39,7 +39,6 @@ export default {
   position: relative;
   width: 100%;
 
-
   &--primary {
     background-color: var(--primary-bg);
   }

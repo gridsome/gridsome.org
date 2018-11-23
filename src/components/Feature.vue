@@ -28,7 +28,7 @@ export default {
       height: 32px;
       border-radius: 99px;
       margin: 0 auto var(--space);
-      color: var(--primary-link-color);
+      opacity: .5;
       overflow: visible!important;
     }
 

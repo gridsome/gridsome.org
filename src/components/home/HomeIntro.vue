@@ -8,9 +8,10 @@
       </div>
     </h1>
 
-    <p class="home-lead lead  container-sm">
-      Gridsome is a <strong>Vue-powered static site generator</strong> for building extremely fast front-ends for any headless CMS or data API
+    <p class="home-lead lead  container-md">
+      Gridsome is a <strong>Vue-powered static site generator</strong> for building blazing-fast decoupled front-ends for any headless CMS or data API
     </p>
+
     <p class="home-links">
       <g-link  to="/docs" class="button primary">
         Get started
