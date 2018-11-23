@@ -41,48 +41,42 @@
   items: 
     - title: The GraphQL data layer
       link: /docs/graphql
-    - title: Add a source plugin *
-      link: /docs/graphql-source-plugin
     - title: Querying data
       link: /docs/graphql-query-data
     - title: Paginate queries
       link: /docs/graphql-paginate-queries
+    - title: Add dynamic data *
+      link: /docs/graphql-dynamic
+    - title: Add a source plugin *
+      link: /docs/graphql-source-plugin
+    - title: Add site meta data
+      link: /docs/graphql-paginate-queries
     - title: Add a custom source *
       link: /docs/graphql-source-custom
-    - title: Dynamic data *
-      link: /docs/graphql-dynamic
 
-- title : Styling
+- title : Styles and Assets
   items: 
-    - title: Add global style sheet *
+    - title: Add stylesheets *
       link: /docs/style-global-styles
-    - title: Style in components *
-      link: /docs/style-components
-    - title: Use CSS preprocessors *
+    - title: Add Sass or Less *
       link: /docs/style-preprocessors
-    - title: Add a CSS library *
+    - title: Add a css framework *
       link: /docs/style-css-libraries
     - title: Add critical CSS *
       link: /docs/style-critical-css
+    - title: Add style in components *
+      link: /docs/style-components
     - title: Add custom fonts *
       link: /docs/style-custom-fonts
 
-- title : Scripts
-  items: 
-    - title: Add custom global JS *
-      link: /docs/script-global
-    - title: Include external JS file *
-      link: /docs/script-external 
-    - title: Add script from Npm *
-      link: /docs/script-npm
 
 - title : Guides
   items: 
-    - title: How to add a form
+    - title: Add forms
       link: /docs/gridsome-cli123
-    - title: How to add comments *
+    - title: Add comments *
       link: /docs/config123
-    - title: How to add payments *
+    - title: Add a shopping cart *
       link: /docs/config12313
 
 - title: API
