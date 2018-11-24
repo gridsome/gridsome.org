@@ -1,8 +1,6 @@
 # Routing
 
-Gridsome uses [vue-router] (https://router.vuejs.org/) for routing. Most of routing in Gridsome are done automatically, but it's possible to setup custom routing.
-
-Gridsome uses routing in the build process to generate a HTML and a JavaScript file for each route endpoint.
+Gridsome uses [vue-router] (https://router.vuejs.org/) for routing.
 
 
 ## Page routing
@@ -35,6 +33,4 @@ module.exports = {
 }
 ```
 
-
-## Custom routing
-TODO
+The default route params is `:year`, `:month`, `:day` and `:slug`. You can also use fields coming from a GraphQL node type. Field values are slugified, but the original value will be available as **{fieldname}_raw**. Only root level primitive fields will be available as params.
