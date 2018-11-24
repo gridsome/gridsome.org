@@ -3,13 +3,13 @@
   <div class="container-md mb">
     
     <h1>
-      <div class="home-title">
-        Build modern websites with Vue.js
+      <div class="home-title container-sm">
+        Build high performance modern websites with Vue.js
       </div>
     </h1>
 
-    <p class="home-lead lead  container-md">
-      Gridsome is a <strong>Vue-powered static site generator</strong> for building decoupled front-ends for any headless CMS or data API
+    <p class="home-lead lead  container-sm">
+      Gridsome is a Vue-powered <strong>static site generator</strong> for building <strong>PWA & SPA</strong> front-ends for any headless CMS or data API
     </p>
 
     <p class="home-links">
@@ -41,6 +41,9 @@ export default {
 </script>
 
 <style>
+.home-title {
+  line-height: 1.3;
+}
 .home-info {
   font-size: .85rem;
 }
