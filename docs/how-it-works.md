@@ -1,15 +1,25 @@
 # How it works
 
+![Pre-rendering](./images/ssg-mode.png)
+
+asdf
+
+## Data sources
+Connect to any data source with **source plugins** or **data store API** and get access to data in a local unified GraphQL data layer.
+
+## Transformers
+Transformers are **plugins** that transform nodes / content coming from data source plugins.	
 
 
-## GraphQL for data
+## GraphQL data layer
 Gridsome pulls in content from **data sources** into a unified **GraphQL data layer**. Content are pulled in to the data layer when you start development project and at build time. **The GraphQL layer is only used in development and the build step.** There is no connection between the GraphQL data layer and a site in production. To update site in production with latest content you need to re-build your site. This is how static site generators works. This can be done automatically with services like [Netlify](https://netlify.com).
 
 - Learn more about [The GraphQL data layer](/docs/graphql).
 
+
 ## Static site generation (Pre-rendering)
 
-**Gridsome builds two versions of every page**. One HTML page that search engines can crawl for SEO-purpose, and one JavaScript file that Gridsome uses for SPA after first page load. Next pages are loaded in the background with Service workers. That makes browsing around extremely fast, and your site is 100%-SEO friendly. It even works offline and can be entirely hosted on a CDN.
+**Gridsome builds two versions of every page**. One HTML page that search engines can crawl for SEO-purpose, and one JavaScript file that Gridsome uses for SPA after first page load. Next pages are lazy-loaded in the background with the `g-link` component. That makes clicking around extremely fast, and your site is 100%-SEO friendly. It even works offline and can be entirely hosted on a CDN.
 
 - Learn more about [Deploying](/docs/deployment).
 
