@@ -9,7 +9,7 @@
     </h1>
 
     <p class="home-lead lead  container-sm">
-      Gridsome is a Vue-powered <strong>static site generator</strong> for building <strong>PWA & SPA</strong> front-ends for any headless CMS or data API
+      Gridsome is a <strong>Vue-powered framework</strong> for building <strong>PWA & SPA</strong> front-ends for any headless CMS or data API
     </p>
 
     <p class="home-links">
