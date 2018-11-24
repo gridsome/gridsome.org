@@ -32,10 +32,12 @@
       link: /docs/linking
     - title: Images
       link: /docs/images
-    - title: Routing *
+    - title: Routing
       link: /docs/routing
-    - title: Populating <head> *
+    - title: Populating <head>
       link: /docs/head
+    - title: body & html attributes
+      link: /docs/body-html-attributes
     - title: Plugins *
       link: /docs/plugins
 
