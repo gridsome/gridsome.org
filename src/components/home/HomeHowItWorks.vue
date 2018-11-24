@@ -70,7 +70,7 @@
 
           <div class="well">
               <div class="well__title">Deploy</div>
-              <h4>Pre-rendering</h4>
+              <h4>Static web hosting</h4>
               <p>Generate static files and deploy to any global CDN or FTP.</p>
               <p>For example, 
                 <a href="//netlify.com">Netlify</a>,
