@@ -41,20 +41,18 @@
 
 - title : Data
   items: 
-    - title: The GraphQL data layer
-      link: /docs/graphql
     - title: Querying data
-      link: /docs/graphql-query-data
+      link: /docs/data-query-data
     - title: Paginate queries
-      link: /docs/graphql-paginate-queries
+      link: /docs/data-paginate-queries
     - title: Add a source plugin *
-      link: /docs/graphql-source-plugin
+      link: /docs/data-source-plugin
     - title: Add custom site meta data *
-      link: /docs/graphql-site-meta
+      link: /docs/data-site-meta
     - title: Add a custom source *
-      link: /docs/graphql-source-custom
+      link: /docs/data-source-custom
     - title: Add dynamic data *
-      link: /docs/graphql-dynamic
+      link: /docs/data-dynamic
 
 - title : Styles and Assets
   items: 
@@ -68,15 +66,20 @@
       link: /docs/style-critical-css
     - title: Add style in components *
       link: /docs/style-components
+    - title: Add SVG icons *
+      link: /docs/style-svg
     - title: Add custom fonts *
       link: /docs/style-custom-fonts
-
+    - title: Add external scripts *
+      link: /docs/style-custom-fonts
 
 - title : Guides
   items: 
     - title: Add a form
       link: /docs/gridsome-cli123
-    - title: Add comments *
+    - title: Add a search
+      link: /docs/config123
+    - title: Add comments
       link: /docs/config123
 
 - title: API
