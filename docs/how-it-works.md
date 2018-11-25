@@ -23,8 +23,8 @@ Transformers are **plugins** that transform nodes/content coming from data sourc
 Gridsome has a built-in `<g-image>` component with built-in **progressive image support**.
 [Learn more here](/docs/images)
 
-## Page prefetching
-Gridsome pre fetches next pages so browsing around goes fast. It uses the built-in `<g-link>` component to lazy-load prefetching when the link is in view. [Learn more here](/docs/linking).
+## Page pre-fetching
+Gridsome pre-fetches next pages so browsing around goes fast. It uses the built-in `<g-link>` component to lazy-load prefetching when the link is in view. [Learn more here](/docs/linking).
 
 
 ## Deploying
