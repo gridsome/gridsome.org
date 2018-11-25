@@ -1,5 +1,5 @@
 # Body & html attributes
-Gridsome uses [vue-meta](https://github.com/declandewet/vue-meta) to modify `<body>` and `<head>` attributes.
+Gridsome can use [vue-meta](https://github.com/declandewet/vue-meta) to modify `<body>` and `<head>` attributes.
 
 ## Change attributes globally
 Global body or head attributes is added in `src/main.js`.

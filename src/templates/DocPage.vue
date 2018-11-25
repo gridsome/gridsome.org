@@ -41,7 +41,10 @@ export default {
 
 <style lang="scss">
 .docs-page {
-
+  p > img {
+    margin-bottom: 0;
+  }
+  
   h2{
     padding-top: 1.5rem;
     margin-top: 1rem;
