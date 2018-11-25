@@ -1,15 +1,15 @@
 <template>
-  <Section dots="true" dark="true" dots-animation="true" class="text-center">
+  <Section dots="true" dark="true" class="text-center">
   <div class="container-md mb">
     
     <h1>
-      <div class="home-title container-sm">
-        Build high performance modern websites with Vue.js
+      <div class="home-title container-md">
+        Build modern websites with Vue.js
       </div>
     </h1>
 
     <p class="home-lead lead  container-sm">
-      Gridsome is a <strong>Vue-powered framework</strong> for building <strong>PWA & SPA</strong> front-ends for any headless CMS or data API
+      Gridsome is a <strong>Vue-powered static site generator</strong> for building high-performance frontends for any CMS or data API
     </p>
 
     <p class="home-links">

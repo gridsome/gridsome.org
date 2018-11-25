@@ -32,14 +32,16 @@ export default {
 
 
   metaInfo: {
-    title: 'Gridsome - Build blazing fast websites for any CMS or data with Vue.js',
+    title: 'Gridsome - Build modern websites with Vue.js',
     titleTemplate: '%s',
     meta: [
       {
         name: 'description',
-        content: 'Gridsome is a blazing-fast static site generator for building PWA & SPA front-ends for any CMS or data source with Vue.js and GraphQL'
+        content: 'Gridsome is a Vue-powered site generator for building high-performance frontends for any CMS or data API'
       }
     ]
   }
 }
 </script>
+
+
