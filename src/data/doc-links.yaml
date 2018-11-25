@@ -49,10 +49,10 @@
       link: /docs/data-paginate-queries
     - title: Add a source plugin *
       link: /docs/data-source-plugin
-    - title: Add custom site meta data *
-      link: /docs/data-site-meta
     - title: Add a custom source *
       link: /docs/data-source-custom
+    - title: Add custom site meta data *
+      link: /docs/data-site-meta
     - title: Add dynamic data *
       link: /docs/data-dynamic
 
@@ -78,11 +78,11 @@
 - title : Guides
   items: 
     - title: Add a form
-      link: /docs/gridsome-cli123
+      link: /docs/guide-forms
     - title: Add a search
-      link: /docs/config123
+      link: /docs/guide-search
     - title: Add comments
-      link: /docs/config123
+      link: /docs/guide-comments
 
 - title: API
   items: 
