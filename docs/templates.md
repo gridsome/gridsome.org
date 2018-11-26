@@ -39,10 +39,3 @@ export default {
 }
 </script>
 ```
-
-
-## Template hierarchy
-
-If a data source have a route like `/blog/:slug` its recommended to create a [Page](/docs/pages) in `src/pages/Blog.vue` for the `/blog` route endpoint. This page will list blog posts and can have pagination. A `page` always overwrites a `template` endpoint. All other routes inside `/blog` will look for a template with the data source schema name (For example WordPressPost).
-
-![Template hierarchy](./images/templates.png)

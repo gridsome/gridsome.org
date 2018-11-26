@@ -81,8 +81,8 @@ You can now use `<Layout>` anywhere in your Gridsome project without importing i
 ```
 
 
-## Passing props to layouts
-Since layouts work like components is it possible pass Props to layouts from Pages. For example a page can look like this:
+## Passing Props to layouts
+Since layouts work like components is it possible pass Props to layouts. For example a page can look like this:
 
 
 ```html
@@ -95,7 +95,7 @@ Since layouts work like components is it possible pass Props to layouts from Pag
 </template>
 ```
 
-This will pass a Prop to a layout with `sidebar = true`. In the Layout component this could look like this: 
+This will pass a Prop to a layout with `sidebar = true`. In the **Layout component** this could look like this: 
 
 ```html
 <!-- src/layouts/Default.vue -->
@@ -110,6 +110,7 @@ This will pass a Prop to a layout with `sidebar = true`. In the Layout component
     </div>
   </div>
 </template>
+
 <script>
   export default {
     props: ['sidebar']

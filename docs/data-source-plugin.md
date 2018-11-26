@@ -2,7 +2,7 @@
 Gridsome data source plugins are added in `gridsome.config.js`. You can find available data source plugins in the [Plugins directory](/plugins).
 
 
-Here is an example of [file-system](/plugins/source-filesystem) source added to config:
+Here is an example of the [file-system](/plugins/source-filesystem) source added to config:
 ```js
 module.exports = {
   plugins: [

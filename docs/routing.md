@@ -33,4 +33,9 @@ module.exports = {
 }
 ```
 
-The default route params is `:year`, `:month`, `:day` and `:slug`. You can also use fields coming from a GraphQL node type. Field values are slugified, but the original value will be available as **{fieldname}_raw**. Only root level primitive fields will be available as params.
+## Default route params
+The default route params is `:year`, `:month`, `:day` and `:slug`. 
+
+
+## Custom route params
+There is possible to use fields coming from a GraphQL node type as route. Field values are slugified, but the original value will be available as **{fieldname}_raw**. Only root level primitive fields will be available as params.

@@ -18,6 +18,8 @@
   items:
     - title: Directory structure
       link: /docs/directory-structure
+    - title: View structure
+      link: /docs/view-structure
     - title: Configuration
       link: /docs/config
     - title: Pages
@@ -41,7 +43,7 @@
     - title: Plugins
       link: /docs/plugins
 
-- title : Data
+- title : Data store
   items: 
     - title: Querying data
       link: /docs/data-query-data
