@@ -51,8 +51,8 @@
       link: /docs/data-source-plugin
     - title: Add a custom source *
       link: /docs/data-source-custom
-    - title: Add custom site meta data *
-      link: /docs/data-site-meta
+    - title: Add custom data *
+      link: /docs/data-custom
     - title: Add dynamic data *
       link: /docs/data-dynamic
 
@@ -96,8 +96,6 @@
       link: /docs/data-store-api
     - title: Client API
       link: /docs/client-api
-    - title: Page meta API *
-      link: /docs/page-meta-api
     - title: Link API
       link: /docs/link
     - title: Image API
