@@ -21,7 +21,7 @@ export default {
 ```
 
 ## Add global head metadata
-Global head metadata is added in `src/main.js` by using `head.{property}.push()
+Global head metadata is added in `src/main.js` by using `head.{property}.push()`
 
 ```js
 export default function (Vue, { head, router, isServer }) {
