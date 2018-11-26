@@ -3,10 +3,10 @@
 A basic `gridsome.config.js` file would look something like this:
 
 ```js
-export default {
+module.exports = {
   siteName: 'Gridsome',
   siteUrl: 'https://www.gridsome.org',
-  siteDescription: 'Gridsome is a blazing-fast static site generator...'
+  plugins: []
 }
 ```
 
