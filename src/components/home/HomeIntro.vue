@@ -1,6 +1,6 @@
 <template>
   <Section dots="true" dark="true" dots-animation="true" class="text-center">
-  <div class="container-md mb">
+  <div class="container-md">
     
     <h1>
       <div class="home-title container-sm">
@@ -24,20 +24,8 @@
 
   </div>
 
-  <logo-row style="margin-bottom: -40px; " />
-
   </Section>
 </template>
-
-<script>
-import LogoRow from '~/components/logos/LogoRow.vue'
-
-export default {
-  components: {
-    LogoRow
-  }
-}
-</script>
 
 <style>
 .home-title {

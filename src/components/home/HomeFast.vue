@@ -8,8 +8,8 @@
 
     <div class="grid-cols grid-cols--2 container-md">
       <ul class="home-bullets">
-        <li><Bullet /> Fast Time to Interactive (TTI)</li>
         <li><Bullet /> No render-blocking assets</li>
+        <li><Bullet /> Fast Time to Interactive</li>
         <li><Bullet /> Automatic code-splitting</li>
         <li><Bullet /> Automatic critical CSS</li>
         <li><Bullet /> Automatic next page prefetcing</li>

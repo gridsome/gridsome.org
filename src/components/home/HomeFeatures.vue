@@ -53,7 +53,7 @@
       <Feature>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="icon feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
 
-        <h3>Serverless and <br class="hide-for-small"/>CDN-ready</h3>
+        <h3>Go Serverless and be <br class="hide-for-small"/>CDN-ready</h3>
         <p>Gridsome sites are not connected to any database and can be hosted entirely on a CDN. It can handle thousands to millions of hits without breaking - and <strong>no expensive server costs.</strong>
         </p>     
       </Feature>
