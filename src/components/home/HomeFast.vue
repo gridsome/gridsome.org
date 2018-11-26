@@ -1,6 +1,6 @@
 <template>
   <Section>
-    <h2 class="text-center">Lightning fast as default ⚡️🚀</h2>
+    <h2 class="text-center">Lightning-fast as default ⚡️🚀</h2>
 
     <p class="lead text-center container-sm ">
       Build sites a that are optimized with the <strong>PRPL-pattern</strong> to get perfect Google Lighthouse scores - Automagically

@@ -1,10 +1,10 @@
 <template>
-  <Section dots="true" dark="true" class="text-center">
+  <Section dots="true" dark="true" dots-animation="true" class="text-center">
   <div class="container-md mb">
     
     <h1>
-      <div class="home-title container-md">
-        Build modern websites with Vue.js
+      <div class="home-title container-sm">
+        Build faster, better, modern websites with Vue.js
       </div>
     </h1>
 
@@ -25,7 +25,6 @@
   </div>
 
   <logo-row style="margin-bottom: -40px; " />
-
 
   </Section>
 </template>

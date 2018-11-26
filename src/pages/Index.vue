@@ -32,7 +32,7 @@ export default {
 
 
   metaInfo: {
-    title: 'Gridsome - Build modern websites with Vue.js',
+    title: 'Gridsome - Build faster, better, modern websites with Vue.js',
     titleTemplate: '%s',
     meta: [
       {
