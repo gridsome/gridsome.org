@@ -1,5 +1,5 @@
 # Add dynamic data
-**Gridsome sites that are deployed and in production (live) are serverless.** There is no connection to any database when it's deployed. So to get real-time updates from a database (dynamic data) you'll need to fetch data from an external API after page load.
+**Gridsome sites are static and serverless when deployed.**  To get real-time updates from a database (dynamic data) you'll need to fetch data from an external API after page load.
 
 Best practice for this is to have a placeholder where the content will be added (A spinner or ) and then update that content when content is fetched. You can also just use static content as placeholder and then update it with dynamic data when it's fetched.
 
