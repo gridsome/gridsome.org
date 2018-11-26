@@ -10,25 +10,25 @@ module.exports = {
 }
 ```
   
-#### siteName
+## siteName
 
 - Type `string`
 - Default `<dirname>`
 
 Set a name for your project. The name is typically used in the title tag.
 
-#### siteDescription
+## siteDescription
 - Type `string`
 - Default `''`
 
 The description is used as description on your frontpage.
 
-#### siteUrl
+## siteUrl
 
 - Type `string`
 - Default `''`
 
-#### pathPrefix
+## pathPrefix
 - Type `string`
 - Default `'/'`
 
@@ -36,7 +36,7 @@ Gridsome assumes your project is served from the root of your domain.
 Change this option to `'/my-app'` if your project will be hosted in a
 subdirectory called `my-app`.
 
-#### titleTemplate
+## titleTemplate
 
 - Type `string`
 - Default `%s - <siteName>`
@@ -44,7 +44,7 @@ subdirectory called `my-app`.
 Set a template for the title tag. The `%s` placeholder is replaced with title
 from metaInfo you set in your pages.
 
-#### icon
+## icon
 
 - Type `string | Object`
 - Default `'src/favicon.png'`
@@ -90,14 +90,14 @@ Define custom sizes and disable effects on iOS < 7 devices:
 }
 ```
 
-#### chainWebpack
+## chainWebpack
 
 - Type `Function`
 
 A function that will receive an instance of ChainableConfig powered by
 [webpack-chain](https://github.com/neutrinojs/webpack-chain).
 
-#### plugins
+## plugins
 
 - Type `Array`
 - Default `[]`

@@ -95,10 +95,6 @@ export default {
     }
   }
 
-  h3 {
-    padding-top: 1rem;
-  }
-
   ul > li > p {
     font-weight: 400;
   }
