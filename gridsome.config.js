@@ -3,6 +3,17 @@ module.exports = {
   siteUrl: `https://www.gridsome.org`,
   titleTemplate: '%s - Gridsome',
 
+  transformers: {
+    remark: {
+      autolinkHeadings: {
+        content: {
+          type: 'text',
+          value: '#'
+        }
+      }
+    }
+  },
+
   plugins: [
     '@gridsome/plugin-critical',
     {

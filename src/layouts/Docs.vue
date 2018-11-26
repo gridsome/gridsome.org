@@ -7,11 +7,16 @@
 
         <template v-for="group in links">
           <h3>{{ group.title }}</h3>
-          <p v-for="item in group.items">
-            <g-link :to="item.link">
-              {{ item.title }}
+          <ul class="menu" v-for="item in group.items">
+            <g-link class="menu__item" tag="li" :to="item.link">
+              <a class="menu__link">{{ item.title }}</a>
+              <ul class="submenu" v-if="item.link === $route.path" v-for="subtitle in subtitles">
+                <g-link class="submenu__item" tag="li" :to="item.link + subtitle.anchor">
+                  <a class="submenu__link">{{ subtitle.value }}</a>
+                </g-link>
+              </ul>
             </g-link>
-          </p>
+          </ul>
         </template>
 
       </div>
@@ -27,6 +32,9 @@
 import links from '@/data/doc-links.yaml'
 
 export default {
+  props: {
+    subtitles: Array
+  },
   computed: {
     links () {
       return links

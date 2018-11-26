@@ -1,5 +1,5 @@
 <template>
-  <DocsLayout>
+  <DocsLayout :subtitles="$page.doc.subtitles">
     <div class="post docs-page mb" v-html="$page.doc.content"></div>
     <p>
       <a :href="editLink" target="_blank">
@@ -16,6 +16,10 @@ query DocPage ($path: String!) {
     content
     title: headings (depth: h1) {
       value
+    }
+    subtitles: headings (depth: h2) {
+      value
+      anchor
     }
   }
 }
