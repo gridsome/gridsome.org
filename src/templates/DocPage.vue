@@ -49,10 +49,50 @@ export default {
     margin-bottom: 0;
   }
   
-  h2{
-    padding-top: 1.5rem;
-    margin-top: 1rem;
-    border-top: 1px solid var(--border-color);
+  h1, h2, h3 {
+    padding-top: 6rem;
+    margin-top: -5rem;
+
+    a {
+      float: left;
+      position: relative;
+      top: 0.12em;
+      margin-left: -1.2em;
+      font-size: 0.85em;
+      text-align: center;
+      width: 0.8em;
+      opacity: 0.0;
+
+      &::before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: calc(100% + 0.5em);
+      }
+
+      &::after {
+        display: none;
+      }
+
+      &:hover {
+        text-decoration: none;
+        border-bottom: 1px solid;
+      }
+    }
+
+    &:hover a {
+      opacity: 1.0;
+    }
+  }
+
+  h2 {
+    &::before {
+      content: " ";
+      display: block;
+      margin-bottom: 1.5rem;
+      border-top: 1px solid var(--border-color);
+    }
   }
 
   h3 {
