@@ -13,7 +13,7 @@
         </template>
 
       </div>
-      <Section class="flex-fit" container="md">
+      <Section class="flex-fit" container="sm">
         <slot />
       </Section>
     </div>

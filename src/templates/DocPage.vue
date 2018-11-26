@@ -41,6 +41,7 @@ export default {
 
 <style lang="scss">
 .docs-page {
+  max-width: 100%;
   h2 {
     padding-top: 1.5em;
     margin-top: 1.5em;

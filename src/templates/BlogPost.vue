@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <Section class="post" container="md" dots="true" >
+    <Section class="post" container="sm" dots="true" >
       <div class="post-header container-sm text-center mb">
         <h1 v-html="$page.post.title"/>
         <PostMeta :post="$page.post"/>
