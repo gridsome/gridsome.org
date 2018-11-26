@@ -40,21 +40,21 @@
       link: /docs/head
     - title: body & html attributes
       link: /docs/body-html-attributes
-    - title: Plugins
+    - title: Adding plugins
       link: /docs/plugins
 
 - title : Data store
   items: 
     - title: Querying data
       link: /docs/data-query-data
-    - title: Paginate queries
-      link: /docs/data-paginate-queries
-    - title: Add a source plugin
+    - title: Use a data source plugin
       link: /docs/data-source-plugin
-    - title: Add custom data *
+    - title: Add data from anywhere *
       link: /docs/data-custom
     - title: Add dynamic data *
       link: /docs/data-dynamic
+    - title: Paginate queries
+      link: /docs/data-paginate-queries
 
 - title : Styles and Assets
   items: 

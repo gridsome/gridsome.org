@@ -1,4 +1,4 @@
-# Add a source plugin
+# Use a data source plugin
 Gridsome data source plugins are added in `gridsome.config.js`. You can find available data source plugins in the [Plugins directory](/plugins).
 
 
