@@ -47,10 +47,8 @@
       link: /docs/data-query-data
     - title: Paginate queries
       link: /docs/data-paginate-queries
-    - title: Add a source plugin *
+    - title: Add a source plugin
       link: /docs/data-source-plugin
-    - title: Add a custom source *
-      link: /docs/data-source-custom
     - title: Add custom data *
       link: /docs/data-custom
     - title: Add dynamic data *

@@ -23,4 +23,4 @@ module.exports = {
 
 `typeName` will be the name of the GraphQL collection and needs to be unique. This example will add a **DocPage** collection.
 
-Every data source has different option, so take a look at their documentation to learn more.
+Every data source has different options, so take a look at their documentation to learn more.
