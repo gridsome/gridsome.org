@@ -42,7 +42,7 @@ export default {
 
 [Learn more about Single File Components](https://vuejs.org/v2/guide/single-file-components.html)
 
-### Import to other Pages or Components
+## Import to other Pages or Components
 When you have created a component you can easily import into your pages. In Gridsome projects it's recommended to put all your .vue components in the **src/components** folder and import them into **Pages** or **Layouts** like this:
 
 ```html
@@ -62,7 +62,7 @@ export default {
 
 ```
 
-### Add GraphQL to Components
+## Add GraphQL to Components
 
 Every **Component** can have a `<static-query>` block with a GraphQL query
 to fetch data from data sources. The results will be stored in a
@@ -84,7 +84,7 @@ query Example {
 ```
 
 
-### Using Sass in .vue components
+## Using Sass in .vue components
 
 You can use Sass in your Single File Components.
 Install `sass-loader` and `node-sass` as dev dependencies and use Sass like this:
@@ -103,7 +103,7 @@ Install `sass-loader` and `node-sass` as dev dependencies and use Sass like this
 
 [Learn more about using Using Pre-Processors in Vue.js](https://vue-loader.vuejs.org/guide/pre-processors.html)
 
-### Scoped styles
+## Scoped styles
 
 Its very easy to add scoped styles in vue. Simple add "scoped" to the style tag to automatically add suffix to any CSS class in Markup. This means that styles here will only be applied to current component regardless of the class names you use.
 

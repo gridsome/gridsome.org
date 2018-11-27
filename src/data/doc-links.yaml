@@ -108,6 +108,8 @@
   items:
     - title: Netlify
       link: /docs/deploy-to-netlify
+    - title: AWS Amplify
+      link: /docs/deploy-to-amplify
     - title: Zeit Now
       link: /docs/deploy-to-zeit-now
     - title: Amazon S3
@@ -116,3 +118,4 @@
       link: /docs/deploy-to-github-pages
     - title: GitLab Pages
       link: /docs/deploy-to-gitlab-pages
+

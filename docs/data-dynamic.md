@@ -6,10 +6,10 @@ Best practice for this is to have a placeholder where the content will be added 
 We recommend to use the [axios](https://github.com/axios/axios) package to add dynamic data to Gridsome. Install **axios** with `npm install axios --save` to get started.
 
 
-## Query data from external Rest API
+## Query from external Rest API
 ...
 
-## Query data from external GraphQL API
+## Query from external GraphQL API
 ...
 
 ## Dynamic content and eCommerce stores
