@@ -28,73 +28,10 @@
     background-color: #FFF;
   }
 
-
-
   // nested
   .container {
     padding-left:0;
     padding-right:0;
   }
 
-
-  p {
-    margin-bottom: 5px;
-    font-size: .9rem;
-  }
-
-  a {
-    color: currentColor;
-    opacity: 1;
-    font-weight: 300;
-
-    &:hover {
-      opacity: .6;
-    }
-  }
-
-  .menu {
-    list-style: none;
-    margin: 0;
-    font-size: .9rem;
-
-    &__item {
-      padding: .1rem 0;
-      margin-bottom: 0;
-    }
-
-    >li > .active--exact {
-      color: #000;
-      opacity: 1;
-      font-weight: 600;
-    }
-  }
-
-  .submenu {
-    list-style: none;
-    margin: .5rem 0 .5rem .1rem;
-    font-size: .85rem;
-    opacity: .9;
-    padding-left: .6rem;
-    border-left: 3px solid var(--border-color);
-
-    &__item {
-      margin-bottom: 0;
-      padding: .1rem 0;
-    }
-  }
-
-  @media screen and (max-width: 750px) {
-  & {
-      width: 100%;
-      position: relative;
-      margin:0;
-      order: 2;
-      padding-bottom: 150px;
-     
-    } + .section {
-      margin-left: 0;
-      width: 100%;
-      flex:1;
-    }
-  }
 }

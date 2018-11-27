@@ -17,25 +17,19 @@
 }
 
 h1, h2 {
-  font-weight: bolder!important;
-}
-
-h4 {
-  opacity: .8;
-}
-
-h1, h2, h3{
+  font-weight: bolder;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h3 { opacity: .9 }
-h4, h5, h6 { opacity: .8 }
 
-p:last-child {
-  margin:0;
-}
+h4, h5, h6 { opacity: .8 }
 
 p {
   font-weight: 300;
+
+  &:last-child {
+    margin:0;
+  }
 }

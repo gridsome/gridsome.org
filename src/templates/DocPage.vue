@@ -47,17 +47,7 @@ export default {
 .docs-page {
 
   max-width: 100%;
-
-  h2 {
-    padding-top: 1.5em;
-    margin-top: 1.5em;
-    border-top: 2px solid var(--border-color);
-  }
-
-  p > img {
-    margin-bottom: 0;
-
-  }
+  
   
   h1, h2, h3 {
     padding-top: 6rem;
