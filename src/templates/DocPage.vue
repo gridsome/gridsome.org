@@ -52,6 +52,8 @@ export default {
   h1, h2, h3 {
     padding-top: 6rem;
     margin-top: -5rem;
+    position: relative;
+    z-index: -1;
 
     a {
       float: left;
