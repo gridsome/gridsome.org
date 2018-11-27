@@ -35,12 +35,6 @@
     &:hover {
       opacity: .6;
     }
-
-    &.active--exact {
-      color: var(--primary-color);
-      opacity: 1;
-      font-weight: 600;
-    }
   }
 
   .menu {
@@ -53,7 +47,7 @@
       margin-bottom: 0;
     }
 
-    >li > .active--exact {
+    > li > .active--exact {
       color: #000;
       opacity: 1;
       font-weight: 600;

@@ -26,12 +26,9 @@ export default {
     svg.icon {
       width: 32px;
       height: 32px;
-      border-radius: 99px;
       margin: 0 auto var(--space);
       opacity: .5;
-      overflow: visible!important;
     }
-
 
     h3 {
       margin-bottom: 1rem;
