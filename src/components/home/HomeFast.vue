@@ -15,7 +15,7 @@
         <li><Bullet /> Automatic next page prefetcing</li>
       </ul>
       <ul class="home-bullets">
-        <li><Bullet /> Navigate without page reloads (SPA)</li>
+        <li><Bullet /> Navigate without page reloads</li>
         <li><Bullet /> PWA-ready out-of-the-box</li>
         <li><Bullet /> Progressive image loading</li>
         <li><Bullet /> Automatic image resizing</li>

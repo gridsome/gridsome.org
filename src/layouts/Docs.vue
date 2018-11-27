@@ -15,7 +15,7 @@
         </template>
 
       </div>
-      <Section class="flex-fit" container="sm">
+      <Section class="flex-fit" container="md">
         <slot />
       </Section>
 
