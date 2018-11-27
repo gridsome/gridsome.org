@@ -2,7 +2,7 @@ module.exports = {
   siteName: 'Gridsome',
   siteUrl: `https://www.gridsome.org`,
   titleTemplate: '%s - Gridsome',
-
+  
   chainWebpack(config) {
     config.module.rules.delete('svg')
     config.module.rule('svg')
@@ -12,6 +12,18 @@ module.exports = {
         .end()
       .use('svg-to-vue-component')
       .loader('svg-to-vue-component/loader')
+  },
+
+  transformers: {
+    remark: {
+      autolinkHeadings: {
+        content: {
+          type: 'text',
+          value: '#'
+        }
+      }
+    }
+
   },
 
   plugins: [

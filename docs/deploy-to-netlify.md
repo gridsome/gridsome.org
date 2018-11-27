@@ -7,5 +7,5 @@ Their free tier includes unlimited personal and commercial projects, HTTPS, cont
 To deploy your Gridsome site to Netlify, go to the create a new site page, select your project repo from GitHub, GitLab, or Bitbucket.
 
 Add these build settings:
-- **Build Command:** `npm run build`
+- **Build Command:** `gridsome build`
 - **Publish directory:** `dist`

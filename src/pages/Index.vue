@@ -19,7 +19,6 @@ import HomeFast from '@/components/home/HomeFast.vue'
 import HomeBlog from '@/components/home/HomeBlog.vue'
 import HomeHowItWorks from '@/components/home/HomeHowItWorks.vue'
 
-
 export default {
   components: {
     HomeIntro,
@@ -29,7 +28,6 @@ export default {
     HomeBlog,
     HomeHowItWorks,
   },
-
 
   metaInfo: {
     title: 'Gridsome - Build faster, better, modern websites with Vue.js',

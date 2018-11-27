@@ -1,5 +1,5 @@
 <template>
-  <DocsLayout>
+  <DocsLayout :subtitles="$page.doc.subtitles">
     <div class="post docs-page mb" v-html="$page.doc.content"></div>
     <p>
       <a :href="editLink" target="_blank">
@@ -16,6 +16,10 @@ query DocPage ($path: String!) {
     content
     title: headings (depth: h1) {
       value
+    }
+    subtitles: headings (depth: h2) {
+      value
+      anchor
     }
   }
 }
@@ -41,16 +45,57 @@ export default {
 
 <style lang="scss">
 .docs-page {
+
   max-width: 100%;
+
   h2 {
     padding-top: 1.5em;
     margin-top: 1.5em;
     border-top: 2px solid var(--border-color);
   }
 
-  h3 {
-    margin-top: 1em;
-    padding-top: 1em;
+  p > img {
+    margin-bottom: 0;
+
+  }
+  
+  h1, h2, h3 {
+    padding-top: 6rem;
+    margin-top: -5rem;
+    position: relative;
+    z-index: -1;
+
+    a {
+      float: left;
+      position: relative;
+      top: 0.12em;
+      margin-left: -1.2em;
+      font-size: 0.85em;
+      text-align: center;
+      width: 0.8em;
+      opacity: 0.0;
+
+      &::before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: calc(100% + 0.5em);
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  h2 {
+    &::before {
+      content: " ";
+      display: block;
+      margin-bottom: 1.5rem;
+      border-top: 1px solid var(--border-color);
+    }
   }
 
   ul > li > p {

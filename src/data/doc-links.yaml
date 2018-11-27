@@ -1,20 +1,27 @@
 - title: Introduction
   items:
-    - title: Quick start
+    - title: Getting started
       link: /docs
+    - title: Prerequisites
+      link: /docs/prerequisites
     - title: How it works
       link: /docs/how-it-works
     - title: Starter kits
       link: /docs/starters
     - title: Deployment
       link: /docs/deployment
+    - title: How to contribute
+      link: /docs/contribute
 
-- title : BASIC
+
+- title : Basics
   items:
     - title: Directory structure
       link: /docs/directory-structure
-    - title: GraphQL layer
-      link: /docs/graphql
+    - title: View structure
+      link: /docs/view-structure
+    - title: Configuration
+      link: /docs/config
     - title: Pages
       link: /docs/pages
     - title: Templates
@@ -23,50 +30,86 @@
       link: /docs/layouts
     - title: Components
       link: /docs/components
+    - title: Linking
+      link: /docs/linking
+    - title: Images
+      link: /docs/images
+    - title: Routing
+      link: /docs/routing
+    - title: Populating <head>
+      link: /docs/head
+    - title: body & html attributes
+      link: /docs/body-html-attributes
+    - title: Adding plugins
+      link: /docs/plugins
 
+- title : Data store
+  items: 
+    - title: Querying data
+      link: /docs/data-query-data
+    - title: Use a data source plugin
+      link: /docs/data-source-plugin
+    - title: Add data from anywhere *
+      link: /docs/data-custom
+    - title: Add dynamic data *
+      link: /docs/data-dynamic
+    - title: Paginate queries
+      link: /docs/data-paginate-queries
 
-- title: Components
-  items:
-    - title: Link
-      link: /docs/link
-    - title: Image
-      link: /docs/image
-    - title: Pagination
-      link: /docs/pagination
+- title : Styles and Assets
+  items: 
+    - title: Add stylesheets *
+      link: /docs/style-global-styles
+    - title: Use Sass or Less *
+      link: /docs/style-preprocessors
+    - title: Add a CSS framework *
+      link: /docs/style-css-libraries
+    - title: Add critical CSS
+      link: /docs/style-critical-css
+    - title: Use CSS in components *
+      link: /docs/style-components
+    - title: Add SVG icons *
+      link: /docs/style-svg
+    - title: Add custom fonts *
+      link: /docs/style-custom-fonts
+    - title: Add external scripts *
+      link: /docs/style-custom-fonts
 
-
-- title: Guides
-  items:
-    - title: Install plugins
-      link: /docs/install-plugins
-    - title: Custom CSS
-      link: /docs/custom-css
-    - title: Inlining critical CSS
-      link: /docs/critical-css
-    - title: Custom fonts
-      link: /docs/custom-fonts
-    - title: Custom head meta
-      link: /docs/custom-head-meta
+- title : Guides
+  items: 
+    - title: Add a form
+      link: /docs/guide-forms
+    - title: Add a search
+      link: /docs/guide-search
+    - title: Add comments
+      link: /docs/guide-comments
 
 - title: API
   items: 
-    - title: Project configuration
-      link: /docs/config
     - title: Gridsome CLI
       link: /docs/gridsome-cli
+    - title: Configuration API
+      link: /docs/config
     - title: Server API
       link: /docs/server-api
-    - title: Data Store API
+    - title: Data store API
       link: /docs/data-store-api
     - title: Client API
       link: /docs/client-api
-    - title: Page Meta API
-      link: /docs/page-meta-api
+    - title: Link component
+      link: /docs/link
+    - title: Image component
+      link: /docs/image
+    - title: Pagination directive
+      link: /docs/pagination
+
 
 - title: Deploy
   items:
     - title: Netlify
       link: /docs/deploy-to-netlify
+    - title: AWS Amplify
+      link: /docs/deploy-to-amplify
     - title: Zeit Now
       link: /docs/deploy-to-zeit-now
     - title: Amazon S3
@@ -75,3 +118,4 @@
       link: /docs/deploy-to-github-pages
     - title: GitLab Pages
       link: /docs/deploy-to-gitlab-pages
+

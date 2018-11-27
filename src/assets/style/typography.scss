@@ -29,6 +29,9 @@ h1, h2, h3{
   -moz-osx-font-smoothing: grayscale;
 }
 
+h3 { opacity: .9 }
+h4, h5, h6 { opacity: .8 }
+
 p:last-child {
   margin:0;
 }

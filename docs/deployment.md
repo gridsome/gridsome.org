@@ -1,23 +1,23 @@
-# Hosting & Deployment
+# Deployment
 
-Gridsome sites are static generated at build time. This mean that the site can be hosted anywhere, and does not require any database. It can be hosted on a global CDN or even a simple FTP. Your site will also be un-hackable since there is no database connected. With Gridsome you don't need any caching or security plugins like you do in a traditional CMS like WordPress.
-
-
-### Git-based deploying
-
-The best practice when working with Gridsome sites is to have your project hosted on a Git-service like GitHub and connect a deploy service that auto builds your site from a selected repository. [Netlify](//www.netlify.com/) is the best solution for this now. They also have free plan for static website hosting.
-
-![Git workflow](./images/git-workflow.png)
+To deploy a Gridsome site you need a **static site host**.
 
 
-This gets your whole team in sync, and is the perfect modern workflow for building websites. These services are great for Git-based deploying:
+## Git-based deploying
+
+The best practice when working with Gridsome sites is to have your project hosted on a Git-service like GitHub and connect a deploy service that builds your site from a selected repository. [Netlify](//www.netlify.com/) is the best solution for this now. They also have free plan for static website hosting. Its also possible to setup auto re-deploys if repository or content changes.
+
+
+These services are great for Git-based deploying:
 
 - [Netlify](/docs/deploy-to-netlify)
 
-- [Zeit Now](/docs/deploy-to-netlify)
+- [AWS Amplify](/docs/deploy-to-amplify)
+
+- [Zeit Now](/docs/deploy-to-zeit-now)
 
 
-### Deploy from terminal
+## Deploy from terminal
 Many services let you deploy your static Gridsome site from the terminal. Here are some:
 
 - [Amazon S3](/docs/deploy-to-amazon-s3)
@@ -25,10 +25,18 @@ Many services let you deploy your static Gridsome site from the terminal. Here a
 - [Zeit Now](/docs/deploy-to-zeit-now)
 
 
-### FTP deploying
+## FTP deploying
 
 To host your site on a FTP you need to manually build your project from the Terminal.
 
 - Run `gridsome build` in your project folder.
 - This will generate a `dist` folder where your generated site is located.
 - Upload the content of this folder to any FTP to get started.
+
+## Drag & drop deploying
+
+**Netlify Drop** let you deploy a website with simply drag & drop.
+
+- Run `gridsome build` in your project folder.
+- This will generate a `dist` folder where your generated site is located.
+- Visit [Netlify Drop](https://app.netlify.com/drop) and drop the `dist` folder there.
