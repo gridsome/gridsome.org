@@ -51,7 +51,7 @@ header {
   color:#FFF;
   border-bottom: 1px solid transparent;
   flex-wrap: nowrap;
-  padding-top: 5px;
+  padding-top: 3px;
   position: sticky;
 
   .header-inner {
@@ -69,7 +69,7 @@ header {
     width: 100%;
     left:0;
     right:0;
-    height: 5px;
+    height: 3px;
     background: linear-gradient(90deg, #53D096 -5.92%, #8DD6F9 48.99%, #E535AB 123.16%);
   }
 }
