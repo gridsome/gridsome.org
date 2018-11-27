@@ -9,7 +9,7 @@
     </h1>
 
     <p class="home-lead lead  container-sm">
-      Gridsome is a <strong>Vue.js-powered static site generator</strong> for building high-performance frontends for any CMS or data API
+      Gridsome is a <strong>Vue.js-powered <vue-logo /> static site generator</strong> for building high-performance websites for any CMS or data API
     </p>
 
     <p class="home-links">
@@ -35,3 +35,13 @@
   font-size: .85rem;
 }
 </style>
+
+<script>
+import VueLogo from '~/assets/images/vue-logo.svg'
+
+export default {
+  components: {
+    VueLogo
+  }
+}
+</script>
