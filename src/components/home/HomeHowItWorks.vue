@@ -72,12 +72,10 @@
               <div class="well__title">Deploy</div>
               <h4>Static web hosting</h4>
               <p>Generate static files and deploy to any global CDN or FTP.</p>
-              <p>For example, 
-                <a href="//netlify.com">Netlify</a>,
-                <a href="//zeit.co/now">Zeit Now</a>,
-                <a href="//pages.github.com/">GitHub Pages</a>,
-                <a href="//docs.gitlab.com/ee/user/project/pages/">GitLab Pages</a>,
-                <a href="//surge.sh">Surge.sh</a> and many more.</p>
+              <p>
+                <g-image src="~/assets/images/deploy-logos.png" width="270" />
+                <g-link to="/docs/deployment">Learn more about deployment</g-link>
+              </p>
           </div>
       </div>
   </Section>
