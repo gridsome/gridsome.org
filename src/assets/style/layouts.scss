@@ -66,33 +66,28 @@
     &:hover {
       opacity: .6;
     }
+  }
 
-    &.active--exact {
+  .menu {
+    list-style: none;
+    margin: 0;
+    font-size: .9rem;
+
+    &__item {
+      padding: .1rem 0;
+      margin-bottom: 0;
+    }
+
+    >li > .active--exact {
       color: #000;
       opacity: 1;
       font-weight: 600;
     }
   }
 
- .menu {
-    list-style: none;
-    margin: 0;
-    font-size: .9rem;
-
-    &__item {
-      padding: .2rem 0;
-      margin-bottom: 0;
-
-      &.active > a {
-        font-weight: bolder;
-        margin-bottom: .2rem;
-      }
-    }
-  }
-
   .submenu {
     list-style: none;
-    margin: 0 0 0 .1rem;
+    margin: .5rem 0 .5rem .1rem;
     font-size: .85rem;
     opacity: .9;
     padding-left: .6rem;

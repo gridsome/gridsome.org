@@ -5,19 +5,19 @@
         
         <!-- <input type="search" placeholder="Search docs..." /> -->
 
-        <template v-for="group in links">
+        <div class="menu-group" v-for="group in links">
           <h3>{{ group.title }}</h3>
-          <ul class="menu" v-for="item in group.items">
-            <g-link class="menu__item" tag="li" :to="item.link">
-              <a class="menu__link">{{ item.title }}</a>
-              <ul class="submenu" v-if="item.link === $route.path" v-for="subtitle in subtitles">
-                <g-link class="submenu__item" tag="li" :to="item.link + subtitle.anchor">
-                  <a class="submenu__link">{{ subtitle.value }}</a>
-                </g-link>
+          <ul class="menu">
+            <li class="menu__item" v-for="item in group.items">
+              <g-link class="menu__link" :to="item.link">{{ item.title }}</g-link>
+              <ul class="submenu" v-if="item.link === $route.path && subtitles.length">
+                <li class="submenu__item" v-for="subtitle in subtitles">
+                  <g-link class="submenu__link" :to="item.link + subtitle.anchor">{{ subtitle.value }}</g-link>
+                </li>
               </ul>
-            </g-link>
+            </li>
           </ul>
-        </template>
+        </div>
 
       </div>
       <Section class="flex-fit" container="md">
