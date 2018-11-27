@@ -18,6 +18,9 @@
 
 h1, h2 {
   font-weight: bolder;
+}
+
+h1, h2, .lead{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -27,7 +30,7 @@ h3 { opacity: .9 }
 h4, h5, h6 { opacity: .8 }
 
 p {
-  font-weight: 300;
+  font-weight: 500;
 
   &:last-child {
     margin:0;
