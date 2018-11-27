@@ -1,4 +1,4 @@
-# Image API
+# Image component
 
 Use the `g-image` component to get automatic lazy-loading and optimizations for your images. Images will be resized down to 480, 1024, 1920 and 2560 pixels by default. The component is available globally in all your templates.
 

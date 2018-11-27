@@ -1,4 +1,4 @@
-# Link API
+# Link component
 
 The `g-link` component is available globally in all your templates. It's a wrapper for [router-link](https://router.vuejs.org/api/#router-link-props) from Vue Router.
 

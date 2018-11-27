@@ -60,13 +60,13 @@
   items: 
     - title: Add stylesheets *
       link: /docs/style-global-styles
-    - title: Add Sass or Less *
+    - title: Use Sass or Less *
       link: /docs/style-preprocessors
-    - title: Add a css framework *
+    - title: Add a CSS framework *
       link: /docs/style-css-libraries
-    - title: Add critical CSS *
+    - title: Add critical CSS
       link: /docs/style-critical-css
-    - title: Add style in components *
+    - title: Use CSS in components *
       link: /docs/style-components
     - title: Add SVG icons *
       link: /docs/style-svg
@@ -96,11 +96,11 @@
       link: /docs/data-store-api
     - title: Client API
       link: /docs/client-api
-    - title: Link API
+    - title: Link component
       link: /docs/link
-    - title: Image API
+    - title: Image component
       link: /docs/image
-    - title: Pagination API
+    - title: Pagination directive
       link: /docs/pagination
 
 

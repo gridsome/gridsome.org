@@ -31,7 +31,7 @@ Gridsome pre-fetches next pages so browsing around goes fast. It uses the built-
 
 **A Gridsome site is static when deployed**. That means there is no database connection when the site has been deployed - every connection happens at build time only. This makes Gridsome sites very secure. Gridsome builds two versions of every page. One HTML page that search engines can crawl for SEO-purpose, and one JavaScript file that Gridsome uses for SPA after the first page load. Next pages are lazy-loaded in the background. That makes clicking around extremely fast, and your site is 100%-SEO friendly. It even works offline and can be entirely hosted on a CDN.
 
-**There is no connection to the GraphQL data layer when it is deployed**. To update a deployed site with the latest content you need to rebuild your site. This is how static site generators work. This can be done automatically with services like [Netlify](https://netlify.com).
+> To update a live site with the latest content you need to redeploy your site. This is how static site generators work. This can be done automatically with services like [Netlify](https://netlify.com) & [AWS Amplify](https://aws.amazon.com/amplify/console).
 
 - Learn more about [Deploying](/docs/deployment).
 

@@ -12,7 +12,7 @@ function MySourcePlugin (api) {
 module.exports = MySourcePlugin
 ```
 
-## Create content types and nodes
+##  Content types and nodes
 
 ### store.addContentType(options)
 

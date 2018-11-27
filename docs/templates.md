@@ -39,3 +39,8 @@ export default {
 }
 </script>
 ```
+
+### More...
+
+- [Add head metadata to Templates](/docs/head)
+- [Query data in Templates](/docs/data-query-data)

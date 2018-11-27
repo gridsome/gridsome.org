@@ -20,7 +20,7 @@ Page templates should be wrapped in a layout component like:
 </template>
 ```
 
-## Setting the HTML head title
+### Setting the HTML head title
 
 Gridsome uses **vue-meta** to manage meta info.
 
@@ -36,38 +36,8 @@ export default {
 
 [Read more about vue-meta.](https://github.com/declandewet/vue-meta)
 
-## Querying data with GraphQL
 
-Every page component can have a `<page-query>` block with a GraphQL query
-to fetch data from data sources. The results will be stored in a
-`$page` property inside the page component.
+### More...
 
-```html
-<template>
-  <Layout>
-    <h2>Latest blog posts</h2>
-    <ul>
-      <li v-for="edge in $page.allWordPressPost.edges" :key="edge.node._id">
-        {{ edge.node.title }}
-      </li>
-    </ul>
-  </Layout>
-</template>
-
-<page-query>
-query Blog {
-  allWordPressPost (limit: 5) {
-    edges {
-      node {
-        id
-        title
-      }
-    }
-  }
-}
-</page-query>
-```
-
-
-## Add a 404 page
-...
+- [Add head metadata to Pages](/docs/head)
+- [Query data in pages](/docs/data-query-data)
