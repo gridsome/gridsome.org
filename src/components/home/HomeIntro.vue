@@ -3,7 +3,7 @@
   <div class="container-md">
     
     <h1>
-      <div class="home-title container-sm">
+      <div class="home-title container-md">
         Build a faster, better web
       </div>
     </h1>
