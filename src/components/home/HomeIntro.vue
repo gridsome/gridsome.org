@@ -4,12 +4,12 @@
     
     <h1>
       <div class="home-title container-md">
-        Build a faster, better web
+        Build a faster, better web with Vue.js <vue-logo />
       </div>
     </h1>
 
     <p class="home-lead lead  container-sm">
-      Gridsome is a <strong>Vue.js-powered <vue-logo /> static site generator</strong> for building high-performance websites for any CMS or data API
+      Gridsome is a <strong>Vue-powered static site generator</strong> for building high-performance websites for any CMS or data API
     </p>
 
     <p class="home-links">
@@ -30,6 +30,7 @@
 <style>
 .home-title {
   line-height: 1.3;
+  font-size: 1.7rem;
 }
 .home-info {
   font-size: .85rem;
