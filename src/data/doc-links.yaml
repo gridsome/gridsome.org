@@ -58,9 +58,9 @@
 
 - title : Styles and Assets
   items: 
-    - title: Add Stylesheets *
+    - title: Use CSS in Gridsome
       link: /docs/style-global-styles
-    - title: Add critical CSS
+    - title: Enable Critical CSS
       link: /docs/style-critical-css
     - title: Add SVG icons *
       link: /docs/style-svg

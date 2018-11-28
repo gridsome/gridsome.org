@@ -82,6 +82,10 @@ Files in this directory will be copied directly to `dist` during build. For exam
 
 ## Recommendation
 
+#### Assets
+
+Global styles, images, fonts and icons is usually added to a `src/assets` directory.
+
 #### Shared or global components
 
 Components that you want to use in several pages or templates can be
