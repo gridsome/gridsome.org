@@ -78,10 +78,6 @@
               </p>
           </div>
       </div>
-      <div class="text-center">
-        <h6>Use your favorite CMS for data</h6>
-        <g-image src="~/assets/images/logos.png" width="700" style="margin-bottom: 0; opacity: .3" />
-      </div>
   </Section>
 </template>
 

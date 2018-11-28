@@ -38,6 +38,7 @@ export default {
 <style lang="scss">
   .home-bullets {
     list-style: none;
+    margin-bottom: 0;
 
     svg {
       vertical-align: middle;
