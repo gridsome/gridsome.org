@@ -7,5 +7,6 @@
   --border-color: #e6e8ec;
   --space: 20px;
   --space-x2: 40px;
-  --code-color: #fafafb;
+  --code-color: var(--primary-bg);
+  --code-color-block: var(--primary-bg);
 }

@@ -6,6 +6,10 @@
 }
 
 #app pre {
+  background-color: var(--code-color-block);
+}
+
+#app pre {
   // fix for accessbility
   .token.punctuation {
     color: #5f5f5f;
@@ -28,7 +32,8 @@
 
 // inline code
 #app code {
-  padding: 0.15em 0.3em;
+  padding: 0.25em 0.5em;
+  display: inline-block;
 }
 
 h1, h2, h3, h4 {
