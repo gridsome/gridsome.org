@@ -3,8 +3,8 @@
   <div class="container-md">
     
     <h1>
-      <div class="home-title container-md">
-        Build fast, modern JAMstack websites with Vue.js
+      <div class="home-title container-sm">
+        Build super fast, modern websites with Vue.js
       </div>
     </h1>
 
