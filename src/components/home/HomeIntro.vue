@@ -4,12 +4,12 @@
     
     <h1>
       <div class="home-title container-md">
-        Build modern websites with Vue.js
+        Build fast, modern JAMstack websites with Vue.js
       </div>
     </h1>
 
     <p class="home-lead lead  container-sm">
-      Gridsome is a <strong>Vue-powered static site generator</strong> for building high-performance websites <strong>for any CMS or data API</strong>
+      Gridsome is a <strong>Vue-powered static site generator</strong> for building high-performance frontends <strong>for any CMS or data API</strong>
     </p>
 
     <p class="home-links">
