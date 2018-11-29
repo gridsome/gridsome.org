@@ -6,7 +6,7 @@
       </h2>
 
       <p class="lead text-center container-sm">
-        Use local files or any external API as a data source and access the data from a unified GraphQL layer
+        Use CMSs, local files or any external API for data and access it from a local unified GraphQL data layer
       </p>
 
       <div class="source-animation flex flex--align-equal flex--space-between">

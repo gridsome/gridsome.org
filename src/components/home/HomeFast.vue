@@ -2,8 +2,8 @@
   <Section>
     <h2 class="text-center">Lightning-fast as default ⚡️🚀</h2>
 
-    <p class="lead text-center container-sm ">
-      Build sites a that are optimized with the <strong>PRPL-pattern</strong> to get perfect Google Lighthouse scores - Automagically
+    <p class="lead text-center container-md ">
+        Gridsome builds the fastest possible websites. It pre-builds all pages at build time using the <a href="https://developers.google.com/web/fundamentals/performance/prpl-pattern/" target="_blank">PRPL-pattern</a> to get perfect page scores.
     </p>
 
     <div class="grid-cols grid-cols--2 container-md">
