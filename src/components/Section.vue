@@ -50,7 +50,7 @@ export default {
     max-height: 100%;
     margin: 0 auto;
     position: absolute;
-    bottom: 30px;
+    bottom: 35px;
     left: 10px;
     right: 10px;
     z-index: 1;
