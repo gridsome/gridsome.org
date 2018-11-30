@@ -87,6 +87,10 @@ export default {
       border-top: 1px solid var(--border-color);
     }
   }
+  
+  h3 { opacity: .9 }
+
+  h4, h5, h6 { opacity: .8 }
 
   ul > li > p {
     font-weight: 400;

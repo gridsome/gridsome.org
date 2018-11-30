@@ -3,8 +3,6 @@
     <div class="container flex gap-60 flex-align-top">
       <div class="sidebar dots-bg">
         
-        <!-- <input type="search" placeholder="Search docs..." /> -->
-
         <div class="menu-group" v-for="group in links">
           <h3>{{ group.title }}</h3>
           <ul class="menu">
