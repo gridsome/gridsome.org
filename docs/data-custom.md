@@ -27,6 +27,9 @@ module.exports = function (api) {
 }
 ```
 
+> You need to restart server for changes in **gridsome.server.js** to take affect. It's only used when starting a development server or start of a production build.
+
+
 ## Add data from Rest API
 ..
 ## Add data from GraphQL API

@@ -42,6 +42,8 @@
       link: /docs/body-html-attributes
     - title: Adding plugins
       link: /docs/plugins
+    - title: Vue.js basics *
+      link: /docs/vue-js
 
 - title : Data store
   items: 
@@ -68,6 +70,7 @@
       link: /docs/style-custom-fonts
     - title: Add external scripts *
       link: /docs/style-custom-fonts
+
 
 - title : Guides
   items: 
