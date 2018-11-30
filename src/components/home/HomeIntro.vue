@@ -47,17 +47,20 @@
 .test2,
 .test4 {
   transform-origin: 50% 50%;
-  animation: rotateIn 1.5s ease-out forwards;
+  animation: rotateIn 2.5s ease-out forwards;
+  animation-delay: .3s;
+  opacity: 0;
 }
 
 .test3{
   animation: rotateInLeft .6s ease-out forwards;
-  animation-delay: .8s;
+  animation-delay: 2s;
   opacity:0;
 }
 
 .test4{
-  animation: scaleIn 1.2s ease-out forwards;
+  animation: scaleIn 2s ease-out forwards;
+  animation-delay: .3s;
 }
 
 </style>
