@@ -34,7 +34,9 @@
   </Section>
 </template>
 
-<style>
+<style lang="scss">
+$easing: cubic-bezier(0.19, 1, 0.22, 1);
+
 .home-title {
   line-height: 1.3;
 }
@@ -47,19 +49,19 @@
 .test2,
 .test4 {
   transform-origin: 50% 50%;
-  animation: rotateIn 2s ease-out forwards;
+  animation: rotateIn 1s $easing forwards;
   animation-delay: .3s;
   opacity: 0;
 }
 
 .test3{
-  animation: rotateInLeft .6s ease-out forwards;
-  animation-delay: 1.5s;
+  animation: rotateInLeft .6s $easing forwards;
+  animation-delay: 0.7s;
   opacity:0;
 }
 
 .test4{
-  animation: scaleIn 1.4s ease-out forwards;
+  animation: scaleIn 1.4s $easing forwards;
   animation-delay: .3s;
 }
 
