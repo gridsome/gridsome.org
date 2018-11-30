@@ -1,7 +1,7 @@
 <template>
   <Section dots="true" dark="true" dots-animation="true" class="text-center">
   <div class="container-md">
-    <svg width="571" style="width: 100px; margin-bottom: 25px" viewBox="0 0 571 571" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="571" style="width: 80px; margin-bottom: 1.5rem" viewBox="0 0 571 571" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M336.069 47.9846C337.213 75.5543 315.814 98.8322 288.272 99.9772C169.379 104.92 97.2433 198.202 100.776 286.774C101.876 314.346 80.4393 337.589 52.896 338.69C25.3527 339.791 2.13283 318.332 1.03307 290.761C-4.72425 146.423 110.902 7.33965 284.13 0.138225C311.672 -1.00673 334.926 20.4148 336.069 47.9846Z" fill="#53D096"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.954018 272.303C0.10351 275.958 -0.346192 279.767 -0.346191 283.682C-0.346185 458.77 142.461 574.569 287.353 570.999C314.91 570.32 336.7 547.408 336.022 519.823C335.344 492.238 312.455 470.426 284.898 471.105C196.146 473.291 107.292 404.995 99.9635 298.018C95.7718 320.403 76.5939 337.743 52.8953 338.69C25.3519 339.791 2.1321 318.332 1.03233 290.761C0.786404 284.595 0.761956 278.439 0.954018 272.303Z" fill="#53D096" fill-opacity="0.7"/>
@@ -24,19 +24,15 @@
     </h1>
 
     <p class="home-lead lead  container-sm">
-      Gridsome is a <strong>Vue-powered static site generator</strong> for building high-performance frontends <strong>for any CMS or data API</strong>
+      Gridsome is a <strong>Vue-powered static site generator</strong> for building high-performance frontends <strong>for any CMS or data API</strong><br />
+      <span style="font-size: .8rem; opacity: .7;">(Also known as the Vue.js alternative to Gatsby.js)</span>
     </p>
 
     <p class="home-links">
       <g-link  to="/docs" class="button primary">
         Get started
       </g-link>
-    </p>  
-
-    <p class="home-info">
-      License: MIT. <a href="https://github.com/gridsome/gridsome">GitHub (0.3.3)</a> 
     </p>
-
   </div>
 
   </Section>
