@@ -4,14 +4,14 @@
       <slot/>
     </div>
  
-    <div v-if="dots" class="section__dots-bg dots-bg" :class="{'dots-bg--animated': dotsAnimation}" />
+    <div v-if="dots" class="section__dots-bg dots-bg" />
 
   </section>
 </template>
 
 <script>
 export default {
-  props: ['dark', 'dots', 'container', 'framed', 'primary', 'dots-animation'],
+  props: ['dark', 'dots', 'container', 'framed', 'primary' ],
   computed: {
     sectionClass() {
       let classes = []
