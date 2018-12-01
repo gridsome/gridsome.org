@@ -54,12 +54,12 @@ $easing: cubic-bezier(0.19, 1, 0.22, 1);
 
 	svg path{
 	  transform-origin: 50% 50%;
-	  animation: rotateIn 1s $easing forwards;
+	  animation: rotateIn 1.5s $easing forwards;
 	  opacity: 0;
 	}
 
 	svg path + path + path + path {
-	  animation: scaleIn .9s $easing forwards;
+	  animation: scaleIn .7s $easing forwards;
 	  animation-delay: .3s;
 	}
 
