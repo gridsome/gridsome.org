@@ -12,7 +12,7 @@
 
     <p class="home-lead lead  container-sm">
       Gridsome is a <strong>Vue-powered static site generator</strong> for building high-performance frontends <strong>for any CMS or data API</strong><br />
-      <span style="font-size: .8rem; opacity: .7;">(Also known as the Vue.js alternative to Gatsby.js)</span>
+      <span style="font-size: .8rem; display: inline-block; opacity: .7;">(Also known as the Vue.js alternative to Gatsby.js)</span>
     </p>
 
     <p class="home-links">

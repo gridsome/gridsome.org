@@ -41,17 +41,36 @@
     list-style: none;
     margin: 0;
     font-size: .9rem;
-    padding-left: .1rem;
 
     &__item {
       padding: .1rem 0;
       margin-bottom: 0;
     }
 
+    > li > a {
+      transition: padding .3s;
+    }
+
     > li > .active--exact {
-      color: #000;
+      color: var(--primary-color);
       opacity: 1;
       font-weight: 600;
+      position: relative;
+      padding-left: .8rem;
+
+      &:before {
+        content: " ";
+        width: 8px;
+        height: 8px;
+        border-radius: 10px;
+        position: absolute;
+        left: -1px;
+        top: 50%;
+        margin-top: -5px;
+        background-color: var(--primary-color);
+        animation: scaleIn .7s forwards;
+
+      }
     }
   }
 
@@ -84,6 +103,4 @@
       flex:1;
     }
   }
-
-
 }
