@@ -148,3 +148,14 @@
   right:0;
   position: absolute;
 }
+
+.menu-item {
+  display: block;
+  transition: all 0.3s;
+}
+.menu-item-enter, .menu-item-leave-to {
+  opacity: 0 !important;
+}
+.menu-item-leave-active {
+  position: absolute;
+}

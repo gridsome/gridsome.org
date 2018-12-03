@@ -3,19 +3,24 @@
     <div class="container flex gap-60 flex-align-top">
       <div class="sidebar dots-bg">
         
-        <div class="menu-group" v-for="group in links">
-          <h3>{{ group.title }}</h3>
-          <ul class="menu">
-            <li class="menu__item" v-for="item in group.items">
-              <g-link class="menu__link" :to="item.link">{{ item.title }}</g-link>
-              <ul class="submenu" v-if="item.link === $route.path && subtitles.length">
+        <transition-group name="menu-item">
+          <template v-for="(group, i1) in links">
+            <h3 class="menu-item" :key="group.title + i1">{{ group.title }}</h3>
+
+            <template v-for="(item, i2) in group.items">
+              <g-link class="menu-item menu-link" :to="item.link" :key="item.link + i1 + i2">
+                {{ item.title }}
+              </g-link>
+              <ul v-if="item.link === $route.path && subtitles.length" :key="`submenu${i1}${i2}`" class="menu-item submenu">
                 <li class="submenu__item" v-for="subtitle in subtitles">
-                  <g-link class="submenu__link" :to="item.link + subtitle.anchor">{{ subtitle.value }}</g-link>
+                  <g-link class="submenu__link" :to="item.link + subtitle.anchor">
+                    {{ subtitle.value }}
+                  </g-link>
                 </li>
               </ul>
-            </li>
-          </ul>
-        </div>
+            </template>
+          </template>
+        </transition-group>
 
       </div>
       <Section class="flex-fit" container="md">

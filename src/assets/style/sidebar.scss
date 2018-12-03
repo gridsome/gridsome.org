@@ -38,22 +38,12 @@
     }
   }
 
-  .menu {
-    list-style: none;
+  .menu-link {
     margin: 0;
     font-size: .9rem;
-    padding-left: .2rem;
+    padding: .1rem 0;
 
-    &__item {
-      padding: .1rem 0;
-      margin-bottom: 0;
-    }
-
-    > li > a {
-      transition: padding .3s;
-    }
-
-    > li > .active--exact {
+    &.active--exact {
       color: var(--primary-link-color);
       opacity: 1;
       font-weight: 600;
@@ -71,7 +61,6 @@
         margin-top: -5px;
         background-color: var(--primary-link-color);
         animation: scaleIn .7s forwards;
-
       }
     }
   }
@@ -83,7 +72,6 @@
     opacity: .9;
     padding-left: .6rem;
     border-left: 3px solid var(--border-color);
-    animation: reveal 1s forwards;
 
     &__item {
       margin-bottom: 0;
@@ -91,9 +79,8 @@
     }
   }
 
-
   @media screen and (max-width: 750px) {
-  & {
+    & {
       width: 100%;
       position: relative;
       margin:0;
