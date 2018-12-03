@@ -5,6 +5,7 @@
   overflow: auto;
   position: relative;
   -webkit-overflow-scrolling: touch;
+  animation: rotateInLeft .4s cubic-bezier(0.19, 1, 0.22, 1);
 
   @media screen and (min-width: 750px) {
     position: sticky;
@@ -41,6 +42,7 @@
     list-style: none;
     margin: 0;
     font-size: .9rem;
+    padding-left: .2rem;
 
     &__item {
       padding: .1rem 0;

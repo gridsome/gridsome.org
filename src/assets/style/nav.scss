@@ -23,10 +23,57 @@ nav a {
   &:not(.active):not(:hover):not(.button) {
     color: currentColor;
     opacity: .7;
+  } 
+}
+
+
+nav {
+  .has-dropdown {
+    position: relative;
+    display: inline-block;
+
+    &:hover {
+      .dropdown {
+        pointer-events: inherit;
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
   }
 
- 
- 
+  .dropdown {
+    background-color: var(--primary-bg);
+    pointer-events: none;
+    visibility: hidden;
+    z-index: 10;
+    color: #111;
+    position: absolute;
+    top:100%;
+    right:0;
+    width: 230px;
+    border-radius: 3px;
+    padding: 10px 20px 20px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.3);
+    transform: translateY(-5px);
+    opacity: 0;
+    transition: opacity .3s, transform .3s cubic-bezier(0.19, 1, 0.22, 1);
+
+    &__title {
+      padding: 5px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: bold;
+      opacity: .4;
+      display: block;
+      margin-top: 10px;
+    }
+
+    a {
+      justify-content: flex-start;
+    }
+  }
 }
 
 nav.tabs {
