@@ -11,7 +11,7 @@
               <g-link class="menu-item menu-link" :to="item.link" :key="`link-${i1}-${i2}`">
                 {{ item.title }}
               </g-link>
-              <ul v-if="item.link === currentPath && subtitles.length" :key="`submenu-${i1}-${i2}`" class="menu-item submenu">
+              <ul v-if="item.link === currentPath && subtitles && subtitles.length" :key="`submenu-${i1}-${i2}`" class="menu-item submenu">
                 <li class="submenu__item" v-for="subtitle in subtitles">
                   <g-link class="submenu__link" :to="item.link + subtitle.anchor">
                     {{ subtitle.value }}
