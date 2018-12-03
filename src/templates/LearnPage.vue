@@ -10,8 +10,8 @@
 </template>
 
 <page-query>
-query DocPage ($path: String!) {
-  doc: docPage (path: $path) {
+query LearnPage ($path: String!) {
+  doc: learnPage (path: $path) {
     path
     content
     title: headings (depth: h1) {
@@ -26,7 +26,7 @@ query DocPage ($path: String!) {
 </page-query>
 
 <script>
-import links from '@/data/doc-links.yaml'
+import links from '@/data/learn-links.yaml'
 
 export default {
   computed: {

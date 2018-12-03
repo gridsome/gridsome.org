@@ -1,5 +1,5 @@
 <template>
-  <Layout class="has-sidebar" :footer="false">
+  <Layout class="has-sidebar docs-page" :footer="false">
     <div class="container flex gap-60 flex-align-top">
       <div class="sidebar dots-bg">
         
@@ -32,19 +32,73 @@
 </template>
 
 <script>
-import links from '@/data/doc-links.yaml'
-
 export default {
   props: {
-    subtitles: Array
+    subtitles: Array,
+    links: Array
   },
   computed: {
     currentPath () {
       return this.$route.matched[0].path
     },
-    links () {
-      return links
-    }
   }
 }
 </script>
+
+<style lang="scss">
+.docs-page .post {
+
+  max-width: 100%;
+
+  ul li {
+    margin-bottom: .2rem;
+  }
+  
+  h1, h2, h3 {
+    padding-top: 6rem;
+    margin-top: -5rem;
+    position: relative;
+    z-index: -1;
+
+    a {
+      float: left;
+      position: relative;
+      top: 0.12em;
+      margin-left: -1.2em;
+      font-size: 0.85em;
+      text-align: center;
+      width: 0.8em;
+      opacity: 0.0;
+
+      &::before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: calc(100% + 0.5em);
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  h2 {
+    &::before {
+      content: " ";
+      display: block;
+      margin-bottom: 1.5rem;
+      border-top: 1px solid var(--border-color);
+    }
+  }
+  
+  h3 { opacity: .9 }
+
+  h4, h5, h6 { opacity: .8 }
+
+  ul > li > p {
+    font-weight: 400;
+  }
+}
+</style>

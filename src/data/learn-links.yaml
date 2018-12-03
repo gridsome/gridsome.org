@@ -1,0 +1,36 @@
+- title: Learn Gridsome 👶🏻
+  items:
+    - title: 'Introduction'
+      link:  /learn
+    - title: '0. Development setup'
+      link:  /learn/basic/dev-setup
+    - title: '1. Basic setup'
+      link: /learn/basic/project-setup
+    - title: '2. Add fonts and styles'
+      link: /learn/basic/fonts-styles
+    - title: '3. Data sources in Gridsome'
+      link: /learn/basic/data-sources
+    - title: '4. Create a custom layout'
+      link: /learn/basic/layouts
+    - title: '5. Add pagination'
+      link: /learn/pagination
+    - title: '6. Prepare to go live'
+      link: /learn/basic/go-live
+
+
+- title: Basic Vue.js 💚
+  items:
+    - title: 'Vue Components'
+      link:  /learn/basic/dev-setup
+    - title: 'Click events & Methods'
+      link: /learn/basic/project-setup
+    - title: 'Passing props'
+      link: /learn/basic/fonts-styles
+    - title: 'Looping arrays'
+      link:  /learn/basic/dev-setup
+    - title: 'Nested components'
+      link: /learn/basic/data-sources
+    - title: 'Hide / show elements'
+      link: /learn/basic/data-sources
+    - title: 'Transitions & animations'
+      link: /learn/basic/data-sources
