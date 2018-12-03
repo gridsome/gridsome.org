@@ -52,7 +52,7 @@
     }
 
     > li > .active--exact {
-      color: var(--primary-color);
+      color: var(--primary-link-color);
       opacity: 1;
       font-weight: 600;
       position: relative;
@@ -67,7 +67,7 @@
         left: -1px;
         top: 50%;
         margin-top: -5px;
-        background-color: var(--primary-color);
+        background-color: var(--primary-link-color);
         animation: scaleIn .7s forwards;
 
       }
@@ -81,6 +81,7 @@
     opacity: .9;
     padding-left: .6rem;
     border-left: 3px solid var(--border-color);
+    animation: reveal 1s forwards;
 
     &__item {
       margin-bottom: 0;

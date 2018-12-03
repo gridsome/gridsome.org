@@ -1,3 +1,15 @@
+@keyframes reveal {
+  0% {
+    max-height: 0px;
+    opacity: 0;
+  }
+  100% {
+    max-height: 500px;
+    opacity: 1;
+  }
+}
+
+
 @keyframes rotateIn {
   0% {
     transform: rotate(500deg);
