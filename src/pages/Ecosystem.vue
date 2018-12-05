@@ -1,7 +1,7 @@
 <template>
   <Layout>
-    <Section>
-      Ecosystem
+     <Section container="sm">
+      <h1 class="text-center">Gridsome Ecosystem</h1>
     </Section>
   </Layout>
 </template>

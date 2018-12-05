@@ -20,23 +20,23 @@
               Community
             </span>
 
-            <a href="#">Discord Chat</a>
-            <a href="#">GitHub Issues</a>
-            <a href="#">Follow on Twitter</a>
+            <a href="http://github.com/gridsome/gridsome">GitHub</a>
+            <a href="http://discord.gg/daeay6n">Discord Chat</a>
+            <a href="https://twitter.com/gridsome">Twitter</a>
 
             <span class="dropdown__title">
               About
             </span>
 
-            <a href="#">Gridsome Blog</a>
-            <a href="#">Logo & assets</a>
+            <g-link to="/blog">Gridsome Blog</g-link>
+            <g-link to="/logo">Logo & assets</g-link>
 
             <span class="dropdown__title">
               Friends
             </span>
 
-            <a href="#">Vue.js</a>
-            <a href="#">GraphQL</a>
+            <a href="https://vuejs.org/">Vue.js docs</a>
+            <a href="https://graphql.org/learn/">GraphQL docs</a>
 
           </div>
         </div>
