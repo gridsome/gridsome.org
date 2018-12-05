@@ -23,7 +23,7 @@
       <div class="grid-cols grid-cols--2 mb">
         <div >
           <h2><vue-logo /> Use Vue.js for frontend</h2>
-          <p><a target="_blank" href="https://www.netguru.co/blog/13-top-companies-that-have-trusted-vue.js-examples-of-applications">Vue.js</a> is an approachable, super fast framework that your whole team will learn quickly. It's incredibly popular, got a <a target="_blank" href="https://github.com/vuejs/awesome-vue">massive community</a> behind it and is in use by <a target="_blank" href="https://www.netguru.co/blog/13-top-companies-that-have-trusted-vue.js-examples-of-applications">big companies.</a></p>
+          <p><a target="_blank" href="https://vuejs.org/">Vue.js</a> is an approachable, super fast framework that your whole team will learn quickly. It's incredibly popular, got a <a target="_blank" href="https://github.com/vuejs/awesome-vue">massive community</a> behind it and is in use by <a target="_blank" href="https://www.netguru.co/blog/13-top-companies-that-have-trusted-vue.js-examples-of-applications">big companies.</a></p>
 
           <ul class="bullet-list">
             <li><Bullet /> <strong> Use the same frontend framework</strong> for any project.</li>
