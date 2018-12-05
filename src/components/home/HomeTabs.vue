@@ -8,8 +8,8 @@
           <p>Gridsome brings all your data into a <strong>unified GraphQL interface</strong>. The data can be browsed and explored in a simple interface (GraphQL Playground) and inserted to any Vue Component. </p>
 
           <ul class="bullet-list">
-            <li><Bullet /> Plug & play for any CMS or data source.</li>
-            <li><Bullet /> Browse and test queries in a local interface.</li>
+            <li><Bullet /> Pull data from any CMS or data source.</li>
+            <li><Bullet /> Browse data and test queries in a unified interface.</li>
             <li><Bullet /> Query only the data fields you need.</li>
             <li><Bullet /> Built-in pagination support for queries.</li>
           </ul>
