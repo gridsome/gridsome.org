@@ -7,14 +7,14 @@
     </p>
 
     <div class="grid-cols grid-cols--2 container-md">
-      <ul class="home-bullets">
+      <ul class="bullet-list">
         <li><Bullet /> No render-blocking assets</li>
         <li><Bullet /> Super fast Time to Interactive</li>
         <li><Bullet /> Automatic code-splitting</li>
         <li><Bullet /> Automatic critical CSS</li>
         <li><Bullet /> Automatic next page prefetcing</li>
       </ul>
-      <ul class="home-bullets">
+      <ul class="bullet-list">
         <li><Bullet /> Navigate without page reloads</li>
         <li><Bullet /> PWA-ready out-of-the-box</li>
         <li><Bullet /> Progressive image loading</li>
@@ -34,16 +34,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-  .home-bullets {
-    list-style: none;
-    margin-bottom: 0;
-
-    svg {
-      vertical-align: middle;
-      margin-top: -1px;
-      color: var(--primary-color);
-    }
-  }
-</style>

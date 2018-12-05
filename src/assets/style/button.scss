@@ -27,6 +27,7 @@
   &.primary {
     color:#FFF;
     background-color: var(--primary-color);
+    box-shadow: 1px 2px 5px rgba(0,0,0,.1);
     &:after {
       border-color: rgba(0,0,0,.1);
     }

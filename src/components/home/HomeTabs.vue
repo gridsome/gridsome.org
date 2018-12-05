@@ -1,60 +1,88 @@
 <template>
   <Section dots="true">
+    <div class="homepage-features container">
+      
+      <div class="grid-cols grid-cols--2 mb">
+        <div style="order:2">
+          <h2>All your data in one place</h2>
+          <p>Gridsome brings all your data into a <strong>unified GraphQL interface</strong>. The data can be browsed and explored in a simple interface (GraphQL Playground). </p>
 
-    <h2 class="text-center mb pb">Rapid & fun developer experience</h2>
-
-    <div id="top" class="home-tabs container text-center">
-      <nav class="home-tabs__tabs tabs flex gap-15 flex--no-wrap flex--center mb" style="margin-top:-3%">
-        <a href="#" @click="tab = 'graphql'" :class="{active: tab == 'graphql'}">
-          Use GraphQL for data
-        </a>
-        <a href="#" @click="tab = 'pages'" :class="{active: tab == 'pages'}">
-          Auto Page Routing
-        </a>
-        <a href="#" @click="tab = 'templates'" :class="{active: tab == 'templates'}">
-          Smart template system
-        </a>
-        <a href="#" @click="tab = 'images'" :class="{active: tab == 'images'}">
-          Auto Optimized Images
-        </a>
-      </nav>
-    </div>
-
-
-    <transition name="rotate-x">
-      <component :is="tab" />
-    </transition>
+          <ul class="bullet-list">
+            <li><Bullet /> Plug & play for any CMS or data source.</li>
+            <li><Bullet /> Browse and test queries in a local interface.</li>
+            <li><Bullet /> Query only the data fields you need.</li>
+            <li><Bullet /> Built-in pagination support for queries.</li>
+          </ul>
+        </div>
+        <div>
+          <g-image width="550" src="~/assets/images/graphql-browser.png" />
+        </div>
+      </div>
 
 
-    <div class="text-center">
-      <g-link to="/docs" class="button primary">Get started</g-link>
-      <a href="//github.com/gridsome/gridsome" class="button plain">GitHub</a>
+      <div class="grid-cols grid-cols--2 mb">
+        <div >
+          <h2><vue-logo /> Use Vue.js for frontend</h2>
+          <p><a target="_blank" href="https://www.netguru.co/blog/13-top-companies-that-have-trusted-vue.js-examples-of-applications">Vue.js</a> is an approachable, super fast framework that your whole team will learn quickly. It's incredibly popular, got a <a target="_blank" href="https://github.com/vuejs/awesome-vue">massive community</a> behind it and is in use by <a target="_blank" href="https://www.netguru.co/blog/13-top-companies-that-have-trusted-vue.js-examples-of-applications">big companies.</a></p>
+
+          <ul class="bullet-list">
+            <li><Bullet /> <strong> Use the same frontend framework</strong> for any project.</li>
+            <li><Bullet /> <strong> Approachable for any team member.</strong> It's just HTML and CSS.</li>
+            <li><Bullet /> <strong> Instant hot-reloading</strong> for incredible developer experience</li>
+            <li><Bullet /> <strong> Faster time to market</strong> with a sanitized stack.</li>
+            <li><Bullet /> <strong> Awesome  developer community</strong>. Find a library for any use case</li>
+          </ul>
+        </div>
+        <div>
+          <div v-html="$static.example.content" />
+        </div>
+   
+      </div>
+
+
+      <div class="grid-cols grid-cols--2 mb">
+        <div style="order:2">
+          <h2>Nothing beats static</h2>
+
+          <p><strong>No servers. No databases. Only files.</strong> Nothing beats static, pre-rendered sites when it comes to speed and security. Deploy your entire site to a CDN and forget about it. As long as your CDN is up, your Gridsome site will never go down. <strong>Combine dynamic and static data with the power of Vue.js</strong></p>
+
+          <ul class="bullet-list">
+            <li><Bullet /> <strong> Super fast generating.</strong> Build thousands of pages in seconds.</li>
+            <li><Bullet /> <strong> Better Performance.</strong> Faster page loading.</li>
+            <li><Bullet /> <strong> Higher Security.</strong> Very few surface areas for attacks.</li>
+            <li><Bullet /> <strong> Cheaper, Easier Scaling.</strong> Static files are the cheapest to host.</li>
+
+          </ul>
+        </div>
+        <div>
+          <g-image width="550" src="~/assets/images/static.png" />
+        </div>
+   
+      </div>
+
     </div>
 
   </Section>
 </template>
 
 <script>
-import TabGraphQL from './tabs/HomeTabGraphQL'
-import TabPages from './tabs/HomeTabPages'
-import TabSeo from './tabs/HomeTabSeo'
-import TabTemplates from './tabs/HomeTabTemplates'
-import TabImages from './tabs/HomeTabImages'
+import Bullet from '~/assets/images/bullet.svg'
+import VueLogo from '~/assets/images/vue-logo.svg'
 
 export default {
   components: {
-    'graphql' : TabGraphQL,
-    'pages' : TabPages,
-    'seo' :TabSeo,
-    'templates' : TabTemplates,
-    'images' : TabImages
+    Bullet,
+    VueLogo
   },
-
-  data() {
-    return {
-      tab: 'graphql'
-    }
-  }
 }
 
 </script>
+
+
+<static-query>
+query Example {
+  example (path: "/examples/templates") {
+    content
+  }
+}
+</static-query>

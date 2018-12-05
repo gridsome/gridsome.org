@@ -1,0 +1,12 @@
+  .bullet-list {
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: .2rem;
+    font-size: .95rem;
+
+    svg {
+      vertical-align: middle;
+      margin-top: -1px;
+      color: var(--primary-color);
+    }
+  }

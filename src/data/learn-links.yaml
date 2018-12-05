@@ -16,21 +16,3 @@
       link: /learn/pagination
     - title: '6. Prepare to go live'
       link: /learn/basic/go-live
-
-
-- title: Basic Vue.js 💚
-  items:
-    - title: 'Vue Components'
-      link:  /learn/basic/dev-setup
-    - title: 'Click events & Methods'
-      link: /learn/basic/project-setup
-    - title: 'Passing props'
-      link: /learn/basic/fonts-styles
-    - title: 'Looping arrays'
-      link:  /learn/basic/dev-setup
-    - title: 'Nested components'
-      link: /learn/basic/data-sources
-    - title: 'Hide / show elements'
-      link: /learn/basic/data-sources
-    - title: 'Transitions & animations'
-      link: /learn/basic/data-sources
