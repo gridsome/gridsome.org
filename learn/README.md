@@ -8,7 +8,7 @@ Here are some cool features Gridsome brings to the table:
 
 - **Automatic page routing** - Quickly create and navigate between pages
 - **Hot-reloading development** - See changes real-time while developing
-- **Vue.js for front-end** - Unlimited layout possibilities
+- **Vue.js for templating** - Unlimited layout possibilities
 - **Static pages** - Core functionality of Gridsome is to build static pages
 - **The** **GraphQL data layer** - Easy to query content you need from any added data source
 - **Data source plugins** - Easy to connect to any CMS or data source

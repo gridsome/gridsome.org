@@ -12,8 +12,8 @@ This is where all the data in a Gridsome project is located. Gridsome pulls in c
 
 [Learn more about Querying data here](/docs/data-query-data).
 
-## Vue.js for front-end
-Gridsome uses [Vue.js](https://vuejs.org/) for front-end framework. Vue is an approachable, simple & fun framework for building fast interfaces. Vue now has the most GitHub stars of any JavaScript UI library. This means developers like to work with it. Big companies like Alibaba, Adobe, GitLab is using Vue.js. Vue is famous for its intuitive design and shallow learning curve. This means it's easy to train staff in, even non-frontend devs and designers. Since developers will be up-and-running with Vue quickly, training costs will be kept to a minimum.
+## Vue.js for templating
+Gridsome uses [Vue.js](https://vuejs.org/) as frontend framework. Vue is an approachable, simple & fun framework for building fast interfaces. Vue now has the most GitHub stars of any JavaScript UI library. Big companies like Alibaba, Adobe, GitLab is using Vue.js. Vue is famous for its intuitive design and shallow learning curve. This means it's easy to train staff in, even non-frontend devs and designers. Since developers will be up-and-running with Vue quickly, training costs will be kept to a minimum.
 
 
 ## Transformers
