@@ -26,7 +26,7 @@
       <Feature>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="icon feather feather-smartphone"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12" y2="18"></line></svg>
 
-        <h3>PWA & SPA mobile-first architecture</h3>
+        <h3>PWA mobile-first architecture</h3>
         <p>Only critical HTML, CSS, and JavaScript get loaded first. The next pages are then prefetched so users can click around incredibly fast without page reloads, even when offline. 
         </p>     
       </Feature>
@@ -53,8 +53,8 @@
       <Feature>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="icon feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
 
-        <h3>Static, Serverless and <br class="hide-for-small"/>CDN-ready</h3>
-        <p>Gridsome sites are not connected to any database and can be hosted entirely on a CDN. It can handle thousands to millions of hits without breaking - and <strong>no expensive server costs.</strong>
+        <h3>Scale faster and sleep better</h3>
+        <p>Gridsome sites are not connected to any server and can be entirely hosted on a CDN. It can handle thousands to millions of hits without breaking - and <strong>no expensive server costs.</strong>
         </p>     
       </Feature>
     </div>
