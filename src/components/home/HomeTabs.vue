@@ -15,7 +15,7 @@
           </ul>
         </div>
         <div>
-          <g-image width="550" src="~/assets/images/graphql-browser.png" />
+          <g-image alt="GraphQL Browser" width="550" src="~/assets/images/graphql-browser.png" />
         </div>
       </div>
 
@@ -50,11 +50,10 @@
             <li><Bullet /> <strong> Better Performance.</strong> Faster page loading by default.</li>
             <li><Bullet /> <strong> Higher Security.</strong> Very few surface areas for attacks.</li>
             <li><Bullet /> <strong> Cheaper, Easier Scaling.</strong> Static files are the cheapest to host.</li>
-
           </ul>
         </div>
         <div>
-          <g-image width="550" src="~/assets/images/static.png" />
+          <g-image alt="Safe deployment" width="550" src="~/assets/images/static.png" />
         </div>
    
       </div>

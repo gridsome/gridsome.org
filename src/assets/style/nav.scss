@@ -18,6 +18,10 @@ nav a {
     svg {
       opacity: 1;
     }
+  } 
+
+  &:hover {
+    color: var(--primary-color);
   }
 
   &:not(.active):not(:hover):not(.button) {
