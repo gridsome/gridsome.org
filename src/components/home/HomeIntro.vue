@@ -11,7 +11,7 @@
     </h1>
 
     <p class="home-lead lead  container-sm">
-      Gridsome is a <strong>Vue-powered static site generator</strong> for building high-performance frontends <strong>for any CMS or data API</strong>
+      Gridsome is a <strong>Vue-powered static site generator</strong> for building high-performance frontends <strong>for any CMS or data source</strong>
     </p>
 
     <p class="home-links">
