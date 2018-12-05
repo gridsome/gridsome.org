@@ -6,7 +6,7 @@
   </Layout>
 </template>
 
-<style scoped>
+<style lang="scss">
 	h1 { font-size: 32px }
 </style>
 
