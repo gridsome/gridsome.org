@@ -1,6 +1,6 @@
 # Hosting & Deployment
 
-Gridsome sites are static generated at build time. This mean that the site can be hosted anywhere, and does not require any database. It can be hosted on a global CDN or even a simple FTP. Your site will also be un-hackable since there is no database connected. With Gridsome you don't need any caching or security plugins like you do in a traditional CMS like WordPress.
+Gridsome sites are static generated at build time. This means that the site can be hosted anywhere, and does not require any database. It can be hosted on a global CDN or even uploaded manually via FTP. Your site will also be virtually un-hackable since there is no database connected. With Gridsome you don't need any caching or security plugins like you do in a traditional CMS like WordPress.
 
 
 ### Git-based deploying
@@ -27,7 +27,7 @@ Many services let you deploy your static Gridsome site from the terminal. Here a
 
 ### FTP deploying
 
-To host your site on a FTP you need to manually build your project from the Terminal.
+To host your site on traditional hosting via FTP you need to manually build your project from the Terminal.
 
 - Run `gridsome build` in your project folder.
 - This will generate a `dist` folder where your generated site is located.
