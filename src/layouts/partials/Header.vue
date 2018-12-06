@@ -80,7 +80,6 @@ header {
   color:#FFF;
   border-bottom: 1px solid transparent;
   flex-wrap: nowrap;
-  padding-top: 5px;
   position: sticky;
 
   .header-inner {
@@ -89,17 +88,6 @@ header {
   
   .has-sidebar & {
     border-bottom: 1px solid var(--border-color);
-  }
-
-  &:after {
-    content: " ";
-    position: absolute;
-    top:0;
-    width: 100%;
-    left:0;
-    right:0;
-    height: 5px;
-    background: linear-gradient(to right, #53D096 -5.92%, #8DD6F9 48.99%, #E535AB 123.16%);
   }
 }
 
