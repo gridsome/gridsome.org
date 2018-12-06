@@ -582,9 +582,9 @@
     lodash "^4.17.10"
     slash "^2.0.0"
 
-"@gridsome/transformer-remark@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@gridsome/transformer-remark/-/transformer-remark-0.1.1.tgz#2c9740c73cceafcf177c89a85014b22d05704d8a"
+"@gridsome/transformer-remark@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@gridsome/transformer-remark/-/transformer-remark-0.1.2.tgz#59ead2f300771f7b4a8ecad2e8d0f6961a888def"
   dependencies:
     fs-extra "^6.0.1"
     gray-matter "^4.0.1"
@@ -3916,9 +3916,9 @@ gray-percentage@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/gray-percentage/-/gray-percentage-2.0.0.tgz#b72a274d1b1379104a0050b63b207dc53fe56f99"
 
-gridsome@^0.3.4:
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.3.4.tgz#bad6b5e7d5eaea47a4b58b069c0690d7ffcad593"
+gridsome@^0.3.5:
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.3.5.tgz#bdfe7c3099699989d21f6e4feb1ff3d74d0ec135"
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/plugin-syntax-dynamic-import" "^7.0.0"

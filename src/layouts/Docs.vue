@@ -57,12 +57,9 @@ export default {
   h1, h2, h3 {
     padding-top: 6rem;
     margin-top: -5rem;
-    position: relative;
-    z-index: -1;
 
     a {
       float: left;
-      position: relative;
       top: 0.12em;
       margin-left: -1.2em;
       font-size: 0.85em;
@@ -82,6 +79,10 @@ export default {
         display: none;
       }
     }
+
+    &:hover a{
+      opacity: 1;
+    }
   }
 
   h2 {
@@ -96,6 +97,15 @@ export default {
   h3 { opacity: .9 }
 
   h4, h5, h6 { opacity: .8 }
+
+  h1 a, h4 a, h5 a {
+    display: none;
+  }
+
+  p {
+    position: relative;
+    z-index: 1;
+  }
 
   ul > li > p {
     font-weight: 400;
