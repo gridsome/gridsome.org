@@ -13,19 +13,6 @@ module.exports = {
       .use('svg-to-vue-component')
       .loader('svg-to-vue-component/loader')
   },
-
-  transformers: {
-    remark: {
-      autolinkHeadings: {
-        content: {
-          type: 'text',
-          value: '#'
-        }
-      }
-    }
-
-  },
-
   plugins: [
     '@gridsome/plugin-critical',
     {
@@ -35,6 +22,12 @@ module.exports = {
         path: 'docs/**/*.md',
         typeName: 'DocPage',
         remark: {
+          autolinkHeadings: {
+            content: {
+              type: 'text',
+              value: '#'
+            }
+          },
           plugins: [
             '@gridsome/remark-prismjs'
           ]
@@ -61,6 +54,12 @@ module.exports = {
         path: 'learn/**/*.md',
         typeName: 'LearnPage',
         remark: {
+          autolinkHeadings: {
+            content: {
+              type: 'text',
+              value: '#'
+            }
+          },
           plugins: [
             '@gridsome/remark-prismjs'
           ]

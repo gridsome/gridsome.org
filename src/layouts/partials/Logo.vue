@@ -1,7 +1,9 @@
 <template>
-  <g-link class="logo" to="/" title="Back to home">
-    <Logo alt="Gridsome.org" />
-  </g-link>
+  <div class="logo" @contextmenu="rightClick" oncontextmenu="return false;">
+    <g-link class="logo__link" to="/" title="Back to home">
+      <Logo class="logo__svg" alt="Gridsome.org" />
+    </g-link>
+  </div>
 </template>
 
 <script>
@@ -9,6 +11,12 @@ import Logo from '~/assets/images/gridsome-logo.svg'
 export default {
   components: {
     Logo
+  },
+  methods: {
+    rightClick() {
+      this.$router.push({ path: '/logo' })
+      return false
+    }
   }
 }
 </script>

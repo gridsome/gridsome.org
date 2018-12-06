@@ -15,7 +15,7 @@
           </ul>
         </div>
         <div>
-          <g-image alt="GraphQL Browser" width="550" src="~/assets/images/graphql-browser.png" />
+          <g-image alt="GraphQL Browser" width="1100" src="~/assets/images/graphql-browser.png" />
         </div>
       </div>
 
@@ -53,7 +53,7 @@
           </ul>
         </div>
         <div>
-          <g-image alt="Safe deployment" width="550" src="~/assets/images/static.png" />
+          <g-image alt="Safe deployment" width="1100" src="~/assets/images/static.png" />
         </div>
    
       </div>

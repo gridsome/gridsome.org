@@ -54,7 +54,7 @@ $easing: cubic-bezier(0.19, 1, 0.22, 1);
 
 	svg path{
 	  transform-origin: 50% 50%;
-	  animation: rotateIn 1.5s $easing forwards;
+	  animation: rotateIn 1s $easing forwards;
 	  opacity: 0;
 	}
 
@@ -65,7 +65,7 @@ $easing: cubic-bezier(0.19, 1, 0.22, 1);
 
 	svg path + path + path + path + path{
 	  animation: rotateInLeft .6s $easing forwards;
-	  animation-delay: 0.7s;
+	  animation-delay: 0.6s;
 	  opacity:0;
 	}
 }
