@@ -39,7 +39,8 @@
 
   .menu-link {
     margin: 0;
-    padding: .15rem 0;
+    padding: .2rem 0;
+    font-size: .95rem;
 
     &.active--exact {
       color: var(--primary-link-color);
