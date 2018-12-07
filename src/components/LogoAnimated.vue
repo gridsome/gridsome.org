@@ -43,6 +43,9 @@ $easing: cubic-bezier(0.19, 1, 0.22, 1);
 	width: 80px; 
 	margin: 0 auto 1.5rem;
 	cursor: pointer;
+	svg {
+		transform: translateZ(0);
+	}
 
 	svg path{
 	  transform-origin: 50% 50%;
@@ -69,7 +72,7 @@ $easing: cubic-bezier(0.19, 1, 0.22, 1);
 
 	svg path.dash {
 		 animation: rotateInLeft 1s $easing forwards;
-		 animation-delay: .6s;
+		 animation-delay: .7s;
 	}
 
 

@@ -23,12 +23,10 @@
 
 @keyframes scaleIn {
   0% {
-    transform: scale(3);
+    transform: scale(.5);
     opacity: 0;
   }
-  60% {
-    transform: scale(.8);
-  }
+
   100% {
     transform: scale(1);
     opacity: 1;
