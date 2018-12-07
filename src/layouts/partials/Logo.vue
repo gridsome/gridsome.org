@@ -16,7 +16,7 @@ export default {
 <style lang="scss">
  .logo {
   svg{
-  	max-width: 155px;
+  	max-width: 160px;
   	height: auto;
   	margin-top: -3px;
   }
