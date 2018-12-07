@@ -1,13 +1,36 @@
  <template>
 
  <div class="animated-logo" @click="resetLogo">
-	<svg viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
-		<path v-if="loaded" class="circle3" fill-rule="evenodd" clip-rule="evenodd" d="M324.931 148.726C342.211 147.895 357.508 161.301 359 178.597C365.464 262.269 290.267 355.845 182.356 358.843C165.062 359.323 150.654 345.654 150.175 328.312C149.696 310.97 163.327 296.522 180.621 296.042C252.21 294.053 297.563 232.219 295.142 181.607C294.313 164.279 307.65 149.557 324.931 148.726Z" fill="#34A36F"/>
-		<path v-if="loaded" class="circle2" fill-rule="evenodd" clip-rule="evenodd" d="M31.736 146.944C49.0366 146.944 63.0615 161.008 63.0615 178.357C63.0615 250.767 121.283 297.629 179.436 296.194C196.731 295.767 211.097 309.48 211.523 326.824C211.948 344.167 198.273 358.573 180.977 359C90.0394 361.244 0.0996127 288.439 0.0996094 178.357C0.0996082 161.008 14.4354 146.944 31.736 146.944Z" fill="#4DBA87"/>
-		<path v-if="loaded" class="dash" d="M246.675 180.793C246.675 163.031 261.162 148.633 279.034 148.633H326.193C344.064 148.633 359 163.031 359 180.793C359 198.555 344.064 212.953 326.193 212.953H279.034C261.162 212.953 246.675 198.555 246.675 180.793Z" fill="#64D8A2"/>
-		<path v-if="loaded" class="dot" d="M147.726 180.84C147.726 163.052 162.122 148.633 179.86 148.633C197.599 148.633 211.994 163.052 211.994 180.84C211.994 198.627 197.599 213.047 179.86 213.047C162.122 213.047 147.726 198.627 147.726 180.84Z" fill="#64D8A2"/>
-		<path v-if="loaded" class="circle1" fill-rule="evenodd" clip-rule="evenodd" d="M211.104 30.3612C211.822 47.6949 198.391 62.3302 181.105 63.05C106.485 66.1576 60.9306 124.806 63.1479 180.493C63.8382 197.828 50.6646 212.442 33.3778 213.134C16.091 213.826 0.888995 199.836 0.198757 182.501C-3.41466 91.7531 72.147 2.04097 178.505 0.279128C195.791 -0.440732 210.386 13.0275 211.104 30.3612Z" fill="#64D8A2"/>
-	</svg>
+		<svg  viewBox="0 0 121 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path v-if="loaded" fill-rule="evenodd" class="circle3" clip-rule="evenodd" d="M108.612 49.2991C114.388 49.0236 119.501 53.4674 120 59.2008C122.161 86.9361 97.0253 117.954 60.9548 118.948C55.1741 119.107 50.3581 114.576 50.1979 108.828C50.0378 103.079 54.5942 98.29 60.3749 98.1308C84.3043 97.4716 99.464 76.975 98.6548 60.1986C98.3777 54.4545 102.836 49.5747 108.612 49.2991Z" fill="url(#paint0_linear)"/>
+			<path v-if="loaded" fill-rule="evenodd" class="circle2" clip-rule="evenodd" d="M10.608 48.7086C16.391 48.7086 21.079 53.3705 21.079 59.1211C21.079 83.1233 40.5403 98.6569 59.9785 98.1812C65.7597 98.0397 70.5616 102.585 70.7038 108.334C70.8461 114.083 66.2748 118.858 60.4937 119C30.0966 119.744 0.0332048 95.6107 0.0332031 59.1211C0.0332026 53.3705 4.82512 48.7086 10.608 48.7086Z" fill="url(#paint1_linear)"/>
+			<path v-if="loaded" class="dash" d="M82.4541 59.9286C82.4541 54.041 87.2968 49.2682 93.2705 49.2682L109.034 49.2682C115.008 49.2682 120 54.041 120 59.9286C120 65.8162 115.008 70.589 109.034 70.589H93.2705C87.2968 70.589 82.4541 65.8162 82.4541 59.9286Z" fill="url(#paint2_linear)"/>
+			<path v-if="loaded" class="dot" d="M49.3792 59.9441C49.3792 54.048 54.1911 49.2682 60.1204 49.2682C66.0496 49.2682 70.8616 54.048 70.8616 59.9441C70.8616 65.8403 66.0496 70.6201 60.1204 70.6201C54.1911 70.6201 49.3792 65.8403 49.3792 59.9441Z" fill="url(#paint3_linear)"/>
+			<path v-if="loaded" class="circle1" fill-rule="evenodd" clip-rule="evenodd" d="M70.5639 10.0641C70.8038 15.8098 66.3144 20.661 60.5365 20.8996C35.5938 21.9297 20.3667 41.3702 21.1079 59.8293C21.3386 65.5754 16.9352 70.4195 11.1569 70.6489C5.37854 70.8784 0.297111 66.241 0.06639 60.4949C-1.14144 30.414 24.1159 0.676587 59.6675 0.0925793C65.4455 -0.146037 70.3239 4.31835 70.5639 10.0641Z" fill="url(#paint4_linear)"/>
+			<defs>
+			<linearGradient id="paint0_linear" x1="64.6538" y1="143.874" x2="97.3822" y2="148.117" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#1A7D75"/>
+			<stop offset="1" stop-color="#1A8864"/>
+			</linearGradient>
+			<linearGradient id="paint1_linear" x1="3.98886" y1="56.525" x2="-12.2619" y2="99.6116" gradientUnits="userSpaceOnUse">
+			<stop offset="0.0129262" stop-color="#168A81"/>
+			<stop offset="1" stop-color="#31A97F"/>
+			</linearGradient>
+			<linearGradient id="paint2_linear" x1="28.275" y1="62.1611" x2="55.7152" y2="104.116" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#27A59B"/>
+			<stop offset="1" stop-color="#64D8A2"/>
+			</linearGradient>
+			<linearGradient id="paint3_linear" x1="18.3798" y1="62.1799" x2="48.1024" y2="88.1439" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#27A59B"/>
+			<stop offset="1" stop-color="#64D8A2"/>
+			</linearGradient>
+			<linearGradient id="paint4_linear" x1="149.335" y1="-100.076" x2="61.375" y2="-130.015" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#27A59B"/>
+			<stop offset="1" stop-color="#64D8A2"/>
+			</linearGradient>
+			</defs>
+		</svg>
+
   </div>
 </template>
 
@@ -72,7 +95,7 @@ $easing: cubic-bezier(0.19, 1, 0.22, 1);
 
 	svg path.dash {
 		 animation: rotateInLeft .5s $easing forwards;
-		 animation-delay: .6s;
+		 animation-delay: .5s;
 	}
 
 

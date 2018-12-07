@@ -197,7 +197,7 @@ export default {
   }
 
   &__vue {
-    background: var(--primary-color);
+    background: linear-gradient(155.25deg, #27A59B -49.14%, #64D8A2 81.43%);
     position: relative;
     animation: pulse 2s infinite;
     animation-delay: .3s;

@@ -26,7 +26,8 @@
 
   &.primary {
     color:#FFF;
-    background-color: var(--primary-link-color);
+    background: linear-gradient(155.25deg, #27A59B -49.14%, #64D8A2 81.43%);
+
     box-shadow: 1px 2px 5px rgba(0,0,0,.1);
     &:after {
       border-color: rgba(0,0,0,.1);

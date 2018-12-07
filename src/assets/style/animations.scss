@@ -12,7 +12,7 @@
 
 @keyframes rotateIn {
   0% {
-    transform: rotate(260deg);
+    transform: rotate(360deg);
     opacity: 0;
   }
   100% {
@@ -35,7 +35,7 @@
 
 @keyframes rotateInLeft {
   0% {
-    transform: translateX(-10%);
+    transform: translateX(-30%);
     opacity: 0;
   }
   100% {
