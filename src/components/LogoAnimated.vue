@@ -49,7 +49,7 @@ $easing: cubic-bezier(0.19, 1, 0.22, 1);
 
 	svg path{
 	  transform-origin: 50% 50%;
-	  animation: rotateIn 1s $easing forwards;
+	  animation: rotateIn .6s $easing forwards;
 	  opacity: 0;
 	}
 
@@ -58,21 +58,21 @@ $easing: cubic-bezier(0.19, 1, 0.22, 1);
 	}
 
 	svg path.circle2 {
-	  animation-delay: .3s;
+	  animation-delay: .2s;
 	}
 
 	svg path.circle3 {
-	  animation-delay: .5s;
+	  animation-delay: .3s;
 	}
 
 	svg path.dot {
-		 animation: scaleIn 1s $easing forwards;
-		 animation-delay: .6s;
+		 animation: scaleIn .5s $easing forwards;
+		 animation-delay: .5s;
 	}
 
 	svg path.dash {
-		 animation: rotateInLeft 1s $easing forwards;
-		 animation-delay: .7s;
+		 animation: rotateInLeft .5s $easing forwards;
+		 animation-delay: .6s;
 	}
 
 
