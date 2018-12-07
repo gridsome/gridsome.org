@@ -14,7 +14,7 @@ import '~/assets/styles.css'
 ## Use SASS & CSS pre-processors
 To enable **SASS** you need to run command `npm install -D sass-loader node-sass` to install the required packages. 
 
-Now you can import **.scss** files in **main.js**:
+Now you can import **.scss** files in **src/main.js**:
 
 ```js
 import '~/assets/styles.scss'
@@ -67,6 +67,10 @@ Its very easy to add scoped styles in vue. Simple add "scoped" to the style tag 
 This will change the `.card` class in current component automatically to something like **.card[x5u123sc5s1]** and only apply the style to that class.
 
 [Learn more about Scoped styles in Vue](https://vue-loader.vuejs.org/guide/scoped-css.html)
+
+## Enable Critical CSS
+
+Gridsome [Critical CSS plugin](/plugins/plugin-critical-css) extracts CSS from components in selected view port size and adds the CSS inline to `<head>`.
 
 
 ## Add a CSS framework

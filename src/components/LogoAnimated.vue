@@ -29,7 +29,7 @@ export default {
 	mounted() {
 		setTimeout(() => {
 			this.loaded = true
-		}, 300)
+		}, 100)
 	},
 	methods: {
 		resetLogo() {
@@ -37,7 +37,7 @@ export default {
 
 			setTimeout(() => {
 				this.loaded = true
-			}, 300)
+			}, 100)
 		}
 	}
 }

@@ -42,8 +42,6 @@
       link: /docs/body-html-attributes
     - title: Adding plugins
       link: /docs/plugins
-    - title: Vue.js basics *
-      link: /docs/vue-js
 
 - title : Data store
   items: 
@@ -61,15 +59,13 @@
 - title : Styles and Assets
   items: 
     - title: Use CSS in Gridsome
-      link: /docs/style-global-styles
-    - title: Enable Critical CSS
-      link: /docs/style-critical-css
-    - title: Add SVG icons *
-      link: /docs/style-svg
+      link: /docs/assets-css
     - title: Add custom fonts *
-      link: /docs/style-custom-fonts
+      link: /docs/assets-fonts
     - title: Add external scripts *
-      link: /docs/style-custom-fonts
+      link: /docs/assets-scripts
+    - title: Add SVG icons *
+      link: /docs/assets-svg
 
 
 - title : Guides
