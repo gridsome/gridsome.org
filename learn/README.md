@@ -15,11 +15,3 @@ Here are some cool features Gridsome brings to the table:
 - **Excellent** **plugin system** - Find plugins for any job
 
 Sounds like fun? This tutorial will cover the basic of all these topics. Fasten your seat belts and get started 🚀 
-
-- [0. Development setup](https://www.notion.so/f978446ceb68422d99cb08d27a6f2c2d)
-- [1. Basic Gridsome](https://www.notion.so/22ef69be23bb412595dbeb5567303e2a)
-- [2. Add fonts and styles](https://www.notion.so/526b40a2f7304ca2a1066231bff14993)
-- [3. Data sources in Gridsome](https://www.notion.so/a5a7a6a373744c7783e2c441da00e87b)
-- [4. Create a custom layout](https://www.notion.so/1563dcd0854e49e1b3801af6fc094c62)
-- [5. Add pagination](https://www.notion.so/162dc4f4bfa8424f98020b343239c302)
-- [6. Prepare to go live](https://www.notion.so/c85eb96572a349ef84ab926769534223)
