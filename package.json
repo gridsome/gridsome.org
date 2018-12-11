@@ -11,7 +11,7 @@
     "gridsome": "^0.3.5",
     "typeface-league-spartan": "0.0.44",
     "typeface-nunito": "0.0.54",
-    "typography": "^0.16.17",
+    "typography": "^0.16.18",
     "vue-analytics": "^5.16.0",
     "vue-scrollto": "^2.13.0"
   },

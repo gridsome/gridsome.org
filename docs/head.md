@@ -10,12 +10,13 @@ export default {
   name: 'About',
   metaInfo: {
     title: 'About us',
-    description: '',
     meta: [
-      { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
-      // more metas
+    ],
+    link: [
+      { rel: 'stylesheet', href: '/css/index.css' },
     ]
+    // etc...
   }
 }
 ```

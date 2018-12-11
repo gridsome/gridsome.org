@@ -8563,13 +8563,13 @@ typeface-nunito@0.0.54:
   version "0.0.54"
   resolved "https://registry.yarnpkg.com/typeface-nunito/-/typeface-nunito-0.0.54.tgz#5046f24d8d1492ca8fd823896d6e1cdefbe63203"
 
-typography-normalize@^0.14.0:
-  version "0.14.0"
-  resolved "http://registry.npmjs.org/typography-normalize/-/typography-normalize-0.14.0.tgz#1d77c1fe2aaf4a51b3673c4c85c85a65a2d4b573"
+typography-normalize@^0.16.18:
+  version "0.16.18"
+  resolved "https://registry.yarnpkg.com/typography-normalize/-/typography-normalize-0.16.18.tgz#19e8db32c6881d3745b7d67dc63ee6f6cfb681d1"
 
-typography@^0.16.17:
-  version "0.16.17"
-  resolved "https://registry.yarnpkg.com/typography/-/typography-0.16.17.tgz#e166eda9b533d51c115e2b38becdb5cedd0a30e4"
+typography@^0.16.18:
+  version "0.16.18"
+  resolved "https://registry.yarnpkg.com/typography/-/typography-0.16.18.tgz#bdd2dc7297682339e8ded5fcb6783b9ae3c71b76"
   dependencies:
     compass-vertical-rhythm "^1.4.5"
     decamelize "^1.2.0"
@@ -8577,7 +8577,7 @@ typography@^0.16.17:
     lodash "^4.13.1"
     modularscale "^1.0.2"
     object-assign "^4.1.0"
-    typography-normalize "^0.14.0"
+    typography-normalize "^0.16.18"
 
 uglify-js@3.4.x, uglify-js@^3.4.9:
   version "3.4.9"

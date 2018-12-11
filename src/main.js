@@ -22,7 +22,8 @@ const typography = new Typography({
   baseFontSize: '18px',
   baseLineHeight: 1.666,
   scaleRatio: 2,
-  bodyGray: 40,
+  bodyColor: 'hsla(0,0%,0%,0.7)',
+  headerColor: 'hsla(0,0%,0%,0.9)',
   headerFontFamily: ['League Spartan', 'sans-serif'],
   bodyFontFamily: ['Nunito', 'Helvetica','Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
 })
