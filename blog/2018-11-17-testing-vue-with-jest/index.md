@@ -4,7 +4,6 @@ author: Xing Wenju
 date: 2018-11-17
 excerpt: "Unit testing vue with jest"
 ---
-# Document Title
 
 ## The configuration file `jest.config.js`
 

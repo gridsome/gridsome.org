@@ -1,16 +1,15 @@
+---
+title: Writing Blog with org and gridsome
+author: Xing Wenju
+excerpt: Writing Blog with org and gridsome
+date: 2018-12-10
+---
+
 
 # Table of Contents
 
 1.  [Test vue with now](#org175798d)
 2.  [Test nextjs with now](#org9b9b8f2)
-
----
-title: Run now test of vuejs
-author: Xing Wenju
-excerpt: Run now test of vuejs
-date: 2018-12-10
----
-
 
 <a id="org175798d"></a>
 
