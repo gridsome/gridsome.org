@@ -38,7 +38,6 @@ date: 2018-12-11
 
 这里对比下以前2.X之前的版本 ，新版本把插件以及模板等 移植到命令行界面了.
 
-旧版	创建命令
 
     2.x	vue init <template-name> <project-name>
     3.x	vue create <project-name>
@@ -98,7 +97,7 @@ vue.config.js里大概包括了配置 常用的输出路径名、跟目录、预
 
 # 如何随心所欲
 
-1.  服务器配置修改
+1. 服务器配置修改
 
 这里我先改个端口, 修改vue.config.js 然后重新启动工程 , 可以看到已经改成5999端口了
 
@@ -109,7 +108,7 @@ vue.config.js里大概包括了配置 常用的输出路径名、跟目录、预
       }
     }
 
-1.  常用webpack配置修改
+2. 常用webpack配置修改
 
 webpack的配置在这个属性里修改configureWebpack
 
@@ -126,7 +125,7 @@ webpack的配置在这个属性里修改configureWebpack
 
 其他配置 就不一一介绍了 具体可以看这里webpack
 
-1.  全局变量的设置
+3. 全局变量的设置
 
 在项目根目录 创建二个文件
 
@@ -135,9 +134,6 @@ webpack的配置在这个属性里修改configureWebpack
 
 里面配置键值对就行了
 
-但要注意 这里必须以VUE<sub>APP开头</sub> 这样我们就可以自定义个全局变量在某个模式下
-
-VUE<sub>APP</sub><sub>MOCK</sub><sub>URL</sub> = 'http://xxxx.xxx.xx.xx/mockjs/'
 比如这样在axios中就可以配置根路径了
 
     const service = axios.create({
