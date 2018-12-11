@@ -1,6 +1,6 @@
 <template>
   <Section dots="true">
-    <div class="homepage-features container">
+    <div class="homepage-features container post">
       
       <div class="grid-cols grid-cols--2 mb">
         <div style="order:2">

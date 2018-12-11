@@ -2,8 +2,9 @@
   <DocsLayout :subtitles="$page.doc.subtitles" :links="links">
     <div class="post mb" v-html="$page.doc.content"></div>
     <p>
-      <a :href="editLink" target="_blank">
-        Edit this page on GitHub
+      <a :href="editLink" target="_blank" class="github-edit-link">
+        <Github />
+        <span>Edit this page on GitHub</span>
       </a>
     </p>
   </DocsLayout>
@@ -27,8 +28,12 @@ query DocPage ($path: String!) {
 
 <script>
 import links from '@/data/doc-links.yaml'
+import Github from '@/assets/images/github-logo.svg'
 
 export default {
+  components: {
+    Github
+  },
   computed: {
     links () {
       return links
@@ -47,3 +52,22 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.github-edit-link {
+  font-size: .9rem;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--border-color);
+  padding-top: 1rem;
+  
+  &:not(:hover) {
+    color: var(--primary-link-color);
+  }
+
+  svg {
+    margin-right: .5rem;
+  }
+}
+</style>
