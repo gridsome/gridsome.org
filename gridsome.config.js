@@ -1,5 +1,3 @@
-const path = require("path");
-
 module.exports = {
   siteName: "Linuxing3 Gridsome on Netlify",
   siteUrl: `https://gridsome.netlify.com`,
@@ -53,23 +51,6 @@ module.exports = {
         remark: {
           plugins: ["@gridsome/remark-prismjs"],
         },
-      },
-    },
-    {
-      use: path.resolve("./src/plugins/source-storyblok"),
-      options: {
-        // This is your Storyblok access token.
-        // You can find it on the settings page
-        // of your storyblok space.
-        accessToken: "1EXLzwtmMQriQRnJ4zRQ7Qtt",
-      },
-    },
-    {
-      use: path.resolve("./src/plugins/source-lowdb"),
-      options: {
-        path: "src/data/data.json",
-        entityName: "posts",
-        typeName: "LowdbPost",
       },
     },
   ],
