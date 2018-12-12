@@ -27,6 +27,7 @@
   &.primary {
     color:#FFF;
     background-color: var(--primary-link-color);
+    box-shadow: 1px 1px 10px 0 var(--success-bg);
 
     &:after {
       border-color: rgba(0,0,0,.1);

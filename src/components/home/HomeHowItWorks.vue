@@ -1,5 +1,5 @@
 <template>
-  <Section dots="true">
+  <Section dots="true" class="post">
 
       <h2 class="text-center">
         How Gridsome works
@@ -197,7 +197,7 @@ export default {
   }
 
   &__vue {
-    background: linear-gradient(155.25deg, #27A59B -49.14%, #64D8A2 81.43%);
+    background: linear-gradient(155.25deg, var(--primary-color) 0%, var(--primary-link-color) 100%);
     position: relative;
     animation: pulse 2s infinite;
     animation-delay: .3s;

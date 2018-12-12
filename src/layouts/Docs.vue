@@ -67,6 +67,8 @@ export default {
       width: 0.8em;
       opacity: 0.0;
       color: var(--primary-link-color);
+      box-shadow: none;
+      background: none;
 
       &::before {
         content: " ";
