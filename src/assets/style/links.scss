@@ -10,9 +10,8 @@ a {
   .post &:not(.button):after {
   	content: "";
   	bottom: 5px;
-  	left:0;
-  	right:0;
-  	width:100%;
+  	left:-2px;
+  	width:calc(100% + 4px);
   	position: absolute;
   	opacity: .3;
   	border-bottom: 7px solid var(--primary-link-color);
