@@ -99,7 +99,7 @@ export default {
   background-color: rgba(255,255,255,.7);
   width: 100%;
   padding: var(--space-x2);
-  box-shadow: 1px 2px 5px rgba(0,0,0,.1);
+  box-shadow: 1px 2px 5px rgba(0,0,0,.05);
   position: relative;
   flex:1;
   min-width: 280px;
@@ -115,8 +115,8 @@ export default {
     top:-16px;
     left:50%;
     transform: translateX(-50%);
-    background: var(--border-color);
-    border: 1px solid rgba(0,0,0,.03);
+    background: var(--primary-bg);
+    border: 1px solid var(--border-color);
     padding: 4px 10px;
     border-radius: 5px;
     text-transform: uppercase;

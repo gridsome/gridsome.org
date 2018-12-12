@@ -23,7 +23,9 @@
       <div class="grid-cols grid-cols--2 mb">
         <div >
           <h3><vue-logo /> Use Vue.js for templating</h3>
-          <p><a target="_blank" href="https://vuejs.org/">Vue.js</a> is an approachable, super fast framework that your whole team will learn quickly. It's incredibly popular, got a <a target="_blank" href="https://github.com/vuejs/awesome-vue">huge community</a> behind it and is used by <a target="_blank" href="https://www.netguru.co/blog/13-top-companies-that-have-trusted-vue.js-examples-of-applications">big companies.</a></p>
+          <p><a target="_blank" href="https://vuejs.org/">Vue.js</a> is an approachable, fast and lightweight front-end framework.  It's incredibly popular, got a <a target="_blank" href="https://github.com/vuejs/awesome-vue">huge community</a> behind it and is used by <a target="_blank" href="https://www.netguru.co/blog/13-top-companies-that-have-trusted-vue.js-examples-of-applications">big companies.</a>
+          Vue.js builds upon classic web technologies meaning that the learning curve for development teams are small.
+          </p>         
 
           <ul class="bullet-list">
             <li><Bullet /> <strong> Instant hot-reloading</strong> for incredible developer experience.</li>
