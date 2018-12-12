@@ -91,10 +91,6 @@ header {
   .header-inner {
     min-height: var(--header-height);
   }
-  
-  .has-sidebar & {
-    border-bottom: 1px solid var(--border-color);
-  }
 }
 
 
