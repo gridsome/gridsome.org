@@ -14,7 +14,7 @@
       link: /docs/contribute
 
 
-- title : Basics
+- title : Basic Gridsome
   items:
     - title: Directory structure
       link: /docs/directory-structure
@@ -43,7 +43,7 @@
     - title: Adding plugins
       link: /docs/plugins
 
-- title : Data store
+- title : Working with data
   items: 
     - title: Querying data
       link: /docs/data-query-data
@@ -51,10 +51,10 @@
       link: /docs/data-source-plugin
     - title: Add data from anywhere *
       link: /docs/data-custom
-    - title: Add dynamic data *
-      link: /docs/data-dynamic
     - title: Paginate queries
       link: /docs/data-paginate-queries
+    - title: Add dynamic data *
+      link: /docs/data-dynamic
 
 - title : Styles and Assets
   items: 
@@ -77,7 +77,7 @@
     - title: Add comments
       link: /docs/guide-comments
 
-- title: API
+- title: API Reference
   items: 
     - title: Gridsome CLI
       link: /docs/gridsome-cli
