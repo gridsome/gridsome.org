@@ -25,6 +25,12 @@
       </div>
       <Section class="flex-fit" container="md">
         <slot />
+        <p>
+          <a :href="editLink" target="_blank" class="github-edit-link">
+            <Github />
+            <span>Edit this page on GitHub</span>
+          </a>
+        </p>
       </Section>
 
     </div>
@@ -32,7 +38,12 @@
 </template>
 
 <script>
+import Github from '@/assets/images/github-logo.svg'
+
 export default {
+  components: {
+    Github
+  },
   props: {
     subtitles: Array,
     links: Array
@@ -41,6 +52,10 @@ export default {
     currentPath () {
       return this.$route.matched[0].path
     },
+    editLink () {
+      const path = this.currentPath
+      return `https://github.com/gridsome/gridsome.org/blob/master${path}.md`
+    }
   }
 }
 </script>
@@ -112,6 +127,24 @@ export default {
 
   ul > li > p {
     font-weight: 400;
+  }
+}
+
+
+.github-edit-link {
+  font-size: .9rem;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--border-color);
+  padding-top: 1rem;
+  
+  &:not(:hover) {
+    color: var(--primary-link-color);
+  }
+
+  svg {
+    margin-right: .5rem;
   }
 }
 </style>

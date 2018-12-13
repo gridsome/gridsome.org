@@ -3,7 +3,8 @@
     <div class="post mb" v-html="$page.doc.content"></div>
     <p>
       <a :href="editLink" target="_blank">
-        Edit this page on GitHub
+        <Github />
+        <span>Edit this page on GitHub</span>
       </a>
     </p>
   </DocsLayout>
@@ -27,8 +28,12 @@ query LearnPage ($path: String!) {
 
 <script>
 import links from '@/data/learn-links.yaml'
+import Github from '@/assets/images/github-logo.svg'
 
 export default {
+  components: {
+    Github
+  },
   computed: {
     links () {
       return links
