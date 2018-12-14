@@ -1,7 +1,7 @@
 <template>
   <Section dots="true" dark="true" sway="true" style="padding-top: 0; padding-bottom: 0;">
     <div class="grid-cols grid-cols--2" style="max-width: 1080px; margin: 0 auto;">
-      <div style="padding-top: 20%; padding-bottom: 25%; padding-right: 5%">    
+      <div style="padding-top: 23%; padding-bottom: 25%; padding-right: 5%">    
         <h1>
           <div class="home-title">
             Build super fast, modern websites with Vue.js
