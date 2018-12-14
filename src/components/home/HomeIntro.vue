@@ -3,9 +3,9 @@
     <div class="grid-cols grid-cols--2" style="max-width: 1080px; margin: 0 auto;">
       <div style="padding-top: 23%; padding-bottom: 20%; padding-right: 5%">    
         <h1>
-          <div class="home-title">
+          <span class="home-title">
             Build super fast, modern websites with Vue.js
-          </div>
+          </span>
         </h1>
 
         <p class="home-lead lead">
