@@ -50,7 +50,6 @@
 
         <a aria-label="github" title="Gridsome @ GitHub" href="//github.com/gridsome/gridsome">
           <github-logo width="20px" height="20px" />
-          <span class="hide-for-small">0.3.3</span>
         </a>
 
       </nav>

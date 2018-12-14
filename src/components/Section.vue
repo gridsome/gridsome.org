@@ -3,6 +3,11 @@
     <div class="section--inner container" :class="sectionClassInner">
       <slot/>
     </div>
+
+
+    <svg v-if="sway" class="section__sway" viewBox="0 0 1781 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0C1115 121.5 1121.5 -21.5 1781 15.9762V61H0V0Z" fill="#F3F7F9"/>
+    </svg>
  
     <div v-if="dots" class="section__dots-bg dots-bg" />
 
@@ -11,7 +16,7 @@
 
 <script>
 export default {
-  props: ['dark', 'dots', 'container', 'framed', 'primary' ],
+  props: ['dark', 'dots', 'container', 'framed', 'primary', 'sway' ],
   computed: {
     sectionClass() {
       let classes = []
@@ -54,6 +59,20 @@ export default {
     left: 10px;
     right: 10px;
     z-index: 1;
+  }
+
+  &__sway {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: 2;
+  }
+
+  &__sway + &__dots-bg {
+    bottom:0;
   }
 
   &--inner {

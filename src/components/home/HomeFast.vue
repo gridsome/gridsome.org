@@ -1,6 +1,6 @@
 <template>
-  <Section dots="true">
-    <h2 class="text-center">Lightning-fast as default ⚡️🚀</h2>
+  <Section dots="true" sway="true">
+    <h2 class="text-center">High performance baked-in ⚡️🚀</h2>
 
     <p class="lead text-center container-md ">
         Gridsome builds the fastest possible websites. It pre-builds all pages at build time using the <a href="https://developers.google.com/web/fundamentals/performance/prpl-pattern/" target="_blank">PRPL-pattern</a> to get close to perfect page scores.

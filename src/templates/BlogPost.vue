@@ -32,10 +32,6 @@ import PostMeta from '@/components/PostMeta.vue'
 export default {
   components: {
     PostMeta,
-    editLink () {
-      const path = this.$page.doc.path
-      return `https://github.com/gridsome/gridsome.org/blob/master${path}.md`
-    }
   },
   metaInfo () {
     return {

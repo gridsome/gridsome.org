@@ -53,7 +53,8 @@ export default {
       return this.$route.matched[0].path
     },
     editLink () {
-      const path = this.currentPath
+      let path = this.currentPath
+      if((path.match(new RegExp("/", "g")) || []).length == 1) path = path + '/README'
       return `https://github.com/gridsome/gridsome.org/blob/master${path}.md`
     }
   }

@@ -1,6 +1,6 @@
 <template>
   <DocsLayout :links="links">
-    <div class="post" v-html="$page.doc.content"></div>
+    <div class="post mb" v-html="$page.doc.content"></div>
   </DocsLayout>
 </template>
 

@@ -59,6 +59,21 @@
   }
 }
 
+
+@keyframes pulseSvg {
+  0% {
+    filter: drop-shadow( 0px 0px 10px transparent );
+  }
+  70% {
+    filter: drop-shadow( 0px 0px 10px var(--primary-link-color) );
+  }
+  100% {
+    filter: drop-shadow( 0px 0px 10px transparent );
+
+  }
+}
+
+
 @keyframes pulseAlt {
   0% {
     box-shadow: 0 0 0 0 #E535AB;
@@ -92,6 +107,10 @@
   to{stroke-dashoffset:-20;}
 }
 
+
+@keyframes stroke-invert {
+  to{stroke-dashoffset:20;}
+}
 
 
 .rotate-enter-active {
