@@ -1,7 +1,7 @@
 <template>
   <Section dots="true" dark="true" sway="true" style="padding-top: 0; padding-bottom: 0;">
     <div class="grid-cols grid-cols--2" style="max-width: 1080px; margin: 0 auto;">
-      <div style="padding-top: 23%; padding-bottom: 20%; padding-right: 5%">    
+      <div class="text-center" style="padding-top: 20%; padding-bottom: 20%; padding-right: 5%">    
         <h1>
           <span class="home-title">
             Build super fast, modern websites with Vue.js
@@ -9,7 +9,7 @@
         </h1>
 
         <p class="home-lead lead">
-          Gridsome is a <strong>Vue-powered static site generator</strong> for building high performance <strong>serverless websites</strong> <strong> for any CMS, files or APIs.</strong>
+          Gridsome is a <strong>Vue-powered static site generator</strong> for building high performance <strong>websites</strong> <strong> for any headless CMS, files or content APIs</strong>
         </p>
 
         <p class="home-links">
