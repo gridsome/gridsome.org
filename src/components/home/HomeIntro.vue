@@ -21,7 +21,7 @@
           </g-link>
         </p>
         <p class="home-info">
-          Open-source MIT License. 
+          Open-source MIT Licensed. 
           <a href="//github.com/gridsome/gridsome" target="_blank">
             <span>GitHub (v0.3.5)</span>
           </a>
@@ -29,7 +29,7 @@
       </div>
       <div class="hide-for-small" style="padding-top: 5%">
         <div class="cms">
-        <g-image src="~/assets/logos.png" />
+        <g-image alt="Data source logos" src="~/assets/logos.png" />
 
         <svg width="517" height="470" viewBox="0 0 517 470" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M153 194.5L199.5 287.5" stroke="#4BCB8F" stroke-opacity="0.3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
@@ -72,9 +72,6 @@
           </linearGradient>
           </defs>
           </svg>
-
-
-
         </div>
       </div>
     </div>
@@ -129,13 +126,10 @@
 </style>
 
 <script>
-import VueLogo from '~/assets/images/vue-logo.svg'
-import LogoAnimated from '~/components/LogoAnimated.vue'
+//import VueLogo from '~/assets/images/vue-logo.svg'
+//import LogoAnimated from '~/components/LogoAnimated.vue'
 
 export default {
-  components: {
-    VueLogo,
-    LogoAnimated
-  }
+
 }
 </script>
