@@ -37,7 +37,7 @@
       bottom:0;
       left:0;
       right:0;
-      background: #FFF;
+      background: var(--primary-bg);
       color: var(--secondary-bg);
       margin-right:0!important;
       justify-content: center;
@@ -45,6 +45,14 @@
       min-height: 60px;
       flex-wrap: nowrap!important;
       padding: 5px var(--space);
+    }
+  }
+  @media only screen 
+  and (device-width : 375px) 
+  and (device-height : 812px) 
+  and (-webkit-device-pixel-ratio : 3) {
+    .main-nav {
+      padding-bottom: var(--space);
     }
   }
 </style>
