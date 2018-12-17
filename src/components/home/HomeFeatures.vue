@@ -52,7 +52,7 @@
           </g>
         </svg>
 
-        <h3>Modern web tech</h3>
+        <h3>Modern dev stack</h3>
         <p>Build websites with modern tools like <strong>Vue.js, GraphQL & webpack</strong>. Get <strong>hot-reloading</strong> and access to any packages from npm and write CSS in your favorite preprocessors.
         </p>
       </Feature>
