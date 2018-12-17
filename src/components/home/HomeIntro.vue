@@ -8,8 +8,8 @@
           </span>
         </h1>
 
-        <p class="home-lead lead">
-          Gridsome is a <strong>Vue-powered static site generator</strong> for building high performance <strong>websites</strong> <strong> for any headless CMS, files or APIs</strong>
+        <p class="home-lead lead" style="padding-left: 3%; padding-right: 3%">
+          Gridsome is a <strong>Vue-powered static site generator</strong> for building CDN-ready websites and apps for any headless CMS or data source
         </p>
 
         <p class="home-links">
