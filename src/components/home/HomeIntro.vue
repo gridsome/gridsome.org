@@ -1,10 +1,10 @@
 <template>
   <Section dots="true" dark="true" sway="true" style="padding-top: 0; padding-bottom: 0;">
     <div class="grid-cols grid-cols--2" style="max-width: 1080px; margin: 0 auto;">
-      <div class="text-center" style="padding-top: 20%; padding-bottom: 20%; padding-right: 5%">    
+      <div class="text-center" style="padding-top: 20%; padding-bottom: 20%;">    
         <h1>
           <span class="home-title">
-            Build super fast, modern websites with Vue.js
+            Build super fast, CDN-ready websites with Vue.js
           </span>
         </h1>
 
@@ -29,6 +29,7 @@
       </div>
       <div class="hide-for-small">
         <div class="cms">
+
         <g-image alt="Data source logos" src="~/assets/images/cms-logos.png" />
 
         <svg width="477" height="470" viewBox="0 0 477 470" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -44,8 +45,9 @@
         </svg>
 
         <svg class="lines-out" width="477" height="470" viewBox="0 0 477 470" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M84 419L149.5 359.5" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
+          <path d="M67.5 417.5L149.5 359.5" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
         </svg>
+
 
         <svg class="logo" width="477" height="470" viewBox="0 0 477 470" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="133" y="281" width="98" height="98" rx="49" fill="url(#paint0_linear)"/>
@@ -71,7 +73,6 @@
           </linearGradient>
           </defs>
         </svg>
-
         </div>
       </div>
     </div>
@@ -83,6 +84,7 @@
 
 .home-title {
   line-height: 1.3;
+  font-size: 1.9rem;
 }
 .home-info {
   font-size: .85rem;
@@ -121,15 +123,7 @@
     stroke-width: 7px;
     animation: stroke-invert 400ms linear infinite;
   }
+
 }
 
 </style>
-
-<script>
-//import VueLogo from '~/assets/images/vue-logo.svg'
-//import LogoAnimated from '~/components/LogoAnimated.vue'
-
-export default {
-
-}
-</script>
