@@ -35,7 +35,7 @@ export default {
     meta: [
       {
         name: 'description',
-        content: 'Gridsome is a Vue-powered static site generator for building high performance serverless websites for any CMS, files or APIs'
+        content: 'Gridsome is a Vue-powered static site generator for building CDN-ready websites and apps for any headless CMS or data source'
       }
     ]
   }
