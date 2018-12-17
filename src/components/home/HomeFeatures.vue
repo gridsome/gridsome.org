@@ -24,14 +24,14 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon feather feather-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
 
         <h3>PWA offline-ready</h3>
-        <p>Gridsome loads only the critical HTML, CSS, so your site <strong>loads as fast as possible</strong>. Once loaded, Gridsome prefetches resources for other pages so clicking around the site feels incredibly fast - <strong>works even when offline.</strong>
+        <p>Gridsome loads only the critical HTML, CSS, so your site <strong>loads as fast as possible</strong>. Once loaded, the next pages are prefetched so clicking around the site feels incredibly fast - <strong>works even when offline.</strong>
         </p>
       </Feature>
 
       <Feature>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="icon feather feather-globe"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
 
-        <h3>Simple, Safe Deployment</h3>
+        <h3>Simple, safe deployment</h3>
         <p>Gridsome sites are pre-rendered at build time and can be <strong>entirely hosted on a CDN</strong>. It can handle thousands to millions of hits without breaking - and at <strong>no expensive server costs.</strong>
         </p>     
       </Feature>
@@ -41,7 +41,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="icon feather feather-trending-up"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
 
         <h3>A future-ready stack</h3>
-        <p>The future of the web is JavaScript, API's, and Markup - the <strong><a href="https://jamstack.org">JAMstack</a></strong>. Gridsome uses the power of an extremely fast <strong>static site generator</strong> and <strong>Vue.js</strong> to create stunning dynamic web experiences.
+        <p>The future of the web is JavaScript, API's, and Markup - the <strong><a target="_blank" href="https://jamstack.org">JAMstack</a></strong>. Gridsome uses the power of a blazing fast <strong>static site generator</strong> and <strong>Vue.js</strong> to create stunning modern web experiences.
         </p>
       </Feature>
 
@@ -52,7 +52,7 @@
           </g>
         </svg>
 
-        <h3>Perfect dev experience</h3>
+        <h3>Amazing dev experience</h3>
         <p>Build websites with modern tools like <strong>Vue.js, GraphQL & webpack</strong>. Get <strong>hot-reloading</strong> and access to any packages from npm and write CSS in your favorite preprocessors.
         </p>
       </Feature>
