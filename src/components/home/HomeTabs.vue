@@ -43,9 +43,9 @@
 
       <div class="grid-cols grid-cols--2 mb">
         <div style="order:2">
-          <h3>The future of web is on the CDN</h3>
+          <h3>The future of the web is on the CDN</h3>
 
-          <p><strong>No servers. No databases. Only files.</strong> Nothing beats static, pre-rendered sites when it comes to speed and security.  Deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site. <strong>The future of web is on the CDN</strong>. Combine dynamic and static data with the power of Vue.js.</p>
+          <p><strong>No servers. No databases. Only files.</strong> Nothing beats static, pre-rendered sites when it comes to speed and security.  Deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site. The future of the web is on the CDN. Combine dynamic and static data with the power of Vue.js.</p>
 
           <ul class="bullet-list">
             <li><Bullet /> <strong> Super fast generating.</strong> Build thousands of pages in seconds</li>
