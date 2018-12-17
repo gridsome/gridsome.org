@@ -32,11 +32,11 @@
 
         <g-image alt="Data source logos" src="~/assets/images/cms-logos.png" />
 <svg width="486" height="418" viewBox="0 0 486 418" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M154 137.5L229.5 238" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
+<path d="M162.5 138L229.5 238" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
 <path d="M91.5 135L231 239.5" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
 <path d="M117 271L231 239.5" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
 <path d="M113 207L230 240" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
-<path d="M234.5 131.5L231.5 236.5" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
+<path d="M231.5 128L231.5 236.5" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
 <path d="M299 74.5L232.5 238" stroke="#44C492" stroke-opacity="0.1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
 <path d="M387 143.5L232.5 239" stroke="#44C492" stroke-opacity="0.1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
 <path d="M175 64.5L230 238" stroke="#44C492" stroke-opacity="0.1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
