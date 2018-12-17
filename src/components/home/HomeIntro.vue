@@ -9,7 +9,7 @@
         </h1>
 
         <p class="home-lead lead">
-          Gridsome is a <strong>Vue-powered static site generator</strong> for building high performance <strong>websites</strong> <strong> for any headless CMS, files or content APIs</strong>
+          Gridsome is a <strong>Vue-powered static site generator</strong> for building high performance <strong>websites</strong> <strong> for any headless CMS, files or APIs</strong>
         </p>
 
         <p class="home-links">
@@ -27,51 +27,51 @@
           </a>
         </p>
       </div>
-      <div class="hide-for-small" style="padding-top: 5%">
+      <div class="hide-for-small">
         <div class="cms">
-        <g-image alt="Data source logos" src="~/assets/logos.png" />
+        <g-image alt="Data source logos" src="~/assets/images/cms-logos.png" />
 
-        <svg width="517" height="470" viewBox="0 0 517 470" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M153 194.5L199.5 287.5" stroke="#4BCB8F" stroke-opacity="0.3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
-          <path d="M91 226.5L183 304" stroke="#4BCB8F" stroke-opacity="0.3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
-          <path d="M233.5 188.5L225.5 283" stroke="#4BCB8F" stroke-opacity="0.3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
-          <path opacity="0.5" d="M291.5 141.5L238 285" stroke="#4BCB8F" stroke-opacity="0.3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
-          <path opacity="0.3" d="M380.5 211L259.5 302.5" stroke="#4BCB8F" stroke-opacity="0.3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
-          <path opacity="0.6" d="M174 121.5L212.5 285" stroke="#4BCB8F" stroke-opacity="0.3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
-          <path d="M311 212L246.867 302.546" stroke="#4BCB8F" stroke-opacity="0.3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
-          <path d="M361 274L269 311.272" stroke="#4BCB8F" stroke-opacity="0.3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
-          <path d="M337 337.5L267.5 334" stroke="#4BCB8F" stroke-opacity="0.3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
+        <svg width="477" height="470" viewBox="0 0 477 470" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M113 194.5L159.5 287.5" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
+          <path d="M56 223L143 304" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
+          <path d="M193.5 188.5L185.5 283" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
+          <path d="M258 131.5L198 285" stroke="#44C492" stroke-opacity="0.1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
+          <path d="M346 200.5L219.5 302.5" stroke="#44C492" stroke-opacity="0.1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
+          <path d="M134 121.5L172.5 285" stroke="#44C492" stroke-opacity="0.1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
+          <path d="M271 212L206.867 302.546" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
+          <path d="M320 272.5L229 311.272" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
+          <path d="M296.5 334L227.5 334" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
         </svg>
 
-
-        <svg class="lines-out" width="517" height="470" viewBox="0 0 517 470" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M71.5 433.5L188.5 353" stroke="#60CFA1" stroke-opacity="0.7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
+        <svg class="lines-out" width="477" height="470" viewBox="0 0 477 470" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M84 419L149.5 359.5" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
         </svg>
 
-        <svg class="logo" width="517" height="470" viewBox="0 0 517 470" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="173" y="281" width="98" height="98" rx="49" fill="url(#paint0_linear)"/>
-          <circle opacity="0.6" cx="222" cy="330" r="69.5" stroke="#5FB096"/>
-          <circle opacity="0.5" cx="222" cy="330" r="86.5" stroke="#5FB096"/>
-          <path opacity="0.6" fill-rule="evenodd" clip-rule="evenodd" d="M222.659 356.969C238.768 356.392 249.968 342.391 249 329.864C248.776 327.262 246.475 325.246 243.875 325.371C241.276 325.496 239.27 327.71 239.395 330.317C239.759 337.93 232.937 347.231 222.169 347.53C222.038 347.534 221.908 347.543 221.781 347.557C221.85 347.556 221.92 347.555 221.99 347.553C224.592 347.489 226.753 349.551 226.817 352.16C226.877 354.621 225.05 356.689 222.659 356.969Z" fill="url(#paint1_linear)"/>
-          <path d="M232.104 330.194C232.104 327.523 234.284 325.357 236.972 325.357H244.065C246.753 325.357 249 327.523 249 330.194C249 332.866 246.753 335.032 244.065 335.032H236.972C234.284 335.032 232.104 332.866 232.104 330.194Z" fill="white"/>
-          <path d="M217.221 330.202C217.221 327.526 219.386 325.357 222.054 325.357C224.722 325.357 226.888 327.526 226.888 330.202C226.888 332.877 224.722 335.046 222.054 335.046C219.386 335.046 217.221 332.877 217.221 330.202Z" fill="white"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M226.754 307.567C226.862 310.174 224.842 312.376 222.241 312.484C211.017 312.951 204.165 321.773 204.499 330.149C204.602 332.757 202.621 334.955 200.021 335.059C197.42 335.163 195.134 333.059 195.03 330.451C194.486 316.801 205.852 303.307 221.85 303.042C224.45 302.934 226.646 304.96 226.754 307.567Z" fill="white"/>
-          <path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd" d="M195.015 329.945C195.079 346.438 208.576 357.337 222.222 357C224.824 356.936 226.881 354.769 226.817 352.16C226.753 349.551 224.592 347.489 221.99 347.553C213.437 347.764 204.873 341.028 204.498 330.546C204.398 332.976 202.488 334.96 200.021 335.059C197.42 335.163 195.134 333.059 195.03 330.452C195.023 330.283 195.018 330.114 195.015 329.945Z" fill="url(#paint2_linear)"/>
+        <svg class="logo" width="477" height="470" viewBox="0 0 477 470" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="133" y="281" width="98" height="98" rx="49" fill="url(#paint0_linear)"/>
+          <circle opacity="0.4" cx="182" cy="330" r="68.5" stroke="#5FB096"/>
+          <circle opacity="0.15" cx="182" cy="330" r="85.5" stroke="#5FB096"/>
+          <path opacity="0.6" fill-rule="evenodd" clip-rule="evenodd" d="M182.659 356.969C198.768 356.392 209.968 342.391 209 329.864C208.776 327.262 206.475 325.246 203.875 325.371C201.276 325.496 199.27 327.71 199.395 330.317C199.759 337.93 192.937 347.231 182.169 347.53C182.038 347.534 181.908 347.543 181.781 347.557C181.85 347.556 181.92 347.555 181.99 347.553C184.592 347.489 186.753 349.551 186.817 352.16C186.877 354.621 185.05 356.689 182.659 356.969Z" fill="url(#paint1_linear)"/>
+          <path d="M192.104 330.194C192.104 327.523 194.284 325.357 196.972 325.357H204.065C206.753 325.357 209 327.523 209 330.194C209 332.866 206.753 335.032 204.065 335.032H196.972C194.284 335.032 192.104 332.866 192.104 330.194Z" fill="white"/>
+          <path d="M177.221 330.202C177.221 327.526 179.386 325.357 182.054 325.357C184.722 325.357 186.888 327.526 186.888 330.202C186.888 332.877 184.722 335.046 182.054 335.046C179.386 335.046 177.221 332.877 177.221 330.202Z" fill="white"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M186.754 307.567C186.862 310.174 184.842 312.376 182.241 312.484C171.017 312.951 164.165 321.773 164.499 330.149C164.602 332.757 162.621 334.955 160.021 335.059C157.42 335.163 155.134 333.059 155.03 330.451C154.486 316.801 165.852 303.307 181.85 303.042C184.45 302.934 186.646 304.96 186.754 307.567Z" fill="white"/>
+          <path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd" d="M155.015 329.945C155.079 346.438 168.576 357.337 182.222 357C184.824 356.936 186.881 354.769 186.817 352.16C186.753 349.551 184.592 347.489 181.99 347.553C173.437 347.764 164.873 341.028 164.498 330.546C164.398 332.976 162.488 334.96 160.021 335.059C157.42 335.163 155.134 333.059 155.03 330.452C155.023 330.283 155.018 330.114 155.015 329.945Z" fill="url(#paint2_linear)"/>
           <defs>
-          <linearGradient id="paint0_linear" x1="288" y1="310" x2="197.993" y2="265.739" gradientUnits="userSpaceOnUse">
+          <linearGradient id="paint0_linear" x1="248" y1="310" x2="157.993" y2="265.739" gradientUnits="userSpaceOnUse">
           <stop stop-color="#27A59B"/>
           <stop offset="1" stop-color="#4BCB8F"/>
           </linearGradient>
-          <linearGradient id="paint1_linear" x1="246.831" y1="335.55" x2="170.7" y2="355.958" gradientUnits="userSpaceOnUse">
+          <linearGradient id="paint1_linear" x1="206.831" y1="335.55" x2="130.7" y2="355.958" gradientUnits="userSpaceOnUse">
           <stop stop-color="white" stop-opacity="0.89"/>
           <stop offset="1" stop-color="white" stop-opacity="0.51"/>
           </linearGradient>
-          <linearGradient id="paint2_linear" x1="220.28" y1="349.388" x2="179.809" y2="305.699" gradientUnits="userSpaceOnUse">
+          <linearGradient id="paint2_linear" x1="180.28" y1="349.388" x2="139.809" y2="305.699" gradientUnits="userSpaceOnUse">
           <stop stop-color="white"/>
           <stop offset="1" stop-color="white" stop-opacity="0.8"/>
           </linearGradient>
           </defs>
-          </svg>
+        </svg>
+
         </div>
       </div>
     </div>
