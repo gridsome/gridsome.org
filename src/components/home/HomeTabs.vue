@@ -8,10 +8,10 @@
           <p>Gridsome brings all your data into a <strong>unified GraphQL data layer</strong>. The data can be browsed and explored in a simple local interface (GraphQL Playground) and inserted to any Vue Component. </p>
 
           <ul class="bullet-list">
-            <li><Bullet /> Pull data from any CMS, files or data APIs.</li>
-            <li><Bullet /> Browse data and test queries in a unified interface.</li>
-            <li><Bullet /> Query only the data fields you need.</li>
-            <li><Bullet /> Built-in pagination support for queries.</li>
+            <li><Bullet /> Pull data from any CMS, files or data APIs</li>
+            <li><Bullet /> Browse data and test queries locally</li>
+            <li><Bullet /> Query only the data fields you need</li>
+            <li><Bullet /> Built-in pagination support for queries</li>
           </ul>
         </div>
         <div>
@@ -28,10 +28,10 @@
           </p>         
 
           <ul class="bullet-list">
-            <li><Bullet /> <strong> Instant hot-reloading</strong> for incredible developer experience.</li>
-            <li><Bullet /> <strong> Sanitize your stack.</strong> Same frontend framework for any project.</li>
-            <li><Bullet /> <strong> Approachable for any team member.</strong> It's just HTML and CSS.</li>
-            <li><Bullet /> <strong> Awesome developer community</strong>. Find a library for any use case.</li>
+            <li><Bullet /> <strong> Instant hot-reloading</strong> for incredible developer experience</li>
+            <li><Bullet /> <strong> Sanitize your stack.</strong> Same frontend framework for any project</li>
+            <li><Bullet /> <strong> Approachable for any team member.</strong> It's just HTML and CSS</li>
+            <li><Bullet /> <strong> Awesome developer community</strong>. Find a library for any use case</li>
           </ul>
         </div>
         <div>
@@ -43,15 +43,15 @@
 
       <div class="grid-cols grid-cols--2 mb">
         <div style="order:2">
-          <h3>Static and safe deployment</h3>
+          <h3>The future of web is on the CDN</h3>
 
-          <p><strong>No servers. No databases. Only files.</strong> Nothing beats static, pre-rendered sites when it comes to speed and security.  Deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site. Combine dynamic and static data with the power of Vue.js.</p>
+          <p><strong>No servers. No databases. Only files.</strong> Nothing beats static, pre-rendered sites when it comes to speed and security.  Deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site. <strong>The future of web is on the CDN</strong>. Combine dynamic and static data with the power of Vue.js.</p>
 
           <ul class="bullet-list">
-            <li><Bullet /> <strong> Super fast generating.</strong> Build thousands of pages in seconds.</li>
-            <li><Bullet /> <strong> Better Performance.</strong> Faster page loading by default.</li>
-            <li><Bullet /> <strong> Higher Security.</strong> Very few surface areas for attacks.</li>
-            <li><Bullet /> <strong> Cheaper, Easier Scaling.</strong> Static files are the cheapest to host.</li>
+            <li><Bullet /> <strong> Super fast generating.</strong> Build thousands of pages in seconds</li>
+            <li><Bullet /> <strong> Better Performance.</strong> Faster page loading by default</li>
+            <li><Bullet /> <strong> Higher Security.</strong> Very few surface areas for attacks</li>
+            <li><Bullet /> <strong> Cheaper, Easier Scaling.</strong> Static files are the cheapest to host</li>
           </ul>
         </div>
         <div>
