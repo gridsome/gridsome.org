@@ -4,7 +4,7 @@
       <div class="text-center" style="padding-top: 20%; padding-bottom: 20%;">    
         <h1>
           <span class="home-title">
-            Build super fast, CDN-ready websites with Vue.js
+            Build super fast, modern websites with Vue.js
           </span>
         </h1>
 
