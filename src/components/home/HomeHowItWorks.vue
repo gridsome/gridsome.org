@@ -72,7 +72,7 @@
               <h4>Static web hosting</h4>
               <p>Generate static files and deploy to any global CDN or FTP.</p>
               <p>
-                <g-image alt="deploy-logos" src="~/assets/images/deploy-logos.png" width="240" />
+                <g-image alt="deploy-logos" src="~/assets/images/deploy-logos.png" width="480" />
                 <g-link to="/docs/deployment">Learn more about deployment</g-link>
               </p>
           </div>
