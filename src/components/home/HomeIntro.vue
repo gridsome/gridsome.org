@@ -1,7 +1,7 @@
 <template>
   <Section dots="true" dark="true" sway="true" style="padding-top: 0; padding-bottom: 0;">
     <div class="grid-cols grid-cols--2" style="max-width: 1080px; margin: 0 auto;">
-      <div class="text-center" style="padding-top: 20%; padding-bottom: 15%;">    
+      <div class="text-center" style="padding-top: 18%; padding-bottom: 18%;">    
         <h1>
           <span class="home-title">
             Build super fast, modern websites with Vue.js
@@ -33,23 +33,24 @@
         <g-image alt="Data source logos" src="~/assets/images/cms-logos.png" />
 <svg width="486" height="418" viewBox="0 0 486 418" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M154 137.5L229.5 238" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
-<path d="M106.5 147.5L231 239.5" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
-<path d="M126.5 277L231 239.5" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
-<path d="M113.5 216L230 240" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
+<path d="M91.5 135L231 239.5" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
+<path d="M117 271L231 239.5" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
+<path d="M113 207L230 240" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
 <path d="M234.5 131.5L231.5 236.5" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
 <path d="M299 74.5L232.5 238" stroke="#44C492" stroke-opacity="0.1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
 <path d="M387 143.5L232.5 239" stroke="#44C492" stroke-opacity="0.1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
 <path d="M175 64.5L230 238" stroke="#44C492" stroke-opacity="0.1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
 <path d="M312 155L230.5 239" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
-<path d="M350 217.5L232 239" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
-<path d="M337.5 277L233.5 240" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
+<path d="M351.5 208.5L232 239" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
+<path d="M338 271L233.5 240" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
 </svg>
 
 
 
 <svg class="lines-out" width="486" height="418" viewBox="0 0 486 418" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M231.5 357.5L231.5 238" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
+<path d="M231.5 373L231.5 238" stroke="#44C492" stroke-opacity="0.2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 15"/>
 </svg>
+
 
 <svg class="logo" width="486" height="418" viewBox="0 0 486 418" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="182" y="190" width="98" height="98" rx="49" fill="url(#paint0_linear)"/>
@@ -117,7 +118,7 @@
   }
 
   svg path {
-    stroke-width: 5px;
+    stroke-width: 4px;
     stroke-linecap: round;
     stroke-dasharray: 0 20;
     animation: stroke 800ms linear infinite;
