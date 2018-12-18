@@ -2,7 +2,9 @@
 
 Layout components are used to wrap pages and templates. Layouts should contain components like headers, footers or sidebars that will be used across the site.
 
-> Every layout should have a `<slot />` component. This is where the page and template content will be inserted.
+> Layouts are _just_  **.vue components** located in `src/layouts` and needs to be [declared as a global](#make-a-layout-global) component or imported per page to be used.
+
+> Every layout needs a `<slot />` component. This is where the page and template content will be inserted.
 
 ```html
 <!-- Layout -->
@@ -16,7 +18,7 @@ Layout components are used to wrap pages and templates. Layouts should contain c
 ```
 
 
-## Add layout to a page or template
+## Import layout to a page or template
 When you have created a layout you need to import to your pages and templates. This is done inside the `<script>` tag.
 
 ```html
@@ -70,11 +72,6 @@ You can now use `<Layout>` anywhere in your Gridsome project without importing i
     Add page content here
   </Layout>
 </template>
-
-<script>
-  export default {
-  }
-</script>
 
 ```
 
