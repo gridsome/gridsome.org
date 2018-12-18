@@ -6,7 +6,7 @@
       </h2>
 
       <p class="text-center container-md">
-        Connect to any CMS or data source and use Vue.js for frontend. Then deploy to any Static Web Host for super fast, scalable, cheap and secure hosting.
+        Connect to any CMS or data source and use Vue.js for frontend. Deploy to any static web host for super fast, scalable, cheap and secure hosting.
       </p>
 
       <div class="source-animation flex flex--align-equal flex--space-between">

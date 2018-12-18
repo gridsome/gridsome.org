@@ -104,14 +104,13 @@ A function that will receive an instance of ChainableConfig powered by
 
 [Read more about using plugins](/docs/install-plugins)
 
-## Advanced
 
-#### host
+## host
 
 - Type `string`
 - Default `'localhost'`
 
-#### port
+## port
 
 - Type `number`
 - Default `8080`

@@ -34,17 +34,17 @@ class MyPlugin {
 module.exports = MyPlugin
 ```
 
-### api.loadSource(fn)
+## api.loadSource(fn)
 
 Load data from local files or external APIs and create content types and nodes of it. The data will then be available in your GraphQL queries.
 
 [Read more about the Data Store API](/docs/api/data-store)
 
-### api.chainWebpack(fn)
+## api.chainWebpack(fn)
 
 A function that will receive an instance of ChainableConfig powered by [webpack-chain](https://github.com/neutrinojs/webpack-chain).
 
-###### Usage
+#### Usage
 
 ```js
 api.chainWebpack(config => {
@@ -52,11 +52,11 @@ api.chainWebpack(config => {
 })
 ```
 
-### api.createSchema(fn)
+## api.createSchema(fn)
 
 Create a custom GraphQL schema which will be merged with the Gridsome schema.
 
-###### Usage
+#### Usage
 
 ```js
 api.createSchema(graphql => {
@@ -71,15 +71,15 @@ api.createSchema(graphql => {
 })
 ```
 
-### api.setClientOptions(options)
+## api.setClientOptions(options)
 
 Set custom options for the client. Will use options from the plugin entry if not used.
 
-###### Arguments
+#### Arguments
 
 - options `any` Any value which can be serialized by `JSON.stringify`.
 
-###### Usage
+#### Usage
 
 ```js
 module.exports = function (api, options) {
@@ -89,8 +89,7 @@ module.exports = function (api, options) {
 }
 ```
 
-## Hooks
 
-### api.beforeBuild(fn)
+## api.beforeBuild(fn)
 
-### api.afterBuild(fn)
+## api.afterBuild(fn)

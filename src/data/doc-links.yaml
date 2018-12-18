@@ -81,13 +81,13 @@
   items: 
     - title: Gridsome CLI
       link: /docs/gridsome-cli
-    - title: Configuration API
+    - title: Configuration
       link: /docs/config
-    - title: Server API
+    - title: Server
       link: /docs/server-api
-    - title: Data store API
+    - title: Data store
       link: /docs/data-store-api
-    - title: Client API
+    - title: Client
       link: /docs/client-api
     - title: Link component
       link: /docs/link

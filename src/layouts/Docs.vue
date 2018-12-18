@@ -117,7 +117,7 @@ export default {
 
   h4, h5, h6 { opacity: .8 }
 
-  h1 a, h4 a, h5 a {
+  h1 a, h4 a, h5 a, h6 a {
     display: none;
   }
 
