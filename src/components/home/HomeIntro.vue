@@ -33,7 +33,6 @@
           <div class="home-anim__lines-in"> <lines-in /> </div>
           <div class="home-anim__lines-out"> <lines-out  /> </div>
           <div class="home-anim__logo"> <Logo /> </div>
-
         </div>
       </div>
     </div>
@@ -85,6 +84,7 @@ export default {
 
   svg {
     width: 100%;
+    height: 100%;
   }
 
   &__logo svg  {
