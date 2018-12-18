@@ -24,7 +24,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon feather feather-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
 
         <h3>PWA offline-ready</h3>
-        <p>Gridsome loads only the critical HTML, CSS, so your site <strong>loads as fast as possible</strong>. Once loaded, the next pages are prefetched so clicking around the site feels incredibly fast - <strong>works even when offline.</strong>
+        <p>Gridsome loads only the critical HTML, CSS, so your site <strong>loads as fast as possible</strong>. Once loaded, the next pages are prefetched so clicking around the site feels incredibly fast. <strong>It even works offline.</strong>
         </p>
       </Feature>
 
@@ -40,16 +40,15 @@
       <Feature>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="icon feather feather-trending-up"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
 
-        <h3>Build for the future</h3>
-        <p>The future of the web is JavaScript, API's, and Markup - the <strong><a target="_blank" href="https://jamstack.org">JAMstack</a></strong>. Gridsome uses the power of a blazing fast <strong>static site generator</strong> and <strong>Vue.js</strong> to create stunning modern web experiences.
-        </p>
+        <h3>SEO-friendly SPA</h3>
+        <p>Gridsome sites renders as pure HTML before Vue.js is loaded and activates the SPA. This makes search engines able to crawl content, and give <strong>better ranking because of the fast loading</strong>.</p>
       </Feature>
 
       <Feature>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon feather feather-refresh-ccw"><polyline points="1 4 1 10 7 10"></polyline><polyline points="23 20 23 14 17 14"></polyline><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path></svg>
 
         <h3>Hot code reloading</h3>
-        <p>Build websites with modern tools like <strong>Vue.js, GraphQL & webpack</strong> with built-in instant <strong>hot code reloading</strong> for any code & data change while developing.
+        <p>Build websites with modern tools like <strong>Vue.js, GraphQL & webpack</strong> with instant <strong>hot code reloading</strong> for any code & data changes while developing.
         </p>
       </Feature>
 
