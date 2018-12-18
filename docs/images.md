@@ -13,6 +13,16 @@ Learn about the [Image API here](/docs/image).
 ### Automatic resizing
 `<g-image>` automatically resizes image with the `width` attribute. The width you set will be the original width of the image. What you set is what you get. There is no fake resizing.
 
+### Image cropping
+Image will crop if both `height` and `width` is set. The `fit` attribute will tell how cropping should behave. For example:
+
+```html
+<g-image src="./image.png" width="500" height="500" fit="contain" />
+```
+Learn more about [cropping here](/docs/image).
+
+
+
 ### Progressive Image loading
 `<g-image>` automatically compresses the image and creates a small blurred inline version of it with the same aspect ratio. The original image gets lazy-loaded when in view.
  
