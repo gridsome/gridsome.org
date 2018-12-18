@@ -63,9 +63,16 @@
 	 	 <h2>Graphics</h2>
 	 	 <p>Feel free to change and use these graphics anywhere</p>
 		 <a href="/assets/data-sources.png" target="_blank">
-	    <img src="/assets/data-sources.png" />
-	   </a>
+	     <img src="/assets/data-sources.png" />
+	    </a>
 
+      <a href="/assets/logo-poster.png" target="_blank">
+        <img src="/assets/logo-poster.png" />
+      </a>
+
+      <a href="/assets/logo-poster-light.png" target="_blank">
+        <img src="/assets/logo-poster-light.png" />
+      </a>
     </Section>
   </Layout>
 </template>

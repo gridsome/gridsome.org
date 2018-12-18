@@ -5,10 +5,10 @@ Layout components are used to wrap pages and templates. Layouts should contain c
 > Every layout should have a `<slot />` component. This is where the page and template content will be inserted.
 
 ```html
+<!-- Layout -->
 <template>
   <div>
     <header />
-    <h1 v-html="title" />
     <slot /> <!-- Page content will be inserted here  -->
     <footer />
   </div>
@@ -20,8 +20,7 @@ Layout components are used to wrap pages and templates. Layouts should contain c
 When you have created a layout you need to import to your pages and templates. This is done inside the `<script>` tag.
 
 ```html
-<!-- scr/pages/Page.vue -->
-
+<!-- Page -->
 <template>
   <Layout>
     Add page content here
@@ -65,8 +64,7 @@ export default function (Vue, { head, router, isServer }) {
 You can now use `<Layout>` anywhere in your Gridsome project without importing it to every page:
 
 ```html
-<!-- scr/pages/Page.vue -->
-
+<!-- Page -->
 <template>
   <Layout>
     Add page content here
@@ -86,8 +84,7 @@ Since layouts work like components is it possible pass Props to layouts. For exa
 
 
 ```html
-<!-- src/pages/Page.vue -->
-
+<!-- Page -->
 <template>
   <Layout :sidebar="true">
     Add page content here
@@ -98,10 +95,9 @@ Since layouts work like components is it possible pass Props to layouts. For exa
 This will pass a Prop to a layout with `sidebar = true`. In the **Layout component** this could look like this: 
 
 ```html
-<!-- src/layouts/Default.vue -->
-
+<!-- Layout -->
 <template>
-  <div class="layout">
+  <div>
     <div class="main-content">
       <slot />
     </div>
@@ -116,4 +112,35 @@ This will pass a Prop to a layout with `sidebar = true`. In the **Layout compone
     props: ['sidebar']
   }
 </script>
+```
+
+
+## Multiple content slots
+To add multiple slots to a layout you need to name them. In this example have we added a sidebar slot that will only show if page has sidebar content.
+
+```html
+<!-- Layout -->
+<template>
+  <div>
+    <slot /> <!-- Default slot  -->
+    <div class="sidebar" v-if="$slots.sidebar">
+      <slot name="sidebar" /> <!-- Sidebar slot  -->
+    </div>
+  </div>
+</template>
+```
+
+Pages can now add content to this slot like this:
+
+```html
+<!-- Page -->
+<template>
+  <Layout>
+    This is the default content
+
+    <template slot="sidebar">
+      This will be added to sidebar slot from the page
+    </template>
+  </Layout>
+</template>
 ```
