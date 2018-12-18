@@ -28,16 +28,9 @@ export default {
     HomeBlog,
     HomeHowItWorks,
   },
-
+  
   metaInfo: {
     title: 'Gridsome - Vue.js-powered static site generator',
-    titleTemplate: '%s',
-    meta: [
-      {
-        name: 'description',
-        content: 'Gridsome is a Vue-powered static site generator for building CDN-ready websites and apps for any headless CMS or data source'
-      }
-    ]
   }
 }
 </script>
