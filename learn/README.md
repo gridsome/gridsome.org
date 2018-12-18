@@ -1,7 +1,6 @@
 # Gridsome Tutorial
 
-🚨 ** These docs is under development and will be live soon **.
-Any contribution is welcome.
+🚨 ** These docs is under development and will be live soon.** Any contribution is welcome.
 
 Welcome to the Gridsome tutorial. In this tutorial, we're going to install the **default Gridsome starter** and add features to it that will cover the basics of Gridsome.
 
