@@ -12,15 +12,15 @@ Use the `g-image` component to get automatic lazy-loading and optimizations for 
 |width     |          |Resize image to specified width in pixels
 |height    |          |Crop & resize image to specified height in pixels
 |alt       |          |Alternate text for the image
-|background|          |Background color
-|fit 			 |          |cover (default) / contain / fill / inside / outside
+|fit 			 |cover     |How to crop images. See properties below.
+|background|          |Background color for 'contain'
 |immediate |false     |Set to `true` to disable lazy-loading
 
 > The `src` and `width` properties must be static values.
 
 
 ### Image cropping
-Image will crop if both `height` and `width` is set. The `fit` attribute will tell how cropping should behave. For example:
+Images will crop if both `height` and `width` is set. The `fit` attribute will tell how cropping should behave. For example:
 
 ```html
 <g-image src="./image.png" width="500" height="500" fit="contain" />
