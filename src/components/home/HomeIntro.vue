@@ -29,7 +29,7 @@
       </div>
       <div class="hide-for-small" style="padding-top: 3%;">
         <div class="home-anim">
-          <div class="home-anim__source-logos"><g-image alt="Logos" src="~/assets/images/cms-logos.png" /></div>
+          <div class="home-anim__source-logos"><g-image alt="Logos" blur="1" src="~/assets/images/cms-logos.png" /></div>
           <div class="home-anim__lines-in"> <lines-in /> </div>
           <div class="home-anim__lines-out"> <lines-out  /> </div>
           <div class="home-anim__logo"> <Logo /> </div>

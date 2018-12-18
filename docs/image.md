@@ -15,6 +15,9 @@ Use the `g-image` component to get automatic lazy-loading and optimizations for 
 |fit 			 |cover     |How to crop images. See properties below.
 |background|          |Background color for 'contain'
 |immediate |false     |Set to `true` to disable lazy-loading
+|blur      |10      	|How much in px to blur the image placeholder
+|quality   |75        |The quality of the image. (0-100).
+
 
 > The `src` and `width` properties must be static values.
 
