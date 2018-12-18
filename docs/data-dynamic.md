@@ -7,10 +7,10 @@ We recommend to use the [axios](https://github.com/axios/axios) package to add d
 
 
 ## Query from external Rest API
-...
+....Contributions are welcome!
 
 ## Query from external GraphQL API
-...
+....Contributions are welcome!
 
 ## Dynamic content and eCommerce stores
 A good example of using dynamic content with Gridsome is eCommerce stores. While most of the site is static you probably want prices and quantity to be dynamic.
