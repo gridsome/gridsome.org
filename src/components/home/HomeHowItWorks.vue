@@ -81,8 +81,12 @@
 </template>
 
 <script>
+import GraphQlLogo from '~/assets/images/graphql-logo.svg'
+
 export default {
- 
+  components: {
+    GraphQlLogo
+  }
 }
 </script>
 

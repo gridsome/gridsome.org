@@ -48,7 +48,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon feather feather-refresh-ccw"><polyline points="1 4 1 10 7 10"></polyline><polyline points="23 20 23 14 17 14"></polyline><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path></svg>
 
         <h3>Hot code reloading</h3>
-        <p>Build websites with modern tools like <strong>Vue.js, GraphQL & webpack</strong> with instant <strong>hot code reloading</strong> for any code & data changes while developing.
+        <p>Enjoy modern dev tools like Vue.js<vue-logo width="28" height="28" />,<br> GraphQL <graph-ql-logo color="#E535AB" width="20" height="20" /> & webpack<webpack-logo width="28" height="28" />. Get instant <strong>hot code reloading</strong> for any data change while developing. Gridsome makes building websites fun again.
         </p>
       </Feature>
 
@@ -58,8 +58,16 @@
 </template>
 
 <script>
+import VueLogo from '~/assets/images/vue-logo.svg'
+import GraphQlLogo from '~/assets/images/graphql-logo.svg'
+import WebpackLogo from '~/assets/images/webpack-logo.svg'
 export default {
   props: ['icon'],
+  components: {
+    VueLogo,
+    GraphQlLogo,
+    WebpackLogo
+  },
   computed: {
     iconClasses() {
       let classes = []

@@ -8,8 +8,7 @@ import Docs from '~/layouts/Docs.vue'
 import Section from '~/components/Section.vue'
 import Feature from '~/components/Feature.vue'
 import Card from '~/components/Card'
-import VueLogo from '~/assets/images/vue-logo.svg'
-import GraphQlLogo from '~/assets/images/graphql-logo.svg'
+
 import VueScrollTo from 'vue-scrollto'
 
 import VueAnalytics from 'vue-analytics'
@@ -34,8 +33,6 @@ export default function (Vue, { head, router, isServer }) {
   Vue.component('Section', Section)
   Vue.component('Feature', Feature)
   Vue.component('Card', Card)
-  Vue.component('VueLogo', VueLogo)
-  Vue.component('GraphQlLogo', GraphQlLogo)
 
   Vue.use(VueScrollTo)
 
