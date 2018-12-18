@@ -28,6 +28,10 @@ export default {
       height: 32px;
       margin: 0 auto var(--space);
       opacity: .5;
+      stroke-width: 1.6!important;
+      path {
+        stroke-width: 1.6!important;
+      }
     }
 
     h3 {
