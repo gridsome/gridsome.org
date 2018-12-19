@@ -73,6 +73,10 @@
       <a href="/assets/logo-poster-light.png" target="_blank">
         <img src="/assets/logo-poster-light.png" />
       </a>
+
+      <a href="/assets/how-it-works.gif" target="_blank">
+        <img src="/assets/how-it-works.gif" />
+      </a>
     </Section>
   </Layout>
 </template>
