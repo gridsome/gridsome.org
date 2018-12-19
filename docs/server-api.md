@@ -38,7 +38,7 @@ module.exports = MyPlugin
 
 Load data from local files or external APIs and create content types and nodes of it. The data will then be available in your GraphQL queries.
 
-[Read more about the Data Store API](/docs/api/data-store)
+[Read more about the Data Store API](/docs/data-store-api)
 
 ## api.chainWebpack(fn)
 
