@@ -12,7 +12,7 @@
         <li><Bullet /> Super fast Time to Interactive</li>
         <li><Bullet /> Automatic code-splitting</li>
         <li><Bullet /> Automatic critical CSS</li>
-        <li><Bullet /> Automatic next page prefetcing</li>
+        <li><Bullet /> Automatic next page prefetching</li>
       </ul>
       <ul class="bullet-list">
         <li><Bullet /> Navigate without page reloads</li>
