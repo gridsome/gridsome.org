@@ -6,6 +6,10 @@
   </Layout>
 </template>
 
+<style lang="scss">
+	h1 { font-size: 32px }
+</style>
+
 <page-query>
 query WordPressPost ($path: String!) {
   post: wordPressPost (path: $path) {

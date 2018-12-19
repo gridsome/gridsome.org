@@ -1,7 +1,7 @@
 <template>
-  <PluginsLayout>
-    <div class="post" v-html="$page.doc.content"></div>
-  </PluginsLayout>
+  <DocsLayout :links="links">
+    <div class="post mb" v-html="$page.doc.content"></div>
+  </DocsLayout>
 </template>
 
 <page-query>
@@ -16,11 +16,13 @@ query PluginPage ($path: String!) {
 </page-query>
 
 <script>
-import PluginsLayout from '@/layouts/Plugins'
+import links from '@/data/plugin-links.yaml'
 
 export default {
-  components: {
-    PluginsLayout
+  computed: {
+    links () {
+      return links
+    }
   },
   metaInfo () {
     const { title } = this.$page.doc

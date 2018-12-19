@@ -39,9 +39,9 @@ This file is optional and is used to hook into various parts of the Gridsome ser
 
 ## The `/src` directory
 
-#### main.js
+#### Main.js
 
-Export a function in this file to get access to the [Client API](/docs/client-api). This file is the place to install Vue plugins, register components and directives etc.
+Import global styles and scripts here. The file also has a export function that has access to the **Client API**. This file is the place to install Vue plugins, register components and directives etc.
 
 [Read more about using the Client API in main.js](/docs/client-api#using-the-client-api-in-srcmainjs)
 
@@ -71,16 +71,22 @@ component file must match the node type in your GraphQL schema.
 [Read more about templates](/docs/templates)
 
 
-## Aliases
-In Gridsome you can use the aliases `~` or `@` to link to files inside `/src` folder. You can import for example a Vue component by using `import Card from '~/components/Card'`
-
 
 ## The `/static` directory
 
 Files in this directory will be copied directly to `dist` during build. For example **/static/robots.txt** will be located at https://yoursite.com/robots.txt
 
 
+
+## Aliases
+In Gridsome you can use the aliases `~` or `@` to link to files inside `/src` folder. You can import for example a Vue component by using `import Card from '~/components/Card'`
+
+
 ## Recommendation
+
+#### Assets
+
+Global styles, images, fonts and icons is usually added to a `src/assets` directory.
 
 #### Shared or global components
 

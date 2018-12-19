@@ -1,91 +1,115 @@
 <template>
-  <Section dots="true" class="text-center">
-  <div class="container-md mb">
-    
-    <h1 class="home-title">
-      <span class="home-title__top">A Vue framework for</span>
-      <transition name="rotate">
-        <div v-if="currentText == 0" class="home-title__main gradient-text" key="0">
-          Static Websites
-        </div>
-        <div v-else-if="currentText == 1" key="1" class="home-title__main gradient-text">
-          any CMS or data
-        </div>
-        <div v-else-if="currentText == 2" key="2" class="home-title__main gradient-text">
-         PWAs
-        </div>
-        <div v-else-if="currentText == 3" key="3" class="home-title__main gradient-text">
-          the #JAMstack
-        </div>
-        <div v-else-if="currentText == 4" key="4" class="home-title__main gradient-text">
-          Markdown files
-        </div>
-        <div v-else-if="currentText == 5" key="5" class="home-title__main gradient-text">
-          SEO-friendly SPAs
-        </div>
-      </transition>
-    </h1>
+  <Section class="home-intro" dots="true" dark="true" sway="true" style="padding-top: 0; padding-bottom: 0;">
+    <div class="grid-cols grid-cols--2" style="max-width: 1080px; margin: 0 auto;">
+      <div class="text-center" style="padding-top: 18%; padding-bottom: 18%;">    
+        <h1>
+          <span class="home-title">
+            Build super fast, modern websites with Vue.js
+          </span>
+        </h1>
 
-    <p class="home-intro container-sm">
-      Build blazing fast websites for any CMS<br class="hide-for-small" /> or data with 
-      <strong class="no-wrap">Vue.js<vue-logo/></strong>
-    </p>
+        <p class="home-lead lead" style="padding-left: 3%; padding-right: 3%">
+          Gridsome is a <strong>Vue-powered static site generator</strong> for building CDN-ready websites and apps for any headless CMS, local files or APIs
+        </p>
 
-    <g-link  to="/docs" class="button primary">
-      Get started
-    </g-link>
-
-    <a href="//github.com/gridsome/gridsome" class="button plain">
-      GitHub
-    </a>
-  </div>
+        <p class="home-links">
+          <g-link  to="/docs" class="button primary">
+            Get started
+          </g-link>
+          <g-link  to="/learn" class="button">
+            Tutorial
+          </g-link>
+        </p>
+        <p class="home-info">
+          <span>Open-source MIT Licensed. </span>
+          <a href="//github.com/gridsome/gridsome" target="_blank">
+            <span>GitHub (v0.4.0)</span>
+          </a>
+        </p>
+      </div>
+      <div class="hide-for-small" style="padding-top: 3%;">
+        <div class="home-anim">
+          <div class="home-anim__source-logos"><g-image alt="Logos" blur="1" src="~/assets/images/cms-logos.png" /></div>
+          <div class="home-anim__lines-in"> <lines-in /> </div>
+          <div class="home-anim__lines-out"> <lines-out  /> </div>
+          <div class="home-anim__logo"> <Logo /> </div>
+        </div>
+      </div>
+    </div>
 
   </Section>
 </template>
 
 <script>
+import LinesOut from '~/assets/images/home-lines-out.svg'
+import LinesIn from '~/assets/images/home-lines-in.svg'
+import Logo from '~/assets/images/home-logo.svg'
+
 export default {
-  data() {
-    return {
-      currentText: 0
-    }
-  },
-
-  mounted () {
-    this._counter = setInterval(() => {
-      this.currentText = (this.currentText + 1) % 6
-    }, 1500)
-  },
-
-  destroyed () {
-    clearTimeout(this._counter)
-  },
+  components: {
+    LinesOut,
+    LinesIn,
+    Logo
+  }
 }
 </script>
 
 <style lang="scss">
+
+@media screen and (max-width: 750px) {
+ .home-intro .grid-cols{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .home-title {
-  &__top {
-    font-size: 75%;
-  }
-  &__main {
-    font-size: 130%;
-    color: var(--primary-color);
-  }
+  line-height: 1.3;
+  font-size: 1.9rem;
+}
+.home-info {
+  font-size: .85rem;
+  opacity: .6;
 }
 
-@media screen and (max-width: 650px) {
-  .home-title__top {
-    font-size: 55%;
+.home-anim {
+  position: relative;
+  transform: translateZ(0);
+
+  img {
+    display: block;
+    position: relative;
+    z-index: 1;
   }
-  .home-title__main {
-    font-size: 80%;
+
+  > div {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
   }
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__logo svg  {
+    animation: pulseSvg 1500ms ease-out infinite;
+  }
+
+  &__lines-in svg path {
+    stroke-width: 4px;
+    stroke-linecap: round;
+    stroke-dasharray: 0 20;
+    animation: stroke 800ms linear infinite;
+  }
+
+  &__lines-out path {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    stroke-dasharray: 0 20;
+    animation: stroke-invert 400ms linear infinite;
+  }
+
 }
-
-
-.home-intro {
-  font-size: 130%;
-}
-
 </style>

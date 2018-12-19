@@ -1,0 +1,16 @@
+- title: Tutorial
+  items:
+    - title: 'Introduction'
+      link:  /learn
+    - title: '0. Development setup'
+      link:  /learn/dev-setup
+    - title: '1. Basic Gridsome'
+      link: /learn/basic-setup
+    - title: '2. Add fonts and styles'
+      link: /learn/fonts-styles
+    - title: '3. Add a blog data source'
+      link: /learn/data-sources
+    - title: '4. Create a blog page'
+      link: /learn/blog-page
+    - title: '5. Prepare to go live'
+      link: /learn/go-live

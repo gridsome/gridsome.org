@@ -1,11 +1,6 @@
 <template>
-  <DocsLayout>
-    <div class="post docs-page mb" v-html="$page.doc.content"></div>
-    <p>
-      <a :href="editLink" target="_blank">
-        Edit this page on GitHub
-      </a>
-    </p>
+  <DocsLayout :subtitles="$page.doc.subtitles" :links="links">
+    <div class="post mb" v-html="$page.doc.content"></div>
   </DocsLayout>
 </template>
 
@@ -17,17 +12,22 @@ query DocPage ($path: String!) {
     title: headings (depth: h1) {
       value
     }
+    subtitles: headings (depth: h2) {
+      value
+      anchor
+    }
   }
 }
 </page-query>
 
 <script>
+import links from '@/data/doc-links.yaml'
+
 export default {
   computed: {
-    editLink () {
-      const path = this.$page.doc.path
-      return `https://github.com/gridsome/gridsome.org/blob/master${path}.md`
-    }
+    links () {
+      return links
+    },
   },
   metaInfo () {
     const { title } = this.$page.doc
@@ -38,24 +38,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-.docs-page {
-  h2::before, h3::before {
-    content: "";
-    display: block;
-  }
-
-  h2::before {
-    height: 3.0em;
-  }
-
-  h3::before {
-    height: 1.5em;
-  }
-
-  ul > li > p {
-    font-weight: 400;
-  }
-}
-</style>

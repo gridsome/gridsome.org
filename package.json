@@ -8,10 +8,10 @@
     "build": "gridsome build"
   },
   "dependencies": {
-    "gridsome": "^0.3.4",
+    "gridsome": "^0.4.0",
     "typeface-league-spartan": "0.0.44",
     "typeface-nunito": "0.0.54",
-    "typography": "^0.16.17",
+    "typography": "^0.16.18",
     "vue-analytics": "^5.16.0",
     "vue-scrollto": "^2.13.0"
   },
@@ -19,9 +19,10 @@
     "@gridsome/plugin-critical": "^0.1.0",
     "@gridsome/remark-prismjs": "^0.0.3",
     "@gridsome/source-filesystem": "^0.2.0",
-    "@gridsome/transformer-remark": "^0.1.1",
+    "@gridsome/transformer-remark": "^0.1.2",
     "node-sass": "^4.9.3",
     "raw-loader": "^0.5.1",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "svg-to-vue-component": "^0.2.2"
   }
 }

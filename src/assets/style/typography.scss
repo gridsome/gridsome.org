@@ -16,16 +16,20 @@
   opacity: .7;
 }
 
-h1, h2, h3, .button {
+h1, h2 {
+  font-weight: bolder;
+}
+
+h1, h2, .lead{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-p:last-child {
-  margin:0;
-}
 
 p {
-  font-weight: 300;
-  color: var(--secondary-color);
+  font-weight: 500;
+
+  &:last-child {
+    margin:0;
+  }
 }

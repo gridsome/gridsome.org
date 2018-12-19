@@ -1,30 +1,82 @@
 nav a {
   letter-spacing: .5px;
-  font-size: .9rem;
+  font-size: .85rem;
   font-weight: 500;
   display: flex;
   align-items:center;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 5px 5px;
 
   svg {
     margin: 3px 6px;
   }
 
   &.active {
-    color:#000;
+    color: currentColor;
+    
     svg {
       opacity: 1;
     }
+  } 
+
+  &:hover {
+    color: var(--primary-color);
   }
 
   &:not(.active):not(:hover):not(.button) {
-    color: var(--secondary-color);
+    color: currentColor;
     opacity: .7;
+  } 
+}
+
+
+nav {
+  .has-dropdown {
+    position: relative;
+    display: inline-block;
+
+    &:hover {
+      .dropdown {
+        pointer-events: inherit;
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
   }
 
-  @media (min-width: 350px) {
-    padding: 5px 10px;
+  .dropdown {
+    background-color: var(--primary-bg);
+    pointer-events: none;
+    visibility: hidden;
+    z-index: 10;
+    color: #111;
+    position: absolute;
+    top:100%;
+    right:0;
+    width: 180px;
+    border-radius: 3px;
+    padding: 10px 20px 20px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.3);
+    transform: translateY(-5px);
+    opacity: 0;
+    transition: opacity .3s, transform .3s cubic-bezier(0.19, 1, 0.22, 1);
+
+    &__title {
+      padding: 5px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: bold;
+      opacity: .3;
+      display: block;
+      margin-top: 10px;
+    }
+
+    a {
+      justify-content: flex-start;
+    }
   }
 }
 
@@ -37,6 +89,8 @@ nav.tabs {
   a {
     background-color: var(--primary-bg);
     border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     white-space: nowrap;
   }
   

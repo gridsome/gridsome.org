@@ -1,6 +1,6 @@
 # Data Store API
 
-The Data Store API lets you insert your own data into the Gridsome store. You will then be able to access it through GraphQL in your components.
+The Data Store API lets you insert your own data into the GraphQL data layer. You will then be able to access it through GraphQL in your components. **Use this is you want to build a custom data source connection or a plugin.**
 
 ```js
 function MySourcePlugin (api) {
@@ -12,41 +12,39 @@ function MySourcePlugin (api) {
 module.exports = MySourcePlugin
 ```
 
-## Create content types and nodes
-
-### store.addContentType(options)
+## store.addContentType(options)
 
 Add a new content type to store. Create a Vue components in the `src/templates` folder to have a template for this type. Returns a collection which can have nodes. [Read more about templates](/docs/templates).
 
-###### Arguments
+#### Arguments
 
 - options `object`
   - typeName `string` *Required GraphQL schema type and template name.*
   - route `string` *Optional dynamic route.*
   - refs `object` *Create references to other nodes.*
 
-###### Usage
+#### Usage
 
 ```js
 api.loadSource(store => {
   store.addContentType({
     typeName: 'BlogPost',
-    route: '/:year/:month/:day/:slug'
+    route: '/blog/:year/:month/:day/:slug'
   })
 })
 ```
 
-### store.getContentType(typeName)
+## store.getContentType(typeName)
 
 Get a content type previously created.
 
-###### Arguments
+#### Arguments
 
 - typeName `string` *GraphQL schema type name.*
 
-### collection.addNode(options)
+## collection.addNode(options)
 
-###### Arguments
+#### Arguments
 
 - options `Object` *Required.*
   - title `string` *Required.*
@@ -57,7 +55,7 @@ Get a content type previously created.
   - excerpt `string` *Optional excerpt.*
   - fields `Object` *Custom fields.*
 
-###### Usage
+#### Usage
 
 ```js
 api.loadSource(store => {
@@ -69,6 +67,7 @@ api.loadSource(store => {
     title: 'My first blog post',
     date: '2018-11-02',
     content: 'Lorem ipsum dolor sit amet, consectetur...',
+    path: '/blog/:year/:slug' // will not work if route is set
     fields: {
       tags: ['awesome-post']
     }
@@ -76,16 +75,16 @@ api.loadSource(store => {
 })
 ```
 
-### collection.addReference(fieldName, options)
+## collection.addReference(fieldName, options)
 
-###### Arguments
+#### Arguments
 
 - fieldName `string` *The field name*
 - options `Object`
   - typeName `string` *GraphQL schema type to reference.*
   - key `string` *The foreign key to match local field.*
 
-###### Usage
+#### Usage
 
 This example creates two content types: `Author` and `BlogPost`. The `ref` option for `BlogPost` is using its `author` field to make a reference to an `Author` node. The `author` field contains an author ID, so we use `'id'` as `key` to make the store look for an author with that ID.
 
@@ -133,16 +132,16 @@ query BlogPost ($path: String!) {
 }
 ```
 
-### collection.addSchemaField(fieldName, handler)
+## collection.addSchemaField(fieldName, handler)
 
 Extend the GraphQL schema with a custom field for a node type.
 
-###### Arguments
+#### Arguments
 
 - fieldName `string` *The field name to create on node.*
 - handler `Function` *A function which returns an object with a GraphQL field and resolver.*
 
-###### Usage
+#### Usage
 
 ```js
 api.loadSource(store => {
@@ -157,19 +156,18 @@ api.loadSource(store => {
 })
 ```
 
-## Taxonomies and terms
 
-### store.addTaxonomy(options)
-
-*Comming soon...*
-
-### taxonomy.addTerm(options)
+## store.addTaxonomy(options)
 
 *Comming soon...*
 
-## Examples
+## taxonomy.addTerm(options)
 
-### Basic usage
+*Comming soon...*
+
+## Example usage
+
+### Basic
 
 This example creates a `MyData` content type and just adds a single node to it.
 
@@ -216,6 +214,7 @@ module.exports = function (api) {
 
     const contentType = store.addContentType({
       typeName: 'BlogPosts'
+      route: '/blog/:year/:slug' // optional
     })
 
     for (const item of data) {

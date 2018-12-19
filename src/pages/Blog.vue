@@ -1,9 +1,8 @@
 <template>
-  <Layout transparent="true">
+  <Layout>
      <Section container="md" class="blog-posts">
       <div class="mb container-sm text-center">
           <h1>Gridsome Blog</h1>
-          <p class="lead">Follow our mission to save the web from bloat and make building websites fun again.</p>
       </div>
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node._id" :post="edge.node"/>
     </Section>
@@ -20,11 +19,9 @@ query BlogPosts {
         path
         date (format: "D. MMMM YYYY")
         timeToRead
+        author
+        excerpt
         content
-        fields {
-          author
-          excerpt
-        }
       }
     }
   }
@@ -40,3 +37,7 @@ export default {
   }
 }
 </script>
+
+<style>
+
+</style>

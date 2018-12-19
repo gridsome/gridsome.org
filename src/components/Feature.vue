@@ -26,13 +26,13 @@ export default {
     svg.icon {
       width: 32px;
       height: 32px;
-      border-radius: 99px;
       margin: 0 auto var(--space);
-      color: var(--secondary-color);
-      opacity: .6;
-      overflow: visible!important;
+      opacity: .5;
+      stroke-width: 1.6!important;
+      path {
+        stroke-width: 1.6!important;
+      }
     }
-
 
     h3 {
       margin-bottom: 1rem;

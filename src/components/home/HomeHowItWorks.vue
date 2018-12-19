@@ -1,11 +1,12 @@
 <template>
-  <Section dots="true">
+  <Section dots="true" class="post">
+
       <h2 class="text-center">
         How Gridsome works
       </h2>
 
-      <p class="lead text-center container-sm">
-        Use local files or any external API as a data source and access the data from a unified GraphQL layer</p>
+      <p class="text-center container-md">
+        Connect to any CMS or data source and use Vue.js for frontend. Deploy to any static web host for super fast, scalable, cheap and secure hosting.
       </p>
 
       <div class="source-animation flex flex--align-equal flex--space-between">
@@ -66,25 +67,26 @@
               </svg>
           </div>
 
-
           <div class="well">
               <div class="well__title">Deploy</div>
-              <h4>Static site generation</h4>
-              <p>Generate static files and deploy to any global CDN service or FTP at blazing speed.</p>
-              <p>For example, 
-                <a href="//netlify.com">Netlify</a>,
-                <a href="//zeit.co/now">Zeit Now</a>,
-                <a href="//pages.github.com/">GitHub Pages</a>,
-                <a href="//docs.gitlab.com/ee/user/project/pages/">GitLab Pages</a>,
-                <a href="//surge.sh">Surge.sh</a> and many more.</p>
+              <h4>Static web hosting</h4>
+              <p>Generate static files and deploy to any global CDN or FTP.</p>
+              <p>
+                <g-image alt="deploy-logos" src="~/assets/images/deploy-logos.png" width="480" />
+                <g-link to="/docs/deployment">Learn more about deployment</g-link>
+              </p>
           </div>
       </div>
   </Section>
 </template>
 
 <script>
+import GraphQlLogo from '~/assets/images/graphql-logo.svg'
+
 export default {
- 
+  components: {
+    GraphQlLogo
+  }
 }
 </script>
 
@@ -96,11 +98,12 @@ export default {
 }
 
 .well {
-  border: 3px solid var(--primary-bg);
-  border-radius: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
   background-color: rgba(255,255,255,.7);
   width: 100%;
   padding: var(--space-x2);
+  box-shadow: 1px 2px 5px rgba(0,0,0,.05);
   position: relative;
   flex:1;
   min-width: 280px;
@@ -113,10 +116,11 @@ export default {
 
   &__title {
     position: absolute;
-    top:-19px;
+    top:-16px;
     left:50%;
     transform: translateX(-50%);
     background: var(--primary-bg);
+    border: 1px solid var(--border-color);
     padding: 4px 10px;
     border-radius: 5px;
     text-transform: uppercase;
@@ -197,7 +201,7 @@ export default {
   }
 
   &__vue {
-    background: var(--primary-color);
+    background: linear-gradient(155.25deg, var(--primary-color) 0%, var(--primary-link-color) 100%);
     position: relative;
     animation: pulse 2s infinite;
     animation-delay: .3s;

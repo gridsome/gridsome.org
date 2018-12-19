@@ -1,11 +1,16 @@
 <template>
   <Layout>
     <Section class="post" container="md" dots="true" >
+
       <div class="post-header container-sm text-center mb">
         <h1 v-html="$page.post.title"/>
         <PostMeta :post="$page.post"/>
       </div>
-      <p class="lead" v-html="$page.post.fields.excerpt"/>
+
+      <g-image v-if="$page.post.poster" quality="1" width="600" :src="$page.post.poster" />
+
+      <p class="lead" v-html="$page.post.excerpt"/>
+
       <div v-html="$page.post.content"/>
     </Section>
   </Layout>
@@ -18,10 +23,8 @@ query BlogPost ($path: String!) {
     date (format: "D. MMMM YYYY")
     timeToRead
     content
-    fields {
-      author
-      excerpt
-    }
+    author
+    excerpt
   }
 }
 </page-query>
@@ -32,10 +35,6 @@ import PostMeta from '@/components/PostMeta.vue'
 export default {
   components: {
     PostMeta,
-    editLink () {
-      const path = this.$page.doc.path
-      return `https://github.com/gridsome/gridsome.org/blob/master${path}.md`
-    }
   },
   metaInfo () {
     return {
@@ -43,7 +42,7 @@ export default {
       meta: [
         {
           name: 'description',
-          content: this.$page.post.fields.excerpt
+          content: this.$page.post.excerpt
         }
       ]
     }

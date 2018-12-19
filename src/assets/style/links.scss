@@ -1,33 +1,22 @@
 a {
-  color: var(--primary-link-color);
+  color: rgba(0,0,0,1);
   text-decoration: none;
-  transition: color .3s, opacity .3s, background-color .3s;
+  transition: color .3s, opacity .3s, background .3s;
   display: inline-block;
   position: relative;
   font-weight: bold;
 
 
-  .post &:not(.button):after {
-  	content: "";
-  	top: calc(100% - 5px);
-  	opacity: 1;
-  	left:2px;
-  	right:2px;
-  	width:100%;
-  	position: absolute;
-  	opacity: .15;
-  	border-bottom: 2px solid currentColor;
-  	z-index: -1;
-  	transition: opacity .3s;
+  .post &:not(.button) {
+    background: linear-gradient(180deg, transparent 60%, var(--success-bg)  60%, var(--success-bg)  87%, transparent 0,);
   }
 
-  .post &:not(.button):hover:after {
-    opacity: 1;
+  .post &:not(.button):hover {
+    background: linear-gradient(180deg, transparent 0%, var(--success-bg)  60%, var(--success-bg)  87%, transparent 0,);
   }
 
 }
 
 a:hover:not(.active) {
-  color: var(--secondary-color);
   opacity: 1;
 }

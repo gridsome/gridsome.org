@@ -1,9 +1,9 @@
 <template>
   <p>
     <small>
-      <template v-if="post.fields && post.fields.author">
+      <template v-if="post.author">
         Posted {{ post.date }} by
-        <a href="#">{{ post.fields.author }}</a>
+        <a href="#">{{ post.author }}</a>
         <span v-if="post.timeToRead"> - </span>
       </template>
 

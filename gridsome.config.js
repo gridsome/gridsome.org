@@ -2,9 +2,27 @@ module.exports = {
   siteName: 'Gridsome',
   siteUrl: `https://www.gridsome.org`,
   titleTemplate: '%s - Gridsome',
-
+  siteDescription: 'Gridsome is a Vue-powered static site generator for building CDN-ready websites and apps for any headless CMS, local files or APIs',
+  
+  chainWebpack(config) {
+    config.module.rules.delete('svg')
+    config.module.rule('svg')
+      .test(/\.svg$/)
+      .use('vue')
+      .loader('vue-loader')
+        .end()
+      .use('svg-to-vue-component')
+      .loader('svg-to-vue-component/loader')
+  },
   plugins: [
-    '@gridsome/plugin-critical',
+    {
+      use: '@gridsome/plugin-critical',
+      options: {
+        paths: ['/'],
+        width: 1300,
+        height: 900
+      }
+    },
     {
       use: '@gridsome/source-filesystem',
       options: {
@@ -12,6 +30,12 @@ module.exports = {
         path: 'docs/**/*.md',
         typeName: 'DocPage',
         remark: {
+          autolinkHeadings: {
+            content: {
+              type: 'text',
+              value: '#'
+            }
+          },
           plugins: [
             '@gridsome/remark-prismjs'
           ]
@@ -25,6 +49,25 @@ module.exports = {
         path: 'plugins/**/*.md',
         typeName: 'PluginPage',
         remark: {
+          plugins: [
+            '@gridsome/remark-prismjs'
+          ]
+        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        index: ['README'],
+        path: 'learn/**/*.md',
+        typeName: 'LearnPage',
+        remark: {
+          autolinkHeadings: {
+            content: {
+              type: 'text',
+              value: '#'
+            }
+          },
           plugins: [
             '@gridsome/remark-prismjs'
           ]

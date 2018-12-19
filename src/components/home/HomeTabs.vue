@@ -1,71 +1,87 @@
 <template>
-  <Section id="top" dots="true">
-    <div class="home-tabs container text-center">
-      <nav class="home-tabs__tabs tabs flex gap-15 flex--no-wrap flex--center mb" style="margin-top:-3%">
-        <a href="#" v-scroll-to="{ el: '#top' }"  @click="tab = 'graphql'" :class="{active: tab == 'graphql'}">
-          Use GraphQL for data
-        </a>
-        <a href="#" v-scroll-to="{ el: '#top' }" @click="tab = 'pages'" :class="{active: tab == 'pages'}">
-          Auto Page Routing
-        </a>
-        <a href="#" v-scroll-to="{ el: '#top' }" @click="tab = 'templates'" :class="{active: tab == 'templates'}">
-          Smart template system
-        </a>
-        <a href="#" v-scroll-to="{ el: '#top' }" @click="tab = 'images'" :class="{active: tab == 'images'}">
-          Auto Optimized Images
-        </a>
-      </nav>
+  <Section dots="true">
+    <div class="homepage-features container post">
+      
+      <div class="grid-cols grid-cols--2 mb">
+        <div style="order:2">
+          <h3>All your data in one place</h3>
+          <p>Gridsome brings all your data into a <strong>unified GraphQL data layer</strong>. The data can be browsed and explored in a simple local interface (GraphQL Playground) and inserted to any Vue Component. </p>
+
+          <ul class="bullet-list">
+            <li><Bullet /> Pull data from any CMS, files or data APIs</li>
+            <li><Bullet /> Browse data and test queries locally</li>
+            <li><Bullet /> Query only the data fields you need</li>
+            <li><Bullet /> Built-in pagination support for queries</li>
+          </ul>
+        </div>
+        <div>
+          <g-image alt="GraphQL Browser" width="1100" src="~/assets/images/graphql-browser.png" />
+        </div>
+      </div>
+
+
+      <div class="grid-cols grid-cols--2 mb">
+        <div >
+          <h3><vue-logo /> Build with Vue.js</h3>
+          <p><a target="_blank" href="https://vuejs.org/">Vue.js</a> is an approachable, fast and lightweight front-end framework.  It's incredibly popular, got a <a target="_blank" href="https://github.com/vuejs/awesome-vue">huge community</a> behind it and is used by major companies.
+          Vue.js builds upon classic web technologies meaning that the learning curve for development teams are small.
+          </p>
+
+          <ul class="bullet-list">
+            <li><Bullet /> <strong> Instant hot-reloading</strong> for incredible developer experience</li>
+            <li><Bullet /> <strong> Sanitize your stack.</strong> Same frontend framework for any project</li>
+            <li><Bullet /> <strong> Approachable for any team member.</strong> It's just HTML and CSS</li>
+            <li><Bullet /> <strong> Awesome developer community</strong>. Find a library for any use case</li>
+          </ul>
+        </div>
+        <div>
+          <div v-html="$static.example.content" />
+        </div>
+   
+      </div>
+
+
+      <div class="grid-cols grid-cols--2 mb">
+        <div style="order:2">
+          <h3>The future of the web is on the CDN</h3>
+
+          <p><strong>No servers. No databases. Only files.</strong> Nothing beats static, pre-rendered sites when it comes to speed and security.  Deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site. The future of the web is on the CDN. Combine dynamic and static data with the power of Vue.js.</p>
+
+          <ul class="bullet-list">
+            <li><Bullet /> <strong> Super fast generating.</strong> Build thousands of pages in seconds</li>
+            <li><Bullet /> <strong> Better Performance.</strong> Faster page loading by default</li>
+            <li><Bullet /> <strong> Higher Security.</strong> Very few surface areas for attacks</li>
+            <li><Bullet /> <strong> Cheaper, Easier Scaling.</strong> Static files are the cheapest to host</li>
+          </ul>
+        </div>
+        <div>
+          <g-image alt="Safe deployment" width="1100" src="~/assets/images/static.png" />
+        </div>
+   
+      </div>
+
     </div>
-
-
-    <transition name="rotate-x">
-      <component :is="tab" />
-    </transition>
-
-
-    <div class="text-center">
-      <g-link to="/docs" class="button primary">Get started</g-link>
-      <a href="//github.com/gridsome/gridsome" class="button plain">GitHub</a>
-    </div>
-
   </Section>
 </template>
 
 <script>
-import TabGraphQL from './tabs/HomeTabGraphQL'
-import TabPages from './tabs/HomeTabPages'
-import TabSeo from './tabs/HomeTabSeo'
-import TabTemplates from './tabs/HomeTabTemplates'
-import TabImages from './tabs/HomeTabImages'
+import Bullet from '~/assets/images/bullet.svg'
+import VueLogo from '~/assets/images/vue-logo.svg'
 
 export default {
   components: {
-    'graphql' : TabGraphQL,
-    'pages' : TabPages,
-    'seo' :TabSeo,
-    'templates' : TabTemplates,
-    'images' : TabImages
+    Bullet,
+    VueLogo
   },
-
-  data() {
-    return {
-      tab: 'graphql'
-    }
-  }
 }
 
 </script>
 
 
-<style lang="scss">
-.home-tabs {
-  background-color: rgba(255,255,255,.9);
-  position: sticky; 
-  top:-1px;
-  z-index: 100;
-
-  &__tabs {
-    padding: 10px 0;
+<static-query>
+query Example {
+  example (path: "/examples/templates") {
+    content
   }
 }
-</style>
+</static-query>
