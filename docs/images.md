@@ -22,7 +22,6 @@ Image will crop if both `height` and `width` is set. The `fit` attribute will te
 Learn more about [cropping here](/docs/image).
 
 
-
 ### Progressive Image loading
 `<g-image>` automatically compresses the image and creates a small blurred inline version of it with the same aspect ratio. The original image gets lazy-loaded when in view.
  
@@ -33,3 +32,34 @@ The `<g-image>` can be used in any Vue components. It's globally available and d
 ### Use in Markdown
 The [gridsome-transformer-remark](/plugins/transformer-remark) transformer plugin automatically converts normal Markdown images to `<g-image>`.
 
+### Insert images via GraphQL query
+Sometimes images are added to the GraphQL data layer. For example if you add a local image to a Markdown with frontmatter:
+
+```js
+// NewBlogPost.md
+---
+title: New Blog post title!
+author: Tommy Vedvik
+date: 2018-12-20
+image: ./poster.png
+---
+```
+
+This will add the **poster.png** image to the GraphQL data layer. To add this to a template you need pass the **image** field as an object into the **src** attribute. Example:
+```html
+<g-image v-if="$page.post.fields.image" :src="$page.post.fields.image" />
+```
+
+The image field is coming from a GraphQL query. Attributes like **width**, **height** and **quality** needs to be added to the query. Here is an example:
+
+```html
+<page-query>
+query BlogPost ($path: String!) {
+  post: blogPost (path: $path) {
+    title
+    date (format: "D. MMMM YYYY")
+    image (width: 720, height: 200, quality: 90)
+  }
+}
+</page-query>
+```

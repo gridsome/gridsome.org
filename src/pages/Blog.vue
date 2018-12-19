@@ -19,11 +19,9 @@ query BlogPosts {
         path
         date (format: "D. MMMM YYYY")
         timeToRead
+        author
+        excerpt
         content
-        fields {
-          author
-          excerpt
-        }
       }
     }
   }

@@ -22,8 +22,8 @@
       link: /docs/directory-structure
     - title: View structure
       link: /docs/view-structure
-    - title: Configuration
-      link: /docs/config
+    - title: Basic config
+      link: /docs/basic-config
     - title: Pages
       link: /docs/pages
     - title: Templates
@@ -83,13 +83,13 @@
   items: 
     - title: Gridsome CLI
       link: /docs/gridsome-cli
-    - title: Configuration
+    - title: Config API
       link: /docs/config
-    - title: Server
+    - title: Server API
       link: /docs/server-api
-    - title: Data store
+    - title: Data store API
       link: /docs/data-store-api
-    - title: Client
+    - title: Client API
       link: /docs/client-api
     - title: Link component
       link: /docs/link
