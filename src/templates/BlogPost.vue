@@ -25,7 +25,6 @@ query BlogPost ($path: String!) {
     content
     author
     excerpt
-    poster (width: 720, quality: 90)
   }
 }
 </page-query>
