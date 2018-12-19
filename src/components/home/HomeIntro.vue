@@ -23,7 +23,7 @@
         <p class="home-info">
           <span>Open-source MIT Licensed. </span>
           <a href="//github.com/gridsome/gridsome" target="_blank">
-            <span>GitHub (v0.4.0)</span>
+            <span>GitHub (v{{ $static.metaData.gridsomeVersion }})</span>
           </a>
         </p>
       </div>
@@ -39,6 +39,14 @@
 
   </Section>
 </template>
+
+<static-query>
+query HomeIntro {
+  metaData {
+    gridsomeVersion
+  }
+}
+</static-query>
 
 <script>
 import LinesOut from '~/assets/images/home-lines-out.svg'
