@@ -1,5 +1,5 @@
 <template>
-  <Section dots="true" dark="true" sway="true" style="padding-top: 0; padding-bottom: 0;">
+  <Section class="home-intro" dots="true" dark="true" sway="true" style="padding-top: 0; padding-bottom: 0;">
     <div class="grid-cols grid-cols--2" style="max-width: 1080px; margin: 0 auto;">
       <div class="text-center" style="padding-top: 18%; padding-bottom: 18%;">    
         <h1>
@@ -23,7 +23,7 @@
         <p class="home-info">
           <span>Open-source MIT Licensed. </span>
           <a href="//github.com/gridsome/gridsome" target="_blank">
-            <span>GitHub (v0.3.6)</span>
+            <span>GitHub (v0.4)</span>
           </a>
         </p>
       </div>
@@ -55,6 +55,12 @@ export default {
 </script>
 
 <style lang="scss">
+
+@media screen and (max-width: 750px) {
+ .home-intro .grid-cols{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 .home-title {
   line-height: 1.3;
