@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <Section container="sm">
+    <Section container="sm" class="text-center">
       <h1>Logo & assets</h1>
 
       <p>Right click to download SVG</p>

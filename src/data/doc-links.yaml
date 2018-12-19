@@ -12,6 +12,8 @@
       link: /docs/deployment
     - title: How to contribute
       link: /docs/contribute
+    - title: FAQ
+      link: /docs/faq
 
 
 - title : Basic Gridsome

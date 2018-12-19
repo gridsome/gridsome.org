@@ -26,12 +26,6 @@
             <g-link to="/blog">Blog</g-link>
 
             <span class="dropdown__title">
-              About
-            </span>
-
-            <g-link to="/logo">Logo & assets</g-link>
-
-            <span class="dropdown__title">
               Friends
             </span>
             

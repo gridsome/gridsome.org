@@ -3,7 +3,8 @@
     Made in ⛄️ Norway by
     <a class="plain" href="//twitter.com/hjvedvik">@hjvedvik</a> &
     <a class="plain" href="//twitter.com/tommyvedvik">@tommyvedvik</a> and
-    <a class="plain" href="//github.com/gridsome/gridsome/graphs/contributors">Contributors 🌟</a>
+    <a class="plain" href="//github.com/gridsome/gridsome/graphs/contributors">Contributors 🌟 </a>
+    <g-link to="/logo"> Logo & assets</g-link>
   </footer>
 </template>
 

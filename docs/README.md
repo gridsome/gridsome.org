@@ -2,7 +2,7 @@
 > Gridsome is a Vue-powered static site generator for building websites for any CMS or data source. It uses a local unified GraphQL data layer for all data, and can generate thousands of pages in seconds. Gridsome is heavily inspired by **[Gatsby](https://gatsbyjs.org)** (A React.js alternative).
 
 #### Prerequisites
-Gridsome requires **Node.js**. [👉 How to setup](/docs/prerequisites)
+Gridsome requires **Node.js** and recommends **Yarn**. [👉 How to setup](/docs/prerequisites)
 
 ### 1. Install Gridsome CLI tool
 

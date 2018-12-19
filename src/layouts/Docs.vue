@@ -121,7 +121,7 @@ export default {
     display: none;
   }
 
-  p {
+  p, ul {
     position: relative;
     z-index: 1;
   }
