@@ -1,7 +1,7 @@
 # FAQ
 
-### How to update Gridsome to newest version
-Follow one of these steps to update Gridsome to latest version
+### How to update Gridsome to the latest version
+Follow **one** of these steps to update
 
 - With **yarn** run `yarn upgrade gridsome@latest`
 - With **npm** run `npm install gridsome@latest`
