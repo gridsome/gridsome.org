@@ -23,7 +23,7 @@
         <p class="home-info">
           <span>Open-source MIT Licensed. </span>
           <a href="//github.com/gridsome/gridsome" target="_blank">
-            <span>GitHub (v0.4)</span>
+            <span>GitHub (v0.4.0)</span>
           </a>
         </p>
       </div>
