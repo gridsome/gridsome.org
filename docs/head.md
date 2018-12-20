@@ -6,6 +6,7 @@ Page metadata is added inside page **.vue components**.
 For example, `src/pages/About.vue` would look something like this:
 
 ```js
+<script>
 export default {
   name: 'About',
   metaInfo: {
@@ -19,6 +20,7 @@ export default {
     // etc...
   }
 }
+</script>
 ```
 
 ## Add global head metadata
