@@ -40,11 +40,9 @@ When you initialize any Gridsome project, Gridsome uses Git behind the scenes to
 
 The steps to download and install Git depend on your operating system. Follow the guide for your system:
 
-[Install Git on MacOS](https://git-scm.com/download/mac)
-
-[Install Git on Windows](https://git-scm.com/download/windows)
-
-[Install Git on Linux](https://git-scm.com/download/linux)
+* [Install Git on MacOS](https://git-scm.com/download/mac)
+* [Install Git on Windows](https://git-scm.com/download/windows)
+* [Install Git on Linux](https://git-scm.com/download/linux)
 
 ## Install Gridsome Cli
 
