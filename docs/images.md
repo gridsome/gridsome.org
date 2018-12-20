@@ -36,7 +36,7 @@ The [gridsome-transformer-remark](/plugins/transformer-remark) transformer plugi
 Sometimes images are added to the GraphQL data layer. For example if you add a local image to a Markdown with frontmatter:
 
 ```js
-// NewBlogPost.md
+// markdown.md
 ---
 title: New Blog post title!
 author: Tommy Vedvik
@@ -46,13 +46,13 @@ image: ./poster.png
 ```
 
 This will add the **poster.png** image to the GraphQL data layer. To add this to a template you need pass the **image** field as an object into the **src** attribute. Example:
-```html
-<g-image v-if="$page.post.image" :src="$page.post.image" />
-```
-
-The image field is coming from a GraphQL query. Attributes like **width**, **height** and **quality** needs to be added to the query. Here is an example:
 
 ```html
+<!-- component.vue -->
+<template>
+  <g-image v-if="$page.post.image" :src="$page.post.image" />
+</template>
+
 <page-query>
 query BlogPost ($path: String!) {
   post: blogPost (path: $path) {
@@ -63,3 +63,5 @@ query BlogPost ($path: String!) {
 }
 </page-query>
 ```
+
+The image field is coming from a GraphQL query. Attributes like **width**, **height** and **quality** needs to be added to the query. Here is an example:
