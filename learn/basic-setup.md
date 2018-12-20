@@ -65,7 +65,7 @@ Navigate to `/src/pages/index.vue` file, the code in this file outputs the conte
 
 ![Gridsome default starter preview](./images/gridsome-default-starter-preview.png)
 
-```vue
+```html
 <template>
   <Layout>
     <g-image alt="Example image" src="~/favicon.png" width="135" />
@@ -80,7 +80,7 @@ Navigate to `/src/pages/index.vue` file, the code in this file outputs the conte
 1. Open your text editor and browser side-by-side and change the "Hello, world!" text to "Hello Gridsome!", and save the file, you will see that your code and content changes reflected almost instantly in the browser after you save the file.
 2. Let's mess around with the styles. Try adding the below code in `src/pages/index.vue`, and save again. You'll see changes to the heading; The text color will be green, and the font size will be larger.
 
-```vue
+```html
 <template>
   <Layout>
     <g-image alt="Example image" src="~/favicon.png" width="135" />
@@ -98,7 +98,7 @@ Navigate to `/src/pages/index.vue` file, the code in this file outputs the conte
 
 3. Remove `g-image` and change the text inside the paragraph.
 
-```vue
+```html
 <template>
   <Layout>
     <h1>Hello, world!</h1>
