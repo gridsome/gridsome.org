@@ -14,9 +14,9 @@ are treated like `index.html` files and will not get a slug. As an example:
 `src/pages/features/Awesome.vue` will become `/features/awesome`.
 
 
-## Data source routing
+## Routing for data source plugins
 
-Data sources adds routing automatically with settings.
+Data sources adds routing automatically with settings. These could be different for each plugin so check the plugin documentation how to use route.
 
 ```js
 module.exports = {
@@ -39,3 +39,34 @@ The default route params are `:year`, `:month`, `:day` and `:slug`.
 
 ## Custom route params
 There is possible to use fields coming from a GraphQL node type as route. Field values are slugified, but the original value will be available as **{fieldname}_raw**. Only root level primitive fields will be available as params.
+
+
+## Routing for custom data sources
+When you add a custom data source you need to use the `route` option inside `addContentType()` **OR** use `path` option inside `addNode()`. `route` will be used for all posts and `path` will be set per post. It's only possible to use one of them. If both are used `route` will be prioritzed.
+
+Learn more about [custom data sources here](/docs/data-custom)
+
+```js
+const axios = require('axios')
+
+module.exports = function (api) {
+  api.loadSource(async store => {
+    const { data } = await axios.get('https://api.example.com/posts')
+
+    const contentType = store.addContentType({
+      typeName: 'BlogPosts'
+      route: 'blog/:slug'  // add this...
+    })
+
+    for (const item of data) {
+      contentType.addNode({
+        id: item.id,
+        title: item.title
+        path: 'blog/:slug' //... or this
+      })
+    }
+  })
+}
+```
+
+
