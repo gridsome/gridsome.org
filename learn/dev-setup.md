@@ -59,6 +59,8 @@ Before proceeding further, just double check if Gridsome is installed properly o
 2. Run `gridsome --version`
 3. Run `gridsome --help`
 
+![Running Gridsome version & help command](./images/gridsome-version-help-command.png)
+
 It should output some data inside terminal, running `gridsome —version` should return a version number and running `gridsome --help` will show different commands available for using the gridsome CLI.
 
 Now you are ready to use Gridsome CLI to create your first Gridsome site. Using this CLI, you can download “starters” *(partially built sites with some default configuration)* to help you move quickly on creating a certain type of site.
