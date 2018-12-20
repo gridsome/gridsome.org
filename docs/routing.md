@@ -34,7 +34,7 @@ module.exports = {
 ```
 
 ## Default route params
-The default route params is `:year`, `:month`, `:day` and `:slug`. 
+The default route params are `:year`, `:month`, `:day` and `:slug`. 
 
 
 ## Custom route params
