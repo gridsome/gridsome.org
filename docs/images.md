@@ -47,7 +47,7 @@ image: ./poster.png
 
 This will add the **poster.png** image to the GraphQL data layer. To add this to a template you need pass the **image** field as an object into the **src** attribute. Example:
 ```html
-<g-image v-if="$page.post.fields.image" :src="$page.post.fields.image" />
+<g-image v-if="$page.post.image" :src="$page.post.image" />
 ```
 
 The image field is coming from a GraphQL query. Attributes like **width**, **height** and **quality** needs to be added to the query. Here is an example:
