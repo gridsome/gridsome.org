@@ -24,8 +24,8 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        // path: 'blog/**/*.md',
-        // typeName: 'BlogPost',
+        path: 'blog/**/*.md',
+        typeName: 'BlogPost',
         route: '/blog/:year/:month/:day/:slug'
       }
     }
