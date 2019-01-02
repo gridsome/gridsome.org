@@ -38,7 +38,7 @@ The default route params are `:year`, `:month`, `:day` and `:slug`.
 
 
 ## Custom route params
-There is possible to use fields coming from a GraphQL node type as route. Field values are slugified, but the original value will be available as **{fieldname}_raw**. Only root level primitive fields will be available as params.
+It is possible to use fields coming from a GraphQL node type in the route. Field values are slugified, but the original value will be available as **{fieldname}_raw**. Only root level primitive fields will be available as params.
 
 
 ## Routing for custom data sources
