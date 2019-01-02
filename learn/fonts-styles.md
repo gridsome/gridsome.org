@@ -1,4 +1,4 @@
-# 3. Add fonts and styles
+# 2. Add fonts and styles
 
 ## Add a reset stylesheet
 
