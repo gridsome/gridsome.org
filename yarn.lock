@@ -3920,9 +3920,10 @@ gray-percentage@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/gray-percentage/-/gray-percentage-2.0.0.tgz#b72a274d1b1379104a0050b63b207dc53fe56f99"
 
-gridsome@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.4.0.tgz#782e22f9870ed181ba228edb4d1c7e4b222aab7b"
+gridsome@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.4.1.tgz#d647d0df5df0f0f1a54733b3d62bb68cbdb0616e"
+  integrity sha512-0B/QGGLeR4VZU0kXwPoq3kVjMcxTkjdE9R3nj1ujFynqgdZpI7v2WB7J2jKDQm70Qry9hxdO8G2v3Jlb8dN8uQ==
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/plugin-syntax-dynamic-import" "^7.0.0"
