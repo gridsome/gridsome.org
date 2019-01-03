@@ -29,7 +29,7 @@
               Friends
             </span>
             
-            <a href="https://vuejs.org/">Vue.js docs</a>
+            <a href="https://vuejs.org/v2/guide/">Vue.js docs</a>
             <a href="https://graphql.org/learn/">GraphQL docs</a>
           </div>
         </div>
