@@ -101,10 +101,6 @@ export default {
     height: 100%;
   }
 
-  &__logo svg  {
-    animation: pulseSvg 1500ms ease-out infinite;
-  }
-
   &__lines-in svg path {
     stroke-width: 4px;
     stroke-linecap: round;
