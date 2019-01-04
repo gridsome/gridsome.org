@@ -38,12 +38,12 @@
       link: /docs/images
     - title: Routing
       link: /docs/routing
+    - title: Plugins
+      link: /docs/plugins
     - title: Populating <head>
       link: /docs/head
     - title: body & html attributes
       link: /docs/body-html-attributes
-    - title: Adding plugins
-      link: /docs/plugins
 
 - title : Working with data
   items: 
