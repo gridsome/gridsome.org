@@ -16,7 +16,6 @@ import Typography from 'typography'
 import 'typeface-nunito'
 import 'typeface-league-spartan'
 
-
 const typography = new Typography({
   baseFontSize: '18px',
   baseLineHeight: 1.666,
@@ -45,15 +44,6 @@ export default function (Vue, { head, router, isServer }) {
     router
   })
 
-  head.link.push({
-    rel: 'stylesheet',
-    href: 'https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css'
-  })
-
-  head.script.push({
-    src: 'https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js'
-  })
-  
   head.style.push({
     type: 'text/css',
     cssText: typography.toString()
