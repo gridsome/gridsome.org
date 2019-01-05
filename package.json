@@ -8,6 +8,7 @@
     "build": "gridsome build"
   },
   "dependencies": {
+    "docsearch.js": "^2.6.2",
     "gridsome": "^0.4.1",
     "typeface-league-spartan": "0.0.44",
     "typeface-nunito": "0.0.54",

@@ -1,5 +1,5 @@
 # Populating `<head>`
-Gridsome uses [vue-meta](https://github.com/declandewet/vue-meta) to populate `<head>`.
+Gridsome uses [vue-meta](https://github.com/declandewet/vue-meta) to populate **<head>**.
 
 ## Add head metadata to pages
 Page metadata is added inside page **.vue components**.
@@ -28,13 +28,20 @@ Global head metadata is added in `src/main.js` by using `head.{property}.push()`
 
 ```js
 export default function (Vue, { head, router, isServer }) {
-  // Push styles
+  
+  // Add custom styles
   head.style.push({
     type: 'text/css',
     cssText: '.some-custom-css {color: red}'
   })
 
-  // Push a meta tag
+  // Add an external css file
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css'
+  })
+
+  // Add a meta tag
   head.meta.push({
     name: 'viewport',
     content: 'width=device-width, initial-scale=1'

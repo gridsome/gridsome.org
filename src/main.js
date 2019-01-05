@@ -16,7 +16,6 @@ import Typography from 'typography'
 import 'typeface-nunito'
 import 'typeface-league-spartan'
 
-
 const typography = new Typography({
   baseFontSize: '18px',
   baseLineHeight: 1.666,
@@ -44,7 +43,7 @@ export default function (Vue, { head, router, isServer }) {
     },
     router
   })
-  
+
   head.style.push({
     type: 'text/css',
     cssText: typography.toString()
