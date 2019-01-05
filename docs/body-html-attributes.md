@@ -6,13 +6,11 @@ Global body or head attributes is added in `src/main.js`.
 
 ```js
 export default function (Vue, { head, router, isServer }) {
-  head.htmlAttrs.push({
-    lang: 'en'
-  })
-
-  head.bodyAttrs.push({
-    class: 'custom-body-class',
-  })
+  // Add attributes to HTML tag
+  head.htmlAttrs = { lang: 'en' }
+  
+  // Add atributes to BODY tag
+  head.bodyAttrs = { class: 'custom-body-class' }
 }
 ```
 
