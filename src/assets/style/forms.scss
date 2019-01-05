@@ -1,9 +1,8 @@
 input {
   width: 100%;
-  padding: .35rem .8rem;
+  padding: .34rem .8rem;
   border-radius: 5px;
-  border:1px solid var(--border-color);
-  box-shadow: 1px 1px 5px 0 var(--border-color);
+  border: 1px solid var(--border-color);
 
   &:focus {
     outline: 0;
@@ -11,8 +10,7 @@ input {
   }
 
   &[type="search"] {
-    padding-right: 3rem;
-    margin-bottom: 1.5rem;
-    background: 95% 50%   no-repeat #FFF url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23CCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>');
+    padding-right: 1rem;
+    background: 90% 50%   no-repeat #FFF url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="%23CCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>');
   }
 }

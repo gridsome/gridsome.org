@@ -1,6 +1,6 @@
 <template>
-  <form :id="id" class="search">
-    <input :id="`${id}-input`" class="search__input">
+  <form :id="id" class="header-search">
+    <input type="search" placeholder="Search docs..." :id="`${id}-input`" class="header-search__input">
   </form>
 </template>
 
@@ -26,8 +26,34 @@ export default {
 <style lang="scss">
 @import "~docsearch.js/dist/cdn/docsearch.min.css";
 
-.search {
+.header-search {
   display: inline-block;
   margin-bottom: 0;
+  font-size: .9rem;
+  
+  & &__input {
+    color:#FFF;
+    width: 25px;
+    border-radius: 99px;
+    padding-left:0;
+    border-color: transparent;
+    background-color: transparent;
+    transition: padding .2s, width .2s, opacity .3s;
+    margin-bottom: .5px;
+
+    &:focus {
+      width: 160px;
+      background-color: rgba(0,0,0,.2);
+      border-color: rgba(0,0,0,.1);
+      padding: .3rem .7rem;
+    }
+
+    &::-webkit-input-placeholder {
+      opacity: 0;
+    }
+    &:focus::-webkit-input-placeholder {
+      opacity: .4;
+    }
+  }
 }
 </style>
