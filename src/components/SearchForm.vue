@@ -33,13 +33,17 @@ export default {
   
   & &__input {
     color:#FFF;
-    width: 25px;
+    width: 32px;
     border-radius: 99px;
-    padding-left:0;
+    padding-left: 0;
     border-color: transparent;
     background-color: transparent;
     transition: padding .2s, width .2s, opacity .3s;
     margin-bottom: .5px;
+
+    &:not(:focus) {
+      background-position: 50% 50%;
+    }
 
     &:focus {
       width: 160px;
