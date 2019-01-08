@@ -18,9 +18,9 @@
   },
   "devDependencies": {
     "@gridsome/plugin-critical": "^0.1.0",
-    "@gridsome/remark-prismjs": "^0.0.3",
+    "@gridsome/remark-prismjs": "^0.0.4",
     "@gridsome/source-filesystem": "^0.2.0",
-    "@gridsome/transformer-remark": "^0.1.2",
+    "@gridsome/transformer-remark": "^0.1.3",
     "execa": "^1.0.0",
     "node-sass": "^4.9.3",
     "raw-loader": "^0.5.1",
