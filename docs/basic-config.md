@@ -11,7 +11,7 @@ module.exports = {
   siteName: 'Gridsome',
   siteUrl: 'https://www.gridsome.org',
   siteDescription: 'The meta description for homepage',
-  titleTemplate: '% - Gridsome',
+  titleTemplate: '%s - Gridsome',
   icon: 'src/favicon.png',
 
   plugins: [
