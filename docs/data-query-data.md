@@ -84,7 +84,7 @@ in `src/templates/WordPressPost.vue`.
 
 <template>
   <Layout :title="$page.post.title">
-    <div v-html="$page.post.content">
+    <div v-html="$page.post.content" />
   </Layout>
 </template>
 
