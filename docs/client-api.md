@@ -17,7 +17,7 @@ export default function (Vue, options, context) {
 }
 ```
 
-## Using the Client API in `src/main.js`
+## Using in `src/main.js`
 
 Export a default function in `src/main.js` to use the Client API. The only difference here is that it will only have access to the Vue instance and the context. The function will be called after all plugins.
 
