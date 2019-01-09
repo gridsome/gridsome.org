@@ -17,7 +17,7 @@ export default function (Vue, options, context) {
 }
 ```
 
-### Using the Client API in `src/main.js`
+## Using the Client API in `src/main.js`
 
 Export a default function in `src/main.js` to use the Client API. The only difference here is that it will only have access to the Vue instance and the context. The function will be called after all plugins.
 
@@ -32,3 +32,40 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 export default function (Vue) {
   Vue.use(Bootstrap)
 }
+```
+
+## context.appOptions
+**appOption** is passed to the main **Vue Instance** like `new Vue(appOptions)`.
+Here is an example where we add **Vuex** store to the Vue instance.
+
+```js
+import Vuex from 'vuex'
+
+export default function (Vue, {appOptions}) {
+  Vue.use('Vuex')
+  
+  appOptions.store = new Vuex.Store({
+    state: {
+      count: 0
+    },
+    mutations: {
+      increment (state) {
+        state.count++
+      }
+    }
+  })
+}
+```
+
+## context.router
+**context.router** lets you access the [Vue Router instance](https://router.vuejs.org/api/#router-instance-methods).
+This example lets you do stuff before next page load.
+
+```js
+export default function (Vue, {router}) {
+  router.beforeEach((to, from, next) => {
+    // Do stuff before next page load
+    next()
+  })
+}
+```
