@@ -55,7 +55,7 @@
    	 	</div>
 
    	 	<div class="colors__secondary">
-   	 		<span>#1F344A</span>
+   	 		<span>#0D2538</span>
    	 	</div>
 
    	 </div>
