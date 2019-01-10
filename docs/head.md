@@ -1,28 +1,6 @@
 # Populating `<head>`
 Gridsome uses [vue-meta](https://github.com/declandewet/vue-meta) to populate **<head>**.
 
-## Add head metadata to pages
-Page metadata is added inside page **.vue components**.
-For example, `src/pages/About.vue` would look something like this:
-
-```js
-<script>
-export default {
-  name: 'About',
-  metaInfo: {
-    title: 'About us',
-    meta: [
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
-    ],
-    link: [
-      { rel: 'stylesheet', href: '/css/index.css' },
-    ]
-    // etc...
-  }
-}
-</script>
-```
-
 ## Add global head metadata
 Global head metadata is added in `src/main.js` by using `head.{property}.push()`
 
@@ -47,6 +25,28 @@ export default function (Vue, { head, router, isServer }) {
     content: 'width=device-width, initial-scale=1'
   })
 }
+```
+
+## Add head metadata to pages
+Page metadata is added inside page **.vue components**.
+For example, `src/pages/About.vue` would look something like this:
+
+```js
+<script>
+export default {
+  name: 'About',
+  metaInfo: {
+    title: 'About us',
+    meta: [
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+    ],
+    link: [
+      { rel: 'stylesheet', href: '/css/index.css' },
+    ]
+    // etc...
+  }
+}
+</script>
 ```
 
 ## Available Properties
