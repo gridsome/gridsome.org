@@ -1,5 +1,5 @@
 # Populating `<head>`
-Gridsome uses [vue-meta](https://github.com/declandewet/vue-meta) to populate **<head>**.
+Gridsome uses [vue-meta](https://github.com/declandewet/vue-meta) to populate **Head**.
 
 ## Add global head metadata
 Global head metadata is added in `src/main.js` by using `head.{property}.push()`
