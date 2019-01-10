@@ -8,12 +8,12 @@
     "build": "gridsome build"
   },
   "dependencies": {
+    "@gridsome/plugin-google-analytics": "^0.1.0",
     "docsearch.js": "^2.6.2",
     "gridsome": "^0.4.1",
     "typeface-league-spartan": "0.0.44",
     "typeface-nunito": "0.0.54",
     "typography": "^0.16.18",
-    "vue-analytics": "^5.16.0",
     "vue-scrollto": "^2.13.0"
   },
   "devDependencies": {

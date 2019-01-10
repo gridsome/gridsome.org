@@ -16,6 +16,12 @@ module.exports = {
   },
   plugins: [
     {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-127625720-1'
+      }
+    },
+    {
       use: '@gridsome/plugin-critical',
       options: {
         paths: ['/'],

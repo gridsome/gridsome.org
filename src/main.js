@@ -11,7 +11,6 @@ import Card from '~/components/Card'
 
 import VueScrollTo from 'vue-scrollto'
 
-import VueAnalytics from 'vue-analytics'
 import Typography from 'typography'
 import 'typeface-nunito'
 import 'typeface-league-spartan'
@@ -34,15 +33,6 @@ export default function (Vue, { head, router, isServer }) {
   Vue.component('Card', Card)
 
   Vue.use(VueScrollTo)
-
-  Vue.use(VueAnalytics, {
-    id: 'UA-127625720-1',
-    disabled: isServer,
-    debug: {
-      sendHitTask: process.env.NODE_ENV === 'production'
-    },
-    router
-  })
 
   head.style.push({
     type: 'text/css',
