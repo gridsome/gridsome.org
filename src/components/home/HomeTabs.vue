@@ -29,9 +29,9 @@
 
           <ul class="bullet-list">
             <li><Bullet /> <strong> Instant hot-reloading</strong> for incredible developer experience</li>
-            <li><Bullet /> <strong> Sanitize your stack.</strong> Same frontend framework for any project</li>
-            <li><Bullet /> <strong> Approachable for any team member.</strong> It's just HTML and CSS</li>
-            <li><Bullet /> <strong> Awesome developer community</strong>. Find a library for any use case</li>
+            <li><Bullet /> <strong> Approachable for anyone.</strong> It's just HTML and CSS</li>
+            <li><Bullet /> <strong> Awesome developer community.</strong> Find a library for any use case</li>
+            <li><Bullet /> <strong> Ultra lightweight.</strong> Only 20KB min+gzip runtime</li>
           </ul>
         </div>
         <div>
@@ -45,10 +45,10 @@
         <div style="order:2">
           <h3>The future of the web is on the CDN</h3>
 
-          <p><strong>No servers. No databases. Only files.</strong> Nothing beats static, pre-rendered sites when it comes to speed and security.  Deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site. The future of the web is on the CDN. Combine dynamic and static data with the power of Vue.js.</p>
+          <p><strong>No servers. No databases. Only files.</strong> Nothing beats static, pre-rendered sites when it comes to speed and security.  Deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site. The future of the web is on the CDN.</p>
 
           <ul class="bullet-list">
-            <li><Bullet /> <strong> Super fast generating.</strong> Build thousands of pages in seconds</li>
+            <li><Bullet /> <strong> Blazing fast generating.</strong> Build thousands of pages in seconds</li>
             <li><Bullet /> <strong> Better Performance.</strong> Faster page loading by default</li>
             <li><Bullet /> <strong> Higher Security.</strong> Very few surface areas for attacks</li>
             <li><Bullet /> <strong> Cheaper, Easier Scaling.</strong> Static files are the cheapest to host</li>
