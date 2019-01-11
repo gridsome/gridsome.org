@@ -1,35 +1,41 @@
 /* Smaller text for mobile */
 @media screen and (max-width: 750px) {
   html {
-    font-size: 99%;  
+    font-size: 99%;
   }
 }
 
 .lead {
-	font-size: 1.18rem;
+  font-size: 1.18rem;
 }
 
 .uppercase {
   text-transform: uppercase;
-  font-size: .9rem;
+  font-size: 0.9rem;
   letter-spacing: 1px;
-  opacity: .7;
+  opacity: 0.7;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: bolder;
 }
 
-h1, h2, .lead{
+h1,
+h2,
+.lead {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 
 p {
   font-weight: 500;
 
   &:last-child {
-    margin:0;
+    margin: 0;
   }
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
