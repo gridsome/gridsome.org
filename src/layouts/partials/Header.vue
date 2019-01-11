@@ -1,47 +1,47 @@
 <template>
   <header>
-    <div class="header-inner container flex gap-30">
+    <div class='header-inner container flex gap-30'>
       <Logo/>
 
-      <Nav class="flex-fit"/>
+      <Nav class='flex-fit'/>
 
-      <nav class="header-actions flex">
-        <SearchForm class="hide-for-small"/>
+      <nav class='header-actions flex'>
+        <SearchForm class='hide-for-small'/>
 
         <a
-          aria-label="Twitter"
-          href="//twitter.com/gridsome"
-          rel="noopener noreferrer"
-          target="_blank"
-          title="Follow us on Twitter"
+          aria-label='Twitter'
+          href='//twitter.com/gridsome'
+          rel='noopener noreferrer'
+          target='_blank'
+          title='Follow us on Twitter'
         >
           <twitter-logo/>
         </a>
         
         <a
-          aria-label="Discord"
-          href="//discord.gg/daeay6n"
-          rel="noopener noreferrer"
-          target="_blank"
-          title="Join our discord"
+          aria-label='Discord'
+          href='//discord.gg/daeay6n'
+          rel='noopener noreferrer'
+          target='_blank'
+          title='Join our discord'
         >
           <discord-logo/>
         </a>
         
         <a
-          aria-label="github"
-          href="//github.com/gridsome/gridsome"
-          rel="noopener noreferrer"
-          target="_blank"
-          title="Gridsome @ GitHub"
+          aria-label='github'
+          href='//github.com/gridsome/gridsome'
+          rel='noopener noreferrer'
+          target='_blank'
+          title='Gridsome @ GitHub'
         >
           <github-logo
-            height="20px"
-            width="20px"
+            height='20px'
+            width='20px'
           />
           <span
-            class="hide-for-small"
-            style="margin-left:5px;"
+            class='hide-for-small'
+            style='margin-left:5px;'
           >v{{ $static.metaData.gridsomeVersion }}</span>
         </a>
       </nav>
