@@ -1,18 +1,18 @@
 <template>
-  <Section class="home-intro" dots="true" dark="true" sway="true" style="padding-top: 0; padding-bottom: 0;">
-    <div class="grid-cols grid-cols--2" style="max-width: 1080px; margin: 0 auto;">
-      <div class="text-center" style="padding-top: 18%; padding-bottom: 20%;">    
+  <Section class="intro" dots="true" dark="true" sway="true" style="padding-top: 0; padding-bottom: 0;">
+    <div class="intro__cols grid-cols grid-cols--2">
+      <div class="intro__text text-center">    
         <h1>
-          <span class="home-title">
-            Insanely fast, modern websites with Vue.js
+          <span class="intro__title">
+            Insanely fast, modern <br class="hide-for-small" /> websites with Vue.js
           </span>
         </h1>
 
-        <p class="home-lead " style="padding-left: 3%; padding-right: 3%">
-          Gridsome is a Vue-powered framework for building websites that loads instantly and runs entirely on a CDN. 
+        <p class="intro__lead">
+          Gridsome is a Vue-powered framework for building websites that loads instantly and runs entirely on any CDN.
         </p>
 
-        <p class="home-links">
+        <p class="intro__links">
           <g-link  to="/docs" class="button primary">
             Get started
           </g-link>
@@ -20,7 +20,7 @@
             Tutorial
           </g-link>
         </p>
-        <p class="home-info">
+        <p class="intro__info">
           <span>Open-source MIT Licensed. </span>
           <a href="//github.com/gridsome/gridsome" target="_blank">
             <span>GitHub (v{{ $static.metaData.gridsomeVersion }})</span>
@@ -65,19 +65,34 @@ export default {
 <style lang="scss">
 
 @media screen and (max-width: 750px) {
- .home-intro .grid-cols{
+ .intro .grid-cols{
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
-.home-title {
-  line-height: 1.3;
-  font-size: 1.9rem;
+.intro {
+  &__cols {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+
+  &__text {
+    padding-top: 22%;
+    padding-bottom: 26%
+
+  }
+
+  &__title {
+    line-height: 1.35;
+  }
+
+  &__info {
+    font-size: .85rem;
+    opacity: .6;
+  }
 }
-.home-info {
-  font-size: .85rem;
-  opacity: .6;
-}
+
+
 
 .home-anim {
   position: relative;
