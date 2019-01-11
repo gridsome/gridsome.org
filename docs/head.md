@@ -1,3 +1,6 @@
+---
+title: Populating <head>
+---
 # Populating `<head>`
 Gridsome uses [vue-meta](https://github.com/declandewet/vue-meta) to populate **Head**.
 
@@ -5,15 +8,14 @@ Gridsome uses [vue-meta](https://github.com/declandewet/vue-meta) to populate **
 Global head metadata is added in `src/main.js` by using `head.{property}.push()`
 
 ```js
-export default function (Vue, { head, router, isServer }) {
-  
-  // Add custom styles
+export default function (Vue, { head }) {
+  // Add inline CSS
   head.style.push({
     type: 'text/css',
     cssText: '.some-custom-css {color: red}'
   })
 
-  // Add an external css file
+  // Add an external CSS file
   head.link.push({
     rel: 'stylesheet',
     href: 'https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css'
@@ -21,8 +23,8 @@ export default function (Vue, { head, router, isServer }) {
 
   // Add a meta tag
   head.meta.push({
-    name: 'viewport',
-    content: 'width=device-width, initial-scale=1'
+    name: 'keywords',
+    content: 'HTML,CSS,XML,JavaScript'
   })
 }
 ```
@@ -38,7 +40,7 @@ export default {
   metaInfo: {
     title: 'About us',
     meta: [
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      { name: 'author', content: 'John Doe' }
     ],
     link: [
       { rel: 'stylesheet', href: '/css/index.css' },
