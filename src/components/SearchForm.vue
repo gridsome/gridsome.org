@@ -1,8 +1,7 @@
 <template>
   <form
     :id="id"
-    class="header-search"
-  >
+    class="header-search">
     <input
       :id="`${id}-input`"
       class="header-search__input"
@@ -15,18 +14,18 @@
 <script>
 export default {
   props: {
-    id: { type: String, default: "search" }
+    id: { type: String, default: 'search' }
   },
 
   mounted() {
-    import("docsearch.js").then(({ default: docsearch }) => {
+    import('docsearch.js').then(({ default: docsearch }) => {
       docsearch({
-        indexName: "gridsome",
+        indexName: 'gridsome',
         inputSelector: `#${this.id}-input`,
-        apiKey: "a7400a3a94b256c5283cb05efb860fc1",
-        debug: process.env.NODE_ENV === "development"
-      });
-    });
+        apiKey: 'a7400a3a94b256c5283cb05efb860fc1',
+        debug: process.env.NODE_ENV === 'development'
+      })
+    })
   }
 };
 </script>
