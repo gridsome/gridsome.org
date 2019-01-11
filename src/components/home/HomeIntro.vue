@@ -9,7 +9,7 @@
         </h1>
 
         <p class="intro__lead">
-          Gridsome is a Vue-powered static site generator <br /> for building modern CDN-ready web projects
+          Gridsome is a Vue-powered static site generator <br /> for building modern CDN-ready PWAs
         </p>
 
         <p class="intro__links">
