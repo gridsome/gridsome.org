@@ -42,30 +42,16 @@ export default {
 
   & &__input {
     color: #fff;
-    width: 32px;
     border-radius: 99px;
-    padding-left: 0;
+    width: 170px;
+    background-color: rgba(0, 0, 0, 0.2);
     border-color: transparent;
-    background-color: transparent;
-    transition: padding 0.2s, width 0.2s, opacity 0.3s;
+    padding: 0.3rem 0.7rem;
+    transition: padding 0.2s, width 0.2s, opacity 0.3s, background-color .3s;
     margin-bottom: 0.5px;
 
-    &:not(:focus) {
-      background-position: 50% 50%;
-    }
-
     &:focus {
-      width: 160px;
-      background-color: rgba(0, 0, 0, 0.2);
-      border-color: rgba(0, 0, 0, 0.1);
-      padding: 0.3rem 0.7rem;
-    }
-
-    &::-webkit-input-placeholder {
-      opacity: 0;
-    }
-    &:focus::-webkit-input-placeholder {
-      opacity: 0.4;
+      background-color: rgba(255, 255, 255, 0.1);
     }
   }
 }
