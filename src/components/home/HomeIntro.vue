@@ -4,12 +4,12 @@
       <div class="text-center" style="padding-top: 18%; padding-bottom: 20%;">    
         <h1>
           <span class="home-title">
-            Build super fast, modern websites with Vue.js
+            Insanely fast, modern websites with Vue.js
           </span>
         </h1>
 
-        <p class="home-lead lead" style="padding-left: 3%; padding-right: 3%">
-          Gridsome is a <strong>Vue-powered static site generator</strong> for building CDN-ready websites and apps for any headless CMS, local files or APIs
+        <p class="home-lead " style="padding-left: 3%; padding-right: 3%">
+          Gridsome is a Vue-powered framework for building websites that loads instantly and runs entirely on a CDN. 
         </p>
 
         <p class="home-links">
