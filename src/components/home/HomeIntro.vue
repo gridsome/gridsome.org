@@ -4,12 +4,12 @@
       <div class="intro__text text-center">    
         <h1>
           <span class="intro__title">
-            Insanely fast, modern <br class="hide-for-small" /> websites with Vue.js
+            Insanely fast websites & apps with Vue.js
           </span>
         </h1>
 
         <p class="intro__lead">
-          Gridsome is a Vue-powered framework for building websites that loads instantly and runs entirely on any CDN.
+          Gridsome is a Vue-powered static site generator <br />for building modern web projects
         </p>
 
         <p class="intro__links">
@@ -84,6 +84,7 @@ export default {
 
   &__title {
     line-height: 1.35;
+    font-size: 2rem;
   }
 
   &__info {
