@@ -4,12 +4,12 @@
       <div class="intro__text text-center">    
         <h1>
           <span class="intro__title">
-            Insanely fast websites & apps with Vue.js
+            Insanely fast websites <br /> & apps with Vue.js
           </span>
         </h1>
 
         <p class="intro__lead">
-          Gridsome is a Vue-powered static site generator <br />for building modern web projects
+          Gridsome is a Vue-powered static site generator <br /> for building modern CDN-ready web projects
         </p>
 
         <p class="intro__links">
