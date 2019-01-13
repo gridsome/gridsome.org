@@ -1,25 +1,25 @@
 <template>
-  <footer class='text-center'>
+  <footer class="text-center">
     Made in ⛄️ Norway by
     <a
-      class='plain'
-      href='//twitter.com/hjvedvik'
-      rel='noopener noreferrer'
-      target='_blank'
+      class="plain"
+      href="//twitter.com/hjvedvik"
+      rel="noopener noreferrer"
+      target="_blank"
     >@hjvedvik</a> &
     <a
-      class='plain'
-      href='//twitter.com/tommyvedvik'
-      rel='noopener noreferrer'
-      target='_blank'
+      class="plain"
+      href="//twitter.com/tommyvedvik"
+      rel="noopener noreferrer"
+      target="_blank"
     >@tommyvedvik</a> and
     <a
-      class='plain'
-      href='//github.com/gridsome/gridsome/graphs/contributors'
-      rel='noopener noreferrer'
-      target='_blank'
+      class="plain"
+      href="//github.com/gridsome/gridsome/graphs/contributors"
+      rel="noopener noreferrer"
+      target="_blank"
     >Contributors 🌟</a>
-    <g-link to='/logo'>Logo & assets</g-link>
+    <g-link to="/logo">Logo & assets</g-link>
   </footer>
 </template>
 
