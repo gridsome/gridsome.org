@@ -8,7 +8,7 @@ module.exports = function (api) {
   api.loadSource(store => {
     const posts = store.addContentType({
       typeName: 'BlogPost',
-      path: '/blog/:year/:slug' // will not work if route is set
+      route: '/blog/:year/:slug'
     })
 
     posts.addNode({
