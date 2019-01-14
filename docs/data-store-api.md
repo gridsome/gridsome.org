@@ -2,14 +2,25 @@
 
 The Data Store API lets you insert your own data into the GraphQL data layer. You will then be able to access it through GraphQL in your components. **Use this is you want to build a custom data source connection or a plugin.**
 
+This example adds a custom blog post to BlogPost collection.
 ```js
-function MySourcePlugin (api) {
-  api.loadSource(store => {
-    // add your sources here
-  })
-}
+module.exports = function (api) {
+	api.loadSource(store => {
+	  const posts = store.addContentType({
+	    typeName: 'BlogPost',
+      route: '/blog/:year/:slug'
+	  })
 
-module.exports = MySourcePlugin
+	  posts.addNode({
+	    title: 'My first blog post',
+	    date: '2018-11-02',
+	    content: 'Lorem ipsum dolor sit amet, consectetur...',
+	    fields: {
+	      tags: ['awesome-post']
+	    }
+	  })
+	})
+}
 ```
 
 ## store.addContentType(options)
@@ -60,14 +71,14 @@ Get a content type previously created.
 ```js
 api.loadSource(store => {
   const posts = store.addContentType({
-    typeName: 'BlogPost'
+    typeName: 'BlogPost',
+    route: '/blog/:year/:slug'
   })
 
   posts.addNode({
     title: 'My first blog post',
     date: '2018-11-02',
     content: 'Lorem ipsum dolor sit amet, consectetur...',
-    path: '/blog/:year/:slug' // will not work if route is set
     fields: {
       tags: ['awesome-post']
     }
