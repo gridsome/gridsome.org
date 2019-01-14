@@ -5,6 +5,7 @@ Learn about the [Link API here](/docs/link).
 
 ### Link between pages
 To link to `~/src/pages/About.vue` use `<g-link to="/about" />`.
+
 To link to `~/src/pages/MyPage.vue` use `<g-link to="/my-page" />`.
 
 ### Link to external pages
