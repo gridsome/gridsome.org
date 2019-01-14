@@ -40,7 +40,7 @@ Load data from local files or external APIs and create content types and nodes o
 
 Usage:
 
-```
+```js
 module.exports = function (api) {
   api.loadSource(store => {
     // Use Data Store API here
