@@ -5,21 +5,21 @@ The Data Store API lets you insert your own data into the GraphQL data layer. Yo
 This example adds a custom blog post to BlogPost collection.
 ```js
 module.exports = function (api) {
-	api.loadSource(store => {
-	  const posts = store.addContentType({
-	    typeName: 'BlogPost',
-      route: '/blog/:year/:slug'
-	  })
+  api.loadSource(store => {
+    const posts = store.addContentType({
+      typeName: 'BlogPost',
+      path: '/blog/:year/:slug' // will not work if route is set
+    })
 
-	  posts.addNode({
-	    title: 'My first blog post',
-	    date: '2018-11-02',
-	    content: 'Lorem ipsum dolor sit amet, consectetur...',
-	    fields: {
-	      tags: ['awesome-post']
-	    }
-	  })
-	})
+    posts.addNode({
+      title: 'My first blog post',
+      date: '2018-11-02',
+      content: 'Lorem ipsum dolor sit amet, consectetur...',
+      fields: {
+        tags: ['awesome-post']
+      }
+    })
+  })
 }
 ```
 
