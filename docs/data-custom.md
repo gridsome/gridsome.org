@@ -1,6 +1,6 @@
-# Add data from anywhere *
+# Import custom data *
 
-Gridsome adds data to the GraphQL data layer with the **Data store API** and the `api.loadSource` function. To use the API you need a `gridsome.server.js` file in the root folder of your Gridsome project.
+Import custom data to the **GraphQL data layer** with the **Data Store API** and the `api.loadSource` function. To use the API you need a `gridsome.server.js` file in the root folder of your Gridsome project.
 
 Learn more about the [Data store API here](/docs/data-store-api)
 

@@ -12,8 +12,6 @@
       link: /docs/deployment
     - title: Dev tools
       link: /docs/dev-tools
-    - title: FAQ
-      link: /docs/faq
 
 
 - title : Basic Gridsome
@@ -47,11 +45,11 @@
 
 - title : Working with data
   items: 
-    - title: GraphQL data layer
+    - title: The GraphQL data layer
       link: /docs/data-query-data
-    - title: Use a data source plugin
+    - title:  Use Data Source plugins
       link: /docs/data-source-plugin
-    - title: Add data from anywhere *
+    - title: Import custom data
       link: /docs/data-custom
     - title: Paginate queries
       link: /docs/data-paginate-queries
@@ -127,4 +125,9 @@
     - title: Test a Pull Request *
       link: /docs/test-pull-requests
 
-
+- title: Help
+  items:
+    - title: How to upgrade
+      link: /docs/how-to-upgrade
+    - title: FAQ
+      link: /docs/faq

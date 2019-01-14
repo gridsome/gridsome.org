@@ -9,7 +9,7 @@ This is where all the data in a Gridsome project is located. Add data from any *
 The GraphQL data layer makes it very easy to work with data, and you don't need to deal with rest APIs. **You don't need to know much about GraphQL to get started.**
 
 
-[Learn more about Querying data here](/docs/data-query-data).
+[Learn more about The GraphQL data layer here](/docs/data-query-data).
 
 ## Vue.js for templating
 Gridsome uses [Vue.js](https://vuejs.org/) as frontend framework. Vue is an approachable, simple & fun framework for building fast interfaces. Vue now has the most GitHub stars of any JavaScript UI library. Big companies like Alibaba, Adobe, GitLab is using Vue.js. Vue is famous for its intuitive design and shallow learning curve. This means it's easy to train staff in, even non-frontend devs and designers. Since developers will be up-and-running with Vue quickly, training costs will be kept to a minimum.

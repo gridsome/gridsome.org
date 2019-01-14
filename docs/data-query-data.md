@@ -1,7 +1,9 @@
-# Querying data
-You can query data into any **Page, Template or Component** from the GraphQL data layer. There are two ways to query data. You can use `<page-query>` or `<static-query>`. Use **page-query** for pages and templates, and **static-query** for components.
+# The GraphQL data layer
+**The data layer** is an internal **GraphQL database** that stores all data that is imported with [Data Source plugins](/plugins) or [Data Store API](/docs/data-store-api). The **data layer** can be browsed in the **GraphQL explorer** and inserted to any page or component with **GraphQL queries**. Data can also be paginated with the [Paginate](/docs/data-paginate-queries) component.
 
-## The GraphQL explorer
+You can query data into any **Page, Template or Component** from the **data layer**. There are two ways to query data. You can use `<page-query>` or `<static-query>`. Use **page-query** for pages and templates, and **static-query** for components.
+
+## Explore data & test queries
 Every Gridsome project has a **GraphQL explorer (Playground)** that can be used to explore and test queries when in development mode. Here you also get a list of all available GraphQL collections. This can usually be opened by going to http://localhost:8080/___explore.
 
 ![graphql-explorer](./images/graphql-explorer.png)
