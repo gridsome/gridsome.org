@@ -51,6 +51,30 @@ export default {
 </script>
 ```
 
+## How to overwrite from child component
+
+If you need to overwrite meta tags, add `key` property.  
+Gridsome is passing `tagIdKeyName: 'key'` to vue-meta as default option.  
+
+```js
+// parent component
+{
+  metaInfo: {
+    meta: [
+      { key: 'description', name: 'description', content: 'foo' }
+    ]
+  }
+}
+// child component
+{
+  metaInfo: {
+    meta: [
+      { key: 'description', name: 'description', content: 'bar' }
+    ]
+  }
+}
+```
+
 ## Available Properties
 
 |Property  | Description | Link

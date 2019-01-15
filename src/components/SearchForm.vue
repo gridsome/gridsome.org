@@ -1,6 +1,14 @@
 <template>
-  <form :id="id" class="header-search">
-    <input type="search" placeholder="Search docs..." :id="`${id}-input`" class="header-search__input">
+  <form
+    :id="id"
+    class="header-search"
+  >
+    <input
+      :id="`${id}-input`"
+      class="header-search__input"
+      placeholder="Search docs..."
+      type="search"
+    >
   </form>
 </template>
 
@@ -10,9 +18,9 @@ export default {
     id: { type: String, default: 'search' }
   },
 
-  mounted () {
+  mounted() {
     import('docsearch.js').then(({ default: docsearch }) => {
-      docsearch({  
+      docsearch({
         indexName: 'gridsome',
         inputSelector: `#${this.id}-input`,
         apiKey: 'a7400a3a94b256c5283cb05efb860fc1',
@@ -24,39 +32,26 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~docsearch.js/dist/cdn/docsearch.min.css";
+@import '~docsearch.js/dist/cdn/docsearch.min.css';
 
 .header-search {
   display: inline-block;
   margin-bottom: 0;
-  font-size: .9rem;
-  
-  & &__input {
-    color:#FFF;
-    width: 32px;
-    border-radius: 99px;
-    padding-left: 0;
-    border-color: transparent;
-    background-color: transparent;
-    transition: padding .2s, width .2s, opacity .3s;
-    margin-bottom: .5px;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
 
-    &:not(:focus) {
-      background-position: 50% 50%;
-    }
+  & &__input {
+    color: #fff;
+    border-radius: 99px;
+    width: 170px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: transparent;
+    padding: 0.3rem 0.7rem;
+    transition: padding 0.2s, width 0.2s, opacity 0.3s, background-color 0.3s;
+    margin-bottom: 0.5px;
 
     &:focus {
-      width: 160px;
-      background-color: rgba(0,0,0,.2);
-      border-color: rgba(0,0,0,.1);
-      padding: .3rem .7rem;
-    }
-
-    &::-webkit-input-placeholder {
-      opacity: 0;
-    }
-    &:focus::-webkit-input-placeholder {
-      opacity: .4;
+      background-color: rgba(255, 255, 255, 0.1);
     }
   }
 }
