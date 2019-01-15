@@ -23,7 +23,7 @@
         </transition-group>
 
       </div>
-      <Section class="flex-fit" container="md">
+      <Section class="flex-fit" container="sm">
         <slot />
         <p>
           <a :href="editLink" target="_blank" class="github-edit-link">

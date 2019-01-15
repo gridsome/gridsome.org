@@ -77,7 +77,6 @@ export default {
 }
 
 .home-title {
-  line-height: 1.3;
   font-size: 1.9rem;
 }
 .home-info {

@@ -12,13 +12,10 @@ import Card from '~/components/Card'
 import VueScrollTo from 'vue-scrollto'
 
 import Typography from 'typography'
-import 'typeface-nunito'
-import 'typeface-league-spartan'
-import 'typeface-source-serif-pro'
 
 const typography = new Typography({
   baseFontSize: '19px',
-  baseLineHeight: 1.666,
+  baseLineHeight: 1.45,
   scaleRatio: 2,
   bodyColor: 'hsla(0,0%,0%,0.7)',
   headerColor: 'hsla(0,0%,0%,0.9)',
