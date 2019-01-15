@@ -1,7 +1,7 @@
 <template>
-  <Section class="home-intro" dots="true" dark="true" sway="true" style="padding-top: 0; padding-bottom: 0;">
-    <div class="grid-cols grid-cols--2" style="max-width: 1080px; margin: 0 auto;">
-      <div class="text-center" style="padding-top: 18%; padding-bottom: 20%;">    
+  <Section class="home-intro" dots="true" dark="true" style="padding-top: 0; padding-bottom: 0;">
+    <div class="home-cols grid-cols grid-cols--2" style="max-width: 1080px; margin: 0 auto;">
+      <div class="text-center" style="padding-top: 20%; padding-bottom: 20%;">    
         <h1>
           <span class="home-title">
             Build super fast, modern websites with Vue.js
@@ -20,14 +20,16 @@
             Tutorial
           </g-link>
         </p>
+
         <p class="home-info">
           <span>Open-source MIT Licensed. </span>
           <a href="//github.com/gridsome/gridsome" target="_blank">
             <span>GitHub (v{{ $static.metaData.gridsomeVersion }})</span>
           </a>
         </p>
+        
       </div>
-      <div class="hide-for-small" style="padding-top: 3%;">
+      <div class="hide-for-small">
         <div class="home-anim">
           <div class="home-anim__source-logos"><g-image alt="Logos" blur="1" src="~/assets/images/cms-logos.png" /></div>
           <div class="home-anim__lines-in"> <lines-in /> </div>
@@ -70,6 +72,10 @@ export default {
   }
 }
 
+.home-cols {
+  align-items: center;
+}
+
 .home-title {
   line-height: 1.3;
   font-size: 1.9rem;
@@ -89,7 +95,7 @@ export default {
     z-index: 1;
   }
 
-  > div {
+  > div:not(.home-anim__source-logos) {
     position: absolute;
     top: 0;
     width: 100%;
