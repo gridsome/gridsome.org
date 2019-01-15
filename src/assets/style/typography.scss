@@ -6,12 +6,11 @@
 }
 
 .lead {
-  font-size: 1.18rem;
+  font-size: 1.2rem;
 }
 
-h1,
-h2 {
-  font-weight: bolder;
+strong {
+  font-weight: 500!important;
 }
 
 h1,
@@ -22,7 +21,6 @@ h2,
 }
 
 p {
-  font-weight: 500;
 
   &:last-child {
     margin: 0;

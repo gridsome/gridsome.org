@@ -5,7 +5,7 @@ date: 2018-10-10
 excerpt: "A new static site generator baby is born. It's highly inspired by Gatsby.js (React based) but built on top of Vue.js. We have been working on it for a year and will have a beta ready soon. You can expect this baby to grow up fast!"
 ---
 
-#### There are so many Static Site Generators. Why another one?
+## Why another Static Site Generator ?
 
 We think **Gridsome** is a missing piece to the Vue.js ecosystem. What Gatsby.js does for React.js is a game changer in how we build websites.  React.js is excellent, but we think Vue.js is more approachable for most web designers and devs getting started with JAMstack. Gridsome is the Vue.js alternative to Gatsby.
 
@@ -48,7 +48,7 @@ The GraphQL layer and all the data can be explored in a local GraphQL playground
 
 
 
-#### Perfect scores on Google Lighthouse - automagically 💚
+## Perfect scores on Google Lighthouse  💚
 
 One of the main goals of Gridsome is to make a framework that let you build websites that are optimized "out-of-the-box." It follows the [PRPL-pattern by Google.](https://developers.google.com/web/fundamentals/performance/prpl-pattern/) You don't need to be a performance expert to make fast websites with Gridsome. Your site gets almost perfect scores on Google lighthouse out-of-the-box. These are some of the performance steps that Gridsome takes care of:
 
@@ -60,7 +60,7 @@ One of the main goals of Gridsome is to make a framework that let you build webs
 - Full PWA & Offline-support (plugin) ⚡️  
 
 
-#### A better way to build websites
+## A better way to build websites
 
 Gridsome is built for the JAMstack workflow - a new way to build websites that gives you better performance, higher security, cheaper hosting, and a better developer experience. Generate prerendered (static) pages at build time for SEO-purpose and add powerful dynamic functionality with APIs and Vue.js.
 
@@ -71,11 +71,11 @@ Try running the new Chrome Lighthouse (Audit tab in Developer tools) on a WordPr
 This is what we think is very exciting and is why we are building Gridsome. It is the **perfect SPA & PWA front-end solution** for any headless CMS or content APIs.
 
 
-#### Whats next
+## Whats next
 
 In the next couple of months we're going to continue to improve the docs, create tutorials, add more source & transformer plugins and fix bugs. 
 
-#### Contribute to Gridsome
+## Contribute to Gridsome
 
 We're currently just two brothers working on this, so any contribution is very welcome. We're passionate about building a faster web and make website building fun again.
 
