@@ -8,8 +8,9 @@
 query DocPage ($path: String!) {
   doc: docPage (path: $path) {
     path
+    title
     content
-    title: headings (depth: h1) {
+    headings (depth: h1) {
       value
     }
     subtitles: headings (depth: h2) {
@@ -30,10 +31,10 @@ export default {
     },
   },
   metaInfo () {
-    const { title } = this.$page.doc
+    const { title, headings } = this.$page.doc
 
     return {
-      title: title.length ? title[0].value : undefined
+      title: title || (headings.length ? headings[0].value : undefined)
     }
   }
 }
