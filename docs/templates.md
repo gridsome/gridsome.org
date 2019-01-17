@@ -1,14 +1,10 @@
 # Templates
 
-> **Templates are usually used for template of post in a GraphQL collection.**
+> Templates are used for adding views to **GraphQL collections**. Add a **.vue** file with the same name as a GraphQL collection to `src/templates` to create a template. For example, if you have a collection called "WordPressPost" you create a WordPressPost.vue file.
 
-They are just like pages, except they will not get a path based on the file
-location. Instead, they'll be used to render pages from data sources in your
-project. The filename must match the GraphQL node type it will be a template
-for. If you have a **GraphQL collection** called `WordPressPost`, then you can create a file
-in `src/templates/WordPressPost.vue`.
+You can browse available collections in the **schema tab** inside the [GraphQL explorer](/docs/data-query-data).
 
-Template components must have a `<page-query>` block which fetches the source node
+Templates must have a `<page-query>` block which fetches the source node
 for the current page. You can use the `$path` variable to get the node.
 
 ```html
