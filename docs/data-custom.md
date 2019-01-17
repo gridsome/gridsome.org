@@ -1,4 +1,4 @@
-# Import custom data *
+# Use custom data *
 
 Import custom data to the **GraphQL data layer** with the **Data store API**. To use the API you need a `gridsome.server.js` file in the root folder of your Gridsome project.
 

@@ -49,7 +49,7 @@
       link: /docs/data-query-data
     - title:  Use data source plugins
       link: /docs/data-source-plugin
-    - title: Import custom data
+    - title: Use custom data
       link: /docs/data-custom
     - title:  Add global meta data
       link: /docs/data-meta-data
