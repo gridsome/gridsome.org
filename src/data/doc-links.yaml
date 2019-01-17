@@ -47,16 +47,14 @@
   items: 
     - title: The GraphQL data layer
       link: /docs/data-query-data
-    - title:  Use Data Source plugins
+    - title:  Use data source plugins
       link: /docs/data-source-plugin
     - title: Import custom data
       link: /docs/data-custom
+    - title:  Add global meta data
+      link: /docs/data-meta-data
     - title: Paginate queries
       link: /docs/data-paginate-queries
-    - title: Add dynamic data *
-      link: /docs/data-dynamic
-    - title: Add Vuex *
-      link: /docs/data-vuex
 
 - title : Styles and Assets
   items: 
