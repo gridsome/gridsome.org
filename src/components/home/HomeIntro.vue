@@ -76,6 +76,10 @@ export default {
   align-items: center;
 }
 
+.home-lead {
+  font-weight: 300;
+}
+
 .home-title {
   line-height: 1.3;
   font-size: 1.9rem;

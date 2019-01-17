@@ -30,7 +30,7 @@
           <ul class="bullet-list">
             <li><Bullet /> <strong> Instant hot-reloading</strong> for incredible developer experience</li>
             <li><Bullet /> <strong> Approachable for anyone.</strong> It's just HTML and CSS</li>
-            <li><Bullet /> <strong> Awesome developer community.</strong> Find a library for any use case</li>
+            <li><Bullet /> <strong> Awesome dev community.</strong> Find a library for any use case</li>
             <li><Bullet /> <strong> Ultra lightweight.</strong> Only 20KB min+gzip runtime</li>
           </ul>
         </div>
