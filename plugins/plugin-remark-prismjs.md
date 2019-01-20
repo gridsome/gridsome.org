@@ -8,6 +8,12 @@
 
 ## Usage
 
+Add `prismjs` CSS File to `main.js`. You can also choose Theme according to [Prism.js Documentation](https://prismjs.com/)
+
+```js
+import "prismjs/themes/prism.css"
+```
+
 Add syntax highlighter to a single markdown source:
 
 ```js
