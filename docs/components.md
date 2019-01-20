@@ -43,7 +43,7 @@ export default {
 [Learn more about Single File Components](https://vuejs.org/v2/guide/single-file-components.html)
 
 ## Import to other Pages or Components
-When you have created a component you can easily import into your pages. In Gridsome projects it's recommended to put all your .vue components in the **src/components** folder and import them into **Pages** or **Layouts** like this:
+When you have created a component you can easily import it into your pages. In Gridsome projects it's recommended to put all your .vue components in the **src/components** folder and import them into **Pages** or **Layouts** like this:
 
 ```html
 <template>
