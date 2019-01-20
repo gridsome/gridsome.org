@@ -44,7 +44,7 @@ It is possible to use fields coming from a GraphQL node type in the route. Field
 
 
 ## Routing for custom data sources
-When you add a custom data source you need to use the `route` option inside `addContentType()` **OR** use `path` option inside `addNode()`. `route` will be used for all posts and `path` will be set per post. It's only possible to use one of them. If both are used `route` will be prioritzed.
+When you add a custom data source you need to use the `route` option inside `addContentType()` **OR** use `path` option inside `addNode()`. `route` will be used for all posts and `path` will be set per post. It's only possible to use one of them. If both are used `route` will be prioritized.
 
 Learn more about [custom data sources here](/docs/data-custom)
 
