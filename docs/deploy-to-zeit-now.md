@@ -4,7 +4,7 @@ Now by Zeit is an excellent deploy & hosting service for static sites. You get g
 
 
 ### Deploying from GitHub
-https://zeit.co/docs/integrations/now-for-github
+https://zeit.co/docs/v2/integrations/now-for-github
 
 Add these settings where its needed:
 
@@ -25,5 +25,5 @@ Add these settings where its needed:
 
 ### Other Zeit Now guides:
 
-- [Add a custom domain](https://zeit.co/docs/getting-started/assign-a-domain-name)
-- [Advanced static hosting](https://zeit.co/docs/static-deployments/introduction-and-deployinge)
+- [Add a domain](https://zeit.co/docs/v2/domains-and-aliases)
+- [Deployment Basics](https://zeit.co/docs/v2/deployments/basics/)
