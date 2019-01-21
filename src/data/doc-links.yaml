@@ -26,6 +26,8 @@
       link: /docs/view-structure
     - title: Basic config
       link: /docs/basic-config
+    - title: Routing
+      link: /docs/routing
     - title: Pages
       link: /docs/pages
     - title: Templates
@@ -38,8 +40,6 @@
       link: /docs/linking
     - title: Images
       link: /docs/images
-    - title: Routing
-      link: /docs/routing
     - title: Plugins
       link: /docs/plugins
     - title: Populating <head>

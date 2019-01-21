@@ -6,14 +6,19 @@ Gridsome uses [vue-router] (https://router.vuejs.org/) for routing.
 ## Page routing
 
 All `.vue` files in the `src/pages` directory will become the pages for your
-website. The page URL is generated based on the location and name of the file.
+website. The page URL is generated based on the location and name of the file. The path will be lowercased and slugified automatically. Files named `Index.vue` are treated like `index.html` files and will not get a slug.
 
-The path will be lowercased and slugified automatically. So if have a file with
-the name `AboutUs.vue`, it will get the slug `about-us`. 
+Examples:
 
-Files named `Index.vue` are treated like `index.html` files and will not get a slug. As an example:
-`src/pages/features/Index.vue` will become `/features` and
-`src/pages/features/Awesome.vue` will become `/features/awesome`.
+- `/src/pages/Index.vue` will be **/**
+- `/src/pages/About.vue` will be **/about**
+- `/src/pages/OurTeam.vue` will be **/our-team**
+- `/src/pages/features/Index.vue` will be **/features**
+- `/src/pages/features/Awesome.vue` will be **/features/awesome**
+
+#### Link to pages:
+
+To link to `/src/pages/About.vue` use built in link component like `<g-link to="/about" />`. [Learn more about linking](/docs/linking).
 
 
 ## Routing for data source plugins
