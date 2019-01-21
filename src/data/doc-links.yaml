@@ -22,13 +22,9 @@
   items:
     - title: Directory structure
       link: /docs/directory-structure
-    - title: View structure
-      link: /docs/view-structure
     - title: Basic config
       link: /docs/basic-config
-    - title: Routing
-      link: /docs/routing
-    - title: Pages
+    - title: Pages & routing
       link: /docs/pages
     - title: Templates
       link: /docs/templates
