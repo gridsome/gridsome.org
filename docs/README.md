@@ -1,8 +1,7 @@
 # Getting started
+Gridsome is framework for building blazing fast static PWA websites for any data source. It brings many powerful features to the table that makes it fun and fast to build ultra hight performant websites.
 
 ## Why Gridsome?
-
-> Gridsome is framework for building blazing fast static PWA websites for any data source. It brings many powerful features to the table that makes it fun and fast to build ultra hight performant websites.
 
 - **Hot-reloading development** - See changes in real-time while developing.
 - **Vue.js for front-end** - Ultra lightweight and approachable front-end framework.
