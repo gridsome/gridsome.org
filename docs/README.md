@@ -1,7 +1,21 @@
 # Getting started
-> Gridsome is a Vue-powered static site generator for building websites for any CMS or data source. It uses a local unified GraphQL data layer for all data, and can generate thousands of pages in seconds. Gridsome is heavily inspired by **[Gatsby](https://gatsbyjs.org)** (A React.js alternative).
 
-#### Prerequisites
+### Why Gridsome?
+
+> Gridsome is framework for building blazing fast static PWA websites for any data source. It brings many powerful features to the table that makes it fun and fast to build ultra hight performant websites.
+
+- **Hot-reloading development** - See changes in real-time while developing.
+- **Vue.js for front-end** - Ultra lightweight and approachable front-end framework.
+- **GraphQL data layer** - Centralized data management for all your data.
+- **Automatic page routing** - Quickly create and manage pages with files.
+- **Progressive image support** - Auto resize, optimize & lazy load images.
+- **Auto page prefetching** - Pages are loaded in the background for fast browsing.
+- **Auto optimized code** - Get code-splitting and asset optimization out-of-the-box.
+- **Fast static page generating** - Deploy securely and fast to any Static Web Host.
+- **Data source plugins** - Add data from popular Headless CMSs, APIs or Markdown-files.	 
+
+
+### Prerequisites
 Gridsome requires **Node.js** and recommends **Yarn**. [👉 How to setup](/docs/prerequisites)
 
 ### 1. Install Gridsome CLI tool

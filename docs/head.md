@@ -29,7 +29,7 @@ export default function (Vue, { head }) {
 }
 ```
 
-## Add head metadata to pages
+## Add head meta data to pages & templates
 Page metadata is added inside page **.vue components**.
 For example, `src/pages/About.vue` would look something like this:
 
