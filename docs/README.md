@@ -3,8 +3,8 @@ Gridsome is framework for building blazing fast static PWA websites for any data
 
 ## Why Gridsome?
 
-- **Hot-reloading development** - See changes in real-time while developing.
-- **Vue.js for front-end** - Ultra lightweight and approachable front-end framework.
+- **Local development with hot-reloading** - See code changes in real-time.
+- **Vue.js for frontend** - A lightweight and approachable front-end framework.
 - **GraphQL data layer** - Centralized data management for all your data.
 - **Automatic page routing** - Quickly create and manage pages with files.
 - **Auto optimized code** - Get code-splitting and asset optimization out-of-the-box.
