@@ -15,7 +15,7 @@ Gridsome is framework for building blazing fast static PWA websites for any data
 ## Install Gridsome
 
 ### Prerequisites
-Gridsome requires **Node.js** and recommends **Yarn**. [👉 How to setup](/docs/prerequisites)
+Gridsome requires **Node.js** and recommends **Yarn**. [How to setup](/docs/prerequisites)
 
 ### 1. Install Gridsome CLI tool
 
@@ -78,7 +78,7 @@ Gridsome follows the [PRPL-pattern by Google.](https://developers.google.com/web
 - Full PWA & Offline-support (plugin) ⚡️
 
 
-### Alternatives
+## Alternatives
 
 -    **[VuePress.](https://vuepress.vuejs.org/)** Another static site generator for Vue.js. It uses local markdown files for content and is perfect for documentation sites. It is possible to build anything in VuePress and Markdown (Like a blog f.ex).
 

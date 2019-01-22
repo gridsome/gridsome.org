@@ -1,9 +1,9 @@
 - title: Introduction
   items:
-    - title: Getting started
-      link: /docs
     - title: Prerequisites
       link: /docs/prerequisites
+    - title: Getting started
+      link: /docs
     - title: How it works
       link: /docs/how-it-works
     - title: Starter kits
