@@ -1,5 +1,11 @@
 # Pages
 
+Pages are used for **normal pages** and for **listing & paginate GraphQL collections**. Like for example a Blog page. The url path of a page is always static. For **dynamic pages** like a single blog post, you need to use a **Template**. Learn more about [templates here](/docs/templates).
+
+- If url will be `/about` use a **page**
+- If url will be `/blog` use a **page**
+- If url will be `/blog/:slug` use a **[Template](/docs/templates)**
+
 ## Creating pages
 
 All `.vue` files in the `src/pages` directory will become the pages for your
@@ -52,5 +58,5 @@ To create a custom `404` page you need to add a `404.vue` in `src/pages`. This w
 ### More...
 
 - [Import layout to a page or template](/docs/layouts#import-layout-to-a-page-or-template)
-- [Add head metadata to Pages](/docs/head)
+- [Add head meta data to Pages](/docs/head#add-head-meta-data-to-pages--templates)
 - [Query data in pages](/docs/data-query-data)

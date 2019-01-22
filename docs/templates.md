@@ -1,6 +1,6 @@
 # Templates
 
-Templates are used for adding single post views to **GraphQL collections**. Add a **.vue** file with the same name as a GraphQL collection to `src/templates` to create a template. For example, if you have a collection called "WordPressPost" you create a WordPressPost.vue file.
+Templates are used for single post views to **GraphQL collections**. Add a **.vue** file with the same name as a GraphQL collection to `src/templates` to create a template. For example, if you have a collection called "**WordPressPost**" you create a **WordPressPost.vue** file.
 
 You can browse available collections in the **schema tab** inside the [GraphQL explorer](/docs/data-query-data).
 
@@ -58,5 +58,5 @@ The `<Layout>` component is an optional component used to **wrap pages and templ
 
 ### More...
 
-- [Add head metadata to Templates](/docs/head)
+- [Add head metadata to Templates](/docs/head#add-head-meta-data-to-pages--templates)
 - [Query data in Templates](/docs/data-query-data)
