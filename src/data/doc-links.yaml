@@ -24,12 +24,14 @@
       link: /docs/directory-structure
     - title: Basic config
       link: /docs/basic-config
-    - title: Pages & routing
+    - title: Pages
       link: /docs/pages
     - title: Templates
       link: /docs/templates
     - title: Layouts
       link: /docs/layouts
+    - title: Routing
+      link: /docs/routing
     - title: Components
       link: /docs/components
     - title: Linking

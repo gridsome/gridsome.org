@@ -1,5 +1,4 @@
-# Pages & routing
-Gridsome uses [Vue Router](https://router.vuejs.org/) for routing. This makes it possible to run your site as a SPA with instant page loads and page transitions.  **Routes are added automatically**.
+# Pages
 
 ## Creating pages
 
@@ -16,7 +15,7 @@ Examples:
 - `/src/pages/404.vue` will be 404 the page.
 
 
-A typical **Page.vue** file should looke like this:
+A typical `Page.vue` file will look like this:
 
 
 ```html
@@ -25,44 +24,26 @@ A typical **Page.vue** file should looke like this:
     Here comes the page content
   </Layout>
 </template>
+
+<script>
+import Layout from '~/layouts/Default.vue'
+export default {
+  components: {
+    Layout
+  }
+}
+</script>
 ```
 
-## Add a Layout
+## Page layouts
 
-The `<Layout>` component is an optional component used to wrap pages and templates. Layouts should contain components like headers, footers or sidebars that will be used across the site. It should be imported to Pages & Templates like any other [Vue components](/docs/components).
+The `<Layout>` component is an optional component used to **wrap pages and templates**. Layouts usually contain components like headers, footers or sidebars that will be used across the site. It should be imported to Pages & Templates like any other [Vue components](/docs/components).
+
+** The page layout can be named anything. `<Layout>` is just an example. **
 
 [Learn more about Layouts](/docs/layouts)
 
 
-## Listing pages
-
-All pages are added to a **GraphQL collection** called `allPage`. You can query a list of pages in any Vue Component like this:
-
-```html
-<static-query>
-query {
-  pages: allPage {
-    path
-  }
-}
-</static-query>
-```
-
-You can now list pages using **$static.pages** variable.
-
-
-## Dynamic routing
-Dynamic routing can be added to any **GraphQL Collections** added to the data layer. Every collection can have a template for single post views. You can browse available collections in the schema tab inside the [GraphQL explorer] (/docs/data-query-data).
-
-![Page structure](./images/dynamic-pages.png)
-
-The example above shows a **Blog.vue** in **/pages** where Blog posts will be listed and then a **BlogPost.vue** inside **/templates** that will show the single post view.
-
-[Learn more about Templates & dynamic routing here](/docs/templates)
-
-
-## Custom routing
-...TODO: Add docs about using router here.
 
 ## Add a 404 page
 To create a custom `404` page you need to add a `404.vue` in `src/pages`. This will automatically create a **404.html** file to the deploy.

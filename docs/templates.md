@@ -1,8 +1,12 @@
 # Templates
 
-> Templates are used for adding views to **GraphQL collections**. Add a **.vue** file with the same name as a GraphQL collection to `src/templates` to create a template. For example, if you have a collection called "WordPressPost" you create a WordPressPost.vue file.
+Templates are used for adding single post views to **GraphQL collections**. Add a **.vue** file with the same name as a GraphQL collection to `src/templates` to create a template. For example, if you have a collection called "WordPressPost" you create a WordPressPost.vue file.
 
 You can browse available collections in the **schema tab** inside the [GraphQL explorer](/docs/data-query-data).
+
+The example shows a **Blog.vue** in **/pages** where Blog posts will be listed and then a **BlogPost.vue** inside **/templates** that will show the single post view.
+
+![Page structure](./images/dynamic-pages.png)
 
 
 ## Creating templates
@@ -29,7 +33,11 @@ query Post ($path: String!) {
 </page-query>
 
 <script>
+import Layout from '~/layouts/Default.vue'
 export default {
+  components: {
+    Layout
+  },
   metaInfo () {
     return {
       title: this.$page.post.title
@@ -39,61 +47,13 @@ export default {
 </script>
 ```
 
+## Template layouts
 
-## Create routes for a template
+The `<Layout>` component is an optional component used to **wrap pages and templates**. Layouts usually contain components like headers, footers or sidebars that will be used across the site. It should be imported to Pages & Templates like any other [Vue components](/docs/components).
 
-Data sources adds routing automatically with settings. These could be different for each plugin so check the plugin documentation how to use route.
+** The page/template layout can be named anything. `<Layout>` is just an example. **
 
-```js
-module.exports = {
-  plugins: [
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: 'blog/**/*.md',
-        typeName: 'BlogPost',
-        route: '/blog/:year/:month/:day/:slug'
-      }
-    }
-  ]
-}
-```
-
-### Default route params
-The default route params are `:year`, `:month`, `:day` and `:slug`. 
-
-
-### Custom route params
-It is possible to use fields coming from a GraphQL node type in the route. Field values are slugified, but the original value will be available as **{fieldname}_raw**. Only root level primitive fields will be available as params.
-
-
-## Routing for custom data sources
-When you add a custom data source you need to use the `route` option inside `addContentType()` **OR** use `path` option inside `addNode()`. `route` will be used for all posts and `path` will be set per post. It's only possible to use one of them. If both are used `route` will be prioritzed.
-
-Learn more about [custom data sources here](/docs/data-custom)
-
-```js
-const axios = require('axios')
-
-module.exports = function (api) {
-  api.loadSource(async store => {
-    const { data } = await axios.get('https://api.example.com/posts')
-
-    const contentType = store.addContentType({
-      typeName: 'BlogPosts'
-      route: 'blog/:slug'  // add this...
-    })
-
-    for (const item of data) {
-      contentType.addNode({
-        id: item.id,
-        title: item.title
-        path: 'blog/:slug' //... or this
-      })
-    }
-  })
-}
-```
+[Learn more about Layouts](/docs/layouts)
 
 
 ### More...
