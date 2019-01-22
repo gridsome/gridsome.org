@@ -1,14 +1,15 @@
 # How it works
+
 ![Pre-rendering](./images/ssg-mode.png)
 
-Gridsome has **2 command line commands** that can be used.
+There are two ways of running Gridsome.
 
 - Use `gridsome develop` for starting a local **development server**.
 - Use `gridsome build` to generate a **production ready** build.
 
 
 ## Local development
-The `gridsome develop` command starts a **local development** environment with hot-reloading and a local **GraphQL data layer**.
+The `gridsome develop` command starts a **local development server** with hot-reloading for code changes and a **GraphQL data layer**. You can usually open the development server at `localhost:8080`, and explore the GraphQL data layer at `localhost:8080/___explore`. **The data layer is only used on development server.**
 
 ![Gridsome develop](./images/gridsome-develop.gif)
 
@@ -21,8 +22,7 @@ The `gridsome develop` command starts a **local development** environment with h
 5. **Bootstrap finish** - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec velit sed urna malesuada dignissim varius ut libero.
 
 
-
-## The build process
+## Production-ready build
 The `gridsome build` prepares a project for **production**. This means it generates files that are optimized and ready to be hosted and deployed on any FTP or static web host. **The build process only uses the GraphQL data layer at build time and not in production.**
 
 ![Gridsome build](./images/gridsome-build.gif)
