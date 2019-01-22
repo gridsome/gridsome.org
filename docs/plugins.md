@@ -2,7 +2,7 @@
 Gridsome plugins are **npm packages** added to Gridsome projects. Plugin options are added to `gridsome.config.js`.
 Here is an example of a data source plugin added to Gridsome:
 
-```
+```js
 module.exports = {
   siteName: 'My Project',
   plugins: [

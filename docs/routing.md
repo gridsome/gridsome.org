@@ -16,10 +16,6 @@ Examples:
 - `/src/pages/features/Index.vue` will be **/features**
 - `/src/pages/features/Awesome.vue` will be **/features/awesome**
 
-#### Link to pages:
-
-To link to `/src/pages/About.vue` use built in link component like `<g-link to="/about" />`. [Learn more about linking](/docs/linking).
-
 
 ## Routing for data source plugins
 
