@@ -10,6 +10,8 @@ Gridsome has **2 command line commands** that can be used.
 ## Local development
 The `gridsome develop` command starts a **local development** environment with hot-reloading and a local **GraphQL data layer**.
 
+![Gridsome develop](./images/gridsome-develop.gif)
+
 **This is whats happening under the hood when running `gridsome develop` command:**
 
 1. **Initialize** - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec velit sed urna malesuada dignissim varius ut libero.
@@ -22,6 +24,8 @@ The `gridsome develop` command starts a **local development** environment with h
 
 ## The build process
 The `gridsome build` prepares a project for **production**. This means it generates files that are optimized and ready to be hosted and deployed on any FTP or static web host. **The build process only uses the GraphQL data layer at build time and not in production.**
+
+![Gridsome build](./images/gridsome-build.gif)
 
 **This is whats happening under the hood when running `gridome build` command:**
 
