@@ -1,11 +1,11 @@
 # Getting started
-Gridsome is framework for building blazing fast static PWA websites for any data source. It brings many powerful features to the table that makes it fun and fast to build ultra hight performant websites.
+Gridsome is a Vue-powered JAMstack framework for building super fast, modern PWA & SPA websites for any data source. It brings many powerful features to the table that makes it fun and easy to build highly optimized websites without being a performance expert.
 
 ## Why Gridsome?
 
 - **Local development with hot-reloading** - See code changes in real-time.
 - **Vue.js for frontend** - A lightweight and approachable front-end framework.
-- **GraphQL data layer** - Centralized data management for all your data.
+- **Centralized data management** - Use a local GraphQL data layer for all data.
 - **Automatic page routing** - Quickly create and manage pages with files.
 - **Auto optimized code** - Get code-splitting and asset optimization out-of-the-box.
 - **Static site generation** - Deploy securely and fast to any Static Web Host.
