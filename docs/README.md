@@ -4,13 +4,14 @@ Gridsome is a **Vue-powered static site generator** for building super fast, mod
 ## Why Gridsome?
 
 - **Local development with hot-reloading** - See code changes in real-time.
+- **Data source plugins** - Use it for any popular Headless CMSs, APIs or Markdown-files.	 
 - **Vue.js for frontend** - A lightweight and approachable front-end framework.
 - **Centralized data management** - Use a local GraphQL data layer for all data.
 - **Automatic page routing** - Quickly create and manage pages with files.
 - **Auto optimized code** - Get code-splitting and asset optimization out-of-the-box.
 - **Static site generation** - Deploy securely and fast to any Static Web Host.
-- **Data source plugins** - Add data from popular Headless CMSs, APIs or Markdown-files.	 
 
+[Learn more about how Gridsome works](/docs/how-it-works)
 
 ## Install Gridsome
 
