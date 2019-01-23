@@ -73,6 +73,14 @@ export default {
   p > img {
     margin-bottom: 0;
   }
+
+  @media screen and (min-width: 1000px) {
+    img {
+      max-width: 110%;
+      margin-left: -5%;
+    }
+  }
+
   
   h1, h2, h3 {
     padding-top: 6rem;

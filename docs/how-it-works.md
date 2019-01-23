@@ -1,6 +1,6 @@
 # How it works
 
-![Pre-rendering](./images/ssg-mode.png)
+![Pre-rendering](./images/how-it-works.png)
 
 There are two ways of running Gridsome.
 
@@ -11,7 +11,7 @@ There are two ways of running Gridsome.
 ## Gridsome development
 The `gridsome develop` command starts a **local development server** with hot-reloading for code / file changes and the **GraphQL data layer**. You can usually open the development server at `localhost:8080`, and explore the GraphQL data layer at `localhost:8080/___explore`.
 
-> The GraphQL data layer is only used when running development server and at build time.
+> The GraphQL data layer is only used when running development server.
 
 ![Gridsome develop](./images/gridsome-develop.gif)
 
@@ -26,8 +26,6 @@ The `gridsome develop` command starts a **local development server** with hot-re
 
 ## Gridsome build
 The `gridsome build` prepares a project for **production**. This means it generates HTML files that are optimized and ready to be hosted and deployed on any FTP or static web host.
-
-> A production-ready build generates **SEO-friendly HTML of every page & route**, that loads the fastest possible way. After page is loaded it hydrates into a fully Vue.js application as a SPA. This makes clicking around blazing fast.
 
 ![Gridsome build](./images/gridsome-build.gif)
 
