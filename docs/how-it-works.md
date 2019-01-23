@@ -7,9 +7,9 @@ This guide will cover in details how the **Gridsome run commands** works and wha
 
 ![How it works](./images/how-it-works.png)
 
-## Gridsome development
+## Gridsome develop
 
-The `gridsome develop` command starts a **local development server** with hot-reloading for code / file changes and the **GraphQL data layer**. You can usually open the development server at `localhost:8080`, and explore the GraphQL data layer at `localhost:8080/___explore`.
+The `gridsome develop` command starts a **local development server** with hot-reloading for code/file changes and the **GraphQL data layer**. You can usually open the development server at `localhost:8080`, and explore the GraphQL data layer at `localhost:8080/___explore`.
 
 > The GraphQL data layer is only used when running the development server.
 
