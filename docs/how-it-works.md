@@ -1,6 +1,6 @@
 # How it works
 
-This guide will cover in details how the **Gridsome run commands** works and what's happening under the hood.
+This article will cover in details how the **Gridsome run commands** works and what's happening under the hood. There are currently two commands for Gridsome:
 
 - `gridsome develop` starts a local  **development server**.
 - `gridsome build` generates **production ready** HTML files.
@@ -25,7 +25,7 @@ The `gridsome develop` command starts a **local development server** with hot-re
 
 ## Gridsome build
 
-The `gridsome build` prepares a project for **production**. This means it generates HTML files that are optimized and ready to be hosted and deployed on any FTP or static web host.
+The `gridsome build` command prepares a project for **production**. This means it generates HTML files that are optimized and ready to be hosted and deployed to any FTP or static web host.
 
 ![Gridsome build](./images/gridsome-build.gif)
 
@@ -48,7 +48,7 @@ The `gridsome build` prepares a project for **production**. This means it genera
 
 ## Vue.js Hydration
 
-The `gridsome build` command generates **SEO-friendly HTML files** that can be hosted anywhere. These HTML files are optimized to load as fast as possible. After the HTML is loaded **Vue.js** takes over the HTML and **hydrates** into a **Vue-powered SPA**.
+The `gridsome build` command generates **SEO-friendly HTML files** that can be hosted anywhere. These HTML files are optimized to load as fast as possible. After the HTML is loaded **Vue.js** takes over the HTML and **hydrates** into a fully **Vue-powered SPA**.
 
 >  Hydration refers to the client-side process during which Vue takes over the static HTML sent by the server and turns it into dynamic DOM that can react to client-side data changes.
 
