@@ -21,13 +21,13 @@ Examples:
 - `/src/pages/404.vue` will be 404 the page.
 
 
-A typical `Page.vue` file will look like this:
+A simple `Page.vue` file might look like:
 
 
 ```html
 <template>
   <Layout>
-    Here comes the page content
+    Some content about us...
   </Layout>
 </template>
 
@@ -40,6 +40,36 @@ export default {
 }
 </script>
 ```
+
+A `Blog.vue` file that **list blog posts** might look like this:
+
+```html
+<template>
+  <Layout>
+    <div v-for="item in $page.posts" :key="item.id">
+      {{item.id}}
+      {{item.title}}
+    </div>    
+  </Layout>
+</template>
+
+<page-query>
+query Posts {
+  posts: allWordPressPosts {
+    edges {
+      node { 
+        id
+        title
+      }
+    }
+  }
+}
+</page-query>
+```
+
+[Learn more about query data](/docs/data-query-data)
+
+
 
 ## Page layouts
 
