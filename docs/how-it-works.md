@@ -8,8 +8,10 @@ There are two ways of running Gridsome.
 - Use `gridsome build` to generate a **production ready** build.
 
 
-## Local development
-The `gridsome develop` command starts a **local development server** with hot-reloading for code changes and a **GraphQL data layer**. You can usually open the development server at `localhost:8080`, and explore the GraphQL data layer at `localhost:8080/___explore`. **The data layer is only used on development server.**
+## Gridsome development
+The `gridsome develop` command starts a **local development server** with hot-reloading for code / file changes and the **GraphQL data layer**. You can usually open the development server at `localhost:8080`, and explore the GraphQL data layer at `localhost:8080/___explore`.
+
+> The GraphQL data layer is only used when running development server and at build time.
 
 ![Gridsome develop](./images/gridsome-develop.gif)
 
@@ -22,8 +24,10 @@ The `gridsome develop` command starts a **local development server** with hot-re
 5. **Bootstrap finish** - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec velit sed urna malesuada dignissim varius ut libero.
 
 
-## Production-ready build
-The `gridsome build` prepares a project for **production**. This means it generates files that are optimized and ready to be hosted and deployed on any FTP or static web host. **The build process only uses the GraphQL data layer at build time and not in production.**
+## Gridsome build
+The `gridsome build` prepares a project for **production**. This means it generates HTML files that are optimized and ready to be hosted and deployed on any FTP or static web host.
+
+> A production-ready build generates **SEO-friendly HTML of every page & route**, that loads the fastest possible way. After page is loaded it hydrates into a fully Vue.js application as a SPA. This makes clicking around blazing fast.
 
 ![Gridsome build](./images/gridsome-build.gif)
 
@@ -45,6 +49,10 @@ The `gridsome build` prepares a project for **production**. This means it genera
 > Services like **Netlify** and **Zeit Now** lets you build your site automatically from a Git-repository. Learn more about Git-based [deployment here](/docs/deployment).
 
 
-## Client Side Hydration
-A Gridsome loads as just pure HTML first, and the Vue.js takes over after page load.
-....
+## Vue.js Hydration
+
+The `gridsome build` command generates **SEO-friendly HTML files** that can be hosted anywhere. These HTML files are optimized to load as fast as possible. After the HTML is loaded **Vue.js** takes over the HTML and **hydrates** into a **Vue-powered SPA**.
+
+>  Hydration refers to the client-side process during which Vue takes over the static HTML sent by the server and turns it into dynamic DOM that can react to client-side data changes.
+
+[Learn more about Vue.js and Client Side hydration](https://ssr.vuejs.org/guide/hydration.html)
