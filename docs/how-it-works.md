@@ -1,24 +1,24 @@
 # How it works
 
-![Pre-rendering](./images/how-it-works.png)
+This guide will cover in details how the **Gridsome run commands** works and what's happening under the hood.
 
-There are two ways of running Gridsome.
+- `gridsome develop` starts a local  **development server**.
+- `gridsome build` generates **production ready** HTML files.
 
-- Use `gridsome develop` for starting a local **development server**.
-- Use `gridsome build` to generate a **production ready** website.
+![How it works](./images/how-it-works.png)
 
 ## Gridsome development
 
 The `gridsome develop` command starts a **local development server** with hot-reloading for code / file changes and the **GraphQL data layer**. You can usually open the development server at `localhost:8080`, and explore the GraphQL data layer at `localhost:8080/___explore`.
 
-> The GraphQL data layer is only used when running development server.
+> The GraphQL data layer is only used when running the development server.
 
 ![Gridsome develop](./images/gridsome-develop.gif)
 
 **This is whats happening under the hood when running `gridsome develop` command:**
 
 1. **Initialize** - Reads project configuration and initializing installed plugins etc.
-2. **Load sources** - Source plugins fetches their data and updates the internal store.
+2. **Load sources** - Source plugins fetch their data and update the internal store.
 3. **Create GraphQL schema** - Generates the GraphQL schema from node types in store.
 4. **Generate code** - Generates runtime code like routes, plugins etc.
 5. **Bootstrap finish** - Starts the development server and shows the URLs in your console.
@@ -29,15 +29,15 @@ The `gridsome build` prepares a project for **production**. This means it genera
 
 ![Gridsome build](./images/gridsome-build.gif)
 
-**This is whats happening under the hood when running `gridome build` command:**
+**This is what's happening under the hood when running `gridsome build` command:**
 
 1. **Initialize** - Reads project configuration and initializing installed plugins etc.
-2. **Load sources** - Source plugins fetches their data and updates the internal store.
+2. **Load sources** - Source plugins fetch their data and update the internal store.
 3. **Create GraphQL schema** - Generates the GraphQL schema from node types in store.
 4. **Generate code** - Generates runtime code like routes, plugins etc.
 5. **Bootstrap finish** - Creates a render queue with all pages and templates.
 6. **Run GraphQL** - Executes all `page-query` queries and stores the results in `json` files.
-7. **Compile assets** - Runs wepack to compile production ready assets.
+7. **Compile assets** - Runs webpack to compile production-ready assets.
 8. **Render HTML** - Renders all pages and templates into static `html` files.
 9. **Process files** - Local files are copied to the `dist` folder.
 10. **Process images** - Local images are processed and copied to the `dist` folder.
