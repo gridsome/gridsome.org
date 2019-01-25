@@ -1,12 +1,12 @@
 # Getting started
-Gridsome is a **Vue-powered static site generator** for building super fast, modern PWA & SPA websites for any data source. It brings many powerful features to the table that makes it fun and easy to build highly optimized websites without being a performance expert.
+> Gridsome is an open-source, Vue-powered static site generator that builds performance into every website automatically. Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert. 
 
 ## Why Gridsome?
+
 - **Local development with hot-reloading** - See code changes in real-time.
-- **Data source plugins** - Use it for any popular Headless CMSs, APIs or Markdown-files.	 
+- **Data source plugins** - Use it for any popular Headless CMSs, APIs or Markdown-files. 
 - **File-based page routing** - Quickly create and manage pages with files.
 - **Vue.js for frontend** - A lightweight and approachable front-end framework.
-- **Centralized data management** - Use a local GraphQL data layer for all data.
 - **Auto-optimized code** - Get code-splitting and asset optimization out-of-the-box.
 - **Static files generation** - Deploy securely to any CDN or static web host.
 

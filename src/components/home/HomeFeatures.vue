@@ -7,17 +7,15 @@
         <p>Load data from any CMS, APIs, static files, a database, or from multiple places at once. Gridsome combines them all into a simple, centralized <g-link to="/docs/how-it-works">GraphQL data layer</g-link> that pages and components can access.</p>
       </Feature>
 
-
-
       <Feature>
         <h3>Fast by default</h3>
-        <p>Gridsome automatically optimizes your website to load and perform fast. You get <strong>code-splitting & progressive image support</strong> built-in to get close to <strong>perfect Lighthouse scores.</strong>
+        <p>Gridsome automatically optimizes your website to load and perform fast. You get <strong>code-splitting & progressive image support</strong> built-in to get close to <strong>perfect page speed scores.</strong>
         </p>     
       </Feature>
 
       <Feature>
-        <h3>PWA offline-ready</h3>
-        <p>Gridsome loads only the critical HTML, CSS, so your site <strong>loads as fast as possible</strong>. Once loaded, the next pages are prefetched so clicking around the site feels incredibly fast. <strong>It even works offline.</strong>
+        <h3>Static PWA</h3>
+        <p>Gridsome is a <strong>static PWA generator</strong>. It pre-renders all pages to <strong>load as fast as possible</strong>. Once loaded, the next pages are prefetched in background so clicking around the site feels super fast.
         </p>
       </Feature>
 
