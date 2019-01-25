@@ -2,10 +2,9 @@
   <Section class="home-intro" dots="true" dark="true" style="padding-top: 0; padding-bottom: 0;">
     <div class="home-cols grid-cols grid-cols--2" style="max-width: 1080px; margin: 0 auto;">
       <div class="text-center" style="padding-top: 20%; padding-bottom: 20%;">    
-        <h1>
-          <span class="home-title">
-            Modern website <br>development made easy
-          </span>
+        <h1 class="home-title">
+            <span>Modern website <br>development made </span>
+            <VueTyper :text="words" caret-animation="smooth" />
         </h1>
 
         <p class="home-lead " style="padding-left: 7%; padding-right: 7%;">
@@ -55,11 +54,20 @@ import LinesOut from '~/assets/images/home-lines-out.svg'
 import LinesIn from '~/assets/images/home-lines-in.svg'
 import Logo from '~/assets/images/home-logo.svg'
 
+const words = ['easy','fun','fast']
+
 export default {
   components: {
     LinesOut,
     LinesIn,
-    Logo
+    Logo,
+    VueTyper: process.isServer
+      ? { inheritAttrs: false, render: h => h('span', null, [words[0]]) }
+      : () => import('vue-typer').then(({ VueTyper }) => VueTyper)
+  },
+
+  data () {
+    return { words }
   }
 }
 </script>
@@ -69,6 +77,22 @@ export default {
 @media screen and (max-width: 750px) {
  .home-intro .grid-cols{
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.vue-typer {
+  min-width: 85px;
+  display: inline-block;
+  text-align: left;
+
+  .custom.char {
+    color: currentColor;
+  }
+
+  .custom.caret {
+    background-color: rgba(255,255,255,.5);
+    margin: 0 2px;
+    width: 2px;
   }
 }
 
