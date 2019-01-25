@@ -4,7 +4,7 @@
       <div class="text-center" style="padding-top: 20%; padding-bottom: 20%;">    
         <h1 class="home-title">
             <span>Modern website <br>development made </span>
-            <vue-typer :text="['easy','fun','fast']" caret-animation="smooth"></vue-typer>
+            <VueTyper :text="words" caret-animation="smooth" />
         </h1>
 
         <p class="home-lead " style="padding-left: 7%; padding-right: 7%;">
@@ -50,17 +50,24 @@ query HomeIntro {
 </static-query>
 
 <script>
-import { VueTyper } from 'vue-typer'
 import LinesOut from '~/assets/images/home-lines-out.svg'
 import LinesIn from '~/assets/images/home-lines-in.svg'
 import Logo from '~/assets/images/home-logo.svg'
+
+const words = ['easy','fun','fast']
 
 export default {
   components: {
     LinesOut,
     LinesIn,
     Logo,
-    VueTyper
+    VueTyper: process.isServer
+      ? { inheritAttrs: false, render: h => h('span', null, [words[0]]) }
+      : () => import('vue-typer').then(({ VueTyper }) => VueTyper)
+  },
+
+  data () {
+    return { words }
   }
 }
 </script>
