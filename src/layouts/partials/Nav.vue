@@ -49,7 +49,6 @@ export default {
     text-transform: uppercase;
     font-size: 0.78rem;
     letter-spacing: 1px;
-    font-weight: 300;
   }
 }
 

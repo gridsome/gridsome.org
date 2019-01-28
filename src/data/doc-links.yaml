@@ -1,9 +1,9 @@
 - title: Introduction
   items:
-    - title: Getting started
-      link: /docs
     - title: Prerequisites
       link: /docs/prerequisites
+    - title: Getting started
+      link: /docs
     - title: How it works
       link: /docs/how-it-works
     - title: Starter kits
@@ -22,8 +22,6 @@
   items:
     - title: Directory structure
       link: /docs/directory-structure
-    - title: View structure
-      link: /docs/view-structure
     - title: Basic config
       link: /docs/basic-config
     - title: Pages
@@ -32,14 +30,14 @@
       link: /docs/templates
     - title: Layouts
       link: /docs/layouts
+    - title: Routing
+      link: /docs/routing
     - title: Components
       link: /docs/components
     - title: Linking
       link: /docs/linking
     - title: Images
       link: /docs/images
-    - title: Routing
-      link: /docs/routing
     - title: Plugins
       link: /docs/plugins
     - title: Populating <head>
