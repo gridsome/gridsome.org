@@ -15,7 +15,7 @@ Add these settings where its needed:
 
 ### Deploying with Terminal
 
-1. Follow [this guide](https://zeit.co/docs/getting-started/introduction-to-now) to install Now 
+1. Follow [this guide](https://zeit.co/docs/v2/getting-started/installation/) to install Now 
 2. Go to your Gridsome project in terminal
 3. Run `gridsome build`to built the site.
 4. Go to the generated dist folder `cd dist`
