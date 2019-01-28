@@ -4,6 +4,7 @@
       <div class="text-center" style="padding-top: 20%; padding-bottom: 20%;">    
         <h1 class="home-title">
             <span>Modern website <br>development made </span>
+            <br class="show-for-small" /> 
             <VueTyper :text="words" caret-animation="smooth" />
         </h1>
 
@@ -81,7 +82,6 @@ export default {
 }
 
 .vue-typer {
-  min-width: 85px;
   display: inline-block;
   text-align: left;
 
