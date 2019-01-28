@@ -5,6 +5,7 @@
   overflow: auto;
   position: relative;
   -webkit-overflow-scrolling: touch;
+  background: linear-gradient(270deg, var(--primary-bg) 0%, rgba(243, 247, 249, 0) 100%);
 
   @media screen and (min-width: 750px) {
     position: sticky;

@@ -1,7 +1,7 @@
 <template>
   <Layout class="has-sidebar docs-page" :footer="false">
     <div class="container flex gap-60 flex-align-top">
-      <div class="sidebar dots-bg">
+      <div class="sidebar">
         
         <transition-group name="menu-item">
           <template v-for="(group, i1) in links">

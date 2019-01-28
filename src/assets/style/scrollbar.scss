@@ -11,9 +11,9 @@
 
 
 .sidebar:hover::-webkit-scrollbar-thumb {
-	background:  rgba(0,0,0,.07);
+	background: var(--border-color);
 }
 
 .sidebar::-webkit-scrollbar-thumb:hover {
-	background:  rgba(0,0,0,.15);
+	background:  var(--border-color);
 }
