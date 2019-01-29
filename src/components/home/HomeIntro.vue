@@ -4,7 +4,7 @@
       <div  style="padding-top: 22%; padding-bottom: 22%; padding-left: 10%;">    
         <h1 class="home-title"> 
             Build 
-            <VueTyper :text="words" type-delay="60" caret-animation="smooth" />
+            <VueTyper :text="words" type-delay="30" caret-animation="smooth" />
             <br /> apps & websites
             <br /> with Vue.js
         </h1>
