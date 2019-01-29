@@ -1,7 +1,7 @@
 <template>
-  <Section class="home-intro" dots="true" dark="true" style="padding-top: 0; padding-bottom: 0;">
+  <Section class="home-intro" dots="true" dark="true">
     <div class="home-cols grid-cols grid-cols--2" >
-      <div  style="padding-top: 22%; padding-bottom: 22%; padding-left: 5%;">    
+      <div class="home-cols__left">    
         <h1 class="home-title"> 
             Build <br class="show-for-small" />
             <VueTyper :text="words" type-delay="30" caret-animation="smooth" />
@@ -26,7 +26,7 @@
         </p>
         
       </div>
-      <div class="hide-for-small">
+      <div class="home-cols__right">
         <div class="home-anim">
           <div class="home-anim__source-logos"><g-image alt="Logos" blur="1" src="~/assets/images/cms-logos.png" /></div>
           <div class="home-anim__lines-in"> <lines-in /> </div>
@@ -72,12 +72,6 @@ export default {
 
 <style lang="scss">
 
-@media screen and (max-width: 750px) {
- .home-intro .grid-cols{
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
 @keyframes Type {
   from  {
     transform: translateX(-5px);
@@ -105,8 +99,16 @@ export default {
   }
 }
 
+.home-intro {
+  padding: 1.5% 0;
+}
+
 .home-cols {
   align-items: center;
+  &__left {
+  }
+  &__right {
+  }
 }
 .home-links {
   margin-top: 2.5rem;
