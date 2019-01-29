@@ -52,7 +52,7 @@ import LinesOut from '~/assets/images/home-lines-out.svg'
 import LinesIn from '~/assets/images/home-lines-in.svg'
 import Logo from '~/assets/images/home-logo.svg'
 
-const words = ['faster', 'modern', 'safer', 'static']
+const words = ['blazing fast', 'future-ready', 'static & secure', 'beautiful']
 
 export default {
   components: {
