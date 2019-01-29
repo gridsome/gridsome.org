@@ -81,31 +81,35 @@ export default {
   }
 }
 
-.vue-typer {
-  display: inline-block;
-  text-align: left;
 
-  .custom.char {
-    color: #FFF;
-  }
-  .custom.char.typed {
-    animation: Type .3s;
-  }
-
-  .custom.caret {
-    background-color: rgba(255,255,255,.5);
-    margin: 0 2px;
-    width: 2px;
-  }
-}
 
 .home-intro {
   padding: 1.5% 0;
+
+  .vue-typer {
+    display: inline-block;
+    text-align: left;
+    white-space: nowrap;
+
+    .custom.char {
+      color: #FFF;
+    }
+    .custom.char.typed {
+      animation: Type .3s;
+    }
+
+    .custom.caret {
+      background-color: rgba(255,255,255,.5);
+      margin: 0 2px;
+      width: 2px;
+    }
+  }
 }
 
 .home-cols {
   align-items: center;
   &__left {
+    padding: 0 5%;
   }
   &__right {
   }
