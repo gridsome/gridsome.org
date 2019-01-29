@@ -1,9 +1,9 @@
 <template>
   <Section class="home-intro" dots="true" dark="true" style="padding-top: 0; padding-bottom: 0;">
     <div class="home-cols grid-cols grid-cols--2" >
-      <div  style="padding-top: 22%; padding-bottom: 22%; padding-left: 10%;">    
+      <div  style="padding-top: 22%; padding-bottom: 22%; padding-left: 5%;">    
         <h1 class="home-title"> 
-            Build 
+            Build <br class="show-for-small" />
             <VueTyper :text="words" type-delay="30" caret-animation="smooth" />
             <br /> apps & websites
             <br /> with Vue.js
