@@ -1,5 +1,5 @@
 # Getting started
-> Gridsome is an open-source, Vue-powered static site generator that builds performance into every website automatically. Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert. 
+> Gridsome is an open-source, Vue-powered modern site generator that builds performance into every website automatically. Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert. 
 
 ## Why Gridsome?
 

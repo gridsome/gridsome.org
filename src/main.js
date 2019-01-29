@@ -18,7 +18,7 @@ import 'typeface-league-spartan'
 const typography = new Typography({
   baseFontSize: '18px',
   baseLineHeight: 1.6,
-  scaleRatio: 1.8,
+  scaleRatio: 1.9,
   bodyColor: 'hsla(0,0%,0%,0.7)',
   headerColor: 'hsla(0,0%,0%,0.9)',
   headerFontFamily: ['League Spartan', 'sans-serif'],

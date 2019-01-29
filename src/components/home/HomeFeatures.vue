@@ -14,7 +14,7 @@
       </Feature>
 
       <Feature>
-        <h3>Static PWA</h3>
+        <h3>PWA-ready</h3>
         <p>Gridsome is a <strong>static PWA generator</strong>. It pre-renders all pages to <strong>load as fast as possible</strong>. Once loaded, the next pages are prefetched in background so clicking around the site feels super fast.
         </p>
       </Feature>

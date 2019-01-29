@@ -1,16 +1,13 @@
 <template>
   <Section class="home-intro" dots="true" dark="true" style="padding-top: 0; padding-bottom: 0;">
-    <div class="home-cols grid-cols grid-cols--2" style="max-width: 1080px; margin: 0 auto;">
-      <div class="text-center" style="padding-top: 20%; padding-bottom: 20%;">    
-        <h1 class="home-title">
-            <span>Modern website <br>development made </span>
-            <br class="show-for-small" /> 
-            <VueTyper :text="words" caret-animation="smooth" />
+    <div class="home-cols grid-cols grid-cols--2" >
+      <div  style="padding-top: 22%; padding-bottom: 22%; padding-left: 10%;">    
+        <h1 class="home-title"> 
+            Build 
+            <VueTyper :text="words" type-delay="60" caret-animation="smooth" />
+            <br /> apps & websites
+            <br /> with Vue.js
         </h1>
-
-        <p class="home-lead " style="padding-left: 7%; padding-right: 7%;">
-          Gridsome is a Vue.js-powered, modern site generator for building the fastest possible websites for any Headless CMS, APIs or Markdown-files.
-        </p>
 
         <p class="home-links">
           <g-link  to="/docs" class="button primary">
@@ -55,7 +52,7 @@ import LinesOut from '~/assets/images/home-lines-out.svg'
 import LinesIn from '~/assets/images/home-lines-in.svg'
 import Logo from '~/assets/images/home-logo.svg'
 
-const words = ['easy','fun','fast']
+const words = ['faster', 'safer', 'modern', 'static']
 
 export default {
   components: {
@@ -81,12 +78,24 @@ export default {
   }
 }
 
+@keyframes Type {
+  from  {
+    transform: translateX(-5px);
+    color: var(--primary-color);
+  } to  { 
+    color: currentColor;
+  }
+}
+
 .vue-typer {
   display: inline-block;
   text-align: left;
 
   .custom.char {
-    color: currentColor;
+    color: #FFF;
+  }
+  .custom.char.typed {
+    animation: Type .3s;
   }
 
   .custom.caret {
@@ -99,6 +108,9 @@ export default {
 .home-cols {
   align-items: center;
 }
+.home-links {
+  margin-top: 2.5rem;
+}
 
 .home-lead {
   font-weight: 300;
@@ -106,7 +118,9 @@ export default {
 
 .home-title {
   line-height: 1.3;
+  font-size: 2.2rem;
 }
+
 .home-info {
   font-size: .85rem;
   opacity: .6;
