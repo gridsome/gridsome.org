@@ -12,5 +12,9 @@ module.exports = function (api) {
     }
 
     store.addMetaData('gridsomeVersion', gridsomeVersion)
+
+    store
+      .addContentType({ typeName: 'Plugin', route: '/plugin/:namespace/:id?' })
+      .addNode({ id: '1' })
   })
 }
