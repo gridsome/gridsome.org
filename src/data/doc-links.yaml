@@ -46,7 +46,7 @@
       link: /docs/body-html-attributes
 
 - title : Working with data
-  items: 
+  items:
     - title: Querying data
       link: /docs/data-query-data
     - title: Use a data source plugin
@@ -59,19 +59,19 @@
       link: /docs/data-dynamic
 
 - title : Styles and Assets
-  items: 
+  items:
     - title: Use CSS in Gridsome
       link: /docs/assets-css
-    - title: Add custom fonts *
+    - title: Add custom fonts
       link: /docs/assets-fonts
     - title: Add external scripts *
       link: /docs/assets-scripts
-    - title: Add SVG icons *
+    - title: Add SVG icons
       link: /docs/assets-svg
 
 
 - title : Guides
-  items: 
+  items:
     - title: Add a form
       link: /docs/guide-forms
     - title: Add a search
@@ -80,7 +80,7 @@
       link: /docs/guide-comments
 
 - title: API Reference
-  items: 
+  items:
     - title: Gridsome CLI
       link: /docs/gridsome-cli
     - title: Config API
@@ -109,4 +109,3 @@
       link: /docs/deploy-to-zeit-now
     - title: Amazon S3
       link: /docs/deploy-to-amazon-s3
-
