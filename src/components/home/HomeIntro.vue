@@ -81,8 +81,6 @@ export default {
   }
 }
 
-
-
 .home-intro {
   padding: 1.5% 0;
 
@@ -125,6 +123,11 @@ export default {
 .home-title {
   line-height: 1.3;
   font-size: 2.2rem;
+
+  @media (max-width: 600px) {
+    padding-top: 2rem;
+    font-size: 1.8rem;
+  }
 }
 
 .home-info {
