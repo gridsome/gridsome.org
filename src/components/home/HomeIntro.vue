@@ -82,7 +82,7 @@ export default {
 }
 
 .home-intro {
-  padding: 1.5% 0;
+  padding: 1.5% 0!important;
 
   .vue-typer {
     display: inline-block;
