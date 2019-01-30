@@ -34,9 +34,9 @@ You can also use SASS in **Vue Components** with the `lang="scss"` attribute:
 [Learn more about using Using Pre-Processors in Vue.js](https://vue-loader.vuejs.org/guide/pre-processors.html)
 
 ### Global Preprocessor Files (ie. variables, mixins)
-Often when you're working a project, you'll have a set of variables, mixins, and framework variable overrides that you'll want to be automatically used in your components/layouts so you don't have to keep manually importing them. This is rather easy to accomplish by opening up your `gridsome.config.js` file modifying your `webpackChain` configuration.
+Often when you're working a project, you'll have a set of variables, mixins, and framework variable overrides that you'll want to be automatically used in your components/layouts so you don't have to keep manually importing them.
 
-Start by adding `style-resources-loader`:
+Start by installing `style-resources-loader`:
 
 ```js
 npm i -D style-resources-loader
@@ -64,7 +64,17 @@ module.exports = {
 }
 ```
 
-Then you'll modify the `module.exports` file to load the files:
+Then you'll modify the `module.exports` block as follows:
+
+```js
+module.exports = {
+  chainWebpack: config => {
+    // Load variables for all vue-files
+    const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
+    types.forEach(type => addStyleResource(config.module.rule('sass').oneOf(type)))
+	}
+}
+```
 
 ## Add CSS to Vue Components
 In Vue Components you add styles inside a `<style>` tag.
