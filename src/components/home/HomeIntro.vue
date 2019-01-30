@@ -52,7 +52,7 @@ import LinesOut from '~/assets/images/home-lines-out.svg'
 import LinesIn from '~/assets/images/home-lines-in.svg'
 import Logo from '~/assets/images/home-logo.svg'
 
-const words = ['blazing fast', 'future-ready', 'JAMstack', 'static & secure']
+const words = ['lightning fast', 'future-ready', 'JAMstack', 'static & secure']
 
 export default {
   components: {
@@ -92,6 +92,7 @@ export default {
     .custom.char {
       color: #FFF;
     }
+    
     .custom.char.typed {
       animation: Type .3s;
     }
