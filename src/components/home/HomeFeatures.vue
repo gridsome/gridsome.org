@@ -28,7 +28,7 @@
 
       <Feature>
         <h3>SEO-friendly SPA</h3>
-        <p>Gridsome sites render as pure HTML before Vue.js is loaded and SPA kicks in. This makes search engines able to crawl content and give <strong>better SEO ranking</strong> because of the super fast loading.</p>
+        <p>Gridsome sites render as pure HTML before Vue.js is loaded and SPA kicks in. This makes search engines able to crawl content and give <strong>better SEO ranking</strong> because of the blazing fast loading.</p>
       </Feature>
 
       <Feature>
