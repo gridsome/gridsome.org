@@ -4,7 +4,7 @@
 
       <Feature>
         <h3>Bring your own data</h3>
-        <p>Load data from any CMS, APIs, static files, a database, or from multiple places at once. Gridsome combines them all into a simple, centralized <g-link to="/docs/how-it-works">GraphQL data layer</g-link> that pages and components can access.</p>
+        <p>Load data from any Headless CMS, APIs, static files, a database, or from multiple places at once. Gridsome combines them all into a simple, local <g-link to="/docs/how-it-works">GraphQL data layer</g-link> that pages and components can access.</p>
       </Feature>
 
       <Feature>
