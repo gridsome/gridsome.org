@@ -3,6 +3,12 @@
     <div class="homepage-features grid-cols">
 
       <Feature>
+        <h3>Modern development</h3>
+        <p>Enjoy modern dev tools like Vue.js<vue-logo width="28" height="28" />,<br> GraphQL <graph-ql-logo color="#E535AB" width="20" height="20" /> & webpack<webpack-logo width="28" height="28" />. Get instant <strong>hot-reloading</strong> for any data change while developing. Gridsome makes building websites fun again.
+        </p>
+      </Feature>
+
+      <Feature>
         <h3>Bring your own data</h3>
         <p>Load data from any Headless CMS, APIs, static files, a database, or from multiple places at once. Gridsome combines them all into a simple, local <g-link to="/docs/how-it-works">GraphQL data layer</g-link> that pages and components can access.</p>
       </Feature>
@@ -12,6 +18,7 @@
         <p>Gridsome automatically optimizes your website to load and perform fast. You get <strong>code-splitting & progressive image support</strong> built-in to get close to <strong>perfect page speed scores.</strong>
         </p>     
       </Feature>
+
 
       <Feature>
         <h3>PWA-ready</h3>
@@ -31,11 +38,7 @@
         <p>Gridsome sites render as pure HTML before Vue.js is loaded and SPA kicks in. This makes search engines able to crawl content and give <strong>better SEO ranking</strong> because of the blazing fast loading.</p>
       </Feature>
 
-      <Feature>
-        <h3>Modern development</h3>
-        <p>Enjoy modern dev tools like Vue.js<vue-logo width="28" height="28" />,<br> GraphQL <graph-ql-logo color="#E535AB" width="20" height="20" /> & webpack<webpack-logo width="28" height="28" />. Get instant <strong>hot-reloading</strong> for any data change while developing. Gridsome makes building websites fun again.
-        </p>
-      </Feature>
+ 
 
     </div>
     
