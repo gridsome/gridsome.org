@@ -113,8 +113,6 @@
       link: /docs/submit-starter
     - title: Submit to Showcase *
       link: /docs/submit-showcase
-    - title: Test a Pull Request *
-      link: /docs/test-pull-requests
 
 - title: Help
   items:
