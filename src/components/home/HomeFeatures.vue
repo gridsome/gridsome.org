@@ -15,7 +15,7 @@
 
       <Feature>
         <h3>Fast by default</h3>
-        <p>Gridsome automatically optimizes your website to load and perform fast. You get <strong>code-splitting & progressive image support</strong> built-in to get close to <strong>perfect page speed scores.</strong>
+        <p>Gridsome is a modern site generator for building the fastest possible websites. You get <strong>code-splitting & progressive image support</strong> built-in to get close to <strong>perfect page speed scores.</strong>
         </p>     
       </Feature>
 
@@ -35,10 +35,8 @@
 
       <Feature>
         <h3>SEO-friendly SPA</h3>
-        <p>Gridsome sites render as pure HTML before Vue.js is loaded and SPA kicks in. This makes search engines able to crawl content and give <strong>better SEO ranking</strong> because of the blazing fast loading.</p>
+        <p>Gridsome outputs static HTML before it hydrates into a fully <strong>Vue.js-powered SPA</strong>. This makes search engines able to crawl content and give <strong>better SEO ranking</strong> because of the fast loading.</p>
       </Feature>
-
- 
 
     </div>
     
