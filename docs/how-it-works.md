@@ -1,11 +1,14 @@
 # How it works
 
-This article will cover in details how the **Gridsome run commands** works and what's happening under the hood. There are currently two commands for Gridsome:
-
-- `gridsome develop` starts a local  **development server**.
-- `gridsome build` generates **production ready** HTML files.
+Gridsome is a modern website generator that produces static, secure files that can be deployed anywhere, and then hydrates into a fully Vue.js application once loaded.
 
 ![How it works](./images/how-it-works.png)
+
+The two core ways to run Gridsome:
+
+- `gridsome develop` - Starts a **local development server**.
+- `Gridsome build` - Generates **production ready** static files.
+
 
 ## Gridsome develop
 
@@ -20,6 +23,13 @@ The `gridsome develop` command starts a **local development server** with hot-re
 3. **Create GraphQL schema** - Generates the GraphQL schema from node types in store.
 4. **Generate code** - Generates runtime code like routes, plugins etc.
 5. **Bootstrap finish** - Starts the development server and shows the URLs in your console.
+
+### The GraphQL data layer
+The GraphQL data layer is a tool **available in development mode**. This is where all the data in a Gridsome project is located. Add data from any **data sources** with [Source plugins](/plugins) or with the [Data Store API](/docs/data-store-api). Data can be queried in any page or component.
+
+[Learn more about Querying data here](/docs/data-query-data).
+
+
 
 ## Gridsome build
 
@@ -41,11 +51,18 @@ The `gridsome build` command prepares a project for **production**. This means i
 10. **Process images** - Local images are processed and copied to the `dist` folder.
 
 
+### Server-side rendering at build-time.
+Gridsome runs server-side rendering at build-time and serve pages as static HTML. This means you don't need any Node.js server for SSR.
+
+
 > Services like **Netlify** and **Zeit Now** lets you run `gridsome build` automatically from a **Git-repository** and hosts the generated files on a CDN for you. These services also have hooks that enable you to re-build the site after a Git-commit. Learn more about Git-based [deployment here](/docs/deployment).
 
 
-## Vue.js Hydration
+## Vue.js for frontend
 
+Gridsome uses [Vue.js](https://vuejs.org/) as front-end framework. Vue is an approachable, simple & fun framework for building fast interfaces. Vue is famous for its intuitive design and shallow learning curve. This means it's easy to train staff in, even non-frontend devs and designers. Since developers will be up-and-running with Vue quickly, training costs will be kept to a minimum.
+
+### Client-side Hydration
 The `gridsome build` command generates **SEO-friendly HTML files** that can be hosted anywhere. These HTML files are optimized to load as fast as possible. After the HTML is loaded **Vue.js** takes over the HTML and **hydrates** into a fully **Vue-powered SPA**.
 
 >  Hydration refers to the client-side process during which Vue takes over the static HTML sent by the server and turns it into dynamic DOM that can react to client-side data changes.
@@ -61,3 +78,22 @@ chainWebpack (config) {
   config.mode('development')
 }
 ```
+
+### Automatic page pre-fetching
+Gridsome pre-fetches next pages so browsing around goes fast. It uses the built-in `<g-link>` component to lazy-load prefetching when the link is in view. [Learn more here](/docs/linking).
+
+
+### Progressive Image support
+Gridsome has a built-in `<g-image>` component with built-in **progressive image support**. In development it let you to live image processing like resizing and cropping. 
+
+[Learn more here](/docs/images)
+
+
+## Alternatives
+
+-    **[VuePress.](https://vuepress.vuejs.org/)** Another static site generator for Vue.js. It uses local markdown files for content and is perfect for documentation sites. It is possible to build anything in VuePress and Markdown (Like a blog f.ex).
+
+-    **[Nuxt.](https://nuxtjs.org/)** A Universal Vue.js Framework for server-side rendered (SSR) apps and websites. It also has a static site generator feature, but the main focus is SSR.
+
+-	**[Gatsby.js](https://www.gatsbyjs.org/)**  Gridsome is highly inspired by Gatsby.js (React.js based), which collects data sources and generates a static site from it. Gridsome is an alternative for Gatsby.js.
+
