@@ -122,5 +122,7 @@
     link: /docs/how-to-upgrade
   - title: Troubleshooting
     link: /docs/troubleshooting
+  - title: Dev tools
+    link: /docs/dev-tools
   - title: FAQ
     link: /docs/faq
