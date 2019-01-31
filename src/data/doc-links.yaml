@@ -10,13 +10,6 @@
       link: /docs/starters
     - title: Deployment
       link: /docs/deployment
-    - title: How to contribute
-      link: /docs/contribute
-    - title: Dev tools
-      link: /docs/dev-tools
-    - title: FAQ
-      link: /docs/faq
-
 
 - title : Basic Gridsome
   items:
@@ -110,3 +103,24 @@
     - title: Amazon S3
       link: /docs/deploy-to-amazon-s3
 
+- title: Contribute
+  items:
+    - title: How to contribute
+      link: /docs/contribute
+    - title: Create a plugin *
+      link: /docs/create-a-plugin
+    - title: Submit a starter *
+      link: /docs/submit-starter
+    - title: Submit to Showcase *
+      link: /docs/submit-showcase
+    - title: Test a Pull Request *
+      link: /docs/test-pull-requests
+
+- title: Help
+  items:
+  - title: How to upgrade
+    link: /docs/how-to-upgrade
+  - title: Troubleshooting
+    link: /docs/troubleshooting
+  - title: FAQ
+    link: /docs/faq

@@ -51,13 +51,3 @@ The `gridsome build` command generates **SEO-friendly HTML files** that can be h
 >  Hydration refers to the client-side process during which Vue takes over the static HTML sent by the server and turns it into dynamic DOM that can react to client-side data changes.
 
 [Learn more about Vue.js and Client Side hydration](https://ssr.vuejs.org/guide/hydration.html)
-
-#### Debugging hydration errors
-
-Vue fails silently in production mode and doesn't give a warning about where hydration failed. Set `mode` to `development` in `chainWebpack` to activate warnings:
-
-```js
-chainWebpack (config) {
-  config.mode('development')
-}
-```

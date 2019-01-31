@@ -1,11 +1,5 @@
 # FAQ
 
-### How to update Gridsome to the latest version
-Follow **one** of these steps to update
-
-- With **yarn** run `yarn upgrade gridsome --latest`
-- With **npm** run `npm install gridsome@latest`
-
 
 ### What kind of websites can I build with Gridsome?
 Gridsome is a static site generator by heart, but since its using Vue.js for frontend means you can add any dynamic content on top of the static content. This makes it possible to build any kind of CDN-ready websites and serverless apps with it.
