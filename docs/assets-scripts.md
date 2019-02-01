@@ -131,8 +131,8 @@ Same way you can use any external library that causes issue in server side rende
     name: 'Index',
     mounted() {
       //require our external library and load it in window
-      window.owl = require(owl-carousel');
-      widows.$ = require(jquery);
+      window.owl = require('owl-carousel');
+      widows.$ = require('jquery');
 
       // This works now
       $('.some-carousel').owlCarousel();
