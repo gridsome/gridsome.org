@@ -72,7 +72,7 @@ The `gridsome build` command generates **SEO-friendly HTML files** that can be h
 ### Automatic link prefetching
 Gridsome prefetches internal links in the background so browsing around goes insanely fast. It uses the built-in `<g-link>` component and **Intersection Observer** to prefetch when the link is in view. 
 
-Gridsome builds two files of every page. A static HTML and a small JavaScript file. When website hydrates into a Vue.js, the link prefetching only loads the JavaScript to render next page. This results in a faster browsing experience.
+Gridsome builds two files of every page. A static HTML and a small JavaScript file. When website hydrates into a Vue.js-SPA, the link prefetching only loads the JavaScript to render next page. This results in a faster and smooth browsing experience.
 
 [Learn more about **g-link** here](/docs/linking).
 
