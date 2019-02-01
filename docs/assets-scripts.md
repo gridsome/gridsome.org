@@ -1,7 +1,10 @@
+# Add External Scripts
+It is really easy to use any external javascript with gridsome. Being a Vue based framework any method of importing external scripts in vue works out of the box with Gridsome
+
 ## Defining external depedencies Globally
 
 ### Using an external Vue Plugin 
-It is really easy to use any external vue plugin with gridsome. Just import the required plugin and pass the required plugin to Vue using the following function `Vue.use` inside your main.js file
+To use any external vue plugin with gridsome. Just import the required plugin and pass the required plugin to Vue using the following function `Vue.use` inside your main.js file
 
 Example:
 ```javascript
