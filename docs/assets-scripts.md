@@ -123,7 +123,7 @@ Example:
 ```
 
 # Using external script with Gridsome that does not support Server Side Rendering
-While `gridsome build` gridsome uses server side rendering to create a fully rendererd page. So if your vue component does not support SSR or your external library like `jquery` changes the dom element it won't be rendered properly. For these type of component we suggest you to bind the component inside <ClientOnly></ClientOnly> tag and import library inside vue's `mounted()` function.
+While `gridsome build` gridsome uses server side rendering to create a fully rendererd page. So if your vue component does not support SSR or your external library like `jquery` changes the dom element it won't be rendered properly. For these type of component we suggest you to bind the component inside `<ClientOnly></ClientOnly>` tag and import library inside vue's `mounted()` function.
 For Example to use `Vue-carousel` that does not yet support SSR you can do the following
 ```javascript
 <template>
