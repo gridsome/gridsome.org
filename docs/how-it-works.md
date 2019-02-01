@@ -1,10 +1,10 @@
 # How it works
 
-Gridsome is a modern website generator that produces static, secure files that can be deployed anywhere, and then hydrates into a fully Vue.js application once loaded.
+Gridsome is a modern, website development framework that generates static, secure files that can be deployed anywhere. The static HTML files are SEO-friendly and hydrates website into a <strong>Vue.js-powered SPA</strong> once loaded.
 
 ![How it works](./images/how-it-works.png)
 
-The two core ways to run Gridsome:
+There are two ways to run Gridsome:
 
 - `gridsome develop` - Starts a **local development server**.
 - `Gridsome build` - Generates **production ready** static files.
@@ -16,7 +16,7 @@ The `gridsome develop` command starts a **local development server** with hot-re
 
 ![Gridsome develop](./images/gridsome-develop.gif)
 
-**This is whats happening under the hood when running `gridsome develop` command:**
+**This is what's happening under the hood when running `gridsome develop` command:**
 
 1. **Initialize** - Reads project configuration and initializing installed plugins etc.
 2. **Load sources** - Source plugins fetch their data and update the internal store.
@@ -28,7 +28,6 @@ The `gridsome develop` command starts a **local development server** with hot-re
 The GraphQL data layer is a tool **available in development mode**. This is where all the data in a Gridsome project is located. Add data from any **data sources** with [Source plugins](/plugins) or with the [Data Store API](/docs/data-store-api). Data can be queried in any page or component.
 
 [Learn more about Querying data here](/docs/data-query-data).
-
 
 
 ## Gridsome build
@@ -51,16 +50,16 @@ The `gridsome build` command prepares a project for **production**. This means i
 10. **Process images** - Local images are processed and copied to the `dist` folder.
 
 
-### Server-side rendering at build-time.
-Gridsome runs server-side rendering at build-time and serve pages as static HTML. This means you don't need any Node.js server for SSR.
-
-
 > Services like **Netlify** and **Zeit Now** lets you run `gridsome build` automatically from a **Git-repository** and hosts the generated files on a CDN for you. These services also have hooks that enable you to re-build the site after a Git-commit. Learn more about Git-based [deployment here](/docs/deployment).
+
+### Server-side rendering at build time.
+Gridsome runs server-side rendering at build time. This means you don't need any Node.js server for SSR. All pages are pre-rendered and generated during build time.
 
 
 ## Vue.js for frontend
 
 Gridsome uses [Vue.js](https://vuejs.org/) as front-end framework. Vue is an approachable, simple & fun framework for building fast interfaces. Vue is famous for its intuitive design and shallow learning curve. This means it's easy to train staff in, even non-frontend devs and designers. Since developers will be up-and-running with Vue quickly, training costs will be kept to a minimum.
+
 
 ### Client-side Hydration
 The `gridsome build` command generates **SEO-friendly HTML files** that can be hosted anywhere. These HTML files are optimized to load as fast as possible. After the HTML is loaded **Vue.js** takes over the HTML and **hydrates** into a fully **Vue-powered SPA**.
@@ -69,24 +68,20 @@ The `gridsome build` command generates **SEO-friendly HTML files** that can be h
 
 [Learn more about Vue.js and Client Side hydration](https://ssr.vuejs.org/guide/hydration.html)
 
-#### Debugging hydration errors
 
-Vue fails silently in production mode and doesn't give a warning about where hydration failed. Set `mode` to `development` in `chainWebpack` to activate warnings:
+### Automatic link prefetching
+Gridsome prefetches internal links in the background so browsing around goes insanely fast. It uses the built-in `<g-link>` component and **Intersection Observer** to prefetch when the link is in view. 
 
-```js
-chainWebpack (config) {
-  config.mode('development')
-}
-```
+Gridsome builds two files of every page. A static HTML and a small JavaScript file. When website hydrates into a Vue.js, the link prefetching only loads the JavaScript to render next page. This results in a faster browsing experience.
 
-### Automatic page pre-fetching
-Gridsome pre-fetches next pages so browsing around goes fast. It uses the built-in `<g-link>` component to lazy-load prefetching when the link is in view. [Learn more here](/docs/linking).
-
+[Learn more about **g-link** here](/docs/linking).
 
 ### Progressive Image support
-Gridsome has a built-in `<g-image>` component with built-in **progressive image support**. In development it let you to live image processing like resizing and cropping. 
+Gridsome has a built-in `<g-image>` component with built-in progressive image support. In **development** it let you do real-time image processing, like resizing and cropping.
 
-[Learn more here](/docs/images)
+In production, the `<g-image>` is served as an ultra-compressed image before the image is lazy-loaded when in view by using **Intersection Observer**.
+
+[Learn more about **g-image** here](/docs/images)
 
 
 ## Alternatives
