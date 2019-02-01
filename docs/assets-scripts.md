@@ -36,7 +36,7 @@ export default function (Vue) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   //Use Moment.Js library inside our project
- Vue.prototype.$moment = moment;
+  Vue.prototype.$moment = moment;
 
 }
 ```
@@ -68,8 +68,11 @@ import moment from 'moment';
 export default function (Vue) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
+  
   //Use Moment.Js library inside our project
-Object.defineProperty(Vue.prototype, '$moment', { value: moment });
+  Object.defineProperty(Vue.prototype, '$moment', {
+    value: moment
+  });
 }
 ```
 
@@ -80,18 +83,20 @@ If you want to use external Vue plugins inside your component without defining i
 
 Example:
 ```javascript
-\\MyComponet.vue
+//MyComponet.vue
 
 <script>
-import { Carousel, Slide } from 'vue-carousel'
-export default { 
-  data () { 
-    return { /* data properties here */ }
-  }, 
-  components: {
-    Carousel,Slide
+  import {Carousel,Slide} from 'vue-carousel'
+  
+  export default {
+    data() {
+      return { /* data properties here */ }
+    },
+    components: {
+      Carousel,
+      Slide
+    }
   }
-}
 </script>
 ```
 
@@ -100,19 +105,20 @@ If you want to use a external javascript library inside your component you can d
 
 Example:
 ```javascript
-\\MyComponet.vue
+//MyComponet.vue
 
 <script>
-import moment from 'moment';
-export default { 
-  data () { 
-    return { /* data properties here */ }
-  }, 
-  mounted() {
-    moment = require('moment')
-    console.log('The time is ' . moment().format("HH:mm"));
+  import moment from 'moment';
+  
+  export default {
+    data() {
+      return { /* data properties here */ }
+    },
+    mounted() {
+      moment = require('moment')
+      console.log('The time is '.moment().format("HH:mm"));
+    }
   }
-}
 </script>
 ```
 
@@ -122,32 +128,33 @@ For Example to use `Vue-carousel` that does not yet support SSR you can do the f
 ```javascript
 <template>
   <Layout>
-   <ClientOnly>
-          <carousel :perPage="1">
-            <slide>
-            Hello World
-            </slide>
-            <slide>
-            Gridsome is awesome
-            </slide>
-          </carousel>
-        </ClientOnly>
-   </Layout>
-</template> 
+    <ClientOnly>
+      <carousel :perPage="1">
+        <slide>
+          Hello World
+        </slide>
+        <slide>
+          Gridsome is awesome
+        </slide>
+      </carousel>
+    </ClientOnly>
+  </Layout>
+</template>
+
 <script>
-export default{
-name: 'Index',
-components: {
-    Carousel: () =>
-      import('vue-carousel')
+  export default {
+    name: 'Index',
+    components: {
+      Carousel: () =>
+        import ('vue-carousel')
         .then(m => m.Carousel)
         .catch(),
-    Slide: () =>
-      import('vue-carousel')
+      Slide: () =>
+        import ('vue-carousel')
         .then(m => m.Slide)
         .catch()
-  },
-}
+    },
+  }
 </script>
 ```
 This will stop SSR from rendering the component, and component is displayed after the vue components are mounted.
@@ -156,24 +163,24 @@ Same way you can use any external library that causes issue in server side rende
 ```javascript
 <template>
   <Layout>
-  <div class="landing-page">
-  </div>
+    <div class="landing-page">
+    </div>
   </Layout>
 </template>
 
 <script>
   // import $ from 'jquery'; //import it inside main.js
-
+  
   export default {
     name: 'Index',
     mounted() {
       //require our external library and load it in window
       window.owl = require('owl-carousel');
       widows.$ = require('jquery');
-
+  
       // This works now
       $('.some-carousel').owlCarousel();
-
+  
     }
   }
 </script>
