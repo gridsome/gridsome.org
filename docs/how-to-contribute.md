@@ -1,11 +1,10 @@
 
 # How to contribute
-> Gridsome is an open-source project built by core maintainers and contributors. Any contribution is welcome, either it's writing docs, building plugins, or improving Gridsome core.
+> Gridsome is an open-source project built by core maintainers and contributors. We want to make it easy for anyone to contribute to Gridsome. All contribution matters. Write code, improve documentation or write a blog post. It all helps the Gridsome community to grow.
 
 
-### Run Gridsome core locally
-
-This will make it possible to use **local packages** when you run `gridsome develop` to make it easier to work on core, test pull requests or build plugins. Gridsome uses a "monorepo" pattern to manage its many dependencies.
+## Contributing to core
+Gridsome uses a "monorepo" pattern to manage its dependencies and core plugins. Follow this guide to setup Gridsome core:
 
 
 Install [Node.js 8.3](https://nodejs.org/en/download/) or higher and [Yarn](https://yarnpkg.com/lang/en/docs/install/). It's also recommended to install [Lerna](https://www.npmjs.com/package/lerna) globally.
@@ -20,17 +19,8 @@ To use `@gridsome/cli` in the repo as a global command. Enter the `~/packages/cl
 **Yarn** will add dependencies from your test projects to the root `yarn.lock` file. So you should not commit changes in that file unless you have added dependencies to any of the core packages. If you need to commit it, remove your projects from the `~/projects` folder temporary and run `yarn` or `lerna bootstrap` in the root folder. Yarn will then clean up the lock file with only core dependencies. Commit the file and move your projects back and run `yarn` or `lerna bootstrap` again to start developing.
 
 
-### Contributing by creating plugins
-...
-
-
-### Contributing to learn section
-...
-
-
-### Contributing to the documentation
-
-We are a strong believer that documentation is very important for any open source project. Gridsome uses, of course, Gridsome for it's website and documentation. 
+## Contributing to the docs
+We are a strong believer that documentation is very important for any open-source projects. Gridsome uses, of course, Gridsome for it's website and documentation.
 
 
 1. If you want to add/modify any Gridsome documentation, go to the
@@ -38,17 +28,11 @@ We are a strong believer that documentation is very important for any open sourc
    use the file editor to edit and then preview your changes.
 2. GitHub then allows you to commit the change and raise a PR right in the UI. This is the _easiest_ way you can contribute to the project!
 
-If you wrote a new document that was previously a stub, update `/src/data/doc-links.yaml` accordingly by removing the asterisk behind the document's title:
+You can also clone [the Gridsome.org repo](https://github.com/gridsome/gridsome.org) and work locally on documentation. Install it like any other Gridsome project.
 
-```diff:title=/src/data/doc-links.yaml
-  ...
-- - title: Example Document*
-+ - title: Example Document
-    link: /docs/example-document/
-  ...
-```
 
-### Contributing to the blog
+## Contributing to the blog
+Creating guest blog posts for Gridsome.org users is a great way to contribute. A typical blog post could be: **How our company is using Gridsome to do XX**, or **How to integrate XX with Gridsome**.
 
 To add a new blog post to the gridsome.org blog:
 
@@ -65,3 +49,17 @@ To add a new blog post to the gridsome.org blog:
 - Commit and push to your fork
 - Create a pull request from your branch
   - We recommend using a prefix of `docs`, like `docs/your-change`.
+
+
+## Submit a plugin
+...
+
+
+## Submit a Starter
+...
+
+## Submit to Learn
+...
+
+## Submit to Showcase
+...

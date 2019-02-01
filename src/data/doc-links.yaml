@@ -105,14 +105,12 @@
 
 - title: Contribute
   items:
+    - title: Code of conduct
+      link: /docs/code-of-conduct
     - title: How to contribute
-      link: /docs/contribute
-    - title: Create a plugin *
-      link: /docs/create-a-plugin
-    - title: Submit a Starter *
-      link: /docs/submit-starter
-    - title: Submit to Showcase *
-      link: /docs/submit-showcase
+      link: /docs/how-to-contribute
+    - title: How to create a plugin *
+      link: /docs/how-to-create-a-plugin
 
 - title: Help
   items:
