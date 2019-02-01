@@ -1,4 +1,6 @@
-# Using an external Vue Plugin with Gridsome
+### Defining external depedencies Globally
+
+# Using an external Vue Plugin 
 It is really easy to use any external vue plugin with gridsome. Just import the required plugin and pass the required plugin to Vue using the following function `Vue.use` inside your main.js file
 
 Example:
@@ -19,7 +21,7 @@ export default function (Vue) {
 ```
 In this example we are importing `VueTypedJs` plugin inside our gridsome project
 
-# Using an external library with Gridsome
+# Using an external library 
 To use any external library on our gridsome project you may  proxy it to a property of the Vue prototype object. Since all components inherit their methods from the Vue prototype object this will make your external automatically available across any and all components with no global variables or anything to manually import.
 
 Example:
@@ -41,7 +43,7 @@ export default function (Vue) {
 In this example we have imported moment.js library into our project, now you may use the library in any page 
 ```javascript
 export default {
-  created() {
+  mounted() {
     console.log('The time is ' . this.$moment().format("HH:mm"));
   }
 }
@@ -71,7 +73,50 @@ Object.defineProperty(Vue.prototype, '$moment', { value: moment });
 }
 ```
 
-# Using external script with Gridsome that does not support Server Side Rendering
+### Defining external depedencies locally for a component
+
+# Using an external Vue Plugin 
+If you want to use external Vue plugins inside your component without defining it globally you can do so by importing it inside your component and registering it for your component.
+
+Example:
+```javascript
+\\MyComponet.vue
+
+<script>
+import { Carousel, Slide } from 'vue-carousel'
+export default { 
+  data () { 
+    return { /* data properties here */ }
+  }, 
+  components: {
+    Carousel,Slide
+  }
+}
+</script>
+```
+
+# Using an external library 
+If you want to use a external javascript library inside your component you can do so by importing the component and requiring it once vue components are mounted.
+
+Example:
+```javascript
+\\MyComponet.vue
+
+<script>
+import moment from 'moment';
+export default { 
+  data () { 
+    return { /* data properties here */ }
+  }, 
+  mounted() {
+    moment = require('moment')
+    console.log('The time is ' . moment().format("HH:mm"));
+  }
+}
+</script>
+```
+
+### Using external script with Gridsome that does not support Server Side Rendering
 While `gridsome build` gridsome uses server side rendering to create a fully rendererd page. So if your vue component does not support SSR or your external library like `jquery` changes the dom element it won't be rendered properly. For these type of component we suggest you to bind the component inside <ClientOnly></ClientOnly> tag and import library inside vue's `mounted()` function.
 For Example to use `Vue-carousel` that does not yet support SSR you can do the following
 ```javascript
@@ -105,7 +150,7 @@ components: {
 }
 </script>
 ```
-This will stop SSR from rendering the component component and coponent is displayed after the vue components are mounted.
+This will stop SSR from rendering the component, and component is displayed after the vue components are mounted.
 
 Same way you can use any external library that causes issue in server side rendering like `jquery`
 ```javascript
@@ -135,3 +180,4 @@ Same way you can use any external library that causes issue in server side rende
 ```
 
 Note: You should avoid using external library like `jquery` that manupulates the DOM and try using a Vue Plugin insted.
+
