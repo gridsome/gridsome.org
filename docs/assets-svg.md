@@ -23,7 +23,9 @@ Then you can import your SVGs from within your Vue templates like any normal Vue
 <script>
   import Brand from '~/assets/svgs/Brand.svg'
   export default {
-    compoents: Brand
+    components: {
+      Brand
+    }
   }
 </script>
 ```
