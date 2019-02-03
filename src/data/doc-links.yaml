@@ -91,10 +91,6 @@
       link: /docs/data-store-api
     - title: Client API
       link: /docs/client-api
-    - title: Link component
-      link: /docs/link
-    - title: Image component
-      link: /docs/image
     - title: Pagination directive
       link: /docs/pagination
 
