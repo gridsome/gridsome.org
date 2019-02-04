@@ -44,6 +44,8 @@
       link: /docs/head
     - title: body & html attributes
       link: /docs/body-html-attributes
+    - title: Overriding Index.html
+      link: /docs/overriding-index
 
 - title : Working with data
   items:
