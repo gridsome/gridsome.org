@@ -109,4 +109,6 @@
       link: /docs/deploy-to-zeit-now
     - title: Amazon S3
       link: /docs/deploy-to-amazon-s3
+    - title: GitLab Pages
+      link: /docs/deploy-to-gitlab
 
