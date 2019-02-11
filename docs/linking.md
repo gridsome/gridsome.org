@@ -16,7 +16,7 @@ To link to external links you need to use the normal `<a href="https://url">` ta
 To link to #anchor links you need to use the normal `<a href="#anchor">` tag.
 
 
-## Properties
+## Options
 
 ```html
 <!-- Link with string path -->
