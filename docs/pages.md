@@ -21,7 +21,7 @@ Examples:
 - `/src/pages/404.vue` will be 404 the page.
 
 
-A simple `Page.vue` file might look like:
+A simple `Page.vue` file might look like this:
 
 
 ```html
