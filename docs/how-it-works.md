@@ -21,12 +21,12 @@ The `gridsome develop` command starts a **local development server** with hot-re
 1. **Initialize** - Reads project configuration and initializing installed plugins etc.
 2. **Load sources** - Source plugins fetch their data and update the internal store.
 3. **Create GraphQL schema** - Generates the GraphQL schema from node types in store.
-4. **Generate code** - Generates runtime code like routes, plugins etc.
-5. **Bootstrap finish** - Starts the development server and shows the URLs in your console.
+4. **Generate code** - Generates runtime code like routes, plugins etc.lopment server and shows the URLs in your console.
 
-### The GraphQL data layer
-The GraphQL data layer is a tool **available in development mode**. This is where all the data in a Gridsome project is located. Add data from any **data sources** with [Source plugins](/plugins) or with the [Data Store API](/docs/data-store-api). Data can be queried in any page or component.
+### GraphQL for data managment
+**The GraphQL data layer is a tool available in development mode**. This is where all the data fetched into a Gridsome project is stored. Think of it as a local, temporary database that helps you work faster and better with your data. Add data from any **data sources** with [Source plugins](/plugins) or with the [Data store API](/docs/data-store-api). Data can be queried in any page or component.
 
+5. **Bootstrap finish** - Starts the deve
 [Learn more about Querying data here](/docs/data-query-data).
 
 
@@ -52,8 +52,9 @@ The `gridsome build` command prepares a project for **production**. This means i
 
 > Services like **Netlify** and **Zeit Now** lets you run `gridsome build` automatically from a **Git-repository** and hosts the generated files on a CDN for you. These services also have hooks that enable you to re-build the site after a Git-commit. Learn more about Git-based [deployment here](/docs/deployment).
 
-### Server-side rendering at build time.
-Gridsome runs server-side rendering at build time. This means you don't need any Node.js server for SSR. All pages are pre-rendered and generated during build time.
+### Build time server-side rendering
+Gridsome runs server-side rendering at build time. This means you don't need any server like Node.js to run Gridsome sites. They are pre-rendered & static and can be deployed to any static web host or FTP.
+
 
 
 ## Vue.js for frontend
@@ -62,7 +63,7 @@ Gridsome uses [Vue.js](https://vuejs.org/) as front-end framework. Vue is an app
 
 
 ### Client-side Hydration
-The `gridsome build` command generates **SEO-friendly HTML files** that can be hosted anywhere. These HTML files are optimized to load as fast as possible. After the HTML is loaded **Vue.js** takes over the HTML and **hydrates** into a fully **Vue-powered SPA**.
+The `gridsome build` command generates **SEO-friendly HTML files** that can be hosted anywhere. These HTML files are optimized to load as fast as possible. After the HTML is loaded Vue.j takes over the HTML and **hydrates** into a fully Vue-powered SPA.
 
 >  Hydration refers to the client-side process during which Vue takes over the static HTML sent by the server and turns it into dynamic DOM that can react to client-side data changes.
 
