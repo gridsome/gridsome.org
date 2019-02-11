@@ -42,11 +42,11 @@ export default {
 
   & &__input {
     color: #fff;
-    border-radius: 99px;
+    border-radius: 5px;
     width: 170px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.15);
     border-color: transparent;
-    padding: 0.3rem 0.7rem;
+    padding: 0.3rem 0.6rem 0.27rem;
     transition: padding 0.2s, width 0.2s, opacity 0.3s, background-color 0.3s;
     margin-bottom: 0.5px;
 
@@ -54,5 +54,9 @@ export default {
       background-color: rgba(255, 255, 255, 0.1);
     }
   }
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--wrapper {
+  padding-top: 0;
 }
 </style>
