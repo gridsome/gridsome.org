@@ -3,6 +3,7 @@
   font-family: Space Mono,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
   background-color: var(--code-color);
   border-radius: 3px;
+  font-feature-settings: "liga" 0;
 }
 
 #app pre {
