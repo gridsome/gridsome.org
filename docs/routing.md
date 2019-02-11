@@ -58,14 +58,14 @@ module.exports = function (api) {
 
     const contentType = store.addContentType({
       typeName: 'BlogPosts'
-      route: 'blog/:slug'  // add this...
+      route: 'blog/:slug'  // add this for one dynamic route...
     })
 
     for (const item of data) {
       contentType.addNode({
         id: item.id,
         title: item.title
-        path: 'blog/:slug' //... or this
+        path: `blog/${item.slug}` //... or this for a route per item
       })
     }
   })

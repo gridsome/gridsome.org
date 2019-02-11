@@ -46,9 +46,9 @@ A `Blog.vue` file that **list blog posts** might look like this:
 ```html
 <template>
   <Layout>
-    <div v-for="item in $page.posts" :key="item.id">
-      {{item.id}}
-      {{item.title}}
+    <div v-for="edge in $page.posts.edges" :key="edge.node.id">
+      {{ edge.node.id }}
+      {{ edge.node.title }}
     </div>    
   </Layout>
 </template>
