@@ -2,9 +2,9 @@
   <Layout>
     <home-intro />
     <home-features />
+    <home-fast />
     <home-how-it-works />
     <home-tabs />
-    <home-fast />
     <home-blog />
   </Layout>
 </template>
