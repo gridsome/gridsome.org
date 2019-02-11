@@ -22,8 +22,8 @@
   items:
     - title: Directory structure
       link: /docs/directory-structure
-    - title: Basic config
-      link: /docs/basic-config
+    - title: Project config
+      link: /docs/config
     - title: Pages
       link: /docs/pages
     - title: Templates
@@ -86,8 +86,6 @@
   items: 
     - title: Gridsome CLI
       link: /docs/gridsome-cli
-    - title: Config API
-      link: /docs/config
     - title: Server API
       link: /docs/server-api
     - title: Data store API
