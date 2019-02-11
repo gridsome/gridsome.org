@@ -5,7 +5,7 @@ Gridsome can use [vue-meta](https://github.com/declandewet/vue-meta) to modify `
 Global body or head attributes is added in `src/main.js`.
 
 ```js
-export default function (Vue, { head, router, isServer }) {
+export default function (Vue, { head }) {
   // Add attributes to HTML tag
   head.htmlAttrs = { lang: 'en' }
   
