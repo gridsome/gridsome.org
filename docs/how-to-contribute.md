@@ -40,12 +40,12 @@ To add a new blog post to the gridsome.org blog:
 - Run `yarn` to install all of the website's dependencies.
 - Run `gridsome develop` to preview the blog at `http://localhost:8000/blog`.
 - The content for the blog lives in the `/blog` folder. Make additions or modifications here.
-- Add your avatar image to `/docs/blog/avatars`.
-- Add your name to `/docs/blog/author.yaml`.
+- Add your avatar image to `/blog/authors`.
+- Add your name to `/blog/authors/authors.yaml`.
 - Add a new folder following the pattern `/blog/yyyy-mm-dd-title` (for example, 2018-09-14-say-hello-to-gridsome). Within this newly created folder add an `index.md` file.
-- Add `title`, `date`, `author`, and `tags` ([view existing tags](https://www.gridsome.org/blog/tags/) or add a new one) to the frontmatter of your `index.md`. If you are cross posting your post you can add `canonicalLink` for SEO benefits.
+- Add `title`, `date`, `author`, and `tags` to the frontmatter of your `index.md`. If you are cross posting your post you can add `canonicalLink` for SEO benefits.
 - If your blog post contains images add them to your blog post folder and reference them in your post's `index.md`.
-- Ensure any links to **gridsome.org pages** are relative links - `/docs/how-to-contribute` instead of `https://gridsome.org/docs/contribute`
+- Ensure any links to **gridsome.org pages** are relative links - `/docs/how-to-contribute` instead of `https://gridsome.org/docs/how-to-contribute`
 - Commit and push to your fork
 - Create a pull request from your branch
   - We recommend using a prefix of `docs`, like `docs/your-change`.
