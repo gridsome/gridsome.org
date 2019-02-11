@@ -26,7 +26,7 @@ We are a strong believer that documentation is very important for any open-sourc
 1. If you want to add/modify any Gridsome documentation, go to the
    [docs folder on GitHub](https://github.com/gridsome/gridsome.org/tree/master/docs) and
    use the file editor to edit and then preview your changes.
-2. GitHub then allows you to commit the change and raise a PR right in the UI. This is the _easiest_ way you can contribute to the project!
+2. GitHub then allows you to commit the change and raise a PR right in the UI. This is the _easiest_ way you can contribute to Gridsome!
 
 You can also clone [the Gridsome.org repo](https://github.com/gridsome/gridsome.org) and work locally on documentation. Install it like any other Gridsome project.
 
@@ -52,13 +52,16 @@ To add a new blog post to the gridsome.org blog:
 
 
 ## Submit a plugin *
-...coming soon
+
+*Comming soon...*
 
 ## Submit a Starter *
-...coming soon
+
+*Comming soon...*
 
 ## Submit to Learn *
-...coming soon
+
+*Comming soon...*
 
 ## Submit to Showcase *
-...coming soon
+*Comming soon...*
