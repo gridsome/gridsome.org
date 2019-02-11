@@ -34,12 +34,12 @@
       link: /docs/routing
     - title: Components
       link: /docs/components
+    - title: Plugins
+      link: /docs/plugins
     - title: Linking
       link: /docs/linking
     - title: Images
       link: /docs/images
-    - title: Plugins
-      link: /docs/plugins
     - title: Populating <head>
       link: /docs/head
     - title: body & html attributes
@@ -49,6 +49,8 @@
   items: 
     - title: Querying data
       link: /docs/data-query-data
+    - title: Paginate queries
+      link: /docs/pagination
     - title: Use a data source plugin
       link: /docs/data-source-plugin
     - title: Add data from anywhere *
@@ -57,6 +59,7 @@
       link: /docs/data-paginate-queries
     - title: Add dynamic data *
       link: /docs/data-dynamic
+
 
 - title : Styles and Assets
   items: 
@@ -91,12 +94,6 @@
       link: /docs/data-store-api
     - title: Client API
       link: /docs/client-api
-    - title: Link component
-      link: /docs/link
-    - title: Image component
-      link: /docs/image
-    - title: Pagination directive
-      link: /docs/pagination
 
 
 - title: Deploy
