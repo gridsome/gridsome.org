@@ -1,5 +1,5 @@
 # Querying data
-You can query data into any **Page, Template or Component** from the **GraphQL data layer**. Queries are added with a `<page-query>` or `<static-query>` block in Vue Components.
+You can query fetched data into any **Page, Template or Component**. Queries are added with a `<page-query>` or `<static-query>` block in Vue Components.
 
 - Use `<page-query>` in **Pages & Templates**.
 - Use `<static-query>` in **Components**.
