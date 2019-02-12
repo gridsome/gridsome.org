@@ -1,6 +1,8 @@
 # Fetching data
 Fetch content from local files or external APIs and store the data in a local database. A unified GraphQL Data layer lets you extract only the data you need from the database and use it in your Vue.js components.
 
+![Fetching data](./images/fetching-data.png)
+
 
 ## Use data source plugins
 Gridsome data source plugins are added in `gridsome.config.js`. You can find available data source plugins in the [Plugins directory](/plugins).
