@@ -24,6 +24,8 @@
       link: /docs/directory-structure
     - title: Project config
       link: /docs/config
+    - title: Environment variables
+      link: /docs/environment-variables
     - title: Pages
       link: /docs/pages
     - title: Templates
@@ -49,8 +51,12 @@
   items: 
     - title: Querying data
       link: /docs/data-query-data
+    - title: Filtering data
+      link: /docs/data-filter
     - title: Paginate queries
       link: /docs/pagination
+    - title: Taxonomy pages
+      link: /docs/taxonomies
     - title: Use a data source plugin
       link: /docs/data-source-plugin
     - title: Add data from anywhere *

@@ -23,7 +23,11 @@ query BlogPost ($path: String!) {
     date (format: "D. MMMM YYYY")
     timeToRead
     content
-    author
+    author {
+      id
+      title
+      path
+    }
     excerpt
   }
 }

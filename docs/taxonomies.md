@@ -1,0 +1,5 @@
+# Taxonomies
+
+## Creating taxonomy pages
+
+...

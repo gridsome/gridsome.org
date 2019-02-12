@@ -35,7 +35,11 @@ query BlogPosts {
         date (format: "D. MMMM YYYY")
         timeToRead
         content
-        author
+        author {
+          id
+          title
+          path
+        }
         excerpt
       }
     }

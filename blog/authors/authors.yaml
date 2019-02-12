@@ -1,4 +1,11 @@
-- id: Tommy Vedvik
-  bio: Co-founder of @gridsome.
+- id: tommyvedvik
+  name: Tommy Vedvik
+  bio: Co-founder of @gridsome
   avatar: ./tommyvedvik.jpg
   twitter: "@tommyvedvik"
+
+- id: hjvedvik
+  name: Hans-Jørgen Vedvik
+  bio: Co-founder of @gridsome
+  avatar: ./hjvedvik.jpg
+  twitter: "@hjvedvik"

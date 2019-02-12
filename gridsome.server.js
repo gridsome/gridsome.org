@@ -1,4 +1,7 @@
+const path = require('path')
+const fs = require('fs-extra')
 const execa = require('execa')
+const yaml = require('js-yaml')
 
 module.exports = function (api) {
   api.loadSource(async store => {
@@ -12,5 +15,18 @@ module.exports = function (api) {
     }
 
     store.addMetaData('gridsomeVersion', gridsomeVersion)
+
+    // authors
+    const authorsPath = path.join(__dirname, 'blog/authors/authors.yaml')
+    const authorsRaw = await fs.readFile(authorsPath, 'utf8')
+    const authorsJson = yaml.safeLoad(authorsRaw)
+    const authors = store.addContentType({
+      typeName: 'Author',
+      route: '/author/:id'
+    })
+
+    authorsJson.forEach(({ id, name: title, ...fields }) => {
+      authors.addNode({ id, title, fields })
+    })
   })
 }

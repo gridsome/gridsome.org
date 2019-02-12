@@ -1,7 +1,7 @@
 <template>
   <Card class="blog-posts__post">
     <h3 v-html="post.title"/>
-    <PostMeta :post="post"/>
+    <PostMeta class="post" :post="post"/>
     <p v-html="post.excerpt"/>
     <g-link class="blog-posts__post-link" :to="post.path">
       Read more
