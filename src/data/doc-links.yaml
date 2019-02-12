@@ -55,8 +55,6 @@
       link: /docs/data-source-plugin
     - title: Add data from anywhere *
       link: /docs/data-custom
-    - title: Paginate queries
-      link: /docs/data-paginate-queries
     - title: Add dynamic data *
       link: /docs/data-dynamic
 
