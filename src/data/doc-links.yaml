@@ -48,21 +48,17 @@
       link: /docs/body-html-attributes
 
 - title : Working with data
-  items: 
+  items:
+    - title: Fetching data
+      link: /docs/fetching-data
     - title: Querying data
-      link: /docs/data-query-data
+      link: /docs/querying-data
     - title: Filtering data
-      link: /docs/data-filter
+      link: /docs/filtering-data
     - title: Paginate queries
       link: /docs/pagination
     - title: Taxonomy pages
       link: /docs/taxonomies
-    - title: Use a data source plugin
-      link: /docs/data-source-plugin
-    - title: Add data from anywhere *
-      link: /docs/data-custom
-    - title: Paginate queries
-      link: /docs/data-paginate-queries
     - title: Add dynamic data *
       link: /docs/data-dynamic
 
@@ -81,11 +77,11 @@
 
 - title : Guides
   items: 
-    - title: Add a form
+    - title: Add a form *
       link: /docs/guide-forms
-    - title: Add a search
+    - title: Add a search *
       link: /docs/guide-search
-    - title: Add comments
+    - title: Add comments *
       link: /docs/guide-comments
 
 - title: API Reference

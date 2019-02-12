@@ -24,12 +24,12 @@ The `gridsome develop` command starts a **local development server** with hot-re
 2. **Load sources** - Source plugins fetch their data and update the internal store.
 3. **Create GraphQL schema** - Generates the GraphQL schema from node types in store.
 4. **Generate code** - Generates runtime code like routes, plugins etc.lopment server and shows the URLs in your console.
+5. **Bootstrap finish** - Starts the development server
 
 ### GraphQL for data managment
 **The GraphQL data layer is a tool available in development mode**. This is where all the data fetched into a Gridsome project is stored. Think of it as a local, temporary database that helps you work faster and better with your data. Add data from any **data sources** with [Source plugins](/plugins) or with the [Data store API](/docs/data-store-api). Data can be queried in any page or component.
 
-5. **Bootstrap finish** - Starts the deve
-[Learn more about Querying data here](/docs/data-query-data).
+[Learn more about Querying data here](/docs/querying-data).
 
 
 ## Gridsome build

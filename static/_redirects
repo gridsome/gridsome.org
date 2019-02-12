@@ -2,3 +2,6 @@
 /docs/image /docs/images 301
 /docs/link /docs/linking 301
 /docs/basic-config /docs/config 301
+/docs/data-query-data /docs/querying-data 301
+/docs/data-source-plugin /docs/fetching-data 
+/docs/data-custom /docs/fetching-data 301
