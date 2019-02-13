@@ -84,7 +84,7 @@ query Blog {
 Templates are used for page layout for the "single" endpoint of a data source like for example a WordPress blog post. If you have a node type called `WordPressPost`, then you can create a file
 in `src/templates/WordPressPost.vue`.
 
-The `page-query` in templates also has a set of variables that can be used in the query. Available variables are `$id`, `$title`, `$slug`, `$path`, `$date` and any custom fields from the current `node`. Access values in deep objects or arrays by separating properties or indexes with double underscores (`__`).
+The `page-query` in templates also has a set of variables that can be used in the query. Available variables are `$id`, `$title`, `$slug`, `$path`, `$date` and any custom fields from the current `node`. Access field values in deep objects or arrays by separating properties or indexes with double underscores (`__`).
 
 - `$id` resolves to `node.id`
 - `$value` resolves to `node.fields.value`
