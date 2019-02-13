@@ -2,6 +2,8 @@
 
 Sometimes you want configuration values that are different from what you want in the production build. Gridsome utilizes the [dotenv](https://www.npmjs.com/package/dotenv) package to make this easy. Create a file called `.env` at the root of your project.
 
+If you want different variables for your local development, then create a file named `.env.development`. Similarly, you can create a file with the name `.env.production` to have variables only for the production build. Although production variables are usually added by the hosting providers. The default `.env` file will only be loaded if no `dotenv` file exists for the current environment.
+
 ```ini
 GRIDSOME_API_URL=https://api.example.com
 DB_USER=root
@@ -43,5 +45,3 @@ export default {
   }
 }
 ```
-
-## Development variables
