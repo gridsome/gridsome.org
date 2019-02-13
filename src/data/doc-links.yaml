@@ -22,8 +22,8 @@
   items:
     - title: Directory structure
       link: /docs/directory-structure
-    - title: Basic config
-      link: /docs/basic-config
+    - title: Project config
+      link: /docs/config
     - title: Pages
       link: /docs/pages
     - title: Templates
@@ -34,12 +34,12 @@
       link: /docs/routing
     - title: Components
       link: /docs/components
+    - title: Plugins
+      link: /docs/plugins
     - title: Linking
       link: /docs/linking
     - title: Images
       link: /docs/images
-    - title: Plugins
-      link: /docs/plugins
     - title: Populating <head>
       link: /docs/head
     - title: body & html attributes
@@ -49,16 +49,17 @@
 
 - title : Working with data
   items:
+    - title: Fetching data
+      link: /docs/fetching-data
     - title: Querying data
-      link: /docs/data-query-data
-    - title: Use a data source plugin
-      link: /docs/data-source-plugin
-    - title: Add data from anywhere *
-      link: /docs/data-custom
+      link: /docs/querying-data
     - title: Paginate queries
-      link: /docs/data-paginate-queries
-    - title: Add dynamic data *
+      link: /docs/pagination
+    - title: Add global meta data
+      link: /docs/site-meta-data
+    - title: Use dynamic data *
       link: /docs/data-dynamic
+
 
 - title : Styles and Assets
   items:
@@ -73,32 +74,24 @@
 
 
 - title : Guides
-  items:
-    - title: Add a form
+  items: 
+    - title: Add a form *
       link: /docs/guide-forms
-    - title: Add a search
+    - title: Add a search *
       link: /docs/guide-search
-    - title: Add comments
+    - title: Add comments *
       link: /docs/guide-comments
 
 - title: API Reference
   items:
     - title: Gridsome CLI
       link: /docs/gridsome-cli
-    - title: Config API
-      link: /docs/config
     - title: Server API
       link: /docs/server-api
     - title: Data store API
       link: /docs/data-store-api
     - title: Client API
       link: /docs/client-api
-    - title: Link component
-      link: /docs/link
-    - title: Image component
-      link: /docs/image
-    - title: Pagination directive
-      link: /docs/pagination
 
 
 - title: Deploy
@@ -111,3 +104,5 @@
       link: /docs/deploy-to-zeit-now
     - title: Amazon S3
       link: /docs/deploy-to-amazon-s3
+    - title: GitLab Pages
+      link: /docs/deploy-to-gitlab

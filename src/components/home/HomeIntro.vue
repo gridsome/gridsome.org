@@ -4,7 +4,7 @@
       <div class="home-cols__left">    
         <h1 class="home-title"> 
             Build <br class="show-for-small" />
-            <VueTyper :text="words" type-delay="30" caret-animation="smooth" />
+            <VueTyper :text="words" :type-delay="30" caret-animation="smooth" />
             <br /> websites & apps
             <br /> with Vue.js
         </h1>
@@ -123,7 +123,7 @@ export default {
 
 .home-title {
   line-height: 1.3;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
 
   @media (max-width: 600px) {
     padding-top: 2rem;
