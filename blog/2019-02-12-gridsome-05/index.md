@@ -8,7 +8,7 @@ excerpt: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt a, 
 
 Each content type collection in the GraphQL schema has a new `filter` argument which ca be used to filter the results. You can filter by `id`, `title`, `slug`, `path` or any custom field.
 
-Read more about [Filtering data](/docs/data-filter)
+Read more about [Filtering data](/docs/filtering-data)
 
 ## Create taxonomy pages
 
