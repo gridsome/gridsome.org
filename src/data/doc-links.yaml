@@ -22,7 +22,7 @@
   items:
     - title: Directory structure
       link: /docs/directory-structure
-    - title: Project config
+    - title: Project configuration
       link: /docs/config
     - title: Environment variables
       link: /docs/environment-variables

@@ -1,4 +1,4 @@
-# Project config
+# Project configuration
 
 Gridsome requires `/gridsome.config.js` to work. Plugin and project settings are located here. A basic configuration file would look something like this:
 
