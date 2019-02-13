@@ -44,6 +44,13 @@ subdirectory called `my-app`.
 Set a template for the title tag. The `%s` placeholder is replaced with title
 from metaInfo you set in your pages.
 
+## plugins
+
+- Type `Array`
+- Default `[]`
+
+[Read more about using plugins](/docs/install-plugins)
+
 ## icon
 
 - Type `string | Object`
@@ -97,13 +104,13 @@ Define custom sizes and disable effects on iOS < 7 devices:
 A function that will receive an instance of ChainableConfig powered by
 [webpack-chain](https://github.com/neutrinojs/webpack-chain).
 
-## plugins
+## configureServer
 
-- Type `Array`
-- Default `[]`
+- Type `Function`
 
-[Read more about using plugins](/docs/install-plugins)
+Configure the development server.
 
+[Read more about configuring the development server](/docs/server-api#apiconfigureserverfn)
 
 ## host
 

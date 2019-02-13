@@ -62,6 +62,22 @@ api.chainWebpack(config => {
 })
 ```
 
+## api.configureServer(fn)
+
+Gridsome runs an [Express](http://expressjs.com) server during development. Use this hook to add custom endpoints or configure the server.
+
+#### Usage
+
+```js
+api.configureServer(app => {
+  app.get('/my-endpoint', (req, res) => {
+    res.send('Hello, world!')
+  })
+})
+```
+
+Read more about the [Express Application API](https://expressjs.com/en/api.html#app)
+
 ## api.createSchema(fn)
 
 Create a custom GraphQL schema which will be merged with the Gridsome schema.
