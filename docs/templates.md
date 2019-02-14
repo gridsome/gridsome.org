@@ -58,5 +58,5 @@ The `<Layout>` component is an optional component used to **wrap pages and templ
 
 ### More...
 
+- [Query data in Templates](/docs/querying-data#query-data-in-templates)
 - [Add head metadata to Templates](/docs/head#add-head-meta-data-to-pages--templates)
-- [Query data in Templates](/docs/querying-data)

@@ -59,9 +59,10 @@
       link: /docs/pagination
     - title: Taxonomy pages
       link: /docs/taxonomies
+    - title: Add global meta data
+      link: /docs/site-meta-data
     - title: Add dynamic data *
       link: /docs/data-dynamic
-
 
 - title : Styles and Assets
   items: 
