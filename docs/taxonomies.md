@@ -20,4 +20,4 @@ query Tag ($id: String!) {
 }
 ```
 
-The `belongsTo.edges` field are always a union field type which can be any node type.
+The `belongsTo.edges` field is always a union field type which can be any node type.

@@ -31,14 +31,25 @@
             <span>Edit this page on GitHub</span>
           </a>
         </p>
+        <nav class="docs-nav">
+          <div class="docs-nav__previous">
+            <g-link v-if="previousPage" class="docs-nav__link" :to="previousPage.link">
+              {{ previousPage.title }}
+            </g-link>
+          </div>
+          <div class="docs-nav__next">
+            <g-link v-if="nextPage" class="docs-nav__link" :to="nextPage.link">
+              {{ nextPage.title }}
+            </g-link>
+          </div>
+        </nav>
       </Section>
-
     </div>
   </Layout>
 </template>
 
 <script>
-import Github from '@/assets/images/github-logo.svg'
+import Github from '~/assets/images/github-logo.svg'
 
 export default {
   components: {
@@ -56,6 +67,18 @@ export default {
       let path = this.currentPath
       if((path.match(new RegExp("/", "g")) || []).length == 1) path = path + '/README'
       return `https://github.com/gridsome/gridsome.org/blob/master${path}.md`
+    },
+    items () {
+      return this.links.reduce((acc, group) => (acc.push(...group.items), acc), [])
+    },
+    currentIndex () {
+      return this.items.findIndex(item => item.link === this.$route.path)
+    },
+    nextPage () {
+      return this.items[this.currentIndex + 1]
+    },
+    previousPage () {
+      return this.items[this.currentIndex - 1]
     }
   }
 }
@@ -149,7 +172,6 @@ export default {
   font-weight: normal;
   display: flex;
   align-items: center;
-  border-top: 1px solid var(--border-color);
   padding-top: 1rem;
   
   &:not(:hover) {
@@ -158,6 +180,24 @@ export default {
 
   svg {
     margin-right: .5rem;
+  }
+}
+
+.docs-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: var(--space);
+  padding-bottom: var(--space);
+  border-top: 1px solid var(--border-color);
+
+  &__title {
+    margin: 0;
+    font-size: 0.75em;
+  }
+
+  &__link {
+    padding: 0;
+    color: var(--primary-link-color);
   }
 }
 </style>

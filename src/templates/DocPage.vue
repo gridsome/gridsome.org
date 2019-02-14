@@ -28,7 +28,7 @@ export default {
   computed: {
     links () {
       return links
-    },
+    }
   },
   metaInfo () {
     const { title, headings } = this.$page.doc
