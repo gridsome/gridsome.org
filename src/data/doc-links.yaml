@@ -55,10 +55,10 @@
       link: /docs/querying-data
     - title: Filtering data
       link: /docs/filtering-data
-    - title: Paginate queries
-      link: /docs/pagination
     - title: Taxonomy pages
       link: /docs/taxonomies
+    - title: Paginated data
+      link: /docs/pagination
     - title: Add global meta data
       link: /docs/site-meta-data
     - title: Add dynamic data *
