@@ -19,7 +19,6 @@ This can for example be used to:
 - List blog posts for an author.
 - List posts for a tag or category.
 
-
 Read more about [Taxonomies](/docs/taxonomies)
 
 ## Variables in Page Query
@@ -45,6 +44,13 @@ Read more about [Environment Variables](/docs/environment-variables)
 - Hook for configurating the development server. [Read more](/docs/server-api#apiconfigureserverfn).
 - Customize default `index.html` template (by [K3TH3R](https://github.com/K3TH3R)).
 - Add custom CSS loader options (by [maoberlehner](https://github.com/maoberlehner)).
+
+## Breaking changes 😅
+
+There are no breaking API changes, but some changes might have consequences:
+
+- External image URLs has previously been converted to objects. Which required you to get the actual URL in a `imageField.src` property. But those fields are no longer converted to objects.
+- Filepaths in front matter or markdown must be absolute or start with `./` or `../` to be resolved and processed. Meaning `image.png` will not be processed, but `./image.png` will be.
 
 ## What's next
 
