@@ -35,25 +35,25 @@ Read more about [Query data in templates](/docs/querying-data#query-data-in-temp
 
 ## Environment variables
 
-Sometimes you want configuration values that are different from what you want in the production build. Gridsome now utilizes the [dotenv](https://www.npmjs.com/package/dotenv) package to make this easy. Special thanks to [isoppp](https://twitter.com/isopppcom) for implementing this feature 😄
+Sometimes you want configuration values that are different from what you have in the production build. Gridsome now utilizes the [dotenv](https://www.npmjs.com/package/dotenv) package to make this easy. Special thanks to [isoppp](https://twitter.com/isopppcom) for implementing this feature 😄
 
 Read more about [Environment Variables](/docs/environment-variables)
 
 ## Other features and fixes
 
-- Updated to [Vue 2.6](https://medium.com/the-vue-point/vue-2-6-released-66aa6c8e785e)
-- Hook for configurating the development server. [Read more](/docs/server-api#apiconfigureserverfn)
-- Cusomize default `index.html` template (by [K3TH3R](https://github.com/K3TH3R))
-- Add custom CSS loader options (by [maoberlehner](https://github.com/maoberlehner))
-
+- Updated to [Vue 2.6](https://medium.com/the-vue-point/vue-2-6-released-66aa6c8e785e).
+- Hook for configurating the development server. [Read more](/docs/server-api#apiconfigureserverfn).
+- Customize default `index.html` template (by [K3TH3R](https://github.com/K3TH3R)).
+- Add custom CSS loader options (by [maoberlehner](https://github.com/maoberlehner)).
 
 ## What's next
-- Make it possible to use `<g-image>` on external assets.
-- Fix plugin section to load plugins from NPM.
-- Create a starter gallery where anyone can submit a starter.
-- Move gridsome.org repo into core mono-repo for easier contribution.
-- Docs docs docs!
 
+- Download and process external images.
+- Improve the plugins section on [gridsome.org](https://gridsome.org) to include plugins from npm.
+- Move the [gridsome.org](https://gridsome.org) repository into core repository for easier contribution.
+- Create a starter gallery where anyone can submit a starter.
+- Performance optimizations.
+- Docs docs docs!
 
 Thanks for all contributions to documentation, features, bugfixes and plugins so far!
 
