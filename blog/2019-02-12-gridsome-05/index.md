@@ -49,10 +49,9 @@ Read more about [Environment Variables](/docs/environment-variables)
 
 ## What's next
 - Make it possible to use `<g-image>` on external assets.
+- Fix plugin section to load plugins from NPM.
 - Create a starter gallery where anyone can submit a starter.
 - Move gridsome.org repo into core mono-repo for easier contribution.
-- Fix plugin section to load plugins from NPM.
-- Make it easier to contribute to Gridsome with proper docs.
 - Docs docs docs!
 
 
