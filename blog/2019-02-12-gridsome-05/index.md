@@ -47,10 +47,10 @@ Read more about [Environment Variables](/docs/environment-variables)
 
 ## Breaking changes 😅
 
-There are no breaking API changes, but some changes might have consequences:
+There are no breaking API changes, but some changes will get consequences:
 
 - External image URLs has previously been converted to objects. Which required you to get the actual URL in a `imageField.src` property. But those fields are no longer converted to objects.
-- Filepaths in front matter or markdown must be absolute or start with `./` or `../` to be resolved and processed. Meaning `image.png` will not be processed, but `./image.png` will be.
+- Filepaths in front matter or markdown must start with `./` or `../` to be resolved and processed. Which means `image.png` will not be processed, but `./image.png` will be.
 
 ## What's next
 
