@@ -2,15 +2,18 @@
 
 Each content type collection in the GraphQL schema has a `filter` argument which ca be used to filter the results. You can filter by `id`, `title`, `slug`, `path` or any custom field. Each field type supports different operators.
 
+The syntax for `filter` is based on the [mongodb](https://docs.mongodb.com/manual/reference/operator/query/) query syntax.
 
-## String
+## String fields
 
-- **eq** - (Equal) Filter nodes by property of (strict) equality.
-- **ne** - (Not qual) Filter nodes by property not equal to provided value.
-- **in** - (In) Filter nodes by property matching any of the provided values.
-- **nin** - (Not in) Filter nodes by property not matching any of the provided values.
-- **regex** - Filter nodes by property not equal to provided value.
-- **len** - (Length) Filter nodes which have a string property of specified length.
+| Operator | Description |
+|----------|-------------|
+| **eq** *(equal)* | Find nodes with field of (strict) equality.
+| **ne** *(not equal)* | Find nodes with field not equal to provided value.
+| **in** | Find nodes with field matching any of the provided values.
+| **nin** *(not in)* | Find nodes with field not matching any of the provided values.
+| **regex** | Filter nodes with property matching provided regular expression.
+| **len** *(length)* | Filter nodes which have a string field of specified length.
 
 ```graphql
 query {
@@ -23,17 +26,19 @@ query {
   }
 }
 ```
-This example will query nodes where `id` is **1** and **2**.
 
+This example will query nodes where `id` is **1** or **2**.
 
-## Date
+## Date fields
 
-- **gt** - (Greater than) Filter nodes by property greater than provided value.
-- **gte** - (Greater or equal) Filter nodes by property greater or equal to provided value.
-- **lt** - (Less than) Filter nodes by property less than provided value.
-- **lte** - (Less than or equal) Filter nodes by property less than or equal to provided value.
-- **dteq** - (Equal) Filter nodes by date property equal to provided date value.
-- **between** - Filter nodes by property between provided values.
+| Operator | Description |
+|----------|-------------|
+| **gt** *(greater than)* | Find nodes with field greater than provided value.
+| **gte** *(greater or equal)* | Find nodes with field greater or equal to provided value.
+| **lt** *(less than)* | Find nodes with field less than provided value.
+| **lte** *(less than or equal)* | Find nodes with field less than or equal to provided value.
+| **dteq** *(equal dates)* | Filter nodes by date property equal to provided date value.
+| **between** | Find nodes with field value between provided values.
 
 ```graphql
 query {
@@ -46,15 +51,17 @@ query {
   }
 }
 ```
+
 This example will query only nodes where `date` is greater than or equal to **2017**.
 
+## Boolean fields
 
-## Boolean
-
-- **eq** - (Equal) Filter nodes by property of (strict) equality.
-- **ne** - (Not equal) Filter nodes by property not equal to provided value.
-- **in** - (In) Filter nodes by property matching any of the provided values.
-- **nin** - (Not in) Filter nodes by property not matching any of the provided values.
+| Operator | Description |
+|----------|-------------|
+| **eq** *(equal)* | Find nodes with field of (strict) equality.
+| **ne** *(not equal)* | Find nodes with field not equal to provided value.
+| **in** | Find nodes with field matching any of the provided values.
+| **nin** *(not in)* | Find nodes with field not matching any of the provided values.
 
 ```graphql
 query {
@@ -68,20 +75,22 @@ query {
   }
 }
 ```
+
 This example will query only nodes where `featured` is **true**.
 
+## Number fields
 
-## Number
-
-- **eq** - *(Equal)* Filter nodes by property of (strict) equality.
-- **ne** - *(Not equal)* Filter nodes by property not equal to provided value.
-- **in** - *(In)* Filter nodes by property matching any of the provided values.
-- **nin** - *(Not in)* Filter nodes by property not matching any of the provided values.
-- **gt** - *(Greater than)* Filter nodes by property greater than provided value.
-- **gte** - *(Greater or equal)* Filter nodes by property greater or equal to provided value.
-- **lt** - *(Less than)* Filter nodes by property less than provided value.
-- **lte** - *(Less than or equal)* Filter nodes by property less than or equal to provided value.
-- **between** - Filter nodes by property between provided values.
+| Operator | Description |
+|----------|-------------|
+| **eq** *(equal)* | Find nodes with field of (strict) equality.
+| **ne** *(not equal)* | Find nodes with field not equal to provided value.
+| **in** | Find nodes with field matching any of the provided values.
+| **nin** *(not in)* | Find nodes with field not matching any of the provided values.
+| **gt** *(greater than)* | Find nodes with field greater than provided value.
+| **gte** *(greater or equal)* | Find nodes with field greater or equal to provided value.
+| **lt** *(less than)* | Find nodes with field less than provided value.
+| **lte** *(less than or equal)* | Find nodes with field less than or equal to provided value.
+| **between** | Find nodes with field value between provided values.
 
 ```graphql
 query {
@@ -95,24 +104,28 @@ query {
   }
 }
 ```
-This example will query only nodes with `price` value between 49 and 99.
 
-## Lists
+This example will query only nodes with `price` value between **49** and **99**.
 
-- **size** - Filter nodes which have an array property of specified size.
-- **contains** - Filter nodes by property containing the provided value.
-- **containsAny** - Filter nodes by property containing any of the provided values.
-- **containsNone** - Filter nodes by property containing none of the provided values.
+## Array fields
+
+| Operator | Description |
+|----------|-------------|
+| **size** | Filter nodes which have an array property of specified size.
+| **contains** | Find nodes with field containing the provided value.
+| **containsAny** | Find nodes with field containing any of the provided values.
+| **containsNone** | Find nodes with field containing none of the provided values.
 
 ```graphql
 query {
-  allPost (filter: { tags: { contains: ["1"] }}) {
+  allPost (filter: { keywords: { contains: ["gridsome"] }}) {
     edges {
       node {
         title
-        tags
+        keywords
       }
     }
   }
 }
 ```
+This example will query only nodes which has the **gridsome** `keyword`.
