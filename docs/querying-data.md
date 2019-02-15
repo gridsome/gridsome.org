@@ -14,7 +14,7 @@ Every Gridsome project has a **GraphQL explorer (Playground)** that can be used 
 ## How to query with GraphQL
 
 **With GraphQL you only query the data you need.** This makes it easier and more tidy to work with data.
-A query always starts with `query` and then something like `Posts` (This can be anything. It's only for you to understand what you query). Then you write something like `posts: allWordPressPosts`. **This is the important part.** The `allWordPressPosts` is the name of the GraphQL collection you want to query. The `post:` is an alias and is optional. If you add that your query will be added to `$page.posts` or `$static.posts` if you use `<static-query>`. If it's not added and you only use `allWordPressPosts` your post will be added to `$page.allWordPressPosts`.
+A query always starts with `query` and then something like `Posts` (This can be anything. It's only for you to understand what you query). Then you write something like `posts: allWordPressPosts`. **This is the important part.** The `allWordPressPosts` is the name of the GraphQL collection you want to query. The `post:` is an alias and is optional. If you add that your query will be added to `$page.posts` or `$static.posts` if you use `<static-query>`. If it's not added and you only use `allWordPressPosts` your posts will be added to `$page.allWordPressPosts`.
 
 **Working with GraphQL in Gridsome is easy and you don't need to know much about GraphQL.**
 
@@ -54,12 +54,12 @@ The collection can take a few argument:
 
 | Argument | Default | Description |
 |----------|---------|-------------|
-| **sortBy** | `"date"` | Sort by a node field
-| **order** | `DESC` | Sort order (`DESC` or `ASC`)
-| **perPage** | `25` | How many nodes to get
-| **skip** | `0` | How many nodes to skip
-| **page** | `1` | Which page to get
-| **filter** | `{}` | [Read more](/docs/filtering-data)
+| **sortBy** | `"date"` | Sort by a node field.
+| **order** | `DESC` | Sort order (`DESC` or `ASC`).
+| **perPage** | `25` | How many nodes to get.
+| **skip** | `0` | How many nodes to skip.
+| **page** | `1` | Which page to get.
+| **filter** | `{}` | [Read more](/docs/filtering-data).
 
 ## Single entries
 
@@ -67,8 +67,8 @@ The other fields that do not start with `all` are your single entries. They are 
 
 | Argument | Default | Description |
 |----------|---------|-------------|
-| **id** | `null` | Get node by `id`
-| **path** | `null` | Get node by `path`
+| **id** | `null` | Get node by `id`.
+| **path** | `null` | Get node by `path`.
 | **nullable** | `false` | Will return an error if not nullable.
 
 ## Query data in Pages
