@@ -2,8 +2,9 @@
 title: Gridsome v0.5
 author: [hjvedvik, tommyvedvik]
 date: 2019-02-12
-excerpt: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt a, molestias dolorem odio doloribus explicabo sed quisquam nulla eum earum fugit distinctio doloremque repellat, quaerat veniam. Exercitationem sed expedita quasi!"
+excerpt: "We're really exited to release Gridsome 0.5. The biggest update yet. It has many important features that makes data handling easier and a lot more flexible."
 ---
+
 ## Filtering GraphQL data
 
 Each content type collection in the GraphQL schema has a new `filter` argument which ca be used to filter the results. You can filter by `id`, `title`, `slug`, `path` or any custom field.
@@ -13,6 +14,11 @@ Read more about [Filtering data](/docs/filtering-data)
 ## Create taxonomy pages
 
 All references in the the GraphQL schema has been a one way relation. This release introduces a new field called `belongsTo` for all content types. The field will list all nodes that has a reference back to the current node which makes it very useful to create taxonomy pages etc. The field can also take the same arugments as a collection. And the `@paginate` directive can be used to automatcally paginate the results.
+
+This can for example be used to:
+- List blog posts for an author.
+- List posts for a tag or category.
+
 
 Read more about [Taxonomies](/docs/taxonomies)
 
@@ -37,8 +43,18 @@ Read more about [Environment Variables](/docs/environment-variables)
 
 - Updated to [Vue 2.6](https://medium.com/the-vue-point/vue-2-6-released-66aa6c8e785e)
 - Hook for configurating the development server. [Read more](/docs/server-api#apiconfigureserverfn)
-- Cusomize default `inde.html` template (by [K3TH3R](https://github.com/K3TH3R))
+- Cusomize default `index.html` template (by [K3TH3R](https://github.com/K3TH3R))
 - Add custom CSS loader options (by [maoberlehner](https://github.com/maoberlehner))
+
+
+## What's next
+- Make it possible to use `<g-image>` on external assets.
+- Create a starter gallery where anyone can submit a starter.
+- Move gridsome.org repo into core mono-repo for easier contribution.
+- Fix plugin section to load plugins from NPM.
+- Make it easier to contribute to Gridsome with proper docs.
+- Docs docs docs!
+
 
 Thanks for all contributions to documentation, features, bugfixes and plugins so far!
 
