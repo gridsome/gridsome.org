@@ -1,21 +1,22 @@
 # Querying data
+
 You can query fetched data into any **Page, Template or Component**. Queries are added with a `<page-query>` or `<static-query>` block in Vue Components.
 
 - Use `<page-query>` in **Pages & Templates**.
 - Use `<static-query>` in **Components**.
 
-
 ## Explore & test queries
-Every Gridsome project has a **GraphQL explorer (Playground)** that can be used to explore and test queries when in development mode. Here you also get a list of all available GraphQL collections. This can usually be opened by going to http://localhost:8080/___explore.
+
+Every Gridsome project has a **GraphQL explorer (Playground)** that can be used to explore and test queries when in development mode. Here you also get a list of all available GraphQL collections. This can usually be opened by going to `http://localhost:8080/___explore`.
 
 ![graphql-explorer](./images/graphql-explorer.png)
 
 ## How to query with GraphQL
+
 **With GraphQL you only query the data you need.** This makes it easier and more tidy to work with data.
-A query always starts with `query` and then something like `Posts` (This can be anything. It's only for you to understand what you query). Then you write something like `posts: allWordPressPosts`. **This is the important part.** The `allWordPressPosts` is the name of the GraphQL collection you want to query. The `post:` is optional. If you add that your query will be added to `$page.posts` or `$static.posts` if you use `<static-query>`. If it's not added and you only use `allWordPressPosts` your post will be added to `$page.allWordPressPosts`.
+A query always starts with `query` and then something like `Posts` (This can be anything. It's only for you to understand what you query). Then you write something like `posts: allWordPressPosts`. **This is the important part.** The `allWordPressPosts` is the name of the GraphQL collection you want to query. The `post:` is an alias and is optional. If you add that your query will be added to `$page.posts` or `$static.posts` if you use `<static-query>`. If it's not added and you only use `allWordPressPosts` your post will be added to `$page.allWordPressPosts`.
 
-  **Working with GraphQL in Gridsome is easy and you don't need to know much about GraphQL.**
-
+**Working with GraphQL in Gridsome is easy and you don't need to know much about GraphQL.**
 
 Here is an example of a GraphQL query in a Page:
 
@@ -45,10 +46,34 @@ query Posts {
 
 [You can learn more about GraphQL queries here](https://graphql.org/learn/queries/)
 
+## Content type collections
+
+Every content type has a collection and a single entry in the GraphQL schema. You will notice that some of the root fields in your schema are prefixed with `all`. They are the collections for each of your content types and you can use them in your pages to create lists of single entries.
+
+The collection can take a few argument:
+
+| Argument | Default | Description |
+|----------|---------|-------------|
+| **sortBy** | `"date"` | Sort by a node field
+| **order** | `DESC` | Sort order (`DESC` or `ASC`)
+| **perPage** | `25` | How many nodes to get
+| **skip** | `0` | How many nodes to skip
+| **page** | `1` | Which page to get
+| **filter** | `{}` | [Read more](/docs/filtering-data)
+
+## Single entries
+
+The other fields that do not start with `all` are your single entries. They are typically used by templates to get data for the current page. You must provide either an `id` or a `path` as an argument to find the node.
+
+| Argument | Default | Description |
+|----------|---------|-------------|
+| **id** | `null` | Get node by `id`
+| **path** | `null` | Get node by `path`
+| **nullable** | `false` | Will return an error if not nullable.
 
 ## Query data in Pages
 
-Every **Page** can have a `<page-query>` block with a GraphQL query
+Every **page** can have a `<page-query>` block with a GraphQL query
 to fetch data from data sources. The results will be stored in a
 `$page` property inside the page component.
 
@@ -66,7 +91,7 @@ to fetch data from data sources. The results will be stored in a
 
 <page-query>
 query Blog {
-  posts: allWordPressPost (limit: 5) {
+  posts: allWordPressPost {
     edges {
       node {
         id
@@ -81,7 +106,7 @@ query Blog {
 
 ## Query data in Templates
 
-Templates are used for page layout for the "single" endpoint of a data source like for example a WordPress blog post. If you have a node type called `WordPressPost`, then you can create a file
+Templates are used for page layout for the *single* endpoint of a data source like for example a WordPress blog post. If you have a node type called `WordPressPost`, then you can create a file
 in `src/templates/WordPressPost.vue`.
 
 The `page-query` in templates also has a set of variables that can be used in the query. Available variables are `$id`, `$title`, `$slug`, `$path`, `$date` and any custom fields from the current `node`. Access field values in deep objects or arrays by separating properties or indexes with double underscores (`__`).
