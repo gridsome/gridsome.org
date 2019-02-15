@@ -24,8 +24,6 @@
       link: /docs/directory-structure
     - title: Project configuration
       link: /docs/config
-    - title: Environment variables
-      link: /docs/environment-variables
     - title: Pages
       link: /docs/pages
     - title: Templates
@@ -46,6 +44,8 @@
       link: /docs/head
     - title: body & html attributes
       link: /docs/body-html-attributes
+    - title: Environment variables
+      link: /docs/environment-variables
 
 - title : Working with data
   items:
