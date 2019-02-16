@@ -34,7 +34,7 @@
 
 
       <Feature>
-        <h3>SEO-friendly SPA</h3>
+        <h3>SEO-friendly</h3>
         <p>Gridsome outputs static HTML before it hydrates into a fully <strong>Vue.js-powered SPA</strong>. This makes search engines able to crawl content and give <strong>better SEO ranking</strong> because of the fast loading.</p>
       </Feature>
 
