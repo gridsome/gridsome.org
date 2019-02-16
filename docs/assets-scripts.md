@@ -1,7 +1,55 @@
 # Add External Scripts
 It is really easy to use any external javascript with gridsome. Being a Vue based framework any method of importing external scripts in vue works out of the box with Gridsome
 
+## Defining external dependencies locally for a component
+
+### Using an external Vue Plugin 
+If you want to use external Vue plugins inside your component without defining it globally you can do so by importing it inside your component and registering it for your component.
+
+Example:
+```javascript
+//MyComponent.vue
+
+<script>
+  import {Carousel,Slide} from 'vue-carousel'
+  
+  export default {
+    data() {
+      return { /* data properties here */ }
+    },
+    components: {
+      Carousel,
+      Slide
+    }
+  }
+</script>
+```
+
+### Using an external library 
+If you want to use a external javascript library inside your component you can do so by importing the component and requiring it once vue components are mounted.
+
+Example:
+```javascript
+//MyComponent.vue
+
+<script>
+  import moment from 'moment';
+  
+  export default {
+    data() {
+      return { /* data properties here */ }
+    },
+    mounted() {
+      moment = require('moment')
+      console.log('The time is '.moment().format("HH:mm"));
+    }
+  }
+</script>
+```
+
 ## Defining external dependencies Globally
+
+Note: Avoid injecting dependencies globally, and use it only if really necessary. Injecting locally into components is considered a better practice for code splitting.
 
 ### Using an external Vue Plugin 
 To use any external vue plugin with gridsome. Just import the required plugin and pass the required plugin to Vue using the following function `Vue.use` inside your main.js file
@@ -77,52 +125,6 @@ export default function (Vue) {
     value: moment
   });
 }
-```
-
-## Defining external dependencies locally for a component
-
-### Using an external Vue Plugin 
-If you want to use external Vue plugins inside your component without defining it globally you can do so by importing it inside your component and registering it for your component.
-
-Example:
-```javascript
-//MyComponent.vue
-
-<script>
-  import {Carousel,Slide} from 'vue-carousel'
-  
-  export default {
-    data() {
-      return { /* data properties here */ }
-    },
-    components: {
-      Carousel,
-      Slide
-    }
-  }
-</script>
-```
-
-### Using an external library 
-If you want to use a external javascript library inside your component you can do so by importing the component and requiring it once vue components are mounted.
-
-Example:
-```javascript
-//MyComponent.vue
-
-<script>
-  import moment from 'moment';
-  
-  export default {
-    data() {
-      return { /* data properties here */ }
-    },
-    mounted() {
-      moment = require('moment')
-      console.log('The time is '.moment().format("HH:mm"));
-    }
-  }
-</script>
 ```
 
 ## Using external script with Gridsome that does not support Server Side Rendering
