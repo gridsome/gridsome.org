@@ -43,9 +43,9 @@
 
       <div class="grid-cols grid-cols--2 mb">
         <div style="order:2">
-          <h3>The future of the web is on the CDN</h3>
+          <h3>A JAMstack dev framework</h3>
 
-          <p><strong>No servers. No databases. Only files.</strong> Nothing beats static, pre-rendered sites when it comes to speed and security.  Deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site. The future of the web is on the CDN.</p>
+          <p>JAMstack is modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup. <strong>No servers. No databases. Only files.</strong> Deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site.</p>
 
           <ul class="bullet-list">
             <li><Bullet /> <strong> Blazing fast generating.</strong> Build thousands of pages in seconds</li>
