@@ -18,7 +18,7 @@ Add a new content type to store. Create a Vue components in the `src/templates` 
 
 ##### Arguments
 
-- options `object`
+- options `object | string` *Options or just the GraphQL schema type name.*
   - typeName `string` *Required GraphQL schema type and template name.*
   - route `string` *Optional dynamic route.* [Read more about Routing](/docs/routing)
 
@@ -39,7 +39,7 @@ Get a content type previously created.
 
 ##### Arguments
 
-- typeName `string` *GraphQL schema type name.*
+- typeName `string` *The GraphQL schema type name.*
 
 ## Add nodes to collections
 
@@ -84,24 +84,19 @@ A helper function for creating references to other nodes in any field.
 
 ##### Arguments
 
-- typeName `string` *The referred typeName.*
+- typeName `string | object` *The referred typeName or node instance.*
 - id `string | array` *The referred node id or ids if multiple nodes*
 
 ##### Usage
 
-This example creates two content types: `Author` and `BlogPost`. The `author` field on `BlogPost` will refer to an `Author` with id `'1'`.
+This example creates two content types: `Author` and `Post`. The `author1` and `author2` fields on `Post` will both refer to the same author.
 
 ```js
 api.loadSource(store => {
-  const authors = store.addContentType({
-    typeName: 'Author'
-  })
+  const authors = store.addContentType('Author')
+  const posts = store.addContentType('Post')
 
-  const posts = store.addContentType({
-    typeName: 'BlogPost'
-  })
-
-  authors.addNode({
+  const author = authors.addNode({
     id: '1',
     title: 'The author'
   })
@@ -109,7 +104,8 @@ api.loadSource(store => {
   posts.addNode({
     title: 'The post',
     fields: {
-      author: store.referNode('Author', '1')
+      author1: store.referNode('Author', '1')
+      author2: store.referNode(author)
     }
   })
 })
@@ -121,9 +117,8 @@ The field will contain the referred node fields:
 query BlogPost ($id: String!) {
   blogPost (id: $id) {
     title
-    author {
-      title
-    }
+    author1 { title }
+    author2 { title }
   }
 }
 ```
@@ -141,9 +136,7 @@ Make a root field for all nodes in collection refer to another node.
 
 ```js
 api.loadSource(store => {
-  const posts = store.addContentType({
-    typeName: 'BlogPost'
-  })
+  const posts = store.addContentType('BlogPost')
 
   posts.addReference('author', 'Author')
 
