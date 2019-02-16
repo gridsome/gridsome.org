@@ -10,18 +10,19 @@ module.exports = function (api) {
 }
 ```
 
-## store.addContentType(options)
+## Add a content type collection
+
+### `store.addContentType(options)`
 
 Add a new content type to store. Create a Vue components in the `src/templates` folder to have a template for this type. Returns a collection which can have nodes. [Read more about templates](/docs/templates).
 
-#### Arguments
+##### Arguments
 
 - options `object`
   - typeName `string` *Required GraphQL schema type and template name.*
-  - route `string` *Optional dynamic route.*
-  - refs `object` *Create references to other nodes.*
+  - route `string` *Optional dynamic route.* [Read more about Routing](/docs/routing)
 
-#### Usage
+##### Usage
 
 ```js
 api.loadSource(store => {
@@ -32,17 +33,19 @@ api.loadSource(store => {
 })
 ```
 
-## store.getContentType(typeName)
+### `store.getContentType(typeName)`
 
 Get a content type previously created.
 
-#### Arguments
+##### Arguments
 
 - typeName `string` *GraphQL schema type name.*
 
-## collection.addNode(options)
+## Add nodes to collections
 
-#### Arguments
+### `collection.addNode(options)`
+
+##### Arguments
 
 - options `Object` *Required.*
   - title `string` *Required.*
@@ -53,7 +56,7 @@ Get a content type previously created.
   - excerpt `string` *Optional excerpt.*
   - fields `Object` *Custom fields.*
 
-#### Usage
+##### Usage
 
 ```js
 api.loadSource(store => {
@@ -73,18 +76,20 @@ api.loadSource(store => {
 })
 ```
 
-## collection.addReference(fieldName, options)
+## Referencing to other nodes
 
-#### Arguments
+### `store.referNode(typeName, id)`
 
-- fieldName `string` *The field name*
-- options `Object`
-  - typeName `string` *GraphQL schema type to reference.*
-  - key `string` *The foreign key to match local field.*
+A helper function for creating references to other nodes in any field.
 
-#### Usage
+##### Arguments
 
-This example creates two content types: `Author` and `BlogPost`. The `ref` option for `BlogPost` is using its `author` field to make a reference to an `Author` node. The `author` field contains an author ID, so we use `'id'` as `key` to make the store look for an author with that ID.
+- typeName `string` *The referred typeName.*
+- id `string | array` *The referred node id or ids if multiple nodes*
+
+##### Usage
+
+This example creates two content types: `Author` and `BlogPost`. The `author` field on `BlogPost` will refer to an `Author` with id `'1'`.
 
 ```js
 api.loadSource(store => {
@@ -96,19 +101,15 @@ api.loadSource(store => {
     typeName: 'BlogPost'
   })
 
-  posts.addReference('author', {
-    typeName: 'Author'
-  })
-
   authors.addNode({
     id: '1',
-    title: item.title
+    title: 'The author'
   })
 
   posts.addNode({
-    title: item.title,
+    title: 'The post',
     fields: {
-      author: '1'
+      author: store.referNode('Author', '1')
     }
   })
 })
@@ -117,50 +118,90 @@ api.loadSource(store => {
 The field will contain the referred node fields:
 
 ```graphql
-query BlogPost ($path: String!) {
-  blogPost (path: $path) {
+query BlogPost ($id: String!) {
+  blogPost (id: $id) {
     title
     author {
       title
-      path
     }
   }
 }
 ```
 
-## collection.addSchemaField(fieldName, handler)
+### `collection.addReference(fieldName, typeName)`
 
-Extend the GraphQL schema with a custom field for a node type.
+Make a root field for all nodes in collection refer to another node.
 
-#### Arguments
+##### Arguments
 
-- fieldName `string` *The field name to create on node.*
-- handler `Function` *A function which returns an object with a GraphQL field and resolver.*
+- fieldName `string` *The field name*
+- typeName `string` *GraphQL schema type to reference.*
 
-#### Usage
+##### Usage
 
 ```js
 api.loadSource(store => {
-  const contentType = store.getContentType('OtherType')
+  const posts = store.addContentType({
+    typeName: 'BlogPost'
+  })
 
-  contentType.addSchemaField('myField', ({ graphql }) => ({
+  posts.addReference('author', 'Author')
+
+  posts.addNode({
+    title: 'The post',
+    fields: {
+      author: '1' // Will refer to an author with id '1'
+    }
+  })
+})
+```
+
+## Custom GraphQL fields
+
+### `collection.addSchemaField(fieldName, fn)`
+
+Extend the GraphQL schema with a custom field for a node type.
+
+##### Arguments
+
+- fieldName `string` *The field name to create on node.*
+- fn `Function` *A function which returns an object with a GraphQL field and resolver.*
+
+##### Usage
+
+```js
+api.loadSource(store => {
+  const posts = store.addContentType({
+    typeName: 'BlogPost'
+  })
+
+  posts.addSchemaField('myField', ({ graphql }) => ({
     type: graphql.GraphQLString,
-    resolve (node) {
-      return node.fields.myField
+    args: {
+      upperCase: { type: graphql.GraphQLBoolean, defaultValue: false }
+    },
+    resolve (node, args) {
+      const value = node.fields.myField
+
+      if (args.upperCase) {
+        return value.toUpperCase()
+      }
+
+      return value
     }
   }))
 })
 ```
 
+```graphql
+query BlogPost ($id: String!) {
+  blogPost (id: $id) {
+    myField (upperCase: true)
+  }
+}
+```
+
 Read more about [GraphQL resolvers](https://graphql.org/learn/execution/#root-fields-resolvers).
-
-## store.addTaxonomy(options)
-
-*Comming soon...*
-
-## taxonomy.addTerm(options)
-
-*Comming soon...*
 
 ## Example usage
 
