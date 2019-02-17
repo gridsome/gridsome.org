@@ -5,34 +5,22 @@ You can query fetched data into any **Page, Template or Component**. Queries are
 - Use `<page-query>` in **Pages & Templates**.
 - Use `<static-query>` in **Components**.
 
-## Explore & test queries
-
-Every Gridsome project has a **GraphQL explorer (Playground)** that can be used to explore and test queries when in development mode. Here you also get a list of all available GraphQL collections. This can usually be opened by going to `http://localhost:8080/___explore`.
-
-![graphql-explorer](./images/graphql-explorer.png)
-
 ## How to query with GraphQL
 
-**With GraphQL you only query the data you need.** This makes it easier and more tidy to work with data.
-A query always starts with `query` and then something like `Posts` (This can be anything. It's only for you to understand what you query). Then you write something like `posts: allWordPressPosts`. **This is the important part.** The `allWordPressPosts` is the name of the GraphQL collection you want to query. The `post:` is an alias and is optional. If you add that your query will be added to `$page.posts` or `$static.posts` if you use `<static-query>`. If it's not added and you only use `allWordPressPosts` your posts will be added to `$page.allWordPressPosts`.
-
-**Working with GraphQL in Gridsome is easy and you don't need to know much about GraphQL.**
-
-Here is an example of a GraphQL query in a Page:
+Working with GraphQL in Gridsome is easy and you don't need to know much about GraphQL. Here is an example of how to use GraphQL in `page-query` for a page:
 
 ```html
 <template>
   <div>
     <div v-for="edge in $page.posts.edges" :key="edge.node.id">
-      {{ edge.node.id }}
-      {{ edge.node.title }}
+      <h2>{{ edge.node.title }}</h2>
     </div>    
   </div>
 </template>
 
 <page-query>
 query Posts {
-  posts: allWordPressPosts {
+  posts: allWordPressPost {
     edges {
       node { 
         id
@@ -44,13 +32,15 @@ query Posts {
 </page-query>
 ```
 
-[You can learn more about GraphQL queries here](https://graphql.org/learn/queries/)
+**With GraphQL you only query the data you need.** This makes it easier and more tidy to work with data. A query always starts with `query` and then something like `Posts` *(Can be anything)*. Then you write something like `posts: allWordPressPost`. The `allWordPressPost` is the name of the GraphQL collection you want to query. The `post:` part is an optional alias. When using `post` as alias, your data will be available at `$page.posts` (or `$static.posts` if you use `<static-query>`). Otherwise it will be available at `$page.allWordPressPost`.
 
-## Content type collections
+[Learn more about GraphQL queries](https://graphql.org/learn/queries/)
+
+## Querying collections
 
 Every content type has a collection and a single entry in the GraphQL schema. You will notice that some of the root fields in your schema are prefixed with `all`. They are the collections for each of your content types and you can use them in your pages to create lists of single entries.
 
-The collection can take a few argument:
+#### Arguments
 
 | Argument | Default | Description |
 |----------|---------|-------------|
@@ -61,15 +51,47 @@ The collection can take a few argument:
 | **page** | `1` | Which page to get.
 | **filter** | `{}` | [Read more](/docs/filtering-data).
 
-## Single entries
+#### Example query
+
+```graphql
+query Posts {
+  allPost (sortBy: "title", order DESC, skip: 2) {
+    edges {
+      node {
+        title
+      }
+    }
+  }
+}
+```
+
+## Querying single nodes
 
 The other fields that do not start with `all` are your single entries. They are typically used by templates to get data for the current page. You must provide either an `id` or a `path` as an argument to find the node.
+
+#### Arguments
 
 | Argument | Default | Description |
 |----------|---------|-------------|
 | **id** | `null` | Get node by `id`.
 | **path** | `null` | Get node by `path`.
 | **nullable** | `false` | Will return an error if not nullable.
+
+#### Example query
+
+```graphql
+query Post {
+  post (id: "1") {
+    title
+  }
+}
+```
+
+## Explore & test queries
+
+Every Gridsome project has a **GraphQL explorer (Playground)** that can be used to explore and test queries when in development mode. Here you also get a list of all available GraphQL collections. This can usually be opened by going to `http://localhost:8080/___explore`.
+
+![graphql-explorer](./images/graphql-explorer.png)
 
 ## Query data in Pages
 
