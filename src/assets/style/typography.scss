@@ -29,10 +29,14 @@ h2,
 }
 
 p {
-
+  letter-spacing: -.25px;
   &:last-child {
     margin: 0;
   }
+}
+
+li {
+  letter-spacing: -.25px;
 }
 
 
