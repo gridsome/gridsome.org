@@ -26,7 +26,14 @@ module.exports = function (api) {
     })
 
     authorsJson.forEach(({ id, name: title, ...fields }) => {
-      authors.addNode({ id, title, fields })
+      authors.addNode({
+        id,
+        title,
+        fields,
+        internal: {
+          origin: authorsPath
+        }
+      })
     })
   })
 }

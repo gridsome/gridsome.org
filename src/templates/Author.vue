@@ -4,6 +4,7 @@
       <div class="mb container-sm text-center">
         <span>Blog Posts by:</span>
         <h1>{{ $page.author.title }}</h1>
+        <g-image v-if="$page.author.avatar" :src="$page.author.avatar"/>
       </div>
 
       <!-- <PostCard v-for="edge in $page.author.belongsTo.edges" :key="edge.node.id" :post="edge.node"/> -->
@@ -15,6 +16,7 @@
 query Author ($path: String!) {
   author (path: $path) {
     title
+    avatar (width: 124)
   }
 }
 </page-query>
@@ -22,6 +24,7 @@ query Author ($path: String!) {
 query Author ($path: String!) {
   author (path: $path) {
     title
+    avatar
     belongsTo {
       totalCount
       pageInfo {
