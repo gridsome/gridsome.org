@@ -1,5 +1,6 @@
 ---
 title: Gridsome v0.5
+slug: gridsome-v05
 author: [hjvedvik, tommyvedvik]
 date: 2019-02-12
 excerpt: "We're really exited to release Gridsome 0.5. The biggest update yet. It has many important features that makes data handling easier and a lot more flexible."
@@ -41,13 +42,14 @@ Read more about [Environment Variables](/docs/environment-variables)
 ## Other features and fixes
 
 - Updated to [Vue 2.6](https://medium.com/the-vue-point/vue-2-6-released-66aa6c8e785e).
+- Create references in any node field. [Read more](/docs/data-store-api#storecreatereferencetypename-id).
 - Hook for configurating the development server. [Read more](/docs/server-api#apiconfigureserverfn).
 - Customize default `index.html` template (by [K3TH3R](https://github.com/K3TH3R)).
 - Add custom CSS loader options (by [maoberlehner](https://github.com/maoberlehner)).
 
 ## Breaking changes 😅
 
-There are no breaking API changes, but some changes will get consequences:
+There are no breaking API changes, but some changes might have consequences:
 
 - External image URLs has previously been converted to objects. Which required you to get the actual URL in a `imageField.src` property. But those fields are no longer converted to objects.
 - Filepaths in front matter or markdown must start with `./` or `../` to be resolved and processed. Which means `image.png` will not be processed, but `./image.png` will be.
