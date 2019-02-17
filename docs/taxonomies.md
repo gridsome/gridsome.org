@@ -1,14 +1,12 @@
 # Taxonomy pages
 
-Fields in the GraphQL schema can have references to other nodes. That's a great way to organize pages and have links between them. Each content type has a `belongsTo` field which has references to all nodes with a reference to it in any of its fields. The `belongsTo` field works like the [content type collections](/docs/querying-data#content-type-collections) with `totalCount`, `pageInfo` and `edges`. But the `edges` field is always a union type which can be any node type.
+Fields in the GraphQL schema can have references to other nodes. That's a great way to organize pages and have links between them. Every node has a `belongsTo` field which is able to list all other nodes referencing it. The `belongsTo` field works like the [content type collections](/docs/querying-data#content-type-collections) with `totalCount`, `pageInfo` and `edges`, but the `edges` field is always a [union field](https://graphql.org/learn/schema/#union-types) which can be any node type.
 
 Read more about [referencing other nodes](/docs/data-store-api#referencing-other-nodes) if you haven't yet.
 
-
-
 ## Creating a taxonomy page
 
-In this example we are going to create two content types, a `Post` and a `Tag` types. We do that in the `loadSource` hook in our `gridsome.server.js` file. The `Post` nodes will have a field named `tags` which will be an array of `Tag` ids. 
+In this example we are going to create two content types, a `Post` and a `Tag` types. We do that in the `loadSource` hook in our `gridsome.server.js` file. The `Post` nodes will have a `tags` field which will be an array of `Tag` ids.
 
 ```js
 api.loadSource(store => {
@@ -17,10 +15,14 @@ api.loadSource(store => {
 
   posts.addReference('tags', 'Tag')
 
-  tags.addNode({ id: '1', title: 'The author' })
+  tags.addNode({
+    id: '1',
+    title: 'The author'
+  })
 
   posts.addNode({
     id: '1',
+    title: 'A post',
     fields: {
       tags: ['1']
     }
@@ -28,7 +30,7 @@ api.loadSource(store => {
 }
 ```
 
-Now, we create a file named `Tag.vue` in `src/templates` to have a template for our tag pages. Every tag page will have a list with posts which have a reference to it.
+Now, we create a `Tag.vue` file in `src/templates` to have a template for our tag pages. Every tag page will have a list with posts which have a reference to it.
 
 ```html
 <template>
@@ -62,7 +64,7 @@ query Tag ($id: String!) {
 </page-query>
 ```
 
-That's it! Tag pages now shows a list of posts and links to them.
+That's it! The tag page above will show a list of posts with links to them.
 
 ## Paginated taxonomy pages
 
