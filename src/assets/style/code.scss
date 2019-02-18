@@ -12,6 +12,11 @@
 }
 
 
+#app pre code {
+  background-color: transparent;
+}
+
+
 #app pre {
   // fix for accessbility
   .token.punctuation {

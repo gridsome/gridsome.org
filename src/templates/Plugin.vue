@@ -1,14 +1,14 @@
 <template>
-  <Layout class="plugins">
+  <Layout class="plugins" :footer="false">
     <div class="container flex gap-60 flex-align-top">
       <div class="sidebar plugins__sidebar">
         <div class="plugins__search">
           <input type="search" placeholder="Search for Gridsome plugin" @input="search">
-          <div>{{ plugins.length }} plugins</div>
+          <div class="plugins__total">{{ plugins.length }} plugins</div>
         </div>
         <ul class="plugins__list">
           <li class="plugin" v-for="plugin in plugins" :key="plugin.name" :class="pluginClass(plugin)">
-            <h4 class="plugin__name">{{ plugin.name }}</h4>
+            <span class="plugin__name">{{ plugin.name }}</span>
             <div class="plugin__description" v-html="plugin.description"></div>
             <g-link class="plugin__link" :to="{ name: 'plugin', params: plugin.params }">
               Read more about {{ plugin.name }}
@@ -16,13 +16,31 @@
           </li>
         </ul>
       </div>
-      <Section container="md">
+      <Section class="plugin-post" container="md">
         <template v-if="isSingle">
           <div v-if="isLoading">Loading...</div>
-          <VueMarkdown v-if="current" :source="current.readme" />
+          {{ }}
+          <div class="plugin-post__meta" v-if="current">
+            <a v-if="current.repository" :href="current.repository.url">
+              <git-hub-logo />
+            </a>
+            <a v-else="current.homepage" :href="current.homepage">
+              <git-hub-logo />
+            </a>
+            <span>Download this month: {{ current.humanDownloadsLast30Days }}</span>
+          </div>
+          <VueMarkdown class="post plugin-post__content mb" v-if="current" :source="current.readme" />
         </template>
         <template v-else>
-          <h1>Plugins</h1>
+          <div class="plugins-intro post">
+            <g-image class="plugins-intro__image" src="~/assets/images/plugins.svg" />
+            <div class="plugins-intro__text">
+              <h1>Gridsome Plugins</h1>
+              <p class="lead">Gridsome plugins are NPM packages that you can install to any project. This is currently a small, but growing library. Use the search bar to the left to find a plugin.</p>
+
+              <p>Want to contribute to plugins library? <a href="#">Learn how to build a plugin</a></p>
+            </div>
+          </div>
         </template>
       </Section>
     </div>
@@ -32,10 +50,12 @@
 <script>
 import VueMarkdown from 'vue-markdown'
 import { search, browseAll, browseSingle } from '~/utils/plugins'
+import GitHubLogo from '~/assets/images/github-logo.svg'
 
 export default {
   components: {
-    VueMarkdown
+    VueMarkdown,
+    GitHubLogo
   },
 
   data () {
@@ -109,9 +129,9 @@ export default {
 <style lang="scss">
 .plugins {
   &__sidebar {
-    padding-top: 0;
     min-width: 375px;
     max-width: 375px;
+    padding:0 10px 0 0;
   }
 
   &__search {
@@ -119,7 +139,6 @@ export default {
     top: 0;
     margin: 0;
     padding-top: calc(var(--space) * 2);
-    padding-right: var(--space);
     padding-bottom: calc(var(--space) / 2);
     background: #fff;
     z-index: 1;
@@ -129,13 +148,20 @@ export default {
     margin: 0;
     list-style: none;
   }
+
+  &__total {
+    font-size: .8rem;
+    opacity: .6;
+    padding: 5px;
+  }
 }
 
 .plugin {
-  margin: 0;
   padding: calc(var(--space) / 2);
-  padding-left: 0;
   position: relative;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  margin-bottom: 10px;
 
   &:hover & {
     &__name {
@@ -143,14 +169,22 @@ export default {
     }
   }
 
-  &--active & {
-    &__name {
+  &--active  {
+    background-color: var(--primary-bg);
+
+    & .plugin__name {
       color: var(--primary-color);
     }
   }
 
   &__name {
-    margin: 0 0 5px;
+    font-weight: bolder;
+    display: block;
+  }
+
+  &__description {
+    opacity: .8;
+    font-size: .9rem;
   }
 
   &__link {
@@ -162,5 +196,32 @@ export default {
     left: 0;
     text-indent: -1000px;
   }
+}
+
+.plugins-intro {
+  text-align: center;
+  padding-top: 5%;
+
+  &__text {
+    margin: -18% auto 0;
+    max-width: 550px;
+  }
+
+  &__image {
+    margin: 0 auto;
+  
+  }
+}
+
+.plugin-post {
+  &__meta {
+    padding-bottom: var(--space);
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: var(--space);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {  }
 }
 </style>
