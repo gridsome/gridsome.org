@@ -53,3 +53,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+  p > img {
+    max-width: 120%;
+    margin-left: -10%;
+  }
+</style>
