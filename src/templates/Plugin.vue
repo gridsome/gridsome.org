@@ -54,7 +54,7 @@
               <h1>Gridsome Plugins</h1>
               <p class="lead">Gridsome plugins are NPM packages that you can install to any project. This is currently a small, but growing library. Use the search bar to the left to find a plugin.</p>
 
-              <p>Want to contribute to plugins library? <a href="#">Learn how to build a plugin</a></p>
+              <p>Want to contribute to plugins library? <g-link to="/docs/how-to-create-a-plugin">Learn how to build a plugin</g-link></p>
             </div>
           </div>
         </template>
