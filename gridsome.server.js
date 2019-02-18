@@ -16,7 +16,7 @@ module.exports = function (api) {
 
     store.addMetaData('gridsomeVersion', gridsomeVersion)
 
-    // Fake plugin node TODO: Will be replaced with client side routes
+    // Fake plugin node. TODO: Will be replaced with client side routes
     store
       .addContentType({
         typeName: 'Plugin',
