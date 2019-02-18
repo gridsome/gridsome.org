@@ -55,7 +55,6 @@
               <p class="lead">Gridsome plugins are NPM packages that you can install to any project. This is currently a small, but growing library. Use the search bar to the left to find a plugin.</p>
 
               <p>Want to contribute to plugins library? <g-link to="/docs/how-to-create-a-plugin">Learn how to build a plugin</g-link></p>
-              <p>Any <strong>Vue.js plugins</strong> can be used in Gridsome projects. <g-link to="/docs/assets-scripts">Learn how here.</g-link></p>
             </div>
           </div>
         </template>
