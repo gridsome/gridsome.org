@@ -1,6 +1,6 @@
 <template>
   <Layout>
-     <Section container="md" class="blog-posts">
+     <Section container="md" class="blog-posts" dots="top">
       <div class="mb container-sm text-center">
         <h1>Gridsome blog</h1>
         
@@ -10,8 +10,6 @@
     
       </div>
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node._id" :post="edge.node"/>
-
-
     </Section>
   </Layout>
 </template> 

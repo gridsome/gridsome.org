@@ -15,6 +15,7 @@ export default {
       let classes = []
       if(this.primary) classes.push('section--primary')
       if(this.dark) classes.push('section--dark')
+      if(this.dots == 'top') classes.push('section--dots-top')
       return classes
     },
     sectionClassInner() {
@@ -52,6 +53,14 @@ export default {
     left: 10px;
     right: 10px;
     z-index: 1;
+  }
+
+  &--dots-top {
+    .section__dots-bg {
+      bottom: auto;
+      top:0;
+      height: 280px;
+    }
   }
 
 
