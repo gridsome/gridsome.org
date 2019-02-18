@@ -10,13 +10,6 @@
       link: /docs/starters
     - title: Deployment
       link: /docs/deployment
-    - title: How to contribute
-      link: /docs/contribute
-    - title: Dev tools
-      link: /docs/dev-tools
-    - title: FAQ
-      link: /docs/faq
-
 
 - title : Basic Gridsome
   items:
@@ -105,3 +98,22 @@
     - title: GitLab Pages
       link: /docs/deploy-to-gitlab
 
+- title: Contribute
+  items:
+    - title: How to contribute
+      link: /docs/how-to-contribute
+    - title: How to create a plugin *
+      link: /docs/how-to-create-a-plugin
+    - title: Code of conduct
+      link: /docs/code-of-conduct
+
+- title: Help
+  items:
+  - title: How to upgrade
+    link: /docs/how-to-upgrade
+  - title: Troubleshooting
+    link: /docs/troubleshooting
+  - title: Dev tools
+    link: /docs/dev-tools
+  - title: FAQ
+    link: /docs/faq
