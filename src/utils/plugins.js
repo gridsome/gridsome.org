@@ -16,7 +16,7 @@ export function browseAll (query = '') {
 
   return new Promise((resolve, reject) => {
     browser.on('result', res => appendHits(res))
-    browser.on('end', () => resolve(hits))
+    browser.on('end', () => resolve(hits.slice()))
     browser.on('error', err => reject(err))
   })
 }
