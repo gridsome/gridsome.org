@@ -3,7 +3,7 @@ title: Gridsome v0.5
 slug: gridsome-v05
 author: [hjvedvik, tommyvedvik]
 date: 2019-02-12
-excerpt: "We're really exited to release Gridsome 0.5. The biggest update yet. It has many important features that makes data handling easier and a lot more flexible. We have also updated the Plugin page to list all available plugins."
+excerpt: "We're really exited to release Gridsome 0.5. The biggest update yet. It has many important features that makes data handling easier and a lot more flexible. It opens up a whole new world of what you can build with Gridsome. Build Taxonomy pages and connections for any data."
 ---
 
 ## Filtering GraphQL data
@@ -19,6 +19,8 @@ All references in the the GraphQL schema has been a one way relation. This relea
 This can for example be used to:
 - List blog posts for an author.
 - List posts for a tag or category.
+
+We're using this feature on **Gridsome blog** for the **authors**. The authors here are just a YAML file that lists authors, and then Gridsome magically connects it all.
 
 Read more about [Taxonomies](/docs/taxonomies)
 

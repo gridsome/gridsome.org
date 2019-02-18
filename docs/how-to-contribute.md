@@ -35,7 +35,7 @@ You can also clone [the Gridsome.org repo](https://github.com/gridsome/gridsome.
 
 
 ## Contributing to the blog
-Creating guest blog posts for Gridsome.org users is a great way to contribute. A typical blog post could be: **How our company is using Gridsome to do XX**, or **How to integrate XX with Gridsome**.
+Creating guest blog posts for Gridsome.org users is a great way to contribute to Gridsome community. A typical blog post could be: **How our company is using Gridsome to do XX**, or **How to integrate XX with Gridsome**.
 
 To add a new blog post to the gridsome.org blog:
 
