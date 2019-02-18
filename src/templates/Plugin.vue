@@ -139,7 +139,7 @@ query Plugin {
   &__sidebar {
     min-width: 375px;
     max-width: 375px;
-    padding:0 10px 0 0;
+    padding:0 10px 50px 0;
   }
 
   &__search {
@@ -167,9 +167,8 @@ query Plugin {
 .plugin {
   padding: calc(var(--space) / 2);
   position: relative;
-  border: 1px solid var(--border-color);
-  border-radius: 5px;
-  margin-bottom: 10px;
+  border-top: 1px solid var(--border-color);
+  margin-bottom: 0;
 
   &:hover & {
     &__name {
@@ -178,8 +177,6 @@ query Plugin {
   }
 
   &--active  {
-    background-color: var(--primary-bg);
-
     & .plugin__name {
       color: var(--primary-color);
     }
