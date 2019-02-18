@@ -23,10 +23,10 @@
 
             <div class="plugin-post__meta_left">
               <a v-if="current.repository" :href="current.repository.url" target="_blank" rel="noopener">
-                <git-hub-logo />
+                <GitHubLogo />
               </a>
               <div class="plugin-post__users">
-                <span v-if="current.owners" v-for="owner in current.owners">
+                <span v-if="current.owners" v-for="owner in current.owners" :key="owner.name">
                   <a :href="owner.link" target="_blank" rel="noopener">
                     <img v-if="owner.avatar" :src="owner.avatar" :title="owner.name" />
                   </a>
@@ -38,11 +38,12 @@
               <span>Downloads this month: {{ current.humanDownloadsLast30Days }}</span>
             </div>
           </div>
+
           <VueMarkdown class="post plugin-post__content mb" v-if="current" :source="current.readme" />
 
           <div v-if="current" class="plugin-post__edit">
             <a class="github-edit-link" v-if="current.repository" :href="current.repository.url + '/README.md'"> 
-              <git-hub-logo /> Edit this page on GitHub
+              <GitHubLogo /> Edit this page on GitHub
             </a>
           </div>
 
@@ -65,8 +66,8 @@
 
 <script>
 import VueMarkdown from 'vue-markdown'
-import { search, browseAll, browseSingle } from '~/utils/plugins'
 import GitHubLogo from '~/assets/images/github-logo.svg'
+import { search, browseAll, browseSingle } from '~/utils/plugins'
 
 export default {
   components: {
