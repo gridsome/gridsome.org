@@ -235,7 +235,7 @@ export default {
     align-items: center;
     justify-content: space-between;
     a {
-      opacity: .6;
+      opacity: .9;
     }
     svg {
       width: 28px;
