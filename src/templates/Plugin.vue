@@ -126,6 +126,14 @@ export default {
 }
 </script>
 
+<page-query>
+query Plugin {
+  plugin (id: "1") {
+    id
+  }
+}
+</page-query>
+
 <style lang="scss">
 .plugins {
   &__sidebar {
