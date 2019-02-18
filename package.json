@@ -9,11 +9,14 @@
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
+    "algoliasearch": "^3.32.0",
+    "babel-runtime": "^6.26.0",
     "docsearch.js": "^2.6.2",
     "gridsome": "^0.4.6",
     "typeface-league-spartan": "0.0.44",
     "typeface-nunito": "0.0.54",
     "typography": "^0.16.18",
+    "vue-markdown": "^2.2.4",
     "vue-scrollto": "^2.13.0",
     "vue-typer": "^1.2.0"
   },

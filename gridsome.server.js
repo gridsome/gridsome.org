@@ -16,6 +16,15 @@ module.exports = function (api) {
 
     store.addMetaData('gridsomeVersion', gridsomeVersion)
 
+    // Fake plugin node TODO: Will be replaced with client side routes
+    store
+      .addContentType({
+        typeName: 'Plugin',
+        route: '/plugins/:namespace?/:id?'
+      })
+      .addNode({ id: '1' })
+
+
     // authors
     const authorsPath = path.join(__dirname, 'blog/authors/authors.yaml')
     const authorsRaw = await fs.readFile(authorsPath, 'utf8')
@@ -34,6 +43,6 @@ module.exports = function (api) {
           origin: authorsPath
         }
       })
-    })
+    })   
   })
 }
