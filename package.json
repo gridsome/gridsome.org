@@ -12,7 +12,7 @@
     "algoliasearch": "^3.32.0",
     "babel-runtime": "^6.26.0",
     "docsearch.js": "^2.6.2",
-    "gridsome": "^0.4.6",
+    "gridsome": "./gridsome",
     "typeface-league-spartan": "0.0.44",
     "typeface-nunito": "0.0.54",
     "typography": "^0.16.18",
