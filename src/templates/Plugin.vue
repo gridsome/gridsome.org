@@ -225,6 +225,13 @@ query Plugin {
     margin-bottom: var(--space);
     display: flex;
     justify-content: space-between;
+    a {
+      opacity: .5;
+    }
+    svg {
+      width: 22px;
+      height: 22px;
+    }
   }
 
   &__content {  }
