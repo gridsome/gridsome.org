@@ -27,3 +27,4 @@ Add these settings where its needed:
 
 - [Add a domain](https://zeit.co/docs/v2/domains-and-aliases)
 - [Deployment Basics](https://zeit.co/docs/v2/deployments/basics/)
+- [Example](https://github.com/zeit/now-examples/tree/master/gridsome)

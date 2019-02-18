@@ -21,7 +21,7 @@ Examples:
 - `/src/pages/404.vue` will be 404 the page.
 
 
-A simple `Page.vue` file might look like:
+A simple `Page.vue` file might look like this:
 
 
 ```html
@@ -46,9 +46,9 @@ A `Blog.vue` file that **list blog posts** might look like this:
 ```html
 <template>
   <Layout>
-    <div v-for="item in $page.posts" :key="item.id">
-      {{item.id}}
-      {{item.title}}
+    <div v-for="edge in $page.posts.edges" :key="edge.node.id">
+      {{ edge.node.id }}
+      {{ edge.node.title }}
     </div>    
   </Layout>
 </template>
@@ -67,7 +67,7 @@ query Posts {
 </page-query>
 ```
 
-[Learn more about query data](/docs/data-query-data)
+[Learn more about query data](/docs/querying-data)
 
 
 
@@ -89,4 +89,4 @@ To create a custom `404` page you need to add a `404.vue` in `src/pages`. This w
 
 - [Import layout to a page or template](/docs/layouts#import-layout-to-a-page-or-template)
 - [Add head meta data to Pages](/docs/head#add-head-meta-data-to-pages--templates)
-- [Query data in pages](/docs/data-query-data)
+- [Query data in pages](/docs/querying-data)
