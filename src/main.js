@@ -12,7 +12,6 @@ import Card from '~/components/Card'
 import VueScrollTo from 'vue-scrollto'
 
 import Typography from 'typography'
-import 'typeface-nunito'
 import 'typeface-league-spartan'
 
 const typography = new Typography({
@@ -22,7 +21,7 @@ const typography = new Typography({
   bodyColor: 'hsla(0,0%,0%,0.7)',
   headerColor: 'hsla(0,0%,0%,0.9)',
   headerFontFamily: ['League Spartan', 'sans-serif'],
-  bodyFontFamily: ['Nunito', 'Helvetica','Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
+  bodyFontFamily: ['Jost', 'Helvetica','Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
 })
 
 export default function (Vue, { head, router, isServer }) {

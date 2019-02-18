@@ -3,7 +3,7 @@
     <div class="homepage-features grid-cols">
 
       <Feature>
-        <h3>Modern development</h3>
+        <h3>Easy, local development</h3>
         <p>Enjoy modern dev tools like Vue.js<vue-logo width="28" height="28" />,<br> GraphQL <graph-ql-logo color="#E535AB" width="20" height="20" /> & webpack<webpack-logo width="28" height="28" />. Get instant <strong>hot-reloading</strong> for any data change while developing. Gridsome makes building websites fun again.
         </p>
       </Feature>
@@ -34,7 +34,7 @@
 
 
       <Feature>
-        <h3>SEO-friendly SPA</h3>
+        <h3>SEO-friendly</h3>
         <p>Gridsome outputs static HTML before it hydrates into a fully <strong>Vue.js-powered SPA</strong>. This makes search engines able to crawl content and give <strong>better SEO ranking</strong> because of the fast loading.</p>
       </Feature>
 
