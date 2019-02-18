@@ -37,6 +37,8 @@
       link: /docs/head
     - title: body & html attributes
       link: /docs/body-html-attributes
+    - title: Overriding Index.html
+      link: /docs/overriding-index
 
 - title : Working with data
   items:
@@ -53,14 +55,14 @@
 
 
 - title : Styles and Assets
-  items: 
+  items:
     - title: Use CSS in Gridsome
       link: /docs/assets-css
-    - title: Add custom fonts *
+    - title: Add custom fonts
       link: /docs/assets-fonts
     - title: Add external scripts 
       link: /docs/assets-scripts
-    - title: Add SVG icons *
+    - title: Add SVG icons
       link: /docs/assets-svg
 
 
@@ -74,7 +76,7 @@
       link: /docs/guide-comments
 
 - title: API Reference
-  items: 
+  items:
     - title: Gridsome CLI
       link: /docs/gridsome-cli
     - title: Server API
