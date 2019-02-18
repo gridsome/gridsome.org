@@ -40,7 +40,7 @@
           </div>
           <VueMarkdown class="post plugin-post__content mb" v-if="current" :source="current.readme" />
 
-          <div class="plugin-post__edit">
+          <div v-if="current" class="plugin-post__edit">
             <a class="github-edit-link" v-if="current.repository" :href="current.repository.url + '/README.md'"> 
               <git-hub-logo /> Edit this page on GitHub
             </a>
@@ -141,14 +141,6 @@ export default {
   }
 }
 </script>
-
-<page-query>
-query Plugin {
-  plugin (id: "1") {
-    id
-  }
-}
-</page-query>
 
 <style lang="scss">
 .plugins {
