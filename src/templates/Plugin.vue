@@ -19,15 +19,27 @@
       <Section class="plugin-post" container="md">
         <template v-if="isSingle">
           <div v-if="isLoading">Loading...</div>
-          {{ }}
           <div class="plugin-post__meta" v-if="current">
-            <a v-if="current.repository" :href="current.repository.url">
-              <git-hub-logo />
-            </a>
-            <a v-else="current.homepage" :href="current.homepage">
-              <git-hub-logo />
-            </a>
-            <span>Download this month: {{ current.humanDownloadsLast30Days }}</span>
+
+            <div class="plugin-post__meta_left">
+              <a v-if="current.repository" :href="current.repository.url">
+                <git-hub-logo />
+              </a>
+              <a v-else="current.homepage" :href="current.homepage">
+                <git-hub-logo />
+              </a>
+              <div class="plugin-post__users">
+                <span v-if="current.owners" v-for="owner in current.owners">
+                  <a :href="owner.link">
+                    <img v-if="owner.avatar" :src="owner.avatar" :title="owner.name" />
+                  </a>
+                </span>
+              </div>
+            </div>
+       
+            <div class="plugin-post__meta_right">
+              <span>Download this month: {{ current.humanDownloadsLast30Days }}</span>
+            </div>
           </div>
           <VueMarkdown class="post plugin-post__content mb" v-if="current" :source="current.readme" />
         </template>
@@ -223,13 +235,32 @@ query Plugin {
     border-bottom: 1px solid var(--border-color);
     margin-bottom: var(--space);
     display: flex;
+    align-items: center;
     justify-content: space-between;
     a {
-      opacity: .5;
+      opacity: .6;
     }
     svg {
-      width: 22px;
-      height: 22px;
+      width: 28px;
+      height: 28px;
+    }
+  }
+
+  &__users {
+    display: inline-flex;
+    align-items: center;
+    margin-left: calc(var(--space) / 2);
+
+    span {
+      display: inline-flex;
+      align-items: center;
+    }
+    
+    img {
+      width: 28px;
+      height: 28px;
+      margin: 0;
+      border-radius: 99px;
     }
   }
 
