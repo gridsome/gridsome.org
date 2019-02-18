@@ -1,6 +1,6 @@
 # Deployment
 
-To deploy a Gridsome site you need a **static site host**.
+Gridsome is a modern website generator that generates secure & static files. To deploy a Gridsome site you need a **static site host**.
 
 ## Git-based deploying
 
