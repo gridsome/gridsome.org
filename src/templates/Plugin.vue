@@ -35,7 +35,7 @@
             </div>
        
             <div class="plugin-post__meta_right">
-              <span>Download this month: {{ current.humanDownloadsLast30Days }}</span>
+              <span>Downloads this month: {{ current.humanDownloadsLast30Days }}</span>
             </div>
           </div>
           <VueMarkdown class="post plugin-post__content mb" v-if="current" :source="current.readme" />
