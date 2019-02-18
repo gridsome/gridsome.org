@@ -1,11 +1,13 @@
 
 # How to contribute
-> Gridsome is an open-source project built by core maintainers and contributors. We want to make it easy for anyone to contribute to Gridsome. All contribution matters. Write code, improve documentation or write a blog post. It all helps the Gridsome community to grow.
+> Gridsome is an open-source project built by core maintainers and contributors. We want to make it easy for anyone to contribute to Gridsome. Contribute to core, build plugins, improve documentation or write a blog post. It all helps Gridsome on its mission to simplify website development.
 
 
 ## Contributing to Core
-Gridsome uses a **monorepo** pattern to manage its dependencies and core plugins. Follow this guide to setup Gridsome core:
+Gridsome uses a **monorepo** pattern to manage its dependencies and core plugins. 
 
+
+### Run Gridsome core locally
 
 Install [Node.js 8.3](https://nodejs.org/en/download/) or higher and [Yarn](https://yarnpkg.com/lang/en/docs/install/). It's also recommended to install [Lerna](https://www.npmjs.com/package/lerna) globally.
 
