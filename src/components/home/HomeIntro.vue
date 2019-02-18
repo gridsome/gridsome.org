@@ -13,9 +13,9 @@
           <g-link  to="/docs" class="button primary">
             Get started
           </g-link>
-          <g-link  to="/learn" class="button">
+          <!-- <g-link  to="/learn" class="button">
             Tutorial
-          </g-link>
+          </g-link> -->
         </p>
 
         <p class="home-info">
