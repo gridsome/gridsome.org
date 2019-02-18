@@ -37,15 +37,15 @@ Read more about [Query data in templates](/docs/querying-data#query-data-in-temp
 
 ## Environment variables
 
-Sometimes you want configuration values that are different from what you have in the production build. Gridsome now utilizes the [dotenv](https://www.npmjs.com/package/dotenv) package to make this easy. Special thanks to [isoppp](https://twitter.com/isopppcom) for implementing this feature 😄
+Sometimes you want configuration values that are different from what you have in the production build. Gridsome now utilizes the [dotenv](https://www.npmjs.com/package/dotenv) package to make this easy. Special thanks to [isoppp](https://github.com/isoppp) for implementing this feature 😄
 
 Read more about [Environment Variables](/docs/environment-variables)
 
-
 ## New Plugin library
-The [Plugins](/plugins) page now gets plugins from NPM. Any plugin tagged with `gridsome` on NPM will be listed here. We have also added a search box for plugins.
-![Plugin page](plugins.png)
 
+The [Plugins](/plugins) page now gets plugins from NPM. Any plugin tagged with `gridsome-plugin` on NPM will be listed here. We have also added a search box for plugins.
+
+![Plugin page](plugins.png)
 
 ## Other features and fixes
 
