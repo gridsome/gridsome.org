@@ -12,7 +12,7 @@ import '~/assets/styles.css'
 
 
 ## Use SASS & CSS pre-processors
-To enable **SASS** you need to run command `npm install -D sass-loader node-sass` to install the required packages. 
+To enable **SASS** you need to run command `npm install -D sass-loader node-sass` to install the required packages.
 
 Now you can import **.scss** files in **src/main.js**:
 
@@ -33,6 +33,48 @@ You can also use SASS in **Vue Components** with the `lang="scss"` attribute:
 
 [Learn more about using Using Pre-Processors in Vue.js](https://vue-loader.vuejs.org/guide/pre-processors.html)
 
+### Global Preprocessor Files (ie. variables, mixins)
+Often when you're working a project, you'll have a set of variables, mixins, and framework variable overrides that you'll want to be automatically used in your components/layouts so you don't have to keep manually importing them.
+
+Start by installing `style-resources-loader`:
+
+```js
+npm i -D style-resources-loader
+```
+
+You'll need to add the following block to the top of your `gridsome.config.js` file before the existing `module.exports`:
+
+```js
+const path = require('path')
+
+function addStyleResource (rule) {
+  rule.use('style-resource')
+    .loader('style-resources-loader')
+    .options({
+      patterns: [
+				path.resolve(__dirname, './src/assets/sass/_globals.sass'),
+				// you can also use a glob if you'd prefer
+				// path.resolve(__dirname, './src/assets/sass/*.sass'),
+      ],
+    })
+}
+
+module.exports = {
+	// existing config
+}
+```
+
+Then you'll modify the `module.exports` block as follows:
+
+```js
+module.exports = {
+  chainWebpack: config => {
+    // Load variables for all vue-files
+    const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
+    types.forEach(type => addStyleResource(config.module.rule('sass').oneOf(type)))
+	}
+}
+```
 
 ## Add CSS to Vue Components
 In Vue Components you add styles inside a `<style>` tag.
@@ -41,7 +83,7 @@ In Vue Components you add styles inside a `<style>` tag.
 // Example.vue
 <template>
 	<div class="banner">
-		Hello! 
+		Hello!
 	</div>
 </template>
 
@@ -84,4 +126,3 @@ Gridsome [Critical CSS plugin](/plugins/plugin-critical-css) extracts CSS from c
 
 ### Bootstrap
 ...plugin coming
-

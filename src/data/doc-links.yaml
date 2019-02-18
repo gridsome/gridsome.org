@@ -10,13 +10,6 @@
       link: /docs/starters
     - title: Deployment
       link: /docs/deployment
-    - title: How to contribute
-      link: /docs/contribute
-    - title: Dev tools
-      link: /docs/dev-tools
-    - title: FAQ
-      link: /docs/faq
-
 
 - title : Basic Gridsome
   items:
@@ -46,6 +39,9 @@
       link: /docs/body-html-attributes
     - title: Environment variables
       link: /docs/environment-variables
+    - title: Overriding Index.html
+      link: /docs/overriding-index
+
 
 - title : Working with data
   items:
@@ -65,14 +61,14 @@
       link: /docs/data-dynamic
 
 - title : Styles and Assets
-  items: 
+  items:
     - title: Use CSS in Gridsome
       link: /docs/assets-css
-    - title: Add custom fonts *
+    - title: Add custom fonts
       link: /docs/assets-fonts
-    - title: Add external scripts *
+    - title: Add external scripts 
       link: /docs/assets-scripts
-    - title: Add SVG icons *
+    - title: Add SVG icons
       link: /docs/assets-svg
 
 
@@ -86,7 +82,7 @@
       link: /docs/guide-comments
 
 - title: API Reference
-  items: 
+  items:
     - title: Gridsome CLI
       link: /docs/gridsome-cli
     - title: Server API
@@ -110,3 +106,22 @@
     - title: GitLab Pages
       link: /docs/deploy-to-gitlab
 
+- title: Contribute
+  items:
+    - title: How to contribute
+      link: /docs/how-to-contribute
+    - title: How to create a plugin *
+      link: /docs/how-to-create-a-plugin
+    - title: Code of conduct
+      link: /docs/code-of-conduct
+
+- title: Help
+  items:
+  - title: How to upgrade
+    link: /docs/how-to-upgrade
+  - title: Troubleshooting
+    link: /docs/troubleshooting
+  - title: Dev tools
+    link: /docs/dev-tools
+  - title: FAQ
+    link: /docs/faq
