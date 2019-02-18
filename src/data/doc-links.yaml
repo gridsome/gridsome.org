@@ -42,7 +42,6 @@
     - title: Overriding Index.html
       link: /docs/overriding-index
 
-
 - title : Working with data
   items:
     - title: Fetching data
@@ -71,7 +70,6 @@
     - title: Add SVG icons
       link: /docs/assets-svg
 
-
 - title : Guides
   items: 
     - title: Add a form *
@@ -91,7 +89,8 @@
       link: /docs/data-store-api
     - title: Client API
       link: /docs/client-api
-
+    - title: Transformer API
+      link: /docs/transformer-api
 
 - title: Deploy
   items:
