@@ -10,7 +10,7 @@ export function browseAll (query = '') {
   if (query) hits.splice(0, hits.length)
 
   const browser = index.browseAll(query, {
-    filters: 'keywords:gridsome AND deprecated:false',
+    filters: 'keywords:gridsome-plugin AND deprecated:false',
     typoTolerance: false
   })
 
