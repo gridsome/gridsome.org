@@ -205,15 +205,15 @@ query Plugin {
 
 .plugins-intro {
   text-align: center;
-  padding-top: 5%;
 
   &__text {
-    margin: -18% auto 0;
+    margin: -35% auto 0;
     max-width: 550px;
   }
 
   &__image {
     margin: 0 auto;
+    width: 100%;
   
   }
 }
