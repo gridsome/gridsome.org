@@ -2,7 +2,7 @@
   <Layout>
      <Section container="md" class="blog-posts">
       <div class="mb container-sm text-center">
-          <h1>Gridsome Blog</h1>
+        <h1>Gridsome blog</h1>
       </div>
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node._id" :post="edge.node"/>
     </Section>
@@ -21,7 +21,8 @@ query BlogPosts {
         timeToRead
         author {
           title
-          path
+          path,
+          avatar (width: 60)
         }
         excerpt
         content

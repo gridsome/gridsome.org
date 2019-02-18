@@ -1,11 +1,15 @@
 <template>
   <Layout>
     <Section container="md" class="blog-posts">
-      <div class="mb container-sm text-center">
-        <span>Blog Posts by:</span>
+      <div class="mb container-sm text-center author-page">
+        <g-image class="author-page__avatar" v-if="$page.author.avatar" :src="$page.author.avatar"/>
         <h1>{{ $page.author.title }}</h1>
-        <g-image v-if="$page.author.avatar" :src="$page.author.avatar"/>
+        <p v-if="$page.author.bio" class="lead container-sm">
+          {{ $page.author.bio }}
+        </p>
       </div>
+
+      <h3 class="text-center">Blog posts</h3>
 
       <!-- <PostCard v-for="edge in $page.author.belongsTo.edges" :key="edge.node.id" :post="edge.node"/> -->
     </Section>
@@ -16,6 +20,7 @@
 query Author ($path: String!) {
   author (path: $path) {
     title
+    bio
     avatar (width: 124)
   }
 }
@@ -24,7 +29,8 @@ query Author ($path: String!) {
 query Author ($path: String!) {
   author (path: $path) {
     title
-    avatar
+    bio
+    avatar (with: 100)
     belongsTo {
       totalCount
       pageInfo {
@@ -62,3 +68,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.author-page {
+  &__avatar {
+    border-radius: 99px;
+  }
+}
+</style>

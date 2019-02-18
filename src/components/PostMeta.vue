@@ -6,6 +6,8 @@
         <template v-for="(author, i) in post.author">
           <span v-if="i && i === post.author.length - 1"> and </span>
           <span v-else-if="i > 0">, </span>
+          <g-image class="author-image" v-if="author.avatar" :src="author.avatar" />
+
           <g-link :to="author.path" :key="author.id">
             {{ author.title }}
           </g-link>
@@ -27,3 +29,12 @@ export default {
   }
 }
 </script>
+
+<style>
+.author-image {
+  width: 30px;
+  border-radius: 99px;
+  vertical-align: middle;
+  margin: 0 6px;
+}
+</style>

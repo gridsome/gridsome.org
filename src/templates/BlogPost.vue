@@ -26,7 +26,8 @@ query BlogPost ($path: String!) {
     author {
       id
       title
-      path
+      path,
+      avatar (width: 60)
     }
     excerpt
   }
