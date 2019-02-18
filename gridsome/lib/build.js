@@ -188,6 +188,8 @@ async function renderHTML (queue, config) {
       dataOutput: page.dataOutput
     }))
 
+    console.log(pages)
+
     try {
       await worker.render({
         pages,
