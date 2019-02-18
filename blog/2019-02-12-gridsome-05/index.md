@@ -3,7 +3,7 @@ title: Gridsome v0.5
 slug: gridsome-v05
 author: [hjvedvik, tommyvedvik]
 date: 2019-02-12
-excerpt: "We're really exited to release Gridsome 0.5. The biggest update yet. It has many important features that makes data handling easier and a lot more flexible."
+excerpt: "We're really exited to release Gridsome 0.5. The biggest update yet. It has many important features that makes data handling easier and a lot more flexible. We have also updated the Plugin page to list all available plugins."
 ---
 
 ## Filtering GraphQL data
