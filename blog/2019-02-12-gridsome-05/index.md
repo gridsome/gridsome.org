@@ -39,6 +39,11 @@ Sometimes you want configuration values that are different from what you have in
 
 Read more about [Environment Variables](/docs/environment-variables)
 
+
+## New Plugin library
+The [Plugins](/plugins) page now gets plugins from NPM. Any plugin tagged with `gridsome` on NPM will be listed here. We have also added a search box for plugins.
+
+
 ## Other features and fixes
 
 - Updated to [Vue 2.6](https://medium.com/the-vue-point/vue-2-6-released-66aa6c8e785e).
@@ -53,10 +58,6 @@ There are no breaking API changes, but some changes might have consequences:
 
 - External image URLs has previously been converted to objects. Which required you to get the actual URL in a `imageField.src` property. But those fields are no longer converted to objects.
 - Filepaths in front matter or markdown must start with `./` or `../` to be resolved and processed. Which means `image.png` will not be processed, but `./image.png` will be.
-
-
-## New Plugin library
-The [Plugins](/plugins) page now gets plugins from NPM. Any plugin tagged with `gridsome` on NPM will be listed here. We have also added a search box for plugins.
 
 
 ## What's next
