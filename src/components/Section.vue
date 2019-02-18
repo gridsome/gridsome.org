@@ -59,7 +59,7 @@ export default {
     .section__dots-bg {
       bottom: auto;
       top:0;
-      height: 280px;
+      height: 380px;
     }
   }
 
