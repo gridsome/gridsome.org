@@ -207,13 +207,12 @@ query Plugin {
   text-align: center;
 
   &__text {
-    margin: -35% auto 0;
+    margin: -20% auto 0;
     max-width: 550px;
   }
 
   &__image {
     margin: 0 auto;
-    width: 100%;
   
   }
 }
