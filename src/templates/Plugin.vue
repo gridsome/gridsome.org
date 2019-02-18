@@ -255,7 +255,7 @@ query Plugin {
       display: inline-flex;
       align-items: center;
     }
-    
+
     img {
       width: 28px;
       height: 28px;
