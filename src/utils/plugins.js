@@ -10,8 +10,8 @@ export function browseAll (query = '') {
   if (query) hits.splice(0, hits.length)
 
   const browser = index.browseAll(query, {
-    filters: 'keywords:gridsome',
-    typoTolerance: false,
+    filters: 'keywords:gridsome AND deprecated:false',
+    typoTolerance: false
   })
 
   return new Promise((resolve, reject) => {
