@@ -1,3 +1,15 @@
+@font-face {
+  font-family: Jost;
+  src: url(../fonts/Jost-400-Book.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Jost;
+  src: url(../fonts/Jost-500-Medium.otf);
+  font-weight: bold;
+}
+
 /* Smaller text for mobile */
 @media screen and (max-width: 750px) {
   html {
@@ -8,12 +20,6 @@
 .lead {
   font-size: 1.2rem;
 }
-
-h1,
-h2 {
-  font-weight: bold;
-}
-
 
 h1,
 h2,

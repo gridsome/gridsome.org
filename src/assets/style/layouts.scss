@@ -1,5 +1,5 @@
 .container {
-  max-width: 1180px;
+  max-width: 1280px;
   width: 100%;
 
   &,
@@ -13,7 +13,7 @@
     width: 100%;
   }
 
-  &-md { max-width: 760px }
+  &-md { max-width: 720px }
   &-sm { max-width: 630px }
   &-mini { max-width: 460px }
 

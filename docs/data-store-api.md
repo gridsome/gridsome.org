@@ -93,13 +93,11 @@ api.loadSource(store => {
   })
 
   const posts = store.addContentType({
-    typeName: 'BlogPost',
-    refs: {
-      author: {
-        key: 'id',
-        typeName: 'Author'
-      }
-    }
+    typeName: 'BlogPost'
+  })
+
+  posts.addReference('author', {
+    typeName: 'Author'
   })
 
   authors.addNode({
@@ -116,7 +114,7 @@ api.loadSource(store => {
 })
 ```
 
-The referring node will be available in a `ref` field in your schema.
+The field will contain the referred node fields:
 
 ```graphql
 query BlogPost ($path: String!) {
@@ -147,13 +145,14 @@ api.loadSource(store => {
 
   contentType.addSchemaField('myField', ({ graphql }) => ({
     type: graphql.GraphQLString,
-    resolve () {
-      return 'value'
+    resolve (node) {
+      return node.fields.myField
     }
   }))
 })
 ```
 
+Read more about [GraphQL resolvers](https://graphql.org/learn/execution/#root-fields-resolvers).
 
 ## store.addTaxonomy(options)
 

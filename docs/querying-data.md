@@ -1,5 +1,5 @@
 # Querying data
-You can query data into any **Page, Template or Component** from the **GraphQL data layer**. Queries are added with a `<page-query>` or `<static-query>` block in Vue Components.
+You can query fetched data into any **Page, Template or Component**. Queries are added with a `<page-query>` or `<static-query>` block in Vue Components.
 
 - Use `<page-query>` in **Pages & Templates**.
 - Use `<static-query>` in **Components**.
@@ -22,9 +22,9 @@ Here is an example of a GraphQL query in a Page:
 ```html
 <template>
   <div>
-    <div v-for="item in $page.posts" :key="item.id">
-      {{item.id}}
-      {{item.title}}
+    <div v-for="edge in $page.posts.edges" :key="edge.node.id">
+      {{ edge.node.id }}
+      {{ edge.node.title }}
     </div>    
   </div>
 </template>
@@ -57,7 +57,7 @@ to fetch data from data sources. The results will be stored in a
   <Layout>
     <h2>Latest blog posts</h2>
     <ul>
-      <li v-for="edge in $page.allWordPressPost.edges" :key="edge.node._id">
+      <li v-for="edge in $page.posts.edges" :key="edge.node.id">
         {{ edge.node.title }}
       </li>
     </ul>
@@ -66,7 +66,7 @@ to fetch data from data sources. The results will be stored in a
 
 <page-query>
 query Blog {
-  allWordPressPost (limit: 5) {
+  posts: allWordPressPost (limit: 5) {
     edges {
       node {
         id
