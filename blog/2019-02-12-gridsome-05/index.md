@@ -54,10 +54,14 @@ There are no breaking API changes, but some changes might have consequences:
 - External image URLs has previously been converted to objects. Which required you to get the actual URL in a `imageField.src` property. But those fields are no longer converted to objects.
 - Filepaths in front matter or markdown must start with `./` or `../` to be resolved and processed. Which means `image.png` will not be processed, but `./image.png` will be.
 
+
+## New Plugin library
+The [Plugins](/plugins) page now gets plugins from NPM. Any plugin tagged with `gridsome` on NPM will be listed here. We have also added a search box for plugins.
+
+
 ## What's next
 
 - Download and process external images.
-- Improve the plugins section on [gridsome.org](https://gridsome.org) to include plugins from npm.
 - Move the [gridsome.org](https://gridsome.org) repository into core repository for easier contribution.
 - Create a starter gallery where anyone can submit a starter.
 - Performance optimizations.
