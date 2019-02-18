@@ -22,12 +22,12 @@
           <div class="plugin-post__meta" v-if="current">
 
             <div class="plugin-post__meta_left">
-              <a v-if="current.repository" :href="current.repository.url">
+              <a v-if="current.repository" :href="current.repository.url" target="_blank" rel="noopener">
                 <git-hub-logo />
               </a>
               <div class="plugin-post__users">
                 <span v-if="current.owners" v-for="owner in current.owners">
-                  <a :href="owner.link">
+                  <a :href="owner.link" target="_blank" rel="noopener">
                     <img v-if="owner.avatar" :src="owner.avatar" :title="owner.name" />
                   </a>
                 </span>
@@ -49,7 +49,7 @@
         </template>
         <template v-else>
           <div class="plugins-intro post">
-            <g-image class="plugins-intro__image" src="~/assets/images/plugins.svg" />
+            <g-image class="plugins-intro__image" src="~/assets/images/plugins.svg" immediate />
             <div class="plugins-intro__text">
               <h1>Gridsome Plugins</h1>
               <p class="lead">Gridsome plugins are NPM packages that you can install to any project. This is currently a small, but growing library. Use the search bar to the left to find a plugin.</p>
