@@ -48,19 +48,19 @@ module.exports = {
         }
       }
     },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        index: ['README'],
-        path: 'plugins/**/*.md',
-        typeName: 'PluginPage',
-        remark: {
-          plugins: [
-            '@gridsome/remark-prismjs'
-          ]
-        }
-      }
-    },
+    // {
+    //   use: '@gridsome/source-filesystem',
+    //   options: {
+    //     index: ['README'],
+    //     path: 'plugins/**/*.md',
+    //     typeName: 'PluginPage',
+    //     remark: {
+    //       plugins: [
+    //         '@gridsome/remark-prismjs'
+    //       ]
+    //     }
+    //   }
+    // },
     {
       use: '@gridsome/source-filesystem',
       options: {

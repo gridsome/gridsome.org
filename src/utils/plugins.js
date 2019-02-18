@@ -4,16 +4,18 @@ const client = algoliasearch('OFCNCOG2CU', '6fbcaeafced8913bf0e4d39f0b541957')
 const index = client.initIndex('npm-search')
 
 const hits = []
+const exclude = ['gridsome', '@gridsome/cli']
 
-export function browseAll (keywords) {
-  if (hits.length) return hits
+export function browseAll (query = '') {
+  if (query) hits.splice(0, hits.length)
 
-  const browser = index.browseAll({
-    filters: `keywords:${keywords}`
+  const browser = index.browseAll(query, {
+    filters: 'keywords:gridsome',
+    typoTolerance: false,
   })
 
   return new Promise((resolve, reject) => {
-    browser.on('result', res => hits.push(...res.hits))
+    browser.on('result', res => appendHits(res))
     browser.on('end', () => resolve(hits))
     browser.on('error', err => reject(err))
   })
@@ -29,8 +31,18 @@ export async function browseSingle (name) {
   })
 
   return new Promise((resolve, reject) => {
-    browser.on('result', res => hits.push(...res.hits))
+    browser.on('result', res => appendHits(res))
     browser.on('end', () => resolve(hits.find(hit => hit.name === name)))
     browser.on('error', err => reject(err))
+  })
+}
+
+function appendHits (result) {
+  result.hits.forEach(newHit => {
+    if (exclude.includes(newHit.name)) return
+
+    if (!hits.find(hit => hit.name === newHit.name)) {
+      hits.push(newHit)
+    }
   })
 }
