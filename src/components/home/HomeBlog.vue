@@ -39,6 +39,7 @@ query BlogPosts {
           id
           title
           path
+          avatar (width: 60)
         }
         excerpt
       }
