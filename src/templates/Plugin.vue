@@ -4,7 +4,7 @@
       <div class="sidebar plugins__sidebar">
         <div class="plugins__search">
           <input type="search" placeholder="Search for Gridsome plugins" @input="search">
-          <div class="plugins__total">{{ plugins.length }} plugins</div>
+          <div v-if="hits" class="plugins__total">{{ plugins.length }} plugins</div>
         </div>
         <ul class="plugins__list">
           <li class="plugin" v-for="plugin in plugins" :key="plugin.name" :class="pluginClass(plugin)">
@@ -78,7 +78,7 @@ export default {
 
   data () {
     return {
-      hits: [],
+      hits: null,
       isLoading: false,
       current: null
     }
@@ -86,20 +86,23 @@ export default {
 
   computed: {
     isSingle () {
-      return !!this.$route.params.id
+      const { id } = this.$route.params
+      return id && id !== '1' // the dummy id
     },
 
     plugins () {
-      return this.hits.slice()
-        .sort((a, b) => b.downloadsRatio - a.downloadsRatio)
-        .map(hit => {          
-          return {
-            ...hit,
-            params: {
-              id: hit.name
-            }
-          }
-        })
+      return this.hits
+        ? this.hits.slice()
+            .sort((a, b) => b.downloadsRatio - a.downloadsRatio)
+            .map(hit => {          
+              return {
+                ...hit,
+                params: {
+                  id: hit.name
+                }
+              }
+            })
+        : []
     },
     owners () {
       return this.current
@@ -136,7 +139,6 @@ export default {
 
       this.isLoading = true
       this.current = name ? await browseSingle(name) : null
-      console.log(this.current)
       this.isLoading = false
     },
 

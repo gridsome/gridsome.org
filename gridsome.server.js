@@ -45,4 +45,11 @@ module.exports = function (api) {
       })
     })   
   })
+
+  api.afterBuild(async ({ config }) => {
+    const from = path.join(config.outDir, 'plugins/1/index.html')
+    const to = path.join(config.outDir, 'plugins/index.html')
+
+    await fs.copy(from, to)
+  })
 }
