@@ -3,7 +3,7 @@
     <div class="container flex gap-60 flex-align-top">
       <div class="sidebar plugins__sidebar">
         <div class="plugins__search">
-          <input type="search" placeholder="Search for Gridsome plugin" @input="search">
+          <input type="search" placeholder="Search for Gridsome plugins" @input="search">
           <div class="plugins__total">{{ plugins.length }} plugins</div>
         </div>
         <ul class="plugins__list">
@@ -15,6 +15,9 @@
             </g-link>
           </li>
         </ul>
+        <div class="plugins__poweredBy">
+          <algolia-logo />
+        </div>
       </div>
       <Section class="plugin-post" container="md">
         <template v-if="isSingle">
@@ -67,12 +70,15 @@
 <script>
 import VueMarkdown from 'vue-markdown'
 import GitHubLogo from '~/assets/images/github-logo.svg'
+import AlgoliaLogo from '~/assets/images/algolia.svg'
+
 import { search, browseAll, browseSingle } from '~/utils/plugins'
 
 export default {
   components: {
     VueMarkdown,
-    GitHubLogo
+    GitHubLogo,
+    AlgoliaLogo
   },
 
   data () {
@@ -148,7 +154,7 @@ export default {
   &__sidebar {
     min-width: 375px;
     max-width: 375px;
-    padding:0 10px 50px 0;
+    padding:0 10px 0 0;
   }
 
   &__search {
@@ -157,13 +163,25 @@ export default {
     margin: 0;
     padding-top: calc(var(--space) * 2);
     padding-bottom: calc(var(--space) / 2);
-    background: #fff;
+    background: rgba(255,255,255,.95);
     z-index: 1;
+  }
+
+  &__poweredBy {
+    position: sticky;
+    bottom:0;
+    padding: 2px 10px 15px;
+    background: rgba(255,255,255,.95);
+    svg {
+      width: 130px;
+      opacity: .6;
+    }
   }
 
   &__list {
     margin: 0;
     list-style: none;
+    padding-bottom: 20px;
   }
 
   &__total {

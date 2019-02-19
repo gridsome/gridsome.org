@@ -1,6 +1,6 @@
 import algoliasearch from 'algoliasearch'
 
-const client = algoliasearch('OFCNCOG2CU', '6fbcaeafced8913bf0e4d39f0b541957')
+const client = algoliasearch('OFCNCOG2CU', 'e0925566b9cfa7d0d21586a0b365d78c')
 const index = client.initIndex('npm-search')
 
 const hits = []

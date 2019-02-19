@@ -5,7 +5,7 @@ a {
   display: inline-block;
   position: relative;
   font-weight: 500;
-
+  border-radius: 99px;
 
   .post &:not(.button) {
     background: linear-gradient(180deg, transparent 60%, var(--success-bg)  60%, var(--success-bg)  87%, transparent 0,);

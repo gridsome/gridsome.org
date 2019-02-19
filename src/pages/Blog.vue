@@ -3,13 +3,14 @@
      <Section container="md" class="blog-posts" dots="top">
       <div class="mb container-sm text-center">
         <h1>Gridsome blog</h1>
-        
-        <p>Want to contribute to Gridsome blog?
-          <g-link to="/docs/how-to-contribute#contributing-to-the-blog"> Learn more here</g-link>
-        </p>
-    
       </div>
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node._id" :post="edge.node"/>
+
+      <p class="text-center">
+        Want to contribute to Gridsome blog?
+        <g-link to="/docs/how-to-contribute#contributing-to-the-blog"> Learn more here</g-link>
+      </p>
+
     </Section>
   </Layout>
 </template> 

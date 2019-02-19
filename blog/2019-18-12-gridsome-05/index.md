@@ -43,7 +43,7 @@ Read more about [Environment Variables](/docs/environment-variables)
 
 ## New Plugin library
 
-The [Plugins](/plugins) page now gets plugins from NPM. Any plugin tagged with `gridsome-plugin` on NPM will be listed here. We have also added a search box for plugins.
+The [Plugins](/plugins) page now gets plugins from NPM directory. Any plugin with keyword `gridsome-plugin` will be listed here. You can also use the search field for filtering.
 
 ![Plugin page](plugins.png)
 
