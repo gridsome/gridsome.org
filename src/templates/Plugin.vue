@@ -27,6 +27,8 @@
             <div class="plugin-post__meta_left">
               <a v-if="current.repository" :href="current.repository.url" target="_blank" rel="noopener">
                 <GitHubLogo />
+                <GitLabLogo />
+                <GitBucketLogo />
               </a>
               <div class="plugin-post__users">
                 <span v-if="current.owners" v-for="owner in current.owners" :key="owner.name">
@@ -71,6 +73,8 @@
 import VueMarkdown from 'vue-markdown'
 import GitHubLogo from '~/assets/images/github-logo.svg'
 import AlgoliaLogo from '~/assets/images/algolia.svg'
+import GitBucketLogo from '~/assets/images/gitbucket.svg'
+import GitLabLogo from '~/assets/images/gitlab.svg'
 
 import { search, browseAll, browseSingle } from '~/utils/plugins'
 
@@ -78,7 +82,9 @@ export default {
   components: {
     VueMarkdown,
     GitHubLogo,
-    AlgoliaLogo
+    AlgoliaLogo,
+    GitLabLogo,
+    GitBucketLogo
   },
 
   data () {
