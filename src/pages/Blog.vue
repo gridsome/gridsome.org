@@ -4,7 +4,7 @@
       <div class="mb container-sm text-center">
         <h1>Gridsome blog</h1>
       </div>
-      <PostCard v-for="edge in $page.posts.edges" :key="edge.node._id" :post="edge.node"/>
+      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
 
       <p class="text-center">
         Want to contribute to Gridsome blog?
@@ -20,15 +20,14 @@ query BlogPosts {
   posts: allBlogPost {
     edges {
       node {
-        _id
+        id
         title
         path
         date (format: "D. MMMM YYYY")
         timeToRead
         author {
           title
-          path,
-          avatar (width: 60)
+          path
         }
         excerpt
         content
