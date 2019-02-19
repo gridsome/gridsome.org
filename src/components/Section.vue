@@ -71,14 +71,13 @@ export default {
 
   &--dark {
     color: rgba(255,255,255,.8);
-    text-shadow: 1px 1px 2px rgba(0,0,0,.1);
     background: var(--secondary-bg);
 
     p {
       color: currentColor;
     }
     
-    h1,h2,h3,h4, a {
+    h1, h2, h3, h4, a {
       color: #FFF;
     }
   }
