@@ -2,13 +2,14 @@
 
 Need a plugin that doesn't exist yet?
 
+
 ##### Core plugins
 
 Feel free to create an issue if you have a plugin suggestion that should be maintained in core, like general source plugins or other common functionalities that will fit most use cases. That will also let others join the discussion about how it should be implemented first. Transformers for common file types should also be maintained in the core repository.
 
 ##### Plugin library
 
-Add a `gridsome-plugin` keyword in `package.json` to make the plugin available in the [plugin library](/plugins).
+Any plugins on NPM can be added to plugin library. Add a `gridsome-plugin` keyword in `package.json` to make it available in the [plugin library](/plugins).
 
 ## Create a source plugin
 
