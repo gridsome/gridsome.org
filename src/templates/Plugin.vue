@@ -47,7 +47,7 @@
         </template>
         <template v-else>
           <div class="plugins-intro post">
-            <g-image class="plugins-intro__image" src="~/assets/images/plugins.svg" immediate />
+            <g-image class="plugins-intro__image" blur="10" src="~/assets/images/plugins.png" />
             <div class="plugins-intro__text">
               <h1>Gridsome Plugins</h1>
               <p class="lead">Gridsome plugins are NPM packages that you can install to any project. This is currently a small, but growing library. Use the search bar to the left to find a plugin.</p>
@@ -258,7 +258,8 @@ export default {
 
   &__image {
     margin: 0 auto;
-  
+    max-width: 500px;
+    width: 100%;
   }
 }
 
