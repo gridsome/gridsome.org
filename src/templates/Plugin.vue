@@ -29,7 +29,7 @@
                 <div :is="repositoryIcon(current.repository)" />
               </a>
               <div class="plugin-post__users">
-                <span v-if="current.owners" v-for="owner in current.owners" :key="owner.name">
+                <span v-for="owner in owners" :key="owner.name">
                   <a :href="owner.link" target="_blank" rel="noopener">
                     <img v-if="owner.avatar" :src="owner.avatar" :title="owner.name" />
                   </a>
@@ -100,6 +100,22 @@ export default {
             }
           }
         })
+    },
+    owners () {
+      return this.current
+        ? this.current.owners.map(owner => {
+            if (owner.name === 'hjvedvik') {
+              return {
+                ...owner,
+                name: 'gridsome',
+                link: 'https://www.npmjs.com/org/gridsome',
+                avatar: 'https://avatars0.githubusercontent.com/u/17981963?s=200&v=4'
+              }
+            }
+
+            return owner
+          })
+        : []
     }
   },
 
@@ -120,6 +136,7 @@ export default {
 
       this.isLoading = true
       this.current = name ? await browseSingle(name) : null
+      console.log(this.current)
       this.isLoading = false
     },
 
