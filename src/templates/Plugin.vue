@@ -10,13 +10,13 @@
           <li class="plugin" v-for="plugin in plugins" :key="plugin.name" :class="pluginClass(plugin)">
             <span class="plugin__name">{{ plugin.name }}</span>
             <div class="plugin__description" v-html="plugin.description"></div>
-            <g-link class="plugin__link" :to="{ name: 'plugin', params: plugin.params }">
+            <g-link class="plugin__link" :to="`/plugins/${plugin.name}`">
               Read more about {{ plugin.name }}
             </g-link>
           </li>
         </ul>
         <div class="plugins__poweredBy">
-          <algolia-logo />
+          <AlgoliaLogo />
         </div>
       </div>
       <Section class="plugin-post" container="md">
@@ -91,20 +91,17 @@ export default {
 
   computed: {
     isSingle () {
-      return !!this.$route.params.namespace
+      return !!this.$route.params.id
     },
 
     plugins () {
       return this.hits.slice()
         .sort((a, b) => b.downloadsRatio - a.downloadsRatio)
-        .map(hit => {
-          const [ namespace, id ] = hit.name.split('/')
-          
+        .map(hit => {          
           return {
             ...hit,
             params: {
-              namespace,
-              id
+              id: hit.name
             }
           }
         })
@@ -124,8 +121,7 @@ export default {
 
   methods: {
     async fetchCurrent () {
-      const { namespace, id } = this.$route.params
-      const name = id ? `${namespace}/${id}` : namespace
+      const { id: name } = this.$route.params
 
       this.isLoading = true
       this.current = name ? await browseSingle(name) : null

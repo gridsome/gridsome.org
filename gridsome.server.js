@@ -20,7 +20,7 @@ module.exports = function (api) {
     store
       .addContentType({
         typeName: 'Plugin',
-        route: '/plugins/:namespace?/:id?'
+        route: '/plugins/:id*'
       })
       .addNode({ id: '1' })
 
