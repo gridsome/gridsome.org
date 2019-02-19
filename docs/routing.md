@@ -36,13 +36,15 @@ module.exports = {
 }
 ```
 
-## Default route params
-The default route params are `:year`, `:month`, `:day` and `:slug`. 
+## Route params
+Available route params are `:id`, `:title`, `:slug` and any custom fields from the current `node`. 
+The `node.date` field has a set of shorthand helpers; `:year`, `:month` and `:day`. Access field values in deep objects or arrays by separating properties or indexes with double underscores (`__`). Field values are slugified by default, but the original value will be available as **{fieldname}_raw**.
 
-
-## Custom route params
-It is possible to use fields coming from a GraphQL node type in the route. Field values are slugified, but the original value will be available as **{fieldname}_raw**. Only root level primitive fields will be available as params.
-
+- `:id` resolves to `node.id`
+- `:value` resolves to `node.fields.value`
+- `:value_raw` resolves to `node.fields.value`
+- `:object__value` resolves to `node.fields.object.value`
+- `:array__3__id` resolves to `node.fields.array[3].id`
 
 ## Routing for custom data sources
 When you add a custom data source you need to use the `route` option inside `addContentType()` **OR** use `path` option inside `addNode()`. `route` will be used for all posts and `path` will be set per post. It's only possible to use one of them. If both are used `route` will be prioritized.

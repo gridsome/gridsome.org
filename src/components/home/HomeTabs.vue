@@ -43,9 +43,9 @@
 
       <div class="grid-cols grid-cols--2 mb">
         <div style="order:2">
-          <h3>A JAMstack dev framework</h3>
+          <h3>A future-ready stack</h3>
 
-          <p>JAMstack is modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup. <strong>No servers. No databases. Only files.</strong> Deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site.</p>
+          <p><a href="http://jamstack.org" target="_blank">JAMstack</a> is modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup. <strong>No servers. No databases. Only files.</strong> Deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site.</p>
 
           <ul class="bullet-list">
             <li><Bullet /> <strong> Blazing fast generating.</strong> Build thousands of pages in seconds</li>

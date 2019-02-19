@@ -15,7 +15,7 @@
   items:
     - title: Directory structure
       link: /docs/directory-structure
-    - title: Project config
+    - title: Project configuration
       link: /docs/config
     - title: Pages
       link: /docs/pages
@@ -37,6 +37,8 @@
       link: /docs/head
     - title: body & html attributes
       link: /docs/body-html-attributes
+    - title: Environment variables
+      link: /docs/environment-variables
     - title: Overriding Index.html
       link: /docs/overriding-index
 
@@ -46,13 +48,16 @@
       link: /docs/fetching-data
     - title: Querying data
       link: /docs/querying-data
-    - title: Paginate queries
+    - title: Filtering data
+      link: /docs/filtering-data
+    - title: Taxonomy pages
+      link: /docs/taxonomies
+    - title: Paginated data
       link: /docs/pagination
     - title: Add global meta data
       link: /docs/site-meta-data
-    - title: Use dynamic data *
+    - title: Add dynamic data *
       link: /docs/data-dynamic
-
 
 - title : Styles and Assets
   items:
@@ -64,7 +69,6 @@
       link: /docs/assets-scripts
     - title: Add SVG icons
       link: /docs/assets-svg
-
 
 - title : Guides
   items: 
@@ -85,7 +89,8 @@
       link: /docs/data-store-api
     - title: Client API
       link: /docs/client-api
-
+    - title: Transformer API
+      link: /docs/transformer-api
 
 - title: Deploy
   items:
@@ -104,7 +109,7 @@
   items:
     - title: How to contribute
       link: /docs/how-to-contribute
-    - title: How to create a plugin *
+    - title: How to create a plugin
       link: /docs/how-to-create-a-plugin
     - title: Code of conduct
       link: /docs/code-of-conduct

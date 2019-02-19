@@ -1,10 +1,16 @@
 <template>
   <Layout>
-     <Section container="md" class="blog-posts">
+     <Section container="md" class="blog-posts" dots="top">
       <div class="mb container-sm text-center">
-          <h1>Gridsome Blog</h1>
+        <h1>Gridsome blog</h1>
       </div>
-      <PostCard v-for="edge in $page.posts.edges" :key="edge.node._id" :post="edge.node"/>
+      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
+
+      <p class="text-center">
+        Want to contribute to Gridsome blog?
+        <g-link to="/docs/how-to-contribute#contributing-to-the-blog"> Learn more here</g-link>
+      </p>
+
     </Section>
   </Layout>
 </template> 
@@ -14,12 +20,16 @@ query BlogPosts {
   posts: allBlogPost {
     edges {
       node {
-        _id
+        id
         title
         path
         date (format: "D. MMMM YYYY")
         timeToRead
-        author
+        author {
+          title
+          path
+          avatar (width: 60)
+        }
         excerpt
         content
       }
@@ -37,7 +47,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

@@ -1,4 +1,4 @@
-# Project config
+# Project configuration
 
 Gridsome requires `/gridsome.config.js` to work. Plugin and project settings are located here. A basic configuration file would look something like this:
 
@@ -43,6 +43,13 @@ subdirectory called `my-app`.
 
 Set a template for the title tag. The `%s` placeholder is replaced with title
 from metaInfo you set in your pages.
+
+## plugins
+
+- Type `Array`
+- Default `[]`
+
+[Read more about using plugins](/docs/install-plugins)
 
 ## icon
 
@@ -97,6 +104,15 @@ Define custom sizes and disable effects on iOS < 7 devices:
 A function that will receive an instance of ChainableConfig powered by
 [webpack-chain](https://github.com/neutrinojs/webpack-chain).
 
+
+## configureServer
+
+- Type `Function`
+
+Configure the development server.
+
+[Read more about configuring the development server](/docs/server-api#apiconfigureserverfn)
+
 ## css.loaderOptions
 
 - Type `Object`
@@ -126,13 +142,6 @@ Supported loaders are:
 - [sass-loader](https://github.com/webpack-contrib/sass-loader)
 - [less-loader](https://github.com/webpack-contrib/less-loader)
 - [stylus-loader](https://github.com/shama/stylus-loader)
-
-## plugins
-
-- Type `Array`
-- Default `[]`
-
-[Read more about using plugins](/docs/install-plugins)
 
 ## host
 

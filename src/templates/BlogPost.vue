@@ -23,7 +23,12 @@ query BlogPost ($path: String!) {
     date (format: "D. MMMM YYYY")
     timeToRead
     content
-    author
+    author {
+      id
+      title
+      path,
+      avatar (width: 60)
+    }
     excerpt
   }
 }
@@ -49,3 +54,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+  p > img {
+    max-width: 120%;
+    margin-left: -10%;
+  }
+</style>

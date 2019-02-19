@@ -21,7 +21,7 @@ export default {
 <style lang="scss">
   .card {
     border: 1px solid #ddd;
-    padding: var(--space);
+    padding: calc(var(--space) * 2);
     border-radius: 4px;
     background-color: #FFF;
     transition: color.3s, box-shadow .3s, transform .3s;

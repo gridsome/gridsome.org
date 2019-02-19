@@ -41,7 +41,7 @@ Here is an example where we add **Vuex** store to the Vue instance.
 ```js
 import Vuex from 'vuex'
 
-export default function (Vue, {appOptions}) {
+export default function (Vue, { appOptions }) {
   Vue.use(Vuex)
   
   appOptions.store = new Vuex.Store({
@@ -62,7 +62,7 @@ export default function (Vue, {appOptions}) {
 This example lets you do stuff before next page load.
 
 ```js
-export default function (Vue, {router}) {
+export default function (Vue, { router }) {
   router.beforeEach((to, from, next) => {
     // Do stuff before next page load
     next()

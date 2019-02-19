@@ -52,19 +52,6 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         index: ['README'],
-        path: 'plugins/**/*.md',
-        typeName: 'PluginPage',
-        remark: {
-          plugins: [
-            '@gridsome/remark-prismjs'
-          ]
-        }
-      }
-    },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        index: ['README'],
         path: 'learn/**/*.md',
         typeName: 'LearnPage',
         remark: {
@@ -95,9 +82,12 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'blog/*/index.md',
-        route: '/blog/:year/:month/:day/:slug+',
         typeName: 'BlogPost',
+        path: './blog/*/index.md',
+        route: '/blog/:year/:month/:day/:slug',
+        refs: {
+          author: 'Author'
+        },
         remark: {
           plugins: [
             '@gridsome/remark-prismjs'

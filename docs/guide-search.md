@@ -1,4 +1,3 @@
-# Add to add a search
-
+# Add search to Gridsome
 
 _Contribute..._

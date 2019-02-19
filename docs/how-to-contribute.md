@@ -1,6 +1,6 @@
 
 # How to contribute
-> Gridsome is an open-source project built by core maintainers and contributors. We want to make it easy for anyone to contribute to Gridsome. Contribute to core, build plugins, improve documentation or write a blog post. It all helps Gridsome on its mission to simplify website development.
+> Gridsome is an open-source project built by core maintainers and contributors. We want to make it easy for anyone to contribute to Gridsome. Contribute to core, build plugins, improve documentation or write a blog post. It all helps Gridsome on its mission to simplify JAMstack development.
 
 Read the [code of conduct](/docs/code-of-conduct).
 
@@ -35,7 +35,7 @@ You can also clone [the Gridsome.org repo](https://github.com/gridsome/gridsome.
 
 
 ## Contributing to the blog
-Creating guest blog posts for Gridsome.org users is a great way to contribute. A typical blog post could be: **How our company is using Gridsome to do XX**, or **How to integrate XX with Gridsome**.
+Creating guest blog posts for Gridsome.org users is a great way to contribute to Gridsome community. A typical blog post could be: **How our company is using Gridsome to do XX**, or **How to integrate XX with Gridsome**.
 
 To add a new blog post to the gridsome.org blog:
 
@@ -53,10 +53,6 @@ To add a new blog post to the gridsome.org blog:
 - Create a pull request from your branch
   - We recommend using a prefix of `docs`, like `docs/your-change`.
 
-
-## Submit a plugin *
-
-*Comming soon...*
 
 ## Submit a Starter *
 
