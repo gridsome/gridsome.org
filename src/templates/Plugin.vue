@@ -129,6 +129,14 @@ export default {
     }
   },
 
+  metaInfo () {
+    return {
+      title: this.current
+        ? this.current.name
+        : 'Plugins'
+    }
+  },
+
   async mounted () {
     this.hits = await browseAll()
   },
