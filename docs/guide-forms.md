@@ -10,7 +10,7 @@ _Contribute..._
 _Contribute..._
 
 ## Netlify Forms
-_Contribute..._
+Netlify offers some sophisticated features to make static site form submissions a breeze. Read more: [Netlify Forms](https://www.netlify.com/docs/form-handling/)
 
 ## Basin
 _Contribute..._
