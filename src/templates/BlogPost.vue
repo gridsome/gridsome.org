@@ -56,8 +56,10 @@ export default {
 </script>
 
 <style lang="scss">
+@media screen and (min-width: 750px) {
   p > img {
     max-width: 120%;
     margin-left: -10%;
   }
+}
 </style>
