@@ -26,9 +26,7 @@
 
             <div class="plugin-post__meta_left">
               <a v-if="current.repository" :href="current.repository.url" target="_blank" rel="noopener">
-                <GitHubLogo />
-                <GitLabLogo />
-                <GitBucketLogo />
+                <div :is="repositoryIcon(current.repository)" />
               </a>
               <div class="plugin-post__users">
                 <span v-if="current.owners" v-for="owner in current.owners" :key="owner.name">
@@ -45,12 +43,6 @@
           </div>
 
           <VueMarkdown class="post plugin-post__content mb" v-if="current" :source="current.readme" />
-
-          <div v-if="current" class="plugin-post__edit">
-            <a class="github-edit-link" v-if="current.repository" :href="current.repository.url + '/README.md'"> 
-              <GitHubLogo /> Edit this page on GitHub
-            </a>
-          </div>
 
         </template>
         <template v-else>
@@ -73,7 +65,7 @@
 import VueMarkdown from 'vue-markdown'
 import GitHubLogo from '~/assets/images/github-logo.svg'
 import AlgoliaLogo from '~/assets/images/algolia.svg'
-import GitBucketLogo from '~/assets/images/gitbucket.svg'
+import BitbucketLogo from '~/assets/images/bitbucket.svg'
 import GitLabLogo from '~/assets/images/gitlab.svg'
 
 import { search, browseAll, browseSingle } from '~/utils/plugins'
@@ -81,10 +73,7 @@ import { search, browseAll, browseSingle } from '~/utils/plugins'
 export default {
   components: {
     VueMarkdown,
-    GitHubLogo,
-    AlgoliaLogo,
-    GitLabLogo,
-    GitBucketLogo
+    AlgoliaLogo
   },
 
   data () {
@@ -146,6 +135,16 @@ export default {
       return {
         'plugin--active': this.current && this.current.name === plugin.name
       }
+    },
+
+    repositoryIcon (repository) {
+      switch (repository.host) {
+        case 'github.com': GitHubLogo; break
+        case 'gitlab.com': GitLabLogo; break
+        case 'bitbucket.com': BitbucketLogo; break
+      }
+
+      return GitHubLogo
     }
   }
 }
