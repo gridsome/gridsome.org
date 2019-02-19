@@ -28,6 +28,7 @@ query BlogPosts {
         author {
           title
           path
+          avatar (width: 60)
         }
         excerpt
         content
