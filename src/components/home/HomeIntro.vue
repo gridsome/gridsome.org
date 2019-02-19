@@ -52,7 +52,7 @@ import LinesOut from '~/assets/images/home-lines-out.svg'
 import LinesIn from '~/assets/images/home-lines-in.svg'
 import Logo from '~/assets/images/home-logo.svg'
 
-const words = ['insanely fast', 'future-ready', 'JAMstack', 'static & secure']
+const words = ['insanely fast', 'JAMstack', 'static & secure', 'future-ready']
 
 export default {
   components: {
