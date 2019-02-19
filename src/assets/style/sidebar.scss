@@ -1,6 +1,6 @@
 
 .sidebar {
-  min-width: 260px;
+  order: 2;
   z-index: 10;
   overflow: auto;
   position: relative;
@@ -12,6 +12,8 @@
     top: var(--header-height);
     height: calc(100vh + (var(--header-height) * -1));
     padding: 2% 0 50px .5rem;
+    width: 260px;
+    order: 0;
   }
 
   h3 {
@@ -89,7 +91,6 @@
     } + .section {
       margin-left: 0;
       width: 100%;
-      flex:1;
     }
   }
 }
