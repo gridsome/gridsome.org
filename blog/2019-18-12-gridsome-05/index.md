@@ -66,10 +66,13 @@ There are no breaking API changes, but some changes might have consequences:
 ## What's next
 
 - Download and process external images.
+- Page transitions.
+- Full PWA support.
+- Performance optimizations.
 - Move the [gridsome.org](https://gridsome.org) repository into core repository for easier contribution.
 - Create a starter gallery where anyone can submit a starter.
-- Performance optimizations.
 - Docs docs docs!
+
 
 Thanks for all contributions to documentation, features, bugfixes and plugins so far!
 
