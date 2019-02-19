@@ -254,6 +254,7 @@ export default {
     svg {
       width: 28px;
       height: 28px;
+      opacity: .4;
     }
   }
 
