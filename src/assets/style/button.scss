@@ -39,9 +39,14 @@
     }
   }
 
-  &.small {
+  &--small {
     font-size: .85rem;
     padding: .35rem .7rem;
+  }
+
+  &--large {
+    font-size: 1.25rem;
+    padding: .5rem 1.25rem;
   }
 
   + .button {
