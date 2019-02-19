@@ -1,4 +1,4 @@
-# Add to add a form
+# Add a form to Gridsome
 
 Adding forms to a static site is easy, but you need to use an external service. We have listed some great services that integrates well with Gridsome.
 
