@@ -3,20 +3,20 @@ title: Gridsome v0.5
 slug: gridsome-v05
 author: [hjvedvik, tommyvedvik]
 date: 2019-02-18
-excerpt: "We're really exited to release Gridsome 0.5. The biggest update yet. It has many important features that makes data handling easier and a lot more flexible. It opens up a whole new world of what you can build with Gridsome & Vue. Build Taxonomy pages and connections for any data."
+excerpt: "We're really exited to release Gridsome 0.5. The biggest update yet. It has many important features that make data handling easier and a lot more flexible. It opens up a whole new world of what you can build with Gridsome. Easily build Taxonomy pages and connections for any data."
 ---
 
 ## Filtering GraphQL data
 
-Each content type collection in the GraphQL schema has a new `filter` argument which ca be used to filter the results. You can filter by `id`, `title`, `slug`, `path` or any custom field.
+Each content type collection in the GraphQL schema has a new `filter` argument which can be used to filter the results. You can filter by `id`, `title`, `slug`, `path` or any custom field.
 
 Read more about [Filtering data](/docs/filtering-data)
 
 ## Create taxonomy pages
 
-All references in the the GraphQL schema has been a one way relation. This release introduces a new field called `belongsTo` for all content types. The field will list all nodes that has a reference back to the current node which makes it very useful to create taxonomy pages etc. The field can also take the same arugments as a collection. And the `@paginate` directive can be used to automatcally paginate the results.
+All references in the GraphQL schema has been a one-way relation. This release introduces a new field called `belongsTo` for all content types. The field will list all nodes that have a reference back to the current node which makes it very useful to create taxonomy pages etc. The field can also take the same arguments as a collection. And the `@paginate` directive can be used to automatically paginate the results.
 
-This can for example be used to:
+For example, this can be used to:
 - List blog posts for an author.
 - List posts for a tag or category.
 
@@ -26,7 +26,7 @@ Read more about [Taxonomies](/docs/taxonomies)
 
 ## Variables in Page Query
 
-Previously, only `$path` and `$page` was available as variables for `page-query` in templates. But you can now use `$id`, `$title`, `$slug`, `$date` or any custom field from the current `node`. Deep objects and arrays can also be used as variables.
+Previously, only `$path` and `$page` were available as variables for `page-query` in templates. But you can now use `$id`, `$title`, `$slug`, `$date` or any custom field from the current `node`. Deep objects and arrays can also be used as variables.
 
 - `$id` resolves to `node.id`
 - `$value` resolves to `node.fields.value`
@@ -51,7 +51,7 @@ The [Plugins](/plugins) page now gets plugins from NPM directory. Any plugin wit
 
 - Updated to [Vue 2.6](https://medium.com/the-vue-point/vue-2-6-released-66aa6c8e785e).
 - Create references in any node field. [Read more](/docs/data-store-api#storecreatereferencetypename-id).
-- Hook for configurating the development server. [Read more](/docs/server-api#apiconfigureserverfn).
+- Hook for configuring the development server. [Read more](/docs/server-api#apiconfigureserverfn).
 - Customize default `index.html` template (by [K3TH3R](https://github.com/K3TH3R)).
 - Add custom CSS loader options (by [maoberlehner](https://github.com/maoberlehner)).
 
