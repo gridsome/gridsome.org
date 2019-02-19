@@ -67,6 +67,7 @@ There are no breaking API changes, but some changes might have consequences:
 
 - Download and process external images.
 - Page transitions.
+- Smoother image loading for `<g-image>` (Fade in).
 - Full PWA support.
 - Performance optimizations.
 - Move the [gridsome.org](https://gridsome.org) repository into core repository for easier contribution.

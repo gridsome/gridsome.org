@@ -54,10 +54,6 @@ To add a new blog post to the gridsome.org blog:
   - We recommend using a prefix of `docs`, like `docs/your-change`.
 
 
-## Submit a plugin *
-
-*Comming soon...*
-
 ## Submit a Starter *
 
 *Comming soon...*

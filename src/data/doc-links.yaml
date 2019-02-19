@@ -109,7 +109,7 @@
   items:
     - title: How to contribute
       link: /docs/how-to-contribute
-    - title: How to create a plugin *
+    - title: How to create a plugin
       link: /docs/how-to-create-a-plugin
     - title: Code of conduct
       link: /docs/code-of-conduct
