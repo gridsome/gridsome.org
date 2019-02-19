@@ -6,4 +6,6 @@
 /docs/data-query-data /docs/querying-data 301
 /docs/data-source-plugin /docs/fetching-data 
 /docs/data-custom /docs/fetching-data 301
+
+/plugins /plugins/1/index.html 200
 /plugins/* /plugins/1/index.html 200
