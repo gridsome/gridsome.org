@@ -2,7 +2,7 @@
   <Layout>
     <Section container="md" class="blog-posts">
       <div class="mb container-sm text-center author-page">
-        <g-image class="author-page__avatar" v-if="$page.author.avatar" :src="$page.author.avatar"/>
+        <g-image class="author-page__avatar" v-if="$page.author.avatar" :key="$page.author.id" :src="$page.author.avatar"/>
         <h1>{{ $page.author.title }}</h1>
         <p v-if="$page.author.bio" class="lead container-sm">
           {{ $page.author.bio }}
@@ -11,7 +11,7 @@
 
       <h3 class="text-center">Blog posts</h3>
 
-      <!-- <PostCard v-for="edge in $page.author.belongsTo.edges" :key="edge.node.id" :post="edge.node"/> -->
+      <PostCard v-for="edge in $page.author.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
     </Section>
   </Layout>
 </template>
@@ -19,18 +19,10 @@
 <page-query>
 query Author ($path: String!) {
   author (path: $path) {
+    id
     title
     bio
     avatar (width: 124)
-  }
-}
-</page-query>
-
-query Author ($path: String!) {
-  author (path: $path) {
-    title
-    bio
-    avatar (with: 100)
     belongsTo {
       totalCount
       pageInfo {
@@ -58,6 +50,7 @@ query Author ($path: String!) {
     }
   }
 }
+</page-query>
 
 <script>
 import PostCard from '@/components/PostCard.vue'
