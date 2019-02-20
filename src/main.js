@@ -10,6 +10,7 @@ import Feature from '~/components/Feature.vue'
 import Card from '~/components/Card'
 
 import VueScrollTo from 'vue-scrollto'
+import VueInstantSearch from 'vue-instantsearch'
 
 import Typography from 'typography'
 import 'typeface-league-spartan'
@@ -32,6 +33,7 @@ export default function (Vue, { head, router, isServer }) {
   Vue.component('Card', Card)
 
   Vue.use(VueScrollTo)
+  Vue.use(VueInstantSearch)
 
   head.style.push({
     type: 'text/css',

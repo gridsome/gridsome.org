@@ -2,28 +2,47 @@
   <Layout class="plugins" :footer="false">
     <div class="container container-main flex gap-60 flex-align-top">
       <div class="sidebar plugins__sidebar">
-        <div class="plugins__search">
-          <input type="search" placeholder="Search for Gridsome plugins" @input="search">
-          <div v-if="hits" class="plugins__total">{{ plugins.length }} plugins</div>
-        </div>
-        <ul class="plugins__list">
-          <li class="plugin" v-for="plugin in plugins" :key="plugin.name" :class="pluginClass(plugin)">
-            <span class="plugin__name">{{ plugin.name }}</span>
-            <div class="plugin__description" v-html="plugin.description"></div>
-            <g-link class="plugin__link" :to="`/plugins/${plugin.name}`">
-              Read more about {{ plugin.name }}
-            </g-link>
-          </li>
-        </ul>
-        <div class="plugins__poweredBy">
-          <AlgoliaLogo />
-        </div>
+        <ClientOnly>
+          <AisInstantSearch :search-client="searchClient" index-name="npm-search">
+            <AisConfigure
+              :hitsPerPage="50"
+              :analyticsTags="['gridsome']"
+              filters="keywords:gridsome-plugin AND deprecated:false"
+            />
+
+            <div class="plugins__search">
+              <AisSearchBox placeholder="Search for Gridsome plugins" />
+              <div class="flex flex-space-between">
+                <AisStateResults v-slot="{ nbHits }">
+                  <span class="small">{{ nbHits }} plugins</span>
+                </AisStateResults>
+                <AisPoweredBy />
+              </div>
+            </div>
+
+            <AisInfiniteHits class="plugins__list">
+              <template v-slot:item="{ item }">
+                <li class="plugin" :class="pluginClass(item)">
+                  <AisHighlight class="plugin__name" :hit="item" attribute="name" />
+                  <AisHighlight class="plugin__description" :hit="item" attribute="description" />
+                  <a class="plugin__link" href="javascript:void(0)" @click.prevent="showPlugin(item)">
+                    Read more about {{ item.name }}
+                  </a>
+                </li>
+              </template>
+              <template v-slot:loadMore="{ refine, isLastPage }">
+                <button v-if="!isLastPage" class="plugins__more button" @click="refine">
+                  Show more plugins
+                </button>
+              </template>
+            </AisInfiniteHits>
+          </AisInstantSearch>
+        </ClientOnly>
       </div>
+
       <Section class="plugin-post" container="md">
         <template v-if="isSingle">
-          <div v-if="isLoading">Loading...</div>
           <div class="plugin-post__meta" v-if="current">
-
             <div class="plugin-post__meta_left">
               <a v-if="current.repository" :href="current.repository.url" target="_blank" rel="noopener">
                 <div :is="repositoryIcon(current.repository)" />
@@ -36,9 +55,8 @@
                 </span>
               </div>
             </div>
-       
             <div class="plugin-post__meta_right">
-              <span>Downloads this month: {{ current.humanDownloadsLast30Days }}</span>
+              <span>Downloads last month: {{ current.humanDownloadsLast30Days }}</span>
             </div>
           </div>
 
@@ -57,18 +75,19 @@
           </div>
         </template>
       </Section>
-    </div>
+     </div>
   </Layout>
 </template>
 
 <script>
 import VueMarkdown from 'vue-markdown'
+import algoliasearch from 'algoliasearch/lite'
 import GitHubLogo from '~/assets/images/github-logo.svg'
 import AlgoliaLogo from '~/assets/images/algolia.svg'
 import BitbucketLogo from '~/assets/images/bitbucket.svg'
 import GitLabLogo from '~/assets/images/gitlab.svg'
-
-import { search, browseAll, browseSingle } from '~/utils/plugins'
+// import { history as historyRouter } from 'instantsearch.js/es/lib/routers'
+// import { simple as simpleMapping } from 'instantsearch.js/es/lib/stateMappings'
 
 export default {
   components: {
@@ -78,9 +97,15 @@ export default {
 
   data () {
     return {
-      hits: null,
-      isLoading: false,
-      current: null
+      current: null,
+      searchClient: algoliasearch(
+        'OFCNCOG2CU',
+        'e0925566b9cfa7d0d21586a0b365d78c'
+      )
+      // routing: {
+      //   router: historyRouter(),
+      //   stateMapping: simpleMapping()
+      // }
     }
   },
 
@@ -90,20 +115,6 @@ export default {
       return id && id !== '1' // the dummy id
     },
 
-    plugins () {
-      return this.hits
-        ? this.hits.slice()
-            .sort((a, b) => b.downloadsRatio - a.downloadsRatio)
-            .map(hit => {          
-              return {
-                ...hit,
-                params: {
-                  id: hit.name
-                }
-              }
-            })
-        : []
-    },
     owners () {
       return this.current
         ? this.current.owners.map(owner => {
@@ -150,31 +161,30 @@ export default {
     return meta
   },
 
-  async mounted () {
-    this.hits = await browseAll()
-  },
-
   methods: {
     async fetchCurrent () {
       const { id: name } = this.$route.params
 
-      this.isLoading = true
-      this.current = name ? await browseSingle(name) : null
-      this.isLoading = false
+      const { results: [results] } = await this.searchClient.search([{
+        indexName: 'npm-search',
+        query: name
+      }])
+
+      this.current = results.hits.length && results.hits[0].name === name
+        ? results.hits[0]
+        : null
     },
 
-    search (event) {
-      clearTimeout(this.__search)
-      this.__search = setTimeout(async () => {
-        this.hits = await browseAll(event.target.value)
-        this.__search = null
-      }, 300)
-    },
-
-    pluginClass (plugin) {
+    pluginClass (hit) {
       return {
-        'plugin--active': this.current && this.current.name === plugin.name
+        'plugin--active': this.current && this.current.name === hit.name
       }
+    },
+
+    showPlugin (hit) {
+      this.$router.push({
+        path: `/plugins/${hit.name}`
+      })
     },
 
     repositoryIcon (repository) {
