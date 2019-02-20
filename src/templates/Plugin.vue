@@ -130,11 +130,24 @@ export default {
   },
 
   metaInfo () {
-    return {
-      title: this.current
-        ? this.current.name
-        : 'Plugins'
+    const meta = {
+      title: 'Plugins',
+      meta: []
     }
+
+    if (this.current) {
+      meta.title = this.current.name
+
+      if (this.current.description) {
+        meta.meta.push({
+          key: 'description',
+          name: 'description',
+          content: this.current.description
+        })
+      }
+    }
+
+    return meta
   },
 
   async mounted () {

@@ -58,6 +58,18 @@ import PostCard from '@/components/PostCard.vue'
 export default {
   components: {
     PostCard
+  },
+  metaInfo () {
+    return {
+      title: this.$page.author.title,
+      meta: [
+        {
+          key: 'description',
+          name: 'description',
+          content: this.$page.author.bio
+        }
+      ]
+    }
   }
 }
 </script>
