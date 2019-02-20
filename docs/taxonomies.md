@@ -52,10 +52,12 @@ query Tag ($id: String!) {
     title
     belongsTo {
       edges {
-        ...on Post {
-          id
-          title
-          path
+        node {
+          ...on Post {
+            id
+            title
+            path
+          }
         }
       }
     }
@@ -81,10 +83,12 @@ query Tag ($id: String!, $page: Int) {
         currentPage
       }
       edges {
-        ...on Post {
-          id
-          title
-          path
+        node {
+          ...on Post {
+            id
+            title
+            path
+          }
         }
       }
     }
