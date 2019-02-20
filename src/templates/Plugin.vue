@@ -14,7 +14,7 @@
               <AisSearchBox placeholder="Search for Gridsome plugins" />
               <div class="flex flex-space-between">
                 <AisStateResults v-slot="{ nbHits }">
-                  <span class="small">{{ nbHits }} plugins</span>
+                  <span class="plugins__count small">{{ nbHits }} plugins</span>
                 </AisStateResults>
                 <AisPoweredBy />
               </div>

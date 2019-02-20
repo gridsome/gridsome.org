@@ -21,14 +21,23 @@
       margin-bottom: calc(var(--space) / 2);
     }
 
+    .ais-SearchBox-input {
+      padding-left: calc(var(--space) / 2);
+    }
+
     .ais-SearchBox-submit,
     .ais-SearchBox-reset {
       display: none;
     }
 
     .ais-PoweredBy-logo {
-      width: 128px !important;
+      width: 115px !important;
+      opacity: 0.6;
     }
+  }
+
+  &__count {
+    margin-left: calc(var(--space) / 2);
   }
 
   &__more.button {
@@ -39,9 +48,13 @@
   &__list {
     padding-bottom: 20px;
 
-    > ol {
+    .ais-InfiniteHits-list {
       margin: 0;
       list-style: none;
+    }
+
+    .ais-InfiniteHits-item {
+      margin: 0;
     }
   }
 
@@ -58,10 +71,6 @@
       width: 100%;
       list-style: none;
       justify-content: center;
-    }
-    .ais-Pagination-item {
-      margin: 0;
-      padding: calc(var(--space) / 3);
     }
   }
 }
