@@ -1,7 +1,7 @@
 # Page transitions
-Gridsome is currently mounting & unmounting the whole layout on route change. This means there is **NOT possible** to do **enter/leave** transitions for only content while keeping header.
+Gridsome is currently mounting & unmounting the whole layout on route change. This happens because of how Gridsome deals with [Layouts](/docs/layouts). Layouts are added as wrapper components per page and template to make it possible to use [slots](https://vuejs.org/v2/guide/components-slots.html) and [props](https://vuejs.org/v2/guide/components-props.html) on the layout component.
 
-This happens because of how Gridsome deals with [Layouts](/docs/layouts). Layouts are added as wrapper components per page and template to make it possible to use [slots](https://vuejs.org/v2/guide/components-slots.html) and [props](https://vuejs.org/v2/guide/components-props.html) on the layout component.
+This means there is **not possible** to do **enter/leave** transitions for content while keeping header, but it is possible to use **enter transitions**.
 
 ### Create an Enter transition
 To make [transitions](https://vuejs.org/v2/guide/transitions.html) work now you need to use only **Enter transitions**. You can do this by adding a `appear` attribute to `<transition>`.
