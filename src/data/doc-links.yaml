@@ -33,6 +33,8 @@
       link: /docs/linking
     - title: Images
       link: /docs/images
+    - title: Page transitions
+      link: /docs/page-transitions
     - title: Populating <head>
       link: /docs/head
     - title: body & html attributes
