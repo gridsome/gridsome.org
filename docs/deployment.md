@@ -4,7 +4,7 @@ Gridsome is a modern website generator that generates secure & static files. To 
 
 ## Git-based deploying
 
-The best practice when working with Gridsome sites is to have your project hosted on a Git-service like GitHub and connect a deploy service that builds your site from a selected repository. [Netlify](//www.netlify.com/) is the best solution for this now. They also have free plan for static website hosting. Its also possible to setup auto re-deploys if repository or content changes.
+The best practice when working with Gridsome sites is to have your project hosted on a Git-service like GitHub and connect a deploy service that builds your site from a selected repository. [Netlify](//www.netlify.com/) is a great solution for this right now. They also have free plan for static website hosting. It's also possible to set up auto re-deploys if the repository or content changes.
 
 
 These services are great for Git-based deploying:
@@ -27,7 +27,7 @@ Many services let you deploy your static Gridsome site from the terminal. Here a
 
 ## FTP deploying
 
-To host your site on traditional hosting via FTP you need to manually build your project from the Terminal.
+To host your site on traditional hosting via FTP you need to manually build your project from the terminal.
 
 - Run `gridsome build` in your project folder.
 - This will generate a `dist` folder where your generated site is located.
@@ -35,7 +35,7 @@ To host your site on traditional hosting via FTP you need to manually build your
 
 ## Drag & drop deploying
 
-**Netlify Drop** let you deploy a website with simply drag & drop.
+**Netlify Drop** lets you deploy a website with simply drag & drop.
 
 - Run `gridsome build` in your project folder.
 - This will generate a `dist` folder where your generated site is located.
