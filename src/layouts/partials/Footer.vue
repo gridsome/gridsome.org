@@ -20,6 +20,7 @@
       target="_blank"
     >Contributors 🌟</a>
     <g-link to="/logo">Logo & assets</g-link>
+    <img id="made-with-gridsome" src="assets/made-with-gridsome.png">
   </footer>
 </template>
 
@@ -32,5 +33,10 @@ footer {
   @media screen and (max-width: 750px) {
     padding-bottom: 90px;
   }
+}
+#made-with-gridsome {
+  width: 120px;
+  margin-bottom: 0;
+  margin-left: 10px;
 }
 </style>
