@@ -4,12 +4,12 @@ Gridsome lets you add global meta data with the [Data store API](/docs/data-stor
 
 > Adding meta data is great if you have data you want to be globally accessible, but don't need to be in any GraphQL collection.
 
-Here is an example where we create a custom meta for site title.
+Here is an example
 
 ```js
 module.exports = function (api) {
   api.loadSource(async store => {
-    store.addMetaData('siteTitle', 'My Gridsome Site')
+    store.addMetaData('textExample', 'This is a global text')
   })
 }
 ```
@@ -19,13 +19,13 @@ Here is an example on how it could be used in a Vue Component:
 
 ```html
 <template>
-  <h1 v-html="$static.metaData.siteTitle" />
+  <h1 v-html="$static.metaData.textExample" />
 </template>
 
 <static-query>
 query {
   metaData {
-    siteTitle
+    textExample
   }
 }
 </static-query>

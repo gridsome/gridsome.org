@@ -1,8 +1,8 @@
 # How it works
 
-Gridsome is a modern, website development framework for creating fast and secure websites that can be deployed anywhere. Static HTML files are generated to create SEO-friendly markup that hydrates into a <strong>Vue.js-powered SPA</strong> once loaded in the browser.
+Gridsome is a modern website development framework for creating fast and secure websites that can be deployed anywhere. Static HTML files are generated to create SEO-friendly markup that hydrates into a <strong>Vue.js-powered SPA</strong> once loaded in the browser.
 
-Source plugins fetch content from local files or external APIs and stores the data in a local database. A unified GraphQL Data layer lets you extract only the data you need from the database and use it in your Vue.js components. The data is generated and stored as static JSON at build time.
+Source plugins fetch content from local files or external APIs and stores the data in a local database. A unified GraphQL data layer lets you extract only the data you need from the database and use it in your Vue.js components. The data is generated and stored as static JSON at build time.
 
 ![How it works](./images/how-it-works.png)
 
@@ -20,11 +20,11 @@ The `gridsome develop` command starts a **local development server** with hot-re
 
 **This is what's happening under the hood when running `gridsome develop` command:**
 
-1. **Initialize** - Reads project configuration and initializing installed plugins etc.
+1. **Initialize** - Reads project configuration and initializes installed plugins, etc.
 2. **Load sources** - Source plugins fetch their data and update the internal store.
-3. **Create GraphQL schema** - Generates the GraphQL schema from node types in store.
-4. **Generate code** - Generates runtime code like routes, plugins etc.lopment server and shows the URLs in your console.
-5. **Bootstrap finish** - Starts the development server
+3. **Create GraphQL schema** - Generates the GraphQL schema from node types in the store.
+4. **Generate code** - Generates runtime code like routes, plugins, etc.
+5. **Bootstrap finish** - Starts the development server and shows the URLs in your console.
 
 ### GraphQL for data managment
 **The GraphQL data layer is a tool available in development mode**. This is where all the data fetched into a Gridsome project is stored. Think of it as a local, temporary database that helps you work faster and better with your data. Add data from any **data sources** with [Source plugins](/plugins) or with the [Data store API](/docs/data-store-api). Data can be queried in any page or component.
@@ -40,10 +40,10 @@ The `gridsome build` command prepares a project for **production**. This means i
 
 **This is what's happening under the hood when running `gridsome build` command:**
 
-1. **Initialize** - Reads project configuration and initializing installed plugins etc.
+1. **Initialize** - Reads project configuration and initializes installed plugins, etc.
 2. **Load sources** - Source plugins fetch their data and update the internal store.
 3. **Create GraphQL schema** - Generates the GraphQL schema from node types in store.
-4. **Generate code** - Generates runtime code like routes, plugins etc.
+4. **Generate code** - Generates runtime code like routes, plugins, etc.
 5. **Bootstrap finish** - Creates a render queue with all pages and templates.
 6. **Run GraphQL** - Executes all `page-query` queries and stores the results in `json` files.
 7. **Compile assets** - Runs webpack to compile production-ready assets.
@@ -65,9 +65,9 @@ Gridsome uses [Vue.js](https://vuejs.org/) as front-end framework. Vue is an app
 
 
 ### Client-side Hydration
-The `gridsome build` command generates **SEO-friendly HTML files** that can be hosted anywhere. These HTML files are optimized to load as fast as possible. After the HTML is loaded Vue.j takes over the HTML and **hydrates** into a fully Vue-powered SPA.
+The `gridsome build` command generates **SEO-friendly HTML files** that can be hosted anywhere. These HTML files are optimized to load as fast as possible. After the HTML is loaded Vue.js takes over the HTML and **hydrates** into a fully Vue-powered SPA.
 
->  Hydration refers to the client-side process during which Vue takes over the static HTML sent by the server and turns it into dynamic DOM that can react to client-side data changes.
+>  Hydration refers to the client-side process during which Vue takes over the static HTML sent by the server and turns it into a dynamic DOM that can react to client-side data changes.
 
 [Learn more about Vue.js and Client Side hydration](https://ssr.vuejs.org/guide/hydration.html)
 
@@ -75,7 +75,7 @@ The `gridsome build` command generates **SEO-friendly HTML files** that can be h
 ### Automatic link prefetching
 Gridsome prefetches internal links in the background so browsing around goes insanely fast. It uses the built-in `<g-link>` component and **Intersection Observer** to prefetch when the link is in view. 
 
-Gridsome builds two files of every page. A static HTML and a small JavaScript file. When website hydrates into a Vue.js-SPA, the link prefetching only loads the JavaScript to render next page. This results in a faster and smooth browsing experience.
+Gridsome builds two files of every page. A static HTML and a small JavaScript file. When the website hydrates into a Vue.js-SPA, the link prefetching only loads the JavaScript to render the next page. This results in a faster and smoother browsing experience.
 
 [Learn more about **g-link** here](/docs/linking).
 

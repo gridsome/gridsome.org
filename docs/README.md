@@ -4,21 +4,28 @@
 ### Why Gridsome?
 
 - **Local development with hot-reloading** - See code changes in real-time.
-- **Data source plugins** - Use it for any popular Headless CMSs, APIs or Markdown-files. 
-- **File-based page routing** - Quickly create and manage pages with files.
+- **Data source plugins** - Use it for any popular Headless CMSs, APIs or Markdown-files.
+- **File-based page routing** - Quickly create and manage routes with files.
+- **Centralized data managment** - Pull data into a local, unified GraphQL data layer.
 - **Vue.js for frontend** - A lightweight and approachable front-end framework.
 - **Auto-optimized code** - Get code-splitting and asset optimization out-of-the-box.
 - **Static files generation** - Deploy securely to any CDN or static web host.
 
 [Learn more about how Gridsome works](/docs/how-it-works)
 
-### Install Gridsome
 
 ### Prerequisites
+You should have basic knowledge about HTML, CSS, [Vue.js](https://vuejs.org) and how to use the [Terminal](https://www.linode.com/docs/tools-reference/tools/using-the-terminal/). Knowing how [Vue Single File components](https://vuejs.org/v2/guide/single-file-components.html) & [GraphQL](https://www.graphql.com/) works is a plus, but not required. Gridsome is a great way to learn both.
+
 Gridsome requires **Node.js** and recommends **Yarn**. [How to setup](/docs/prerequisites)
+
 
 ### 1. Install Gridsome CLI tool
 
+Using yarn:  
+`yarn global add @gridsome/cli`
+
+Using npm:  
 `npm install --global @gridsome/cli`
 
 ### 2. Create a Gridsome project
