@@ -17,8 +17,13 @@
     background: rgba(255,255,255,.95);
     z-index: 1;
 
-    .ais-SearchBox-form {
+    &-box {
+      min-height: 42.22px;
       margin-bottom: calc(var(--space) / 2);
+    }
+
+    .ais-SearchBox-form {
+      margin-bottom: 0;
     }
 
     .ais-SearchBox-input {
@@ -30,10 +35,14 @@
       display: none;
     }
 
-    .ais-PoweredBy-logo {
-      width: 120px !important;
-      filter: grayscale(100%);
-      opacity: .7;
+    .ais-PoweredBy {
+      margin-left: auto;
+
+      &-logo {
+        width: 120px !important;
+        filter: grayscale(100%);
+        opacity: .7;
+      }
     }
   }
 
@@ -63,16 +72,6 @@
     font-size: .8rem;
     opacity: .6;
     padding: 5px;
-  }
-
-  &__pagination {
-    .ais-Pagination-list {
-      display: flex;
-      margin: 0;
-      width: 100%;
-      list-style: none;
-      justify-content: center;
-    }
   }
 }
 
