@@ -107,7 +107,7 @@ export default {
   data () {
     return {
       hit: null,
-      hitsPerPage: 5,
+      hitsPerPage: 50,
       filters: 'keywords:gridsome-plugin AND deprecated:false'
     }
   },

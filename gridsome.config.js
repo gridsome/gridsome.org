@@ -22,7 +22,8 @@ module.exports = {
           /\.css$/,
           /\?vue&type=style/,
           /vue-instantsearch/,
-          /instantsearch.js/
+          /instantsearch.js/,
+          /typeface-league-spartan/
          ]
       }))
     }
