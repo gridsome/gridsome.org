@@ -16,6 +16,7 @@
     "typeface-league-spartan": "0.0.44",
     "typeface-nunito": "0.0.54",
     "typography": "^0.16.18",
+    "vue-instantsearch": "^2.0.0",
     "vue-markdown": "^2.2.4",
     "vue-scrollto": "^2.13.0",
     "vue-typer": "^1.2.0"
@@ -31,6 +32,7 @@
     "node-sass": "^4.9.3",
     "raw-loader": "^0.5.1",
     "sass-loader": "^7.1.0",
-    "svg-to-vue-component": "^0.2.2"
+    "svg-to-vue-component": "^0.2.2",
+    "webpack-node-externals": "^1.7.2"
   }
 }

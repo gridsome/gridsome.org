@@ -1,10 +1,12 @@
+const nodeExternals = require('webpack-node-externals')
+
 module.exports = {
   siteName: 'Gridsome',
   siteUrl: `https://www.gridsome.org`,
   titleTemplate: '%s - Gridsome',
   siteDescription: 'Gridsome is a Vue-powered static site generator for building CDN-ready websites and apps for any headless CMS, local files or APIs',
   
-  chainWebpack(config) {
+  chainWebpack(config, { isServer }) {
     config.module.rules.delete('svg')
     config.module.rule('svg')
       .test(/\.svg$/)
@@ -13,7 +15,20 @@ module.exports = {
         .end()
       .use('svg-to-vue-component')
       .loader('svg-to-vue-component/loader')
+
+    if (isServer) {
+      config.externals(nodeExternals({
+        whitelist: [
+          /\.css$/,
+          /\?vue&type=style/,
+          /vue-instantsearch/,
+          /instantsearch.js/,
+          /typeface-league-spartan/
+         ]
+      }))
+    }
   },
+
   plugins: [
     {
       use: '@gridsome/plugin-google-analytics',

@@ -142,14 +142,30 @@ The `page-query` in templates also has a set of variables that can be used in th
 <template>
   <Layout :title="$page.post.title">
     <div v-html="$page.post.content"/>
+    <ul>
+      <li v-for="edge in $page.related" :key="edge.node.id">
+        <g-link :to="edge.node.path">
+          {{ edge.node.title }}
+        </g-link>
+      </li>
+    </ul>
   </Layout>
 </template>
 
 <page-query>
-query Post ($id: String!) {
-  post: wordPressPost (id: $id) {
+query Post ($id: String!, $group: String!) {
+  post (id: $id) {
     title
     content
+  }
+  related: allPost (filter: { group: { eq: $group }}) {
+    edges {
+      node {
+        id
+        title
+        path
+      }
+    }
   }
 }
 </page-query>
