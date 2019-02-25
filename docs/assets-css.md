@@ -118,7 +118,18 @@ Gridsome [Critical CSS plugin](/plugins/plugin-critical-css) extracts CSS from c
 ## Add a CSS framework
 
 ### Tailwind
-...plugin coming
+In order to add Tailwind to your Gridsome project, You need to install the [gridsome-plugin-tailwindcss plugin](https://www.npmjs.com/package/gridsome-plugin-tailwindcss), To install it run `npm install -D gridsome-plugin-tailwindcss` add the following to your `gridsome.config.js`. where the config option will be the configuration file for tailwind, If you don't supply that option, `./tailwind.js` will be used by default.
+
+```
+plugins: [
+  {
+    use: 'gridsome-plugin-tailwindcss',
+    options: {
+      config: './some/file/js'
+    }
+  }
+]
+```
 
 ### Bulma
 ...plugin coming
