@@ -612,9 +612,10 @@
     semver "^5.6.0"
     sort-package-json "^1.15.0"
 
-"@gridsome/plugin-critical@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@gridsome/plugin-critical/-/plugin-critical-0.1.0.tgz#ebc497ac26124dbbe0d434f307b72ee993eed226"
+"@gridsome/plugin-critical@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@gridsome/plugin-critical/-/plugin-critical-0.1.1.tgz#c276fd660d65b190b54dd5394977d35c6a71ebd8"
+  integrity sha512-VLo4tFvA58+0tWgNSsZ1tMtEAjQmUDg6xaploDlflw3L02XYiK3uAcOqXDlLEv7VQsKYBWj3u28zz4P6Ie2k0w==
   dependencies:
     critical "^1.3.4"
     fs-extra "^7.0.0"
@@ -648,10 +649,10 @@
     lodash "^4.17.10"
     slash "^2.0.0"
 
-"@gridsome/transformer-remark@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@gridsome/transformer-remark/-/transformer-remark-0.2.0.tgz#52baa4c6cae34d5a7e2a19c7701aa2dd1f3918cb"
-  integrity sha512-5W1At/ns0I1h0jACHsP4r2i6mS8iMT9iC8w2zdiQVjhY1zZ0FJmYowksYuPGXbTwXsiVIV9NC35macnvv0AROA==
+"@gridsome/transformer-remark@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@gridsome/transformer-remark/-/transformer-remark-0.2.1.tgz#4d495abc21bd429160ef447f9c5a31142a46d06b"
+  integrity sha512-Hbq7FO1tQQqk7ZyH30L9bpAs6eOueeCtXwVgNDbWixtUhAiTDJPuuIg84Icvp2e0UEJIHdxPr2q678AHEPepGQ==
   dependencies:
     gray-matter "^4.0.2"
     hash-sum "^1.0.2"
@@ -3975,10 +3976,10 @@ gray-percentage@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/gray-percentage/-/gray-percentage-2.0.0.tgz#b72a274d1b1379104a0050b63b207dc53fe56f99"
 
-gridsome@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.5.0.tgz#291b9069d4bec6ec2fa012bd21ec71e89d685ef3"
-  integrity sha512-AdcCOM4KPlU2rpy3s4KPHBwTx98DwEtI7GfswYXeLZppyf9Jy16MbuLg9OVYGSbF45xnnHc8Qly3ER/NiCKNxw==
+gridsome@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.5.1.tgz#2aa0c9c305f2f10a27a4a6377082f0df31697b58"
+  integrity sha512-JxKKS00EswY3kMKGo+EK1B+EC0cygPzooq5tPr21D5BIx//mzv/CL1tJL+XihurgLVLR2S6vakH8RWFOXhc4Bg==
   dependencies:
     "@babel/core" "^7.0.0"
     "@gridsome/cli" "^0.0.8"
