@@ -3976,10 +3976,10 @@ gray-percentage@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/gray-percentage/-/gray-percentage-2.0.0.tgz#b72a274d1b1379104a0050b63b207dc53fe56f99"
 
-gridsome@^0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.5.1.tgz#2aa0c9c305f2f10a27a4a6377082f0df31697b58"
-  integrity sha512-JxKKS00EswY3kMKGo+EK1B+EC0cygPzooq5tPr21D5BIx//mzv/CL1tJL+XihurgLVLR2S6vakH8RWFOXhc4Bg==
+gridsome@0.5.2:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.5.2.tgz#69c5f8501d01de3f01ef8b7d768b2696764bb2ea"
+  integrity sha512-48PZwq6jFzkKpl1UJW7JrIjTVWh93HV0ekSBcRgmvPUC2QRRL8mGqRRJOWsEVE08CqJbCEsHe20GjNJEXsrBtw==
   dependencies:
     "@babel/core" "^7.0.0"
     "@gridsome/cli" "^0.0.8"
