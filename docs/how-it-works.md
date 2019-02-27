@@ -9,7 +9,7 @@ Source plugins fetch content from local files or external APIs and stores the da
 There are two ways to run Gridsome:
 
 - `gridsome develop` - Starts a **local development server**.
-- `Gridsome build` - Generates **production ready** static files.
+- `gridsome build` - Generates **production ready** static files.
 
 
 ## Gridsome develop
