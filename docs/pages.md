@@ -1,4 +1,4 @@
-# Pages
+# Pages & Routing
 
 Pages are used for **normal pages** and for **listing & paginate GraphQL collections**. Like for example a Blog page. The url path of a page is always static. For **dynamic pages** like a single blog post, you need to use a **Template**. Learn more about [templates here](/docs/templates).
 

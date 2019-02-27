@@ -28,7 +28,7 @@
 
       <Feature>
         <h3>Simple, safe deployment</h3>
-        <p>Gridsome sites are pre-rendered at build time and can be <strong>entirely hosted on a CDN</strong>. It can handle thousands to millions of hits without breaking - and at <strong>no expensive server costs.</strong>
+        <p>Gridsome is a <a href="http://jamstack.org" target="_blank">JAMstack</a> framework. <strong>No servers. No databases. Only files. </strong> Deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site.</strong>
         </p>     
       </Feature>
 
