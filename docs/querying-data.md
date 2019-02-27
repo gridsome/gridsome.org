@@ -55,7 +55,7 @@ Every content type has a collection and a single entry in the GraphQL schema. Yo
 
 ```graphql
 query Posts {
-  allPost (sortBy: "title", order DESC, skip: 2) {
+  allPost (sortBy: "title", order: DESC, skip: 2) {
     edges {
       node {
         title
