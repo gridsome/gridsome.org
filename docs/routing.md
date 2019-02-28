@@ -49,7 +49,7 @@ The `node.date` field has a set of shorthand helpers; `:year`, `:month` and `:da
 ## Routing for custom data sources
 When you add a custom data source you need to use the `route` option inside `addContentType()` **OR** use `path` option inside `addNode()`. `route` will be used for all posts and `path` will be set per post. It's only possible to use one of them. If both are used `route` will be prioritized.
 
-Learn more about [custom data sources here](/docs/data-custom)
+Learn more about [fetching custom data here](/docs/fetching-data)
 
 ```js
 const axios = require('axios')
