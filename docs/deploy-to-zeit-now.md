@@ -19,7 +19,7 @@ Add these settings where its needed:
 
 Install Now globally by typing `npm install -g now` in Terminal.
 
-### Step 2
+#### Step 2
 
 Create a `now.json` file in the root folder of your project to configure your deployment process.
 
@@ -51,11 +51,11 @@ Update `package.json` by adding a new script within the `scripts` object:
 }
 ```
 
-### Step 4
+#### Step 4
 
 In Terminal, go to the root folder of your project and just type `now`. Within some time (about a few minutes) your project will be uploaded to Now, built right in there and deployed.
 
-### Step 5 (optional)
+#### Step 5 (optional)
 
 If an alias was not assigned automatically, assign it manually by typing `now alias your-project-deployment-address.now.sh your-domain.com`. 
 
