@@ -113,7 +113,7 @@ This will pass a Prop to a layout with `sidebar = true`. In the **Layout compone
 
 
 ## Multiple content slots
-To add multiple slots to a layout you need to name them. In this example have we added a sidebar slot that will only show if page has sidebar content.
+To add multiple slots to a layout you need to name them. In this example we have added a sidebar slot that will only show if the page has sidebar content.
 
 ```html
 <!-- Layout -->
