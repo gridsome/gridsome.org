@@ -63,7 +63,7 @@ module.exports = function (api) {
 }
 ```
 
-> Data are feched when starting a development server or start of a production build. You need to restart server for changes in **gridsome.server.js** to take affect.
+> Data is feched when starting a development server or start of a production build. You need to restart server for changes in **gridsome.server.js** to take affect.
 
 
 ## Add data from local files
