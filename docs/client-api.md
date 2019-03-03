@@ -41,7 +41,7 @@ Here is an example where we add **Vuex** store to the Vue instance.
 ```js
 import Vuex from 'vuex'
 
-export default function (Vue, { appOptions }) {
+export default function (Vue, options, { appOptions }) {
   Vue.use(Vuex)
   
   appOptions.store = new Vuex.Store({
