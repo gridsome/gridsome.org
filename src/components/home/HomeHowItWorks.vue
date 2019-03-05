@@ -13,7 +13,7 @@
         Bring your data into a local <strong>GraphQL <graph-ql-logo width="20px" height="20px" /> data layer</strong> for centralized management
       </p>
 
-      <div class="cms-cols grid-cols grid-cols--3">
+      <div class="cms-cols grid-cols grid-cols--3 ">
         <div class="well">
           <div class="well__title">Any data</div>
           <p>Any APIs, Google Spreadsheet, AirTable, YAML, Json, etc</p>
@@ -47,12 +47,35 @@
       </div>
 
       <h2 class="text-center primary-color container-sm">
-        02. Develop with Vue.js <vue-logo width="40" />
+        02. Build with Vue.js
       </h2>
 
-      <p class="text-center container-mini mb">
-        Use <strong>Vue Components</strong> as building blocks and query data from the local GraphQL data layer.
+      <p class="text-center container-mini">
+        Use <strong>Vue Components</strong> as building blocks in a local development environment with hot-reloading.
       </p>
+
+      <div class="well text-center container-mini">
+        <p class="lead">Vue.js, HTML, CSS, SASS, LESS</p>
+      </div>
+
+      <div class="dots-vertical">
+        <svg  width="100%" height="37" viewBox="0 0 1 37" class="dot">
+          <path d="M0.5 0L0.500002 37"/>
+        </svg>
+      </div>
+
+
+      <h2 class="text-center primary-color container-sm">
+        03. Deploy to CDN
+      </h2>
+
+      <p class="text-center container-mini">
+        Deploy to any <strong>static web host</strong> for fast, scalable and secure hosting.
+      </p>
+
+      <div class="well text-center container-mini">
+        <p class="lead"> Netlify, AWS Amplify, GitHub Pages, Surge.sh, Aerobatic, Now.sh & many more </p>
+      </div>
 
   </Section>
 </template>
@@ -73,16 +96,20 @@ export default {
 
 <style lang="scss">
 
+.cms-cols {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
 .well {
   border-radius: 5px;
   border: 1px solid var(--border-color);
   background-color: rgba(255,255,255,.7);
   width: 100%;
-  padding: var(--space-x2);
+  padding: 30px;
   box-shadow: 1px 2px 5px rgba(0,0,0,.05);
   position: relative;
   flex:1;
-  min-width: 280px;
   z-index: 1;
 
   &__title {
@@ -132,6 +159,7 @@ export default {
 
 .dot {
   height: 50px;
+  margin: 15px 0;
   text-align: center;
   stroke: var(--primary-color);
   stroke-width: 3px;

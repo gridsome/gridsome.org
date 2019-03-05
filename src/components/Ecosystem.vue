@@ -23,9 +23,9 @@
 				<g-link to="/plugins" class="ecosystem__item_link">Go to plugins</g-link>
 			</div>
 			<div class="ecosystem__item">
-				<icon-plugins />
-				<h4>Gridsome Blog</h4>
-				<p>Build & manage Gridsome websites </p>
+				<icon-blog />
+				<h4>Blog</h4>
+				<p>Articles, tips & tricks from the Gridsome community</p>
 				<g-link to="/blog" class="ecosystem__item_link">Go to blog</g-link>
 			</div>
 		</div>
@@ -36,12 +36,14 @@
 import IconPlugins from '@/assets/images/icon-plugins.svg'
 import IconDocs from '@/assets/images/icon-docs.svg'
 import IconStarters from '@/assets/images/icon-starters.svg'
+import IconBlog from '@/assets/images/icon-blog.svg'
 
 export default {
 	components: {
 		IconPlugins,
 		IconDocs,
-		IconStarters
+		IconStarters,
+		IconBlog
 	}
 }
 </script>

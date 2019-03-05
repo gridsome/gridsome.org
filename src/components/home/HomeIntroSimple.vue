@@ -2,7 +2,7 @@
   <Section class="home-intro" dots="true">
     <div class="text-center container-md">
         <h1 class="home-intro__title"> 
-            Build incredible fast websites <br class="hide-for-small" />and apps with Vue.js
+            Build incredible fast websites <br class="hide-for-small" />& apps with Vue.js
         </h1>
 
         <p class="lead">

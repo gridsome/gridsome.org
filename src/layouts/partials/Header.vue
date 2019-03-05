@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="header-bar">
-      <!-- Add content here -->
+   
     </div>
     <div class="header-inner flex gap-30">
       <Logo/>
@@ -95,6 +95,7 @@ header {
     padding: 2px;
     text-align: center;
     color:#FFF;
+    font-size: 1rem;
   }
 
   .header-inner {
