@@ -1,12 +1,11 @@
 <template>
   <div class="card" :class="{'card--has-link' : link}">
     <div class="card__inner">
-      <g-link v-if="link" class="card__link" :to="link">
-        Read more
-      </g-link>
-     
       <slot />
     </div>
+    <g-link v-if="link" class="card__link" :to="link">
+      Read more
+    </g-link>
   </div>
 </template>
 
@@ -25,8 +24,8 @@ export default {
 
 <style lang="scss">
   .card {
-    border: 1px solid #ddd;
-    padding: calc(var(--space) * 1.5);
+    border: 1px solid var(--border-color);
+    padding: var(--space);
     border-radius: 4px;
     background-color: #FFF;
     transition: color.3s, box-shadow .3s, transform .3s;

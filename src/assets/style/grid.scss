@@ -70,7 +70,7 @@
 .grid-cols{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: calc( var(--space) * 2);
+  grid-gap: var(--space);
 
   &--gap-small {
     grid-gap: calc( var(--space) );

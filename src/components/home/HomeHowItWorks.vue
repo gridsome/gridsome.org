@@ -85,7 +85,7 @@
       </h2>
 
       <p class="text-center lead container-md">
-        <strong>No servers. No databases. Only files.</strong> Deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site.
+        Deploy your entire site to a CDN and forget about it. <br>Traffic or hacking will never break your site.
       </p>
 
 

@@ -1,9 +1,8 @@
 <template>
   <Card class="blog-posts__post" :link="post.path">
     <h3 v-html="post.title"/>
-    <PostMeta class="post" :post="post"/>
     <p v-html="post.excerpt"/>
-
+    <PostMeta class="post" :post="post"/>
   </Card>
 </template>
 

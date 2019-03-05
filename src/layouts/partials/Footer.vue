@@ -27,6 +27,7 @@
 footer {
   font-size: 0.75rem;
   background-color: var(--primary-bg);
+  border-top: 1px solid var(--border-color);
   padding: 20px;
 
   @media screen and (max-width: 750px) {

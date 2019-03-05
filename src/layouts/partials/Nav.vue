@@ -5,6 +5,11 @@
       <span class="main-nav__label">Docs</span>
     </g-link>
 
+    <g-link to="/why-gridsome" class="hide-for-small">
+      <icon-docs />
+      <span class="main-nav__label">Why Gridsome</span>
+    </g-link>
+
     <!--
     <g-link to="/learn">
       <icon-learn />
@@ -25,13 +30,6 @@
       <icon-starters />
       <span class="main-nav__label">Showcase</span>
     </g-link>
-
-
-    <g-link to="/why-gridsome">
-      <icon-docs />
-      <span class="main-nav__label">Why Gridsome</span>
-    </g-link>
-    
 
     <g-link to="/blog">
       <icon-blog />

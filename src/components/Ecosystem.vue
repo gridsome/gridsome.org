@@ -51,7 +51,8 @@ export default {
 
 <style lang="scss">
 	.ecosystem {
-		padding: 5% 0 0;
+		padding: 4% 0 0;
+		margin-bottom: -2%;
 
 		&__item {
 			font-size: .9rem;
