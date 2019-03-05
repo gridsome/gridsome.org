@@ -11,7 +11,7 @@
 - **Auto-optimized code** - Get code-splitting and asset optimization out-of-the-box.
 - **Static files generation** - Deploy securely to any CDN or static web host.
 
-[Learn more about how Gridsome works](/docs/how-it-works)
+[Learn more about why you should use Gridsome](/why-gridsome)
 
 
 ### Prerequisites

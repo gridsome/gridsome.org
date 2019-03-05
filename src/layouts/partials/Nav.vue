@@ -4,6 +4,11 @@
       <icon-docs />
       <span class="main-nav__label">Docs</span>
     </g-link>
+
+     <g-link to="/why-gridsome">
+      <icon-docs />
+      <span class="main-nav__label">Why Gridsome</span>
+    </g-link>
     
     <!--
     <g-link to="/learn">
@@ -16,9 +21,14 @@
       <span class="main-nav__label">Plugins</span>
     </g-link>
 
-    <g-link to="/starters">
+    <g-link to="/starters" class="hide-for-small">
       <icon-starters />
       <span class="main-nav__label">Starters</span>
+    </g-link>
+
+    <g-link to="/showcase">
+      <icon-starters />
+      <span class="main-nav__label">Showcase</span>
     </g-link>
 
     <g-link to="/blog">
@@ -48,14 +58,14 @@ export default {
 
 <style lang="scss">
 .main-nav {
-  margin-top: 3px;
+
   svg {
     display: none;
   }
 
   &__label {
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: .75px;
   }
 }
 
@@ -67,14 +77,15 @@ export default {
     right: 0;
     background: #FFF;
     margin-right: 0 !important;
-    justify-content: center;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     min-height: 60px;
     flex-wrap: nowrap !important;
     padding: 5px var(--space);
+    overflow-x: auto;
 
     svg {
       display: block;
+      max-height: 32px;
     }
   }
 }

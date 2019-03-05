@@ -2,8 +2,6 @@
   <Layout>
     <home-intro-simple />
     <home-how-it-works />
-    <home-features />
-    <home-fast />
     <home-blog />
   </Layout>
 </template>

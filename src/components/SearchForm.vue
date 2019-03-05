@@ -41,7 +41,7 @@ export default {
 
   & &__input {
     border-radius: 5px;
-    width: 170px;
+    width: 200px;
     padding: 0.3rem 0.6rem 0.27rem;
 
     &:focus {

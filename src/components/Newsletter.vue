@@ -26,10 +26,8 @@
 
 <style lang="scss">
 .newsletter {
-	border: 3px dashed var(--primary-bg);
-  border-radius: 10px;
   width: 100%;
-  padding: var(--space) var(--space);
+  
   &__form {
   	margin-bottom:0;
   }

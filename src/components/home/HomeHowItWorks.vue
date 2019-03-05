@@ -15,16 +15,16 @@
 
       <div class="cms-cols grid-cols grid-cols--3 ">
         <div class="well">
+          <div class="well__title">Markdown</div>
+          <p>Forestery, Netlify CMS, Blogs, Documentation, Magazines, or any custom content type.</p>
+        </div>
+        <div class="well">
           <div class="well__title">Any data</div>
           <p>Any APIs, Google Spreadsheet, AirTable, YAML, Json, etc</p>
         </div>
         <div class="well">
           <div class="well__title">CMS</div>
           <p>WordPress, Contentful, Drupal, CockpitCMS, DatoCMS, Shopify, WooCommerce etc.</p>
-        </div>
-        <div class="well">
-          <div class="well__title">Markdown</div>
-          <p>Use Markdown for content. Documentation, Blogs, Magazines, or any custom content type.</p>
         </div>
       </div>
 
@@ -51,7 +51,7 @@
       </h2>
 
       <p class="lead text-center container-sm">
-        Use <strong>Vue Components</strong> as building blocks in a local development environment with hot-reloading.
+        Use <strong>Vue Components</strong> as building blocks in a local development environment with instant hot-reloading on any code change.
       </p>
 
       <div class="well text-center container-md">
@@ -78,7 +78,7 @@
         <div class="generate-html__logo">
           <gridsome-logo />
         </div>
-        <span>Generate ultra optimized SEO-friendly static HTML</span>
+        <span>Generate ultra optimized SEO-friendly HTML.</span>
       </div>
 
       <div class="dots-vertical">
@@ -87,9 +87,16 @@
         </svg>
       </div>
 
-      <div class="well text-center container-mini">
-        <p> Netlify, AWS Amplify, GitHub Pages, Surge.sh, Aerobatic, Now.sh & many more </p>
+      <div class="well text-center container-mini mb">
+        <p> <g-link to="/docs/deploy-to-netlify">Netlify</g-link>, <g-link to="/docs/deploy-to-amplify">AWS Amplify</g-link>, <g-link to="/docs/deploy-to-zeit-now">Zeit Now</g-link>, <g-link to="/docs/deploy-to-amazon-s3">Amazon S3</g-link>, Surge.sh, Aerobatic, Now.sh & many more </p>
       </div>
+
+      <p class="home-links text-center">
+        <g-link  to="/docs" class="button primary button--large">
+          Get started
+        </g-link>
+      </p>
+
 
   </Section>
 </template>

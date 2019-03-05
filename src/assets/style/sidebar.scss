@@ -6,7 +6,7 @@
   position: relative;
   -webkit-overflow-scrolling: touch;
   background-color: var(--primary-bg);
-  padding: 0 calc(var(--space) * 1.5);
+  padding: 0 calc(var(--space) * 1.5) 60px;
 
   @media screen and (min-width: 750px) {
     position: sticky;
