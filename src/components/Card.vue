@@ -30,7 +30,7 @@ export default {
 
     &:hover {
       transform: translateY(-3px);
-      box-shadow: 2px 2px 10px 0 rgba(0,0,0,.1);
+      box-shadow: var(--glow);
       color: currentColor;
     }
 

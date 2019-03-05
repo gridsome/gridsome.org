@@ -22,11 +22,9 @@ Gridsome requires **Node.js** and recommends **Yarn**. [How to setup](/docs/prer
 
 ### 1. Install Gridsome CLI tool
 
-Using yarn:  
-`yarn global add @gridsome/cli`
+Using **Yarn:**  `yarn global add @gridsome/cli`
 
-Using npm:  
-`npm install --global @gridsome/cli`
+Using **NPM:**  `npm install --global @gridsome/cli`
 
 ### 2. Create a Gridsome project
 

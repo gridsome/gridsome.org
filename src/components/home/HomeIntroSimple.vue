@@ -49,7 +49,6 @@ export default {
   a {
     display: inline-block;
     padding: 2px 15px;
-    background-color: var(--primary-bg);
     border: 1px solid var(--border-color);
     border-radius: 99px;
     opacity: .75;

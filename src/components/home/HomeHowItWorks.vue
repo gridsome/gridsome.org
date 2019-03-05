@@ -10,7 +10,7 @@
       </h2>
 
       <p class="lead text-center container-sm mb">
-        Bring your content into a local <strong>GraphQL <graph-ql-logo width="20px" height="20px" /> data layer</strong> for centralized data management
+        Bring your content into a local <strong>GraphQL <graph-ql-logo width="24px" height="24px" /> data layer</strong> with <g-link to="/plugins">Data Source plugins</g-link> or <g-link to="/docs/data-store-api">Data Store API</g-link>.
       </p>
 
       <div class="cms-cols grid-cols grid-cols--3 ">

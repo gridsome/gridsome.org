@@ -7,6 +7,11 @@
   position: relative;
   border-radius: 5px;
   color: var(--primary-link-color);
+  transition: background .3s, box-shadow .3s, color .3s;
+
+  &:hover {
+    box-shadow: var(--glow);
+  }
 
   &:after {
     content: " ";
@@ -28,7 +33,6 @@
   &.primary {
     color:#FFF;
     background-color: var(--primary-link-color);
-    transition: background .3s, box-shadow .3s, color .3s;
     &:after {
       border-color: rgba(0,0,0,.1);
     }
@@ -36,7 +40,6 @@
     &:hover {
       color:#FFF;
       background-color: var(--primary-color);
-      box-shadow: var(--glow);
     }
   }
 
