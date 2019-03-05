@@ -1,20 +1,30 @@
 <template>
   <Layout>
-    <home-intro-simple />
-    <home-how-it-works />
-    <home-blog />
+    <Section>
+    <h1 class="text-center">Why Gridsome</h1>
+    <home-tabs />
+    <home-features />
+    <home-fast />
+    </Section>
   </Layout>
 </template>
 
 <script>
 
 import HomeIntroSimple from '@/components/home/HomeIntroSimple.vue'
+import HomeFeatures from '@/components/home/HomeFeatures.vue'
+import HomeTabs from '@/components/home/HomeTabs.vue'
+import HomeFast from '@/components/home/HomeFast.vue'
+
 import HomeBlog from '@/components/home/HomeBlog.vue'
 import HomeHowItWorks from '@/components/home/HomeHowItWorks.vue'
 
 export default {
   components: {
     HomeIntroSimple,
+    HomeFeatures,
+    HomeTabs,
+    HomeFast,
     HomeBlog,
     HomeHowItWorks,
   },

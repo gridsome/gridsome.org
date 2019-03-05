@@ -65,6 +65,19 @@
         </svg>
       </div>
 
+       <div class="generate-html text-center">
+        <div class="generate-html__logo">
+          <gridsome-logo />
+        </div>
+        <span>Generate ultra optimized SEO-friendly <strong>PWAs</strong></span>
+      </div>
+
+      <div class="dots-vertical">
+        <svg  width="100%" height="37" viewBox="0 0 1 37" class="dot">
+          <path d="M0.5 0L0.500002 37"/>
+        </svg>
+      </div>
+
       <h2 class="text-center primary-color container-sm">
         03. Deploy to CDN
       </h2>
@@ -73,19 +86,6 @@
         Deploy to any <strong>Static Web Host</strong> for fast, scalable and secure hosting.
       </p>
 
-
-      <div class="generate-html text-center">
-        <div class="generate-html__logo">
-          <gridsome-logo />
-        </div>
-        <span>Generate ultra optimized SEO-friendly HTML.</span>
-      </div>
-
-      <div class="dots-vertical">
-        <svg  width="100%" height="37" viewBox="0 0 1 37" class="dot">
-          <path d="M0.5 0L0.500002 37"/>
-        </svg>
-      </div>
 
       <div class="well text-center container-mini mb">
         <p> <g-link to="/docs/deploy-to-netlify">Netlify</g-link>, <g-link to="/docs/deploy-to-amplify">AWS Amplify</g-link>, <g-link to="/docs/deploy-to-zeit-now">Zeit Now</g-link>, <g-link to="/docs/deploy-to-amazon-s3">Amazon S3</g-link>, Surge.sh, Aerobatic, Now.sh & many more </p>
