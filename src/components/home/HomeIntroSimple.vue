@@ -6,7 +6,7 @@
         </h1>
 
         <p class="lead">
-          Gridsome is a Vue.js-powered, open source developer framework for <br class="hide-for-small" />building websites and apps that loads instantly anywhere.
+          Gridsome is a Vue.js-powered, open source developer framework for <br class="hide-for-small" />building websites and apps that load instantly anywhere.
         </p>
 
         <p class="home-links">
