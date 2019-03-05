@@ -8,25 +8,25 @@
 				<icon-docs />
 				<h4>Documentation</h4>
 				<p>Get started with Gridsome and learn how to use it</p>
-				<a href="#" class="ecosystem__item_link"></a>
+				<g-link to="/docs" class="ecosystem__item_link">Go to docs</g-link>
 			</div>
 			<div class="ecosystem__item">
 				<icon-starters />
 				<h4>Starters</h4>
 				<p>Browse premade Gridsome projects to get started quickly</p>
-				<a href="#" class="ecosystem__item_link"></a>
+				<g-link to="/starters" class="ecosystem__item_link">Go to starters</g-link>
 			</div>
 			<div class="ecosystem__item">
 				<icon-plugins />
 				<h4>Plugins</h4>
 				<p>Enhance your Gridsome site with amazing plugins</p>
-				<a href="#" class="ecosystem__item_link"></a>
+				<g-link to="/plugins" class="ecosystem__item_link">Go to plugins</g-link>
 			</div>
 			<div class="ecosystem__item">
 				<icon-plugins />
-				<h4>Blog</h4>
+				<h4>Gridsome Blog</h4>
 				<p>Build & manage Gridsome websites </p>
-				<a href="#" class="ecosystem__item_link"></a>
+				<g-link to="/blog" class="ecosystem__item_link">Go to blog</g-link>
 			</div>
 		</div>
 	</div>
@@ -57,6 +57,12 @@ export default {
 			border-radius: var(--border-radius);
 			position: relative;
 			overflow: hidden;
+			transition: transform .3s, box-shadow .3s;
+
+			&:hover {
+				transform: translateY(-3px);
+				box-shadow: 1px 1px 20px 0 var(--success-bg);
+			}
 
 			p {
 				margin-bottom: 0;
@@ -77,7 +83,13 @@ export default {
 
 		&__item_link {
 			position: absolute;
-
+			top:0;
+			right:0;
+			left:0;
+			bottom:0;
+			text-indent: -999px;
+			opacity: 0.0;
+      overflow: hidden;
 		}
 	}
 </style>
