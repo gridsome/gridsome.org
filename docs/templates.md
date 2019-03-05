@@ -23,7 +23,6 @@ for the current page. You can use the `$path` variable to get the node.
   </Layout>
 </template>
 
-<!-- Example GraphQL query -->
 <page-query>
 query Post ($path: String!) {
   post: wordPressPost (path: $path) {

@@ -1,6 +1,5 @@
 ```html
 <!-- ~/templates/Post.vue -->
-
 <template>
   <Layout>
     <h1 v-html="$page.post.title" />
@@ -8,6 +7,7 @@
   </Layout>
 </template>
 
+<!-- Example GraphQL query -->
 <page-query>
 query Post ($path: String!) {
   post: Post (path: $path) {
