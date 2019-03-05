@@ -54,8 +54,9 @@
         Use <strong>Vue Components</strong> as building blocks in a local development environment with hot-reloading.
       </p>
 
-      <div class="well text-center container-mini">
-        <p class="lead">Vue.js, HTML, CSS, SASS, LESS</p>
+      <div class="well text-center container-md">
+        <p>Vue.js, HTML, CSS, SASS, LESS</p>
+        <div v-html="$static.example.content" />
       </div>
 
       <div class="dots-vertical">
@@ -79,6 +80,16 @@
 
   </Section>
 </template>
+
+
+<static-query>
+query Example {
+  example (path: "/examples/templates") {
+    content
+  }
+}
+</static-query>
+
 
 <script>
 import GraphQlLogo from '~/assets/images/graphql-logo.svg'

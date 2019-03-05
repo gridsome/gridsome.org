@@ -1,21 +1,38 @@
 ```html
+<!-- /template/Post.vue -->
+
 <template>
   <Layout>
-    <h1 v-html="$page.post.title"/>
-    <div v-html="$page.post.content"/>
+    <h1 v-html="$page.post.title" />
+    <div v-html="$page.post.content" />
+    <PostMeta :post="$page.post" />
   </Layout>
 </template>
 
-<style lang="scss">
-	h1 { font-size: 32px }
-</style>
-
 <page-query>
-query WordPressPost ($path: String!) {
-  post: wordPressPost (path: $path) {
+query Post ($path: String!) {
+  post: Post (path: $path) {
     title
     content
+    date
+    author
   }
 }
 </page-query>
+
+<script>
+import PostMeta from '~/components/PostMeta.vue'
+
+export default {
+  components: {
+    PostMeta
+  }
+}
+</script>
+
+<style lang="scss">
+  h1 { font-size: 32px }
+</style>
+
+
 ```
