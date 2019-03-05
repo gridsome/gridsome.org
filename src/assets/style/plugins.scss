@@ -1,10 +1,9 @@
 .plugins {
   &__sidebar {
-    padding: 0 10px 0 0;
 
     @media screen and (min-width: 750px) {
       min-width: 225px;
-      width: 375px;
+      width: 400px;
     }
   }
 
@@ -14,7 +13,7 @@
     margin: 0;
     padding-top: calc(var(--space) * 2);
     padding-bottom: calc(var(--space) / 2);
-    background: rgba(255,255,255,.95);
+    background: var(--primary-bg);
     z-index: 1;
 
     &-box {

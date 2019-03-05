@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="6" y="7" width="22" height="20" rx="3" fill="#45C492" fill-opacity="0.09"/>
+<path d="M2.83325 4.25H11.3333C12.8361 4.25 14.2775 4.84702 15.3402 5.90973C16.4029 6.97243 16.9999 8.41377 16.9999 9.91667V29.75C16.9999 28.6228 16.5522 27.5418 15.7551 26.7448C14.9581 25.9478 13.8771 25.5 12.7499 25.5H2.83325V4.25Z" stroke="#676868" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M31.1667 4.25H22.6667C21.1638 4.25 19.7224 4.84702 18.6597 5.90973C17.597 6.97243 17 8.41377 17 9.91667V29.75C17 28.6228 17.4478 27.5418 18.2448 26.7448C19.0418 25.9478 20.1228 25.5 21.25 25.5H31.1667V4.25Z" stroke="#676868" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect opacity="0.2" x="21" y="9" width="7" height="2" fill="#45C492"/>
+<rect opacity="0.2" x="21" y="13" width="7" height="2" fill="#45C492"/>
+<rect opacity="0.2" x="21" y="17" width="7" height="2" fill="#45C492"/>
+<rect opacity="0.2" x="6" y="9" width="7" height="2" fill="#45C492"/>
+<rect opacity="0.2" x="6" y="13" width="7" height="2" fill="#45C492"/>
+<rect opacity="0.2" x="6" y="17" width="7" height="2" fill="#45C492"/>
+</svg>

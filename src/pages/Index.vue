@@ -1,17 +1,16 @@
 <template>
   <Layout>
-    <home-intro />
+    <home-intro-simple />
+    <home-how-it-works />
     <home-features />
     <home-fast />
-    <home-how-it-works />
-    <home-tabs />
     <home-blog />
   </Layout>
 </template>
 
 <script>
 
-import HomeIntro from '@/components/home/HomeIntro.vue'
+import HomeIntroSimple from '@/components/home/HomeIntroSimple.vue'
 import HomeFeatures from '@/components/home/HomeFeatures.vue'
 import HomeTabs from '@/components/home/HomeTabs.vue'
 import HomeFast from '@/components/home/HomeFast.vue'
@@ -21,7 +20,7 @@ import HomeHowItWorks from '@/components/home/HomeHowItWorks.vue'
 
 export default {
   components: {
-    HomeIntro,
+    HomeIntroSimple,
     HomeFeatures,
     HomeTabs,
     HomeFast,

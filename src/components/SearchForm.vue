@@ -37,18 +37,15 @@ export default {
 .header-search {
   display: inline-block;
   margin-bottom: 0;
-  margin-right: 0.5rem;
   font-size: 0.9rem;
 
   & &__input {
-    color: #fff;
     border-radius: 5px;
     width: 170px;
-    background-color: rgba(255, 255, 255, 0.15);
     border-color: transparent;
     padding: 0.3rem 0.6rem 0.27rem;
     transition: padding 0.2s, width 0.2s, opacity 0.3s, background-color 0.3s;
-    margin-bottom: 0.5px;
+    border: 1px solid var(--border-color);
 
     &:focus {
       background-color: rgba(255, 255, 255, 0.1);

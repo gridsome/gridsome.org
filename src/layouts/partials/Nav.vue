@@ -16,6 +16,11 @@
       <span class="main-nav__label">Plugins</span>
     </g-link>
 
+    <g-link to="/starters">
+      <icon-starters />
+      <span class="main-nav__label">Starters</span>
+    </g-link>
+
     <g-link to="/blog">
       <icon-blog />
       <span class="main-nav__label">Blog</span>
@@ -28,13 +33,15 @@ import IconPlugins from '@/assets/images/icon-plugins.svg'
 import IconBlog from '@/assets/images/icon-blog.svg'
 import IconDocs from '@/assets/images/icon-docs.svg'
 import IconLearn from '@/assets/images/icon-learn.svg'
+import IconStarters from '@/assets/images/icon-starters.svg'
 
 export default {
   components: {
     IconPlugins,
     IconLearn,
     IconDocs,
-    IconBlog
+    IconBlog,
+    IconStarters
   }
 }
 </script>
@@ -48,7 +55,6 @@ export default {
 
   &__label {
     text-transform: uppercase;
-    font-size: 0.78rem;
     letter-spacing: 1px;
   }
 }
@@ -59,8 +65,7 @@ export default {
     bottom: 0;
     left: 0;
     right: 0;
-    background: var(--primary-bg);
-    color: var(--secondary-bg);
+    background: #FFF;
     margin-right: 0 !important;
     justify-content: center;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);

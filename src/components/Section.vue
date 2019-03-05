@@ -34,19 +34,21 @@ export default {
 
 <style lang="scss">
 .section {
-  padding: calc(2.5% + var(--space)) 0;
+  padding: calc(2% + var(--space)) 0;
   position: relative;
   width: 100%;
   flex: 1;
 
   &--primary {
     background-color: var(--primary-bg);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
   }
 
 
   &__dots-bg {
     height: 700px;
-    max-width: 1287px;
+    max-width: 1300px;
     max-height: 100%;
     margin: 0 auto;
     position: absolute;
@@ -54,6 +56,7 @@ export default {
     left: 10px;
     right: 10px;
     z-index: 1;
+    opacity: .5;
   }
 
   &--dots-top {

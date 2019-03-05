@@ -1,13 +1,16 @@
 <template>
   <header>
-    <div class="header-inner container flex gap-30">
+    <div class="header-bar">
+      <!-- Add content here -->
+    </div>
+    <div class="header-inner flex gap-30">
       <Logo/>
+      
+      <SearchForm class="hide-for-small"/>
 
       <Nav class="flex-fit"/>
 
       <nav class="header-actions flex">
-        <SearchForm class="hide-for-small"/>
-
         <a
           aria-label="Twitter"
           href="//twitter.com/gridsome"
@@ -82,13 +85,20 @@ header {
   z-index: 20;
   position: relative;
   top: 0;
-  background: var(--secondary-bg);
-  color: #fff;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid var(--border-color);
   flex-wrap: nowrap;
   position: sticky;
+  background-color: rgba(255,255,255,.95);
+
+  .header-bar {
+    background-color: var(--primary-color);
+    padding: 2px;
+    text-align: center;
+    color:#FFF;
+  }
 
   .header-inner {
+    padding: 0 var(--space);
     min-height: var(--header-height);
   }
 }

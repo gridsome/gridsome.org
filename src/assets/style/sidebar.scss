@@ -5,14 +5,15 @@
   overflow: auto;
   position: relative;
   -webkit-overflow-scrolling: touch;
+  background-color: var(--primary-bg);
+  padding: 0 calc(var(--space) * 1.5);
 
   @media screen and (min-width: 750px) {
     position: sticky;
     border-right: 1px solid var(--border-color);
     top: var(--header-height);
     height: calc(100vh + (var(--header-height) * -1));
-    padding: 2% 0 50px .5rem;
-    width: 260px;
+    width: 300px;
     order: 0;
   }
 

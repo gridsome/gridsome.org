@@ -1,3 +1,8 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 @font-face {
   font-family: Jost;
   src: url(../fonts/Jost-400-Book.otf);
@@ -25,17 +30,25 @@
   font-size: 0.8em;
 }
 
-h1,
-h2,
-.lead {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#app h5 {
+  font-family: Jost;
+}
+
+#app h5 {
+  font-family: Jost;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  opacity: .4;
+}
+
+#app .primary-color {
+  color: var(--primary-color);
 }
 
 p {
   letter-spacing: -.15px;
   &:last-child {
-    margin: 0;
+    margin-bottom: 0;
   }
 }
 
