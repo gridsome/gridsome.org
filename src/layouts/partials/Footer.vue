@@ -1,6 +1,6 @@
 <template>
   <footer class="text-center">
-    Made in ⛄️ Norway by
+    An open source project by
     <a
       class="plain"
       href="//twitter.com/hjvedvik"

@@ -4,7 +4,8 @@ import '~/assets/style/index.scss'
 
 // Add global components
 import Layout from '~/layouts/Default.vue'
-import Docs from '~/layouts/Docs.vue'
+import DocsLayout from '~/layouts/Docs.vue'
+import GalleryLayout from '~/layouts/Gallery.vue'
 import Section from '~/components/Section.vue'
 import Feature from '~/components/Feature.vue'
 import Card from '~/components/Card'
@@ -27,7 +28,9 @@ const typography = new Typography({
 
 export default function (Vue, { head, router, isServer }) {
   Vue.component('Layout', Layout)
-  Vue.component('DocsLayout', Docs)
+  Vue.component('DocsLayout', DocsLayout)
+  Vue.component('GalleryLayout', GalleryLayout)
+
   Vue.component('Section', Section)
   Vue.component('Feature', Feature)
   Vue.component('Card', Card)

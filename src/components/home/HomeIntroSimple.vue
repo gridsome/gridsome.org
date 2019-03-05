@@ -2,7 +2,7 @@
   <Section class="home-intro" dots="true">
     <div class="text-center container-md">
 
-        <div class="home-message">
+        <div class="home-message" hidden>
           <g-link to="/blog/2019/02/19/gridsome-v05"><span>🎉 Gridsome v0.5 released &rarr;</span></g-link>
         </div>
         

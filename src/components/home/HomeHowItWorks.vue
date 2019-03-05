@@ -14,18 +14,20 @@
       </p>
 
       <div class="cms-cols grid-cols grid-cols--3 ">
-        <div class="well">
-          <div class="well__title">Markdown</div>
+        <Card>
+          <h4>Markdown</h4>
           <p>Forestery, Netlify CMS, Blogs, Documentation, Magazines, or any custom content type.</p>
-        </div>
-        <div class="well">
-          <div class="well__title">Any data</div>
+        </Card>
+
+        <Card>
+          <h4>Any data</h4>
           <p>Any APIs, Google Spreadsheet, AirTable, YAML, Json, etc</p>
-        </div>
-        <div class="well">
-          <div class="well__title">CMS</div>
+        </Card>
+
+        <Card>
+          <h4>CMSs</h4>
           <p>WordPress, Contentful, Drupal, CockpitCMS, DatoCMS, Shopify, WooCommerce etc.</p>
-        </div>
+        </Card>
       </div>
 
       <div class="dots-vertical">
@@ -54,10 +56,10 @@
         Use <strong>Vue Components</strong> as building blocks in a local development environment with instant hot-reloading on any code change.
       </p>
 
-      <div class="well text-center container-md">
+      <Card class="text-center container-md">
         <p>Vue.js, HTML, CSS, SASS, LESS</p>
         <div class="code-example" v-html="$static.example.content" />
-      </div>
+      </Card>
 
       <div class="dots-vertical">
         <svg  width="100%" height="37" viewBox="0 0 1 37" class="dot">
@@ -82,14 +84,14 @@
         03. Deploy to CDN
       </h2>
 
-      <p class="text-center lead container-mini">
-        Deploy to any <strong>Static Web Host</strong> for fast, scalable and secure hosting.
+      <p class="text-center container-sm">
+        <strong>No servers. No databases.</strong> Only files. Deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site.
       </p>
 
-
-      <div class="well text-center container-mini mb">
+      <Card class="text-center container-mini mb">
+        <h4>Static Web Host</h4>
         <p> <g-link to="/docs/deploy-to-netlify">Netlify</g-link>, <g-link to="/docs/deploy-to-amplify">AWS Amplify</g-link>, <g-link to="/docs/deploy-to-zeit-now">Zeit Now</g-link>, <g-link to="/docs/deploy-to-amazon-s3">Amazon S3</g-link>, Surge.sh, Aerobatic, Now.sh & many more </p>
-      </div>
+      </Card>
 
       <p class="home-links text-center">
         <g-link  to="/docs" class="button primary button--large">
@@ -162,32 +164,6 @@ export default {
   }
 }
 
-.well {
-  border-radius: 5px;
-  border: 1px solid var(--border-color);
-  background-color: rgba(255,255,255,.7);
-  width: 100%;
-  padding: 30px;
-  box-shadow: 1px 2px 5px rgba(0,0,0,.05);
-  position: relative;
-  flex:1;
-  z-index: 1;
-
-  &__title {
-    position: absolute;
-    top:-16px;
-    left:50%;
-    transform: translateX(-50%);
-    background: var(--primary-bg);
-    border: 1px solid var(--border-color);
-    padding: 4px 10px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-size: .8rem;
-    letter-spacing: 1px;
-    font-weight: 600;
-  }
-}
 
 .powered-by {
   background-color: var(--primary-color);
