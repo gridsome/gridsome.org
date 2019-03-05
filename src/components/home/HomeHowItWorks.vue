@@ -9,8 +9,8 @@
         01. Connect to data sources
       </h2>
 
-      <p class="text-center container-mini mb">
-        Bring your data into a local <strong>GraphQL <graph-ql-logo width="20px" height="20px" /> data layer</strong> for centralized management
+      <p class="lead text-center container-sm mb">
+        Bring your content into a local <strong>GraphQL <graph-ql-logo width="20px" height="20px" /> data layer</strong> for centralized data management
       </p>
 
       <div class="cms-cols grid-cols grid-cols--3 ">
@@ -50,13 +50,13 @@
         02. Build with Vue.js
       </h2>
 
-      <p class="text-center container-mini">
+      <p class="lead text-center container-sm">
         Use <strong>Vue Components</strong> as building blocks in a local development environment with hot-reloading.
       </p>
 
       <div class="well text-center container-md">
         <p>Vue.js, HTML, CSS, SASS, LESS</p>
-        <div v-html="$static.example.content" />
+        <div class="code-example" v-html="$static.example.content" />
       </div>
 
       <div class="dots-vertical">
@@ -65,17 +65,30 @@
         </svg>
       </div>
 
-
       <h2 class="text-center primary-color container-sm">
         03. Deploy to CDN
       </h2>
 
-      <p class="text-center container-mini">
-        Deploy to any <strong>static web host</strong> for fast, scalable and secure hosting.
+      <p class="text-center lead container-mini">
+        Deploy to any <strong>Static Web Host</strong> for fast, scalable and secure hosting.
       </p>
 
+
+      <div class="generate-html text-center">
+        <div class="generate-html__logo">
+          <gridsome-logo />
+        </div>
+        <span>Generate ultra optimized SEO-friendly static HTML</span>
+      </div>
+
+      <div class="dots-vertical">
+        <svg  width="100%" height="37" viewBox="0 0 1 37" class="dot">
+          <path d="M0.5 0L0.500002 37"/>
+        </svg>
+      </div>
+
       <div class="well text-center container-mini">
-        <p class="lead"> Netlify, AWS Amplify, GitHub Pages, Surge.sh, Aerobatic, Now.sh & many more </p>
+        <p> Netlify, AWS Amplify, GitHub Pages, Surge.sh, Aerobatic, Now.sh & many more </p>
       </div>
 
   </Section>
@@ -110,6 +123,32 @@ export default {
 .cms-cols {
   max-width: 1050px;
   margin: 0 auto;
+}
+
+.generate-html {
+  max-width: 200px;
+  margin: 0 auto;
+  font-size: .9rem;
+
+  span {
+    opacity: .8;
+  }
+
+  &__logo {
+    background-color: var(--primary-color);
+    width: 35px;
+    height: 35px;
+    padding: 3px;
+    border-radius: 99px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    animation: pulse 2s infinite;
+
+    svg {
+      height: 25px;
+      width: 25px;
+    }
+  }
 }
 
 .well {

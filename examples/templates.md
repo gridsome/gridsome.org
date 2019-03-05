@@ -1,6 +1,5 @@
 ```html
-<!-- /template/Post.vue -->
-
+<!-- ~/templates/Post.vue -->
 <template>
   <Layout>
     <h1 v-html="$page.post.title" />
@@ -9,20 +8,19 @@
   </Layout>
 </template>
 
+<!-- Fetch data from local GraphQL data layer -->
 <page-query>
 query Post ($path: String!) {
   post: Post (path: $path) {
     title
     content
-    date
-    author
   }
 }
 </page-query>
 
+<!-- Import Vue Components and add Vue.js scripting -->
 <script>
 import PostMeta from '~/components/PostMeta.vue'
-
 export default {
   components: {
     PostMeta
@@ -30,6 +28,7 @@ export default {
 }
 </script>
 
+<!-- Component CSS will be merged into a global CSS file. -->
 <style lang="scss">
   h1 { font-size: 32px }
 </style>
