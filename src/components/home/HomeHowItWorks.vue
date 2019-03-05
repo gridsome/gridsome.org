@@ -81,15 +81,16 @@
       </div>
 
       <h2 class="text-center primary-color container-sm">
-        03. Deploy to CDN
+        03. Deploy
       </h2>
 
-      <p class="text-center container-sm">
-        <strong>No servers. No databases.</strong> Only files. Deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site.
+      <p class="text-center lead container-md">
+        <strong>No servers. No databases. Only files.</strong> Deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site.
       </p>
 
+
       <Card class="text-center container-mini mb">
-        <h4>Static Web Host</h4>
+        <h4>Static Web Hosts</h4>
         <p> <g-link to="/docs/deploy-to-netlify">Netlify</g-link>, <g-link to="/docs/deploy-to-amplify">AWS Amplify</g-link>, <g-link to="/docs/deploy-to-zeit-now">Zeit Now</g-link>, <g-link to="/docs/deploy-to-amazon-s3">Amazon S3</g-link>, Surge.sh, Aerobatic, Now.sh & many more </p>
       </Card>
 
