@@ -16,18 +16,19 @@
       <div class="cms-cols grid-cols grid-cols--3 ">
         <Card>
           <h4>Markdown</h4>
-          <p>Forestery, Netlify CMS, Blogs, Documentation, Magazines, or any custom content type.</p>
+          <p>Git-based CMS, Blogs, Documentation, Magazines, or any custom content type.</p>
         </Card>
-
-        <Card>
-          <h4>Any data</h4>
-          <p>Any APIs, Google Spreadsheet, AirTable, YAML, Json, etc</p>
-        </Card>
-
+      
         <Card>
           <h4>CMSs</h4>
-          <p>WordPress, Contentful, Drupal, CockpitCMS, DatoCMS, Shopify, WooCommerce etc.</p>
+          <p>Headless CMS, WordPress, Contentful, Drupal, CockpitCMS, DatoCMS, Shopify, WooCommerce etc.</p>
         </Card>
+
+        <Card>
+          <h4>Data</h4>
+          <p>APIs, Databases, Google Spreadsheet, AirTable, YAML, CSV, Json, etc.</p>
+        </Card>
+
       </div>
 
       <div class="dots-vertical">
@@ -56,7 +57,7 @@
         Use <strong>Vue Components</strong> as building blocks in a local development environment with instant hot-reloading on any code change.
       </p>
 
-      <Card class="text-center container-sm">
+      <Card class="text-center container-md">
         <div class="code-example" v-html="$static.example.content" />
       </Card>
 

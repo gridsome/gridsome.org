@@ -1,25 +1,30 @@
 ```html
-<!-- ~/templates/Post.vue -->
+<!-- ~/pages/Blog.vue -->
 <template>
   <Layout>
-    <h1 v-html="$page.post.title" />
-    <div v-html="$page.post.content" />
+  	<h1>Our blog</h1>
+   	<div v-for="post in $page.posts.edges.node" :key="post.id">
+   		<h4> {{ post.title }} </h4>
+   		<p> {{ post.excerpt }} </p>
+   		<g-link :to="post.path"> Read more </g-link>
+   	</div>
   </Layout>
 </template>
 
 <!-- Example GraphQL query -->
 <page-query>
-query Post ($path: String!) {
-  post: Post (path: $path) {
-    title
-    content
+query Posts {
+  posts: allPosts {
+    edges {
+      node {
+      	id
+        title
+        path
+        excerpt
+      }
+    }
   }
 }
 </page-query>
-
-<style lang="scss">
-  h1 { font-size: 32px }
-</style>
-
 
 ```

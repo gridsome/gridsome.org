@@ -11,7 +11,7 @@
         <a>WordPress</a>
         <a>Contentful</a>
         <a>Drupal</a>
-        <a>All tags</a>
+        <a>+ All tags</a>
       </nav>
       <div class="grid-cols grid-cols--3">
         <Card>asdf</Card>
