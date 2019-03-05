@@ -1,6 +1,12 @@
 <template>
   <Section class="home-intro" dots="true">
     <div class="text-center container-md">
+
+        <div class="home-message">
+          <g-link to="/blog/2019/02/19/gridsome-v05"><span>🎉 Gridsome v0.5 released &rarr;</span></g-link>
+        </div>
+        
+
         <h1 class="home-intro__title"> 
             Build incredible fast websites <br class="hide-for-small" />& apps with Vue.js
         </h1>
@@ -35,6 +41,23 @@ export default {
     line-height: 1.3;
     font-size: 2rem;
     color: var(--primary-color);
+  }
+}
+.home-message {
+  margin-bottom: 1.5rem;
+
+  a {
+    display: inline-block;
+    padding: 2px 15px;
+    background-color: var(--primary-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 99px;
+    opacity: .75;
+    transition: box-shadow .3s, opacity .3s;
+    &:hover {
+      opacity: 1;
+      box-shadow: var(--glow);
+    }
   }
 }
 </style>

@@ -95,6 +95,10 @@
         <g-link  to="/docs" class="button primary button--large">
           Get started
         </g-link>
+
+        <g-link  to="/why-gridsome" class="button button--large">
+          Why Gridsome
+        </g-link>
       </p>
 
 

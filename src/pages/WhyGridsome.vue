@@ -2,6 +2,9 @@
   <Layout>
     <Section>
     <h1 class="text-center">Why Gridsome</h1>
+    <p class="lead text-center container-md">
+      Gridsome makes it easy and fun for developers to create ultra fast, beautiful websites without needing to become a performance expert.
+    </p>
     <home-tabs />
     <home-features />
     <home-fast />

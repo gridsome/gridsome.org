@@ -6,6 +6,7 @@
   letter-spacing: .5px;
   position: relative;
   border-radius: 5px;
+  color: var(--primary-link-color);
 
   &:after {
     content: " ";

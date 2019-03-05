@@ -1,7 +1,8 @@
 <template>
   <Section class="home-intro" dots="true" dark="true">
     <div class="home-cols grid-cols grid-cols--2 grid-cols--gap-small">
-      <div class="home-cols__left">    
+      <div class="home-cols__left">
+
         <h1 class="home-title"> 
             Build <br class="show-for-small" />
             <VueTyper :text="words" :type-delay="30" caret-animation="smooth" />
