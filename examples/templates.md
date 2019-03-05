@@ -1,5 +1,6 @@
 ```html
 <!-- ~/templates/Post.vue -->
+
 <template>
   <Layout>
     <h1 v-html="$page.post.title" />

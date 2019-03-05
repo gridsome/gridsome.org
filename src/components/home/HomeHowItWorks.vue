@@ -52,12 +52,11 @@
         02. Build with Vue.js
       </h2>
 
-      <p class="lead text-center container-sm">
+      <p class="lead text-center container-md">
         Use <strong>Vue Components</strong> as building blocks in a local development environment with instant hot-reloading on any code change.
       </p>
 
-      <Card class="text-center container-md">
-        <p>Vue.js, HTML, CSS, SASS, LESS</p>
+      <Card class="text-center container-sm">
         <div class="code-example" v-html="$static.example.content" />
       </Card>
 
@@ -137,6 +136,13 @@ export default {
 .cms-cols {
   max-width: 1050px;
   margin: 0 auto;
+}
+
+#app .code-example pre {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  margin:0;
 }
 
 .generate-html {

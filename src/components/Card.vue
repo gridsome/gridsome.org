@@ -24,7 +24,7 @@ export default {
 
 <style lang="scss">
   .card {
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border-color-darker);
     padding: var(--space);
     border-radius: 4px;
     background-color: #FFF;
