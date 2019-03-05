@@ -42,13 +42,11 @@ export default {
   & &__input {
     border-radius: 5px;
     width: 170px;
-    border-color: transparent;
     padding: 0.3rem 0.6rem 0.27rem;
-    transition: padding 0.2s, width 0.2s, opacity 0.3s, background-color 0.3s;
-    border: 1px solid var(--border-color);
 
     &:focus {
       background-color: rgba(255, 255, 255, 0.1);
+      box-shadow: var(--glow);
     }
   }
 }

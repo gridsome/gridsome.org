@@ -26,15 +26,15 @@
   &.primary {
     color:#FFF;
     background-color: var(--primary-link-color);
-    box-shadow: 1px 1px 10px 0 var(--success-bg);
-
+    transition: background .3s, box-shadow .3s, color .3s;
     &:after {
       border-color: rgba(0,0,0,.1);
     }
+
     &:hover {
       color:#FFF;
       background-color: var(--primary-color);
-      box-shadow: 1px 1px 20px 0 var(--success-bg);
+      box-shadow: var(--glow);
     }
   }
 

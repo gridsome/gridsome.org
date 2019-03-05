@@ -61,7 +61,7 @@ export default {
 
 			&:hover {
 				transform: translateY(-3px);
-				box-shadow: 1px 1px 20px 0 var(--success-bg);
+				box-shadow: var(--glow);
 			}
 
 			p {

@@ -3,10 +3,13 @@ input {
   padding: .34rem .8rem;
   border-radius: 5px;
   border: 1px solid var(--border-color);
-
+  transition: background .3s, box-shadow .3s;
+  
   &:focus {
     outline: 0;
-    border-color: rgba(0,0,0,.3);
+    border-color: var(--border-color);
+    box-shadow: var(--glow);
+
   }
 
   &[type="search"] {
