@@ -32,7 +32,7 @@ When you have created a layout you need to import to your pages and templates. T
 <script>
   import Layout from '~/layouts/Default.vue'
   export default {
-  	components {
+  	components: {
   	 Layout
   	}
   }
