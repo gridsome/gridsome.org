@@ -12,7 +12,7 @@
         </h1>
 
         <p class="lead">
-         Gridsome is a Vue.js-powered, modern site generator for building the fastest possible websites for any Headless CMS, APIs or Markdown-files.
+         Gridsome is a Vue.js-powered, modern site generator for building the fastest possible websites for any CMS, APIs or Markdown-files.
         </p>
 
         <p class="home-links">
