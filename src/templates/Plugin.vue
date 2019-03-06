@@ -60,7 +60,7 @@
             </div>
           </div>
 
-          <VueMarkdown class="post plugin-post__content mb" v-if="hit" :source="hit.readme" />
+          <VueShowdown class="post plugin-post__content mb" v-if="hit" :markdown="hit.readme" />
 
         </template>
         <template v-else>
@@ -80,12 +80,22 @@
 </template>
 
 <script>
-import VueMarkdown from 'vue-markdown'
+import { VueShowdown } from 'vue-showdown'
 import algoliasearch from 'algoliasearch/lite'
 import GitLabLogo from '~/assets/images/gitlab.svg'
 import GitHubLogo from '~/assets/images/github-logo.svg'
 import BitbucketLogo from '~/assets/images/bitbucket.svg'
-import { createInstantSearch } from 'vue-instantsearch'
+
+import {
+  createInstantSearch,
+  AisInstantSearchSsr,
+  AisStateResults,
+  AisInfiniteHits,
+  AisHighlight,
+  AisConfigure,
+  AisSearchBox,
+  AisPoweredBy
+} from 'vue-instantsearch'
 
 const searchClient = algoliasearch(
   'OFCNCOG2CU',
@@ -99,7 +109,14 @@ const { instantsearch, rootMixin } = createInstantSearch({
 
 export default {
   components: {
-    VueMarkdown
+    VueShowdown,
+    AisPoweredBy,
+    AisSearchBox,
+    AisConfigure,
+    AisHighlight,
+    AisInfiniteHits,
+    AisStateResults,
+    AisInstantSearchSsr
   },
 
   mixins: [rootMixin],
