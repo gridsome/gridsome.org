@@ -6,11 +6,11 @@
       </h5>
 
       <h2 class="text-center primary-color container-sm">
-        01. Connect to data sources
+        01. Bring your data
       </h2>
 
       <p class="lead text-center container-sm mb">
-        Bring your content into a local <strong>GraphQL <graph-ql-logo width="24px" height="24px" /> data layer</strong> with <g-link to="/plugins">Data Source plugins</g-link> or <g-link to="/docs/data-store-api">Data Store API</g-link>.
+        Pull data from anywhere into a local <strong>GraphQL <graph-ql-logo width="24px" height="24px" /> data layer</strong> with <g-link to="/plugins">Data Source plugins</g-link> or <g-link to="/docs/data-store-api">Data Store API</g-link>.
       </p>
 
       <div class="cms-cols grid-cols grid-cols--collapse grid-cols--3 ">
@@ -54,7 +54,7 @@
       </h2>
 
       <p class="lead text-center container-md">
-        Use <strong>Vue Components</strong> as building blocks in a local development environment with instant hot-reloading on any code change.
+        Use <strong>Vue Components</strong> as building blocks in a local development environment with instant hot-reloading for any code change.
       </p>
 
       <Card class="container-md">
@@ -100,10 +100,6 @@
       <p class="home-links text-center">
         <g-link  to="/docs" class="button primary button--large">
           Get started
-        </g-link>
-
-        <g-link  to="/why-gridsome" class="button button--large">
-          Why Gridsome
         </g-link>
       </p>
 

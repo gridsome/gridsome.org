@@ -21,23 +21,12 @@ export default {
 
 <style lang="scss">
   .feature {
-    text-align:center; 
-
-    svg.icon {
-      width: 32px;
-      height: 32px;
-      margin: 0 auto var(--space);
-      opacity: .5;
-      stroke-width: 1.6!important;
-      path {
-        stroke-width: 1.6!important;
-      }
-    }
-
-    h3 {
+    text-align: center;
+    
+    h4 {
       margin-bottom: 1rem;
-      padding: 0 1rem;
       line-height: 1.4;
     }
+    
   }
 </style>
