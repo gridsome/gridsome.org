@@ -24,7 +24,7 @@ module.exports = function (api) {
       })
       .addNode({ id: '1' })
 
-    // authors
+    // contributors
     const authorsPath = path.join(__dirname, 'contributors/contributors.yaml')
     const authorsRaw = await fs.readFile(authorsPath, 'utf8')
     const authorsJson = yaml.safeLoad(authorsRaw)
