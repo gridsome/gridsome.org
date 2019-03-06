@@ -40,8 +40,14 @@ export default {
 .home-intro {
   &__title {
     line-height: 1.3;
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: var(--primary-color);
+  }
+
+  @media screen and (max-width: 750px) {
+    &__title {
+      font-size: 1.8rem;
+    }
   }
 }
 .home-message {
