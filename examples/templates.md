@@ -3,10 +3,10 @@
 <template>
   <Layout>
   	<h1>Our blog</h1>
-   	<div v-for="post in $page.posts.edges.node" :key="post.id">
-   		<h4> {{ post.title }} </h4>
-   		<p> {{ post.excerpt }} </p>
-   		<g-link :to="post.path"> Read more </g-link>
+   	<div v-for="node in $page.posts.edges" :key="node.id">
+   		<h4> {{ node.title }} </h4>
+   		<p> {{ node.excerpt }} </p>
+   		<g-link :to="node.path"> Read more </g-link>
    	</div>
   </Layout>
 </template>
