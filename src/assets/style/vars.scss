@@ -16,4 +16,12 @@
   --glow: 1px 5px 18px 0 var(--success-bg);
 }
 
+@media screen and (max-width: 550px) {
+  :root {
+    --space: 20px;
+    --space-x2: 20px;
+  }
+}
+
+
 

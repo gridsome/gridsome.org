@@ -28,7 +28,6 @@
           <h4>Data</h4>
           <p>Any APIs, Databases, Google Spreadsheet, AirTable, YAML, CSV, JSON etc.</p>
         </Card>
-
       </div>
 
       <div class="dots-vertical">

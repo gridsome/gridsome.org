@@ -12,7 +12,7 @@
     position: sticky;
     border-right: 1px solid var(--border-color);
     top: var(--header-height);
-    height: calc(100vh + (var(--header-height) * -1));
+    height: calc(100vh + (var(--header-height) * -1) - 5px);
     width: 300px;
     order: 0;
   }
