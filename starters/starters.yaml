@@ -1,7 +1,7 @@
 - title: Default
   description: Default starter for Gridsome
   screenshot: ./screenshots/default.png
-  url: https://github.com/gridsome/gridsome-starter-default
+  gitUrl: https://github.com/gridsome/gridsome-starter-default
   preview: false
   author: gridsome
   features:
@@ -9,3 +9,29 @@
     - asdffasdf asdf
     - asdfasdfa asdf
     - asdfasdfasdf
+
+
+- title: Default WordPress
+  description: Default WordPress starter for Gridsomee
+  screenshot: ./screenshots/default.png
+  gitUrl: https://github.com/gridsome/gridsome-starter-default
+  preview: false
+  author: gridsome
+  features:
+    - asdfsadf asfd
+    - asdffasdf asdf
+    - asdfasdfa asdf
+    - asdfasdfasdf
+
+
+- title: Default Markdown
+  description: Default Markdown starter for Gridsomee
+  screenshot: ./screenshots/default.png
+  gitUrl: https://github.com/gridsome/gridsome-starter-default
+  preview: false
+  author: gridsome
+  features:
+    - Markdown blog
+    - Tags
+    - Categories
+    - Authors

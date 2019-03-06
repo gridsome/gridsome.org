@@ -10,9 +10,9 @@
         </p>
       </div>
 
-      <h3 class="text-center" v-if="$page.contributor.belongsTo.edges.length">Blog posts</h3>
+      <h3 class="text-center" v-if="$page.contributor.posts.edges.length">Blog posts</h3>
 
-      <PostCard v-for="edge in $page.contributor.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
+      <PostCard v-for="edge in $page.contributor.posts.edges" :key="edge.node.id" :post="edge.node"/>
     </Section>
   </Layout>
 </template>
@@ -24,7 +24,7 @@ query Contributor ($path: String!) {
     title
     bio
     avatar (width: 124)
-    belongsTo {
+    posts: belongsTo(filter: {typeName: {eq: BlogPost}}) {
       totalCount
       pageInfo {
         totalPages
@@ -45,6 +45,22 @@ query Contributor ($path: String!) {
             }
             excerpt
             content
+          }
+        }
+      }
+    }
+    starters: belongsTo(filter: {typeName: {eq: Starter}}) {
+      totalCount
+      pageInfo {
+        totalPages
+        currentPage
+      }
+      edges {
+        node {
+          ...on Starter {
+            id
+            title
+            path
           }
         }
       }

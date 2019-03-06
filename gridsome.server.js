@@ -42,7 +42,31 @@ module.exports = function (api) {
           origin: authorsPath
         }
       })
-    })   
+    })
+
+    // Starters
+    const startersPath = path.join(__dirname, 'starters/starters.yaml')
+    const startersRaw = await fs.readFile(startersPath, 'utf8')
+    const startersJson = yaml.safeLoad(startersRaw)
+    const starters = store.addContentType({
+      typeName: 'Starter',
+      // route: '/starter/:id'
+    })
+
+    starters.addReference('author','Contributor')
+
+    startersJson.forEach(({ id, name: title, ...fields }) => {
+      starters.addNode({
+        id,
+        title,
+        fields,
+        internal: {
+          origin: startersPath
+        }
+      })
+    }) 
+
+
   })
 
   api.afterBuild(async ({ config }) => {
