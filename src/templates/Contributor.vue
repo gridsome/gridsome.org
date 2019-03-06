@@ -2,23 +2,23 @@
   <Layout>
     <Section container="md" class="blog-posts">
       <div class="mb container-sm text-center author-page">
-        <g-image class="author-page__avatar" v-if="$page.author.avatar" :key="$page.author.id" :src="$page.author.avatar"/>
-        <h1>{{ $page.author.title }}</h1>
-        <p v-if="$page.author.bio" class="lead container-sm">
-          {{ $page.author.bio }}
+        <g-image class="author-page__avatar" v-if="$page.contributor.avatar" :key="$page.contributor.id" :src="$page.contributor.avatar"/>
+        <h1>{{ $page.contributor.title }}</h1>
+        <p v-if="$page.contributor.bio" class="lead container-sm">
+          {{ $page.contributor.bio }}
         </p>
       </div>
 
       <h3 class="text-center">Blog posts</h3>
 
-      <PostCard v-for="edge in $page.author.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
+      <PostCard v-for="edge in $page.contributor.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
     </Section>
   </Layout>
 </template>
 
 <page-query>
-query Author ($path: String!) {
-  author (path: $path) {
+query Contributor ($path: String!) {
+  contributor (path: $path) {
     id
     title
     bio
@@ -61,12 +61,12 @@ export default {
   },
   metaInfo () {
     return {
-      title: this.$page.author.title,
+      title: this.$page.contributor.title,
       meta: [
         {
           key: 'description',
           name: 'description',
-          content: this.$page.author.bio
+          content: this.$page.contributor.bio
         }
       ]
     }

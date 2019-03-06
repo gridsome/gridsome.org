@@ -1,11 +1,11 @@
 - id: tommyvedvik
   name: Tommy Vedvik
   bio: Co-founder of @gridsome. UX & Design.
-  avatar: ./tommyvedvik.jpg
+  avatar: ./images/tommyvedvik.jpg
   twitter: "@tommyvedvik"
 
 - id: hjvedvik
   name: Hans-Jørgen Vedvik
   bio: Co-founder of @gridsome. Developer lead.
-  avatar: ./hjvedvik.png
+  avatar: ./images/hjvedvik.png
   twitter: "@hjvedvik"

@@ -101,7 +101,7 @@ module.exports = {
         path: './blog/*/index.md',
         route: '/blog/:year/:month/:day/:slug',
         refs: {
-          author: 'Author'
+          author: 'Contributor'
         },
         remark: {
           plugins: [

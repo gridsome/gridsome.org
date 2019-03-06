@@ -24,14 +24,13 @@ module.exports = function (api) {
       })
       .addNode({ id: '1' })
 
-
     // authors
-    const authorsPath = path.join(__dirname, 'blog/authors/authors.yaml')
+    const authorsPath = path.join(__dirname, 'contributors/contributors.yaml')
     const authorsRaw = await fs.readFile(authorsPath, 'utf8')
     const authorsJson = yaml.safeLoad(authorsRaw)
     const authors = store.addContentType({
-      typeName: 'Author',
-      route: '/author/:id'
+      typeName: 'Contributor',
+      route: '/contributor/:id'
     })
 
     authorsJson.forEach(({ id, name: title, ...fields }) => {
