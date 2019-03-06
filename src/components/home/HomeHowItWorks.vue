@@ -13,20 +13,20 @@
         Bring your content into a local <strong>GraphQL <graph-ql-logo width="24px" height="24px" /> data layer</strong> with <g-link to="/plugins">Data Source plugins</g-link> or <g-link to="/docs/data-store-api">Data Store API</g-link>.
       </p>
 
-      <div class="cms-cols grid-cols grid-cols--3 ">
+      <div class="cms-cols grid-cols grid-cols--collapse grid-cols--3 ">
         <Card>
           <h4>Markdown</h4>
-          <p>Git-based CMS, Blogs, Documentation, Magazines, or any custom content type.</p>
+          <p>Any Git-based CMS, Forestry, Netlify CMS, Blogs, Documentation.</p>
         </Card>
       
-        <Card>
+        <Card style="border-radius: 0">
           <h4>CMSs</h4>
-          <p>Headless CMS, WordPress, Contentful, Drupal, CockpitCMS, DatoCMS, Shopify, WooCommerce etc.</p>
+          <p>Any Headless CMS, WordPress, Contentful, Drupal, DatoCMS, Sanity.io, GraphCMS etc.</p>
         </Card>
 
         <Card>
           <h4>Data</h4>
-          <p>APIs, Databases, Google Spreadsheet, AirTable, YAML, CSV, Json, etc.</p>
+          <p>Any APIs, Databases, Google Spreadsheet, AirTable, YAML, CSV, JSON etc.</p>
         </Card>
 
       </div>
@@ -39,7 +39,7 @@
 
       <div class="powered-by text-center">
         <gridsome-logo />
-        <span>Powered by GraphQL</span>
+        <span>GraphQL powered data layer</span>
         <g-image src="~/assets/images/spark.png" />
       </div>
 
@@ -71,7 +71,7 @@
         <div class="generate-html__logo">
           <gridsome-logo />
         </div>
-        <span>Generate ultra optimized SEO-friendly <strong>PWAs</strong></span>
+        <span>Generate ultra optimized SEO-friendly <strong>PWAs</strong>.</span>
       </div>
 
       <div class="dots-vertical">
@@ -195,10 +195,10 @@ export default {
   span {
     display: block;
     font-size: .8rem;
-    line-height: 1.2;
+    line-height: 1.1;
     padding: 10px 0 0;
     color: #fff;
-    opacity: .6;
+    opacity: .8;
   }
 }
 

@@ -72,6 +72,21 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: var(--space);
 
+  &--collapse {
+    grid-gap: 0;
+    
+    > div:first-child {
+      border-right:0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius:0;
+    }
+    > div:last-child {
+      border-left-width:0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius:0;
+    }
+  }
+
   &--gap-small {
     grid-gap: calc( var(--space) );
   }

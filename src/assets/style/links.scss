@@ -4,15 +4,15 @@ a {
   transition: color .3s, opacity .3s, background .3s;
   display: inline-block;
   position: relative;
-  font-weight: 500;
   border-radius: 99px;
+  font-weight: 500;
 
   .post &:not(.button) {
-    background: linear-gradient(180deg, transparent 60%, var(--success-bg)  60%, var(--success-bg)  87%, transparent 0,);
+    background: linear-gradient(180deg, transparent 62%, var(--success-bg)  60%, var(--success-bg)  85%, transparent 0,);
   }
 
   .post &:not(.button):hover {
-    background: linear-gradient(180deg, transparent 0%, var(--success-bg)  60%, var(--success-bg)  87%, transparent 0,);
+    background: linear-gradient(180deg, transparent 0, var(--success-bg)  85%, transparent 0,);
   }
 
 }

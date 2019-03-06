@@ -8,25 +8,25 @@
 			<Card class="ecosystem__item" link="/docs">
 				<icon-docs />
 				<h4>Documentation</h4>
-				<p>Get started with Gridsome and learn how to use it</p>
+				<p>Get started with Gridsome and learn how to use it.</p>
 			</Card>
 
 			<Card class="ecosystem__item" link="/plugins">
 				<icon-plugins />
 				<h4>Plugins</h4>
-				<p>Enhance your Gridsome site with amazing plugins</p>
+				<p>Enhance your Gridsome site with amazing plugins.</p>
 			</Card>
 
 			<Card class="ecosystem__item" link="/starters">
 				<icon-starters />
 				<h4>Starters</h4>
-				<p>Browse premade Gridsome projects to get started quickly</p>
+				<p>Browse premade Gridsome projects to get started quickly.</p>
 			</Card>
 
 			<Card class="ecosystem__item" link="/blog">
 				<icon-blog />
 				<h4>Blog</h4>
-				<p>Articles, tips & tricks from the Gridsome community</p>
+				<p>Articles, tips & tricks from the Gridsome community.</p>
 			</Card>
 
 		</div>
@@ -52,7 +52,7 @@ export default {
 <style lang="scss">
 	.ecosystem {
 		padding: 4% 0 0;
-		margin-bottom: -2%;
+		margin-bottom: -.5%;
 
 		&__item {
 			font-size: .9rem;

@@ -17,14 +17,30 @@
       	</a>
    	  </div>
 
-   	  <div class="logo-container logo-container--dark">
+   	  <div class="logo-container logo-container--secondary">
       	<a href="/logos/logo-dark.svg" target="_blank">
       		<img src="/logos/logo-dark.svg" />
       	</a>
    	  </div>
 
+      <h2>Only Symbol</h2>
+      <div class="grid-cols grid-cols--2 mb">
+       <div class="logo-container">
+        <a href="/logos/only-logo.svg" target="_blank">
+          <img src="/logos/only-logo.svg" />
+        </a>
+      </div>
+      <div class="logo-container logo-container--secondary">
+        <a href="/logos/only-logo-light.svg" target="_blank">
+          <img src="/logos/only-logo-light.svg" />
+        </a>
+      </div>
+     </div>
+
+      <h2>Symbol with circle background</h2>
+
    	 <div class="grid-cols mb">
-  	  <div class="logo-container">
+  	   <div class="logo-container">
       	<a href="/logos/logo-circle-normal.svg" target="_blank">
       		<img src="/logos/logo-circle-normal.svg" />
       	</a>
@@ -47,16 +63,16 @@
    	 <div class="colors mb">
 
    	 	<div class="colors__primary">
-   	 		<span>#5ED3A2</span>
-   	 	</div>
-
-   	 	<div class="colors__primary_dark">
-   	 		<span>#3BBA95</span>
+   	 		<span>#45C492</span>
    	 	</div>
 
    	 	<div class="colors__secondary">
-   	 		<span>#0D2538</span>
+   	 		<span>#34B180</span>
    	 	</div>
+
+      <div class="colors__dark">
+        <span>#1E3F59</span>
+      </div>
 
    	 </div>
 
@@ -69,9 +85,15 @@
 	text-align: center;
 	background-color: var(--primary-bg);
 	margin-bottom: var(--space);
+
 	&--dark {
-		background-color: var(--secondary-bg);
+		background-color: var(--dark-bg);
 	}
+
+   &--secondary {
+      background-color: var(--secondary-bg);
+   }
+
 	a {
 		display: block;
 		padding: 10%;
@@ -96,14 +118,15 @@
 		background-color: var(--primary-color);
 	}
 
-	&__primary_dark {
-		background-color: var(--primary-link-color);
-	}
-
-
 	&__secondary {
 		background-color: var(--secondary-bg);
 	}
+
+  &__dark {
+    background-color: var(--dark-bg);
+  }
+
+
 }
 
 </style>
