@@ -13,8 +13,6 @@
     "babel-runtime": "^6.26.0",
     "docsearch.js": "^2.6.2",
     "gridsome": "0.5.4",
-    "typeface-league-spartan": "0.0.44",
-    "typeface-nunito": "0.0.54",
     "typography": "^0.16.18",
     "vue-instantsearch": "^2.0.0",
     "vue-markdown": "^2.2.4",

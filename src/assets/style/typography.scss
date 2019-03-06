@@ -6,13 +6,25 @@
 @font-face {
   font-family: Jost;
   src: url(../fonts/Jost-400-Book.otf);
-  font-weight: normal;
+  font-weight: 400;
 }
 
 @font-face {
   font-family: Jost;
   src: url(../fonts/Jost-500-Medium.otf);
-  font-weight: bold;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Jost;
+  src: url(../fonts/Jost-600-Semi.otf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Jost;
+  src: url(../fonts/Jost-700-Bold.otf);
+  font-weight: 700;
 }
 
 /* Smaller text for mobile */
@@ -30,15 +42,20 @@
   font-size: 0.8em;
 }
 
-#app h5 {
-  font-family: Jost;
+#app strong {
+  font-weight: 500;
+}
+
+#app h1 {
+  letter-spacing: -.75px;
 }
 
 #app h5 {
   font-family: Jost;
   text-transform: uppercase;
+  font-weight: 500;
   letter-spacing: .5px;
-  opacity: .4;
+  opacity: .5;
 }
 
 #app .primary-color {
