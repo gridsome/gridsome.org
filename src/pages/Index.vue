@@ -7,7 +7,6 @@
 </template>
 
 <script>
-
 import HomeIntroSimple from '@/components/home/HomeIntroSimple.vue'
 import HomeBlog from '@/components/home/HomeBlog.vue'
 import HomeHowItWorks from '@/components/home/HomeHowItWorks.vue'

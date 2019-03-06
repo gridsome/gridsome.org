@@ -71,7 +71,7 @@
    	 	</div>
 
       <div class="colors__dark">
-        <span>#1E3F59</span>
+        <span>#0d2538</span>
       </div>
 
    	 </div>

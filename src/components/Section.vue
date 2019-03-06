@@ -75,7 +75,7 @@ export default {
 
   &--dark {
     color: rgba(255,255,255,.8);
-    background: var(--secondary-bg);
+    background: var(--dark-bg);
 
     p {
       color: currentColor;

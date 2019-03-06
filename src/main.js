@@ -16,7 +16,7 @@ import VueInstantSearch from 'vue-instantsearch'
 import Typography from 'typography'
 
 const typography = new Typography({
-  baseFontSize: '18px',
+  baseFontSize: '19px',
   baseLineHeight: 1.6,
   scaleRatio: 1.9,
   bodyColor: 'hsla(0,0%,0%,0.7)',
