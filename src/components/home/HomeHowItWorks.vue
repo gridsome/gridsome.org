@@ -67,11 +67,22 @@
         </svg>
       </div>
 
+
+      <h2 class="text-center primary-color container-sm">
+        03. Deploy
+      </h2>
+
+
+      <p class="text-center lead container-md">
+        Deploy your entire site to a CDN and forget about it. <br>Traffic or hacking will never break your site.
+      </p>
+
+
        <div class="generate-html text-center">
         <div class="generate-html__logo">
           <gridsome-logo />
         </div>
-        <span>Generate ultra optimized SEO-friendly <strong>PWAs</strong>.</span>
+        <span>Generate ultra optimized SEO-friendly HTML.</span>
       </div>
 
       <div class="dots-vertical">
@@ -79,14 +90,6 @@
           <path d="M0.5 0L0.500002 37"/>
         </svg>
       </div>
-
-      <h2 class="text-center primary-color container-sm">
-        03. Deploy
-      </h2>
-
-      <p class="text-center lead container-md">
-        Deploy your entire site to a CDN and forget about it. <br>Traffic or hacking will never break your site.
-      </p>
 
 
       <Card class="text-center container-mini mb">
