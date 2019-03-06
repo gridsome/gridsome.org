@@ -33,6 +33,15 @@
   to{stroke-dashoffset:20;}
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
 
 .menu-item {
   display: block;

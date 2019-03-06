@@ -31,22 +31,38 @@
           <discord-logo/>
         </a>
         
-        <a
-          aria-label="github"
-          href="//github.com/gridsome/gridsome"
-          rel="noopener noreferrer"
-          target="_blank"
-          title="Gridsome @ GitHub"
-        >
-          <github-logo
-            height="20px"
-            width="20px"
-          />
-          <span
-            class="hide-for-small"
-            style="margin-left:5px;"
-          >v{{ $static.metaData.gridsomeVersion }}</span>
-        </a>
+        <div class="has-dropdown">
+          <a
+            aria-label="github"
+            href="//github.com/gridsome/gridsome"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Gridsome @ GitHub"
+          >
+            <github-logo
+              height="20px"
+              width="20px"
+            />
+            <span
+              class="hide-for-small"
+              style="margin-left:5px;"
+            >v{{ $static.metaData.gridsomeVersion }}</span>
+          </a>
+          <div class="dropdown">
+            <a href="//github.com/gridsome/gridsome/blob/master/gridsome/CHANGELOG.md" rel="noopener noreferrer" target="_blank">
+              Change log
+            </a>
+            <a href="//github.com/gridsome/gridsome" rel="noopener noreferrer" target="_blank">
+              Core repository
+            </a>
+            <a href="//github.com/gridsome/gridsome.org" rel="noopener noreferrer" target="_blank">
+              Docs repository
+            </a>
+            <a href="//github.com/gridsome/gridsome/issues" rel="noopener noreferrer" target="_blank">
+              Gridsome Issues
+            </a>
+          </div>
+        </div>
       </nav>
     </div>
   </header>

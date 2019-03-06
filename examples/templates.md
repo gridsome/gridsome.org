@@ -1,5 +1,5 @@
 ```html
-<!-- ~/pages/Blog.vue -->
+<!-- Example Page ~/pages/Blog.vue -->
 <template>
   <Layout>
   	<h1>Our blog</h1>

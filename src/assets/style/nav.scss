@@ -79,31 +79,3 @@ nav {
     }
   }
 }
-
-nav.tabs {
-
-  overflow-x: auto;
-  flex-wrap: nowrap;
-  -webkit-overflow-scrolling: touch;
-
-  a {
-    background-color: var(--primary-bg);
-    border-radius: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    white-space: nowrap;
-  }
-  
-  a.active {
-    color:#FFF;
-    background-color: var(--primary-color);
-    background:  var(--primary-color);
-    box-shadow: var(--shadow);
-  }
-
-  @media screen and (max-width: 750px) {
-    justify-content: flex-start;
-  }
-}
-
-

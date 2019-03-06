@@ -39,7 +39,7 @@
 
       <div class="powered-by text-center">
         <gridsome-logo />
-        <span>GraphQL powered data layer</span>
+        <span><strong>GraphQL</strong><br/> data layer</span>
         <g-image src="~/assets/images/spark.png" />
       </div>
 
@@ -57,7 +57,7 @@
         Use <strong>Vue Components</strong> as building blocks in a local development environment with instant hot-reloading on any code change.
       </p>
 
-      <Card class="text-center container-md">
+      <Card class="container-md">
         <div class="code-example" v-html="$static.example.content" />
       </Card>
 
@@ -157,17 +157,34 @@ export default {
 
   &__logo {
     background-color: var(--primary-color);
-    width: 35px;
-    height: 35px;
-    padding: 3px;
+    width: 50px;
+    height: 50px;
+    padding: 0 10px;
     border-radius: 99px;
     margin: 0 auto;
     margin-bottom: 10px;
-    animation: pulse 2s infinite;
 
     svg {
-      height: 25px;
-      width: 25px;
+      height: 100%;
+      width: 100%;
+      overflow: visible!important;
+
+      path {
+        transform-origin: 50% 50%;
+      }
+
+      path:nth-child(1) {
+        display: none;
+      }
+
+      path:nth-child(3) {
+        animation: spin 1s linear infinite;
+
+      }
+      path:nth-child(4) {
+        animation: spin 1s linear infinite;
+      }
+   
     }
   }
 }
@@ -194,7 +211,7 @@ export default {
 
   span {
     display: block;
-    font-size: .8rem;
+    font-size: .85rem;
     line-height: 1.1;
     padding: 10px 0 0;
     color: #fff;
