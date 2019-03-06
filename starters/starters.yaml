@@ -1,11 +1,11 @@
-- id: tommyvedvik
-  name: Tommy Vedvik
-  bio: Co-founder of @gridsome. UX & Design.
-  avatar: ./images/tommyvedvik.jpg
-  twitter: "@tommyvedvik"
-
-- id: hjvedvik
-  name: Hans-Jørgen Vedvik
-  bio: Co-founder of @gridsome. Developer lead.
-  avatar: ./images/hjvedvik.png
-  twitter: "@hjvedvik"
+- title: Default
+  description: Default starter for Gridsome
+  screenshot: ./screenshots/default.png
+  url: https://github.com/gridsome/gridsome-starter-default
+  preview: false
+  author: gridsome
+  features:
+    - asdfsadf asfd
+    - asdffasdf asdf
+    - asdfasdfa asdf
+    - asdfasdfasdf

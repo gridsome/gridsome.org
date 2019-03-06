@@ -21,11 +21,6 @@
       <span class="main-nav__label">Starters</span>
     </g-link>
 
-    <g-link to="/showcase">
-      <icon-starters />
-      <span class="main-nav__label">Showcase</span>
-    </g-link>
-
     <g-link to="/why-gridsome" class="hide-for-small">
       <icon-docs />
       <span class="main-nav__label">Why Gridsome</span>

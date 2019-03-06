@@ -9,3 +9,9 @@
   bio: Co-founder of @gridsome. Developer lead.
   avatar: ./images/hjvedvik.png
   twitter: "@hjvedvik"
+
+- id: gridsome
+  name: Gridsome
+  bio: Official Gridsome projects
+  avatar: ../static/logos/logo-circle-light.svg
+  twitter: "@gridsome"

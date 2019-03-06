@@ -1,6 +1,7 @@
 <template>
   <Layout>
     <Section container="md" class="blog-posts">
+      
       <div class="mb container-sm text-center author-page">
         <g-image class="author-page__avatar" v-if="$page.contributor.avatar" :key="$page.contributor.id" :src="$page.contributor.avatar"/>
         <h1>{{ $page.contributor.title }}</h1>
@@ -9,7 +10,7 @@
         </p>
       </div>
 
-      <h3 class="text-center">Blog posts</h3>
+      <h3 class="text-center" v-if="$page.contributor.belongsTo.edges.length">Blog posts</h3>
 
       <PostCard v-for="edge in $page.contributor.belongsTo.edges" :key="edge.node.id" :post="edge.node"/>
     </Section>
