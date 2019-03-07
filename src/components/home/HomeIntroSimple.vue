@@ -8,7 +8,7 @@
         
 
         <h1 class="home-intro__title"> 
-            Build incredible fast <br class="hide-for-small" />websites & apps
+            Build awesomely fast <br class="hide-for-small" />websites & apps
         </h1>
 
         <p class="lead  container-md">
@@ -60,8 +60,9 @@ export default {
 
   a {
     display: inline-block;
+    background-color: var(--primary-bg);
     padding: 2px 15px;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border-color-darker);
     border-radius: 99px;
     opacity: .75;
     transition: box-shadow .3s, opacity .3s;
