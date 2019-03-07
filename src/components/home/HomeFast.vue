@@ -20,6 +20,12 @@
         <li><Bullet /> Offline-ready PWA support</li>
       </ul>
     </div>
+    
+    <p class="home-links text-center">
+      <g-link  to="/docs" class="button primary button--large">
+        Get started
+      </g-link>
+    </p>
   </Section>
 </template>
 

@@ -97,8 +97,8 @@
       </Card>
 
       <p class="home-links text-center">
-        <g-link  to="/docs" class="button primary button--large">
-          Get started
+        <g-link  to="/docs/how-it-works">
+          Learn more about how it works
         </g-link>
       </p>
 
