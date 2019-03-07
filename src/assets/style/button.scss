@@ -5,7 +5,9 @@
   font-weight: 500;
   letter-spacing: .5px;
   position: relative;
+  border:0;
   border-radius: 5px;
+  outline: 0;
   color: var(--primary-link-color);
   transition: background .3s, box-shadow .3s, color .3s;
 
@@ -47,6 +49,11 @@
     font-size: .85rem;
     padding: .35rem .7rem;
   }
+  &--xsmall {
+    font-size: .7rem;
+    padding: .3rem .7rem;
+  }
+
 
   &--large {
     font-size: 1.2rem;

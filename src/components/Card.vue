@@ -38,6 +38,7 @@ export default {
     &__image {
       border-radius: 4px 4px 0 0;
       overflow: hidden;
+      border-bottom: 1px solid var(--border-color);
       img {
         margin: 0;
         width: 100%;
