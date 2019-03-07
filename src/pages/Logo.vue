@@ -63,11 +63,11 @@
    	 <div class="colors mb">
 
    	 	<div class="colors__primary">
-   	 		<span>#45C492</span>
+   	 		<span>#00A672</span>
    	 	</div>
 
    	 	<div class="colors__secondary">
-   	 		<span>#34B180</span>
+   	 		<span>#008B60</span>
    	 	</div>
 
       <div class="colors__dark">
@@ -119,7 +119,7 @@
 	}
 
 	&__secondary {
-		background-color: var(--secondary-bg);
+		background-color: var(--primary-link-color);
 	}
 
   &__dark {

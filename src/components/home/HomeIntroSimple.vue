@@ -1,6 +1,6 @@
 <template>
   <Section class="home-intro" dots="true">
-    <div class="text-center container-md">
+    <div class="text-center">
 
         <div class="home-message" hidden>
           <g-link to="/blog/2019/02/19/gridsome-v05"><span>🎉 Gridsome v0.5 released &rarr;</span></g-link>
@@ -8,11 +8,11 @@
         
 
         <h1 class="home-intro__title"> 
-            Build incredible fast websites <br class="hide-for-small" />& apps with Vue.js
+            Build incredible fast <br class="hide-for-small" />websites & apps
         </h1>
 
-        <p class="lead">
-         Gridsome is a Vue.js-powered, modern site generator for building the fastest possible websites for any CMS, APIs or Markdown-files.
+        <p class="lead  container-md">
+         Gridsome is a <strong>Vue.js-powered</strong>, modern site generator for building the fastest possible websites for any CMS, APIs or Markdown-files.
         </p>
 
         <p class="home-links">
@@ -39,8 +39,14 @@ export default {
 <style lang="scss">
 .home-intro {
   &__title {
-    font-size: 2.6rem;
+    font-size: 3rem;
     color: var(--primary-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__title {
+      font-size: 3.6rem;
+    }
   }
 
   @media screen and (max-width: 750px) {
