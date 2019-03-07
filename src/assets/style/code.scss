@@ -4,10 +4,10 @@
   background-color: var(--code-color);
   border-radius: 3px;
   font-feature-settings: "liga" 0;
+  border: 1px solid rgba(0,0,0,.05);
 }
 
 #app pre {
-  border: 1px solid rgba(0,0,0,.05);
   background-color: var(--code-color-block);
 }
 

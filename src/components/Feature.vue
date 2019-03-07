@@ -21,10 +21,10 @@ export default {
 
 <style lang="scss">
   .feature {
-    text-align: center;
-    
-    h4 {
-      margin-bottom: 1rem;
+    margin-bottom: 2rem;
+
+    h3 {
+      margin-bottom: .5rem;
       line-height: 1.4;
     }
     

@@ -1,13 +1,11 @@
 <template>
 	<div class="ecosystem">
-		
-		<h5 class="ecosystem__title text-center">Ecosystem</h5>
-		
+
 		<div class="ecosystem__cols grid-cols grid-cols--4">
 
 			<Card class="ecosystem__item" link="/docs">
 				<icon-docs />
-				<h4>Documentation</h4>
+				<h4>Docs</h4>
 				<p>Get started with Gridsome and learn how to use it.</p>
 			</Card>
 
@@ -52,7 +50,6 @@ export default {
 <style lang="scss">
 	.ecosystem {
 		padding: calc(3% + 20px) 0 0;
-		margin-bottom: -1.5%;
 
 		&__item {
 			font-size: .9rem;

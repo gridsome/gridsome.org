@@ -1,10 +1,10 @@
 <template>
   <GalleryLayout>
-    <Section>
+   <Section class="starters-header">
       <h1 class="text-center container-sm">Gridsome Starters</h1>
-      
       <p class="text-center lead container-sm">Get started quickly with premade Gridsome projects</p>
-      {{ $page.starters }}
+   </Section>
+   <Section>
       <div class="grid-cols grid-cols--4">
         <Card>Default starter</Card>
         <Card>asdf</Card>
@@ -46,5 +46,12 @@ export default {
   },
 }
 </script>
+
+<style>
+.starters-header {
+  border-bottom: 1px solid var(--border-color);
+  background-color: #FFF;
+}
+</style>
 
 

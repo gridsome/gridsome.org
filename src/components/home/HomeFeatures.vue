@@ -1,6 +1,6 @@
 <template>
-  <Section dots="true" class="post">
-    <div class="homepage-features grid-cols">
+  <Section dots="true" class="post" primary="true">
+    <div class="homepage-features grid-cols ">
 
       <Feature>
         <h3>Easy, local development</h3>

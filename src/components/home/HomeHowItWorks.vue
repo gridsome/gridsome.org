@@ -215,7 +215,6 @@ export default {
     line-height: 1.1;
     padding: 10px 0 0;
     color: #fff;
-    opacity: .8;
   }
 }
 
