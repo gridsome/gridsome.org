@@ -8,7 +8,7 @@
         
 
         <h1 class="home-intro__title"> 
-            Build incredible fast <br class="hide-for-small" />websites & apps
+            Build incredible fast <br class="hide-for-small" />JAMstack sites with Vue.js
         </h1>
 
         <p class="lead  container-md">
@@ -54,13 +54,13 @@ export default {
 <style lang="scss">
 .home-intro {
   &__title {
-    font-size: 3rem;
+    font-size: 2.9rem;
     color: var(--primary-color);
   }
 
   @media screen and (min-width: 1200px) {
     &__title {
-      font-size: 3.2rem;
+      font-size: 3rem;
     }
   }
 
