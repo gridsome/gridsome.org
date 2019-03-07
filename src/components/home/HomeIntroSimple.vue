@@ -60,7 +60,7 @@ export default {
 
   @media screen and (min-width: 1200px) {
     &__title {
-      font-size: 3.6rem;
+      font-size: 3.3rem;
     }
   }
 

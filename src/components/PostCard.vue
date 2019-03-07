@@ -24,7 +24,9 @@ export default {
   &__post {
     position: relative;
     margin-bottom: 2rem;
-    padding: var(--space-x2);
+    .card__inner {
+      padding: var(--space-x2);
+    }
   }
 }
 </style>

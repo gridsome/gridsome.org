@@ -24,7 +24,47 @@
     - asdfasdfasdf
 
 
-- title: Default Markdown
+- title: Default Markdown 123
+  description: Default Markdown starter for Gridsomee
+  screenshot: ./screenshots/default.png
+  gitUrl: https://github.com/gridsome/gridsome-starter-default
+  preview: false
+  author: gridsome
+  features:
+    - Markdown blog
+    - Tags
+    - Categories
+    - Authors
+
+
+
+- title: Default 123
+  description: Default starter for Gridsome
+  screenshot: ./screenshots/default.png
+  gitUrl: https://github.com/gridsome/gridsome-starter-default
+  preview: false
+  author: gridsome
+  features:
+    - asdfsadf asfd
+    - asdffasdf asdf
+    - asdfasdfa asdf
+    - asdfasdfasdf
+
+
+- title: Default WordPress 123
+  description: Default WordPress starter for Gridsomee
+  screenshot: ./screenshots/default.png
+  gitUrl: https://github.com/gridsome/gridsome-starter-default
+  preview: false
+  author: gridsome
+  features:
+    - asdfsadf asfd
+    - asdffasdf asdf
+    - asdfasdfa asdf
+    - asdfasdfasdf
+
+
+- title: Default Markdown 12315
   description: Default Markdown starter for Gridsomee
   screenshot: ./screenshots/default.png
   gitUrl: https://github.com/gridsome/gridsome-starter-default

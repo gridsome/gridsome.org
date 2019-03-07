@@ -1,18 +1,10 @@
 <template>
   <footer class="text-center">
     An open source project by
-    <a
-      class="plain"
-      href="//twitter.com/hjvedvik"
-      rel="noopener noreferrer"
-      target="_blank"
-    >@hjvedvik</a> &
-    <a
-      class="plain"
-      href="//twitter.com/tommyvedvik"
-      rel="noopener noreferrer"
-      target="_blank"
-    >@tommyvedvik</a> and
+    <g-link to="/contributor/hjvedvik"> @hjvedvik</g-link>
+      &
+    <g-link to="/contributor/tommyvedvik">@tommyvedvik</g-link>
+      and
     <a
       class="plain"
       href="//github.com/gridsome/gridsome/graphs/contributors"

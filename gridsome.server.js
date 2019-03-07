@@ -53,6 +53,7 @@ module.exports = function (api) {
       // route: '/starter/:id'
     })
 
+    // Connect author field to Contributors
     starters.addReference('author','Contributor')
 
     startersJson.forEach(({ id, name: title, ...fields }) => {

@@ -6,18 +6,9 @@
    </Section>
    <Section>
       <div class="grid-cols grid-cols--4">
-        <Card>Default starter</Card>
-        <Card>asdf</Card>
-        <Card>asdf</Card>
-        <Card>asdf</Card>
-        <Card>asdf</Card>
-        <Card>asdf</Card>
-        <Card>asdf</Card>
-        <Card>asdf</Card>
-        <Card>asdf</Card>
-        <Card>asdf</Card>
-        <Card>asdf</Card>
-        <Card>asdf</Card>
+        <Card v-for="{ node } in $page.starters.edges" :key="node.id" :image="node.screenshot">
+          {{ node.title }}
+        </Card>
       </div>
     </Section>
   </GalleryLayout>
@@ -30,7 +21,14 @@ query Starters {
       node {
         id
         title
+        description
+        preview
+        author {
+          title
+          path
+        }
         path
+        screenshot (width: 385, height: 280)
       }
     }
   }
