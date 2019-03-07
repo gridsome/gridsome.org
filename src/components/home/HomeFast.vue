@@ -14,7 +14,7 @@
         <li><Bullet /> Automatic link prefetching</li>
       </ul>
       <ul class="bullet-list">
-        <li><Bullet /> Progressive image loading</li>
+        <li><Bullet /> Built-in Progressive image support</li>
         <li><Bullet /> Built-in image compression</li>
         <li><Bullet /> Built-in asset minification</li>
         <li><Bullet /> Offline-ready PWA support</li>
