@@ -7,7 +7,7 @@
 
 	<path fill-rule="evenodd" clip-rule="evenodd" d="M0.0698242 123.251C0.363169 198.689 62.3487 248.54 125.02 247C199.001 244.362 252.444 180.175 248 122.879C246.97 110.978 236.402 101.755 224.465 102.327C212.527 102.899 203.314 113.027 203.886 124.95C205.559 159.772 173.41 202.419 123.956 203.788C84.673 204.753 45.3446 173.945 43.6221 125.997C43.162 137.113 34.389 146.189 23.0577 146.641C11.1158 147.117 0.614181 137.492 0.137357 125.565C0.10652 124.794 0.0840299 124.022 0.0698242 123.251Z" fill="url(#paint0_linear)"/>
 <defs>
-<linearGradient x1="124" y1="247" x2="124" y2="102.23" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear" x1="124" y1="247" x2="124" y2="102.23" gradientUnits="userSpaceOnUse">
 <stop stop-color="white" stop-opacity="0.95"/>
 <stop offset="1" stop-color="white" stop-opacity="0.5"/>
 </linearGradient>
