@@ -56,7 +56,7 @@ export default {
     left: 10px;
     right: 10px;
     z-index: 1;
-    opacity: .5;
+    opacity: .7;
   }
 
   &--dots-top {
