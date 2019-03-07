@@ -60,7 +60,7 @@
             </div>
           </div>
 
-          <VueShowdown class="post plugin-post__content mb" v-if="hit" :markdown="hit.readme" />
+          <div class="post plugin-post__content mb" v-if="hit" v-html="content" />
 
         </template>
         <template v-else>
@@ -80,7 +80,7 @@
 </template>
 
 <script>
-import { VueShowdown } from 'vue-showdown'
+import marked from 'marked'
 import algoliasearch from 'algoliasearch/lite'
 import GitLabLogo from '~/assets/images/gitlab.svg'
 import GitHubLogo from '~/assets/images/github-logo.svg'
@@ -109,7 +109,6 @@ const { instantsearch, rootMixin } = createInstantSearch({
 
 export default {
   components: {
-    VueShowdown,
     AisPoweredBy,
     AisSearchBox,
     AisConfigure,
@@ -157,6 +156,10 @@ export default {
             return owner
           })
         : []
+    },
+
+    content () {
+      return this.hit.readme ? marked(this.hit.readme) : ''
     }
   },
 
