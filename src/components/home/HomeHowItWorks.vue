@@ -89,7 +89,7 @@
           <path d="M0.5 0L0.500002 37"/>
         </svg>
       </div>
-
+      
 
       <Card class="text-center container-mini mb">
         <h4>Static Web Hosts</h4>
@@ -120,9 +120,11 @@ query Example {
 import GraphQlLogo from '~/assets/images/graphql-logo.svg'
 import VueLogo from '~/assets/images/vue-logo.svg'
 import GridsomeLogo from '~/assets/images/gridsome-small-white.svg'
+import Bullet from '~/assets/images/bullet.svg'
 
 export default {
   components: {
+    Bullet,
     VueLogo,
     GridsomeLogo,
     GraphQlLogo

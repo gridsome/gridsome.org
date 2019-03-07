@@ -8,10 +8,10 @@
 
     <div class="grid-cols grid-cols--2 container-md mb">
       <ul class="bullet-list">
-        <li><Bullet /> Insanely fast page loading by default</li>
+        <li><Bullet /> Incredible fast page loading</li>
         <li><Bullet /> Automatic code-splitting</li>
         <li><Bullet /> Automatic critical CSS export</li>
-        <li><Bullet /> Automatic next page prefetching</li>
+        <li><Bullet /> Automatic link prefetching</li>
       </ul>
       <ul class="bullet-list">
         <li><Bullet /> Progressive image loading</li>

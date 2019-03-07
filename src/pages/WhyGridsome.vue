@@ -1,13 +1,13 @@
 <template>
   <Layout>
     <Section>
-    <h1 class="text-center">Why Gridsome</h1>
-    <p class="lead text-center container-md">
-      Gridsome makes it easy and fun for developers to create ultra fast, beautiful websites without needing to become a performance expert.
-    </p>
-    <home-tabs />
-    <home-features />
-    <home-fast />
+      <h1 class="text-center">Why Gridsome</h1>
+      <p class="lead text-center container-md">
+        Gridsome makes it easy and fun for developers to create ultra fast, beautiful websites without needing to become a performance expert.
+      </p>
+      <home-tabs />
+      <home-features />
+      <home-fast />
     </Section>
   </Layout>
 </template>
@@ -18,7 +18,6 @@ import HomeIntroSimple from '@/components/home/HomeIntroSimple.vue'
 import HomeFeatures from '@/components/home/HomeFeatures.vue'
 import HomeTabs from '@/components/home/HomeTabs.vue'
 import HomeFast from '@/components/home/HomeFast.vue'
-
 import HomeBlog from '@/components/home/HomeBlog.vue'
 import HomeHowItWorks from '@/components/home/HomeHowItWorks.vue'
 
@@ -31,14 +30,6 @@ export default {
     HomeBlog,
     HomeHowItWorks,
   },
-  
-  metaInfo: {
-    title: 'Vue.js-powered static site generator',
-    meta: [
-      { name: 'description', content: 'Gridsome is an open-source, Vue-powered modern site generator that builds performance into every website automatically. Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert.'
-      }
-    ],
-  }
 }
 </script>
 

@@ -8,11 +8,18 @@
         
 
         <h1 class="home-intro__title"> 
-            Build awesomely fast <br class="hide-for-small" />websites & apps
+            Build incredible fast <br class="hide-for-small" />websites & apps
         </h1>
 
         <p class="lead  container-md">
          Gridsome is a <strong>Vue.js-powered</strong>, modern site generator for building the fastest possible websites for any CMS, APIs or Markdown-files.
+        </p>
+
+        <p class="home-info">
+          <span>Open-source MIT Licensed. </span>
+          <a href="//github.com/gridsome/gridsome" target="_blank">
+            <span>GitHub (v{{ $static.metaData.gridsomeVersion }})</span>
+          </a>
         </p>
 
         <p class="home-links">
@@ -25,6 +32,14 @@
     
   </Section>
 </template>
+
+<static-query>
+query HomeIntro {
+  metaData {
+    gridsomeVersion
+  }
+}
+</static-query>
 
 <script>
 import Ecosystem from '~/components/Ecosystem.vue'
@@ -55,6 +70,13 @@ export default {
     }
   }
 }
+
+.home-info {
+  font-size: .85rem;
+  margin-top: -.5rem;
+  opacity: .7;
+}
+
 .home-message {
   margin-bottom: 1.5rem;
 
