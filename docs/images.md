@@ -1,6 +1,6 @@
 # Images
 
-> Gridsome has a built-in `<g-image>` component that outputs a optimized progressive image. It also resize and crops in real-time when developing. There is no fake resizng with CSS.
+> Gridsome has a built-in `<g-image>` component that outputs an optimized progressive image. It also resize and crops in real-time when developing. There is no fake resizng with CSS.
 
 `<g-image>` compress and lazy-load images automatically. The images will be resized down to 480, 1024, 1920 and 2560 pixels by default. A blurred version is displayed while the image is beeing loaded. And a fallback `img` tag for browsers without JavaScript enabled is also generated.
 
