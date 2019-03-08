@@ -12,7 +12,7 @@
 
 - id: gridsome
   name: Gridsome
-  bio: "Official Gridsome projects"
+  bio: "Official Gridsome Projects"
   avatar: ../static/logos/logo-circle-light.svg
   twitter: "@gridsome"
 
