@@ -8,11 +8,11 @@
         
 
         <h1 class="home-intro__title"> 
-            Build incredible fast, modern <br class="hide-for-small" />websites & PWAs
+           The Vue.js JAMstack framework
         </h1>
 
         <p class="lead  container-md">
-         Gridsome is a <strong>Vue.js-powered </strong><vue-logo width="30" height="30" /> modern site generator for building the fastest possible websites for any CMS, APIs or Markdown-files.
+         Gridsome is a Vue.js-powered <vue-logo width="25" height="25" /> modern site generator for building the <strong>fastest possible websites</strong> for any CMS, APIs or Markdown-files.
         </p>
 
         <p class="home-info">
