@@ -12,7 +12,7 @@
         </h1>
 
         <p class="lead  container-md">
-         Gridsome is a <strong>Vue.js-powered </strong><vue-logo width="25" height="25" /> modern site generator for building the fastest possible websites for any CMS, APIs or Markdown-files.
+         Gridsome is a <strong>Vue.js-powered </strong><vue-logo width="30" height="30" /> modern site generator for building the fastest possible websites for any CMS, APIs or Markdown-files.
         </p>
 
         <p class="home-info">
