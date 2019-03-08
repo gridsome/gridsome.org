@@ -1,28 +1,4 @@
-<svg
-   alt="Vue"
-   width="55px" height="55px"
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   viewBox="0 0 400 400"
-   xml:space="preserve"
-   id="svg2"
-   version="1.1"><metadata
-     id="metadata8"><rdf:RDF><cc:Work
-         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
-     id="defs6" /><g
-     transform="matrix(1.3333333,0,0,-1.3333333,0,400)"
-     id="g10"><g
-       transform="translate(178.0626,235.0086)"
-       id="g12"><path
-         id="path14"
-         style="fill:#4dba87;fill-opacity:1;fill-rule:nonzero;stroke:none"
-         d="M 0,0 -22.669,-39.264 -45.338,0 h -75.491 L -22.669,-170.017 75.491,0 Z" /></g><g
-       transform="translate(178.0626,235.0086)"
-       id="g16"><path
-         id="path18"
-         style="fill:#435466;fill-opacity:1;fill-rule:nonzero;stroke:none"
-         d="M 0,0 -22.669,-39.264 -45.338,0 H -81.565 L -22.669,-102.01 36.227,0 Z" /></g></g></svg>
+<svg width="256" height="223" viewBox="0 0 256 223" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M41.8299 2.00272C41.115 0.766526 39.7953 0.00522177 38.3673 0.00522177H4.00597C0.926759 0.00522177 -0.997739 3.33856 0.541872 6.00523L124.494 220.695C126.033 223.361 129.882 223.361 131.422 220.695L255.374 6.00523C256.913 3.33856 254.989 0.00522177 251.91 0.00522177H217.633C216.205 0.00522177 214.885 0.766525 214.17 2.00272L131.463 145.018C129.922 147.681 126.078 147.681 124.537 145.018L41.8299 2.00272Z" fill="#00A672"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M186.696 -7.19691e-05C189.775 -7.19691e-05 191.699 3.33327 190.16 5.99994L131.418 107.743C129.879 110.409 126.03 110.409 124.49 107.743L65.7484 5.99994C64.2088 3.33328 66.1333 -7.19691e-05 69.2125 -7.19691e-05H88.82C90.2481 -7.19691e-05 91.5678 0.761229 92.2827 1.99742L124.529 57.7567C126.069 60.4201 129.914 60.4201 131.454 57.7567L163.701 1.99743C164.416 0.761232 165.735 -7.19691e-05 167.163 -7.19691e-05H186.696Z" fill="#1E3F59"/>
+</svg>

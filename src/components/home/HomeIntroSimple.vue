@@ -8,11 +8,11 @@
         
 
         <h1 class="home-intro__title"> 
-            Build incredible fast <br class="hide-for-small" />Websites & PWAs with Vue.js
+            Build incredible fast, modern <br class="hide-for-small" />Websites & PWAs
         </h1>
 
         <p class="lead  container-md">
-         Gridsome is a <strong>Vue.js-powered</strong>, modern site generator for building the fastest possible websites for any CMS, APIs or Markdown-files.
+         Gridsome is a <strong>Vue.js-powered </strong><vue-logo width="25" height="25" /> modern site generator for building the fastest possible websites for any CMS, APIs or Markdown-files.
         </p>
 
         <p class="home-info">
@@ -43,10 +43,12 @@ query HomeIntro {
 
 <script>
 import Ecosystem from '~/components/Ecosystem.vue'
+import VueLogo from '~/assets/images/vue-logo.svg'
 
 export default {
   components: {
-    Ecosystem
+    Ecosystem,
+    VueLogo
   }
 }
 </script>
