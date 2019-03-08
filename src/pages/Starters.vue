@@ -16,10 +16,10 @@
           <p class="starter__desc"> {{ node.description }} </p>
           <div class="starter__footer">
             <div class="starter__actions flex gap-15">
-              <a href="#" aria-label="github repo">
+              <a v-if="node.gitUrl" :href="node.gitUrl" aria-label="github repo" target="_blank" rel="noopener">
                 <git-logo />
               </a>
-              <a href="#" aria-label="live preview">
+              <a v-if="node.preview" :href="node.preview" aria-label="live preview" target="_blank" rel="noopener">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               </a>
             </div>
@@ -42,6 +42,7 @@ query Starters {
         title
         description
         preview
+        gitUrl
         author {
           title
           path
@@ -75,6 +76,9 @@ export default {
 
 .starter {
   overflow: hidden;
+  .card__inner {
+    padding: 1rem;
+  }
 
   &__title {
     font-size: .9rem;
@@ -101,7 +105,7 @@ export default {
 
   &__actions {
     a:not(:hover) {
-      opacity: .7;
+      opacity: .4;
     }
   }
 

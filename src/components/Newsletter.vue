@@ -9,7 +9,9 @@
 			</div>
 
 			<div class="newsletter__button">
-				<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+				<button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+					Subscribe
+				</button>
 			</div>
 
 			<div id="mce-responses" class="clear">
