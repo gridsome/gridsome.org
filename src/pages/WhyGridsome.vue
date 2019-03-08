@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <GalleryLayout>
       <Section>
         <h1 class="text-center">Why Gridsome</h1>
         <p class="lead text-center container-md">
@@ -9,7 +9,7 @@
       <home-features />
       <home-tabs />
       <home-fast />
-  </Layout>
+  </GalleryLayout>
 </template>
 
 <script>

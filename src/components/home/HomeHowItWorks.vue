@@ -66,6 +66,20 @@
         </svg>
       </div>
 
+      
+       <div class="generate-html text-center">
+        <div class="generate-html__logo">
+          <gridsome-logo />
+        </div>
+        <span>Generate Static <br/>HTML with <a href="https://developers.google.com/web/fundamentals/performance/prpl-pattern/" target="_blank" rel="noopener">PRPL-pattern</a></span>
+      </div>
+
+      <div class="dots-vertical">
+        <svg  width="100%" height="37" viewBox="0 0 1 37" class="dot">
+          <path d="M0.5 0L0.500002 37"/>
+        </svg>
+      </div>
+
 
       <h2 class="text-center primary-color container-sm">
         03. Deploy
@@ -77,18 +91,6 @@
       </p>
 
 
-       <div class="generate-html text-center">
-        <div class="generate-html__logo">
-          <gridsome-logo />
-        </div>
-        <span>Generate Optimized <br/> Static HTML with <a href="https://developers.google.com/web/fundamentals/performance/prpl-pattern/" target="_blank" rel="noopener">PRPL-pattern</a></span>
-      </div>
-
-      <div class="dots-vertical">
-        <svg  width="100%" height="37" viewBox="0 0 1 37" class="dot">
-          <path d="M0.5 0L0.500002 37"/>
-        </svg>
-      </div>
       
 
       <Card class="text-center container-mini mb">

@@ -1,10 +1,10 @@
 <template>
   <GalleryLayout>
-   <Section class="starters-header">
+   <Section>
+
       <h1 class="text-center container-sm">Gridsome Starters</h1>
       <p class="text-center lead container-sm">Get started quickly with premade Gridsome projects</p>
-   </Section>
-   <Section>
+
       <div class="grid-cols grid-cols--4">
         <Card class="starter" v-for="{ node } in $page.starters.edges" :key="node.id" :image="node.screenshot">
           <div class="starter__author" v-if="node.author && node.author.avatar">
