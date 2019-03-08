@@ -15,11 +15,15 @@
           <h4 class="starter__title">{{ node.title }} </h4>
           <p class="starter__desc"> {{ node.description }} </p>
           <div class="starter__footer">
-            <div>
-              Git
-              Preview
+            <div class="starter__actions flex gap-15">
+              <a href="#" aria-label="github repo">
+                <git-logo />
+              </a>
+              <a href="#" aria-label="live preview">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </a>
             </div>
-            <div>
+            <div class="starter__install flex gap-15">
               <button class="button button--xsmall">Install</button>
             </div>
           </div>
@@ -53,10 +57,12 @@ query Starters {
 
 <script>
 import IconStarters from '@/assets/images/icon-starters.svg'
+import GitLogo from '@/assets/images/github-logo.svg'
 
 export default {
   components: {
-    IconStarters
+    IconStarters,
+    GitLogo
   },
 }
 </script>
@@ -91,6 +97,12 @@ export default {
     align-items: center;
     justify-content: space-between;
     font-size: .85rem;
+  }
+
+  &__actions {
+    a:not(:hover) {
+      opacity: .7;
+    }
   }
 
   &:hover {

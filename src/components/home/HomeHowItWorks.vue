@@ -49,7 +49,7 @@
       </div>
 
       <h2 class="text-center primary-color container-sm">
-        02. Build with Vue.js
+        02. Build with Vue.js.
       </h2>
 
       <p class="lead text-center container-md">
@@ -221,11 +221,11 @@ export default {
 }
 
 .dot {
-  height: 50px;
+  height: 30px;
   margin: 15px 0;
   text-align: center;
   stroke: var(--primary-color);
-  stroke-width: 3px;
+  stroke-width: 4px;
   stroke-linecap: round;
   stroke-dasharray: 0 10;
   animation: stroke 600ms linear infinite;
