@@ -16,7 +16,7 @@
       <span class="main-nav__label">Plugins</span>
     </g-link>
 
-    <g-link to="/starters" class="hide-for-small">
+    <g-link to="/starters">
       <icon-starters />
       <span class="main-nav__label">Starters</span>
     </g-link>

@@ -8,7 +8,7 @@
         
 
         <h1 class="home-intro__title"> 
-            Build incredible fast, modern <br class="hide-for-small" />Websites & PWAs
+            Build incredible fast, modern <br class="hide-for-small" />websites & PWAs
         </h1>
 
         <p class="lead  container-md">
