@@ -42,7 +42,7 @@ The `node.date` field has a set of shorthand helpers; `:year`, `:month` and `:da
 
 - `:id` resolves to `node.id`
 - `:value` resolves to `node.fields.value`
-- `:value_raw` resolves to `node.fields.value`
+- `:value_raw` resolves to `node.fields.value` (Value without slugify)
 - `:object__value` resolves to `node.fields.object.value`
 - `:array__3__id` resolves to `node.fields.array[3].id`
 
