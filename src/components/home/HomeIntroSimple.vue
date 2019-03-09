@@ -8,7 +8,15 @@
         
 
         <h1 class="home-intro__title"> 
-           The Vue.js JAMstack framework
+           <VueTyper 
+            :text="words"
+            initialAction="erasing"
+            :type-delay="30" 
+            caret-animation="smooth" />
+              <br />
+            <span>
+              websites & apps with Vue.js
+            </span>
         </h1>
 
         <p class="lead  container-md">
@@ -44,11 +52,18 @@ query HomeIntro {
 <script>
 import Ecosystem from '~/components/Ecosystem.vue'
 import VueLogo from '~/assets/images/vue-logo.svg'
+const words = ['Build Insanely fast', 'Build JAMstack', 'Build static & secure', 'Build future-ready']
 
 export default {
   components: {
     Ecosystem,
-    VueLogo
+    VueLogo,
+    VueTyper: process.isServer
+      ? { inheritAttrs: false, render: h => h('span', null, [words[0]]) }
+      : () => import('vue-typer').then(({ VueTyper }) => VueTyper)
+  },
+  data () {
+    return { words }
   }
 }
 </script>
@@ -63,6 +78,39 @@ export default {
   @media screen and (max-width: 750px) {
     &__title {
       font-size: 1.8rem;
+    }
+  }
+}
+
+
+@keyframes Type {
+  from  {
+    color: #cc6700;
+  } to  { 
+    color: var(--primary-color);
+  }
+}
+
+.home-intro {
+
+  .vue-typer {
+    display: inline-block;
+    text-align: left;
+    white-space: nowrap;
+
+    .custom.char {
+      color: var(--primary-color);
+    }
+
+    .custom.char.typed {
+      animation: Type .6s;
+    }
+
+
+    .custom.caret {
+      background-color: rgba(0, 0, 0,.5);
+      margin: 0 2px;
+      width: 2px;
     }
   }
 }
