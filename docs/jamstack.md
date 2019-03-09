@@ -10,6 +10,8 @@ Most of the text on this page is borrowed from [JAMstack.org](https://jamstack.o
 ### ⚡️ Better Performance
 
 Why wait for pages to build on the fly when you can generate them at deploy time? When it comes to minimizing the time to first byte, nothing beats pre-built files served over a CDN.
+**Gridsome** also builds ultra performance into every page by using the [PRPL-pattern](/docs/how-it-works#the-prpl-pattern).
+
 
 ### ⚡️ Higher Security
 
@@ -25,11 +27,14 @@ When your deployment amounts to a stack of files that can be served anywhere, sc
 
 Loose coupling and separation of controls allow for more targeted development and debugging, and the expanding selection of CMS options for site generators remove the need to maintain a separate stack for content and marketing.
 
+As a bonus, Gridsome adds a centralized data management, powered by GraphQL, for even better developer experience.
+
 
 
 ## Best practices
 
 When building JAMstack projects, you can really get the most out of the stack if you stick to a few best practices.
+
 
 ### Entire Project on a CDN
 

@@ -71,7 +71,7 @@
         <div class="generate-html__logo">
           <gridsome-logo />
         </div>
-        <span>Generate Static <br/>HTML with <a href="https://developers.google.com/web/fundamentals/performance/prpl-pattern/" target="_blank" rel="noopener">PRPL-pattern</a></span>
+        <span>Generate Static <br/>HTML with <g-link to="/docs/how-it-works#the-prpl-pattern">PRPL pattern</g-link></span>
       </div>
 
       <div class="dots-vertical">
@@ -89,9 +89,6 @@
       <p class="text-center lead container-md">
         Deploy your entire site to a CDN and forget about it. <br>Traffic or hacking will never break your site.
       </p>
-
-
-      
 
       <Card class="text-center container-mini mb">
         <h4>Static Web Hosts</h4>

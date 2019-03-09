@@ -57,8 +57,6 @@ The `gridsome build` command prepares a project for **production**. This means i
 ### Build time server-side rendering
 Gridsome runs server-side rendering at build time. This means you don't need any server like Node.js to run Gridsome sites. They are pre-rendered & static and can be deployed to any static web host or FTP.
 
-
-
 ## Vue.js for frontend
 
 Gridsome uses [Vue.js](https://vuejs.org/) as front-end framework. Vue is an approachable, simple & fun framework for building fast interfaces. Vue is famous for its intuitive design and shallow learning curve. This means it's easy to train staff in, even non-frontend devs and designers. Since developers will be up-and-running with Vue quickly, training costs will be kept to a minimum.
@@ -70,6 +68,20 @@ The `gridsome build` command generates **SEO-friendly HTML files** that can be h
 >  Hydration refers to the client-side process during which Vue takes over the static HTML sent by the server and turns it into a dynamic DOM that can react to client-side data changes.
 
 [Learn more about Vue.js and Client Side hydration](https://ssr.vuejs.org/guide/hydration.html)
+
+
+## The PRPL pattern
+
+**Gridsome** builds ultra performance into every page by using the **PRPL pattern**.
+
+PRPL is a pattern for structuring and serving Progressive Web Apps (PWAs), with an emphasis on the performance of app delivery and launch. It stands for:
+
+- **Push** critical resources for the initial URL route.
+- **Render** initial route.
+- **Pre-cache** remaining routes.
+- **Lazy-load** and create remaining routes on demand.
+
+Learn more about [PRPL pattern](https://developers.google.com/web/fundamentals/performance/prpl-pattern/)
 
 
 ### Automatic link prefetching
