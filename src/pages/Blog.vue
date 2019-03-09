@@ -1,6 +1,6 @@
 <template>
-  <Layout>
-     <Section container="md" class="blog-posts" dots="top">
+  <GalleryLayout>
+     <Section container="md" class="blog-posts" dots="true">
       <div class="mb container-sm text-center">
         <h1>Gridsome blog</h1>
       </div>
@@ -12,7 +12,7 @@
       </p>
 
     </Section>
-  </Layout>
+  </GalleryLayout>
 </template> 
 
 <page-query>

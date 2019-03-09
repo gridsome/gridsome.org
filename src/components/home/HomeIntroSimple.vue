@@ -12,7 +12,7 @@
         </h1>
 
         <p class="lead  container-md">
-         Gridsome is a Vue.js-powered <vue-logo width="25" height="25" /> modern site generator for building the <strong>fastest possible websites</strong> for any CMS, APIs or Markdown-files.
+         Gridsome is a Vue.js-powered, developer  framework for building the <strong>fastest possible websites</strong> for any CMS, APIs or Markdown-files.
         </p>
 
         <p class="home-info">
@@ -56,7 +56,7 @@ export default {
 <style lang="scss">
 .home-intro {
   &__title {
-    font-size: 2.9rem;
+    font-size: 3rem;
     color: var(--primary-color);
   }
 

@@ -1,19 +1,23 @@
 <template>
-  <Layout>
+  <GalleryLayout>
     <Section class="post" container="md" dots="true" >
 
       <div class="post-header container-sm text-center mb">
         <h1 v-html="$page.post.title"/>
-        <PostMeta :post="$page.post"/>
       </div>
 
-      <g-image v-if="$page.post.poster" quality="1" width="600" :src="$page.post.poster" />
+      <Card class="post-content">
+                <PostMeta :post="$page.post"/>
 
-      <p class="lead" v-html="$page.post.excerpt"/>
+        <g-image v-if="$page.post.poster" quality="1" width="600" :src="$page.post.poster" />
 
-      <div v-html="$page.post.content"/>
+        <p class="lead" v-html="$page.post.excerpt"/>
+
+        <div v-html="$page.post.content"/>
+
+      </Card>
     </Section>
-  </Layout>
+  </GalleryLayout>
 </template>
 
 <page-query>
@@ -56,10 +60,9 @@ export default {
 </script>
 
 <style lang="scss">
-@media screen and (min-width: 750px) {
-  p > img {
-    max-width: 120%;
-    margin-left: -10%;
+.post-content {
+ .card__inner {
+    padding: var(--space-x2);
   }
 }
 </style>
