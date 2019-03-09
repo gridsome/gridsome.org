@@ -1,9 +1,11 @@
-# What is the JAMstack?
+# What is JAMstack?
 
 > JAMstack is Modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup. **No servers. No databases. Only files. ** Deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site.
 
 Most of the text on this page is borrowed from [JAMstack.org](https://jamstack.org/)
 
+
+## Benefits
 
 ### ⚡️ Better Performance
 
@@ -23,14 +25,6 @@ When your deployment amounts to a stack of files that can be served anywhere, sc
 
 Loose coupling and separation of controls allow for more targeted development and debugging, and the expanding selection of CMS options for site generators remove the need to maintain a separate stack for content and marketing.
 
-
-## Gridsome & the JAMstack
-
-**Gridsome is JAMstack simplified with Vue.js.** 
-
-- **Data Source plugins.** For connecting to any API.
-- **Blazing fast static site generation.** For building entire site at deploy time.
-- **Follows [PRPL-Pattern]().** For ultra optimized HTML at build time.
 
 
 ## Best practices

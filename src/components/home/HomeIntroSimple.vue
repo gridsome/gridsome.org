@@ -7,8 +7,8 @@
         </div>
         
 
-        <h1 class="home-intro__title"> 
-            Build JAMstack websites<br>
+        <h1 class="home-intro__title post"> 
+            Build <g-link to="/docs/jamstack">JAMstack</g-link> websites<br>
             <span>
                & apps with Vue.js
             </span>
@@ -47,18 +47,11 @@ query HomeIntro {
 <script>
 import Ecosystem from '~/components/Ecosystem.vue'
 import VueLogo from '~/assets/images/vue-logo.svg'
-const words = ['Build Insanely fast', 'Build JAMstack', 'Build PWA-optimized', 'Build static & secure']
 
 export default {
   components: {
     Ecosystem,
     VueLogo,
-    VueTyper: process.isServer
-      ? { inheritAttrs: false, render: h => h('span', null, [words[0]]) }
-      : () => import('vue-typer').then(({ VueTyper }) => VueTyper)
-  },
-  data () {
-    return { words }
   }
 }
 </script>
@@ -68,6 +61,11 @@ export default {
   &__title {
     font-size: 3rem;
     color: var(--primary-color);
+
+    a {
+      color: var(--primary-color);
+      opacity: 1;
+    }
   }
 
   @media screen and (max-width: 750px) {
@@ -77,40 +75,6 @@ export default {
   }
 }
 
-
-@keyframes Type {
-  from  {
-    color: var(--dark-bg);
-    transform: translateX(-20px);
-  } to  { 
-    color: var(--primary-color);
-  }
-}
-
-.home-intro {
-
-  .vue-typer {
-    display: inline-block;
-    text-align: left;
-    white-space: nowrap;
-
-    .custom.char {
-      color: var(--primary-color);
-    }
-
-    .custom.char.typed {
-      animation: Type .6s;
-      animation-delay: .2s;
-    }
-
-
-    .custom.caret {
-      background-color: rgba(0, 0, 0,.5);
-      margin: 0 2px;
-      width: 2px;
-    }
-  }
-}
 
 .home-info {
   font-size: .85rem;
