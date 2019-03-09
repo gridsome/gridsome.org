@@ -1,5 +1,5 @@
 <template>
-  <Section dots="true" class="post" primary="true">
+  <Section dots="true" class="post">
     <div class="text-center container-md">
       <h2>Gridsome Community 💚</h2>
       <p>Gridsome would not be possible without all our amazing contributors & sponsors.</p>

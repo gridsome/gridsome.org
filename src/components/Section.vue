@@ -43,6 +43,11 @@ export default {
     background-color: var(--primary-bg);
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
+
+    + .section--primary {
+      border-top-color: transparent;
+      margin-top: -1px;
+    }
   }
 
 

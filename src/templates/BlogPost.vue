@@ -2,12 +2,13 @@
   <GalleryLayout>
     <Section class="post" container="md" dots="true" >
 
-      <div class="post-header container-sm text-center mb">
+      <div class="post-header container-md text-center mb">
         <h1 v-html="$page.post.title"/>
+        <PostMeta :post="$page.post"/>
+
       </div>
 
       <Card class="post-content">
-                <PostMeta :post="$page.post"/>
 
         <g-image v-if="$page.post.poster" quality="1" width="600" :src="$page.post.poster" />
 

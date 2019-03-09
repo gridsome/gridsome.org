@@ -1,5 +1,5 @@
 <template>
-  <Section dots="true">
+  <Section dots="true" primary="true">
     <div class="container text-center container-sm mb">
       <h2>Latest from Gridsome blog</h2>
     </div>
