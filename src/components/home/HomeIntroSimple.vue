@@ -8,14 +8,11 @@
         
 
         <h1 class="home-intro__title post"> 
-            Build <g-link to="/docs/jamstack">JAMstack</g-link> websites<br>
-            <span>
-               & apps with Vue.js
-            </span>
+            The Vue.js <g-link to="/docs/jamstack">JAM<span>stack</span></g-link> Framework
         </h1>
 
         <p class="lead  container-md">
-         Gridsome is a Vue.js-powered, developer  framework for building the <strong>fastest possible websites</strong> for any CMS, APIs or Markdown-files.
+         Gridsome is a Vue.js-powered developer framework for building <strong>insanely fast websites & apps</strong> for any CMS, APIs or Markdown-files.
         </p>
 
         <p class="home-info">
@@ -59,7 +56,7 @@ export default {
 <style lang="scss">
 .home-intro {
   &__title {
-    font-size: 3rem;
+    font-size: 2.9rem;
     color: var(--primary-color);
 
     a {

@@ -7,11 +7,11 @@ a {
   border-radius: 99px;
 
   .post &:not(.button) {
-    background: linear-gradient(180deg, transparent 62%, var(--success-bg)  60%, var(--success-bg)  89%, transparent 0,);
+    background: linear-gradient(180deg, transparent 62%, var(--success-bg)  60%, var(--success-bg)  78%, transparent 0,);
   }
 
   .post &:not(.button):hover {
-    background: linear-gradient(180deg, transparent 0, var(--success-bg)  89%, transparent 0,);
+    background: linear-gradient(180deg, transparent 0, var(--success-bg)  78%, transparent 0,);
   }
 
 }
