@@ -8,13 +8,9 @@
         
 
         <h1 class="home-intro__title"> 
-           <VueTyper 
-            :text="words"
-            :type-delay="17" 
-            caret-animation="smooth" />
-              <br />
+            Build JAMstack websites<br>
             <span>
-              websites & apps with Vue.js
+               & apps with Vue.js
             </span>
         </h1>
 
@@ -51,7 +47,7 @@ query HomeIntro {
 <script>
 import Ecosystem from '~/components/Ecosystem.vue'
 import VueLogo from '~/assets/images/vue-logo.svg'
-const words = ['Build Insanely fast', 'Build JAMstack', 'Build static & secure', 'Build future-ready']
+const words = ['Build Insanely fast', 'Build JAMstack', 'Build PWA-optimized', 'Build static & secure']
 
 export default {
   components: {
@@ -104,7 +100,7 @@ export default {
 
     .custom.char.typed {
       animation: Type .6s;
-      animation-delay: .15s;
+      animation-delay: .2s;
     }
 
 
