@@ -10,8 +10,7 @@
         <h1 class="home-intro__title"> 
            <VueTyper 
             :text="words"
-            initialAction="erasing"
-            :type-delay="30" 
+            :type-delay="17" 
             caret-animation="smooth" />
               <br />
             <span>
@@ -85,7 +84,8 @@ export default {
 
 @keyframes Type {
   from  {
-    color: #cc6700;
+    color: var(--dark-bg);
+    transform: translateX(-20px);
   } to  { 
     color: var(--primary-color);
   }
@@ -104,6 +104,7 @@ export default {
 
     .custom.char.typed {
       animation: Type .6s;
+      animation-delay: .15s;
     }
 
 
