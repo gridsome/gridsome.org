@@ -27,7 +27,7 @@ with Vue.js<br />
         </div>
 
         <div>
-          <g-image class="home-image" src="~/assets/images/JAMSTACK.png"/>
+          <g-image class="home-image" blur="10" src="~/assets/images/JAMSTACK.png"/>
         </div>
 
     
