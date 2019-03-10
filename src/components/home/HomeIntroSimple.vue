@@ -76,7 +76,7 @@ export default {
   .home-image {
     max-width: 110%;
     margin-left: -10%;
-    margin-top: -5%;
+    margin-top: -10%;
     position: relative;
     z-index: 1;
   }
