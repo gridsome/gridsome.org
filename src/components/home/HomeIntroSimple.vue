@@ -8,10 +8,11 @@
           
 
           <h1 class="home-intro__title post"> 
-             Build  <VueTyper :text="words" :type-delay="30" caret-animation="smooth" />
-<br />
-websites & apps <br />
-with Vue.js<br />
+            Build
+            <VueTyper :text="words" :type-delay="30" caret-animation="smooth" />
+            <br />
+            websites & apps <br />
+            with Vue.js<br />
           </h1>
 
           <p class="lead">
@@ -26,7 +27,21 @@ with Vue.js<br />
 
         </div>
 
-        <div>
+        <div class="bg">
+          <svg class="dots" width="755" height="844" viewBox="0 0 755 844" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="17.103" cy="239.103" r="17.103" fill="#04A775"/>
+          <circle cx="737.103" cy="237.103" r="17.103" fill="#04A775"/>
+          <circle cx="737.103" cy="624.103" r="17.103" fill="#04A775"/>
+          <circle cx="17.103" cy="607.103" r="17.103" fill="#04A775"/>
+          <circle cx="364.103" cy="826.103" r="17.103" fill="#04A775"/>
+          <circle cx="376.27" cy="17.103" r="17.103" fill="#04A775"/>
+          </svg>
+
+          <svg class="circle" width="815" height="816" viewBox="0 0 815 816" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="407.396" cy="408.3" r="402.396" stroke="#A1D3C3" stroke-opacity="0.52" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 30"/>
+          </svg>
+
+
           <g-image class="home-image" blur="10" src="~/assets/images/JAMSTACK.png"/>
         </div>
 
@@ -67,34 +82,43 @@ export default {
 
 <style lang="scss">
 
-@keyframes Type {
-  from  {
-    transform: translateX(-5px);
-    color: #000;
-  } to  { 
-    color: currentColor;
+
+
+.bg {
+  position: relative;
+  .circle,
+  .dots {
+    position: absolute;
+    z-index: 0;
+    left:0;
+    top: -10%;
+    margin-left: -6%;
+    height: 100%;
+    width: 87%;
+  }
+  .dots {
+    width: 80%;
+    margin-left: -3%;
+  }
+  .circle {
+    animation: spin 30s linear infinite;
+    z-index: -1;
+  }
+  .dots {
+    animation: spin 15s linear infinite;
+  }
+
+
+  .home-image {
+    position: relative;
+    z-index: 1;
   }
 }
 
 .home-intro {
-
   .vue-typer {
-    display: inline-block;
-    text-align: left;
-    white-space: nowrap;
-
     .custom.char {
       color: currentColor;
-    }
-    
-    .custom.char.typed {
-      animation: Type .3s;
-    }
-
-    .custom.caret {
-      background-color: #333;
-      margin: 0 2px;
-      width: 2px;
     }
   }
 }
