@@ -1,7 +1,7 @@
 <template>
   <Section class="home-intro" dots="true">
     <div class="grid-cols grid-cols--2 flex container" style="max-width: 1150px;">
-        <div style=" padding-right: 6%;">
+        <div style=" padding-right: 6%; padding-top: 5%; padding-bottom: 10%;">
           <div class="home-message" hidden>
             <g-link to="/blog/2019/02/19/gridsome-v05"><span>🎉 Gridsome v0.5 released &rarr;</span></g-link>
           </div>
@@ -28,7 +28,7 @@
         </div>
 
         <div class="bg">
-          <svg class="dots" width="755" height="844" viewBox="0 0 755 844" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="dots hide-for-small" width="755" height="844" viewBox="0 0 755 844" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="17.103" cy="239.103" r="17.103" fill="#04A775"/>
           <circle cx="737.103" cy="237.103" r="17.103" fill="#04A775"/>
           <circle cx="737.103" cy="624.103" r="17.103" fill="#04A775"/>
@@ -37,7 +37,7 @@
           <circle cx="376.27" cy="17.103" r="17.103" fill="#04A775"/>
           </svg>
 
-          <svg class="circle" width="815" height="816" viewBox="0 0 815 816" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="circle hide-for-small" width="815" height="816" viewBox="0 0 815 816" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="407.396" cy="408.3" r="402.396" stroke="#A1D3C3" stroke-opacity="0.52" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 30"/>
           </svg>
 
@@ -108,8 +108,8 @@ export default {
     animation: spin 15s linear infinite;
   }
 
-
   .home-image {
+    max-width: 100%;
     position: relative;
     z-index: 1;
   }
@@ -125,7 +125,7 @@ export default {
 
 .home-intro {
   &__title {
-    font-size: 2.7rem;
+    font-size: 2.8rem;
     color: var(--primary-color);
 
     a {
@@ -141,10 +141,6 @@ export default {
   }
 }
 
-
-.home-image {
-  max-width: 100%;
-}
 
 .home-info {
   font-size: .85rem;

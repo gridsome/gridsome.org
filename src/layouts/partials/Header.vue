@@ -33,7 +33,6 @@
         
         <div class="has-dropdown">
           <a
-            class="button"
             aria-label="github"
             href="//github.com/gridsome/gridsome"
             rel="noopener noreferrer"
