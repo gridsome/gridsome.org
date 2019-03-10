@@ -1,7 +1,7 @@
 <template>
   <Section class="home-intro" dots="true">
     <div class="grid-cols grid-cols--2 flex container" style="max-width: 1150px;">
-        <div style=" padding-right: 6%; padding-top: 5%; padding-bottom: 10%;">
+        <div style=" padding-right: 6%; padding-top: 5%; padding-bottom: 18%;">
           <div class="home-message" hidden>
             <g-link to="/blog/2019/02/19/gridsome-v05"><span>🎉 Gridsome v0.5 released &rarr;</span></g-link>
           </div>
@@ -21,25 +21,13 @@
 
           <p class="home-links">
             <g-link  to="/docs" class="button primary button--large">
-              Get started
+              Get started →
             </g-link>
           </p>
 
         </div>
 
         <div class="bg">
-          <svg class="dots hide-for-small" width="755" height="844" viewBox="0 0 755 844" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="17.103" cy="239.103" r="17.103" fill="#04A775"/>
-          <circle cx="737.103" cy="237.103" r="17.103" fill="#04A775"/>
-          <circle cx="737.103" cy="624.103" r="17.103" fill="#04A775"/>
-          <circle cx="17.103" cy="607.103" r="17.103" fill="#04A775"/>
-          <circle cx="364.103" cy="826.103" r="17.103" fill="#04A775"/>
-          <circle cx="376.27" cy="17.103" r="17.103" fill="#04A775"/>
-          </svg>
-
-          <svg class="circle hide-for-small" width="815" height="816" viewBox="0 0 815 816" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="407.396" cy="408.3" r="402.396" stroke="#A1D3C3" stroke-opacity="0.52" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 30"/>
-          </svg>
 
 
           <g-image class="home-image" blur="10" src="~/assets/images/JAMSTACK.png"/>
@@ -85,31 +73,10 @@ export default {
 
 
 .bg {
-  position: relative;
-  .circle,
-  .dots {
-    position: absolute;
-    z-index: 0;
-    left:0;
-    top: -10%;
-    margin-left: -6%;
-    height: 100%;
-    width: 87%;
-  }
-  .dots {
-    width: 80%;
-    margin-left: -3%;
-  }
-  .circle {
-    animation: spin 30s linear infinite;
-    z-index: -1;
-  }
-  .dots {
-    animation: spin 15s linear infinite;
-  }
-
   .home-image {
-    max-width: 100%;
+    max-width: 110%;
+    margin-left: -10%;
+    margin-top: -5%;
     position: relative;
     z-index: 1;
   }
@@ -125,7 +92,7 @@ export default {
 
 .home-intro {
   &__title {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
     color: var(--primary-color);
 
     a {
