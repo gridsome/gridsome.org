@@ -2,11 +2,9 @@
 
 (Most of the text on this page is borrowed from [JAMstack.org](https://jamstack.org/))
 
-> JAMstack is Modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup.
+JAMstack is Modern web development architecture based on client-side **J**avaScript, reusable **A**PIs, and prebuilt **M**arkup. It’s a new way of building websites and apps that delivers better performance, higher security, lower cost of scaling, and a better developer experience.
 
-> The JAMstack is not about specific technologies. It’s a new way of building websites and apps that delivers better performance, higher security, lower cost of scaling, and a better developer experience.
-
-> **No servers. No databases. Only files. ** Deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site.
+**No servers. No databases. Only files.** With JAMstack you deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site.
 
 
 

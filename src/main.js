@@ -18,7 +18,7 @@ import Typography from 'typography'
 const typography = new Typography({
   baseFontSize: '19px',
   baseLineHeight: 1.6,
-  scaleRatio: 1.9,
+  scaleRatio: 2,
   bodyColor: 'hsla(0,0%,0%,0.7)',
   headerColor: 'hsla(0,0%,0%,0.9)',
   headerFontFamily: ['Jost', 'Helvetica','Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],

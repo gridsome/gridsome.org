@@ -49,7 +49,7 @@ export default {
 
 <style lang="scss">
 	.ecosystem {
-		padding: calc(3% + 20px) 0 0;
+		padding: calc(2% + 20px) 0 0;
 
 		&__item {
 			font-size: .9rem;

@@ -1,32 +1,36 @@
 <template>
   <Section class="home-intro" dots="true">
-    <div class="text-center">
+    <div class="grid-cols grid-cols--2 flex container" style="max-width: 1150px;">
+        <div style=" padding-right: 6%;">
+          <div class="home-message" hidden>
+            <g-link to="/blog/2019/02/19/gridsome-v05"><span>🎉 Gridsome v0.5 released &rarr;</span></g-link>
+          </div>
+          
 
-        <div class="home-message" hidden>
-          <g-link to="/blog/2019/02/19/gridsome-v05"><span>🎉 Gridsome v0.5 released &rarr;</span></g-link>
+          <h1 class="home-intro__title post"> 
+             Build  <VueTyper :text="words" :type-delay="30" caret-animation="smooth" />
+<br />
+websites & apps <br />
+with Vue.js<br />
+          </h1>
+
+          <p class="lead">
+           Gridsome is a free & open source Vue.js-powered developer framework for building <strong>the fastest possible websites & apps</strong> for any data sources.
+          </p>
+
+          <p class="home-links">
+            <g-link  to="/docs" class="button primary button--large">
+              Get started
+            </g-link>
+          </p>
+
         </div>
-        
 
-        <h1 class="home-intro__title post"> 
-            The Vue.js <g-link to="/docs/jamstack">JAM<span>stack</span></g-link> Framework
-        </h1>
+        <div>
+          <g-image class="home-image" src="~/assets/images/JAMSTACK.png"/>
+        </div>
 
-        <p class="lead  container-md">
-         Gridsome is a Vue.js-powered developer framework for building <strong>insanely fast websites & apps</strong> for any CMS, APIs or Markdown-files.
-        </p>
-
-        <p class="home-info">
-          <span>Open source MIT Licensed. </span>
-          <a href="//github.com/gridsome/gridsome" target="_blank" rel="noopener">
-            <span>GitHub (v{{ $static.metaData.gridsomeVersion }})</span>
-          </a>
-        </p>
-
-        <p class="home-links">
-          <g-link  to="/docs" class="button primary button--large">
-            Get started
-          </g-link>
-        </p>
+    
     </div>
     <Ecosystem />
     
@@ -44,19 +48,60 @@ query HomeIntro {
 <script>
 import Ecosystem from '~/components/Ecosystem.vue'
 import VueLogo from '~/assets/images/vue-logo.svg'
+const words = ['insanely fast', 'JAMstack', 'static & secure', 'future-ready']
 
 export default {
   components: {
     Ecosystem,
     VueLogo,
+    VueTyper: process.isServer
+      ? { inheritAttrs: false, render: h => h('span', null, [words[0]]) }
+      : () => import('vue-typer').then(({ VueTyper }) => VueTyper)
+  },
+
+  data () {
+    return { words }
   }
 }
 </script>
 
 <style lang="scss">
+
+@keyframes Type {
+  from  {
+    transform: translateX(-5px);
+    color: #000;
+  } to  { 
+    color: currentColor;
+  }
+}
+
+.home-intro {
+
+  .vue-typer {
+    display: inline-block;
+    text-align: left;
+    white-space: nowrap;
+
+    .custom.char {
+      color: currentColor;
+    }
+    
+    .custom.char.typed {
+      animation: Type .3s;
+    }
+
+    .custom.caret {
+      background-color: #333;
+      margin: 0 2px;
+      width: 2px;
+    }
+  }
+}
+
 .home-intro {
   &__title {
-    font-size: 2.9rem;
+    font-size: 2.7rem;
     color: var(--primary-color);
 
     a {
@@ -72,6 +117,10 @@ export default {
   }
 }
 
+
+.home-image {
+  max-width: 100%;
+}
 
 .home-info {
   font-size: .85rem;
