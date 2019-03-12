@@ -1,7 +1,7 @@
 <template>
   <section class="section" :class="sectionClass">
     <div class="section--inner container" :class="sectionClassInner">
-      <slot/>
+      <slot><slot />
     </div>
     <div v-if="dots" class="section__dots-bg dots-bg" />
     <slot name="outer" />
