@@ -10,7 +10,7 @@
       <g-image :src="image" />
     </div>
     <div class="card__inner">
-      <slot><slot />
+      <slot></slot>
     </div>
     <slot name="outer" />
   </div>

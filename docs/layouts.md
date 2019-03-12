@@ -11,7 +11,7 @@ Layouts are _just_ &nbsp;**.vue components** located in `src/layouts` and need t
 <template>
   <div>
     <header />
-    <slot><slot /> <!-- Page content will be inserted here  -->
+    <slot></slot> <!-- Page content will be inserted here  -->
     <footer />
   </div>
 </template>
@@ -97,7 +97,7 @@ This will pass a Prop to a layout with `sidebar = true`. In the **Layout compone
 <template>
   <div>
     <div class="main-content">
-      <slot><slot />
+      <slot></slot>
     </div>
     <div v-if="sidebar">
       Lets show the sidebar!
@@ -121,7 +121,7 @@ To add multiple slots to a layout you need to name them. In this example we have
   <div>
     <slot /> <!-- Default slot  -->
     <div class="sidebar" v-if="$slots.sidebar">
-      <slot name="sidebar"><slot /> <!-- Sidebar slot  -->
+      <slot name="sidebar"></slot> <!-- Sidebar slot  -->
     </div>
   </div>
 </template>

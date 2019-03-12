@@ -1,7 +1,7 @@
 <template>
   <div class="feature text-center">
     <div class="feature__inner">
-      <slot><slot />
+      <slot></slot>
     </div>
   </div>
 </template>
