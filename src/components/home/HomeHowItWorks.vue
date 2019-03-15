@@ -9,7 +9,7 @@
         01. Bring your data
       </h2>
 
-      <p class="lead text-center container-sm mb">
+      <p class="text-center lead container-sm mb">
         Pull data from anywhere into a local <strong>GraphQL <graph-ql-logo width="24px" height="24px" /> data layer</strong> with <g-link to="/plugins">Data Source plugins</g-link> or <g-link to="/docs/data-store-api">Data Store API</g-link>.
       </p>
 
@@ -49,11 +49,11 @@
       </div>
 
       <h2 class="text-center primary-color container-sm">
-        02. Build with Vue.js.
+        02. Build with Vue.js
       </h2>
 
-      <p class="lead text-center container-md">
-        Use <strong>Vue Components</strong> as building blocks in a local development environment with instant hot-reloading for any code change.
+      <p class="text-center lead container-md">
+        Use <strong>Vue Components <vue-logo width="26" height="26" /></strong>  as building blocks and all the power of <br class="hide-for-small" /><strong>webpack <webpack-logo width="30" height="30" /> </strong> with instant hot-reloading for any code change.
       </p>
 
       <Card class="container-sm">
@@ -71,7 +71,7 @@
         <div class="generate-html__logo">
           <gridsome-logo />
         </div>
-        <span>Generate Static <br/>HTML with <g-link to="/docs/how-it-works#the-prpl-pattern">PRPL pattern</g-link></span>
+        <span>Generate Static <br/>HTML using the <strong><g-link to="/docs/how-it-works#the-prpl-pattern">PRPL pattern</g-link></strong></span>
       </div>
 
       <div class="dots-vertical">
@@ -113,6 +113,7 @@ query Example {
 <script>
 import GraphQlLogo from '~/assets/images/graphql-logo.svg'
 import VueLogo from '~/assets/images/vue-logo.svg'
+import WebpackLogo from '~/assets/images/webpack-logo.svg'
 import GridsomeLogo from '~/assets/images/gridsome-small-white.svg'
 import Bullet from '~/assets/images/bullet.svg'
 
@@ -121,6 +122,7 @@ export default {
     Bullet,
     VueLogo,
     GridsomeLogo,
+    WebpackLogo,
     GraphQlLogo
   }
 }

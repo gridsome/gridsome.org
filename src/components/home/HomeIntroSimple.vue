@@ -13,8 +13,8 @@
 
         <p class="lead  container-md post">
          Gridsome is a Vue.js-powered
-          <g-link to="/docs/jamstack">
-          JAM<span>stack</span></g-link> framework for building <br/><strong>incredible fast websites & apps</strong> for any CMS, APIs or Markdown-files.
+          <g-link to="/docs/jamstack">JAM<span>stack</span></g-link>
+          framework for building <br/><strong>incredible fast websites & apps</strong> for any CMS, APIs or Markdown-files.
         </p>
 
         <p class="home-info">
