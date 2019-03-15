@@ -25,11 +25,7 @@ export default {
   },
   
   metaInfo: {
-    title: 'Vue.js-powered static site generator',
-    meta: [
-      { name: 'description', content: 'Gridsome is a Vue.js-powered JAMstack framework for building incredible fast websites & apps for any CMS, APIs or Markdown-files.'
-      }
-    ],
+    title: 'A Vue.js-powered JAMstack framework for building incredible fast websites & apps'
   }
 }
 </script>

@@ -8,7 +8,7 @@
 
     <div class="grid-cols grid-cols--2 container-md mb">
       <ul class="bullet-list">
-        <li><Bullet /> Follow <g-link to="/docs/how-it-works#the-prpl-pattern">PRPL pattern</g-link> for instant loading</li>
+        <li><Bullet /> Follows <g-link to="/docs/how-it-works#the-prpl-pattern">PRPL pattern</g-link> </li>
         <li><Bullet /> Automatic code-splitting</li>
         <li><Bullet /> Automatic critical CSS export</li>
         <li><Bullet /> Automatic link prefetching</li>
