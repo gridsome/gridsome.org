@@ -8,11 +8,14 @@
         
 
         <h1 class="home-intro__title post"> 
-            The Vue.js <g-link to="/docs/jamstack">JAM<span>stack</span></g-link> Framework
+            The Vue.js
+            <g-link to="/docs/jamstack">
+              JAM<span>stack</span></g-link>
+            Framework
         </h1>
 
         <p class="lead  container-md">
-         Gridsome is a Vue.js-powered developer framework for building <strong>insanely fast websites & apps</strong> for any CMS, APIs or Markdown-files.
+         Gridsome is a Vue.js-powered developer framework for building <br/><strong>extremely fast websites & apps</strong> for any CMS, APIs or Markdown-files.
         </p>
 
         <p class="home-info">
