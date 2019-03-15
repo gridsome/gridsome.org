@@ -56,7 +56,7 @@
         Use <strong>Vue Components</strong> as building blocks in a local development environment with instant hot-reloading for any code change.
       </p>
 
-      <Card class="container-md">
+      <Card class="container-sm">
         <div class="code-example" v-html="$static.example.content" />
       </Card>
 
@@ -84,11 +84,6 @@
       <h2 class="text-center primary-color container-sm">
         03. Deploy
       </h2>
-
-
-      <p class="text-center lead container-md">
-        Deploy your entire site to a CDN and forget about it. <br>Traffic or hacking will never break your site.
-      </p>
 
       <Card class="text-center container-mini mb">
         <h4>Static Web Hosts</h4>
