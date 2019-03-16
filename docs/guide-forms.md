@@ -16,7 +16,7 @@ Netlify offers some sophisticated features to make static site form submissions 
 
 First we will start by adding the form to our template tag:
 
-```vue
+```html
 <form 
   name="contact"
   method="post"
