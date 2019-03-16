@@ -71,7 +71,7 @@
         <div class="generate-html__logo">
           <gridsome-logo />
         </div>
-        <span>Generate Static <br/>HTML using the <strong><g-link to="/docs/how-it-works#the-prpl-pattern">PRPL pattern</g-link></strong></span>
+        <span>Generate Optimized Static <br/>HTML using the <strong><g-link to="/docs/how-it-works#the-prpl-pattern">PRPL pattern</g-link></strong></span>
       </div>
 
       <div class="dots-vertical">
