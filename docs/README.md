@@ -1,6 +1,6 @@
 # Getting started
 
-Gridsome is a Vue.js-powered JAMstack framework for building incredible fast websites & apps for any CMS, APIs or Markdown-files. Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert.
+Gridsome is a **Vue.js-powered JAMstack framework** for building incredible fast, modern websites & apps for any CMS, APIs or Markdown-files. Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert.
 
 ### Core features
 
@@ -15,7 +15,7 @@ Gridsome is a Vue.js-powered JAMstack framework for building incredible fast web
 
 
 ### Prerequisites
-You should have basic knowledge about HTML, CSS, [Vue.js](https://vuejs.org) and how to use the [Terminal](https://www.linode.com/docs/tools-reference/tools/using-the-terminal/). Knowing how [Vue Single File components](https://vuejs.org/v2/guide/single-file-components.html) & [GraphQL](https://www.graphql.com/) works is a plus, but not required. Gridsome is a great way to learn both.
+You should have basic knowledge about HTML, CSS, [Vue.js](https://vuejs.org) and how to use the [Terminal](https://www.linode.com/docs/tools-reference/tools/using-the-terminal/). Knowing how [GraphQL](https://www.graphql.com/) works is a plus, but not required. Gridsome is a great way to learn it.
 
 Gridsome requires **Node.js** and recommends **Yarn**. [How to setup](/docs/prerequisites)
 

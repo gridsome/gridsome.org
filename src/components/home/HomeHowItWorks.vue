@@ -71,7 +71,8 @@
         <div class="generate-html__logo">
           <gridsome-logo />
         </div>
-        <span>Generate Optimized Static <br/>HTML using the <strong><g-link to="/docs/how-it-works#the-prpl-pattern">PRPL pattern</g-link></strong></span>
+        <h4>Static Site Generation</h4>
+        <span>Output optimized HTML using the <strong><g-link to="/docs/how-it-works#the-prpl-pattern">PRPL pattern</g-link></strong></span>
       </div>
 
       <div class="dots-vertical">
@@ -147,6 +148,10 @@ export default {
   margin: 0 auto;
   font-size: .9rem;
 
+  h4 {
+    margin-bottom: .5rem;
+  }
+
   span {
     opacity: .8;
   }
@@ -158,7 +163,7 @@ export default {
     padding: 0 10px;
     border-radius: 99px;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 
     svg {
       height: 100%;

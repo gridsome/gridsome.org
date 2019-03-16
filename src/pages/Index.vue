@@ -25,7 +25,7 @@ export default {
   },
   
   metaInfo: {
-    title: 'A Vue.js-powered JAMstack framework for building incredible fast websites & apps'
+    title: 'The Vue.js JAMstack Framework'
   }
 }
 </script>
