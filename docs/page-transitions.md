@@ -56,7 +56,9 @@ export default function (Vue, options, context) {
 `@/components/MyHeader.vue`:
 ```
 <template>
-  <header />
+  <ClientOnly>
+    <header />
+  </ClientOnly>
 </template>
 
 <style>
