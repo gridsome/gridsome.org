@@ -12,14 +12,20 @@
         </h1>
 
         <p class="home-lead lead container-md post">
-          Gridsome is an open-source <strong>Vue.js-powered</strong> modern site generator for 
-          building extremely fast, secure JAMstack sites and apps
+          Gridsome is a <strong>Vue.js-powered</strong> modern site generator that helps developers build extremely fast <strong>JAMstack sites and apps</strong>
         </p>
 
         <p class="home-links">
           <g-link  to="/docs" class="button primary button--large">
             Get started
           </g-link>
+        </p>
+
+        <p class="home-info">
+          <span>Open source MIT Licensed. </span>
+          <a href="//github.com/gridsome/gridsome" target="_blank" rel="noopener">
+            <span>GitHub (v{{ $static.metaData.gridsomeVersion }})</span>
+          </a>
         </p>
     </div>
     <Ecosystem />
@@ -67,7 +73,7 @@ export default {
 }
 
 .home-lead {
-  font-size: 1.35rem;
+  font-size: 1.3rem;
 }
 
 

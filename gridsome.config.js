@@ -4,7 +4,7 @@ module.exports = {
   siteName: 'Gridsome',
   siteUrl: `https://www.gridsome.org`,
   titleTemplate: '%s - Gridsome',
-  siteDescription: 'Gridsome is a Vue.js-powered modern site generator for building JAMstack websites and apps for any CMS, APIs or Markdown-files. Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert.',
+  siteDescription: 'Gridsome is an open-source Vue.js-powered modern site generator that helps developers build extremely fast, secure, JAMstack sites and apps for any data source. Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert.',
   
   chainWebpack(config, { isServer }) {
     config.module.rules.delete('svg')
