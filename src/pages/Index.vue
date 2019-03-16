@@ -25,7 +25,7 @@ export default {
   },
   
   metaInfo: {
-    title: 'The Vue.js JAMstack Framework'
+    title: 'Vue.js-powered modern static site generator'
   }
 }
 </script>
