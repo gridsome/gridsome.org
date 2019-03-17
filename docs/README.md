@@ -1,6 +1,6 @@
 # Getting started
 
-Gridsome is an open-source Vue.js-powered modern site generator that helps developers build extremely fast, secure, JAMstack sites and apps for any data source. Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert.
+Gridsome is an open-source Vue.js-powered modern site generator that helps developers build fast, secure, [JAMstack](/docs/jamstack) sites and apps for any data source. Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert.
 
 ### Core features
 

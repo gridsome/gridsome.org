@@ -11,7 +11,7 @@
   </Layout>
 </template>
 
-<!-- Example GraphQL query -->
+<!-- Example query from GraphQL data layer -->
 <page-query>
 query Posts {
   posts: allPosts {

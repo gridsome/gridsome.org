@@ -10,7 +10,7 @@
       </h2>
 
       <p class="text-center lead container-sm mb">
-        Pull data from anywhere into a local <strong>GraphQL <graph-ql-logo width="24px" height="24px" /> data layer</strong> with <g-link to="/plugins">Data Source plugins</g-link> or <g-link to="/docs/data-store-api">Data Store API</g-link>.
+        Pull data from anywhere into a local <strong>GraphQL </strong><graph-ql-logo width="24px" height="24px" color="#bf37ff" /> data layer for simple centralized data management.
       </p>
 
       <div class="cms-cols grid-cols grid-cols--collapse grid-cols--3 ">
@@ -49,11 +49,11 @@
       </div>
 
       <h2 class="text-center primary-color container-sm">
-        02. Build with Vue.js
+        02. Build with <vue-logo width="28" alt="V" height="28" />ue.js 
       </h2>
 
       <p class="text-center lead container-md">
-        Use <strong>Vue Components <vue-logo width="26" height="26" /></strong>  as building blocks and all the power of <br class="hide-for-small" /><strong>webpack <webpack-logo width="30" height="30" /> </strong> with instant hot-reloading for any code change.
+        Use <strong>Vue Components</strong>  as building blocks and all the power of <br class="hide-for-small" /><strong>webpack <webpack-logo width="30" height="30" /> </strong>. Get instant hot-reloading for any code change.
       </p>
 
       <Card class="container-sm">
@@ -72,7 +72,7 @@
           <gridsome-logo />
         </div>
         <h4>Static Site Generation</h4>
-        <span>Output optimized HTML using the <strong><g-link to="/docs/how-it-works#the-prpl-pattern">PRPL pattern</g-link></strong></span>
+        <span>Output optimized static HTML using the <strong><g-link to="/docs/how-it-works#the-prpl-pattern">PRPL pattern</g-link></strong></span>
       </div>
 
       <div class="dots-vertical">
