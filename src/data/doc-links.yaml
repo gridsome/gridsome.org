@@ -80,7 +80,7 @@
       link: /docs/guide-search
     - title: Add comments *
       link: /docs/guide-comments
-    - title: Add Netlify CMS *
+    - title: Add Netlify CMS
       link: /docs/guide-netlify-cms
 
 - title: API Reference
