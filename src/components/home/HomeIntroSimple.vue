@@ -11,8 +11,8 @@
           Build faster, better, safer websites
         </h1>
 
-        <p class="home-lead lead container-md post">
-          Gridsome is a <strong>Vue.js-powered</strong> modern site generator that helps developers build extremely fast <strong>JAMstack sites and apps</strong>
+        <p class="home-lead lead post">
+          Gridsome is a <strong>Vue.js-powered</strong> modern site generator that helps developers build <strong>Insanely fast</strong>, modern <strong>JAMstack sites and apps</strong>
         </p>
 
         <p class="home-links">
@@ -56,7 +56,7 @@ export default {
 <style lang="scss">
 .home-intro {
   &__title {
-    font-size: 2.9rem;
+    font-size: 3rem;
     color: var(--primary-color);
 
     a {
@@ -74,6 +74,15 @@ export default {
 
 .home-lead {
   font-size: 1.3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 750px) {
+    & {
+      font-size: 1.1rem;
+    }
+  }
 }
 
 

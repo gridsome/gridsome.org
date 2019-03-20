@@ -49,11 +49,11 @@
       </div>
 
       <h2 class="text-center primary-color container-sm">
-        02. Build with <vue-logo width="28" alt="V" height="28" />ue.js 
+        02. Build with Vue.js
       </h2>
 
       <p class="text-center lead container-md">
-        Use <strong>Vue Components</strong>  as building blocks and all the power of <br class="hide-for-small" /><strong>webpack <webpack-logo width="30" height="30" /> </strong>. Get instant hot-reloading for any code change.
+        Use <strong>Vue Components</strong> as building blocks and all the power of <br class="hide-for-small" /><strong>webpack <webpack-logo width="30" height="30" /> </strong>. Get instant hot-reloading for any code change.
       </p>
 
       <Card class="container-sm">
