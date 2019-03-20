@@ -12,7 +12,7 @@
         </h1>
 
         <p class="home-lead lead post">
-          Gridsome is a <strong>Vue.js-powered</strong> modern site generator that helps developers build <strong>Insanely fast</strong>, modern <strong>JAMstack sites and apps</strong>
+          Gridsome is a <strong>Vue.js-powered</strong> modern site generator that helps developers build <strong>insanely fast</strong>, modern <strong>JAMstack sites and apps</strong>
         </p>
 
         <p class="home-links">
