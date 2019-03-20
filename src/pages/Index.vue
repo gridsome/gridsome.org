@@ -3,7 +3,6 @@
     <home-intro-simple />
     <home-how-it-works />
     <home-fast />
-    <home-community />
     <home-blog />
   </Layout>
 </template>

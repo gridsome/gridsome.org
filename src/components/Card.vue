@@ -55,8 +55,8 @@ export default {
     }
 
     .section--dark & {
-      background-color: var(--primary-link-color);
-      border-color: rgba(0,0,0,.1);
+      background-color: var(--dark-bg);
+      border-color: rgba(255,255,255,.1);
     }
 
 

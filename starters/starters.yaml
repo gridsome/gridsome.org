@@ -1,8 +1,18 @@
 - title: Default starter
   description: Default starter for Gridsome
-  screenshot: ./screenshots/default.png
   gitUrl: https://github.com/gridsome/gridsome-starter-default
   author: gridsome
+
+- title: Default WordPress starter
+  description: WordPress starter for Gridsome
+  gitUrl: https://github.com/gridsome/gridsome-starter-wordpress
+  author: gridsome
+
+- title: Default Contentful starter
+  description: Contentful starter for Gridsome
+  gitUrl: https://github.com/gridsome/gridsome-starter-contentful
+  author: gridsome
+
 
 - title: Default Blog Starter
   description: Official Markdown Blog Starter
