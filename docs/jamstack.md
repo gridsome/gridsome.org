@@ -4,15 +4,8 @@ JAMstack is a new way of building websites and apps that delivers better perform
 
 **No servers. No databases. Only files.** Deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site.
 
-## Gridsome on JAMstack
-Grisome is a framework to make JAMstack development fast & simpler with Vue.js
 
-- **JavaScript** - Gridsome uses Vue.js to give super powers to your websites or apps.
-- **APIs** - Gridsome can easily connect to most APIs with Plugins & Data sources.
-- **Markup** - Gridsome generates SEO-friendly HTML files that can be deployed anywhere.
-
-
-## Benefits
+## JAMstack Benefits
 
 ### ⚡️ Better Performance
 
@@ -34,9 +27,15 @@ When your deployment amounts to a stack of files that can be served anywhere, sc
 
 Loose coupling and separation of controls allow for more targeted development and debugging, and the expanding selection of CMS options for site generators remove the need to maintain a separate stack for content and marketing.
 
+## Gridsome on JAMstack
+Grisome makes JAMstack development faster & simpler with Vue.js.
+
+- **JavaScript** - Gridsome uses Vue.js to give super powers to your websites or apps.
+- **APIs** - Gridsome can easily connect to most APIs with Plugins & Data sources.
+- **Markup** - Gridsome generates SEO-friendly HTML files that can be deployed anywhere.
+
 
 ## Best practices
-
 When building JAMstack projects, you can really get the most out of the stack if you stick to a few best practices.
 
 

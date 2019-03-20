@@ -8,11 +8,11 @@
         
 
         <h1 class="home-intro__title post"> 
-          Build faster, better, safer websites
+          Builder faster, better, safer websites
         </h1>
 
         <p class="home-lead lead post">
-          Gridsome is a <strong>Vue.js-powered</strong> modern site generator that helps developers build <strong>insanely fast</strong>, modern <strong>JAMstack sites and apps</strong>
+          Gridsome is a <strong>Vue.js-powered</strong> modern site generator that helps developers build insanely fast, modern <strong><g-link to="/docs/jamstack">JAMstack</g-link> sites and apps</strong> </strong> for any data source
         </p>
 
         <p class="home-links">
@@ -80,7 +80,7 @@ export default {
 
   @media screen and (max-width: 750px) {
     & {
-      font-size: 1.1rem;
+      font-size: 1.05rem;
     }
   }
 }
