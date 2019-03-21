@@ -6,12 +6,15 @@ a {
   position: relative;
   border-radius: 99px;
 
-  .post &:not(.button) {
-    background: linear-gradient(180deg, transparent 62%, var(--success-bg)  60%, var(--success-bg)  78%, transparent 0,);
+  .post &:not(.button):not(:hover) {
+    text-decoration: underline;
+    color: var(--primary-link-color);
+    text-decoration-color: var(--border-color);
   }
 
   .post &:not(.button):hover {
-    background: linear-gradient(180deg, transparent 0, var(--success-bg)  78%, transparent 0,);
+    text-decoration: underline;
+    text-decoration-color: rgba(0,0,0,.5);
   }
 
 }
