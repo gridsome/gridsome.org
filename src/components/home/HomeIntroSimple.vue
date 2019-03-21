@@ -8,7 +8,7 @@
         
 
         <h1 class="home-intro__title post"> 
-          Builder faster, better, safer websites
+          Build, design, deploy at full speed
         </h1>
 
         <p class="home-lead lead post">
