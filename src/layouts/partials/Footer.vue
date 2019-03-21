@@ -23,7 +23,7 @@ footer {
   margin-top: -1px;
   padding: 20px;
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 850px) {
     padding-bottom: 90px;
   }
 }

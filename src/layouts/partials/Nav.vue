@@ -60,7 +60,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
   .main-nav {
     position: fixed;
     bottom: 0;

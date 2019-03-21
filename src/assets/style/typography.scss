@@ -32,9 +32,9 @@
 }
 
 /* Smaller text for mobile */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 550px) {
   html {
-    font-size: 99%;
+    font-size: 100%!important;
   }
 }
 

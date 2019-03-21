@@ -12,7 +12,7 @@
         </h1>
 
         <p class="home-lead lead post">
-          Gridsome is a <strong>Vue.js-powered</strong> modern site generator that helps developers build insanely fast, modern <strong>JAMstack sites and apps</strong> </strong>
+          Gridsome is a <strong>Vue.js-powered</strong> modern site generator that helps developers build insanely fast, modern <strong>JAMstack websites and apps</strong> </strong>
         </p>
 
         <p class="home-links">
@@ -65,9 +65,9 @@ export default {
     }
   }
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 850px) {
     &__title {
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
   }
 }
@@ -78,7 +78,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 850px) {
     & {
       font-size: 1.05rem;
     }

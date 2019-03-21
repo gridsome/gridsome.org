@@ -8,7 +8,7 @@
   background-color: var(--primary-bg);
   padding: 0 var(--space) 60px;
 
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 850px) {
     position: sticky;
     border-right: 1px solid var(--border-color);
     top: var(--header-height);
@@ -81,7 +81,7 @@
     }
   }
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 850px) {
     & {
       width: 100%;
       position: relative;

@@ -120,7 +120,7 @@ header {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
   header {
     .logo {
       margin-right: 0;
