@@ -8,7 +8,7 @@
   border:0;
   border-radius: 5px;
   outline: 0;
-  color: var(--primary-link-color);
+  color: var(--primary-color-dark);
   transition: background .3s, box-shadow .3s, color .3s;
 
   &:hover {
@@ -34,7 +34,7 @@
 
   &.primary {
     color:#FFF;
-    background-color: var(--primary-link-color);
+    background-color: var(--primary-color-dark);
     &:after {
       border-color: rgba(0,0,0,.1);
     }

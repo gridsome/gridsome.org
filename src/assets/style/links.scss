@@ -1,5 +1,5 @@
 a {
-  color: rgba(0,0,0,1);
+  color: currentColor;
   text-decoration: none;
   transition: color .3s, opacity .3s, background .3s;
   display: inline-block;
@@ -8,7 +8,7 @@ a {
 
   .post &:not(.button):not(:hover) {
     text-decoration: underline;
-    color: var(--primary-link-color);
+    color: var(--primary-color-dark);
     text-decoration-color: var(--border-color);
   }
 

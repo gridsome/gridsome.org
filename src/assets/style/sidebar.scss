@@ -46,7 +46,7 @@
     font-size: .95rem;
 
     &.active--exact {
-      color: var(--primary-link-color);
+      color: var(--primary-color-dark);
       opacity: 1;
       font-weight: 600;
       position: relative;
@@ -61,7 +61,7 @@
         left: -1px;
         top: 50%;
         margin-top: -5px;
-        background-color: var(--primary-link-color);
+        background-color: var(--primary-color-dark);
         animation: scaleIn .7s forwards;
       }
     }

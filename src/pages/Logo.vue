@@ -67,7 +67,7 @@
    	 	</div>
 
    	 	<div class="colors__secondary">
-   	 		<span>#008B60</span>
+   	 		<span>#00855c</span>
    	 	</div>
 
       <div class="colors__dark">
@@ -91,7 +91,7 @@
 	}
 
    &--secondary {
-      background-color: var(--secondary-bg);
+      background-color: var(--primary-color-dark);
    }
 
 	a {
@@ -119,7 +119,7 @@
 	}
 
 	&__secondary {
-		background-color: var(--primary-link-color);
+		background-color: var(--primary-color-dark);
 	}
 
   &__dark {

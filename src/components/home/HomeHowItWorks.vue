@@ -157,7 +157,7 @@ export default {
   }
 
   &__logo {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-dark);
     width: 50px;
     height: 50px;
     padding: 0 10px;
@@ -192,7 +192,7 @@ export default {
 
 
 .powered-by {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-dark);
   width: 130px;
   height: 130px;
   margin: 0 auto;
