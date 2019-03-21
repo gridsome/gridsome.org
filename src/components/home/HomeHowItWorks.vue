@@ -9,8 +9,8 @@
         01. Bring your data
       </h2>
 
-      <p class="lead text-center container-sm mb">
-        Pull data from anywhere into a local <strong>GraphQL <graph-ql-logo width="24px" height="24px" /> data layer</strong> with <g-link to="/plugins">Data Source plugins</g-link> or <g-link to="/docs/data-store-api">Data Store API</g-link>.
+      <p class="text-center lead container-sm mb">
+        Pull data from anywhere into a local <strong>GraphQL </strong><graph-ql-logo width="24px" height="24px" color="#bf37ff" /> data layer for simple centralized data management.
       </p>
 
       <div class="cms-cols grid-cols grid-cols--collapse grid-cols--3 ">
@@ -49,14 +49,14 @@
       </div>
 
       <h2 class="text-center primary-color container-sm">
-        02. Build with Vue.js.
+        02. Build with Vue.js
       </h2>
 
-      <p class="lead text-center container-md">
-        Use <strong>Vue Components</strong> as building blocks in a local development environment with instant hot-reloading for any code change.
+      <p class="text-center lead container-md">
+        Use <strong>Vue Components</strong> as building blocks and all the power of <br class="hide-for-small" /><strong>webpack <webpack-logo width="30" height="30" /> </strong>. Get instant hot-reloading for any code change.
       </p>
 
-      <Card class="container-md">
+      <Card class="container-sm">
         <div class="code-example" v-html="$static.example.content" />
       </Card>
 
@@ -71,7 +71,8 @@
         <div class="generate-html__logo">
           <gridsome-logo />
         </div>
-        <span>Generate Static <br/>HTML with <g-link to="/docs/how-it-works#the-prpl-pattern">PRPL pattern</g-link></span>
+        <h4>Static Site Generation</h4>
+        <span>Output optimized static HTML using the <strong><g-link to="/docs/how-it-works#the-prpl-pattern">PRPL pattern</g-link></strong></span>
       </div>
 
       <div class="dots-vertical">
@@ -84,11 +85,6 @@
       <h2 class="text-center primary-color container-sm">
         03. Deploy
       </h2>
-
-
-      <p class="text-center lead container-md">
-        Deploy your entire site to a CDN and forget about it. <br>Traffic or hacking will never break your site.
-      </p>
 
       <Card class="text-center container-mini mb">
         <h4>Static Web Hosts</h4>
@@ -118,6 +114,7 @@ query Example {
 <script>
 import GraphQlLogo from '~/assets/images/graphql-logo.svg'
 import VueLogo from '~/assets/images/vue-logo.svg'
+import WebpackLogo from '~/assets/images/webpack-logo.svg'
 import GridsomeLogo from '~/assets/images/gridsome-small-white.svg'
 import Bullet from '~/assets/images/bullet.svg'
 
@@ -126,6 +123,7 @@ export default {
     Bullet,
     VueLogo,
     GridsomeLogo,
+    WebpackLogo,
     GraphQlLogo
   }
 }
@@ -150,6 +148,10 @@ export default {
   margin: 0 auto;
   font-size: .9rem;
 
+  h4 {
+    margin-bottom: .5rem;
+  }
+
   span {
     opacity: .8;
   }
@@ -161,7 +163,7 @@ export default {
     padding: 0 10px;
     border-radius: 99px;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 
     svg {
       height: 100%;

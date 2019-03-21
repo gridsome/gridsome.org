@@ -1,5 +1,6 @@
-# Getting started
-> Gridsome is a Vue.js-powered, modern site generator for building the fastest possible websites for any Headless CMS, APIs or Markdown-files. Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert. 
+# Getting started with Gridsome
+
+> Gridsome is an open-source Vue.js-powered modern site generator that helps developers build fast, secure, [JAMstack](/docs/jamstack) sites and apps for any data source. Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert.
 
 ### Core features
 
@@ -7,17 +8,14 @@
 - **Data source plugins** - Connect to any popular Headless CMSs, APIs or Markdown-files.
 - **File-based page routing** - Quickly create and manage routes with files.
 - **Centralized data managment** - Pull data into a local, unified GraphQL data layer.
-- **Vue.js for frontend** - A lightweight and approachable front-end framework.
-- **Progressive Images built-in** - Auto image optimization & lazy loading of images.
+- **Progressive Image support** - Auto image optimization & lazy loading of images.
 - **Smart link prefetching** - Load next pages when link is in view for ultra fast browsing.
 - **Auto-optimized code** - Get code-splitting and asset optimization out-of-the-box.
 - **Static files generation** - Deploy securely to any CDN or static web host.
 
-[Learn more about why you should use Gridsome](/why-gridsome)
-
 
 ### Prerequisites
-You should have basic knowledge about HTML, CSS, [Vue.js](https://vuejs.org) and how to use the [Terminal](https://www.linode.com/docs/tools-reference/tools/using-the-terminal/). Knowing how [Vue Single File components](https://vuejs.org/v2/guide/single-file-components.html) & [GraphQL](https://www.graphql.com/) works is a plus, but not required. Gridsome is a great way to learn both.
+You should have basic knowledge about HTML, CSS, [Vue.js](https://vuejs.org) and how to use the [Terminal](https://www.linode.com/docs/tools-reference/tools/using-the-terminal/). Knowing how [GraphQL](https://www.graphql.com/) works is a plus, but not required. Gridsome is a great way to learn it.
 
 Gridsome requires **Node.js** and recommends **Yarn**. [How to setup](/docs/prerequisites)
 

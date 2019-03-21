@@ -8,7 +8,6 @@
 
     <div class="grid-cols grid-cols--2 container-md mb">
       <ul class="bullet-list">
-        <li><Bullet /> Follow <g-link to="/docs/how-it-works#the-prpl-pattern">PRPL pattern</g-link> for instant loading</li>
         <li><Bullet /> Automatic code-splitting</li>
         <li><Bullet /> Automatic critical CSS export</li>
         <li><Bullet /> Automatic link prefetching</li>
@@ -17,7 +16,6 @@
         <li><Bullet /> Built-in Progressive image support</li>
         <li><Bullet /> Built-in image compression</li>
         <li><Bullet /> Built-in asset minification</li>
-        <li><Bullet /> Offline-ready PWA support</li>
       </ul>
     </div>
     

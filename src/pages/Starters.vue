@@ -5,13 +5,10 @@
       <h1 class="text-center container-sm">Gridsome Starters</h1>
       <p class="text-center lead container-sm">Get started quickly with premade Gridsome projects</p>
 
-      <div class="grid-cols grid-cols--4">
-        <Card class="starter" v-for="{ node } in $page.starters.edges" :key="node.id" :image="node.screenshot">
-          <div class="starter__author" v-if="node.author && node.author.avatar">
-            <g-link :to="node.author.path" :aria-label="node.author.title">
-              <g-image :title="node.author.title" class="starter__author-image" :src="node.author.avatar" />
-            </g-link>
-          </div>
+      <h5>Default starters</h5>
+
+      <div class="grid-cols grid-cols--4 mb">
+        <Card class="starter" v-for="{ node } in $page.starters.edges" :key="node.id">
           <h4 class="starter__title">{{ node.title }} </h4>
           <p class="starter__desc"> {{ node.description }} </p>
           <div class="starter__footer">
@@ -23,8 +20,32 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
               </a>
             </div>
-            <div class="starter__install flex gap-15">
-              <button class="button button--xsmall">Install</button>
+          </div>
+        </Card>
+      </div>
+
+      <h5>All starters</h5>
+
+      <div class="grid-cols grid-cols--4">
+        <Card class="starter" v-for="{ node } in $page.starters.edges" :key="node.id" :image="node.screenshot">
+          <div class="starter__author" v-if="node.author && node.author.avatar">
+            <g-link :to="node.author.path" :aria-label="node.author.title">
+              <g-image :title="node.author.title" class="starter__author-image" :src="node.author.avatar" />
+            </g-link>
+          </div>
+
+          {{ node.features }}
+
+          <h4 class="starter__title">{{ node.title }} </h4>
+          <p class="starter__desc"> {{ node.description }} </p>
+          <div class="starter__footer">
+            <div class="starter__actions flex gap-15">
+              <a v-if="node.gitUrl" :href="node.gitUrl" aria-label="github repo" target="_blank" rel="noopener">
+                <git-logo />
+              </a>
+              <a v-if="node.preview" :href="node.preview" aria-label="live preview" target="_blank" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              </a>
             </div>
           </div>
         </Card>
@@ -35,7 +56,7 @@
 
 <page-query>
 query Starters {
-  starters: allStarter {
+  starters: allStarter (order: ASC) {
     edges {
       node {
         id

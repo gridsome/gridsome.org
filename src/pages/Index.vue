@@ -3,7 +3,6 @@
     <home-intro-simple />
     <home-how-it-works />
     <home-fast />
-    <home-community />
     <home-blog />
   </Layout>
 </template>
@@ -25,11 +24,7 @@ export default {
   },
   
   metaInfo: {
-    title: 'Vue.js-powered static site generator',
-    meta: [
-      { name: 'description', content: 'Gridsome is a Vue.js-powered, modern site generator for building the fastest possible websites for any Headless CMS, APIs or Markdown-files. Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert.'
-      }
-    ],
+    title: 'Vue.js-powered modern static site generator'
   }
 }
 </script>

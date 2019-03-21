@@ -2,11 +2,9 @@
 
 (Most of the text on this page is borrowed from [JAMstack.org](https://jamstack.org/))
 
-JAMstack is Modern web development architecture based on client-side **J**avaScript, reusable **A**PIs, and prebuilt **M**arkup. It’s a new way of building websites and apps that delivers better performance, higher security, lower cost of scaling, and a better developer experience.
+JAMstack is a new way of building websites and apps that delivers better performance, higher security, lower cost of scaling, and a better developer experience. It's a Modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup.
 
-**No servers. No databases. Only files.** With JAMstack you deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site.
-
-
+**No servers. No databases. Only files.** Deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site.
 
 
 ## Benefits
@@ -31,12 +29,8 @@ When your deployment amounts to a stack of files that can be served anywhere, sc
 
 Loose coupling and separation of controls allow for more targeted development and debugging, and the expanding selection of CMS options for site generators remove the need to maintain a separate stack for content and marketing.
 
-As a bonus, Gridsome adds a centralized data management, powered by GraphQL, for even better developer experience.
-
-
 
 ## Best practices
-
 When building JAMstack projects, you can really get the most out of the stack if you stick to a few best practices.
 
 
