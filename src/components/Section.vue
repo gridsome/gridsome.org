@@ -34,7 +34,7 @@ export default {
 
 <style lang="scss">
 .section {
-  padding: calc(2% + var(--space)) 0;
+  padding: calc(1% + var(--space)) 0;
   position: relative;
   width: 100%;
   flex: 1;

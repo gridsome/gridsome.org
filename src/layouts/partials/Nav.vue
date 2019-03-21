@@ -5,12 +5,6 @@
       <span class="main-nav__label">Docs</span>
     </g-link>
 
-    <!--
-    <g-link to="/learn">
-      <icon-learn />
-      <span class="main-nav__label">Learn</span>
-    </g-link> -->
-
     <g-link to="/plugins">
       <icon-plugins />
       <span class="main-nav__label">Plugins</span>

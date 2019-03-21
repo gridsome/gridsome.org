@@ -1,7 +1,7 @@
 <template>
-  <Section class="home-intro" dots="true">
+  <Section class="home-intro" dots="true" dark="true">
     <div class="grid-cols grid-cols--2 flex container" style="max-width: 1150px;">
-        <div style=" padding-right: 6%; padding-top: 5%; padding-bottom: 18%;">
+        <div style="">
           <div class="home-message" hidden>
             <g-link to="/blog/2019/02/19/gridsome-v05"><span>🎉 Gridsome v0.5 released &rarr;</span></g-link>
           </div>
@@ -28,15 +28,16 @@
         </div>
 
         <div class="bg">
-
-
-          <g-image class="home-image" blur="10" src="~/assets/images/JAMSTACK.png"/>
+          <div class="home-anim">
+            <div class="home-anim__source-logos"><g-image alt="Logos" blur="1" src="~/assets/images/cms-logos.png" /></div>
+            <div class="home-anim__lines-in"> <lines-in /> </div>
+            <div class="home-anim__lines-out"> <lines-out  /> </div>
+            <div class="home-anim__logo"> <Logo /> </div>
+          </div>
         </div>
 
     
-    </div>
-    <Ecosystem />
-    
+    </div>    
   </Section>
 </template>
 
@@ -51,12 +52,18 @@ query HomeIntro {
 <script>
 import Ecosystem from '~/components/Ecosystem.vue'
 import VueLogo from '~/assets/images/vue-logo.svg'
+import LinesOut from '~/assets/images/home-lines-out.svg'
+import LinesIn from '~/assets/images/home-lines-in.svg'
+import Logo from '~/assets/images/home-logo.svg'
 const words = ['insanely fast', 'JAMstack', 'static & secure', 'future-ready']
 
 export default {
   components: {
     Ecosystem,
     VueLogo,
+    LinesOut,
+    LinesIn,
+    Logo,
     VueTyper: process.isServer
       ? { inheritAttrs: false, render: h => h('span', null, [words[0]]) }
       : () => import('vue-typer').then(({ VueTyper }) => VueTyper)
@@ -71,16 +78,6 @@ export default {
 <style lang="scss">
 
 
-
-.bg {
-  .home-image {
-    max-width: 110%;
-    margin-left: -10%;
-    margin-top: -10%;
-    position: relative;
-    z-index: 1;
-  }
-}
 
 .home-intro {
   .vue-typer {
@@ -131,5 +128,44 @@ export default {
       box-shadow: var(--glow);
     }
   }
+}
+
+
+.home-anim {
+  position: relative;
+  transform: translateZ(0);
+
+  img {
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+
+  > div:not(.home-anim__source-logos) {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__lines-in svg path {
+    stroke-width: 4px;
+    stroke-linecap: round;
+    stroke-dasharray: 0 20;
+    animation: stroke 800ms linear infinite;
+  }
+
+  &__lines-out path {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    stroke-dasharray: 0 20;
+    animation: stroke-invert 400ms linear infinite;
+  }
+
 }
 </style>

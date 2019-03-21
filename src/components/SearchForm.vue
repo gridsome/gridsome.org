@@ -43,10 +43,13 @@ export default {
     border-radius: 5px;
     width: 200px;
     padding: 0.3rem 0.6rem 0.27rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: transparent;
+    color: #FFF;
 
     &:focus {
       background-color: rgba(255, 255, 255, 0.1);
-      box-shadow: var(--glow);
+      box-shadow: none;
     }
   }
 }
