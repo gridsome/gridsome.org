@@ -24,7 +24,7 @@ export default {
 <style lang="scss">
  .logo {
   svg{
-  	max-width: 145px;
+  	max-width: 140px;
   	height: auto;
   }
   &:hover {
