@@ -2,7 +2,7 @@
   <footer class="text-center">
     An open source project by
     <g-link to="/contributor/hjvedvik"> @hjvedvik</g-link>
-      &
+      ,
     <g-link to="/contributor/tommyvedvik">@tommyvedvik</g-link>
       and
     <a

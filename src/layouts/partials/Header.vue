@@ -53,13 +53,13 @@
               Change log
             </a>
             <a href="//github.com/gridsome/gridsome" rel="noopener noreferrer" target="_blank">
-              Gridsome repository
+              Core repository
             </a>
             <a href="//github.com/gridsome/gridsome.org" rel="noopener noreferrer" target="_blank">
               Website repository
             </a>
             <a href="//github.com/gridsome/gridsome/issues" rel="noopener noreferrer" target="_blank">
-              Gridsome Issues
+              GitHub Issues
             </a>
           </div>
         </div>
