@@ -112,7 +112,7 @@ This will change the `.card` class in current component automatically to somethi
 
 ## Enable Critical CSS
 
-Gridsome [Critical CSS plugin](/plugins/plugin-critical-css) extracts CSS from components in selected view port size and adds the CSS inline to `<head>`.
+Gridsome [Critical CSS plugin](/plugins/@gridsome/plugin-critical) extracts CSS from components in selected view port size and adds the CSS inline to `<head>`.
 
 
 ## Add a CSS framework

@@ -40,7 +40,7 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'blog/**/*.md',
+        path: 'posts/**/*.md',
         typeName: 'Post',
         remark: {
           plugins: [
@@ -104,7 +104,7 @@ public_folder: "../uploads"
 collections:
   - name: "posts"
     label: "Posts"
-    folder: "post"
+    folder: "posts"
     create: true
     slug: "{{slug}}"
     fields:
