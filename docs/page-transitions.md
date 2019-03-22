@@ -32,9 +32,9 @@ Here is an example where we **fade in** content on route change in a [layout](/d
 </style>
 ```
 
-### Create an Enter transition while keeping a Header on the page
+### Create an Enter/Leave transition
 
-In case you want a Header that is not part of the transition, you may choose to render it above the [Layout](/docs/layouts), replacing Gridsome's [default render function](https://github.com/gridsome/gridsome/blob/952148db357c2ca80db5977a90f6ffadd588601f/gridsome/app/app.js#L24) using the [Client API](/docs/client-api).
+In case you want a Header that works with an enter/leave transition, you may choose to render it above the [Layout](/docs/layouts), replacing Gridsome's [default render function](https://github.com/gridsome/gridsome/blob/952148db357c2ca80db5977a90f6ffadd588601f/gridsome/app/app.js#L24) using the [Client API](/docs/client-api).
 
 `gridsome.client.js`:
 ```js
@@ -62,11 +62,12 @@ export default function (Vue, options, context) {
 </template>
 
 <style>
-.page-fade-enter-active {
+.page-fade-enter-active,
+.page-fade-leave-active {
   transition: opacity 0.5s;
 }
-
-.page-fade-enter {
+.page-fade-enter,
+.page-fade-leave-to {
   opacity: 0;
 }
 </style>
