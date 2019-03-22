@@ -10,8 +10,7 @@
       href="//github.com/gridsome/gridsome/graphs/contributors"
       rel="noopener noreferrer"
       target="_blank"
-    >Contributors 🌟</a>
-    <g-link to="/logo">Logo & assets</g-link>
+    >Contributors</a>
   </footer>
 </template>
 
