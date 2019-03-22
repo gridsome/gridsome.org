@@ -40,7 +40,7 @@ Example:
   <div v-if="theTime">
     {{ theTime }}
   </div>
-</tempalte>
+</template>
 
 <script>
 import moment from 'moment';
