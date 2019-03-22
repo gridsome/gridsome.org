@@ -137,3 +137,30 @@ plugins: [
 
 ### Bootstrap
 ...plugin coming
+
+### BootstrapVue
+[BootstrapVue](https://bootstrap-vue.js.org/) provides one of the most comprehensive implementations of Bootstrap V4 components and grid system available for Vue.js 2.5+, complete with extensive and automated WAI-ARIA accessibility markup.
+
+To instal use:
+
+```
+# With npm
+npm i vue bootstrap-vue bootstrap
+
+# With yarn
+yarn add vue bootstrap-vue bootstrap
+```
+
+Then, register BootstrapVue plugin in your `main.js` file:
+
+```js
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+// Then add it to export function
+
+export default function (Vue, { router, head, isClient }) {
+  Vue.use(BootstrapVue)
+}
+```
