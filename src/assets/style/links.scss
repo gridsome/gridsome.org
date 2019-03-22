@@ -1,19 +1,13 @@
 a {
-  color: currentColor;
-  text-decoration: none;
   transition: color .3s, opacity .3s, background .3s;
-  display: inline-block;
   position: relative;
   border-radius: 99px;
+  text-decoration: underline;
+  color: var(--primary-color-dark);
+  text-decoration-color: var(--border-color);
 
-  .post &:not(.button):not(:hover) {
-    text-decoration: underline;
-    color: var(--primary-color-dark);
-    text-decoration-color: var(--border-color);
-  }
-
-  .post &:not(.button):hover {
-    text-decoration: underline;
+  &:hover {
+    color: #000;
     text-decoration-color: rgba(0,0,0,.5);
   }
 
