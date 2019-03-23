@@ -33,7 +33,7 @@ Detail is [here](https://github.com/vuejs/vetur/issues/975#issuecomment-46119703
 ### Autocompletion
 
 Vetur has [gridsome-helper-json](https://www.npmjs.com/package/gridsome-helper-json) since version 0.17.0
-helper-json can autocompletion tag and attribute.
+helper-json can autocomplete tag and attribute.
 gridsome-helper-json support `<g-image>`, `<g-link>` and `<Pager>`.
 
 ![autocompletion-tag](./images/autocompletion-tag.png)
