@@ -54,7 +54,7 @@ export default function (Vue, options, context) {
 }
 ```
 `@/components/MyHeader.vue`:
-```
+``` html
 <template>
   <ClientOnly>
     <header />
