@@ -61,7 +61,7 @@ module.exports = {
 
 Please read [gridsome-plugin-netlify-cms](https://gridsome.org/plugins/gridsome-plugin-netlify-cms), [transformer-remark](https://gridsome.org/plugins/@gridsome/transformer-remark) for more information about the configurations.
 
-## 4 Netlify CMS setup
+## 4. Netlify CMS setup
 
 It's time to add the CMS!
 
@@ -98,8 +98,8 @@ backend:
   name: github
   repo: your_name/repo_name
 
-media_folder: "uploads"
-public_folder: "../uploads"
+media_folder: "static/uploads"
+public_folder: "/uploads"
 
 collections:
   - name: "posts"
@@ -114,7 +114,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
 ```
 
-## Netlify CMS authentication with GitHub
+## 5. Netlify CMS authentication with GitHub
 
 Before we can start adding posts we'll have to give Netlify access to our Github, this part is **crucial**, please follow the steps closely. More info can be read [here](https://www.netlify.com/docs/authentication-providers/);
 
