@@ -11,7 +11,7 @@
     border-right: 1px solid var(--border-color);
     top: var(--header-height);
     height: calc(100vh + (var(--header-height) * -1));
-    padding: 0 var(--space);
+    padding: 0 var(--space) 50px;
     background-color: var(--primary-bg);
     width: 260px;
     order: 0;
@@ -31,6 +31,7 @@
 
   a {
     color: currentColor;
+    text-decoration: none;
     opacity: 1;
     font-weight: 400;
     display: flex;

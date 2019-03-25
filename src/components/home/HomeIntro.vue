@@ -82,7 +82,6 @@ export default {
 }
 
 .home-intro {
-  padding: 1.5% 0!important;
 
   .vue-typer {
     display: inline-block;
@@ -122,7 +121,7 @@ export default {
 }
 
 .home-title {
-  font-size: 3rem;
+  font-size: 2.8rem;
 
   @media (max-width: 600px) {
     padding-top: 2rem;

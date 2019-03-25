@@ -4,9 +4,10 @@
       
       <Logo/>
       
-      <SearchForm class="hide-for-small" style="margin-right: 30px;" />
 
       <Nav class="flex-fit"/>
+      
+      <SearchForm class="hide-for-small" style="margin-right: 30px;" />
 
       <nav class="header-actions flex">
 
