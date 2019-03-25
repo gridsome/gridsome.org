@@ -26,7 +26,7 @@
 
   &.primary {
     color:#FFF;
-    background-color: var(--primary-link-color);
+    background-color: var(--primary-color);
     box-shadow: 1px 1px 10px 0 var(--success-bg);
 
     &:after {
@@ -34,7 +34,7 @@
     }
     &:hover {
       color:#FFF;
-      background-color: var(--primary-color);
+      background-color: var(--primary-link-color);
       box-shadow: 1px 1px 20px 0 var(--success-bg);
     }
   }

@@ -1,12 +1,14 @@
 <template>
   <header>
-    <div class="header-inner container flex gap-30">
+    <div class="header-inner flex gap-30">
+      
       <Logo/>
+      
+      <SearchForm class="hide-for-small" style="margin-right: 30px;" />
 
       <Nav class="flex-fit"/>
 
       <nav class="header-actions flex">
-        <SearchForm class="hide-for-small"/>
 
         <a
           aria-label="Twitter"
@@ -87,6 +89,7 @@ header {
   border-bottom: 1px solid transparent;
   flex-wrap: nowrap;
   position: sticky;
+  padding: 0 1rem;
 
   .header-inner {
     min-height: var(--header-height);

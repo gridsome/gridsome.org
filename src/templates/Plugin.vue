@@ -1,6 +1,6 @@
 <template>
   <Layout :footer="false">
-    <div class="plugins container container-main flex gap-60 flex-align-top">
+    <div class="plugins flex flex-align-top">
       <AisInstantSearchSsr class="sidebar plugins__sidebar">
         <AisConfigure
           :hitsPerPage="hitsPerPage"

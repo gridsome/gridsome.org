@@ -1,6 +1,6 @@
 <template>
   <Layout class="has-sidebar docs-page" :footer="false">
-    <div class="container container-main flex gap-60 flex-align-top">
+    <div class="flex flex-align-top">
       <div class="sidebar">
         
         <transition-group name="menu-item">

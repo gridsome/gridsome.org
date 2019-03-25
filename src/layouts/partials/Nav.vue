@@ -16,6 +16,16 @@
       <span class="main-nav__label">Plugins</span>
     </g-link>
 
+    <g-link to="/plugins">
+      <icon-plugins />
+      <span class="main-nav__label">Starters</span>
+    </g-link>
+
+    <g-link to="/plugins">
+      <icon-plugins />
+      <span class="main-nav__label">Showcase</span>
+    </g-link>
+
     <g-link to="/blog">
       <icon-blog />
       <span class="main-nav__label">Blog</span>
