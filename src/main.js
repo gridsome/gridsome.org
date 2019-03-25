@@ -11,17 +11,15 @@ import Card from '~/components/Card'
 
 import VueScrollTo from 'vue-scrollto'
 import VueInstantSearch from 'vue-instantsearch'
-
 import Typography from 'typography'
-import 'typeface-league-spartan'
 
 const typography = new Typography({
   baseFontSize: '18px',
   baseLineHeight: 1.6,
-  scaleRatio: 1.9,
+  scaleRatio: 2,
   bodyColor: 'hsla(0,0%,0%,0.7)',
   headerColor: 'hsla(0,0%,0%,0.9)',
-  headerFontFamily: ['League Spartan', 'sans-serif'],
+  headerFontFamily: ['Jost', 'sans-serif'],
   bodyFontFamily: ['Jost', 'Helvetica','Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
 })
 

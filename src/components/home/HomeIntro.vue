@@ -122,8 +122,7 @@ export default {
 }
 
 .home-title {
-  line-height: 1.3;
-  font-size: 2.4rem;
+  font-size: 3rem;
 
   @media (max-width: 600px) {
     padding-top: 2rem;

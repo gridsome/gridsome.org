@@ -1,7 +1,5 @@
 .plugins {
   &__sidebar {
-    padding-top: 0;
-
     @media screen and (min-width: 750px) {
       min-width: 225px;
       width: 375px;
