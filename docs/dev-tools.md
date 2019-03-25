@@ -9,7 +9,7 @@ https://www.npmjs.com/package/eslint-plugin-gridsome
 ## Vetur
 
 [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) is Vue tooling for VS Code.  
-And Vetur is good tool for easier Gridsome development with VS Code
+Vetur works perfect with Gridsome.
 
 ### GraphQL syntax for `<page-query>` and `<static-query>`
 
