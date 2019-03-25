@@ -11,7 +11,7 @@
 
       <p class="lead" v-html="$page.post.excerpt"/>
 
-      <div v-html="$page.post.content"/>
+      <div class="post-content" v-html="$page.post.content"/>
     </Section>
   </Layout>
 </template>
@@ -57,7 +57,7 @@ export default {
 
 <style lang="scss">
 @media screen and (min-width: 750px) {
-  p > img {
+  .post-content p > img {
     max-width: 120%;
     margin-left: -10%;
   }
