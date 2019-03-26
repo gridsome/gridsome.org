@@ -19,7 +19,6 @@ Gridsome already provides you a set of [plugins](https://gridsome.org/plugins) t
 - `yarn add netlify-cms gridsome-plugin-netlify-cms @gridsome/source-filesystem @gridsome/transformer-remark` to install the required dependencies
 - `npm add netlify-cms gridsome-plugin-netlify-cms @gridsome/source-filesystem @gridsome/transformer-remark`
 
-
 ## 3. Configuration
 
 Alright, the plugins are installed, it's now time to setup the right configuration. Open the `gridsome.config.js` file and make sure it looks like this:
