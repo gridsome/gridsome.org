@@ -16,7 +16,9 @@ Gridsome requires **Node.js** and recommends **Yarn**. [How to setup](https://gr
 
 Gridsome already provides you a set of [plugins](https://gridsome.org/plugins) to get you started.
 
-1. `yarn add netlify-cms gridsome-plugin-netlify-cms @gridsome/source-filesystem @gridsome/transformer-remark` to install the required dependencies
+- `yarn add netlify-cms gridsome-plugin-netlify-cms @gridsome/source-filesystem @gridsome/transformer-remark` to install the required dependencies
+- `npm add netlify-cms gridsome-plugin-netlify-cms @gridsome/source-filesystem @gridsome/transformer-remark`
+
 
 ## 3. Configuration
 
