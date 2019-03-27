@@ -71,7 +71,7 @@
           <gridsome-logo />
         </div>
         <h4>Static Site Generation</h4>
-        <span>Generate optimized static HTML using the <strong><g-link to="/docs/how-it-works#the-prpl-pattern">PRPL pattern</g-link></strong></span>
+        <span>Generate SEO-friendly HTML using the <strong><g-link to="/docs/how-it-works#the-prpl-pattern">PRPL pattern</g-link></strong></span>
       </div>
 
       <div class="dots-vertical">
