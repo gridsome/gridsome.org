@@ -74,7 +74,7 @@ export default {
 
 .home-lead {
   font-size: 1.3rem;
-  max-width: 850px;
+  max-width: 890px;
   margin-left: auto;
   margin-right: auto;
 

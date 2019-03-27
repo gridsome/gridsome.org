@@ -9,7 +9,7 @@
         01. Bring your data
       </h2>
 
-      <p class="text-center lead container-sm mb">
+      <p class="text-center container-md mb">
         Pull data from anywhere into a local <strong>GraphQL </strong><graph-ql-logo width="24px" height="24px" color="#bf37ff" /> data layer for simple centralized data management.
       </p>
 
@@ -52,8 +52,8 @@
         02. Build with Vue.js
       </h2>
 
-      <p class="text-center lead container-md">
-        Use <strong>Vue Components</strong> as building blocks and all the power of <br class="hide-for-small" /><strong>webpack <webpack-logo width="30" height="30" /> </strong>. Get instant hot-reloading for any code change.
+      <p class="text-center container-md">
+        <a href="https://vuejs.org/">Vue.js</a> is a very popular, performant and approachable JavaScript framework. Build websites with <strong>Vue Components</strong> as building blocks with instant hot-reloading for any code change.
       </p>
 
       <Card class="container-sm">
@@ -72,7 +72,7 @@
           <gridsome-logo />
         </div>
         <h4>Static Site Generation</h4>
-        <span>Output optimized static HTML using the <strong><g-link to="/docs/how-it-works#the-prpl-pattern">PRPL pattern</g-link></strong></span>
+        <span>Generate optimized static HTML using the <strong><g-link to="/docs/how-it-works#the-prpl-pattern">PRPL pattern</g-link></strong></span>
       </div>
 
       <div class="dots-vertical">
