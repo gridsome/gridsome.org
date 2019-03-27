@@ -8,11 +8,11 @@
         
 
         <h1 class="home-intro__title post"> 
-          Builder faster, better, safer websites
+          Modern website development with Vue.js
         </h1>
 
         <p class="home-lead lead post">
-          Gridsome is a <strong>Vue.js-powered</strong>  modern site generator that helps developers build beautiful, insanely fast, secure <strong>JAMstack websites and PWAs</strong> </strong>
+          Gridsome is a Vue.js-powered modern site generator that helps developers build beautiful, insanely fast, secure <strong>JAMstack websites and PWAs</strong>
         </p>
 
         <p class="home-links">
