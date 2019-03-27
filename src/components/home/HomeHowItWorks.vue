@@ -10,7 +10,7 @@
       </h2>
 
       <p class="text-center container-md mb">
-        Pull data from anywhere into a local <strong>GraphQL </strong><graph-ql-logo width="24px" height="24px" color="#bf37ff" /> data layer for simple centralized data management.
+        Pull data from anywhere into a local unified <strong>GraphQL </strong><graph-ql-logo width="24px" height="24px" color="#bf37ff" /> data layer.
       </p>
 
       <div class="cms-cols grid-cols grid-cols--collapse grid-cols--3 ">
@@ -38,8 +38,7 @@
 
       <div class="powered-by text-center">
         <gridsome-logo />
-        <span><strong>GraphQL</strong><br/> data layer</span>
-        <g-image src="~/assets/images/spark.png" />
+        <span>Powered by <strong>GraphQL</strong></span>
       </div>
 
       <div class="dots-vertical">
@@ -204,11 +203,6 @@ export default {
   padding: 10px;
   z-index: 0;
   animation: pulse 2s infinite;
-
-  img {
-    position: absolute;
-    pointer-events: none;
-  }
 
   span {
     display: block;
