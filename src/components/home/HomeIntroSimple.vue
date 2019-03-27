@@ -56,13 +56,8 @@ export default {
 <style lang="scss">
 .home-intro {
   &__title {
-    font-size: 3.33rem;
+    font-size: 3rem;
     color: var(--primary-color);
-
-    a {
-      color: var(--primary-color);
-      opacity: 1;
-    }
   }
 
   @media screen and (max-width: 850px) {

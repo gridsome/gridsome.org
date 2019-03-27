@@ -104,7 +104,7 @@ header {
   border-bottom: 1px solid var(--border-color);
   flex-wrap: nowrap;
   position: sticky;
-  background-color: rgba(255,255,255,.95);
+  background-color: var(--light-bg-transparent);
 
   .header-bar {
     background-color: var(--primary-color);
