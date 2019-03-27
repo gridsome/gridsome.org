@@ -8,11 +8,11 @@
         
 
         <h1 class="home-intro__title post"> 
-          Build, design, deploy at full speed
+          Builder faster, better, safer websites
         </h1>
 
         <p class="home-lead lead post">
-          Gridsome is a <strong>Vue.js-powered</strong>  modern site generator that helps developers build insanely fast, secure <strong>JAMstack websites and apps</strong> </strong>
+          Gridsome is a <strong>Vue.js-powered</strong>  modern site generator that helps developers build beautiful, insanely fast, secure <strong>websites and PWAs</strong> </strong>
         </p>
 
         <p class="home-links">
@@ -56,7 +56,7 @@ export default {
 <style lang="scss">
 .home-intro {
   &__title {
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: var(--primary-color);
 
     a {
