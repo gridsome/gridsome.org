@@ -42,5 +42,5 @@ Using npm:
 
 
 - [How it works](/docs/how-it-works)
-- [How Pages works](/docs/pages)
+- [How Pages work](/docs/pages)
 - [How to deploy](/docs/deployment)
