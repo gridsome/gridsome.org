@@ -41,7 +41,7 @@ export default {
 </script>
 ```
 
-A `Blog.vue` file that **list blog posts** might look like this:
+A `Blog.vue` file that **lists blog posts** might look like this:
 
 ```html
 <template>
