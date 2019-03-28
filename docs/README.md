@@ -1,16 +1,16 @@
 # Getting started with Gridsome
 
-> Gridsome is an open-source Vue.js-powered modern site generator that helps developers build fast, secure [JAMstack](/docs/jamstack) websites and apps for any data source. Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert.
+> Gridsome is an open-source Vue.js-powered modern site generator that helps developers build [JAMstack](/docs/jamstack) websites and apps for any data source. Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert.
 
 ### Core features
 
 - **Local development with hot-reloading** - See code changes in real-time.
-- **Data source plugins** - Connect to any popular Headless CMSs, APIs or Markdown-files.
+- **Pull data from anywhere** - Use any Headless CMS, APIs or Markdown-files for data.
+- **GraphQL data layer** - Query, filter, paginate from a local unified GraphQL data layer.
 - **File-based page routing** - Quickly create and manage routes with files.
-- **Centralized data managment** - Pull data into a local, unified GraphQL data layer.
-- **Progressive Image support** - Auto image optimization & lazy loading of images.
+- **Follows [PRPL pattern](/docs/how-it-works#the-prpl-pattern)** - Gridsome builds ultra performance into every page automatically.
+- **Progressive Images** - Auto image resizing, compressing & lazy loading of images.
 - **Smart link prefetching** - Load next pages when link is in view for ultra fast browsing.
-- **Auto-optimized code** - Get code-splitting and asset optimization out-of-the-box.
 - **Static files generation** - Deploy securely to any CDN or static web host.
 
 

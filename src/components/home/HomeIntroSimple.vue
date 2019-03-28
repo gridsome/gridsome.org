@@ -58,6 +58,11 @@ export default {
   &__title {
     font-size: 3rem;
     color: var(--primary-color);
+
+    a {
+      color: var(--primary-color);
+      opacity: 1;
+    }
   }
 
   @media screen and (max-width: 850px) {

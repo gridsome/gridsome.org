@@ -4,7 +4,7 @@
    
     </div>
     <div class="header-inner flex gap-30">
-      <Logo/>
+        <Logo/>
       
       <SearchForm class="hide-for-small"/>
 
