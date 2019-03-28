@@ -8,7 +8,7 @@
         
 
         <h1 class="home-intro__title post"> 
-          Build websites that are fast by default
+          Build websites that are <em>fast</em> by default
         </h1>
 
         <p class="home-lead lead post">
