@@ -129,7 +129,7 @@ Part 2, Netlify:
 1. Go to your Netlify dashboard and click on your project
 2. Navigate to Settings > Access control > OAuth
 3. Under Authentication Providers, click Install Provider
-4. Select GitHub and enter the Client ID and Client Secret, then save
+4. Select GitHub and enter the Client ID and Client Secret, then save ([0Auth Docs - How do I find my GitHub client ID and secret?](https://auth0.com/docs/connections/social/github#3-get-your-github-app-s-client-id-and-client-secret))
 
 ## Start coding
 
