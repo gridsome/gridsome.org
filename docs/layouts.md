@@ -77,7 +77,7 @@ You can now use `<Layout>` anywhere in your Gridsome project without importing i
 
 
 ## Passing Props to layouts
-Since layouts work like components is it possible pass Props to layouts. For example a page can look like this:
+Since layouts work like components, it is possible to pass Props to layouts. For example a page can look like this:
 
 
 ```html
