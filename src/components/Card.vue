@@ -47,12 +47,13 @@ export default {
       span {
         display: inline-block;
         padding: 2px 12px;
-        background-color: #333;
+        background-color: var(--dark-bg);
         color: #FFF;
         border-radius: 3px;
         text-transform: uppercase;
         font-weight: 500;
         font-size: .8rem;
+        letter-spacing: 1px;
       }
     }
 
