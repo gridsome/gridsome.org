@@ -110,7 +110,7 @@ export default {
       margin-bottom: .5rem;
     }
 
-    p {
+    p:not(:last-child) {
       margin-bottom: 1rem;
     }
   }

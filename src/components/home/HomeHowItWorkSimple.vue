@@ -10,9 +10,9 @@
 
       <Card title="Data sources">
         <h4>CMSs</h4>
-        <p>Any Headless CMS, Contentful, WordPress, Drupal, DatoCMS, Sanity.io, GraphCMS etc.</p>      
+        <p>Any Headless CMS, Contentful, WordPress, Drupal, DatoCMS, etc.</p>      
         <h4>Data</h4>
-        <p>Any APIs, Databases, Google Spreadsheet, AirTable, YAML, CSV, JSON etc.</p>
+        <p>Any APIs, Databases, AirTable, YAML, CSV, JSON, etc.</p>
         <h4>Markdown</h4>
         <p>Any Git-based CMS, Forestry, Netlify CMS, Blogs, Documentation.</p>
 
@@ -102,7 +102,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped="scoped">
+<style lang="scss">
 .how-it-works {
   font-size: .9rem;
   line-height: 1.6;
@@ -122,7 +122,7 @@ export default {
   }
 
   .card__inner {
-    padding: 30px;
+    padding: 40px;
   }
 
   .image-rotate {
@@ -176,7 +176,7 @@ export default {
   .powered-by {
     opacity: .8;
     line-height: 1.3;
-    margin-bottom: 1.8rem;
+    padding-bottom: 1.2rem;
   }
 
   .description {
