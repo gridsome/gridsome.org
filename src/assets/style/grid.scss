@@ -2,10 +2,16 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  
+
   > *:last-child {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  > li {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
   }
 
   &--center {
@@ -26,6 +32,10 @@
   &--space-between {
     justify-content: space-between;
   }
+}
+
+ul.flex {
+  margin: 0;
 }
 
 .gap {
@@ -88,8 +98,13 @@
   }
 
   &--gap-small {
-    grid-gap: calc( var(--space) );
+    grid-gap: var(--space);
   }
+
+  &--gap-large {
+    grid-gap: var(--space-x2);
+  }
+
 
   &--2 {
     grid-template-columns: repeat(2, 1fr);

@@ -1,0 +1,197 @@
+<template>
+  <Section dots="true" primary="true" class="post">
+    <h2 class="container text-center">
+      How Gridsome Works
+    </h2>
+    <p class="text-center lead container-md">
+     <strong>Pull data</strong> from any CMS or data source and use <strong>Vue.js</strong> for front-end. Deploy to any <strong>static web host</strong> for blazing fast, scalable, and secure hosting.
+    </p>
+    <div class="grid-cols grid-cols--gap-large how-it-works mb">
+
+      <Card title="Data sources">
+        <h4>CMSs</h4>
+        <p>Any Headless CMS, Contentful, WordPress, Drupal, DatoCMS, Sanity.io, GraphCMS etc.</p>      
+        <h4>Data</h4>
+        <p>Any APIs, Databases, Google Spreadsheet, AirTable, YAML, CSV, JSON etc.</p>
+        <h4>Markdown</h4>
+        <p>Any Git-based CMS, Forestry, Netlify CMS, Blogs, Documentation.</p>
+
+        <template slot="outer">
+          <svg width="100%" height="37" viewBox="0 0 1 37" class="dot show-for-small">
+            <path d="M0.5 0L0.500002 37"/>
+          </svg>
+
+          <svg width="100%" height="37" viewBox="0 0 1 37" class="dot dot--horizontal hide-for-small">
+            <path d="M0.5 0L0.500002 37"/>
+          </svg>
+        </template>
+      </Card>
+
+      <Card title="Build" class="text-center flex-align-middle">
+        <g-image class="image-rotate" src="~/assets/images/spark.png" />
+
+        <div class="logo-pulse">
+          <gridsome-logo />
+        </div>
+
+        <p class="powered-by">
+          Powered by <br/><strong>GraphQL </strong>
+          <graph-ql-logo width="18" height="18" />
+        </p>
+        <ul class="tools flex gap-15 text-center flex--center">
+          <li>HTML</li>
+          <li><vue-logo width="28" height="28" alt="Vue" />.JS</li>
+          <li>CSS</li>
+        </ul>
+  
+        <template slot="outer">
+          <svg width="100%" height="37" viewBox="0 0 1 37" class="dot show-for-small">
+            <path d="M0.5 0L0.500002 37"/>
+          </svg>
+
+          <svg width="100%" height="37" viewBox="0 0 1 37" class="dot dot--horizontal hide-for-small">
+            <path d="M0.5 0L0.500002 37"/>
+          </svg>
+        </template>
+      </Card>
+
+      <Card title="Deploy">
+        <h4>Static Site Generation</h4>
+        
+        <ul class="bullet-list">
+          <li><Bullet /><g-link to="/docs/how-it-works#the-prpl-pattern">PRPL-pattern</g-link></li>
+          <li><Bullet /><g-link to="/docs/how-it-works#smart-link-prefetching">Smart link prefetching</g-link></li>
+          <li><Bullet /><g-link to="/docs/how-it-works#progressive-images">Progressive Images</g-link></li>
+          <li><Bullet /><g-link to="/docs/how-it-works#client-side-hydration">HTML → Vue.js Hydration</g-link></li>
+        </ul>
+
+        <h4>Static Web Hosts</h4>
+        <p>
+          <g-link to="/docs/deploy-to-netlify">Netlify</g-link>, <g-link to="/docs/deploy-to-amplify">AWS Amplify</g-link>, <g-link to="/docs/deploy-to-zeit-now">Zeit Now</g-link>, <g-link to="/docs/deploy-to-amazon-s3">Amazon S3</g-link>, Surge.sh, Aerobatic, Now.sh & many more.
+        </p>
+      </Card>
+
+    </div>
+
+    <p class="home-links text-center">
+      <g-link  to="/docs/how-it-works">
+        Learn more about how it works
+      </g-link>
+    </p>
+  </Section>
+</template>
+
+
+<script>
+import GraphQlLogo from '~/assets/images/graphql-logo.svg'
+import VueLogo from '~/assets/images/vue-logo.svg'
+import WebpackLogo from '~/assets/images/webpack-logo.svg'
+import GridsomeLogo from '~/assets/images/gridsome-small-white.svg'
+import Bullet from '~/assets/images/bullet.svg'
+
+export default {
+  components: {
+    Bullet,
+    VueLogo,
+    GridsomeLogo,
+    WebpackLogo,
+    GraphQlLogo
+  }
+}
+</script>
+
+<style lang="scss">
+.how-it-works {
+  font-size: .9rem;
+  line-height: 1.6;
+
+  .bullet-list {
+    margin: 1rem 0 1.5rem;
+  }
+  .bullet-list li {
+    margin-bottom: .3rem;
+  }
+
+  @media screen and (max-width: 800px) {
+    .card {
+      margin-bottom: 30px;
+    }
+  }
+
+  .card__inner {
+    padding: 30px;
+  }
+
+  .image-rotate {
+    animation: spin 20s infinite linear;
+    position: absolute;
+    top:-18%;
+    left:0;
+    z-index: 0;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .tools {
+    padding-top: 30px;
+    font-weight: 500;
+  }
+
+  .logo-pulse {
+    background-color: var(--primary-color-dark);
+    width: 100px;
+    z-index: 1;
+    position: relative;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 13%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 100%;
+    z-index: 0;
+    animation: pulse 2s infinite;
+    margin-bottom: 1rem;
+
+    svg {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  .powered-by {
+    opacity: .8;
+    line-height: 1.3;
+  }
+
+  .description {
+    opacity: .8;
+    font-size: .8rem;
+  }
+
+}
+.dot {
+  height: 30px;
+  margin: 15px 0;
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  stroke: var(--primary-color);
+  stroke-width: 5px;
+  stroke-linecap: round;
+  stroke-dasharray: 0 10;
+  animation: stroke 600ms linear infinite;
+
+  &--horizontal {
+    left: 100%;
+    top: 50%;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    margin-top: -30px;
+    transform: rotate(-90deg);
+  }
+}
+</style>

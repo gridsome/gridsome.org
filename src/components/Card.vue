@@ -1,11 +1,15 @@
 <template>
   <div class="card" :class="{'card--has-link' : link}">
+    <div class="card__title" v-if="title">
+      <span>{{ title }}</span>
+    </div>
     <div v-if="image" class="card__image">
       <g-image :src="image" />
     </div>
     <div class="card__inner">
       <slot />
     </div>
+    <slot name="outer" />
     <g-link v-if="link" class="card__link" :to="link">
       Read more
     </g-link>
@@ -14,7 +18,7 @@
 
 <script>
 export default {
-  props: ['link', 'image'],
+  props: ['link', 'image', 'title'],
   computed: {
     cardClasses() {
       let classes = []
@@ -35,6 +39,23 @@ export default {
     position: relative;
     z-index: 1;
 
+    &__title {
+      text-align: center;
+      width: 100%;
+      margin-top: -12px;
+
+      span {
+        display: inline-block;
+        padding: 2px 12px;
+        background-color: #333;
+        color: #FFF;
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: .8rem;
+      }
+    }
+
     &__image {
       border-radius: 4px 4px 0 0;
       overflow: hidden;
@@ -47,6 +68,8 @@ export default {
 
     &__inner {
      padding: var(--space);
+     overflow: hidden;
+     position: relative;
     }
 
     &[class*='container']  &__inner {
@@ -84,7 +107,7 @@ export default {
     }
 
     h2, h3, h4 {
-      margin-bottom: .75rem;
+      margin-bottom: .5rem;
     }
   }
 </style>

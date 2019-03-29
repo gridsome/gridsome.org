@@ -83,14 +83,14 @@ PRPL is a pattern for structuring and serving Progressive Web Apps (PWAs), with 
 Learn more about [PRPL pattern](https://developers.google.com/web/fundamentals/performance/prpl-pattern/)
 
 
-### Automatic link prefetching
+## Smart link prefetching
 Gridsome prefetches internal links in the background so browsing around goes insanely fast. It uses the built-in `<g-link>` component and **Intersection Observer** to prefetch when the link is in view. 
 
 Gridsome builds two files of every page. A static HTML and a small JavaScript file. When the website hydrates into a Vue.js-SPA, the link prefetching only loads the JavaScript to render the next page. This results in a faster and smoother browsing experience.
 
 [Learn more about **g-link** here](/docs/linking).
 
-### Progressive Image support
+## Progressive Images
 Gridsome has a built-in `<g-image>` component with built-in progressive image support. In **development** it lets you do real-time image processing, like resizing and cropping.
 
 In production, the `<g-image>` is served as an ultra-compressed image before the image is lazy-loaded when in view by using **Intersection Observer**.

@@ -1,10 +1,10 @@
 <template>
   <Section dots="true" class="post">
-    <div class="homepage-features grid-cols ">
+    <div class="homepage-features grid-cols grid-cols--gap-large">
 
       <Feature>
         <h3>Easy, local development</h3>
-        <p>Enjoy modern dev tools like Vue.js<vue-logo width="28" height="28" />,<br> GraphQL <graph-ql-logo color="#E535AB" width="20" height="20" /> & webpack<webpack-logo width="28" height="28" />. Get instant <strong>hot-reloading</strong> for any data change while developing. Gridsome makes building websites fun again.
+        <p>Gridsome makes building websites fun again. Enjoy modern dev tools like Vue.js<vue-logo width="28" height="28" />,<br> GraphQL <graph-ql-logo color="#E535AB" width="20" height="20" /> & webpack<webpack-logo width="28" height="28" />. Get instant <strong>hot-reloading</strong> for any data change while developing locally.
         </p>
       </Feature>
 
@@ -15,7 +15,7 @@
 
       <Feature>
         <h3>Fast by default</h3>
-        <p>Gridsome is a modern site generator for building the fastest possible websites. You get <strong>code-splitting & progressive image support</strong> built-in to get close to <strong>perfect page speed scores.</strong>
+        <p> Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert. It follows the <g-link to="/docs/how-it-works#the-prpl-pattern">PRPL-pattern</g-link> to get close to perfect page speed scores.
         </p>     
       </Feature>
 
@@ -28,17 +28,24 @@
 
       <Feature>
         <h3>Simple, safe deployment</h3>
-        <p>Gridsome is a <a href="http://jamstack.org" target="_blank">JAMstack</a> framework. <strong>No servers. No databases. Only files. </strong> Deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site.</strong>
+        <p>Grisome makes it easy to build fast & secure <g-link to="/docs/jamstack">JAMstack</g-link> websites. <strong>No servers. No databases. Only files. </strong> Deploy your entire site to a CDN and forget about it.</strong>
         </p>     
       </Feature>
 
 
       <Feature>
-        <h3>SEO-friendly</h3>
-        <p>Gridsome outputs static HTML before it hydrates into a fully <strong>Vue.js-powered SPA</strong>. This makes search engines able to crawl content and give <strong>better SEO ranking</strong> because of the fast loading.</p>
+        <h3>SEO-friendly SPA</h3>
+        <p>Gridsome outputs static HTML before it hydrates into a fully <strong>Vue.js-powered SPA</strong>. This makes search engines able to crawl content and give <strong>better SEO ranking</strong>.</p>
       </Feature>
 
     </div>
+
+
+    <p class="home-links text-center">
+      <g-link  to="/docs" class="button primary button--large">
+        Get started
+      </g-link>
+    </p>
     
   </Section>
 </template>
