@@ -157,7 +157,7 @@ export default {
     position: relative;
     height: 100px;
     margin: 0 auto;
-    margin-top: 13%;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
     flex-direction: column;
