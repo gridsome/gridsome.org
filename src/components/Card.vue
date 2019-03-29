@@ -109,5 +109,9 @@ export default {
     h2, h3, h4 {
       margin-bottom: .5rem;
     }
+
+    p {
+      margin-bottom: 1rem;
+    }
   }
 </style>

@@ -124,6 +124,10 @@ ul.flex {
   .grid-cols{
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .grid-cols--full-md{
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 @media screen and (max-width: 550px) {

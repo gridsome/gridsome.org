@@ -12,7 +12,6 @@ import HomeIntroSimple from '@/components/home/HomeIntroSimple.vue'
 import HomeBlog from '@/components/home/HomeBlog.vue'
 import HomeHowItWorkSimple from '@/components/home/HomeHowItWorkSimple.vue'
 import HomeFeatures from '@/components/home/HomeFeatures.vue'
-
 import HomeFast from '@/components/home/HomeFast.vue'
 import HomeCommunity from '@/components/home/HomeCommunity.vue'
 

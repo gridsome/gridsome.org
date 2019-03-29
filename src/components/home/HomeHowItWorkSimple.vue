@@ -6,7 +6,7 @@
     <p class="text-center lead container-md">
      <strong>Pull data</strong> from any CMS or data source and use <strong>Vue.js</strong> for front-end. Deploy to any <strong>static web host</strong> for blazing fast, scalable, and secure hosting.
     </p>
-    <div class="grid-cols grid-cols--gap-large how-it-works mb">
+    <div class="grid-cols grid-cols--gap-large grid-cols--full-md how-it-works mb">
 
       <Card title="Data sources">
         <h4>CMSs</h4>
@@ -28,6 +28,7 @@
       </Card>
 
       <Card title="Build" class="text-center flex-align-middle">
+        
         <g-image class="image-rotate" src="~/assets/images/spark.png" />
 
         <div class="logo-pulse">
@@ -38,9 +39,10 @@
           Powered by <br/><strong>GraphQL </strong>
           <graph-ql-logo width="18" height="18" />
         </p>
+
         <ul class="tools flex gap-15 text-center flex--center">
           <li>HTML</li>
-          <li><vue-logo width="28" height="28" alt="Vue" />.JS</li>
+          <li><vue-logo width="28" height="28" alt="Vue" /> Vue.js</li>
           <li>CSS</li>
         </ul>
   
@@ -100,7 +102,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped="scoped">
 .how-it-works {
   font-size: .9rem;
   line-height: 1.6;
@@ -108,13 +110,14 @@ export default {
   .bullet-list {
     margin: 1rem 0 1.5rem;
   }
+
   .bullet-list li {
     margin-bottom: .3rem;
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 850px) {
     .card {
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
   }
 
@@ -127,14 +130,24 @@ export default {
     position: absolute;
     top:-18%;
     left:0;
-    z-index: 0;
     pointer-events: none;
     user-select: none;
+    z-index: -1;
   }
 
   .tools {
-    padding-top: 30px;
     font-weight: 500;
+    background-color: rgba(255,255,255,.9);
+    border: 1px solid rgba(0,0,0,.1);
+    max-width: 230px;
+    border-radius: 4px;
+    z-index: 9;
+    margin: 0 auto;
+    padding: 10px;
+
+    li {
+      margin-bottom: 0;
+    }
   }
 
   .logo-pulse {
@@ -163,6 +176,7 @@ export default {
   .powered-by {
     opacity: .8;
     line-height: 1.3;
+    margin-bottom: 1.8rem;
   }
 
   .description {
