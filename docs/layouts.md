@@ -2,7 +2,7 @@
 
 Layout components are used to wrap pages and templates. Layouts should contain components like headers, footers or sidebars that will be used across the site.
 
-Layouts are _just_  **.vue components** located in `src/layouts` and needs to be [declared as a global](#make-a-layout-global) component or imported per page to be used.
+Layouts are _just_  **.vue components** located in `src/layouts` and need to be [declared as a global](#make-a-layout-global) component or imported per page to be used.
 
 **Every layout requires a `<slot />` component.** This is where the content coming from pages and templates will be inserted. Layouts can have [multiple slots](#multiple-content-slots).
 
@@ -19,7 +19,7 @@ Layouts are _just_  **.vue components** located in `src/layouts` and needs to be
 
 
 ## Import layout to a page or template
-When you have created a layout you need to import to your pages and templates. This is done inside the `<script>` tag.
+When you have created a layout you need to import it to your pages and templates. This is done inside the `<script>` tag.
 
 ```html
 <!-- Page -->
