@@ -8,7 +8,7 @@
 
       </div>
 
-      <Card class="post-content">
+      <div class="post-content">
 
         <g-image v-if="$page.post.poster" quality="1" width="600" :src="$page.post.poster" />
 
@@ -16,7 +16,7 @@
 
         <div v-html="$page.post.content"/>
 
-      </Card>
+      </div>
     </Section>
   </Layout>
 </template>
