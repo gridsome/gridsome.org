@@ -2,7 +2,7 @@
 
 Gridsome uses [Vue Single File Components] (https://vuejs.org/v2/guide/single-file-components.html). This means you add HTML, JavaScript and CSS in the same file. This makes your projects easier to maintain and test and your components more reusable. This is also used for **code-splitting** in the build process.
 
-Here is an example:
+Here’s an example of a file we’ll call `Card.vue` inside `src/components/`:
 
 
 ```html
