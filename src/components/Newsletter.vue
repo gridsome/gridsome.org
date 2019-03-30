@@ -9,7 +9,7 @@
 			</div>
 
 			<div class="newsletter__button">
-				<button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+				<button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button primary">
 					Subscribe
 				</button>
 			</div>

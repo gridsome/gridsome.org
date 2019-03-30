@@ -4,7 +4,7 @@
 
       <Feature>
         <h3>Easy, local development</h3>
-        <p>Gridsome makes building websites fun again. Enjoy modern dev tools like Vue.js<vue-logo width="28" height="28" />,<br> GraphQL <graph-ql-logo color="#E535AB" width="20" height="20" /> & webpack<webpack-logo width="28" height="28" />. Get instant <strong>hot-reloading</strong> for any data change while developing locally.
+        <p>Gridsome makes building websites fun again. Enjoy modern dev tools like <strong>Vue.js, GraphQL & webpack.</strong> Get instant <strong>hot-reloading</strong> for any data change while developing locally.
         </p>
       </Feature>
 

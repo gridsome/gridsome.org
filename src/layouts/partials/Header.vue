@@ -1,8 +1,6 @@
 <template>
   <header>
-    <div class="header-bar">
-   
-    </div>
+    <div class="header-bar"></div>
     <div class="header-inner flex gap-30">
         <Logo/>
       
@@ -112,6 +110,10 @@ header {
     text-align: center;
     color:#FFF;
     font-size: 1rem;
+
+    a {
+      color: currentColor;
+    }
   }
 
   .header-inner {
