@@ -129,11 +129,9 @@ export default {
 .starters {
   h2 {
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
-
-
 
 .default-starters {
   margin-bottom: 2rem;
@@ -147,6 +145,7 @@ export default {
 
 .starter {
   overflow: hidden;
+
   .card__inner {
     padding: 1rem;
   }
