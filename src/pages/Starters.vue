@@ -1,6 +1,6 @@
 <template>
   <Layout primary-bg="true" class="starters">
-    <Section dark="true" class="starters-header">
+    <Section dark="true" dots="true" class="starters-header">
       <h1 class="text-center">Gridsome Starters</h1>
 
       <nav class="starters-nav flex flex--center gap-15">
