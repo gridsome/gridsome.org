@@ -1,5 +1,5 @@
 <template>
-  <GalleryLayout>
+  <Layout primary-bg="true">
    <Section>
 
       <h1 class="text-center container-sm">Gridsome Starters</h1>
@@ -51,7 +51,7 @@
         </Card>
       </div>
     </Section>
-  </GalleryLayout>
+  </Layout>
 </template>
 
 <page-query>

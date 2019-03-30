@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <main>
+    <main :class="mainClass">
       <slot />
     </main>
     <Footer v-if="footer !== false" />
@@ -13,10 +13,17 @@ import Header from './partials/Header'
 import Footer from './partials/Footer'
 
 export default {
-  props: ['footer'],
+  props: ['footer', 'primary-bg'],
   components: {
     Header,
     Footer
+  },
+  computed: {
+    mainClass() {
+      let classes = []
+      if(this.primaryBg) classes.push('main--primary-bg')
+      return classes
+    },
   }
 }
 </script>
@@ -30,5 +37,8 @@ export default {
 
 #app main {
   flex: 1;
+}
+.main--primary-bg {
+  background-color: var(--primary-bg);
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout primary-bg="true">
     <Section container="md" class="blog-posts">
       
       <div class="mb container-sm text-center author-page">

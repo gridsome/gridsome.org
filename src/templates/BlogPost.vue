@@ -1,5 +1,5 @@
 <template>
-  <GalleryLayout>
+  <Layout primary-bg="true">
     <Section class="post" container="md" dots="true" >
 
       <div class="post-header container-md text-center mb">
@@ -18,7 +18,7 @@
 
       </Card>
     </Section>
-  </GalleryLayout>
+  </Layout>
 </template>
 
 <page-query>
