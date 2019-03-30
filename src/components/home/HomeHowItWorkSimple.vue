@@ -3,8 +3,8 @@
     <h2 class="container text-center">
       How Gridsome Works
     </h2>
-    <p class="text-center lead container-md">
-     <strong>Pull data</strong> from any CMS or data source and use <strong>Vue.js</strong> for front-end. Deploy to any <strong>static web host</strong> for blazing fast, scalable, and secure hosting.
+    <p class="text-center container-md">
+     <strong>Pull data</strong> from any CMS or data source into a unified <strong>GraphQL interface</strong>, and use data in <strong>Vue.js Components</strong>. Deploy to any <strong>static web host</strong> for blazing fast and secure hosting.
     </p>
     <div class="grid-cols grid-cols--gap-large grid-cols--full-md how-it-works mb">
 
@@ -29,7 +29,9 @@
 
       <Card title="Build" class="text-center flex-align-middle">
         
-        <g-image class="image-rotate" src="~/assets/images/spark.png" />
+        <div class="image-rotate">
+          <g-image src="~/assets/images/spark.png" />
+        </div>
 
         <div class="logo-pulse">
           <gridsome-logo />
@@ -126,13 +128,19 @@ export default {
   }
 
   .image-rotate {
-    animation: spin 20s infinite linear;
     position: absolute;
     top:-18%;
-    left:0;
+    left:50%;
+    transform: translateX(-50%);
+    width: 100%;
     pointer-events: none;
     user-select: none;
     z-index: -1;
+    margin: 0;
+
+    img {
+      animation: spin 20s infinite linear;
+    }
   }
 
   .tools {

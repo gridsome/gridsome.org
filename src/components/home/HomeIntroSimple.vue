@@ -65,6 +65,12 @@ export default {
       font-size: 2.4rem;
     }
   }
+
+  @media screen and (max-width: 550px) {
+    &__title {
+      font-size: 2rem;
+    }
+  }
 }
 
 .home-lead {
