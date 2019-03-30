@@ -1,8 +1,8 @@
-# Getting started with Gridsome
+# Get started with Gridsome
 
 > Gridsome is an open-source Vue.js-powered modern site generator that helps developers build [JAMstack](/docs/jamstack) websites and PWAs for any data source. Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert.
 
-### Core features
+## Core features
 
 - **Local development with hot-reloading** - See code changes in real-time.
 - **Pull data from anywhere** - Use any Headless CMS, APIs or Markdown-files for data.
@@ -14,11 +14,12 @@
 - **Static files generation** - Deploy securely to any CDN or static web host.
 
 
-### Prerequisites
+## Prerequisites
 You should have basic knowledge about HTML, CSS, [Vue.js](https://vuejs.org) and how to use the [Terminal](https://www.linode.com/docs/tools-reference/tools/using-the-terminal/). Knowing how [GraphQL](https://www.graphql.com/) works is a plus, but not required. Gridsome is a great way to learn it.
 
 Gridsome requires **Node.js** and recommends **Yarn**. [How to setup](/docs/prerequisites)
 
+## How to install
 
 ### 1. Install Gridsome CLI tool
 
