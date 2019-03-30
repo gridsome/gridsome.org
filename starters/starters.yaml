@@ -1,18 +1,18 @@
 - title: Default starter
-  description: Default starter for Gridsome
   gitUrl: https://github.com/gridsome/gridsome-starter-default
   author: gridsome
 
 - title: Default WordPress starter
-  description: WordPress starter for Gridsome
+  gitUrl: https://github.com/gridsome/gridsome-starter-wordpress
+  author: gridsome
+
+- title: Default Markdown starter
   gitUrl: https://github.com/gridsome/gridsome-starter-wordpress
   author: gridsome
 
 - title: Default Contentful starter
-  description: Contentful starter for Gridsome
   gitUrl: https://github.com/gridsome/gridsome-starter-contentful
   author: gridsome
-
 
 - title: Default Blog Starter
   description: Official Markdown Blog Starter
@@ -62,3 +62,14 @@
     - Typography.js
 
 
+- title: CosmicJS Blog 3
+  description: Gridsome + Cosmic JS
+  screenshot: ./screenshots/gridsome-blog-cosmic-js.png
+  docs: https://github.com/cosmicjs/gridsome-blog
+  preview: https://gridsome-blog-cosmicjs.netlify.com/
+  author: cosmicjs
+  source: cosmicjs
+  features:
+    - Cosmic JS
+    - Next / Previous post navigation
+    - Typography.js
