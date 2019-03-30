@@ -53,11 +53,6 @@ export default {
   svg {
     display: none;
   }
-
-  &__label {
-    text-transform: uppercase;
-    letter-spacing: .75px;
-  }
 }
 
 @media screen and (max-width: 850px) {

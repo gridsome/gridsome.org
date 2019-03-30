@@ -3,14 +3,14 @@
     <Section dark="true" class="starters-header">
       <h1 class="text-center">Gridsome Starters</h1>
 
-      <div class="starters-nav nav flex flex--center gap-15">
+      <nav class="starters-nav flex flex--center gap-15">
         <a>All</a>
         <a>Markdown</a>
         <a>Contentful</a>
         <a>WordPress</a>
         <a>Drupal</a>
         <a>CosmicJs</a>
-      </div>
+      </nav>
     </Section>
     <Section>
 
