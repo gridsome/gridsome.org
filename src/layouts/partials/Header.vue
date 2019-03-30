@@ -125,6 +125,9 @@ header {
     .logo {
       margin-right: 0;
     }
+    .main-nav {
+      color: #000;
+    }
   }
   .header-actions {
     margin-left: auto !important;
