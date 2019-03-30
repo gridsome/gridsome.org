@@ -1,5 +1,5 @@
 <template>
-  <Section class="home-intro" dots="true">
+  <Section class="home-intro" dots="true" dark="true">
     <div class="text-center">
 
         <div class="home-message" hidden>

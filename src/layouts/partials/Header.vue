@@ -101,10 +101,10 @@ header {
   z-index: 20;
   position: relative;
   top: 0;
-  border-bottom: 1px solid var(--border-color);
+  background-color: var(--dark-bg);
+  color:#FFF;
   flex-wrap: nowrap;
   position: sticky;
-  background-color: var(--light-bg-transparent);
 
   .header-bar {
     background-color: var(--primary-color);

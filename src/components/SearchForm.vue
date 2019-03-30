@@ -43,10 +43,12 @@ export default {
     border-radius: 5px;
     width: 200px;
     padding: 0.3rem 0.6rem 0.27rem;
+    color: currentColor;
+    background-color: rgba(255,255,255,.1);
+    border-color: transparent;
 
     &:focus {
-      background-color: rgba(255, 255, 255, 0.1);
-      box-shadow: var(--glow);
+      background-color: rgba(255,255,255,.3);
     }
   }
 }
