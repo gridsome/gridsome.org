@@ -3,7 +3,7 @@
     <div class="flex flex-align-top">
       <div class="sidebar">
         
-        <transition-group name="menu-item">
+        <transition-group name="menu-item" tag="div">
           <template v-for="(group, i1) in links">
             <h3 class="menu-item" :key="`title-${i1}`">{{ group.title }}</h3>
 
