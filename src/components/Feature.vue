@@ -21,7 +21,8 @@ export default {
 
 <style lang="scss">
   .feature {
-    margin-bottom: 2rem;
+    margin-bottom: var(--space-x2);
+    padding: 0 var(--space);
 
     h3 {
       margin-bottom: .5rem;
