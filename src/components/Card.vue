@@ -35,7 +35,6 @@ export default {
     border-radius: 4px;
     background-color: var(--light-bg);
     transition: color.3s, box-shadow .3s, transform .3s;
-    box-shadow: 2px 2px 5px 0 rgba(0,0,0,.05);
     position: relative;
     z-index: 1;
 
