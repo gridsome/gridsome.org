@@ -3,7 +3,7 @@
     <h2 class="container text-center">
       How Gridsome Works
     </h2>
-    <p class="text-center container-md">
+    <p class="lead text-center container-md" style="margin-bottom: 3rem;">
      <strong>Pull data</strong> from any CMS or data source into a unified <strong>GraphQL interface</strong>, and use <strong>Vue.js</strong> for front-end. Deploy to any <strong>static web host</strong> for blazing fast and secure hosting.
     </p>
     <div class="grid-cols grid-cols--gap-large grid-cols--full-md how-it-works mb">
