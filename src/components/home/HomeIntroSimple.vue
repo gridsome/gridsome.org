@@ -27,9 +27,7 @@
             <span>GitHub (v{{ $static.metaData.gridsomeVersion }})</span>
           </a>
         </p>
-    </div>
-    <Ecosystem />
-    
+    </div>    
   </Section>
 </template>
 
@@ -42,12 +40,10 @@ query HomeIntro {
 </static-query>
 
 <script>
-import Ecosystem from '~/components/Ecosystem.vue'
 import VueLogo from '~/assets/images/vue-logo.svg'
 
 export default {
   components: {
-    Ecosystem,
     VueLogo,
   }
 }

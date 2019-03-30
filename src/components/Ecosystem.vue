@@ -1,6 +1,8 @@
 <template>
 	<div class="ecosystem">
 
+		<h5 class="text-center">Gridsome Ecosystem</h5>
+
 		<div class="ecosystem__cols grid-cols grid-cols--4">
 
 			<Card class="ecosystem__item" link="/docs">
