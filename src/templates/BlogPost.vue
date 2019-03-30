@@ -1,5 +1,5 @@
 <template>
-  <Layout primary-bg="true">
+  <Layout >
     <Section class="post" container="md" dots="true" >
 
       <div class="post-header container-md text-center mb">
