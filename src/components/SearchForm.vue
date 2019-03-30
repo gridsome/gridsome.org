@@ -44,11 +44,11 @@ export default {
     width: 200px;
     padding: 0.3rem 0.6rem 0.27rem;
     color: currentColor;
-    background-color: rgba(255,255,255,.1);
+    background-color: rgba(255, 255, 255, .1);
     border-color: transparent;
 
     &:focus {
-      background-color: rgba(255,255,255,.3);
+      background-color: rgba(255, 255, 255, .3);
     }
   }
 }

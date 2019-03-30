@@ -1,10 +1,9 @@
 <template>
   <Layout primary-bg="true" class="starters">
-   <Section>
+    <Section dark="true" class="starters-header">
+      <h1 class="text-center">Gridsome Starters</h1>
 
-      <h1 class="text-center container-sm">Gridsome Starters</h1>
-
-      <div class="starters-nav nav flex gap-15 flex--center mb">
+      <div class="starters-nav nav flex flex--center gap-15">
         <a>All</a>
         <a>Markdown</a>
         <a>Contentful</a>
@@ -12,6 +11,8 @@
         <a>Drupal</a>
         <a>CosmicJs</a>
       </div>
+    </Section>
+    <Section>
 
       <div class="default-starters">
         <div class="default-starters__title flex gap-15">
@@ -132,10 +133,7 @@ export default {
   }
 }
 
-.starters-header {
-  border-bottom: 1px solid var(--border-color);
-  background-color: #FFF;
-}
+
 
 .default-starters {
   margin-bottom: 2rem;
@@ -143,6 +141,7 @@ export default {
   &__title {
     margin-bottom: 1rem;
     h2 { margin-bottom: 0; }
+    p { opacity: .8; }
   }
 }
 
