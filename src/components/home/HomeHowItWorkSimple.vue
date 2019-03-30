@@ -29,7 +29,7 @@
 
       <Card title="Build" class="text-center flex-align-middle">
         
-        <div class="image-rotate">
+        <div class="spark-rotate">
           <g-image src="~/assets/images/spark.png" />
         </div>
 
@@ -111,7 +111,7 @@ export default {
 
 <style lang="scss">
 .how-it-works {
-  font-size: .9rem;
+
   line-height: 1.6;
 
   .bullet-list {
@@ -132,9 +132,9 @@ export default {
     padding: 40px;
   }
 
-  .image-rotate {
+  .spark-rotate {
     position: absolute;
-    top:-18%;
+    top:-14%;
     left:50%;
     transform: translateX(-50%);
     width: 100%;
@@ -170,7 +170,7 @@ export default {
     position: relative;
     height: 100px;
     margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 18%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -213,7 +213,7 @@ export default {
 
   &--horizontal {
     left: 100%;
-    top: 50%;
+    top: 40%;
     z-index: 999;
     width: 50px;
     height: 50px;

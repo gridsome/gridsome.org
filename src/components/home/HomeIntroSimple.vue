@@ -8,7 +8,7 @@
         
 
         <h1 class="home-intro__title post"> 
-          <em>Faster development, faster websites</em>
+          <em>Faster</em> development, <em>faster</em> websites
         </h1>
 
         <p class="home-lead lead post">
