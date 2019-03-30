@@ -26,6 +26,7 @@ export default {
   svg{
   	max-width: 140px;
   	height: auto;
+    margin-top: -3px;
   }
   &:hover {
  		opacity: .8;

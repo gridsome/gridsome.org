@@ -30,7 +30,7 @@
       <Card title="Build" class="text-center flex-align-middle">
         
         <div class="spark-rotate">
-          <g-image src="~/assets/images/spark.png" />
+          <g-image alt="Spark" src="~/assets/images/spark.png" />
         </div>
 
         <div class="logo-pulse">
@@ -134,7 +134,7 @@ export default {
 
   .spark-rotate {
     position: absolute;
-    top:-14%;
+    top:-12%;
     left:50%;
     transform: translateX(-50%);
     width: 100%;
