@@ -51,6 +51,8 @@ export default {
 
 <style lang="scss">
 .home-intro {
+  padding: 6% 0;
+
   &__title {
     font-size: 3.2rem;
     color: var(--primary-color);
