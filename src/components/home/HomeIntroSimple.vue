@@ -8,7 +8,7 @@
         
 
         <h1 class="home-intro__title post"> 
-          Build websites that are <em>fast</em> by default
+          <em>Faster development, faster websites</em>
         </h1>
 
         <p class="home-lead lead post">
@@ -52,7 +52,7 @@ export default {
 <style lang="scss">
 .home-intro {
   &__title {
-    font-size: 3rem;
+    font-size: 3.2rem;
     color: var(--primary-color);
   }
 
