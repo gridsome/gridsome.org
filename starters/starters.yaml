@@ -5,14 +5,17 @@
 - title: Default WordPress starter
   gitUrl: https://github.com/gridsome/gridsome-starter-wordpress
   author: gridsome
+  platforms: wordpress
 
 - title: Default Markdown starter
   gitUrl: https://github.com/gridsome/gridsome-starter-wordpress
   author: gridsome
+  platforms: markdown
 
 - title: Default Contentful starter
   gitUrl: https://github.com/gridsome/gridsome-starter-contentful
   author: gridsome
+  platforms: contentful
 
 - title: Default Blog Starter
   description: Official Markdown Blog Starter

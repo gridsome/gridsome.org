@@ -53,8 +53,9 @@ module.exports = function (api) {
       // route: '/starter/:id'
     })
 
-    // Connect author field to Contributors
+    // Connect author field to Contributors & Platforms
     starters.addReference('author','Contributor')
+    starters.addReference('platforms','Platform')
 
     startersJson.forEach(({ id, name: title, ...fields }) => {
       starters.addNode({
@@ -65,8 +66,28 @@ module.exports = function (api) {
           origin: startersPath
         }
       })
-    }) 
+    })
 
+    // Platforms
+    const platformsPath = path.join(__dirname, 'platforms/platforms.yaml')
+    const platformsRaw = await fs.readFile(platformsPath, 'utf8')
+    const platformsJson = yaml.safeLoad(platformsRaw)
+    const platforms = store.addContentType({
+      typeName: 'Platform',
+      // route: '/starter/:id'
+    })
+
+    // Connect author field to Contributors
+    platformsJson.forEach(({ id, name: title, ...fields }) => {
+      platforms.addNode({
+        id,
+        title,
+        fields,
+        internal: {
+          origin: platformsPath
+        }
+      })
+    }) 
 
   })
 

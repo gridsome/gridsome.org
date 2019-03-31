@@ -1,0 +1,15 @@
+- id: wordpress
+  title: WordPress
+  logo: ./logos/wordpress.svg
+
+- id: markdown
+  title: Markdown
+  logo: ./logos/markdown.svg
+
+- id: contentful
+  title: Contentful
+  logo: ./logos/contentful.svg
+
+- id: drupal
+  title: Drupal
+  logo: ./logos/drupal.svg
