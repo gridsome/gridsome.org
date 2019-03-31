@@ -54,8 +54,7 @@ export default {
   padding: 6% 0;
 
   &__title {
-    font-size: 3.2rem;
-    color: var(--primary-color);
+    font-size: 3.3rem;
   }
 
   @media screen and (max-width: 850px) {
