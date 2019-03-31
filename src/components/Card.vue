@@ -111,7 +111,7 @@ export default {
     }
 
     p:not(:last-child) {
-      margin-bottom: 1rem;
+      margin-bottom: 1.2rem;
     }
   }
 </style>

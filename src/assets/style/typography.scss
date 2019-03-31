@@ -10,11 +10,20 @@
   font-display: swap;
 }
 
+
 @font-face {
   font-family: Jost;
   src: url(../fonts/Jost-500-Medium.otf);
   font-weight: 500;
   font-display: swap;
+}
+
+@font-face {
+  font-family: Jost;
+  src: url(../fonts/Jost-500-MediumItalic.otf);
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
 }
 
 @font-face {

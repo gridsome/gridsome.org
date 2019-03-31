@@ -69,6 +69,10 @@
           <li><Bullet /><g-link to="/docs/how-it-works#client-side-hydration">HTML → Vue.js Hydration</g-link></li>
         </ul>
 
+        <svg width="20" height="20" viewBox="0 0 1 37" class="dot" style="margin:3px 0 8px; opacity: .5;">
+          <path d="M0.5 0L0.500002 37"/>
+        </svg>
+
         <h4>Static Web Hosts</h4>
         <p>
           <g-link to="/docs/deploy-to-netlify">Netlify</g-link>, <g-link to="/docs/deploy-to-amplify">AWS Amplify</g-link>, <g-link to="/docs/deploy-to-zeit-now">Zeit Now</g-link>, <g-link to="/docs/deploy-to-amazon-s3">Amazon S3</g-link>, Surge.sh, Aerobatic, Now.sh & many more.
@@ -111,11 +115,10 @@ export default {
 
 <style lang="scss">
 .how-it-works {
-
   line-height: 1.6;
 
   .bullet-list {
-    margin: 1rem 0 1.5rem;
+    margin: 1rem 0 0;
   }
 
   .bullet-list li {
@@ -129,12 +132,12 @@ export default {
   }
 
   .card__inner {
-    padding: 40px;
+    padding: 30px 40px;
   }
 
   .spark-rotate {
     position: absolute;
-    top:-12%;
+    top:-14%;
     left:50%;
     transform: translateX(-50%);
     width: 100%;
@@ -199,19 +202,21 @@ export default {
 
 }
 .dot {
-  height: 30px;
   margin: 15px 0;
   text-align: center;
-  position: absolute;
-  top: 100%;
-  left: 0;
   stroke: var(--primary-color);
   stroke-width: 5px;
   stroke-linecap: round;
   stroke-dasharray: 0 10;
   animation: stroke 600ms linear infinite;
 
-  &--horizontal {
+  .card > & {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  .card > &--horizontal {
     left: 100%;
     top: 40%;
     z-index: 999;
