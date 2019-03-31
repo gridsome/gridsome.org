@@ -21,3 +21,5 @@ The default project that is created with Gridsome CLI.
 
 ### Git-repositories
 `gridsome create my-website https://github.com/gridsome/gridsome-starter-markdown-blog.git`
+
+[Learm more](https://github.com/gridsome/gridsome-starter-markdown-blog.git)
