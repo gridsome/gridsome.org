@@ -12,7 +12,7 @@
         </h1>
 
         <p class="home-lead lead post">
-          Gridsome is a <strong>Vue.js based</strong> framework that makes it easy and fun for developers to create beautiful, modern websites & apps that are <em>fast by default</em>.
+          Gridsome is a <strong>Vue.js based</strong> framework that makes it easy and fun for developers to create beautiful, modern <strong>websites & apps</strong> that are <em>fast by default</em>.
         </p>
 
         <p class="home-links">
