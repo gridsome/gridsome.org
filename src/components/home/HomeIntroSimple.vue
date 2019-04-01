@@ -52,6 +52,10 @@ export default {
 <style lang="scss">
 .home-intro {
   border-top:0;
+  
+  .section__dots-bg {
+    bottom: 0;
+  }
 
   &__title {
     font-size: 3.3rem;

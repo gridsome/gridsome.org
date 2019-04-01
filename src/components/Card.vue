@@ -41,7 +41,7 @@ export default {
     &__title {
       text-align: center;
       width: 100%;
-      margin-top: -12px;
+      margin-top: -15px;
 
       span {
         display: inline-block;
