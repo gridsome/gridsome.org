@@ -12,12 +12,15 @@ The default project that is created with Gridsome CLI.
 
 [Learn more](https://github.com/gridsome/gridsome-starter-default)
 
+### Gridsome Starter Blog
+A simple, hackable & minimalistic starter for Gridsome that uses Markdown for content.
+
+`gridsome create my-blog https://github.com/gridsome/gridsome-starter-blog`
+
+[Learn more](https://github.com/gridsome/gridsome-starter-blog)
+
 
 ### WordPress
 `gridsome create my-website wordpress`
 
 [Learn more](https://github.com/gridsome/gridsome-starter-wordpress)
-
-
-### Git-repositories
-`gridsome create my-website https://github.com/gridsome/gridsome-starter-markdown-blog.git`
