@@ -65,7 +65,7 @@
         </template>
         <template v-else>
           <div class="plugins-intro post">
-            <g-image class="plugins-intro__image" width="1000" blur="10" src="~/assets/images/spark-logo.png" />
+            <g-image src="~/assets/images/connect.png" width="1000" blur="10" retina="true" alt="The Modern Web" />
             <div class="plugins-intro__text">
               <h1>Gridsome Plugins</h1>
               <p class="lead">Gridsome plugins are NPM packages that you can install to any project. This is currently a small, but growing library. <span class="hide-for-small">Use the search bar to the left to find a plugin.</span></p>

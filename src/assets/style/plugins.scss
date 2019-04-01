@@ -116,15 +116,10 @@
 .plugins-intro {
   text-align: center;
 
-  &__text {
-    margin: -20% auto 0;
-    max-width: 550px;
-  }
-
-  &__image {
-    margin: 0 auto;
-    max-width: 500px;
+  img {
     width: 100%;
+    max-width: 500px;
+    margin:0;
   }
 }
 
