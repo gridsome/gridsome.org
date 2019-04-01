@@ -1,5 +1,5 @@
 <template>
-  <Section dots="true" primary="true" class="post">
+  <Section dots="true" class="post">
     <h2 class="container text-center">
       How Gridsome Works
     </h2>
@@ -86,12 +86,8 @@
         Learn more about how it works
       </g-link>
     </p>
-
-    <Ecosystem />
-
   </Section>
 </template>
-
 
 <script>
 import GraphQlLogo from '~/assets/images/graphql-logo.svg'
@@ -99,7 +95,6 @@ import VueLogo from '~/assets/images/vue-logo.svg'
 import WebpackLogo from '~/assets/images/webpack-logo.svg'
 import GridsomeLogo from '~/assets/images/gridsome-small-white.svg'
 import Bullet from '~/assets/images/bullet.svg'
-import Ecosystem from '@/components/Ecosystem.vue'
 
 export default {
   components: {
@@ -108,7 +103,6 @@ export default {
     GridsomeLogo,
     WebpackLogo,
     GraphQlLogo,
-    Ecosystem
   }
 }
 </script>

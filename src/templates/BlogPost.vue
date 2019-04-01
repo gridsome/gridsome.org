@@ -1,11 +1,10 @@
 <template>
-  <Layout >
+  <Layout primary-bg="true">
     <Section class="post" container="md" dots="true" >
 
       <div class="post-header container-md text-center mb">
         <h1 v-html="$page.post.title"/>
         <PostMeta :post="$page.post"/>
-
       </div>
 
       <div class="post-content">
@@ -62,8 +61,9 @@ export default {
 
 <style lang="scss">
 .post-content {
- .card__inner {
-    padding: var(--space-x2);
-  }
+  border: 1px solid var(--border-color-darker);
+  border-radius: 4px;
+  background-color: var(--light-bg);
+  padding: var(--space-x2);
 }
 </style>
