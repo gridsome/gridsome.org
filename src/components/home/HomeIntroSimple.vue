@@ -59,6 +59,7 @@ export default {
 
   &__title {
     font-size: 3.3rem;
+    color: var(--primary-color-dark);
   }
 
   @media screen and (max-width: 850px) {
