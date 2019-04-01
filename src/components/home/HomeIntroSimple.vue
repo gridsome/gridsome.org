@@ -1,5 +1,5 @@
 <template>
-  <Section class="home-intro" dots="true" dark="true">
+  <Section class="home-intro" dots="true" primary="true">
     <div class="text-center">
 
         <div class="home-message" hidden>
@@ -51,7 +51,11 @@ export default {
 
 <style lang="scss">
 .home-intro {
-  padding: 6% 0;
+  border-top:0;
+  
+  .section__dots-bg {
+    bottom: 0;
+  }
 
   &__title {
     font-size: 3.3rem;

@@ -99,8 +99,8 @@ header {
   z-index: 20;
   position: relative;
   top: 0;
-  background-color: var(--dark-bg);
-  color:#FFF;
+  background-color: var(--light-bg-transparent);
+  border-bottom: 1px solid var(--border-color);
   flex-wrap: nowrap;
   position: sticky;
 

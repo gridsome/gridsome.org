@@ -40,13 +40,7 @@ export default {
   font-size: 0.9rem;
 
   & &__input {
-    border-radius: 5px;
-    width: 200px;
-    padding: 0.3rem 0.6rem 0.27rem;
-    color: currentColor;
-    background-color: rgba(255, 255, 255, .1);
-    border-color: transparent;
-
+    max-width: 200px;
     &:focus {
       background-color: rgba(255, 255, 255, .3);
     }

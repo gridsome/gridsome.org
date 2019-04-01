@@ -1,6 +1,6 @@
 <template>
   <Layout primary-bg="true" class="starters">
-    <Section dark="true" dots="true" class="starters-header">
+    <Section dots="true" class="starters-header">
       <h1 class="text-center">Gridsome Starters</h1>
 
       <nav class="starters-nav flex flex--center gap-15">
@@ -136,6 +136,11 @@ export default {
     margin-bottom: 1rem;
     font-size: 1.3rem;
   }
+}
+
+.starters-header {
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--light-bg);
 }
 
 .default-starters {
