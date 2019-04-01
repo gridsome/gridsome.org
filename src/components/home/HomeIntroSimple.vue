@@ -72,15 +72,9 @@ export default {
 
 .home-lead {
   font-size: 1.4rem;
-  max-width: 900px;
+  max-width: 920px;
   margin-left: auto;
   margin-right: auto;
-
-  @media screen and (max-width: 850px) {
-    & {
-      font-size: 1.05rem;
-    }
-  }
 }
 
 
