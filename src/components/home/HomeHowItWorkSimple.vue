@@ -60,7 +60,7 @@
       </Card>
 
       <Card title="Deploy">
-        <h4>Static Site Generation</h4>
+        <h4>Static Pre-rendering</h4>
         
         <ul class="bullet-list">
           <li><Bullet /><g-link to="/docs/how-it-works#the-prpl-pattern">PRPL-pattern</g-link></li>
