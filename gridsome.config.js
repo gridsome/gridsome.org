@@ -66,25 +66,6 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        index: ['README'],
-        path: 'learn/**/*.md',
-        typeName: 'LearnPage',
-        remark: {
-          autolinkHeadings: {
-            content: {
-              type: 'text',
-              value: '#'
-            }
-          },
-          plugins: [
-            '@gridsome/remark-prismjs'
-          ]
-        }
-      }
-    },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
         path: 'examples/*.md',
         typeName: 'Example',
         remark: {
