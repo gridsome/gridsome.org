@@ -4,7 +4,7 @@
       <div class="text-center">
         <h2>Connect the Modern Web</h2>
         <p class="lead">
-          The Modern Web is decoupled and modular. Gridsome makes it easy to build <g-link to="/docs/jamstack/">JAMstack</g-link> websites for any Headless CMS, APIs and modern web services with <strong>plugins.</strong>
+          The Modern Web is decoupled and modular. Gridsome makes it easy to build <g-link to="/docs/jamstack">JAMstack</g-link> websites for any Headless CMS, APIs and modern web services with <strong>plugins.</strong>
         </p>
         <p><g-link to="/plugins">Browse Gridsome Plugins</g-link></p>
       </div>
