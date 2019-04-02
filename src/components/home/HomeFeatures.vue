@@ -4,7 +4,7 @@
 
       <Feature>
         <h3>Easy, local development</h3>
-        <p>Gridsome makes building websites fun again. Enjoy modern dev tools like <strong>Vue.js, GraphQL & webpack.</strong> Get instant <strong>hot-reloading</strong> for any data change while developing locally.
+        <p>Enjoy modern development tools like <strong>Vue.js, GraphQL & webpack.</strong> Get instant <strong>hot-reloading</strong> for any code change. <strong>Gridsome makes building websites fun again.</strong>
         </p>
       </Feature>
 
@@ -15,27 +15,25 @@
 
       <Feature>
         <h3>Fast by default</h3>
-        <p> Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert. It follows the <g-link to="/docs/how-it-works#the-prpl-pattern">PRPL-pattern</g-link> to get close to perfect page speed scores.
+        <p>Gridsome loads only the critical HTML, CSS, data, and JavaScript so your site loads as fast as possible.  Once loaded, Gridsome prefetches resources for other pages so clicking around the site feels incredibly fast.
         </p>     
       </Feature>
 
-
       <Feature>
-        <h3>PWA-ready</h3>
-        <p>Gridsome is a <strong>static PWA generator</strong>. It pre-renders all pages to <strong>load as fast as possible</strong>. Once loaded, the next pages are prefetched in background for super fast browsing.
+        <h3>Static Generated PWAs</h3>
+        <p>Build beautiful, offline-ready, static PWAs with Gridsome. Gridsome builds ultra high performance into every page by following the <g-link to="/docs/how-it-works#the-prpl-pattern">PRPL-pattern</g-link>. A pattern for structuring and serving Progressive Web Apps.
         </p>
       </Feature>
 
       <Feature>
         <h3>Simple, safe deployment</h3>
-        <p>Grisome makes it easy to build fast & secure <g-link to="/docs/jamstack">JAMstack</g-link> websites. <strong>No servers. No databases. Only files. </strong> Deploy your entire site to a CDN and forget about it.</strong>
+        <p>Grisome makes it easy to build fast & secure <g-link to="/docs/jamstack">JAMstack</g-link> websites. <strong>No servers. No databases. Only files. </strong> Deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site.</strong>
         </p>     
       </Feature>
 
-
       <Feature>
         <h3>SEO-friendly SPA</h3>
-        <p>Gridsome outputs static HTML before it hydrates into a fully <strong>Vue.js-powered SPA</strong>. This makes search engines able to crawl content and give <strong>better SEO ranking</strong>.</p>
+        <p>Gridsome sites loads as static HTML before it hydrates into a fully Vue.js-powered SPA. This makes it possible for search engines able to crawl content and give better SEO ranking, and still have all the power of Vue.js.</p>
       </Feature>
 
     </div>
