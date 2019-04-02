@@ -1,5 +1,5 @@
 <template>
-  <Section dots="true" class="post">
+  <Section dots="true" class="post"  primary="true">
 
       <h5 class="text-center">
         How Gridsome Works

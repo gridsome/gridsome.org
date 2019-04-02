@@ -4,7 +4,7 @@
       <div class="text-center">
         <h2>Connect the Modern Web</h2>
         <p class="lead">
-          The Modern Web is decoupled and modular. With Gridsome you are no longer limited by the CMS. Gridsome makes it easy to build websites by using any content APIs and web services. Use <g-link to="/plugins">plugins</g-link> to connect to any service.
+          The Modern Web is decoupled and modular. With Gridsome you are no longer locked in by the CMS. Gridsome makes it easy to build websites by using any content APIs and modern web services with <g-link to="/plugins">plugins</g-link>.
         <p>
           <g-link to="/plugins">Go to Gridsome Plugins</g-link>
         </p>
