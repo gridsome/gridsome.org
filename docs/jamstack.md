@@ -10,7 +10,6 @@ JAMstack is a new way of building websites and apps that delivers better perform
 ### ⚡️ Better Performance
 
 Why wait for pages to build on the fly when you can generate them at deploy time? When it comes to minimizing the time to first byte, nothing beats pre-built files served over a CDN.
-**Gridsome** also builds ultra performance into every page by using the [PRPL-pattern](/docs/how-it-works#the-prpl-pattern).
 
 
 ### ⚡️ Higher Security

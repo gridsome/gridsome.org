@@ -132,10 +132,6 @@ export default {
   }
 }
 
-.home-info {
-  font-size: .85rem;
-  opacity: .6;
-}
 
 .home-anim {
   position: relative;

@@ -4,12 +4,12 @@
       link: /docs
     - title: How it works
       link: /docs/how-it-works
-    - title: What is the JAMstack?
-      link: /docs/jamstack
     - title: Starter kits
       link: /docs/starters
     - title: Deployment
       link: /docs/deployment
+    - title: What is the JAMstack?
+      link: /docs/jamstack
 
 - title : Basic Gridsome
   items:
