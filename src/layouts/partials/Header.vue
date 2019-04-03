@@ -2,11 +2,12 @@
   <header>
     <div class="header-bar"></div>
     <div class="header-inner flex gap-30">
-        <Logo/>
-      
-      <SearchForm class="hide-for-small"/>
+      <Logo/>
+    
 
       <Nav class="flex-fit"/>
+      
+      <SearchForm class="hide-for-small"/>
 
       <nav class="header-actions flex">
         <a

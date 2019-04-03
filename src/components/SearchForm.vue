@@ -41,6 +41,7 @@ export default {
 
   & &__input {
     max-width: 200px;
+    background-color: var(--primary-bg);
     &:focus {
       background-color: rgba(255, 255, 255, .3);
     }
