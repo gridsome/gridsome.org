@@ -4,6 +4,8 @@ Layout components are used to wrap pages and templates. Layouts should contain c
 
 Layouts are _just_  **.vue components** located in `src/layouts` and need to be [declared as a global](#make-a-layout-global) component or imported per page to be used.
 
+> Having layouts imported as normal Vue Components, and not declared as an option for the component like for example **Nuxt.js** does, is to make it possible to pass **props** and **slots** to layouts. This makes layouts components very flexible.
+
 **Every layout requires a `<slot />` component.** This is where the content coming from pages and templates will be inserted. Layouts can have [multiple slots](#multiple-content-slots).
 
 ```html
