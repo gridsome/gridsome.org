@@ -19,5 +19,13 @@ The default project that is created with Gridsome CLI.
 [Learn more](https://github.com/gridsome/gridsome-starter-wordpress)
 
 
-### Git-repositories
+### Git-repositories:
+#### gridsome-starter-markdown-blog
 `gridsome create my-website https://github.com/gridsome/gridsome-starter-markdown-blog.git`
+
+[Learn more](https://github.com/gridsome/gridsome-starter-markdown-blog.git)
+
+#### gridsome-starter-blog
+`gridsome create my-website https://github.com/gridsome/gridsome-starter-blog.git`
+
+[Learn more](https://github.com/gridsome/gridsome-starter-blog)
