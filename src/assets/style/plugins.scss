@@ -88,7 +88,7 @@
 
   &__name {
     font-weight: 500;
-    display: inline-block;
+    display: block;
   }
 
   &__description {
@@ -119,6 +119,10 @@
   .connect {
     max-width: 500px;
     margin:0 auto;
+
+    svg path {
+      animation: stroke 600ms linear infinite;
+    }
   }
 }
 

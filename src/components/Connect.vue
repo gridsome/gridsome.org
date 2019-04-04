@@ -36,7 +36,7 @@ export default {
    svg path {
     stroke-width: 9px;
     stroke-linecap: round;
-    stroke-dasharray: 0 25;
+    stroke-dasharray: 0 30;
     stroke: var(--primary-color);
     opacity: 0.5;
   }

@@ -61,6 +61,7 @@ export default {
 <style lang="scss">
 .home-intro {
   border-top:0;
+  padding: calc(15px + 1%) 0;
   
   &__title {
     font-size: 3em;
@@ -81,10 +82,8 @@ export default {
 }
 
 .home-lead {
-  font-size: 1.4rem;
-  max-width: 920px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 1.3rem;
+  padding: 0 2%;
 }
 
 

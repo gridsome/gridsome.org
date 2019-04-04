@@ -47,7 +47,7 @@ nav {
   }
 
   .dropdown {
-    background-color: var(--primary-bg);
+    background-color: #FFF;
     pointer-events: none;
     visibility: hidden;
     z-index: 10;
@@ -57,7 +57,7 @@ nav {
     right:0;
     width: 200px;
     border-radius: 3px;
-    padding: 10px 20px 20px;
+
     box-shadow: 1px 1px 5px rgba(0,0,0,.3);
     transform: translateY(-5px);
     opacity: 0;
@@ -77,6 +77,11 @@ nav {
     a {
       justify-content: flex-start;
       font-size: .9rem;
+      padding: 8px 15px;
+
+      &:hover {
+        background-color: var(--primary-bg);
+      }
     }
   }
 }
