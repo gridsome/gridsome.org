@@ -76,7 +76,31 @@ module.exports = function (api) {
 ..
 
 ### YAML
-..
+Here is a simple example on how you can use YAML files within .vue templates:
+1. Create a YAML file in `/src/data` folder. Let it be `products.yaml`
+2. Add `import products from @/data/products.yaml` before `export default` function.
+3. Add a `computed` property called the same: `products() { return products }`
+
+The code will look like this:
+```html
+<template>
+  <ul v-for="product in products">
+    <li v-html="product.title"/>
+  </ul>
+</template>
+
+<script>
+import products from '@/data/products.yaml'
+
+export default {
+  computed: {
+    products() {
+      return products
+    }
+  }
+}
+</script>
+```
 
 ### CSV
 ..
