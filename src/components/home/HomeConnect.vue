@@ -8,8 +8,9 @@
         </p>
         <p><g-link to="/plugins">Browse Gridsome Plugins</g-link></p>
       </div>
+      
       <div>
-        <g-image src="~/assets/images/connect.png" width="1180" blur="10" retina="true" alt="The Modern Web" />
+        <Connect />
       </div>
 
     </div>
@@ -17,7 +18,13 @@
 </template>
 
 <script>
+import Connect from '~/components/Connect.vue'
 
+export default {
+  components: {
+    Connect
+  }
+}
 </script>
 
 <style lang="scss">

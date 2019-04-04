@@ -54,7 +54,7 @@ export default {
   border-top:0;
   
   &__title {
-    font-size: 3.3rem;
+    font-size: 3em;
     color: var(--primary-color);
   }
 

@@ -201,7 +201,7 @@ export default {
   stroke: var(--primary-color);
   stroke-width: 5px;
   stroke-linecap: round;
-  stroke-dasharray: 0 10;
+  stroke-dasharray: 0 15;
   animation: stroke 600ms linear infinite;
 
   .card > & {
