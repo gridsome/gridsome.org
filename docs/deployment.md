@@ -4,7 +4,7 @@ Gridsome is a modern website generator that generates secure & static files. To 
 
 ## Git-based deploying
 
-The best practice when working with Gridsome sites is to have your project hosted on a Git-service like GitHub and connect a deploy service that builds your site from a selected repository. [Netlify](//www.netlify.com/) is a great solution for this right now. They also have free plan for static website hosting. It's also possible to set up auto re-deploys if the repository or content changes.
+The best practice when working with Gridsome sites is to have your project hosted on a Git-service like GitHub and connect a deploy service that builds your site from a selected repository.
 
 
 These services are great for Git-based deploying:
