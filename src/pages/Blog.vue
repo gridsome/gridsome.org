@@ -1,6 +1,6 @@
 <template>
   <Layout primary-bg="true">
-     <Section container="md" class="blog-posts" dots="true">
+     <Section container="md" class="blog-posts">
       <div class="mb container-sm text-center">
         <h1>Gridsome Blog</h1>
       </div>

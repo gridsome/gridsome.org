@@ -1,17 +1,34 @@
 # Images
 
-> Gridsome has a built-in `<g-image>` component that outputs an optimized progressive image. It also resizes and crops in real-time when developing. There is no fake resizing with CSS.
+Gridsome has a built-in `<g-image>` component that outputs an optimized **progressive image**. It also resizes and crops in real-time when developing.
 
-`<g-image>` compress and lazy-load images automatically. The images will be resized down to 480, 1024, 1920 and 2560 pixels by default. A blurred version is displayed while the image is being loaded. And a fallback `img` tag for browsers without JavaScript enabled is also generated.
+A typical image component will look like this:
 
-> Only local, relative image paths will be compressed by Gridsome.
+```html
+<g-image src="~/image.png" width="500"/>
+```
+💡 `~` is an alias to **/src/** folder.
+
+📣 **Only local, relative image paths will be compressed by Gridsome.**
+
+ 
+
+### How it works
+
+- **A IMG element with a source srcset is used.** This means that using several media queries, you load the smallest image that matches your device (e.g. mobile devices get smaller images, desktop devices get larger images, etc.). The images will be resized down to 480, 1024, 1920 and 2560 pixels by default.
+
+- **A base64 blurred image loaded by default.** This makes: 1) Larger images outside the viewport are not requested until they’re needed, and 2) The blurred image is in a container with the same dimensions as the real image—therefore, no jumping when the image loads.
+
+- **An Intersection Observer** that swaps the base image for the larger image, when the image is in the viewport. (Lazy loading).
+
+
 
 ## Usage in Vue templates
 
 A `<g-image>` component is available in all your Vue templates and can be used to to compress local images. The `src` attribute and options like `width`, `height` and `quality` must be static values because they are compiled into an object which contains URLs and other information that will be rendered into an `img` tag.
 
 ```html
-<g-image src="./image.png" width="500"/>
+<g-image src="~/assets/image.png" width="500"/>
 ```
 
 ## Usage via GraphQL
