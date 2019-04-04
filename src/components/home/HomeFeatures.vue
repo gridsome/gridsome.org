@@ -3,36 +3,36 @@
     <div class="homepage-features grid-cols">
 
       <Feature>
-        <h3>Easy, local development</h3>
-        <p>Enjoy modern development tools like <strong>Vue.js, GraphQL & webpack.</strong> Get instant <strong>hot-reloading</strong> for any code change. <strong>Gridsome makes building websites fun again.</strong>
+        <h3>Faster, modern development</h3>
+        <p>Enjoy modern development tools like<br> <vue-logo width="24" height="24" /> Vue.js, <graph-ql-logo width="24" height="24" /> GraphQL & <webpack-logo width="28" height="28" />webpack. Get instant <strong>hot-reloading</strong> for any code change when developing. <em>Gridsome makes building websites fun again.</em>
         </p>
       </Feature>
 
       <Feature>
-        <h3>Bring your own data</h3>
-        <p>Load data from any Headless CMS, APIs, static files, a database, or from multiple places at once. Gridsome combines them all into a simple, local <g-link to="/docs/how-it-works">GraphQL data layer</g-link> that pages and components can access.</p>
+        <h3>JAMstack made simple</h3>
+        <p>The Modern Web is decoupled and modular. Gridsome makes it painlessly easy to build <g-link to="/docs/jamstack">JAMstack</g-link> websites using data from multiple sources such as Content API's, Headless CMSs and other web services.</p>
       </Feature>
 
       <Feature>
-        <h3>Fast by default</h3>
-        <p>Gridsome loads only the critical HTML, CSS, data, and JavaScript so your site loads as fast as possible.  Once loaded, Gridsome prefetches resources for other pages so clicking around the site feels incredibly fast.
+        <h3>Performance-first architecture</h3>
+        <p>Gridsome loads only the critical HTML, CSS and JavaScript so your site <strong>loads as fast as possible</strong>.  Once loaded, Gridsome prefetches resources for other pages so clicking around the site feels incredible fast.
         </p>     
       </Feature>
 
       <Feature>
-        <h3>Static Generated PWAs</h3>
-        <p>Build beautiful, offline-ready, static PWAs with Gridsome. Gridsome builds ultra high performance into every page by following the <g-link to="/docs/how-it-works#the-prpl-pattern">PRPL-pattern</g-link>. A pattern for structuring and serving Progressive Web Apps.
+        <h3>PWAs with PRPL-pattern</h3>
+        <p>Build beautiful, offline-ready, static <strong>PWAs</strong> with Gridsome. Gridsome builds ultra high performance into every page by following the <g-link to="/docs/how-it-works#the-prpl-pattern">PRPL-pattern</g-link>. A pattern for structuring and serving Progressive Web Apps. 
         </p>
       </Feature>
 
       <Feature>
         <h3>Simple, safe deployment</h3>
-        <p>Grisome makes it easy to build fast & secure <g-link to="/docs/jamstack">JAMstack</g-link> websites. <strong>No servers. No databases. Only files. </strong> Deploy your entire site to a CDN and forget about it. Traffic or hacking will never break your site.</strong>
+        <p>No servers. No databases. Only files. Forget complicated deploys with databases and servers and their expensive, maintenance, and scaling fears. Deploy your entire site to a CDN and forget about it.
         </p>     
       </Feature>
 
       <Feature>
-        <h3>SEO-friendly SPA</h3>
+        <h3>SEO-friendly SPAs</h3>
         <p>Gridsome sites loads as static HTML before it hydrates into a fully Vue.js-powered SPA. This makes it possible for search engines able to crawl content and give better SEO ranking, and still have all the power of Vue.js.</p>
       </Feature>
 

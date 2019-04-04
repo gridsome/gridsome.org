@@ -1,33 +1,38 @@
 <template>
   <Section class="home-intro" dots="true">
-    <div class="text-center">
+    <div class="grid-cols grid-cols--2 flex">
+      <div class="text-center">
 
-        <div class="home-message" hidden>
-          <g-link to="/blog/2019/02/19/gridsome-v05"><span>🎉 Gridsome v0.5 released &rarr;</span></g-link>
-        </div>
-        
+          <div class="home-message" hidden>
+            <g-link to="/blog/2019/02/19/gridsome-v05"><span>🎉 Gridsome v0.5 released &rarr;</span></g-link>
+          </div>
+          
 
-        <h1 class="home-intro__title post"> 
-          <em>Faster</em> development, <em>faster</em> websites
-        </h1>
+          <h1 class="home-intro__title post"> 
+            <em>Faster</em> development, <em>faster</em> websites
+          </h1>
 
-        <p class="home-lead lead post">
-          Gridsome is a <strong>Vue.js based</strong> framework that makes it easy and fun for developers to create beautiful, modern <strong>websites & apps</strong> that are <em>fast by default</em>.
-        </p>
+          <p class="home-lead lead post">
+            Gridsome is a <strong>Vue.js-powered</strong> framework that makes it easy and fun for developers to create beautiful, modern <strong>websites & apps</strong> that are <em>fast by default</em>.
+          </p>
 
-        <p class="home-links">
-          <g-link  to="/docs" class="button primary button--large">
-            Get started
-          </g-link>
-        </p>
+          <p class="home-links">
+            <g-link  to="/docs" class="button primary button--large">
+              Get started
+            </g-link>
+          </p>
 
-        <p class="home-info">
-          <span>Open source MIT Licensed. </span>
-          <a href="//github.com/gridsome/gridsome" target="_blank" rel="noopener">
-            <span>GitHub (v{{ $static.metaData.gridsomeVersion }})</span>
-          </a>
-        </p>
-    </div>    
+          <p class="home-info">
+            <span>Open source MIT Licensed. </span>
+            <a href="//github.com/gridsome/gridsome" target="_blank" rel="noopener">
+              <span>GitHub (v{{ $static.metaData.gridsomeVersion }})</span>
+            </a>
+          </p>
+      </div>
+      <div>
+        <Connect />
+      </div>
+    </div>
   </Section>
 </template>
 
@@ -41,10 +46,12 @@ query HomeIntro {
 
 <script>
 import VueLogo from '~/assets/images/vue-logo.svg'
+import Connect from '~/components/Connect.vue'
 
 export default {
   components: {
     VueLogo,
+    Connect
   }
 }
 </script>
