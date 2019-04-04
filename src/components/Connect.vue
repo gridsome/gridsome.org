@@ -19,7 +19,7 @@ export default {
 .connect {
   position: relative;
 
-  
+
   img {
     margin:0;
   }
@@ -34,9 +34,9 @@ export default {
   }
 
    svg path {
-    stroke-width: 7px;
+    stroke-width: 9px;
     stroke-linecap: round;
-    stroke-dasharray: 0 20;
+    stroke-dasharray: 0 30;
     stroke: var(--primary-color);
     opacity: 0.5;
     animation: stroke 400ms linear infinite;
