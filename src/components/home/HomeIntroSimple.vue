@@ -1,6 +1,7 @@
 <template>
   <Section class="home-intro" dots="true">
-    <div class="text-center">
+    <div class="grid-cols grid-cols--2 flex">
+    <div class="text-center f">
 
         <div class="home-message" hidden>
           <g-link to="/blog/2019/02/19/gridsome-v05"><span>🎉 Gridsome v0.5 released &rarr;</span></g-link>
@@ -27,7 +28,11 @@
             <span>GitHub (v{{ $static.metaData.gridsomeVersion }})</span>
           </a>
         </p>
-    </div>    
+    </div>
+
+    <Connect />
+    
+    </div>   
   </Section>
 </template>
 
@@ -41,20 +46,22 @@ query HomeIntro {
 
 <script>
 import VueLogo from '~/assets/images/vue-logo.svg'
-
+import Connect from '~/components/Connect.vue'
 export default {
   components: {
     VueLogo,
+    Connect
   }
 }
 </script>
 
 <style lang="scss">
+
 .home-intro {
   border-top:0;
   
   &__title {
-    font-size: 3.3rem;
+    font-size: 3rem;
     color: var(--primary-color);
   }
 
@@ -72,10 +79,7 @@ export default {
 }
 
 .home-lead {
-  font-size: 1.4rem;
-  max-width: 920px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 1.35rem;
 }
 
 

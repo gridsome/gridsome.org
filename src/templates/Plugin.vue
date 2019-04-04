@@ -65,7 +65,9 @@
         </template>
         <template v-else>
           <div class="plugins-intro post">
-            <g-image src="~/assets/images/connect.png" width="1000" blur="10" retina="true" alt="The Modern Web" />
+            
+            <Connect />
+
             <div class="plugins-intro__text">
               <h1>Gridsome Plugins</h1>
               <p class="lead">Gridsome plugins are NPM packages that you can install to any project. This is currently a small, but growing library. <span class="hide-for-small">Use the search bar to the left to find a plugin.</span></p>
@@ -86,6 +88,7 @@ import GitLabLogo from '~/assets/images/gitlab.svg'
 import GitHubLogo from '~/assets/images/github-logo.svg'
 import BitbucketLogo from '~/assets/images/bitbucket.svg'
 import { createInstantSearch } from 'vue-instantsearch'
+import Connect from '~/components/Connect.vue'
 
 const searchClient = algoliasearch(
   'OFCNCOG2CU',
@@ -99,7 +102,8 @@ const { instantsearch, rootMixin } = createInstantSearch({
 
 export default {
   components: {
-    VueMarkdown
+    VueMarkdown,
+    Connect
   },
 
   mixins: [rootMixin],
