@@ -80,6 +80,7 @@ export default {
     stroke-dasharray: 0 30;
     stroke: var(--primary-color);
     opacity: 0.5;
+    animation: stroke 600ms linear infinite;
   }
 }
 </style>

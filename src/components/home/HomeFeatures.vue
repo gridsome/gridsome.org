@@ -9,25 +9,25 @@
       </Feature>
 
       <Feature>
-        <h3>JAMstack made simple</h3>
-        <p>The Modern Web is decoupled and modular. Gridsome makes it painlessly easy to build <g-link to="/docs/jamstack">JAMstack</g-link> websites using data from multiple sources such as Content API's, Headless CMSs and other web services.</p>
+        <h3>Build on a future-ready stack</h3>
+        <p>The future of the web is JavaScript, API's, and Markup - the <g-link to="/docs/jamstack">JAMstack</g-link>. Gridsome uses the power of a blazing fast static site generator, JavaScript and APIs to create stunning modern web experiences.</p>
       </Feature>
 
       <Feature>
         <h3>Performance-first architecture</h3>
-        <p>Gridsome loads only the critical HTML, CSS and JavaScript so your site <strong>loads as fast as possible</strong>.  Once loaded, Gridsome prefetches resources for other pages so clicking around the site feels incredible fast.
+        <p>Gridsome automatically optimises your frontend to load and perform extremely fast. You get code-splitting, image optimisation, lazy-loading, and almost <strong>perfect lighthouse scores</strong> out-of-the-box.
         </p>     
       </Feature>
 
       <Feature>
         <h3>PWAs with PRPL-pattern</h3>
-        <p>Build beautiful, offline-ready, static <strong>PWAs</strong> with Gridsome. Gridsome builds ultra high performance into every page by following the <g-link to="/docs/how-it-works#the-prpl-pattern">PRPL-pattern</g-link>. A pattern for structuring and serving Progressive Web Apps. 
+         <p>Gridsome builds performance into every page by following the <g-link to="/docs/how-it-works#the-prpl-pattern">PRPL-pattern</g-link>.  After page load it prefetches resources for other pages with <strong>IntersectionObserver</strong> so clicking around the site feels incredible fast.
         </p>
       </Feature>
 
       <Feature>
         <h3>Simple, safe deployment</h3>
-        <p>No servers. No databases. Only files. Forget complicated deploys with databases and servers and their expensive, maintenance, and scaling fears. Deploy your entire site to a CDN and forget about it.
+        <p><strong>No servers. No databases. Only files.</strong> Deploy your entire site to a CDN and forget about it. A Gridsome site can handle thousands to millions of hits without breaking - and no expensive server costs.
         </p>     
       </Feature>
 

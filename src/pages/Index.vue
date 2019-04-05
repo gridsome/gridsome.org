@@ -2,6 +2,7 @@
   <Layout>
     <home-intro-simple />
     <home-how-it-work-simple />
+    <home-connect />
     <home-features />
     <home-blog />
   </Layout>
@@ -12,12 +13,14 @@ import HomeIntroSimple from '@/components/home/HomeIntroSimple.vue'
 import HomeHowItWorkSimple from '@/components/home/HomeHowItWorkSimple.vue'
 import HomeBlog from '@/components/home/HomeBlog.vue'
 import HomeFeatures from '@/components/home/HomeFeatures.vue'
+import HomeConnect from '@/components/home/HomeConnect.vue'
 
 export default {
   components: {
     HomeIntroSimple,
     HomeHowItWorkSimple,
     HomeFeatures,
+    HomeConnect,
     HomeBlog,
   },
   

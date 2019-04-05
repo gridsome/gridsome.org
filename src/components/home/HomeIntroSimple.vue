@@ -1,6 +1,5 @@
 <template>
   <Section class="home-intro" dots="true">
-    <div class="grid-cols grid-cols--2 flex">
       <div class="text-center">
 
           <div class="home-message" hidden>
@@ -29,10 +28,7 @@
               </a>
             </mark>
           </p>
-      </div>
-      <div>
-        <Connect />
-      </div>
+ 
     </div>
   </Section>
 </template>
@@ -60,10 +56,9 @@ export default {
 <style lang="scss">
 .home-intro {
   border-top:0;
-  padding: calc(15px + 1%) 0;
   
   &__title {
-    font-size: 3em;
+    font-size: 3.4em;
     color: var(--primary-color);
   }
 
@@ -82,7 +77,9 @@ export default {
 
 .home-lead {
   font-size: 1.3rem;
-  padding: 0 2%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 

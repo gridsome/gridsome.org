@@ -1,6 +1,7 @@
 <template>
   <Section class="home-connect" dots="true">
     <div class="grid-cols flex grid-cols--2 grid-cols--gap-large">
+ 
       <div class="text-center">
         <h2>Connect the Modern Web</h2>
         <p class="lead">
@@ -8,7 +9,7 @@
         </p>
         <p><g-link to="/plugins">Browse Gridsome Plugins</g-link></p>
       </div>
-      
+ 
       <div>
         <Connect />
       </div>
