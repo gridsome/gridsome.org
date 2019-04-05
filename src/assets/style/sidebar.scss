@@ -1,3 +1,16 @@
+.sidebar-bg {
+  position: absolute;
+  bottom:0; top:0;
+  left: calc(-100% + 300px + 25px);
+  background-color:red;
+  width: 100%;
+  background-color: var(--primary-bg);
+
+  &--plugins {
+    left: calc(-100% + 340px + 25px);
+  }
+}
+
 .sidebar {
   order: 2;
   z-index: 10;
@@ -14,6 +27,7 @@
     width: 300px;
     order: 0;
   }
+
 
   h3 {
     font-size: .8rem;

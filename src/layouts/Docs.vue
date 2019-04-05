@@ -1,8 +1,8 @@
 <template>
   <Layout class="has-sidebar docs-page" :footer="false">
-    <div class="container flex flex-align-top" style="position: relative;">
+    <div class="container flex flex-align-top">
       
-      <div class="bg hide-for-small" style="position: absolute; bottom:0; top:0; left: calc(-100% + 325px); background-color:red; width: 100%; background-color: var(--primary-bg);">bg</div>
+      <div class="sidebar-bg hide-for-small"></div>
 
       <div class="sidebar">
 
@@ -24,7 +24,6 @@
             </template>
           </template>
         </transition-group>
-
       </div>
       <Section class="doc-content flex-fit" container="md">
         <slot />
