@@ -6,7 +6,6 @@
           <div class="home-message" hidden>
             <g-link to="/blog/2019/02/19/gridsome-v05"><span>🎉 Gridsome v0.5 released &rarr;</span></g-link>
           </div>
-          
 
           <h1 class="home-intro__title post"> 
             <em>Faster</em> development, <em>faster</em> websites
