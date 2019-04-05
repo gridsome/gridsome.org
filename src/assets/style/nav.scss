@@ -5,7 +5,7 @@ nav a {
   align-items:center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 5px 5px;
+  padding: 8px 5px;
   text-decoration: none;
 
   svg {
@@ -20,14 +20,16 @@ nav a {
     }
   } 
 
-  &:hover {
-    color: var(--primary-color);
-  }
 
   &:not(.active):not(:hover):not(.button) {
     color: currentColor;
     opacity: .85;
-  } 
+  }
+
+  &.active,
+  &:hover {
+    color: var(--primary-color);
+  }
 }
 
 

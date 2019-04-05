@@ -24,6 +24,10 @@ export default {
     margin-bottom: var(--space-x2);
     padding: 0 var(--space);
 
+    svg {
+      margin-top: -.25rem;
+    }
+
     h3 {
       margin-bottom: .5rem;
       line-height: 1.4;

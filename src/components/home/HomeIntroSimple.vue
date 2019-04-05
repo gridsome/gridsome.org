@@ -22,12 +22,12 @@
           </p>
 
           <p class="home-info">
-            <code>
+            <mark>
               <span>Open source MIT Licensed. </span>
               <a href="//github.com/gridsome/gridsome" target="_blank" rel="noopener">
               <span>GitHub (v{{ $static.metaData.gridsomeVersion }})</span>
               </a>
-            </code>
+            </mark>
           </p>
       </div>
       <div>
