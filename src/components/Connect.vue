@@ -1,9 +1,9 @@
 <template>
   <div class="connect">
     <transition name="fade">
-      <g-image key=1 v-if="activeSlide == 0" class="connect__logos" src="~/assets/images/connect-logos.png" width="1180" blur="10" retina="true" alt="The Modern Web Logos" />
-      <g-image key=2 v-if="activeSlide == 1" class="connect__logos" src="~/assets/images/connect-logos-2.png" width="1180" blur="10" retina="true" alt="The Modern Web Logos 2" />
-      <g-image key=3 v-if="activeSlide == 2" class="connect__logos" src="~/assets/images/connect-logos-3.png" width="1180" blur="10" retina="true" alt="The Modern Web Logos 3" />
+      <div class="connect__slide" key=1 v-if="activeSlide == 0"><g-image class="connect__logos" src="~/assets/images/connect-logos.png" width="1180" blur="10" retina="true" alt="The Modern Web Logos" /></div>
+      <div  class="connect__slide"key=2 v-else-if="activeSlide == 1"><g-image class="connect__logos" src="~/assets/images/connect-logos-2.png" width="1180" blur="10" retina="true" alt="The Modern Web Logos 2" /></div>
+      <div class="connect__slide" key=3 v-else-if="activeSlide == 2"><g-image class="connect__logos" src="~/assets/images/connect-logos-3.png" width="1180" blur="10" retina="true" alt="The Modern Web Logos 3" /></div>
     </transition>
     <g-image class="connect__main" src="~/assets/images/connect-bg.png" width="1180" blur="10" retina="true" alt="The Modern Web Background" />
     <connect-dots />
@@ -63,6 +63,7 @@ export default {
   }
 
   svg,
+  &__slide,
   &__logos {
     width: 100%;
     left:0;
