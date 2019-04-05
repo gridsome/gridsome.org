@@ -22,7 +22,7 @@ footer {
   padding: 20px;
 
   @media screen and (max-width: 850px) {
-    padding-bottom: 90px;
+    padding-bottom: 120px;
   }
 }
 </style>
