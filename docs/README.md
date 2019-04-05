@@ -27,6 +27,9 @@ Gridsome requires **Node.js** and recommends **Yarn**. [How to setup](/docs/prer
 2. Use `gridsome build` to generate static files in a `/dist` folder
 
 
+
+#### Learn more
+
 - [How it works](/docs/how-it-works)
 - [How Pages work](/docs/pages)
 - [How to deploy](/docs/deployment)
