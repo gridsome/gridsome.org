@@ -4,8 +4,7 @@
   overflow: auto;
   position: relative;
   -webkit-overflow-scrolling: touch;
-  background-color: var(--primary-bg);
-  padding: 0 var(--space) 60px;
+  padding: 0 10px 60px;
 
   @media screen and (min-width: 850px) {
     position: sticky;

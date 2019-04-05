@@ -1,8 +1,11 @@
 <template>
   <Layout class="has-sidebar docs-page" :footer="false">
-    <div class="flex flex-align-top">
+    <div class="container flex flex-align-top" style="position: relative;">
+      
+      <div class="bg hide-for-small" style="position: absolute; bottom:0; top:0; left: calc(-100% + 325px); background-color:red; width: 100%; background-color: var(--primary-bg);">bg</div>
+
       <div class="sidebar">
-        
+
         <transition-group name="menu-item" tag="div">
           <template v-for="(group, i1) in links">
             <h3 class="menu-item" :key="`title-${i1}`">{{ group.title }}</h3>
@@ -23,7 +26,7 @@
         </transition-group>
 
       </div>
-      <Section class="flex-fit" container="md">
+      <Section class="doc-content flex-fit" container="md">
         <slot />
         <p>
           <a :href="editLink" target="_blank" class="github-edit-link">

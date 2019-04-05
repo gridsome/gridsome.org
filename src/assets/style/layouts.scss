@@ -1,5 +1,5 @@
 .container {
-  max-width: 1280px;
+  max-width: 1300px;
   width: 100%;
 
   &,
@@ -28,11 +28,6 @@
     background-color: #FFF;
   }
 
-  // nested
-  .container {
-    padding-left:0;
-    padding-right:0;
-  }
 }
 
 .container-main {

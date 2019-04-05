@@ -9,7 +9,7 @@
   text-decoration: none;
   border-radius: 5px;
   outline: 0;
-  color: var(--primary-color-dark);
+  color: var(--primary-color);
   transition: background .3s, box-shadow .3s, color .3s;
 
   &:hover {
@@ -36,14 +36,14 @@
 
   &.primary {
     color:#FFF;
-    background-color: var(--primary-color-dark);
+    background-color: var(--primary-color);
     &:after {
       border-color: rgba(0,0,0,.1);
     }
 
     &:hover {
       color:#FFF;
-      background-color: var(--primary-color);
+      background-color: var(--primary-color-dark);
     }
   }
 

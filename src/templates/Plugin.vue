@@ -1,7 +1,9 @@
 <template>
   <Layout :footer="false">
-    <div class="plugins flex flex-align-top">
-      
+    <div class="plugins container flex flex-align-top" style="position: relative;">
+         
+      <div class="bg hide-for-small" style="position: absolute; bottom:0; top:0; left: calc(-100% + 365px); background-color:red; width: 100%; background-color: var(--primary-bg);">bg</div>
+
       <AisInstantSearchSsr class="sidebar plugins__sidebar">
         <AisConfigure
           :hitsPerPage="hitsPerPage"
