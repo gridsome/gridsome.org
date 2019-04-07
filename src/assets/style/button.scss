@@ -25,9 +25,13 @@
     position: absolute;
     border: 1px solid currentColor;
     border-radius: 5px;
-    transition: opacity .3s;
+    transition: opacity .3s, box-shadow .3s;
     opacity: .6;
-    box-shadow: inset -2px -2px 0px 1px rgba(0,0,0,.1);
+    box-shadow: inset 0px -2px 0px 1px rgba(0,0,0,.15);
+  }
+
+  &:active:after {
+    box-shadow: none;
   }
 
   &:hover:after {
