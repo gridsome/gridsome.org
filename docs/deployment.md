@@ -17,6 +17,8 @@ These services are great for Git-based deploying:
 
 - [GitLab Pages](/docs/deploy-to-gitlab)
 
+Github docs: [ How to add an local folder to GitHub using the command line](https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line)
+
 ## Deploy from terminal
 Many services let you deploy your static Gridsome site from the terminal. Here are some:
 
