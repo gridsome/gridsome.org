@@ -199,4 +199,4 @@ The `<Layout>` component is an optional component used to **wrap pages and templ
 
 - [Query data in Templates](/docs/querying-data#query-data-in-templates)
 - [Add head metadata to Templates](/docs/head#add-head-meta-data-to-pages--templates)
-- [gridsome-starter-blog](https://github.com/gridsome/gridsome-starter-markdown-blog/blob/master/src/pages/Index.vue)
+- [Starter: gridsome-starter-blog](https://github.com/gridsome/gridsome-starter-markdown-blog/blob/master/src/pages/Index.vue)
