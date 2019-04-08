@@ -170,3 +170,72 @@ export default function (Vue, { router, head, isClient }) {
   Vue.use(BootstrapVue)
 }
 ```
+
+### Vuetify
+[Vuetify](https://vuetifyjs.com/en/) is a semantic component framework for Vue. It aims to provide clean, semantic and reusable components that make building your application a breeze. Based on Google's material design, it can be a quick way to get an app up and running quickly with pre-built components available to use and customize.
+
+To install use:
+
+```
+# With npm
+npm install vuetify --save
+
+# With yarn
+yarn add vuetify
+```
+
+Then, you will need to register the Vuetify plugin, include the Vuetify css file, and add a link to the head 
+for Google's material design icons in your 'main.js' file:
+
+```js
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
+import DefaultLayout from '~/layouts/Default.vue'
+
+export default function (Vue, { router, head, isClient }) {
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
+  })
+
+  Vue.use(Vuetify)
+  
+  // Set default layout as a global component
+  Vue.component('Layout', DefaultLayout)
+}
+```
+Finally, there is one last thing you will need in order to build your application with vuetify. 
+You will need to whitelist Vuetify in webpack in order to build. 
+
+First, install the webpack-node-externals plugin:
+
+```
+# With npm
+npm install webpack-node-externals --save-dev
+
+# With yarn
+yarn add webpack-node-externals --dev
+```
+
+Then modify your gridsome.server.js file to include the webpack-node-externals package, and whitelist vuetify.
+```js
+const nodeExternals = require('webpack-node-externals')
+
+module.exports = function (api) {
+  api.chainWebpack((config, { isServer }) => {
+    if (isServer) {
+      config.externals([
+        nodeExternals({
+          whitelist: [/^vuetify/]
+        })
+      ])
+    }
+  })
+
+  api.loadSource(store => {
+    // Use the Data store API here: https://gridsome.org/docs/data-store-api
+  })
+}
+```
+Then you should be able to build now! You will find the files in your dist/ folder.
+
