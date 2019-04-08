@@ -149,14 +149,17 @@ Save and run `gridsome develop`, the go to `http://localhost:8080/my-first-post`
 
 ```html
 <template>
-<Layout>
-  <div class="posts">
-    <li v-for="edge in $page.posts.edges" :key="edge.node.id">
-      <h3>{{ edge.node.title }}</h3>
-      <p>{{ edge.node.description }}</p>
-    </li>
-  </div>
-</Layout>
+  <Layout>
+    <!-- List posts -->
+    <ul class="posts">
+      <li v-for="edge in $page.posts.edges" :key="edge.node.id">
+        <article>
+          <h3>{{ edge.node.title }}</h3>
+          <p>{{ edge.node.description }}</p>
+        </article>
+      </li>
+    </ul>
+  </Layout>
 </template>
 
 <page-query>
