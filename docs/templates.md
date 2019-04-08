@@ -98,7 +98,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
 
 ```
-Adding more posts entries:
+Adding more post entry:
 
 `/content/posts/my-second-post.md`:
 
@@ -120,23 +120,37 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
 
 ### Linking content to template
 
-Here is an example of the [file-system source plugin](/plugins/@gridsome/source-filesystem) added to config (`gridsome.config.js`).
+Here is an example of the [file-system source plugin](/plugins/@gridsome/source-filesystem)(We also  [@gridsome/transformer-remark plugin](/plugins/@gridsome/transformer-remark).
 
+- `typeName` will be the name of the GraphQL collection and needs to be unique. This example will add a *Post* collection.
+- `path` - Where to look for content files. Should be a global path.
+- `route` - Define a dynamic route.
 ```javascript
 module.exports = {
   plugins: [
     {
       use: '@gridsome/source-filesystem',
       options: {
-        typeName: 'Post', /* vue file in src/templates must match the GraphQL typeName to have a template for it.*/
-        path: 'content/posts/*.md', /* Where to look for files. Should be a glob path. */
+        typeName: 'Post', /* vue file in src/templates must match the GraphQL typeName to have a template for it */
+        path: 'content/posts/*.md', /* Where to look for files. Should be a glob path */
         route: '/:slug', /* Define a dynamic route */
       }
     },
     {
       // another data source
     },
-  ]
+  ],
+  transformers: {
+    //Add markdown support to all file-system sources
+    remark: {
+      externalLinksTarget: '_blank',
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      anchorClassName: 'icon icon-link',
+      plugins: [
+        '@gridsome/remark-prismjs'
+      ]
+    }
+  },
 }
 ```
 Learn more about [Use data source plugins](/docs/fetching-data#use-data-source-plugins)
