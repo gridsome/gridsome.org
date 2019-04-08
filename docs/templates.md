@@ -122,7 +122,7 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
 
 Here is an example of the [file-system source plugin](/plugins/@gridsome/source-filesystem) added to config (`gridsome.config.js`).
 
-```
+```javascript
 module.exports = {
   plugins: [
     {
