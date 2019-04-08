@@ -141,9 +141,9 @@ module.exports = {
 ```
 Learn more about [Use data source plugins](/docs/fetching-data#use-data-source-plugins)
 
-Save and run `gridsome develop`, the go to `http://localhost:8080/my-first-post` or `http://localhost:8080/my-second-post`.
+Save and run `gridsome develop`, go to `http://localhost:8080/my-first-post` -or- `http://localhost:8080/my-second-post`.
 
-## Create template pagelist
+## Create collection pagelist
 
 `/pages/blog.vue`
 
