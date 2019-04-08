@@ -7,7 +7,7 @@
           </div>
 
           <h1 class="home-intro__title post"> 
-            <em>JAMstack made simple with Vue.js</em>
+            <em>Faster</em> development, <em>faster</em> websites
           </h1>
 
           <p class="home-lead lead post">
@@ -56,7 +56,7 @@ export default {
   border-top:0;
   
   &__title {
-    font-size: 3.333em;
+    font-size: 3em;
     color: var(--primary-color);
   }
 

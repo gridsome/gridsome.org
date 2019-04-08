@@ -4,7 +4,7 @@
       How Gridsome Works
     </h2>
     <p class="lead text-center container-md" style="margin-bottom: 3rem;">
-     <strong>Pull data</strong> from any CMS or data source into a unified <strong>GraphQL interface</strong>, and use <strong>Vue.js</strong> for front-end. Deploy to any <strong>static web host</strong> for fast and secure hosting.
+     <strong>Pull data</strong> from any CMS or data source into a unified <strong>GraphQL interface</strong> for centralized data management, and use it to build <strong>anything with Vue.js</strong>.
     </p>
     <div class="grid-cols grid-cols--gap-large grid-cols--full-md how-it-works mb">
 
