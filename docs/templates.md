@@ -122,7 +122,7 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
 
 Here is an example of the [file-system source plugin](/plugins/@gridsome/source-filesystem)(We also  [@gridsome/transformer-remark plugin](/plugins/@gridsome/transformer-remark)).
 
-- `typeName` will be the name of the GraphQL collection and needs to be unique. This example will add a *Post* collection.
+- `typeName` - will be the name of the GraphQL collection and needs to be unique. This example will add a *Post* collection.
 - `path` - Where to look for content files. Should be a global path.
 - `route` - Define a dynamic route.
 ```javascript
