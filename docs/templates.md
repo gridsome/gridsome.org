@@ -14,51 +14,75 @@ The example shows a **Blog.vue** in **/pages** where Blog posts will be listed a
 Templates must have a `<page-query>` block which fetches the source node
 for the current page. You can use the `$path` variable to get the node.
 
-
 ```html
 <!-- src/templates/Post.vue -->
-
 <template>
-  <article>
-    <h1 class="articleTitle">
-       {{ $page.post.title }}
-    </h1>
-    <time datetime="{{ $page.post.date }}">{{ $page.post.date }}</time>
-    <p class="articleDescription"> {{ $page.post.description }}</p>
-    <div class="articleBody" v-html="$page.blogPost.content" />
-  </article>
+  <Layout>
+    <article>
+      <header>
+        <h1 class="post-title">
+          {{ $page.post.title }}
+        </h1>
+      </header>
+      <time>{{ $page.post.date }}</time>
+      <p>{{ $page.post.description }}</p>
+      <div class="post-content" v-html="$page.post.content"/>
+    </article>
+  </Layout>
 </template>
+
+<script>
+export default {
+  metaInfo () {
+    return {
+      title: this.$page.post.title,
+      meta: [
+        {
+          name: 'description',
+          content: this.$page.post.description
+        }
+      ]
+    }
+  }
+}
+</script>
 
 <page-query>
 query Post ($path: String!) {
-  post: post  (path: $path) {
+  post: post (path: $path) {
     title
+    date (format: "D. MMMM YYYY")
+    description
     content
   }
 }
 </page-query>
 
-<script>
-import Layout from '~/layouts/Default.vue'
-export default {
-  components: {
-    Layout
-  },
-  metaInfo () {
-    return {
-      title: this.$page.post.title
-    }
-  }
+<style lang="scss">
+.post-title {
+  padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
+  text-align: center;
 }
-</script>
+</style>
+
 ```
+
+To include a variable in your template, wrap it in two sets of curly braces. Like this:
+
+`src/templates/Post.vue`:
+```html
+<h1 class="articleTitle">
+  {{ $page.post.title }}
+</h1>
+ ```
+ 
 
 ### Content files
 
-Here is an example of local `markdown` file named `my-first-post.md` located under `$page/content/posts` folder. 
-We use this folder to store all of our blog posts.
+Here is an example of adding data from local files using located under `/content/posts` folder. 
+We use this folder to store all of our posts.
 
-Our posts format: A title, publish date, followed by an description.
+Our posts markdown format: A title, publish date, followed by an description.
 
 `/content/posts/my-first-post.md`:
 
@@ -74,6 +98,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
 
 ```
+Adding more posts entries:
 
 `/content/posts/my-second-post.md`:
 
@@ -90,26 +115,12 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
 
 ```
 
-To include a variable in your template, wrap it in two sets of curly braces. Like this:
-
-Under our template we use our `md` format to output data - For example
-
-`src/templates/Post.vue`:
-```html
-  <h1 class="articleTitle">
-     {{ $page.post.title }}
-  </h1>
- ```
- 
-
 - Learn more about [@gridsome/transformer-remark plugin](/plugins/@gridsome/transformer-remark)
 - [Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-- [V-html](https://vuejs.org/v2/guide/syntax.html#Raw-HTML)
 
 ### Linking content to template
 
 Here is an example of the [file-system source plugin](/plugins/@gridsome/source-filesystem) added to config (`gridsome.config.js`).
-We declare the path by `path: 'content/posts/*.md'`
 
 ```
 module.exports = {
@@ -117,9 +128,9 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        index: ['README'],
-        path: 'content/posts/*.md',
-        typeName: 'DocPage',
+        typeName: 'Post', /* vue file in src/templates must match the GraphQL typeName to have a template for it.*/
+        path: 'content/posts/*.md', /* Where to look for files. Should be a glob path. */
+        route: '/:slug', /* Define a dynamic route */
       }
     },
     {
@@ -130,6 +141,47 @@ module.exports = {
 ```
 Learn more about [Use data source plugins](/docs/fetching-data#use-data-source-plugins)
 
+Save and run `gridsome develop`, the go to `http://localhost:8080/my-first-post` or `http://localhost:8080/my-second-post`.
+
+## Create template pagelist
+
+`/pages/blog.vue`
+
+```html
+<template>
+<Layout>
+  <div class="posts">
+    <li v-for="edge in $page.posts.edges" :key="edge.node.id">
+      <h3>{{ edge.node.title }}</h3>
+      <p>{{ edge.node.description }}</p>
+    </li>
+  </div>
+</Layout>
+</template>
+
+<page-query>
+  {
+    posts: allPost {
+      edges {
+        node {
+          title
+          date (format: "D. MMMM YYYY")
+          description
+        }
+      }
+    }
+  }
+</page-query>
+
+<script>
+export default {
+  metaInfo: {
+    title: 'Hello, world!'
+  }
+}
+</script>
+```
+- [Query data in Pages](/docs/querying-data#query-data-in-pages)
 
 ## Template layouts
 
@@ -144,3 +196,4 @@ The `<Layout>` component is an optional component used to **wrap pages and templ
 
 - [Query data in Templates](/docs/querying-data#query-data-in-templates)
 - [Add head metadata to Templates](/docs/head#add-head-meta-data-to-pages--templates)
+- [gridsome-starter-blog](https://github.com/gridsome/gridsome-starter-markdown-blog/blob/master/src/pages/Index.vue)
