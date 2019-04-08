@@ -1,5 +1,5 @@
 a {
-  transition: color .3s, opacity .3s, background .3s;
+  transition: color .3s, opacity .3s, background .3s, text-decoration .5s;
   position: relative;
   text-decoration: underline;
   color: var(--primary-color-dark);
@@ -7,7 +7,7 @@ a {
 
   &:hover {
     color: #000;
-    text-decoration-color: rgba(0,0,0,.5);
+    text-decoration-color: #000;
   }
   
   svg + & {

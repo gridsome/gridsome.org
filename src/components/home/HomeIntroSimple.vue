@@ -7,11 +7,11 @@
           </div>
 
           <h1 class="home-intro__title post"> 
-            JAMstack made simple with Vue.js
+            <em>JAMstack made simple with Vue.js</em>
           </h1>
 
           <p class="home-lead lead post">
-            Gridsome is a <strong>Vue.js-powered</strong> framework that makes it easy and fun for developers to create beautiful, modern <strong>websites & apps</strong> that are <em>fast by default</em>.
+            Gridsome is a <strong>Vue.js-powered</strong> framework that makes it easy and fun for developers to create modern, static <strong>websites & apps</strong> that are <em>fast by default</em>.
           </p>
 
           <p class="home-links">
@@ -56,7 +56,7 @@ export default {
   border-top:0;
   
   &__title {
-    font-size: 3.3em;
+    font-size: 3.333em;
     color: var(--primary-color);
   }
 
