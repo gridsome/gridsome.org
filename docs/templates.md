@@ -14,18 +14,24 @@ The example shows a **Blog.vue** in **/pages** where Blog posts will be listed a
 Templates must have a `<page-query>` block which fetches the source node
 for the current page. You can use the `$path` variable to get the node.
 
+
 ```html
-<!-- src/templates/WordPressPost.vue -->
+<!-- src/templates/Post.vue -->
 
 <template>
-  <Layout :title="$page.post.title">
-    <div v-html="$page.post.content">
-  </Layout>
+  <article>
+    <h1 class="articleTitle">
+       {{ $page.post.title }}
+    </h1>
+    <time datetime="{{ $page.post.date }}">{{ $page.post.date }}</time>
+    <p class="articleDescription"> {{ $page.post.description }}</p>
+    <div class="articleBody" v-html="$page.blogPost.content" />
+  </article>
 </template>
 
 <page-query>
 query Post ($path: String!) {
-  post: wordPressPost (path: $path) {
+  post: post  (path: $path) {
     title
     content
   }
@@ -46,6 +52,84 @@ export default {
 }
 </script>
 ```
+
+### Content files
+
+Here is an example of local `markdown` file named `my-first-post.md` located under `$page/content/posts` folder. 
+We use this folder to store all of our blog posts.
+
+Our posts format: A title, publish date, followed by an description.
+
+`/content/posts/my-first-post.md`:
+
+```md
+---
+title: My First post
+date: 2018-09-15 07:42:34
+description: "Aenean leo ligula, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet."
+---
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+
+```
+
+`/content/posts/my-second-post.md`:
+
+```md
+---
+title: My Second post
+date: 2018-09-16 07:42:34
+description: "Dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet."
+---
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+
+```
+
+To include a variable in your template, wrap it in two sets of curly braces. Like this:
+
+Under our template we use our `md` format to output data - For example
+
+`src/templates/Post.vue`:
+```html
+  <h1 class="articleTitle">
+     {{ $page.post.title }}
+  </h1>
+ ```
+ 
+
+- Learn more about [@gridsome/transformer-remark plugin](/plugins/@gridsome/transformer-remark)
+- [Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- [V-html](https://vuejs.org/v2/guide/syntax.html#Raw-HTML)
+
+### Linking content to template
+
+Here is an example of the [file-system source plugin](/plugins/@gridsome/source-filesystem) added to config (`gridsome.config.js`).
+We declare the path by `path: 'content/posts/*.md'`
+
+```
+module.exports = {
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        index: ['README'],
+        path: 'content/posts/*.md',
+        typeName: 'DocPage',
+      }
+    },
+    {
+      // another data source
+    },
+  ]
+}
+```
+Learn more about [Use data source plugins](/docs/fetching-data#use-data-source-plugins)
+
 
 ## Template layouts
 
