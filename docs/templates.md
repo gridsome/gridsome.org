@@ -75,7 +75,6 @@ To include a variable in your template, wrap it in two sets of curly braces. Lik
   {{ $page.post.title }}
 </h1>
  ```
- 
 
 ### Content files
 
@@ -98,7 +97,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
 
 ```
-Adding more post entry:
+Add one more post entry:
 
 `/content/posts/my-second-post.md`:
 
