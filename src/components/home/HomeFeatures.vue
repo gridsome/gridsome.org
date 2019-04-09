@@ -21,8 +21,8 @@
       </Feature>
 
       <Feature>
-        <h3>Future-ready stack</h3>
-        <p><g-link to="/docs/jamstack">JAMstack</g-link> is a new way of building websites and apps that delivers better performance, higher security, lower cost of scaling, and a better developer experience. Combine the power of Vue.js to build fast, stunning web experiences</p>
+        <h3>Fully extensible</h3>
+        <p>Gridsome has powerful APIs that let you customize or build plugins for anything. <g-link to="/plugins/">Gridsome Plugins</g-link> is a fast growing library of NPM packages that can be installed to any Gridsome project.</p>
       </Feature>
 
 
