@@ -119,11 +119,14 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
 
 ### Linking content to template
 
-Here is an example of the [file-system source plugin](/plugins/@gridsome/source-filesystem)(We also  [@gridsome/transformer-remark plugin](/plugins/@gridsome/transformer-remark)).
+Here is an example of the [file-system source plugin](/plugins/@gridsome/source-filesystem). Plugin options are added to `gridsome.config.js`. 
 
 - `typeName` - will be the name of the GraphQL collection and needs to be unique. This example will add a *Post* collection.
 - `path` - Where to look for content files. Should be a global path.
 - `route` - Define a dynamic route.
+
+We also added [@gridsome/transformer-remark plugin](/plugins/@gridsome/transformer-remark) (Markdown support).
+
 ```javascript
 module.exports = {
   plugins: [
