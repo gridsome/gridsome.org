@@ -11,6 +11,8 @@ The example shows a **Blog.vue** in **/pages** where Blog posts will be listed a
 
 ## Creating templates
 
+![template flow](https://uploads-ssl.webflow.com/5a0ad22bd65a2f0001be37f0/5cac6ae2efbaefbaae46ed75_template-gridsome.png)
+
 Templates must have a `<page-query>` block which fetches the source node
 for the current page. You can use the `$path` variable to get the node.
 
