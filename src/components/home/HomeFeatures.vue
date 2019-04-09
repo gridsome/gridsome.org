@@ -3,7 +3,7 @@
     <div class="homepage-features grid-cols">
 
       <Feature>
-        <h3>East, local development</h3>
+        <h3>Easy, local development</h3>
         <p>Enjoy modern development tools like<br> <vue-logo width="24" height="24" /> Vue.js, <graph-ql-logo width="24" height="24" /> GraphQL & <webpack-logo width="28" height="28" />webpack. Get instant <strong>hot-reloading</strong> for any code change when developing. <strong>Gridsome makes building websites fun again.</strong>
         </p>
       </Feature>
