@@ -3,27 +3,28 @@
     <div class="homepage-features grid-cols">
 
       <Feature>
-        <h3>Faster, modern development</h3>
-        <p>Enjoy modern development tools like<br> <vue-logo width="24" height="24" /> Vue.js, <graph-ql-logo width="24" height="24" /> GraphQL & <webpack-logo width="28" height="28" />webpack. Get instant <strong>hot-reloading</strong> for any code change when developing. <em>Gridsome makes building websites fun again.</em>
+        <h3>East, local development</h3>
+        <p>Enjoy modern development tools like<br> <vue-logo width="24" height="24" /> Vue.js, <graph-ql-logo width="24" height="24" /> GraphQL & <webpack-logo width="28" height="28" />webpack. Get instant <strong>hot-reloading</strong> for any code change when developing. <strong>Gridsome makes building websites fun again.</strong>
         </p>
       </Feature>
 
       <Feature>
-        <h3>Build on a future-ready stack</h3>
-        <p>The future of the web is JavaScript, API's, and Markup - the <g-link to="/docs/jamstack">JAMstack</g-link>. Gridsome uses the power of a blazing fast static site generator, JavaScript and APIs to create stunning modern web experiences.</p>
-      </Feature>
-
-      <Feature>
-        <h3>Performance-first architecture</h3>
-        <p>Gridsome automatically optimises your frontend to load and perform extremely fast. You get code-splitting, image optimisation, lazy-loading, and almost <strong>perfect lighthouse scores</strong> out-of-the-box.
-        </p>     
-      </Feature>
-
-      <Feature>
-        <h3>PWAs with PRPL-pattern</h3>
-         <p>Gridsome builds performance into every page by following the <g-link to="/docs/how-it-works#the-prpl-pattern">PRPL-pattern</g-link>.  After page load it prefetches resources for other pages with <strong>IntersectionObserver</strong> so clicking around the site feels incredible fast.
+        <h3>Fast by default</h3>
+        <p>Gridsome builds ultra performance into every page by using the <g-link to="/docs/how-it-works#the-prpl-pattern">PRPL pattern</g-link>. You get <strong>code splitting, asset optimization, progressive images, and page prefetching</strong> out of the box. Gridsome sites gets almost perfect page speed scores by default.
         </p>
       </Feature>
+
+      <Feature>
+        <h3>PWA-ready</h3>
+         <p>Gridsome is a static PWA generator. It pre-renders all pages to load as fast as possible. Once loaded, the next pages are prefetched in background so clicking around the site feels super fast. It even works offline.
+        </p>
+      </Feature>
+
+      <Feature>
+        <h3>Future-ready stack</h3>
+        <p><g-link to="/docs/jamstack">JAMstack</g-link> is a new way of building websites and apps that delivers better performance, higher security, lower cost of scaling, and a better developer experience. Combine the power of Vue.js to build fast, stunning web experiences</p>
+      </Feature>
+
 
       <Feature>
         <h3>Simple, safe deployment</h3>
@@ -32,7 +33,7 @@
       </Feature>
 
       <Feature>
-        <h3>SEO-friendly SPAs</h3>
+        <h3>SEO-friendly</h3>
         <p>Gridsome sites loads as static HTML before it hydrates into a fully Vue.js-powered SPA. This makes it possible for search engines able to crawl content and give better SEO ranking, and still have all the power of Vue.js.</p>
       </Feature>
 
