@@ -61,7 +61,7 @@ Gridsome runs server-side rendering at build time. This means you don't need any
 Gridsome uses [Vue.js](https://vuejs.org/) as front-end framework. Vue is an approachable, simple & fun framework for building fast interfaces. Vue is famous for its intuitive design and shallow learning curve. This means it's easy to train staff in, even non-frontend devs and designers. Since developers will be up-and-running with Vue quickly, training costs will be kept to a minimum.
 
 
-### Client-side Hydration
+## Client-side Hydration
 The `gridsome build` command generates **SEO-friendly HTML files** that can be hosted anywhere. These HTML files are optimized to load as fast as possible. After the HTML is loaded Vue.js takes over the HTML and **hydrates** into a fully Vue-powered SPA.
 
 >  Hydration refers to the client-side process during which Vue takes over the static HTML sent by the server and turns it into a dynamic DOM that can react to client-side data changes.

@@ -7,7 +7,7 @@
           </div>
 
           <h1 class="home-intro__title post"> 
-            JAMstack made <em>simple</em> with Vue.js
+            JAMstack made simple with Vue.js
           </h1>
 
           <p class="home-lead lead post">
