@@ -1,8 +1,6 @@
 # What is the JAMstack?
 
-JAMstack is a new way of building websites and apps that delivers better performance, higher security, lower cost of scaling, and a better developer experience. It's a Modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup.
-
-> Gridsome makes **JAMstack development with Vue.js** simple & fast
+> JAMstack is a new way of building websites and apps that delivers better performance, higher security, lower cost of scaling, and a better developer experience. It's a Modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup.
 
 
 ## Benefits

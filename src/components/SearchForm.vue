@@ -40,8 +40,7 @@ export default {
   font-size: 0.9rem;
 
   & &__input {
-    max-width: 200px;
-    background-color: var(--primary-bg);
+    max-width: 170px;
     &:focus {
       background-color: rgba(255, 255, 255, .3);
     }

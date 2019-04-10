@@ -7,7 +7,7 @@
           </div>
 
           <h1 class="home-intro__title post"> 
-            Build JAMstack websites with Vue.js
+            JAMstack made <em>simple</em> with Vue.js
           </h1>
 
           <p class="home-lead lead post">
@@ -56,8 +56,10 @@ export default {
   border-top:0;
   
   &__title {
-    font-size: 3rem;
-    color: var(--dark-bg);
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    letter-spacing: -1px;
+    font-weight: 600;
   }
 
   @media screen and (max-width: 850px) {

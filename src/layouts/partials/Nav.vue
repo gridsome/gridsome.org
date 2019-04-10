@@ -49,12 +49,6 @@ export default {
 
 <style lang="scss">
 .main-nav {
-  a {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: .8rem;
-    font-weight: 500;
-  }
   svg {
     display: none;
   }
