@@ -49,12 +49,29 @@ from metaInfo you set in your pages.
 - Type `Array`
 - Default `[]`
 
-[Read more about using plugins](/docs/install-plugins)
+Activate plugins by adding them to the `plugins` array.
+
+```js
+module.exports = {
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'blog/**/*.md',
+        route: '/blog/:year/:month/:day/:slug',
+        typeName: 'Post'
+      }
+    }
+  ]
+}
+```
+
+[Read more about how to use plugins](/docs/plugins)
 
 ## icon
 
 - Type `string | Object`
-- Default `'src/favicon.png'`
+- Default `'./src/favicon.png'`
 
 Gridsome will use any image located at `src/favicon.png` as favicon and
 touchicon by default, but you can define another path or sizes etc. The icon
