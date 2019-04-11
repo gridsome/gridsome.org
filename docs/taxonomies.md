@@ -23,9 +23,7 @@ api.loadSource(store => {
   posts.addNode({
     id: '1',
     title: 'A post',
-    fields: {
-      tags: ['1']
-    }
+    tags: ['1']
   })
 }
 ```
