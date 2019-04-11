@@ -91,6 +91,8 @@
       link: /docs/server-api
     - title: Data store API
       link: /docs/data-store-api
+    - title: Pages API
+      link: /docs/pages-api
     - title: Client API
       link: /docs/client-api
     - title: Transformer API

@@ -48,7 +48,22 @@ module.exports = function (api) {
 }
 ```
 
-[Read more about the Data Store API](/docs/data-store-api)
+## api.createPages(fn)
+
+Create pages from
+
+Usage:
+
+```js
+module.exports = function (api) {
+  api.createPages(pages => {
+    // Use Pages API here
+  })
+}
+```
+
+[Read more about the Pages API](/docs/pages-api)
+
 ## api.configureWebpack(fn)
 
 Configure the internal webpack config. 
