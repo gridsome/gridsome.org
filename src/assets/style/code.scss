@@ -39,6 +39,11 @@
   overflow-x: auto;
 }
 
+// HTML code blocks
+#app pre.language-html {
+  font-variant-ligatures: none;
+}
+
 // inline code
 #app code {
   padding: 0.2em 0.5em;
