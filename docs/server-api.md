@@ -49,6 +49,27 @@ module.exports = function (api) {
 ```
 
 [Read more about the Data Store API](/docs/data-store-api)
+## api.configureWebpack(fn)
+
+Configure the internal webpack config. 
+
+#### Usage
+
+The object will be merged with the internal config if it is an object. 
+
+```js
+api.configureWebpack({
+  // add config here
+})
+```
+
+If the option is a function, it will get the internal config as its first argument. You can either modify the argument or return a new config object that will override the internal webpack config.
+
+```js
+api.configureWebpack(config => {
+  return merge({ /* custom config */ }, config)
+})
+```
 
 ## api.chainWebpack(fn)
 

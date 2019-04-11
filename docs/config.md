@@ -63,18 +63,18 @@ should be a square and minimum 16 pixels. The favicon will be resized to 16, 32,
 default.
 
 ```js
-{
-  icon: 'src/my-icon.png'
+module.exports = {
+  icon: './src/my-icon.png'
 }
 ```
 
 Use a different image for touch icons:
 
 ```js
-{
+module.exports = {
   icon: {
-    favicon: 'src/my-favicon.png',
-    touchicon: 'src/my-touchicon.png'
+    favicon: './src/my-favicon.png',
+    touchicon: './src/my-touchicon.png'
   }
 }
 ```
@@ -82,17 +82,43 @@ Use a different image for touch icons:
 Define custom sizes and disable effects on iOS < 7 devices:
 
 ```js
-{
+module.exports = {
   icon: {
     favicon: {
-      src: 'src/my-favicon.png',
+      src: './src/my-favicon.png',
       sizes: [16, 32, 96]
     },
     touchicon: {
-      src: 'src/my-touchicon.png',
+      src: './src/my-touchicon.png',
       sizes: [76, 152, 120, 167],
       precomposed: true
     }
+  }
+}
+```
+
+## configureWebpack
+
+- Type `Object | Function`
+
+The option will be merged with the internal config if it is an object. 
+
+```js
+module.exports = {
+  configureWebpack: {
+    // merged with the internal config
+  }
+}
+```
+
+If the option is a function, it will get the internal config as its first argument. You can either modify the argument or return a new config object that will override the internal webpack config.
+
+```js
+const merge = require('webpack-merge')
+
+module.exports = {
+  configureWebpack (config) {
+    return merge({ /* custom config */ }, config)
   }
 }
 ```
@@ -104,7 +130,6 @@ Define custom sizes and disable effects on iOS < 7 devices:
 A function that will receive an instance of ChainableConfig powered by
 [webpack-chain](https://github.com/neutrinojs/webpack-chain).
 
-
 ## configureServer
 
 - Type `Function`
@@ -112,6 +137,12 @@ A function that will receive an instance of ChainableConfig powered by
 Configure the development server.
 
 [Read more about configuring the development server](/docs/server-api#apiconfigureserverfn)
+
+## css.split
+
+- Type `boolean` *Default: `false`*
+
+Split CSS into multiple chunks. Splitting is disabled by default.
 
 ## css.loaderOptions
 
@@ -121,7 +152,7 @@ Configure the development server.
 Pass options to CSS-related loaders. For example:
 
 ```js
-{
+module.exports = {
   css: {
     loaderOptions: {
       scss: {
