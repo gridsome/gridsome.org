@@ -8,9 +8,9 @@ excerpt: "..."
 
 ## Creating custom pages
 
-Gridsome 0.6 comes with a new API for creating pages. Until now, you have only been able to create pages by having Vue components in the `src/pages` folder or by creating templates for nodes. But that is too limited for some use cases. The new API lets you create pages programmatically, which will give you much more flexibility.
+Gridsome 0.6 comes with a new API for creating pages. Until now, you have only been able to create pages by having Vue components in the `src/pages` folder or by creating templates for content types. But that is too limited for some use cases. The new API lets you create pages programmatically, which will give you much more flexibility.
 
-Read more about the [Pages API](/docs/filtering-data)
+Read more about the [Pages API](/docs/pages-api)
 
 ## Staters library
 
@@ -25,6 +25,7 @@ This change doesn't break anyhing, but it's recommended to update you code to re
 ## Breaking changes 😅
 
 - Custom fields are no longer camel cased by default.
+- A trailing slash is added to paths by default. [Read more](/docs/config#permalinks)
 - `content`, `excerpt` and `slug` are no longer part of `NodeInterface`.
 - `NodeInterface` is renamed to `Node`.
 - Routes for pages in `src/pages` no longer gets automatic names.
