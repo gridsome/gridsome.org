@@ -54,7 +54,7 @@ The `gridsome build` command prepares a project for **production**. This means i
 
 > Services like **Netlify** and **Zeit Now** let you run `gridsome build` automatically from a **Git-repository** and host the generated files on a CDN for you. These services also have hooks that enable you to re-build the site after a Git-commit. Learn more about Git-based [deployment here](/docs/deployment).
 
-### Build-time server-side rendering, literally
+### Build time server-side rendering, literally
 Gridsome generates your static web site using typical server-side rendering methods. The way it works is at build-time, Gridsome spins up a small embedded server that's used to pre-render all your site content using the same process you use during a `gridsome serve` session.  
 
 >  There are some other implications to Gridsome's server-side rendering. Each page is rendered in a Node.js context, and not a browser context, so globals like `window` and `document` are not available during the build-time rendering process.
