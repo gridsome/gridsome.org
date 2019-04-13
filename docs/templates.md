@@ -60,7 +60,7 @@ query Post ($path: String!) {
 }
 </page-query>
 
-<style lang="scss">
+<style>
 .post-title {
   padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
   text-align: center;
@@ -131,6 +131,7 @@ We also added [@gridsome/transformer-remark plugin](/plugins/@gridsome/transform
 
 ```javascript
 module.exports = {
+  siteName: 'Gridsome',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
@@ -139,10 +140,7 @@ module.exports = {
         path: 'content/posts/*.md', /* Where to look for files. Should be a glob path */
         route: '/:slug', /* Define a dynamic route */
       }
-    },
-    {
-      // another data source
-    },
+    }
   ],
   transformers: {
     //Add markdown support to all file-system sources
@@ -151,7 +149,7 @@ module.exports = {
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
       anchorClassName: 'icon icon-link',
       plugins: [
-        '@gridsome/remark-prismjs'
+        // ...local plugins
       ]
     }
   },
