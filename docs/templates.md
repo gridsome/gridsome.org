@@ -84,12 +84,16 @@ query postQueryName ($path: String!) {
 ```
 - `post: post` - The post is the name of the GraphQL collection you want to query (Define under `config.js` `typeName: Post`). 
 
-[How to query with GraphQL](/docs/querying-data#how-to-query-with-graphql)_
+[How to query with GraphQL](/docs/querying-data#how-to-query-with-graphql)
 
-#### Playground
+#### GraphQL Playground
+
+![query example](https://uploads-ssl.webflow.com/5ae579b8e789f452ffdcce17/5cb26238dfaff54e60374e06_query.png)
+
 Every Gridsome project has a GraphQL explorer (Playground) at `http://localhost:8080/___explore`.
 
-Example of title query:
+**Simple query for title field of Post collection:**
+
 ```graphql
 query Post {
   allPost {
@@ -102,7 +106,28 @@ query Post {
 }
 
 ```
-![Example query](https://uploads-ssl.webflow.com/5ae579b8e789f452ffdcce17/5cb1fd8e46fa44184fbdacce_query-data.png)
+**Result:**
+
+```graphql
+{
+  "data": {
+    "allPost": {
+      "edges": [
+        {
+          "node": {
+            "title": "My Second post"
+          }
+        },
+        {
+          "node": {
+            "title": "My First post"
+          }
+        }
+      ]
+    }
+  }
+}
+```
 
 [Learn more about Explore & test queries](/docs/layouts)
 
@@ -115,7 +140,6 @@ To include a variable in your template, wrap it in two sets of curly braces. Lik
   {{ $page.post.title }}
 </h1>
  ```
-
 
 ### Content files
 
@@ -138,7 +162,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
 
 ```
-Add one more post entry:
+One more post entry:
 
 `/content/posts/my-second-post.md`:
 
@@ -160,13 +184,19 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
 
 ### Linking content to template
 
-Here is an example of the [file-system source plugin](/plugins/@gridsome/source-filesystem). Plugin options are added to `gridsome.config.js`. 
+In this example we use [file-system source plugin](/plugins/@gridsome/source-filesystem) and [@gridsome/transformer-remark plugin](/plugins/@gridsome/transformer-remark) (Markdown support).
+
+**Install:**
+- `yarn add @gridsome/source-filesystem`
+- `yarn add @gridsome/transformer-remark`
+
+**Config**
+
+Plugin options are added to `gridsome.config.js`. 
 
 - `typeName` - will be the name of the GraphQL collection and needs to be unique. This example will add a *Post* collection.
 - `path` - Where to look for content files. Should be a global path.
 - `route` - Define a dynamic route.
-
-We also added [@gridsome/transformer-remark plugin](/plugins/@gridsome/transformer-remark) (Markdown support).
 
 ```javascript
 module.exports = {
@@ -194,7 +224,6 @@ module.exports = {
   },
 }
 ```
-Learn more about [Use data source plugins](/docs/fetching-data#use-data-source-plugins)
 
 Save and run `gridsome develop`, go to `http://localhost:8080/my-first-post` -or- `http://localhost:8080/my-second-post`.
 
@@ -207,12 +236,15 @@ Save and run `gridsome develop`, go to `http://localhost:8080/my-first-post` -or
 ```html
 <template>
   <Layout>
+    <h1>Blog</h1>
     <!-- List posts -->
     <ul class="posts">
       <li v-for="edge in $page.posts.edges" :key="edge.node.id">
         <article>
-          <h3>{{ edge.node.title }}</h3>
+          <h2>{{ edge.node.title }}</h2>
+          <date>{{ edge.node.date }}</date>
           <p>{{ edge.node.description }}</p>
+          <g-link :to="edge.node.path">Read Article</g-link>
         </article>
       </li>
     </ul>
@@ -227,6 +259,7 @@ Save and run `gridsome develop`, go to `http://localhost:8080/my-first-post` -or
           title
           date (format: "D. MMMM YYYY")
           description
+          path
         }
       }
     }
@@ -236,7 +269,7 @@ Save and run `gridsome develop`, go to `http://localhost:8080/my-first-post` -or
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Blog'
   }
 }
 </script>
