@@ -88,8 +88,6 @@ query postQueryName ($path: String!) {
 
 #### GraphQL Playground
 
-![query example](https://uploads-ssl.webflow.com/5ae579b8e789f452ffdcce17/5cb26238dfaff54e60374e06_query.png)
-
 Every Gridsome project has a GraphQL explorer (Playground) at `http://localhost:8080/___explore`.
 
 **Simple query for title field of Post collection:**
@@ -128,6 +126,7 @@ query Post {
   }
 }
 ```
+![query example](https://uploads-ssl.webflow.com/5ae579b8e789f452ffdcce17/5cb26903dfaff57024376cc4_query-title.png)
 
 [Learn more about Explore & test queries](/docs/layouts)
 
