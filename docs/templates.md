@@ -13,11 +13,9 @@ The example shows a **Blog.vue** in **/pages** where Blog posts will be listed a
 
 ![template flow](https://uploads-ssl.webflow.com/5a0ad22bd65a2f0001be37f0/5cac6ae2efbaefbaae46ed75_template-gridsome.png)
 
-Templates must have a `<page-query>` block which fetches the source node
-for the current page. You can use the `$path` variable to get the node.
+`src/templates/Post.vue`
 
 ```html
-<!-- src/templates/Post.vue -->
 <template>
   <Layout>
     <article>
@@ -50,7 +48,7 @@ export default {
 </script>
 
 <page-query>
-query Post ($path: String!) {
+query postQueryName ($path: String!) {
   post: post (path: $path) {
     title
     date (format: "D. MMMM YYYY")
@@ -69,6 +67,46 @@ query Post ($path: String!) {
 
 ```
 
+### Query with GraphQL
+Templates must have a `<page-query>` block which fetches the source node for the current page. You can use the `$path` variable to get the node.
+
+``` html
+<page-query>
+query postQueryName ($path: String!) {
+  post: post (path: $path) {
+    title
+    date (format: "D. MMMM YYYY")
+    description
+    content
+  }
+}
+</page-query>
+```
+- `post: post` - The post is the name of the GraphQL collection you want to query (Define under `config.js` `typeName: Post`). 
+
+[How to query with GraphQL](/docs/querying-data#how-to-query-with-graphql)_
+
+#### Playground
+Every Gridsome project has a GraphQL explorer (Playground) at `http://localhost:8080/___explore`.
+
+Example of title query:
+```graphql
+query Post {
+  allPost {
+    edges {
+      node {
+        title
+      }
+    }
+  }
+}
+
+```
+![Example query](https://uploads-ssl.webflow.com/5ae579b8e789f452ffdcce17/5cb1fd8e46fa44184fbdacce_query-data.png)
+
+[Learn more about Explore & test queries](/docs/layouts)
+
+### Render data
 To include a variable in your template, wrap it in two sets of curly braces. Like this:
 
 `src/templates/Post.vue`:
@@ -77,6 +115,7 @@ To include a variable in your template, wrap it in two sets of curly braces. Lik
   {{ $page.post.title }}
 </h1>
  ```
+
 
 ### Content files
 
@@ -211,7 +250,6 @@ The `<Layout>` component is an optional component used to **wrap pages and templ
 ** The page/template layout can be named anything. `<Layout>` is just an example. **
 
 [Learn more about Layouts](/docs/layouts)
-
 
 ### More...
 
