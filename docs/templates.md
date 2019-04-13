@@ -159,6 +159,8 @@ Learn more about [Use data source plugins](/docs/fetching-data#use-data-source-p
 
 Save and run `gridsome develop`, go to `http://localhost:8080/my-first-post` -or- `http://localhost:8080/my-second-post`.
 
+![Post Example](https://uploads-ssl.webflow.com/5ae579b8e789f452ffdcce17/5cb1f7474e4584388e04109f_post-example.png)
+
 ## Create collection pagelist
 
 `/pages/blog.vue`
