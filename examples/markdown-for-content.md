@@ -15,12 +15,12 @@ module.exports = {
       options: {
         path: 'posts/**/*.md', // What files to use
         typeName: 'BlogPost', // GraphQL schema name
-        route: '/posts/:slug' // Create routes
+        route: '/posts/:title' // Create routes
         refs: {
           // Create relation between "tags" field.
           tags: { 
             typeName: 'Tag',
-            route: '/tags/:slug',
+            route: '/tags/:title',
             create: true
           }
         }

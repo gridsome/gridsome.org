@@ -12,7 +12,8 @@ order: 4
     to create a template. For example this file is named 
     "BlogPost.vue" and will be used as template for posts in
     "BlogPost" GraphQL collection -->
-    <div v-html="$page.post.content">
+    <h1 v-html="$page.post.title" />
+    <div v-html="$page.post.content" />
   </Layout>
 </template>
 

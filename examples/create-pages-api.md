@@ -1,21 +1,40 @@
 ---
-title: Create Pages API
+title: Create Pages from data
 filepath: gridsome.server.js
 filetype: js
 order: 10
 ---
+```js
+module.exports = function (api) {
+  api.createPages(async ({ graphql, createPage }) => {
+    // Query data from local GraphQL data layer
+    const { data } = await graphql(`
+      query {
+        allProduct {
+          id
+        }
+      }
+    `)
+
+    // Create pages from data
+    data.allProduct.edges.forEach(edge => {
+      createPage({
+        path: `${edge.node.path}/reviews`, // Create route
+        component: './src/templates/ProductReviews.vue',
+        context: {
+          id: edge.node.id
+        }
+      })
+    })
+  })
+}
+```
+
 ```html
+<!-- /src/templates/ProductReviews.vue -->
 <template>
-  <Layout>
-    <!-- Use the built-in Image component
-    for progressive images -->
-
-    <g-image src="~/assets/images.jpg" width="500" />
-
-    <!-- This will render a small 
-    ultra-compressed, blurred inline base64 image
-    before it's lazy loaded into view with
-    Intersection Observer -->
-  </Layout>
+  <div>
+    {{ $context.id }}
+  </div>
 </template>
 ```
