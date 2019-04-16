@@ -1,6 +1,6 @@
 ---
 title: Built-in Pagination
-filepath: ~/pages/Blog.vue
+filepath: src/pages/Blog.vue
 filetype: vue
 order: 5
 ---
@@ -18,17 +18,6 @@ order: 5
   </Layout>
 </template>
 
-<script>
-// Import the built-in Pager component.
-import { Pager } from 'gridsome'
-
-export default {
-  components: {
-    Pager
-  }
-}
-</script>
-
 <page-query>
 query Post ($page: Int) {
   posts: allPost (perPage: 10, page: $page) @paginate {
@@ -45,4 +34,15 @@ query Post ($page: Int) {
   }
 }
 </page-query>
+
+<script>
+// Import pagination component
+import { Pager } from 'gridsome'
+
+export default {
+  components: {
+    Pager
+  }
+}
+</script>
 ```

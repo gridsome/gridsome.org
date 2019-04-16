@@ -1,26 +1,26 @@
 ---
-title: Add data to Vue with GraphQL
-filepath: ~/pages/Blog.vue
+title: Build with Vue & GraphQL
+filepath: src/pages/Blog.vue
 filetype: vue
-order: 4
+order: 1
 ---
 ```html
 <template>
   <Layout>
-  	<h1>Our blog</h1>
+  	<h1>My blog</h1>
     <!-- Loop data -->
-   	<div v-for="{ node } in $page.posts.edges" :key="node.id">
+   	<div v-for="{ node } in $page.allBlogPost.edges" :key="node.id">
       <h3> {{ node.title }} </h3>
+      <!-- Link to post -->
    	  <g-link :to="node.path">Read more</g-link>
    	</div>
   </Layout>
 </template>
 
-<!-- Query from a local GraphQL data layer.
-Data is added to a $page object. -->
+<!-- Query from a local GraphQL data layer. -->
 <page-query>
 query Posts {
-  posts: allBlogPost {
+  allBlogPost {
     edges {
       node {
       	id

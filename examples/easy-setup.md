@@ -2,7 +2,7 @@
 title: Easy configuration
 filepath: gridsome.config.js
 filetype: js
-order: 1
+order: 2
 ---
 ```js
 module.exports = {
@@ -10,21 +10,22 @@ module.exports = {
   siteDescription: '...is faster than yours',
   plugins: [
     {
-      // Example usage of a Data Source plugin
-      use: '@gridsome/source-wordpress',
+      use: '@gridsome/source-wordpress',  // Use source plugins to get data
       options: {
         baseUrl: 'YOUR_WEBSITE_URL', // required
         typeName: 'WordPress', // GraphQL schema name
-        perPage: 100, // How many posts to load per request
-        concurrent: 10, // How many requests simultaneous
-
-        // Create routes for WordPress post types
         routes: {
-          post: '/:year/:month/:day/:slug',
+          post: '/:year/:month/:day/:slug', // Create routes
           post_tag: '/tag/:slug' 
         }
       }
     },
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-XXXXXXXXX-X'
+      }
+    }
   ]
 }
 ```

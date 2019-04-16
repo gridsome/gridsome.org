@@ -2,7 +2,6 @@
   <Layout>
     <home-intro-simple />
     <home-how-it-work-simple />
-    <home-connect />
     <home-features />
     <home-blog />
   </Layout>
@@ -20,7 +19,6 @@ export default {
     HomeIntroSimple,
     HomeHowItWorkSimple,
     HomeFeatures,
-    HomeConnect,
     HomeBlog,
   },
   

@@ -1,17 +1,14 @@
 ---
 title: Smart Templates
-filepath: ~/templates/BlogPost.vue
+filepath: src/templates/BlogPost.vue
 filetype: vue
 order: 4
 ---
 ```html
 <template>
   <Layout>
-    <!-- Create a .vue file in src/templates with
-    the same name as the GraphQL collection (typeName)
-    to create a template. For example this file is named 
-    "BlogPost.vue" and will be used as template for posts in
-    "BlogPost" GraphQL collection -->
+    <!-- Create a .vue file in src/templates with the same name as 
+    the GraphQL collection (typeName) to create a template. -->
     <h1 v-html="$page.post.title" />
     <div v-html="$page.post.content" />
   </Layout>

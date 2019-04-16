@@ -13,23 +13,19 @@
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 var(--primary-color-dark);
     transform: scale(1);
-  }
-  70% {
-    box-shadow: 0 0 0 15px transparent;
-    transform: scale(1.05);
-
   }
   100% {
-    box-shadow: 0 0 0 0 transparent;
-    transform: scale(1);
-
+    transform: scale(1.5);
+    opacity: 0;
   }
 }
 
 @keyframes stroke {
-  to{stroke-dashoffset:-30;}
+  to{
+    stroke-dashoffset:-30;
+    transform: translateZ(0);
+  }
 }
 
 
@@ -41,6 +37,16 @@
     transform: rotate(0deg);
   }
 }
+
+@keyframes moveInOut {
+  from {
+    transform: translateX(-10px);
+  }
+  to {
+    transform: translateX(5px);
+  }
+}
+
 
 
 .menu-item {

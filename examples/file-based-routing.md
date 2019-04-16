@@ -1,6 +1,6 @@
 ---
 title: File-based Page routing
-filepath: ~/pages/HelloWorld.vue
+filepath: src/pages/HelloWorld.vue
 filetype: vue
 order: 5
 ---

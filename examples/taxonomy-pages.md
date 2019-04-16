@@ -1,14 +1,13 @@
 ---
 title: Taxonomy pages
-filepath: ~/templates/Tag.vue
+filepath: src/templates/Tag.vue
 filetype: vue
 order: 5
 ---
 ```html
 <template>
   <Layout>
-    <!-- Creates a template for a "Tag"
-      that lists all post with same tag -->
+    <!-- Creates a template for a "Tag" that lists all post with same tag -->
     <h1>{{ $page.tag.title }}</h1>
     <ul>
       <li v-for="edge in $page.tag.belongsTo.edges"

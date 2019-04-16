@@ -1,40 +1,36 @@
 <template>
   <Section class="home-intro" dots="true" primary="true">
-    <div class="flex grid-cols grid-cols--2">
-      <div>
-        <div style="padding: 0 5%">
-          <div class="home-message" hidden>
-            <g-link to="/blog/2019/02/19/gridsome-v05"><span>Introducing Gridsome Staging &rarr;</span></g-link>
-          </div>
-
-          <h1 class="home-intro__title post"> 
-            JAMstack made simple with Vue.js
-          </h1>
-
-          <p class="home-lead lead post">
-            Gridsome is a <strong>Vue.js-powered</strong> framework that makes it easy and fun for developers to create modern, static <strong>websites & apps</strong> that are <em><g-link to="/docs/fast-by-default">fast by default</g-link></em>.
-          </p>
-
-          <p class="home-links mb">
-            <g-link  to="/docs" class="button primary button--large">
-              Get started
-            </g-link>
-          </p>
-
-          <p class="home-info">
-            <span>Open source MIT Licensed. </span>
-            <a href="//github.com/gridsome/gridsome" target="_blank" rel="noopener">
-            <span>GitHub (v{{ $static.metaData.gridsomeVersion }})</span>
-            </a>
-          </p>
-        </div>
-
-     
+    <div class="text-center">
+      <div class="home-message" hidden>
+        <g-link to="/blog/2019/02/19/gridsome-v05"><span>Introducing Gridsome Staging &rarr;</span></g-link>
       </div>
-      <div>
-        <Examples />
-      </div>
+
+      <h1 class="home-intro__title post"> 
+        JAMstack made simple with Vue.js
+      </h1>
+
+      <p class="home-lead lead post mb">
+        Gridsome is a <strong>Vue.js-powered</strong> framework that makes it easy and fun for developers to create modern, static <strong>websites & apps</strong> that are <em><g-link to="/docs/fast-by-default">fast by default</g-link></em>.
+      </p>
+
+      <p class="home-info mb-x2">
+        <span>Open source MIT Licensed. </span>
+        <a href="//github.com/gridsome/gridsome" target="_blank" rel="noopener">
+        <span>GitHub (v{{ $static.metaData.gridsomeVersion }})</span>
+        </a>
+      </p>
+
+
     </div>
+    <div class="home-examples mb">
+      <Examples />
+    </div>
+
+    <p class="home-links text-center">
+      <g-link  to="/docs" class="button primary button--large">
+        Get started
+      </g-link>
+    </p>
   </Section>
 </template>
 
@@ -65,7 +61,7 @@ export default {
   }
   
   &__title {
-    font-size: 3.4rem;
+    font-size: 3rem;
     color: var(--primary-color);
     letter-spacing: -1px;
     font-weight: 600;
@@ -78,10 +74,17 @@ export default {
   }
 }
 
-.home-lead {
-  font-size: 1.3rem;
+
+.home-examples {
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
+.home-lead {
+  font-size: 1.4rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
 
 .home-info {
   font-size: .85rem;

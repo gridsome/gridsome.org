@@ -1,27 +1,34 @@
 <template>
-	<div class="examples">
-		<div class="examples__header" 
-			v-for="({ node }, index) in $static.examples.edges" 
-			v-if="index == current" 
-			:key="index">
-			{{ node.filepath }}
-			
-		</div>
-		<transition name="slide">
-			<div class="examples__code" 
-				v-for="({ node }, index) in $static.examples.edges" 
-				v-if="index == current" 
-				:key="index">
-				<div v-html="node.content" />
+	<div class="examples flex flex-align-top">
+		<div class="examples__sidebar">
+			<div class="examples__buttons">
+				<div></div>
+				<div></div>
+				<div></div>
 			</div>
-		</transition>
-		<div class="examples__footer">
 			<a href="#" 
 				:class="{active: index == current}" 
 				@click.prevent="current = index" 
 				v-for="({ node }, index) in $static.examples.edges">
 				{{ node.title }}
 			</a>
+		</div>
+		<div class="examples__frame" style="flex:1">
+			<div class="examples__header" 
+				v-for="({ node }, index) in $static.examples.edges" 
+				v-if="index == current" 
+				:key="index">
+				{{ node.filepath }}
+				
+			</div>
+			<transition name="slide">
+				<div class="examples__code" 
+					v-for="({ node }, index) in $static.examples.edges" 
+					v-if="index == current" 
+					:key="index">
+					<div v-html="node.content" />
+				</div>
+			</transition>
 		</div>
 	</div>
 </template>
@@ -68,20 +75,46 @@ query Example {
 
 .examples {
 	background-color: #173a56;
-	border-radius: 5px;
-	color: #FFF;
-	position: relative;
-	overflow: hidden;
-	
-	&__header,
-	&__footer {
+	background-color: var(--dark-bg);
+	border-radius: 10px;
+
+	&__buttons {
+		margin-top:-10px;
+		margin-bottom: var(--space);
+
+		div {
+			display: inline-block;
+			width: 11px;
+			height: 11px;
+			border-radius: 100%;
+			margin: 0 4px;
+			background-color: rgba(255,255,255,.2);
+		}
+	}
+
+	&__frame {
+		border-radius: 5px;
+		color: #FFF;
+		position: relative;
+		overflow: hidden;
+		background-color: rgba(0,0,0,.3);
+	}
+
+	&__header{
 		padding: 10px 20px;
+	}
+
+	&__sidebar {
+		max-width: 280px;
+		padding: var(--space);
+		font-size: .95rem;
 		a {
 			color: #FFF;
 			text-decoration: none;
 			background-color: var(--dark-bg);
 			padding: 3px 7px;
 			border-radius: 5px;
+			width: 100%;
 			margin: 0 8px 8px 0;
 			display: inline-block;
 			&:hover {
@@ -93,22 +126,13 @@ query Example {
 		}
 	}
 
-	&__header {
-	}
-
-	&__footer {
-		text-align: center;
-		font-size: .8rem;
-		padding: 10px 0;
-	}
 
 	&__code {
 		padding: 10px 0 10px var(--space);
-		background-color: var(--dark-bg);
 		border-radius: 5px;
 		overflow-y: auto;
 		overflow-x: hidden;
-		height: 450px;
+		height: 615px;
 		max-width: calc(100vw - var(--space) - 20px)
 	}
 }

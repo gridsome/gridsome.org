@@ -17,13 +17,12 @@
         <p>Any Git-based CMS, Forestry, Netlify CMS, Blogs, Documentation.</p>
 
         <template slot="outer">
-          <svg width="100%" height="37" viewBox="0 0 1 37" class="dot show-for-small">
-            <path d="M0.5 0L0.500002 37"/>
-          </svg>
-
-          <svg width="100%" height="37" viewBox="0 0 1 37" class="dot dot--horizontal hide-for-small">
-            <path d="M0.5 0L0.500002 37"/>
-          </svg>
+          <div class="dots hide-for-small">
+            <div class="dots__dot" />
+            <div class="dots__dot" />
+            <div class="dots__dot" />
+            <div class="dots__dot" />
+          </div>
         </template>
       </Card>
 
@@ -31,6 +30,7 @@
 
         <div class="logo-pulse">
           <gridsome-logo />
+          <div class="logo-pulse__bg"></div>
         </div>
 
         <p class="powered-by">
@@ -45,13 +45,12 @@
         </ul>
   
         <template slot="outer">
-          <svg width="100%" height="37" viewBox="0 0 1 37" class="dot show-for-small">
-            <path d="M0.5 0L0.500002 37"/>
-          </svg>
-
-          <svg width="100%" height="37" viewBox="0 0 1 37" class="dot dot--horizontal hide-for-small">
-            <path d="M0.5 0L0.500002 37"/>
-          </svg>
+         <div class="dots hide-for-small">
+            <div class="dots__dot" />
+            <div class="dots__dot" />
+            <div class="dots__dot" />
+            <div class="dots__dot" />
+          </div>
         </template>
       </Card>
 
@@ -115,12 +114,6 @@ export default {
     margin-bottom: .3rem;
   }
 
-  @media screen and (max-width: 850px) {
-    .card {
-      margin-bottom: 40px;
-    }
-  }
-
   .card__inner {
     padding: 30px 40px;
   }
@@ -170,8 +163,17 @@ export default {
     align-items: center;
     border-radius: 100%;
     z-index: 0;
-    animation: pulse 2s infinite;
     margin-bottom: 1rem;
+
+    &__bg {
+      animation: pulse 2s infinite;
+      background-color: var(--primary-color);
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      border-radius: 100%;
+      z-index: -1;
+    }
 
     svg {
       width: 70px;
@@ -191,29 +193,24 @@ export default {
   }
 
 }
-.dot {
-  margin: 15px 0;
-  text-align: center;
-  stroke: var(--primary-color);
-  stroke-width: 5px;
-  stroke-linecap: round;
-  stroke-dasharray: 0 15;
-  animation: stroke 600ms linear infinite;
-
-  .card > & {
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
-
-  .card > &--horizontal {
-    left: 100%;
-    top: 40%;
-    z-index: 999;
-    width: 50px;
-    height: 50px;
-    margin-top: -30px;
-    transform: rotate(-90deg);
-  }
+.dots {
+  width: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 0;
+}
+.card .dots {
+  position: absolute;
+  left: 100%;
+  top: 40%;
+}
+.dots__dot {
+  width: 5px;
+  height: 5px;
+  margin: 0 5px;
+  display: inline-block;
+  border-radius: 99px;
+  background-color: var(--primary-color);
+  animation: moveInOut .6s linear infinite;
 }
 </style>

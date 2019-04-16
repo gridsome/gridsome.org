@@ -6,8 +6,8 @@ order: 2
 ---
 ```js
 module.exports = {
-  siteName: 'My Gridsome Website',
-  siteDescription: '...is faster than yours',
+  siteName: 'My Markdown Blog',
+  siteDescription: 'Gridsome 💚 Markdown',
   plugins: [
     { 
       // Example usage of Markdown for content

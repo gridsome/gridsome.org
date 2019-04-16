@@ -18,8 +18,7 @@ module.exports = function (api) {
       route: '/blog/:slug' // Set route (optional)
     })
 
-    // Add a reference between a 'author' field
-    // and an 'Author' collection
+    // Add a reference between a 'author' field and an 'Author' collection
     posts.addReference('author', 'Author')
 
     // Add data coming from API to the new content type
