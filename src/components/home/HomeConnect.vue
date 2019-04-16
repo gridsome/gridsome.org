@@ -1,7 +1,9 @@
 <template>
   <Section class="home-connect" dots="true">
     <div class="grid-cols flex grid-cols--2 grid-cols--gap-large">
- 
+      <div>
+        <Connect />
+      </div>
       <div class="text-center">
         <h2>Connect the Modern Web</h2>
         <p class="lead">
@@ -9,11 +11,6 @@
         </p>
         <p><g-link to="/plugins">Browse Gridsome Plugins</g-link></p>
       </div>
- 
-      <div>
-        <Connect />
-      </div>
-
     </div>
   </Section>
 </template>
@@ -36,7 +33,7 @@ export default {
     }
   }
  .grid-cols {
-    > div:first-child {
+    > div:last-child {
       padding: 0 5%;
     }
   }

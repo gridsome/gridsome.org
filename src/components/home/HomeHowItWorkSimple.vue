@@ -3,8 +3,8 @@
     <h2 class="container text-center">
       How Gridsome Works
     </h2>
-    <p class="lead text-center container-md" style="margin-bottom: 3rem;">
-     <strong>Pull data</strong> from one or multiple CMS and data sources. Gridsome combines them all into a unified <strong>GraphQL data layer</strong> that pages and components can access.
+    <p class="lead text-center container-sm" style="margin-bottom: 3rem;">
+     <strong>Pull data</strong> from anywhere and build with Vue.js, GraphQL and all the power of Node.js & JavaScript ecosystem.
     </p>
     <div class="grid-cols grid-cols--gap-large grid-cols--full-md how-it-works mb">
 
@@ -28,10 +28,6 @@
       </Card>
 
       <Card title="Build" class="text-center flex-align-middle">
-        
-        <div class="spark-rotate">
-          <g-image alt="Spark" src="~/assets/images/spark.png" />
-        </div>
 
         <div class="logo-pulse">
           <gridsome-logo />
@@ -60,13 +56,13 @@
       </Card>
 
       <Card title="Deploy">
-        <h4>Static Pre-rendering</h4>
+        <h4>Static Site Generation</h4>
         
         <ul class="bullet-list">
-          <li><Bullet /><g-link to="/docs/how-it-works#the-prpl-pattern">PRPL-pattern</g-link></li>
-          <li><Bullet /><g-link to="/docs/how-it-works#smart-link-prefetching">Smart link prefetching</g-link></li>
-          <li><Bullet /><g-link to="/docs/how-it-works#progressive-images">Progressive Images</g-link></li>
-          <li><Bullet /><g-link to="/docs/how-it-works#client-side-hydration">HTML → Vue.js Hydration</g-link></li>
+          <li><Bullet /><g-link to="/docs/fast-by-default#the-prpl-pattern">PRPL-pattern</g-link></li>
+          <li><Bullet /><g-link to="/docs/fast-by-default#smart-link-prefetching">Smart link prefetching</g-link></li>
+          <li><Bullet /><g-link to="/docs/fast-by-default#progressive-images">Progressive Images</g-link></li>
+          <li><Bullet /><g-link to="/docs/fast-by-default#vuejs-spa">Vue.js SPA</g-link></li>
         </ul>
 
         <svg width="20" height="20" viewBox="0 0 1 37" class="dot" style="margin:3px 0 8px; opacity: .5;">

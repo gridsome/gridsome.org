@@ -1,6 +1,6 @@
 # Deployment
 
-Gridsome is a modern website generator that generates secure & static files. To deploy a Gridsome site you need a **static site host**.
+To deploy a Gridsome site you need a **static web host**.
 
 ## Git-based deploying
 

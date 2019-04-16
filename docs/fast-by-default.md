@@ -1,0 +1,66 @@
+# Fast by Default
+> Gridsome helps developers build fast websites as default. You don't need to be a performance expert to get perfect Google Lighthouse scores with Gridsome.
+
+### What makes Gridsome sites fast?
+1. [Static Site Generation](#static-site-generation). Nothing beats static content in speed.
+2. [Follows the PRPL-pattern](#the-prpl-pattern) for instant page loads.
+3. [Smart link prefetching](#smart-link-prefetching) that uses using Intersection Observer to load next pages.
+4. [Progressive Images](#progressive-images) for automatic image compression and lazy loading.
+5. Runs as [Vue.js SPA](#progressive-images) for no-reload browsing
+
+## Static Site Generation
+
+Gridsome generates static files at blazing speed. Gridsome sites can be hosted anywhere, even on a CDN. There is no need for a Node.js server. 
+
+A static site gives you many benefits:
+
+- ⚡️ **Better Performance.** Why wait for pages to build on the fly when you can generate them at deploy time? When it comes to minimizing the time to first byte, nothing beats pre-built files served over a CDN.
+
+- ⚡️ **Higher Security.** With server-side processes abstracted into microservice APIs, surface areas for attacks are reduced. You can also leverage the domain expertise of specialist third-party services.
+
+- ⚡️ **Cheaper, Easier Scaling.** When your deployment amounts to a stack of files that can be served anywhere, scaling is a matter of serving those files in more places. CDNs are perfect for this, and often include scaling in all of their plans.
+
+
+## The PRPL pattern
+
+PRPL is a pattern for structuring and serving Progressive Web Apps (PWAs), with an emphasis on the performance of app delivery and launch. It stands for:
+
+- **Push** critical resources for the initial URL route.
+- **Render** initial route.
+- **Pre-cache** remaining routes.
+- **Lazy-load** and create remaining routes on demand.
+
+Learn more about [PRPL pattern](https://developers.google.com/web/fundamentals/performance/prpl-pattern/)
+
+
+
+## Smart link prefetching
+Gridsome prefetches internal links in the background so browsing around goes insanely fast. It uses the built-in `<g-link>` component and **Intersection Observer** to prefetch when the link is in view. 
+
+Gridsome builds two files of every page. A static HTML and a small JavaScript file. When the website hydrates into a Vue.js-SPA, the link prefetching only loads the JavaScript to render the next page. This results in a faster and smoother browsing experience.
+
+[Learn more about **g-link** here](/docs/linking).
+
+## Progressive Images
+Gridsome has a built-in `<g-image>` component with built-in progressive image support. In **development** it lets you do real-time image processing, like resizing and cropping.
+
+In production, the `<g-image>` is served as an ultra-compressed image before the image is lazy-loaded when in view by using **Intersection Observer**.
+
+### How it works
+
+- **A IMG element with a source srcset is used.** This means that using several media queries, you load the smallest image that matches your device (e.g. mobile devices get smaller images, desktop devices get larger images, etc.). The images will be resized down to 480, 1024, 1920 and 2560 pixels by default.
+
+- **A base64 blurred image loaded by default.** This makes: 1) Larger images outside the viewport are not requested until they’re needed, and 2) The blurred image is in a container with the same dimensions as the real image—therefore, no jumping when the image loads.
+
+- **An Intersection Observer** that swaps the base image for the larger image, when the image is in the viewport. (Lazy loading).
+
+
+[Learn more about **g-image** here](/docs/images)
+
+
+## Vue.js SPA
+The `gridsome build` command generates **SEO-friendly HTML files** that can be hosted anywhere. These HTML files are optimized to load as fast as possible. After the HTML is loaded Vue.js takes over the HTML and **hydrates into a fully Vue-powered SPA.**
+
+**When SPA kicks in it only loads small code-splitted JS chunks for next pages.**
+
+[Learn more about Vue.js and Client Side hydration](https://ssr.vuejs.org/guide/hydration.html)

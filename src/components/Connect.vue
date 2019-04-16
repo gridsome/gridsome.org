@@ -54,12 +54,6 @@ export default {
 .connect {
   position: relative;
 
-  button {
-    z-index: 9999;
-    position:relative;
-
-  }
-
   img {
     margin: 0;
   }

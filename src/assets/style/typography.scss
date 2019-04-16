@@ -35,18 +35,20 @@
 
 @font-face {
   font-family: Jost;
-  src: url(../fonts/Jost-700-Bold.otf);
-  font-weight: 700;
+  src: url(../fonts/Jost-600-SemiItalic.otf);
+  font-style: italic;
+  font-weight: 600;
   font-display: swap;
 }
 
 @font-face {
   font-family: Jost;
-  src: url(../fonts/Jost-700-BoldItalic.otf);
-  font-style: italic;
+  src: url(../fonts/Jost-700-Bold.otf);
   font-weight: 700;
   font-display: swap;
 }
+
+
 
 /* Smaller text for mobile */
 @media screen and (max-width: 550px) {

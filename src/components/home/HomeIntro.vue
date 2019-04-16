@@ -14,9 +14,6 @@
           <g-link  to="/docs" class="button primary button--large">
             Get started
           </g-link>
-          <!-- <g-link  to="/learn" class="button">
-            Tutorial
-          </g-link> -->
         </p>
 
         <p class="home-info">

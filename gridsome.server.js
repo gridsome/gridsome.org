@@ -50,7 +50,7 @@ module.exports = function (api) {
     const startersJson = yaml.safeLoad(startersRaw)
     const starters = store.addContentType({
       typeName: 'Starter',
-      // route: '/starter/:id'
+      route: '/starters/:id'
     })
 
     // Connect author field to Contributors & Platforms
@@ -74,7 +74,7 @@ module.exports = function (api) {
     const platformsJson = yaml.safeLoad(platformsRaw)
     const platforms = store.addContentType({
       typeName: 'Platform',
-      // route: '/starter/:id'
+      route: '/starters/platform/:id'
     })
 
     // Connect author field to Contributors

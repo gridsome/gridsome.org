@@ -1,32 +1,15 @@
 <template>
   <Starters>
-    <h1>Gridsome Starters</h1>
-    <p class="lead">Gridsome starters are premade Gridsome project that are open source and ready to be</p>
-    
-    <hr />
-
-    <h3>Default starters</h3>
-    <div class="grid-cols grid-cols--3 mb">
-      <StarterCard v-for="starter in $page.defaultStarters.edges" :node="starter.node"  />
-    </div>
-
-    <hr />
-
-    <h3>Recent</h3>
-    <div class="grid-cols grid-cols--3">
-      <StarterCard v-for="starter in $page.starters.edges" :node="starter.node"  />
-    </div>
+    <h1>Gridsome starters</h1>
   </Starters>
 </template>
 
 <script>
 import Starters from '~/layouts/Starters.vue'
-import StarterCard from '~/components/StarterCard.vue'
 
 export default {
   components: {
-    Starters,
-    StarterCard
+    Starters
   }
 }
 </script>
@@ -73,5 +56,3 @@ query Starters {
   }
 }
 </page-query>
-
-

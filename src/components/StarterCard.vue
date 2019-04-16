@@ -23,7 +23,9 @@
 
 <script>
 export default {
-  props: 'node'
+  props: {
+    node: { type: Object, required: true }
+  }
 }
 </script>
 

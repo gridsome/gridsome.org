@@ -53,8 +53,12 @@
     display: flex;
     text-decoration: none;
 
+    &.active--exact {
+      color: var(--primary-color-dark);
+    }
+    
     &:hover {
-      opacity: .6;
+      color: var(--primary-color);
     }
   }
 
@@ -64,8 +68,6 @@
 
     &.active--exact {
       color: var(--primary-color-dark);
-      opacity: 1;
-      font-weight: 600;
       position: relative;
       padding-left: .8rem;
 

@@ -4,10 +4,10 @@
       link: /docs
     - title: How it works
       link: /docs/how-it-works
+    - title: Fast by default
+      link: /docs/fast-by-default
     - title: The JAMstack
       link: /docs/jamstack
-    - title: Starter kits
-      link: /docs/starters
     - title: Deployment
       link: /docs/deployment
 

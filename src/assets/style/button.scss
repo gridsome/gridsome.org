@@ -27,7 +27,7 @@
     border-radius: 5px;
     transition: opacity .3s, box-shadow .3s;
     opacity: .6;
-    box-shadow: inset 0px -2px 0px 1px rgba(0,0,0,.15);
+    box-shadow: inset -1px -1px 0px 0px rgba(0,0,0,.2);
   }
 
   &:active:after {
@@ -40,14 +40,14 @@
 
   &.primary {
     color:#FFF;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-dark);
     &:after {
       border-color: rgba(0,0,0,.1);
     }
 
     &:hover {
       color:#FFF;
-      background-color: var(--primary-color-dark);
+      background-color: var(--primary-color);
     }
   }
 

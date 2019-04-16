@@ -1,9 +1,10 @@
 <template>
-  <Section class="home-intro" dots="true">
-      <div class="text-center">
-
+  <Section class="home-intro" dots="true" primary="true">
+    <div class="flex grid-cols grid-cols--2">
+      <div>
+        <div style="padding: 0 5%">
           <div class="home-message" hidden>
-            <g-link to="/blog/2019/02/19/gridsome-v05"><span>🎉 Gridsome v0.5 released &rarr;</span></g-link>
+            <g-link to="/blog/2019/02/19/gridsome-v05"><span>Introducing Gridsome Staging &rarr;</span></g-link>
           </div>
 
           <h1 class="home-intro__title post"> 
@@ -11,22 +12,28 @@
           </h1>
 
           <p class="home-lead lead post">
-            Gridsome is a <strong>Vue.js-powered</strong> framework that makes it easy and fun for developers to create modern, static <strong>websites & apps</strong> that are <em>fast by default</em>.
+            Gridsome is a <strong>Vue.js-powered</strong> framework that makes it easy and fun for developers to create modern, static <strong>websites & apps</strong> that are <em><g-link to="/docs/fast-by-default">fast by default</g-link></em>.
           </p>
 
-          <p class="home-links">
+          <p class="home-links mb">
             <g-link  to="/docs" class="button primary button--large">
               Get started
             </g-link>
           </p>
 
           <p class="home-info">
-              <span>Open source MIT Licensed. </span>
-              <a href="//github.com/gridsome/gridsome" target="_blank" rel="noopener">
-              <span>GitHub (v{{ $static.metaData.gridsomeVersion }})</span>
-              </a>
+            <span>Open source MIT Licensed. </span>
+            <a href="//github.com/gridsome/gridsome" target="_blank" rel="noopener">
+            <span>GitHub (v{{ $static.metaData.gridsomeVersion }})</span>
+            </a>
           </p>
- 
+        </div>
+
+     
+      </div>
+      <div>
+        <Examples />
+      </div>
     </div>
   </Section>
 </template>
@@ -40,13 +47,11 @@ query HomeIntro {
 </static-query>
 
 <script>
-import VueLogo from '~/assets/images/vue-logo.svg'
-import Connect from '~/components/Connect.vue'
+import Examples from '~/components/Examples.vue'
 
 export default {
   components: {
-    VueLogo,
-    Connect
+    Examples
   }
 }
 </script>
@@ -55,8 +60,12 @@ export default {
 .home-intro {
   border-top:0;
   
+  .section__dots-bg {
+    bottom:0;
+  }
+  
   &__title {
-    font-size: 3.5rem;
+    font-size: 3.4rem;
     color: var(--primary-color);
     letter-spacing: -1px;
     font-weight: 600;
@@ -64,22 +73,13 @@ export default {
 
   @media screen and (max-width: 850px) {
     &__title {
-      font-size: 2.4rem;
-    }
-  }
-
-  @media screen and (max-width: 550px) {
-    &__title {
-      font-size: 2rem;
+      font-size: 2.3rem;
     }
   }
 }
 
 .home-lead {
   font-size: 1.3rem;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 
@@ -94,7 +94,8 @@ export default {
 
   a {
     display: inline-block;
-    background-color: var(--primary-bg);
+    background-color: var(--code-color);
+    text-decoration: none;
     padding: 2px 15px;
     border: 1px solid var(--border-color-darker);
     border-radius: 99px;

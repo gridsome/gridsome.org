@@ -3,11 +3,11 @@
     <div class="header-bar"></div>
     <div class="header-inner container flex gap-30">
       <Logo/>
-
+      
       <SearchForm class="hide-for-small"/>
-  
+
       <Nav class="flex-fit"/>
-    
+
       <nav class="header-actions flex">
         <a
           aria-label="Twitter"

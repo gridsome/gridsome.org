@@ -1,20 +1,25 @@
 - title: Default starter
   gitUrl: https://github.com/gridsome/gridsome-starter-default
   author: gridsome
+  tags: Default
+
 
 - title: Default WordPress starter
   gitUrl: https://github.com/gridsome/gridsome-starter-wordpress
   author: gridsome
   platforms: wordpress
+  tags: Default
 
 - title: Default Markdown starter
   gitUrl: https://github.com/gridsome/gridsome-starter-wordpress
   author: gridsome
   platforms: markdown
+  tags: Default
 
 - title: Default Contentful starter
   gitUrl: https://github.com/gridsome/gridsome-starter-contentful
   author: gridsome
+  tags: markdown, tailwind
   platforms: contentful
 
 - title: Default Blog Starter
@@ -23,7 +28,9 @@
   gitUrl: https://github.com/gridsome/gridsome-starter-default
   preview: https://gridsome-starter-blog.netlify.com/
   author: gridsome
-  source: markdown
+  tags: Blog, Dark Mode
+
+  platforms: markdown
   features:
     - Beautiful and simple design.
     - Markdown for content.
@@ -39,7 +46,7 @@
   screenshot: ./screenshots/gridsome-starter-bleda.png
   gitUrl: https://github.com/hellocosmin/gridsome-starter-bleda
   preview: https://gridsome-starter-bleda.netlify.com/
-  tags: [markdown, tailwind]
+  tags: blog, tailwind
   source: markdown
   author: cossssmin
   features:
@@ -58,20 +65,7 @@
   docs: https://github.com/cosmicjs/gridsome-blog
   preview: https://gridsome-blog-cosmicjs.netlify.com/
   author: cosmicjs
-  source: cosmicjs
-  features:
-    - Cosmic JS
-    - Next / Previous post navigation
-    - Typography.js
-
-
-- title: CosmicJS Blog 3
-  description: Gridsome + Cosmic JS
-  screenshot: ./screenshots/gridsome-blog-cosmic-js.png
-  docs: https://github.com/cosmicjs/gridsome-blog
-  preview: https://gridsome-blog-cosmicjs.netlify.com/
-  author: cosmicjs
-  source: cosmicjs
+  platform: cosmicjs
   features:
     - Cosmic JS
     - Next / Previous post navigation
