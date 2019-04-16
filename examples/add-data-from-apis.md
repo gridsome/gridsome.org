@@ -14,19 +14,17 @@ module.exports = function (api) {
 
     // Create a new content type
     const posts = store.addContentType({
-      typeName: 'BlogPosts' // GraphQL collection name
-      route: '/blog/:slug' // Set route (optional)
+      typeName: 'Post' // GraphQL type name
+      route: '/blog/:year/:title' // Set route (optional)
     })
-
-    // Add a reference between a 'author' field and an 'Author' collection
-    posts.addReference('author', 'Author')
 
     // Add data coming from API to the new content type
     for (const item of data) {
       posts.addNode({
         id: item.id,
-        title: item.title
-        author: item.author
+        title: item.title,
+        date: item.date,
+        content: item.content
       })
     }
   })

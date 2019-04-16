@@ -15,7 +15,6 @@ module.exports = function (api) {
         }
       }
     `)
-
     // Create pages from data
     data.allProduct.edges.forEach(edge => {
       createPage({
@@ -33,8 +32,6 @@ module.exports = function (api) {
 ```html
 <!-- /src/templates/ProductReviews.vue -->
 <template>
-  <div>
-    {{ $context.id }}
-  </div>
+  <div> {{ $context.id }} </div>
 </template>
 ```

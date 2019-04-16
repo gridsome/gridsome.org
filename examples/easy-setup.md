@@ -10,12 +10,12 @@ module.exports = {
   siteDescription: '...is faster than yours',
   plugins: [
     {
-      use: '@gridsome/source-wordpress',  // Use source plugins to get data
+      use: '@gridsome/source-wordpress',
       options: {
-        baseUrl: 'YOUR_WEBSITE_URL', // required
-        typeName: 'WordPress', // GraphQL schema name
+        baseUrl: 'YOUR_WEBSITE_URL',
+        typeName: 'WordPress',
         routes: {
-          post: '/:year/:month/:day/:slug', // Create routes
+          post: '/:year/:month/:day/:slug',
           post_tag: '/tag/:slug' 
         }
       }

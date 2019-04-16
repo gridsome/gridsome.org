@@ -13,6 +13,12 @@
         Gridsome is a <strong>Vue.js-powered</strong> framework that makes it easy and fun for developers to create modern, static <strong>websites & apps</strong> that are <em><g-link to="/docs/fast-by-default">fast by default</g-link></em>.
       </p>
 
+      <p class="home-links text-center">
+        <g-link  to="/docs" class="button primary button--large">
+          Get started
+        </g-link>
+      </p>
+
       <p class="home-info mb-x2">
         <span>Open source MIT Licensed. </span>
         <a href="//github.com/gridsome/gridsome" target="_blank" rel="noopener">
@@ -22,15 +28,11 @@
 
 
     </div>
+
+
     <div class="home-examples mb">
       <Examples />
     </div>
-
-    <p class="home-links text-center">
-      <g-link  to="/docs" class="button primary button--large">
-        Get started
-      </g-link>
-    </p>
   </Section>
 </template>
 
@@ -76,7 +78,7 @@ export default {
 
 
 .home-examples {
-  max-width: 1080px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 

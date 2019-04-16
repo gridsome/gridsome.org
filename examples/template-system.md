@@ -1,6 +1,6 @@
 ---
 title: Smart Templates
-filepath: src/templates/BlogPost.vue
+filepath: src/templates/Post.vue
 filetype: vue
 order: 4
 ---
@@ -16,7 +16,7 @@ order: 4
 
 <page-query>
 query Post ($id: String!) {
-  post: BlogPost (id: $id) {
+  post (id: $id) {
     title
     content
   }

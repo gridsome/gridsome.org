@@ -14,10 +14,10 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'posts/**/*.md', // What files to use
-        typeName: 'BlogPost', // GraphQL schema name
-        route: '/posts/:title' // Create routes
+        typeName: 'Post', // GraphQL type name
+        route: '/posts/:year/:title' // Create routes
         refs: {
-          // Create relation between "tags" field.
+          // Create relation between a "tags" field.
           tags: { 
             typeName: 'Tag',
             route: '/tags/:title',

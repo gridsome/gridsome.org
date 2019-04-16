@@ -1,5 +1,5 @@
 ---
-title: Build with Vue & GraphQL
+title: Build with Vue.js & GraphQL
 filepath: src/pages/Blog.vue
 filetype: vue
 order: 1
@@ -8,10 +8,8 @@ order: 1
 <template>
   <Layout>
   	<h1>My blog</h1>
-    <!-- Loop data -->
    	<div v-for="{ node } in $page.allBlogPost.edges" :key="node.id">
       <h3> {{ node.title }} </h3>
-      <!-- Link to post -->
    	  <g-link :to="node.path">Read more</g-link>
    	</div>
   </Layout>

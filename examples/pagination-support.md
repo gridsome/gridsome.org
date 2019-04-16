@@ -1,5 +1,5 @@
 ---
-title: Built-in Pagination
+title: Built-in Pagination support
 filepath: src/pages/Blog.vue
 filetype: vue
 order: 5
@@ -8,19 +8,18 @@ order: 5
 <template>
   <Layout>
     <ul>
-      <!-- Loop data that will be paginated -->
-      <li v-for="{ node } in $page.posts.edges" :key="node.id">
+      <li v-for="{ node } in $page.allPost.edges" :key="node.id">
         {{ node.title }}
       </li>
     </ul>
     <!-- Add the pagination component -->
-    <Pager :info="$page.posts.pageInfo"/>
+    <Pager :info="$page.allPost.pageInfo"/>
   </Layout>
 </template>
 
 <page-query>
-query Post ($page: Int) {
-  posts: allPost (perPage: 10, page: $page) @paginate {
+query Posts ($page: Int) {
+  allPost (perPage: 10, page: $page) @paginate {
     pageInfo {
       totalPages
       currentPage

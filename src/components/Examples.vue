@@ -1,6 +1,6 @@
 <template>
 	<div class="examples flex flex-align-top">
-		<div class="examples__sidebar">
+		<div class="examples__sidebar hide-for-small">
 			<div class="examples__buttons">
 				<div></div>
 				<div></div>
@@ -14,12 +14,14 @@
 			</a>
 		</div>
 		<div class="examples__frame" style="flex:1">
-			<div class="examples__header" 
+			<div class="examples__mobile show-for-small">		
+				Build websites with Vue.js & GraphQL
+			</div>
+			<div class="examples__header hide-for-small" 
 				v-for="({ node }, index) in $static.examples.edges" 
 				v-if="index == current" 
 				:key="index">
 				{{ node.filepath }}
-				
 			</div>
 			<transition name="slide">
 				<div class="examples__code" 
@@ -74,9 +76,9 @@ query Example {
 }
 
 .examples {
-	background-color: #173a56;
 	background-color: var(--dark-bg);
 	border-radius: 10px;
+	overflow: hidden;
 
 	&__buttons {
 		margin-top:-10px;
@@ -92,8 +94,13 @@ query Example {
 		}
 	}
 
+	&__mobile {
+		background-color: var(--dark-bg);
+		text-align: center;
+		padding: 10px;
+	}
+
 	&__frame {
-		border-radius: 5px;
 		color: #FFF;
 		position: relative;
 		overflow: hidden;
@@ -128,12 +135,16 @@ query Example {
 
 
 	&__code {
-		padding: 10px 0 10px var(--space);
+		padding: var(--space);
 		border-radius: 5px;
 		overflow-y: auto;
 		overflow-x: hidden;
-		height: 615px;
-		max-width: calc(100vw - var(--space) - 20px)
+		min-height: 580px;
+		@media screen and (max-width: 850px) {
+			& {
+				min-height: auto;
+			}
+		}
 	}
 }
 
