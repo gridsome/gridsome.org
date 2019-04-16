@@ -1,27 +1,27 @@
 ---
-title: Create Pages from data
+title: Generate custom pages
 filepath: gridsome.server.js
 filetype: js
 order: 10
 ---
 ```js
+// The Pages API let you create pages without using GraphQL
+const axios = require('axios')
+
 module.exports = function (api) {
-  api.createPages(async ({ graphql, createPage }) => {
-    // Query data from local GraphQL data layer
-    const { data } = await graphql(`
-      query {
-        allProduct {
-          id
-        }
-      }
-    `)
+  api.createPages(async ({ createPage }) => {
+    // Fetch data from any API
+    const { data } = await axios.get('https://mystore.com/api')
+
     // Create pages from data
-    data.allProduct.edges.forEach(edge => {
+    data.forEach(product => {
       createPage({
-        path: `${edge.node.path}/reviews`, // Create route
-        component: './src/templates/ProductReviews.vue',
+        path: `/products/${product.slug}`, // Create route
+        component: './src/templates/Product.vue',
         context: {
-          id: edge.node.id
+          id: product.id,
+          title: product.title,
+          price: product.price,
         }
       })
     })
@@ -30,8 +30,8 @@ module.exports = function (api) {
 ```
 
 ```html
-<!-- /src/templates/ProductReviews.vue -->
+<!-- /src/templates/Product.vue -->
 <template>
-  <div> {{ $context.id }} </div>
+  <div>{{ $context.id }}</div>
 </template>
 ```

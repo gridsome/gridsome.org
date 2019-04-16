@@ -1,6 +1,6 @@
 ---
 title: Progressive Images
-filepath: src/pages/Blog.vue
+filepath: src/components/AnyVueComponent.vue
 filetype: vue
 order: 10
 ---
