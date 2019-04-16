@@ -2,7 +2,7 @@
 title: Easy configuration
 filepath: gridsome.config.js
 filetype: js
-order: 2
+order: 3
 ---
 ```js
 module.exports = {

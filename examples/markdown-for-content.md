@@ -2,7 +2,7 @@
 title: Markdown for data
 filepath: gridsome.config.js
 filetype: js
-order: 2
+order: 4
 ---
 ```js
 module.exports = {

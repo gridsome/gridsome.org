@@ -1,8 +1,8 @@
 ---
-title: File-based Page routing
+title: File-based page routing
 filepath: src/pages/HelloWorld.vue
 filetype: vue
-order: 5
+order: 3
 ---
 ```html
 <template>

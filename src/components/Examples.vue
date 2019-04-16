@@ -1,6 +1,6 @@
 <template>
 	<div class="examples flex flex-align-top">
-		<div class="examples__sidebar hide-for-small">
+		<div class="examples__sidebar">
 			<div class="examples__buttons">
 				<div></div>
 				<div></div>
@@ -13,15 +13,14 @@
 				{{ node.title }}
 			</a>
 		</div>
-		<div class="examples__frame" style="flex:1">
-			<div class="examples__mobile show-for-small">		
-				Build websites with Vue.js & GraphQL
-			</div>
-			<div class="examples__header hide-for-small" 
+		<div class="examples__frame">
+			<div class="examples__header flex hide-for-small" 
 				v-for="({ node }, index) in $static.examples.edges" 
 				v-if="index == current" 
 				:key="index">
-				{{ node.filepath }}
+				<div class="examples__header-title">
+					<div> {{ node.filepath }} </div>
+				</div>
 			</div>
 			<transition name="slide">
 				<div class="examples__code" 
@@ -55,6 +54,7 @@ query Example {
     		content
     		id
     		filepath
+    		description
   		}
   	}
   }
@@ -105,10 +105,14 @@ query Example {
 		position: relative;
 		overflow: hidden;
 		background-color: rgba(0,0,0,.3);
+
+		@media screen and (min-width: 850px) {
+			flex: 1;
+		}
 	}
 
 	&__header{
-		padding: 10px 20px;
+		padding: 10px var(--space) 0;
 	}
 
 	&__sidebar {

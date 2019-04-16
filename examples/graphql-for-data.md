@@ -1,5 +1,5 @@
 ---
-title: Build with Vue.js & GraphQL
+title: Build with Vue & GraphQL
 filepath: src/pages/Blog.vue
 filetype: vue
 order: 1
@@ -8,7 +8,7 @@ order: 1
 <template>
   <Layout>
   	<h1>My blog</h1>
-   	<div v-for="{ node } in $page.allBlogPost.edges" :key="node.id">
+   	<div v-for="{ node } in $page.allPost.edges" :key="node.id">
       <h3> {{ node.title }} </h3>
    	  <g-link :to="node.path">Read more</g-link>
    	</div>
@@ -18,7 +18,7 @@ order: 1
 <!-- Query from a local GraphQL data layer. -->
 <page-query>
 query Posts {
-  allBlogPost {
+  allPost {
     edges {
       node {
       	id
