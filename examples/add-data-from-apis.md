@@ -9,7 +9,7 @@ const axios = require('axios')
 
 module.exports = function (api) {
   api.loadSource(async store => {
-    // Get data from APIs
+    // Fetch data from APIs
     const { data } = await axios.get('https://any.api.com')
 
     // Create a new GraphQL content type

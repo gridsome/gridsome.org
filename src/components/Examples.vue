@@ -105,6 +105,7 @@ query Example {
 		position: relative;
 		overflow: hidden;
 		background-color: rgba(0,0,0,.3);
+		width: 100%;
 
 		@media screen and (min-width: 850px) {
 			flex: 1;

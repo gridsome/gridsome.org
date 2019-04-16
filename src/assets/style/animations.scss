@@ -10,7 +10,6 @@
   }
 }
 
-
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -38,7 +37,7 @@
   }
 }
 
-@keyframes moveInOut {
+@keyframes moveInOutX {
   from {
     transform: translateX(-10px);
   }
@@ -46,7 +45,6 @@
     transform: translateX(5px);
   }
 }
-
 
 
 .menu-item {

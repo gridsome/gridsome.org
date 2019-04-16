@@ -17,12 +17,8 @@
         <p>Any Git-based CMS, Forestry, Netlify CMS, Blogs, Documentation.</p>
 
         <template slot="outer">
-          <div class="dots hide-for-small">
-            <div class="dots__dot" />
-            <div class="dots__dot" />
-            <div class="dots__dot" />
-            <div class="dots__dot" />
-          </div>
+          <Dots class="hide-for-small"/>
+          <Dots class="dots--vertical show-for-small"/>
         </template>
       </Card>
 
@@ -45,28 +41,22 @@
         </ul>
   
         <template slot="outer">
-         <div class="dots hide-for-small">
-            <div class="dots__dot" />
-            <div class="dots__dot" />
-            <div class="dots__dot" />
-            <div class="dots__dot" />
-          </div>
+          <Dots class="hide-for-small"/>
+          <Dots class="dots--vertical show-for-small"/>
         </template>
       </Card>
 
       <Card title="Deploy">
         <h4>Static Site Generation</h4>
         
-        <ul class="bullet-list">
+        <ul class="bullet-list mb">
           <li><Bullet /><g-link to="/docs/fast-by-default#the-prpl-pattern">PRPL-pattern</g-link></li>
           <li><Bullet /><g-link to="/docs/fast-by-default#smart-link-prefetching">Smart link prefetching</g-link></li>
           <li><Bullet /><g-link to="/docs/fast-by-default#progressive-images">Progressive Images</g-link></li>
           <li><Bullet /><g-link to="/docs/fast-by-default#vuejs-spa">Vue.js SPA</g-link></li>
         </ul>
 
-        <svg width="20" height="20" viewBox="0 0 1 37" class="dot" style="margin:3px 0 8px; opacity: .5;">
-          <path d="M0.5 0L0.500002 37"/>
-        </svg>
+   
 
         <h4>Static Web Hosts</h4>
         <p>
@@ -90,6 +80,7 @@ import VueLogo from '~/assets/images/vue-logo.svg'
 import WebpackLogo from '~/assets/images/webpack-logo.svg'
 import GridsomeLogo from '~/assets/images/gridsome-small-white.svg'
 import Bullet from '~/assets/images/bullet.svg'
+import Dots from '~/components/Dots.vue'
 
 export default {
   components: {
@@ -98,6 +89,7 @@ export default {
     GridsomeLogo,
     WebpackLogo,
     GraphQlLogo,
+    Dots
   }
 }
 </script>
@@ -118,21 +110,12 @@ export default {
     padding: 30px 40px;
   }
 
-  .spark-rotate {
-    position: absolute;
-    top:-14%;
-    left:50%;
-    transform: translateX(-50%);
-    width: 100%;
-    pointer-events: none;
-    user-select: none;
-    z-index: -1;
-    margin: 0;
-
-    img {
-      animation: spin 20s infinite linear;
+  @media screen and (max-width: 850px) {
+    .card {
+      margin-bottom: 40px;
     }
   }
+
 
   .tools {
     font-weight: 500;
@@ -192,25 +175,5 @@ export default {
     font-size: .8rem;
   }
 
-}
-.dots {
-  width: 50px;
-  overflow: hidden;
-  white-space: nowrap;
-  line-height: 0;
-}
-.card .dots {
-  position: absolute;
-  left: 100%;
-  top: 40%;
-}
-.dots__dot {
-  width: 5px;
-  height: 5px;
-  margin: 0 5px;
-  display: inline-block;
-  border-radius: 99px;
-  background-color: var(--primary-color);
-  animation: moveInOut .6s linear infinite;
 }
 </style>

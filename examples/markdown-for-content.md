@@ -1,5 +1,5 @@
 ---
-title: Markdown for data
+title: Use Markdown for data
 filepath: gridsome.config.js
 filetype: js
 order: 4

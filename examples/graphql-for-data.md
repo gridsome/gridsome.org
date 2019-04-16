@@ -1,5 +1,5 @@
 ---
-title: Build with Vue & GraphQL
+title: Build with Vue.js & GraphQL
 filepath: src/pages/Blog.vue
 filetype: vue
 order: 1
@@ -15,7 +15,7 @@ order: 1
   </Layout>
 </template>
 
-<!-- Query from a local GraphQL data layer. -->
+<!-- Query from local GraphQL data layer. -->
 <page-query>
 query Posts {
   allPost {
