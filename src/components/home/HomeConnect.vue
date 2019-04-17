@@ -1,15 +1,15 @@
 <template>
   <Section class="home-connect" dots="true">
     <div class="grid-cols flex grid-cols--2 grid-cols--gap-large">
-      <div>
-        <Connect />
-      </div>
       <div class="text-center">
         <h2>Connect the Modern Web</h2>
         <p class="lead">
           The Modern Web is decoupled and moduler. Gridsome makes it painlessly easy to build <g-link to="/docs/jamstack">JAMstack</g-link> websites using data from multiple sources such as Content API's, Headless CMSs and other web services.
         </p>
         <p><g-link to="/plugins">Browse Gridsome Plugins</g-link></p>
+      </div>
+       <div>
+        <Connect />
       </div>
     </div>
   </Section>
@@ -33,7 +33,7 @@ export default {
     }
   }
  .grid-cols {
-    > div:last-child {
+    > div:first-child {
       padding: 0 5%;
     }
   }

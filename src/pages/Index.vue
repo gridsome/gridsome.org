@@ -3,6 +3,7 @@
     <home-intro-simple />
     <home-how-it-work-simple />
     <home-features />
+    <home-connect />
     <home-blog />
   </Layout>
 </template>
@@ -20,6 +21,7 @@ export default {
     HomeHowItWorkSimple,
     HomeFeatures,
     HomeBlog,
+    HomeConnect
   },
   
   metaInfo: {

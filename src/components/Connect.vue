@@ -30,7 +30,7 @@ export default {
   mounted () {
     this._counter = setInterval(() => {
       this.activeSlide = (this.activeSlide + 1) % 3
-    }, 2500)
+    }, 1500)
   },
 
   destroyed () {
@@ -59,6 +59,7 @@ export default {
   }
 
   svg,
+
   &__slide,
   &__logos {
     width: 100%;
@@ -68,12 +69,5 @@ export default {
     position: absolute;
   }
 
-   svg path {
-    stroke-width: 9px;
-    stroke-linecap: round;
-    stroke-dasharray: 0 30;
-    stroke: var(--primary-color);
-    opacity: 0.5;
-  }
 }
 </style>
