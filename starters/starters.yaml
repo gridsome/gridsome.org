@@ -3,7 +3,6 @@
   author: gridsome
   tags: Default
 
-
 - title: Default WordPress starter
   gitUrl: https://github.com/gridsome/gridsome-starter-wordpress
   author: gridsome
@@ -29,7 +28,6 @@
   preview: https://gridsome-starter-blog.netlify.com/
   author: gridsome
   tags: Blog, Dark Mode
-
   platforms: markdown
   features:
     - Beautiful and simple design.
@@ -57,7 +55,6 @@
     - Paginated Tags & Authors
     - Old content post alert
     - Custom 404 page
-
 
 - title: CosmicJS Blog
   description: Gridsome + Cosmic JS

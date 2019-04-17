@@ -6,7 +6,7 @@
       </div>
 
       <h1 class="intro__title post"> 
-        JAMstack made simple with Vue.js
+        Modern website development with Vue.js
       </h1>
 
       <p class="intro__lead lead post mb">
@@ -55,7 +55,7 @@ export default {
   border-top:0;
 
   &__top {
-    padding: 2.5vh 0 5vh;
+    padding: 2vh 0;
   }
 
   &__title {
@@ -77,9 +77,6 @@ export default {
   }
 
   &__info {
-    font-size: .85rem;
-    margin-top: -.5rem;
-    opacity: .7;
   }
 
   &__examples {
