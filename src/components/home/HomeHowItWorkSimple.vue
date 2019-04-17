@@ -156,17 +156,18 @@ export default {
 
   &__pulse-bg {
     animation: pulse 2s infinite;
-    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
     width: 100px;
     height: 100px;
     position: absolute;
     border-radius: 100%;
+    opacity: .3;
     z-index: -1;
 
     + .works__pulse-bg {
-      width: 90px;
-      height: 90px;
-      animation-delay: .15s;
+      width: 95px;
+      height: 95px;
+      animation-delay: .3s;
     }
   }
 
