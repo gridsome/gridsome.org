@@ -1,5 +1,5 @@
 # Get started with Gridsome
-
+A Vue.js-powered static site generator
 
 ## Prerequisites
 You should have basic knowledge about HTML, CSS, [Vue.js](https://vuejs.org) and how to use the [Terminal](https://www.linode.com/docs/tools-reference/tools/using-the-terminal/). Knowing how [GraphQL](https://www.graphql.com/) works is a plus, but not required. Gridsome is a great way to learn it.

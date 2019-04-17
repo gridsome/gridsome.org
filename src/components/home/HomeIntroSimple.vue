@@ -1,12 +1,12 @@
 <template>
-  <Section class="intro" dots="true" primary="true">
+  <Section class="intro" dots="true">
     <div class="intro__top text-center">
       <div class="intro__message" hidden>
         <g-link to="/blog/2019/02/19/gridsome-v05"><span>Introducing Gridsome Staging &rarr;</span></g-link>
       </div>
 
       <h1 class="intro__title post"> 
-        Modern website development with Vue.js
+        <em>Faster</em> development, <em>faster</em> websites
       </h1>
 
       <p class="intro__lead lead post mb">
@@ -19,15 +19,12 @@
         </g-link>
       </p>
 
-      <p class="intro__info mb-x2">
+      <p class="intro__info">
         <span>Open source MIT Licensed. </span>
         <a href="//github.com/gridsome/gridsome" target="_blank" rel="noopener">
-        <span>GitHub (v{{ $static.metaData.gridsomeVersion }})</span>
+          <span>GitHub (v{{ $static.metaData.gridsomeVersion }}) </span>
         </a>
       </p>
-    </div>
-    <div class="intro__examples mb">
-      <Examples />
     </div>
   </Section>
 </template>
@@ -54,18 +51,15 @@ export default {
 .intro {
   border-top:0;
 
-  &__top {
-    padding: 2vh 0;
-  }
 
   &__title {
-    font-size: 3rem;
+    font-size: 3.3rem;
     color: var(--primary-color);
     letter-spacing: -1px;
     font-weight: 600;
     @media screen and (max-width: 850px) {
-      &__title {
-        font-size: 2.3rem;
+      & {
+        font-size: 2.5rem;
       }
     }
   }
@@ -100,10 +94,6 @@ export default {
         box-shadow: var(--glow);
       }
     }
-  }
-
-  .section__dots-bg {
-    bottom:0;
   }
 }
 </style>
