@@ -54,7 +54,6 @@ query Example {
     		content
     		id
     		filepath
-    		description
   		}
   	}
   }
