@@ -78,8 +78,8 @@ export default {
 
 
 .home-examples {
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 1080px;
+  margin: 5% auto 0;
 }
 
 .home-lead {

@@ -5,7 +5,8 @@ filetype: js
 order: 10
 ---
 ```js
-// The Pages API let you create pages without using GraphQL
+// The Pages API let you create pages without using GraphQL,
+// and create pages programmatically 
 const axios = require('axios')
 
 module.exports = function (api) {
