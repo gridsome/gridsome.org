@@ -4,9 +4,9 @@
 ### What makes Gridsome sites fast?
 1. [Static Site Generation](#static-site-generation). Nothing beats static content in speed.
 2. [Follows the PRPL-pattern](#the-prpl-pattern) for instant page loads.
-3. [Smart link prefetching](#smart-link-prefetching) that uses using Intersection Observer to load next pages.
-4. [Progressive Images](#progressive-images) for automatic image compression and lazy loading.
-5. Runs as [Vue.js SPA](#progressive-images) for no-reload browsing
+3. [Smart link prefetching](#smart-link-prefetching) that uses Intersection Observer to load next pages.
+4. [Progressive Images](#progressive-images) with automatic image compression and lazy loading.
+5. [Vue.js SPA](#progressive-images) for fast browsing with no page refresh.
 
 ## Static Site Generation
 
