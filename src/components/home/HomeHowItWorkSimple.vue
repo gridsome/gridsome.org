@@ -1,12 +1,12 @@
 <template>
-  <Section dots="true" class="post"  primary="true">
+  <Section class="works" dots="true" primary="true">
     <h2 class="container text-center">
       How Gridsome Works
     </h2>
     <p class="lead text-center container-sm" style="margin-bottom: 3rem;">
      <strong>Pull data</strong> from anywhere and build with Vue.js, GraphQL and all the power of Node.js & JavaScript ecosystem.
     </p>
-    <div class="grid-cols grid-cols--gap-large grid-cols--full-md how-it-works mb">
+    <div class="grid-cols grid-cols--gap-large grid-cols--full-md mb">
 
       <Card title="Data sources">
         <h4>CMSs</h4>
@@ -24,17 +24,18 @@
 
       <Card title="Build" class="text-center flex-align-middle">
 
-        <div class="logo-pulse">
+        <div class="works__logo">
           <gridsome-logo />
-          <div class="logo-pulse__bg"></div>
+          <div class="works__pulse-bg"></div>
+          <div class="works__pulse-bg"></div>
         </div>
 
-        <p class="powered-by">
+        <p class="works__powered-by">
           Powered by <br/><strong>GraphQL </strong>
           <graph-ql-logo width="18" height="18" />
         </p>
 
-        <ul class="tools flex gap-15 text-center flex--center">
+        <ul class="works__tools flex gap-15 text-center flex--center">
           <li>HTML</li>
           <li><vue-logo width="28" height="28" alt="Vue" /> Vue.js</li>
           <li>CSS</li>
@@ -56,8 +57,6 @@
           <li><Bullet /><g-link to="/docs/fast-by-default#vuejs-spa">Vue.js SPA</g-link></li>
         </ul>
 
-   
-
         <h4>Static Web Hosts</h4>
         <p>
           <g-link to="/docs/deploy-to-netlify">Netlify</g-link>, <g-link to="/docs/deploy-to-amplify">AWS Amplify</g-link>, <g-link to="/docs/deploy-to-zeit-now">Zeit Now</g-link>, <g-link to="/docs/deploy-to-amazon-s3">Amazon S3</g-link>, Surge.sh, Aerobatic, Now.sh & many more.
@@ -66,7 +65,7 @@
 
     </div>
 
-    <p class="home-links text-center">
+    <p class="text-center">
       <g-link  to="/docs/how-it-works">
         Learn more about how it works
       </g-link>
@@ -95,7 +94,7 @@ export default {
 </script>
 
 <style lang="scss">
-.how-it-works {
+.works {
   line-height: 1.6;
 
   .bullet-list {
@@ -117,14 +116,14 @@ export default {
   }
 
 
-  .tools {
+  &__tools {
     font-weight: 500;
     background-color: rgba(255,255,255,.9);
     border: 1px solid rgba(0,0,0,.1);
     max-width: 230px;
     border-radius: 4px;
     z-index: 9;
-    margin: 0 auto;
+    margin: 0 auto!important;
     padding: 10px;
 
     li {
@@ -132,7 +131,7 @@ export default {
     }
   }
 
-  .logo-pulse {
+  &__logo {
     background-color: var(--primary-color);
     width: 100px;
     z-index: 1;
@@ -147,16 +146,7 @@ export default {
     border-radius: 100%;
     z-index: 0;
     margin-bottom: 1rem;
-
-    &__bg {
-      animation: pulse 2s infinite;
-      background-color: var(--primary-color);
-      width: 100px;
-      height: 100px;
-      position: absolute;
-      border-radius: 100%;
-      z-index: -1;
-    }
+    animation: bounce 2s infinite;
 
     svg {
       width: 70px;
@@ -164,16 +154,26 @@ export default {
     }
   }
 
-  .powered-by {
+  &__pulse-bg {
+    animation: pulse 2s infinite;
+    background-color: var(--primary-color);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 100%;
+    z-index: -1;
+
+    + .works__pulse-bg {
+      width: 90px;
+      height: 90px;
+      animation-delay: .15s;
+    }
+  }
+
+  &__powered-by {
     opacity: .8;
     line-height: 1.3;
     padding-bottom: 1.2rem;
   }
-
-  .description {
-    opacity: .8;
-    font-size: .8rem;
-  }
-
 }
 </style>
