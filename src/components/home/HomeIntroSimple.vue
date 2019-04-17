@@ -55,7 +55,7 @@ export default {
   border-top:0;
 
   &__top {
-    padding: 5vh 0 5vh;
+    padding: 2.5vh 0 5vh;
   }
 
   &__title {
