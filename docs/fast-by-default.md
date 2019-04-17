@@ -46,14 +46,6 @@ Gridsome has a built-in `<g-image>` component with built-in progressive image su
 
 In production, the `<g-image>` is served as an ultra-compressed image before the image is lazy-loaded when in view by using **Intersection Observer**.
 
-### How it works
-
-- **A IMG element with a source srcset is used.** This means that using several media queries, you load the smallest image that matches your device (e.g. mobile devices get smaller images, desktop devices get larger images, etc.). The images will be resized down to 480, 1024, 1920 and 2560 pixels by default.
-
-- **A base64 blurred image loaded by default.** This makes: 1) Larger images outside the viewport are not requested until they’re needed, and 2) The blurred image is in a container with the same dimensions as the real image—therefore, no jumping when the image loads.
-
-- **An Intersection Observer** that swaps the base image for the larger image, when the image is in the viewport. (Lazy loading).
-
 
 [Learn more about **g-image** here](/docs/images)
 

@@ -10,7 +10,7 @@
       </h1>
 
       <p class="intro__lead lead post mb">
-        Gridsome is a <strong>Vue.js-powered</strong> framework that makes it easy and fun for developers to create modern, static <strong>websites & apps</strong> that are <em><g-link to="/docs/fast-by-default">fast by default</g-link></em>.
+        Gridsome is a Vue.js-powered static site generator that makes it easy and fun for developers to create modern <strong>websites & apps</strong> that are <em><g-link to="/docs/fast-by-default">fast by default</g-link></em>.
       </p>
 
       <p class="intro__links text-center">
