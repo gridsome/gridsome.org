@@ -104,6 +104,12 @@ Define custom sizes and disable effects on iOS < 7 devices:
 A function that will receive an instance of ChainableConfig powered by
 [webpack-chain](https://github.com/neutrinojs/webpack-chain).
 
+## runtimeCompiler
+
+- Type `Boolean`
+- Default `false`
+
+Include the Vue template compiler compiler at runtime
 
 ## configureServer
 
