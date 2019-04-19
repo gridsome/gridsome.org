@@ -6,6 +6,22 @@ Tools for easier Gridsome development
 ## ESLint plugin
 https://www.npmjs.com/package/eslint-plugin-gridsome
 
+1. Install it with `yarn add eslint eslint-plugin-gridsome vue-eslint-parser -D`
+2. Add this code to `.eslintrc.js`
+```javascript
+module.exports = {
+  env: {
+    node: true,
+    es6: true
+  },
+  plugins: ["gridsome"],
+  rules: {
+    "gridsome/format-query-block": "error"
+  },
+  parser: "vue-eslint-parser"
+};
+```
+
 ## Vetur
 
 [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) is Vue tooling for VS Code.  
