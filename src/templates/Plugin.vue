@@ -2,7 +2,7 @@
   <Layout :footer="false">
     <div class="plugins container flex flex-align-top" style="position: relative;">
          
-      <div class="sidebar-bg sidebar-bg--plugins"></div>
+      <div class="sidebar-bg sidebar-bg--plugins hide-for-small"></div>
 
       <AisInstantSearchSsr class="sidebar plugins__sidebar">
         <AisConfigure

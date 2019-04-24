@@ -18,7 +18,6 @@ const typography = new Typography({
   baseFontSize: '18px',
   baseLineHeight: 1.6,
   scaleRatio: 1.9,
-
   headerFontFamily: ['Jost', 'Helvetica','Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
   bodyFontFamily: ['Jost', 'Helvetica','Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
 })
@@ -26,7 +25,6 @@ const typography = new Typography({
 export default function (Vue, { head, router, isServer }) {
   Vue.component('Layout', Layout)
   Vue.component('DocsLayout', DocsLayout)
-
   Vue.component('Section', Section)
   Vue.component('Feature', Feature)
   Vue.component('Card', Card)

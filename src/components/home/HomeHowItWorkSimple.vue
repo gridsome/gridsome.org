@@ -4,7 +4,7 @@
       How Gridsome Works
     </h2>
     <p class="lead text-center container-sm" style="margin-bottom: 3rem;">
-     <strong>Pull data</strong> from anywhere and build with Vue.js, GraphQL and all the power of Node.js & JavaScript ecosystem.
+     <strong>Pull data</strong> from anywhere and build with Vue.js, GraphQL and all the power of Node.js & the JavaScript ecosystem.
     </p>
     <div class="grid-cols grid-cols--gap-large grid-cols--full-md mb">
 

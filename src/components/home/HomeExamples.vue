@@ -1,5 +1,5 @@
 <template>
-	<Section primary="true">
+	<Section>
 		<h2 class="container text-center">
       JAMstack development simplified with Vue.js
     </h2>

@@ -51,7 +51,6 @@ export default {
 .intro {
   border-top:0;
 
-
   &__title {
     font-size: 3.3rem;
     color: var(--primary-color);
