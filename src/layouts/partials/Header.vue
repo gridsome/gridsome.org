@@ -3,10 +3,10 @@
     <div class="header-bar"></div>
     <div class="header-inner container flex gap-30">
       <Logo/>
+    
+      <Nav class="flex-fit"/>
       
       <SearchForm class="hide-for-small"/>
-
-      <Nav class="flex-fit"/>
 
       <nav class="header-actions flex">
         <a

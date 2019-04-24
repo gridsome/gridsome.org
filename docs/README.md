@@ -1,5 +1,17 @@
-# Get started with Gridsome
-A Vue.js-powered static site generator
+# Getting started
+
+> Gridsome is a Vue.js-powered, modern static site generator for building the fastest possible websites for any Headless CMS, APIs or Markdown-files. Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert. 
+
+### Why Gridsome?
+
+- **Local development with hot-reloading** - See code changes in real-time.
+- **Data source plugins** - Use it for any popular Headless CMSs, APIs or Markdown-files.
+- **File-based page routing** - Quickly create and manage routes with files.
+- **Centralized data managment** - Pull data into a local, unified GraphQL data layer.
+- **Vue.js for frontend** - A lightweight and approachable front-end framework.
+- **Auto-optimized code** - Get code-splitting and asset optimization out-of-the-box.
+- **Static files generation** - Deploy securely to any CDN or static web host.
+
 
 ## Prerequisites
 You should have basic knowledge about HTML, CSS, [Vue.js](https://vuejs.org) and how to use the [Terminal](https://www.linode.com/docs/tools-reference/tools/using-the-terminal/). Knowing how [GraphQL](https://www.graphql.com/) works is a plus, but not required. Gridsome is a great way to learn it.
