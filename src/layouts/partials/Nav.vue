@@ -5,14 +5,14 @@
       <span class="main-nav__label">Docs</span>
     </g-link>
 
-    <g-link to="/starters">
-      <icon-starters />
-      <span class="main-nav__label">Starters</span>
-    </g-link>
-
     <g-link to="/plugins">
       <icon-plugins />
       <span class="main-nav__label">Plugins</span>
+    </g-link>
+
+    <g-link to="/starters">
+      <icon-starters />
+      <span class="main-nav__label">Starters</span>
     </g-link>
 
     <g-link to="/blog">

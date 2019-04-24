@@ -167,6 +167,11 @@ query Example {
 		background-color: transparent;
 	}
 
+
+	.token.comment {
+		color: #748599;
+	}
+
 	.token.punctuation {
 		color: #878687;
 	}

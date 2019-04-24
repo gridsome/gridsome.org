@@ -1,7 +1,7 @@
 <template>
 	<Section primary="true">
 		<h2 class="container text-center">
-      JAMstack development simplified
+      JAMstack development simplified with Vue.js
     </h2>
     <p class="lead text-center container-md">
     	Gridsome makes it painlessly easy to build <g-link to="/docs/jamstack">JAMstack</g-link> websites using data from multiple sources such as Content API's, Headless CMSs and other web services.
