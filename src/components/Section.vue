@@ -4,6 +4,7 @@
       <slot/>
     </div>
     <div v-if="dots" class="section__dots-bg dots-bg" />
+    <slot name="outer" />
   </section>
 </template>
 
@@ -79,7 +80,7 @@ export default {
   }
 
   &--dark {
-    color: rgba(255,255,255,.8);
+    color: #FFF;
     background: var(--dark-bg);
 
     p {
