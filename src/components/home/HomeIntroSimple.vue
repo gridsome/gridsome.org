@@ -6,7 +6,7 @@
       </div>
 
       <h1 class="intro__title post"> 
-       Build performance-first JAMstack <br>websites for any data source
+       Build performance-first JAMstack <br class="hide-for-small"/>websites for any data source
       </h1>
 
       <p class="intro__lead lead post mb">
@@ -67,7 +67,7 @@ export default {
     font-weight: 600;
     @media screen and (max-width: 850px) {
       & {
-        font-size: 2.6rem;
+        font-size: 2rem;
       }
     }
   }
