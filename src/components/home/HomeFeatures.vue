@@ -3,8 +3,8 @@
     <div class="homepage-features grid-cols">
 
       <Feature>
-        <h3>Enjoy modern development</h3>
-        <p>Build websites with modern development tools like <vue-logo width="24" height="24" /> Vue.js, <graph-ql-logo width="24" height="24" /> GraphQL & all the power of Node.js & the JavaScript ecosystem. Get instant <strong>hot-reloading</strong> for any code change when developing. 
+        <h3>Easy, local development</h3>
+        <p>Build websites with modern development tools like <vue-logo width="24" height="24" /> Vue.js, <graph-ql-logo width="24" height="24" /> GraphQL & all the power of Node.js & the JavaScript ecosystem. Develop locally and get instant <strong>hot-reloading</strong> for any code change.
         </p>
       </Feature>
 
