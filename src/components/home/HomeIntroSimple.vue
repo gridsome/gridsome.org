@@ -6,7 +6,7 @@
       </div>
 
       <h1 class="intro__title post"> 
-       Build performance-first JAMstack <br class="hide-for-small"/>websites for any data source
+       Build awesomely fast JAMstack <br class="hide-for-small"/>websites for any data source
       </h1>
 
       <p class="intro__lead lead post mb">
