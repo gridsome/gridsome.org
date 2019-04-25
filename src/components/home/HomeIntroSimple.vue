@@ -6,11 +6,11 @@
       </div>
 
       <h1 class="intro__title post"> 
-       <em>Faster</em> development, <em>faster</em> websites
+       Build performance-first JAMstack <br>websites for any data source
       </h1>
 
       <p class="intro__lead lead post mb">
-        Gridsome is an open-source <strong>Vue.js-powered framework</strong> for building the fastest possible websites for <strong>any Headless CMS, Content APIs or Markdown-files</strong>. 
+        Gridsome is a free & open-source <strong>Vue.js-powered framework</strong> for building the fastest possible websites for <strong>any Headless CMS, Content APIs or Markdown-files</strong>. 
       </p>
 
 
@@ -61,7 +61,7 @@ export default {
 
 
   &__title {
-    font-size: 3.8rem;
+    font-size: 3.5rem;
     color: var(--primary-color);
     letter-spacing: -1px;
     font-weight: 600;
