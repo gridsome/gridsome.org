@@ -55,7 +55,7 @@ export default {
   border-top:0;
   background-color: var(--primary-color);
   padding: calc(3.33% + 50px) 0;
-
+  background: linear-gradient(353.71deg, var(--primary-color) 7.47%, var(--primary-color-dark) 90.48%);
 
   &__title {
     font-size: 3.3rem;
@@ -101,7 +101,7 @@ export default {
     height: 500px;
     bottom: 0;
     perspective: 550px;
-    -webkit-mask-image: linear-gradient( -180deg,transparent, #000 20%);
+    -webkit-mask-image: linear-gradient( -180deg,transparent, #000 35%);
     pointer-events: none;
     opacity: .2;
     transform: translateZ(0);
@@ -111,7 +111,7 @@ export default {
       width: calc(100% + 1000px);
       height: 100%;
       left: -500px;
-      transform: rotateX(42deg) translateZ(0);
+      transform: rotateX(33deg) translateZ(0);
 
     }
 
@@ -122,7 +122,7 @@ export default {
       background-image: url(/logos.svg);
       background-position: 0;
       transform: translateY(-500px);
-      animation: logos 10s linear infinite;
+      animation: logos  7s linear infinite;
       will-change: transform;
     }
 }
