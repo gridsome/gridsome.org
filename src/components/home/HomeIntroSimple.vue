@@ -104,13 +104,15 @@ export default {
     -webkit-mask-image: linear-gradient( -180deg,transparent, #000 20%);
     pointer-events: none;
     opacity: .2;
+    transform: translateZ(0);
 
     &__grid {
       position: absolute;
       width: calc(100% + 1000px);
       height: 100%;
       left: -500px;
-      transform: rotateX(42deg);
+      transform: rotateX(42deg) translateZ(0);
+
     }
 
     &__logos {
@@ -121,6 +123,7 @@ export default {
       background-position: 0;
       transform: translateY(-500px);
       animation: logos 10s linear infinite;
+      will-change: transform;
     }
 }
 
