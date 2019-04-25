@@ -13,15 +13,12 @@
         Gridsome is a free & open-source <strong>Vue.js-powered framework</strong> for building the fastest possible websites for <strong>any Headless CMS, Content APIs or Markdown-files</strong>. 
       </p>
 
-
-
       <p class="intro__links text-center">
         <g-link  to="/docs" class="button primary button--large">
           Get started
         </g-link>
       </p>
 
-  
     </div>
 
     <template slot="outer">
@@ -61,7 +58,7 @@ export default {
 
 
   &__title {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     color: var(--primary-color);
     letter-spacing: -1px;
     font-weight: 600;
@@ -73,8 +70,7 @@ export default {
   }
 
   &__lead {
-    font-size: 1.4rem;
-    max-width: 980px;
+    max-width: 800px;
     margin: 0 auto;
   }
 
@@ -118,7 +114,7 @@ export default {
       width: calc(100% + 1000px);
       height: 100%;
       left: -500px;
-      transform: rotateX(33deg);
+      transform: rotateX(42deg);
     }
 
     &__logos {
@@ -127,7 +123,6 @@ export default {
       height: 1300px;
       background-image: url(/logos.svg);
       background-position: 0;
-      background-size: 15%;
       transform: translateY(-650px);
       animation: logos 10s linear infinite;
     }

@@ -4,11 +4,18 @@
       JAMstack development simplified with Vue.js
     </h2>
     <p class="lead text-center container-md">
-    	Gridsome makes it painlessly easy to build <g-link to="/docs/jamstack">JAMstack</g-link> websites using data from multiple sources such as Content API's, Headless CMSs and other web services.
+    	Gridsome makes it painlessly easy to build <g-link to="/docs/jamstack">JAMstack</g-link> websites using data from multiple sources such as Content API's & Headless CMSs. 
     </p>
-		<div class="home-examples">
+
+		<div class="home-examples mb-x2">
 			<Examples />
 		</div>
+
+    <p class="home-links text-center ">
+      <g-link  to="/docs" class="button primary button--large">
+        Get started
+      </g-link>
+    </p>
 	</Section>
 </template>
 
@@ -26,5 +33,4 @@ export default {
 	margin: 0 auto;
 	max-width: 960px;
 }
-
 </style>

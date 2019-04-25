@@ -3,14 +3,14 @@
     <div class="homepage-features grid-cols">
 
       <Feature>
-        <h3>Modern development</h3>
-        <p>Enjoy modern development tools like<br> <vue-logo width="24" height="24" /> Vue.js, <graph-ql-logo width="24" height="24" /> GraphQL & <webpack-logo width="28" height="28" />webpack. Get instant <strong>hot-reloading</strong> for any code change when developing. <strong>Gridsome makes building websites fun again.</strong>
+        <h3>Enjoy modern development</h3>
+        <p>Build with modern development tools like<br> <vue-logo width="24" height="24" /> Vue.js, <graph-ql-logo width="24" height="24" /> GraphQL & <webpack-logo width="28" height="28" />webpack. Get instant <strong>hot-reloading</strong> for any code change when developing. <strong>Gridsome makes building websites fun again.</strong>
         </p>
       </Feature>
 
       <Feature>
         <h3>Fast by default</h3>
-        <p>Gridsome builds ultra performance into every page by using the <g-link to="/docs/how-it-works#the-prpl-pattern">PRPL pattern</g-link>. You get <strong>code splitting, asset optimization, progressive images, and page prefetching</strong> out of the box. Gridsome sites gets almost perfect page speed scores by default.
+        <p>Gridsome builds ultra performance into every page by using the <g-link to="/docs/fast-by-default#the-prpl-pattern">PRPL pattern</g-link>. You get <strong>code splitting, asset optimization, progressive images, and page prefetching</strong> out of the box. Gridsome sites gets almost perfect page speed scores by default.
         </p>
       </Feature>
 
@@ -38,13 +38,6 @@
       </Feature>
 
     </div>
-
-
-    <p class="home-links text-center">
-      <g-link  to="/docs" class="button primary button--large">
-        Get started
-      </g-link>
-    </p>
     
   </Section>
 </template>

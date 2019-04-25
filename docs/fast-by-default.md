@@ -10,7 +10,7 @@
 
 ## Static Site Generation
 
-Gridsome generates static files at blazing speed. Gridsome sites can be hosted anywhere, even on a CDN. There is no need for a Node.js server. 
+Gridsome generates static files at incredible speed. Gridsome sites can be hosted anywhere, even on a CDN. There is no need for a Node.js server. 
 
 A static site gives you many benefits:
 
