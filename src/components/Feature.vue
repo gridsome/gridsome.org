@@ -1,5 +1,5 @@
 <template>
-  <div class="feature">
+  <div class="feature text-center">
     <div class="feature__inner">
       <slot />
     </div>

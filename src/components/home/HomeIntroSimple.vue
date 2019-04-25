@@ -104,8 +104,8 @@ export default {
     width: 100%;
     height: 500px;
     bottom: 0;
-    perspective: 500px;
-    -webkit-mask-image: linear-gradient(-180deg,transparent,#000 35%);
+    perspective: 550px;
+    -webkit-mask-image: linear-gradient( -180deg,transparent, #000 20%);
     pointer-events: none;
     opacity: .2;
 

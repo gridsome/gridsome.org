@@ -1,10 +1,10 @@
 <template>
 	<Section>
 		<h2 class="container text-center">
-      JAMstack development simplified with Vue.js
+      Make website building fun again
     </h2>
     <p class="lead text-center container-md">
-    	Gridsome makes it painlessly easy to build <g-link to="/docs/jamstack">JAMstack</g-link> websites using data from multiple sources such as Content API's & Headless CMSs. 
+    	Gridsome makes it simple & fast to build JAMstack websites
     </p>
 
 		<div class="home-examples mb-x2">

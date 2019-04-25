@@ -4,7 +4,7 @@
 
       <Feature>
         <h3>Enjoy modern development</h3>
-        <p>Build with modern development tools like<br> <vue-logo width="24" height="24" /> Vue.js, <graph-ql-logo width="24" height="24" /> GraphQL & <webpack-logo width="28" height="28" />webpack. Get instant <strong>hot-reloading</strong> for any code change when developing. <strong>Gridsome makes building websites fun again.</strong>
+        <p>Build websites with modern development tools like <vue-logo width="24" height="24" /> Vue.js, <graph-ql-logo width="24" height="24" /> GraphQL & all the power of Node.js & the JavaScript ecosystem. Get instant <strong>hot-reloading</strong> for any code change when developing. 
         </p>
       </Feature>
 
@@ -45,13 +45,11 @@
 <script>
 import VueLogo from '~/assets/images/vue-logo.svg'
 import GraphQlLogo from '~/assets/images/graphql-logo.svg'
-import WebpackLogo from '~/assets/images/webpack-logo.svg'
 export default {
   props: ['icon'],
   components: {
     VueLogo,
     GraphQlLogo,
-    WebpackLogo
   },
   computed: {
     iconClasses() {
