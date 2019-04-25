@@ -120,10 +120,10 @@ export default {
     &__logos {
       position: absolute;
       width: 100%;
-      height: 1300px;
+      height: 1000px;
       background-image: url(/logos.svg);
       background-position: 0;
-      transform: translateY(-650px);
+      transform: translateY(-500px);
       animation: logos 10s linear infinite;
     }
 }
@@ -134,7 +134,7 @@ export default {
   }
 
   100% {
-    transform: translateY(-650px)
+    transform: translateY(-500px)
   }
 }
 </style>
