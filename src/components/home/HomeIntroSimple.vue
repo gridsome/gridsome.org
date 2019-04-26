@@ -10,7 +10,7 @@
       </h1>
 
       <p class="intro__lead lead post mb">
-        Gridsome is a <strong>free & open-source Vue.js-powered framework</strong> for building the fastest possible websites for <strong>any Headless CMS, Content APIs or Markdown-files</strong>. 
+        Gridsome is a <strong>free & open-source Vue.js-powered framework</strong> that helps developers build the fastest possible websites for <strong>any Headless CMS, Content APIs or Markdown-files</strong>. 
       </p>
 
       <p class="intro__links text-center">
@@ -70,7 +70,8 @@ export default {
   }
 
   &__lead {
-    max-width: 800px;
+    max-width: 650px;
+    font-size: 1.3rem;
     margin: 0 auto;
   }
 
