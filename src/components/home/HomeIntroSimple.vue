@@ -6,7 +6,7 @@
       </div>
 
       <h1 class="intro__title post"> 
-        Build awesomely fast JAMstack <br class="hide-for-small"/>websites for any data source
+        Build awesomely fast <br class="hide-for-small"/>JAMstack websites with Vue.js
       </h1>
 
       <p class="intro__lead lead post mb">
@@ -53,8 +53,8 @@ export default {
 <style lang="scss">
 .intro {
   border-top:0;
-  background-color: var(--primary-color);
   padding: calc(3.33% + 50px) 0;
+  background: var(--primary-color);
   background: linear-gradient(353.71deg, var(--primary-color) 7.47%, var(--primary-color-dark) 90.48%);
 
   &__title {
