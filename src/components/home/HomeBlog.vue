@@ -11,7 +11,7 @@
     </div>
 
     <div class="container text-center">
-      <g-image width="400" style="width: 200px; margin:0" src="~/assets/images/vue-is-my-jam.png" />
+      <g-image width="400" style="width: 200px; margin:0" src="~/assets/images/perfmatters.svg" />
     </div>
 
   </Section>

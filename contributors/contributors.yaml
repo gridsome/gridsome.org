@@ -1,12 +1,12 @@
 - id: tommyvedvik
   name: Tommy Vedvik
-  bio: "Co-founder of @gridsome. UX & Design."
+  bio: "Co-creator of @gridsome. UX & Design."
   avatar: ./images/tommyvedvik.jpg
   twitter: "@tommyvedvik"
 
 - id: hjvedvik
   name: Hans-Jørgen Vedvik
-  bio: "Co-founder of @gridsome. Developer lead."
+  bio: "Co-creator of @gridsome. Developer lead."
   avatar: ./images/hjvedvik.png
   twitter: "@hjvedvik"
 
@@ -20,7 +20,7 @@
   name: Cosmic JS
   bio: Modern Content Management Solution
   avatar: ./images/cosmicjs.svg
-  twitter: "@gridsome"
+  twitter: "@cosmicjs"
 
 - id: cossssmin
   name: 

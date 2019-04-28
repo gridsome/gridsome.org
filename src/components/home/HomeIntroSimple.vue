@@ -6,7 +6,7 @@
       </div>
 
       <h1 class="intro__title post"> 
-        Build awesomely fast <br class="hide-for-small"/>JAMstack websites with Vue.js
+        Build awesomely fast <br class="hide-for-small"/>websites & apps with Vue.js
       </h1>
 
       <p class="intro__lead lead post mb">
@@ -63,6 +63,12 @@ export default {
     letter-spacing: -1px;
     font-weight: 600;
     @media screen and (max-width: 850px) {
+      & {
+        font-size: 2.6rem;
+      }
+    }
+
+    @media screen and (max-width: 550px) {
       & {
         font-size: 2rem;
       }
