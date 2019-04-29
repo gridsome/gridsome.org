@@ -10,7 +10,7 @@
       </h1>
 
       <p class="intro__lead lead post mb">
-        Gridsome is a <strong>Vue.js-powered Static Site Generator</strong> that connects to any Headless CMS, Content APIs or Markdown files.
+        Gridsome is a <strong>Vue.js-powered Static Site Generator</strong> that connects to any Headless CMS, Content APIs or Markdown files
       </p>
 
       <p class="intro__links text-center">
@@ -64,13 +64,13 @@ export default {
     font-weight: 600;
     @media screen and (max-width: 850px) {
       & {
-        font-size: 2.6rem;
+        font-size: 3rem;
       }
     }
 
     @media screen and (max-width: 550px) {
       & {
-        font-size: 2rem;
+        font-size: 2.5rem;
       }
     }
   }
