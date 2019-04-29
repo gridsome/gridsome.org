@@ -22,10 +22,9 @@ A typical image component will look like this:
 - **An Intersection Observer** that swaps the base image for the larger image, when the image is in the viewport. (Lazy loading).
 
 
-
 ## Usage in Vue templates
 
-A `<g-image>` component is available in all your Vue templates and can be used to to compress local images. The `src` attribute and options like `width`, `height` and `quality` must be static values because they are compiled into an object which contains URLs and other information that will be rendered into an `img` tag.
+A `<g-image>` component is available in all your Vue templates and can be used to compress local images. The `src` attribute and options like `width`, `height` and `quality` must be static values because they are compiled into an object which contains URLs and other information that will be rendered into an `img` tag.
 
 ```html
 <g-image src="~/assets/image.png" width="500"/>

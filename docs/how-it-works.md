@@ -1,7 +1,9 @@
 # How it works
 
-Gridsome generates static SEO-friendly HTML files that can be deployed anywhere.
-**Once the visitor opens the website it hydrates into a Vue.js powered SPA and loads only lightweight JS files for next pages.**
+Gridsome is a modern website development framework for creating fast and secure websites that can be deployed anywhere. Static HTML files are generated to create SEO-friendly markup that hydrates into a <strong>Vue.js-powered SPA</strong> once loaded in the browser.
+
+Source plugins fetch content from local files or external APIs and store the data in a local database. A unified GraphQL data layer lets you extract only the data you need from the database and use it in your Vue.js components. The data is generated and stored as static JSON at build time.
+
 
 ![How it works](./images/how-it-works.png)
 
