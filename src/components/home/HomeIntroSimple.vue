@@ -6,7 +6,7 @@
       </div>
 
       <h1 class="intro__title post"> 
-        Build awesomely fast <br class="hide-for-small"/>websites & apps with Vue.js
+        Build awesomely fast JAMstack<br class="hide-for-small"/>websites & apps with Vue.js
       </h1>
 
       <p class="intro__lead lead post mb">
