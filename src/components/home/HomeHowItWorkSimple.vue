@@ -48,7 +48,7 @@
       </Card>
 
       <Card title="Deploy">
-        <h4>Static Site Generation</h4>
+        <h4>Pre-render HTML</h4>
         
         <ul class="bullet-list mb">
           <li><Bullet /><g-link to="/docs/fast-by-default#the-prpl-pattern">PRPL-pattern</g-link></li>

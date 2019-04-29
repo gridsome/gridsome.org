@@ -1,6 +1,6 @@
 # Getting started
 
-> Gridsome is a Vue.js-powered, modern static site generator for building the fastest possible websites for any Headless CMS, APIs or Markdown-files. Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert. 
+> Gridsome is a Vue.js-powered modern website generator that helps developers build the fastest possible websites for any Headless CMS, APIs or Markdown-files.
 
 ### Why Gridsome?
 

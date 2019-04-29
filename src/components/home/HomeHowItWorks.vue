@@ -70,7 +70,7 @@
         <div class="generate-html__logo">
           <gridsome-logo />
         </div>
-        <h4>Static Site Generation</h4>
+        <h4>Pre-render HTML</h4>
         <span>Generate SEO-friendly HTML using the <strong><g-link to="/docs/how-it-works#the-prpl-pattern">PRPL pattern</g-link></strong></span>
       </div>
 

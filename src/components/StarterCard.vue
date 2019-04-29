@@ -1,5 +1,5 @@
 <template>
-  <Card class="starter" :image="node.screenshot">
+  <Card class="starter" :image="node.screenshot" :link="node.path">
     <h4 class="starter__title">{{ node.title }} </h4>
     <p v-if="node.description" class="starter__desc"> {{ node.description }} </p>
     <div class="starter__footer">
@@ -22,6 +22,8 @@
 </template>
 
 <script>
+import GitLogo from '~/assets/images/github-logo.svg'
+
 export default {
   props: {
     node: { type: Object, required: true }
@@ -60,6 +62,8 @@ export default {
     align-items: center;
     justify-content: space-between;
     font-size: .85rem;
+    position: relative;
+    z-index: 1;
   }
 
   &__actions {

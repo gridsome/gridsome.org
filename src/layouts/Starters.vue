@@ -15,19 +15,20 @@
          {{ item.node.title }}
         </g-link>
         <h3 class="menu-item">Tags</h3>
-
       </div>
 
       <Section class="starters-content flex-fit">
-        <slot />
+          <slot />
       </Section>
     </div>
   </Layout>
 </template>
 
 <style lang="scss">
-.starters-content {
-  padding-left: var(--space-x2);
+@media screen and (min-width: 850px) {
+  .starters-content {
+    padding: var(--space-x2);
+  }
 }
 .platform-link{
   display: flex;

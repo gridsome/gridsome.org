@@ -1,11 +1,9 @@
 <template>
   <Starters>
-    <h1>Gridsome Starters</h1>
-    <p class="lead">Gridsome starters are premade Gridsome project that are open source and ready to be</p>
-    
+    <h1>Gridsome Starters</h1>    
     <hr />
+    <h3>Default starters <small>Barebone starters with minimal boilerplate</small></h3>
 
-    <h3>Default starters</h3>
     <div class="grid-cols grid-cols--3 mb">
       <StarterCard v-for="starter in $page.defaultStarters.edges" :node="starter.node"  />
     </div>
