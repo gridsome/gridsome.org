@@ -2,15 +2,15 @@
 > Gridsome helps developers build fast websites as default. You don't need to be a performance expert to get perfect Google Lighthouse scores with Gridsome.
 
 ### What makes Gridsome sites fast?
-1. [Static Site Generation](#static-site-generation). Nothing beats static content in speed.
+1. [Pre-rendered HTML](#pre-rendered-html). Nothing beats static content in speed.
 2. [Follows the PRPL-pattern](#the-prpl-pattern) for instant page loads.
 3. [Smart link prefetching](#smart-link-prefetching) that uses Intersection Observer to load next pages.
 4. [Progressive Images](#progressive-images) with automatic image compression and lazy loading.
 5. [Vue.js SPA](#progressive-images) for fast browsing with no page refresh.
 
-## Static Site Generation
+## Pre-rendered HTML
 
-Gridsome generates static files at incredible speed. Gridsome sites can be hosted anywhere, even on a CDN. There is no need for a Node.js server. 
+Gridsome pre-renders HTML at build time (Generates static files). Gridsome sites can be hosted anywhere, even on a CDN. There is no need for a Node.js server. 
 
 A static site gives you many benefits:
 

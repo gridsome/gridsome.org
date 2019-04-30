@@ -10,7 +10,7 @@
 
       <Card title="Data sources">
         <h4>CMSs</h4>
-        <p>Any Headless CMS, Contentful, WordPress, Drupal, DatoCMS, etc.</p>      
+        <p>Any Headless CMS, Contentful, WordPress, Drupal, Sanity.io, etc.</p>      
         <h4>Data</h4>
         <p>Any APIs, Databases, AirTable, YAML, CSV, JSON, etc.</p>
         <h4>Markdown</h4>
@@ -47,20 +47,19 @@
         </template>
       </Card>
 
-      <Card title="Deploy">
-        <h4>Pre-render HTML</h4>
-        
+      <Card title="Deploy">        
+        <h4>Static Web Hosts</h4>
+        <p>
+          <g-link to="/docs/deploy-to-netlify">Netlify</g-link>, <g-link to="/docs/deploy-to-amplify">AWS Amplify</g-link>, <g-link to="/docs/deploy-to-zeit-now">Zeit Now</g-link>, <g-link to="/docs/deploy-to-amazon-s3">Amazon S3</g-link>, Surge.sh, Aerobatic, Now.sh & many more.
+        </p>
+
         <ul class="bullet-list mb">
+          <li><Bullet /><g-link to="/docs/fast-by-default#pre-rendered-html">Pre-rendered HTML</g-link></li>
           <li><Bullet /><g-link to="/docs/fast-by-default#the-prpl-pattern">PRPL-pattern</g-link></li>
           <li><Bullet /><g-link to="/docs/fast-by-default#smart-link-prefetching">Smart link prefetching</g-link></li>
           <li><Bullet /><g-link to="/docs/fast-by-default#progressive-images">Progressive Images</g-link></li>
           <li><Bullet /><g-link to="/docs/fast-by-default#vuejs-spa">Vue.js SPA</g-link></li>
         </ul>
-
-        <h4>Static Web Hosts</h4>
-        <p>
-          <g-link to="/docs/deploy-to-netlify">Netlify</g-link>, <g-link to="/docs/deploy-to-amplify">AWS Amplify</g-link>, <g-link to="/docs/deploy-to-zeit-now">Zeit Now</g-link>, <g-link to="/docs/deploy-to-amazon-s3">Amazon S3</g-link>, Surge.sh, Aerobatic, Now.sh & many more.
-        </p>
       </Card>
 
     </div>

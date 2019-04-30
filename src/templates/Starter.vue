@@ -1,6 +1,6 @@
 <template>
   <Starters>
-    <g-link to="/starters">← Starters</g-link>
+    <g-link to="/starters" class="mb" style="display:block;">← All Starters</g-link>
     <h1>Gridsome starter</h1>
   </Starters>
 </template>
