@@ -37,7 +37,7 @@ query BlogPost ($path: String!) {
 The [gridsome-transformer-remark](/plugins/transformer-remark) transformer plugin automatically converts normal Markdown images to `g-image` compatible markup.
 
 ```md
-[Alternative text](./image.jpg)
+![Alternative text](./image.jpg)
 ```
 
 ## Image cropping
