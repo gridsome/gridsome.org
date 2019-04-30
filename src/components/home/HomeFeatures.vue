@@ -4,7 +4,7 @@
 
       <Feature>
         <h3>Easy, local development</h3>
-        <p>Build websites with modern development tools like <vue-logo width="24" height="24" /> Vue.js, <graph-ql-logo width="24" height="24" /> GraphQL & all the power of Node.js & the JavaScript ecosystem. Develop locally and get instant <strong>hot-reloading</strong> for any code change.
+        <p>Build websites with modern tools like <br class="hide-for-small" /><vue-logo width="24" height="24" /> Vue.js, <graph-ql-logo width="24" height="24" /> GraphQL & all the power of Node.js & the JavaScript ecosystem. Develop locally and get instant <strong>hot-reloading</strong> for any code change.
         </p>
       </Feature>
 
@@ -16,13 +16,13 @@
 
       <Feature>
         <h3>PWA-ready</h3>
-         <p>Gridsome is a static PWA generator. It pre-renders all pages to load as fast as possible. Once loaded, the next pages are prefetched in background so clicking around the site feels super fast. It even works offline.
-        </p>
+         <p>Gridsome generates static PWAs. Only critical HTML, CSS, and JavaScript get loaded first. The next pages are then prefetched so users can click around incredibly fast without page reloads, even when offline.
+          </p>
       </Feature>
 
       <Feature>
-        <h3>Fully extensible</h3>
-        <p>Gridsome has powerful APIs that let you customize or build plugins for anything. <g-link to="/plugins/">Gridsome Plugins</g-link> is a fast growing library of NPM packages that can be installed to any Gridsome project.</p>
+        <h3>Build on the JAMstack</h3>
+        <p>The future of the web is JavaScript, API's, and Markup - <g-link to="/docs/jamstack">the JAMstack</g-link>. Gridsome uses the power of static site generation, JavaScript and APIs to create stunning modern web experiences.</p>
       </Feature>
 
 

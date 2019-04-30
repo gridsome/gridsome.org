@@ -5,7 +5,7 @@
 ### Why Gridsome?
 
 - **Local development with hot-reloading** - See code changes in real-time.
-- **Data source plugins** - Use it for any popular Headless CMSs, APIs or Markdown-files.
+- **Data source plugins** - Connect to any popular Headless CMSs, APIs or Markdown-files.
 - **File-based page routing** - Quickly create and manage routes with files.
 - **Centralized data managment** - Pull data into a local, unified GraphQL data layer.
 - **Vue.js for frontend** - A lightweight and approachable front-end framework.
