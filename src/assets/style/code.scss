@@ -8,39 +8,16 @@
 }
 
 #app pre {
-  background-color: var(--code-color-block);
-}
+  background-color: var(--dark-bg);
+  margin-bottom: var(--space);
 
-
-#app pre code {
-  background-color: transparent;
-  border: transparent;
-}
-
-
-#app pre {
-  // fix for accessbility
-  .token.punctuation {
-    color: #5f5f5f;
+  .token.comment, .token.prolog, .token.doctype, .token.cdata {
+    color: #7a8da0;
   }
-  .token.comment {
-    color: #687787;
-  }
-  .token.attr-name,
-  .token.builtin,
-  .token.char,
-  .token.inserted,
-  .token.selector,
-  .token.string {
-    color: #007900;
-  }
-}
 
-// code blocks
-#app pre {
-  padding: 1em 0 1em 1em;
-  margin-bottom: 2.0em;
-  overflow-x: auto;
+  .token.property, .token.tag, .token.constant, .token.symbol, .token.deleted {
+    color: #ff6565;
+  }
 }
 
 // HTML code blocks
@@ -53,6 +30,8 @@
   padding: 0.2em 0.5em;
   overflow-wrap: break-word;
   word-wrap: break-word;
+  color: currentColor;
+    text-shadow: none;
 }
 
 h1, h2, h3, h4 {

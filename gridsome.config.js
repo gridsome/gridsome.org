@@ -91,5 +91,38 @@ module.exports = {
         }
       }
     }
+  ],
+  // Create routes from GraphQL nodes
+  nodeRoutes: {
+     WordPressPost: '/:year/:month/:slug',
+     WordPressTag: '/tag/:slug',
+     CustomType: {
+       route: '/other/:custom/:type',
+       component: './src/templates/MyTemplate.vue', // default templates/typeName.vue
+       nextFieldName: 'nextPost',
+       prevFieldName: 'prevPost',
+       sortBy: 'date'
+     },
+     Author: [
+       {
+         route: '/author/:name',
+         component: './src/templates/Author.vue'
+       },
+       {
+         route: '/author/:name/starters',
+         component: './src/templates/AuthorStarters.vue'
+       }
+     ]
+  },
+  // Create dynamic routes
+  clientRoutes: [
+    { 
+      path: '/foo/',
+      component: './src/templates/MyTemplate.vue',
+    },
+    { 
+      path: '/bar/:id', 
+      component: './src/templates/MyTemplate.vue',
+    }
   ]
 }

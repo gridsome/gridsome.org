@@ -10,7 +10,7 @@
       </h1>
 
       <p class="intro__lead lead post mb">
-        Gridsome is a <strong>Vue.js-powered Modern Website Generator</strong> that connects to any Headless CMS, Content APIs or Markdown files
+        Gridsome is a <strong>Vue-powered Modern Website Generator</strong> that connects to any Headless CMS, Content APIs or Markdown files
       </p>
 
       <p class="intro__links text-center">

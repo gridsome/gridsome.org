@@ -154,34 +154,7 @@ query Example {
 
 #app .examples pre {
 	text-shadow: none;
-	background-color: transparent;
-	color:#eee;
-	margin: 0;
 	padding: 0;
-
-	.token.property, .token.tag, .token.boolean, .token.number, .token.constant, .token.symbol, .token.deleted {
-		color: #dc47ac;
-	}
-
-	.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string {
-		background-color: transparent;
-	}
-
-
-	.token.comment {
-		color: #748599;
-	}
-
-	.token.punctuation {
-		color: #878687;
-	}
-
-	.token.attr-name, .token.builtin, .token.char, .token.inserted, .token.selector, .token.string {
-		color: #00a672;
-	}
-
-	.token.atrule, .token.attr-value, .token.keyword {
-		color: #46c4fb;
-	}
+	background-color: transparent;
 }
 </style>

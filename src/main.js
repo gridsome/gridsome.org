@@ -1,5 +1,6 @@
 // Import global styles
-import 'prismjs/themes/prism.css'
+import 'prismjs/themes/prism-okaidia.css'
+
 import '~/assets/style/index.scss'
 
 // Add global components
