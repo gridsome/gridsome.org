@@ -5,7 +5,9 @@ nav a {
   align-items:center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 8px 5px;
+  padding: 13px 5px;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
   text-decoration: none;
   font-size: .95rem;
 
@@ -31,6 +33,7 @@ nav a {
     color: var(--primary-color);
   }
   &.active {
+    border-bottom-color: var(--primary-color-dark);
     color: var(--primary-color-dark);
   }
 }

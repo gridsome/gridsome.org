@@ -8,7 +8,7 @@
     	</Card>
       <Card class="sponsor text-center">
 	      <g-image src="~/assets/images/logo-algolia.svg" alt="Algolia"/>
-	      <p>Thanks to <a href="https://algolia.com"  rel="noopener" target="_blank">Algolia</a> for providing the search to Plugins and Documentation</p>
+	      <p>Thanks to <a href="https://algolia.com"  rel="noopener" target="_blank">Algolia</a> for sponsoring search for Plugins and Documentation</p>
     	</Card>
     </div>
   </Section>

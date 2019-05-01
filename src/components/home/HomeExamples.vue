@@ -4,7 +4,7 @@
       Make website building fun again
     </h2>
     <p class="lead text-center container-md">
-    	Gridsome makes it simple & fast to build modern websites for any data source
+    	Gridsome makes it simple & fast to build modern websites for any data source.
     </p>
 
 		<div class="home-examples mb-x2">

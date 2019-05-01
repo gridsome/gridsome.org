@@ -1,16 +1,14 @@
 <template>
   <Section class="intro" dark="true">
     <div class="intro__top text-center">
-      <div class="intro__message mb" hidden>
-        <g-link to="/blog/2019/02/19/gridsome-v05"><span>🌟 Introducing <strong>Gridsome Staging</strong>. Preview changes and content before deploying →</span></g-link>
-      </div>
+      <div class="intro__message mb" hidden></div>
 
       <h1 class="intro__title post"> 
-        Build awesomely fast JAMstack<br class="hide-for-small"/>websites & apps with Vue.js
+        Build fast JAMstack <br class="hide-for-small"/>websites & apps with Vue.js
       </h1>
 
       <p class="intro__lead lead post mb">
-        Gridsome is a <strong>Vue-powered Modern Website Generator</strong> that connects to any Headless CMS, Content APIs or Markdown files
+        Gridsome is a <strong>Vue-powered Modern Website Generator</strong> that connects to any Headless CMS, Content APIs or Markdown files.
       </p>
 
       <p class="intro__links text-center">
