@@ -50,14 +50,28 @@ module.exports = function (api) {
 
 ## api.createPages(fn)
 
-Create pages from
+Create pages programatically from nodes or other data. The handler for this hook will be re-executed when nodes are changed in store.
 
 Usage:
 
 ```js
 module.exports = function (api) {
   api.createPages(pages => {
-    // Use Pages API here
+    // Create pages
+  })
+}
+```
+
+## api.createManagedPages(fn)
+
+Create, update or remove pages programatically from nodes or other data.
+
+Usage:
+
+```js
+module.exports = function (api) {
+  api.createManagedPages(pages => {
+    // Create, update or remove pages
   })
 }
 ```
@@ -121,14 +135,14 @@ Create a custom GraphQL schema which will be merged with the Gridsome schema.
 #### Usage
 
 ```js
-api.createSchema(graphql => {
-  return new graphql.GraphQLSchema({
+api.createSchema(({ addSchema, graphql }) => {
+  addSchema(new graphql.GraphQLSchema({
     query: new graphql.GraphQLObjectType({
       name: 'CustomRootQuery',
       fields: {
         // ...
       }
-    })
+    }))
   })
 })
 ```

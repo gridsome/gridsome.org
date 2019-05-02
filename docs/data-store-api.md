@@ -52,10 +52,7 @@ Get a content type previously created.
 ##### Arguments
 
 - options `Object` *Required.*
-  - title `string` *Required.*
   - id `string` *A unique id for this content type.*
-  - date `string` *The date. Fallbacks to current date.*
-  - path `string` *Optional path to use when not having a dynamic route.*
   - ...fields `object` *Custom fields.*
 
 ##### Usage
@@ -64,13 +61,13 @@ Get a content type previously created.
 api.loadSource(store => {
   const posts = store.addContentType({
     typeName: 'BlogPost',
-    route: '/blog/:year/:slug'
+    route: '/blog/:year/:title'
   })
 
   posts.addNode({
     title: 'My first blog post',
     date: '2018-11-02',
-    myField: 'My value'
+    customField: 'My value'
   })
 })
 ```
@@ -108,14 +105,20 @@ api.loadSource(store => {
 })
 ```
 
-The field will contain the referred node fields:
+The field will contain the referenced node fields in the GraphQL schema:
 
 ```graphql
 query BlogPost ($id: String!) {
   blogPost (id: $id) {
     title
-    author1 { title }
-    author2 { title }
+    author1 {
+      id
+      title
+    }
+    author2 {
+      id
+      title
+    }
   }
 }
 ```
@@ -169,11 +172,9 @@ api.loadSource(store => {
     resolve (node, args) {
       const value = node.fields.myField
 
-      if (args.upperCase) {
-        return value.toUpperCase()
-      }
-
-      return value
+      return args.upperCase
+        ? value.toUpperCase()
+        : value
     }
   }))
 })

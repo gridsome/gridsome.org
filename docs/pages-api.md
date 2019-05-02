@@ -1,10 +1,22 @@
 # Pages API
 
-The Pages API lets you create custom pages.
+The Pages API lets you create custom pages. This API is called after the GraphQL schema has been generated so you can query nodes and create pages from them or any other data.
+
+Start by using the `api.createPages()` hook in `gridsome.server.js`:
+
+```js
+module.exports = function (api) {
+  api.createPages(({ createPage, graphql }) => {
+    // Create pages here
+  })
+}
+```
 
 ## Create a page
 
-### `pages.createPage(options)`
+Use the `createPages` hook if you want to create pages .
+
+#### `createPage(options)`
 
 ##### Arguments
 
@@ -12,14 +24,14 @@ The Pages API lets you create custom pages.
   - **path** `string` *Required.*
   - **component** `string` *Required.*
   - context `object` *Optional context for the page and `page-query`.*
-  - queryContext `object`  *Optional context only for `page-query`.*
+  - queryVariables `object`  *Optional context only for `page-query`.*
 
 ##### Usage
 
 ```js
 module.exports = function (api) {
-  api.createPages(pages => {
-    pages.createPage({
+  api.createPages(({ createPage }) => {
+    createPage({
       path: '/my-page',
       component: './src/templates/MyPage.vue'
     })
@@ -27,16 +39,55 @@ module.exports = function (api) {
 }
 ```
 
-## Page context
+## Create managed pages
 
-Each page can have a context which will be available as variables for `page-query`. The context will also be available in the page component as `$context`. If you only want the context to be available for `page-query`, use the `queryContext` option instead of `context`.
+Pages created in the `createPages` hook will be re-created and garbage collected occasionally. That's why that hook is only able to create pages. You can use a `createManagedPages` hook to create, update and remove pages yourself. 
+
+#### `createPage(options)`
+#### `updatePage(options)`
+
+##### Arguments
+
+- options `object`
+  - **path** `string` *Required.*
+  - **component** `string` *Required.*
+  - context `object` *Optional context for the page and `page-query`.*
+  - queryVariables `object`  *Optional context only for `page-query`.*
+
+#### `removePage(page)`
+
+Removed a page created by `createPage`.
+
+#### `removePageByPath(path)`
+
+Removes a page mathing the provided path.
+
+#### `removePagesByComponent(path)`
+
+Removes all pages mathing the provided component path.
+
+#### `findAndRemovePages(query)`
+
+Removes all pages mathing the provided query.
+
+#### `findPages(query)`
+
+Returns all pages mathing the provided query.
+
+#### `findPage(query)`
+
+Returns first pages mathing the provided query.
+
+## The page context
+
+Each page can have a context which will be available as variables for `page-query`. The context will also be available in the page component as `$context`. If you only want the context to be available for `page-query`, use the `queryVariables` option instead of `context`.
 
 ##### Example usage
 
 ```js
 module.exports = function (api) {
-  api.createPages(pages => {
-    pages.createPage({
+  api.createPages(({ createPage }) => {
+    createPage({
       path: '/my-page',
       component: './src/templates/MyPage.vue',
       context: {
@@ -65,16 +116,23 @@ query MyPage($customValue: String) {
 
 ## Example usage
 
-### Create pages from nodes
+### Create pages from GraphQL
 
 ````js
-api.createPages(({ createPage }) => {
-  const posts = api.store.getContentType('Post')
+api.createPages(async ({ graphql, createPage }) => {
+  const { data } = await graphql(`{
+    allProduct {
+      edges {
+        id
+        path
+      }
+    }
+  `)
 
-  posts.allNodes().forEach(node => {
+  data.allProduct.edges.forEach(({ node }) => {
     createPage({
       path: `${node.path}/reviews`,
-      component: './src/templates/Post.vue',
+      component: './src/templates/ProductReviews.vue',
       context: {
         id: node.id
       }
@@ -83,42 +141,32 @@ api.createPages(({ createPage }) => {
 })
 ````
 
-### Create pages from GraphQL
-
-````js
-api.createPages(async ({ graphql, createPage }) => {
-  const { data } = await graphql(`
-    query {
-      allProduct {
-        id
-      }
-    }
-  `)
-
-  data.allProduct.edges.forEach(edge => {
-    createPage({
-      path: `${edge.node.path}/reviews`,
-      component: './src/templates/ProductReviews.vue',
-      context: {
-        id: edge.node.id
-      }
-    })
-  })
-})
-````
-
 ### Create pages from external APIs
 
+We use `createManagedPages` in this example because we doesn't need the pages to be re-created on changes. The template also uses the context for rendering data instead of GraphQL results.
+
 ```js
-api.createPages(async ({ createPage }) => {
+api.createManagedPages(async ({ createPage }) => {
   const { data } = await axios.get('https://api.example.com/posts')
 
   data.forEach(item => {
     createPage({
       path: item.path,
       component: './src/templates/Post.vue',
-      context: item
+      context: {
+        title: item.title,
+        content: item.content
+      }
     })
   })
 })
+```
+
+```html
+<template>
+  <Layout>
+    <h1>{{ $context.title }}</h1>
+    <div v-html="$context.content"></div>
+  </Layout>
+</template>
 ```

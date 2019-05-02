@@ -69,7 +69,22 @@ query Posts {
 
 [Learn more about query data](/docs/querying-data)
 
+### Creating pages programmatically
 
+Pages can also be created programmatically.
+
+```js
+module.exports = function (api) {
+  api.createPages(({ createPage }) => {
+    createPage({
+      path: '/my-page',
+      component: './src/templates/MyPage.vue'
+    })
+  })
+}
+```
+
+[Read more about the Pages API](/docs/pages-api)
 
 ## Page layouts
 
