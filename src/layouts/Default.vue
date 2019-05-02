@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <main id="main" tabindex="-1" :class="mainClass">
+    <main id="main" :class="mainClass">
       <slot />
     </main>
     <Footer v-if="footer !== false" />

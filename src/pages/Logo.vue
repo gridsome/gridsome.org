@@ -62,6 +62,11 @@
 
    	 <div class="colors mb">
 
+      <div class="colors__bg">
+        <span>#f7fbfb</span>
+      </div>
+
+
    	 	<div class="colors__primary">
    	 		<span>#00A672</span>
    	 	</div>
@@ -86,13 +91,15 @@
 	background-color: var(--primary-bg);
 	margin-bottom: var(--space);
 
+
+
 	&--dark {
 		background-color: var(--dark-bg);
 	}
 
-   &--secondary {
-      background-color: var(--primary-color-dark);
-   }
+  &--secondary {
+    background-color: var(--primary-color-dark);
+  }
 
 	a {
 		display: block;
@@ -106,13 +113,20 @@
 }
 
 .colors {
+  text-align: center;
 	div {
 		padding: 15% 5% 5px;
 		display: inline-block;
-		margin-right: 1rem;
+		margin: 0 .5rem;
 		text-align: center;
 		color:#FFF;
+    outline: 1px solid rgba(0,0,0,.1);
 	}
+
+  &__bg {
+    background-color: var(--primary-bg);
+    color: #000!important;
+  }
 
 	&__primary {
 		background-color: var(--primary-color);

@@ -33,7 +33,6 @@ export default {
 
 <style lang="scss">
 .starter {
-  overflow: hidden;
 
   .card__inner {
     padding: 1rem;

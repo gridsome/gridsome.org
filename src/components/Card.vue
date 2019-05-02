@@ -1,5 +1,8 @@
 <template>
   <div class="card" :class="{'card--has-link' : link}">
+    <g-link v-if="link" class="card__link" :to="link">
+      Read more
+    </g-link>
     <div class="card__title" v-if="title">
       <span>{{ title }}</span>
     </div>
@@ -10,9 +13,6 @@
       <slot />
     </div>
     <slot name="outer" />
-    <g-link v-if="link" class="card__link" :to="link">
-      Read more
-    </g-link>
   </div>
 </template>
 
@@ -92,7 +92,8 @@ export default {
       opacity: 0.0;
       overflow: hidden;
       text-indent: -9999px;
-      z-index: 0;
+      z-index: 1;
+
       &:focus {
         opacity: 1;
         outline: 2px auto -webkit-focus-ring-color;

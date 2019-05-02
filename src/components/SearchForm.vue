@@ -40,18 +40,14 @@ export default {
   font-size: 0.9rem;
 
   & &__input {
-    max-width: 150px;
+    max-width: 180px;
     transition: all .6s;
     border:0;
-
-    &:not(:focus) {
-      padding-left:0;
-      padding-right:0;
-      border:0;
-    }
+    background-color: #f4f7f7;
+    border-radius: 99px;
 
     &:focus {
-      background-color: rgba(0,0,0,.05);
+      background-color: #f7fbfb;
     }
   }
 }
