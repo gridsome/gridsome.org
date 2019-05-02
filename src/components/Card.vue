@@ -93,6 +93,10 @@ export default {
       overflow: hidden;
       text-indent: -9999px;
       z-index: 0;
+      &:focus {
+        opacity: 1;
+        outline: 2px auto -webkit-focus-ring-color;
+      }
     }
 
     a:not(.card__link) {

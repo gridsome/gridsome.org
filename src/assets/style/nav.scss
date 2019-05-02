@@ -5,23 +5,29 @@ nav a {
   align-items:center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 13px 5px;
-  border-top: 2px solid transparent;
-  border-bottom: 2px solid transparent;
+  padding: 15px 5px;
   text-decoration: none;
   font-size: .95rem;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    height: 1px;
+    left: 50%;
+    width: 0px;
+    transform: translateX(-50%);
+    background-color: transparent;
+    opacity: .5;
+    transition: all .6s;
+  }
 
   svg {
     margin: 2px 6px;
   }
 
-  &.active {
-    color: currentColor;
-    
-    svg {
-      opacity: 1;
-    }
-  } 
+
 
 
   &:not(.active):not(:hover):not(.button) {
@@ -31,10 +37,19 @@ nav a {
 
   &:hover {
     color: var(--primary-color);
+
+    &:after {
+      background-color: var(--primary-color);
+    }
   }
+
   &.active {
-    border-bottom-color: var(--primary-color-dark);
     color: var(--primary-color-dark);
+
+    &:after {
+      background-color: var(--primary-color-dark);
+      width: 100%;
+    }
   }
 }
 
