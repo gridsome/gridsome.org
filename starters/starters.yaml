@@ -1,22 +1,22 @@
 - title: Default starter
-  gitUrl: https://github.com/gridsome/gridsome-starter-default
+  gitPath: gridsome/gridsome-starter-default
   author: gridsome
   tags: Default
 
 - title: Default WordPress starter
-  gitUrl: https://github.com/gridsome/gridsome-starter-wordpress
+  gitPath: gridsome/gridsome-starter-wordpress
   author: gridsome
   platforms: wordpress
   tags: Default
 
 - title: Default Markdown starter
-  gitUrl: https://github.com/gridsome/gridsome-starter-wordpress
+  gitPath: gridsome/gridsome-starter-wordpress
   author: gridsome
   platforms: markdown
   tags: Default
 
 - title: Default Contentful starter
-  gitUrl: https://github.com/gridsome/gridsome-starter-contentful
+  gitPath: gridsome-starter-contentful
   author: gridsome
   tags: markdown, tailwind
   platforms: contentful
@@ -24,7 +24,7 @@
 - title: Default Blog Starter
   description: Official Markdown Blog Starter
   screenshot: ./screenshots/gridsome-starter-blog.png
-  gitUrl: https://github.com/gridsome/gridsome-starter-default
+  gitPath: gridsome/gridsome-starter-default
   preview: https://gridsome-starter-blog.netlify.com/
   author: gridsome
   tags: Blog, Dark Mode
@@ -40,12 +40,12 @@
 
 
 - title: Bleda
-  description: Gridsome blog starter, built with Tailwind CSS
+  description: Markdown Blog with Tailwind CSS
   screenshot: ./screenshots/gridsome-starter-bleda.png
-  gitUrl: https://github.com/hellocosmin/gridsome-starter-bleda
+  gitUrl: hellocosmin/gridsome-starter-bleda
   preview: https://gridsome-starter-bleda.netlify.com/
   tags: blog, tailwind
-  source: markdown
+  platforms: markdown
   author: cossssmin
   features:
     - Sitemap, RSS, GA.
@@ -59,10 +59,10 @@
 - title: CosmicJS Blog
   description: Gridsome + Cosmic JS
   screenshot: ./screenshots/gridsome-blog-cosmic-js.png
-  docs: https://github.com/cosmicjs/gridsome-blog
+  gitPath: cosmicjs/gridsome-blog
   preview: https://gridsome-blog-cosmicjs.netlify.com/
   author: cosmicjs
-  platform: cosmicjs
+  platforms: cosmicjs
   features:
     - Cosmic JS
     - Next / Previous post navigation

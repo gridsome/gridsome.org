@@ -38,7 +38,7 @@ query Starters {
         title
         description
         preview
-        gitUrl
+        gitPath
         platforms {
           title
           logo
@@ -59,7 +59,11 @@ query Starters {
         title
         description
         preview
-        gitUrl
+        gitPath
+        platforms {
+          title
+          logo
+        }
         author {
           title
           path
