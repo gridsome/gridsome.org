@@ -1,6 +1,6 @@
 # Filtering data
 
-Each content type collection in the GraphQL schema has a `filter` argument which can be used to filter the results. You can filter by `id`, `title`, `slug`, `path` or any custom field. Each field type supports different operators.
+Each content type collection in the GraphQL schema has a `filter` argument which can be used to filter the results. You can filter by any custom field. Each field type supports different operators.
 
 The syntax for `filter` is based on the [mongodb](https://docs.mongodb.com/manual/reference/operator/query/) query syntax.
 

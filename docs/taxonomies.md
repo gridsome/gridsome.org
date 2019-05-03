@@ -101,7 +101,9 @@ query Tag ($id: String!, $page: Int) {
 |----------|---------|-------------|
 | **sortBy** | `"date"` | Sort by a node field.
 | **order** | `DESC` | Sort order (`DESC` or `ASC`).
-| **perPage** | `25` | How many nodes to get.
+| **sort** | | Sort by multiple node fields.
 | **skip** | `0` | How many nodes to skip.
+| **limit** | | How many nodes to get.
 | **page** | `1` | Which page to get.
-| **filter** | `{}` | Filter nodes by `id`, `path` or `typeName`.
+| **perPage** | | How many nodes to show per page.
+| **filter** | `{}` | Filter nodes by `id` or `typeName`.

@@ -24,8 +24,8 @@ for the current page. You can use the `$path` variable to get the node.
 </template>
 
 <page-query>
-query Post ($path: String!) {
-  post: wordPressPost (path: $path) {
+query Post ($id: String!) {
+  post: wordPressPost (id: $id) {
     title
     content
   }

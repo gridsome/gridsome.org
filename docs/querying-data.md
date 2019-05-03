@@ -46,10 +46,11 @@ Every content type has a collection and a single entry in the GraphQL schema. Yo
 |----------|---------|-------------|
 | **sortBy** | `"date"` | Sort by a node field.
 | **order** | `DESC` | Sort order (`DESC` or `ASC`).
-| **sort** | `"date"` | Sort by multiple node fields.
-| **perPage** | `25` | How many nodes to get.
+| **sort** | | Sort by multiple node fields.
 | **skip** | `0` | How many nodes to skip.
+| **limit** | | How many nodes to get.
 | **page** | `1` | Which page to get.
+| **perPage** | | How many nodes to show per page.
 | **filter** | `{}` | [Read more](/docs/filtering-data).
 
 #### Find nodes sorted by title
@@ -89,8 +90,6 @@ The other fields that do not start with `all` are your single entries. They are 
 | Argument | Default | Description |
 |----------|---------|-------------|
 | **id** | `null` | Get node by `id`.
-| **path** | `null` | Get node by `path`.
-| **nullable** | `false` | Will return an error if not nullable.
 
 #### Example query
 
@@ -140,13 +139,12 @@ query Blog {
 </page-query>
 ```
 
-
 ## Query data in Templates
 
 Templates are used for page layout for the *single* endpoint of a data source like for example a WordPress blog post. If you have a node type called `WordPressPost`, then you can create a file
 in `src/templates/WordPressPost.vue`.
 
-The `page-query` in templates also has a set of variables that can be used in the query. Available variables are `$id`, `$title`, `$slug`, `$path`, `$date` and any custom fields from the current `node`. Access field values in deep objects or arrays by separating properties or indexes with double underscores (`__`).
+The `page-query` in templates also has a set of variables that can be used in the query. Any custom fields from the current `node` are available as variables. Access field values in deep objects or arrays by separating properties or indexes with double underscores (`__`).
 
 - `$id` resolves to `node.id`
 - `$value` resolves to `node.fields.value`
@@ -194,12 +192,12 @@ to fetch data from data sources. The results will be stored in a
 
 ```html
 <template>
-  <div v-html="$static.example.content" />
+  <div v-html="$static.post.content" />
 </template>
 
 <static-query>
-query Example {
-  example: examplePage (path: "/docs/example") {
+query Post {
+  post (id: "1") {
     content
   }
 }

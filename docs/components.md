@@ -70,12 +70,12 @@ to fetch data from data sources. The results will be stored in a
 
 ```html
 <template>
-  <div v-html="$static.example.content" />
+  <div v-html="$static.post.content" />
 </template>
 
 <static-query>
-query Example {
-  example: examplePage (path: "/docs/example") {
+query Post {
+  post (id: "1") {
     content
   }
 }

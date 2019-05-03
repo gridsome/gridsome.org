@@ -29,8 +29,9 @@ The description is used as description on your frontpage.
 - Default `''`
 
 ## pathPrefix
+
 - Type `string`
-- Default `'/'`
+- Default `''`
 
 Gridsome assumes your project is served from the root of your domain.
 Change this option to `'/my-app'` if your project will be hosted in a
