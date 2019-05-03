@@ -3976,10 +3976,10 @@ gray-percentage@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/gray-percentage/-/gray-percentage-2.0.0.tgz#b72a274d1b1379104a0050b63b207dc53fe56f99"
 
-gridsome@0.5.2:
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.5.2.tgz#69c5f8501d01de3f01ef8b7d768b2696764bb2ea"
-  integrity sha512-48PZwq6jFzkKpl1UJW7JrIjTVWh93HV0ekSBcRgmvPUC2QRRL8mGqRRJOWsEVE08CqJbCEsHe20GjNJEXsrBtw==
+gridsome@^0.5.5:
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.5.5.tgz#6cccedd3cc852efbbbce9a15ba70ce0c019fd6de"
+  integrity sha512-W7rKbMSbIwxi3jO0cfEBgp5VK3Id8ZjY+rs7lYLESnBAedcxLrTdHHQ2dzy5k8l+CPz/m8fIiwSFj7nIFGaxQw==
   dependencies:
     "@babel/core" "^7.0.0"
     "@gridsome/cli" "^0.0.8"
@@ -4017,7 +4017,7 @@ gridsome@0.5.2:
     imagemin-webp "^5.0.0"
     is-relative "^1.0.0"
     is-url "^1.2.4"
-    jest-worker "^24.0.0"
+    jest-worker "24.0.0"
     json-loader "^0.5.7"
     loader-utils "^1.2.3"
     lodash "^4.17.11"
@@ -4925,7 +4925,7 @@ javascript-stringify@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/javascript-stringify/-/javascript-stringify-1.6.0.tgz#142d111f3a6e3dae8f4a9afd77d45855b5a9cce3"
 
-jest-worker@^24.0.0:
+jest-worker@24.0.0:
   version "24.0.0"
   resolved "https://registry.yarnpkg.com/jest-worker/-/jest-worker-24.0.0.tgz#3d3483b077bf04f412f47654a27bba7e947f8b6d"
   integrity sha512-s64/OThpfQvoCeHG963MiEZOAAxu8kHsaL/rCMF7lpdzo7vgF0CtPml9hfguOMgykgH/eOm4jFP4ibfHLruytg==

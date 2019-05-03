@@ -48,7 +48,57 @@ module.exports = function (api) {
 }
 ```
 
-[Read more about the Data Store API](/docs/data-store-api)
+## api.createPages(fn)
+
+Create pages programatically from nodes or other data. The handler for this hook will be re-executed when nodes are changed in store.
+
+Usage:
+
+```js
+module.exports = function (api) {
+  api.createPages(pages => {
+    // Create pages
+  })
+}
+```
+
+## api.createManagedPages(fn)
+
+Create, update or remove pages programatically from nodes or other data.
+
+Usage:
+
+```js
+module.exports = function (api) {
+  api.createManagedPages(pages => {
+    // Create, update or remove pages
+  })
+}
+```
+
+[Read more about the Pages API](/docs/pages-api)
+
+## api.configureWebpack(fn)
+
+Configure the internal webpack config. 
+
+#### Usage
+
+The object will be merged with the internal config if it is an object. 
+
+```js
+api.configureWebpack({
+  // add config here
+})
+```
+
+If the option is a function, it will get the internal config as its first argument. You can either modify the argument or return a new config object that will override the internal webpack config.
+
+```js
+api.configureWebpack(config => {
+  return merge({ /* custom config */ }, config)
+})
+```
 
 ## api.chainWebpack(fn)
 
@@ -85,14 +135,14 @@ Create a custom GraphQL schema which will be merged with the Gridsome schema.
 #### Usage
 
 ```js
-api.createSchema(graphql => {
-  return new graphql.GraphQLSchema({
+api.createSchema(({ addSchema, graphql }) => {
+  addSchema(new graphql.GraphQLSchema({
     query: new graphql.GraphQLObjectType({
       name: 'CustomRootQuery',
       fields: {
         // ...
       }
-    })
+    }))
   })
 })
 ```

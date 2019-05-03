@@ -46,16 +46,31 @@ Every content type has a collection and a single entry in the GraphQL schema. Yo
 |----------|---------|-------------|
 | **sortBy** | `"date"` | Sort by a node field.
 | **order** | `DESC` | Sort order (`DESC` or `ASC`).
+| **sort** | `"date"` | Sort by multiple node fields.
 | **perPage** | `25` | How many nodes to get.
 | **skip** | `0` | How many nodes to skip.
 | **page** | `1` | Which page to get.
 | **filter** | `{}` | [Read more](/docs/filtering-data).
 
-#### Example query
+#### Find nodes sorted by title
 
 ```graphql
 query Posts {
-  allPost (sortBy: "title", order: DESC, skip: 2) {
+  allPost (sortBy: "title", order: DESC) {
+    edges {
+      node {
+        title
+      }
+    }
+  }
+}
+```
+
+#### Sort a collection by multiple fields
+
+```graphql
+query Posts {
+  allPost (sort: [{ by: "featured" }, { by: "date" }]) {
     edges {
       node {
         title
