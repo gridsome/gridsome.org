@@ -63,7 +63,7 @@
             </div>
           </div>
 
-          <VueMarkdown class="post plugin-post__content mb" v-if="hit" :source="hit.readme" />
+          <div class="post plugin-post__content mb" v-if="hit" v-html="content" />
 
         </template>
         <template v-else>
@@ -83,13 +83,23 @@
 </template>
 
 <script>
-import VueMarkdown from 'vue-markdown'
+import marked from 'marked'
 import algoliasearch from 'algoliasearch/lite'
 import GitLabLogo from '~/assets/images/gitlab.svg'
 import GitHubLogo from '~/assets/images/github-logo.svg'
 import BitbucketLogo from '~/assets/images/bitbucket.svg'
-import { createInstantSearch } from 'vue-instantsearch'
 import Connect from '~/components/Connect.vue'
+
+import {
+  createInstantSearch,
+  AisInstantSearchSsr,
+  AisStateResults,
+  AisInfiniteHits,
+  AisHighlight,
+  AisConfigure,
+  AisSearchBox,
+  AisPoweredBy
+} from 'vue-instantsearch'
 
 const searchClient = algoliasearch(
   'OFCNCOG2CU',
@@ -103,8 +113,14 @@ const { instantsearch, rootMixin } = createInstantSearch({
 
 export default {
   components: {
-    VueMarkdown,
-    Connect
+    Connect,
+    AisPoweredBy,
+    AisSearchBox,
+    AisConfigure,
+    AisHighlight,
+    AisInfiniteHits,
+    AisStateResults,
+    AisInstantSearchSsr
   },
 
   mixins: [rootMixin],
@@ -145,6 +161,10 @@ export default {
             return owner
           })
         : []
+    },
+
+    content () {
+      return this.hit.readme ? marked(this.hit.readme) : ''
     }
   },
 
