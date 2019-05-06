@@ -74,11 +74,10 @@ module.exports = function (api) {
 
 
 ## Route params
-Available route params are `:id`, `:title`, `:slug` and any custom fields from the current `node`. 
-The `node.date` field has a set of shorthand helpers; `:year`, `:month` and `:day`. Access field values in deep objects or arrays by separating properties or indexes with double underscores (`__`). Field values are slugified by default, but the original value will be available as **{fieldname}_raw**.
+Any custom field from the current `node` will be possible to use as route params. The `node.date` field has a set of shorthand helpers; `:year`, `:month` and `:day`. Access field values in deep objects or arrays by separating properties or indexes with double underscores (`__`). Field values are slugified by default, but the original value will be available as **{fieldname}_raw**.
 
 - `:id` resolves to `node.id`
-- `:value` resolves to `node.fields.value`
-- `:value_raw` resolves to `node.fields.value` (Value without slugify)
-- `:object__value` resolves to `node.fields.object.value`
-- `:array__3__id` resolves to `node.fields.array[3].id`
+- `:value` resolves to `node.value` *(slugified value)*
+- `:value_raw` resolves to `node.value` *(original value)*
+- `:object__value` resolves to `node.object.value`
+- `:array__3__id` resolves to `node.array[3].id`
