@@ -12,26 +12,26 @@
       <Skeleton style="height: 15px; width: 75%; opacity: 1;"  />
     </div>
 
-    <VueMarkdown v-if="readme" :source="readme" />
+    <div v-html="readme" />
   </Starters>
 </template>
 
 <script>
-import VueMarkdown from 'vue-markdown'
+import marked from 'marked'
 import Starters from '~/layouts/Starters.vue'
 import Skeleton from '~/components/Skeleton.vue'
+
 const cache = {}
 
 export default {
   components: {
-    VueMarkdown,
     Starters,
     Skeleton
   },
 
   data () {
     return {
-      readme: null,
+      readme: '',
       isLoading: true
     }
   },
@@ -51,8 +51,9 @@ export default {
     const res = await fetch(url)
     const json = await res.json()
     const readmeRes = await fetch(json.download_url)
-    
-    this.readme = cache[repo] = await readmeRes.text()
+    const markdown = await readmeRes.text()
+
+    this.readme = cache[repo] = marked(markdown)
     this.isLoading = false
   }
 }
