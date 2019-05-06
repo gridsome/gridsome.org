@@ -8,7 +8,7 @@ Fetch content from local files or external APIs and store the data in a local da
 Gridsome data source plugins are added in `gridsome.config.js`. You can find available data source plugins in the [Plugins directory](/plugins).
 
 
-Here is an example of the [file-system](/plugins/source-filesystem) source added to config:
+Here is an example of the [file-system](/plugins/@gridsome/source-filesystem) source added to config:
 ```js
 module.exports = {
   plugins: [
@@ -63,7 +63,7 @@ module.exports = function (api) {
 }
 ```
 
-> Data is feched when starting a development server or start of a production build. You need to restart server for changes in **gridsome.server.js** to take affect.
+> Data is fetched when starting a development server or start of a production build. You need to restart the server for the changes in **gridsome.server.js** to take effect.
 
 
 ## Add data from local files

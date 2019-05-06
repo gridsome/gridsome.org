@@ -67,19 +67,21 @@
       link: /docs/assets-css
     - title: Add custom fonts
       link: /docs/assets-fonts
-    - title: Add external scripts 
+    - title: Add external scripts
       link: /docs/assets-scripts
     - title: Add SVG icons
       link: /docs/assets-svg
 
 - title : Guides
-  items: 
+  items:
     - title: Add a form *
       link: /docs/guide-forms
     - title: Add a search *
       link: /docs/guide-search
     - title: Add comments *
       link: /docs/guide-comments
+    - title: Add Netlify CMS
+      link: /docs/guide-netlify-cms
 
 - title: API Reference
   items:
@@ -106,6 +108,8 @@
       link: /docs/deploy-to-amazon-s3
     - title: GitLab Pages
       link: /docs/deploy-to-gitlab
+    - title: Github Pages
+      link: /docs/deploy-to-github
 
 - title: Contribute
   items:

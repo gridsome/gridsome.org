@@ -4,7 +4,7 @@
       <div class="home-cols__left">    
         <h1 class="home-title"> 
             Build <br class="show-for-small" />
-            <VueTyper :text="words" :type-delay="30" caret-animation="smooth" />
+            <VueTyper :text="words" :type-delay="30" initial-action="erasing" caret-animation="smooth" />
             <br /> websites & apps
             <br /> with Vue.js
         </h1>

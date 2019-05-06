@@ -2,7 +2,7 @@
 
 Gridsome is a modern website development framework for creating fast and secure websites that can be deployed anywhere. Static HTML files are generated to create SEO-friendly markup that hydrates into a <strong>Vue.js-powered SPA</strong> once loaded in the browser.
 
-Source plugins fetch content from local files or external APIs and stores the data in a local database. A unified GraphQL data layer lets you extract only the data you need from the database and use it in your Vue.js components. The data is generated and stored as static JSON at build time.
+Source plugins fetch content from local files or external APIs and store the data in a local database. A unified GraphQL data layer lets you extract only the data you need from the database and use it in your Vue.js components. The data is generated and stored as static JSON at build time.
 
 ![How it works](./images/how-it-works.png)
 
@@ -52,7 +52,7 @@ The `gridsome build` command prepares a project for **production**. This means i
 10. **Process images** - Local images are processed and copied to the `dist` folder.
 
 
-> Services like **Netlify** and **Zeit Now** lets you run `gridsome build` automatically from a **Git-repository** and hosts the generated files on a CDN for you. These services also have hooks that enable you to re-build the site after a Git-commit. Learn more about Git-based [deployment here](/docs/deployment).
+> Services like **Netlify** and **Zeit Now** let you run `gridsome build` automatically from a **Git-repository** and host the generated files on a CDN for you. These services also have hooks that enable you to re-build the site after a Git-commit. Learn more about Git-based [deployment here](/docs/deployment).
 
 ### Build time server-side rendering
 Gridsome runs server-side rendering at build time. This means you don't need any server like Node.js to run Gridsome sites. They are pre-rendered & static and can be deployed to any static web host or FTP.
@@ -80,7 +80,7 @@ Gridsome builds two files of every page. A static HTML and a small JavaScript fi
 [Learn more about **g-link** here](/docs/linking).
 
 ### Progressive Image support
-Gridsome has a built-in `<g-image>` component with built-in progressive image support. In **development** it let you do real-time image processing, like resizing and cropping.
+Gridsome has a built-in `<g-image>` component with built-in progressive image support. In **development** it lets you do real-time image processing, like resizing and cropping.
 
 In production, the `<g-image>` is served as an ultra-compressed image before the image is lazy-loaded when in view by using **Intersection Observer**.
 

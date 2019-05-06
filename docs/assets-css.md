@@ -52,9 +52,13 @@ function addStyleResource (rule) {
     .loader('style-resources-loader')
     .options({
       patterns: [
-				path.resolve(__dirname, './src/assets/sass/_globals.sass'),
-				// you can also use a glob if you'd prefer
-				// path.resolve(__dirname, './src/assets/sass/*.sass'),
+	path.resolve(__dirname, './src/assets/sass/_globals.sass'),
+	// or if you use scss
+	// path.resolve(__dirname, './src/assets/sass/_globals.scss'),
+	// you can also use a glob if you'd prefer
+	// path.resolve(__dirname, './src/assets/sass/*.sass'),
+	// or scss
+	// path.resolve(__dirname, './src/assets/sass/*.scss'),
       ],
     })
 }
@@ -69,9 +73,11 @@ Then you'll modify the `module.exports` block as follows:
 ```js
 module.exports = {
   chainWebpack: config => {
-    // Load variables for all vue-files
-    const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
-    types.forEach(type => addStyleResource(config.module.rule('sass').oneOf(type)))
+	    // Load variables for all vue-files
+	    const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
+	    types.forEach(type => addStyleResource(config.module.rule('sass').oneOf(type)))
+	    // or if you use scss
+	    // types.forEach(type => addStyleResource(config.module.rule('scss').oneOf(type)))
 	}
 }
 ```
@@ -112,7 +118,7 @@ This will change the `.card` class in current component automatically to somethi
 
 ## Enable Critical CSS
 
-Gridsome [Critical CSS plugin](/plugins/plugin-critical-css) extracts CSS from components in selected view port size and adds the CSS inline to `<head>`.
+Gridsome [Critical CSS plugin](/plugins/@gridsome/plugin-critical) extracts CSS from components in selected view port size and adds the CSS inline to `<head>`.
 
 
 ## Add a CSS framework
@@ -137,3 +143,99 @@ plugins: [
 
 ### Bootstrap
 ...plugin coming
+
+### BootstrapVue
+[BootstrapVue](https://bootstrap-vue.js.org/) provides one of the most comprehensive implementations of Bootstrap V4 components and grid system available for Vue.js 2.5+, complete with extensive and automated WAI-ARIA accessibility markup.
+
+To instal use:
+
+```
+# With npm
+npm i vue bootstrap-vue bootstrap
+
+# With yarn
+yarn add vue bootstrap-vue bootstrap
+```
+
+Then, register BootstrapVue plugin in your `main.js` file:
+
+```js
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+// Then add it to export function
+
+export default function (Vue, { router, head, isClient }) {
+  Vue.use(BootstrapVue)
+}
+```
+
+### Vuetify
+[Vuetify](https://vuetifyjs.com/en/) is a semantic component framework for Vue. It aims to provide clean, semantic and reusable components that make building your application a breeze. Based on Google's material design, it can be a quick way to get an app up and running quickly with pre-built components available to use and customize.
+
+To install use:
+
+```
+# With npm
+npm install vuetify --save
+
+# With yarn
+yarn add vuetify
+```
+
+Then, you will need to register the Vuetify plugin, include the Vuetify css file, and add a link to the head 
+for Google's material design icons in your 'main.js' file:
+
+```js
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
+import DefaultLayout from '~/layouts/Default.vue'
+
+export default function (Vue, { router, head, isClient }) {
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
+  })
+
+  Vue.use(Vuetify)
+  
+  // Set default layout as a global component
+  Vue.component('Layout', DefaultLayout)
+}
+```
+Finally, there is one last thing you will need in order to build your application with vuetify. 
+You will need to whitelist Vuetify in webpack in order to build. 
+
+First, install the webpack-node-externals plugin:
+
+```
+# With npm
+npm install webpack-node-externals --save-dev
+
+# With yarn
+yarn add webpack-node-externals --dev
+```
+
+Then modify your gridsome.server.js file to include the webpack-node-externals package, and whitelist vuetify.
+```js
+const nodeExternals = require('webpack-node-externals')
+
+module.exports = function (api) {
+  api.chainWebpack((config, { isServer }) => {
+    if (isServer) {
+      config.externals([
+        nodeExternals({
+          whitelist: [/^vuetify/]
+        })
+      ])
+    }
+  })
+
+  api.loadSource(store => {
+    // Use the Data store API here: https://gridsome.org/docs/data-store-api
+  })
+}
+```
+Then you should be able to build now! You will find the files in your dist/ folder.
+

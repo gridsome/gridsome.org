@@ -15,5 +15,5 @@ Open up your terminal.
 
 
 ### Yarn (Optional)
-Yarn is a fast alternative to Npm. It's optional to install, but recommend since we use it in many code examples.
+Yarn is a fast alternative to Npm. It's optional to install, but recommended since we use it in many code examples.
 **Follow instruction here to install**: https://yarnpkg.com/en/docs/install

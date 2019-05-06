@@ -1,12 +1,14 @@
 # Images
 
-Gridsome can compress and lazy-load images automatically. The images will be resized down to 480, 1024, 1920 and 2560 pixels by default. A blurred version is displayed while the image is beeing loaded. And a fallback `img` tag for browsers without JavaScript enabled is also generated.
+> Gridsome has a built-in `<g-image>` component that outputs an optimized progressive image. It also resizes and crops in real-time when developing. There is no fake resizing with CSS.
+
+`<g-image>` compresses and lazy-loads images automatically. The images will be resized down to 480, 1024, 1920 and 2560 pixels by default. A blurred version is displayed while the image is being loaded and a fallback `img` tag for browsers without JavaScript enabled is also generated.
 
 > Only local, relative image paths will be compressed by Gridsome.
 
 ## Usage in Vue templates
 
-A `<g-image>` component is available in all your Vue templates and can be used to to compress local images. The `src` attribute and options like `width`, `height` and `quality` must be static values because they are compiled into an object which contains URLs and other information that will be rendered into an `img` tag.
+A `<g-image>` component is available in all your Vue templates and can be used to compress local images. The `src` attribute and options like `width`, `height` and `quality` must be static values because they are compiled into an object which contains URLs and other information that will be rendered into an `img` tag.
 
 ```html
 <g-image src="./image.png" width="500"/>
@@ -35,7 +37,7 @@ query BlogPost ($path: String!) {
 The [gridsome-transformer-remark](/plugins/transformer-remark) transformer plugin automatically converts normal Markdown images to `g-image` compatible markup.
 
 ```md
-[Alternative text](./image.jpg)
+![Alternative text](./image.jpg)
 ```
 
 ## Image cropping
