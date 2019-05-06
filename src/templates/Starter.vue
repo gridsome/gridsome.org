@@ -1,5 +1,5 @@
 <template>
-  <Starters>
+  <Starters class="starter">
     <g-link to="/starters" class="mb" style="display:block;">← All Starters</g-link>    
     <div style="width: 80%;" v-if="isLoading">
       <Skeleton />

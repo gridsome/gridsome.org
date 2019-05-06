@@ -2,21 +2,15 @@
   repo: gridsome/gridsome-starter-default # Path to github repo owner/repo
   author: gridsome # The author ID. Must be an id from contributors/contributors.yaml
   tags: Default # tags
-
+  
 - title: Default WordPress starter
   repo: gridsome/gridsome-starter-wordpress
   author: gridsome
   platforms: wordpress
   tags: Default
 
-- title: Default Markdown starter
-  repo: gridsome/gridsome-starter-wordpress
-  author: gridsome
-  platforms: markdown
-  tags: Default
-
 - title: Default Contentful starter
-  repo: gridsome-starter-contentful
+  repo: gridsome/gridsome-starter-contentful
   author: gridsome
   tags: markdown, tailwind
   platforms: contentful
@@ -24,7 +18,7 @@
 - title: Default Blog Starter
   description: Official Markdown Blog Starter
   screenshot: ./screenshots/gridsome-starter-blog.png
-  repo: gridsome/gridsome-starter-default
+  repo: gridsome/gridsome-starter-blog
   preview: https://gridsome-starter-blog.netlify.com/
   author: gridsome
   tags: Blog, Dark Mode

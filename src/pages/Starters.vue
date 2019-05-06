@@ -31,7 +31,7 @@ export default {
 
 <page-query>
 query Starters {
-  defaultStarters: allStarter (order: ASC, perPage: 4) {
+  defaultStarters: allStarter (order: ASC, perPage: 3) {
     edges {
       node {
         id
@@ -52,7 +52,7 @@ query Starters {
       }
     }
   },
-  starters: allStarter (order: ASC, skip: 4) {
+  starters: allStarter (order: ASC, skip: 3) {
     edges {
       node {
         id

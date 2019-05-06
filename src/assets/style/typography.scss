@@ -104,3 +104,11 @@ li {
   text-transform: uppercase;
 }
 
+
+h1, h2, h3 {
+  small {
+    font-weight: normal;
+    opacity: .8;
+    margin: 0 1rem;
+  }
+}

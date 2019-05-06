@@ -67,7 +67,7 @@
 
         </template>
         <template v-else>
-          <div class="plugins-intro post">
+          <div class="plugins-intro container-sm post">
             <Connect />
             <div class="plugins-intro__text">
               <h1>Gridsome Plugins</h1>

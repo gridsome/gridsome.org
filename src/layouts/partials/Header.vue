@@ -48,9 +48,6 @@
             <a href="//github.com/gridsome/gridsome/blob/master/gridsome/CHANGELOG.md" rel="noopener noreferrer" target="_blank">
               Change log
             </a>
-            <a href="//github.com/gridsome/gridsome/milestones" rel="noopener noreferrer" target="_blank">
-              Roadmap
-            </a>
             <a href="//github.com/gridsome/gridsome" rel="noopener noreferrer" target="_blank">
               Core repository
             </a>

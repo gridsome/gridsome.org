@@ -96,10 +96,6 @@ export default {
 .works {
   line-height: 1.6;
 
-  .bullet-list {
-    margin: 1rem 0 0;
-  }
-
   .bullet-list li {
     margin-bottom: .3rem;
   }
