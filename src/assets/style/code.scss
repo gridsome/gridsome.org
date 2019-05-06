@@ -1,11 +1,9 @@
 #app pre,
 #app code {
   font-family: Space Mono,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
-  background-color: var(--code-color);
-  border-radius: 3px;
   font-feature-settings: "liga" 0;
-  border: 1px solid rgba(0,0,0,.05);
   font-size: 0.9rem;
+  border-radius: 3px;
 }
 
 #app pre {
@@ -23,10 +21,10 @@
 }
 
 // inline code
-#app code {
-  font-size: 80%;
-  padding: 0.2em 0.4em;
+#app code.language-text,
+#app code:not([class*="language-"]) {
   color: currentColor;
+  padding: 0.2em 0.4em;
   background-color: var(--primary-bg);
   border: 1px solid var(--border-color);
 }

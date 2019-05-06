@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import marked from 'marked'
+import markdown from '../utils/markdown'
 import Starters from '~/layouts/Starters.vue'
 import Skeleton from '~/components/Skeleton.vue'
 
@@ -51,9 +51,9 @@ export default {
     const res = await fetch(url)
     const json = await res.json()
     const readmeRes = await fetch(json.download_url)
-    const markdown = await readmeRes.text()
+    const markdownSource = await readmeRes.text()
 
-    this.readme = cache[repo] = marked(markdown)
+    this.readme = cache[repo] = markdown(markdownSource)
     this.isLoading = false
   }
 }

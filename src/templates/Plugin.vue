@@ -83,7 +83,7 @@
 </template>
 
 <script>
-import marked from 'marked'
+import markdown from '../utils/markdown'
 import algoliasearch from 'algoliasearch/lite'
 import GitLabLogo from '~/assets/images/gitlab.svg'
 import GitHubLogo from '~/assets/images/github-logo.svg'
@@ -164,7 +164,7 @@ export default {
     },
 
     content () {
-      return this.hit.readme ? marked(this.hit.readme) : ''
+      return this.hit.readme ? markdown(this.hit.readme) : ''
     }
   },
 
