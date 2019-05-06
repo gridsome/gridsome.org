@@ -13,6 +13,7 @@
 	  border-radius: 5px;
 	  display: block;
 	  height: 30px;
+	  opacity: .6;
 
 	  &::after {
 	    position: absolute;

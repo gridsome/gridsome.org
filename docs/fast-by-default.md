@@ -1,4 +1,4 @@
-# Fast by Default
+# Fast by default
 > Gridsome helps developers build fast websites as default. You don't need to be a performance expert to get perfect Google Lighthouse scores with Gridsome.
 
 ### What makes Gridsome sites fast?

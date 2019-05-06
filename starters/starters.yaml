@@ -1,7 +1,7 @@
-- title: Default starter
-  repo: gridsome/gridsome-starter-default
-  author: gridsome
-  tags: Default
+- title: Default starter # The title
+  repo: gridsome/gridsome-starter-default # Path to github repo owner/repo
+  author: gridsome # The author ID. Must be an id from contributors/contributors.yaml
+  tags: Default # tags
 
 - title: Default WordPress starter
   repo: gridsome/gridsome-starter-wordpress
@@ -29,15 +29,6 @@
   author: gridsome
   tags: Blog, Dark Mode
   platforms: markdown
-  features:
-    - Beautiful and simple design.
-    - Markdown for content.
-    - Tags support.
-    - Dark / Light toggle.
-    - CSS variables, SCSS & BEM for styling.
-    - 100, 100, 100, 100 score on Google Lighthouse.
-    - Uses same front-matter fields as Dev.to
-
 
 - title: Bleda
   description: Markdown Blog with Tailwind CSS
@@ -47,14 +38,6 @@
   tags: blog, tailwind
   platforms: markdown
   author: cossssmin
-  features:
-    - Sitemap, RSS, GA.
-    - Code syntax highlighting.
-    - Parallax post image covers
-    - Medium-like image lightbox
-    - Paginated Tags & Authors
-    - Old content post alert
-    - Custom 404 page
 
 - title: CosmicJS Blog
   description: Gridsome + Cosmic JS
@@ -63,7 +46,3 @@
   preview: https://gridsome-blog-cosmicjs.netlify.com/
   author: cosmicjs
   platforms: cosmicjs
-  features:
-    - Cosmic JS
-    - Next / Previous post navigation
-    - Typography.js

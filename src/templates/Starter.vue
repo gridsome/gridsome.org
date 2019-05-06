@@ -1,7 +1,17 @@
 <template>
   <Starters>
-    <g-link to="/starters" class="mb" style="display:block;">← All Starters</g-link>
-    <h1>{{ $page.starter.title }}</h1>
+    <g-link to="/starters" class="mb" style="display:block;">← All Starters</g-link>    
+    <div style="width: 80%;" v-if="isLoading">
+      <Skeleton />
+      <Skeleton style="height: 15px" />
+      <Skeleton style="height: 15px; width: 80%; opacity: .6;" />
+      <Skeleton style="height: 15px; width: 85%; opacity: 1;"  />
+      <Skeleton style="height: 15px; width: 85%; opacity: 1;"  />
+      <Skeleton style="height: 15px; width: 65%; opacity: 1;"  />
+      <Skeleton style="height: 15px; width: 55%; opacity: 1;"  />
+      <Skeleton style="height: 15px; width: 75%; opacity: 1;"  />
+    </div>
+
     <VueMarkdown v-if="readme" :source="readme" />
   </Starters>
 </template>
@@ -9,13 +19,14 @@
 <script>
 import VueMarkdown from 'vue-markdown'
 import Starters from '~/layouts/Starters.vue'
-
+import Skeleton from '~/components/Skeleton.vue'
 const cache = {}
 
 export default {
   components: {
     VueMarkdown,
-    Starters
+    Starters,
+    Skeleton
   },
 
   data () {
