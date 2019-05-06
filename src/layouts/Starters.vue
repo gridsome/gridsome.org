@@ -10,7 +10,7 @@
           All starters
         </g-link>
         <h3 class="menu-item">Platforms</h3>
-        <g-link class="menu-item platform-link" v-for="item in $static.platforms.edges" :to="item.node.path" >
+        <g-link class="menu-item platform-link" v-for="item in $static.platforms.edges"  :key="item.node.id" :to="item.node.path" >
          <g-image :src="item.node.logo" /> 
          {{ item.node.title }}
         </g-link>
@@ -49,8 +49,8 @@
   platforms: allPlatform {
     edges {
       node {
-        title
         id
+        title
         path
         logo
       }
