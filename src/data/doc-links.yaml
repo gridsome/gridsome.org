@@ -52,14 +52,14 @@
       link: /docs/querying-data
     - title: Filtering data
       link: /docs/filtering-data
+    - title: Client-side data
+      link: /docs/client-side-data
     - title: Taxonomy pages
       link: /docs/taxonomies
     - title: Paginated data
       link: /docs/pagination
     - title: Add global meta data
       link: /docs/site-meta-data
-    - title: Client-side data
-      link: /docs/client-side-data
 
 - title : Styles and Assets
   items:
