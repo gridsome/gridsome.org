@@ -4,7 +4,7 @@ Pages are used for **normal pages** and for **listing & paginate GraphQL collect
 
 - If url will be `/about` use a **page**
 - If url will be `/blog` use a **page**
-- If url will be `/blog/:slug` use a **[Template](/docs/templates)**
+- If url will be `/blog/:slug` use a **[template](/docs/templates)**
 
 ## Creating pages
 
@@ -71,7 +71,7 @@ query Posts {
 
 ### Creating pages programmatically
 
-Pages can also be created programmatically.
+Pages can also be created programmatically by using the `createPages` hook in `gridsome.server.js`.
 
 ```js
 module.exports = function (api) {

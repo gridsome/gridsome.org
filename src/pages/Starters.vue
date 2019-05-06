@@ -38,7 +38,7 @@ query Starters {
         title
         description
         preview
-        gitPath
+        repo
         platforms {
           title
           logo
@@ -59,7 +59,7 @@ query Starters {
         title
         description
         preview
-        gitPath
+        repo
         platforms {
           title
           logo
