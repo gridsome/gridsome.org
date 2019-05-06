@@ -52,6 +52,19 @@ export default {
   }
 }
 
+@media screen and (max-width: 550px) {
+  .header-search__input {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header-search {
+    margin-left: auto !important;
+    font-size: 0.9rem;
+  }
+}
+
 .algolia-autocomplete .algolia-docsearch-suggestion--wrapper {
   padding-top: 0;
 }

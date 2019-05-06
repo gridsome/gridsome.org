@@ -4,7 +4,7 @@
     <div class="header-inner container flex gap-30">
       <Logo/>
       <Nav class="flex-fit"/>
-      <SearchForm class="hide-for-small"/>
+      <SearchForm />
 
       <nav class="header-actions flex">
         <a
@@ -120,21 +120,6 @@ header {
   .header-inner {
     padding: 0 var(--space);
     min-height: var(--header-height);
-  }
-}
-
-@media screen and (max-width: 850px) {
-  header {
-    .logo {
-      margin-right: 0;
-    }
-    .main-nav {
-      color: #000;
-    }
-  }
-  .header-actions {
-    margin-left: auto !important;
-    font-size: 0.9rem;
   }
 }
 </style>
