@@ -52,8 +52,7 @@ export default {
 .intro {
   border-top:0;
   padding: calc(3.33% + 50px) 0;
-  background: var(--primary-color);
-  background: linear-gradient(353.71deg, var(--primary-color) 7.47%, var(--primary-color-dark) 90.48%);
+  background: var(--dark-bg);
 
   &__title {
     font-size: 3.3rem;
@@ -108,7 +107,7 @@ export default {
     perspective: 550px;
     -webkit-mask-image: linear-gradient( -180deg,transparent, #000 35%);
     pointer-events: none;
-    opacity: .2;
+    opacity: .15;
     transform: translateZ(0);
 
     &__grid {
