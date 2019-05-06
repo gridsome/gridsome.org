@@ -58,8 +58,8 @@
       link: /docs/pagination
     - title: Add global meta data
       link: /docs/site-meta-data
-    - title: Add dynamic data *
-      link: /docs/data-dynamic
+    - title: Client-side data
+      link: /docs/client-side-data
 
 - title : Styles and Assets
   items:

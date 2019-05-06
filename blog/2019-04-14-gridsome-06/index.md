@@ -20,8 +20,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad soluta ab autem des
 
 - `NodeInterface` is renamed to `Node`.
 - `title`, `path`, `date`, `content`, `excerpt` and `slug` are now custom fields.
-- Routes for pages in `src/pages` no longer gets automatic names.
 - Custom fields are no longer camel cased by default.
+- Routes for pages in `src/pages` no longer gets automatic names  
+  *- Autmomatic route names would most likely conflict with custom pages.*
 
 ## Other features and fixes
 
