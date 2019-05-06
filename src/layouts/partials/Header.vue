@@ -6,7 +6,7 @@
       <Nav class="flex-fit"/>
 
       <nav class="header-actions flex">
-        <SearchForm class="hide-for-small"/>
+        <SearchForm v-bind:class="{ 'hide-for-small': !currentlyInsideDocs }"/>
 
         <a
           aria-label="Twitter"
@@ -14,6 +14,7 @@
           rel="noopener noreferrer"
           target="_blank"
           title="Follow us on Twitter"
+          v-bind:class="{ 'hide-for-small': currentlyInsideDocs }"
         >
           <twitter-logo/>
         </a>
@@ -24,6 +25,7 @@
           rel="noopener noreferrer"
           target="_blank"
           title="Join our discord"
+          v-bind:class="{ 'hide-for-small': currentlyInsideDocs }"
         >
           <discord-logo/>
         </a>
@@ -34,6 +36,7 @@
           rel="noopener noreferrer"
           target="_blank"
           title="Gridsome @ GitHub"
+          v-bind:class="{ 'hide-for-small': currentlyInsideDocs }"
         >
           <github-logo
             height="20px"
@@ -66,6 +69,11 @@ import TwitterLogo from '@/assets/images/twitter-logo.svg'
 import DiscordLogo from '@/assets/images/discord-logo.svg'
 
 export default {
+  computed: {
+    currentlyInsideDocs() {
+      return this.$route.path.startsWith("/docs")
+    },
+  },
   components: {
     Logo,
     GithubLogo,
@@ -102,6 +110,9 @@ header {
   .header-actions {
     margin-left: auto !important;
     font-size: 0.9rem;
+  }
+  .algolia-autocomplete .ds-dropdown-menu {
+    min-width: calc(100vw - 60px);
   }
 }
 </style>
