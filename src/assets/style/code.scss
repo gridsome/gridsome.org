@@ -9,15 +9,11 @@
 }
 
 #app pre {
-  background-color: var(--dark-bg);
+  padding: calc(var(--space) / 2) calc(var(--space) / 1.5);
   margin-bottom: var(--space);
 
-  .token.comment, .token.prolog, .token.doctype, .token.cdata {
-    color: #7a8da0;
-  }
-
-  .token.property, .token.tag, .token.constant, .token.symbol, .token.deleted {
-    color: #ff65b1;
+  .token.punctuation {
+    color: #7fdbca;
   }
 }
 
@@ -28,11 +24,11 @@
 
 // inline code
 #app code {
-  padding: 0.2em 0.5em;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+  font-size: 80%;
+  padding: 0.2em 0.4em;
   color: currentColor;
-    text-shadow: none;
+  background-color: var(--primary-bg);
+  border: 1px solid var(--border-color);
 }
 
 h1, h2, h3, h4 {

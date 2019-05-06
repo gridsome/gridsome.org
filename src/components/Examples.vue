@@ -75,7 +75,7 @@ query Example {
 }
 
 .examples {
-	background-color: var(--dark-bg);
+	background-color: var(--code-bg);
 	border-radius: 10px;
 	overflow: hidden;
 
@@ -103,7 +103,7 @@ query Example {
 		color: #FFF;
 		position: relative;
 		overflow: hidden;
-		background-color: rgba(0,0,0,.3);
+		box-shadow: inset 2px 0px 3px 0px rgba(black, 0.2);
 		width: 100%;
 
 		@media screen and (min-width: 850px) {
@@ -111,8 +111,11 @@ query Example {
 		}
 	}
 
-	&__header{
+	&__header {
 		padding: 10px var(--space) 0;
+		&-title {
+			color: rgba(255,255,255,.4);
+		}
 	}
 
 	&__sidebar {
@@ -122,8 +125,9 @@ query Example {
 		a {
 			color: #FFF;
 			text-decoration: none;
-			background-color: var(--dark-bg);
-			padding: 3px 7px;
+			background-color: transparent;
+			line-height: 1.2;
+			padding: 10px 10px;
 			border-radius: 5px;
 			width: 100%;
 			margin: 0 8px 8px 0;
