@@ -61,8 +61,6 @@ export default {
 
 <style lang="scss">
 .intro {
-
-
   @media screen and (max-width: 850px) {
     & {
       text-align: center;
