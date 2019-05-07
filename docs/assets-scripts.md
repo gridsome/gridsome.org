@@ -52,8 +52,7 @@ export default {
     }
   },
   mounted() {
-    moment = require('moment')
-    this.theTime = 'The time is '.moment().format("HH:mm")
+    this.theTime = 'The time is ' + moment().format("HH:mm")
   }
 }
 </script>
