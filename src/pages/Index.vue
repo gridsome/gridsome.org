@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout class="layout-homepage">
     <home-intro-simple />
     <home-how-it-work-simple />
     <home-features />
@@ -32,5 +32,11 @@ export default {
   }
 }
 </script>
+
+<style>
+.layout-homepage header{
+  border: 0;
+}
+</style>
 
 

@@ -14,9 +14,11 @@
           <br class="hide-for-small"/>websites & apps 
           <br class="hide-for-small"/>with Vue.js
         </h1>
+        
         <p class="intro__lead lead post mb" style="padding-right: 5%">
           Gridsome is a <strong>Vue.js-powered framework</strong> that helps developers build modern websites & PWAs for any Headless CMS, Content APIs or Markdown files.
         </p>
+
         <p class="intro__links">
           <g-link  to="/docs" class="button primary button--large">
             Get started
@@ -60,7 +62,6 @@ export default {
 <style lang="scss">
 .intro {
 
-  padding: var(--space) 0;
 
   @media screen and (max-width: 850px) {
     & {

@@ -42,13 +42,8 @@ export default {
   & &__input {
     max-width: 180px;
     transition: all .6s;
-    border:0;
-    background-color: #f4f7f7;
     border-radius: 99px;
-
-    &:focus {
-      background-color: #f7fbfb;
-    }
+    background-color: var(--primary-bg);
   }
 }
 
