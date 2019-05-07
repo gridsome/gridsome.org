@@ -8,7 +8,7 @@
     </p>
     <div class="grid-cols grid-cols--gap-large grid-cols--full-md mb">
 
-      <Card title="Data sources">
+      <Card title="Bring your data">
         <h4>CMSs</h4>
         <p>Any Headless CMS, Contentful, WordPress, Drupal, Sanity.io, etc.</p>      
         <h4>Data</h4>
