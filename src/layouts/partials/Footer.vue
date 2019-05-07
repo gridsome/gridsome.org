@@ -20,9 +20,5 @@ footer {
   border-top: 1px solid var(--border-color);
   margin-top: -1px;
   padding: 20px;
-
-  @media screen and (max-width: 850px) {
-    padding-bottom: 120px;
-  }
 }
 </style>

@@ -28,8 +28,15 @@
     padding: var(--space-x2);
     background-color: #FFF;
   }
-
 }
+
+@media screen and (max-width: 850px) {
+  .container .container {
+      padding-left:0;
+      padding-right:0;
+    }
+}
+
 
 .container-main {
   flex-direction: column;

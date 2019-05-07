@@ -29,7 +29,7 @@
 	      rgba(#fff, 0.5) 60%,
 	      rgba(#fff, 0)
 	    );
-	    animation: shimmer 1s infinite;
+	    animation: shimmer .3s infinite;
 	    content: '';
 	  }
 }
