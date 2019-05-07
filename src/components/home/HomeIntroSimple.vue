@@ -1,22 +1,15 @@
 <template>
   <Section class="intro" dots="true">
-    <div class="intro__top grid-cols grid-cols--2 grid-cols--full-md flex">
+    <div class="container text-center container-md">
 
-      <div>
-        <Connect style="max-width: 580px; margin: 0 auto" />
-      </div>
-
-      <div style="padding: 0 var(--space-x2) ;">
         <div class="intro__message mb" hidden></div>
 
         <h1 class="intro__title post"> 
-          Build fast JAMstack
-          <br class="hide-for-small"/>websites & apps 
-          <br class="hide-for-small"/>with Vue.js
+          A Vue.js framework for <em>rapidly</em> building JAMstack websites & apps
         </h1>
         
-        <p class="intro__lead lead post mb" style="padding-right: 5%">
-          Gridsome is a <strong>Vue.js-powered framework</strong> that helps developers build modern websites & PWAs for any Headless CMS, Content APIs or Markdown files.
+        <p class="intro__lead lead post mb">
+          Gridsome helps developers build incredible fast Vue.js-powered websites & PWAs for any Headless CMS, Content APIs or Markdown files.
         </p>
 
         <p class="intro__links">
@@ -32,7 +25,6 @@
           </a>
         </p>
 
-      </div>
 
       
     </div>
@@ -48,13 +40,8 @@ query HomeIntro {
 </static-query>
 
 <script>
-import Examples from '~/components/Examples.vue'
-import Connect from '~/components/Connect.vue'
-
 export default {
   components: {
-    Examples,
-    Connect
   }
 }
 </script>
@@ -68,7 +55,7 @@ export default {
   }
 
   &__title {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     color: var(--primary-color-dark);
     letter-spacing: -1px;
     font-weight: 600;
