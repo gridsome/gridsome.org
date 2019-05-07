@@ -20,6 +20,12 @@ export default function (Vue, { head }) {
     rel: 'stylesheet',
     href: 'https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css'
   })
+  
+  // Add an external Javascript before the closing </body> tag
+  head.script.push({
+    src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js',
+    body: true
+  })
 
   // Add a meta tag
   head.meta.push({
