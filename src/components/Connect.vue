@@ -59,7 +59,6 @@ export default {
   }
 
   svg,
-
   &__slide,
   &__logos {
     width: 100%;
@@ -67,6 +66,11 @@ export default {
     top:0;
     height: 100%;
     position: absolute;
+  }
+  svg
+   path {
+    stroke: var(--primary-color-dark);
+    opacity: .6;
   }
 
 }
