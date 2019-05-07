@@ -26,7 +26,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad soluta ab autem des
 
 ## Other features and fixes
 
-- Fetch data for specific path. [Read more](/docs/pages)
+- Fetch data for specific path. [Read more](/docs/client-api#fetchpath)
 - Add custom node fields as top-level options. [Read more](/docs/data-store-api#collectionaddnodeoptions)
 - Limit argument for GraphQL. [Read more](/docs/querying-data#limit)
 - Advanced GraphQL sort argument. [Read more](/docs/querying-data#advancedsorting)
