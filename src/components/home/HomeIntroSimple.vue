@@ -1,6 +1,6 @@
 <template>
   <Section class="intro" dots="true">
-    <div class="container text-center container-md">
+    <div class="container text-center ">
 
         <div class="intro__message mb" hidden></div>
 
@@ -8,7 +8,7 @@
           A Vue.js framework for <em>rapidly</em> building JAMstack websites & apps
         </h1>
         
-        <p class="intro__lead lead post mb">
+        <p class="intro__lead lead post mb container-md">
           Gridsome helps developers build incredible fast Vue.js-powered websites & PWAs for any Headless CMS, Content APIs or Markdown files.
         </p>
 
@@ -55,10 +55,14 @@ export default {
   }
 
   &__title {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     color: var(--primary-color-dark);
     letter-spacing: -1px;
     font-weight: 600;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+
     @media screen and (max-width: 850px) {
       & {
         font-size: 2.2rem;
