@@ -1,22 +1,17 @@
 <template>
-  <Layout class="has-sidebar starters-page" :footer="false">
-    <div class="container flex flex-align-top">
-      
-      <div class="sidebar-bg hide-for-small"></div>
-      
-      <div class="sidebar">
-        <h3 class="menu-item">Browse</h3>
-        <g-link class="menu-item menu-link" to="/starters">
-          All starters
-        </g-link>
-        <h3 class="menu-item">Platforms</h3>
-        <g-link class="menu-item platform-link" v-for="item in $static.platforms.edges"  :key="item.node.id" :to="item.node.path" >
-         <g-image :src="item.node.logo" /> 
-         {{ item.node.title }}
-        </g-link>
-        <h3 class="menu-item">Tags</h3>
+  <Layout class="starters-page" primary-bg="true" :footer="false">
+      <div class="starters-header">
+        <div class="flex gap-20 container">
+          <g-link class="menu-item menu-link" to="/starters">
+            All starters
+          </g-link>
+          <g-link class="menu-item platform-link" v-for="item in $static.platforms.edges"  :key="item.node.id" :to="item.node.path" >
+           <g-image :src="item.node.logo" /> 
+           {{ item.node.title }}
+          </g-link>
+        </div>
       </div>
-
+    
       <Section class="starters-content flex-fit">
           <slot />
       </Section>
@@ -25,9 +20,24 @@
 </template>
 
 <style lang="scss">
-@media screen and (min-width: 850px) {
-  .starters-content {
-    padding: var(--space-x2);
+.starters-header {
+  background-color: #FFF;
+  border-bottom: 1px solid var(--border-color);
+  font-size: .9rem;
+
+  .flex {
+    min-height: 50px;
+  }
+
+  a {
+    color: currentColor;
+    text-decoration: none;
+    &:hover {
+      color: var(--primary-color);
+    }
+    &.active--exact {
+      color: var(--primary-color-dark);
+    }
   }
 }
 .platform-link{

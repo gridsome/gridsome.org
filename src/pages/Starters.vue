@@ -2,7 +2,7 @@
   <Starters>
     <h1>Gridsome Starters</h1>    
     <hr />
-    <h3>Default starters <small>Barebone starters with minimal boilerplate</small></h3>
+    <h3>Default<small>Barebone starters with minimal boilerplate</small></h3>
 
     <div class="grid-cols grid-cols--3 mb">
       <StarterCard v-for="starter in $page.defaultStarters.edges" :key="starter.node.id" :node="starter.node"  />

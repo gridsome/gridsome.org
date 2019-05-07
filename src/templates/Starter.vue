@@ -1,18 +1,28 @@
 <template>
   <Starters class="starter">
-    <g-link to="/starters" class="mb" style="display:block;">← All Starters</g-link>    
-    <div style="width: 80%;" v-if="isLoading">
-      <Skeleton />
-      <Skeleton style="height: 15px" />
-      <Skeleton style="height: 15px; width: 80%; opacity: .6;" />
-      <Skeleton style="height: 15px; width: 85%; opacity: 1;"  />
-      <Skeleton style="height: 15px; width: 85%; opacity: 1;"  />
-      <Skeleton style="height: 15px; width: 65%; opacity: 1;"  />
-      <Skeleton style="height: 15px; width: 55%; opacity: 1;"  />
-      <Skeleton style="height: 15px; width: 75%; opacity: 1;"  />
-    </div>
+    <div class="grid-cols grid-cols--2">
+      <div class="starter__image" style="order:2" v-if="$page.starter.screenshot">
+        <g-image :src="$page.starter.screenshot" />
+      </div>
+      <div class="starter__content">
+        
+        <g-link to="/starters" class="mb" style="display:block;">← All Starters</g-link>    
 
-    <div v-html="readme" />
+        <div style="width: 80%;" v-if="isLoading">
+          <Skeleton />
+          <Skeleton style="height: 15px" />
+          <Skeleton style="height: 15px; width: 80%; opacity: .6;" />
+          <Skeleton style="height: 15px; width: 85%; opacity: 1;"  />
+          <Skeleton style="height: 15px; width: 85%; opacity: 1;"  />
+          <Skeleton style="height: 15px; width: 65%; opacity: 1;"  />
+          <Skeleton style="height: 15px; width: 55%; opacity: 1;"  />
+          <Skeleton style="height: 15px; width: 75%; opacity: 1;"  />
+        </div>
+
+        <div v-html="readme" />
+      </div>
+
+    </div>
   </Starters>
 </template>
 
@@ -64,44 +74,16 @@ query Starters ($id: String!) {
   starter(id: $id) {
     title
     repo
-  }
-  defaultStarters: allStarter (order: ASC, perPage: 4) {
-    edges {
-      node {
-        id
-        title
-        description
-        preview
-        repo
-        platforms {
-          title
-          logo
-        }
-        author {
-          title
-          path
-        }
-        path
-        screenshot (width: 560, height: 664)
-      }
+    platforms {
+      title
+      logo
     }
-  },
-  starters: allStarter (order: ASC, skip: 4) {
-    edges {
-      node {
-        id
-        title
-        description
-        preview
-        repo
-        author {
-          title
-          path
-        }
-        path
-        screenshot (width: 560, height: 664)
-      }
+    author {
+      title
+      path
     }
+    path
+    screenshot (width: 900)
   }
 }
 </page-query>
