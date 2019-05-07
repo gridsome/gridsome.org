@@ -6,14 +6,7 @@
     <p v-if="node.description" class="starter__desc"> {{ node.description }} </p>
     <div class="starter__footer">
       <div class="starter__actions flex gap-15">
-        <a  v-if="node.preview" :href="node.preview" aria-label="live preview" target="_blank" rel="noopener">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-        </a>
-
-        <g-link :to="node.author.path" :aria-label="node.author.title">
-          By {{ node.author.title }}
-        </g-link>
-      
+        By {{ node.author.title }}
       </div>
       <div class="starter__platform">
         <g-image v-if="node.platforms" :src="node.platforms.logo" />
@@ -69,14 +62,10 @@ export default {
     justify-content: space-between;
     font-size: .85rem;
     position: relative;
-    z-index: 1;
   }
 
   &__actions {
-    a:not(:hover) {
-      opacity: .4;
-      color: currentColor;
-    }
+    opacity: .6;
   }
 
   &__platform {

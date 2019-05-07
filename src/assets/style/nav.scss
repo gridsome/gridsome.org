@@ -5,12 +5,9 @@ nav a {
   align-items:center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 16px 5px;
+  padding: 14px 5px;
   text-decoration: none;
-  font-size: .8rem;
-  letter-spacing: .5px;
   position: relative;
-  text-transform: uppercase;
 
   &:after {
     content: "";

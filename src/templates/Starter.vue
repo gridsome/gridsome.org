@@ -1,13 +1,21 @@
 <template>
   <Starters class="starter">
-    <div class="grid-cols grid-cols--2">
+      <div class="starter__header flex mb">
+        <g-image class="starter__header-platform-logo" v-if="$page.starter.platforms" :src="$page.starter.platforms.logo" />
+
+        <strong class="starter__header-title">WordPress Default</strong>
+        <span class="starter__header-author">By Tommy Vedvik</span> 
+        <div class="flex gap-10" style="margin-left: auto">
+          <a class="button button--small">View on Github</a>
+          <a class="button button--small">Live preview</a>
+          <a class="button button--small primary">Install</a>
+        </div>
+      </div>
       <div class="starter__image" style="order:2" v-if="$page.starter.screenshot">
         <g-image :src="$page.starter.screenshot" />
       </div>
       <div class="starter__content">
         
-        <g-link to="/starters" class="mb" style="display:block;">← All Starters</g-link>    
-
         <div style="width: 80%;" v-if="isLoading">
           <Skeleton />
           <Skeleton style="height: 15px" />
@@ -21,8 +29,6 @@
 
         <div v-html="readme" />
       </div>
-
-    </div>
   </Starters>
 </template>
 
@@ -76,14 +82,38 @@ query Starters ($id: String!) {
     repo
     platforms {
       title
-      logo
+      logo (width: 30, height: 30)
     }
     author {
       title
       path
     }
     path
-    screenshot (width: 900)
+    screenshot (width: 1000, height: 500)
   }
 }
 </page-query>
+
+<style lang="scss">
+.starter {
+  &__header {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: var(--space);
+  }
+  &__header-title {
+    margin-right: 1rem;
+  }
+  &__header-author {
+    color: rgba(0,0,0,.5);
+  }
+  &__header-platform-logo {
+    margin: 0 1rem 0 0;
+  }
+  &__image {
+    img {
+      border-radius: 5px;
+      box-shadow: var(--glow);
+    }
+  }
+}
+</style>
