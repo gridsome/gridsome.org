@@ -75,7 +75,7 @@ query Example {
 }
 
 .examples {
-	background-color: var(--code-bg);
+	background-color: var(--dark-bg);
 	border-radius: 10px;
 	overflow: hidden;
 
@@ -93,11 +93,6 @@ query Example {
 		}
 	}
 
-	&__mobile {
-		background-color: var(--dark-bg);
-		text-align: center;
-		padding: 10px;
-	}
 
 	&__frame {
 		color: #FFF;
@@ -105,6 +100,7 @@ query Example {
 		overflow: hidden;
 		box-shadow: inset 2px 0px 3px 0px rgba(black, 0.2);
 		width: 100%;
+		background-color: var(--code-bg);
 
 		@media screen and (min-width: 850px) {
 			flex: 1;
@@ -114,7 +110,7 @@ query Example {
 	&__header {
 		padding: 10px var(--space) 0;
 		&-title {
-			color: rgba(255,255,255,.4);
+			color: rgba(255,255,255,.5);
 		}
 	}
 

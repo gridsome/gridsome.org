@@ -1,5 +1,5 @@
 <template>
-  <Section class="intro" dark="true">
+  <Section class="intro" dots="true">
     <div class="intro__top text-center">
       <div class="intro__message mb" hidden></div>
 
@@ -17,16 +17,14 @@
         </g-link>
       </p>
 
+      <p class="intro__info">
+        <span>Open-source MIT Licensed. </span>
+        <a href="//github.com/gridsome/gridsome" target="_blank">
+          <span>GitHub (v{{ $static.metaData.gridsomeVersion }})</span>
+        </a>
+      </p>
+      
     </div>
-
-    <template slot="outer">
-      <div class="logo-grid">
-        <div class="logo-grid__grid">
-          <div class="logo-grid__logos"></div>
-        </div>
-      </div>
-   </template>
-
   </Section>
 </template>
 
@@ -50,13 +48,10 @@ export default {
 
 <style lang="scss">
 .intro {
-  border-top:0;
-  padding: calc(3.33% + 50px) 0;
-  background: var(--dark-bg);
 
   &__title {
     font-size: 3.3rem;
-    color: var(--primary-color);
+    color: var(--primary-color-dark);
     letter-spacing: -1px;
     font-weight: 600;
     @media screen and (max-width: 850px) {
@@ -78,6 +73,11 @@ export default {
     margin: 0 auto;
   }
 
+  &__info {
+    font-size: .9rem;
+    color: rgba(0,0,0,.7);
+  }
+
   &__examples {
     max-width: 1100px;
     margin: 0 auto;
@@ -95,49 +95,6 @@ export default {
         background-color: rgba(0,0,0,.3);
       }
     }
-  }
-}
-
-.logo-grid {
-    position: absolute;
-    overflow: hidden;
-    width: 100%;
-    height: 500px;
-    bottom: 0;
-    perspective: 550px;
-    -webkit-mask-image: linear-gradient( -180deg,transparent, #000 35%);
-    pointer-events: none;
-    opacity: .15;
-    transform: translateZ(0);
-
-    &__grid {
-      position: absolute;
-      width: calc(100% + 1000px);
-      height: 100%;
-      left: -500px;
-      transform: rotateX(33deg) translateZ(0);
-
-    }
-
-    &__logos {
-      position: absolute;
-      width: 100%;
-      height: 1000px;
-      background-image: url(/logos.svg);
-      background-position: 0;
-      transform: translateY(-500px);
-      animation: logos  7s linear infinite;
-      will-change: transform;
-    }
-}
-
-@keyframes logos {
-  0% {
-    transform: translateY(0)
-  }
-
-  100% {
-    transform: translateY(-500px)
   }
 }
 </style>

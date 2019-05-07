@@ -1,7 +1,7 @@
 <template>
   <Section class="works" dots="true" primary="true">
     <h2 class="container text-center">
-      How Gridsome Works
+      How Gridsome works
     </h2>
     <p class="lead text-center container-sm" style="margin-bottom: 3rem;">
      <strong>Pull data</strong> from anywhere and build with Vue.js, GraphQL and all the power of Node.js & the JavaScript ecosystem.
