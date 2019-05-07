@@ -16,7 +16,7 @@ module.exports = function (api) {
 
 Use the `createPages` hook if you want to create pages .
 
-#### `createPage(options)`
+### createPage(options)
 
 ##### Arguments
 
@@ -43,8 +43,7 @@ module.exports = function (api) {
 
 Pages created in the `createPages` hook will be re-created and garbage collected occasionally. That's why that hook is only able to create pages. You can use a `createManagedPages` hook to create, update and remove pages yourself. 
 
-#### `createPage(options)`
-#### `updatePage(options)`
+### createPage(options)
 
 ##### Arguments
 
@@ -54,27 +53,29 @@ Pages created in the `createPages` hook will be re-created and garbage collected
   - context `object` *Optional context for the page and `page-query`.*
   - queryVariables `object`  *Optional context only for `page-query`.*
 
-#### `removePage(page)`
+Create a new page.
+
+### removePage(page)
 
 Removed a page created by `createPage`.
 
-#### `removePageByPath(path)`
+### removePageByPath(path)
 
 Removes a page mathing the provided path.
 
-#### `removePagesByComponent(path)`
+### removePagesByComponent(path)
 
 Removes all pages mathing the provided component path.
 
-#### `findAndRemovePages(query)`
+### findAndRemovePages(query)
 
 Removes all pages mathing the provided query.
 
-#### `findPages(query)`
+### findPages(query)
 
 Returns all pages mathing the provided query.
 
-#### `findPage(query)`
+### findPage(query)
 
 Returns first pages mathing the provided query.
 

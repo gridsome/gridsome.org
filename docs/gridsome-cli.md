@@ -5,10 +5,10 @@ globally with `npm install --global @gridsome/cli`.
 
 ## create
 
-Usage `gridsome create {name} {starter}`
+Usage `create <name> [starter]`
 
-- **name** - directory name to create the project in
-- **starter** - optional starter kit name
+- **name** - Directory name to create the project in.
+- **starter** - Optional starter kit name.
 
 | Official starter kits |                                         |
 | --------------------- | --------------------------------------- |

@@ -14,7 +14,7 @@ module.exports = function (api) {
 
 ## Add a content type collection
 
-### `store.addContentType(options)`
+### store.addContentType(options)
 
 Add a new content type to store.
 
@@ -37,7 +37,7 @@ api.loadSource(store => {
 })
 ```
 
-### `store.getContentType(typeName)`
+### store.getContentType(typeName)
 
 Get a content type previously created.
 
@@ -47,7 +47,7 @@ Get a content type previously created.
 
 ## Add nodes to collections
 
-### `collection.addNode(options)`
+### collection.addNode(options)
 
 ##### Arguments
 
@@ -74,7 +74,7 @@ api.loadSource(store => {
 
 ## Referencing other nodes
 
-### `store.createReference(typeName, id)`
+### store.createReference(typeName, id)
 
 A helper function for creating references to other nodes.
 
@@ -123,7 +123,7 @@ query BlogPost ($id: String!) {
 }
 ```
 
-### `collection.addReference(fieldName, typeName)`
+### collection.addReference(fieldName, typeName)
 
 Make a root field for all nodes in collection referencing to another node.
 
@@ -149,7 +149,7 @@ api.loadSource(store => {
 
 ## Custom GraphQL fields
 
-### `collection.addSchemaField(fieldName, fn)`
+### collection.addSchemaField(fieldName, fn)
 
 Extend the GraphQL schema with a custom field for a node type.
 
