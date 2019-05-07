@@ -5,15 +5,17 @@ nav a {
   align-items:center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 15px 5px;
+  padding: 16px 5px;
   text-decoration: none;
-  font-size: .95rem;
+  font-size: .8rem;
+  letter-spacing: .5px;
   position: relative;
+  text-transform: uppercase;
 
   &:after {
     content: "";
     position: absolute;
-    top: 100%;
+    top: calc(100% + 1px);
     height: 1px;
     left: 50%;
     width: 0px;

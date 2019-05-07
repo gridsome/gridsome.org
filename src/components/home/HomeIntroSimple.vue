@@ -24,9 +24,6 @@
             <span>GitHub (v{{ $static.metaData.gridsomeVersion }})</span>
           </a>
         </p>
-
-
-      
     </div>
   </Section>
 </template>
