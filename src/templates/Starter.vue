@@ -18,11 +18,11 @@
               <small style="margin-bottom: .5rem; display: block;">
               Install locally with <strong><g-link to="/docs/gridsome-cli">Gridsome CLI</g-link></strong>
               </small>
-              <div class="mb flex">
-                <code class="starter__command">
+              <div class="mb">
+                <code class="starter__command flex">
                   <span ref="command">gridsome create my-project {{ $page.starter.repo }}</span>
                   <button class="button button--blank button--xsmall" @click="copyCommand()">
-                    <ClipboardIcon title="Copy to clipboard" width="16" />
+                    <ClipboardIcon title="Copy to clipboard" width="16" height="16" />
                     <span> Copy </span>
                   </button>
                 </code>
@@ -181,18 +181,8 @@ query Starters ($id: String!) {
     opacity: .7;
   }
   &__command {
-    display: inline-flex;
-    align-items: center;
-    width: 100%;
-
-    [contenteditable] {
-      border-bottom: 1px solid;
-      border-bottom-style: dotted;
-    }
-    .button {
-      padding: 0;
-      margin-left: auto;
-      padding-left: 10px;
+    span {
+      flex: 1;
     }
   }
   &__image {
@@ -220,10 +210,10 @@ query Starters ($id: String!) {
 .popover {
   &__container {
     position: absolute;
-    top: 85%;
+    top: 90%;
     right: -15px;
     z-index: 999;
-    width: 700px;
+    width: 550px;
     padding: var(--space);
     background-color: #FFF;
     box-shadow: var(--glow);
