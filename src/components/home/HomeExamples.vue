@@ -1,5 +1,5 @@
 <template>
-	<Section>
+	<Section dots="true">
 		<h2 class="container text-center">
       Make website building fun again
     </h2>

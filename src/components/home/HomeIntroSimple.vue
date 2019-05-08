@@ -5,7 +5,7 @@
         <div class="intro__message mb" hidden></div>
 
         <h1 class="intro__title post"> 
-          A Vue.js framework for <em>rapidly</em> building JAMstack websites & apps
+          A Vue.js framework for the modern web
         </h1>
         
         <p class="intro__lead lead post mb container-md">
@@ -56,13 +56,12 @@ export default {
     color: var(--primary-color-dark);
     letter-spacing: -1px;
     font-weight: 600;
-    max-width: 780px;
     margin-left: auto;
     margin-right: auto;
 
     @media screen and (max-width: 850px) {
       & {
-        font-size: 1.7rem;
+        font-size: 2rem;
       }
     }
   }
@@ -70,11 +69,6 @@ export default {
   &__info {
     font-size: .9rem;
     color: rgba(0,0,0,.7);
-  }
-
-  &__examples {
-    max-width: 1100px;
-    margin: 0 auto;
   }
 
   &__message {

@@ -71,7 +71,7 @@ import markdown from '../utils/markdown'
 import Starters from '~/layouts/Starters.vue'
 import Skeleton from '~/components/Skeleton.vue'
 import ClipboardIcon from '~/assets/images/icon-clipboard.svg'
-import NetlifyLogo from '~/assets/images/logo-netlify.svg'
+import NetlifyLogo from '~/assets/images/logo-netlify-small.svg'
 import CodeSandboxLogo from '~/assets/images/logo-codesandbox.svg'
 import Popover from 'vue-popover'
 
