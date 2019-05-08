@@ -76,10 +76,13 @@ module.exports = function (api) {
 ..
 
 ### YAML
+
+#### Using import
+
 Here is a simple example on how you can use YAML files within .vue templates:
 1. Create a YAML file in `/src/data` folder. Let it be `products.yaml`
 2. Add `import products from @/data/products.yaml` before `export default` function.
-3. Add a `computed` property called the same: `products() { return products }`
+3. Add the data from the YAML file to the data layer by creating a new object `products` and defining it with the just imported `products`.
 
 The code will look like this:
 ```html
@@ -93,13 +96,68 @@ The code will look like this:
 import products from '@/data/products.yaml'
 
 export default {
-  computed: {
-    products() {
-      return products
+  data() {
+    return {
+      products: products
     }
   }
 }
 </script>
+```
+
+#### Using GraphQL
+
+To do the same with GraphQL you need to use `gridsome.server.js`. Your file should look like this:
+
+``` JS
+const path = require('path')
+const fs = require('fs-extra')
+const yaml = require('js-yaml')
+
+module.exports = function (api) {
+  api.loadSource(async store => {
+
+    const productsPath = path.join(__dirname, 'src/data/products.yaml')
+    const productsRaw = await fs.readFile(productsPath, 'utf8')
+    const productsJson = yaml.safeLoad(productsRaw)
+    const products = store.addContentType({
+      typeName: 'Product',
+      route: '/product/:id'
+    })
+
+    productsJson.forEach(({ id, name: title, ...fields }) => {
+      products.addNode({
+        id,
+        title,
+        fields,
+        internal: {
+          origin: productsPath
+        }
+      })
+    })
+
+  })
+}
+```
+
+Then you can query `Product` with GraphQL within Vue templates. Like this:
+```html
+<template>
+  <ul v-for="product in $page.products">
+    <li><g-link :to="product.path" v-html="product.title"/></li>
+  </ul>
+</template>
+
+<page-query>
+query Products ($path: String!) {
+  products: allProduct (path: $path) {
+    id
+    title
+    path
+    content
+  }
+}
+</page-query>
 ```
 
 ### CSV
