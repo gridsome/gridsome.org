@@ -51,10 +51,15 @@ export default {
 
 Learn more about [fetching internal pages](/docs/client-side-data)
 
+## Build improvements
+
+Gridsome has been importing `page-query` data with webpack dynamic imports. Which means that webpack had to compile every JSON file into a JavaScript chunk. Having lots of pages would increase build times unnecessary. From now on, page data will be stored as raw JSON files without interference from webpack. And each file is prefetched and loaded on demand for each page. The overall JavaScript size is reduced by about 30% in most cases.
+
+Read more at [GitHub](https://github.com/gridsome/gridsome/pull/248)
 
 ## New website design and starters library
 
-We redesigned Gridsome.org to be more lightweight, clean and inclusive. We also added a [Starter library](/starters) to help anyone get quickly up and running with Gridsome.
+We redesigned https://gridsome.org to be more lightweight, clean and inclusive. We also added a [Starter library](/starters) to help anyone get quickly up and running with Gridsome.
 
 
 ## Breaking changes
@@ -76,4 +81,3 @@ We redesigned Gridsome.org to be more lightweight, clean and inclusive. We also 
 - Render current state in markup to prevent initial request.
 
 You will find all changes in the [change log](https://github.com/gridsome/gridsome/blob/master/gridsome/CHANGELOG.md)
-
