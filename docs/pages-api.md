@@ -5,6 +5,7 @@ The Pages API lets you create custom pages. This API is called after the GraphQL
 Start by using the `api.createPages()` hook in `gridsome.server.js`:
 
 ```js
+//gridsome.server.js
 module.exports = function (api) {
   api.createPages(({ createPage, graphql }) => {
     // Create pages here
@@ -86,6 +87,7 @@ Each page can have a context which will be available as variables for `page-quer
 ##### Example usage
 
 ```js
+//gridsome.server.js
 module.exports = function (api) {
   api.createPages(({ createPage }) => {
     createPage({
@@ -120,26 +122,29 @@ query MyPage($customValue: String) {
 ### Create pages from GraphQL
 
 ````js
-api.createPages(async ({ graphql, createPage }) => {
-  const { data } = await graphql(`{
-    allProduct {
-      edges {
-        id
-        path
+//gridsome.server.js
+module.exports = function (api) {
+  api.createPages(async ({ graphql, createPage }) => {
+    const { data } = await graphql(`{
+      allProduct {
+        edges {
+          id
+          path
+        }
       }
-    }
-  `)
+    `)
 
-  data.allProduct.edges.forEach(({ node }) => {
-    createPage({
-      path: `${node.path}/reviews`,
-      component: './src/templates/ProductReviews.vue',
-      context: {
-        id: node.id
-      }
+    data.allProduct.edges.forEach(({ node }) => {
+      createPage({
+        path: `${node.path}/reviews`,
+        component: './src/templates/ProductReviews.vue',
+        context: {
+          id: node.id
+        }
+      })
     })
   })
-})
+}
 ````
 
 ### Create pages from external APIs
@@ -147,20 +152,23 @@ api.createPages(async ({ graphql, createPage }) => {
 We use `createManagedPages` in this example because we doesn't need the pages to be re-created on changes. The template also uses the context for rendering data instead of GraphQL results.
 
 ```js
-api.createManagedPages(async ({ createPage }) => {
-  const { data } = await axios.get('https://api.example.com/posts')
+//gridsome.server.js
+module.exports = function (api) {
+  api.createManagedPages(async ({ createPage }) => {
+    const { data } = await axios.get('https://api.example.com/posts')
 
-  data.forEach(item => {
-    createPage({
-      path: item.path,
-      component: './src/templates/Post.vue',
-      context: {
-        title: item.title,
-        content: item.content
-      }
+    data.forEach(item => {
+      createPage({
+        path: item.path,
+        component: './src/templates/Post.vue',
+        context: {
+          title: item.title,
+          content: item.content
+        }
+      })
     })
   })
-})
+}
 ```
 
 ```html

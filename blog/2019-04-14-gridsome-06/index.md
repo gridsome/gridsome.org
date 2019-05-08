@@ -2,19 +2,60 @@
 title: Gridsome v0.6
 slug: gridsome-v06
 author: [hjvedvik, tommyvedvik]
-date: 2019-04-14
-excerpt: "..."
+date: 2019-05-09
+excerpt: "Gridsome 0.6 introduces a Pages API that gives you full control of page creation. It also has an API that let you fetch internal pages into other pages and components. Perfect for lightboxes or «Click for more» pagination etc."
 ---
 
-## Creating pages programatically
+## The Pages API
 
 Until now, you have only been able to create pages by having Vue components in the `src/pages` folder or by creating templates for content types. Gridsome 0.6 comes with a new API for creating pages. It lets you create pages programmatically, which will give you much more flexibility.
 
+**Very basic example:**
+
+```js
+// gridsome.server.js
+module.exports = function (api) {
+  api.createPages(({ createPage }) => {
+    createPage({
+      path: '/my-page',
+      component: './src/templates/MyPage.vue'
+    })
+  })
+}
+```
+
+
 Read more about the [Pages API](/docs/pages-api)
+
+
+## Fetch internal pages
+A new function available in [Client API](/docs/client-api) let you fetch internal pages. This is perfect for building lightboxes or «Click for more» pagination etc.
+
+```js
+export default {
+  data () {
+    return {
+      fetchedPage: null
+    }
+  },
+  async mounted () {
+    try {
+      const results = await this.$fetch('/a-page-path')
+      this.fetchedPage = results.data
+    } catch (error) {
+      console.log(error)
+    }
+  }
+}
+```
+
+Learn more about [fetching internal pages](/docs/client-side-data)
+
 
 ## New website design and starters library
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad soluta ab autem deserunt at minima quod nulla, fuga praesentium ex tenetur, beatae ipsam pariatur, repudiandae error necessitatibus molestias? Aliquid, placeat.
+We redesigned Gridsome.org to be more lightweight, clean and inclusive. We also added a [Starter library](/starters) to help anyone get quickly up and running with Gridsome.
+
 
 ## Breaking changes
 
