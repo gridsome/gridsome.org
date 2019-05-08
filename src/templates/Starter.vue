@@ -11,7 +11,7 @@
           
           <Popover name="UseThis" :closeOnContentClick="false">
             <div slot="face">
-              <button class="button primary button--small">Use this</button>
+              <button class="button primary button--md">Use this</button>
             </div>
 
             <div slot="content">
@@ -212,7 +212,7 @@ query Starters ($id: String!) {
 .popover {
   &__container {
     position: absolute;
-    top: 90%;
+    top: 87%;
     right: -15px;
     z-index: 999;
     width: 500px;
@@ -220,11 +220,12 @@ query Starters ($id: String!) {
     background-color: #FFF;
     box-shadow: var(--glow);
     border-radius: 5px;
-    border: 1px solid var(--border-color);
+    border: 2px solid var(--border-color);
+    animation: slideDown .3s;
     
     &:after, &:before {
       bottom: 100%;
-      right: 45px;
+      right: 65px;
       border: solid transparent;
       content: " ";
       height: 0;
