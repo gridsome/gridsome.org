@@ -19,6 +19,12 @@
           </button>
         </code>
       </div>
+  
+      <div class="starter__image" style="order:2" v-if="$page.starter.screenshot">
+        <g-image :src="$page.starter.screenshot" />
+      </div>
+      <hr v-else />
+
       <div class="deploy-buttons flex mb">
         <a class="button button--small" :href="codeSandboxUrl">
           <CodeSandboxLogo alt="CodeSandbox" height="16" /> Open in CodeSandbox
@@ -27,10 +33,6 @@
           <NetlifyLogo alt="Netlify" /> Deploy to Netlify
         </a>
       </div>
-      <div class="starter__image" style="order:2" v-if="$page.starter.screenshot">
-        <g-image :src="$page.starter.screenshot" />
-      </div>
-      <hr v-else />
       <div class="starter__content">
         
         <div style="width: 80%;" v-if="isLoading">

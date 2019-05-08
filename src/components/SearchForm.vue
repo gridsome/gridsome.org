@@ -41,12 +41,6 @@ export default {
 
   & &__input {
     max-width: 160px;
-    transition: all .6s;
-    border-color: transparent;
-
-    &:focus {
-      background-color: rgba(0,0,0,.06);
-    }
   }
 }
 

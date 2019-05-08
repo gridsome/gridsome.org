@@ -37,6 +37,8 @@ export default {
     transition: color.3s, box-shadow .3s, transform .3s;
     position: relative;
     z-index: 1;
+    box-shadow: 1px 1px 5px 0 #5bb19620;
+
 
     &__title {
       text-align: center;

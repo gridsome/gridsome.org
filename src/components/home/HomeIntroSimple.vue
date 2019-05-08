@@ -52,11 +52,11 @@ export default {
   }
 
   &__title {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
     color: var(--primary-color-dark);
     letter-spacing: -1px;
     font-weight: 600;
-    max-width: 850px;
+    max-width: 780px;
     margin-left: auto;
     margin-right: auto;
 

@@ -26,7 +26,7 @@
     border-radius: 5px;
     transition: opacity .3s, box-shadow .3s;
     opacity: .6;
-    box-shadow: inset -1px -1px 5px 0px rgba(0,0,0,.2);
+    box-shadow: inset -1px -2px 0px 0px rgba(0,0,0,.05);
   }
 
   &:active:after {

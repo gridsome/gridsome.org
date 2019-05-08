@@ -14,9 +14,8 @@ export default {
   computed: {
     sectionClass() {
       let classes = []
-      if(this.primary) classes.push('section--primary')
-      if(this.dark) classes.push('section--dark')
-      if(this.dots == 'top') classes.push('section--dots-top')
+      // if(this.primary) classes.push('section--primary')
+      // if(this.dark) classes.push('section--dark')
       return classes
     },
     sectionClassInner() {
@@ -54,23 +53,15 @@ export default {
 
   &__dots-bg {
     height: 700px;
-    max-width: calc(100% - var(--space-x2));
+    max-width: 100%;
     max-height: 100%;
     margin: 0 auto;
     position: absolute;
     left:0;
     right:0;
-    bottom: var(--space);
+    bottom: 0;
     z-index: 1;
     opacity: 1;
-  }
-
-  &--dots-top {
-    .section__dots-bg {
-      bottom: auto;
-      top:0;
-      height: 380px;
-    }
   }
 
 
