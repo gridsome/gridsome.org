@@ -2,8 +2,6 @@
   <Layout class="has-sidebar docs-page" :footer="false">
     <div class="container flex flex-align-top">
       
-      <div class="sidebar-bg hide-for-small"></div>
-
       <div class="sidebar">
 
         <transition-group name="menu-item" tag="div">

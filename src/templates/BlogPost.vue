@@ -1,8 +1,8 @@
 <template>
-  <Layout primary-bg="true">
+  <Layout>
     <Section class="post" container="md" dots="true" >
 
-      <div class="post-header container-md text-center mb">
+      <div class="post-header container-md text-center mb-x2">
         <h1 v-html="$page.post.title"/>
         <PostMeta :post="$page.post"/>
       </div>
@@ -58,12 +58,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-.post-content {
-  border: 1px solid var(--border-color-darker);
-  border-radius: 4px;
-  background-color: var(--light-bg);
-  padding: var(--space-x2);
-}
-</style>

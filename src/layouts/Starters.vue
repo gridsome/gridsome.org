@@ -1,9 +1,7 @@
 <template>
   <Layout class="has-sidebar starter-page" :footer="false">
     <div class="container flex flex-align-top">
-      
-      <div class="sidebar-bg hide-for-small"></div>
-      
+            
       <div class="sidebar">
 
           <h3 class="menu-item" >Browse</h3>

@@ -1,16 +1,3 @@
-.sidebar-bg {
-  position: absolute;
-  bottom:0; top:0;
-  left: calc(-100% + 260px + 25px);
-  background-color:red;
-  width: 100%;
-  background-color: var(--primary-bg);
-
-  &--plugins {
-    left: calc(-100% + 340px + 25px);
-  }
-}
-
 .sidebar {
   order: 2;
   z-index: 10;
@@ -35,7 +22,7 @@
     letter-spacing: 1px;
     margin: 15px 0 15px;
     padding-top: 20px;
-    border-top: 1px solid var(--border-color-darker);
+    border-top: 1px solid var(--border-color);
     &:first-of-type {
       border:0;
     }
