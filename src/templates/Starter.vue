@@ -5,13 +5,13 @@
         <strong class="starter__header-title">{{ $page.starter.title }}</strong>
         <span class="starter__header-author">by {{ $page.starter.author.title }}</span>
 
-        <div class="flex gap-20" style="margin-left: auto">
-          <a class="button button--small button--blank hide-for-small">View on Github</a>
-          <a class="button button--small button--blank hide-for-small">Live preview</a>
+        <div class="flex gap-20 hide-for-small" style="margin-left: auto">
+          <a class="button button--small button--blank">View on Github</a>
+          <a class="button button--small button--blank">Live preview</a>
           
-          <Popover name="Install" :closeOnContentClick="false">
+          <Popover name="UseThis" :closeOnContentClick="false">
             <div slot="face">
-              <button class="button primary button--small">Install</button>
+              <button class="button primary button--small">Use this</button>
             </div>
 
             <div slot="content">
@@ -157,9 +157,11 @@ query Starters ($id: String!) {
 <style lang="scss">
 .starter {
   &__header {
-    padding: 20px 0 15px;
+    padding: 20px 10px 15px;
     background-color: rgba(255,255,255,.95);
     margin-top: -30px;
+    margin-left: -10px;
+    margin-right: -10px;
     z-index: 20;
 
     @media screen and (min-width: 850px) {
@@ -213,7 +215,7 @@ query Starters ($id: String!) {
     top: 90%;
     right: -15px;
     z-index: 999;
-    width: 550px;
+    width: 500px;
     padding: var(--space);
     background-color: #FFF;
     box-shadow: var(--glow);
@@ -222,7 +224,7 @@ query Starters ($id: String!) {
     
     &:after, &:before {
       bottom: 100%;
-      right: 35px;
+      right: 45px;
       border: solid transparent;
       content: " ";
       height: 0;
