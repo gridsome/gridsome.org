@@ -21,7 +21,7 @@
 
       </div>
     
-      <Section class="starters-content container flex-fit">
+      <Section class="starters-content flex-fit">
           <slot />
       </Section>
     </div>

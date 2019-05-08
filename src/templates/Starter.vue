@@ -1,19 +1,19 @@
 <template>
   <Starters class="starter">
-      <div class="starter__header flex mb">
+      <div class="starter__header flex ">
         <g-image class="starter__header-platform-logo" v-if="$page.starter.platforms" :src="$page.starter.platforms.logo" />
-
         <strong class="starter__header-title">WordPress Default</strong>
         <span class="starter__header-author">By Tommy Vedvik</span> 
         <div class="flex gap-10" style="margin-left: auto">
-          <a class="button button--small">View on Github</a>
-          <a class="button button--small">Live preview</a>
-          <a class="button button--small primary">Install</a>
+          <a class="button button--small button--blank hide-for-small">View on Github</a>
+          <a class="button button--small button--blank hide-for-small">Live preview</a>
+          <a class="button button--small primary hide-for-small">Install</a>
         </div>
       </div>
       <div class="starter__image" style="order:2" v-if="$page.starter.screenshot">
         <g-image :src="$page.starter.screenshot" />
       </div>
+      <hr v-else />
       <div class="starter__content">
         
         <div style="width: 80%;" v-if="isLoading">
@@ -89,7 +89,7 @@ query Starters ($id: String!) {
       path
     }
     path
-    screenshot (width: 1000, height: 500)
+    screenshot (width: 900)
   }
 }
 </page-query>
@@ -97,8 +97,15 @@ query Starters ($id: String!) {
 <style lang="scss">
 .starter {
   &__header {
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: var(--space);
+    padding: 20px 0 15px;
+    background-color: rgba(255,255,255,.95);
+    margin-top: -30px;
+    z-index: 20;
+
+    @media screen and (min-width: 850px) {
+      position: sticky;
+      top: var(--header-height);
+    }
   }
   &__header-title {
     margin-right: 1rem;
@@ -113,6 +120,8 @@ query Starters ($id: String!) {
     img {
       border-radius: 5px;
       box-shadow: var(--glow);
+      border: 1px solid var(--border-color);
+      width: 100%;
     }
   }
 }

@@ -54,13 +54,13 @@ export default {
 
   &__dots-bg {
     height: 700px;
-    max-width: 1300px;
+    max-width: calc(100% - var(--space-x2));
     max-height: 100%;
     margin: 0 auto;
     position: absolute;
-    bottom: 35px;
-    left: 10px;
-    right: 10px;
+    left:0;
+    right:0;
+    bottom: var(--space);
     z-index: 1;
     opacity: 1;
   }
