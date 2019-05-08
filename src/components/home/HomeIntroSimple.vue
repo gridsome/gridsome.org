@@ -5,7 +5,7 @@
         <div class="intro__message mb" hidden></div>
 
         <h1 class="intro__title post"> 
-          A Vue.js framework for <em>rapidly</em> building <g-link to="/docs/jamstack">JAMstack</g-link> websites & apps
+          A Vue.js framework for <em>rapidly</em> building JAMstack websites & apps
         </h1>
         
         <p class="intro__lead lead post mb container-md">
@@ -62,13 +62,7 @@ export default {
 
     @media screen and (max-width: 850px) {
       & {
-        font-size: 2.2rem;
-      }
-    }
-
-    @media screen and (max-width: 550px) {
-      & {
-        font-size: 2rem;
+        font-size: 1.7rem;
       }
     }
   }

@@ -3,8 +3,6 @@
     <h1>Gridsome Starters</h1>
     <p class="mb-x2">Kickstart your Gridsome project with premade projects.</p> 
     
-    <h3>Core starters<small>Barebone starters with minimal boilerplate</small></h3>
-
     <div class="grid-cols grid-cols--3 mb">
       <StarterCard v-for="starter in $page.defaultStarters.edges" :key="starter.node.id" :node="starter.node"  />
     </div>
