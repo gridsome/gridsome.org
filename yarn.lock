@@ -9043,6 +9043,11 @@ vue-meta@^1.5.8:
     lodash.uniqueid "^4.0.1"
     object-assign "^4.1.1"
 
+vue-popover@^1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/vue-popover/-/vue-popover-1.6.2.tgz#04ac356cf23b8d5e9144c61fcf63b95131307a97"
+  integrity sha1-BKw1bPI7jV6RRMYfz2O5UTEwepc=
+
 vue-router@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.2.tgz#dedc67afe6c4e2bc25682c8b1c2a8c0d7c7e56be"

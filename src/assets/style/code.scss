@@ -77,16 +77,22 @@ h1, h2, h3, h4 {
   color: #e2777a;
 }
 
-.token.property {
-  color: #f7ca88;
-}
-
 .token.string {
   color: #7ec699;
 }
 
 .token.selector {
   color: #ba8baf;
+}
+
+.language-css {
+  color: #7ec699;
+  .token.punctuation {
+    color: #f8f8f8;
+  }
+  .token.property {
+    color: #d8d8d8;
+  }
 }
 
 .token.entity,
@@ -106,6 +112,10 @@ h1, h2, h3, h4 {
   color: #cc99cd;
 }
 
+.token.function {
+  color: #dd9a6d;
+}
+
 .token.tag {
   color: #e2777a;
   .token.punctuation {
@@ -114,7 +124,7 @@ h1, h2, h3, h4 {
 }
 
 .token.attr-name {
-  color: lighten(#e2777a, 15);
+  color: lighten(#e2777a, 7);
 }
 .token.attr-value {
   color: #7ec699;

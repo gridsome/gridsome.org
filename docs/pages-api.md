@@ -101,7 +101,7 @@ module.exports = function (api) {
 }
 ```
 
-Use the context in the page component or as variables in `page-query`::
+Use the context in the page component or as variables in `page-query`.
 
 ```html
 <template>

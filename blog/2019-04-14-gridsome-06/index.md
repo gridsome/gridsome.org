@@ -62,9 +62,7 @@ Gridsome has been importing `page-query` data with webpack dynamic imports. Whic
 | Render HTML | 15s | 15s |
 | `app.js` size | 475kb | **170kb** |
 | `page-query.js` size | 510kb | *removed* |
-| Size of all chunks | 1000kb (excl. data chunks) | **570kb** (total) |
-
-Read more at [GitHub](https://github.com/gridsome/gridsome/pull/248)
+| Size of all JS chunks | 1000kb (excl. data chunks) | **570kb** (total) |
 
 ## New website design and starters library
 
