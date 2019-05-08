@@ -8,7 +8,7 @@
           A Vue.js framework for the modern web
         </h1>
         
-        <p class="intro__lead lead post mb container-md">
+        <p class="intro__lead lead post mb">
           Gridsome helps developers build incredible fast Vue.js-powered websites & PWAs for any Headless CMS, Content APIs or Markdown files.
         </p>
 
@@ -55,7 +55,6 @@ export default {
     font-size: 2.6rem;
     color: var(--primary-color-dark);
     letter-spacing: -1px;
-    font-weight: 600;
     margin-left: auto;
     margin-right: auto;
 
@@ -64,6 +63,13 @@ export default {
         font-size: 2rem;
       }
     }
+  }
+
+  &__lead {
+    font-size: 1.4rem;
+    max-width: 890px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__info {
