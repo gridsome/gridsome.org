@@ -2,13 +2,26 @@
   <Starters class="starter">
       <div class="starter__header flex ">
         <g-image class="starter__header-platform-logo" v-if="$page.starter.platforms" :src="$page.starter.platforms.logo" />
-        <strong class="starter__header-title">WordPress Default</strong>
-        <span class="starter__header-author">By Tommy Vedvik</span> 
+        <strong class="starter__header-title">{{ $page.starter.title }}</strong>
+        <span class="starter__header-author">by {{ $page.starter.author.title }}</span>
         <div class="flex gap-10" style="margin-left: auto">
           <a class="button button--small button--blank hide-for-small">View on Github</a>
           <a class="button button--small button--blank hide-for-small">Live preview</a>
-          <a class="button button--small primary hide-for-small">Install</a>
         </div>
+      </div>
+      <div class="mb hide-for-small">
+        <code class="starter__command">
+          <span ref="command">gridsome create <span contenteditable="true" spellcheck="false" @keydown.space.prevent @keydown.enter.prevent v-text.once="siteName"></span> {{ $page.starter.repo }}</span>
+          <button class="button button--blank button--xsmall" @click="copyCommand()">
+            <ClipboardIcon title="Copy to clipboard" width="16" />
+          </button>
+        </code>
+        <a class="button button--small" :href="netlifyDeployUrl">
+          <NetlifyLogo height="16" /> Deploy to Netlify
+        </a>
+        <a class="button button--small" :href="codeSandboxUrl">
+          <CodeSandboxLogo height="16" /> Open in CodeSandbox
+        </a>
       </div>
       <div class="starter__image" style="order:2" v-if="$page.starter.screenshot">
         <g-image :src="$page.starter.screenshot" />
@@ -33,22 +46,41 @@
 </template>
 
 <script>
+import clipboard from 'clipboard-copy'
 import markdown from '../utils/markdown'
 import Starters from '~/layouts/Starters.vue'
 import Skeleton from '~/components/Skeleton.vue'
+import ClipboardIcon from '~/assets/images/icon-clipboard.svg'
+import NetlifyLogo from '~/assets/images/logo-netlify.svg'
+import CodeSandboxLogo from '~/assets/images/logo-codesandbox.svg'
 
 const cache = {}
 
 export default {
   components: {
     Starters,
-    Skeleton
+    Skeleton,
+    ClipboardIcon,
+    NetlifyLogo,
+    CodeSandboxLogo
   },
 
   data () {
     return {
       readme: '',
       isLoading: true
+    }
+  },
+
+  computed: {
+    siteName () {
+      return this.$page.starter.repo.split('/')[1]
+    },
+    netlifyDeployUrl () {
+      return `https://app.netlify.com/start/deploy?repository=https://github.com/${this.$page.starter.repo}`
+    },
+    codeSandboxUrl () {
+      return `https://codesandbox.io/s/github/${this.$page.starter.repo}`
     }
   },
 
@@ -71,6 +103,12 @@ export default {
 
     this.readme = cache[repo] = markdown(markdownSource)
     this.isLoading = false
+  },
+
+  methods: {
+    copyCommand () {
+      clipboard(this.$refs.command.textContent)
+    }
   }
 }
 </script>
@@ -115,6 +153,18 @@ query Starters ($id: String!) {
   }
   &__header-platform-logo {
     margin: 0 1rem 0 0;
+  }
+  &__command {
+    display: inline-flex;
+    align-items: center;
+    [contenteditable] {
+      border-bottom: 1px solid;
+      border-bottom-style: dotted;
+    }
+    .button {
+      padding: 0;
+      margin-left: 0.5em;
+    }
   }
   &__image {
     img {
