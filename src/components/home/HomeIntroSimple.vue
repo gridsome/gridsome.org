@@ -36,13 +36,6 @@ query HomeIntro {
 }
 </static-query>
 
-<script>
-export default {
-  components: {
-  }
-}
-</script>
-
 <style lang="scss">
 .intro {
   @media screen and (max-width: 850px) {
@@ -55,6 +48,7 @@ export default {
     font-size: 2.6rem;
     color: var(--primary-color-dark);
     letter-spacing: -1px;
+    font-weight: 600;
     margin-left: auto;
     margin-right: auto;
 

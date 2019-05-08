@@ -1,11 +1,5 @@
 <template>
   <Section class="works" dots="true" primary="true">
-    <h2 class="container text-center">
-      How Gridsome works
-    </h2>
-    <p class="lead text-center container-sm" style="margin-bottom: 3rem;">
-     <strong>Pull data from anywhere</strong> and build with Vue.js & GraphQL
-    </p>
     <div class="grid-cols grid-cols--gap-large grid-cols--full-md mb">
 
       <Card title="Bring your data">
@@ -63,12 +57,6 @@
       </Card>
 
     </div>
-
-    <p class="text-center">
-      <g-link  to="/docs/how-it-works">
-        Learn more about how it works
-      </g-link>
-    </p>
   </Section>
 </template>
 
@@ -94,7 +82,6 @@ export default {
 
 <style lang="scss">
 .works {
-  line-height: 1.6;
 
   .bullet-list li {
     margin-bottom: .3rem;
