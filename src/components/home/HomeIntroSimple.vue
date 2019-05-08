@@ -14,7 +14,7 @@
 
         <p class="intro__links">
           <g-link  to="/docs" class="button primary button--large">
-            Get started
+            <span>Get started</span>
           </g-link>
         </p>
 

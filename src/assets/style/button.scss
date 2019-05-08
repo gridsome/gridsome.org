@@ -1,5 +1,6 @@
 .button {
 	display: inline-flex;
+  z-index: 1;
   align-items: center;
 	padding: .34rem 1.2rem;
   font-weight: 500;
@@ -7,12 +8,18 @@
   position: relative;
   border:0;
   text-decoration: none;
+  overflow: hidden;
   border-radius: 5px;
   color: var(--primary-color);
-  transition: background .3s, box-shadow .3s, color .3s;
+  transition: transform .2s, background .3s, box-shadow .3s, color .3s;
+
+  > span {
+    z-index: 2;
+  }
 
   &:hover {
     box-shadow: var(--glow);
+    transform: translateY(-1px);
   }
 
   &:after {
@@ -44,9 +51,24 @@
       border-color: rgba(0,0,0,.1);
     }
 
-    &:hover {
-      color:#FFF;
+    &:before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      bottom: 100%;
+      right: 100%;
+      width: 1em;
+      height: 1em;
+      border-radius: 50%;
       background-color: var(--primary-color);
+      transform-origin: center;
+      transform: translate(50%, 50%) scale(0);
+      transition: transform .2s ease-in-out;
+    }
+
+    &:focus:before,
+    &:hover:before {
+      transform: translate(50%, 50%) scale(15.5);
     }
   }
 
@@ -75,7 +97,5 @@
     padding: .5rem 1.5rem;
   }
 
-  + .button {
-    margin-left: var(--space);
-  }
+
 }

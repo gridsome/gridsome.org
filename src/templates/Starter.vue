@@ -5,34 +5,48 @@
         <strong class="starter__header-title">{{ $page.starter.title }}</strong>
         <span class="starter__header-author">by {{ $page.starter.author.title }}</span>
 
-        <div class="flex gap-10" style="margin-left: auto">
+        <div class="flex gap-20" style="margin-left: auto">
           <a class="button button--small button--blank hide-for-small">View on Github</a>
           <a class="button button--small button--blank hide-for-small">Live preview</a>
+          
+          <Popover name="Install" :closeOnContentClick="false">
+            <div slot="face">
+              <button class="button primary button--small">Install</button>
+            </div>
+
+            <div slot="content">
+              <small style="margin-bottom: .5rem; display: block;">
+              Install locally with <strong><g-link to="/docs/gridsome-cli">Gridsome CLI</g-link></strong>
+              </small>
+              <div class="mb flex">
+                <code class="starter__command">
+                  <span ref="command">gridsome create my-project {{ $page.starter.repo }}</span>
+                  <button class="button button--blank button--xsmall" @click="copyCommand()">
+                    <ClipboardIcon title="Copy to clipboard" width="16" />
+                    <span> Copy </span>
+                  </button>
+                </code>
+              </div>
+              <hr />
+              <div class="deploy-buttons flex">
+                <a class="button button--small" :href="codeSandboxUrl">
+                  <CodeSandboxLogo alt="CodeSandbox" height="16" /> Open in CodeSandbox
+                </a>
+                <a class="button button--small" :href="netlifyDeployUrl">
+                  <NetlifyLogo alt="Netlify" /> Deploy to Netlify
+                </a>
+              </div>
+            </div>
+          </Popover>
         </div>
       </div>
-      <div class="mb flex hide-for-small">
-        <code class="starter__command">
-          <span ref="command">gridsome create my-project {{ $page.starter.repo }}</span>
-          <button class="button button--blank button--xsmall" @click="copyCommand()">
-            <ClipboardIcon title="Copy to clipboard" width="16" />
-            <span> Copy </span>
-          </button>
-        </code>
-      </div>
+   
   
       <div class="starter__image" style="order:2" v-if="$page.starter.screenshot">
         <g-image :src="$page.starter.screenshot" />
       </div>
       <hr v-else />
 
-      <div class="deploy-buttons flex mb">
-        <a class="button button--small" :href="codeSandboxUrl">
-          <CodeSandboxLogo alt="CodeSandbox" height="16" /> Open in CodeSandbox
-        </a>
-        <a class="button button--small" :href="netlifyDeployUrl">
-          <NetlifyLogo alt="Netlify" /> Deploy to Netlify
-        </a>
-      </div>
       <div class="starter__content">
         
         <div style="width: 80%;" v-if="isLoading">
@@ -59,6 +73,7 @@ import Skeleton from '~/components/Skeleton.vue'
 import ClipboardIcon from '~/assets/images/icon-clipboard.svg'
 import NetlifyLogo from '~/assets/images/logo-netlify.svg'
 import CodeSandboxLogo from '~/assets/images/logo-codesandbox.svg'
+import Popover from 'vue-popover'
 
 const cache = {}
 
@@ -68,7 +83,8 @@ export default {
     Skeleton,
     ClipboardIcon,
     NetlifyLogo,
-    CodeSandboxLogo
+    CodeSandboxLogo,
+    Popover
   },
 
   data () {
@@ -167,6 +183,7 @@ query Starters ($id: String!) {
   &__command {
     display: inline-flex;
     align-items: center;
+    width: 100%;
 
     [contenteditable] {
       border-bottom: 1px solid;
@@ -174,7 +191,8 @@ query Starters ($id: String!) {
     }
     .button {
       padding: 0;
-      margin-left: 0.5em;
+      margin-left: auto;
+      padding-left: 10px;
     }
   }
   &__image {
@@ -189,10 +207,51 @@ query Starters ($id: String!) {
 
 .deploy-buttons {
   .button {
+    margin-bottom: 0;
+    margin-right: 1rem;
     svg {
       width: 20px;
       height: 20px;
       margin-right: .3rem;
+    }
+  }
+}
+
+.popover {
+  &__container {
+    position: absolute;
+    top: 85%;
+    right: -15px;
+    z-index: 999;
+    width: 700px;
+    padding: var(--space);
+    background-color: #FFF;
+    box-shadow: var(--glow);
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    
+    &:after, &:before {
+      bottom: 100%;
+      right: 35px;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    &:after {
+      border-color: rgba(255, 255, 255, 0);
+      border-bottom-color: #FFF;
+      border-width: 10px;
+      margin-left: -10px;
+    }
+    &:before {
+      border-color: rgba(204, 204, 204, 0);
+      border-bottom-color: var(--border-color);
+      border-width: 11px;
+      margin-left: -11px;
     }
   }
 }
