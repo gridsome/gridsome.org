@@ -1,7 +1,7 @@
-- title: Default starter # The title
-  repo: gridsome/gridsome-starter-default # Path to github repo owner/repo
-  author: gridsome # The author ID. Must be an id from contributors/contributors.yaml
-  tags: Default # tags
+- title: Default starter
+  repo: gridsome/gridsome-starter-default
+  author: gridsome 
+  tags: Default
   
 - title: Default WordPress starter
   repo: gridsome/gridsome-starter-wordpress
@@ -15,7 +15,7 @@
   tags: markdown, tailwind
   platforms: contentful
 
-- title: Default Blog Starter
+- title: Gridsome Blog Starter
   description: Official Markdown Blog Starter
   screenshot: ./screenshots/gridsome-starter-blog.png
   repo: gridsome/gridsome-starter-blog

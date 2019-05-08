@@ -104,7 +104,7 @@ query Starters ($id: String!) {
 
     @media screen and (min-width: 850px) {
       position: sticky;
-      top: var(--header-height);
+      top: calc(var(--header-height) + 4px);
     }
   }
   &__header-title {

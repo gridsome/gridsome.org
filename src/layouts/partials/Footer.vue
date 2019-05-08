@@ -10,6 +10,9 @@
       rel="noopener noreferrer"
       target="_blank"
     >Contributors 🌟</a>
+
+    <g-link to="/logo" style="margin-left: 1rem">Logo & assets</g-link>
+
   </footer>
 </template>
 

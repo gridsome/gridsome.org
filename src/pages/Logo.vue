@@ -62,11 +62,6 @@
 
    	 <div class="colors mb">
 
-      <div class="colors__bg">
-        <span>#f7fbfb</span>
-      </div>
-
-
    	 	<div class="colors__primary">
    	 		<span>#00A672</span>
    	 	</div>
@@ -88,7 +83,6 @@
 <style lang="scss">
 .logo-container {
 	text-align: center;
-	background-color: var(--primary-bg);
 	margin-bottom: var(--space);
 
 
@@ -123,10 +117,6 @@
     outline: 1px solid rgba(0,0,0,.1);
 	}
 
-  &__bg {
-    background-color: var(--primary-bg);
-    color: #000!important;
-  }
 
 	&__primary {
 		background-color: var(--primary-color);
