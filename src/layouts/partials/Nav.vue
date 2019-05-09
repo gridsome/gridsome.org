@@ -4,12 +4,12 @@
       <span class="main-nav__label">Docs</span>
     </g-link>
 
-    <g-link to="/plugins">
-      <span class="main-nav__label">Plugins</span>
-    </g-link>
-
     <g-link to="/starters">
       <span class="main-nav__label">Starters</span>
+    </g-link>
+
+    <g-link to="/plugins">
+      <span class="main-nav__label">Plugins</span>
     </g-link>
 
     <g-link to="/blog">

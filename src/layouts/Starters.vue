@@ -13,7 +13,7 @@
           <h3 class="menu-item" >Platforms</h3>
 
           <g-link class="menu-item platform-link" v-for="item in $static.platforms.edges"  :key="item.node.id" :to="item.node.path" >
-           <g-image :src="item.node.logo" /> 
+           <g-image v-if="item.node.logo" :src="item.node.logo" /> 
            {{ item.node.title }}
           </g-link>
 
@@ -46,7 +46,7 @@
 
 <static-query>
 {
-  platforms: allPlatform {
+  platforms: allPlatform (order: ASC) {
     edges {
       node {
         id

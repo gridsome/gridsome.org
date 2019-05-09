@@ -138,7 +138,7 @@ export default {
 
   &__pulse-bg {
     animation: pulse 2s infinite;
-    border: 2px solid var(--primary-color);
+    border: 3px solid var(--primary-color);
     width: 100px;
     height: 100px;
     position: absolute;
