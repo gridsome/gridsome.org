@@ -151,8 +151,7 @@ We redesigned https://gridsome.org to be more lightweight, clean, and to tell wh
 
 You will find all the changes in the [changelog](https://github.com/gridsome/gridsome/blob/master/gridsome/CHANGELOG.md)
 
-## Community updates
 
-We now have **3000** GitHub Stars 🌟🎉
+## 3000 GitHub Stars 🌟🎉
 
-Thanks to everyone who contributed! Gridsome is going fast on its mission to be the best and easiest way to build modern websites and PWAs for any data source.
+Thanks to everyone who have contributed! Gridsome is going fast on its mission to be the best and easiest way to build modern websites and PWAs for any data source.
