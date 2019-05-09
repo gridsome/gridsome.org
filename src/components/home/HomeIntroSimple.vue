@@ -64,6 +64,13 @@ query HomeIntro {
     max-width: 890px;
     margin-left: auto;
     margin-right: auto;
+
+
+    @media screen and (max-width: 550px) {
+      & {
+        font-size: 1.2rem;
+      }
+    }
   }
 
   &__info {

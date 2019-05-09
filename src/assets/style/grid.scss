@@ -79,7 +79,8 @@ ul.flex {
 
 .grid-cols{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat( auto-fit, minmax(26%, 1fr) );
+
   grid-gap: var(--space);
 
   &--collapse {
@@ -105,17 +106,16 @@ ul.flex {
     grid-gap: var(--space-x2);
   }
 
-
   &--2 {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat( auto-fit, minmax(36%, 1fr) );
   }
 
   &--4 {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat( auto-fit, minmax(20%, 1fr) );
   }
 
   &--5 {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat( auto-fit, minmax(10%, 1fr) );
   }
 }
 

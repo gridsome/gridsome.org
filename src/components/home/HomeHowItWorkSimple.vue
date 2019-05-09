@@ -1,6 +1,6 @@
 <template>
   <Section class="works" dots="true" primary="true">
-    <div class="grid-cols grid-cols--gap-large grid-cols--full-md mb">
+    <div class="grid-cols grid-cols--gap-large grid-cols--full-md">
 
       <Card title="Bring your data">
         <h4>CMSs</h4>

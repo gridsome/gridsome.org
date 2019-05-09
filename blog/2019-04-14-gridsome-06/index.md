@@ -111,7 +111,7 @@ export default {
 Learn more about [fetching internal pages](/docs/client-side-data)
 
 
-## Build improvements
+## Faster build times and smaller core JS bundle size
 
 Gridsome has been importing `page-query` data with webpack dynamic imports. Which means that webpack had to compile every JSON file into a JavaScript chunk. Having lots of pages would increase build times unnecessary. From now on, page data will be stored as raw JSON files without interference from webpack. And each file is prefetched and loaded on demand for each page. The overall JavaScript size is reduced by about 30% in most cases.
 

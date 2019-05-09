@@ -246,7 +246,7 @@ query Starters ($id: String!) {
     
     &:after, &:before {
       bottom: 100%;
-      right: 65px;
+      right: 57px;
       border: solid transparent;
       content: " ";
       height: 0;
