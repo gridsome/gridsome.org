@@ -48,7 +48,7 @@ module.exports = function (api) {
 
 ## api.createPages(fn)
 
-Create pages programmatically from nodes or other data. The handler for this hook will be re-executed when nodes are changed in store. Pages that are not created will be garbage collected.
+Create pages programmatically from nodes or other data. The handler for this hook will be re-executed when nodes are changed in store. Pages that are not re-created will be garbage collected.
 
 ```js
 module.exports = function (api) {
@@ -62,7 +62,7 @@ module.exports = function (api) {
 
 ## api.createManagedPages(fn)
 
-Create, update and remove pages programmatically from nodes or other data. Unlike the createPages hook, this hook will only run once and pages will not be garbage collected.
+Create, update and remove pages programmatically from nodes or other data. Unlike `createPages`, this hook will only run once and pages will not be garbage collected.
 
 ```js
 module.exports = function (api) {

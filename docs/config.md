@@ -150,7 +150,7 @@ A function that will receive an instance of ChainableConfig powered by
 
 ## runtimeCompiler
 
-- Type `Boolean`
+- Type `boolean`
 - Default `false`
 
 Include the Vue template compiler compiler at runtime.

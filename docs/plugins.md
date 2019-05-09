@@ -9,7 +9,7 @@ Example commands for installing plugins:
 - npm: `npm install @gridsome/source-filesystem`
 - Yarn: `yarn add @gridsome/source-filesystem`
 
-Here is an example which uses a plugin with options:
+Here is an example which uses a source plugin with options:
 
 ```js
 module.exports = {

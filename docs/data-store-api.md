@@ -85,7 +85,7 @@ api.loadSource(store => {
 
   posts.addNode({
     title: 'The post',
-    author1: store.createReference('Author', '1')
+    author1: store.createReference('Author', '1'),
     author2: store.createReference(author)
   })
 })
@@ -94,8 +94,8 @@ api.loadSource(store => {
 The field will contain the referenced node fields in the GraphQL schema:
 
 ```graphql
-query BlogPost ($id: String!) {
-  blogPost (id: $id) {
+query BlogPost($id: String!) {
+  blogPost(id: $id) {
     title
     author1 {
       id
@@ -159,9 +159,9 @@ api.loadSource(store => {
 ```
 
 ```graphql
-query Post ($id: String!) {
-  blogPost (id: $id) {
-    myField (upperCase: true)
+query Post($id: String!) {
+  blogPost(id: $id) {
+    myField(upperCase: true)
   }
 }
 ```
@@ -214,7 +214,7 @@ module.exports = function (api) {
     const { data } = await axios.get('https://api.example.com/posts')
 
     const contentType = store.addContentType({
-      typeName: 'BlogPosts'
+      typeName: 'BlogPosts',
       route: '/blog/:year/:slug'
     })
 
