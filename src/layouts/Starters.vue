@@ -15,7 +15,7 @@
           <g-link class="menu-item platform-link" v-for="item in platforms"  :key="item.node.id" :to="item.node.path" >
             <g-image v-if="item.node.logo" :src="item.node.logo" /> 
             {{ item.node.title }}
-            <span class="platform-count">
+            <span class="platform-count" :class="{'platform-count--fade-out': item.node.belongsTo.totalCount == 0}">
               {{ item.node.belongsTo.totalCount }}
             </span>
           </g-link>
@@ -81,5 +81,9 @@ export default {
   background-color: var(--inline-code-bg);
   border-radius: .3em;
   font-size: 0.7em;
+
+  &--fade-out {
+    opacity: .3;
+  }
 }
 </style>
