@@ -82,4 +82,4 @@ Gridsome Starers uses the Github project README file for content.
 
 
 ## Submit to Showcase *
-*Comming soon...*
+*Coming soon...*
