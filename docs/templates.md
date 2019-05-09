@@ -11,41 +11,269 @@ The example shows a **Blog.vue** in **/pages** where Blog posts will be listed a
 
 ## Creating templates
 
-Templates must have a `<page-query>` block which fetches the source node
-for the current page. You can use the `$path` variable to get the node.
+![template flow](https://uploads-ssl.webflow.com/5a0ad22bd65a2f0001be37f0/5cac6ae2efbaefbaae46ed75_template-gridsome.png)
+
+`src/templates/Post.vue`
 
 ```html
-<!-- src/templates/WordPressPost.vue -->
-
 <template>
-  <Layout :title="$page.post.title">
-    <div v-html="$page.post.content">
+  <Layout>
+    <article>
+      <header>
+        <h1 class="post-title">
+          {{ $page.post.title }}
+        </h1>
+      </header>
+      <time>{{ $page.post.date }}</time>
+      <p>{{ $page.post.description }}</p>
+      <div class="post-content" v-html="$page.post.content"/>
+    </article>
   </Layout>
 </template>
 
+<script>
+export default {
+  metaInfo () {
+    return {
+      title: this.$page.post.title,
+      meta: [
+        {
+          name: 'description',
+          content: this.$page.post.description
+        }
+      ]
+    }
+  }
+}
+</script>
+
 <page-query>
-query Post ($path: String!) {
-  post: wordPressPost (path: $path) {
+query postQueryName ($path: String!) {
+  post: post (path: $path) {
     title
+    date (format: "D. MMMM YYYY")
+    description
     content
   }
 }
 </page-query>
 
-<script>
-import Layout from '~/layouts/Default.vue'
-export default {
-  components: {
-    Layout
-  },
-  metaInfo () {
-    return {
-      title: this.$page.post.title
+<style>
+.post-title {
+  padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
+  text-align: center;
+}
+</style>
+
+```
+
+### Query with GraphQL
+Templates must have a `<page-query>` block which fetches the source node for the current page. You can use the `$path` variable to get the node.
+
+``` html
+<page-query>
+query postQueryName ($path: String!) {
+  post: post (path: $path) {
+    title
+    date (format: "D. MMMM YYYY")
+    description
+    content
+  }
+}
+</page-query>
+```
+- `post: post` - The post is the name of the GraphQL collection you want to query (Define under `config.js` `typeName: Post`). 
+
+[How to query with GraphQL](/docs/querying-data#how-to-query-with-graphql)
+
+#### GraphQL Playground
+
+Every Gridsome project has a GraphQL explorer (Playground) at `http://localhost:8080/___explore`.
+
+**Simple query for title field of Post collection:**
+
+```graphql
+query Post {
+  allPost {
+    edges {
+      node {
+        title
+      }
     }
+  }
+}
+
+```
+**Result:**
+
+```graphql
+{
+  "data": {
+    "allPost": {
+      "edges": [
+        {
+          "node": {
+            "title": "My Second post"
+          }
+        },
+        {
+          "node": {
+            "title": "My First post"
+          }
+        }
+      ]
+    }
+  }
+}
+```
+![query example](https://uploads-ssl.webflow.com/5ae579b8e789f452ffdcce17/5cb26903dfaff57024376cc4_query-title.png)
+
+[Learn more about Explore & test queries](/docs/layouts)
+
+### Render data
+To include a variable in your template, wrap it in two sets of curly braces. Like this:
+
+`src/templates/Post.vue`:
+```html
+<h1 class="articleTitle">
+  {{ $page.post.title }}
+</h1>
+ ```
+
+### Content files
+
+Here is an example of adding data from local files using located under `/content/posts` folder. 
+We use this folder to store all of our posts.
+
+Our posts markdown format: A title, publish date, followed by an description.
+
+`/content/posts/my-first-post.md`:
+
+```md
+---
+title: My First post
+date: 2018-09-15 07:42:34
+description: "Aenean leo ligula, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet."
+---
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+
+```
+One more post entry:
+
+`/content/posts/my-second-post.md`:
+
+```md
+---
+title: My Second post
+date: 2018-09-16 07:42:34
+description: "Dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet."
+---
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+
+```
+
+- Learn more about [@gridsome/transformer-remark plugin](/plugins/@gridsome/transformer-remark)
+- [Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+### Linking content to template
+
+In this example we use [file-system source plugin](/plugins/@gridsome/source-filesystem) and [@gridsome/transformer-remark plugin](/plugins/@gridsome/transformer-remark) (Markdown support).
+
+**Install:**
+- `yarn add @gridsome/source-filesystem`
+- `yarn add @gridsome/transformer-remark`
+
+**Config**
+
+Plugin options are added to `gridsome.config.js`. 
+
+- `typeName` - will be the name of the GraphQL collection and needs to be unique. This example will add a *Post* collection.
+- `path` - Where to look for content files. Should be a global path.
+- `route` - Define a dynamic route.
+
+```javascript
+module.exports = {
+  siteName: 'Gridsome',
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Post', /* vue file in src/templates must match the GraphQL typeName to have a template for it */
+        path: 'content/posts/*.md', /* Where to look for files. Should be a glob path */
+        route: '/:slug', /* Define a dynamic route */
+      }
+    }
+  ],
+  transformers: {
+    //Add markdown support to all file-system sources
+    remark: {
+      externalLinksTarget: '_blank',
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      anchorClassName: 'icon icon-link',
+      plugins: [
+        // ...local plugins
+      ]
+    }
+  },
+}
+```
+
+Save and run `gridsome develop`, go to `http://localhost:8080/my-first-post` -or- `http://localhost:8080/my-second-post`.
+
+![Post Example](https://uploads-ssl.webflow.com/5ae579b8e789f452ffdcce17/5cb1f7474e4584388e04109f_post-example.png)
+
+## Create collection pagelist
+
+`/pages/blog.vue`
+
+```html
+<template>
+  <Layout>
+    <h1>Blog</h1>
+    <!-- List posts -->
+    <ul class="posts">
+      <li v-for="edge in $page.posts.edges" :key="edge.node.id">
+        <article>
+          <h2>{{ edge.node.title }}</h2>
+          <date>{{ edge.node.date }}</date>
+          <p>{{ edge.node.description }}</p>
+          <g-link :to="edge.node.path">Read Article</g-link>
+        </article>
+      </li>
+    </ul>
+  </Layout>
+</template>
+
+<page-query>
+  {
+    posts: allPost {
+      edges {
+        node {
+          title
+          date (format: "D. MMMM YYYY")
+          description
+          path
+        }
+      }
+    }
+  }
+</page-query>
+
+<script>
+export default {
+  metaInfo: {
+    title: 'Blog'
   }
 }
 </script>
 ```
+- [Query data in Pages](/docs/querying-data#query-data-in-pages)
 
 ## Template layouts
 
@@ -55,8 +283,8 @@ The `<Layout>` component is an optional component used to **wrap pages and templ
 
 [Learn more about Layouts](/docs/layouts)
 
-
 ### More...
 
 - [Query data in Templates](/docs/querying-data#query-data-in-templates)
 - [Add head metadata to Templates](/docs/head#add-head-meta-data-to-pages--templates)
+- [Starter: gridsome-starter-blog](https://github.com/gridsome/gridsome-starter-markdown-blog/blob/master/src/pages/Index.vue)
