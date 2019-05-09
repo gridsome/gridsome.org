@@ -43,18 +43,17 @@ export default {
     &__title {
       text-align: center;
       width: 100%;
-      margin-top: -15px;
+      margin-top: -16px;
 
       span {
         display: inline-block;
-        padding: 2px 12px;
+        padding: 2px 12px 4px;
         background-color: var(--dark-bg);
         color: #FFF;
         border-radius: 3px;
-        text-transform: uppercase;
         font-weight: 500;
-        font-size: .8rem;
-        letter-spacing: 1px;
+        font-size: 1rem;
+        letter-spacing: .5px;
       }
     }
 
