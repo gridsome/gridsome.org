@@ -12,9 +12,12 @@
 
           <h3 class="menu-item" >Platforms</h3>
 
-          <g-link class="menu-item platform-link" v-for="item in $static.platforms.edges"  :key="item.node.id" :to="item.node.path" >
-           <g-image v-if="item.node.logo" :src="item.node.logo" /> 
-           {{ item.node.title }}
+          <g-link class="menu-item platform-link" v-for="item in platforms"  :key="item.node.id" :to="item.node.path" >
+            <g-image v-if="item.node.logo" :src="item.node.logo" /> 
+            {{ item.node.title }}
+            <span class="platform-count">
+              {{ item.node.belongsTo.totalCount }}
+            </span>
           </g-link>
 
       </div>
@@ -26,11 +29,41 @@
   </Layout>
 </template>
 
+<static-query>
+{
+  platforms: allPlatform (order: ASC) {
+    edges {
+      node {
+        id
+        title
+        path
+        logo
+        belongsTo {
+          totalCount
+        }
+      }
+    }
+  }
+}
+</static-query>
+
+<script>
+export default {
+  computed: {
+    platforms () {
+      return this.$static.platforms.edges.sort((a, b) => {
+        return b.node.belongsTo.totalCount - a.node.belongsTo.totalCount
+      })
+    }
+  }
+}
+</script>
+
 <style lang="scss">
 .starters-content {
   padding: var(--space-x2);
 }
-.platform-link{
+.platform-link {
   display: flex;
   align-items: center;
   padding: 7px 0;
@@ -42,19 +75,11 @@
     margin: 0 10px 0 0;
   }
 }
-</style>
-
-<static-query>
-{
-  platforms: allPlatform (order: ASC) {
-    edges {
-      node {
-        id
-        title
-        path
-        logo
-      }
-    }
-  }
+.platform-count {
+  margin-left: auto;
+  padding: 0.15rem 0.4rem;
+  background-color: var(--inline-code-bg);
+  border-radius: .3em;
+  font-size: 0.7em;
 }
-</static-query>
+</style>
