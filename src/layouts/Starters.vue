@@ -20,6 +20,8 @@
             </span>
           </g-link>
 
+          <hr />
+          <g-link to="/docs/how-to-contribute#submit-a-starter">Submit a Starter →</g-link>
       </div>
     
       <Section class="starters-content container flex-fit">

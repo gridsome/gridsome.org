@@ -14,7 +14,7 @@
 
       <PostCard v-for="edge in $page.contributor.posts.edges" :key="edge.node.id" :post="edge.node"/>
       
-      <h3 class="text-center" v-if="$page.contributor.starters.edges.length">Gridsome Starters</h3>
+      <h3 class="text-center" v-if="$page.contributor.starters.edges.length">Starters</h3>
 
       <div class="grid-cols grid-cols--2">
         <StarterCard v-for="starter in $page.contributor.starters.edges" :key="starter.node.id" :node="starter.node" />
