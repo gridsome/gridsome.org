@@ -128,15 +128,17 @@ Gridsome has been importing `page-query` data with webpack dynamic imports. Whic
 
 
 ## New website design and starters library
-We redesigned https://gridsome.org to be more lightweight, clean and inclusive. We also added a [Starter library](/starters) to help anyone get quickly up and running with Gridsome. Have you build a starter for Gridsome? Submit yours here.
+We redesigned https://gridsome.org to be more lightweight, clean and inclusive. We also added a [Starter library](/starters) to help anyone get quickly up and running with Gridsome. Have you built a starter for Gridsome? [Submit yours here](/docs/how-to-contribute#submit-a-starter).
+
+![Starters](./starters.png)
 
 ## Breaking changes
 
 - `NodeInterface` is renamed to `Node`.
-- `title`, `path`, `date`, `content`, `excerpt` and `slug` are now custom fields.
+- `title`, `path`, `date`, `content`, `excerpt`, and `slug` are now custom fields.
 - Custom fields are no longer camel cased by default.
-- Routes for pages in `src/pages` no longer gets automatic names  
-  *- Autmomatic route names would most likely conflict with custom pages.*
+- Routes for pages in `src/pages` no longer get automatic names  
+  *- Automatic route names would most likely conflict with custom pages.*
 
 ## Other features and fixes
 
@@ -144,6 +146,6 @@ We redesigned https://gridsome.org to be more lightweight, clean and inclusive. 
 - Limit argument for GraphQL. [Read more](/docs/querying-data#limit)
 - Advanced GraphQL sort argument. [Read more](/docs/querying-data#advancedsorting)
 - Configure webpack without chaining. [Read more](/docs/config#configurewebpack)
-- Render current state in markup to prevent initial request.
+- Render the current state in markup to prevent initial request.
 
-You will find all changes in the [change log](https://github.com/gridsome/gridsome/blob/master/gridsome/CHANGELOG.md)
+You will find all the changes in the [changelog](https://github.com/gridsome/gridsome/blob/master/gridsome/CHANGELOG.md)

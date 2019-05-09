@@ -46,7 +46,7 @@
           </a>
           <div class="dropdown">
             <a href="//github.com/gridsome/gridsome/blob/master/gridsome/CHANGELOG.md" rel="noopener noreferrer" target="_blank">
-              Change log
+              Changelog
             </a>
             <a href="//github.com/gridsome/gridsome" rel="noopener noreferrer" target="_blank">
               Core repository
