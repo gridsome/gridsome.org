@@ -1,8 +1,8 @@
 <template>
-  <Layout primary-bg="true">
+  <Layout>
     <Section container="md" class="blog-posts">
       
-      <div class="mb container-sm text-center author-page">
+      <div class="mb-x2 container-sm text-center author-page">
         <g-image class="author-page__avatar" v-if="$page.contributor.avatar" :key="$page.contributor.id" :src="$page.contributor.avatar"/>
         <h1>{{ $page.contributor.title }}</h1>
         <p v-if="$page.contributor.bio" class="lead container-sm">
@@ -13,6 +13,12 @@
       <h3 class="text-center" v-if="$page.contributor.posts.edges.length">Blog posts</h3>
 
       <PostCard v-for="edge in $page.contributor.posts.edges" :key="edge.node.id" :post="edge.node"/>
+      
+      <h3 class="text-center" v-if="$page.contributor.starters.edges.length">Gridsome Starters</h3>
+
+      <div class="grid-cols grid-cols--2">
+        <StarterCard v-for="starter in $page.contributor.starters.edges" :key="starter.node.id" :node="starter.node" />
+      </div>
     </Section>
   </Layout>
 </template>
@@ -58,9 +64,21 @@ query Contributor ($path: String!) {
       edges {
         node {
           ...on Starter {
-            id
-            title
-            path
+              id
+              title
+              description
+              preview
+              repo
+              platforms {
+                title
+                logo
+              }
+              author {
+                title
+                path
+              }
+              path
+              screenshot  (width: 840, height:840)
           }
         }
       }
@@ -71,10 +89,12 @@ query Contributor ($path: String!) {
 
 <script>
 import PostCard from '@/components/PostCard.vue'
+import StarterCard from '@/components/StarterCard.vue'
 
 export default {
   components: {
-    PostCard
+    PostCard,
+    StarterCard
   },
   metaInfo () {
     return {

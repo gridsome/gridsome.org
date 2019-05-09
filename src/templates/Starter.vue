@@ -3,7 +3,12 @@
       <div class="starter__header flex">
         <g-image class="starter__header-platform-logo" v-if="$page.starter.platforms" :src="$page.starter.platforms.logo" />
         <strong class="starter__header-title">{{ $page.starter.title }}</strong>
-        <span class="starter__header-author">by {{ $page.starter.author.title }}</span>
+        <g-link 
+          v-if="$page.starter.author.path"
+          :to="$page.starter.author.path" 
+          class="starter__header-author">
+            by {{ $page.starter.author.title }}
+        </g-link>
 
         <div class="flex gap-20 hide-for-small" style="margin-left: auto">
           <a 
@@ -170,7 +175,7 @@ query Starters ($id: String!) {
     }
     path
     preview
-    screenshot (width: 900)
+    screenshot (width: 1680, quality: 80)
   }
 }
 </page-query>
@@ -191,13 +196,13 @@ query Starters ($id: String!) {
     }
   }
   &__header-title {
-    margin-right: 1rem;
+    margin-right: .3rem;
   }
   &__header-author {
     color: rgba(0,0,0,.5);
   }
   &__header-platform-logo {
-    margin: 0 1rem 0 0;
+    margin: 0 .5rem 0 0;
   }
   &__command-intro {
     margin-right: .5rem;
