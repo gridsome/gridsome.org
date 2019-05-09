@@ -96,8 +96,6 @@ These methods are injected into every component.
 
 Fetch `page-query` results and [page context](http://localhost:8080/docs/pages-api#the-page-context) from internal pages
 
-#### Usage
-
 ```js
 export default {
   data () {

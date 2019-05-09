@@ -33,6 +33,7 @@ A simple `Page.vue` file might look like this:
 
 <script>
 import Layout from '~/layouts/Default.vue'
+
 export default {
   components: {
     Layout

@@ -160,12 +160,12 @@ Configure the development server.
 
 - Type `boolean` *Default: `false`*
 
-Split CSS into multiple chunks. Splitting is disabled by default.
+Split CSS into multiple chunks. Splitting is disabled by default. Splitting CSS can result in weird behaviors.
 
 ## css.loaderOptions
 
 - Type `Object`
-- Default `{ sass: { indentedSyntax: true }, stylus: { preferPathResolver: 'webpack' } }`
+- Default `{}`
 
 Pass options to CSS-related loaders. For example:
 

@@ -17,15 +17,11 @@ To link to external links you need to use the normal `<a href="https://url">` ta
 ### Link to #anchor links
 To link to #anchor links you need to use the normal `<a href="#anchor">` tag.
 
-
 ## Options
 
 ```html
 <!-- Link with string path -->
 <g-link to="/about">About us</g-link>
-
-<!-- Link to a named route -->
-<g-link :to="{ name: 'about' }">About us</g-link>
 
 <!-- Link with variable path -->
 <g-link :to="node.path">Read more</g-link>

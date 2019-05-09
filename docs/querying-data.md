@@ -40,8 +40,6 @@ query Posts {
 
 Every content type has a collection and a single entry in the GraphQL schema. You will notice that some of the root fields in your schema are prefixed with `all`. They are the collections for each of your content types and you can use them in your pages to create lists of single entries.
 
-#### Arguments
-
 | Argument | Default | Description |
 |----------|---------|-------------|
 | **sortBy** | `"date"` | Sort by a node field.
@@ -49,15 +47,15 @@ Every content type has a collection and a single entry in the GraphQL schema. Yo
 | **sort** | | Sort by multiple node fields.
 | **skip** | `0` | How many nodes to skip.
 | **limit** | | How many nodes to get.
-| **page** | `1` | Which page to get.
-| **perPage** | | How many nodes to show per page.
+| **page** | | Which page to get.
+| **perPage** | | How many nodes to show per page. Omitted if no `page` argument is provided.
 | **filter** | `{}` | [Read more](/docs/filtering-data).
 
 #### Find nodes sorted by title
 
 ```graphql
 query Posts {
-  allPost (sortBy: "title", order: DESC) {
+  allPost(sortBy: "title", order: DESC) {
     edges {
       node {
         title
@@ -71,7 +69,7 @@ query Posts {
 
 ```graphql
 query Posts {
-  allPost (sort: [{ by: "featured" }, { by: "date" }]) {
+  allPost(sort: [{ by: "featured" }, { by: "date" }]) {
     edges {
       node {
         title
@@ -95,7 +93,7 @@ The other fields that do not start with `all` are your single entries. They are 
 
 ```graphql
 query Post {
-  post (id: "1") {
+  post(id: "1") {
     title
   }
 }
@@ -166,12 +164,12 @@ The `page-query` in templates also has a set of variables that can be used in th
 </template>
 
 <page-query>
-query Post ($id: String!, $group: String!) {
-  post (id: $id) {
+query Post($id: String!, $group: String!) {
+  post(id: $id) {
     title
     content
   }
-  related: allPost (filter: { group: { eq: $group }}) {
+  related: allPost(filter: { group: { eq: $group }}) {
     edges {
       node {
         id
@@ -197,7 +195,7 @@ to fetch data from data sources. The results will be stored in a
 
 <static-query>
 query Post {
-  post (id: "1") {
+  post(id: "1") {
     content
   }
 }

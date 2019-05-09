@@ -7,8 +7,8 @@ Use the `@paginate` directive in your GraphQL query to add automatic pagination 
 Place the `@paginate` directive after the collection you want to paginate.
 
 ```graphql
-query Blog ($page: Int) {
-  allBlogPost (perPage: 10, page: $page) @paginate {
+query Blog($page: Int) {
+  allBlogPost(perPage: 10, page: $page) @paginate {
     pageInfo {
       totalPages
       currentPage
@@ -29,17 +29,17 @@ query Blog ($page: Int) {
 Place the `@paginate` directive after the `belongsTo` field you want to paginate.
 
 ```graphql
-query Category ($page: Int) {
+query Category($page: Int) {
   category {
     title
-    belongsTo (perPage: 10, page: $page) @paginate {
+    belongsTo(perPage: 10, page: $page) @paginate {
       pageInfo {
         totalPages
         currentPage
       }
       edges {
         node {
-          ...on Post {
+          ... on Post {
             id
             title
             path
@@ -80,8 +80,8 @@ export default {
 </script>
 
 <page-query>
-query Blog ($page: Int) {
-  allBlogPost (perPage: 10, page: $page) @paginate {
+query Blog($page: Int) {
+  allBlogPost(perPage: 10, page: $page) @paginate {
     pageInfo {
       totalPages
       currentPage
@@ -97,13 +97,12 @@ query Blog ($page: Int) {
 </page-query>
 ```
 
-#### Options
-
 |Property         |Default| |
 |-----------------|-------|-|
 |info             |*required* |Page info from GraphQL result with *totalPages*
 |showLinks        |true |Show navigation links
 |showNavigation   |true |Show previous and next links
+|range            |5|How many links to show
 |linkClass        ||Add custom classes to the links
 |firstLabel       |«
 |prevLabel        |‹

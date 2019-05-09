@@ -32,12 +32,13 @@ When you have created a layout you need to import it to your pages and templates
 </template>
 
 <script>
-  import Layout from '~/layouts/Default.vue'
-  export default {
-  	components: {
-  	 Layout
-  	}
+import Layout from '~/layouts/Default.vue'
+
+export default {
+  components: {
+    Layout
   }
+}
 </script>
 
 ```
@@ -107,12 +108,11 @@ This will pass a Prop to a layout with `sidebar = true`. In the **Layout compone
 </template>
 
 <script>
-  export default {
-    props: ['sidebar']
-  }
+export default {
+  props: ['sidebar']
+}
 </script>
 ```
-
 
 ## Multiple content slots
 To add multiple slots to a layout you need to name them. In this example we have added a sidebar slot that will only show if the page has sidebar content.

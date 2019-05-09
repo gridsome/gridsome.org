@@ -16,17 +16,13 @@ module.exports = function (api) {
 
 ### store.addContentType(options)
 
-Add a new content type to store.
-
-A Vue component in the `src/templates` folder with a filename matching the `typeName` option will be used as a template for all nodes with this type. [Read more about templates](/docs/templates).
-
-##### Arguments
-
 - options `object | string` *Options or just a GraphQL schema type name.*
   - typeName `string` *Required GraphQL schema type and template name.*
   - route `string` *Optional dynamic route.* [Read more about Routing](/docs/routing)
 
-##### Usage
+Add a new content type to store.
+
+A Vue component in the `src/templates` folder with a filename matching the `typeName` option will be used as a template for all nodes with this type. [Read more about templates](/docs/templates).
 
 ```js
 api.loadSource(store => {
@@ -39,23 +35,17 @@ api.loadSource(store => {
 
 ### store.getContentType(typeName)
 
-Get a content type previously created.
-
-##### Arguments
-
 - typeName `string` *The GraphQL schema type name.*
+
+Get a content type previously created.
 
 ## Add nodes to collections
 
 ### collection.addNode(options)
 
-##### Arguments
-
 - options `Object` *Required.*
   - id `string` *A unique id for this content type.*
   - ...fields `object` *Custom fields.*
-
-##### Usage
 
 ```js
 api.loadSource(store => {
@@ -76,14 +66,10 @@ api.loadSource(store => {
 
 ### store.createReference(typeName, id)
 
-A helper function for creating references to other nodes.
-
-##### Arguments
-
 - typeName `string | object` *The node typeName to reference or the node instance.*
 - id `string | array` *The node id to reference (or ids if multiple nodes).*
 
-##### Usage
+A helper function for creating references to other nodes.
 
 This example creates two content types: `Author` and `Post`. The `author1` and `author2` fields on `Post` will both have a reference to the same author.
 
@@ -125,14 +111,10 @@ query BlogPost ($id: String!) {
 
 ### collection.addReference(fieldName, typeName)
 
-Make a root field for all nodes in collection referencing to another node.
-
-##### Arguments
-
 - fieldName `string` *The field name.*
 - typeName `string` *GraphQL schema type to reference.*
 
-##### Usage
+Make a root field for all nodes in collection referencing to another node.
 
 ```js
 api.loadSource(store => {
@@ -151,14 +133,10 @@ api.loadSource(store => {
 
 ### collection.addSchemaField(fieldName, fn)
 
-Extend the GraphQL schema with a custom field for a node type.
-
-##### Arguments
-
 - fieldName `string` *The field name to create on node.*
 - fn `Function` *A function which returns an object with a GraphQL field and resolver.*
 
-##### Usage
+Extend the GraphQL schema with a custom field for a node type.
 
 ```js
 api.loadSource(store => {

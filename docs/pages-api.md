@@ -15,19 +15,15 @@ module.exports = function (api) {
 
 ## Create a page
 
-Use the `createPages` hook if you want to create pages .
+Use the `createPages` hook if you want to create pages. Pages created in this hook will be re-created and garbage collected occasionally. Use the `createManagedPages` below to have more controll over when pages are updated or deleted manually.
 
 ### createPage(options)
-
-##### Arguments
 
 - options `object`
   - **path** `string` *Required.*
   - **component** `string` *Required.*
   - context `object` *Optional context for the page and `page-query`.*
   - queryVariables `object`  *Optional context only for `page-query`.*
-
-##### Usage
 
 ```js
 module.exports = function (api) {
@@ -44,9 +40,18 @@ module.exports = function (api) {
 
 Pages created in the `createPages` hook will be re-created and garbage collected occasionally. That's why that hook is only able to create pages. You can use a `createManagedPages` hook to create, update and remove pages yourself. 
 
-### createPage(options)
+```js
+module.exports = function (api) {
+  api.createManagedPages(({ createPage }) => {
+    createPage({
+      path: '/my-page',
+      component: './src/templates/MyPage.vue'
+    })
+  })
+}
+```
 
-##### Arguments
+### createPage(options)
 
 - options `object`
   - **path** `string` *Required.*

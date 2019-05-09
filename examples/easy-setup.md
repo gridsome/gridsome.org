@@ -30,7 +30,7 @@ module.exports = {
           post_tag: '/blog/tag/:slug' 
         }
       }
-    },
+    }
   ]
 }
 ```

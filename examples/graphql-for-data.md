@@ -9,7 +9,7 @@ order: 1
   <Layout>
   	<h1>My blog</h1>
    	<div v-for="{ node } in $page.allPost.edges" :key="node.id">
-      <h3> {{ node.title }} </h3>
+      <h3>{{ node.title }}</h3>
    	  <g-link :to="node.path">Read more</g-link>
    	</div>
   </Layout>
