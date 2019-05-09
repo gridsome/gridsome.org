@@ -6,12 +6,27 @@
         <span class="starter__header-author">by {{ $page.starter.author.title }}</span>
 
         <div class="flex gap-20 hide-for-small" style="margin-left: auto">
-          <a class="button button--small button--blank">View on Github</a>
-          <a class="button button--small button--blank">Live preview</a>
+          <a 
+            rel="noopener noreferrer"
+            target="_blank" 
+            :href="githubUrl" 
+            class="button button--small button--blank">
+            <github-icon />
+            <span>View on Github</span>
+          </a>
+          <a
+            rel="noopener noreferrer"
+            target="_blank" 
+            v-if="$page.starter.preview" 
+            :href="$page.starter.preview" 
+            class="button button--small button--blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            <span>Live preview</span>
+          </a>
           
-          <Popover name="UseThis" :closeOnContentClick="false">
+          <Popover name="InstallThis" :closeOnContentClick="false">
             <div slot="face">
-              <button class="button primary button--md">Use this</button>
+              <button class="button primary button--md">Install</button>
             </div>
 
             <div slot="content">
@@ -71,6 +86,7 @@ import markdown from '../utils/markdown'
 import Starters from '~/layouts/Starters.vue'
 import Skeleton from '~/components/Skeleton.vue'
 import ClipboardIcon from '~/assets/images/icon-clipboard.svg'
+import GithubIcon from '~/assets/images/github-logo.svg'
 import NetlifyLogo from '~/assets/images/logo-netlify-small.svg'
 import CodeSandboxLogo from '~/assets/images/logo-codesandbox.svg'
 import Popover from 'vue-popover'
@@ -84,7 +100,8 @@ export default {
     ClipboardIcon,
     NetlifyLogo,
     CodeSandboxLogo,
-    Popover
+    Popover,
+    GithubIcon
   },
 
   data () {
@@ -97,6 +114,9 @@ export default {
   computed: {
     siteName () {
       return this.$page.starter.repo.split('/')[1]
+    },
+    githubUrl () {
+      return `https://github.com/${this.$page.starter.repo}`
     },
     netlifyDeployUrl () {
       return `https://app.netlify.com/start/deploy?repository=https://github.com/${this.$page.starter.repo}`
@@ -149,6 +169,7 @@ query Starters ($id: String!) {
       path
     }
     path
+    preview
     screenshot (width: 900)
   }
 }

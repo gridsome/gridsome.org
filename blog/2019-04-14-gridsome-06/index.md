@@ -3,10 +3,11 @@ title: Gridsome v0.6
 slug: gridsome-v06
 author: [hjvedvik, tommyvedvik]
 date: 2019-05-09
-excerpt: "Gridsome 0.6 introduces a Pages API that gives you full control of page creation. It also has an API that let you fetch internal pages into other pages and components. Perfect for lightboxes or «Click for more» pagination etc."
+excerpt: "Gridsome 0.6 introduces a Pages API that gives you full control of page creation. It also has an API that let you fetch internal pages into other pages and components. This is perfect for lightboxes or «Click for more» pagination etc. 0.6 also improves build times and has a smaller core JS bundle size!"
 ---
 
-## The Pages API
+
+## The new Pages API
 
 Until now, you have only been able to create pages by having Vue components in the `src/pages` folder or by creating templates for content types. Gridsome 0.6 comes with a new API for creating pages. It lets you create pages programmatically, which will give you much more flexibility.
 
@@ -24,9 +25,69 @@ module.exports = function (api) {
 }
 ```
 
+You can use it to create pages manually from the GraphQL data layer:
+
+```js
+module.exports = function (api) {
+  api.createPages(async ({ graphql, createPage }) => {
+    const { data } = await graphql(`{
+      allProduct {
+        edges {
+          id
+          path
+        }
+      }
+    `)
+
+    data.allProduct.edges.forEach(({ node }) => {
+      createPage({
+        path: `${node.path}/reviews`,
+        component: './src/templates/ProductReviews.vue',
+        context: {
+          id: node.id
+        }
+      })
+    })
+  })
+}
+```
+
+... or you could **bypass GraphQL** if you think feel it's a overkill in some use cases:
+
+```js
+//gridsome.server.js
+module.exports = function (api) {
+  api.createManagedPages(async ({ createPage }) => {
+    const { data } = await axios.get('https://api.example.com/posts')
+
+    data.forEach(item => {
+      createPage({
+        path: `/posts/${item.path}`,
+        component: './src/templates/Post.vue',
+        context: {
+          title: item.title,
+          content: item.content
+        }
+      })
+    })
+  })
+}
+```
+
+Add data by using **$context** in Vue component..
+
+```html
+<template>
+  <Layout>
+    <h1>{{ $context.title }}</h1>
+    <div v-html="$context.content"></div>
+  </Layout>
+</template>
+```
+
 Read more about the [Pages API](/docs/pages-api)
 
-## Fetch internal pages
+## New function for fetching internal pages
 A new function available in [Client API](/docs/client-api) let you fetch internal pages. This is perfect for building lightboxes or «Click for more» pagination etc.
 
 ```js
@@ -49,6 +110,7 @@ export default {
 
 Learn more about [fetching internal pages](/docs/client-side-data)
 
+
 ## Build improvements
 
 Gridsome has been importing `page-query` data with webpack dynamic imports. Which means that webpack had to compile every JSON file into a JavaScript chunk. Having lots of pages would increase build times unnecessary. From now on, page data will be stored as raw JSON files without interference from webpack. And each file is prefetched and loaded on demand for each page. The overall JavaScript size is reduced by about 30% in most cases.
@@ -64,9 +126,9 @@ Gridsome has been importing `page-query` data with webpack dynamic imports. Whic
 | `page-query.js` size | 510kb | *removed* |
 | Size of all JS chunks | 1000kb (excl. data chunks) | **570kb** (total) |
 
-## New website design and starters library
 
-We redesigned https://gridsome.org to be more lightweight, clean and inclusive. We also added a [Starter library](/starters) to help anyone get quickly up and running with Gridsome.
+## New website design and starters library
+We redesigned https://gridsome.org to be more lightweight, clean and inclusive. We also added a [Starter library](/starters) to help anyone get quickly up and running with Gridsome. Have you build a starter for Gridsome? Submit yours here.
 
 ## Breaking changes
 

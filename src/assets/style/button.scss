@@ -17,6 +17,10 @@
     z-index: 2;
   }
 
+  > svg + span {
+    margin-left: .5rem;
+  }
+
   &:hover {
     box-shadow: var(--glow);
     transform: translateY(-1px);
