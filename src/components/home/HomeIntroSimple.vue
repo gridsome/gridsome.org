@@ -45,7 +45,7 @@ query HomeIntro {
   }
 
   &__title {
-    font-size: 2.6rem;
+    font-size: 3rem;
     color: var(--primary-color-dark);
     letter-spacing: -1px;
     font-weight: 600;
