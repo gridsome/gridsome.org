@@ -6,6 +6,7 @@ date: 2019-05-09
 excerpt: "Gridsome 0.6 introduces a Pages API that gives you full control of page creation. It also has an API that let you fetch internal pages into other pages and components. This is perfect for lightboxes or «Click for more» pagination etc. 0.6 also improves build times and has a smaller core JS bundle size!"
 ---
 
+💥 *This version includes breaking changes.*
 
 ## The new Pages API
 
