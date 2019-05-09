@@ -91,6 +91,10 @@
     padding-left:0;
     padding-right:0;
     box-shadow: none!important;
+
+    &:not(:hover) {
+      color: rgba(0,0,0,.5);
+    }
     &:after {
       display: none;
     }
