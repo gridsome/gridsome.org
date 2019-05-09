@@ -52,8 +52,7 @@ export default {
     }
   },
   mounted() {
-    moment = require('moment')
-    this.theTime = 'The time is '.moment().format("HH:mm")
+    this.theTime = 'The time is ' + moment().format("HH:mm")
   }
 }
 </script>
@@ -194,7 +193,7 @@ Same way you can use any external library that causes issue in server side rende
     mounted() {
       //require our external library and load it in window
       window.owl = require('owl-carousel')
-      widows.$ = require('jquery')
+      window.$ = require('jquery')
   
       // This works now
       $('.some-carousel').owlCarousel()
