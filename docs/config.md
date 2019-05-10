@@ -29,8 +29,9 @@ The description is used as description on your frontpage.
 - Default `''`
 
 ## pathPrefix
+
 - Type `string`
-- Default `'/'`
+- Default `''`
 
 Gridsome assumes your project is served from the root of your domain.
 Change this option to `'/my-app'` if your project will be hosted in a
@@ -49,12 +50,29 @@ from metaInfo you set in your pages.
 - Type `Array`
 - Default `[]`
 
-[Read more about using plugins](/docs/install-plugins)
+Activate plugins by adding them to the `plugins` array.
+
+```js
+module.exports = {
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'blog/**/*.md',
+        route: '/blog/:year/:month/:day/:slug',
+        typeName: 'Post'
+      }
+    }
+  ]
+}
+```
+
+[Read more about how to use plugins](/docs/plugins)
 
 ## icon
 
 - Type `string | Object`
-- Default `'src/favicon.png'`
+- Default `'./src/favicon.png'`
 
 Gridsome will use any image located at `src/favicon.png` as favicon and
 touchicon by default, but you can define another path or sizes etc. The icon
@@ -63,18 +81,18 @@ should be a square and minimum 16 pixels. The favicon will be resized to 16, 32,
 default.
 
 ```js
-{
-  icon: 'src/my-icon.png'
+module.exports = {
+  icon: './src/my-icon.png'
 }
 ```
 
 Use a different image for touch icons:
 
 ```js
-{
+module.exports = {
   icon: {
-    favicon: 'src/my-favicon.png',
-    touchicon: 'src/my-touchicon.png'
+    favicon: './src/my-favicon.png',
+    touchicon: './src/my-touchicon.png'
   }
 }
 ```
@@ -82,17 +100,43 @@ Use a different image for touch icons:
 Define custom sizes and disable effects on iOS < 7 devices:
 
 ```js
-{
+module.exports = {
   icon: {
     favicon: {
-      src: 'src/my-favicon.png',
+      src: './src/my-favicon.png',
       sizes: [16, 32, 96]
     },
     touchicon: {
-      src: 'src/my-touchicon.png',
+      src: './src/my-touchicon.png',
       sizes: [76, 152, 120, 167],
       precomposed: true
     }
+  }
+}
+```
+
+## configureWebpack
+
+- Type `Object | Function`
+
+The option will be merged with the internal config if it is an object. 
+
+```js
+module.exports = {
+  configureWebpack: {
+    // merged with the internal config
+  }
+}
+```
+
+If the option is a function, it will get the internal config as its first argument. You can either modify the argument or return a new config object that will override the internal webpack config.
+
+```js
+const merge = require('webpack-merge')
+
+module.exports = {
+  configureWebpack (config) {
+    return merge({ /* custom config */ }, config)
   }
 }
 ```
@@ -106,10 +150,10 @@ A function that will receive an instance of ChainableConfig powered by
 
 ## runtimeCompiler
 
-- Type `Boolean`
+- Type `boolean`
 - Default `false`
 
-Include the Vue template compiler compiler at runtime
+Include the Vue template compiler compiler at runtime.
 
 ## configureServer
 
@@ -119,15 +163,21 @@ Configure the development server.
 
 [Read more about configuring the development server](/docs/server-api#apiconfigureserverfn)
 
+## css.split
+
+- Type `boolean` *Default: `false`*
+
+Split CSS into multiple chunks. Splitting is disabled by default. Splitting CSS can result in weird behaviors.
+
 ## css.loaderOptions
 
 - Type `Object`
-- Default `{ sass: { indentedSyntax: true }, stylus: { preferPathResolver: 'webpack' } }`
+- Default `{}`
 
 Pass options to CSS-related loaders. For example:
 
 ```js
-{
+module.exports = {
   css: {
     loaderOptions: {
       scss: {

@@ -17,9 +17,13 @@ Examples:
 - `/src/pages/features/Awesome.vue` will be **/features/awesome**
 
 
-## Routing for data source plugins
+Learn more about [Pages](/docs/pages)
 
-Data sources adds routing automatically with settings. These could be different for each plugin so check the plugin documentation how to use route.
+
+
+## Routing for source plugins
+
+**Data source plugins** adds routing automatically with settings. These could be different for each plugin so check the plugin documentation how to use route.
 
 ```js
 module.exports = {
@@ -36,17 +40,9 @@ module.exports = {
 }
 ```
 
-## Route params
-Available route params are `:id`, `:title`, `:slug` and any custom fields from the current `node`. 
-The `node.date` field has a set of shorthand helpers; `:year`, `:month` and `:day`. Access field values in deep objects or arrays by separating properties or indexes with double underscores (`__`). Field values are slugified by default, but the original value will be available as **{fieldname}_raw**.
+> 💡 To create a template for the data source route you'll need to create a **[typeName].vue** file in **src/templates**. This will automatically be the template for this route. Learn more about [Templates] (/docs/templates)
 
-- `:id` resolves to `node.id`
-- `:value` resolves to `node.fields.value`
-- `:value_raw` resolves to `node.fields.value` (Value without slugify)
-- `:object__value` resolves to `node.fields.object.value`
-- `:array__3__id` resolves to `node.fields.array[3].id`
-
-## Routing for custom data sources
+## Routing for custom data
 When you add a custom data source you need to use the `route` option inside `addContentType()` **OR** use `path` option inside `addNode()`. `route` will be used for all posts and `path` will be set per post. It's only possible to use one of them. If both are used `route` will be prioritized.
 
 Learn more about [fetching custom data here](/docs/fetching-data)
@@ -74,3 +70,14 @@ module.exports = function (api) {
 }
 ```
 
+> 💡 To create a template for the data source route you'll need to create a **[typeName].vue** file in **src/templates**. This will automatically be the template for this route. Learn more about [Templates] (/docs/templates)
+
+
+## Route params
+Any custom field from the current `node` will be possible to use as route params. The `node.date` field has a set of shorthand helpers; `:year`, `:month` and `:day`. Access field values in deep objects or arrays by separating properties or indexes with double underscores (`__`). Field values are slugified by default, but the original value will be available as **{fieldname}_raw**.
+
+- `:id` resolves to `node.id`
+- `:value` resolves to `node.value` *(slugified value)*
+- `:value_raw` resolves to `node.value` *(original value)*
+- `:object__value` resolves to `node.object.value`
+- `:array__3__id` resolves to `node.array[3].id`

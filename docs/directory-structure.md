@@ -43,7 +43,7 @@ This file is optional and is used to hook into various parts of the Gridsome ser
 
 Import global styles and scripts here. The file also has an export function that has access to the **Client API**. This file is the place to install Vue plugins, register components and directives, etc.
 
-[Read more about using the Client API in main.js](/docs/client-api#using-the-client-api-in-srcmainjs)
+[Read more about using the Client API in main.js](/docs/client-api)
 
 #### Layouts directory
 

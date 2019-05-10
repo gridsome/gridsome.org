@@ -1,13 +1,13 @@
 - title: Introduction
   items:
-    - title: Prerequisites
-      link: /docs/prerequisites
     - title: Getting started
       link: /docs
     - title: How it works
       link: /docs/how-it-works
-    - title: Starter kits
-      link: /docs/starters
+    - title: Fast by default
+      link: /docs/fast-by-default
+    - title: The JAMstack
+      link: /docs/jamstack
     - title: Deployment
       link: /docs/deployment
 
@@ -17,18 +17,20 @@
       link: /docs/directory-structure
     - title: Project configuration
       link: /docs/config
+    - title: Routing
+      link: /docs/routing
     - title: Pages
       link: /docs/pages
     - title: Templates
       link: /docs/templates
     - title: Layouts
       link: /docs/layouts
-    - title: Routing
-      link: /docs/routing
     - title: Components
       link: /docs/components
     - title: Plugins
       link: /docs/plugins
+    - title: Data
+      link: /docs/data
     - title: Linking
       link: /docs/linking
     - title: Images
@@ -52,14 +54,14 @@
       link: /docs/querying-data
     - title: Filtering data
       link: /docs/filtering-data
+    - title: Client-side data
+      link: /docs/client-side-data
     - title: Taxonomy pages
       link: /docs/taxonomies
     - title: Paginated data
       link: /docs/pagination
     - title: Add global meta data
       link: /docs/site-meta-data
-    - title: Add dynamic data *
-      link: /docs/data-dynamic
 
 - title : Styles and Assets
   items:
@@ -91,6 +93,8 @@
       link: /docs/server-api
     - title: Data store API
       link: /docs/data-store-api
+    - title: Pages API
+      link: /docs/pages-api
     - title: Client API
       link: /docs/client-api
     - title: Transformer API
@@ -122,6 +126,8 @@
 
 - title: Help
   items:
+  - title: Prerequisites
+    link: /docs/prerequisites
   - title: How to upgrade
     link: /docs/how-to-upgrade
   - title: Troubleshooting

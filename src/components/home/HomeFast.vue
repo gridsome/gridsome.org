@@ -1,5 +1,5 @@
 <template>
-  <Section dots="true" sway="true">
+  <Section dots="true" class="post">
     <h2 class="text-center">High performance baked-in ⚡️🚀</h2>
 
     <p class="lead text-center container-md ">
@@ -8,18 +8,22 @@
 
     <div class="grid-cols grid-cols--2 container-md mb">
       <ul class="bullet-list">
-        <li><Bullet /> Insanely fast page loading by default</li>
         <li><Bullet /> Automatic code-splitting</li>
         <li><Bullet /> Automatic critical CSS export</li>
-        <li><Bullet /> Automatic next page prefetching</li>
+        <li><Bullet /> Automatic link prefetching</li>
       </ul>
       <ul class="bullet-list">
-        <li><Bullet /> Progressive image loading</li>
+        <li><Bullet /> Built-in Progressive image support</li>
         <li><Bullet /> Built-in image compression</li>
         <li><Bullet /> Built-in asset minification</li>
-        <li><Bullet /> Offline-ready PWA support</li>
       </ul>
     </div>
+    
+    <p class="home-links text-center">
+      <g-link  to="/docs" class="button primary button--large">
+        Get started
+      </g-link>
+    </p>
   </Section>
 </template>
 

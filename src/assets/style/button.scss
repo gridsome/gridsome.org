@@ -1,11 +1,30 @@
 .button {
 	display: inline-flex;
-  align-items:center;
-	padding: .34rem 1rem;
-  font-weight: bold;
+  z-index: 1;
+  align-items: center;
+	padding: .34rem 1.2rem;
+  font-weight: 500;
   letter-spacing: .5px;
   position: relative;
+  border:0;
+  text-decoration: none;
+  overflow: hidden;
   border-radius: 5px;
+  color: var(--primary-color);
+  transition: transform .2s, background .3s, box-shadow .3s, color .3s;
+
+  > span {
+    z-index: 2;
+  }
+
+  > svg + span {
+    margin-left: .25rem;
+  }
+
+  &:hover {
+    box-shadow: var(--glow);
+    transform: translateY(-1px);
+  }
 
   &:after {
     content: " ";
@@ -16,8 +35,13 @@
     position: absolute;
     border: 1px solid currentColor;
     border-radius: 5px;
-    transition: opacity .3s;
+    transition: opacity .3s, box-shadow .3s;
     opacity: .6;
+    box-shadow: inset -1px -2px 0px 0px rgba(0,0,0,.05);
+  }
+
+  &:active:after {
+    box-shadow: none;
   }
 
   &:hover:after {
@@ -26,16 +50,29 @@
 
   &.primary {
     color:#FFF;
-    background-color: var(--primary-link-color);
-    box-shadow: 1px 1px 10px 0 var(--success-bg);
-
+    background-color: var(--primary-color-dark);
     &:after {
       border-color: rgba(0,0,0,.1);
     }
-    &:hover {
-      color:#FFF;
+
+    &:before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      bottom: 100%;
+      right: 100%;
+      width: 1em;
+      height: 1em;
+      border-radius: 50%;
       background-color: var(--primary-color);
-      box-shadow: 1px 1px 20px 0 var(--success-bg);
+      transform-origin: center;
+      transform: translate(50%, 50%) scale(0);
+      transition: transform .2s ease-in-out;
+    }
+
+    &:focus:before,
+    &:hover:before {
+      transform: translate(50%, 50%) scale(20);
     }
   }
 
@@ -43,13 +80,30 @@
     font-size: .85rem;
     padding: .35rem .7rem;
   }
+  &--xsmall {
+    font-size: .7rem;
+    padding: .3rem .7rem;
+  }
+
+  &--blank {
+    background-color: transparent;
+    border-color: transparent;
+    padding-left:0;
+    padding-right:0;
+    box-shadow: none!important;
+
+    &:not(:hover) {
+      color: rgba(0,0,0,.5);
+    }
+    &:after {
+      display: none;
+    }
+  }
 
   &--large {
     font-size: 1.2rem;
-    padding: .4rem 1.2rem;
+    padding: .5rem 1.5rem;
   }
 
-  + .button {
-    margin-left: var(--space);
-  }
+
 }

@@ -40,22 +40,36 @@ query Posts {
 
 Every content type has a collection and a single entry in the GraphQL schema. You will notice that some of the root fields in your schema are prefixed with `all`. They are the collections for each of your content types and you can use them in your pages to create lists of single entries.
 
-#### Arguments
-
 | Argument | Default | Description |
 |----------|---------|-------------|
 | **sortBy** | `"date"` | Sort by a node field.
 | **order** | `DESC` | Sort order (`DESC` or `ASC`).
-| **perPage** | `25` | How many nodes to get.
+| **sort** | | Sort by multiple node fields.
 | **skip** | `0` | How many nodes to skip.
-| **page** | `1` | Which page to get.
+| **limit** | | How many nodes to get.
+| **page** | | Which page to get.
+| **perPage** | | How many nodes to show per page. Omitted if no `page` argument is provided.
 | **filter** | `{}` | [Read more](/docs/filtering-data).
 
-#### Example query
+#### Find nodes sorted by title
 
 ```graphql
 query Posts {
-  allPost (sortBy: "title", order: DESC, skip: 2) {
+  allPost(sortBy: "title", order: DESC) {
+    edges {
+      node {
+        title
+      }
+    }
+  }
+}
+```
+
+#### Sort a collection by multiple fields
+
+```graphql
+query Posts {
+  allPost(sort: [{ by: "featured" }, { by: "date" }]) {
     edges {
       node {
         title
@@ -74,14 +88,12 @@ The other fields that do not start with `all` are your single entries. They are 
 | Argument | Default | Description |
 |----------|---------|-------------|
 | **id** | `null` | Get node by `id`.
-| **path** | `null` | Get node by `path`.
-| **nullable** | `false` | Will return an error if not nullable.
 
 #### Example query
 
 ```graphql
 query Post {
-  post (id: "1") {
+  post(id: "1") {
     title
   }
 }
@@ -125,13 +137,12 @@ query Blog {
 </page-query>
 ```
 
-
 ## Query data in Templates
 
 Templates are used for page layout for the *single* endpoint of a data source like for example a WordPress blog post. If you have a node type called `WordPressPost`, then you can create a file
 in `src/templates/WordPressPost.vue`.
 
-The `page-query` in templates also has a set of variables that can be used in the query. Available variables are `$id`, `$title`, `$slug`, `$path`, `$date` and any custom fields from the current `node`. Access field values in deep objects or arrays by separating properties or indexes with double underscores (`__`).
+The `page-query` in templates also has a set of variables that can be used in the query. Any custom fields from the current `node` are available as variables. Access field values in deep objects or arrays by separating properties or indexes with double underscores (`__`).
 
 - `$id` resolves to `node.id`
 - `$value` resolves to `node.fields.value`
@@ -153,12 +164,12 @@ The `page-query` in templates also has a set of variables that can be used in th
 </template>
 
 <page-query>
-query Post ($id: String!, $group: String!) {
-  post (id: $id) {
+query Post($id: String!, $group: String!) {
+  post(id: $id) {
     title
     content
   }
-  related: allPost (filter: { group: { eq: $group }}) {
+  related: allPost(filter: { group: { eq: $group }}) {
     edges {
       node {
         id
@@ -173,18 +184,16 @@ query Post ($id: String!, $group: String!) {
 
 ## Query data in Components
 
-Every **Component** can have a `<static-query>` block with a GraphQL query
-to fetch data from data sources. The results will be stored in a
-`$static` property inside the component. A 'static-query' is named static as it can not accept any variables.
+Every **Component** can have a `<static-query>` block with a GraphQL query to fetch data from data sources. The results will be stored in a `$static` property inside the component. A `<static-query>` is named static as it can not accept any variables.
 
 ```html
 <template>
-  <div v-html="$static.example.content" />
+  <div v-html="$static.post.content" />
 </template>
 
 <static-query>
-query Example {
-  example: examplePage (path: "/docs/example") {
+query Post {
+  post(id: "1") {
     content
   }
 }

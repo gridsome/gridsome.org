@@ -1,0 +1,42 @@
+- title: Default starter
+  repo: gridsome/gridsome-starter-default
+  author: gridsome 
+  tags: Default
+  
+- title: Default WordPress starter
+  repo: gridsome/gridsome-starter-wordpress
+  author: gridsome
+  platforms: wordpress
+  tags: Default
+
+- title: Default Contentful starter
+  repo: gridsome/gridsome-starter-contentful
+  author: gridsome
+  tags: markdown, tailwind
+  platforms: contentful
+
+- title: Gridsome Blog Starter
+  description: Official Markdown Blog Starter
+  screenshot: ./screenshots/gridsome-starter-blog.png
+  repo: gridsome/gridsome-starter-blog
+  preview: https://gridsome-starter-blog.netlify.com/
+  author: gridsome
+  tags: Blog, Dark Mode
+  platforms: markdown
+
+- title: Bleda
+  description: Markdown Blog with Tailwind CSS
+  screenshot: ./screenshots/gridsome-starter-bleda.png
+  repo: hellocosmin/gridsome-starter-bleda
+  preview: https://gridsome-starter-bleda.netlify.com/
+  tags: blog, tailwind
+  platforms: markdown
+  author: cossssmin
+
+- title: CosmicJS Blog
+  description: Gridsome + Cosmic JS
+  screenshot: ./screenshots/gridsome-blog-cosmic-js.png
+  repo: cosmicjs/gridsome-blog
+  preview: https://gridsome-blog-cosmicjs.netlify.com/
+  author: cosmicjs
+  platforms: cosmicjs

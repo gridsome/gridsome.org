@@ -1,6 +1,6 @@
 # Filtering data
 
-Each content type collection in the GraphQL schema has a `filter` argument which can be used to filter the results. You can filter by `id`, `title`, `slug`, `path` or any custom field. Each field type supports different operators.
+Each content type collection in the GraphQL schema has a `filter` argument which can be used to filter the results. You can filter by any custom field. Each field type supports different operators.
 
 The syntax for `filter` is based on the [mongodb](https://docs.mongodb.com/manual/reference/operator/query/) query syntax.
 
@@ -17,7 +17,7 @@ The syntax for `filter` is based on the [mongodb](https://docs.mongodb.com/manua
 
 ```graphql
 query {
-  allPost (filter: { id: { in: ["1", "2"] }}) {
+  allPost(filter: { id: { in: ["1", "2"] }}) {
     edges {
       node {
         title
@@ -42,7 +42,7 @@ This example will query nodes where `id` is **1** or **2**.
 
 ```graphql
 query {
-  allPost (filter: { date: { gte: "2017" }}) {
+  allPost(filter: { date: { gte: "2017" }}) {
     edges {
       node {
         title
@@ -65,7 +65,7 @@ This example will query only nodes where `date` is greater than or equal to **20
 
 ```graphql
 query {
-  allPost (filter: { featured: { eq: true }}) {
+  allPost(filter: { featured: { eq: true }}) {
     edges {
       node {
         title
@@ -94,7 +94,7 @@ This example will query only nodes where `featured` is **true**.
 
 ```graphql
 query {
-  allProduct (filter: { price: { between: [49, 99] }}) {
+  allProduct(filter: { price: { between: [49, 99] }}) {
     edges {
       node {
         title
@@ -118,7 +118,7 @@ This example will query only nodes with `price` value between **49** and **99**.
 
 ```graphql
 query {
-  allPost (filter: { keywords: { contains: ["gridsome"] }}) {
+  allPost(filter: { keywords: { contains: ["gridsome"] }}) {
     edges {
       node {
         title
@@ -128,4 +128,5 @@ query {
   }
 }
 ```
+
 This example will query only nodes which has the **gridsome** `keyword`.

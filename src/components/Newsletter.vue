@@ -1,6 +1,6 @@
 <template>
 	<div class="newsletter" id="mc_embed_signup">
-		<p>Want to keep up with the latest news, tips & tricks from Gridsome? <br/>Subscribe to the newsletter!</p>
+		<p class="lead mb">Want to keep up with the latest news, tips & tricks from Gridsome? Subscribe to the newsletter!</p>
 		<form action="https://gridsome.us19.list-manage.com/subscribe/post?u=960a357f3405a688ff935a10e&amp;id=42bbd30818" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletter__form validate" target="_blank" novalidate>
 		<div id="mc_embed_signup_scroll" class="flex">
 			
@@ -9,7 +9,9 @@
 			</div>
 
 			<div class="newsletter__button">
-				<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+				<button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button primary">
+					Subscribe
+				</button>
 			</div>
 
 			<div id="mce-responses" class="clear">
@@ -26,10 +28,8 @@
 
 <style lang="scss">
 .newsletter {
-	border: 3px dashed var(--primary-bg);
-  border-radius: 10px;
   width: 100%;
-  padding: var(--space) var(--space);
+  
   &__form {
   	margin-bottom:0;
   }

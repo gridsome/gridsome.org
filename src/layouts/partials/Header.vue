@@ -1,13 +1,12 @@
 <template>
   <header>
+    <div class="header-bar"></div>
     <div class="header-inner container flex gap-30">
       <Logo/>
-
       <Nav class="flex-fit"/>
+      <SearchForm />
 
       <nav class="header-actions flex">
-        <SearchForm class="hide-for-small"/>
-
         <a
           aria-label="Twitter"
           href="//twitter.com/gridsome"
@@ -28,22 +27,38 @@
           <discord-logo/>
         </a>
         
-        <a
-          aria-label="github"
-          href="//github.com/gridsome/gridsome"
-          rel="noopener noreferrer"
-          target="_blank"
-          title="Gridsome @ GitHub"
-        >
-          <github-logo
-            height="20px"
-            width="20px"
-          />
-          <span
-            class="hide-for-small"
-            style="margin-left:5px;"
-          >v{{ $static.metaData.gridsomeVersion }}</span>
-        </a>
+        <div class="has-dropdown">
+          <a
+            aria-label="github"
+            href="//github.com/gridsome/gridsome"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Gridsome @ GitHub"
+          >
+            <github-logo
+              height="20px"
+              width="20px"
+            />
+            <span
+              class="hide-for-small"
+              style="margin-left:5px;"
+            >v{{ $static.metaData.gridsomeVersion }}</span>
+          </a>
+          <div class="dropdown">
+            <a href="//github.com/gridsome/gridsome/blob/master/gridsome/CHANGELOG.md" rel="noopener noreferrer" target="_blank">
+              Changelog
+            </a>
+            <a href="//github.com/gridsome/gridsome" rel="noopener noreferrer" target="_blank">
+              Core repository
+            </a>
+            <a href="//github.com/gridsome/gridsome.org" rel="noopener noreferrer" target="_blank">
+              Website repository
+            </a>
+            <a href="//github.com/gridsome/gridsome/issues" rel="noopener noreferrer" target="_blank">
+              GitHub Issues
+            </a>    
+          </div>
+        </div>
       </nav>
     </div>
   </header>
@@ -82,26 +97,26 @@ header {
   z-index: 20;
   position: relative;
   top: 0;
-  background: var(--secondary-bg);
-  color: #fff;
-  border-bottom: 1px solid transparent;
+  background-color: var(--light-bg-transparent);
+  border-bottom: 1px solid var(--border-color);
   flex-wrap: nowrap;
   position: sticky;
 
-  .header-inner {
-    min-height: var(--header-height);
-  }
-}
+  .header-bar {
+    background-color: var(--primary-color);
+    padding: 2px;
+    text-align: center;
+    color:#FFF;
+    font-size: 1rem;
 
-@media screen and (max-width: 750px) {
-  header {
-    .logo {
-      margin-right: 0;
+    a {
+      color: currentColor;
     }
   }
-  .header-actions {
-    margin-left: auto !important;
-    font-size: 0.9rem;
+
+  .header-inner {
+    padding: 0 var(--space);
+    min-height: var(--header-height);
   }
 }
 </style>

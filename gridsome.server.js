@@ -24,14 +24,13 @@ module.exports = function (api) {
       })
       .addNode({ id: '1' })
 
-
-    // authors
-    const authorsPath = path.join(__dirname, 'blog/authors/authors.yaml')
+    // contributors
+    const authorsPath = path.join(__dirname, 'contributors/contributors.yaml')
     const authorsRaw = await fs.readFile(authorsPath, 'utf8')
     const authorsJson = yaml.safeLoad(authorsRaw)
     const authors = store.addContentType({
-      typeName: 'Author',
-      route: '/author/:id'
+      typeName: 'Contributor',
+      route: '/contributor/:id'
     })
 
     authorsJson.forEach(({ id, name: title, ...fields }) => {
@@ -43,7 +42,53 @@ module.exports = function (api) {
           origin: authorsPath
         }
       })
-    })   
+    })
+
+    // Starters
+    const startersPath = path.join(__dirname, 'starters/starters.yaml')
+    const startersRaw = await fs.readFile(startersPath, 'utf8')
+    const startersJson = yaml.safeLoad(startersRaw)
+    const starters = store.addContentType({
+      typeName: 'Starter',
+      route: '/starters/:title'
+    })
+
+    // Connect author field to Contributors & Platforms
+    starters.addReference('author','Contributor')
+    starters.addReference('platforms','Platform')
+
+    startersJson.forEach(({ id, name: title, ...fields }) => {
+      starters.addNode({
+        id,
+        title,
+        fields,
+        internal: {
+          origin: startersPath
+        }
+      })
+    })
+
+    // Platforms
+    const platformsPath = path.join(__dirname, 'platforms/platforms.yaml')
+    const platformsRaw = await fs.readFile(platformsPath, 'utf8')
+    const platformsJson = yaml.safeLoad(platformsRaw)
+    const platforms = store.addContentType({
+      typeName: 'Platform',
+      route: '/starters/platform/:id'
+    })
+
+    // Connect author field to Contributors
+    platformsJson.forEach(({ id, name: title, ...fields }) => {
+      platforms.addNode({
+        id,
+        title,
+        fields,
+        internal: {
+          origin: platformsPath
+        }
+      })
+    }) 
+
   })
 
   api.afterBuild(async ({ config }) => {

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    <main>
+    <main id="main" :class="mainClass">
       <slot />
     </main>
     <Footer v-if="footer !== false" />
@@ -13,15 +13,22 @@ import Header from './partials/Header'
 import Footer from './partials/Footer'
 
 export default {
-  props: ['footer'],
+  props: ['footer', 'primary-bg'],
   components: {
     Header,
     Footer
+  },
+  computed: {
+    mainClass() {
+      let classes = []
+      if(this.primaryBg) classes.push('main--primary-bg')
+      return classes
+    },
   }
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
   display: flex;
   flex-direction: column;
@@ -30,5 +37,16 @@ export default {
 
 #app main {
   flex: 1;
+  &:after {
+    content: "";
+    width: 100%;
+    height: 66.66%;
+    bottom:0;
+    position: fixed;
+    background: linear-gradient(#FFF, var(--primary-bg));
+  }
+}
+.main--primary-bg {
+  background-color: var(--primary-bg);
 }
 </style>

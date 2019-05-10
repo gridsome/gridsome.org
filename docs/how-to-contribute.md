@@ -39,12 +39,18 @@ Creating guest blog posts for Gridsome.org users is a great way to contribute to
 
 To add a new blog post to the gridsome.org blog:
 
+**Prepare repository:**
+
 - Clone [the Gridsome.org repo](https://github.com/gridsome/gridsome.org).
 - Run `yarn` to install all of the website's dependencies.
 - Run `gridsome develop` to preview the blog at `http://localhost:8000/blog`.
-- The content for the blog lives in the `/blog` folder. Make additions or modifications here.
-- Add your avatar image to `/blog/authors`.
-- Add your name and info to `/blog/authors/authors.yaml`.
+- The content for the blog lives in the `/blog` folder.
+
+**Create contributor profile:**
+- Add your avatar image to `/contributors/images`.
+- Add your name and info to `/contributors/contributors.yaml`.
+
+**Setup blog post:**
 - Add a new folder following the pattern `/blog/yyyy-mm-dd-title` (for example, 2018-09-14-say-hello-to-gridsome). Within this newly created folder add an `index.md` file.
 - Add `title`, `date`, `author`, and `tags` to the frontmatter of your `index.md`. If you are cross posting your post you can add `canonicalLink` for SEO benefits.
 - If your blog post contains images add them to your blog post folder and reference them in your post's `index.md`.
@@ -54,13 +60,26 @@ To add a new blog post to the gridsome.org blog:
   - We recommend using a prefix of `docs`, like `docs/your-change`.
 
 
-## Submit a Starter *
+## Submit a Starter
 
-*Comming soon...*
+- Clone [the Gridsome.org repo](https://github.com/gridsome/gridsome.org).
+- Run `yarn` to install all of the website's dependencies.
 
-## Submit to Learn *
+**Create contributor profile:**
+- Add your avatar image to `/contributors/images`.
+- Add your name and info to `/contributors/contributors.yaml`.
 
-*Comming soon...*
+**Add starter:**
+- Add starter screenshot to `/starters/screnshots` (840x840px / 1680x1680 for retina).
+- Add starter details to end of this file `/starters/starters.yaml`.
+
+Gridsome Starers uses the Github project README file for content.
+
+- Run `gridsome develop` to preview starter at `http://localhost:8000/starters`.
+- Commit and push to your fork
+- Create a pull request from your branch
+  - We recommend using a prefix of `starter`, like `starter/your-starter-id`.
+
 
 ## Submit to Showcase *
-*Comming soon...*
+*Coming soon...*

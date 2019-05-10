@@ -2,16 +2,20 @@
   <Layout>
     <Section class="post" container="md" dots="true" >
 
-      <div class="post-header container-sm text-center mb">
+      <div class="post-header container-md text-center mb-x2">
         <h1 v-html="$page.post.title"/>
         <PostMeta :post="$page.post"/>
       </div>
 
-      <g-image v-if="$page.post.poster" quality="1" width="600" :src="$page.post.poster" />
+      <div class="post-content">
 
-      <p class="lead" v-html="$page.post.excerpt"/>
+        <g-image v-if="$page.post.poster" quality="1" width="600" :src="$page.post.poster" />
 
-      <div v-html="$page.post.content"/>
+        <p class="lead" v-html="$page.post.excerpt"/>
+
+        <div v-html="$page.post.content"/>
+
+      </div>
     </Section>
   </Layout>
 </template>
@@ -54,12 +58,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-@media screen and (min-width: 750px) {
-  p > img {
-    max-width: 120%;
-    margin-left: -10%;
-  }
-}
-</style>

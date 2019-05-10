@@ -4,7 +4,7 @@ Pages are used for **normal pages** and for **listing & paginate GraphQL collect
 
 - If url will be `/about` use a **page**
 - If url will be `/blog` use a **page**
-- If url will be `/blog/:slug` use a **[Template](/docs/templates)**
+- If url will be `/blog/:slug` use a **[template](/docs/templates)**
 
 ## Creating pages
 
@@ -33,6 +33,7 @@ A simple `Page.vue` file might look like this:
 
 <script>
 import Layout from '~/layouts/Default.vue'
+
 export default {
   components: {
     Layout
@@ -69,7 +70,22 @@ query Posts {
 
 [Learn more about query data](/docs/querying-data)
 
+### Creating pages programmatically
 
+Pages can also be created programmatically by using the `createPages` hook in `gridsome.server.js`.
+
+```js
+module.exports = function (api) {
+  api.createPages(({ createPage }) => {
+    createPage({
+      path: '/my-page',
+      component: './src/templates/MyPage.vue'
+    })
+  })
+}
+```
+
+[Read more about the Pages API](/docs/pages-api)
 
 ## Page layouts
 

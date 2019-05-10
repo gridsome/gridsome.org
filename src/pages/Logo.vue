@@ -17,14 +17,30 @@
       	</a>
    	  </div>
 
-   	  <div class="logo-container logo-container--dark">
+   	  <div class="logo-container logo-container--secondary">
       	<a href="/logos/logo-dark.svg" target="_blank">
       		<img src="/logos/logo-dark.svg" />
       	</a>
    	  </div>
 
+      <h2>Only Symbol</h2>
+      <div class="grid-cols grid-cols--2 mb">
+       <div class="logo-container">
+        <a href="/logos/only-logo.svg" target="_blank">
+          <img src="/logos/only-logo.svg" />
+        </a>
+      </div>
+      <div class="logo-container logo-container--secondary">
+        <a href="/logos/only-logo-light.svg" target="_blank">
+          <img src="/logos/only-logo-light.svg" />
+        </a>
+      </div>
+     </div>
+
+      <h2>Symbol with circle background</h2>
+
    	 <div class="grid-cols mb">
-  	  <div class="logo-container">
+  	   <div class="logo-container">
       	<a href="/logos/logo-circle-normal.svg" target="_blank">
       		<img src="/logos/logo-circle-normal.svg" />
       	</a>
@@ -47,36 +63,19 @@
    	 <div class="colors mb">
 
    	 	<div class="colors__primary">
-   	 		<span>#5ED3A2</span>
-   	 	</div>
-
-   	 	<div class="colors__primary_dark">
-   	 		<span>#3BBA95</span>
+   	 		<span>#00A672</span>
    	 	</div>
 
    	 	<div class="colors__secondary">
-   	 		<span>#0D2538</span>
+   	 		<span>#00855c</span>
    	 	</div>
+
+      <div class="colors__dark">
+        <span>#0d2538</span>
+      </div>
 
    	 </div>
 
-	 	 <h2>Graphics</h2>
-	 	 <p>Feel free to change and use these graphics anywhere</p>
-		 <a href="/assets/data-sources.png" target="_blank">
-	     <img src="/assets/data-sources.png" />
-	    </a>
-
-      <a href="/assets/logo-poster.png" target="_blank">
-        <img src="/assets/logo-poster.png" />
-      </a>
-
-      <a href="/assets/logo-poster-light.png" target="_blank">
-        <img src="/assets/logo-poster-light.png" />
-      </a>
-
-      <a href="/assets/how-it-works.gif" target="_blank">
-        <img src="/assets/how-it-works.gif" />
-      </a>
     </Section>
   </Layout>
 </template>
@@ -84,11 +83,18 @@
 <style lang="scss">
 .logo-container {
 	text-align: center;
-	background-color: var(--primary-bg);
 	margin-bottom: var(--space);
+
+
+
 	&--dark {
-		background-color: var(--secondary-bg);
+		background-color: var(--dark-bg);
 	}
+
+  &--secondary {
+    background-color: var(--primary-color-dark);
+  }
+
 	a {
 		display: block;
 		padding: 10%;
@@ -101,26 +107,30 @@
 }
 
 .colors {
+  text-align: center;
 	div {
 		padding: 15% 5% 5px;
 		display: inline-block;
-		margin-right: 1rem;
+		margin: 0 .5rem;
 		text-align: center;
 		color:#FFF;
+    outline: 1px solid rgba(0,0,0,.1);
 	}
+
 
 	&__primary {
 		background-color: var(--primary-color);
 	}
 
-	&__primary_dark {
-		background-color: var(--primary-link-color);
-	}
-
-
 	&__secondary {
-		background-color: var(--secondary-bg);
+		background-color: var(--primary-color-dark);
 	}
+
+  &__dark {
+    background-color: var(--dark-bg);
+  }
+
+
 }
 
 </style>

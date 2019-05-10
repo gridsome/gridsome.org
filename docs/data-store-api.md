@@ -14,19 +14,15 @@ module.exports = function (api) {
 
 ## Add a content type collection
 
-### `store.addContentType(options)`
+### store.addContentType(options)
+
+- options `object | string` *Options or just a GraphQL schema type name.*
+  - typeName `string` *Required GraphQL schema type and template name.*
+  - route `string` *Optional dynamic route.* [Read more about Routing](/docs/routing)
 
 Add a new content type to store.
 
 A Vue component in the `src/templates` folder with a filename matching the `typeName` option will be used as a template for all nodes with this type. [Read more about templates](/docs/templates).
-
-##### Arguments
-
-- options `object | string` *Options or just the GraphQL schema type name.*
-  - typeName `string` *Required GraphQL schema type and template name.*
-  - route `string` *Optional dynamic route.* [Read more about Routing](/docs/routing)
-
-##### Usage
 
 ```js
 api.loadSource(store => {
@@ -37,61 +33,43 @@ api.loadSource(store => {
 })
 ```
 
-### `store.getContentType(typeName)`
-
-Get a content type previously created.
-
-##### Arguments
+### store.getContentType(typeName)
 
 - typeName `string` *The GraphQL schema type name.*
 
+Get a content type previously created.
+
 ## Add nodes to collections
 
-### `collection.addNode(options)`
-
-##### Arguments
+### collection.addNode(options)
 
 - options `Object` *Required.*
-  - title `string` *Required.*
   - id `string` *A unique id for this content type.*
-  - slug `string` *Custom slug. Fallbacks to a slugified `title`.*
-  - path `string` *Optional path to use when not having a dynamic route.*
-  - date `string` *The date. Fallbacks to current date.*
-  - content `string` *Optional content.*
-  - excerpt `string` *Optional excerpt.*
-  - fields `object` *Custom fields.*
-
-##### Usage
+  - ...fields `object` *Custom fields.*
 
 ```js
 api.loadSource(store => {
   const posts = store.addContentType({
     typeName: 'BlogPost',
-    route: '/blog/:year/:slug'
+    route: '/blog/:year/:title'
   })
 
   posts.addNode({
     title: 'My first blog post',
     date: '2018-11-02',
-    fields: {
-      myField: 'My value'
-    }
+    customField: 'My value'
   })
 })
 ```
 
 ## Referencing other nodes
 
-### `store.createReference(typeName, id)`
-
-A helper function for creating references to other nodes.
-
-##### Arguments
+### store.createReference(typeName, id)
 
 - typeName `string | object` *The node typeName to reference or the node instance.*
 - id `string | array` *The node id to reference (or ids if multiple nodes).*
 
-##### Usage
+A helper function for creating references to other nodes.
 
 This example creates two content types: `Author` and `Post`. The `author1` and `author2` fields on `Post` will both have a reference to the same author.
 
@@ -107,36 +85,36 @@ api.loadSource(store => {
 
   posts.addNode({
     title: 'The post',
-    fields: {
-      author1: store.createReference('Author', '1')
-      author2: store.createReference(author)
-    }
+    author1: store.createReference('Author', '1'),
+    author2: store.createReference(author)
   })
 })
 ```
 
-The field will contain the referred node fields:
+The field will contain the referenced node fields in the GraphQL schema:
 
 ```graphql
-query BlogPost ($id: String!) {
-  blogPost (id: $id) {
+query BlogPost($id: String!) {
+  blogPost(id: $id) {
     title
-    author1 { title }
-    author2 { title }
+    author1 {
+      id
+      title
+    }
+    author2 {
+      id
+      title
+    }
   }
 }
 ```
 
-### `collection.addReference(fieldName, typeName)`
-
-Make a root field for all nodes in collection referencing to another node.
-
-##### Arguments
+### collection.addReference(fieldName, typeName)
 
 - fieldName `string` *The field name.*
 - typeName `string` *GraphQL schema type to reference.*
 
-##### Usage
+Make a root field for all nodes in collection referencing to another node.
 
 ```js
 api.loadSource(store => {
@@ -146,25 +124,19 @@ api.loadSource(store => {
 
   posts.addNode({
     title: 'The post',
-    fields: {
-      author: '1' // Will reference to an author with id '1'
-    }
+    author: '1' // Will become a reference to an author with id '1'
   })
 })
 ```
 
 ## Custom GraphQL fields
 
-### `collection.addSchemaField(fieldName, fn)`
-
-Extend the GraphQL schema with a custom field for a node type.
-
-##### Arguments
+### collection.addSchemaField(fieldName, fn)
 
 - fieldName `string` *The field name to create on node.*
 - fn `Function` *A function which returns an object with a GraphQL field and resolver.*
 
-##### Usage
+Extend the GraphQL schema with a custom field for a node type.
 
 ```js
 api.loadSource(store => {
@@ -178,20 +150,18 @@ api.loadSource(store => {
     resolve (node, args) {
       const value = node.fields.myField
 
-      if (args.upperCase) {
-        return value.toUpperCase()
-      }
-
-      return value
+      return args.upperCase
+        ? value.toUpperCase()
+        : value
     }
   }))
 })
 ```
 
 ```graphql
-query Post ($id: String!) {
-  blogPost (id: $id) {
-    myField (upperCase: true)
+query Post($id: String!) {
+  blogPost(id: $id) {
+    myField(upperCase: true)
   }
 }
 ```
@@ -212,9 +182,7 @@ api.loadSource(store => {
 
   contentType.addNode({
     title: 'Lorem ipsum dolor sit amet.',
-    fields: {
-      customField: '...'
-    }
+    customField: '...'
   })
 })
 ```
@@ -246,14 +214,15 @@ module.exports = function (api) {
     const { data } = await axios.get('https://api.example.com/posts')
 
     const contentType = store.addContentType({
-      typeName: 'BlogPosts'
-      route: '/blog/:year/:slug' // optional
+      typeName: 'BlogPosts',
+      route: '/blog/:year/:slug'
     })
 
     for (const item of data) {
       contentType.addNode({
         id: item.id,
         title: item.title,
+        slug: item.slug,
         date: item.date,
         content: item.content
       })

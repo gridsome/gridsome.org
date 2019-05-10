@@ -1,6 +1,7 @@
 .container {
-  max-width: 1280px;
+  max-width: 1300px;
   width: 100%;
+  position: relative;
 
   &,
   &-md,
@@ -13,7 +14,7 @@
     width: 100%;
   }
 
-  &-md { max-width: 720px }
+  &-md { max-width: 760px }
   &-sm { max-width: 630px }
   &-mini { max-width: 460px }
 
@@ -27,19 +28,21 @@
     padding: var(--space-x2);
     background-color: #FFF;
   }
-
-  // nested
-  .container {
-    padding-left:0;
-    padding-right:0;
-  }
 }
+
+@media screen and (max-width: 850px) {
+  .container .container {
+      padding-left:0;
+      padding-right:0;
+    }
+}
+
 
 .container-main {
   flex-direction: column;
   flex-wrap: nowrap;
 
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 850px) {
     flex-direction: row;
   }
 }

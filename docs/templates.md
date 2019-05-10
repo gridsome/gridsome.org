@@ -12,7 +12,7 @@ The example shows a **Blog.vue** in **/pages** where Blog posts will be listed a
 ## Creating templates
 
 Templates must have a `<page-query>` block which fetches the source node
-for the current page. You can use the `$path` variable to get the node.
+for the current page. You can use the `$id` variable to get the node.
 
 ```html
 <!-- src/templates/WordPressPost.vue -->
@@ -24,8 +24,8 @@ for the current page. You can use the `$path` variable to get the node.
 </template>
 
 <page-query>
-query Post ($path: String!) {
-  post: wordPressPost (path: $path) {
+query Post ($id: String!) {
+  post: wordPressPost (id: $id) {
     title
     content
   }
@@ -34,6 +34,7 @@ query Post ($path: String!) {
 
 <script>
 import Layout from '~/layouts/Default.vue'
+
 export default {
   components: {
     Layout

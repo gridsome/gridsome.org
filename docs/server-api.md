@@ -38,8 +38,6 @@ module.exports = MyPlugin
 
 Load data from local files or external APIs and create content types and nodes of it. The data will then be available in your GraphQL queries.
 
-Usage:
-
 ```js
 module.exports = function (api) {
   api.loadSource(store => {
@@ -48,13 +46,57 @@ module.exports = function (api) {
 }
 ```
 
-[Read more about the Data Store API](/docs/data-store-api)
+## api.createPages(fn)
+
+Create pages programmatically from nodes or other data. The handler for this hook will be re-executed when nodes are changed in store. Pages that are not re-created will be garbage collected.
+
+```js
+module.exports = function (api) {
+  api.createPages(pages => {
+    // Create pages
+  })
+}
+```
+
+[Read more about the Pages API](/docs/pages-api)
+
+## api.createManagedPages(fn)
+
+Create, update and remove pages programmatically from nodes or other data. Unlike `createPages`, this hook will only run once and pages will not be garbage collected.
+
+```js
+module.exports = function (api) {
+  api.createManagedPages(pages => {
+    // Create, update or remove pages
+  })
+}
+```
+
+[Read more about the Pages API](/docs/pages-api#create-managed-pages)
+
+## api.configureWebpack(fn)
+
+Configure the internal webpack config. 
+
+The object will be merged with the internal config if it is an object. 
+
+```js
+api.configureWebpack({
+  // add config here
+})
+```
+
+If the option is a function, it will get the internal config as its first argument. You can either modify the argument or return a new config object that will override the internal webpack config.
+
+```js
+api.configureWebpack(config => {
+  return merge({ /* custom config */ }, config)
+})
+```
 
 ## api.chainWebpack(fn)
 
 A function that will receive an instance of ChainableConfig powered by [webpack-chain](https://github.com/neutrinojs/webpack-chain).
-
-#### Usage
 
 ```js
 api.chainWebpack(config => {
@@ -65,8 +107,6 @@ api.chainWebpack(config => {
 ## api.configureServer(fn)
 
 Gridsome runs an [Express](http://expressjs.com) server during development. Use this hook to add custom endpoints or configure the server.
-
-#### Usage
 
 ```js
 api.configureServer(app => {
@@ -82,30 +122,24 @@ Read more about the [Express Application API](https://expressjs.com/en/api.html#
 
 Create a custom GraphQL schema which will be merged with the Gridsome schema.
 
-#### Usage
-
 ```js
-api.createSchema(graphql => {
-  return new graphql.GraphQLSchema({
+api.createSchema(({ addSchema, graphql }) => {
+  addSchema(new graphql.GraphQLSchema({
     query: new graphql.GraphQLObjectType({
       name: 'CustomRootQuery',
       fields: {
         // ...
       }
-    })
+    }))
   })
 })
 ```
 
 ## api.setClientOptions(options)
 
-Set custom options for the client. Will use options from the plugin entry if not used.
-
-#### Arguments
-
 - options `any` Any value which can be serialized by `JSON.stringify`.
 
-#### Usage
+Set custom options for the client. Will use options from the plugin entry if not used.
 
 ```js
 module.exports = function (api, options) {
@@ -114,7 +148,6 @@ module.exports = function (api, options) {
   })
 }
 ```
-
 
 ## api.beforeBuild(fn)
 

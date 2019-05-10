@@ -7,22 +7,18 @@ Fetch content from local files or external APIs and store the data in a local da
 ## Use data source plugins
 Gridsome data source plugins are added in `gridsome.config.js`. You can find available data source plugins in the [Plugins directory](/plugins).
 
-
 Here is an example of the [file-system](/plugins/@gridsome/source-filesystem) source added to config:
+
 ```js
 module.exports = {
   plugins: [
     {
       use: '@gridsome/source-filesystem',
       options: {
-        index: ['README'],
         path: 'docs/**/*.md',
-        typeName: 'DocPage',
+        typeName: 'DocPage'
       }
-    },
-    {
-      // another data source
-    },
+    }
   ]
 }
 ```
@@ -31,12 +27,9 @@ module.exports = {
 
 Every data source has different options, so take a look at their documentation to learn more.
 
-
 ## Add data from APIs
 
 Gridsome adds data to the GraphQL data layer with the **Data store API** and the `api.loadSource` function. To use the API you need a `gridsome.server.js` file in the root folder of your Gridsome project.
-
-
 
 Learn more about the [Data store API here](/docs/data-store-api)
 

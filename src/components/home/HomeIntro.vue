@@ -1,7 +1,8 @@
 <template>
   <Section class="home-intro" dots="true" dark="true">
     <div class="home-cols grid-cols grid-cols--2 grid-cols--gap-small">
-      <div class="home-cols__left">    
+      <div class="home-cols__left">
+
         <h1 class="home-title"> 
             Build <br class="show-for-small" />
             <VueTyper :text="words" :type-delay="30" initial-action="erasing" caret-animation="smooth" />
@@ -13,9 +14,6 @@
           <g-link  to="/docs" class="button primary button--large">
             Get started
           </g-link>
-          <!-- <g-link  to="/learn" class="button">
-            Tutorial
-          </g-link> -->
         </p>
 
         <p class="home-info">
@@ -131,10 +129,6 @@ export default {
   }
 }
 
-.home-info {
-  font-size: .85rem;
-  opacity: .6;
-}
 
 .home-anim {
   position: relative;

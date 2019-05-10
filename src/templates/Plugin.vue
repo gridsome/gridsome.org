@@ -1,6 +1,7 @@
 <template>
   <Layout :footer="false">
-    <div class="plugins container container-main flex gap-60 flex-align-top">
+    <div class="plugins container flex flex-align-top" style="position: relative;">
+      
       <AisInstantSearchSsr class="sidebar plugins__sidebar">
         <AisConfigure
           :hitsPerPage="hitsPerPage"
@@ -64,11 +65,11 @@
 
         </template>
         <template v-else>
-          <div class="plugins-intro post">
-            <g-image class="plugins-intro__image" blur="10" src="~/assets/images/plugins.png" />
+          <div class="plugins-intro container-sm post">
+            <Connect />
             <div class="plugins-intro__text">
               <h1>Gridsome Plugins</h1>
-              <p class="lead">Gridsome plugins are NPM packages that you can install to any project. This is hitly a small, but growing library. <span class="hide-for-small">Use the search bar to the left to find a plugin.</span></p>
+              <p class="lead">Gridsome plugins are NPM packages that you can install to any project. This is currently a small, but growing library. <span class="hide-for-small">Use the search bar to the left to find a plugin.</span></p>
 
               <p>Want to contribute to plugins library? <g-link to="/docs/how-to-create-a-plugin">Learn how to build a plugin</g-link></p>
             </div>
@@ -80,11 +81,12 @@
 </template>
 
 <script>
-import marked from 'marked'
+import markdown from '../utils/markdown'
 import algoliasearch from 'algoliasearch/lite'
 import GitLabLogo from '~/assets/images/gitlab.svg'
 import GitHubLogo from '~/assets/images/github-logo.svg'
 import BitbucketLogo from '~/assets/images/bitbucket.svg'
+import Connect from '~/components/Connect.vue'
 
 import {
   createInstantSearch,
@@ -109,6 +111,7 @@ const { instantsearch, rootMixin } = createInstantSearch({
 
 export default {
   components: {
+    Connect,
     AisPoweredBy,
     AisSearchBox,
     AisConfigure,
@@ -159,7 +162,7 @@ export default {
     },
 
     content () {
-      return this.hit.readme ? marked(this.hit.readme) : ''
+      return this.hit.readme ? markdown(this.hit.readme) : ''
     }
   },
 

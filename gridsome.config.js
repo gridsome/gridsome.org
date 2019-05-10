@@ -4,7 +4,7 @@ module.exports = {
   siteName: 'Gridsome',
   siteUrl: `https://www.gridsome.org`,
   titleTemplate: '%s - Gridsome',
-  siteDescription: 'Gridsome is a Vue-powered static site generator for building CDN-ready websites and apps for any headless CMS, local files or APIs',
+  siteDescription: 'Gridsome is a Vue.js-powered modern website generator that makes it easy and fun for developers to create beautiful JAMstack websites & PWAs that are fast by default.',
   
   chainWebpack(config, { isServer }) {
     config.module.rules.delete('svg')
@@ -66,25 +66,6 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        index: ['README'],
-        path: 'learn/**/*.md',
-        typeName: 'LearnPage',
-        remark: {
-          autolinkHeadings: {
-            content: {
-              type: 'text',
-              value: '#'
-            }
-          },
-          plugins: [
-            '@gridsome/remark-prismjs'
-          ]
-        }
-      }
-    },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
         path: 'examples/*.md',
         typeName: 'Example',
         remark: {
@@ -101,7 +82,7 @@ module.exports = {
         path: './blog/*/index.md',
         route: '/blog/:year/:month/:day/:slug',
         refs: {
-          author: 'Author'
+          author: 'Contributor'
         },
         remark: {
           plugins: [
@@ -109,6 +90,39 @@ module.exports = {
           ]
         }
       }
+    }
+  ],
+  // Create routes from GraphQL nodes
+  nodeRoutes: {
+     WordPressPost: '/:year/:month/:slug',
+     WordPressTag: '/tag/:slug',
+     CustomType: {
+       route: '/other/:custom/:type',
+       component: './src/templates/MyTemplate.vue', // default templates/typeName.vue
+       nextFieldName: 'nextPost',
+       prevFieldName: 'prevPost',
+       sortBy: 'date'
+     },
+     Author: [
+       {
+         route: '/author/:name',
+         component: './src/templates/Author.vue'
+       },
+       {
+         route: '/author/:name/starters',
+         component: './src/templates/AuthorStarters.vue'
+       }
+     ]
+  },
+  // Create dynamic routes
+  clientRoutes: [
+    { 
+      path: '/foo/',
+      component: './src/templates/MyTemplate.vue',
+    },
+    { 
+      path: '/bar/:id', 
+      component: './src/templates/MyTemplate.vue',
     }
   ]
 }

@@ -1,20 +1,18 @@
 a {
-  color: rgba(0,0,0,1);
-  text-decoration: none;
-  transition: color .3s, opacity .3s, background .3s;
-  display: inline-block;
+  transition: color .3s, opacity .3s, background .3s, text-decoration .5s;
   position: relative;
-  font-weight: 500;
-  border-radius: 99px;
+  text-decoration: underline;
+  color: var(--primary-color-dark);
+  text-decoration-color: var(--border-color);
 
-  .post &:not(.button) {
-    background: linear-gradient(180deg, transparent 60%, var(--success-bg)  60%, var(--success-bg)  87%, transparent 0,);
+  &:hover {
+    color: #000;
+    text-decoration-color: #000;
   }
-
-  .post &:not(.button):hover {
-    background: linear-gradient(180deg, transparent 0%, var(--success-bg)  60%, var(--success-bg)  87%, transparent 0,);
+  
+  svg + & {
+    margin-left: .5rem;
   }
-
 }
 
 a:hover:not(.active) {
