@@ -1,7 +1,7 @@
 <template>
   <Section class="post">
   	<h2 class="text-center mb-x2">Gridsome Sponsors</h2>
-    <div class="grid-cols container-md grid-cols--2">
+    <div class="grid-cols container container-md grid-cols--2">
     	<Card class="sponsor text-center">
 	      <g-image src="~/assets/images/logo-netlify.svg" alt="Netlify"/>
 	      <p>Thanks to <a href="https://netlify.com"  rel="noopener" target="_blank">Netlify</a></g-link> for sponsoring Gridsome hosting infrastructure.</p>
