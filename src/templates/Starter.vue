@@ -184,7 +184,7 @@ query Starters ($id: String!) {
 .starter {
   &__header {
     padding: 20px 10px 15px;
-    background-color: var(--primary-bg-transparent);
+    background-color: var(--light-bg-transparent);
     margin-top: -30px;
     margin-left: -10px;
     margin-right: -10px;

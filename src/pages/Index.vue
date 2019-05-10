@@ -35,7 +35,7 @@ export default {
 
 <style>
 .layout-homepage header{
-  
+  border-color: transparent;  
 }
 </style>
 
