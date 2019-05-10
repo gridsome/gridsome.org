@@ -46,3 +46,31 @@ Read more about the [$fetch() method](/docs/client-api#fetchpath).
 ## Fetch from GraphQL API
 
 ....Contributions are welcome!
+
+## Fetch from local YAML files
+
+Here is a simple example on how you can use YAML files within .vue templates:
+1. Create a YAML file in `/src/data` folder. Let it be `products.yaml`
+2. Add `import products from @/data/products.yaml` before `export default` function.
+3. Add the data from the YAML file to the data layer by creating a new object `products` and defining it with the just imported `products`.
+
+The code will look like this:
+```html
+<template>
+  <ul v-for="product in products">
+    <li v-html="product.title"/>
+  </ul>
+</template>
+
+<script>
+import products from '@/data/products.yaml'
+
+export default {
+  data() {
+    return {
+      products: products
+    }
+  }
+}
+</script>
+```
