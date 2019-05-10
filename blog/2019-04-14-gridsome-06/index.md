@@ -129,7 +129,7 @@ Gridsome has been importing `page-query` data with webpack dynamic imports. Whic
 
 
 ## New website design and starters library
-We redesigned https://gridsome.org to be more lightweight & clean. This is a website you will spend a lot of time at if you're developing Gridsome projects. We wanted it to require as little CPU power as possible. The old website killed CPUs with animations.
+We redesigned https://gridsome.org to be more lightweight & clean. This is a website you will spend a lot of time at if you're developing Gridsome projects. We wanted it to require as little CPU power as possible. The old website killed CPUs with SVG path animations.
 
 We also added a [Starter library](/starters) to help anyone get quickly up and running with Gridsome.
 
