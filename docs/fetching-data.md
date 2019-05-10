@@ -77,37 +77,9 @@ module.exports = function (api) {
 
 ### YAML
 
-#### Using import
-
 Here is a simple example on how you can use YAML files within .vue templates:
 1. Create a YAML file in `/src/data` folder. Let it be `products.yaml`
-2. Add `import products from @/data/products.yaml` before `export default` function.
-3. Add the data from the YAML file to the data layer by creating a new object `products` and defining it with the just imported `products`.
-
-The code will look like this:
-```html
-<template>
-  <ul v-for="product in products">
-    <li v-html="product.title"/>
-  </ul>
-</template>
-
-<script>
-import products from '@/data/products.yaml'
-
-export default {
-  data() {
-    return {
-      products: products
-    }
-  }
-}
-</script>
-```
-
-#### Using GraphQL
-
-To do the same with GraphQL you need to use `gridsome.server.js`. Your file should look like this:
+2. Go to `gridsome.server.js` file. It should look like this:
 
 ``` JS
 const path = require('path')
