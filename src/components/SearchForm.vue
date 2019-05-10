@@ -3,12 +3,15 @@
     :id="id"
     class="header-search"
   >
-    <input
-      :id="`${id}-input`"
-      class="header-search__input"
-      placeholder="Search docs..."
-      type="search"
-    >
+    <label>
+      <input
+        :id="`${id}-input`"
+        class="header-search__input"
+        placeholder="Search docs..."
+        title="Search docs"
+        type="search"
+      >
+    </label>
   </form>
 </template>
 

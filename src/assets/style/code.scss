@@ -55,11 +55,15 @@ h1, h2, h3, h4 {
   font-variant-ligatures: none;
 }
 
-.token.comment,
+.token.comment
 .token.prolog,
 .token.doctype,
 .token.cdata {
   color: #585858;
+}
+
+.token.comment {
+  color: #8aa1b4;
 }
 
 .token.punctuation {
@@ -119,7 +123,7 @@ h1, h2, h3, h4 {
 .token.tag {
   color: #e2777a;
   .token.punctuation {
-    color: rgba(#e2777a, 0.75);
+    color: rgba(#e2777a, 0.85);
   }
 }
 
