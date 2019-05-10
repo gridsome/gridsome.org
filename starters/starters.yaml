@@ -40,3 +40,12 @@
   preview: https://gridsome-blog-cosmicjs.netlify.com/
   author: cosmicjs
   platforms: cosmicjs
+
+- title: Forestry Starter
+  description: Portfolio and Blog 
+  screenshot: ./screenshots/gridsome-forestry-starter.jpg
+  repo: itsnwa/gridsome-forestry-starter
+  preview: https://gridsome-forestry.netlify.com
+  author: itsnwa
+  tags: markdown, forestry, portfolio, blog, dark mode
+  platforms: markdown

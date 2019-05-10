@@ -27,3 +27,9 @@
   bio: "Developer. Maker of (mostly) email things. #emailgeeks #JAMStack"
   avatar: ./images/cosmin.png
   twitter: "@cossssmin"
+
+- id: itsnwa
+  name: Nichlas W. Andersen
+  bio: "Designer / Developer"
+  avatar: ./images/itsnwa.jpg
+  twitter: "@nichlaswa"
