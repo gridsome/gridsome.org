@@ -40,7 +40,7 @@ export default {
   &:after {
     content: "";
     width: 100%;
-    height: 300px;
+    height: 500px;
     top:0;
     position: fixed;
     background: linear-gradient(var(--primary-bg), #FFF);

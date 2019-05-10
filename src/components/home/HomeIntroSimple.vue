@@ -46,7 +46,7 @@ query HomeIntro {
 
   &__title {
     font-size: 3rem;
-    color: var(--primary-color);
+    color: var(--primary-color-dark);
     letter-spacing: -1px;
     font-weight: 600;
     margin-left: auto;
