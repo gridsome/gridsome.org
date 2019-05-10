@@ -2,7 +2,7 @@
 title: Gridsome v0.6
 slug: gridsome-v06
 author: [hjvedvik, tommyvedvik]
-date: 2019-05-09
+date: 2019-05-10
 excerpt: "Gridsome 0.6 introduces a Pages API that gives you full control of page creation. It also has an API that let you fetch internal pages into other pages and components. This is perfect for lightboxes or «Click for more» pagination etc. 0.6 also improves build times and has a smaller core JS bundle size!"
 ---
 
@@ -75,7 +75,7 @@ module.exports = function (api) {
 }
 ```
 
-Add data by using **$context** in Vue component..
+Add data by using `$context` in Vue component.
 
 ```html
 <template>
@@ -139,7 +139,8 @@ We also added a [Starter library](/starters) to help anyone get quickly up and r
 
 - `NodeInterface` is renamed to `Node`.
 - `title`, `path`, `date`, `content`, `excerpt`, and `slug` are now custom fields.
-- Custom fields are no longer camel cased by default.
+- Custom fields are no longer camel cased automatically.  
+  *- Some plugins depends on the original field names to work properly.*
 - Routes for pages in `src/pages` no longer get automatic names  
   *- Automatic route names would most likely conflict with custom pages.*
 
