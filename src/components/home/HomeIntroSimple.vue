@@ -9,7 +9,7 @@
         </h1>
         
         <p class="intro__lead lead post mb">
-          Gridsome helps developers build incredible fast Vue.js-powered websites & PWAs for any Headless CMS, Content APIs or Markdown files.
+          Gridsome helps developers build modern websites & PWAs that are <g-link to="/docs/fast-by-default">fast by default</g-link> for any Headless CMS, Content APIs or Markdown files.
         </p>
 
         <p class="intro__links">

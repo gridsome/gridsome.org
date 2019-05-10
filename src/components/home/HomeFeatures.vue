@@ -10,7 +10,7 @@
 
       <Feature>
         <h3>Fast by default</h3>
-        <p>Gridsome builds ultra performance into every page by using the <g-link to="/docs/fast-by-default#the-prpl-pattern">PRPL pattern</g-link>. You get <strong>code splitting, asset optimization, progressive images, and page prefetching</strong> out of the box. Gridsome sites gets almost perfect page speed scores by default.
+        <p>Gridsome builds ultra performance into every page by using the <g-link to="/docs/fast-by-default#the-prpl-pattern">PRPL pattern</g-link>. You get <strong>code splitting, asset optimization, progressive images, and link prefetching</strong> out of the box. Gridsome sites gets almost perfect page speed scores by default.
         </p>
       </Feature>
 
