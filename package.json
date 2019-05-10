@@ -13,7 +13,7 @@
     "babel-runtime": "^6.26.0",
     "clipboard-copy": "^3.0.0",
     "docsearch.js": "^2.6.2",
-    "gridsome": "^0.5.5",
+    "gridsome": "^0.6.0",
     "marked": "^0.6.1",
     "typography": "^0.16.18",
     "vue-instantsearch": "^2.0.0",
@@ -22,10 +22,10 @@
     "vue-typer": "^1.2.0"
   },
   "devDependencies": {
-    "@gridsome/plugin-critical": "^0.1.1",
+    "@gridsome/plugin-critical": "^0.1.2",
     "@gridsome/remark-prismjs": "^0.0.4",
-    "@gridsome/source-filesystem": "^0.3.0",
-    "@gridsome/transformer-remark": "^0.2.1",
+    "@gridsome/source-filesystem": "^0.4.0",
+    "@gridsome/transformer-remark": "^0.3.0",
     "execa": "^1.0.0",
     "fs-extra": "^7.0.1",
     "js-yaml": "^3.12.1",
