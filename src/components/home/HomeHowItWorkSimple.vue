@@ -1,5 +1,5 @@
 <template>
-  <Section class="works" dots="true" primary="true">
+  <Section class="works">
     <div class="grid-cols grid-cols--gap-large grid-cols--full-md">
 
       <Card title="Bring your data">
