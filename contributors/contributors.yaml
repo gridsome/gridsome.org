@@ -33,3 +33,9 @@
   bio: "Designer / Developer"
   avatar: ./images/itsnwa.jpg
   twitter: "@nichlaswa"
+
+- id: lokecarlsson
+  name: Loke Carlsson
+  bio: "Frontend Developer"
+  avatar: ./images/lokecarlsson.png
+  twitter: "@carlssonloke"
