@@ -49,3 +49,12 @@
   author: itsnwa
   tags: markdown, forestry, portfolio, blog, dark mode
   platforms: markdown
+
+- title: Documentation starter
+  description: Documentation based on gridsome.org
+  screenshot: ./screenshots/gridsome-starter-docs.png
+  repo: LokeCarlsson/gridsome-starter-docs
+  preview: https://gridsome-starter-docs.loke.dev
+  author: lokecarlsson
+  tags: markdown, documentation, gridsome.org
+  platforms: markdown
