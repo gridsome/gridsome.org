@@ -28,7 +28,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
   display: flex;
   flex-direction: column;
@@ -37,6 +37,14 @@ export default {
 
 #app main {
   flex: 1;
+  &:after {
+    content: "";
+    width: 100%;
+    height: 300px;
+    top:0;
+    position: fixed;
+    background: linear-gradient(var(--primary-bg), #FFF);
+  }
 }
 .main--primary-bg {
   background-color: var(--primary-bg);

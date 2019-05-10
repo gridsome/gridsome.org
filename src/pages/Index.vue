@@ -35,7 +35,7 @@ export default {
 
 <style>
 .layout-homepage header{
-  border: 0;
+  
 }
 </style>
 
