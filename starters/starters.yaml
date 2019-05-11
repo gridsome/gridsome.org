@@ -58,3 +58,12 @@
   author: lokecarlsson
   tags: markdown, documentation, gridsome.org
   platforms: markdown
+
+- title: Bootstrap starter
+  description: Portfolio with Blog
+  screenshot: ./screenshots/gridsome-starter-bootstrap.png
+  repo: LokeCarlsson/gridsome-starter-bootstrap
+  preview: https://gridsome-starter-bootstrap.loke.dev
+  author: lokecarlsson
+  tags: markdown, forestry, portfolio, blog, bootstrap, bootstrap-vue
+  platforms: markdown
