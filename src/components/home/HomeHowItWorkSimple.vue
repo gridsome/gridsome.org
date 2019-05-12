@@ -31,7 +31,9 @@
 
         <ul class="works__tools flex gap-15 text-center flex--center">
           <li>HTML</li>
+          <li></li>
           <li><vue-logo width="28" height="28" alt="Vue" /> Vue.js</li>
+          <li></li>
           <li>CSS</li>
         </ul>
   
@@ -102,7 +104,7 @@ export default {
     font-weight: 500;
     background-color: rgba(255,255,255,.9);
     border: 1px solid rgba(0,0,0,.1);
-    max-width: 230px;
+    max-width: 280px;
     border-radius: 4px;
     z-index: 9;
     margin: 0 auto!important;
@@ -110,6 +112,13 @@ export default {
 
     li {
       margin-bottom: 0;
+
+      &:nth-child(even) {
+        width: 8px;
+        height: 8px;
+        border-radius: 8px;
+        background-color: var(--primary-bg);
+      }
     }
   }
 
