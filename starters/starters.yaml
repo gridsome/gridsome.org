@@ -1,8 +1,8 @@
 - title: Default starter
   repo: gridsome/gridsome-starter-default
-  author: gridsome 
+  author: gridsome
   tags: Default
-  
+
 - title: Default WordPress starter
   repo: gridsome/gridsome-starter-wordpress
   author: gridsome
@@ -42,7 +42,7 @@
   platforms: cosmicjs
 
 - title: Forestry Starter
-  description: Portfolio and Blog 
+  description: Portfolio and Blog
   screenshot: ./screenshots/gridsome-forestry-starter.jpg
   repo: itsnwa/gridsome-forestry-starter
   preview: https://gridsome-forestry.netlify.com
@@ -58,3 +58,11 @@
   author: lokecarlsson
   tags: markdown, forestry, portfolio, blog, bootstrap, bootstrap-vue
   platforms: markdown
+
+- title: Airtable starter
+  description: Very simple example of connecting Airtable to Gridsome
+  repo: sergeyfilimonov/gridsome-airtable-starter
+  preview: https://gridsome-airtable-starter.sergeyfilimonov.com
+  author: sergeyfilimonov
+  tags: airtable
+  platforms: airtable
