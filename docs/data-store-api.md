@@ -182,7 +182,15 @@ api.loadSource(store => {
 
   contentType.addNode({
     title: 'Lorem ipsum dolor sit amet.',
-    customField: '...'
+    // Custom field of any data type
+    fields: {
+      name: "...",
+      user: {
+        user_id: 12345,
+        user_image: []
+      },
+      verified: false
+    },
   })
 })
 ```
