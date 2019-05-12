@@ -58,3 +58,12 @@
   author: lokecarlsson
   tags: markdown, forestry, portfolio, blog, bootstrap, bootstrap-vue
   platforms: markdown
+
+- title: Bootstrap resume
+  description: Resume/portfolio
+  screenshot: ./screenshots/gridsome-starter-resume.png
+  repo: LokeCarlsson/gridsome-starter-resume
+  preview: https://gridsome-starter-resume.loke.dev
+  author: lokecarlsson
+  tags: resume, portfolio, bootstrap, bootstrap-vue
+  platforms: markdown
