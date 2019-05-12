@@ -44,7 +44,7 @@ query Platform($id: String!) {
               path
             }
             path
-            screenshot (width: 560, height: 664)
+            screenshot (width: 840, height: 840)
           }
         }
       }
