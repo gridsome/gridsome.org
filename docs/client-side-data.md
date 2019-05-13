@@ -91,7 +91,7 @@ The following example fetches local JSON data within .vue templates:
 </template>
 
 <script>
-import products from '@/data/users.json'
+import users from '@/data/users.json'
 
 export default {
   data() {
