@@ -41,7 +41,7 @@ export default {
     font-weight: 500;
     white-space: nowrap;
     max-width: 220px;
-    overflow-x: hidden;
+    overflow: hidden;
     text-overflow: ellipsis;
   }
 
