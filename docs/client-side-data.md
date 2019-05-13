@@ -49,12 +49,12 @@ Read more about the [$fetch() method](/docs/client-api#fetchpath).
 
 ## Fetch from local YAML files
 
-Here is a simple example on how you can use YAML files within .vue templates:
-1. Create a YAML file in `/src/data` folder. Let it be `products.yaml`
-2. Add `import products from @/data/products.yaml` before `export default` function.
-3. Add the data from the YAML file to the data layer by creating a new object `products` and defining it with the just imported `products`.
+The following example fetches local YAML files within .vue templates:
 
-The code will look like this:
+1. Create a YAML file in `/src/data` folder. For example: `products.yaml`
+2. Add `import products from @/data/products.yaml` before `export default` function.
+3. Add the data from the YAML file to the data layer by creating a new object key `products` and defining it with the just imported `products`. Since the object key and the value are the same, we can destructure to just `products`.
+
 ```html
 <template>
   <ul v-for="product in products">
@@ -68,7 +68,35 @@ import products from '@/data/products.yaml'
 export default {
   data() {
     return {
-      products: products
+      products
+    }
+  }
+}
+</script>
+```
+
+## Fetch from local JSON files
+
+The following example fetches local JSON data within .vue templates:
+
+1. Create a JSON file in `/src/data` folder. For example: `users.json`
+2. Add `import products from @/data/users.json` before `export default` function.
+3. Add the data from the JSON file to the data layer by creating a new object key `users` and defining it with the just imported `users`. Since the object key and the value are the same, we can destructure to just `users`.
+
+```html
+<template>
+  <ul v-for="user in users">
+    <li v-html="user.name"/>
+  </ul>
+</template>
+
+<script>
+import users from '@/data/users.json'
+
+export default {
+  data() {
+    return {
+      users
     }
   }
 }
