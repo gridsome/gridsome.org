@@ -4,19 +4,26 @@
     class="header-search"
   >
     <label>
-      <input
-        :id="`${id}-input`"
-        class="header-search__input"
-        placeholder="Search docs..."
-        title="Search docs"
-        type="search"
-      >
+      <LazyHydrate on-interaction>
+        <input
+          :id="`${id}-input`"
+          class="header-search__input"
+          placeholder="Search docs..."
+          title="Search docs"
+          type="search"
+        />
+      </LazyHydrate>
     </label>
   </form>
 </template>
 
 <script>
+import LazyHydrate from 'vue-lazy-hydration'
+
 export default {
+  components: {
+    LazyHydrate
+  },
   props: {
     id: { type: String, default: 'search' }
   },

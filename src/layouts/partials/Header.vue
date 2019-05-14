@@ -9,9 +9,7 @@
       
       <Nav class="flex-fit"/>
 
-      <LazyHydrate on-interaction>
-        <SearchForm />
-      </LazyHydrate>
+      <SearchForm />
 
       <LazyHydrate ssr-only>
         <nav class="header-actions flex">
