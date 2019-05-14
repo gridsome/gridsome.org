@@ -17,13 +17,14 @@
       <home-examples />
     </LazyHydrate>
 
-    <LazyHydrate ssr-only>
+    <LazyHydrate when-visible>
       <home-community />
     </LazyHydrate>
 
-    <LazyHydrate ssr-only>
+    <LazyHydrate when-visible>
       <home-blog />
     </LazyHydrate>
+    
   </Layout>
 </template>
 
