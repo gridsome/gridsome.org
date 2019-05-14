@@ -3,7 +3,9 @@
     <div class="header-bar"></div>
     <div class="header-inner container flex gap-30">
       
-      <Logo/>
+      <LazyHydrate ssr-only>
+        <Logo/>
+      </LazyHydrate>
       
       <Nav class="flex-fit"/>
 
@@ -11,60 +13,62 @@
         <SearchForm />
       </LazyHydrate>
 
-      <nav class="header-actions flex">
-        <a
-          aria-label="Twitter"
-          href="//twitter.com/gridsome"
-          rel="noopener noreferrer"
-          target="_blank"
-          title="Follow us on Twitter"
-        >
-          <twitter-logo/>
-        </a>
-        
-        <a
-          aria-label="Discord"
-          href="//discord.gg/daeay6n"
-          rel="noopener noreferrer"
-          target="_blank"
-          title="Join our discord"
-        >
-          <discord-logo/>
-        </a>
-        
-        <div class="has-dropdown">
+      <LazyHydrate ssr-only>
+        <nav class="header-actions flex">
           <a
-            aria-label="github"
-            href="//github.com/gridsome/gridsome"
+            aria-label="Twitter"
+            href="//twitter.com/gridsome"
             rel="noopener noreferrer"
             target="_blank"
-            title="Gridsome @ GitHub"
+            title="Follow us on Twitter"
           >
-            <github-logo
-              height="20px"
-              width="20px"
-            />
-            <span
-              class="hide-for-small"
-              style="margin-left:5px;"
-            >v{{ $static.metaData.gridsomeVersion }}</span>
+            <twitter-logo/>
           </a>
-          <div class="dropdown">
-            <a href="//github.com/gridsome/gridsome/blob/master/gridsome/CHANGELOG.md" rel="noopener noreferrer" target="_blank">
-              Changelog
+          
+          <a
+            aria-label="Discord"
+            href="//discord.gg/daeay6n"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Join our discord"
+          >
+            <discord-logo/>
+          </a>
+          
+          <div class="has-dropdown">
+            <a
+              aria-label="github"
+              href="//github.com/gridsome/gridsome"
+              rel="noopener noreferrer"
+              target="_blank"
+              title="Gridsome @ GitHub"
+            >
+              <github-logo
+                height="20px"
+                width="20px"
+              />
+              <span
+                class="hide-for-small"
+                style="margin-left:5px;"
+              >v{{ $static.metaData.gridsomeVersion }}</span>
             </a>
-            <a href="//github.com/gridsome/gridsome" rel="noopener noreferrer" target="_blank">
-              Core repository
-            </a>
-            <a href="//github.com/gridsome/gridsome.org" rel="noopener noreferrer" target="_blank">
-              Website repository
-            </a>
-            <a href="//github.com/gridsome/gridsome/issues" rel="noopener noreferrer" target="_blank">
-              GitHub Issues
-            </a>    
+            <div class="dropdown">
+              <a href="//github.com/gridsome/gridsome/blob/master/gridsome/CHANGELOG.md" rel="noopener noreferrer" target="_blank">
+                Changelog
+              </a>
+              <a href="//github.com/gridsome/gridsome" rel="noopener noreferrer" target="_blank">
+                Core repository
+              </a>
+              <a href="//github.com/gridsome/gridsome.org" rel="noopener noreferrer" target="_blank">
+                Website repository
+              </a>
+              <a href="//github.com/gridsome/gridsome/issues" rel="noopener noreferrer" target="_blank">
+                GitHub Issues
+              </a>    
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </LazyHydrate>
     </div>
   </header>
 </template>
