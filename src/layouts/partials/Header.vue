@@ -8,8 +8,10 @@
       </LazyHydrate>
       
       <Nav class="flex-fit"/>
-
-      <SearchForm />
+      
+      <LazyHydrate when-idle>
+        <SearchForm />
+      </LazyHydrate>
 
       <LazyHydrate ssr-only>
         <nav class="header-actions flex">
