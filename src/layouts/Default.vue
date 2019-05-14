@@ -6,8 +6,8 @@
       <main id="main" :class="mainClass">
         <slot />
       </main>
-      <LazyHydrate ssr-only>
-        <Footer v-if="footer !== false" />
+      <LazyHydrate ssr-only v-if="footer !== false">
+        <Footer />
       </LazyHydrate>
     </div>
 </template>
