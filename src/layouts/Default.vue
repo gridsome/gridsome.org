@@ -1,5 +1,5 @@
 <template>
-  <LazyHydrate ssr-only>
+  <LazyHydrate when-visible>
     <div id="app">
       <Header />
       <main id="main" :class="mainClass">
