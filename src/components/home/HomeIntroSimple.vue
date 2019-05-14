@@ -5,7 +5,7 @@
         <div class="intro__message mb" hidden></div>
 
         <h1 class="intro__title post"> 
-          A Vue.js framework for the modern web
+          A Static Site Generator for Vue.js
         </h1>
         
         <p class="intro__lead lead post mb">

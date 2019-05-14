@@ -28,7 +28,7 @@ export default {
   },
   
   metaInfo: {
-    title: 'Vue.js-powered Modern Website Generator'
+    title: 'Vue.js-powered Static Site Generator'
   }
 }
 </script>

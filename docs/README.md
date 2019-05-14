@@ -1,5 +1,5 @@
 # Getting started
-> Gridsome is a **Vue.js-powered modern website generator** that makes it easy and fun for developers to create beautiful [JAMstack](/docs/jamstack) websites & PWAs that are [fast by default](/docs/fast-by-default).
+> Gridsome is a **Vue.js-powered static site generator** that makes it easy and fun for developers to create beautiful [JAMstack](/docs/jamstack) websites & PWAs that are [fast by default](/docs/fast-by-default).
 
 ### Why Gridsome?
 
