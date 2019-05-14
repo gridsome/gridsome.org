@@ -1,13 +1,15 @@
 <template>
-  <LazyHydrate when-visible>
     <div id="app">
-      <Header />
+      <LazyHydrate ssr-only>
+        <Header />
+      </LazyHydrate>
       <main id="main" :class="mainClass">
         <slot />
       </main>
-      <Footer v-if="footer !== false" />
+      <LazyHydrate ssr-only>
+        <Footer v-if="footer !== false" />
+      </LazyHydrate>
     </div>
-  </LazyHydrate>
 </template>
 
 <script>

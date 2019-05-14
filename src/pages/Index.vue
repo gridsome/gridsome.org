@@ -1,7 +1,7 @@
 <template>
   <Layout class="layout-homepage">
 
-    <LazyHydrate ssr-only>
+    <LazyHydrate when-idle>
       <home-intro-simple />
     </LazyHydrate>
     
@@ -9,7 +9,7 @@
       <home-how-it-work-simple />
     </LazyHydrate>
     
-    <LazyHydrate when-visible>
+    <LazyHydrate ssr-only>
       <home-features />
     </LazyHydrate>
 
@@ -17,11 +17,11 @@
       <home-examples />
     </LazyHydrate>
 
-    <LazyHydrate when-visible>
+    <LazyHydrate ssr-only>
       <home-community />
     </LazyHydrate>
 
-    <LazyHydrate when-visible>
+    <LazyHydrate ssr-only>
       <home-blog />
     </LazyHydrate>
   </Layout>
