@@ -1,13 +1,19 @@
 <template>
   <Layout class="layout-homepage">
-    
+
     <LazyHydrate ssr-only>
       <home-intro-simple />
+    </LazyHydrate>
+    
+    <LazyHydrate ssr-only>
       <home-how-it-work-simple />
+    </LazyHydrate>
+    
+    <LazyHydrate when-visible>
       <home-features />
     </LazyHydrate>
 
-    <LazyHydrate on-interaction="click">
+    <LazyHydrate when-visible>
       <home-examples />
     </LazyHydrate>
 
@@ -15,7 +21,9 @@
       <home-community />
     </LazyHydrate>
 
-    <home-blog />
+    <LazyHydrate when-visible>
+      <home-blog />
+    </LazyHydrate>
   </Layout>
 </template>
 
