@@ -2,9 +2,14 @@
   <header>
     <div class="header-bar"></div>
     <div class="header-inner container flex gap-30">
+      
       <Logo/>
+      
       <Nav class="flex-fit"/>
-      <SearchForm />
+
+      <LazyHydrate on-interaction>
+        <SearchForm />
+      </LazyHydrate>
 
       <nav class="header-actions flex">
         <a
@@ -79,6 +84,7 @@ import SearchForm from '~/components/SearchForm.vue'
 import GithubLogo from '@/assets/images/github-logo.svg'
 import TwitterLogo from '@/assets/images/twitter-logo.svg'
 import DiscordLogo from '@/assets/images/discord-logo.svg'
+import LazyHydrate from 'vue-lazy-hydration'
 
 export default {
   components: {
@@ -87,7 +93,8 @@ export default {
     TwitterLogo,
     DiscordLogo,
     SearchForm,
-    Nav
+    Nav,
+    LazyHydrate
   }
 }
 </script>

@@ -5,11 +5,11 @@
       <home-intro-simple />
     </LazyHydrate>
     
-    <LazyHydrate ssr-only>
+    <LazyHydrate when-visible>
       <home-how-it-work-simple />
     </LazyHydrate>
     
-    <LazyHydrate ssr-only>
+    <LazyHydrate when-visible>
       <home-features />
     </LazyHydrate>
 
