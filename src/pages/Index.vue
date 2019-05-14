@@ -1,30 +1,18 @@
 <template>
   <Layout class="layout-homepage">
 
-    <LazyHydrate when-idle>
-      <home-intro-simple />
-    </LazyHydrate>
-    
-    <LazyHydrate when-visible>
-      <home-how-it-work-simple />
-    </LazyHydrate>
-    
-    <LazyHydrate when-visible>
-      <home-features />
-    </LazyHydrate>
+    <home-intro-simple />
+  
+    <home-how-it-work-simple />
+  
+    <home-features />
 
-    <LazyHydrate when-visible>
-      <home-examples />
-    </LazyHydrate>
+    <home-examples />
 
-    <LazyHydrate when-visible>
-      <home-community />
-    </LazyHydrate>
+    <home-community />
 
-    <LazyHydrate when-visible>
-      <home-blog />
-    </LazyHydrate>
-    
+    <home-blog />
+  
   </Layout>
 </template>
 

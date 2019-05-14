@@ -4,23 +4,19 @@
       <main id="main" :class="mainClass">
         <slot />
       </main>
-      <LazyHydrate ssr-only v-if="footer !== false">
-        <Footer />
-      </LazyHydrate>
+      <Footer />
     </div>
 </template>
 
 <script>
 import Header from './partials/Header'
 import Footer from './partials/Footer'
-import LazyHydrate from 'vue-lazy-hydration'
 
 export default {
   props: ['footer', 'primary-bg'],
   components: {
     Header,
     Footer,
-    LazyHydrate
   },
   computed: {
     mainClass() {
