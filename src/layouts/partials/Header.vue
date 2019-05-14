@@ -9,7 +9,7 @@
       
       <Nav class="flex-fit"/>
       
-      <LazyHydrate when-idle>
+      <LazyHydrate on-interaction>
         <SearchForm />
       </LazyHydrate>
 
