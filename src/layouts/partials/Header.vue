@@ -2,7 +2,9 @@
   <header>
     <div class="header-bar"></div>
     <div class="header-inner container flex gap-30">
+      
       <Logo/>
+      
       <Nav class="flex-fit"/>
       
       <LazyHydrate on-interaction>
