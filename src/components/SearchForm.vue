@@ -6,6 +6,7 @@
     <label>
       <input
         :id="`${id}-input`"
+        ref="input"
         class="header-search__input"
         placeholder="Search docs..."
         title="Search docs"
@@ -30,6 +31,7 @@ export default {
         apiKey: 'a7400a3a94b256c5283cb05efb860fc1',
         debug: process.env.NODE_ENV === 'development'
       })
+      this.$nextTick(() => this.$refs.input.focus())
     })
   }
 }
