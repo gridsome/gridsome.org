@@ -3985,10 +3985,10 @@ gray-percentage@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/gray-percentage/-/gray-percentage-2.0.0.tgz#b72a274d1b1379104a0050b63b207dc53fe56f99"
 
-gridsome@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.6.0.tgz#366232778c3148a14936ce0b24d1069f526bfcf5"
-  integrity sha512-fm+UihcsIMGcqBvA3H8tbRjDQ1YagTn+vTNZQiHl+Z2bgm6ynVMMizM1WRIKzVZpaMM3bRRCJIRnf1Va9KpJkg==
+gridsome@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.6.1.tgz#918bf0022de466dee2e2a69487da2c852c8b8909"
+  integrity sha512-slq5nUd9xDHErlBGTT1sUOwRtwI37pgATBg8zkN565AbXnO3bNmVnRUaZ0OvMtQFpg97NaMasJPaxKIOG7vpfA==
   dependencies:
     "@babel/core" "^7.0.0"
     "@gridsome/cli" "^0.1.0"
@@ -9074,6 +9074,11 @@ vue-instantsearch@^2.0.0:
   dependencies:
     algoliasearch-helper "^2.26.1"
     instantsearch.js "^3.1.0"
+
+vue-lazy-hydration@^1.0.0-beta.7:
+  version "1.0.0-beta.7"
+  resolved "https://registry.yarnpkg.com/vue-lazy-hydration/-/vue-lazy-hydration-1.0.0-beta.7.tgz#ecb6a644cc72ffd9ef58b8501219c7710de1e314"
+  integrity sha512-x8PUrI2s3/g+j5xfPBnnljN0Xen0WRhvzJAAJWfVpEWMD3sznZupzUzNeF9LDjQB44mVG1dzYvjYvMse88arsw==
 
 vue-loader@^15.7.0:
   version "15.7.0"
