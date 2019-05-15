@@ -8,6 +8,9 @@ excerpt: "Introducing MDVue for Gridsome. A plugin that let you use Vue Componen
 
 ![MDVue](./mdvue.png)
 
+Using Markdown for content is great. It let you have all your content and code in same repository. With MDVue you can now import Vue Components and other Markdown files (!!) inside your Markdown files. This is perfect for adding extra functionality to your Markdown content. You can also use MDVue + Markdown to build all your pages in `src/pages` directory.
+
+
 ## How to use
 
 1. Install `@gridsome/plugin-mdvue` with Yarn or NPM.
@@ -31,7 +34,7 @@ module.exports = {
 }
 ```
 
-💥 **@gridsome/plugin-mdvue** is designed to be as a drop-in replacement for **@gridsome-filesystem**. If you're already using *filesystem-source* you can just change out the **use** and add **layout** and **pathPrefix** options.
+💥 **@gridsome/plugin-mdvue** is designed to be as a drop-in replacement for **@gridsome-filesystem**. If you're already using **filesystem-source** you can just change out the **use** and add **layout** and **pathPrefix** options.
 
 In this example any `.md` file in `./content/docs` will be a page.
 
@@ -53,7 +56,7 @@ excerpt: Lorem Ipsum is simply dummy text.
 
 Add **Markdown content** here...
 
-// Import Vue Components
+// Import Vue components
 import Youtube from '~/components/Youtube.vue'
 
 // Import .md files as components
@@ -72,3 +75,7 @@ All **front-matter** fields are available in `$frontmatter` and in the **GraphQL
 MDX will have Vue.js support (https://mdxjs.com/guides/vue), but the problem is that it's still JSX. Under the hood **MDX** converts `.mdx` files into `JSX`, but **MDVue**  simply converts `.md` files into `.vue` files. That's a lot better and efficient for Vue projects. 
 
 The MDX project is still great, so Gridsome will probably have a MDX source plugin at some point also.
+
+
+## Learn more..
+Learn more about Markdown https://www.markdownguide.org/
