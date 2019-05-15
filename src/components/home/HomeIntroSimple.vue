@@ -5,11 +5,12 @@
         <div class="intro__message mb" hidden></div>
 
         <h1 class="intro__title post"> 
-          A Static Site Generator for Vue.js
+          A Vue.js framework for<br />
+          <VueTyper :text="words" :type-delay="30" initial-action="erasing" caret-animation="smooth" />
         </h1>
         
         <p class="intro__lead lead post mb">
-          Gridsome helps developers build modern websites & PWAs that are <g-link to="/docs/fast-by-default">fast by default</g-link> for any Headless CMS, Content APIs or Markdown files.
+          Gridsome helps developers build modern websites & PWAs that are <g-link to="/docs/fast-by-default">fast by default</g-link> for any data source.
         </p>
 
         <p class="intro__links">
@@ -36,8 +37,52 @@ query HomeIntro {
 }
 </static-query>
 
+<script>
+const words = ['Static Websites', 'The JAMstack', 'the Headless CMS', 'Markdown files']
+
+export default {
+  components: {
+    VueTyper: process.isServer
+      ? { inheritAttrs: false, render: h => h('span', null, [words[0]]) }
+      : () => import('vue-typer').then(({ VueTyper }) => VueTyper)
+  },
+
+  data () {
+    return { words }
+  }
+}
+</script>
+
 <style lang="scss">
+
+@keyframes Type {
+  from  {
+    color: var(--primary-color);
+  }
+}
+
 .intro {
+  padding: 5% 0;
+  .vue-typer {
+    display: inline-block;
+    text-align: left;
+    white-space: nowrap;
+
+    .custom.char {
+      color: var(--primary-color-dark);
+    }
+    
+    .custom.char.typed {
+      animation: Type 1s;
+    }
+
+    .custom.caret {
+      background-color: rgba(255,255,255,.5);
+      margin: 0 2px;
+      width: 2px;
+    }
+  }
+
   @media screen and (max-width: 850px) {
     & {
       text-align: center;
@@ -45,8 +90,8 @@ query HomeIntro {
   }
 
   &__title {
-    font-size: 3rem;
-    color: var(--primary-color);
+    font-size: 3.2rem;
+    color: var(--primary-color-dark);
     letter-spacing: -1px;
     font-weight: 600;
     margin-left: auto;
@@ -60,11 +105,10 @@ query HomeIntro {
   }
 
   &__lead {
-    font-size: 1.4rem;
-    max-width: 890px;
+    max-width: 640px;
     margin-left: auto;
     margin-right: auto;
-
+    font-size: 1.4rem;
 
     @media screen and (max-width: 550px) {
       & {
