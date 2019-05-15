@@ -82,4 +82,5 @@ MDVue uses runs all files trough Webpack to render Vue Components. This will slo
 
 
 ## Learn more..
-Learn more about Markdown https://www.markdownguide.org/
+- **MDVue** Documentation: https://gridsome.org/plugins/@gridsome/plugin-mdvue
+- Learn more about Markdown https://www.markdownguide.org
