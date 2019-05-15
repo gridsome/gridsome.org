@@ -34,7 +34,7 @@ module.exports = {
 }
 ```
 
-💥 **@gridsome/plugin-mdvue** is designed to be as a drop-in replacement for **@gridsome-filesystem**. If you're already using **filesystem-source** you can just change out the **use** and add **layout** and **pathPrefix** options.
+💥 **@gridsome/plugin-mdvue** is designed to be as a drop-in replacement for **@gridsome-filesystem** + markdown. If you're already using **filesystem-source** you can just change out the **use** and add **layout** and **pathPrefix** options.
 
 In this example any `.md` file in `./content/docs` will be a page.
 
@@ -43,7 +43,7 @@ In this example any `.md` file in `./content/docs` will be a page.
 - `/content/docs/folder/index.md` will be **/docs/folder**
 
 
-## Example `.md` file
+## Example Markdown file
 
  ```jsx
 ---
@@ -69,6 +69,13 @@ import Message from '~/components/Message.md'
 
 ```
 All **front-matter** fields are available in `$frontmatter` and in the **GraphQL data layer** if you want to query data from other pages.
+
+
+## Gotchas...
+MDVue uses runs all files trough Webpack to render Vue Components. This will slow the build process down compared to for example **filesystem-source**. So it's not recommended to use MDVue if you plan to have thousands of blog posts.  MDVue is perfect for documentation, design systems, portfolios and smaller blogs etc.
+
+
+## VuePress comparison
 
 
 ## What about MDX for Vue?
