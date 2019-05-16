@@ -5,11 +5,31 @@
         <div class="intro__message mb" hidden></div>
 
         <h1 class="intro__title post"> 
-          A Static Site Generator for Vue.js
+          <span>A Vue.js framework for</span>
+          <transition name="rotate">
+            <div v-if="currentText == 0" key="0">
+              Static Websites
+            </div>
+            <div v-else-if="currentText == 1" key="1">
+              The JAMstack
+            </div>
+            <div v-else-if="currentText == 2" key="2">
+              any Headless CMS
+            </div>
+            <div v-else-if="currentText == 3" key="3">
+              Markdown files
+            </div>
+            <div v-else-if="currentText == 4" key="4">
+              Documentation
+            </div>
+            <div v-else-if="currentText == 5" key="5">
+              Design Systems
+            </div>
+          </transition>
         </h1>
         
         <p class="intro__lead lead post mb">
-          Gridsome helps developers build modern websites & PWAs that are <g-link to="/docs/fast-by-default">fast by default</g-link> for any Headless CMS, Content APIs or Markdown files.
+          Gridsome helps developers build modern websites & PWAs for <strong>any data source</strong> that are <g-link to="/docs/fast-by-default">fast by default</g-link>
         </p>
 
         <p class="intro__links">
@@ -36,21 +56,46 @@ query HomeIntro {
 }
 </static-query>
 
-<style lang="scss">
-.intro {
-  @media screen and (max-width: 850px) {
-    & {
-      text-align: center;
+<script>
+export default {
+  data () {
+    return {
+      currentText: 0
     }
+  },
+  mounted () {
+    this._counter = setInterval(() => {
+      this.currentText = (this.currentText + 1) % 6
+    }, 1500)
+  },
+  destroyed () {
+    clearTimeout(this._counter)
+  },
+}
+</script>
+
+<style lang="scss">
+
+@keyframes Type {
+  from  {
+    opacity: .6;
   }
+}
+
+.intro {
+  padding: calc(2.5% + var(--space)) 0;
 
   &__title {
-    font-size: 3rem;
-    color: var(--primary-color);
+    font-size: 3.5rem;
+    color: var(--primary-color-dark);
     letter-spacing: -1px;
     font-weight: 600;
     margin-left: auto;
     margin-right: auto;
+
+    div {
+      color: var(--primary-color);
+    }
 
     @media screen and (max-width: 850px) {
       & {
@@ -60,17 +105,10 @@ query HomeIntro {
   }
 
   &__lead {
-    font-size: 1.4rem;
-    max-width: 890px;
+    max-width: 640px;
     margin-left: auto;
     margin-right: auto;
-
-
-    @media screen and (max-width: 550px) {
-      & {
-        font-size: 1.2rem;
-      }
-    }
+    font-size: 1.4rem;
   }
 
   &__info {
