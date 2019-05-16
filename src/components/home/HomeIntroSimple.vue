@@ -5,8 +5,27 @@
         <div class="intro__message mb" hidden></div>
 
         <h1 class="intro__title post"> 
-          A Vue.js framework for<br />
-          <VueTyper :text="words" :type-delay="30" initial-action="erasing" caret-animation="smooth" />
+          <span>A Vue.js framework for</span>
+          <transition name="rotate">
+            <div v-if="currentText == 0" key="0">
+              Static Websites
+            </div>
+            <div v-else-if="currentText == 1" key="1">
+              the JAMstack
+            </div>
+            <div v-else-if="currentText == 2" key="2">
+              any Headless CMS
+            </div>
+            <div v-else-if="currentText == 3" key="3">
+              Markdown files
+            </div>
+            <div v-else-if="currentText == 4" key="4">
+              eCommerce PWAs
+            </div>
+            <div v-else-if="currentText == 5" key="5">
+              Documentation
+            </div>
+          </transition>
         </h1>
         
         <p class="intro__lead lead post mb">
@@ -38,18 +57,20 @@ query HomeIntro {
 </static-query>
 
 <script>
-const words = ['Static Websites', 'The JAMstack', 'the Headless CMS', 'Markdown files']
-
 export default {
-  components: {
-    VueTyper: process.isServer
-      ? { inheritAttrs: false, render: h => h('span', null, [words[0]]) }
-      : () => import('vue-typer').then(({ VueTyper }) => VueTyper)
-  },
-
   data () {
-    return { words }
-  }
+    return {
+      currentText: 0
+    }
+  },
+  mounted () {
+    this._counter = setInterval(() => {
+      this.currentText = (this.currentText + 1) % 6
+    }, 1500)
+  },
+  destroyed () {
+    clearTimeout(this._counter)
+  },
 }
 </script>
 
@@ -57,7 +78,7 @@ export default {
 
 @keyframes Type {
   from  {
-    color: var(--primary-color);
+    opacity: .6;
   }
 }
 
@@ -69,7 +90,7 @@ export default {
     white-space: nowrap;
 
     .custom.char {
-      color: var(--primary-color-dark);
+      color: currentColor;
     }
     
     .custom.char.typed {
@@ -77,9 +98,9 @@ export default {
     }
 
     .custom.caret {
-      background-color: rgba(255,255,255,.5);
       margin: 0 2px;
       width: 2px;
+      opacity: .6;
     }
   }
 
