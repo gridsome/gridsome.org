@@ -70,19 +70,19 @@
 }
 
 .rotate-enter-active {
-  transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);  
+  transition: opacity 1s, transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);  
   transform: translateY(10px);
   opacity: 0;
 }
 .rotate-leave-active {
-  transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);  
+  transition: opacity .6s, transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);;
 }
 .rotate-enter-to {
   transform: translateY(0);
   opacity: 1;
 }
 .rotate-leave-to {
-  transform: translateY(0px);
+  transform: translateY(-10px);
   opacity: 0;
 }
 .rotate-leave-active{
