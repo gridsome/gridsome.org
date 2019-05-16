@@ -110,7 +110,7 @@ export default {
   }
 }
 ```
-Note: You could do it this way, but by using Object.defineProperty instead we are able to define our property with a descriptor. A descriptor allows us to set some low-level details such as whether or not our property is writeable and whether it shows up during enumeration in a for loop and more. It gives us a distinct advantage that properties created with a descriptor are read-only by default.
+Note: You could do it this way, but by using Object.defineProperty instead we are able to define our property with a descriptor. A descriptor allows us to set some low-level details such as whether or not our property is writable and whether it shows up during enumeration in a for loop and more. It gives us a distinct advantage that properties created with a descriptor are read-only by default.
 
 Some coffee-deprived developer won't be able to do something silly like this in a component and break everything:
 ```javascript
