@@ -19,7 +19,7 @@
     "vue-instantsearch": "^2.0.0",
     "vue-lazy-hydration": "^1.0.0-beta.7",
     "vue-popover": "^1.6.2",
-    "vue-scrollto": "^2.13.0",
+    "vue-scrollto": "^2.13.0"
   },
   "devDependencies": {
     "@gridsome/plugin-critical": "^0.1.2",
