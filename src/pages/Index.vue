@@ -55,8 +55,10 @@ export default {
 </script>
 
 <style>
-.layout-homepage header{
-  border-color: transparent;  
+@media screen and (min-width: 850px) {
+  .layout-homepage header{
+    border-color: transparent;  
+  }
 }
 </style>
 
