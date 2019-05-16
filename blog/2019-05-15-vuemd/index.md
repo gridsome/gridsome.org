@@ -62,8 +62,12 @@ import Youtube from '~/components/Youtube.vue'
 // Import .md files as components
 import Message from '~/components/Message.md'
 
-<Message>Lorem ipsum dolor sit amet...</Message>
-<Youtube id="xyxyxy">
+<Message> Lorem ipsum dolor sit amet... </Message>
+
+<Youtube id="xyxyxy" />
+
+<GlobalComponent> Use any Global registered components </GlobalComponent>
+
 
 ... Add some more Markdown content here.
 
@@ -78,7 +82,7 @@ The MDX project is still great, so Gridsome will probably have a MDX source plug
 
 
 ## Gotchas
-MDVue uses runs all files trough Webpack to render Vue Components. This will slow the build process down compared to for example **filesystem-source**. So it's not recommended to use MDVue if you plan to have thousands of blog posts.  MDVue is perfect for documentation, design systems, portfolios and smaller blogs etc.
+MDVue uses runs all files trough Webpack to render Vue Components. This will slow the build process down compared to for example **filesystem-source**. It's not recommended to use MDVue if you plan to have thousands of blog posts.  MDVue is perfect for documentation, design systems, portfolios and smaller blogs etc.
 
 
 ## Learn more..
