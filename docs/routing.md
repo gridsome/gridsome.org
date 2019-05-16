@@ -55,7 +55,7 @@ module.exports = function (api) {
     const { data } = await axios.get('https://api.example.com/posts')
 
     const contentType = store.addContentType({
-      typeName: 'BlogPosts'
+      typeName: 'BlogPosts',
       route: 'blog/:slug'  // add this for one dynamic route...
     })
 
