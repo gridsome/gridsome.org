@@ -18,12 +18,12 @@ export default function (Vue, { head }) {
   // Add an external CSS file
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css'
+    href: 'https://some-server.com/external-styleheet.css'
   })
   
   // Add an external Javascript before the closing </body> tag
   head.script.push({
-    src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js',
+    src: 'https://some-server.com/external-script.js',
     body: true
   })
 
