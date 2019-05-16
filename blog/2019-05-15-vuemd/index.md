@@ -45,35 +45,84 @@ In this example any `.md` file in `./content/docs` will be a page.
 
 ## Example Markdown file
 
- ```jsx
+```jsx
 ---
 title: A cool title
 excerpt: Lorem Ipsum is simply dummy text.
 ---
 
 # {{ $frontmatter.title }}
-## {{ $frontmatter.excerpt }}
+> {{ $frontmatter.excerpt }}
 
 Add **Markdown content** here...
 
 // Import Vue components
 import Youtube from '~/components/Youtube.vue'
 
-// Import .md files as components
-import Message from '~/components/Message.md'
-
-<Message> Lorem ipsum dolor sit amet... </Message>
-
 <Youtube id="xyxyxy" />
-
-<GlobalComponent> Use any Global registered components </GlobalComponent>
-
 
 ... Add some more Markdown content here.
 
 ```
-All **front-matter** fields are available in `$frontmatter` and in the **GraphQL data layer** if you want to query data from other pages.
 
+> All **front-matter** fields are available in `$frontmatter` and in the **GraphQL data layer** if you want to query data from other pages.
+
+
+### Use Markdown files as components.
+
+**MDVue** let you use other `.md` files as Vue Components!
+
+```jsx
+---
+title: A cool title
+excerpt: Lorem Ipsum is simply dummy text.
+---
+
+import IntroBox from '~/components/IntroBox.md'
+
+<IntroBox :text="$frontmatter.excerpt" />
+
+```
+
+
+### Use any components that are registered globally.
+
+Register components globally in `src/main.js` if you don't want to import them for every page.
+Learn how to [make a component global](/docs/components#make-a-component-global).
+
+
+```jsx
+---
+title: A cool title
+---
+
+<GlobalComponent> Global component </GlobalComponent>
+
+```
+
+### Use all the power of Vue Components in Markdown
+You can add GraphQL queries, script and style tags.
+
+```jsx
+---
+title: A cool title
+---
+
+Some _markdown_ content...
+
+<style lang="scss">
+  .some-style {border: red}
+</style>
+
+<page-query>
+  ...
+</page-query>
+
+<script>
+  ...
+</script>
+
+```
 
 ## What about MDX for Vue?
 MDX will have Vue.js support (https://mdxjs.com/guides/vue), but the problem is that it's still JSX. Under the hood **MDX** converts `.mdx` files into `JSX`, but **MDVue**  simply converts `.md` files into `.vue` files. That's better and more efficient for Vue projects. 

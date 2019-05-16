@@ -62,6 +62,20 @@ export default {
 
 ```
 
+## Make a Component global
+If you want a Component to be used anywhere without importing it per page you can make it global in `src/main.js`.
+
+```javascript
+// src/main.js
+
+import MyComponent from '~/components/MyComponent.vue'
+
+export default function (Vue, { head, router, isServer }) {
+  Vue.component('MyComponent', MyComponent)
+}
+```
+
+
 ## Add GraphQL to Components
 
 Every **Component** can have a `<static-query>` block with a GraphQL query

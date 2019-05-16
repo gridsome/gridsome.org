@@ -112,3 +112,8 @@ h1, h2, h3 {
     margin: 0 1rem;
   }
 }
+
+pre + h2,
+pre + h3 {
+  margin-top: 2rem;
+}
