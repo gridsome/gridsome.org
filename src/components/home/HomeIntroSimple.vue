@@ -11,7 +11,7 @@
               Static Websites
             </div>
             <div v-else-if="currentText == 1" key="1">
-              the JAMstack
+              The JAMstack
             </div>
             <div v-else-if="currentText == 2" key="2">
               any Headless CMS
@@ -20,16 +20,16 @@
               Markdown files
             </div>
             <div v-else-if="currentText == 4" key="4">
-              eCommerce PWAs
+              Documentation
             </div>
             <div v-else-if="currentText == 5" key="5">
-              Documentation
+              Design Systems
             </div>
           </transition>
         </h1>
         
         <p class="intro__lead lead post mb">
-          Gridsome helps developers build modern websites & PWAs that are <g-link to="/docs/fast-by-default">fast by default</g-link> for any data source.
+          Gridsome helps developers build modern websites & PWAs for <strong>any data source</strong> that are <g-link to="/docs/fast-by-default">fast by default</g-link>
         </p>
 
         <p class="intro__links">
@@ -83,40 +83,19 @@ export default {
 }
 
 .intro {
-  padding: 5% 0;
-  .vue-typer {
-    display: inline-block;
-    text-align: left;
-    white-space: nowrap;
-
-    .custom.char {
-      color: currentColor;
-    }
-    
-    .custom.char.typed {
-      animation: Type 1s;
-    }
-
-    .custom.caret {
-      margin: 0 2px;
-      width: 2px;
-      opacity: .6;
-    }
-  }
-
-  @media screen and (max-width: 850px) {
-    & {
-      text-align: center;
-    }
-  }
+  padding: calc(2.5% + var(--space)) 0;
 
   &__title {
-    font-size: 3.2rem;
+    font-size: 3.5rem;
     color: var(--primary-color-dark);
     letter-spacing: -1px;
     font-weight: 600;
     margin-left: auto;
     margin-right: auto;
+
+    div {
+      color: var(--primary-color);
+    }
 
     @media screen and (max-width: 850px) {
       & {
@@ -130,12 +109,6 @@ export default {
     margin-left: auto;
     margin-right: auto;
     font-size: 1.4rem;
-
-    @media screen and (max-width: 550px) {
-      & {
-        font-size: 1.2rem;
-      }
-    }
   }
 
   &__info {
