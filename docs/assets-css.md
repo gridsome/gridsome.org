@@ -156,7 +156,7 @@ module.exports = {
 
 [BootstrapVue](https://bootstrap-vue.js.org/) provides one of the most comprehensive implementations of Bootstrap V4 components and grid system available for Vue.js 2.5+, complete with extensive and automated WAI-ARIA accessibility markup.
 
-To instal use:
+To install use:
 
 ```
 # With npm
