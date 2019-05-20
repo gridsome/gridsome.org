@@ -17,7 +17,7 @@
               Serverless Apps
             </div>
             <div v-else-if="currentText == 3" key="3">
-              eCommerce PWAs
+              SEO-friendly SPAs
             </div>
             <div v-else-if="currentText == 4" key="4">
               Markdown files
