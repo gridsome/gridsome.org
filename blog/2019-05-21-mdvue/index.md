@@ -1,7 +1,7 @@
 ---
 title: MDVue - Vue Components in Markdown
 slug: gridsome-v06
-author: [tommyvedvik]
+author: [tommyvedvik, hjvedvik]
 date: 2019-05-21
 excerpt: "Introducing MDVue for Gridsome. A plugin that let you use Vue Components inside Markdown posts, and build pages with Markdown. Perfect for building Documentation, Design Systems, Portfolios, Blogs etc."
 ---
