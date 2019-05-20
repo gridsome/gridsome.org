@@ -8,28 +8,28 @@
           <span>A Vue.js framework for</span>
           <transition name="rotate">
             <div v-if="currentText == 0" key="0">
-              Static Websites
+              JAMstack Websites
             </div>
             <div v-else-if="currentText == 1" key="1">
-              The JAMstack
+              Headless CMSs
             </div>
             <div v-else-if="currentText == 2" key="2">
-              any Headless CMS
+              Serverless Apps
             </div>
             <div v-else-if="currentText == 3" key="3">
-              Markdown files
+              eCommerce PWAs
             </div>
             <div v-else-if="currentText == 4" key="4">
-              Documentation
+              Markdown files
             </div>
             <div v-else-if="currentText == 5" key="5">
-              Design Systems
+              Documentation
             </div>
           </transition>
         </h1>
         
         <p class="intro__lead lead post mb">
-          Gridsome helps developers build modern websites & PWAs for <strong>any data source</strong> that are <g-link to="/docs/fast-by-default">fast by default</g-link>
+          Gridsome makes it easy for developers to build modern websites & PWAs that are <g-link to="/docs/fast-by-default">fast by default</g-link>
         </p>
 
         <p class="intro__links">
