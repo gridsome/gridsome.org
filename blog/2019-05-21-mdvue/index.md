@@ -3,12 +3,12 @@ title: MDVue - Vue Components in Markdown
 slug: gridsome-v06
 author: [tommyvedvik, hjvedvik]
 date: 2019-05-21
-excerpt: "Introducing MDVue for Gridsome. A plugin that let you use Vue Components inside Markdown posts, and build pages with Markdown. Perfect for building Documentation, Design Systems, Portfolios, Blogs etc."
+excerpt: "Introducing MDVue for Gridsome. A plugin that let you use Vue Components inside Markdown posts, and build pages with Markdown. Perfect for building Documentation, Design Systems, Portfolios, Blogs, etc."
 ---
 
 ![MDVue](./mdvue.png)
 
-Using Markdown for content is great. It let you have all your content and code in same repository. With MDVue you can now import Vue Components and other Markdown files (!!) inside your Markdown files. This is perfect for adding extra functionality to your Markdown content. You can also use MDVue + Markdown to build all your pages in `src/pages` directory. You even get **code-splitting** at build time for all Markdown pages.
+Using Markdown for content is great. It let you have all your content and code in the same repository. With MDVue you can now import Vue Components and other Markdown files (!!) inside your Markdown files. This is perfect for adding extra functionality to your Markdown content. You can also use MDVue + Markdown to build all your pages in `src/pages` directory. You even get **code-splitting** at build time for all Markdown pages.
 
 
 ## How to use
@@ -34,7 +34,7 @@ module.exports = {
 }
 ```
 
-💥 **@gridsome/plugin-mdvue** is designed to be as a drop-in replacement for **@gridsome-filesystem** + markdown. If you're already using **filesystem-source** you can just change out the **use** and add **layout** and **pathPrefix** options.
+💥 **@gridsome/plugin-mdvue** is designed to work as a drop-in replacement for **@gridsome/source-filesystem**. If you're already using **filesystem-source** you can change out the **use** and add **layout** and **pathPrefix** options.
 
 In this example any `.md` file in `./content/docs` will be a page.
 
@@ -127,11 +127,11 @@ Some _markdown_ content...
 ## What about MDX for Vue?
 MDX will have Vue.js support (https://mdxjs.com/guides/vue), but the problem is that it's still JSX. Under the hood **MDX** converts `.mdx` files into `JSX`, but **MDVue**  simply converts `.md` files into `.vue` files. That's better and more efficient for Vue projects. 
 
-The MDX project is still great, so Gridsome will probably have a MDX source plugin at some point also.
+The MDX project is still great, so Gridsome will probably have an MDX source plugin at some point also.
 
 
 ## Gotchas
-MDVue uses runs all files trough Webpack to render Vue Components. This will slow the build process down compared to for example **filesystem-source**. It's not recommended to use MDVue if you plan to have thousands of blog posts.  MDVue is perfect for documentation, design systems, portfolios and smaller blogs etc.
+MDVue uses runs all files trough Webpack to render Vue Components. This will slow the build process down compared to for example **filesystem-source**. It's not recommended to use MDVue if you plan to have thousands of blog posts.  MDVue is perfect for documentation, design systems, portfolios, and smaller blogs.
 
 
 ## Learn more..
