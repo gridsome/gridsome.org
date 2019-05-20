@@ -39,3 +39,8 @@
   bio: "Frontend Developer"
   avatar: ./images/lokecarlsson.png
   twitter: "@carlssonloke"
+
+- id: calebanthony
+  name: Caleb Anthony
+  bio: "Web Developer"
+  avatar: ./images/calebanthony.png
