@@ -17,7 +17,7 @@ export default function (Vue, context) {
 
 ## Usage in plugins
 
-Create a `gridsome.client.js` at root in the plugin directory that exports a function. The function will recieve the plugin options as second argument and the context as the third.
+Create a `gridsome.client.js` at root in the plugin directory that exports a function. The function will receive the plugin options as second argument and the context as the third.
 
 ```js
 export default function (Vue, options, context) {

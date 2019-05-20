@@ -53,7 +53,7 @@ query Category($page: Int) {
 
 ## Pager component
 
-Gridsome has a built-in `Pager` component for easy pagination. Import it from `gridsome` in our components to use it. The component neads at least the `pageInfo.totalPages` and `pageInfo.currentPage` fields to render correctly.
+Gridsome has a built-in `Pager` component for easy pagination. Import it from `gridsome` in our components to use it. The component needs at least the `pageInfo.totalPages` and `pageInfo.currentPage` fields to render correctly.
 
 #### Example usage
 

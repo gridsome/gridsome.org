@@ -49,7 +49,7 @@ export default {
   },
   
   metaInfo: {
-    title: 'Vue.js-powered Static Site Generator'
+    title: 'Modern Site Generator for Vue.js'
   }
 }
 </script>
