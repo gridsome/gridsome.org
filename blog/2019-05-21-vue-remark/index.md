@@ -8,7 +8,7 @@ excerpt: "Introducing @gridsome/vue-remark. A plugin that let you use Vue Compon
 
 ![vue-remark](./mdvue.png)
 
-Using Markdown for content is great. It let you have all your content and code in the same repository. With Vue-Remark you can now import Vue Components and other Markdown files (!!) inside your Markdown files. This is perfect for adding extra functionality to your Markdown content. You can also use Vue-Remark to build all your pages in `src/pages` directory. You even get **code-splitting** at build time for all Markdown pages.
+Using Markdown for content is great. It let you have all your content and code in the same repository. With **vue-remark** you can now import Vue Components and other Markdown files (!!) inside your Markdown files. This is perfect for adding extra functionality to your Markdown content. You can also use **vue-remark** to build all your pages in `src/pages` directory. You even get **code-splitting** at build time for all Markdown pages.
 
 
 ## How to use
