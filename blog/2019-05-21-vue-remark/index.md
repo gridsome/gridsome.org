@@ -24,7 +24,8 @@ module.exports = {
       options: {
         baseDir: './content/docs', // Where files are located
         pathPrefix: '/docs', // Route prefix
-        layout: './src/layouts/Doc.vue' // What layout to use
+        typeName: 'Docs', // GraphQL type name
+        layout: './src/layouts/Doc.vue', // What layout to use
         remark: {
           // optional remark options and plugins
         }
