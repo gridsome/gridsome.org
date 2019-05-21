@@ -1,26 +1,26 @@
 ---
-title: MDVue - Vue Components in Markdown
-slug: gridsome-v06
+title: "Use Vue Components in Markdown"
+slug: vue-remark
 author: [tommyvedvik, hjvedvik]
 date: 2019-05-21
-excerpt: "Introducing MDVue for Gridsome. A plugin that let you use Vue Components inside Markdown posts, and build pages with Markdown. Perfect for building Documentation, Design Systems, Portfolios, Blogs, etc."
+excerpt: "Introducing @gridsome/vue-remark. A plugin that let you use Vue Components inside Markdown files, and build pages with Markdown. Perfect for building Documentation, Design Systems, Portfolios, Blogs, etc."
 ---
 
-![MDVue](./mdvue.png)
+![vue-remark](./mdvue.png)
 
-Using Markdown for content is great. It let you have all your content and code in the same repository. With MDVue you can now import Vue Components and other Markdown files (!!) inside your Markdown files. This is perfect for adding extra functionality to your Markdown content. You can also use MDVue + Markdown to build all your pages in `src/pages` directory. You even get **code-splitting** at build time for all Markdown pages.
+Using Markdown for content is great. It let you have all your content and code in the same repository. With Vue-Remark you can now import Vue Components and other Markdown files (!!) inside your Markdown files. This is perfect for adding extra functionality to your Markdown content. You can also use Vue-Remark to build all your pages in `src/pages` directory. You even get **code-splitting** at build time for all Markdown pages.
 
 
 ## How to use
 
-1. Install `@gridsome/plugin-mdvue` with Yarn or NPM to your Gridsome project.
+1. Install `@gridsome/vue-remark` with Yarn or NPM to your Gridsome project.
 2. Add to `gridsome.config.js`
 
 ```js
 module.exports = {
   plugins: [
     {
-      use: '@gridsome/plugin-mdvue',
+      use: '@gridsome/vue-remark',
       options: {
         baseDir: './content/docs', // Where files are located
         pathPrefix: '/docs', // Route prefix
@@ -34,7 +34,7 @@ module.exports = {
 }
 ```
 
-💥 **@gridsome/plugin-mdvue** is designed to work as a drop-in replacement for **@gridsome/source-filesystem**. If you're already using **filesystem-source** you can change out the **use** and add **layout** and **pathPrefix** options.
+💥 **@gridsome/vue-remark** is designed to work as a drop-in replacement for **@gridsome/source-filesystem**. If you're already using **filesystem-source** you can change out the **use** and add **layout** and **pathPrefix** options.
 
 In this example any `.md` file in `./content/docs` will be a page.
 
@@ -70,7 +70,7 @@ import Youtube from '~/components/Youtube.vue'
 
 ### Use Markdown files as components.
 
-**MDVue** let you use other `.md` files as Vue Components!
+Use other `.md` files as Vue Components!
 
 ```jsx
 ---
@@ -125,15 +125,15 @@ Some _markdown_ content...
 ```
 
 ## What about MDX for Vue?
-MDX will have Vue.js support (https://mdxjs.com/guides/vue), but the problem is that it's still JSX. Under the hood **MDX** converts `.mdx` files into `JSX`, but **MDVue**  simply converts `.md` files into `.vue` files. That's better and more efficient for Vue projects. 
+MDX will have Vue.js support (https://mdxjs.com/guides/vue), but the problem is that it's still JSX. Under the hood **MDX** converts `.mdx` files into `JSX`, but **vue-remark**  simply converts `.md` files into `.vue` files. That's better and more efficient for Vue projects. 
 
-The MDX project is still great, so Gridsome will probably have an MDX source plugin at some point also.
+The MDX project is still great, so Gridsome will probably have an MDX plugin at some point also.
 
 
-## Gotchas
-MDVue uses runs all files trough Webpack to render Vue Components. This will slow the build process down compared to for example **filesystem-source**. It's not recommended to use MDVue if you plan to have thousands of blog posts.  MDVue is perfect for documentation, design systems, portfolios, and smaller blogs.
+## Gotchas...
+**Vue-remark** uses runs all files trough Webpack to render Vue Components. This will slow the build process down compared to for example **filesystem-source**. It's not recommended to use **vue-remark** if you plan to have thousands of blog posts.  **vue-remark** is perfect for documentation, design systems, portfolios, and smaller blogs.
 
 
 ## Learn more..
-- **MDVue** Documentation: https://gridsome.org/plugins/@gridsome/plugin-mdvue
+- **Vue-Remark** documentation: https://gridsome.org/plugins/@gridsome/vue-remark
 - Learn more about Markdown https://www.markdownguide.org
