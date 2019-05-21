@@ -133,7 +133,7 @@ The MDX project is still great, so Gridsome will probably have an MDX plugin at 
 ## Gotchas...
 **Vue-remark** uses runs all files trough Webpack to render Vue Components. This will slow the build process down compared to for example **filesystem-source**. It's not recommended to use **vue-remark** if you plan to have thousands of blog posts.  **vue-remark** is perfect for documentation, design systems, portfolios, and smaller blogs.
 
-
 ## Learn more..
-- **Vue-Remark** documentation: https://gridsome.org/plugins/@gridsome/vue-remark
-- Learn more about Markdown https://www.markdownguide.org
+- [@gridsome/vue-remark](https://gridsome.org/plugins/@gridsome/vue-remark) documentation
+- [@gridsome/transformer-remark](https://gridsome.org/plugins/@gridsome/transformer-remark) documentation
+- Learn more about [Markdown](https://www.markdownguide.org)
