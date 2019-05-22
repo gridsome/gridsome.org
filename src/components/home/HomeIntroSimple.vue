@@ -8,7 +8,7 @@
           <span>A Vue.js framework for</span>
           <transition name="rotate">
             <div v-if="currentText == 0" key="0">
-              JAMstack Websites
+              JAMstack websites
             </div>
             <div v-else-if="currentText == 1" key="1">
               Headless CMSs
@@ -20,7 +20,7 @@
               SEO-friendly SPAs
             </div>
             <div v-else-if="currentText == 4" key="4">
-              Serverless Apps
+              Serverless apps
             </div>
             <div v-else-if="currentText == 5" key="5">
               Documentation
