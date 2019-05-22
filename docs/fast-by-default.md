@@ -3,6 +3,7 @@
 
 ### What makes Gridsome sites fast?
 1. [Pre-rendered HTML](#pre-rendered-html). Nothing beats static content in speed.
+2. [Automatic Code Splitting](#the-prpl-pattern) so only what you need is loaded per page.
 2. [Follows the PRPL-pattern](#the-prpl-pattern) for instant page loads.
 3. [Smart link prefetching](#smart-link-prefetching) that uses Intersection Observer to load next pages.
 4. [Progressive Images](#progressive-images) with automatic image compression and lazy loading.
@@ -19,6 +20,10 @@ A static site gives you many benefits:
 - ⚡️ **Higher Security.** With server-side processes abstracted into microservice APIs, surface areas for attacks are reduced. You can also leverage the domain expertise of specialist third-party services.
 
 - ⚡️ **Cheaper, Easier Scaling.** When your deployment amounts to a stack of files that can be served anywhere, scaling is a matter of serving those files in more places. CDNs are perfect for this, and often include scaling in all of their plans.
+
+
+## Automatic Code splitting
+Every `import` you declare gets bundled and served with each page. That means pages never load unnecessary code while browsing around.
 
 
 ## The PRPL pattern

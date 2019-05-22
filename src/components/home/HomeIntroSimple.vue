@@ -29,7 +29,7 @@
         </h1>
         
         <p class="intro__lead lead post mb">
-          Gridsome makes it easy for developers to build modern websites & PWAs that are <g-link to="/docs/fast-by-default">fast by default</g-link>
+          Gridsome makes it easy for developers to build modern JAMstack websites & PWAs that are <g-link to="/docs/fast-by-default">fast by default</g-link>
         </p>
 
         <p class="intro__links">
@@ -109,6 +109,11 @@ export default {
     margin-left: auto;
     margin-right: auto;
     font-size: 1.4rem;
+    @media screen and (max-width: 850px) {
+      & {
+        font-size: 1.2rem;
+      }
+    }
   }
 
   &__info {

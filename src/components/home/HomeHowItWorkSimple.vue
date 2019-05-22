@@ -49,10 +49,10 @@
 
         <ul class="bullet-list mb">
           <li><Bullet /><g-link to="/docs/fast-by-default#pre-rendered-html">Pre-rendered HTML</g-link></li>
-          <li><Bullet /><g-link to="/docs/fast-by-default#the-prpl-pattern">PRPL-pattern</g-link></li>
+          <li><Bullet /><g-link to="/docs/fast-by-default#automatic-code-splitting">Automatic Code Splitting</g-link></li>
+          <li><Bullet /><g-link to="/docs/fast-by-default#the-prpl-pattern">Follows PRPL-pattern</g-link></li>
           <li><Bullet /><g-link to="/docs/fast-by-default#smart-link-prefetching">Smart link prefetching</g-link></li>
           <li><Bullet /><g-link to="/docs/fast-by-default#progressive-images">Progressive Images</g-link></li>
-          <li><Bullet /><g-link to="/docs/fast-by-default#vuejs-spa">Vue.js SPA</g-link></li>
         </ul>
       </Card>
 
