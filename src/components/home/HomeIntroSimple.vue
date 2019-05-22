@@ -14,13 +14,13 @@
               Headless CMSs
             </div>
             <div v-else-if="currentText == 2" key="2">
-              Serverless Apps
+              Markdown files
             </div>
             <div v-else-if="currentText == 3" key="3">
               SEO-friendly SPAs
             </div>
             <div v-else-if="currentText == 4" key="4">
-              Markdown files
+              Serverless Apps
             </div>
             <div v-else-if="currentText == 5" key="5">
               Documentation
