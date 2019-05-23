@@ -8,19 +8,19 @@
           <span>A Vue.js framework for</span>
           <transition name="rotate">
             <div v-if="currentText == 0" key="0">
-              JAMstack websites
+              Static Websites
             </div>
             <div v-else-if="currentText == 1" key="1">
               Headless CMSs
             </div>
             <div v-else-if="currentText == 2" key="2">
-              Markdown files
+              Markdown Files
             </div>
             <div v-else-if="currentText == 3" key="3">
               SEO-friendly SPAs
             </div>
             <div v-else-if="currentText == 4" key="4">
-              Serverless apps
+              Serverless Apps
             </div>
             <div v-else-if="currentText == 5" key="5">
               Documentation
