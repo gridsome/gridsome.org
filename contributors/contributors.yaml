@@ -23,7 +23,7 @@
   twitter: "@cosmicjs"
 
 - id: cossssmin
-  name: 
+  name:
   bio: "Developer. Maker of (mostly) email things. #emailgeeks #JAMStack"
   avatar: ./images/cosmin.png
   twitter: "@cossssmin"
@@ -39,3 +39,9 @@
   bio: "Frontend Developer"
   avatar: ./images/lokecarlsson.png
   twitter: "@carlssonloke"
+
+- id: lauragift
+  name: Gift Egwuenu
+  bio: "Software Engineer"
+  avatar: ./images/gift.jpeg
+  twitter: "@lauragift21"
