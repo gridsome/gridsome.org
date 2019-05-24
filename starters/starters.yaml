@@ -76,3 +76,12 @@
   author: calebanthony
   tags: markdown, blog, bulma, eslint
   platforms: markdown
+  
+- title: Bootstrap resume
+  description: Resume/portfolio
+  screenshot: ./screenshots/gridsome-starter-resume.png
+  repo: LokeCarlsson/gridsome-starter-resume
+  preview: https://gridsome-starter-resume.loke.dev
+  author: lokecarlsson
+  tags: resume, portfolio, bootstrap, bootstrap-vue
+  platforms: markdown
