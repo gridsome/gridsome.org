@@ -45,3 +45,8 @@
   bio: "Software Engineer"
   avatar: ./images/gift.jpeg
   twitter: "@lauragift21"
+
+- id: calebanthony
+  name: Caleb Anthony
+  bio: "Web Developer"
+  avatar: ./images/calebanthony.png

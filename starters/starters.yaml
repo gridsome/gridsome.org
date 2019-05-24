@@ -67,3 +67,12 @@
   author: lauragift
   tags: markdown, minimalistic, blog, gridsome
   platforms: markdown
+
+- title: Bulma Starter
+  description: Blog starter with Bulma
+  screenshot: ./screenshots/gridsome-bulma.png
+  repo: calebanthony/gridsome-bulma
+  preview: https://calebanthony.github.io/gridsome-bulma
+  author: calebanthony
+  tags: markdown, blog, bulma, eslint
+  platforms: markdown
