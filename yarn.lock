@@ -597,10 +597,10 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@gridsome/cli@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@gridsome/cli/-/cli-0.1.0.tgz#97713981fef0e0e33ae101939a0c66a3a346cdc4"
-  integrity sha512-X2ASRm2MLDjW69IOhlrSSJtVl8/KdAPi4G8mwXNZDr9u9r+HE0RbG4y+pVwJcOMKkR8XRj7xMAcnSQXwJiGfTg==
+"@gridsome/cli@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@gridsome/cli/-/cli-0.1.1.tgz#b0760dd9dd16e11420d1cc64b37077f62a002972"
+  integrity sha512-c40nerYwyHc0Qukc33RyOVxcUAFr1Tcut9YSXs1RZASylDKTwYGVVN+d4XGgEP3Lw1AM1PUHFprxJ1UKXYlQzg==
   dependencies:
     "@hjvedvik/tasks" "^0.0.8"
     chalk "^2.4.1"
@@ -3985,13 +3985,13 @@ gray-percentage@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/gray-percentage/-/gray-percentage-2.0.0.tgz#b72a274d1b1379104a0050b63b207dc53fe56f99"
 
-gridsome@^0.6.1:
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.6.1.tgz#918bf0022de466dee2e2a69487da2c852c8b8909"
-  integrity sha512-slq5nUd9xDHErlBGTT1sUOwRtwI37pgATBg8zkN565AbXnO3bNmVnRUaZ0OvMtQFpg97NaMasJPaxKIOG7vpfA==
+gridsome@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.6.2.tgz#a183ad5f4b77f54b7a26921f0e8804eda7d8ea68"
+  integrity sha512-q2W1xsZ4R/ykHD+Qpj6DiJ3ZY4WZaAyYcAyXQ1Z+yLhf5/ht5IYbxIGpYtAemnwWE9zh+GvECs3MpZ/ZVIImIw==
   dependencies:
     "@babel/core" "^7.0.0"
-    "@gridsome/cli" "^0.1.0"
+    "@gridsome/cli" "^0.1.1"
     "@sindresorhus/slugify" "^0.8.0"
     "@vue/babel-preset-app" "^3.4.0"
     "@vue/component-compiler-utils" "^2.5.2"
