@@ -1,4 +1,3 @@
-
 # How to contribute
 > Gridsome is an open-source project built by core maintainers and contributors. We want to make it easy for anyone to contribute to Gridsome. Contribute to core, build plugins, improve documentation or write a blog post. It all helps Gridsome on its mission to simplify JAMstack development.
 
@@ -61,6 +60,8 @@ To add a new blog post to the gridsome.org blog:
 
 
 ## Submit a Starter
+
+Contributing a new starter project is a great way to help other Gridsome users get off the ground quickly. While Starters are owned/maintained under your personal Github account, if you want one listed as an "official" Starter, you must commit the appropriate entry inside the Gridsome.org repo.
 
 - Clone [the Gridsome.org repo](https://github.com/gridsome/gridsome.org).
 - Run `yarn` to install all of the website's dependencies.
