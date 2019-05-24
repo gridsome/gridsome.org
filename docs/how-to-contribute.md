@@ -70,7 +70,7 @@ To add a new blog post to the gridsome.org blog:
 - Add your name and info to `/contributors/contributors.yaml`.
 
 **Add starter:**
-- Add starter screenshot to `/starters/screnshots` (840x840px / 1680x1680 for retina).
+- Add starter screenshot to `/starters/screenshots` (840x840px / 1680x1680 for retina).
 - Add starter details to end of this file `/starters/starters.yaml`.
 
 Gridsome Starers uses the Github project README file for content.

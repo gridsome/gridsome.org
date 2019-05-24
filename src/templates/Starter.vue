@@ -31,19 +31,19 @@
           
           <Popover name="InstallThis" :closeOnContentClick="false">
             <div slot="face">
-              <button class="button primary button--md">Install</button>
+              <button class="button primary button--small">Install now  </button>
             </div>
 
             <div slot="content">
-              <small style="margin-bottom: .5rem; display: block;">
+              <p style="margin-bottom: .5rem; display: block;">
               Install locally with <strong><g-link to="/docs/gridsome-cli">Gridsome CLI</g-link></strong>
-              </small>
+              </p>
               <div class="mb">
                 <code class="starter__command flex">
                   <span ref="command">gridsome create my-project {{ $page.starter.repo }}</span>
-                  <button class="button button--blank button--xsmall" @click="copyCommand()">
+                  <button class="button button--xsmall" @click="copyCommand()">
                     <ClipboardIcon title="Copy to clipboard" width="16" height="16" />
-                    <span> Copy </span>
+                    <span style="margin-left: 0"> Copy </span>
                   </button>
                 </code>
               </div>

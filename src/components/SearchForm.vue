@@ -5,12 +5,14 @@
   >
     <label>
       <input
+        ref="input"
         :id="`${id}-input`"
         class="header-search__input"
         placeholder="Search docs..."
         title="Search docs"
         type="search"
-      >
+        @focus="onFocus"
+      />
     </label>
   </form>
 </template>
@@ -21,15 +23,29 @@ export default {
     id: { type: String, default: 'search' }
   },
 
-  mounted() {
-    import('docsearch.js').then(({ default: docsearch }) => {
-      docsearch({
-        indexName: 'gridsome',
-        inputSelector: `#${this.id}-input`,
-        apiKey: 'a7400a3a94b256c5283cb05efb860fc1',
-        debug: process.env.NODE_ENV === 'development'
+  data () {
+    return {
+      isLoaded: false
+    }
+  },
+
+  methods: {
+    onFocus () {
+      if (this.isLoaded) return
+
+      import('docsearch.js').then(({ default: docsearch }) => {
+        docsearch({
+          indexName: 'gridsome',
+          inputSelector: `#${this.id}-input`,
+          apiKey: 'a7400a3a94b256c5283cb05efb860fc1',
+          debug: process.env.NODE_ENV === 'development'
+        })
+
+        this.isLoaded = true
+
+        this.$nextTick(() => this.$refs.input.focus())
       })
-    })
+    }
   }
 }
 </script>

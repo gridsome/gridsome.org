@@ -597,10 +597,10 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@gridsome/cli@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@gridsome/cli/-/cli-0.1.0.tgz#97713981fef0e0e33ae101939a0c66a3a346cdc4"
-  integrity sha512-X2ASRm2MLDjW69IOhlrSSJtVl8/KdAPi4G8mwXNZDr9u9r+HE0RbG4y+pVwJcOMKkR8XRj7xMAcnSQXwJiGfTg==
+"@gridsome/cli@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@gridsome/cli/-/cli-0.1.1.tgz#b0760dd9dd16e11420d1cc64b37077f62a002972"
+  integrity sha512-c40nerYwyHc0Qukc33RyOVxcUAFr1Tcut9YSXs1RZASylDKTwYGVVN+d4XGgEP3Lw1AM1PUHFprxJ1UKXYlQzg==
   dependencies:
     "@hjvedvik/tasks" "^0.0.8"
     chalk "^2.4.1"
@@ -3985,13 +3985,13 @@ gray-percentage@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/gray-percentage/-/gray-percentage-2.0.0.tgz#b72a274d1b1379104a0050b63b207dc53fe56f99"
 
-gridsome@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.6.0.tgz#366232778c3148a14936ce0b24d1069f526bfcf5"
-  integrity sha512-fm+UihcsIMGcqBvA3H8tbRjDQ1YagTn+vTNZQiHl+Z2bgm6ynVMMizM1WRIKzVZpaMM3bRRCJIRnf1Va9KpJkg==
+gridsome@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.6.2.tgz#a183ad5f4b77f54b7a26921f0e8804eda7d8ea68"
+  integrity sha512-q2W1xsZ4R/ykHD+Qpj6DiJ3ZY4WZaAyYcAyXQ1Z+yLhf5/ht5IYbxIGpYtAemnwWE9zh+GvECs3MpZ/ZVIImIw==
   dependencies:
     "@babel/core" "^7.0.0"
-    "@gridsome/cli" "^0.1.0"
+    "@gridsome/cli" "^0.1.1"
     "@sindresorhus/slugify" "^0.8.0"
     "@vue/babel-preset-app" "^3.4.0"
     "@vue/component-compiler-utils" "^2.5.2"
@@ -5298,10 +5298,6 @@ lodash.result@4.5.2:
 lodash.some@^4.4.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.some/-/lodash.some-4.6.0.tgz#1bb9f314ef6b8baded13b549169b2a945eb68e4d"
-
-lodash.split@^4.4.2:
-  version "4.4.2"
-  resolved "https://registry.yarnpkg.com/lodash.split/-/lodash.split-4.4.2.tgz#a7f7bd9f37968b9312428e2f3ac3fb3173c4c3c6"
 
 lodash.tail@^4.1.1:
   version "4.1.1"
@@ -9075,6 +9071,11 @@ vue-instantsearch@^2.0.0:
     algoliasearch-helper "^2.26.1"
     instantsearch.js "^3.1.0"
 
+vue-lazy-hydration@^1.0.0-beta.7:
+  version "1.0.0-beta.7"
+  resolved "https://registry.yarnpkg.com/vue-lazy-hydration/-/vue-lazy-hydration-1.0.0-beta.7.tgz#ecb6a644cc72ffd9ef58b8501219c7710de1e314"
+  integrity sha512-x8PUrI2s3/g+j5xfPBnnljN0Xen0WRhvzJAAJWfVpEWMD3sznZupzUzNeF9LDjQB44mVG1dzYvjYvMse88arsw==
+
 vue-loader@^15.7.0:
   version "15.7.0"
   resolved "https://registry.yarnpkg.com/vue-loader/-/vue-loader-15.7.0.tgz#27275aa5a3ef4958c5379c006dd1436ad04b25b3"
@@ -9144,12 +9145,6 @@ vue-template-compiler@^2.6.10:
 vue-template-es2015-compiler@^1.6.0, vue-template-es2015-compiler@^1.8.2:
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.8.2.tgz#dd73e80ba58bb65dd7a8aa2aeef6089cf6116f2a"
-
-vue-typer@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/vue-typer/-/vue-typer-1.2.0.tgz#08d95785a2817959b92276055cdf272d8986500b"
-  dependencies:
-    lodash.split "^4.4.2"
 
 vue@^2.6.10:
   version "2.6.10"

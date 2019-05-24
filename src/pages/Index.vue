@@ -1,15 +1,35 @@
 <template>
   <Layout class="layout-homepage">
-    <home-intro-simple />
-    <home-how-it-work-simple />
-    <home-features />
-    <home-examples />
-    <home-community />
-    <home-blog />
+
+    <LazyHydrate when-idle>
+      <home-intro-simple />
+    </LazyHydrate>
+    
+    <LazyHydrate when-visible>
+      <home-how-it-work-simple />
+    </LazyHydrate>
+    
+    <LazyHydrate when-visible>
+      <home-features />
+    </LazyHydrate>
+
+    <LazyHydrate when-visible>
+      <home-examples />
+    </LazyHydrate>
+
+    <LazyHydrate when-visible>
+      <home-community />
+    </LazyHydrate>
+
+    <LazyHydrate when-visible>
+      <home-blog />
+    </LazyHydrate>
+    
   </Layout>
 </template>
 
 <script>
+import LazyHydrate from 'vue-lazy-hydration'
 import HomeIntroSimple from '@/components/home/HomeIntroSimple.vue'
 import HomeHowItWorkSimple from '@/components/home/HomeHowItWorkSimple.vue'
 import HomeBlog from '@/components/home/HomeBlog.vue'
@@ -19,6 +39,7 @@ import HomeCommunity from '@/components/home/HomeCommunity.vue'
 
 export default {
   components: {
+    LazyHydrate,
     HomeIntroSimple,
     HomeHowItWorkSimple,
     HomeExamples,
@@ -28,14 +49,16 @@ export default {
   },
   
   metaInfo: {
-    title: 'Vue.js-powered Modern Website Generator'
+    title: 'Modern Site Generator for Vue.js'
   }
 }
 </script>
 
 <style>
-.layout-homepage header{
-  border-color: transparent;  
+@media screen and (min-width: 850px) {
+  .layout-homepage header{
+    border-color: transparent;  
+  }
 }
 </style>
 

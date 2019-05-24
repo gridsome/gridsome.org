@@ -130,8 +130,8 @@ api.createSchema(({ addSchema, graphql }) => {
       fields: {
         // ...
       }
-    }))
-  })
+    })
+  }))
 })
 ```
 

@@ -1,8 +1,8 @@
 - title: Default starter
   repo: gridsome/gridsome-starter-default
-  author: gridsome 
+  author: gridsome
   tags: Default
-  
+
 - title: Default WordPress starter
   repo: gridsome/gridsome-starter-wordpress
   author: gridsome
@@ -42,7 +42,7 @@
   platforms: cosmicjs
 
 - title: Forestry Starter
-  description: Portfolio and Blog 
+  description: Portfolio and Blog
   screenshot: ./screenshots/gridsome-forestry-starter.jpg
   repo: itsnwa/gridsome-forestry-starter
   preview: https://gridsome-forestry.netlify.com
@@ -59,6 +59,24 @@
   tags: markdown, forestry, portfolio, blog, bootstrap, bootstrap-vue
   platforms: markdown
 
+- title: Minimal Starter
+  description: Blog with minimalist design
+  screenshot: ./screenshots/gridsome-minimal-blog.png
+  repo: lauragift21/gridsome-minimal-blog
+  preview: https://gridsome-blog-telerik.netlify.com/
+  author: lauragift
+  tags: markdown, minimalistic, blog, gridsome
+  platforms: markdown
+
+- title: Bulma Starter
+  description: Blog starter with Bulma
+  screenshot: ./screenshots/gridsome-bulma.png
+  repo: calebanthony/gridsome-bulma
+  preview: https://calebanthony.github.io/gridsome-bulma
+  author: calebanthony
+  tags: markdown, blog, bulma, eslint
+  platforms: markdown
+  
 - title: Bootstrap resume
   description: Resume/portfolio
   screenshot: ./screenshots/gridsome-starter-resume.png
@@ -66,4 +84,3 @@
   preview: https://gridsome-starter-resume.loke.dev
   author: lokecarlsson
   tags: resume, portfolio, bootstrap, bootstrap-vue
-  platforms: markdown

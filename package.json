@@ -13,13 +13,13 @@
     "babel-runtime": "^6.26.0",
     "clipboard-copy": "^3.0.0",
     "docsearch.js": "^2.6.2",
-    "gridsome": "^0.6.0",
+    "gridsome": "^0.6.2",
     "marked": "^0.6.1",
     "typography": "^0.16.18",
     "vue-instantsearch": "^2.0.0",
+    "vue-lazy-hydration": "^1.0.0-beta.7",
     "vue-popover": "^1.6.2",
-    "vue-scrollto": "^2.13.0",
-    "vue-typer": "^1.2.0"
+    "vue-scrollto": "^2.13.0"
   },
   "devDependencies": {
     "@gridsome/plugin-critical": "^0.1.2",

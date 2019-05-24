@@ -53,7 +53,7 @@ First we will start by adding the form to our template tag:
 
 We have include a honeypot input that will lure bots trying to send spam and Netlify will automatically reject them.
 
-Next step is to add our `formData` variable that will hold our data that will be sent to Netlify, this is binded to our inputs to automatically update `formData` when the input is changed.
+Next step is to add our `formData` variable that will hold our data that will be sent to Netlify, this is bound to our inputs to automatically update `formData` when the input is changed.
 
 ```js
 data() {
@@ -65,7 +65,7 @@ data() {
 
 Last step is to add our submit handler to send the data to Netlify. This is done by listening to the form submit action and using fetch to post the data in `formData`. We also have a encode method that will make sure our data is properly formatted when we post it. 
 
-In this example shown below we are redirecting the user to the route `/success` if the post was successful, this can be changed into any action you want. But in this case you need to make sure you have a page set up on that route to present a sucess message for the user.
+In this example shown below we are redirecting the user to the route `/success` if the post was successful, this can be changed into any action you want. But in this case you need to make sure you have a page set up on that route to present a success message for the user.
 
 ```js
 methods: {
