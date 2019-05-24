@@ -25,8 +25,8 @@
         </div>
 
         <p class="works__powered-by">
-          Powered by <br/><strong>GraphQL </strong>
-          <graph-ql-logo width="18" height="18" />
+         Centralized data management <br/>powered by <strong>GraphQL </strong>
+          <graph-ql-logo width="15" height="18" />
         </p>
 
         <ul class="works__tools flex gap-15 text-center flex--center">
