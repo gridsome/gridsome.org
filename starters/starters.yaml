@@ -1,19 +1,20 @@
 - title: Default starter
   repo: gridsome/gridsome-starter-default
   author: gridsome
-  tags: Default
+  featured: true
 
 - title: Default WordPress starter
   repo: gridsome/gridsome-starter-wordpress
   author: gridsome
   platforms: wordpress
-  tags: Default
+  featured: true
 
 - title: Default Contentful starter
   repo: gridsome/gridsome-starter-contentful
   author: gridsome
   tags: markdown, tailwind
   platforms: contentful
+  featured: true
 
 - title: Gridsome Blog Starter
   description: Official Markdown Blog Starter
@@ -21,7 +22,7 @@
   repo: gridsome/gridsome-starter-blog
   preview: https://gridsome-starter-blog.netlify.com/
   author: gridsome
-  tags: Blog, Dark Mode
+  tags: blog, dark mode
   platforms: markdown
 
 - title: Bleda

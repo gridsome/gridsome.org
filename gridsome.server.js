@@ -54,14 +54,13 @@ module.exports = function (api) {
     })
 
     // Connect author field to Contributors & Platforms
-    starters.addReference('author','Contributor')
-    starters.addReference('platforms','Platform')
+    starters.addReference('author', 'Contributor')
+    starters.addReference('platforms', 'Platform')
 
-    startersJson.forEach(({ id, name: title, ...fields }) => {
+    startersJson.forEach((starter, index) => {
       starters.addNode({
-        id,
-        title,
-        fields,
+        ...starter,
+        index,
         internal: {
           origin: startersPath
         }
@@ -78,11 +77,10 @@ module.exports = function (api) {
     })
 
     // Connect author field to Contributors
-    platformsJson.forEach(({ id, name: title, ...fields }) => {
+    platformsJson.forEach((platform, index) => {
       platforms.addNode({
-        id,
-        title,
-        fields,
+        ...platform,
+        index,
         internal: {
           origin: platformsPath
         }

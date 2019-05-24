@@ -26,7 +26,7 @@
 query Platform($id: String!) {
   platform(id: $id) {
     title
-    belongsTo {
+    belongsTo(sortBy: "index") {
       edges {
         node {
           ... on Starter {
@@ -35,6 +35,8 @@ query Platform($id: String!) {
             description
             preview
             repo
+            path
+            screenshot (width: 840, height: 840)
             platforms {
               title
               logo
@@ -43,8 +45,6 @@ query Platform($id: String!) {
               title
               path
             }
-            path
-            screenshot (width: 840, height: 840)
           }
         }
       }

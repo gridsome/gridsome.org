@@ -30,11 +30,19 @@ export default {
 
 <page-query>
 query Starters {
-  defaultStarters: allStarter (order: ASC, perPage: 3) {
+  defaultStarters: allStarter (
+    sort: [{ by: "index", order: ASC }]
+    filter: {
+      featured: {
+        eq: true
+      }
+    }
+  ) {
     edges {
       node {
         id
         title
+        path
         description
         preview
         repo
@@ -46,11 +54,17 @@ query Starters {
           title
           path
         }
-        path
       }
     }
   },
-  starters: allStarter (order: ASC, skip: 3) {
+  starters: allStarter (
+    sortBy: "index"
+    filter: {
+      featured: {
+        ne: true
+      }
+    }
+  ) {
     edges {
       node {
         id
@@ -58,6 +72,8 @@ query Starters {
         description
         preview
         repo
+        path
+        screenshot  (width: 840, height:840)
         platforms {
           title
           logo
@@ -66,8 +82,6 @@ query Starters {
           title
           path
         }
-        path
-        screenshot  (width: 840, height:840)
       }
     }
   }

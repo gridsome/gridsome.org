@@ -161,21 +161,21 @@ export default {
 </script>
 
 <page-query>
-query Starters ($id: String!) {
+query Starters($id: String!) {
   starter(id: $id) {
     title
     repo
+    path
+    preview
+    screenshot(width: 1680, quality: 80)
     platforms {
       title
-      logo (width: 30, height: 30)
+      logo(width: 30, height: 30)
     }
     author {
       title
       path
     }
-    path
-    preview
-    screenshot (width: 1680, quality: 80)
   }
 }
 </page-query>
