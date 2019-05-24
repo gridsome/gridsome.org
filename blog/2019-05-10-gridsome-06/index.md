@@ -31,11 +31,15 @@ You can use it to create pages manually from the GraphQL data layer:
 ```js
 module.exports = function (api) {
   api.createPages(async ({ graphql, createPage }) => {
-    const { data } = await graphql(`{
-      allProduct {
-        edges {
-          id
-          path
+    const { data } = await graphql(`
+      {
+        allProduct {
+          edges {
+            node {
+              id
+              path
+            }
+          }
         }
       }
     `)
