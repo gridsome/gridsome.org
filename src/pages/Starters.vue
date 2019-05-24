@@ -59,6 +59,7 @@ query Starters {
   },
   starters: allStarter (
     sortBy: "index"
+    order: ASC
     filter: {
       featured: {
         ne: true
