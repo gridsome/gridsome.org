@@ -53,18 +53,21 @@
               >v{{ $static.metaData.gridsomeVersion }}</span>
             </a>
             <div class="dropdown">
-              <a href="//github.com/gridsome/gridsome/blob/master/gridsome/CHANGELOG.md" rel="noopener noreferrer" target="_blank">
-                Changelog
-              </a>
               <a href="//github.com/gridsome/gridsome" rel="noopener noreferrer" target="_blank">
-                Core repository
+                Core Repository
               </a>
-              <a href="//github.com/gridsome/gridsome.org" rel="noopener noreferrer" target="_blank">
-                Website repository
+              <a href="//github.com/gridsome/gridsome/blob/master/gridsome/CHANGELOG.md" rel="noopener noreferrer" target="_blank">
+                Core Changelog
               </a>
               <a href="//github.com/gridsome/gridsome/issues" rel="noopener noreferrer" target="_blank">
-                GitHub Issues
-              </a>    
+                Core Issues
+              </a>
+               <a href="//github.com/gridsome/gridsome/projects/2" rel="noopener noreferrer" target="_blank">
+                Gridsome Roadmap
+              </a>
+              <a href="//github.com/gridsome/gridsome.org" rel="noopener noreferrer" target="_blank">
+                Website Repository
+              </a> 
             </div>
           </div>
         </nav>
