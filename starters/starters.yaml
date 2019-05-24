@@ -84,3 +84,4 @@
   preview: https://gridsome-starter-resume.loke.dev
   author: lokecarlsson
   tags: resume, portfolio, bootstrap, bootstrap-vue
+  platforms: markdown
