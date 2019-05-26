@@ -22,7 +22,7 @@ To use `@gridsome/cli` in the repo as a global command. Enter the `~/packages/cl
 
 
 ## Contributing to the docs
-We are a strong believer that documentation is very important for any open-source projects. Gridsome uses, of course, Gridsome for it's website and documentation.
+We are a strong believer that documentation is very important for any open-source projects. Gridsome uses, of course, Gridsome for its website and documentation.
 
 
 1. If you want to add/modify any Gridsome documentation, go to the
@@ -74,7 +74,7 @@ Contributing a new starter project is a great way to help other Gridsome users g
 - Add starter screenshot to `/starters/screenshots` (840x840px / 1680x1680 for retina).
 - Add starter details to end of this file `/starters/starters.yaml`.
 
-Gridsome Starers uses the Github project README file for content.
+Gridsome Starters use the Github project README file for content.
 
 - Run `gridsome develop` to preview starter at `http://localhost:8000/starters`.
 - Commit and push to your fork
