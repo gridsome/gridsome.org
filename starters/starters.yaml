@@ -77,7 +77,7 @@
   author: calebanthony
   tags: markdown, blog, bulma, eslint
   platforms: markdown
-  
+
 - title: Bootstrap resume
   description: Resume/portfolio
   screenshot: ./screenshots/gridsome-starter-resume.png
@@ -86,4 +86,13 @@
   author: lokecarlsson
   tags: resume, portfolio, bootstrap, bootstrap-vue
   platforms: markdown
-  
+
+- title: Gridsome Portfolio Starter
+  description: Simple portfolio and blog with Tailwind
+  screenshot: ./screenshots/gridsome-portfolio-starter.jpg
+  repo: drehimself/gridsome-portfolio-starter
+  preview: https://gridsome-portfolio-starter.netlify.com/
+  author: drehimself
+  tags: portfolio, markdown, tailwind
+  platforms: markdown
+
