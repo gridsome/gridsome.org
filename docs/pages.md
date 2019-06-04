@@ -1,6 +1,6 @@
 # Pages
 
-Pages are used for **normal pages** and for **listing & paginate GraphQL collections**. Like for example a Blog page. The url path of a page is always static. For **dynamic pages** like a single blog post, you need to use a **Template**. Learn more about [templates here](/docs/templates).
+Pages are used for **normal pages** and for **listing & paginating GraphQL collections**. For example, a Blog page that shows an index of different blog posts. The url path of a page is always static. For **dynamic pages** like a single blog post, you need to use a **Template**. Learn more about [templates here](/docs/templates).
 
 - If url will be `/about` use a **page**
 - If url will be `/blog` use a **page**
@@ -8,8 +8,7 @@ Pages are used for **normal pages** and for **listing & paginate GraphQL collect
 
 ## Creating pages
 
-All `.vue` files in the `src/pages` directory will become the pages for your
-website. The page URL is generated based on the location and name of the file. The path will be lowercased and slugified automatically. Files named `Index.vue` are treated like `index.html` files and will not get a slug.
+All `.vue` files in the `src/pages` directory will become the pages for your website. The page URL is generated based on the location and name of the file. The path will be lowercased and slugified automatically. Files named `Index.vue` are treated like `index.html` files and will not get a slug.
 
 Examples:
 
