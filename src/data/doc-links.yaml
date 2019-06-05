@@ -48,20 +48,22 @@
 
 - title : Working with data
   items:
-    - title: Fetching data
+    - title: The GraphQL data layer
+      link: /docs/data-layer
+    - title: Importing data
       link: /docs/fetching-data
     - title: Querying data
       link: /docs/querying-data
     - title: Filtering data
       link: /docs/filtering-data
-    - title: Client-side data
-      link: /docs/client-side-data
     - title: Taxonomy pages
       link: /docs/taxonomies
-    - title: Paginated data
+    - title: Paginate data
       link: /docs/pagination
-    - title: Add global meta data
+    - title: Global meta data
       link: /docs/site-meta-data
+    - title: Client-side data
+      link: /docs/client-side-data
 
 - title : Styles and Assets
   items:
@@ -76,11 +78,11 @@
 
 - title : Guides
   items:
-    - title: Add a form *
+    - title: Add a form
       link: /docs/guide-forms
     - title: Add a search *
       link: /docs/guide-search
-    - title: Add comments *
+    - title: Add comments
       link: /docs/guide-comments
     - title: Add Netlify CMS
       link: /docs/guide-netlify-cms

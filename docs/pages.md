@@ -100,7 +100,7 @@ The `<Layout>` component is an optional component used to **wrap pages and templ
 To create a custom `404` page you need to add a `404.vue` in `src/pages`. This will automatically create a **404.html** file to the deploy.
 
 
-### More...
+## More...
 
 - [Import layout to a page or template](/docs/layouts#import-layout-to-a-page-or-template)
 - [Add head meta data to Pages](/docs/head#add-head-meta-data-to-pages--templates)

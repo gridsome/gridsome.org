@@ -76,12 +76,6 @@ export default {
 
 <style lang="scss">
 
-@keyframes Type {
-  from  {
-    opacity: .6;
-  }
-}
-
 .intro {
   padding: calc(2.5% + var(--space)) 0;
 

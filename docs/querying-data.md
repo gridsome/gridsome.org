@@ -1,6 +1,6 @@
 # Querying data
 
-You can query fetched data into any **Page, Template or Component**. Queries are added with a `<page-query>` or `<static-query>` block in Vue Components.
+You can query data from the GraphQL data layer into any **Page, Template or Component**. Queries are added with a `<page-query>` or `<static-query>` block in Vue Components.
 
 - Use `<page-query>` in **Pages & Templates**.
 - Use `<static-query>` in **Components**.
@@ -98,12 +98,6 @@ query Post {
   }
 }
 ```
-
-## Explore & test queries
-
-Every Gridsome project has a **GraphQL explorer (Playground)** that can be used to explore and test queries when in development mode. Here you also get a list of all available GraphQL collections. This can usually be opened by going to `http://localhost:8080/___explore`.
-
-![graphql-explorer](./images/graphql-explorer.png)
 
 ## Query data in Pages
 
