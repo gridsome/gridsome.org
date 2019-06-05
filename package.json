@@ -28,7 +28,7 @@
     "@gridsome/transformer-remark": "^0.3.0",
     "execa": "^1.0.0",
     "fs-extra": "^7.0.1",
-    "js-yaml": "^3.12.1",
+    "js-yaml": "^3.13.1",
     "node-sass": "^4.9.3",
     "raw-loader": "^0.5.1",
     "sass-loader": "^7.1.0",
