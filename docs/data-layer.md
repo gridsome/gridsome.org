@@ -17,7 +17,7 @@ If you need dynamic data you should use [client-side data](/docs/client-side-dat
  - [How to query data](/docs/querying-data).
  - [How to filter data](/docs/filtering-data).
  - [How to create taxonomy pages](/docs/taxonomies).
- - [How to paginate data](/docs/paginate-data).
+ - [How to paginate data](/docs/pagination).
  - [How to add client-side / dynamic data](/docs/client-side-data).
 
 
