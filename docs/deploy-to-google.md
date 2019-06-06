@@ -26,11 +26,11 @@ gsutil web set -m index.html -e 404.html gs://your-bucket-name
 
 
 
-Google cloud build
-### 1. Mirror bitbucket to google Source Repositories 
-[Documentation](https://cloud.google.com/source-repositories/docs/mirroring-a-bitbucket-repository)
+# Google cloud build
+## 1. Setup google Source Repositories 
+[Documentation](https://cloud.google.com/source-repositories/docs/)
 
-### 2. Add Build trigger
+## 2. Add Build trigger
 Create a new [trigger](https://console.cloud.google.com/cloud-build/triggers)
 
 
