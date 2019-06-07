@@ -60,18 +60,71 @@ module.exports = function (api) {
 
 
 ## Add data from local files
-..
+Gridsome also allows us to add data from local files into the GraphQL layer for further use in our vue components. This can either be markdown files, images, YAML, CSV and JSON files.
 
 ### Markdown
-..
+*..contribute*
 
 ### Images
-..
+*..contribute*
 
 ### YAML
-..
+*..contribute*
 
 ### CSV
-..
+*..contribute*
+
 
 ### JSON
+
+Adding data from a local JSON file to GraphQL layer will require that we already have a json file in the file directory. Here's a sample JSON file called `product.json`.
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Logitech Mouse"
+  },
+  {
+    "id": 2,
+    "name": "Alienware"
+  },
+  {
+    "id": 3,
+    "name": "Pixel 3"
+  },
+  {
+    "id": 4,
+    "name": "Magic Keyboard"
+  },
+  {
+    "id": 5,
+    "name": "Macbook"
+  }
+]
+```
+
+Next step will be to create a `gridsome.server.js` file in the root of your Gridsome project and connect the JSON file with the Data Store API and thr `api.loadSource` function.
+
+```js
+
+const products = require('./src/data/product.json');
+
+module.exports = function (api) {
+  api.loadSource(store => {
+    const contentType = store.addContentType({
+      typeName: 'Product'
+    })
+
+    for (const data of products) {
+      contentType.addNode({
+        id: data.id,
+        product: data.name
+      })
+    }
+  })
+}
+```
+
+Once your contentType is populated, you can easily query it through GraphQL in any vue component.
+

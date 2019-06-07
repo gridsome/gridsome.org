@@ -76,11 +76,11 @@
 
 - title : Guides
   items:
-    - title: Add a form *
+    - title: Add a form
       link: /docs/guide-forms
     - title: Add a search *
       link: /docs/guide-search
-    - title: Add comments *
+    - title: Add comments
       link: /docs/guide-comments
     - title: Add Netlify CMS
       link: /docs/guide-netlify-cms
