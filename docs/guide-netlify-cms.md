@@ -92,7 +92,7 @@ Your `index.js` should look like this:
 import CMS from "netlify-cms"
 ```
 
-Your `config.yml` should look like this:
+Your `config.yml` for Github should look like this:
 
 ```yml
 backend:
@@ -115,6 +115,16 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
 ```
 
+Your `config.yml` for Bitbucket should look like this:
+
+```yml
+backend:
+  name: bitbucket
+  repo: owner-name/repo-name # Path to your Bitbucket repository
+
+# The rest of the configuration...
+```
+
 ## 5. Netlify CMS authentication with GitHub
 
 Before we can start adding posts we'll have to give Netlify access to our Github, this part is **crucial**, please follow the steps closely. More info can be read [here](https://www.netlify.com/docs/authentication-providers/);
@@ -131,6 +141,25 @@ Part 2, Netlify:
 2. Navigate to Settings > Access control > OAuth
 3. Under Authentication Providers, click Install Provider
 4. Select GitHub and enter the Client ID and Client Secret, then save ([0Auth Docs - How do I find my GitHub client ID and secret?](https://auth0.com/docs/connections/social/github#3-get-your-github-app-s-client-id-and-client-secret))
+
+## 6. Netlify CMS authentication with Bitbucket
+
+Another way of integration Netlify CMS could be with the Bitbucket OAuth. Please follow the steps closely. At the moment, there is a lack of support for Editorial Workflow when working with Bitbucket [Bitbucket Editorial Workflow](https://www.netlifycms.org/docs/add-to-your-site/#editorial-workflow);
+
+Part 1, Bitbucket:
+
+1. Open [this](https://bitbucket.org/account/user) link
+  1.1 Under **ACCESS MANAGEMENT** find OAuth link, and open it
+2. Scroll to "OAuth consumers" and click on the button "Add consumer"
+3. Fill in all the fields according to your website and use `https://api.netlify.com/auth/done` as Callback URL
+4. Upon creation you will get the Key and Secret which will be used in Netlify
+
+Part 2, Netlify:
+1. Go to your Netlify dashboard and click on your project
+2. Navigate to Settings > Access control > OAuth
+3. Under Authentication Providers, click Install Provider
+4. Select Bitbucket, and enter the Client ID and Client Secret from step 4 in Part 1, Bitbucket. Then click install
+
 
 ## Start coding
 
