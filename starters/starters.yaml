@@ -96,3 +96,10 @@
   tags: portfolio, markdown, tailwind
   platforms: markdown
 
+
+- title: Directus starter
+  description: Gridsome + Directus
+  repo: pienter-tech/gridsome-starter-directus
+  author: pienter
+  tags: directus
+  platforms: directus
