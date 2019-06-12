@@ -115,7 +115,7 @@
     - title: Github Pages
       link: /docs/deploy-to-github
     - title: Google Cloud Platform
-      link: /docs/deploy-to-gcp
+      link: /docs/deploy-to-google
 
 - title: Contribute
   items:
