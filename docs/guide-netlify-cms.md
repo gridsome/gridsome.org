@@ -155,6 +155,7 @@ Part 1, Bitbucket:
 4. Upon creation you will get the Key and Secret which will be used in Netlify
 
 Part 2, Netlify:
+
 1. Go to your Netlify dashboard and click on your project
 2. Navigate to Settings > Access control > OAuth
 3. Under Authentication Providers, click Install Provider
