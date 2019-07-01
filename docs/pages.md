@@ -17,7 +17,7 @@ Examples:
 - `/src/pages/OurTeam.vue` will be **/our-team**
 - `/src/pages/features/Index.vue` will be **/features**
 - `/src/pages/features/Awesome.vue` will be **/features/awesome**
-- `/src/pages/404.vue` will be 404 the page.
+- `/src/pages/404.vue` will be the [404 page](#add-a-404-page).
 
 
 A simple `Page.vue` file might look like this:
@@ -49,7 +49,7 @@ A `Blog.vue` file that **lists blog posts** might look like this:
     <div v-for="edge in $page.posts.edges" :key="edge.node.id">
       {{ edge.node.id }}
       {{ edge.node.title }}
-    </div>    
+    </div>
   </Layout>
 </template>
 
@@ -57,7 +57,7 @@ A `Blog.vue` file that **lists blog posts** might look like this:
 query Posts {
   posts: allWordPressPosts {
     edges {
-      node { 
+      node {
         id
         title
       }

@@ -153,7 +153,7 @@ A function that will receive an instance of ChainableConfig powered by
 - Type `boolean`
 - Default `false`
 
-Include the Vue template compiler compiler at runtime.
+Include the Vue template compiler at runtime.
 
 ## configureServer
 
