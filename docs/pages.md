@@ -1,27 +1,19 @@
-# Pages
+# Pages & Routing
+Gridsome creates routes and pages by using the file-system. That means any `.vue` or `.js` file added to `scr/pages` will be a page. There are 4 different ways of adding pages.
 
-Pages are used for **normal pages** and for **listing & paginating GraphQL collections**. For example, a Blog page that shows an index of different blog posts. The url path of a page is always static. For **dynamic pages** like a single blog post, you need to use a **Template**. Learn more about [templates here](/docs/templates).
-
-- If url will be `/about` use a **page**
-- If url will be `/blog` use a **page**
-- If url will be `/blog/:slug` use a **[template](/docs/templates)**
-
-## Creating pages
-
-All `.vue` files in the `src/pages` directory will become the pages for your website. The page URL is generated based on the location and name of the file. The path will be lowercased and slugified automatically. Files named `Index.vue` are treated like `index.html` files and will not get a slug.
-
-Examples:
-
-- `/src/pages/Index.vue` will be the homepage **/**
-- `/src/pages/About.vue` will be **/about**
-- `/src/pages/OurTeam.vue` will be **/our-team**
-- `/src/pages/features/Index.vue` will be **/features**
-- `/src/pages/features/Awesome.vue` will be **/features/awesome**
-- `/src/pages/404.vue` will be 404 the page.
+- [Normal pages](#normal-pages) - For pages that will have a static url. Like `/about` and `/blog`.
+- [Source pages](#source-pages) - For creating single pages for data sources. Like `/blog/:title`.
+- [Dynamic pages](#dynamic-pages) - For pages with dynamic url. Like `/user/:id`.
+- [Custom pages](#custom-pages) - For creating pages programatically.
 
 
-A simple `Page.vue` file might look like this:
+## Normal pages
+- **/Index.vue** is `/` (index.html)
+- **/blog/Index.vue** will be `/blog`
+- **/About.vue** will be `/about`
+- **/about/Vision.vue** will be `/about/vision`
 
+A normal `Page.vue` file might look like this:
 
 ```html
 <template>
@@ -67,9 +59,56 @@ query Posts {
 </page-query>
 ```
 
+## Source pages
+Source pages is used for creating single pages for data sources.
+Add a **_TypeName[$param].vue** to create pages and routes.
+
+- **/blog/_WordPressPost[$title].vue** will create pages for **WordPressPost** type at `blog/:title`.
+- **/blog/_Post[$year][$month][$title].vue** will create pages for **Post** type at `blog/:year/:month/:title`.
+- **/authors/_Author[$name].vue** will create pages for **Author** type  at`authors/:name`.
+- **/authors/_Author[$name][books].vue** will create a sub page for **Author** type at`authors/:name/books`.
+
+Source pages must have a `<page-query>` block which fetches the source node
+for the current page. You can use the `$id` variable to get the node.
+
+```html
+<template>
+  <Layout>
+    <h1 v-html="$page.post.title" />
+    <div v-html="$page.post.content" />
+  </Layout>
+</template>
+
+<page-query>
+query Post ($id: String!) {
+  post: wordPressPost (id: $id) {
+    title
+    content
+  }
+}
+</page-query>
+
+<script>
+
+export default {
+  metaInfo () {
+    return {
+      title: this.$page.post.title
+    }
+  }
+}
+</script>
+```
+
+## Dynamic pages
+- **/account/$user.vue** creates a dynamic `/account/:user` url with access to **$route.param.user**.
+
+This will generate a `acccount/user.html` file that all dynamic routes should do a 200 redirect to. You can do this automatically for Netlify and Zeit with plugins.
+
+
 [Learn more about query data](/docs/querying-data)
 
-### Creating pages programmatically
+## Custom pages
 
 Pages can also be created programmatically by using the `createPages` hook in `gridsome.server.js`.
 
@@ -86,15 +125,6 @@ module.exports = function (api) {
 
 [Read more about the Pages API](/docs/pages-api)
 
-## Page layouts
-
-The `<Layout>` component is an optional component used to **wrap pages and templates**. Layouts usually contain components like headers, footers or sidebars that will be used across the site. It should be imported to Pages & Templates like any other [Vue components](/docs/components).
-
-** The page layout can be named anything. `<Layout>` is just an example. **
-
-[Learn more about Layouts](/docs/layouts)
-
-
 
 ## Add a 404 page
 To create a custom `404` page you need to add a `404.vue` in `src/pages`. This will automatically create a **404.html** file to the deploy.
@@ -102,6 +132,5 @@ To create a custom `404` page you need to add a `404.vue` in `src/pages`. This w
 
 ## More...
 
-- [Import layout to a page or template](/docs/layouts#import-layout-to-a-page-or-template)
 - [Add head meta data to Pages](/docs/head#add-head-meta-data-to-pages--templates)
 - [Query data in pages](/docs/querying-data)

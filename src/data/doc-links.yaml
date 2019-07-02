@@ -17,12 +17,8 @@
       link: /docs/directory-structure
     - title: Project configuration
       link: /docs/config
-    - title: Routing
-      link: /docs/routing
-    - title: Pages
+    - title: Pages & Routing
       link: /docs/pages
-    - title: Templates
-      link: /docs/templates
     - title: Layouts
       link: /docs/layouts
     - title: Components
