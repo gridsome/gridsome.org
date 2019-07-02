@@ -1,12 +1,13 @@
 # Collections
-**Collections are data added to the local GraphQL data layer**. Data can be sourced from local Markdown files, Headless CMSs, content APIs etc. This can be done with [Source Plugins]() or with [Data store API]().
+**Collections are data added to the local GraphQL data layer**. A collection can be for example Blog posts, Tags, Products etc.
+You can browse available collections in the **schema tab** inside the local [GraphQL explorer](/docs/data-layer#the-graphql-explorer).
 
-You can browse available collections in the **schema tab** inside the [GraphQL explorer](/docs/data-layer#the-graphql-explorer).
 
+## Adding collections
 
-## Creating collections
+Collections can be added from local Markdown files, Headless CMSs, content APIs etc. This can be done with [Source Plugins]() or with [Data store API]().
 
-This examples creates a collection with the Data Store API:
+This examples creates a collection with the **Data Store API**:
 
 ```js
 const axios = require('axios')
@@ -26,6 +27,12 @@ module.exports = function (api) {
   })
 }
 ```
+
+When a collection is added you get two schemas in the GraphQL data layer..
+- `Post` that 
+- `allPost` 
+
+
 Learn more about the Data Store API.
 
 ## Looping collections
@@ -59,7 +66,7 @@ query Posts {
 </page-query>
 ```
 
-## Create collection pages
+## Collection pages
 
 Define collections pages in `gridsome.config.js`. Gridsome will by default look for a `CollectionName.vue` file in **src/templates** and use that as **template** for the collection.
 
