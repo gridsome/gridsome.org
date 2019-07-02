@@ -109,7 +109,6 @@ query Post ($id: String!) {
 </page-query>
 
 <script>
-
 export default {
   metaInfo () {
     return {
@@ -154,6 +153,33 @@ module.exports = function (api) {
 [Read more about the Pages API](/docs/pages-api)
 
 
+## Add a 404 page
+To create a custom `404` page you need to add a `404.vue` in `src/pages`. This will automatically create a **404.html** file at build time.
+
+
+## Add page meta
+Gridsome uses [vue-meta](https://github.com/nuxt/vue-meta) for adding page meta.
+
+```js
+<script>
+export default {
+  metaInfo: {
+    title: 'About us',
+    meta: [
+      { name: 'author', content: 'John Doe' }
+    ],
+    link: [
+      { rel: 'stylesheet', href: '/css/index.css' },
+    ]
+    // etc...
+  }
+}
+</script>
+```
+
+Learn more about [`populating <head>`](/docs/head).
+
+
 ## Route params
 Any custom field from the current `node` will be possible to use as route params. The `node.date` field has a set of shorthand helpers; `:year`, `:month` and `:day`. Access field values in deep objects or arrays by separating properties or indexes with double underscores (`__`). Field values are slugified by default, but the original value will be available as **{fieldname}_raw**.
 
@@ -163,12 +189,3 @@ Any custom field from the current `node` will be possible to use as route params
 - `:object__value` resolves to `node.object.value`
 - `:array__3__id` resolves to `node.array[3].id`
 
-
-## Add a 404 page
-To create a custom `404` page you need to add a `404.vue` in `src/pages`. This will automatically create a **404.html** file to the deploy.
-
-
-### More...
-
-- [Add head meta data to Pages](/docs/head#add-head-meta-data-to-pages--templates)
-- [Query data in pages](/docs/querying-data)
