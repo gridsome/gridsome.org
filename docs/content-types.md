@@ -66,14 +66,14 @@ query Posts {
 </page-query>
 ```
 
-## Collection pages
+## Collection routes
 
-Define collections pages in `gridsome.config.js`. Gridsome will by default look for a `CollectionName.vue` file in **src/templates** and use that as **template** for the collection.
+Define collections routes in `gridsome.config.js`. Gridsome will by default look for a `CollectionName.vue` file in **src/templates** and use that as **template** for the collection route.
 
 ```js
 // gridsome.config.js
 module.exports = {
-  collectionPages: {
+  collectionRoutes: {
   	Post : '/blog/:year/:month/:title',
     Tag: {
       path: '/tags/:title',
