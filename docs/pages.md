@@ -2,16 +2,18 @@
 Gridsome creates routes and pages by using the file-system. That means any `.vue` or `.js` file added to `scr/pages` will be a page. There are 4 different ways of adding pages.
 
 - [Normal pages](#normal-pages) - For pages that will have a static url. Like `/about` and `/blog`.
-- [Source pages](#source-pages) - For creating single pages for data sources. Like `/blog/:title`.
+- [Data pages](#data-pages) - For creating single pages for data sources. Like `/blog/:title`.
 - [Dynamic pages](#dynamic-pages) - For pages with dynamic url. Like `/user/:id`.
 - [Custom pages](#custom-pages) - For creating pages programatically.
 
 
 ## Normal pages
-- **/Index.vue** is `/` (index.html)
-- **/blog/Index.vue** will be `/blog`
-- **/About.vue** will be `/about`
-- **/about/Vision.vue** will be `/about/vision`
+Normal pages is used for static pages like `/about` and for listing pages like a `/blog`.
+
+- `/Index.vue` is `/` (Homepage)
+- `/blog/Index.vue` will be `/blog`
+- `/About.vue` will be `/about`
+- `/about/Vision.vue` will be `/about/vision`
 
 A normal `Page.vue` file might look like this:
 
@@ -59,17 +61,18 @@ query Posts {
 </page-query>
 ```
 
-## Source pages
-Source pages is used for creating single pages for data sources.
-Add a **_TypeName[$param].vue** to create pages and routes.
+## Data pages
+Data pages is used for creating single pages for data sources (GraphQL types).
+Add a **_TypeName[$param].vue** to create pages for a GraphQL type.
 
-- **/blog/_WordPressPost[$title].vue** will create pages for **WordPressPost** type at `blog/:title`.
-- **/blog/_Post[$year][$month][$title].vue** will create pages for **Post** type at `blog/:year/:month/:title`.
-- **/authors/_Author[$name].vue** will create pages for **Author** type  at`authors/:name`.
-- **/authors/_Author[$name][books].vue** will create a sub page for **Author** type at`authors/:name/books`.
+- `_WordPressPost[$title].vue` will create pages for **WordPressPost** type at `/:title`.
+- `_Post[$year][$title].vue` will create pages for **Post** type at `/:year/:title`.
+- `_Author[$name].vue` will create pages for **Author** type  at`/:name`.
+- `_Author[$name][books].vue` will create a sub page for **Author** type at`/:name/books`.
 
-Source pages must have a `<page-query>` block which fetches the source node
+Data pages must have a `<page-query>` block which fetches the source node
 for the current page. You can use the `$id` variable to get the node.
+
 
 ```html
 <template>
@@ -101,12 +104,21 @@ export default {
 ```
 
 ## Dynamic pages
-- **/account/$user.vue** creates a dynamic `/account/:user` url with access to **$route.param.user**.
+Dynamic pages is used for client-side routing. 
+
+- `/account/$user.vue` creates a dynamic `/account/:user` url with access to **$route.param.user**.
 
 This will generate a `acccount/user.html` file that all dynamic routes should do a 200 redirect to. You can do this automatically for Netlify and Zeit with plugins.
 
+Route param can be accessed inside the dynamic page and used to for example fetch data form external APIs on client-side.
+```html
+<template>
+  <Layout>
+    {{ $route.params.user }}
+  </Layout>
+</template>
 
-[Learn more about query data](/docs/querying-data)
+```
 
 ## Custom pages
 
@@ -122,15 +134,24 @@ module.exports = function (api) {
   })
 }
 ```
-
 [Read more about the Pages API](/docs/pages-api)
+
+
+## Route params
+Any custom field from the current `node` will be possible to use as route params. The `node.date` field has a set of shorthand helpers; `:year`, `:month` and `:day`. Access field values in deep objects or arrays by separating properties or indexes with double underscores (`__`). Field values are slugified by default, but the original value will be available as **{fieldname}_raw**.
+
+- `:id / $id` resolves to `node.id`
+- `:value / $value` resolves to `node.value` *(slugified value)*
+- `:value_raw / $value_raw` resolves to `node.value` *(original value)*
+- `:object__value / $object__value` resolves to `node.object.value`
+- `:array__3__id / $array__3__id` resolves to `node.array[3].id`
 
 
 ## Add a 404 page
 To create a custom `404` page you need to add a `404.vue` in `src/pages`. This will automatically create a **404.html** file to the deploy.
 
 
-## More...
+### More...
 
 - [Add head meta data to Pages](/docs/head#add-head-meta-data-to-pages--templates)
 - [Query data in pages](/docs/querying-data)
