@@ -1,10 +1,12 @@
 # Collections
-Collections are data added to the local GraphQL data layer. This can for example be blog posts or tags. Collections can be added with [Source Plugins]() or [Data store API]().
+**Collections are data added to the local GraphQL data layer**. Data can be sourced from local Markdown files, Headless CMSs, content APIs etc. This can be done with [Source Plugins]() or with [Data store API]().
 
 You can browse available collections in the **schema tab** inside the [GraphQL explorer](/docs/data-layer#the-graphql-explorer).
 
 
-## Create a collection
+## Creating collections
+
+This examples creates a collection with the Data Store API:
 
 ```js
 const axios = require('axios')
@@ -24,8 +26,14 @@ module.exports = function (api) {
   })
 }
 ```
+Learn more about the Data Store API.
 
-## Listing a collection
+## Looping collections
+
+Looping collections can be done in any Pages and Components.
+To loop a collection you need to query a `allCollection`. You can also add pagination to loops.
+
+This example gets all posts from a `Post` collection:
 
 ```html
 <template>
@@ -39,7 +47,7 @@ module.exports = function (api) {
 
 <page-query>
 query Posts {
-  posts: allWordPressPosts {
+  posts: allPost {
     edges {
       node { 
         id
@@ -51,28 +59,20 @@ query Posts {
 </page-query>
 ```
 
-## Collection routes
+## Create collection pages
 
-Templates are used to display single nodes as pages. 
-
-Setup **template** routes in `gridsome.config.js`. Gridsome will by default look for a `CollectionName.vue` file in **src/templates** folder if a route is set.
+Define collections pages in `gridsome.config.js`. Gridsome will by default look for a `CollectionName.vue` file in **src/templates** and use that as **template** for the collection.
 
 ```js
-//gridsome.config.js
+// gridsome.config.js
 module.exports = {
-  routes: {
-  	dynamic : {
-  		...
-  	},
-  	collections: {
-	  	Post : '/blog/:year/:month/:title',
-
-	    Tag: {
-	      path: '/tags/:title',
-	      component: './src/templates/CustomTag.vue'
-	    }
-  	}
- 	}
+  collectionPages: {
+  	Post : '/blog/:year/:month/:title',
+    Tag: {
+      path: '/tags/:title',
+      component: './src/templates/CustomTag.vue'
+    }
+	}
 }
 ```
 
