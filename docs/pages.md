@@ -63,27 +63,25 @@ query Posts {
 ## Template pages
 
 Template pages are spacial pages used for creating templates for single pages for data sources.
-Add a **TypeName.vue** to in `templates` to create a template.
-
-Routes for template pages are defined in `gridsome.config.js`.
+Add a **TypeName.vue** in `pages/_templates` to create a template and define the route in `gridsome.config.js`.
 
 ```js
 //gridsome.config.js
 module.exports = {
   routes: [
-    // this will by default look for and use templates/WordPressPost.vue
+    // this will by default look for and use _templates/WordPressPost.vue
     WordPressPost : '/blog/:title',
 
     // you can also set custom templates
     WordPressPost: {
       path: '/:year/:month/:day/:slug',
-      component: './src/templates/CustomPostTemplate.vue'
+      component: './src/pages/_templates/CustomPostTemplate.vue'
     },
 
     // all possible options
     WordPressPost: {
       path: '/:year/:month/:day/:slug',
-      component: './src/templates/Post.vue',
+      component: './src/pages/_templates/Post.vue',
       dynamicRoute: false, // generate one route for each node
       fieldName: 'path' // graphql field name
     },
@@ -123,11 +121,11 @@ export default {
 ```
 
 ## Dynamic pages
-Dynamic pages is used for client-side routing. 
+Dynamic pages is used for client-side routing. For example:
 
 - `/account/$user.vue` creates a dynamic `/account/:user` url with access to **$route.param.user**.
 
-This will generate a `acccount/user.html` file that all dynamic routes should do a 200 redirect to. You can do this automatically for Netlify and Zeit with plugins.
+At build time this will generate a `acccount/user.html` file that all dynamic routes should do a 200 redirect to. You can do this automatically for Netlify and Zeit with plugins.
 
 Route param can be accessed inside the dynamic page and used to for example fetch data form external APIs on client-side.
 ```html
