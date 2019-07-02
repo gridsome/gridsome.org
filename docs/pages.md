@@ -1,5 +1,5 @@
 # Pages & Routing
-Gridsome creates routes and pages by using the file-system. That means any `.vue` or `.js` file added to `scr/pages` will be a page. There are 4 different ways of adding pages.
+Gridsome creates routes and pages by using the **file-system**. That means any `.vue` or `.js` file added to `scr/pages` will be a page. There are 4 different ways of adding pages.
 
 - [Normal pages](#normal-pages) - For pages that will have a static url. Like `/about` and `/blog`.
 - [Data pages](#data-pages) - For creating single pages for data sources. Like `/blog/:title`.
