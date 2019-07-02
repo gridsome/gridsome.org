@@ -49,16 +49,3 @@ The `gridsome build` command prepares a project for **production**. This means i
 
 
 > Services like **Netlify** and **Zeit Now** let you run `gridsome build` automatically from a **Git-repository** and host the generated files on a CDN for you. These services also have hooks that enable you to re-build the site after a Git-commit. Learn more about Git-based [deployment here](/docs/deployment).
-
-
-## The GraphQL data layer
-**The GraphQL data layer is a tool available in development mode**. This is where all the data imported into a Gridsome project is stored. Think of it as a local, temporary database that helps you work faster and better with your data. 
-
-Add data from any **data sources** with [Source plugins](/plugins) or with the [Data store API](/docs/data-store-api). Data can be queried in any page or component.
-
-[Learn more about the GraphQL data layer](/docs/data-layer).
-
-## Vue.js for frontend
-Gridsome uses [Vue.js](https://vuejs.org/) as front-end framework. Vue is an approachable, simple & fun framework for building fast interfaces. Vue is famous for its intuitive design and shallow learning curve. This means it's easy to train staff in, even non-frontend devs and designers. Since developers will be up-and-running with Vue quickly, training costs will be kept to a minimum.
-
-[Learn more about Vue.js](https://vuejs.org/)

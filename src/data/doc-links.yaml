@@ -6,8 +6,8 @@
       link: /docs/how-it-works
     - title: Fast by default
       link: /docs/fast-by-default
-    - title: The JAMstack
-      link: /docs/jamstack
+    - title: GraphQL data layer
+      link: /docs/data-layer
     - title: Deployment
       link: /docs/deployment
 
@@ -44,8 +44,6 @@
 
 - title : Working with data
   items:
-    - title: The GraphQL data layer
-      link: /docs/data-layer
     - title: Sourcing data
       link: /docs/fetching-data
     - title: Querying data

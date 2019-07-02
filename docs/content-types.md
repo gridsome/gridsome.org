@@ -5,7 +5,7 @@ You can browse available collections in the **schema tab** inside the local [Gra
 
 ## Adding collections
 
-Collections can be added from local Markdown files, Headless CMSs, content APIs etc. This can be done with [Source Plugins]() or with [Data store API]().
+Collections can be **sourced** from local Markdown files, Headless CMSs, content APIs etc. This can be done with [Source Plugins]() or with [Data store API](/docs/data-store-api).
 
 This examples creates a collection with the **Data Store API**:
 
@@ -27,6 +27,8 @@ module.exports = function (api) {
   })
 }
 ```
+
+
 
 When a collection is added you get two schemas in the GraphQL data layer..
 - `Post` that 
@@ -120,3 +122,7 @@ query Post($id: ID!) {
 }
 </page-query>
 ```
+
+## Without GraphQL
+
+You can create collections without the GraphQL data layer.
