@@ -2,10 +2,9 @@
 Gridsome creates routes and pages by using the **file-system**. That means any `.vue` or `.js` file added to `scr/pages` will be a page. There are 4 different ways of adding pages.
 
 - [Normal pages](#normal-pages) - For pages that will have a static url. Like `/about` and `/blog`.
-- [Data pages](#data-pages) - For creating single pages for data sources. Like `/blog/:title`.
+- [Template pages](#template-pages) - For creating single pages for data sources. Like `/blog/:title`.
 - [Dynamic pages](#dynamic-pages) - For pages with dynamic url. Like `/user/:id`.
 - [Custom pages](#custom-pages) - For creating pages programatically.
-
 
 ## Normal pages
 Normal pages is used for static pages like `/about` and for listing pages like a `/blog`.
@@ -61,18 +60,38 @@ query Posts {
 </page-query>
 ```
 
-## Data pages
-Data pages is used for creating single pages for data sources (GraphQL types).
-Add a **_TypeName[$param].vue** to create pages for a GraphQL type.
+## Template pages
 
-- `_WordPressPost[$title].vue` will create pages for **WordPressPost** type at `/:title`.
-- `_Post[$year][$title].vue` will create pages for **Post** type at `/:year/:title`.
-- `_Author[$name].vue` will create pages for **Author** type  at`/:name`.
-- `_Author[$name][books].vue` will create a sub page for **Author** type at`/:name/books`.
+Template pages are spacial pages used for creating templates for single pages for data sources.
+Add a **TypeName.vue** to in `templates` to create a template.
 
-Data pages must have a `<page-query>` block which fetches the source node
-for the current page. You can use the `$id` variable to get the node.
+Routes for template pages are defined in `gridsome.config.js`.
 
+```js
+//gridsome.config.js
+module.exports = {
+  routes: [
+    // this will by default look for and use templates/WordPressPost.vue
+    WordPressPost : '/blog/:title',
+
+    // you can also set custom templates
+    WordPressPost: {
+      path: '/:year/:month/:day/:slug',
+      component: './src/templates/CustomPostTemplate.vue'
+    },
+
+    // all possible options
+    WordPressPost: {
+      path: '/:year/:month/:day/:slug',
+      component: './src/templates/Post.vue',
+      dynamicRoute: false, // generate one route for each node
+      fieldName: 'path' // graphql field name
+    },
+  ]
+}
+``` 
+
+A typical **template page** will look like this:
 
 ```html
 <template>
@@ -140,11 +159,11 @@ module.exports = function (api) {
 ## Route params
 Any custom field from the current `node` will be possible to use as route params. The `node.date` field has a set of shorthand helpers; `:year`, `:month` and `:day`. Access field values in deep objects or arrays by separating properties or indexes with double underscores (`__`). Field values are slugified by default, but the original value will be available as **{fieldname}_raw**.
 
-- `:id / $id` resolves to `node.id`
-- `:value / $value` resolves to `node.value` *(slugified value)*
-- `:value_raw / $value_raw` resolves to `node.value` *(original value)*
-- `:object__value / $object__value` resolves to `node.object.value`
-- `:array__3__id / $array__3__id` resolves to `node.array[3].id`
+- `:id` resolves to `node.id`
+- `:value` resolves to `node.value` *(slugified value)*
+- `:value_raw` resolves to `node.value` *(original value)*
+- `:object__value` resolves to `node.object.value`
+- `:array__3__id` resolves to `node.array[3].id`
 
 
 ## Add a 404 page
