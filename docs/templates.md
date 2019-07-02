@@ -1,12 +1,50 @@
 # Templates
 
-Templates are used for single post views to **GraphQL collections**. Add a **.vue** file with the same name as a GraphQL collection to `src/templates` to create a template. For example, if you have a collection called "**WordPressPost**" you create a **WordPressPost.vue** file.
+Templates are used for single post views to **Content types**. Add a **.vue** file with the same name as a GraphQL collection to `src/templates` to create a template. For example, if you have a collection called "**WordPressPost**" you create a **WordPressPost.vue** file.
 
 You can browse available collections in the **schema tab** inside the [GraphQL explorer](/docs/data-layer#the-graphql-explorer).
 
 The example shows a **Blog.vue** in **/pages** where Blog posts will be listed and then a **BlogPost.vue** inside **/templates** that will show the single post view.
 
 ![Page structure](./images/dynamic-pages.png)
+
+
+## Template
+
+Template pages are spacial pages used for creating templates for single pages for data sources.
+Add a **TypeName.vue** in `pages/_templates` to create a template and define the route in `gridsome.config.js`.
+
+
+
+A typical **template page** will look like this:
+
+```html
+<template>
+  <Layout>
+    <h1 v-html="$page.post.title" />
+    <div v-html="$page.post.content" />
+  </Layout>
+</template>
+
+<page-query>
+query Post ($id: String!) {
+  post: wordPressPost (id: $id) {
+    title
+    content
+  }
+}
+</page-query>
+
+<script>
+export default {
+  metaInfo () {
+    return {
+      title: this.$page.post.title
+    }
+  }
+}
+</script>
+```
 
 
 ## Creating templates
@@ -47,15 +85,6 @@ export default {
 }
 </script>
 ```
-
-## Template layouts
-
-The `<Layout>` component is an optional component used to **wrap pages and templates**. Layouts usually contain components like headers, footers or sidebars that will be used across the site. It should be imported to Pages & Templates like any other [Vue components](/docs/components).
-
-** The page/template layout can be named anything. `<Layout>` is just an example. **
-
-[Learn more about Layouts](/docs/layouts)
-
 
 ### More...
 

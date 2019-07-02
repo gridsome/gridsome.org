@@ -17,16 +17,16 @@
       link: /docs/directory-structure
     - title: Project configuration
       link: /docs/config
-    - title: Pages & Routing
+    - title: Pages
       link: /docs/pages
+    - title: Collections
+      link: /docs/content-types
     - title: Layouts
       link: /docs/layouts
     - title: Components
       link: /docs/components
     - title: Plugins
       link: /docs/plugins
-    - title: Data
-      link: /docs/data
     - title: Linking
       link: /docs/linking
     - title: Images
@@ -46,7 +46,7 @@
   items:
     - title: The GraphQL data layer
       link: /docs/data-layer
-    - title: Importing data
+    - title: Sourcing data
       link: /docs/fetching-data
     - title: Querying data
       link: /docs/querying-data
