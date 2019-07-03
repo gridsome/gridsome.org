@@ -2,6 +2,8 @@
 
 > A collection is a group of nodes and each node can contain fields with custom data. Collections are useful if you are going to have blog posts, tags, products etc. on your site.
 
+![Collections](./images/node-pages.png)
+
 ## Adding a collection
 
 Collections are stored in a local in-memory data store during `development` and `build`. The nodes can be **sourced** from local files (Markdown, JSON, YAML etc.) or any external APIs. This can be done with [Source Plugins]() or with the [Data store API](/docs/data-store-api).
