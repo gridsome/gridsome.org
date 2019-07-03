@@ -53,6 +53,13 @@ nav a {
   }
 }
 
+.nav-divider {
+  height: 25px;
+  width: 2px;
+  display: inline-block;
+  background-color: var(--border-color);
+}
+
 
 nav {
   .has-dropdown {

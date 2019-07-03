@@ -14,8 +14,8 @@ export default {
   computed: {
     sectionClass() {
       let classes = []
-      // if(this.primary) classes.push('section--primary')
-      // if(this.dark) classes.push('section--dark')
+      if(this.primary) classes.push('section--primary')
+      if(this.dark) classes.push('section--dark')
       return classes
     },
     sectionClassInner() {

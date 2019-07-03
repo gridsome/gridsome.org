@@ -15,6 +15,13 @@
     <g-link to="/blog">
       <span class="main-nav__label">Blog</span>
     </g-link>
+
+    <span class="nav-divider"></span>
+
+    <g-link to="/staging">
+      <span class="main-nav__label">Staging</span>
+    </g-link>
+
   </nav>
 </template>
 
