@@ -40,10 +40,9 @@ Gridsome requires [Node.js](https://nodejs.org/) (v8.3+) and recommends [Yarn](h
 
 #### Learn more
 
-- [How Pages & routing work](/docs/pages)
-- [The GraphQL data layer](/docs/data-layer)
+- [Pages & Routing ](/docs/pages)
+- [Collections (Like Posts, Products, etc.)](/docs/collections)
 - [How to deploy](/docs/deployment)
-
 
 ## Alternatives
 

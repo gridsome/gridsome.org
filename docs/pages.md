@@ -1,12 +1,13 @@
-# Pages
-Gridsome creates pages by using the **file-system**. That means any `.vue` or `.js` file added to `scr/pages` will be a page. There are 4 different ways of adding pages.
+# Pages & Routing
+Gridsome creates pages by using the **file-system**. That means any `.vue` or `.js` file added to `scr/pages` will be a page. There are 4 different ways of adding pages & routes.
 
 - [Static pages](#static-pages) - For pages that will have a static url. Like `/about` and `/blog`.
+- [Templates](#templates) - For single node views of a collection. Like `/blog/:title`.
 - [Dynamic pages](#dynamic-pages) - For pages with dynamic url. Like `/user/:id`.
 - [Custom pages](#custom-pages) - For creating pages programatically.
 
 ## Static pages
-Static pages is used for pages like `/about` and for listing pages like a `/blog`.
+Static pages is used for pages like `/about` and for looping collections like a `/blog`.
 
 - `/Index.vue` is `/` (Homepage)
 - `/blog/Index.vue` will be `/blog`
@@ -33,7 +34,7 @@ export default {
 </script>
 ```
 
-A `Blog.vue` file that **lists blog posts** might look like this:
+A `Blog.vue` file that **loops blog posts** might look like this:
 
 ```html
 <template>
@@ -58,6 +59,49 @@ query Posts {
 }
 </page-query>
 ```
+
+
+## Templates
+
+Templates are used for **single node views** for [Collections](/docs/collections). Add a **.vue** file with the same name as the collection name to `src/templates` to create a template. For example, if you have a collection called "**WordPressPost**" you create a **WordPressPost.vue** file.
+
+To setup a **template** you also need to define a route in `gridsome.config.js`.
+
+```js
+// gridsome.config.js
+module.exports = {
+  templates: {
+    Post : '/blog/:year/:month/:title',
+    Tag: {
+      path: '/tags/:title',
+      component: './src/templates/CustomTag.vue'
+    }
+  }
+}
+```
+
+And then create a template file at `src/templates/Post.vue`.
+
+```html
+<template>
+  <div>
+    <h1 v-html="$page.post.title" />
+    <div v-html="$page.post.content" />
+  </div>
+</template>
+
+<page-query>
+query Post($id: ID!) {
+  post(id: $id) {
+    title
+    content
+  }
+}
+</page-query>
+```
+
+Learn more about building [Templates](/docs/templates) here.
+
 
 ## Dynamic pages
 Dynamic pages is used for client-side routing. For example:

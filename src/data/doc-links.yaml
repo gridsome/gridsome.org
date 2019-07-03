@@ -6,8 +6,6 @@
       link: /docs/how-it-works
     - title: Fast by default
       link: /docs/fast-by-default
-    - title: GraphQL data layer
-      link: /docs/data-layer
     - title: Deployment
       link: /docs/deployment
 
@@ -17,7 +15,7 @@
       link: /docs/directory-structure
     - title: Project configuration
       link: /docs/config
-    - title: Pages
+    - title: Pages & Routing
       link: /docs/pages
     - title: Collections
       link: /docs/content-types
@@ -44,6 +42,8 @@
 
 - title : Working with data
   items:
+    - title: The GraphQL data layer
+      link: /docs/data-layer
     - title: Sourcing data
       link: /docs/fetching-data
     - title: Querying data
