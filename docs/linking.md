@@ -11,6 +11,9 @@ The `<g-link>` component is available globally in all your Pages, Templates & Co
 ### Link between pages
 To link to `~/src/pages/About.vue` use `<g-link to="/about" />`.
 
+### Link from parent and children pages
+To link from `~/src/pages/about/Index.vue` to `~/src/pages/about/Careers.vue` use `<g-link :to="'careers'" append />`.
+
 ### Link to external pages
 To link to external links you need to use the normal `<a href="https://url">` tag.
 
