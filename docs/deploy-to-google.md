@@ -48,6 +48,6 @@ args: ["-m", "rsync", "-r", "-c", "-d", "./dist", "gs://bucket-name"]
 
 Last build step is to push static files to your bucket
 
-## link dns record to reserved external google ip
+## Link dns record to reserved external google ip
 You must link these to resolve your domain to our external google ip adress.
 This can be done in your DNS service
