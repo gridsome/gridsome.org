@@ -4,7 +4,7 @@ Gridsome creates pages by using the **file-system**. That means any `.vue` or `.
 There are 4 different ways to add page routes:
 
 - [Static pages](#static-pages) - For pages that will have a static url. Like `/about` and `/blog`.
-- [Templates](#templates) - For single node views of a [collection](/docs/collections). Like `/blog/:title`.
+- [Node pages](#node-pages) - For single node views of a [collection](/docs/collections). Like `/blog/:title`.
 - [Dynamic pages](#dynamic-pages) - For pages with dynamic url. Like `/user/:id`.
 - [Pages API](#pages-api) - For creating pages programatically.
 
@@ -63,16 +63,16 @@ query Posts {
 ```
 
 
-## Templates
+## Node pages
 
-Templates are used for **single node views** for [Collections](/docs/collections). Add a **.vue** file with the same name as the collection name to `src/templates` to create a template. For example, if you have a collection called **Post** you create a **src/templates/Post.vue** file.
+Node pages are used for **single node views** for [Collections](/docs/collections). Add a **.vue** file with the same name as the collection name to `src/templates` to create a template. For example, if you have a collection called **Post** you create a **src/templates/Post.vue** file.
 
-To setup a **template** you also need to define a route in `gridsome.config.js`.
+To setup a **template** you also need to define a collection route in `gridsome.config.js`.
 
 ```js
 // gridsome.config.js
 module.exports = {
-  templates: {
+  collectionRoutes: {
     Post : '/blog/:year/:month/:title',
     Tag: : '/tags/:title'
   }
@@ -99,7 +99,7 @@ query Post($id: ID!) {
 </page-query>
 ```
 
-Learn more about building [Templates](/docs/templates) here.
+Learn more about [collections and node pages here](/docs/collections).
 
 
 ## Dynamic pages
