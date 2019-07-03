@@ -1,10 +1,10 @@
 # Pages & Routing
-Gridsome creates pages by using the **file-system**. That means any `.vue` or `.js` file added to `scr/pages` will be a page. There are 4 different ways of adding pages & routes.
+Gridsome creates pages by using the **file-system**. That means any `.vue` or `.js` file added to `scr/pages` will be a page. There are 4 different ways to add pages & routes.
 
 - [Static pages](#static-pages) - For pages that will have a static url. Like `/about` and `/blog`.
 - [Templates](#templates) - For single node views of a collection. Like `/blog/:title`.
 - [Dynamic pages](#dynamic-pages) - For pages with dynamic url. Like `/user/:id`.
-- [Custom pages](#custom-pages) - For creating pages programatically.
+- [Pages API](#pages-api) - For creating pages programatically.
 
 ## Static pages
 Static pages is used for pages like `/about` and for looping collections like a `/blog`.
@@ -120,7 +120,7 @@ Route param can be accessed inside the dynamic page and used to for example fetc
 
 ```
 
-## Custom pages
+## Pages API
 
 Pages can also be created programmatically by using the `createPages` hook in `gridsome.server.js`.
 
