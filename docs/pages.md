@@ -1,22 +1,19 @@
 # Pages & Routing
-Gridsome creates pages by using the **file-system**. That means any `.vue` or `.js` file added to `scr/pages` will be a page route.
 
-There are 4 different ways to add page routes:
+> Pages are responsible for displaying your data. Each page will be generated statically and have its own `index.html` file with the markup. Create pages either by having Vue components in `src/pages` or programatically by using the [Pages API](/docs/pages-api).
 
-- [Static pages](#static-pages) - For pages that will have a static url. Like `/about` and `/blog`.
-- [Node pages](#node-pages) - For single node views of a [collection](/docs/collections). Like `/blog/:title`.
-- [Dynamic pages](#dynamic-pages) - For pages with dynamic url. Like `/user/:id`.
-- [Pages API](#pages-api) - For creating pages programatically.
+## Creating Pages
 
-## Static pages
-Static pages is used for pages like `/about` and for looping collections like a `/blog`.
+Vue components in the `src/pages` directory will automatically be available with their own URLs. The file name is used to generate the URL and here are a few basic examples:
 
-- `/Index.vue` is `/` (Homepage)
-- `/blog/Index.vue` will be `/blog`
-- `/About.vue` will be `/about`
-- `/about/Vision.vue` will be `/about/vision`
+- `/Index.vue` becomes `/` *(The frontpage)*
+- `/AboutUs.vue` becomes `/about-us`
+- `/about/Vision.vue` becomes `/about/vision`
+- `/blog/Index.vue` becomes `/blog`
 
-A normal `Page.vue` file might look like this:
+Pages in `src/pages` would typically be used for static URLs like `/about` or for listing blog posts at, for example `/blog`. Pages for single blog posts, tags etc. can be created with [collections](/docs/collections) or programatically.
+
+A simple page component might look like this:
 
 ```html
 <template>
@@ -36,23 +33,24 @@ export default {
 </script>
 ```
 
-A `Blog.vue` file that **loops blog posts** might look like this:
+A `src/pages/Blog.vue` component that **lists blog posts** might look like this:
 
 ```html
 <template>
   <Layout>
-    <div v-for="edge in $page.posts.edges" :key="edge.node.id">
-      {{ edge.node.id }}
-      {{ edge.node.title }}
-    </div>    
+    <ul>
+      <li v-for="edge in $page.posts.edges" :key="edge.node.id">
+        {{ edge.node.title }}
+      </li>
+    </ul>
   </Layout>
 </template>
 
 <page-query>
-query Posts {
-  posts: allWordPressPosts {
+query AllPosts {
+  allPost {
     edges {
-      node { 
+      node {
         id
         title
       }
@@ -62,73 +60,34 @@ query Posts {
 </page-query>
 ```
 
+[Read more about how to create pages for single blog posts.](/docs/collections)
 
-## Node pages
+## Create dynamic pages
 
-Node pages are used for **single node views** for [Collections](/docs/collections). Add a **.vue** file with the same name as the collection name to `src/templates` to create a template. For example, if you have a collection called **Post** you create a **src/templates/Post.vue** file.
+Dynamic routes is used for client-side routing. For example:
 
-To setup a **template** you also need to define a collection route in `gridsome.config.js`.
+- `src/pages/User[id].vue` creates a dynamic `/user/:id` URL.
+- `src/pages/User[id][section].vue` creates a dynamic `/user/:id/:section` URL.
 
-```js
-// gridsome.config.js
-module.exports = {
-  collectionRoutes: {
-    Post : '/blog/:year/:month/:title',
-    Tag: : '/tags/:title'
-  }
-}
-```
+At build time, this will generate `user/_id.html` and `user/_id/_section.html` and you should have some rewrite rules to make them work properly on static web hosts. Plugins can do this automatically for you on Netlify and Zeit etc.
 
-And then create a template file at `src/templates/Post.vue`.
+Route parameters can be accessed in your components at `this.$route.params.{name}`.
 
-```html
-<template>
-  <div>
-    <h1 v-html="$page.post.title" />
-    <div v-html="$page.post.content" />
-  </div>
-</template>
-
-<page-query>
-query Post($id: ID!) {
-  post(id: $id) {
-    title
-    content
-  }
-}
-</page-query>
-```
-
-Learn more about [collections and node pages here](/docs/collections).
-
-
-## Dynamic pages
-Dynamic pages is used for client-side routing. For example:
-
-- `/account/$user.vue` creates a dynamic `/account/:user` url with access to **$route.param.user**.
-
-At build time this will generate a `acccount/user.html` file that all dynamic routes should do a 200 redirect to. You can do this automatically for Netlify and Zeit with plugins.
-
-Route param can be accessed inside the dynamic page and used to for example fetch data form external APIs on client-side.
-```html
-<template>
-  <Layout>
-    {{ $route.params.user }}
-  </Layout>
-</template>
-
-```
-
-## Pages API
+## Create pages programatically
 
 Pages can also be created programmatically by using the `createPages` hook in `gridsome.server.js`.
 
 ```js
 module.exports = function (api) {
-  api.createPages(({ createPage }) => {
+  api.createPages(({ createPage, createDynamicPage }) => {
     createPage({
       path: '/my-page',
       component: './src/templates/MyPage.vue'
+    })
+
+    createDynamicPage({
+      path: '/user/:id',
+      component: './src/templates/UserProfile.vue'
     })
   })
 }
@@ -136,8 +95,8 @@ module.exports = function (api) {
 [Read more about the Pages API](/docs/pages-api)
 
 
-## Add page meta
-Gridsome uses [vue-meta](https://github.com/nuxt/vue-meta) for adding page meta.
+## Add page meta info
+Gridsome uses [vue-meta](https://vue-meta.nuxtjs.org/) for adding page meta.
 
 ```js
 <script>
@@ -159,5 +118,6 @@ export default {
 Learn more about [`populating <head>`](/docs/head).
 
 
-## Add a 404 page
-To create a custom `404` page you need to add a `404.vue` in `src/pages`. This will automatically create a **404.html** file at build time.
+## Add a custom 404 page
+
+Create a `src/pages/404.vue` component to have a custom 404 page.
