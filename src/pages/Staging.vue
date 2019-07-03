@@ -7,11 +7,11 @@
 	  			<span style="opacity: .6">A Gridsome Product</span>
 	  		</div>
 	  		<div class="flex gap-30">
-	  			<a href="#">Overview</a>
+	  			<a href="#" class="active">Overview</a>
 	  			<a href="#">Pricing</a>
-	  			<a href="#">Change log</a>
+	  			<a href="#">Change log</a><!-- https://headwayapp.co -->
 	  			<a href="#">Account</a>
-	  			<a href="#" class="button small primary">Signup</a>
+	  			<a href="#" class="button small">Signup</a>
 	  		</div>
 	  	</div>
   	</div>
@@ -38,7 +38,7 @@
 
 	&__title {
 		font-size: 2.1rem;
-		color: var(--primary-color);
+		color: var(--primary-color-dark);
 	}
 
 }
