@@ -103,3 +103,12 @@
   author: pienter
   tags: directus
   platforms: directus
+
+- title: Gridsome Tailwindcss Starter
+  description: Blog with Tailwind
+  screenshot: ./screenshots/gridsome-tailwind-starter.jpg
+  repo: bogordesaincom/gridsome-tailwindcss-starter
+  preview: https://gridsometailwind.netlify.com/
+  author: imansugirman
+  tags: blog, markdown, tailwind
+  platforms: markdown

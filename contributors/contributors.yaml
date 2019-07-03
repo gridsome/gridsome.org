@@ -61,3 +61,9 @@
   name: Korneel Eeckhout
   bio: "Web Developer"
   avatar: ./images/pienter.jpg
+
+- id: imansugirman
+  name: Iman Sugirman
+  bio: "Web Developer"
+  avatar: ./images/iman-sugirman.png
+  twitter: "@nakamuraagatha"
