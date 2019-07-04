@@ -11,7 +11,7 @@ Vue components in the `src/pages` directory will automatically be available with
 - `/about/Vision.vue` becomes `/about/vision`
 - `/blog/Index.vue` becomes `/blog`
 
-Pages in `src/pages` would typically be used for static URLs like `/about` or for listing blog posts at, for example `/blog`. Pages for single blog posts, tags etc. can be created with [collections](/docs/collections) or programatically.
+Pages in `src/pages` would typically be used for static URLs like `/about` or for listing blog posts at, for example `/blog`. 
 
 A simple page component might look like this:
 
@@ -59,6 +59,10 @@ query AllPosts {
 }
 </page-query>
 ```
+
+### Create pages for collections
+
+Pages for single blog posts, tags etc. can be created with [collections](/docs/collections) or programatically.
 
 [Read more about how to create pages for single blog posts.](/docs/collections)
 

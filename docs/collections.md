@@ -8,9 +8,10 @@ Collections can be added by [source plugins]() or you can do it yourself with th
 
 ![Collections](./images/node-pages.png)
 
-This examples creates a collection with the **Data Store API**:
+### Add collections with Data Store API
 
 ```js
+// gridsome.server.js
 const axios = require('axios')
 
 module.exports = function (api) {
@@ -31,6 +32,28 @@ module.exports = function (api) {
 ```
 
 Learn more about the [Data Store API](/docs/data-store-api).
+
+### Add collections with Source plugins
+
+This example creates collections from a WordPress site.
+
+```js
+// gridsome.config.js
+module.exports = {
+  plugins: [
+    {
+      use: '@gridsome/source-wordpress',
+      options: {
+        baseUrl: 'YOUR_WEBSITE_URL',
+        typeName: 'WordPress',
+      }
+    }
+  ]
+}
+```
+
+You can browse **source plugins** on the [plugin page](/plugins).
+
 
 ## Collections and GraphQL
 
@@ -98,12 +121,14 @@ Available route options are:
 
 - **path** - Define a dynamic route and use any node field as parameters.
 
-- **component** - Specify a component to use as template for each page. A component located at `src/templates/{collection}.vue` will be used by default.
+- **component** - Specify a component to use as template for each page.
+
+> 🔔 **A component located at `src/templates/{collection}.vue` will be used by default. You don't need to specify the component if you create a file with the same name as collection here.**
 
 ```js
 // gridsome.config.js
 module.exports = {
-  collectionRoutes: {
+  routes: {
   	Post: '/blog/:year/:month/:title',
     Tag: {
       path: '/tags/:title',
