@@ -117,7 +117,7 @@ header {
   position: sticky;
 
   .header-bar {
-    background-color: var(--primary-color);
+    background: linear-gradient(90deg, var(--primary-color) 0%,  #8ED6FB 50%, #D32E9D 100%);
     padding: 2px;
     text-align: center;
     color:#FFF;

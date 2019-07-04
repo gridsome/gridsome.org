@@ -5,31 +5,11 @@
         <div class="intro__message mb" hidden></div>
 
         <h1 class="intro__title post"> 
-          <span>A Vue.js framework for</span>
-          <transition name="rotate">
-            <div v-if="currentText == 0" key="0">
-              Static Websites
-            </div>
-            <div v-else-if="currentText == 1" key="1">
-              Headless CMSs
-            </div>
-            <div v-else-if="currentText == 2" key="2">
-              Markdown Files
-            </div>
-            <div v-else-if="currentText == 3" key="3">
-              Modern PWAs
-            </div>
-            <div v-else-if="currentText == 4" key="4">
-              Serverless Apps
-            </div>
-            <div v-else-if="currentText == 5" key="5">
-              Documentation
-            </div>
-          </transition>
+          A better way to build websites
         </h1>
         
         <p class="intro__lead lead post mb">
-          Gridsome makes it easy for developers to build modern JAMstack websites & PWAs that are <g-link to="/docs/fast-by-default">fast by default</g-link>
+          Gridsome is a <strong>Vue.js-powered</strong> framework that helps developers build modern JAMstack websites that are <g-link to="/docs/fast-by-default">fast by default</g-link>
         </p>
 
         <p class="intro__links">
@@ -56,58 +36,43 @@ query HomeIntro {
 }
 </static-query>
 
-<script>
-export default {
-  data () {
-    return {
-      currentText: 0
-    }
-  },
-  mounted () {
-    this._counter = setInterval(() => {
-      this.currentText = (this.currentText + 1) % 6
-    }, 1500)
-  },
-  destroyed () {
-    clearTimeout(this._counter)
-  },
-}
-</script>
 
 <style lang="scss">
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
 
 .intro {
   padding: calc(2.5% + var(--space)) 0;
 
   &__title {
     font-size: 3.5rem;
-    color: var(--primary-color-dark);
-    letter-spacing: -1px;
+    color: var(--dark-bg);
     font-weight: 600;
     margin-left: auto;
     margin-right: auto;
 
-    div {
-      color: var(--primary-color);
-    }
-
     @media screen and (max-width: 850px) {
       & {
-        font-size: 2rem;
+        font-size: 2.6rem;
       }
     }
   }
 
   &__lead {
-    max-width: 640px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.4rem;
-    @media screen and (max-width: 850px) {
-      & {
-        font-size: 1.2rem;
-      }
-    }
   }
 
   &__info {
