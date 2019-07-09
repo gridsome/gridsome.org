@@ -21,24 +21,20 @@
       link: /docs/pages
     - title: Collections
       link: /docs/collections
+    - title: Templates
+      link: /docs/templates
     - title: Layouts
       link: /docs/layouts
     - title: Components
       link: /docs/components
     - title: Linking
       link: /docs/linking
-    - title: Images
+    - title: Image processing
       link: /docs/images
-    - title: Page transitions
-      link: /docs/page-transitions
     - title: Populating <head>
       link: /docs/head
-    - title: body & html attributes
-      link: /docs/body-html-attributes
-    - title: Environment variables
+    - title: Environment Variables
       link: /docs/environment-variables
-    - title: Overriding Index.html
-      link: /docs/overriding-index
 
 - title : Working with data
   items:
@@ -80,6 +76,12 @@
       link: /docs/guide-comments
     - title: Add Netlify CMS
       link: /docs/guide-netlify-cms
+    - title: Page transitions
+      link: /docs/page-transitions
+    - title: Overriding Index.html
+      link: /docs/overriding-index
+    - title: body & html attributes
+      link: /docs/body-html-attributes
 
 - title: API Reference
   items:

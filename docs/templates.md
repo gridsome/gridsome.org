@@ -1,40 +1,82 @@
 # Templates
 
-Templates are used for single post views to **Content types**. Add a **.vue** file with the same name as a GraphQL collection to `src/templates` to create a template. For example, if you have a collection called "**WordPressPost**" you create a **WordPressPost.vue** file.
+> Templates are used to create single pages for nodes in a collection. Nodes needs a corresponding page in order to be presented on its own URL.
 
-You can browse available collections in the **schema tab** inside the [GraphQL explorer](/docs/data-layer#the-graphql-explorer).
+The example below shows you have to define a template for a collection named `Post`. Gridsome will generate URLs based on the path you define. A component located at `src/templates/{collection}.vue` will be used as template if no component is specified.
 
-The example shows a **Blog.vue** in **/pages** where Blog posts will be listed and then a **BlogPost.vue** inside **/templates** that will show the single post view.
+```js
+module.exports = {
+  templates: {
+    Post: '/blog/:year/:month/:title'
+  }
+}
+```
 
-![Page structure](./images/dynamic-pages.png)
+Specify a custom component path:
 
+```js
+module.exports = {
+  templates: {
+    Post: {
+      path: '/blog/:year/:month/:title',
+      component: './src/other/location/Post.vue'
+    }
+  }
+}
+```
 
-## Template
+Available template options are:
 
-Template pages are spacial pages used for creating templates for single pages for data sources.
-Add a **TypeName.vue** in `pages/_templates` to create a template and define the route in `gridsome.config.js`.
+- **path** - Define a dynamic route and use any node field as parameters.
 
+- **component** - Specify a component to use as template for each page.
 
+Path parameters are slugified by default, but the original value can be used by adding a `_raw` suffix, eg. `:title_raw`. Access values in deep objects or arrays by separating properties or indexes with double underscores (`__`). The `date` field has a set of shorthand helpers; `:year`, `:month` and `:day`.
 
-A typical **template page** will look like this:
+- `:id` resolves to `node.id`
+- `:value` resolves to `node.value` *(slugified value)*
+- `:value_raw` resolves to `node.value` *(original value)*
+- `:object__value` resolves to `node.object.value`
+- `:array__3__id` resolves to `node.array[3].id`
+
+Each node will get a `path` field in the GraphQL schema which contains the generated URL.
+
+Read more about creating pages with the [Pages API](/docs/pages-api#create-pages-from-graphql).
+
+## Get the current node
+
+Pages generated from the `templates` configuration will have the node `id` available as a [query variable](https://graphql.org/learn/queries/#variables) in the `page-query` block. Use the `$id` variable to get the node for the current page:
 
 ```html
 <template>
-  <Layout>
-    <h1 v-html="$page.post.title" />
-    <div v-html="$page.post.content" />
-  </Layout>
+  <div>
+  	<h1 v-html="$page.post.title" />
+  	<div v-html="$page.post.content" />
+  </div>
 </template>
 
 <page-query>
-query Post ($id: String!) {
-  post: wordPressPost (id: $id) {
+query Post($id: ID!) {
+  post(id: $id) {
     title
     content
   }
 }
 </page-query>
+```
 
+Other node fields are also available as query variables. Access values in deep objects or arrays by separating properties or indexes with double underscores (`__`).
+
+- `$id` resolves to `node.id`
+- `$value` resolves to `node.value`
+- `$object__value` resolves to `node.object.value`
+- `$array__3__id` resolves to `node.array[3].id`
+
+## Node fields as meta info
+
+The `metaInfo` option must be a function in order to access the query results:
+
+```html
 <script>
 export default {
   metaInfo () {
@@ -45,48 +87,3 @@ export default {
 }
 </script>
 ```
-
-
-## Creating templates
-
-Templates must have a `<page-query>` block which fetches the source node
-for the current page. You can use the `$id` variable to get the node.
-
-```html
-<!-- src/templates/WordPressPost.vue -->
-
-<template>
-  <Layout :title="$page.post.title">
-    <div v-html="$page.post.content">
-  </Layout>
-</template>
-
-<page-query>
-query Post ($id: String!) {
-  post: wordPressPost (id: $id) {
-    title
-    content
-  }
-}
-</page-query>
-
-<script>
-import Layout from '~/layouts/Default.vue'
-
-export default {
-  components: {
-    Layout
-  },
-  metaInfo () {
-    return {
-      title: this.$page.post.title
-    }
-  }
-}
-</script>
-```
-
-### More...
-
-- [Query data in Templates](/docs/querying-data#query-data-in-templates)
-- [Add head metadata to Templates](/docs/head#add-head-meta-data-to-pages--templates)

@@ -13,7 +13,7 @@
 
     </Section>
   </Layout>
-</template> 
+</template>
 
 <page-query>
 query BlogPosts {
