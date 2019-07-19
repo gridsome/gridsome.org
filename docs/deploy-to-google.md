@@ -11,7 +11,7 @@ Please Follow this [tutorial](https://cloud.google.com/storage/docs/hosting-stat
 The HTTPS configuration is a bit more complex.
 
 # Steps to complete
-## 1. Use a Cloud Storage bucket as a load balancer backend
+## Use a Cloud Storage bucket as a load balancer backend
  Steps:
  
       1. Configure a Cloud Storage bucket
@@ -20,17 +20,17 @@ The HTTPS configuration is a bit more complex.
 
 Please follow the steps in the well documented google  [tutorial](https://cloud.google.com/load-balancing/docs/https/adding-a-backend-bucket-to-content-based-load-balancing)
 
-## 2. Set main and error page for bucket
+## Set main and error page for bucket
 gsutil web set -m index.html -e 404.html gs://your-bucket-name
 [Documentation](https://cloud.google.com/storage/docs/gsutil/commands/web)
 
 
 
 # Google cloud build
-## 1. Setup google Source Repositories 
+## Setup google Source Repositories 
 [Documentation](https://cloud.google.com/source-repositories/docs/)
 
-## 2. Add Build trigger
+## Add Build trigger
 Create a new [trigger](https://console.cloud.google.com/cloud-build/triggers)
 
 
@@ -48,6 +48,6 @@ args: ["-m", "rsync", "-r", "-c", "-d", "./dist", "gs://bucket-name"]
 
 Last build step is to push static files to your bucket
 
-## 3. link dns record to reserved external google ip
+## Link dns record to reserved external google ip
 You must link these to resolve your domain to our external google ip adress.
 This can be done in your DNS service

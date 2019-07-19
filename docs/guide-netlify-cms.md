@@ -6,20 +6,20 @@ We assume you've worked with `@gridsome/source-filesystem` and `@gridsome/transf
 
 Gridsome requires **Node.js** and recommends **Yarn**. [How to setup](https://gridsome.org/docs/prerequisites)
 
-## 1. Create a Gridsome project
+## Create a Gridsome project
 
 1. `gridsome create my-gridsome-site` to create a new project
 2. `cd my-gridsome-site` to open folder
 3. `gridsome develop` to start local development server
 
-## 2. Install the required dependencies
+## Install the required dependencies
 
 Gridsome already provides you a set of [plugins](https://gridsome.org/plugins) to get you started.
 
 - `yarn add netlify-cms gridsome-plugin-netlify-cms @gridsome/source-filesystem @gridsome/transformer-remark` to install the required dependencies
 - `npm add netlify-cms gridsome-plugin-netlify-cms @gridsome/source-filesystem @gridsome/transformer-remark`
 
-## 3. Configuration
+## Configuration
 
 Alright, the plugins are installed, it's now time to setup the right configuration. Open the `gridsome.config.js` file and make sure it looks like this:
 
@@ -62,7 +62,7 @@ module.exports = {
 
 Please read [gridsome-plugin-netlify-cms](https://gridsome.org/plugins/gridsome-plugin-netlify-cms), [transformer-remark](https://gridsome.org/plugins/@gridsome/transformer-remark) for more information about the configurations.
 
-## 4. Netlify CMS setup
+## Netlify CMS setup
 
 It's time to add the CMS!
 
@@ -125,7 +125,7 @@ backend:
 # The rest of the configuration...
 ```
 
-## 5. Netlify CMS authentication with GitHub
+## Netlify CMS authentication with GitHub
 
 Before we can start adding posts we'll have to give Netlify access to our Github, this part is **crucial**, please follow the steps closely. More info can be read [here](https://www.netlify.com/docs/authentication-providers/);
 
@@ -142,7 +142,7 @@ Part 2, Netlify:
 3. Under Authentication Providers, click Install Provider
 4. Select GitHub and enter the Client ID and Client Secret, then save ([0Auth Docs - How do I find my GitHub client ID and secret?](https://auth0.com/docs/connections/social/github#3-get-your-github-app-s-client-id-and-client-secret))
 
-## 6. Netlify CMS authentication with Bitbucket
+## Netlify CMS authentication with Bitbucket
 
 Another way of integration Netlify CMS could be with the Bitbucket OAuth. Please follow the steps closely. At the moment, there is a lack of support for Editorial Workflow when working with Bitbucket [Bitbucket Editorial Workflow](https://www.netlifycms.org/docs/add-to-your-site/#editorial-workflow);
 
