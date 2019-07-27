@@ -1,3 +1,12 @@
+- title: Blog starter
+  description: Starting blog template for Gridsome
+  screenshot: ./screenshots/gridsome-blog-starter.png
+  repo: dmtrshat/gridsome-blog-starter
+  preview: https://gridsome-blog-starter.netlify.com/
+  author: dmtrshat
+  tags: contentful, blog, netlify, styleint, postcss, dark mode
+  platforms: contentful
+
 - title: Default starter
   repo: gridsome/gridsome-starter-default
   author: gridsome
