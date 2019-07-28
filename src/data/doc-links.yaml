@@ -84,6 +84,8 @@
       link: /docs/guide-comments
     - title: Add Netlify CMS
       link: /docs/guide-netlify-cms
+    - title: Add Contentful
+      link: /docs/guide-contentful
 
 - title: API Reference
   items:
