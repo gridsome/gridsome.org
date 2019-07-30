@@ -2,14 +2,14 @@
 
 ## Using [Algolia](https://www.algolia.com/)
 
-Currently Algolia offers upto 50,000 operations for free which should be enough for any site with low traffic. Especially if search isn't used as often.
+Currently Algolia offers up to 50,000 operations for free which should be enough for any site with low traffic. Especially if search isn't used as often.
 
 ### Setup
 
   1. Create a free Algolia account
-  2. Install [gridsome-plugin-algolia](https://gridsome.org/plugins/gridsome-plugin-algolia) eg. `npm install gridsome-plugin-algolia -S`
+  2. Install [gridsome-plugin-algolia](https://gridsome.org/plugins/gridsome-plugin-algolia) eg. `npm install --save gridsome-plugin-algolia`
   3. Follow the setup instructions on the plugin page for setting up the Algolia indexing process.
-  4. Create the ui using `algoliasearch` and `vue-instantsearch`, run `npm install algoliasearch vue-instantsearch -S`
+  4. Create the UI using `algoliasearch` and `vue-instantsearch`, run `npm install --save algoliasearch vue-instantsearch`
   
   
 ### Creating the UI
