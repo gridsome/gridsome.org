@@ -1,18 +1,31 @@
 # Add External Scripts
 It is really easy to use any external javascript with gridsome. Being a Vue based framework any method of importing external scripts in vue works out of the box with Gridsome
 
-## Add to Components
+## Local - Add to Components
 
 ### Using an external Vue Plugin 
 If you want to use external Vue plugins inside your component without defining it globally you can do so by importing it inside your component and registering it for your component.
 
-Example:
+[vue-carousel](https://www.npmjs.com/package/vue-carousel) Example:
+
+Installation
+- Using YARN:  ```npm install vue-carousel```
+- Using NPM:  ```yarn add vue-carousel```
+
+*The rest of this paper omits Installation step.
+
+HTML Structure
+
 ```html
 <template>
-  <Carousel>
-    <Slide />
-    <Slide />
-  </Carousel>
+<carousel :autoplay="true">
+    <slide>
+      Slide 1 Content
+    </slide>
+    <slide>
+      Slide 2 Content
+    </slide>
+  </carousel>
 </template>
 
 <script>
