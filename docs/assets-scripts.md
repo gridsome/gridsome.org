@@ -18,14 +18,14 @@ HTML Structure
 
 ```html
 <template>
-<carousel :autoplay="true">
-    <slide>
-      Slide 1 Content
-    </slide>
-    <slide>
-      Slide 2 Content
-    </slide>
-  </carousel>
+    <carousel :autoplay="true">
+        <slide>
+            Slide 1 Content
+        </slide>
+        <slide>
+            Slide 2 Content
+        </slide>
+    </carousel>
 </template>
 
 <script>
