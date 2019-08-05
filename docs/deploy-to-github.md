@@ -17,7 +17,7 @@ There's a few steps to complete:
 
 ```json
   "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+  "deploy": "gh-pages -d dist --git git"
 ```
 
 4. Run the command `npm run deploy`
