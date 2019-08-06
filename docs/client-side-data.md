@@ -1,10 +1,10 @@
 # Client-side data
 
-Client-side data is data added after page load. This can be data coming from other internal pages, a REST API or a GraphQL API. It's important to ony load your data in the `mounted` hook to prevent it from being included in the generated markup.
+Client-side data is data added after page load. This can be data coming from other internal pages, a REST API or a GraphQL API. It's important to only load your data in the `mounted` hook to prevent it from being included in the generated markup.
 
 ## Fetch from internal pages
 
-Fetch `page-query` results and [page context](http://localhost:8080/docs/pages-api#the-page-context) from other internal pages. The following example fetches data from `/other-page` and stores the results.
+Fetch `page-query` results and [page context](/docs/pages-api#the-page-context) from other internal pages. The following example fetches data from `/other-page` and stores the results.
 
 ```js
 export default {

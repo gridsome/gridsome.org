@@ -1,5 +1,5 @@
 # Fast by default
-> Gridsome builds ultra performance into every page automatically. You get code splitting, asset optimization, progressive images, and link prefetching out of the box. With Gridsome you gets almost perfect page speed scores by default.
+> Gridsome builds ultra performance into every page automatically. You get code splitting, asset optimization, progressive images, and link prefetching out of the box. With Gridsome you get almost perfect page speed scores by default.
 
 ### What makes Gridsome sites fast?
 1. [Pre-rendered HTML](#pre-rendered-html). Nothing beats static content in speed.

@@ -17,7 +17,7 @@
               Markdown Files
             </div>
             <div v-else-if="currentText == 3" key="3">
-              SEO-friendly SPAs
+              Modern PWAs
             </div>
             <div v-else-if="currentText == 4" key="4">
               Serverless Apps
