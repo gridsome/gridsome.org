@@ -133,7 +133,7 @@ Gridsome [Critical CSS plugin](/plugins/@gridsome/plugin-critical) extracts CSS 
 [TailwindCSS](https://tailwindcss.com) is a highly customizable, utility-based CSS framework that gives you all of the building blocks you need to build your project without any opinionated styles you have to fight to override. When using TailwindCSS, it is recommended to use [PostCSS-PurgeCSS](https://github.com/FullHuman/postcss-purgecss) which is a tool used to remove unused css; resulting in tiny file sizes.
 
 
-## Add TailwindCSS with a Plugin
+### Add TailwindCSS with a Plugin
 The quickest and easiest way to get up and running with TailwindCSS in your project is to install it with a [Gridsome Plugin](https://gridsome.org/plugins). A Gridsome plugin will typically have the majority of the boilerplate and configuration done for you, eliminating a lot of the set up time.
 
 **The [Gridsome-Plugin-Tailwindcss](https://gridsome.org/plugins/gridsome-plugin-tailwindcss) Plugin**
@@ -215,7 +215,7 @@ At this point, you have a functioning install of TailwindCSS. Just be sure to re
 
 
 
-## Add TailwindCSS Manully
+### Add TailwindCSS Manully
 
 If you prefer to do the install and configuration on your own, you can add TailwindCSS manually with the following instructions.
 
