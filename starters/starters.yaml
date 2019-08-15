@@ -103,3 +103,13 @@
   author: pienter
   tags: directus
   platforms: directus
+
+
+- title: Gridsome WordPress and Bootstrap starter
+  description: A BootstrapVue powered Gridsome starter that uses WordPress for content
+  screenshot: ./screenshots/gridsome-starter-wordpress-bootstrap.jpg
+  repo: pehaa/gridsome-starter-wordpress-bootstrap
+  preview: https://wonderful-montalcini-a601bf.netlify.com/
+  author: pehaa
+  tags: wordpress, bootstrap, bootstrapvue
+  platforms: wordpress
