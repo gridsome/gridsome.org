@@ -183,7 +183,7 @@ export default function (Vue) {
 
 ### Vuetify
 
-[Vuetify](https://vuetifyjs.com/en/) is a semantic component framework for Vue. It aims to provide clean, semantic and reusable components that make building your application a breeze. Based on Google's material design, it can be a quick way to get an app up and running quickly with pre-built components available to use and customize.
+[Vuetify](https://vuetifyjs.com/en/) is a semantic component framework for Vue. It aims to provide clean, semantic and reusable components that make building your application a breeze. Based on Google's material design, it can be a quick way to get an app up and running with pre-built components available to use and customize. Updated for Vuetify 2.0.
 
 To install use:
 
@@ -196,9 +196,10 @@ yarn add vuetify
 ```
 
 Then, you will need to register the Vuetify plugin, include the Vuetify css file, and add a link to the head 
-for Google's material design icons in your 'main.js' file:
+for Google's material design icons in your 'main.js' file, with Vuetify 2.0+ you will need to pass a new instance of Vuetify to appOptions. Icons and iconfonts are now built into Vuetify 2.0+. You can install them as a local dependency or add them as a stylesheet in your head from a CDN, more information on Vuetify icon installation is available [here](https://vuetifyjs.com/en/customization/icons):
 
 ```js
+// v1.5
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import DefaultLayout from '~/layouts/Default.vue'
@@ -216,7 +217,29 @@ export default function (Vue, { head }) {
 }
 ```
 
-Finally, there is one last thing you will need in order to build your application with vuetify. 
+```js
+// v2.0
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
+import DefaultLayout from '~/layouts/Default.vue'
+
+export default function (Vue, { appOptions, head }) {
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
+  })
+  
+  const opts = { ... } //opts includes, vuetify themes, icons, etc.
+  Vue.use(Vuetify)
+  
+  appOptions.vuetify = new Vuetify(opts);
+  
+  // Set default layout as a global component
+  Vue.component('Layout', DefaultLayout)
+}
+```
+
+Finally, there is one last thing you will need in order to build your application with Vuetify. 
 You will need to whitelist Vuetify in webpack in order to build. 
 
 First, install the webpack-node-externals plugin:
@@ -229,7 +252,7 @@ npm install webpack-node-externals --save-dev
 yarn add webpack-node-externals --dev
 ```
 
-Then modify your gridsome.server.js file to include the webpack-node-externals package, and whitelist vuetify.
+Then modify your gridsome.server.js file to include the webpack-node-externals package, and whitelist Vuetify.
 ```js
 const nodeExternals = require('webpack-node-externals')
 
