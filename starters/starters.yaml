@@ -96,10 +96,18 @@
   tags: portfolio, markdown, tailwind
   platforms: markdown
 
-
 - title: Directus starter
   description: Gridsome + Directus
   repo: pienter-tech/gridsome-starter-directus
   author: pienter
   tags: directus
   platforms: directus
+
+- title: Darkfolio
+  description: Portfolio
+  screenshot: ./screenshots/darkfolio.jpg
+  repo: itsnwa/darkfolio
+  preview: https://darkfolio.netlify.com
+  author: itsnwa
+  tags: markdown, forestry, portfolio, dark
+  platforms: markdown
