@@ -120,3 +120,12 @@
   author: itsnwa
   tags: markdown, forestry, portfolio, dark
   platforms: markdown
+
+- title: Airtable Events Starter
+  description: A Gridsome starter using Airtable as a CMS to display content
+  screenshot: ./screenshots/airtable-events-starter.png
+  repo: https://github.com/12vanblart/gridsome-airtable-starter
+  preview: https://gridsomeairtable.netlify.com/
+  author: tvanblargan
+  tags: airtable, events
+  platforms: airtable
