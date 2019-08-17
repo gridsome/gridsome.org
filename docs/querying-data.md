@@ -69,7 +69,7 @@ query Posts {
 
 ```graphql
 query Posts {
-  allPost(sort: [{ by: "featured" }, { by: "date" }]) {
+  allPost(sort: [{ by: "title" }, { by: "date" }]) {
     edges {
       node {
         title
@@ -78,6 +78,19 @@ query Posts {
   }
 }
 ```
+
+#### Sort a collection by multiple fields and different ordering
+
+```graphql
+query Posts {
+  allPost(sort: [{ by: "date", order: DESC }, { by: "title", order: DESC }]) {
+    edges {
+      node {
+        title
+      }
+    }
+  }
+}
 
 ## Querying single nodes
 
