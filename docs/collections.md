@@ -1,4 +1,4 @@
-# Collections & Templates
+# Collections
 
 > A collection is a group of nodes and each node contains fields with custom data. Collections are useful if you are going to have blog posts, tags, products etc. on your site.
 
