@@ -130,7 +130,7 @@
   tags: airtable, events
   platforms: airtable
 
-  - title: Brevifolia
+- title: Brevifolia
   description: A markdown blog with a clean layout, configured with Forestry CMS
   screenshot: ./screenshots/brevifolia-screenshot.jpg
   repo: kendallstrautman/brevifolia-gridsome-forestry
