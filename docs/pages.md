@@ -2,13 +2,15 @@
 
 > Pages are responsible for presentation your data at a URL. Each page will be generated statically and have its own `index.html` file with the markup.
 
-You have three options for creating pages & routes in Gridsome:
+You have four options for creating pages & routes in Gridsome:
 
-1. **File based** - By placing [Vue components](https://vuejs.org/v2/guide/single-file-components.html) in `src/pages`.
-1. **[Templates](/docs/templates)** - By creating templates for [Collections](/docs/collections).
-1. **Programmatically** - By using the [Pages API](/docs/pages-api)
+1. **[Static pages](#create-static-pages)** - For pages with **static routes**. For example `/about` and `/blog`.
+2. **[Templates](/docs/templates)** - For template for nodes in a [collection](/docs/collections). For example for blog posts.
+3. **[Dynamic pages](#create-dynamic-pages)** - For client-side routing with dynamic data.
+3. **[Programtically](#create-pages-programmatically)** - For creating custom pages & routes with the [Pages API](/docs/pages-api).
 
-## Creating Pages
+
+## Create static pages
 
 Vue components in the `src/pages` directory will automatically be available on their own URLs. The file name is used to generate the URL and here are a few basic examples:
 
@@ -68,7 +70,7 @@ query AllPosts {
 
 ## Create dynamic pages
 
-Dynamic routes is used for client-side routing. For example:
+Dynamic pages is used for client-side routing. For example:
 
 - `src/pages/User[id].vue` creates a dynamic `/user/:id` URL.
 - `src/pages/User[id][section].vue` creates a dynamic `/user/:id/:section` URL.
