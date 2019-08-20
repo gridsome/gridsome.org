@@ -69,7 +69,7 @@ Read more about how to [query nodes in GraphQL](/docs/querying-data).
 
 ## Browse collections
 
-Gridsome has a **GraphQL explorer** that can be used to explore collections and test queries when in development mode. This can usually be opened by going to `http://localhost:8080/___explore` in your.
+Gridsome has a **GraphQL explorer** that can be used to explore collections and test queries when in development mode. This can usually be opened by going to `http://localhost:8080/___explore` in your local project.
 
 ![graphql-explorer](./images/graphql-explorer.png)
 
