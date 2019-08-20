@@ -2,7 +2,7 @@
 
 > Templates are used to create single pages for nodes in a collection. Nodes needs a corresponding page in order to be presented on its own URL.
 
-The example below shows you have to define a template for a collection named `Post`. Gridsome will generate URLs based on the path you define. A component located at `src/templates/{collection}.vue` will be used as template if no component is specified.
+The example below shows you have to define a template for a [collection](/docs/collections) named `Post`. Gridsome will generate URLs based on the path you define. A component located at `src/templates/{collection}.vue` will be used as template if no component is specified.
 
 ```js
 module.exports = {

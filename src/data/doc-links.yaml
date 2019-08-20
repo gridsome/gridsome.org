@@ -38,9 +38,9 @@
 
 - title : Working with data
   items:
-    - title: The GraphQL data layer
+    - title: GraphQL data layer
       link: /docs/data-layer
-    - title: Sourcing data
+    - title: Importing data
       link: /docs/fetching-data
     - title: Querying data
       link: /docs/querying-data

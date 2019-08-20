@@ -66,3 +66,22 @@ Each collection will add two root fields to the [GraphQL schema](/docs/data-laye
 You can browse available fields by opening the **schema** tab in the [GraphQL explorer](/docs/data-layer#the-graphql-explorer).
 
 Read more about how to [query nodes in GraphQL](/docs/querying-data).
+
+## Browse collections
+
+Gridsome has a **GraphQL explorer** that can be used to explore collections and test queries when in development mode. This can usually be opened by going to `http://localhost:8080/___explore` in your.
+
+![graphql-explorer](./images/graphql-explorer.png)
+
+## Query a collection
+Collections are added to a local [GraphQL data layer](/docs/data-layer) that let you query data into any Vue component. 
+
+Learn more here about [how to query data](/docs/querying-data).
+
+## Templates for collections
+
+[Templates](/docs/templates) are used to create single pages for **nodes** in a collection. Nodes needs a corresponding page in order to be presented on its own URL.
+
+[Learn more here](/docs/templates)
+
+
