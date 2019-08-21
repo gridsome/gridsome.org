@@ -11,7 +11,35 @@ Dynamic pages is used for client-side routing. Route parameters can be placed in
 
 At build time, this will generate `user/_id.html` and `user/_id/settings.html` and you must have rewrite rules to make them work properly.
 
-Pages with dynamic routes have lower priority than fixed routes. For example, if you have a `/user/create` and a `/user/:id` route, then the `/user/create` route will be prioritized.
+Pages with dynamic routes have lower priority than fixed routes. For example, if you have a `/user/create` and a `/user/:id` route, the `/user/create` route will be prioritized.
+
+Here is a basic page component that uses the `id` prameter from the route to fetch user information client-side:
+
+```html
+<template>
+  <div v-if="user">
+    <h1>{{ user.name }}</h1>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      user: null
+    }
+  },
+  async mounted() {
+    const { id } = this.$route.params
+    const response = await fetch(`https://api.example.com/user/${id}`)
+
+    this.user = await response.json()
+  }
+}
+</script>
+```
+
+*Always use the `mounted` hook to fetch client-side data. Fetching data in the `created` hook will cause issues because it is executed when generating static HTML.*
 
 ## Programmatic dynamic routes
 
