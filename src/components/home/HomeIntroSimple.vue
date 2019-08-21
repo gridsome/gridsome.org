@@ -52,7 +52,7 @@ query HomeIntro {
 }
 
 .intro {
-  padding: calc(2.5% + var(--space)) 0;
+  padding: calc(3.333% + var(--space)) 0;
 
   &__title {
     font-size: 3.5rem;
