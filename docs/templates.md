@@ -81,7 +81,7 @@ The `metaInfo` option must be a function in order to access the query results:
 ```html
 <script>
 export default {
-  metaInfo () {
+  metaInfo() {
     return {
       title: this.$page.post.title
     }
