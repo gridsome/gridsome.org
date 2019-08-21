@@ -17,7 +17,7 @@
       link: /docs/directory-structure
     - title: Project configuration
       link: /docs/config
-    - title: Pages & Routing
+    - title: Pages
       link: /docs/pages
     - title: Collections
       link: /docs/collections
@@ -29,6 +29,8 @@
       link: /docs/components
     - title: Linking
       link: /docs/linking
+    - title: Dynamic Routing
+      link: /docs/dynamic-routing
     - title: Image processing
       link: /docs/images
     - title: Populating <head>
