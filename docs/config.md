@@ -1,6 +1,6 @@
 # Project configuration
 
-Gridsome requires `/gridsome.config.js` to work. Plugin and project settings are located here. A basic configuration file would look something like this:
+Gridsome requires `gridsome.config.js` to work. Plugin and project settings are located here. A basic configuration file would look something like this:
 
 ```js
 module.exports = {
@@ -69,20 +69,20 @@ module.exports = {
 
 [Read more about how to use plugins](/docs/plugins)
 
+## templates
+
+- Type `object`
+- Default `{}`
+
+Define routes and templates for collections.
+
+[Read more about using templates](/docs/templates)
 ## metadata
 
 - Type `object`
 - Default `{}`
 
 Add global metadata to the GraphQL schema.
-
-```js
-module.exports = {
-  metadata: {
-    message: 'Global message.'
-  }
-}
-```
 
 [Read more about global metadata](/docs/metadata)
 
