@@ -180,6 +180,19 @@ Configure the development server.
 
 [Read more about configuring the development server](/docs/server-api#apiconfigureserverfn)
 
+## permalinks.trailingSlash
+
+- Type `boolean | string`
+- Default `true`
+
+Add a trailing slash to all generated paths for pages and templates. Static paths passed to `g-link` will not have a slash automatically unless you set `trailingSlash: 'always'`.
+
+## permalinks.slugify
+
+- Type `function | object`
+
+Use a custom slugify method. Default slugifyer is [@sindresorhus/slugify](https://github.com/sindresorhus/slugify).
+
 ## css.split
 
 - Type `boolean` *Default: `false`*

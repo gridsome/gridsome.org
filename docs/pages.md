@@ -1,6 +1,6 @@
 # Pages
 
-> Pages are responsible for presentation your data at a URL. Each page will be generated statically and have its own `index.html` file with the markup.
+> Pages are responsible for presenting your data at a URL. Each page will be generated statically and have its own `index.html` file with the markup.
 
 You have two options for creating pages in Gridsome:
 
@@ -50,7 +50,6 @@ module.exports = function (api) {
 Pages can have dynamic routes. Dynamic routes are useful for pages that only need client-side routing. For example user pages that fetches info from an external API in production based on a segment in the URL.
 
 Learn more about [dynamic routing](/docs/dynamic-routing)
-
 
 ## Page meta info
 

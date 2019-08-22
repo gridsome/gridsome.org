@@ -1,6 +1,6 @@
 # Dynamic Routing
 
-> Dynamic routes are useful for pages that only need client-side routing. For example user pages that fetches info from an external API in production based on a segment in the URL.
+> Dynamic routes are useful for pages that only need client-side routing. For example pages that fetches info from an external API in production based on a segment in the URL.
 
 ## File-based dynamic routes
 
