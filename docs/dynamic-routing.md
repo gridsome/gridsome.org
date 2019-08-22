@@ -50,7 +50,7 @@ module.exports = function (api) {
   api.createPages(({ createPage }) => {
     createPage({
       path: '/user/:id(\\d+)',
-      component: './src/templates/MyPage.vue'
+      component: './src/templates/User.vue'
     })
   })
 }

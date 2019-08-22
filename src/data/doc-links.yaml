@@ -93,6 +93,8 @@
       link: /docs/server-api
     - title: Data store API
       link: /docs/data-store-api
+    - title: Schema API
+      link: /docs/schema-api
     - title: Pages API
       link: /docs/pages-api
     - title: Client API
