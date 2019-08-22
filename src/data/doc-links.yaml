@@ -52,8 +52,8 @@
       link: /docs/taxonomies
     - title: Paginate data
       link: /docs/pagination
-    - title: Global meta data
-      link: /docs/site-meta-data
+    - title: Global metadata
+      link: /docs/metadata
     - title: Client-side data
       link: /docs/client-side-data
 
