@@ -26,7 +26,7 @@ export default {
   svg{
   	max-width: 130px;
   	height: auto;
-    margin-top: -3px;
+    margin-top: -5px;
   }
  }
 </style>
