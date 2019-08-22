@@ -9,7 +9,7 @@ module.exports = {
   plugins: []
 }
 ```
-  
+
 ## siteName
 
 - Type `string`
@@ -69,6 +69,23 @@ module.exports = {
 
 [Read more about how to use plugins](/docs/plugins)
 
+## metadata
+
+- Type `object`
+- Default `{}`
+
+Add global metadata to the GraphQL schema.
+
+```js
+module.exports = {
+  metadata: {
+    message: 'Global message.'
+  }
+}
+```
+
+[Read more about global metadata](/docs/metadata)
+
 ## icon
 
 - Type `string | Object`
@@ -119,7 +136,7 @@ module.exports = {
 
 - Type `Object | Function`
 
-The option will be merged with the internal config if it is an object. 
+The option will be merged with the internal config if it is an object.
 
 ```js
 module.exports = {
@@ -135,7 +152,7 @@ If the option is a function, it will get the internal config as its first argume
 const merge = require('webpack-merge')
 
 module.exports = {
-  configureWebpack (config) {
+  configureWebpack(config) {
     return merge({ /* custom config */ }, config)
   }
 }
