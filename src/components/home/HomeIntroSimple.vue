@@ -29,7 +29,7 @@
         </h1>
         
         <p class="intro__lead lead post mb">
-          Gridsome makes it easy for developers to build modern websites & PWAs that are <g-link to="/docs/fast-by-default">fast & optimized by default</g-link>
+          Gridsome makes it easy for developers to build modern websites, apps & PWAs that are <g-link to="/docs/fast-by-default">fast by default</g-link>
         </p>
 
         <p class="intro__links">
