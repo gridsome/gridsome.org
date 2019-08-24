@@ -23,7 +23,9 @@ Read more about the [Schema API](/docs/schema-api)
 
 ## New routes & template configuration
 
-Previously, each content type has been given a route in order to assign it to a template with the same name inside the `src/templates` directory. Routes where spread across many plugin options and some also hidden within plugins. The new `templates` config tries to collection all content type routes in a single property in `gridsome.config.js`.
+Previously, each content type has been given a route in order to assign it to a template with the same name inside the `src/templates` directory. Routes where spread across many plugin options and some also hidden within plugins. The new `templates` config tries to collect all content type routes in a single property in `gridsome.config.js`.
+
+To create a route for a [collection](/docs/collections) you simply add `CollectionName: '/any/route/:title'` to the new [templates](/docs/templates)  config. Here are some examples: 
 
 ```js
 // gridsome.config.js
@@ -32,7 +34,10 @@ module.exports = {
   	// These will look for and use src/templates/{Collection}.vue
     Post: '/blog/:year/:month/:title',
     Author: '/author/:name',
-    Portfolio: '/portfolio/:title'
+
+    // Routes for source plugins are also added here
+    WordPressPost: '/blog/:year/:month/:day/:slug:',
+    WordPressTag: '/tag/:slug',
 
     // You can also set a template manually
     Post: {
@@ -51,7 +56,7 @@ Read more about the new [templates configuration](/docs/templates)
 
 ## Custom App.vue
 
-[Read more](/docs/override-app)
+[Read more](/docs/overriding-app)
 
 ## Breaking changes
 
