@@ -21,14 +21,24 @@ api.loadSource(({ addSchemaTypes }) => {
 
 Read more about the [Schema API](/docs/schema-api)
 
-## Templates configuration
+## New routes & template configuration
 
 Previously, each content type has been given a route in order to assign it to a template with the same name inside the `src/templates` directory. Routes where spread across many plugin options and some also hidden within plugins. The new `templates` config tries to collection all content type routes in a single property in `gridsome.config.js`.
 
 ```js
+// gridsome.config.js
 module.exports = {
   templates: {
-    Post: '/blog/:year/:month/:title'
+  	// These will look for and use src/templates/{Collection}.vue
+    Post: '/blog/:year/:month/:title',
+    Author: '/author/:name',
+    Portfolio: '/portfolio/:title'
+
+    // You can also set a template manually
+    Post: {
+      path: '/blog/:year/:month/:title',
+      component: './src/other/location/Post.vue'
+    }
   }
 }
 ```
