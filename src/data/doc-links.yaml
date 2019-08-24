@@ -78,10 +78,12 @@
       link: /docs/guide-comments
     - title: Add Netlify CMS
       link: /docs/guide-netlify-cms
+    - title: Overriding index.html
+      link: /docs/overriding-index
+    - title: Overriding App.vue
+      link: /docs/overriding-app
     - title: Page transitions
       link: /docs/page-transitions
-    - title: Overriding Index.html
-      link: /docs/overriding-index
     - title: body & html attributes
       link: /docs/body-html-attributes
 
