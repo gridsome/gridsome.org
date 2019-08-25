@@ -56,7 +56,32 @@ Read more about the new [templates configuration](/docs/templates)
 
 ## Custom App.vue
 
-[Read more](/docs/overriding-app)
+Gridsome usually adds a `App.vue` automatic in the background. This can now be overridden by having your own `App.vue` file in your `src` directory. Overriding it is useful if you want to have a **layout that is shared across all your pages.** Or if you want to have a `<transition>` component around the `<router-view>`.
+
+Here is an example:
+
+```html
+<!-- src/App.vue -->
+<template>
+  <MainLayout> 
+    <transition>
+      <router-view />
+    </transition>
+  </MainLayout>
+</template>
+
+<script>
+import MainLayout from '~/layouts/Main.vue'
+
+export default {
+  components: {
+    MainLayout
+  }
+}
+</script>
+```
+
+[Learn more about overriding App.vue](/docs/overriding-app)
 
 ## Breaking changes
 
