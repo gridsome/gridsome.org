@@ -11,6 +11,10 @@ Read more: [Formspree](https://formspree.io/)
 Getform is a form backend platform that lets you handle your forms on your websites and apps. You can set up a form and start collecting submissions to your form within minutes.
 Read More: [Getform](https://getform.io/)
 
+## Form-Data
+Collect form submissions with spam filtering, email notifications, auto-reply and full automation. Free plan available. 
+Read More: [form-data](https://www.form-data.com/)
+
 ## Netlify Forms
 Netlify offers some sophisticated features to make static site form submissions a breeze.
 
