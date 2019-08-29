@@ -151,7 +151,7 @@ A simple **App.vue** file looks like this:
   <div id="app">
     <g-view />
   </div>
-</tempalte>
+</template>
 ```
 
 ### Pass props to master layout
@@ -171,7 +171,7 @@ This will let you pass props to master layout from any page.
   <div id="app" :class="{'is-transparent' : transparent}">
     <g-view />
   </div>
-</tempalte>
+</template>
 
 <script>
   export default {
