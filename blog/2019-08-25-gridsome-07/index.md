@@ -3,11 +3,18 @@ title: Gridsome v0.7
 slug: gridsome-v07
 author: [hjvedvik, tommyvedvik]
 date: 2019-08-25
-excerpt: "..."
+excerpt: "Version 0.7 is finally here with a new Schema API, Dynamic Routing, a better way to setup Templates, Custom App.vue, and more!"
 ---
+
+- [New Schema API](#schema-api): Define what fields that are coming from an external source. 
+- [New template configuration](#new-template-configuration): Setup templates and routes for collections in one place.
+- [Dynamic routing](#dynamic-routing): File-based & Programmatically dynamic routing.
+- [Custom App.vue](#custom-appvue): Use to create a global layout that can have full-page transitions.
+
+
 ## Schema API
 
-Gridsome generates the GraphQL schema for metadata and collections based on the data which is discovered on startup. That's great for simple projects but will often lead to errors with for example missing fields because content has been removed in an external source. This API lets you define your own schema types to have persisted fields.
+Gridsome generates the GraphQL schema for metadata and collections based on the data which is discovered on startup. That's great for simple projects but will often lead to errors with, for example missing fields because content has been removed in an external source. This API lets you define your own schema types to have persisted fields.
 
 ```js
 api.loadSource(({ addSchemaTypes }) => {
@@ -19,11 +26,14 @@ api.loadSource(({ addSchemaTypes }) => {
 })
 ```
 
+**This will fix many problems** for data source plugins. Now Gridsome will know what data is really coming from a Source.
+
+
 Read more about the [Schema API](/docs/schema-api)
 
-## New routes & template configuration
+## New template configuration
 
-Previously, each content type has been given a route in order to assign it to a template with the same name inside the `src/templates` directory. Routes where spread across many plugin options and some also hidden within plugins. The new `templates` config tries to collect all content type routes in a single property in `gridsome.config.js`.
+Previously, each content type has been given a route in order to assign it to a template with the same name inside the `src/templates` directory. Routes were spread across many plugin options and some also hidden within plugins. **The new `templates` config tries to collect all content type routes in a single property in `gridsome.config.js`.**
 
 To create a route for a [collection](/docs/collections) you simply add `CollectionName: '/any/route/:title'` to the new [templates](/docs/templates)  config. Here are some examples: 
 
@@ -48,9 +58,40 @@ module.exports = {
 }
 ```
 
+**To sum it up: **
+- [Source plugins](/plugins) & [Data store API](/docs/data-store-api) is used for getting data into Gridsome as [Collections](/docs/collections).
+- [Templates](/docs/templates) are used to add templates and routes for the data collections.
+
+
 Read more about the new [templates configuration](/docs/templates)
 
 ## Dynamic routing
+
+Dynamic routing is perfect to use if you need routes for, for example, user accounts or need to fetch data from an external source on client-side. (Data that will not be generated).
+
+#### File-based dynamic routes
+
+Dynamic pages is used for client-side routing. Route parameters can be placed in file and directory names by wrapping the name in square brackets. For example:
+
+- `src/pages/user/[id].vue` becomes `/user/:id`.
+- `src/pages/user/[id]/settings.vue` becomes `/user/:id/settings`.
+
+At build time, this will generate `user/_id.html` and `user/_id/settings.html` and you must have rewrite rules to make them work properly.
+
+#### Programmatic dynamic routes
+
+Create pages with dynamic routes programmatically for more advanced paths. Dynamic parameters are specified by having a `:` in front of a segment. And each parameter can have a custom regular expression to match only digits or certain values.
+
+```js
+module.exports = function (api) {
+  api.createPages(({ createPage }) => {
+    createPage({
+      path: '/user/:id(\\d+)',
+      component: './src/templates/User.vue'
+    })
+  })
+}
+```
 
 [Read more](/docs/dynamic-routing)
 

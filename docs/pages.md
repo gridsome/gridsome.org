@@ -5,7 +5,8 @@
 You have two options for creating pages in Gridsome:
 
 1. **[Using the file system](#file-based-pages)** - For creating pages with [Single File Components](https://vuejs.org/v2/guide/single-file-components.html)
-1. **[Using the Pages API](#programmatic-pages)** - For creating pages programtically.
+2. **[Using the Pages API](#programmatic-pages)** - For creating pages programtically.
+
 
 ## File-based pages
 

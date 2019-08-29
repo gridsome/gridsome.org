@@ -1,13 +1,13 @@
 <template>
   <Layout>
-    <Section class="post" container="md" dots="true" >
+    <Section container="md" dots="true" >
 
       <div class="post-header container-md text-center mb-x2">
         <h1 v-html="$page.post.title"/>
         <PostMeta :post="$page.post"/>
       </div>
 
-      <div class="post-content">
+      <div class="post-content post">
 
         <g-image v-if="$page.post.poster" quality="1" width="600" :src="$page.post.poster" />
 
