@@ -2,7 +2,7 @@
 title: File-based dynamic routing
 filepath: src/pages/user/[id].vue
 filetype: vue
-order: 3
+order: 4
 ---
 
 ```html
