@@ -15,7 +15,7 @@ order: 4
 </template>
 
 <page-query>
-query Post ($id: String!) {
+query Post ($id: ID!) {
   post (id: $id) {
     title
     content

@@ -94,7 +94,7 @@ api.loadSource(store => {
 The field will contain the referenced node fields in the GraphQL schema:
 
 ```graphql
-query BlogPost($id: String!) {
+query BlogPost($id: ID!) {
   blogPost(id: $id) {
     title
     author1 {
@@ -159,7 +159,7 @@ api.loadSource(store => {
 ```
 
 ```graphql
-query Post($id: String!) {
+query Post($id: ID!) {
   blogPost(id: $id) {
     myField(upperCase: true)
   }
