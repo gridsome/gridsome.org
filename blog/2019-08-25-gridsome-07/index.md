@@ -3,7 +3,7 @@ title: Gridsome v0.7
 slug: gridsome-v07
 author: [hjvedvik, tommyvedvik]
 date: 2019-08-30
-excerpt: "Version 0.7 is finally here with a new Schema API, Dynamic Routing, a better way to setup Templates, Custom App.vue, and more!"
+excerpt: "Version 0.7 is finally here with a new Schema API, Dynamic Routing, better Template config, Custom App.vue, and more!"
 ---
 
 - [New Schema API](#schema-api): Define what fields that are coming from an external source. 
