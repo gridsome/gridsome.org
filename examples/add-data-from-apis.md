@@ -12,10 +12,9 @@ module.exports = function (api) {
     // Fetch data from APIs
     const { data } = await axios.get('https://any.api.com')
 
-    // Create a new GraphQL content type
-    const posts = store.addContentType({
+    // Create a new GraphQL Collection
+    const posts = store.addCollection({
       typeName: 'Post',
-      route: '/blog/:year/:title'
     })
 
     // Add data to the new content type

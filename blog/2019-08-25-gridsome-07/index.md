@@ -59,8 +59,8 @@ module.exports = {
 ```
 
 **To sum it up: **
-- [Source plugins](/plugins) & [Data store API](/docs/data-store-api) is used for getting data into Gridsome as [Collections](/docs/collections).
-- [Templates](/docs/templates) are used to add templates and routes for the data collections.
+- [Source plugins](/plugins) & [Data store API](/docs/data-store-api) should be used only for getting data into Gridsome as [Collections](/docs/collections).
+- The new [Templates](/docs/templates) config are used to setup **templates and routes** for any collections.
 
 
 Read more about the new [templates configuration](/docs/templates)
@@ -76,7 +76,7 @@ Dynamic pages is used for client-side routing. Route parameters can be placed in
 - `src/pages/user/[id].vue` becomes `/user/:id`.
 - `src/pages/user/[id]/settings.vue` becomes `/user/:id/settings`.
 
-At build time, this will generate `user/_id.html` and `user/_id/settings.html` and you must have rewrite rules to make them work properly.
+At build time, this will generate `user/_id.html` and `user/_id/settings.html` and you must have rewrite rules to make them work properly on a static web host.
 
 #### Programmatic dynamic routes
 
