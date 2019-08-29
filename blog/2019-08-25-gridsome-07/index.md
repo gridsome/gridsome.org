@@ -100,7 +100,7 @@ module.exports = function (api) {
 
 ## Custom App.vue
 
-Gridsome usually adds a `App.vue` automatic in the background. This can now be overridden by having your own `App.vue` file in your `src` directory. Overriding it is useful if you want to have a **layout that is shared across all your pages.** Or if you want to have a `<transition>` component around the `<router-view>`.
+**App.vue** is the file that wraps your whole website or app. Gridsome usually adds a `App.vue` automatic in the background. This can now be overridden by having your own `App.vue` file in your `src` directory. Overriding it is useful if you want to have a **layout that is shared across all your pages.** Or if you want to have a `<transition>` component around the `<router-view>`.
 
 Here is an example:
 
@@ -137,3 +137,5 @@ export default {
 - `addContentType` is renamed to `addCollection`.
 - `addMetaData` is renamed to `addMetadata`.
 - `metaData` is renamed to `metadata` in GraphQL schema and project config.
+
+[See full change log →](https://github.com/gridsome/gridsome/blob/master/gridsome/CHANGELOG.md)
