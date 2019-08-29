@@ -40,6 +40,9 @@ To create a route for a [collection](/docs/collections) you simply add `Collecti
 ```js
 // gridsome.config.js
 module.exports = {
+  plugins: [
+    // Add source plugins etc here.
+  ],
   templates: {
   	// These will look for and use src/templates/{Collection}.vue
     Post: '/blog/:year/:month/:title',
@@ -58,8 +61,8 @@ module.exports = {
 }
 ```
 
-**To sum it up: **
-- [Source plugins](/plugins) & [Data store API](/docs/data-store-api) should be used only for getting data into Gridsome as [Collections](/docs/collections).
+**This means: **
+- [Source plugins](/plugins) & [Data store API](/docs/data-store-api) should be used only for getting data into Gridsome as [Collections](/docs/collections) from now.
 - The new [Templates](/docs/templates) config are used to setup **templates and routes** for any collections.
 
 
