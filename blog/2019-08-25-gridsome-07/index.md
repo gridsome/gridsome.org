@@ -2,7 +2,7 @@
 title: Gridsome v0.7
 slug: gridsome-v07
 author: [hjvedvik, tommyvedvik]
-date: 2019-08-25
+date: 2019-08-30
 excerpt: "Version 0.7 is finally here with a new Schema API, Dynamic Routing, a better way to setup Templates, Custom App.vue, and more!"
 ---
 
@@ -93,7 +93,7 @@ module.exports = function (api) {
 }
 ```
 
-[Read more](/docs/dynamic-routing)
+[Learn more about Dynamic Routing](/docs/dynamic-routing)
 
 ## Custom App.vue
 
