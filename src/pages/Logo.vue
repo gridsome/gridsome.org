@@ -63,11 +63,11 @@
    	 <div class="colors mb">
 
    	 	<div class="colors__primary">
-   	 		<span>#48BB78</span>
+   	 		<span>#00A672</span>
    	 	</div>
 
    	 	<div class="colors__secondary">
-   	 		<span>#38A169</span>
+   	 		<span>#00835C</span>
    	 	</div>
 
       <div class="colors__dark">
