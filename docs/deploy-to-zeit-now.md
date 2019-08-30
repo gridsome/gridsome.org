@@ -1,68 +1,29 @@
 # Deploy to Zeit Now
 
-Now by Zeit is an excellent deploy & hosting service for static sites. You get global CDN, HTTP/2, custom domains etc.  They also have continuous deployment from a GitHub-repo. They have a free plan with unlimited deployments.
+[ZEIT Now](https://zeit.co) is a cloud platform for websites and serverless APIs, that you can use to deploy your Gridsome projects to your personal domain (or a free `.now.sh` suffixed URL).
 
+This guide will show you how to get started in a few quick steps:
 
-### Deploying from GitHub
-https://zeit.co/docs/v2/integrations/now-for-github
+### Step 1: Installing Now CLI
 
-Add these settings where its needed:
+To install their command-line interface with [npm](https://www.npmjs.com/package/now), run the following command:
 
-- **Build Command:** `npm run build`
-- **Publish directory:** `dist`
-
-
-
-### Deploying with Terminal
-
-#### Step 1
-
-Install Now globally by typing `npm install -g now` in Terminal.
-
-#### Step 2
-
-Create a `now.json` file in the root folder of your project to configure your deployment process.
-
-```JSON
-{
-  "name": "your-gridsome-project",
-  "alias": "your-gridsome-project.com", // or ["aliasOne", "aliasTwo"]
-  "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@now/static-build",
-      "config": { "distDir": "dist" }
-    }
-  ]
-}
+```shell
+npm i -g now
 ```
 
-#### Step 3
+### Step 2: Deploying
 
-Update `package.json` by adding a new script within the `scripts` object:
+You can deploy your application by running the following command in the root of the project directory:
 
-```JSON
-{
-  "scripts": {
-    ...
-    "now-build": "npm run build"
-  }
-}
+```shell
+now
 ```
 
-#### Step 4
+**Alternatively**, you can also use their integration for [GitHub](https://zeit.co/github) or [GitLab](https://zeit.co/gitlab).
 
-In Terminal, go to the root folder of your project and just type `now`. Within some time (about a few minutes) your project will be uploaded to Now, built right in there and deployed.
+That’s all!
 
-#### Step 5 (optional)
+Your site will now deploy, and you will receive a link similar to the following: https://gridsome.now-examples.now.sh
 
-If an alias was not assigned automatically, assign it manually by typing `now alias your-project-deployment-address.now.sh your-domain.com`. 
-
-That's it!  🎉
-
-### Other Zeit Now guides:
-
-- [Add a domain](https://zeit.co/docs/v2/domains-and-aliases)
-- [Deployment Basics](https://zeit.co/docs/v2/deployments/basics/)
-- [Example](https://github.com/zeit/now-examples/tree/master/gridsome)
+Out of the box, you are preconfigured for client-side routing compatibility and appropriate default caching headers. This behaviour can be overwritten [like this](https://zeit.co/docs/v2/advanced/routes/).

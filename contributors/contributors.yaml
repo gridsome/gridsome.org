@@ -67,3 +67,16 @@
   bio: "Web Developer"
   avatar: ./images/pehaa.png
   twitter: "@pehaa"
+
+- id: tvanblargan
+  name: Tyler VanBlargan
+  bio: "Web Developer"
+  avatar: ./images/tvanblargan.jpg
+  twitter: "@PichuPlayer"
+
+- id: kendallstrautman
+  name: Kendall Strautman
+  bio: "Frontend Developer"
+  avatar: ./images/kendallstrautman.jpg
+  twitter: "@kendallstraut"
+  

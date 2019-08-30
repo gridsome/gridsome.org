@@ -120,3 +120,22 @@
   author: itsnwa
   tags: markdown, forestry, portfolio, dark
   platforms: markdown
+
+- title: Airtable Events Starter
+  description: A Gridsome starter using Airtable as a CMS to display content
+  screenshot: ./screenshots/airtable-events-starter.png
+  repo: 12vanblart/gridsome-airtable-starter
+  preview: https://gridsomeairtable.netlify.com/
+  author: tvanblargan
+  tags: airtable, events
+  platforms: airtable
+
+- title: Brevifolia
+  description: A markdown blog with a clean layout, configured with Forestry CMS
+  screenshot: ./screenshots/brevifolia-screenshot.jpg
+  repo: kendallstrautman/brevifolia-gridsome-forestry
+  preview: https://brevifolia-gridsome-forestry.netlify.com/
+  author: kendallstrautman
+  tags: blog, forestry, minimalist, markdown
+  platforms: markdown
+  
