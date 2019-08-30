@@ -25,7 +25,7 @@
         </div>
 
         <p class="works__powered-by">
-         Centralized data management <br/>powered by <strong>GraphQL </strong>
+          Powered by <br/><strong>GraphQL </strong>
           <graph-ql-logo width="15" height="18" />
         </p>
 
