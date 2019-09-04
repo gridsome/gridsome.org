@@ -81,10 +81,10 @@ Gridsome is passing `tagIdKeyName: 'key'` to vue-meta as default option.
 }
 ```
 
-## How to access component props and data in metaInfo
+## Using props and data in metaInfo
 
 If you need to reference `this` in order to access props or data, simply declare metaInfo as a function, instead of an object.
-For example, if you want to use graphql endpoints for metadata, `src/pages/About.vue` would look something like this:
+For example, if you want to use graphql endpoints for metadata on a page, `src/pages/MyPage.vue` would look something like this:
 
 ```html
 <page-query>
