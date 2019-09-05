@@ -6,7 +6,7 @@ date: 2019-08-30
 excerpt: "Version 0.7 is finally here with a new Schema API, Dynamic Routing, better Template config, Custom App.vue, and more!"
 ---
 
-- [New Schema API](#schema-api): Define what fields that are coming from an external source. 
+- [New Schema API](#schema-api): Define what fields that are coming from an external source.
 - [New template configuration](#new-template-configuration): Setup templates and routes for collections in one place.
 - [Dynamic routing](#dynamic-routing): File-based & Programmatically dynamic routing.
 - [Custom App.vue](#custom-appvue): Use to create a global layout that can have full-page transitions.
@@ -35,35 +35,38 @@ Read more about the [Schema API](/docs/schema-api)
 
 Previously, each content type has been given a route in order to assign it to a template with the same name inside the `src/templates` directory. Routes were spread across many plugin options and some also hidden within plugins. **The new `templates` config tries to collect all content type routes in a single property in `gridsome.config.js`.**
 
-To create a route for a [collection](/docs/collections) you simply add `CollectionName: '/any/route/:title'` to the new [templates](/docs/templates)  config. Here are some examples: 
+To create a route for a [collection](/docs/collections) you simply add `CollectionName: '/any/route/:title'` to the new [templates](/docs/templates)  config. Here are some examples:
 
 ```js
 // gridsome.config.js
 module.exports = {
-  plugins: [
-    // Add source plugins etc here.
-  ],
   templates: {
-  	// These will look for and use src/templates/{Collection}.vue
-    Post: '/blog/:year/:month/:title',
-    Author: '/author/:name',
+  	// These will look for and use src/templates/{collection}.vue
+    Post: '/blog/:year/:month/:title/',
+    Author: '/author/:name/',
 
-    // Routes for source plugins are also added here
-    WordPressPost: '/blog/:year/:month/:day/:slug:',
-    WordPressTag: '/tag/:slug',
+    // Routes for source plugins are also added here:
+    WordPressPost: '/blog/:year/:month/:day/:slug/',
+    WordPressTag: '/tag/:slug/',
 
-    // You can also set a template manually
-    Post: {
-      path: '/blog/:year/:month/:title',
-      component: './src/other/location/Post.vue'
-    }
+    // Collections can have multiple templates:
+    Product: [
+      {
+        path: '/product/:slug/',
+        component: './src/templates/Product.vue'
+      },
+      {
+        path: '/product/:slug/reviews/',
+        component: './src/templates/ProductReviews.vue'
+      }
+    ]
   }
 }
 ```
 
 **This means: **
-- [Source plugins](/plugins) & [Data store API](/docs/data-store-api) should be used only for getting data into Gridsome as [Collections](/docs/collections) from now.
-- The new [Templates](/docs/templates) config are used to setup **templates and routes** for any collections.
+- [Source plugins](/plugins) & [Data store API](/docs/data-store-api) is only responsible for getting data into Gridsome as [Collections](/docs/collections).
+- The new [Templates](/docs/templates) config are used to setup **templates and routes** for any collection.
 
 
 Read more about the new [templates configuration](/docs/templates)
@@ -107,7 +110,7 @@ Here is an example:
 ```html
 <!-- src/App.vue -->
 <template>
-  <MainLayout> 
+  <MainLayout>
     <transition>
       <router-view />
     </transition>
@@ -125,17 +128,47 @@ export default {
 </script>
 ```
 
-[Learn more about overriding App.vue](/docs/overriding-app)
+[Learn more about overriding App.vue](/docs/overriding-app/)
 
 ## Breaking changes
 
-- Node paths will have a trailing slash by default, but shouldn't break in most cases.
+This release should not have any breaking changes if you upgrade from v0.6. But there are some changes that might have consequences that we have not foreseen. No deprecated methods or options in v0.6 has been removed yet, and they will now be listed in the terminal.
 
-## Other changes
+#### Trailing slashes for pages and routes
 
-- The `$id` variable in queries is now a `ID` type instead of `String`.
-- `addContentType` is renamed to `addCollection`.
-- `addMetaData` is renamed to `addMetadata`.
-- `metaData` is renamed to `metadata` in GraphQL schema and project config.
+For instance, routes for pages in `./src/pages` will have a trailing slash by default. This can be disabled with the [`permalinks`](/docs/config/#permalinkstrailingslash) config. And trailing slashes in routes are preserved when Gridsome generates paths for nodes.
+
+**You should have a trailing slash in every route and static `<g-link>` paths if you are hosting the site on Netlify or Zeit Now etc. to avoid redirects.** For example:
+
+```js
+module.exports = {
+  templates: {
+    Post: '/post/:title/'
+  }
+}
+```
+
+```html
+<g-link to="/about-us/">About us</g-link>
+```
+
+#### Renamed methods and GraphQL fields
+
+There are some methods and GraphQL fields that have been renamed. Using the old names will not break your site, but will show deprecation notices in the terminal:
+
+- Use `addMetadata()` instead of `addMetaData()`.
+- Use `addCollection()` instead of  `addContentType()`.
+- Use `metadata` instead of `metaData` in the GraphQL schema and project config.
+
+#### Deprecated collection methods
+
+The new [Schema API](/docs/schema-api/) is deprecating previous methods for customizing the schema:
+
+- Use `addSchemaTypes()` instead of `collection.addReference()`.
+- Use `addSchemaResolvers()` instead of `collection.addSchemaField()`.
+
+#### New type for the `$id` variable
+
+The `$id` variable in `<page-query>` for nodes has previously been a `String` type. Even though the `id` field in the schema was of type `ID`. But the `$id` input variable must also be a `ID` type from now on. Gridsome will fix the type for you automatically and show a deprecation notice untill you have updated the query.
 
 [See full change log →](https://github.com/gridsome/gridsome/blob/master/gridsome/CHANGELOG.md)
