@@ -182,10 +182,10 @@ Configure the development server.
 
 ## permalinks.trailingSlash
 
-- Type `boolean | string`
+- Type `boolean | 'always'`
 - Default `true`
 
-Add a trailing slash to all generated paths for pages and templates. Static paths passed to `g-link` will not have a slash automatically unless you set `trailingSlash: 'always'`.
+Add a trailing slash to generated paths for pages in `src/pages`. [Template paths](/docs/templates) are not touched and should have a trailing slash in the defined route. Set this option to `'always'` to force a trailing slash for template paths and static paths passed to `<g-link>`.
 
 ## permalinks.slugify
 
