@@ -6,11 +6,13 @@ Gridsome generates the GraphQL schema for metadata and collections based on the 
 
 The Schema API can be used in the `loadSource` and `createSchema` hooks.
 
+## Add custom schema types
+
 ### addSchemaTypes(types)
 
 - types `string | array` *Required.*
 
-Schema types can be added as an [SDL](https://graphql.org/learn/schema/) string or by using the schema factory.
+Schema types can be added as an [SDL](https://graphql.org/learn/schema/) string or by using the  [factory methods](/docs/schema-api/#factory-methods). Types for collections **must** implement the `Node` interface. And Gridsome will not infer field types for custom fields unless the [`@infer`](/docs/schema-api/#infer) directive is used.
 
 ```js
 api.loadSource(({ addSchemaTypes }) => {
@@ -36,25 +38,52 @@ api.loadSource(({ addSchemaTypes, schema }) => {
 })
 ```
 
+[Read more about Schemas and Types](https://graphql.org/learn/schema/)
+
+## Add custom field resolvers
+
 ### addSchemaResolvers(resolvers)
 
 - resolvers `object` *Required.*
 
-Add custom resolvers for fields defined in `addSchemaTypes` or infered by Gridsome.
+Resolvers are methods that are executed on each field in the query. The default resolvers for types like `String` or `Int` simply returns the value without any modifications. Resolvers for fields that are referencing another node are interacting with the internal store to return data from the requested node.
 
-This example creates a `fullName` field on a `User` type which merged two fields:
+Use the `addSchemaResolvers()` action to add new fields or override existing fields. The resolver method will recieve four arguments that can be used:
+
+```js
+addSchemaResolvers({
+  TypeName: {
+    fieldName(obj, args, context, info) { ... }
+  }
+})
+```
+
+- `obj` The results from the resolver on the parent field.
+- `args` An object with arguments from the query.
+- `context` An object with references to the internal store etc.
+- `info` Information about the execution state of the query.
+
+[Read more about GraphQL resolvers](https://graphql.org/learn/execution/#root-fields-resolvers)
+
+#### Add a new field with a custom resolver
+
+This example adds a new `fullName` field on the `User` type which merges two fields:
 
 ```js
 api.loadSource(({ addSchemaResolvers }) => {
   addSchemaResolvers({
     User: {
-      fullName: obj => `${obj.firstName} ${obj.lastName}`
+      fullName(obj) {
+        return `${obj.firstName} ${obj.lastName}`
+      }
     }
   })
 })
 ```
 
-This example creates a `title` field on a `Post` type with an argument to uppercase the returned value:
+#### Add a new field with arguments
+
+This example adds a `title` field on the `Post` type with an argument to uppercase the returned value:
 
 ```js
 api.loadSource(({ addSchemaResolvers }) => {
@@ -76,49 +105,33 @@ api.loadSource(({ addSchemaResolvers }) => {
 })
 ```
 
+Then in a query, use the argument to get an uppercased title:
+
+```graphql
+query {
+  post {
+    title(uppercased: true)
+  }
+}
+```
+
 ### addSchema(schema)
 
 - schema `GraphQLSchema` *Required.*
 
 Add a custom GraphQL schema that will be merged with the internal schema.
 
-### schema.createObjectType(options)
+```js
+const { GraphQLSchema } = require('gridsome/graphql')
 
-- options `object` *Required.*
-  - name `string` *Required.*
-  - fields `object` *Required.*
-  - extensions `object`
-  - interfaces `string[]`
+api.loadSource(({ addSchema }) => {
+  addSchema(new GraphQLSchema({
+    // ...
+  }))
+})
+```
 
-### schema.createUnionType(options)
-
-- options `object` *Required.*
-  - name `string` *Required.*
-  - types `string[]` *Required.*
-
-### schema.createEnumType(options)
-
-- options `object` *Required.*
-  - name `string` *Required.*
-  - values `object` *Required.*
-
-### schema.createInterfaceType(options)
-
-- options `object` *Required.*
-  - name `string` *Required.*
-  - fields `object` *Required.*
-
-### schema.createInputType(options)
-
-- options `object` *Required.*
-  - name `string` *Required.*
-  - fields `object` *Required.*
-
-## Built-in types
-
-- `Image`
-- `File`
-- `Date`
+[Read more about GraphQL schemas](https://graphql.org/graphql-js/type/)
 
 ## Type extensions
 
@@ -167,6 +180,40 @@ type Post implements Node {
   author: Author @reference(by: "slug")
 }
 ```
+
+## Factory methods
+
+### schema.createObjectType(options)
+
+- options `object` *Required.*
+  - name `string` *Required.*
+  - fields `object` *Required.*
+  - extensions `object`
+  - interfaces `string[]`
+
+### schema.createUnionType(options)
+
+- options `object` *Required.*
+  - name `string` *Required.*
+  - types `string[]` *Required.*
+
+### schema.createEnumType(options)
+
+- options `object` *Required.*
+  - name `string` *Required.*
+  - values `object` *Required.*
+
+### schema.createInterfaceType(options)
+
+- options `object` *Required.*
+  - name `string` *Required.*
+  - fields `object` *Required.*
+
+### schema.createInputType(options)
+
+- options `object` *Required.*
+  - name `string` *Required.*
+  - fields `object` *Required.*
 
 ## Example usage
 
