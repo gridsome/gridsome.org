@@ -10,8 +10,8 @@ excerpt: "Version 0.7 is finally here with a new Schema API, Dynamic Routing, be
 - [New template configuration](#new-template-configuration): Setup templates and routes for collections in one place.
 - [Dynamic routing](#dynamic-routing): File-based & Programmatically dynamic routing.
 - [Custom App.vue](#custom-appvue): Use to create a global layout that can have full-page transitions.
-- [Deprecated messages](#deprecated-messages) Better deprecated messages in terminal.
-- [Shareable Network URL](#shareable-network-url) Perfect for mobile live preview with hot-reloading.
+- [Deprecation notices](#deprecation-notices): Better deprecation messages in terminal.
+- [Shareable Network URL](#shareable-network-url): Perfect for mobile live preview with hot-reloading.
 
 ## Schema API
 
@@ -132,7 +132,7 @@ export default {
 [Learn more about overriding App.vue](/docs/overriding-app/)
 
 
-## Deprecated messages
+## Deprecation notices
 
 ![Deprecated Messages](./deprecated-messages.png)
 
