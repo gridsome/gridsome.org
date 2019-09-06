@@ -27,7 +27,9 @@ api.loadSource(({ addSchemaTypes }) => {
 })
 ```
 
-**This will fix many problems** for data source plugins. Now Gridsome will know what data is really coming from a Source.
+🙌 This will fix problems for **data sources** where the data fields can change.
+
+For example, [Sanity.io](https://sanity.io) (A Headless CMS) has prepared a source plugin that uses the Schema API to make sure Gridsome know what fields that are being used in Sanity CMS.
 
 
 Read more about the [Schema API](/docs/schema-api)
@@ -66,8 +68,8 @@ module.exports = {
 ```
 
 **This means: **
-- [Source plugins](/plugins) & [Data store API](/docs/data-store-api) is only responsible for getting data into Gridsome as [Collections](/docs/collections).
-- The new [Templates](/docs/templates) config are used to setup **templates and routes** for any collection.
+- [Source plugins](/plugins) & the [Data store API](/docs/data-store-api) are only responsible for creating [Collections](/docs/collections).
+- The new [Templates](/docs/templates) config are used to setup **templates and routes** for collections.
 
 
 Read more about the new [templates configuration](/docs/templates)
