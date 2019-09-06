@@ -8,7 +8,7 @@
           <span>A Vue.js framework for</span>
           <transition name="rotate">
             <div v-if="currentText == 0" key="0">
-              The JAMstack
+              Static Websites
             </div>
             <div v-else-if="currentText == 1" key="1">
               Headless CMSs
