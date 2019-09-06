@@ -46,7 +46,7 @@ module.exports = {
     Post: '/blog/:year/:month/:title/',
     Author: '/author/:name/',
 
-    // Routes for source plugins are also added here:
+    // Templates for source plugins should also be configured here:
     WordPressPost: '/blog/:year/:month/:day/:slug/',
     WordPressTag: '/tag/:slug/',
 
