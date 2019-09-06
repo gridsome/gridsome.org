@@ -17,6 +17,8 @@ These services are great for Git-based deploying:
 
 - [GitLab Pages](/docs/deploy-to-gitlab)
 
+- [GitHub Pages](/docs/deploy-to-github)
+
 ## Deploy from terminal
 Many services let you deploy your static Gridsome site from the terminal. Here are some:
 
