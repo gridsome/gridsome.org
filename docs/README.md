@@ -7,7 +7,7 @@
 - **Data source plugins** - Connect to any popular Headless CMSs, APIs or Markdown-files.
 - **File-based page routing** - Quickly create and manage routes with files.
 - **Centralized data management** - Pull data into a local, unified GraphQL data layer.
-- **Vue.js for frontend** - A lightweight and approachable front-end framework.
+- **Vue.js for front-end** - A lightweight and approachable front-end framework.
 - **Auto-optimized code** - Get code-splitting and asset optimization out-of-the-box.
 - **Static files generation** - Deploy securely to any CDN or static web host.
 
