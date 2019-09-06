@@ -134,12 +134,18 @@ export default {
 
 ## Deprecated messages
 
+![Deprecated Messages](./deprecated-messages.png)
+
 ...
 
 
 ## Shareable Network URL
 
+![Shareable url](./shareable-url.png)
+
+
 ...
+
 
 
 ## Breaking changes
