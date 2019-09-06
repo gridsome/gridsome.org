@@ -2,7 +2,7 @@
 title: Gridsome v0.7
 slug: gridsome-v07
 author: [hjvedvik, tommyvedvik]
-date: 2019-09-36
+date: 2019-09-06
 excerpt: "Version 0.7 is finally here with a new Schema API, Dynamic Routing, better Template config, Custom App.vue, Shareable Network URL and more!"
 ---
 
