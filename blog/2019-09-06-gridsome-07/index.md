@@ -32,34 +32,34 @@ api.loadSource(({ addSchemaTypes }) => {
 For example, [Sanity.io](https://sanity.io) (A Headless CMS) has created a source plugin that uses the Schema API to make sure Gridsome know what fields that are being used in Sanity CMS.
 
 
-Read more about the [Schema API](/docs/schema-api)
+Read more about the [Schema API](/docs/schema-api/)
 
 ## New template configuration
 
 Previously, each content type has been given a route in order to assign it to a template with the same name inside the `src/templates` directory. Routes were spread across many plugin options and some also hidden within plugins. **The new `templates` config tries to collect all content type routes in a single property in `gridsome.config.js`.**
 
-To create a route for a [collection](/docs/collections) you simply add `CollectionName: '/any/route/:title'` to the new [templates](/docs/templates)  config. Here are some examples:
+To create a route for a [collection](/docs/collections/) you simply add `CollectionName: '/any/route/:title'` to the new [templates](/docs/templates/)  config. Here are some examples:
 
 ```js
 // gridsome.config.js
 module.exports = {
   templates: {
   	// These will look for and use src/templates/{collection}.vue
-    Post: '/blog/:year/:month/:title/',
-    Author: '/author/:name/',
+    Post: '/blog/:year/:month/:title',
+    Author: '/author/:name',
 
     // Templates for source plugins should also be configured here:
-    WordPressPost: '/blog/:year/:month/:day/:slug/',
-    WordPressTag: '/tag/:slug/',
+    WordPressPost: '/blog/:year/:month/:day/:slug',
+    WordPressTag: '/tag/:slug',
 
     // Collections can have multiple templates:
     Product: [
       {
-        path: '/product/:slug/',
+        path: '/product/:slug',
         component: './src/templates/Product.vue'
       },
       {
-        path: '/product/:slug/reviews/',
+        path: '/product/:slug/reviews',
         component: './src/templates/ProductReviews.vue'
       }
     ]
@@ -68,11 +68,11 @@ module.exports = {
 ```
 
 **This means: **
-- [Source plugins](/plugins) & the [Data store API](/docs/data-store-api) are only responsible for creating [Collections](/docs/collections).
-- The new [Templates](/docs/templates) config are used to setup **templates and routes** for collections.
+- [Source plugins](/plugins) & the [Data store API](/docs/data-store-api/) are only responsible for creating [Collections](/docs/collections/).
+- The new [Templates](/docs/templates/) config are used to setup **templates and routes** for collections.
 
 
-Read more about the new [templates configuration](/docs/templates)
+Read more about the new [templates configuration](/docs/templates/)
 
 ## Dynamic routing
 
@@ -102,7 +102,7 @@ module.exports = function (api) {
 }
 ```
 
-[Learn more about Dynamic Routing](/docs/dynamic-routing)
+[Learn more about Dynamic Routing](/docs/dynamic-routing/)
 
 ## Custom App.vue
 
@@ -133,40 +133,27 @@ export default {
 
 [Learn more about overriding App.vue](/docs/overriding-app/)
 
-
 ## Deprecation notices
+
+Deprecated methods and options will now be listed in the terminal with path to location and sometimes with an URL to documentation.
 
 ![Deprecated Messages](./deprecated-messages.png)
 
-...
-
-
 ## Shareable Network URL
+
+A network URL will now be visible in the terminal. It can be used to test the site on other divices in the same network with hot-reloading etc. This URL will only be active when using the default host, which is `0.0.0.0`, on private networks.
 
 ![Shareable url](./shareable-url.png)
 
-
-...
-
-
-
 ## Breaking changes
 
-This release should not have any breaking changes if you upgrade from v0.6. But there are some changes that might have consequences that we have not foreseen. No deprecated methods or options in v0.6 has been removed yet, and they will now be listed in the terminal.
+This release should not have any breaking changes if you upgrade from v0.6. But there are some changes that might have consequences that we have not foreseen. No deprecated methods or options in v0.6 has been removed yet, and they will now be listed in the terminal alongside new deprecations.
 
 #### Trailing slashes for pages and routes
 
-For instance, routes for pages in `./src/pages` will have a trailing slash by default. This can be disabled with the [`permalinks`](/docs/config/#permalinkstrailingslash) config. And trailing slashes in routes are preserved when Gridsome generates paths for nodes.
+Routes for pages in `./src/pages` and all templates will incude a trailing slash by default. This can be disabled with the [`permalinks`](/docs/config/#permalinkstrailingslash) config.
 
-**You should have a trailing slash in every route and static `<g-link>` paths if you are hosting the site on Netlify or Zeit Now etc. to avoid redirects.** For example:
-
-```js
-module.exports = {
-  templates: {
-    Post: '/post/:title/'
-  }
-}
-```
+**You should have a trailing slash in every static `<g-link>` path if you are hosting the site on Netlify or Zeit Now etc. to avoid redirects.** For example:
 
 ```html
 <g-link to="/about-us/">About us</g-link>
@@ -184,8 +171,8 @@ There are some methods and GraphQL fields that have been renamed. Using the old 
 
 The new [Schema API](/docs/schema-api/) is deprecating previous methods for customizing the schema:
 
-- Use `addSchemaTypes()` instead of `collection.addReference()`.
 - Use `addSchemaResolvers()` instead of `collection.addSchemaField()`.
+- `addSchemaTypes()` can be instead of `collection.addReference()`. It's not deprecated yet, but it will be once we find an easier way to define relations.
 
 #### New type for the `$id` variable
 
