@@ -182,16 +182,33 @@ Configure the development server.
 
 ## permalinks.trailingSlash
 
-- Type `boolean | 'always'`
+- Type `boolean`
 - Default `true`
 
-Add a trailing slash to generated paths for pages in `src/pages`. [Template paths](/docs/templates) are not touched and should have a trailing slash in the defined route. Set this option to `'always'` to force a trailing slash for template paths and static paths passed to `<g-link>`.
+Appends a trailing slash to pages and templates by default.
+
+Pages with [dynamic routes](/docs/dynamic-routing/) will not include a trailing slash when this option is enabled and must have extra rewrite rules on the server to work properly. Also, static paths for `<g-link>` will not include a trailing slash automatically but should be included in the path:
+
+```html
+<g-link to="/about-us/">About us</g-link>
+```
 
 ## permalinks.slugify
 
 - Type `function | object`
 
 Use a custom slugify method. Default slugifyer is [@sindresorhus/slugify](https://github.com/sindresorhus/slugify).
+
+```js
+module.exports = {
+  permalinks: {
+    slugify: {
+      use: 'another-slugify-library',
+      options: {}
+    }
+  }
+}
+```
 
 ## css.split
 
