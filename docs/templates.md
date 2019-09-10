@@ -2,32 +2,54 @@
 
 > Templates are used to create single pages for nodes in a [collection](/docs/collections). Nodes needs a corresponding page in order to be presented on its own URL.
 
-The example below shows you have to define a template for a [collection](/docs/collections) named `Post`. Gridsome will generate URLs based on the path you define. A component located at `src/templates/{Collection}.vue` will be used as template if no component is specified.
+
+## Setup templates
+
+The example below shows you have to setup route and template for a [collection](/docs/collections) named `Post`. A component located at `src/templates/{Collection}.vue` will be used as template if no component is specified.
 
 ```js
 // gridsome.config.js
 module.exports = {
   templates: {
-    Post: '/blog/:year/:month/:title',
-    Author: '/author/:name',
-    Portfolio: '/portfolio/:title'
+    Post: '/blog/:year/:month/:title/',
   }
 }
 ```
 
-Specify a custom component path:
+Specify a **custom component** path:
 
 ```js
 // gridsome.config.js
 module.exports = {
   templates: {
     Post: {
-      path: '/blog/:year/:month/:title',
+      path: '/blog/:year/:month/:title/',
       component: './src/other/location/Post.vue'
     }
   }
 }
 ```
+
+Setup **multiple templates** for a collection:
+
+```js
+// gridsome.config.js
+module.exports = {
+  templates: {
+    Product: [
+      {
+        path: '/product/:slug/',
+        component: './src/templates/Product.vue'
+      },
+      {
+        path: '/product/:slug/reviews/',
+        component: './src/templates/ProductReviews.vue'
+      }
+    ]
+  }
+}
+```
+
 
 Available template options are:
 
@@ -45,9 +67,7 @@ Path parameters are slugified by default, but the original value can be used by 
 
 Each node will get a `path` field in the GraphQL schema which contains the generated URL.
 
-Read more about creating pages with the [Pages API](/docs/pages-api#create-pages-from-graphql).
-
-## Get the current node
+## Add data to a template
 
 Pages generated from the `templates` configuration will have the node `id` available as a [query variable](https://graphql.org/learn/queries/#variables) in the `page-query` block. Use the `$id` variable to get the node for the current page:
 
