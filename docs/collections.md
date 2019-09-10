@@ -8,9 +8,31 @@ Collections can be added by [source plugins]() or you can do it yourself with th
 
 ![Collections](./images/node-pages.png)
 
+### Add collections with Source plugins
+
+The easiest way to add collections to Gridsome is with **source plugins**. This example creates collections from a **WordPress site**. The `typeName` option for source plugins are usually for prefixing collection names that the plugin adds.
+
+```js
+// gridsome.config.js
+module.exports = {
+  plugins: [
+    {
+      use: '@gridsome/source-wordpress',
+      options: {
+        baseUrl: 'YOUR_WEBSITE_URL',
+        typeName: 'WordPress',
+      }
+    }
+  ]
+}
+```
+
+You can browse **source plugins** on the [plugin page](/plugins).
+
+
 ### Add collections with Data Store API
 
-This example creates a collection named `Post`, fetches content from an external API and adds the results as nodes to the collection.
+You can manually add collections from any external APIs. This example creates a collection named `Post` that fetches content from an API and adds the results as nodes to the collection.
 
 ```js
 // gridsome.server.js
@@ -35,26 +57,6 @@ module.exports = function (api) {
 
 Learn more about the [Data Store API](/docs/data-store-api).
 
-### Add collections with Source plugins
-
-This example creates collections from a WordPress site. The `typeName` option for source plugins are usually for prefixing collection names that the plugin adds.
-
-```js
-// gridsome.config.js
-module.exports = {
-  plugins: [
-    {
-      use: '@gridsome/source-wordpress',
-      options: {
-        baseUrl: 'YOUR_WEBSITE_URL',
-        typeName: 'WordPress',
-      }
-    }
-  ]
-}
-```
-
-You can browse **source plugins** on the [plugin page](/plugins).
 
 ## Collections in GraphQL
 
