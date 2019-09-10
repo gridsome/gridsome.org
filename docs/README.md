@@ -1,5 +1,5 @@
 # Getting started
-⚡️ Gridsome is a Vue.js-powered modern site generator
+> Gridsome is an open source [Vue.js-powered](https://vuejs.org/) modern site generator for building websites & apps that are [fast by default](/docs/fast-by-default) 🚀.
 
 ### Why Gridsome?
 
