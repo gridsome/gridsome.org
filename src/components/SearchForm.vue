@@ -60,6 +60,9 @@ export default {
 
   & &__input {
     max-width: 160px;
+    &:not(:focus) {
+      border-color: transparent;
+    }
   }
 }
 

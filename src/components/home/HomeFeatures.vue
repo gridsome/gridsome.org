@@ -1,5 +1,5 @@
 <template>
-  <Section dots="true" class="post">
+  <Section dots="true">
     <div class="homepage-features grid-cols">
 
       <Feature>
