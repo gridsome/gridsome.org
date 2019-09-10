@@ -3,15 +3,85 @@ title: Gridsome v0.7
 slug: gridsome-v07
 author: [hjvedvik, tommyvedvik]
 date: 2019-09-06
-excerpt: "Version 0.7 is finally here with a new Schema API, Dynamic Routing, better Template config, Custom App.vue, Shareable Network URL and more!"
+excerpt: "Version 0.7 is finally here! Enjoy Vue Components in Markdown, new Schema API, Dynamic Routing, better Template config, Custom App.vue, Shareable Network URL and more!"
 ---
 
+- [Vue Remark plugin](#vue-remark-plugin): Use Vue Components in Markdown.
 - [New Schema API](#schema-api): Define what fields that are coming from an external source.
 - [New template configuration](#new-template-configuration): Setup templates and routes for collections in one place.
 - [Dynamic routing](#dynamic-routing): File-based & Programmatically dynamic routing.
 - [Custom App.vue](#custom-appvue): Use to create a global layout that can have full-page transitions.
 - [Deprecation notices](#deprecation-notices): Better deprecation messages in terminal.
 - [Shareable Network URL](#shareable-network-url): Perfect for mobile live preview with hot-reloading.
+-  4000+ [GitHub Stars 🌟](https://github.com/gridsome/gridsome).
+
+
+## Vue Remark plugin
+
+With Gridsome 0.7 follows a new plugin called [@gridsome/vue-remark](/plugins/@gridsome/vue-remark). It let you add Vue Components to Markdown files. This is perfect for Documentation, Design Systems, or portfolio websites. It's an Vue alternative to [MDX](https://mdxjs.com/) that is very popular for React.
+
+Here is an quick overview of how it works:
+
+Install plugin and add configs: 
+
+```js
+module.exports = {
+  plugins: [
+    {
+      use: '@gridsome/vue-remark',
+      options: {
+        typeName: 'Docs', // required
+        baseDir: './docs', // where files are located.
+        template: './src/templates/Docs.vue' // optional
+        // route:  optional. Will replace baseDir as paths.
+      }
+    }
+  ]
+}
+```
+
+Setup a template and include the `<VureRemarkContent />` component: 
+
+```html
+<template>
+  <Layout>
+    <h1>{{ $page.docs.title }}</h1>
+    <VueRemarkContent />
+  </Layout>
+</template>
+
+<page-query>
+query Docs ($id: String!) {
+  docs(id: $id) {
+    title
+  }
+}
+</page-query>
+```
+
+Write Markdown with Vue: 
+
+
+```jsx
+---
+title: A cool title
+excerpt: Lorem Ipsum is simply dummy text.
+layout: ~/layouts/LeftSidebar.vue
+---
+
+import YouTube from '~/components/YouTube.vue'
+import data from '~/data/youtube.json'
+
+# {{ $frontmatter.title }}
+
+<YouTube :id="data.id" />
+
+> {{ $frontmatter.excerpt }}
+
+```
+
+
+Learn more about [@gridsome/vue-remark](/plugins/@gridsome/vue-remark)
 
 ## Schema API
 
