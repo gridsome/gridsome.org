@@ -60,6 +60,7 @@ export default {
 
   img {
     margin: 0;
+    width: 100%;
   }
 
   svg,
