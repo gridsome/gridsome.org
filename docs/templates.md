@@ -11,7 +11,7 @@ The example below shows you have to setup route and template for a [collection](
 // gridsome.config.js
 module.exports = {
   templates: {
-    Post: '/blog/:year/:month/:title/',
+    Post: '/blog/:year/:month/:title',
   }
 }
 ```
@@ -22,10 +22,12 @@ Specify a **custom component** path:
 // gridsome.config.js
 module.exports = {
   templates: {
-    Post: {
-      path: '/blog/:year/:month/:title/',
-      component: './src/other/location/Post.vue'
-    }
+    Post: [
+      {
+        path: '/blog/:year/:month/:title',
+        component: './src/other/location/Post.vue'
+      }
+    ]
   }
 }
 ```
@@ -38,11 +40,12 @@ module.exports = {
   templates: {
     Product: [
       {
-        path: '/product/:slug/',
+        path: '/product/:slug',
         component: './src/templates/Product.vue'
       },
       {
-        path: '/product/:slug/reviews/',
+        name: 'reviews',
+        path: '/product/:slug/reviews',
         component: './src/templates/ProductReviews.vue'
       }
     ]
@@ -50,12 +53,22 @@ module.exports = {
 }
 ```
 
+Template paths are available in the GraphQL schema with a `path` field. Use a `to` argument for getting paths to additional templates for a collection.
+
+```graphql
+query Product ($id: ID!) {
+  product(id: $id) {
+    path              # path to default template
+    path(to:"review") # path to review template
+  }
+}
+```
 
 Available template options are:
 
 - **path** - Define a dynamic route and use any node field as parameters.
-
 - **component** - Specify a component to use as template for each page.
+- **name** - Specify a name for the template to get the path in GraphQL.
 
 Path parameters are slugified by default, but the original value can be used by adding a `_raw` suffix, eg. `:title_raw`. Access values in deep objects or arrays by separating properties or indexes with double underscores (`__`). The `date` field has a set of shorthand helpers; `:year`, `:month` and `:day`.
 
