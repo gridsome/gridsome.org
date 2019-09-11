@@ -4,7 +4,7 @@
 
         <div class="intro__message mb" hidden></div>
 
-        <h1 class="intro__title"> 
+        <h1 class="intro__title">
           <span>A Vue.js framework for</span>
           <transition name="rotate">
             <div v-if="currentText == 0" key="0">
@@ -27,7 +27,7 @@
             </div>
           </transition>
         </h1>
-        
+
         <p class="intro__lead lead post mb">
           Gridsome makes it easy for developers to build modern websites, apps & PWAs that are <g-link to="/docs/fast-by-default">fast by default</g-link> 🚀
         </p>
@@ -41,7 +41,7 @@
         <p class="intro__info">
           <span>Open-source MIT Licensed. </span>
           <a href="//github.com/gridsome/gridsome" target="_blank" rel="noopener noreferrer">
-            <span>GitHub (v{{ $static.metaData.gridsomeVersion }})</span>
+            <span>GitHub (v{{ $static.metadata.gridsomeVersion }})</span>
           </a>
         </p>
     </div>
@@ -50,7 +50,7 @@
 
 <static-query>
 query HomeIntro {
-  metaData {
+  metadata {
     gridsomeVersion
   }
 }

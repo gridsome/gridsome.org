@@ -14,33 +14,22 @@ module.exports = function (api) {
       console.warn('Failed to get gridsome version from npm.')
     }
 
-    store.addMetaData('gridsomeVersion', gridsomeVersion)
-
-    // Fake plugin node. TODO: Will be replaced with client side routes
-    store
-      .addContentType({
-        typeName: 'Plugin',
-        route: '/plugins/:id*'
-      })
-      .addNode({ id: '1' })
+    store.addMetadata('gridsomeVersion', gridsomeVersion)
 
     // contributors
     const authorsPath = path.join(__dirname, 'contributors/contributors.yaml')
     const authorsRaw = await fs.readFile(authorsPath, 'utf8')
     const authorsJson = yaml.safeLoad(authorsRaw)
-    const authors = store.addContentType({
-      typeName: 'Contributor',
-      route: '/contributor/:id'
-    })
+    const authors = store.addCollection('Contributor')
 
     authorsJson.forEach(({ id, name: title, ...fields }) => {
       authors.addNode({
         id,
         title,
-        fields,
         internal: {
           origin: authorsPath
-        }
+        },
+        ...fields
       })
     })
 
@@ -48,10 +37,7 @@ module.exports = function (api) {
     const startersPath = path.join(__dirname, 'starters/starters.yaml')
     const startersRaw = await fs.readFile(startersPath, 'utf8')
     const startersJson = yaml.safeLoad(startersRaw)
-    const starters = store.addContentType({
-      typeName: 'Starter',
-      route: '/starters/:title'
-    })
+    const starters = store.addCollection('Starter')
 
     // Connect author field to Contributors & Platforms
     starters.addReference('author', 'Contributor')
@@ -71,10 +57,7 @@ module.exports = function (api) {
     const platformsPath = path.join(__dirname, 'platforms/platforms.yaml')
     const platformsRaw = await fs.readFile(platformsPath, 'utf8')
     const platformsJson = yaml.safeLoad(platformsRaw)
-    const platforms = store.addContentType({
-      typeName: 'Platform',
-      route: '/starters/platform/:id'
-    })
+    const platforms = store.addCollection('Platform')
 
     // Connect author field to Contributors
     platformsJson.forEach((platform, index) => {
@@ -85,14 +68,14 @@ module.exports = function (api) {
           origin: platformsPath
         }
       })
-    }) 
+    })
 
   })
 
-  api.afterBuild(async ({ config }) => {
-    const from = path.join(config.outDir, 'plugins/1/index.html')
-    const to = path.join(config.outDir, 'plugins/index.html')
-
-    await fs.copy(from, to)
+  api.createPages(({ createPage }) => {
+    createPage({
+      path: '/plugins/:id*',
+      component: './src/templates/Plugin.vue'
+    })
   })
 }

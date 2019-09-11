@@ -5,6 +5,7 @@ module.exports = {
   siteUrl: `https://www.gridsome.org`,
   titleTemplate: '%s - Gridsome',
   siteDescription: 'Gridsome is a Vue.js-powered modern site generator that makes it easy and fun for developers to create beautiful JAMstack websites & PWAs that are fast by default.',
+
   chainWebpack(config, { isServer }) {
     config.module.rules.delete('svg')
     config.module.rule('svg')
@@ -26,6 +27,15 @@ module.exports = {
          ]
       }))
     }
+  },
+
+  templates: {
+    BlogPost: '/blog/:year/:month/:day/:slug',
+    Contributor: '/contributor/:id',
+    Starter: '/starters/:title',
+    Platform: '/starters/platform/:id',
+    DocPage: node => node.path,
+    Example: node => node.path
   },
 
   plugins: [
@@ -79,7 +89,6 @@ module.exports = {
       options: {
         typeName: 'BlogPost',
         path: './blog/*/index.md',
-        route: '/blog/:year/:month/:day/:slug',
         refs: {
           author: 'Contributor'
         },
