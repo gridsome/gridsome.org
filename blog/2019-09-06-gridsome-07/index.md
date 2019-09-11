@@ -15,14 +15,13 @@ excerpt: "Version 0.7 is finally here! Enjoy Vue Components in Markdown, new Sch
 - [Shareable Network URL](#shareable-network-url): Perfect for mobile live preview with hot-reloading.
 -  4000+ [GitHub Stars 🌟](https://github.com/gridsome/gridsome).
 
-
 ## Vue Remark plugin
 
-With Gridsome 0.7 follows a new plugin called [@gridsome/vue-remark](/plugins/@gridsome/vue-remark). It let you add Vue Components to Markdown files. This is perfect for Documentation, Design Systems, or portfolio websites. It's an Vue alternative to [MDX](https://mdxjs.com/) that is very popular for React.
+With Gridsome 0.7 follows a new plugin called [@gridsome/vue-remark](/plugins/@gridsome/vue-remark). It let you add Vue Components to Markdown files. This is perfect for Documentation, Design Systems, or portfolio websites. It's a Vue alternative to [MDX](https://mdxjs.com/) that is very popular for React.
 
 Here is an quick overview of how it works:
 
-Install plugin and add configs: 
+Install plugin and add configs:
 
 ```js
 module.exports = {
@@ -30,45 +29,41 @@ module.exports = {
     {
       use: '@gridsome/vue-remark',
       options: {
-        typeName: 'Docs', // required
+        typeName: 'Documentation', // required
         baseDir: './docs', // where files are located.
-        template: './src/templates/Docs.vue' // optional
-        // route:  optional. Will replace baseDir as paths.
+        template: './src/templates/Documentation.vue' // optional
       }
     }
   ]
 }
 ```
 
-Setup a template and include the `<VureRemarkContent />` component: 
+Setup a template and include the `<VueRemarkContent />` component:
 
 ```html
 <template>
   <Layout>
-    <h1>{{ $page.docs.title }}</h1>
+    <h1>{{ $page.documentation.title }}</h1>
     <VueRemarkContent />
   </Layout>
 </template>
 
 <page-query>
-query Docs ($id: String!) {
-  docs(id: $id) {
+query Documentation ($id: ID!) {
+  documentation(id: $id) {
     title
   }
 }
 </page-query>
 ```
 
-Write Markdown with Vue: 
-
+Import and use Vue components in Markdown:
 
 ```jsx
 ---
 title: A cool title
 excerpt: Lorem Ipsum is simply dummy text.
-layout: ~/layouts/LeftSidebar.vue
 ---
-
 import YouTube from '~/components/YouTube.vue'
 import data from '~/data/youtube.json'
 
@@ -77,7 +72,6 @@ import data from '~/data/youtube.json'
 <YouTube :id="data.id" />
 
 > {{ $frontmatter.excerpt }}
-
 ```
 
 
@@ -101,28 +95,27 @@ api.loadSource(({ addSchemaTypes }) => {
 
 For example, [Sanity.io](https://sanity.io) (A Headless CMS) has created a source plugin that uses the Schema API to make sure Gridsome know what fields that are being used in Sanity CMS.
 
-
 Read more about the [Schema API](/docs/schema-api/)
 
 ## New template configuration
 
-Previously, each content type has been given a route in order to assign it to a template with the same name inside the `src/templates` directory. Routes were spread across many plugin options and some also hidden within plugins. **The new `templates` config tries to collect all content type routes in a single property in `gridsome.config.js`.**
+Previously, each collection has been given a route in order to assign it to a template with the same name inside the `src/templates` directory. Routes were spread across many plugin options and some also hidden within plugins. **The new `templates` config tries to collect all collection routes in a single property in `gridsome.config.js`.**
 
-To create a route for a [collection](/docs/collections/) you simply add `CollectionName: '/any/route/:title'` to the new [templates](/docs/templates/)  config. Here are some examples:
+To create a route for a [collection](/docs/collections/) you simply add `CollectionName: '/any/route/:title'` to the new [templates](/docs/templates/)  config. A Vue component in `src/templates` with the same name as the collection will be used as template by default. Here are some examples:
 
 ```js
 // gridsome.config.js
 module.exports = {
   templates: {
-  	// These will look for and use src/templates/{collection}.vue
-    Post: '/blog/:year/:month/:title',
+  	// These will look for and use src/templates/{name}.vue
+    Post: '/blog/:year/:month/:slug',
     Author: '/author/:name',
 
-    // Templates for source plugins should also be configured here:
+    // Templates for source plugins must also be configured here
     WordPressPost: '/blog/:year/:month/:day/:slug',
     WordPressTag: '/tag/:slug',
 
-    // Collections can have multiple templates:
+    // Collections can have multiple templates
     Product: [
       {
         path: '/product/:slug',
@@ -137,10 +130,9 @@ module.exports = {
 }
 ```
 
-**This means: **
+**This means:**
 - [Source plugins](/plugins) & the [Data store API](/docs/data-store-api/) are only responsible for creating [Collections](/docs/collections/).
 - The new [Templates](/docs/templates/) config are used to setup **templates and routes** for collections.
-
 
 Read more about the new [templates configuration](/docs/templates/)
 
