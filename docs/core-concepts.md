@@ -53,7 +53,7 @@ Layouts are usually used like this:
 
 
 ### Gridsome Images
-Gridsome has a built-in `<g-image>` component that outputs an optimized progressive image. It also resizes and crops in real-time when developing.
+Gridsome has a built-in `<g-image>` component that outputs an optimized progressive image. It also resizes and crops in real-time when developing if **width** and **height** is changed. `<g-images>` creates a super small **blurred inline base64 image** and then uses IntersectionObserver to lazy load image when in view.
 
 [Learn more about g-image](/docs/images)
 
