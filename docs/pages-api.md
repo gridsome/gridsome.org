@@ -133,15 +133,17 @@ module.exports = function (api) {
     const { data } = await graphql(`{
       allProduct {
         edges {
-          id
-          path
+          node {
+            id
+            slug
+          }
         }
       }
     `)
 
     data.allProduct.edges.forEach(({ node }) => {
       createPage({
-        path: `${node.path}/reviews`,
+        path: `/product/${node.slug}/reviews`,
         component: './src/templates/ProductReviews.vue',
         context: {
           id: node.id
@@ -164,7 +166,7 @@ module.exports = function (api) {
 
     data.forEach(item => {
       createPage({
-        path: item.path,
+        path: `/post/${item.slug}`,
         component: './src/templates/Post.vue',
         context: {
           title: item.title,
