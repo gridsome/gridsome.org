@@ -59,4 +59,4 @@ Gridsome has a built-in `<g-image>` component that outputs an optimized progress
 ### Gridsome Link
 Gridsome has a built in `<g-link>` component that uses IntersectionObserver to prefetch linked pages when link is in view. This makes browsing around in a Gridsome site very fast because the clicked page is already downloaded.
 
-[Learn more about g-image](/docs/linking)
+[Learn more about g-link](/docs/linking)
