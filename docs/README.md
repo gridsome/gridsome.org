@@ -11,7 +11,6 @@
 - **Auto-optimized code** - Get code-splitting and asset optimization out-of-the-box.
 - **Static files generation** - Deploy securely to any CDN or static web host.
 
-
 ## Prerequisites
 You should have basic knowledge about HTML, CSS, [Vue.js](https://vuejs.org) and how to use the [Terminal](https://www.linode.com/docs/tools-reference/tools/using-the-terminal/). Knowing how [GraphQL](https://www.graphql.com/) works is a plus, but not required. Gridsome is a great way to learn it.
 
