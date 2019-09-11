@@ -7,9 +7,9 @@
 
 
 ### Collections
-[Collections](/docs/collections) are data added to a [GraphQL data layer](/docs/data-layer).  Collections are useful if you are going to have blog posts, tags, products etc. on your site. Collections can be added with source plugins or with Data Store API. Any external content API can be used.
+[Collections](/docs/collections) are data added to a local [GraphQL data layer](/docs/data-layer).  Collections are useful if you are going to have blog posts, tags, products etc. on your site. Collections can be added with source plugins or with Data Store API. Any external content API can be used.
 
-Gridsome lets you do all sort of stuff with collections. Like filtering and creating relations.
+Collections can be [queried anywhere](/docs/querying-data), [filtered](/docs/filtering-data), [paginated](/docs/pagination) or [have relations](/docs/taxonomies).
 
 [Learn more about Collections](/docs/collections)
 
