@@ -31,7 +31,7 @@ module.exports = {
       use: '@gridsome/vue-remark',
       options: {
         typeName: 'Documentation', // required
-        baseDir: './docs', // where files are located.
+        baseDir: './docs', // where .md files are located.
         template: './src/templates/Documentation.vue' // optional
       }
     }
