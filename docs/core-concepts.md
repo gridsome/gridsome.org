@@ -1,14 +1,18 @@
 # Core concepts
 
 ### Pages
-[Pages](/docs/pages) is created by adding **Vue Components** in `src/pages` folder. It uses a file-based routing system. For example, `src/pages/About.vue` will be `mywebsite.com/about`. Pages are used for simple pages and for listing collections.
+[Pages](/docs/pages) is created by adding **Vue Components** in `src/pages` folder. It uses a file-based routing system. For example, `src/pages/About.vue` will be `mywebsite.com/about`. Pages are used for simple pages and for pages that list collections (Like a `/blog`)
 
 [Learn more about Pages](/docs/pages)
 
 ### Collections
-[Collections](/docs/collections) are data added to a local [GraphQL data layer](/docs/data-layer). Collections are useful if you are going to have blog posts, tags, products etc. on your site.  Collections can be added with [source plugins](/plugins) or with [Data Store API](/docs/data-store-api). Add data from any Headless CMS or content APIs.
+[Collections](/docs/collections) are useful if you are going to have blog posts, tags, products etc. on your site. Collections can be sourced from any **Headless CMS, content APIs or Markdown files** by using [Source plugins](/plugins) or the [Data Store API](/docs/data-store-api).
 
-Collections can be [queried anywhere](/docs/querying-data), [filtered](/docs/filtering-data), [paginated](/docs/pagination) or [have relations](/docs/taxonomies).
+![Collections](./images/node-pages.png)
+
+Collections are stored in a temporary [local GraphQL data layer](/docs/data-layer) and can be [queried anywhere](/docs/querying-data), [filtered](/docs/filtering-data), [paginated](/docs/pagination) or [have relations](/docs/taxonomies).
+
+
 
 [Learn more about Collections](/docs/collections)
 
