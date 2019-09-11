@@ -2,7 +2,7 @@
 title: Gridsome v0.7
 slug: gridsome-v07
 author: [hjvedvik, tommyvedvik]
-date: 2019-09-06
+date: 2019-09-12
 excerpt: "Version 0.7 is finally here! Enjoy Vue Components in Markdown, new Schema API, File-based dynamic routing, better Template config, Custom App.vue, Shareable Network URL and more!"
 ---
 
@@ -39,7 +39,7 @@ module.exports = {
 }
 ```
 
-By default **vue-remark** takes any **.md** files in `baseDir` folder and uses them for file-based routing like [Pages](/docs/pages) works. You can override this by using a `route` config.
+By default it takes any **.md** files in `baseDir` folder and uses them for file-based routing like [Pages](/docs/pages) works. You can override this by using a `route` config.
 
 In this example `/docs/index.md` will be `website.com/docs/`,
 and `/docs/install-guide.md` will be `website.com/docs/install-guide/`.
