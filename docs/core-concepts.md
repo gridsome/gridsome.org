@@ -14,7 +14,7 @@ Collections can be [queried anywhere](/docs/querying-data), [filtered](/docs/fil
 [Learn more about Collections](/docs/collections)
 
 ### Templates
-[Templates](/docs/templates) are responsible for displaying nodes (single pages) of collections. A template has a `<page-query>` that query data for the
+[Templates](/docs/templates) are responsible for displaying nodes (single pages) of collections.
 
 Here is an example:
 
