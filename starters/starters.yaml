@@ -77,7 +77,7 @@
   author: calebanthony
   tags: markdown, blog, bulma, eslint
   platforms: markdown
-  
+
 - title: Bootstrap resume
   description: Resume/portfolio
   screenshot: ./screenshots/gridsome-starter-resume.png
@@ -85,5 +85,57 @@
   preview: https://gridsome-starter-resume.loke.dev
   author: lokecarlsson
   tags: resume, portfolio, bootstrap, bootstrap-vue
+  platforms: markdown
+
+- title: Gridsome Portfolio Starter
+  description: Simple portfolio and blog with Tailwind
+  screenshot: ./screenshots/gridsome-portfolio-starter.jpg
+  repo: drehimself/gridsome-portfolio-starter
+  preview: https://gridsome-portfolio-starter.netlify.com/
+  author: drehimself
+  tags: portfolio, markdown, tailwind
+  platforms: markdown
+
+- title: Directus starter
+  description: Gridsome + Directus
+  repo: pienter-tech/gridsome-starter-directus
+  author: pienter
+  tags: directus
+  platforms: directus
+
+- title: Gridsome WordPress and Bootstrap starter
+  description: A BootstrapVue powered Gridsome starter that uses WordPress for content
+  screenshot: ./screenshots/gridsome-starter-wordpress-bootstrap.jpg
+  repo: pehaa/gridsome-starter-wordpress-bootstrap
+  preview: https://wonderful-montalcini-a601bf.netlify.com/
+  author: pehaa
+  tags: wordpress, bootstrap, bootstrapvue
+  platforms: wordpress
+
+- title: Darkfolio
+  description: Portfolio
+  screenshot: ./screenshots/darkfolio.jpg
+  repo: itsnwa/darkfolio
+  preview: https://darkfolio.netlify.com
+  author: itsnwa
+  tags: markdown, forestry, portfolio, dark
+  platforms: markdown
+
+- title: Airtable Events Starter
+  description: A Gridsome starter using Airtable as a CMS to display content
+  screenshot: ./screenshots/airtable-events-starter.png
+  repo: 12vanblart/gridsome-airtable-starter
+  preview: https://gridsomeairtable.netlify.com/
+  author: tvanblargan
+  tags: airtable, events
+  platforms: airtable
+
+- title: Brevifolia
+  description: A markdown blog with a clean layout, configured with Forestry CMS
+  screenshot: ./screenshots/brevifolia-screenshot.jpg
+  repo: kendallstrautman/brevifolia-gridsome-forestry
+  preview: https://brevifolia-gridsome-forestry.netlify.com/
+  author: kendallstrautman
+  tags: blog, forestry, minimalist, markdown
   platforms: markdown
   

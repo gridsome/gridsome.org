@@ -53,3 +53,7 @@
 - id: strapi
   title: Strapi
   logo: ./logos/strapi.svg
+
+- id: directus
+  title: Directus
+  logo: ./logos/directus.svg

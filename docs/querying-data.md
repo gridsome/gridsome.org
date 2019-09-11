@@ -32,7 +32,7 @@ query Posts {
 </page-query>
 ```
 
-**With GraphQL you only query the data you need.** This makes it easier and more tidy to work with data. A query always starts with `query` and then something like `Posts` *(Can be anything)*. Then you write something like `posts: allWordPressPost`. The `allWordPressPost` is the name of the GraphQL collection you want to query. The `post:` part is an optional alias. When using `post` as alias, your data will be available at `$page.posts` (or `$static.posts` if you use `<static-query>`). Otherwise it will be available at `$page.allWordPressPost`.
+**With GraphQL you only query the data you need.** This makes it easier and more tidy to work with data. A query always starts with `query` and then something like `Posts` *(Can be anything)*. Then you write something like `posts: allWordPressPost`. The `allWordPressPost` is the name of the GraphQL collection you want to query. The `posts:` part is an optional alias. When using `posts` as alias, your data will be available at `$page.posts` (or `$static.posts` if you use `<static-query>`). Otherwise it will be available at `$page.allWordPressPost`.
 
 [Learn more about GraphQL queries](https://graphql.org/learn/queries/)
 

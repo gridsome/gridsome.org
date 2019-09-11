@@ -1,8 +1,6 @@
 # Client-side data
 
-
-Client-side data is data added after page load. This can be data coming from other internal pages, a REST API or a GraphQL API. It's important to ony load your data in the `mounted` hook to prevent it from being included in the generated markup.
-
+Client-side data is data added after page load. This can be data coming from other internal pages, a REST API or a GraphQL API. It's important to only load your data in the `mounted` hook to prevent it from being included in the generated markup.
 
 ## Fetch from internal pages
 
@@ -82,7 +80,7 @@ export default {
 The following example fetches local JSON data within .vue templates:
 
 1. Create a JSON file in `/src/data` folder. For example: `users.json`
-2. Add `import products from @/data/users.json` before `export default` function.
+2. Add `import users from @/data/users.json` before `export default` function.
 3. Add the data from the JSON file to the data layer by creating a new object key `users` and defining it with the just imported `users`. Since the object key and the value are the same, we can destructure to just `users`.
 
 ```html

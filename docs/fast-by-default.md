@@ -1,5 +1,5 @@
-#  Fast by default 🚀
-> Gridsome builds ultra performance into every page automatically. You get code splitting, asset optimization, progressive images, and link prefetching out of the box. With Gridsome you gets almost perfect page speed scores by default.
+# Fast by default
+> Gridsome builds ultra performance into every page automatically. You get code splitting, asset optimization, progressive images, and link prefetching out of the box. With Gridsome you get almost perfect page speed scores by default.
 
 ### What makes Gridsome sites fast?
 1. [Pre-rendered HTML](#pre-rendered-html). Nothing beats static content in speed.
@@ -11,7 +11,7 @@
 
 ## Pre-rendered HTML
 
-Gridsome pre-renders HTML at build time (Generates static files). Gridsome sites can be hosted anywhere, even on a CDN. There is no need for a Node.js server. 
+Gridsome pre-renders HTML at build time (Generates static files). Gridsome sites can be hosted anywhere, even on a CDN. There is no need for a Node.js server.
 
 A static site gives you many benefits:
 
@@ -40,7 +40,7 @@ Learn more about [PRPL pattern](https://developers.google.com/web/fundamentals/p
 
 
 ## Smart link prefetching
-Gridsome prefetches internal links in the background so browsing around goes insanely fast. It uses the built-in `<g-link>` component and **Intersection Observer** to prefetch when the link is in view. 
+Gridsome prefetches internal links in the background so browsing around goes insanely fast. It uses the built-in `<g-link>` component and **Intersection Observer** to prefetch when the link is in view.
 
 Gridsome builds two files of every page. A static HTML and a small JavaScript file. When the website hydrates into a Vue.js-SPA, the link prefetching only loads the JavaScript to render the next page. This results in a faster and smoother browsing experience.
 

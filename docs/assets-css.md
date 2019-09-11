@@ -130,20 +130,213 @@ Gridsome [Critical CSS plugin](/plugins/@gridsome/plugin-critical) extracts CSS 
 ## Add a CSS framework
 
 ### Tailwind
-In order to add Tailwind to your Gridsome project, You need to install the [gridsome-plugin-tailwindcss plugin](https://www.npmjs.com/package/gridsome-plugin-tailwindcss), To install it run `npm install -D gridsome-plugin-tailwindcss` add the following to your `gridsome.config.js`. where the config option will be the configuration file for tailwind, If you don't supply that option, `./tailwind.js` will be used by default.
+[TailwindCSS](https://tailwindcss.com) is a highly customizable, utility-based CSS framework that gives you all of the building blocks you need to build your project without any opinionated styles you have to fight to override. When using TailwindCSS, it is recommended to use [PostCSS-PurgeCSS](https://github.com/FullHuman/postcss-purgecss) which is a tool used to remove unused css; resulting in tiny file sizes.
 
-```js
-module.exports = {
-  plugins: [
-    {
-      use: 'gridsome-plugin-tailwindcss',
-      options: {
-        config: './some/file/js'
-      }
-    }
-  ]
+
+### Add TailwindCSS with a Plugin
+The quickest and easiest way to get up and running with TailwindCSS in your project is to install it with a [Gridsome Plugin](https://gridsome.org/plugins). A Gridsome plugin will typically have the majority of the boilerplate and configuration done for you, eliminating a lot of the set up time.
+
+**The [Gridsome-Plugin-Tailwindcss](https://gridsome.org/plugins/gridsome-plugin-tailwindcss) Plugin**
+
+Install using:
+```shell
+npm install -D gridsome-plugin-tailwindcss
+```
+
+Create a `main.css` file in the root of your `/src` directory and add the following:
+```css
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+```
+
+Now import the `main.css` file into your project. In the `main.js` file add `require('~/main.css')`. Afterwards, your `main.js` file should look something like this:
+```javascript
+// Import global styles
+require('~/main.css')
+
+import DefaultLayout from '~/layouts/Default.vue'
+
+export default function (Vue, { router, head, isClient }) {
+  // Set default layout as a global component
+    Vue.component('Layout', DefaultLayout)
+    
 }
 ```
+
+Create a `tailwind.config.js` file. This file enables you to customize and extend the default configurations of tailwind. 
+
+```shell
+npx tailwind init
+```
+
+Which will generate a minimal `tailwind.config.js` file at the root of your project that contains:
+```javascript
+module.exports = {
+    theme: {
+        extend: {}
+    },
+    variants: {},
+    plugins: []
+}
+```
+
+Learn more about customizing your TailwindCSS installation in Tailwind's [configuration documentation](https://tailwindcss.com/docs/configuration/.)
+
+Update your `gridsome.config.js` file to this:
+```javascript
+module.exports = {
+    siteName: 'Gridsome',
+    plugins: [
+        {
+            use: 'gridsome-plugin-tailwindcss',
+            options: {
+				tailwindConfig: 'tailwind.config.js',
+				purgeConfig: {},
+				presetEnvConfig: {},
+				shouldPurge: true,
+				shouldImport: true,
+				shouldTimeTravel: true,
+			}
+        }
+    ]
+}
+```
+
+[PurgeCSS](https://www.purgecss.com/with-postcss) is enabled by default. If you'd like to disable it, pass `shouldPurge: false` to the plugin options object.
+
+[PostCSS-Import](https://github.com/postcss/postcss-import) included by default. Pass `shouldImport: false` to disable.
+
+[PostCSS-Preset-Env](https://github.com/csstools/postcss-preset-env) included by default. Pass `shouldTimeTravel: false` to disable. You may also pass a config object to the plugin as `presetEnvConfig`.
+
+At this point, you have a functioning install of TailwindCSS. Just be sure to restart the `gridsome develop` command to be sure the changes are compiled in the current build.
+
+
+
+### Add TailwindCSS Manully
+
+If you prefer to do the install and configuration on your own, you can add TailwindCSS manually with the following instructions.
+
+To install TailwindCSS (choose one):
+```shell
+# Using npm
+npm install tailwindcss
+
+# Using Yarn
+yarn add tailwindcss
+```
+
+To install PostCSS-PurgeCSS:
+```shell
+npm i -D @fullhuman/postcss-purgecss
+```
+
+Then, create a `main.css` file in the root of your `/src` directory and add the following:
+```css
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+```
+
+Now import the `main.css` file into your project. In the `main.js` file add `require('~/main.css')`. Afterwards, your `main.js` file should look something like this:
+```javascript
+// Import global styles
+require('~/main.css')
+
+import DefaultLayout from '~/layouts/Default.vue'
+
+export default function (Vue, { router, head, isClient }) {
+  // Set default layout as a global component
+    Vue.component('Layout', DefaultLayout)
+    
+}
+```
+
+Optionally, if you would like to customize your TailwindCSS installation, you can generate a TailwindCSS config file using:
+```shell
+npx tailwind init
+```
+
+Which will generate a minimal `tailwind.config.js` file at the root of your project that contains:
+```javascript
+module.exports = {
+    theme: {
+        extend: {}
+    },
+    variants: {},
+    plugins: []
+}
+```
+
+Learn more about customizing your TailwindCSS installation in Tailwind's [configuration documentation](https://tailwindcss.com/docs/configuration/)
+
+Next, `gridsome.config.js` needs to be updated to add our TailwindCSS and PurgeCSS configuration:
+
+```javascript
+const tailwind = require('tailwindcss')
+const purgecss = require('@fullhuman/postcss-purgecss')
+
+const postcssPlugins = [
+	tailwind(),
+]
+
+if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
+
+module.exports = {
+    siteName: 'Gridsome',
+    plugins: [],
+    css: {
+        loaderOptions: {
+            postcss: {
+                plugins: postcssPlugins,
+            },
+        },
+    },
+}
+
+```
+
+Finally, create a `purgecss.config.js` file in the root of your project and add the configuration below:
+
+```javascript
+class TailwindExtractor {
+  static extract(content) {
+    return content.match(/[A-z0-9-:\\/]+/g)
+  }
+}
+
+module.exports = {
+  content: [
+    './src/**/*.vue',
+    './src/**/*.js',
+    './src/**/*.jsx',
+    './src/**/*.html',
+    './src/**/*.pug',
+    './src/**/*.md',
+  ],
+  whitelist: [
+    'body',
+    'html',
+    'img',
+    'a',
+    'g-image',
+    'g-image--lazy',
+    'g-image--loaded',
+  ],
+  extractors: [
+    {
+      extractor: TailwindExtractor,
+      extensions: ['vue', 'js', 'jsx', 'md', 'html', 'pug'],
+    },
+  ],
+}
+```
+
+Be sure to restart the `gridsome develop` command to ensure the changes are compiled in the current build.
 
 ### Bulma
 ...plugin coming
@@ -183,7 +376,7 @@ export default function (Vue) {
 
 ### Vuetify
 
-[Vuetify](https://vuetifyjs.com/en/) is a semantic component framework for Vue. It aims to provide clean, semantic and reusable components that make building your application a breeze. Based on Google's material design, it can be a quick way to get an app up and running quickly with pre-built components available to use and customize.
+[Vuetify](https://vuetifyjs.com/en/) is a semantic component framework for Vue. It aims to provide clean, semantic and reusable components that make building your application a breeze. Based on Google's material design, it can be a quick way to get an app up and running with pre-built components available to use and customize. Updated for Vuetify 2.0.
 
 To install use:
 
@@ -196,9 +389,10 @@ yarn add vuetify
 ```
 
 Then, you will need to register the Vuetify plugin, include the Vuetify css file, and add a link to the head 
-for Google's material design icons in your 'main.js' file:
+for Google's material design icons in your 'main.js' file, with Vuetify 2.0+ you will need to pass a new instance of Vuetify to appOptions. Icons and iconfonts are now built into Vuetify 2.0+. You can install them as a local dependency or add them as a stylesheet in your head from a CDN, more information on Vuetify icon installation is available [here](https://vuetifyjs.com/en/customization/icons):
 
 ```js
+// v1.5
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import DefaultLayout from '~/layouts/Default.vue'
@@ -216,7 +410,29 @@ export default function (Vue, { head }) {
 }
 ```
 
-Finally, there is one last thing you will need in order to build your application with vuetify. 
+```js
+// v2.0
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
+import DefaultLayout from '~/layouts/Default.vue'
+
+export default function (Vue, { appOptions, head }) {
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
+  })
+  
+  const opts = { ... } //opts includes, vuetify themes, icons, etc.
+  Vue.use(Vuetify)
+  
+  appOptions.vuetify = new Vuetify(opts);
+  
+  // Set default layout as a global component
+  Vue.component('Layout', DefaultLayout)
+}
+```
+
+Finally, there is one last thing you will need in order to build your application with Vuetify. 
 You will need to whitelist Vuetify in webpack in order to build. 
 
 First, install the webpack-node-externals plugin:
@@ -229,7 +445,7 @@ npm install webpack-node-externals --save-dev
 yarn add webpack-node-externals --dev
 ```
 
-Then modify your gridsome.server.js file to include the webpack-node-externals package, and whitelist vuetify.
+Then modify your gridsome.server.js file to include the webpack-node-externals package, and whitelist Vuetify.
 ```js
 const nodeExternals = require('webpack-node-externals')
 
