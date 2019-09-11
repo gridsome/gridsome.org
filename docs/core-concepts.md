@@ -5,7 +5,6 @@
 
 [Learn more about Pages](/docs/pages)
 
-
 ### Collections
 [Collections](/docs/collections) are data added to a local [GraphQL data layer](/docs/data-layer).  Collections are useful if you are going to have blog posts, tags, products etc. on your site. Collections can be added with source plugins or with Data Store API. Any external content API can be used.
 
@@ -39,7 +38,7 @@ query Post($id: ID!) {
 ### Layouts
 Layouts are **Vue Components** that are used inside Pages and Templates to wrap the content. A layout usually contains Header & Footer.
 
-Layouts are usually used like this:
+Layouts are usually used like this in Pages:
 
 ```html
 <template>
@@ -52,12 +51,12 @@ Layouts are usually used like this:
 [Learn more about Layouts](/docs/layouts)
 
 
-### Gridsome Images
+### Gridsome Image
 Gridsome has a built-in `<g-image>` component that outputs an optimized progressive image. It also resizes and crops in real-time when developing if **width** and **height** is changed. `<g-images>` creates a super small **blurred inline base64 image** and then uses IntersectionObserver to lazy load image when in view.
 
 [Learn more about g-image](/docs/images)
 
-### Gridsome Links
+### Gridsome Link
 Gridsome has a built in `<g-link>` component that uses IntersectionObserver to prefetch linked pages when link is in view. This makes browsing around in a Gridsome site very fast because the clicked page is already downloaded.
 
 [Learn more about g-image](/docs/linking)
