@@ -22,7 +22,7 @@ With Gridsome 0.7 follows a new plugin called [@gridsome/vue-remark](/plugins/@g
 
 Here is a quick overview of how it works:
 
-Install the plugin and add configs:
+1) Install the plugin and add configs:
 
 ```js
 module.exports = {
@@ -39,7 +39,12 @@ module.exports = {
 }
 ```
 
-Setup a template and include the `<VueRemarkContent />` component:
+By default **vue-remark** takes any **.md** files in `baseDir` folder and uses them for file-based routing like [Pages](/docs/pages) works. You can override this by using a `route` config.
+
+In this example `/docs/index.md` will be `website.com/docs/`,
+and `/docs/install-guide.md` will be `website.com/docs/install-guide/`.
+
+2) Setup a template and include the `<VueRemarkContent />` component:
 
 ```html
 <template>
@@ -61,7 +66,7 @@ query Documentation ($id: ID!) {
 </page-query>
 ```
 
-Import and use Vue components in Markdown:
+3) Import and use Vue components in Markdown:
 
 ```jsx
 ---
