@@ -102,6 +102,8 @@ api.loadSource(({ addSchemaTypes }) => {
 
 🙌 This will fix problems for **data sources** where the data fields can change.
 
+For example, [Sanity.io](https://sanity.io) (A Headless CMS) has created a source plugin ([gridsome-source-sanity](/plugins/gridsome-source-sanity)) that uses the Schema API to make sure Gridsome know what fields that are being used in Sanity.io.
+
 Read more about the [Schema API](/docs/schema-api/)
 
 ## New template configuration
