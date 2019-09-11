@@ -45,14 +45,17 @@ Setup a template and include the `<VueRemarkContent />` component:
 <template>
   <Layout>
     <h1>{{ $page.documentation.title }}</h1>
+    <p class="intro">{{ $page.documentation.excerpt }}</p>
     <VueRemarkContent />
   </Layout>
 </template>
 
+<!-- Front-matter fields can be queried from GraphQL layer -->
 <page-query>
 query Documentation ($id: ID!) {
   documentation(id: $id) {
     title
+    excerpt
   }
 }
 </page-query>
@@ -94,7 +97,7 @@ api.loadSource(({ addSchemaTypes }) => {
 
 🙌 This will fix problems for **data sources** where the data fields can change.
 
-For example, [Sanity.io](https://sanity.io) (A Headless CMS) has created a source plugin ([@sanity-io/gridsome-source-sanity](/plugins/@sanity-io/gridsome-source-sanity)) that uses the Schema API to make sure Gridsome know what fields that are being used in Sanity CMS.
+For example, [Sanity.io](https://sanity.io) (A Headless CMS) has created a source plugin ([gridsome-source-sanity](/plugins/@sanity-io/gridsome-source-sanity)) that uses the Schema API to make sure Gridsome know what fields that are being used in Sanity.io.
 
 Read more about the [Schema API](/docs/schema-api/)
 
