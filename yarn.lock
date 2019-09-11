@@ -630,9 +630,10 @@
   dependencies:
     vue-analytics "^5.16.1"
 
-"@gridsome/remark-prismjs@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@gridsome/remark-prismjs/-/remark-prismjs-0.0.4.tgz#1fd4dc4cfcab1adad8f294dde0527f8d1e2fdaed"
+"@gridsome/remark-prismjs@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@gridsome/remark-prismjs/-/remark-prismjs-0.1.0.tgz#1b8abb81f5b2f914a654f700b91bd00e2c5a0032"
+  integrity sha512-TUO6TiNmkkjdSh0TbXfGL0ln4ptoWEXNlCrC5eAkQy4uTty15l8xJhCLyW2daKsH4QIOxP/D6ynO+A/5OBZmGg==
   dependencies:
     escape-html "^1.0.3"
     prismjs "^1.15.0"
