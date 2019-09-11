@@ -20,9 +20,9 @@ excerpt: "Version 0.7 is finally here! Enjoy Vue Components in markdown, new Sch
 With Gridsome 0.7 follows a new plugin called [@gridsome/vue-remark](/plugins/@gridsome/vue-remark). It let you add Vue Components to Markdown files. This is perfect for Documentation, Design Systems, or portfolio websites. It's an Vue / Gridsome alternative to [MDX](https://mdxjs.com/).
 
 
-Here is an quick overview of how it works:
+Here is a quick overview of how it works:
 
-Install plugin and add configs:
+Install the plugin and add configs:
 
 ```js
 module.exports = {
@@ -214,7 +214,7 @@ This release should not have any breaking changes if you upgrade from v0.6. But 
 
 #### Trailing slashes for pages and routes
 
-Routes for pages in `./src/pages` and all templates will incude a trailing slash by default. This can be disabled with the [`permalinks`](/docs/config/#permalinkstrailingslash) config.
+Routes for pages in `./src/pages` and all templates will include a trailing slash by default. This can be disabled with the [`permalinks`](/docs/config/#permalinkstrailingslash) config.
 
 **You should have a trailing slash in every static `<g-link>` path if you are hosting the site on Netlify or Zeit Now etc. to avoid redirects.** For example:
 
@@ -241,4 +241,4 @@ The new [Schema API](/docs/schema-api/) is deprecating previous methods for cust
 
 The `$id` variable in `<page-query>` for nodes has previously been a `String` type. Even though the `id` field in the schema was of type `ID`. But the `$id` input variable must also be a `ID` type from now on. Gridsome will fix the type for you automatically and show a deprecation notice untill you have updated the query.
 
-[See full change log →](https://github.com/gridsome/gridsome/blob/master/gridsome/CHANGELOG.md)
+[See full changelog →](https://github.com/gridsome/gridsome/blob/master/gridsome/CHANGELOG.md)
