@@ -2,10 +2,12 @@
   items:
     - title: Getting started
       link: /docs
-    - title: How it works
-      link: /docs/how-it-works
+    - title: Core concepts
+      link: /docs/core-concepts
     - title: Fast by default
       link: /docs/fast-by-default
+    - title: How it works
+      link: /docs/how-it-works
     - title: The JAMstack
       link: /docs/jamstack
     - title: Deployment
