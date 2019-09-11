@@ -51,7 +51,19 @@ Layouts are usually used like this in Pages:
   	<h1>About us</h1>
   </Layout>
 </template>
+
+<script>
+import Layout from '~/layouts/Default.vue'
+
+export default {
+  components: {
+    Layout
+  }
+}
+</script>
 ```
+
+🙌 Layouts can also be made [available globally](/docs/layouts#make-a-layout-global), so you don't need to import them per page.
 
 [Learn more about Layouts](/docs/layouts)
 
@@ -62,6 +74,6 @@ Gridsome has a built-in `<g-image>` component that outputs an optimized progress
 [Learn more about g-image](/docs/images)
 
 ### Gridsome Link
-Gridsome has a built in `<g-link>` component that uses IntersectionObserver to prefetch linked pages when link is in view. This makes browsing around in a Gridsome site very fast because the clicked page is already downloaded.
+Gridsome has a built-in `<g-link>` component that uses IntersectionObserver to prefetch linked pages when the link is in view. This makes browsing around in a Gridsome site very fast because the clicked page is already downloaded.
 
 [Learn more about g-link](/docs/linking)
