@@ -3,11 +3,11 @@ title: Gridsome v0.7
 slug: gridsome-v07
 author: [hjvedvik, tommyvedvik]
 date: 2019-09-06
-excerpt: "Version 0.7 is finally here! Enjoy Vue Components in Markdown, new Schema API, Dynamic Routing, better Template config, Custom App.vue, Shareable Network URL and more!"
+excerpt: "Version 0.7 is finally here! Enjoy Vue Components in markdown, new Schema API, File-based dynamic routing, better Template config, Custom App.vue, Shareable Network URL and more!"
 ---
 
 - [Vue Remark plugin](#vue-remark-plugin): Use Vue Components in Markdown.
-- [New Schema API](#schema-api): Define what fields that are coming from an external source.
+- [New Schema API](#new-schema-api): Define what fields that are coming from an external source.
 - [New template configuration](#new-template-configuration): Setup templates and routes for collections in one place.
 - [Dynamic routing](#dynamic-routing): File-based & Programmatically dynamic routing.
 - [Custom App.vue](#custom-appvue): Use to create a global layout that can have full-page transitions.
@@ -17,7 +17,8 @@ excerpt: "Version 0.7 is finally here! Enjoy Vue Components in Markdown, new Sch
 
 ## Vue Remark plugin
 
-With Gridsome 0.7 follows a new plugin called [@gridsome/vue-remark](/plugins/@gridsome/vue-remark). It let you add Vue Components to Markdown files. This is perfect for Documentation, Design Systems, or portfolio websites. It's a Vue alternative to [MDX](https://mdxjs.com/) that is very popular for React.
+With Gridsome 0.7 follows a new plugin called [@gridsome/vue-remark](/plugins/@gridsome/vue-remark). It let you add Vue Components to Markdown files. This is perfect for Documentation, Design Systems, or portfolio websites. It's an Vue / Gridsome alternative to [MDX](https://mdxjs.com/).
+
 
 Here is an quick overview of how it works:
 
@@ -77,7 +78,7 @@ import data from '~/data/youtube.json'
 
 Learn more about [@gridsome/vue-remark](/plugins/@gridsome/vue-remark)
 
-## Schema API
+## New Schema API
 
 Gridsome generates the GraphQL schema for metadata and collections based on the data which is discovered on startup. That's great for simple projects but will often lead to errors with, for example missing fields because content has been removed in an external source. This API lets you define your own schema types to have persisted fields.
 
@@ -93,7 +94,7 @@ api.loadSource(({ addSchemaTypes }) => {
 
 🙌 This will fix problems for **data sources** where the data fields can change.
 
-For example, [Sanity.io](https://sanity.io) (A Headless CMS) has created a source plugin that uses the Schema API to make sure Gridsome know what fields that are being used in Sanity CMS.
+For example, [Sanity.io](https://sanity.io) (A Headless CMS) has created a source plugin ([@sanity-io/gridsome-source-sanity](/plugins/@sanity-io/gridsome-source-sanity)) that uses the Schema API to make sure Gridsome know what fields that are being used in Sanity CMS.
 
 Read more about the [Schema API](/docs/schema-api/)
 
