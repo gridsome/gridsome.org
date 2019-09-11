@@ -6,18 +6,19 @@
 [Learn more about Pages](/docs/pages)
 
 ### Collections
-[Collections](/docs/collections) are data added to a local [GraphQL data layer](/docs/data-layer).  Collections are useful if you are going to have blog posts, tags, products etc. on your site. Collections can be added with source plugins or with Data Store API. Any external content API can be used.
+[Collections](/docs/collections) are data added to a local [GraphQL data layer](/docs/data-layer). Collections are useful if you are going to have blog posts, tags, products etc. on your site.  Collections can be added with [source plugins](/plugins) or with [Data Store API](/docs/data-store-api). Add data from any Headless CMS or content APIs.
 
 Collections can be [queried anywhere](/docs/querying-data), [filtered](/docs/filtering-data), [paginated](/docs/pagination) or [have relations](/docs/taxonomies).
 
 [Learn more about Collections](/docs/collections)
 
 ### Templates
-[Templates](/docs/templates) are responsible for displaying nodes (single pages) of collections.
+[Templates](/docs/templates) are responsible for displaying nodes (single pages) of collections. Templates are usually located in `src/templates`. Gridsome tries to locate a file with the same name as the Collection if no component has been specified in templates config.
 
 Here is an example:
 
 ```html
+<!-- src/templates/Post.vue -->
 <template>
   <Layout>
   	<h1 v-html="$page.post.title" />
