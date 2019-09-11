@@ -39,12 +39,10 @@
         </p>
 
         <p class="intro__info">
-          <code>
-            <span>Open-source MIT Licensed. </span>
-            <a href="//github.com/gridsome/gridsome" target="_blank" rel="noopener noreferrer">
-              <span>GitHub (v{{ $static.metaData.gridsomeVersion }})</span>
-            </a>
-          </code>
+          <span>Open-source MIT Licensed. </span>
+          <a href="//github.com/gridsome/gridsome" target="_blank" rel="noopener noreferrer">
+            <span>GitHub (v{{ $static.metaData.gridsomeVersion }})</span>
+          </a>
         </p>
     </div>
   </Section>
