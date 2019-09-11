@@ -11,19 +11,19 @@
               Static Websites
             </div>
             <div v-else-if="currentText == 1" key="1">
-              Headless CMSs
+              The JAMstack
             </div>
             <div v-else-if="currentText == 2" key="2">
-              Markdown files
+              Headless CMSs
             </div>
             <div v-else-if="currentText == 3" key="3">
-              Modern PWAs
+              Markdown files
             </div>
             <div v-else-if="currentText == 4" key="4">
-              Serverless Apps
+              Modern PWAs
             </div>
             <div v-else-if="currentText == 5" key="5">
-              Documentation
+              Serverless Apps
             </div>
           </transition>
         </h1>
