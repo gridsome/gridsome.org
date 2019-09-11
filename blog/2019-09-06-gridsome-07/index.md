@@ -3,7 +3,7 @@ title: Gridsome v0.7
 slug: gridsome-v07
 author: [hjvedvik, tommyvedvik]
 date: 2019-09-06
-excerpt: "Version 0.7 is finally here! Enjoy Vue Components in markdown, new Schema API, File-based dynamic routing, better Template config, Custom App.vue, Shareable Network URL and more!"
+excerpt: "Version 0.7 is finally here! Enjoy Vue Components in Markdown, new Schema API, File-based dynamic routing, better Template config, Custom App.vue, Shareable Network URL and more!"
 ---
 
 - [Vue Remark plugin](#vue-remark-plugin): Use Vue Components in Markdown.
