@@ -58,8 +58,8 @@ Template paths are available in the GraphQL schema with a `path` field. Use a `t
 ```graphql
 query Product ($id: ID!) {
   product(id: $id) {
-    path              # path to default template
-    path(to:"review") # path to review template
+    path               # path to the default template
+    path(to:"reviews") # path to the reviews template
   }
 }
 ```
