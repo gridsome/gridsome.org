@@ -31,7 +31,7 @@ Pages in `src/pages` are typically used for fixed URLs like `/about` or for list
 
 ## Programmatic pages
 
-Pages can be created programmatically by using the `createPages` hook in `gridsome.server.js`.
+Pages can be created programmatically by using the `createPages` hook in `gridsome.server.js`. This is useful if you want to manually create pages from an external API [without using GraphQL data layer](/docs/pages-api#create-pages-from-external-apis).
 
 ```js
 module.exports = function (api) {
