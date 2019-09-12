@@ -56,8 +56,8 @@ export default {
     Github
   },
   props: {
-    subtitles: Array,
-    links: Array
+    subtitles: { type: Array, default: () => [] },
+    links: { type: Array, default: () => [] }
   },
   computed: {
     currentPath () {
@@ -72,7 +72,9 @@ export default {
       return this.links.reduce((acc, group) => (acc.push(...group.items), acc), [])
     },
     currentIndex () {
-      return this.items.findIndex(item => item.link === this.$route.path)
+      return this.items.findIndex(item => {
+        return item.link.replace(/\/$/, '') === this.$route.path.replace(/\/$/, '')
+      })
     },
     nextPage () {
       return this.items[this.currentIndex + 1]
