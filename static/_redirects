@@ -9,5 +9,5 @@
 /docs/install-plugins /docs/plugins 301
 /docs/site-meta-data /docs/metadata 301
 
-/plugins /plugins/index.html 200
-/plugins/* /plugins/1/index.html 200
+/plugins /plugins/_id_star.html 200
+/plugins/* /plugins/_id_star.html 200
