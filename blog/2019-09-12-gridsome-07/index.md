@@ -110,6 +110,8 @@ Read more about the [Schema API](/docs/schema-api/)
 
 Previously, each collection has been given a route in order to assign it to a template with the same name inside the `src/templates` directory. Routes were spread across many plugin options and some also hidden within plugins. **The new `templates` config tries to collect all collection routes in a single property in `gridsome.config.js`.**
 
+> This gives better overview of all template routes, and you can also have multiple templates and routes for one collection. For example `/product/:slug` + `/product/:slug/reviews`.
+
 To create a route for a [collection](/docs/collections/) you simply add `CollectionName: '/any/route/:title'` to the new [templates](/docs/templates/)  config. A Vue component in `src/templates` with the same name as the collection will be used as template by default. Here are some examples:
 
 ```js
@@ -250,5 +252,9 @@ The new [Schema API](/docs/schema-api/) is deprecating previous methods for cust
 #### New type for the `$id` variable
 
 The `$id` variable in `<page-query>` for nodes has previously been a `String` type. Even though the `id` field in the schema was of type `ID`. But the `$id` input variable must also be a `ID` type from now on. Gridsome will fix the type for you automatically and show a deprecation notice untill you have updated the query.
+
+
+🙌 You will probably get many deprecated messages on your current Gridsome project, but we think these changes are a right direction as we're getting close to a 1.0 version.
+
 
 [See full changelog →](https://github.com/gridsome/gridsome/blob/master/gridsome/CHANGELOG.md)
