@@ -267,5 +267,8 @@ The `$id` variable in `<page-query>` for nodes has previously been a `String` ty
 
 🙌 You will probably get many deprecated messages on your current Gridsome project, but we think these changes are a right direction as we're getting close to a 1.0 version.
 
+## How to upgrade
+Take a look here on [how to upgrade →](/docs/how-to-upgrade).
+
 
 [See full changelog →](https://github.com/gridsome/gridsome/blob/master/gridsome/CHANGELOG.md)
