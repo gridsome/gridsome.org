@@ -34,7 +34,6 @@ module.exports = {
     Contributor: '/contributor/:id',
     Starter: '/starters/:title',
     Platform: '/starters/platform/:id',
-    DocPage: node => node.path,
     Example: node => node.path
   },
 
@@ -54,21 +53,23 @@ module.exports = {
       }
     },
     {
-      use: '@gridsome/source-filesystem',
+      use: '@gridsome/vue-remark',
       options: {
         index: ['README'],
-        path: 'docs/**/*.md',
+        baseDir: './docs',
+        pathPrefix: '/docs',
         typeName: 'DocPage',
+        template: './src/templates/DocPage.vue',
+        plugins: [
+          '@gridsome/remark-prismjs'
+        ],
         remark: {
           autolinkHeadings: {
             content: {
               type: 'text',
               value: '#'
             }
-          },
-          plugins: [
-            '@gridsome/remark-prismjs'
-          ]
+          }
         }
       }
     },

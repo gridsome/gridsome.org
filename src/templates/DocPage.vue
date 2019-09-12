@@ -1,15 +1,13 @@
 <template>
   <DocsLayout :subtitles="$page.doc.subtitles" :links="links">
-    <div class="post mb" v-html="$page.doc.content"></div>
+    <VueRemarkContent class="post mb"></VueRemarkContent>
   </DocsLayout>
 </template>
 
 <page-query>
-query DocPage ($path: String!) {
-  doc: docPage (path: $path) {
-    path
+query DocPage ($id: ID!) {
+  doc: docPage (id: $id) {
     title
-    content
     headings (depth: h1) {
       value
     }
