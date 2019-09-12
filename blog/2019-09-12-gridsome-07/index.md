@@ -92,7 +92,7 @@ Isn't it great? 🥳
 
 ```
 
-You can add `<page-query>` & `<style>` blocks inside Markdown files also!
+You can use `<page-query>` & `<style>` blocks inside the Markdown files too!
 
 
 Learn more about [@gridsome/vue-remark](/plugins/@gridsome/vue-remark)
