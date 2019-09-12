@@ -4488,9 +4488,9 @@ gray-percentage@^2.0.0:
   integrity sha1-tyonTRsTeRBKAFC2OyB9xT/lb5k=
 
 gridsome@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.7.0.tgz#5c039e4dc609659e3068a0e76c6bdfbcc6dbcfc2"
-  integrity sha512-TZrWsgNlhdGaMYGGzzbjRy51Ton2/KJsRj1SkwankYAZwwI6KauoXw3iG4iQ9oEhaxLClL5GL0eFS0v/BEk2tg==
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/gridsome/-/gridsome-0.7.1.tgz#6c540e6e5dc730b5a08f0e9b73d461c63bf77440"
+  integrity sha512-xAquxnWowaIaQH9h2T3PtG7EosD/YcIWHUBwNV0oK3F0/7Sm7MsuFhSvu58qPvhYnGzVQpcAPPuDTsndZiGIEQ==
   dependencies:
     "@babel/code-frame" "^7.5.5"
     "@babel/core" "^7.0.0"

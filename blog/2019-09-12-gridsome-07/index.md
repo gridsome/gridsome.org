@@ -216,9 +216,11 @@ A network URL will now be visible in the terminal. It can be used to test the si
 
 ![Shareable url](./shareable-url.png)
 
-## Changes
+## Breaking changes
 
-This release should not have any breaking changes if you upgrade from v0.6. But there are some changes that might have consequences that we have not foreseen. No deprecated methods or options in v0.6 has been removed yet, and they will now be listed in the terminal alongside new deprecations.
+- The `fields` property for nodes will not be moved to root automatically anymore. Add custom node fields as root properties instead. [Read more](/docs/data-store-api/#collectionaddnodeoptions)
+
+## Other changes
 
 #### Trailing slashes for pages and routes
 
