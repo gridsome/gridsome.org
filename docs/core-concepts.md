@@ -1,4 +1,5 @@
 # Core concepts
+Quick overview of the core building blocks.
 
 ### Pages
 [Pages](/docs/pages) is created by adding **Vue Components** in `src/pages` folder. It uses a file-based routing system. For example, `src/pages/About.vue` will be `mywebsite.com/about`. Pages are used for simple pages and for pages that list collections (Like a `/blog`)
