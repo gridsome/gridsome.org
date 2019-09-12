@@ -73,15 +73,26 @@ query Documentation ($id: ID!) {
 title: A cool title
 excerpt: Lorem Ipsum is simply dummy text.
 ---
+// Import any Vue Component. Even other .md files!
 import YouTube from '~/components/YouTube.vue'
+import AboutUs from '~/sections/AboutUs.md'
+
+// Import any JSON if you need data.
 import data from '~/data/youtube.json'
 
+// Use front-matter fields anywhere.
 # {{ $frontmatter.title }}
-
-<YouTube :id="data.id" />
-
 > {{ $frontmatter.excerpt }}
+
+// Use your imported Vue Components.
+<YouTube :id="data.id" />
+<AboutUs />
+
+Isn't it great? 🥳
+
 ```
+
+You can add `<page-query>` & `<style>` blocks inside Markdown files also!
 
 
 Learn more about [@gridsome/vue-remark](/plugins/@gridsome/vue-remark)
