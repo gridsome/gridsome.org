@@ -36,7 +36,7 @@
 
             <div slot="content">
               <p style="margin-bottom: .5rem; display: block;">
-              Install locally with <strong><g-link to="/docs/gridsome-cli">Gridsome CLI</g-link></strong>
+              Install locally with <strong><g-link to="/docs/gridsome-cli/">Gridsome CLI</g-link></strong>
               </p>
               <div class="mb">
                 <code class="starter__command flex">
