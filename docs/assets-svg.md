@@ -44,7 +44,7 @@ The `@organization/{package,package}` is a shorthand format for installing multi
 npm i -d @fortawesome/vue-fontawesome @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons
 ```
 
-When the packages have finished installing, you'll want to open (or create) the `gridsome.client.js` file at the root of your project and add the following:
+When the packages have finished installing, you'll want to open (or create) the `src/main.js` file in your project and add the following:
 
 ```js
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
