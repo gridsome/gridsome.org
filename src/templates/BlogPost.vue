@@ -21,8 +21,8 @@
 </template>
 
 <page-query>
-query BlogPost ($path: String!) {
-  post: blogPost (path: $path) {
+query BlogPost ($id: ID!) {
+  post: blogPost (id: $id) {
     title
     date (format: "D. MMMM YYYY")
     timeToRead

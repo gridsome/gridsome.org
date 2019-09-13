@@ -5,8 +5,8 @@
 </template>
 
 <page-query>
-query LearnPage ($path: String!) {
-  doc: learnPage (path: $path) {
+query LearnPage ($id: ID!) {
+  doc: learnPage (id: $id) {
     path
     content
     title: headings (depth: h1) {
