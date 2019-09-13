@@ -39,7 +39,7 @@ module.exports = {
 }
 ```
 
-By default it takes any **.md** files in `baseDir` folder and uses them for file-based routing like [Pages](/docs/pages) works. You can override this by using a `route` config.
+By default it takes any **.md** files in `baseDir` folder and uses them for file-based routing like [Pages](/docs/pages/) works. You can override this by using a `route` config.
 
 In this example `/docs/index.md` will be `website.com/docs/`,
 and `/docs/install-guide.md` will be `website.com/docs/install-guide/`.
@@ -268,7 +268,7 @@ The `$id` variable in `<page-query>` for nodes has previously been a `String` ty
 🙌 You will probably get many deprecated messages on your current Gridsome project, but we think these changes are a right direction as we're getting close to a 1.0 version.
 
 ## How to upgrade
-Take a look here on [how to upgrade →](/docs/how-to-upgrade).
+Take a look here on [how to upgrade →](/docs/how-to-upgrade/).
 
 
 [See full changelog →](https://github.com/gridsome/gridsome/blob/master/gridsome/CHANGELOG.md)

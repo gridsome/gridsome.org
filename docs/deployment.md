@@ -9,22 +9,22 @@ The best practice when working with Gridsome sites is to have your project hoste
 
 These services are great for Git-based deploying:
 
-- [Netlify](/docs/deploy-to-netlify)
+- [Netlify](/docs/deploy-to-netlify/)
 
-- [AWS Amplify](/docs/deploy-to-amplify)
+- [AWS Amplify](/docs/deploy-to-amplify/)
 
-- [Zeit Now](/docs/deploy-to-zeit-now)
+- [Zeit Now](/docs/deploy-to-zeit-now/)
 
-- [GitLab Pages](/docs/deploy-to-gitlab)
+- [GitLab Pages](/docs/deploy-to-gitlab/)
 
-- [GitHub Pages](/docs/deploy-to-github)
+- [GitHub Pages](/docs/deploy-to-github/)
 
 ## Deploy from terminal
 Many services let you deploy your static Gridsome site from the terminal. Here are some:
 
-- [Amazon S3](/docs/deploy-to-amazon-s3)
+- [Amazon S3](/docs/deploy-to-amazon-s3/)
 
-- [Zeit Now](/docs/deploy-to-zeit-now)
+- [Zeit Now](/docs/deploy-to-zeit-now/)
 
 
 ## FTP deploying

@@ -10,7 +10,7 @@ excerpt: "We're really excited to release Gridsome 0.5. The biggest update yet. 
 
 Each content type collection in the GraphQL schema has a new `filter` argument which can be used to filter the results. You can filter by `id`, `title`, `slug`, `path` or any custom field.
 
-Read more about [Filtering data](/docs/filtering-data)
+Read more about [Filtering data](/docs/filtering-data/)
 
 ## Create taxonomy pages
 
@@ -22,7 +22,7 @@ For example, this can be used to:
 
 We're using this feature on **Gridsome blog** for the **authors**. The authors here are just a YAML file that lists authors, and then Gridsome magically connects it all.
 
-Read more about [Taxonomies](/docs/taxonomies)
+Read more about [Taxonomies](/docs/taxonomies/)
 
 ## Variables in Page Query
 
@@ -33,19 +33,19 @@ Previously, only `$path` and `$page` were available as variables for `page-query
 - `$object__value` resolves to `node.fields.object.value`
 - `$array__3__id` resolves to `node.fields.array[3].id`
 
-Read more about [Query data in templates](/docs/querying-data#query-data-in-templates)
+Read more about [Query data in templates](/docs/querying-data/#query-data-in-templates)
 
 ## Environment variables
 
 Sometimes you want configuration values that are different from what you have in the production build. Gridsome now utilizes the [dotenv](https://www.npmjs.com/package/dotenv) package to make this easy. Special thanks to [isoppp](https://github.com/isoppp) for implementing this feature 😄
 
-Read more about [Environment Variables](/docs/environment-variables)
+Read more about [Environment Variables](/docs/environment-variables/)
 
 ## New Plugin library
 
-The [Plugins](/plugins) page now gets plugins from NPM directory. Any plugin with keyword `gridsome-plugin` will be listed here. You can also use the search field for filtering.
+The [Plugins](/plugins/) page now gets plugins from NPM directory. Any plugin with keyword `gridsome-plugin` will be listed here. You can also use the search field for filtering.
 
-![Plugin page](plugins.png)
+![Plugin page](./plugins.png)
 
 ## Other features and fixes
 

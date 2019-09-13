@@ -27,7 +27,7 @@ A simple page component might look like this:
 </template>
 ```
 
-Pages in `src/pages` are typically used for fixed URLs like `/about` or for listing blog posts at, for example `/blog`. [Read more about how to create pages for single blog posts etc.](/docs/collections)
+Pages in `src/pages` are typically used for fixed URLs like `/about` or for listing blog posts at, for example `/blog`. [Read more about how to create pages for single blog posts etc.](/docs/collections/)
 
 ## Programmatic pages
 
@@ -44,13 +44,13 @@ module.exports = function (api) {
 }
 ```
 
-[Read more about the Pages API](/docs/pages-api)
+[Read more about the Pages API](/docs/pages-api/)
 
 ## Dynamic routing
 
 Pages can have dynamic routes. Dynamic routes are useful for pages that only need client-side routing. For example user pages that fetches info from an external API in production based on a segment in the URL.
 
-Learn more about [dynamic routing](/docs/dynamic-routing)
+Learn more about [dynamic routing](/docs/dynamic-routing/)
 
 ## Page meta info
 
@@ -75,7 +75,7 @@ export default {
 </script>
 ```
 
-Learn more about [`populating <head>`](/docs/head).
+Learn more about [`populating <head>`](/docs/head/).
 
 ## Custom 404 page
 

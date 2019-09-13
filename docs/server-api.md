@@ -58,7 +58,7 @@ module.exports = function (api) {
 }
 ```
 
-[Read more about the Pages API](/docs/pages-api)
+[Read more about the Pages API](/docs/pages-api/)
 
 ## api.createManagedPages(fn)
 
@@ -76,9 +76,9 @@ module.exports = function (api) {
 
 ## api.configureWebpack(fn)
 
-Configure the internal webpack config. 
+Configure the internal webpack config.
 
-The object will be merged with the internal config if it is an object. 
+The object will be merged with the internal config if it is an object.
 
 ```js
 api.configureWebpack({

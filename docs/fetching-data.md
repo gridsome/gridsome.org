@@ -1,5 +1,5 @@
 # Importing data
-Gridsome lets you import data from any data source into the [GraphQL data layer](/docs/data-layer).
+Gridsome lets you import data from any data source into the [GraphQL data layer](/docs/data-layer/).
 
 ## Import with source plugins
 The easiest way to add data to Gridsome is to use **source plugins**. Gridsome data source plugins are added in `gridsome.config.js`. You can find available data source plugins in the [Plugins directory](/plugins). Every
@@ -26,7 +26,7 @@ Every data source has different options, so take a look at their documentation t
 
 ## Import from APIs
 
-Import data from any content APIs to the GraphQL data layer with the [Data store API](/docs/data-store-api). To use the API you need a `gridsome.server.js` file in the root folder of your Gridsome project.
+Import data from any content APIs to the GraphQL data layer with the [Data store API](/docs/data-store-api/). To use the API you need a `gridsome.server.js` file in the root folder of your Gridsome project.
 
 
 Here is an example `gridsome.server.js` file that imports data:

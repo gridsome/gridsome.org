@@ -67,7 +67,7 @@ module.exports = {
 }
 ```
 
-[Read more about how to use plugins](/docs/plugins)
+[Read more about how to use plugins](/docs/plugins/)
 
 ## templates
 
@@ -76,7 +76,7 @@ module.exports = {
 
 Define routes and templates for collections.
 
-[Read more about using templates](/docs/templates)
+[Read more about using templates](/docs/templates/)
 ## metadata
 
 - Type `object`
@@ -84,7 +84,7 @@ Define routes and templates for collections.
 
 Add global metadata to the GraphQL schema.
 
-[Read more about global metadata](/docs/metadata)
+[Read more about global metadata](/docs/metadata/)
 
 ## icon
 

@@ -18,11 +18,11 @@ module.exports = function (api) {
 
 - options `object | string` *Options or just a GraphQL schema type name.*
   - typeName `string` *Required GraphQL schema type and template name.*
-  - route `string` *Optional dynamic route.* [Read more about Routing](/docs/routing)
+  - route `string` *Optional dynamic route.* [Read more about Routing](/docs/routing/)
 
 Add a new content type to store.
 
-A Vue component in the `src/templates` folder with a filename matching the `typeName` option will be used as a template for all nodes with this type. [Read more about templates](/docs/templates).
+A Vue component in the `src/templates` folder with a filename matching the `typeName` option will be used as a template for all nodes with this type. [Read more about templates](/docs/templates/).
 
 ```js
 api.loadSource(store => {

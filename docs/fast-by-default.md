@@ -44,7 +44,7 @@ Gridsome prefetches internal links in the background so browsing around goes ins
 
 Gridsome builds two files of every page. A static HTML and a small JavaScript file. When the website hydrates into a Vue.js-SPA, the link prefetching only loads the JavaScript to render the next page. This results in a faster and smoother browsing experience.
 
-[Learn more about **g-link** here](/docs/linking).
+[Learn more about **g-link** here](/docs/linking/).
 
 ## Progressive Images
 Gridsome has a built-in `<g-image>` component with automatic progressive image support. In **development** it lets you do real-time image processing, like resizing and cropping.
@@ -52,7 +52,7 @@ Gridsome has a built-in `<g-image>` component with automatic progressive image s
 In production, the `<g-image>` is served as an ultra-compressed image before the image is lazy-loaded when in view by using **Intersection Observer**.
 
 
-[Learn more about **g-image** here](/docs/images)
+[Learn more about **g-image** here](/docs/images/)
 
 
 ## Vue.js SPA

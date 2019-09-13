@@ -1,5 +1,5 @@
 # Getting started
-> Gridsome is an open source [Vue.js-powered](https://vuejs.org/) modern site generator for building [JAMstack](/docs/jamstack) websites, apps & PWAs that are [fast by default](/docs/fast-by-default) 🚀.
+> Gridsome is an open source [Vue.js-powered](https://vuejs.org/) modern site generator for building [JAMstack](/docs/jamstack/) websites, apps & PWAs that are [fast by default](/docs/fast-by-default/) 🚀.
 
 ### Why Gridsome?
 
@@ -39,8 +39,8 @@ Gridsome requires [Node.js](https://nodejs.org/) (v8.3+) and recommends [Yarn](h
 
 #### Learn more
 
-- [Core concepts (Pages, Collections etc.)](/docs/core-concepts)
-- [How to deploy](/docs/deployment)
+- [Core concepts (Pages, Collections etc.)](/docs/core-concepts/)
+- [How to deploy](/docs/deployment/)
 
 ## Alternatives
 

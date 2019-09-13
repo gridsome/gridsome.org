@@ -49,7 +49,7 @@ Every content type has a collection and a single entry in the GraphQL schema. Yo
 | **limit** | | How many nodes to get.
 | **page** | | Which page to get.
 | **perPage** | | How many nodes to show per page. Omitted if no `page` argument is provided.
-| **filter** | `{}` | [Read more](/docs/filtering-data).
+| **filter** | `{}` | [Read more](/docs/filtering-data/).
 
 #### Find nodes sorted by title
 

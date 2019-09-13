@@ -6,19 +6,19 @@
 
 Data coming from the GraphQL data layer is generated into **static content**. There is no real-time connection between the data layer and the source the data is imported from. This means you need to re-generate the website to get the latest data updates.
 
-If you need dynamic data you should use [client-side data](/docs/client-side-data).
+If you need dynamic data you should use [client-side data](/docs/client-side-data/).
 
 💡 **Pages and Site metadata are added to the data layer by default.**
 
 
 
 ### Working with data
- - [How to import data](/docs/fetching-data).
- - [How to query data](/docs/querying-data).
- - [How to filter data](/docs/filtering-data).
- - [How to create taxonomy pages](/docs/taxonomies).
- - [How to paginate data](/docs/pagination).
- - [How to add client-side / dynamic data](/docs/client-side-data).
+ - [How to import data](/docs/fetching-data/).
+ - [How to query data](/docs/querying-data/).
+ - [How to filter data](/docs/filtering-data/).
+ - [How to create taxonomy pages](/docs/taxonomies/).
+ - [How to paginate data](/docs/pagination/).
+ - [How to add client-side / dynamic data](/docs/client-side-data/).
 
 
 ### The GraphQL explorer

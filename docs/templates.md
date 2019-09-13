@@ -1,11 +1,11 @@
 # Templates
 
-> Templates are used to create single pages for nodes in a [collection](/docs/collections). Nodes needs a corresponding page in order to be presented on its own URL.
+> Templates are used to create single pages for nodes in a [collection](/docs/collections/). Nodes needs a corresponding page in order to be presented on its own URL.
 
 
 ## Setup templates
 
-The example below shows you have to setup route and template for a [collection](/docs/collections) named `Post`. A component located at `src/templates/{Collection}.vue` will be used as template if no component is specified.
+The example below shows you have to setup route and template for a [collection](/docs/collections/) named `Post`. A component located at `src/templates/{Collection}.vue` will be used as template if no component is specified.
 
 ```js
 // gridsome.config.js

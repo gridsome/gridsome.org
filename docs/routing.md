@@ -17,7 +17,7 @@ Examples:
 - `/src/pages/features/Awesome.vue` will be **/features/awesome**
 
 
-Learn more about [Pages](/docs/pages)
+Learn more about [Pages](/docs/pages/)
 
 
 
@@ -40,12 +40,12 @@ module.exports = {
 }
 ```
 
-> 💡 To create a template for the data source route you'll need to create a **[typeName].vue** file in **src/templates**. This will automatically be the template for this route. Learn more about [Templates] (/docs/templates)
+> 💡 To create a template for the data source route you'll need to create a **[typeName].vue** file in **src/templates**. This will automatically be the template for this route. Learn more about [Templates] (/docs/templates/)
 
 ## Routing for custom data
 When you add a custom data source you need to use the `route` option inside `addContentType()` **OR** use `path` option inside `addNode()`. `route` will be used for all posts and `path` will be set per post. It's only possible to use one of them. If both are used `route` will be prioritized.
 
-Learn more about [fetching custom data here](/docs/fetching-data)
+Learn more about [fetching custom data here](/docs/fetching-data/)
 
 ```js
 const axios = require('axios')
@@ -70,7 +70,7 @@ module.exports = function (api) {
 }
 ```
 
-> 💡 To create a template for the data source route you'll need to create a **[typeName].vue** file in **src/templates**. This will automatically be the template for this route. Learn more about [Templates] (/docs/templates)
+> 💡 To create a template for the data source route you'll need to create a **[typeName].vue** file in **src/templates**. This will automatically be the template for this route. Learn more about [Templates] (/docs/templates/)
 
 
 ## Route params

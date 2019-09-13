@@ -56,7 +56,7 @@ module.exports = function (api) {
 }
 ```
 
-[Read more about the Pages API](/docs/pages-api)
+[Read more about the Pages API](/docs/pages-api/)
 
 ## Generating rewrite rules
 
