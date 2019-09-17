@@ -1,7 +1,7 @@
 <template>
   <Layout class="has-sidebar docs-page" :footer="false">
     <div class="container flex flex-align-top">
-      
+
       <div class="sidebar">
 
         <transition-group name="menu-item" tag="div">
@@ -12,7 +12,7 @@
               <g-link class="menu-item menu-link" :to="item.link" :key="`link-${i1}-${i2}`">
                 {{ item.title }}
               </g-link>
-              <ul v-if="item.link === currentPath && subtitles && subtitles.length" :key="`submenu-${i1}-${i2}`" class="menu-item submenu">
+              <ul v-if="item.link.replace(/\/$/, '') === currentPath && subtitles && subtitles.length" :key="`submenu-${i1}-${i2}`" class="menu-item submenu">
                 <li class="submenu__item" v-for="subtitle in subtitles">
                   <g-link class="submenu__link" :to="item.link + subtitle.anchor">
                     {{ subtitle.value }}
@@ -56,8 +56,8 @@ export default {
     Github
   },
   props: {
-    subtitles: Array,
-    links: Array
+    subtitles: { type: Array, default: () => [] },
+    links: { type: Array, default: () => [] }
   },
   computed: {
     currentPath () {
@@ -72,7 +72,9 @@ export default {
       return this.links.reduce((acc, group) => (acc.push(...group.items), acc), [])
     },
     currentIndex () {
-      return this.items.findIndex(item => item.link === this.$route.path)
+      return this.items.findIndex(item => {
+        return item.link.replace(/\/$/, '') === this.$route.path.replace(/\/$/, '')
+      })
     },
     nextPage () {
       return this.items[this.currentIndex + 1]

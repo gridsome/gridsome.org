@@ -1,6 +1,6 @@
 # Project configuration
 
-Gridsome requires `/gridsome.config.js` to work. Plugin and project settings are located here. A basic configuration file would look something like this:
+Gridsome requires `gridsome.config.js` to work. Plugin and project settings are located here. A basic configuration file would look something like this:
 
 ```js
 module.exports = {
@@ -9,7 +9,7 @@ module.exports = {
   plugins: []
 }
 ```
-  
+
 ## siteName
 
 - Type `string`
@@ -67,7 +67,24 @@ module.exports = {
 }
 ```
 
-[Read more about how to use plugins](/docs/plugins)
+[Read more about how to use plugins](/docs/plugins/)
+
+## templates
+
+- Type `object`
+- Default `{}`
+
+Define routes and templates for collections.
+
+[Read more about using templates](/docs/templates/)
+## metadata
+
+- Type `object`
+- Default `{}`
+
+Add global metadata to the GraphQL schema.
+
+[Read more about global metadata](/docs/metadata/)
 
 ## icon
 
@@ -119,7 +136,7 @@ module.exports = {
 
 - Type `Object | Function`
 
-The option will be merged with the internal config if it is an object. 
+The option will be merged with the internal config if it is an object.
 
 ```js
 module.exports = {
@@ -135,7 +152,7 @@ If the option is a function, it will get the internal config as its first argume
 const merge = require('webpack-merge')
 
 module.exports = {
-  configureWebpack (config) {
+  configureWebpack(config) {
     return merge({ /* custom config */ }, config)
   }
 }
@@ -162,6 +179,36 @@ Include the Vue template compiler at runtime.
 Configure the development server.
 
 [Read more about configuring the development server](/docs/server-api#apiconfigureserverfn)
+
+## permalinks.trailingSlash
+
+- Type `boolean`
+- Default `true`
+
+Appends a trailing slash to pages and templates by default.
+
+Pages with [dynamic routes](/docs/dynamic-routing/) will not include a trailing slash when this option is enabled and must have extra rewrite rules on the server to work properly. Also, static paths for `<g-link>` will not include a trailing slash automatically but should be included in the path:
+
+```html
+<g-link to="/about-us/">About us</g-link>
+```
+
+## permalinks.slugify
+
+- Type `function | object`
+
+Use a custom slugify method. Default slugifyer is [@sindresorhus/slugify](https://github.com/sindresorhus/slugify).
+
+```js
+module.exports = {
+  permalinks: {
+    slugify: {
+      use: 'another-slugify-library',
+      options: {}
+    }
+  }
+}
+```
 
 ## css.split
 

@@ -3,32 +3,32 @@
       <div class="starter__header flex">
         <g-image class="starter__header-platform-logo" v-if="$page.starter.platforms" :src="$page.starter.platforms.logo" />
         <strong class="starter__header-title">{{ $page.starter.title }}</strong>
-        <g-link 
+        <g-link
           v-if="$page.starter.author.path"
-          :to="$page.starter.author.path" 
+          :to="$page.starter.author.path"
           class="starter__header-author">
             by {{ $page.starter.author.title }}
         </g-link>
 
         <div class="flex gap-20 hide-for-small" style="margin-left: auto">
-          <a 
+          <a
             rel="noopener noreferrer"
-            target="_blank" 
-            :href="githubUrl" 
+            target="_blank"
+            :href="githubUrl"
             class="button button--small button--blank">
             <github-icon />
             <span>View on Github</span>
           </a>
           <a
             rel="noopener noreferrer"
-            target="_blank" 
-            v-if="$page.starter.preview" 
-            :href="$page.starter.preview" 
+            target="_blank"
+            v-if="$page.starter.preview"
+            :href="$page.starter.preview"
             class="button button--small button--blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
             <span>Live preview</span>
           </a>
-          
+
           <Popover name="InstallThis" :closeOnContentClick="false">
             <div slot="face">
               <button class="button primary button--small">Install now  </button>
@@ -36,7 +36,7 @@
 
             <div slot="content">
               <p style="margin-bottom: .5rem; display: block;">
-              Install locally with <strong><g-link to="/docs/gridsome-cli">Gridsome CLI</g-link></strong>
+              Install locally with <strong><g-link to="/docs/gridsome-cli/">Gridsome CLI</g-link></strong>
               </p>
               <div class="mb">
                 <code class="starter__command flex">
@@ -60,15 +60,15 @@
           </Popover>
         </div>
       </div>
-   
-  
+
+
       <div class="starter__image" style="order:2" v-if="$page.starter.screenshot">
         <g-image :src="$page.starter.screenshot" />
       </div>
       <hr v-else />
 
       <div class="starter__content">
-        
+
         <div style="width: 80%;" v-if="isLoading">
           <Skeleton />
           <Skeleton style="height: 15px" />
@@ -161,7 +161,7 @@ export default {
 </script>
 
 <page-query>
-query Starters($id: String!) {
+query Starters($id: ID!) {
   starter(id: $id) {
     title
     repo
@@ -248,7 +248,7 @@ query Starters($id: String!) {
     border-radius: 5px;
     border: 2px solid var(--border-color);
     animation: slideDown .3s;
-    
+
     &:after, &:before {
       bottom: 100%;
       right: 57px;

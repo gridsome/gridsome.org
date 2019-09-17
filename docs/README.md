@@ -1,5 +1,5 @@
 # Getting started
-> Gridsome is a **Vue.js-powered modern site generator** that makes it easy and fun for developers to create beautiful [JAMstack](/docs/jamstack) websites & PWAs that are [fast by default](/docs/fast-by-default).
+> Gridsome is an open source [Vue.js-powered](https://vuejs.org/) modern site generator for building [JAMstack](/docs/jamstack/) websites, apps & PWAs that are [fast by default](/docs/fast-by-default/) 🚀.
 
 ### Why Gridsome?
 
@@ -7,10 +7,9 @@
 - **Data source plugins** - Connect to any popular Headless CMSs, APIs or Markdown-files.
 - **File-based page routing** - Quickly create and manage routes with files.
 - **Centralized data management** - Pull data into a local, unified GraphQL data layer.
-- **Vue.js for frontend** - A lightweight and approachable front-end framework.
+- **Vue.js for front-end** - A lightweight and approachable front-end framework.
 - **Auto-optimized code** - Get code-splitting and asset optimization out-of-the-box.
 - **Static files generation** - Deploy securely to any CDN or static web host.
-
 
 ## Prerequisites
 You should have basic knowledge about HTML, CSS, [Vue.js](https://vuejs.org) and how to use the [Terminal](https://www.linode.com/docs/tools-reference/tools/using-the-terminal/). Knowing how [GraphQL](https://www.graphql.com/) works is a plus, but not required. Gridsome is a great way to learn it.
@@ -40,10 +39,8 @@ Gridsome requires [Node.js](https://nodejs.org/) (v8.3+) and recommends [Yarn](h
 
 #### Learn more
 
-- [How it works](/docs/how-it-works)
-- [How Pages work](/docs/pages)
-- [How to deploy](/docs/deployment)
-
+- [Core concepts (Pages, Collections etc.)](/docs/core-concepts/)
+- [How to deploy](/docs/deployment/)
 
 ## Alternatives
 

@@ -69,7 +69,7 @@
             <Connect />
             <div class="plugins-intro__text">
               <h1>Gridsome Plugins</h1>
-              <p class="lead">Gridsome plugins are NPM packages that you can install to any project. This is currently a small, but growing library. <span class="hide-for-small">Use the search bar to the left to find a plugin.</span></p>
+              <p class="lead">Gridsome plugins are NPM packages that you can install to any project. <span class="hide-for-small">Use the search bar to the left to find a plugin.</span></p>
 
               <p>Want to contribute to plugins library? <g-link to="/docs/how-to-create-a-plugin">Learn how to build a plugin</g-link></p>
             </div>

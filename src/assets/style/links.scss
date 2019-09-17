@@ -13,6 +13,11 @@ a {
   svg + & {
     margin-left: .5rem;
   }
+
+  code & {
+    color: currentColor;
+    font-weight: bold;
+  }
 }
 
 a:hover:not(.active) {

@@ -41,14 +41,6 @@ export default {
 
 #app main {
   flex: 1;
-  &:after {
-    content: "";
-    width: 100%;
-    height: 66.66%;
-    bottom:0;
-    position: fixed;
-    background: linear-gradient(#FFF, var(--primary-bg));
-  }
 }
 .main--primary-bg {
   background-color: var(--primary-bg);

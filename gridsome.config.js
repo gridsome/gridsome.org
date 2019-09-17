@@ -5,7 +5,7 @@ module.exports = {
   siteUrl: `https://www.gridsome.org`,
   titleTemplate: '%s - Gridsome',
   siteDescription: 'Gridsome is a Vue.js-powered modern site generator that makes it easy and fun for developers to create beautiful JAMstack websites & PWAs that are fast by default.',
-  
+
   chainWebpack(config, { isServer }) {
     config.module.rules.delete('svg')
     config.module.rule('svg')
@@ -29,6 +29,14 @@ module.exports = {
     }
   },
 
+  templates: {
+    BlogPost: '/blog/:year/:month/:day/:slug',
+    Contributor: '/contributor/:id',
+    Starter: '/starters/:title',
+    Platform: '/starters/platform/:id',
+    Example: node => node.path
+  },
+
   plugins: [
     {
       use: '@gridsome/plugin-google-analytics',
@@ -45,21 +53,23 @@ module.exports = {
       }
     },
     {
-      use: '@gridsome/source-filesystem',
+      use: '@gridsome/vue-remark',
       options: {
         index: ['README'],
-        path: 'docs/**/*.md',
+        baseDir: './docs',
+        pathPrefix: '/docs',
         typeName: 'DocPage',
+        template: './src/templates/DocPage.vue',
+        plugins: [
+          '@gridsome/remark-prismjs'
+        ],
         remark: {
           autolinkHeadings: {
             content: {
               type: 'text',
               value: '#'
             }
-          },
-          plugins: [
-            '@gridsome/remark-prismjs'
-          ]
+          }
         }
       }
     },
@@ -80,7 +90,6 @@ module.exports = {
       options: {
         typeName: 'BlogPost',
         path: './blog/*/index.md',
-        route: '/blog/:year/:month/:day/:slug',
         refs: {
           author: 'Contributor'
         },

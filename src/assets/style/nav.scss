@@ -27,9 +27,6 @@ nav a {
     margin: 2px 6px;
   }
 
-
-
-
   &:not(.active):not(:hover):not(.button) {
     color: currentColor;
     opacity: .85;

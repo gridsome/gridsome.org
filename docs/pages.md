@@ -1,77 +1,37 @@
 # Pages
 
-Pages are used for **normal pages** and for **listing & paginating GraphQL collections**. For example, a Blog page that shows an index of different blog posts. The url path of a page is always static. For **dynamic pages** like a single blog post, you need to use a **Template**. Learn more about [templates here](/docs/templates).
+> Pages are responsible for presenting your data at a URL. Each page will be generated statically and have its own `index.html` file with the markup.
 
-- If url will be `/about` use a **page**
-- If url will be `/blog` use a **page**
-- If url will be `/blog/:slug` use a **[template](/docs/templates)**
+You have two options for creating pages in Gridsome:
 
-## Creating pages
-
-All `.vue` files in the `src/pages` directory will become the pages for your website. The page URL is generated based on the location and name of the file. The path will be lowercased and slugified automatically. Files named `Index.vue` are treated like `index.html` files and will not get a slug.
-
-Examples:
-
-- `/src/pages/Index.vue` will be the homepage **/**
-- `/src/pages/About.vue` will be **/about**
-- `/src/pages/OurTeam.vue` will be **/our-team**
-- `/src/pages/features/Index.vue` will be **/features**
-- `/src/pages/features/Awesome.vue` will be **/features/awesome**
-- `/src/pages/404.vue` will be the [404 page](#add-a-404-page).
+1. **[Using the file system](#file-based-pages)** - For creating pages with [Single File Components](https://vuejs.org/v2/guide/single-file-components.html)
+2. **[Using the Pages API](#programmatic-pages)** - For creating pages programtically.
 
 
-A simple `Page.vue` file might look like this:
+## File-based pages
 
+[Single File Components](https://vuejs.org/v2/guide/single-file-components.html) in the `src/pages` directory will automatically be available with their own URLs. The file location is used to generate the URL and here are a few basic examples:
+
+- `src/pages/Index.vue` becomes `/` *(The frontpage)*
+- `src/pages/AboutUs.vue` becomes `/about-us`
+- `src/pages/about/Vision.vue` becomes `/about/vision`
+- `src/pages/blog/Index.vue` becomes `/blog`
+
+A simple page component might look like this:
 
 ```html
 <template>
-  <Layout>
-    Some content about us...
-  </Layout>
+  <div>
+    <h1>Hello, world!</h1>
+  </div>
 </template>
-
-<script>
-import Layout from '~/layouts/Default.vue'
-
-export default {
-  components: {
-    Layout
-  }
-}
-</script>
 ```
 
-A `Blog.vue` file that **lists blog posts** might look like this:
+Pages in `src/pages` are typically used for fixed URLs like `/about` or for listing blog posts at, for example `/blog`. [Read more about how to create pages for single blog posts etc.](/docs/collections/)
 
-```html
-<template>
-  <Layout>
-    <div v-for="edge in $page.posts.edges" :key="edge.node.id">
-      {{ edge.node.id }}
-      {{ edge.node.title }}
-    </div>
-  </Layout>
-</template>
+## Programmatic pages
 
-<page-query>
-query Posts {
-  posts: allWordPressPosts {
-    edges {
-      node {
-        id
-        title
-      }
-    }
-  }
-}
-</page-query>
-```
-
-[Learn more about query data](/docs/querying-data)
-
-### Creating pages programmatically
-
-Pages can also be created programmatically by using the `createPages` hook in `gridsome.server.js`.
+Pages can be created programmatically by using the `createPages` hook in `gridsome.server.js`. This is useful if you want to manually create pages from an external API [without using GraphQL data layer](/docs/pages-api#create-pages-from-external-apis).
 
 ```js
 module.exports = function (api) {
@@ -84,24 +44,39 @@ module.exports = function (api) {
 }
 ```
 
-[Read more about the Pages API](/docs/pages-api)
+[Read more about the Pages API](/docs/pages-api/)
 
-## Page layouts
+## Dynamic routing
 
-The `<Layout>` component is an optional component used to **wrap pages and templates**. Layouts usually contain components like headers, footers or sidebars that will be used across the site. It should be imported to Pages & Templates like any other [Vue components](/docs/components).
+Pages can have dynamic routes. Dynamic routes are useful for pages that only need client-side routing. For example user pages that fetches info from an external API in production based on a segment in the URL.
 
-** The page layout can be named anything. `<Layout>` is just an example. **
+Learn more about [dynamic routing](/docs/dynamic-routing/)
 
-[Learn more about Layouts](/docs/layouts)
+## Page meta info
 
+Gridsome uses [vue-meta](https://vue-meta.nuxtjs.org/) for handling meta info about the page.
 
+```html
+<template>
+  <div>
+    <h1>Hello, world!</h1>
+  </div>
+</template>
 
-## Add a 404 page
-To create a custom `404` page you need to add a `404.vue` in `src/pages`. This will automatically create a **404.html** file to the deploy.
+<script>
+export default {
+  metaInfo: {
+    title: 'Hello, world!',
+    meta: [
+      { name: 'author', content: 'John Doe' }
+    ]
+  }
+}
+</script>
+```
 
+Learn more about [`populating <head>`](/docs/head/).
 
-### More...
+## Custom 404 page
 
-- [Import layout to a page or template](/docs/layouts#import-layout-to-a-page-or-template)
-- [Add head meta data to Pages](/docs/head#add-head-meta-data-to-pages--templates)
-- [Query data in pages](/docs/querying-data)
+Create a `src/pages/404.vue` component to have a custom 404 page.

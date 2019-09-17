@@ -1,6 +1,6 @@
 # Client API
 
-The client API lets you install Vue plugins, register components and directives and modify the options passed to the Vue instance. You can also add router hooks and HTML metas. Start by exporting a default function in a `src/main.js` file in your project to use the Client API. 
+The client API lets you install Vue plugins, register components and directives and modify the options passed to the Vue instance. You can also add router hooks and HTML metas. Start by exporting a default function in a `src/main.js` file in your project to use the Client API.
 
 > The function exported by `src/main.js` will be executed after all plugins.
 
@@ -41,7 +41,7 @@ import Vuex from 'vuex'
 
 export default function (Vue, { appOptions }) {
   Vue.use(Vuex)
-  
+
   appOptions.store = new Vuex.Store({
     state: {
       count: 0
@@ -86,7 +86,7 @@ export default function (Vue, { head }) {
 }
 ```
 
-Read more about [populating &lthead&gt](/docs/head)
+Read more about [populating &lthead&gt](/docs/head/)
 
 ## Component Injections
 
@@ -107,7 +107,7 @@ export default {
   async mounted () {
     try {
       const results = await this.$fetch('/other-page')
-      
+
       this.otherPageData = results.data
       this.otherPageContext = results.context
     } catch (error) {

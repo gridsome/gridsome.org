@@ -38,7 +38,7 @@ module.exports = function (api) {
 
 ## Create managed pages
 
-Pages created in the `createPages` hook will be re-created and garbage collected occasionally. That's why that hook is only able to create pages. You can use a `createManagedPages` hook to create, update and remove pages yourself. 
+Pages created in the `createPages` hook will be re-created and garbage collected occasionally. That's why that hook is only able to create pages. You can use a `createManagedPages` hook to create, update and remove pages yourself.
 
 ```js
 module.exports = function (api) {
@@ -54,7 +54,7 @@ module.exports = function (api) {
 ### createPage(options)
 
 - options `object`
-  - **path** `string` *Required.*
+  - **path** `string` *Required. Can be a fixed or dynamic route.*
   - **component** `string` *Required.*
   - context `object` *Optional context for the page and `page-query`.*
   - queryVariables `object`  *Optional context only for `page-query`.*
@@ -87,7 +87,7 @@ Returns first pages matching the provided query.
 
 ## The page context
 
-Each page can have a context which will be available as variables for `page-query`. The context will also be available in the page component as `$context`. If you only want the context to be available for `page-query`, use the `queryVariables` option instead of `context`.
+Each page can have a context which will be available as variables for `page-query`. The context will also be available in the page component as `$context`. If you only want the context to be available for `page-query`, use the `queryVariables` option instead.
 
 ##### Example usage
 
@@ -133,15 +133,17 @@ module.exports = function (api) {
     const { data } = await graphql(`{
       allProduct {
         edges {
-          id
-          path
+          node {
+            id
+            slug
+          }
         }
       }
     `)
 
     data.allProduct.edges.forEach(({ node }) => {
       createPage({
-        path: `${node.path}/reviews`,
+        path: `/product/${node.slug}/reviews`,
         component: './src/templates/ProductReviews.vue',
         context: {
           id: node.id
@@ -164,7 +166,7 @@ module.exports = function (api) {
 
     data.forEach(item => {
       createPage({
-        path: item.path,
+        path: `/post/${item.slug}`,
         component: './src/templates/Post.vue',
         context: {
           title: item.title,

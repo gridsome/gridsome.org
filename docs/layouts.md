@@ -1,10 +1,8 @@
 # Layouts
 
-Layout components are used to wrap pages and templates. Layouts should contain components like headers, footers or sidebars that will be used across the site.
+Layout components are used to wrap pages. Layouts should contain components like headers, footers or sidebars that will be used across the site.
 
 Layouts are _just_  **.vue components** located in `src/layouts` and need to be [declared as a global](#make-a-layout-global) component or imported per page to be used.
-
-> Having layouts imported as normal Vue Components, and not declared as an option for the component like for example **Nuxt.js** does, is to make it possible to pass **props** and **slots** to layouts. This makes layouts components very flexible.
 
 **Every layout requires a `<slot />` component.** This is where the content coming from pages and templates will be inserted. Layouts can have [multiple slots](#multiple-content-slots).
 
@@ -20,7 +18,7 @@ Layouts are _just_  **.vue components** located in `src/layouts` and need to be 
 ```
 
 
-## Import layout to a page or template
+## Import layouts
 When you have created a layout you need to import it to your pages and templates. This is done inside the `<script>` tag.
 
 ```html
@@ -142,4 +140,42 @@ Pages can now add content to this slot like this:
     </template>
   </Layout>
 </template>
+```
+
+## Master layout
+You can create a **master layout** by adding a **App.vue** file to `src` root. This will let you keep your header, footer on all pages and add **page transitions**.
+
+A simple **App.vue** file looks like this:
+```html
+<template>
+  <div id="app">
+    <g-view />
+  </div>
+</template>
+```
+
+### Pass props to master layout
+
+```html
+<script>
+  export default {
+    appProps: { transparent: false }
+  }
+</script>
+```
+
+This will let you pass props to master layout from any page.
+
+```html
+<template>
+  <div id="app" :class="{'is-transparent' : transparent}">
+    <g-view />
+  </div>
+</template>
+
+<script>
+  export default {
+    props: ['transparent']
+  }
+</script>
 ```

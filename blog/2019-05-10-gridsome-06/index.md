@@ -90,10 +90,10 @@ Add data by using `$context` in Vue component.
 </template>
 ```
 
-Read more about the [Pages API](/docs/pages-api)
+Read more about the [Pages API](/docs/pages-api/)
 
 ## New function for fetching internal pages
-A new function available in [Client API](/docs/client-api) let you fetch internal pages. This is perfect for building lightboxes or «Click for more» pagination etc.
+A new function available in [Client API](/docs/client-api/) let you fetch internal pages. This is perfect for building lightboxes or «Click for more» pagination etc.
 
 ```js
 export default {
@@ -113,7 +113,7 @@ export default {
 }
 ```
 
-Learn more about [fetching internal pages](/docs/client-side-data)
+Learn more about [fetching internal pages](/docs/client-side-data/)
 
 
 ## Faster build times and smaller core JS bundle size
@@ -145,7 +145,7 @@ We also added a [Starter library](/starters) to help anyone get quickly up and r
 - `title`, `path`, `date`, `content`, `excerpt`, and `slug` are now custom fields.
 - Custom fields are no longer camel cased automatically.
   - Some plugins depends on the original field names to work properly.
-- Routes for pages in `src/pages` no longer get automatic names  
+- Routes for pages in `src/pages` no longer get automatic names
   - This was changed because automatic route names would most likely conflict with custom pages.
   - Links like `<g-link :to="{name: 'about'}">` needs to be updated to `<g-link to="/about">`. Or add a custom `name` to the Page.
 

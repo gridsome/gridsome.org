@@ -1,5 +1,5 @@
 ---
-title: Generate custom pages
+title: Programmatically generate pages 
 filepath: gridsome.server.js
 filetype: js
 order: 10

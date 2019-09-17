@@ -15,7 +15,7 @@ Usage `create <name> [starter]`
 | Default               | `gridsome create my-website`            |
 | WordPress             | `gridsome create my-blog wordpress`     |
 
-[Read more about starter kits](/docs/starters)
+[Read more about starter kits](/docs/starters/)
 
 ## develop
 

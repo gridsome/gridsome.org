@@ -2,7 +2,7 @@
 
 A basic Gridsome project would be structured like this:
 
-```sh
+```
 .
 ├── package.json
 ├── gridsome.config.js
@@ -10,6 +10,8 @@ A basic Gridsome project would be structured like this:
 ├── static/
 └── src/
     ├── main.js
+    ├── index.html
+    ├── App.vue
     ├── layouts/
     │   └── Default.vue
     ├── pages/
@@ -29,13 +31,13 @@ Contains information about which plugins are installed in your project.
 
 This file contains configuration and options for installed plugins.
 
-[Read more about project config](/docs/config)
+[Read more about project config](/docs/config/)
 
 #### gridsome.server.js
 
 This file is optional and is used to hook into various parts of the Gridsome server. The file must export a function which will have access to the API.
 
-[Read more about the Server API](/docs/server-api)
+[Read more about the Server API](/docs/server-api/)
 
 ## The `/src` directory
 
@@ -43,14 +45,14 @@ This file is optional and is used to hook into various parts of the Gridsome ser
 
 Import global styles and scripts here. The file also has an export function that has access to the **Client API**. This file is the place to install Vue plugins, register components and directives, etc.
 
-[Read more about using the Client API in main.js](/docs/client-api)
+[Read more about using the Client API in main.js](/docs/client-api/)
 
 #### Layouts directory
 
 Create components in this directory if you want to share one or more
 layouts for your pages or templates.
 
-[Read more about layouts](/docs/layouts)
+[Read more about layouts](/docs/layouts/)
 
 #### Pages directory
 
@@ -59,7 +61,7 @@ Each page will get its path based on the location of its `.vue` file.
 `src/pages/Index.vue` will become the homepage for your website,
 while `src/pages/AboutUs.vue` will be `example.com/about-us`.
 
-[Read more about pages](/docs/pages)
+[Read more about pages](/docs/pages/)
 
 #### Templates directory
 
@@ -68,19 +70,26 @@ WordPress blog, into your project then each post would look for a
 component in this directory for its template. The name of the
 component file must match the node type in your GraphQL schema.
 
-[Read more about templates](/docs/templates)
+[Read more about templates](/docs/templates/)
 
+#### Custom index.html
 
+Occasionally you will need to override the base HTML template that Gridsome uses to generate your pages from. Gridsome makes this really easy. All you have to do is create a new `index.html` file in your `src` directory.
+
+[Read more about overriding index.html](/docs/overriding-index/)
+
+#### Custom App.vue
+
+The `App.vue` file is the main component that wraps all your pages and templates. You can override the default file by having your own `App.vue` file in your `src` directory. Overriding it is useful if you want to have a layout that is shared across all your pages.
+
+[Read more about overriding App.vue](/docs/overriding-app/)
 
 ## The `/static` directory
 
 Files in this directory will be copied directly to `dist` during build. For example, **/static/robots.txt** will be located at https://yoursite.com/robots.txt
 
-
-
 ## Aliases
 In Gridsome you can use the aliases `~` or `@` to link to files inside the `/src` folder. For example, you can import a Vue component by using `import Card from '~/components/Card'`
-
 
 ## Recommendation
 

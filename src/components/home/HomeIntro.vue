@@ -3,7 +3,7 @@
     <div class="home-cols grid-cols grid-cols--2 grid-cols--gap-small">
       <div class="home-cols__left">
 
-        <h1 class="home-title"> 
+        <h1 class="home-title">
             Build <br class="show-for-small" />
             <VueTyper :text="words" :type-delay="30" initial-action="erasing" caret-animation="smooth" />
             <br /> websites & apps
@@ -11,7 +11,7 @@
         </h1>
 
         <p class="home-links">
-          <g-link  to="/docs" class="button primary button--large">
+          <g-link  to="/docs/" class="button primary button--large">
             Get started
           </g-link>
         </p>
@@ -22,7 +22,7 @@
             <span>GitHub (v{{ $static.metaData.gridsomeVersion }})</span>
           </a>
         </p>
-        
+
       </div>
       <div class="home-cols__right">
         <div class="home-anim">
@@ -74,7 +74,7 @@ export default {
   from  {
     transform: translateX(-5px);
     color: var(--primary-color);
-  } to  { 
+  } to  {
     color: currentColor;
   }
 }
@@ -90,7 +90,7 @@ export default {
     .custom.char {
       color: #FFF;
     }
-    
+
     .custom.char.typed {
       animation: Type .3s;
     }
