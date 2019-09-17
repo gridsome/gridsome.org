@@ -35,15 +35,15 @@ Here is an example `gridsome.server.js` file that imports data:
 const axios = require('axios')
 
 module.exports = function (api) {
-  api.loadSource(async store => {
+  api.loadSource(async actions => {
     const { data } = await axios.get('https://api.example.com/posts')
 
-    const contentType = store.addContentType({
+    const collection = actions.addCollection({
       typeName: 'BlogPosts'
     })
 
     for (const item of data) {
-      contentType.addNode({
+      collection.addNode({
         id: item.id,
         title: item.title
       })

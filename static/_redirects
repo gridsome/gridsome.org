@@ -8,6 +8,7 @@
 /docs/data-custom /docs/fetching-data 301
 /docs/install-plugins /docs/plugins 301
 /docs/site-meta-data /docs/metadata 301
+/docs/routing /docs/templates 301
 
 /plugins /plugins/_id_star.html 200
 /plugins/* /plugins/_id_star.html 200

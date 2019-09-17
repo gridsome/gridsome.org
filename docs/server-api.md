@@ -36,11 +36,11 @@ module.exports = MyPlugin
 
 ## api.loadSource(fn)
 
-Load data from local files or external APIs and create content types and nodes of it. The data will then be available in your GraphQL queries.
+Load data from local files or external APIs and create collections for it. The data will then be available in your GraphQL queries.
 
 ```js
 module.exports = function (api) {
-  api.loadSource(store => {
+  api.loadSource(actions => {
     // Use Data Store API here
   })
 }
@@ -52,7 +52,7 @@ Create pages programmatically from nodes or other data. The handler for this hoo
 
 ```js
 module.exports = function (api) {
-  api.createPages(pages => {
+  api.createPages(actions => {
     // Create pages
   })
 }
@@ -66,7 +66,7 @@ Create, update and remove pages programmatically from nodes or other data. Unlik
 
 ```js
 module.exports = function (api) {
-  api.createManagedPages(pages => {
+  api.createManagedPages(actions => {
     // Create, update or remove pages
   })
 }

@@ -38,7 +38,7 @@ query Posts {
 
 ## Querying collections
 
-Every content type has a collection and a single entry in the GraphQL schema. You will notice that some of the root fields in your schema are prefixed with `all`. They are the collections for each of your content types and you can use them in your pages to create lists of single entries.
+You will notice that some of the root fields in your schema are prefixed with `all`. Use them to get lists of nodes in a collection.
 
 | Argument | Default | Description |
 |----------|---------|-------------|

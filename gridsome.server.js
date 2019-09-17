@@ -13,7 +13,7 @@ Prism.languages.html.graphql = {
 }
 
 module.exports = function (api) {
-  api.loadSource(async store => {
+  api.loadSource(async ({ addMetadata, addCollection }) => {
     let gridsomeVersion = ''
 
     try {
@@ -23,13 +23,13 @@ module.exports = function (api) {
       console.warn('Failed to get gridsome version from npm.')
     }
 
-    store.addMetadata('gridsomeVersion', gridsomeVersion)
+    addMetadata('gridsomeVersion', gridsomeVersion)
 
     // contributors
     const authorsPath = path.join(__dirname, 'contributors/contributors.yaml')
     const authorsRaw = await fs.readFile(authorsPath, 'utf8')
     const authorsJson = yaml.safeLoad(authorsRaw)
-    const authors = store.addCollection('Contributor')
+    const authors = addCollection('Contributor')
 
     authorsJson.forEach(({ id, name: title, ...fields }) => {
       authors.addNode({
@@ -46,7 +46,7 @@ module.exports = function (api) {
     const startersPath = path.join(__dirname, 'starters/starters.yaml')
     const startersRaw = await fs.readFile(startersPath, 'utf8')
     const startersJson = yaml.safeLoad(startersRaw)
-    const starters = store.addCollection('Starter')
+    const starters = addCollection('Starter')
 
     // Connect author field to Contributors & Platforms
     starters.addReference('author', 'Contributor')
@@ -66,7 +66,7 @@ module.exports = function (api) {
     const platformsPath = path.join(__dirname, 'platforms/platforms.yaml')
     const platformsRaw = await fs.readFile(platformsPath, 'utf8')
     const platformsJson = yaml.safeLoad(platformsRaw)
-    const platforms = store.addCollection('Platform')
+    const platforms = addCollection('Platform')
 
     // Connect author field to Contributors
     platformsJson.forEach((platform, index) => {
