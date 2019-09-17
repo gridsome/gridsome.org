@@ -2,7 +2,7 @@
 title: Gridsome v0.7
 slug: gridsome-v07
 author: [hjvedvik, tommyvedvik]
-date: 2019-09-16
+date: 2019-09-17
 excerpt: "Version 0.7 is finally here! Enjoy Vue Components in Markdown, new Schema API, File-based dynamic routing, better Template config, Custom App.vue, Shareable Network URL and more!"
 ---
 
