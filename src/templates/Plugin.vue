@@ -140,8 +140,7 @@ export default {
 
   computed: {
     isSingle () {
-      const { id } = this.$route.params
-      return id && id !== '1' // the dummy id
+      return Boolean(this.$route.params.id)
     },
 
     owners () {
@@ -162,7 +161,9 @@ export default {
     },
 
     content () {
-      return this.hit.readme ? markdown(this.hit.readme) : ''
+      return this.hit && this.hit.readme
+        ? markdown(this.hit.readme)
+        : ''
     }
   },
 
@@ -206,9 +207,7 @@ export default {
         query: name
       }])
 
-      this.hit = results.hits.length && results.hits[0].name === name
-        ? results.hits[0]
-        : null
+      this.hit = results.hits.find(hit => hit.name === name)
     },
 
     hitClasses (hit) {
