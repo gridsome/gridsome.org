@@ -46,6 +46,44 @@ module.exports = function (api) {
 }
 ```
 
+[Read more about the Data Store API](/docs/data-store-api/)
+
+## api.createSchema(fn)
+
+Create a custom GraphQL schema which will be merged with the Gridsome schema.
+
+```js
+api.createSchema(({ addSchema, graphql }) => {
+  addSchema(new graphql.GraphQLSchema({
+    query: new graphql.GraphQLObjectType({
+      name: 'CustomRootQuery',
+      fields: {
+        // ...
+      }
+    })
+  }))
+})
+```
+
+[Read more about the Schema API](/docs/schema-api/)
+
+## api.onCreateNode(fn)
+
+Modify or remove a node before its added to the collection.
+
+```js
+api.onCreateNode(options => {
+  if (options.internal.typeName === 'Post' && !options.published) {
+     // return null to filter it out
+    return null
+  }
+  // modify the options directly
+  options.slug = slugify(options.title)
+  // or return new options
+  return { ...options, slug: '...' }
+})
+```
+
 ## api.createPages(fn)
 
 Create pages programmatically from nodes or other data. The handler for this hook will be re-executed when nodes are changed in store. Pages that are not re-created will be garbage collected.
@@ -72,7 +110,7 @@ module.exports = function (api) {
 }
 ```
 
-[Read more about the Pages API](/docs/pages-api#create-managed-pages)
+[Read more about the Pages API](/docs/pages-api/#create-managed-pages)
 
 ## api.configureWebpack(fn)
 
@@ -117,23 +155,6 @@ api.configureServer(app => {
 ```
 
 Read more about the [Express Application API](https://expressjs.com/en/api.html#app)
-
-## api.createSchema(fn)
-
-Create a custom GraphQL schema which will be merged with the Gridsome schema.
-
-```js
-api.createSchema(({ addSchema, graphql }) => {
-  addSchema(new graphql.GraphQLSchema({
-    query: new graphql.GraphQLObjectType({
-      name: 'CustomRootQuery',
-      fields: {
-        // ...
-      }
-    })
-  }))
-})
-```
 
 ## api.setClientOptions(options)
 
