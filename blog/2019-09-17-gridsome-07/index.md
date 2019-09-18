@@ -225,7 +225,7 @@ Deprecated methods and options will now be listed in the terminal with path to l
 
 ## Shareable Network URL
 
-A network URL will now be visible in the terminal. It can be used to test the site on other divices in the same network with hot-reloading etc. This URL will only be active when using the default host, which is `0.0.0.0`, on private networks.
+A network URL will now be visible in the terminal. It can be used to test the site on other devices in the same network with hot-reloading etc. This URL will only be active when using the default host, which is `0.0.0.0`, on private networks.
 
 ![Shareable url](./shareable-url.png)
 
