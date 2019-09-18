@@ -156,7 +156,7 @@ module.exports = function (api) {
 
 ### Create pages from external APIs
 
-We use `createManagedPages` in this example because we doesn't need the pages to be re-created on changes. The template also uses the context for rendering data instead of GraphQL results.
+We use `createManagedPages` in this example because we don't need the pages to be re-created on changes. The template also uses the context for rendering data instead of GraphQL results.
 
 ```js
 //gridsome.server.js
