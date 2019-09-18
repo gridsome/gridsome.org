@@ -138,4 +138,13 @@
   author: kendallstrautman
   tags: blog, forestry, minimalist, markdown
   platforms: markdown
+
+- title: Forestry + FontAwesome + Tailwind 
+  description: Tailwind, FontAwesome, and Forestry integration. A simple starter blog on Gridsome.
+  screenshot: ./screenshots/forestry-tw-fa-starter.png
+  repo: meditatingdragon/gridsome-tw-fa-forestry-starter
+  preview: https://wizardly-payne-28c7e2.netlify.com/
+  author: rcheuk
+  tags: blog, forestry, minimalist, markdown, tailwind, fontawesome
+  platforms: markdown
   

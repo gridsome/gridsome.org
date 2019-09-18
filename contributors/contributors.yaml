@@ -79,4 +79,10 @@
   bio: "Frontend Developer"
   avatar: ./images/kendallstrautman.jpg
   twitter: "@kendallstraut"
+
+- id: rcheuk
+  name: Rachel Cheuk
+  bio: "Web Developer"
+  avatar: ./images/rcheuk.png
+  twitter: "@rachel_cheuk"
   
