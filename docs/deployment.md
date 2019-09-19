@@ -13,7 +13,7 @@ These services are great for Git-based deploying:
 
 - [AWS Amplify](/docs/deploy-to-amplify/)
 
-- [Zeit Now](/docs/deploy-to-zeit-now/)
+- [ZEIT Now](/docs/deploy-to-zeit-now/)
 
 - [GitLab Pages](/docs/deploy-to-gitlab/)
 
@@ -24,7 +24,7 @@ Many services let you deploy your static Gridsome site from the terminal. Here a
 
 - [Amazon S3](/docs/deploy-to-amazon-s3/)
 
-- [Zeit Now](/docs/deploy-to-zeit-now/)
+- [ZEIT Now](/docs/deploy-to-zeit-now/)
 
 
 ## FTP deploying

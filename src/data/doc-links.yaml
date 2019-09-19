@@ -112,7 +112,7 @@
       link: /docs/deploy-to-netlify/
     - title: AWS Amplify
       link: /docs/deploy-to-amplify/
-    - title: Zeit Now
+    - title: ZEIT Now
       link: /docs/deploy-to-zeit-now/
     - title: Amazon S3
       link: /docs/deploy-to-amazon-s3/
