@@ -239,7 +239,7 @@ A network URL will now be visible in the terminal. It can be used to test the si
 
 Routes for pages in `./src/pages` and all templates will include a trailing slash by default. This can be disabled with the [`permalinks`](/docs/config/#permalinkstrailingslash) config.
 
-**You should have a trailing slash in every static `<g-link>` path if you are hosting the site on Netlify or Zeit Now etc. to avoid redirects.** For example:
+**You should have a trailing slash in every static `<g-link>` path if you are hosting the site on Netlify or ZEIT Now etc. to avoid redirects.** For example:
 
 ```html
 <g-link to="/about-us/">About us</g-link>
