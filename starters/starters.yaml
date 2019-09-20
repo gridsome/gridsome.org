@@ -148,3 +148,11 @@
   tags: blog, forestry, minimalist, markdown, tailwind, fontawesome
   platforms: markdown
   
+- title: Vuetify Blog Starter
+  description: This is a blog starter built with Vuetify and FontAwesome icons. 
+  screenshot: ./screenshots/vuetify-starter.png
+  repo: meditatingdragon/starter-gridsome-vuetify
+  preview: https://festive-lalande-6eaf50.netlify.com/
+  author: rcheuk
+  tags: blog, vuetify markdown, fontawesome
+  platforms: markdown
