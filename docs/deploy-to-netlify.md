@@ -9,3 +9,13 @@ To deploy your Gridsome site to Netlify, go to the create a new site page, selec
 Add these build settings:
 - **Build Command:** `gridsome build`
 - **Publish directory:** `dist`
+
+Alternative deploy using toml file:
+  ```
+  [build]
+    publish = "dist"
+    command = "gridsome build"
+  ```
+ 
+ Create a file in the root of your project called `netlify.toml` this file should have the above configuation.
+ 
