@@ -10,7 +10,7 @@ Add these build settings:
 - **Build Command:** `gridsome build`
 - **Publish directory:** `dist`
 
-Alternative deploy using toml file:
+Alternatively, deploy using a .toml file:
   ```
   [build]
     publish = "dist"
