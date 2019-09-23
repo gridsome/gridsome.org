@@ -17,5 +17,5 @@ Alternative deploy using toml file:
     command = "gridsome build"
   ```
  
- Create a file in the root of your project called `netlify.toml` this file should have the above configuation.
+ Create a file in the root of your project called `netlify.toml` this file should have the above configuation. More infomation on `netlify.toml` files can be found in the [Netlify docs](https://www.netlify.com/docs/netlify-toml-reference/).
  
