@@ -79,4 +79,10 @@
   bio: "Frontend Developer"
   avatar: ./images/kendallstrautman.jpg
   twitter: "@kendallstraut"
+
+- id: adeadedoja
+  name: Adedamola Adedoja
+  bio: "Software Engineer"
+  avatar: ./images/adeadedoja.jpg
+  twitter: "@trussdamola"
   
