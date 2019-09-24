@@ -138,4 +138,13 @@
   author: kendallstrautman
   tags: blog, forestry, minimalist, markdown
   platforms: markdown
+
+- title: Buefy
+  description: A example theme of how to use buefy with gridsome
+  screenshot: ./screenshots/gridsome-starter-buefy.png
+  repo: FriendlyUser/gridsome-starter-buefy
+  preview: https://friendlyuser.github.io/gridsome-starter-buefy
+  author: FriendlyUser
+  tags: blog, forestry, minimalist, markdown
+  platforms: markdown
   

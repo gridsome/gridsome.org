@@ -79,4 +79,9 @@
   bio: "Frontend Developer"
   avatar: ./images/kendallstrautman.jpg
   twitter: "@kendallstraut"
+
+- id: FriendlyUser
+  name: David Li
+  bio: "Software Developer"
+  avatar: ./images/dli.png
   
