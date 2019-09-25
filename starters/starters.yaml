@@ -146,5 +146,13 @@
   preview: https://friendlyuser.github.io/gridsome-starter-buefy
   author: FriendlyUser
   tags: blog, forestry, minimalist, markdown
+
+- title: Gridsome Agency Starter
+  description: A minimalistic starter theme for an agency built with Bootstrap 4
+  screenshot: ./screenshots/gridsome-agency-starter-bootstrap.jpg
+  repo: adeadedoja/gridsome-agency-starter-bootstrap
+  preview: https://gridsome-agency-starter.netlify.com/
+  author: adeadedoja
+  tags: agency, bootstrap, minimalist, markdown
   platforms: markdown
   

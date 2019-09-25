@@ -84,4 +84,10 @@
   name: David Li
   bio: "Software Developer"
   avatar: ./images/dli.png
+
+- id: adeadedoja
+  name: Adedamola Adedoja
+  bio: "Software Engineer"
+  avatar: ./images/adeadedoja.jpg
+  twitter: "@trussdamola"
   

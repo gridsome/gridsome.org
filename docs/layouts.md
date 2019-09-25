@@ -149,7 +149,7 @@ A simple **App.vue** file looks like this:
 ```html
 <template>
   <div id="app">
-    <g-view />
+    <router-view />
   </div>
 </template>
 ```
@@ -169,7 +169,7 @@ This will let you pass props to master layout from any page.
 ```html
 <template>
   <div id="app" :class="{'is-transparent' : transparent}">
-    <g-view />
+    <router-view />
   </div>
 </template>
 
