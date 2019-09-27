@@ -139,7 +139,7 @@ module.exports = function (api) {
           }
         }
       }
-    `)
+    }`)
 
     data.allProduct.edges.forEach(({ node }) => {
       createPage({
