@@ -80,6 +80,11 @@
   avatar: ./images/kendallstrautman.jpg
   twitter: "@kendallstraut"
 
+- id: FriendlyUser
+  name: David Li
+  bio: "Software Developer"
+  avatar: ./images/dli.png
+
 - id: adeadedoja
   name: Adedamola Adedoja
   bio: "Software Engineer"
