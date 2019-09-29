@@ -2,7 +2,7 @@
 One of the easiest ways to use SVGs in Vue and Gridsome is to use the `vue-svg-loader` library. Start by installing the library:
 
 ```js
-npm i -d vue-svg-loader
+npm i -D vue-svg-loader
 ```
 
 You will need to update the webpack config in `gridsome.config.js` to use the new loader:
