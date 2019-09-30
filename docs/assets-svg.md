@@ -35,13 +35,13 @@ Then you can import your SVGs from within your Vue templates like any normal Vue
 FontAwesome is one of the most popular icon libraries out there, and with version 5, they've made it incredibly easy to use with Vue without bloating your codebase with a lot of icons/styles you're not using. We can start implementing it in our Gridsome site by installing a few needed items:
 
 ```sh
-npm i -d @fortawesome/{vue-fontawesome,fontawesome-svg-core,free-brands-svg-icons}
+npm i -D @fortawesome/{vue-fontawesome,fontawesome-svg-core,free-brands-svg-icons}
 ```
 
 The `@organization/{package,package}` is a shorthand format for installing multiple packages within an organization. The above is equivalent to:
 
 ```sh
-npm i -d @fortawesome/vue-fontawesome @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons
+npm i -D @fortawesome/vue-fontawesome @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons
 ```
 
 When the packages have finished installing, you'll want to open (or create) the `src/main.js` file in your project and add the following:
