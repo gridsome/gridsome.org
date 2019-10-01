@@ -1,15 +1,11 @@
-- title: Introduction
+- title: Prologue
   items:
-    - title: Getting started
+    - title: Introduction
       link: /docs/
     - title: Core concepts
       link: /docs/core-concepts/
     - title: Fast by default
       link: /docs/fast-by-default/
-    - title: How it works
-      link: /docs/how-it-works/
-    - title: The JAMstack
-      link: /docs/jamstack/
     - title: Deployment
       link: /docs/deployment/
 

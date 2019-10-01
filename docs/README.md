@@ -1,15 +1,33 @@
-# Getting started
-> Gridsome is an open source [Vue.js-powered](https://vuejs.org/) modern site generator for building [JAMstack](/docs/jamstack/) websites, apps & PWAs that are [fast by default](/docs/fast-by-default/) 🚀.
+# Introduction
 
-### Why Gridsome?
+> Gridsome is a free & open-source [Vue.js-powered](https://vuejs.org/) framework for building websites, apps & PWAs that are [fast by default](/docs/fast-by-default/) 🚀.
 
+## Why Gridsome?
+
+- **Vue.js for frontend** - The simplest & most approachable frontend framework.
 - **Local development with hot-reloading** - See code changes in real-time.
-- **Data source plugins** - Connect to any popular Headless CMSs, APIs or Markdown-files.
-- **File-based page routing** - Quickly create and manage routes with files.
-- **Centralized data management** - Pull data into a local, unified GraphQL data layer.
-- **Vue.js for front-end** - A lightweight and approachable front-end framework.
-- **Auto-optimized code** - Get code-splitting and asset optimization out-of-the-box.
-- **Static files generation** - Deploy securely to any CDN or static web host.
+- **Static file generation** - Deploy securely to any CDN or static web host.
+- **Data sourcing** - Use any Headless CMSs, APIs or Markdown-files for data.
+- **GraphQL data layer** - Simpler data management with a centralized data layer.
+- **Automatic Code Splitting** - Builds ultra performance into every page automatically.
+- **File-based routing** - Any `Name.vue` file in `src/pages` is a static route.
+- **Dynamic routing** - Any `[param].vue` file in `src/pages` is a dynamic route.
+- **Rich Plugin Ecosystem** - Find a plugin for anything.
+
+
+## How it works
+Gridsome **generates static markup** that hydrates into a <strong>Vue SPA</strong> once loaded in the browser. This means you can build both **static websites** & **dynamic apps** with Gridsome. 
+
+Gridsome builds one `.html` file and one `.json` file for every page. After the first page is loaded it only uses the `.json` file to prefetch and load data for the next pages. It also builds a `.js` bundle for each page thats needs it (code-splitting).
+
+It uses [vue-router](https://router.vuejs.org/) for SPA routing, and [vue-meta](https://vue-meta.nuxtjs.org/) for managing `<head>`.
+
+Gridsome adds a `57kB min gzip` JS bundle size by default.(Vue.js, vue-router & vue-meta + some for image lazy loading).
+
+[Deploying](/docs/deployment) of Gridsome sites is usually done from a **Git-repo** to a **Static Web Host** where every commit is a rebuild, or an option to trigger rebuilds.
+
+[Learn more about how it works.](/docs/how-it-works)
+
 
 ## Prerequisites
 You should have basic knowledge about HTML, CSS, [Vue.js](https://vuejs.org) and how to use the [Terminal](https://www.linode.com/docs/tools-reference/tools/using-the-terminal/). Knowing how [GraphQL](https://www.graphql.com/) works is a plus, but not required. Gridsome is a great way to learn it.
@@ -38,9 +56,8 @@ Gridsome requires [Node.js](https://nodejs.org/) (v8.3+) and recommends [Yarn](h
 
 
 #### Learn more
-
-- [Core concepts (Pages, Collections etc.)](/docs/core-concepts/)
-- [How to deploy](/docs/deployment/)
+- [Core concepts](/docs/core-concepts/)
+- [How to host & deploy](/docs/deployment/)
 
 ## Alternatives
 
