@@ -10,21 +10,19 @@
 - **Data sourcing** - Use any Headless CMSs, APIs or Markdown-files for data.
 - **GraphQL data layer** - Simpler data management with a centralized data layer.
 - **Automatic Code Splitting** - Builds ultra performance into every page automatically.
-- **File-based routing** - Any `Name.vue` file in `src/pages` is a static route.
+- **File-based page routing** - Any `Name.vue` file in `src/pages` is a static route.
 - **Dynamic routing** - Any `[param].vue` file in `src/pages` is a dynamic route.
-- **Rich Plugin Ecosystem** - Find a plugin for anything.
+- **Plugin ecosystem** - Find a plugin for any job.
 
 
 ## How it works
-Gridsome **generates static markup** that hydrates into a <strong>Vue SPA</strong> once loaded in the browser. This means you can build both **static websites** & **dynamic apps** with Gridsome. 
+Gridsome **generates static html** that hydrates into a <strong>Vue SPA</strong> once loaded in the browser. This means you can build both **static websites** & **dynamic apps** with Gridsome. 
 
-Gridsome builds one `.html` file and one `.json` file for every page. After the first page is loaded it only uses the `.json` file to prefetch and load data for the next pages. It also builds a `.js` bundle for each page thats needs it (code-splitting).
+Gridsome builds one `.html` file and one `.json` file for every page. After the first page is loaded it only uses the `.json` file to prefetch and load data for the next pages for super fast browsing. It also builds a `.js` bundle for each page thats needs it (code-splitting).
 
 It uses [vue-router](https://router.vuejs.org/) for SPA routing, and [vue-meta](https://vue-meta.nuxtjs.org/) for managing `<head>`.
 
-Gridsome adds a `57kB min gzip` JS bundle size by default.(Vue.js, vue-router & vue-meta + some for image lazy loading).
-
-[Deploying](/docs/deployment) of Gridsome sites is usually done from a **Git-repo** to a **Static Web Host** where every commit is a rebuild, or an option to trigger rebuilds.
+Gridsome adds a `57kB min gzip` JS bundle size by default.(Vue.js, vue-router, vue-meta and some for image lazy loading).
 
 [Learn more about how it works.](/docs/how-it-works)
 
