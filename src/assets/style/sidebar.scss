@@ -4,7 +4,8 @@
   overflow: auto;
   position: relative;
   -webkit-overflow-scrolling: touch;
-  padding: 0 20px 60px 5px;
+  padding: 1% 20px 60px 5px;
+
 
   @media screen and (min-width: 850px) {
     position: sticky;
@@ -15,6 +16,13 @@
     order: 0;
   }
 
+  &--right {
+    border-right:0;
+    width: 200px;
+    position: sticky;
+    padding-top: 6.5%;
+    top: var(--header-height);
+  }
 
   h3 {
     font-size: .8rem;
@@ -52,8 +60,9 @@
   .menu-link {
     margin: 0;
     padding: .2rem 0;
+    font-size: .95rem;
 
-    &.active--exact {
+    &.active {
       color: var(--primary-color-dark);
       position: relative;
       padding-left: .8rem;
@@ -75,15 +84,15 @@
 
   .submenu {
     list-style: none;
-    margin: .5rem 0 .5rem .1rem;
-    font-size: .85rem;
+    margin: 0;
+    font-size: .9rem;
     opacity: .9;
-    padding-left: .6rem;
-    border-left: 3px solid var(--border-color);
 
     &__item {
       margin-bottom: 0;
-      padding: .1rem 0;
+      padding: .4rem 0;
+      font-size: .85rem;
+      border-top: 1px dashed var(--border-color);
     }
   }
 

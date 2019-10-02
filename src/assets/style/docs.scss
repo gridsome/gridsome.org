@@ -1,3 +1,6 @@
+.section.doc-content {
+  padding-top: 2%;
+}
 
 .post {
 
@@ -110,7 +113,6 @@
   }
 
   &__link {
-    padding: 0;
-    color: var(--primary-color-dark);
+    border: 1px solid var(--border-color);
   }
 }

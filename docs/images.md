@@ -13,7 +13,7 @@ A typical image component will look like this:
 
  
 
-### How it works
+## How it works
 
 - **A IMG element with a source srcset is used.** This means that using several media queries, you load the smallest image that matches your device (e.g. mobile devices get smaller images, desktop devices get larger images, etc.). The images will be resized down to 480, 1024, 1920 and 2560 pixels by default.
 
@@ -77,7 +77,7 @@ Crop the image by settings both `width` and `height` attributes. The image will 
 |blur      |`40`      	|How much in px to blur the image placeholder
 |quality   |`75`      |The quality of the image. (`0` - `100`).
 
-### Fit options
+## Fit options
 
 |||
 |-|-|

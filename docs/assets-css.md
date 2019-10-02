@@ -129,90 +129,12 @@ Gridsome [Critical CSS plugin](/plugins/@gridsome/plugin-critical) extracts CSS 
 
 ## Add a CSS framework
 
-### Tailwind
+## Tailwind
 [TailwindCSS](https://tailwindcss.com) is a highly customizable, utility-based CSS framework that gives you all of the building blocks you need to build your project without any opinionated styles you have to fight to override. When using TailwindCSS, it is recommended to use [PostCSS-PurgeCSS](https://github.com/FullHuman/postcss-purgecss) which is a tool used to remove unused css; resulting in tiny file sizes.
 
 
 ### Add TailwindCSS with a Plugin
-The quickest and easiest way to get up and running with TailwindCSS in your project is to install it with a [Gridsome Plugin](https://gridsome.org/plugins). A Gridsome plugin will typically have the majority of the boilerplate and configuration done for you, eliminating a lot of the set up time.
-
-**The [Gridsome-Plugin-Tailwindcss](https://gridsome.org/plugins/gridsome-plugin-tailwindcss) Plugin**
-
-Install using:
-```shell
-npm install -D gridsome-plugin-tailwindcss
-```
-
-Create a `main.css` file in the root of your `/src` directory and add the following:
-```css
-@tailwind base;
-
-@tailwind components;
-
-@tailwind utilities;
-```
-
-Now import the `main.css` file into your project. In the `main.js` file add `require('~/main.css')`. Afterwards, your `main.js` file should look something like this:
-```javascript
-// Import global styles
-require('~/main.css')
-
-import DefaultLayout from '~/layouts/Default.vue'
-
-export default function (Vue, { router, head, isClient }) {
-  // Set default layout as a global component
-    Vue.component('Layout', DefaultLayout)
-    
-}
-```
-
-Create a `tailwind.config.js` file. This file enables you to customize and extend the default configurations of tailwind. 
-
-```shell
-npx tailwind init
-```
-
-Which will generate a minimal `tailwind.config.js` file at the root of your project that contains:
-```javascript
-module.exports = {
-    theme: {
-        extend: {}
-    },
-    variants: {},
-    plugins: []
-}
-```
-
-Learn more about customizing your TailwindCSS installation in Tailwind's [configuration documentation](https://tailwindcss.com/docs/configuration/.)
-
-Update your `gridsome.config.js` file to this:
-```javascript
-module.exports = {
-    siteName: 'Gridsome',
-    plugins: [
-        {
-            use: 'gridsome-plugin-tailwindcss',
-            options: {
-				tailwindConfig: 'tailwind.config.js',
-				purgeConfig: {},
-				presetEnvConfig: {},
-				shouldPurge: true,
-				shouldImport: true,
-				shouldTimeTravel: true,
-			}
-        }
-    ]
-}
-```
-
-[PurgeCSS](https://www.purgecss.com/with-postcss) is enabled by default. If you'd like to disable it, pass `shouldPurge: false` to the plugin options object.
-
-[PostCSS-Import](https://github.com/postcss/postcss-import) included by default. Pass `shouldImport: false` to disable.
-
-[PostCSS-Preset-Env](https://github.com/csstools/postcss-preset-env) included by default. Pass `shouldTimeTravel: false` to disable. You may also pass a config object to the plugin as `presetEnvConfig`.
-
-At this point, you have a functioning install of TailwindCSS. Just be sure to restart the `gridsome develop` command to be sure the changes are compiled in the current build.
-
+The quickest and easiest way to get up and running with Tailwind CSS in your project is to install it with the [Gridsome Tailwind Plugin](/plugins/gridsome-plugin-tailwindcss). A Gridsome plugin will typically have the majority of the boilerplate and configuration done for you, eliminating a lot of the set up time.
 
 
 ### Add TailwindCSS Manully
@@ -338,14 +260,14 @@ module.exports = {
 
 Be sure to restart the `gridsome develop` command to ensure the changes are compiled in the current build.
 
-### Bulma
+## Bulma
 ...plugin coming
 
 
-### Bootstrap
+## Bootstrap
 ...plugin coming
 
-### BootstrapVue
+## BootstrapVue
 
 [BootstrapVue](https://bootstrap-vue.js.org/) provides one of the most comprehensive implementations of Bootstrap V4 components and grid system available for Vue.js 2.5+, complete with extensive and automated WAI-ARIA accessibility markup.
 
@@ -374,7 +296,7 @@ export default function (Vue) {
 }
 ```
 
-### Vuetify
+## Vuetify
 
 [Vuetify](https://vuetifyjs.com/en/) is a semantic component framework for Vue. It aims to provide clean, semantic and reusable components that make building your application a breeze. Based on Google's material design, it can be a quick way to get an app up and running with pre-built components available to use and customize. Updated for Vuetify 2.0.
 
