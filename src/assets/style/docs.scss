@@ -110,7 +110,6 @@
   }
 
   &__link {
-    padding: 0;
-    color: var(--primary-color-dark);
+    border: 1px solid var(--border-color);
   }
 }
