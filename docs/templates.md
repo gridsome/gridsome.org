@@ -5,7 +5,7 @@
 
 ## Setup templates
 
-The example below shows you have to setup route and template for a [collection](/docs/collections/) named `Post`. A component located at `src/templates/{Collection}.vue` will be used as template if no component is specified.
+The example below shows you how to setup route and template for a [collection](/docs/collections/) named `Post`. A component located at `src/templates/{Collection}.vue` will be used as template if no component is specified.
 
 ```js
 // gridsome.config.js
