@@ -1,24 +1,24 @@
 # Introduction
 
-> Gridsome is a free & open-source [Vue.js-powered](https://vuejs.org/) framework for building websites, apps & PWAs that are [fast by default](/docs/fast-by-default/) 🚀.
+> Gridsome is a free and open source [Vue.js-powered](https://vuejs.org/) framework for building websites & apps that are [fast by default](/docs/fast-by-default/) 🚀.
 
 ## Why Gridsome?
 
 - **Vue.js for frontend** - The simplest & most approachable frontend framework.
 - **Local development with hot-reloading** - See code changes in real-time.
+- **File-based page routing** - Any `Name.vue` file in `src/pages` is a static route.
+- **Dynamic routing** - Any `[param].vue` file in `src/pages` is a dynamic route.
 - **Static file generation** - Deploy securely to any CDN or static web host.
 - **Data sourcing** - Use any Headless CMSs, APIs or Markdown-files for data.
 - **GraphQL data layer** - Simpler data management with a centralized data layer.
-- **Automatic Code Splitting** - Builds ultra performance into every page automatically.
-- **File-based page routing** - Any `Name.vue` file in `src/pages` is a static route.
-- **Dynamic routing** - Any `[param].vue` file in `src/pages` is a dynamic route.
+- **Automatic Code Splitting** - Builds ultra performance into every page.
 - **Plugin ecosystem** - Find a plugin for any job.
 
 
 ## How it works
-Gridsome **generates static html** that hydrates into a <strong>Vue SPA</strong> once loaded in the browser. This means you can build both **static websites** & **dynamic apps** with Gridsome. 
+Gridsome **generates static html** that hydrates into a <strong>Vue SPA</strong> once loaded in the browser. This means you can build both **static websites** & **dynamic apps** with Gridsome. It's perfect for your JAMstack workflow. 
 
-Gridsome builds one `.html` file and one `.json` file for every page. After the first page is loaded it only uses the `.json` file to prefetch and load data for the next pages for super fast browsing. It also builds a `.js` bundle for each page thats needs it (code-splitting).
+Gridsome builds one `.html` file and one `.json` file for every page. After first page load it only uses the `.json` files to prefetch and load data for the next pages. It also builds a `.js` bundle for each page that needs it (code splitting).
 
 It uses [vue-router](https://router.vuejs.org/) for SPA routing, and [vue-meta](https://vue-meta.nuxtjs.org/) for managing `<head>`.
 
