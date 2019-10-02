@@ -41,7 +41,19 @@ Read more about the [$fetch() method](/docs/client-api#fetchpath).
 
 ## Fetch from REST API
 
-....Contributions are welcome!
+```js
+import axios from 'axios'
+
+export default {
+  async mounted () {
+    const results = await axios.get(
+      'https://jsonplaceholder.typicode.com/todos'
+    )
+
+    console.log(results.data)
+  }
+}
+```
 
 ## Fetch from GraphQL API
 
