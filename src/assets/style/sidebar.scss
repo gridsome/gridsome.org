@@ -4,7 +4,7 @@
   overflow: auto;
   position: relative;
   -webkit-overflow-scrolling: touch;
-  padding: 1.5% 20px 60px 5px;
+  padding: 1% 20px 60px 5px;
 
 
   @media screen and (min-width: 850px) {
@@ -20,6 +20,7 @@
     border-right:0;
     width: 200px;
     position: sticky;
+    padding-top: 6.5%;
     top: var(--header-height);
   }
 
