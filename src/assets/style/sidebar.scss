@@ -4,7 +4,7 @@
   overflow: auto;
   position: relative;
   -webkit-overflow-scrolling: touch;
-  padding: 0 20px 60px 5px;
+  padding: 1.5% 20px 60px 5px;
 
 
   @media screen and (min-width: 850px) {
@@ -18,11 +18,8 @@
 
   &--right {
     border-right:0;
-    padding:0;
-    margin:0;
     width: 200px;
     position: sticky;
-    padding-top: 2.5%;
     top: var(--header-height);
   }
 
@@ -62,6 +59,7 @@
   .menu-link {
     margin: 0;
     padding: .2rem 0;
+    font-size: .95rem;
 
     &.active {
       color: var(--primary-color-dark);
@@ -92,6 +90,7 @@
     &__item {
       margin-bottom: 0;
       padding: .4rem 0;
+      font-size: .85rem;
       border-top: 1px dashed var(--border-color);
     }
   }

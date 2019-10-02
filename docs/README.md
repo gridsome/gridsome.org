@@ -22,7 +22,7 @@ Gridsome builds one `.html` file and one `.json` file for every page. After firs
 
 It uses [vue-router](https://router.vuejs.org/) for SPA routing, and [vue-meta](https://vue-meta.nuxtjs.org/) for managing `<head>`.
 
-Gridsome adds a `57kB min gzip` JS bundle size by default.(Vue.js, vue-router, vue-meta and some for image lazy loading).
+Gridsome adds a `57kB min gzip` JS bundle size by default.(vue.js, vue-router, vue-meta and some for image lazy loading).
 
 [Learn more about how it works.](/docs/how-it-works)
 
