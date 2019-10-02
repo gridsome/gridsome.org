@@ -76,18 +76,6 @@ export default {
 
 <style lang="scss">
 
-@keyframes Gradient {
-  0% {
-    background-position: 0% 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0% 50%
-  }
-}
-
 .intro {
   padding: calc(3.333% + var(--space)) 0;
 
@@ -100,7 +88,7 @@ export default {
 
     @media screen and (max-width: 850px) {
       & {
-        font-size: 2.6rem;
+        font-size: 2rem;
       }
     }
   }
@@ -110,6 +98,12 @@ export default {
     margin-left: auto;
     margin-right: auto;
     font-size: 1.3rem;
+
+    @media screen and (max-width: 850px) {
+      & {
+        font-size: 1rem;
+      }
+    }
   }
 
   &__info {

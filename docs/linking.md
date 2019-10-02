@@ -2,13 +2,13 @@
 
 The `<g-link>` component is available globally in all your Pages, Templates & Components. It's a wrapper for [router-link](https://router.vuejs.org/api/#router-link-props) from Vue Router.
 
-### Smart link prefetching
+## Link prefetching
 
 `<g-link>` uses IntersectionObserver to prefetch linked pages when link is in view. **This makes browsing around in a Gridsome site very fast because the clicked page is already downloaded.**
 
 ## How to use
 
-### Link between pages
+## Link between pages
 
 The following example links to the `src/pages/About.vue` page:
 
@@ -20,7 +20,7 @@ Always add a trailing slash when linking to other internal pages. Because the HT
 
 You do not need to include the [`pathPrefix`](/docs/config#pathprefix) option in the `<g-link>` path.
 
-### Link to external pages
+## Link to external pages
 
 To link to external links you need to use the normal tag:
 
@@ -28,7 +28,7 @@ To link to external links you need to use the normal tag:
 <a href="https://www.example.com">www.example.com</a>
 ```
 
-### Link to #anchor links
+## Link to #anchor links
 
 To link to **#anchor** links you need to use the normal `<a href="#anchor">` tag.
 
