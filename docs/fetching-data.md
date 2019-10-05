@@ -56,18 +56,79 @@ module.exports = function (api) {
 
 
 ## Import from local files
-*..contribute*
+
+Using the [file-system plugin](/plugins/@gridsome/source-filesystem) with [transformers](/docs/transformer-api), local files can be added to the [GraphQL data layer](/docs/data-layer/) as specifc content types.
 
 ### Markdown
-*..contribute*
+
+Using the [remark transformer](/plugins/@gridsome/transformer-remark):
+
+```js
+module.exports = {
+  plugins: [{
+    use: '@gridsome/source-filesystem',
+    options: {
+      path: 'src/blog/**/*.md',
+      typeName: 'BlogPost',
+      route: '/blog/:fileInfo__name',
+      remark: {
+        plugins: ['@gridsome/remark-prismjs']
+      }
+    }
+  }]
+}
+```
 
 ### Images
 *..contribute*
 
 ### YAML
-*..contribute*
+
+Using the [YAML transformer](/plugins/@gridsome/transformer-yaml):
+
+```js
+module.exports = {
+  plugins: [{
+    use: '@gridsome/source-filesystem',
+    options: {
+      typeName: 'YamlData',
+      path: 'src/data/**/*yaml',
+      yaml: true
+    }
+  }]
+}
+```
 
 ### CSV
-*..contribute*
+
+Using the [CSV transformer](/plugins/@gridsome/transformer-csv):
+
+```js
+module.exports = {
+  plugins: [{
+    use: '@gridsome/source-filesystem',
+    options: {
+      typeName: 'CsvData',
+      path: 'src/data/**/*csv',
+      csv: true
+    }
+  }]
+}
+```
 
 ### JSON
+
+Using the [JSON transformer](/plugins/@gridsome/transformer-json):
+
+```js
+module.exports = {
+  plugins: [{
+    use: '@gridsome/source-filesystem',
+    options: {
+      typeName: 'JsonData',
+      path: 'src/data/**/*json',
+      json: true
+    }
+  }]
+}
+```
