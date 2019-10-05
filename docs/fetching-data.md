@@ -57,7 +57,7 @@ module.exports = function (api) {
 
 ## Import from local files
 
-Using the [file-system plugin](/plugins/@gridsome/source-filesystem) with [transformers](/docs/transformer-api), local files can be added to the [GraphQL data layer](/docs/data-layer/) as specifc content types.
+Using [transformers](/docs/transformer-api), local files can be added to the [GraphQL data layer](/docs/data-layer/) as specifc content types.
 
 ### Markdown
 
