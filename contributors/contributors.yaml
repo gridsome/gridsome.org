@@ -90,9 +90,16 @@
   bio: "Software Engineer"
   avatar: ./images/adeadedoja.jpg
   twitter: "@trussdamola"
-  
+ 
+- id: emanuelgsouza
+  name: Emanuel Gonçalves
+  bio: "Frontend Developer"
+  avatar: ./images/emanuelgsouza.jpg
+  twitter: "@emanuelgsouza"
+
 - id: codybarr
   name: Cody Barr
   bio: "Web Developer"
   avatar: ./images/codybarr.jpg
   twitter: "@codybarr"
+ 

@@ -2,7 +2,7 @@
 Gridsome lets you import data from any data source into the [GraphQL data layer](/docs/data-layer/).
 
 ## Import with source plugins
-The easiest way to add data to Gridsome is to use **source plugins**. Gridsome data source plugins are added in `gridsome.config.js`. You can find available data source plugins in the [Plugins directory](/plugins). Every
+The easiest way to add data to Gridsome is to use **source plugins**. Gridsome data source plugins are added in `gridsome.config.js`. You can find available data source plugins in the [Plugins directory](/plugins).
 
 Here is an example of the [file-system](/plugins/@gridsome/source-filesystem) source added to config:
 
