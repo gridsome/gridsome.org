@@ -155,4 +155,13 @@
   author: adeadedoja
   tags: agency, bootstrap, minimalist, markdown
   platforms: markdown
+
+- title: Gridsome Storyblok Starter
+  description: A minimalistic starter boilerplate with Storyblok integration
+  screenshot: ./screenshots/gridsome-starter-storyblok.jpg
+  repo: storyblok/storyblok-gridsome-boilerplate
+  preview: 
+  author: emanuelgsouza
+  tags: storyblok, cms
+  platforms: storyblok
   
