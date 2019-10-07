@@ -67,7 +67,7 @@ module.exports = {
 }
 ```
 
-[Read more about how to use plugins](/docs/plugins/)
+[Read more about how to use plugins](/plugins/)
 
 ## templates
 
