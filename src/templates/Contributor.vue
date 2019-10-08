@@ -8,6 +8,9 @@
         <p v-if="$page.contributor.bio" class="lead container-sm">
           {{ $page.contributor.bio }}
         </p>
+        <a v-if="$page.contributor.twitter" :href="`https://twitter.com/${$page.contributor.twitter}`">
+            {{ $page.contributor.twitter }}
+        </a>
       </div>
 
       <h3 class="text-center" v-if="$page.contributor.posts.edges.length">Blog posts</h3>
@@ -30,6 +33,7 @@ query Contributor ($id: ID!) {
     title
     bio
     avatar (width: 124)
+    twitter
     posts: belongsTo(filter: {typeName: {eq: BlogPost}}) {
       totalCount
       pageInfo {
