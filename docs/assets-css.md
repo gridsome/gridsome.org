@@ -442,5 +442,40 @@ export default function (Vue, { appOptions }) {
   appOptions.vuetify = vuetify
 }
 ```
+if you need to change themes and colors and override default theme you need to wrap youre components around <v-app>. to do that you need to override App.vue. create empty App.vue file in src folder:
+```js
+<template>
+<v-app>
+  <router-view />
+</v-app>  
+</template>
+
+<static-query>
+query App {
+  metadata {
+    siteName
+    siteDescription
+  }
+}
+</static-query>
+
+<script>
+export default {
+  metaInfo() {
+    return {
+      title: this.$static.metadata.siteName,
+      meta: [
+        {
+          key: 'description',
+          name: 'description',
+          content: this.$static.metadata.siteDescription
+        }
+      ]
+    }
+  }
+}
+</script>
+	
+```	
 Then you should be able to build now! You will find the files in your dist/ folder.
 
