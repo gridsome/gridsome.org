@@ -31,7 +31,7 @@ export default {
     subtitles() {
       // Remove h1, h4, h5, h6 titles
       let subtitles = this.$page.doc.subtitles.filter(function(value, index, arr){
-        return value.depth !== 1 && value.depth !== 4 && value.depth !== 5 && value.depth !== 6;
+        return [2,3].includes(value.depth)
       })
       return subtitles
     }
