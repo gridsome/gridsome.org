@@ -273,7 +273,7 @@ Be sure to restart the `gridsome develop` command to ensure the changes are comp
 
 To install use:
 
-```
+```shell
 # With npm
 npm i vue bootstrap-vue bootstrap
 
@@ -302,7 +302,7 @@ export default function (Vue) {
 
 To install use:
 
-```
+```shell
 # With npm
 npm install vuetify --save
 
@@ -359,7 +359,7 @@ You will need to whitelist Vuetify in webpack in order to build.
 
 First, install the webpack-node-externals plugin:
 
-```
+```shell
 # With npm
 npm install webpack-node-externals --save-dev
 

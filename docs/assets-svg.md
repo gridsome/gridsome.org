@@ -1,7 +1,31 @@
-# Using SVGs as Components
-One of the easiest ways to use SVGs in Vue and Gridsome is to use the `vue-svg-loader` library. Start by installing the library:
+# Add SVG icons
 
-```js
+
+## As plain markup
+The simplest way to use SVG icons in Gridsome is to just add them as normal markup. This gives a lot of flexibility with the power of Vue.  Here is an example where we have added an icon from https://feathericons.com/ as markup.
+
+```html
+<template>
+ <svg 
+  xmlns="http://www.w3.org/2000/svg" 
+  width="24" height="24" 
+  viewBox="0 0 24 24" 
+  fill="none" 
+  stroke="currentColor" 
+  stroke-width="2" 
+  stroke-linecap="round" 
+  stroke-linejoin="round" 
+  class="feather feather-bell">
+    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+    <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+  </svg>
+</template>
+```
+
+## Using SVGs as Components
+You can import SVGs as you do with any other Vue component with `vue-svg-loader`. Start by installing the library:
+
+```shell
 npm i -D vue-svg-loader
 ```
 
@@ -18,7 +42,7 @@ module.exports = {
 }
 ```
 
-Then you can import your SVGs from within your Vue templates like any normal Vue component:
+Then you can import your SVGs from within your Vue templates like any Vue component:
 ```html
 <script>
   import Brand from '~/assets/svgs/Brand.svg'
@@ -30,17 +54,17 @@ Then you can import your SVGs from within your Vue templates like any normal Vue
 </script>
 ```
 
-# FontAwesome SVG Icons
+## FontAwesome SVG Icons
 
 FontAwesome is one of the most popular icon libraries out there, and with version 5, they've made it incredibly easy to use with Vue without bloating your codebase with a lot of icons/styles you're not using. We can start implementing it in our Gridsome site by installing a few needed items:
 
-```sh
+```shell
 npm i -D @fortawesome/{vue-fontawesome,fontawesome-svg-core,free-brands-svg-icons}
 ```
 
 The `@organization/{package,package}` is a shorthand format for installing multiple packages within an organization. The above is equivalent to:
 
-```sh
+```shell
 npm i -D @fortawesome/vue-fontawesome @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons
 ```
 
