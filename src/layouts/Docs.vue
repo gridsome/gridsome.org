@@ -34,20 +34,13 @@
       </Section>
       <div v-if="subtitles.length > 0" class="sidebar sidebar--right hide-for-small">
         <h3>On this page</h3>
-
-        <transition-group name="menu-item" tag="div">
-          <template v-if="links" v-for="(group, i1) in links">
-            <template v-for="(item, i2) in group.items">
-              <ul v-if="item.link.replace(/\/$/, '') === currentPath && subtitles && subtitles.length" :key="`submenu-${i1}-${i2}`" class="menu-item submenu">
-                <li class="submenu__item" v-for="subtitle in subtitles">
-                  <g-link class="submenu__link" :to="item.link + subtitle.anchor">
-                    {{ subtitle.value }}
-                  </g-link>
-                </li>
-              </ul>
-            </template>
-          </template>
-        </transition-group>
+        <ul v-if="subtitles.length" class="menu-item submenu">
+          <li class="submenu__item" :class="'submenu__item-depth-' + subtitle.depth" v-for="subtitle in subtitles" :key="subtitle.value">
+            <a class="submenu__link" :href="subtitle.anchor">
+              {{ subtitle.value }}
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </Layout>
