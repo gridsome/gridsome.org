@@ -309,7 +309,6 @@ npm install vuetify --save
 # With yarn
 yarn add vuetify
 ```
-
 Then, you will need to register the Vuetify plugin, include the Vuetify css file, and add a link to the head 
 for Google's material design icons in your 'main.js' file, with Vuetify 2.0+ you will need to pass a new instance of Vuetify to appOptions. Icons and iconfonts are now built into Vuetify 2.0+. You can install them as a local dependency or add them as a stylesheet in your head from a CDN, more information on Vuetify icon installation is available [here](https://vuetifyjs.com/en/customization/icons):
 
@@ -387,6 +386,61 @@ module.exports = function (api) {
   })
 }
 ```
+you can also automatically import only used components. first you need to install vuetify-loader:
+```shell
+# With npm
+npm i vuetify-loader --save-dev
+# With yarn
+yarn add vuetify-loader --dev
+```
+then in gridsome.server.js add vuetify-loader plugin in webpack config. simply add:
+```js
+const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
+module.exports = function(api) {
+  api.chainWebpack((config, { isServer }) => {
+    if (isServer) {
+      config.externals([
+        nodeExternals({
+          whitelist: [/^vuetify/]
+        })
+      ]);
+    }
+  });
+  api.configureWebpack({
+    plugins: [
+      new VuetifyLoaderPlugin()
+    ],
+  })
+};
+```
+in src folder add a plugins folder, then inside it create a file for vuetify imports and config:
+```js
+// src/plugins/vuetify.js
 
+// import mdi icons
+import '@mdi/font/css/materialdesignicons.css'
+import Vue from 'vue'
+// auto load necessory components
+import Vuetify from 'vuetify/lib'
+
+Vue.use(Vuetify)  
+
+const opts = {
+    icons: {
+        iconfont: 'mdi'
+      }
+}
+
+export default new Vuetify(opts)
+```
+and finally in main.js import above file:
+```js
+import vuetify from '@/plugins/vuetify'
+
+export default function (Vue, { appOptions }) {
+// add vuetify config to vue instance
+  appOptions.vuetify = vuetify
+}
+```
 Then you should be able to build now! You will find the files in your dist/ folder.
 
