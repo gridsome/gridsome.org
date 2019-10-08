@@ -45,12 +45,21 @@ Read more about the [$fetch() method](/docs/client-api#fetchpath).
 import axios from 'axios'
 
 export default {
+  data () {
+    return {
+      todos: null
+    }
+  },
   async mounted () {
-    const results = await axios.get(
-      'https://jsonplaceholder.typicode.com/todos'
-    )
+    try {
+      const results = await axios.get(
+        'https://jsonplaceholder.typicode.com/todos'
+      )
 
-    console.log(results.data)
+      this.todos = results.data
+    } catch (error) {
+      console.log(error)
+    }
   }
 }
 ```
