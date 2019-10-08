@@ -66,7 +66,7 @@ This is a pretty typical way to do traditional pagintation, but we're not going 
 Next, we'll need to add a few things to our `<script>` tag:
 
 1. A couple of variables in our `data()` method to keep track of our `loadedPosts` as well as the `currentPage`.
-2. Some code to the mounted method to add the initial "page" of data to our `loadedPosts` array.
+2. Some code to the created method to add the initial "page" of data to our `loadedPosts` array.
 3. A handler method to pass to our `vue-infinite-loading` component so it knows how to load the next batch of data.
 
 Here's what that would look like:
@@ -85,7 +85,7 @@ export default {
 			currentPage: 1
 		}
 	},
-	mounted() {
+	created() {
 		this.loadedPosts.push(...this.$page.posts.edges)
 	},
 	methods: {
