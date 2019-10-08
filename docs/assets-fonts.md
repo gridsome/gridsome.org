@@ -1,4 +1,6 @@
-# Using CDN Fonts (Typekit, Google Fonts, etc)
+# Add custom fonts
+
+## Using CDN Fonts (Typekit, Google Fonts, etc)
 
 The easiest way to add a CDN-hosted font is by inserting it directly into your global head. Add this to your `src/main.js`to insert a CDN font:
 
@@ -11,7 +13,7 @@ export default function (Vue, { head }) {
 }
 ```
 
-# Self-Hosting Open Source Typefaces
+## Self-Hosting Open Source Typefaces
 
 Self-hosting open source fonts, as explained [in the docs](https://github.com/KyleAMathews/typefaces):
 - Self-hosting is significantly faster. Loading a typeface from Google Fonts or other hosted font service adds an extra (blocking) network request. In my testing, I’ve found replacing Google Fonts with a self-hosted font can improve a site’s speedindex by ~300 milliseconds on desktop and 1+ seconds on 3g. This is a big deal.
@@ -36,7 +38,7 @@ require('typeface-open-sans')
 And you're all done!
 
 
-# Local Fonts
+## Local Fonts
 It's important to note that the [aliases](/docs/directory-structure#aliases) mentioned in the Directory Structure don't work in your `<style>` tags because they aren't included into the Webpack bundle, so you need to use a relative path to them.
 
 Given the following directory:
