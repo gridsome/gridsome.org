@@ -42,8 +42,7 @@ Get a collection previously created.
 ```js
 api.loadSource(actions => {
   const posts = actions.addCollection({
-    typeName: 'BlogPost',
-    route: '/blog/:year/:title'
+    typeName: 'BlogPost'
   })
 
   posts.addNode({
