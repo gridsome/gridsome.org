@@ -442,7 +442,7 @@ export default function (Vue, { appOptions }) {
   appOptions.vuetify = vuetify
 }
 ```
-if you need to change themes and colors and override default theme you need to wrap youre components around <v-app>. to do that you need to override App.vue. create empty App.vue file in src folder:
+if you need to change themes and colors and override default theme you need to wrap youre components around v-app. to do that you need to override App.vue. create empty App.vue file in src folder:
 ```js
 <template>
 <v-app>
