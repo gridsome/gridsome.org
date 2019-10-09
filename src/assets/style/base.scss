@@ -1,13 +1,29 @@
 html, body {
-  background-color: var(--light-bg);
+  background-color: var(--bg);
   touch-action: manipulation;
   width: 100%;
+}
+
+#app {
+	color: var(--body-color);
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
+body *:target {
+	animation: target 2s;
+}
+
+@keyframes target {
+	0 {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 
 img,
 svg {
@@ -19,4 +35,4 @@ hr {
   opacity: .3;
 }
 
-::selection { background: var(--border-color); }
+::selection { background: var(--select-color); }

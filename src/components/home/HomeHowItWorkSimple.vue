@@ -100,8 +100,7 @@ export default {
 
   &__tools {
     font-weight: 500;
-    background-color: rgba(255,255,255,.9);
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid var(--border-color);
     max-width: 230px;
     border-radius: 4px;
     z-index: 9;

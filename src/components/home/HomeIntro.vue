@@ -69,18 +69,7 @@ export default {
 </script>
 
 <style lang="scss">
-
-@keyframes Type {
-  from  {
-    transform: translateX(-5px);
-    color: var(--primary-color);
-  } to  {
-    color: currentColor;
-  }
-}
-
 .home-intro {
-  padding: 1.5% 0!important;
 
   .vue-typer {
     display: inline-block;

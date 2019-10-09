@@ -51,6 +51,7 @@
   &.primary {
     color:#FFF;
     background-color: var(--primary-color-dark);
+    
     &:after {
       border-color: rgba(0,0,0,.1);
     }
@@ -98,7 +99,8 @@
     box-shadow: none!important;
 
     &:not(:hover) {
-      color: rgba(0,0,0,.5);
+      color: currentColor;
+      opacity: .6;
     }
     &:after {
       display: none;

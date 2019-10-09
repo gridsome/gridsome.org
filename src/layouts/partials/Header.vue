@@ -15,6 +15,8 @@
 
       <LazyHydrate ssr-only>
         <nav class="header-actions flex">
+          <ToggleTheme />
+
           <a
             aria-label="Twitter"
             href="//twitter.com/gridsome"
@@ -87,7 +89,8 @@ query Header {
 <script>
 import Logo from './Logo'
 import Nav from './Nav'
-import SearchForm from '~/components/SearchForm.vue'
+import SearchForm from '@/components/SearchForm.vue'
+import ToggleTheme from '@/components/ToggleTheme.vue'
 import GithubLogo from '@/assets/images/github-logo.svg'
 import TwitterLogo from '@/assets/images/twitter-logo.svg'
 import DiscordLogo from '@/assets/images/discord-logo.svg'
@@ -98,6 +101,7 @@ export default {
     Logo,
     GithubLogo,
     TwitterLogo,
+    ToggleTheme,
     DiscordLogo,
     SearchForm,
     Nav,
@@ -111,7 +115,7 @@ header {
   z-index: 20;
   position: relative;
   top: 0;
-  background-color: var(--light-bg-transparent);
+  background-color: var(--bg-transparent);
   border-bottom: 1px solid var(--border-color);
   flex-wrap: nowrap;
   position: sticky;

@@ -57,7 +57,7 @@ export default {
 
   &__footer {
     display: flex;
-    background-color: #FFF;
+    background-color: var(--bg);
     align-items: center;
     justify-content: space-between;
     font-size: .85rem;

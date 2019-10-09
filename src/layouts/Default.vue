@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div id="app" dark>
       <Header />
       <main id="main" :class="mainClass">
         <slot />
@@ -25,7 +25,7 @@ export default {
   computed: {
     mainClass() {
       let classes = []
-      if(this.primaryBg) classes.push('main--primary-bg')
+      if(this.primaryBg) classes.push('main--bg-teritary')
       return classes
     },
   }
@@ -42,7 +42,7 @@ export default {
 #app main {
   flex: 1;
 }
-.main--primary-bg {
-  background-color: var(--primary-bg);
+.main--bg-teritary {
+  background-color: var(--bg-teritary);
 }
 </style>

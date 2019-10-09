@@ -59,8 +59,8 @@ export default {
   font-size: 0.9rem;
 
   & &__input {
-    max-width: 160px;
-
+    width: 100%;
+    max-width: 260px;
   }
 }
 

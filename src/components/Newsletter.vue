@@ -29,7 +29,7 @@
 
 <style lang="scss">
 .newsletter {
-
+	
   &__top {
   	height: 4px;
   	position: absolute;

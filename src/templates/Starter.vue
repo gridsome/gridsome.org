@@ -2,7 +2,9 @@
   <Starters class="starter">
       <div class="starter__header flex">
         <g-image class="starter__header-platform-logo" v-if="$page.starter.platforms" :src="$page.starter.platforms.logo" />
+        
         <strong class="starter__header-title">{{ $page.starter.title }}</strong>
+       
         <g-link
           v-if="$page.starter.author.path"
           :to="$page.starter.author.path"
@@ -15,18 +17,20 @@
             rel="noopener noreferrer"
             target="_blank"
             :href="githubUrl"
-            class="button button--small button--blank">
+            title="View on Github"
+            aria-label="View on Github"
+            class="button button--blank">
             <github-icon />
-            <span>View on Github</span>
           </a>
           <a
             rel="noopener noreferrer"
             target="_blank"
             v-if="$page.starter.preview"
             :href="$page.starter.preview"
-            class="button button--small button--blank">
+            title="Live preview"
+            aria-label="Live preview"
+            class="button button--blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-            <span>Live preview</span>
           </a>
 
           <Popover name="InstallThis" :closeOnContentClick="false">
@@ -170,7 +174,7 @@ query Starters($id: ID!) {
     screenshot(width: 1680, quality: 80)
     platforms {
       title
-      logo(width: 30, height: 30)
+      logo(width: 25, height: 25)
     }
     author {
       title
@@ -184,7 +188,8 @@ query Starters($id: ID!) {
 .starter {
   &__header {
     padding: 20px 10px 15px;
-    background-color: var(--light-bg-transparent);
+    font-size: .9rem;
+    background-color: var(--bg-transparent);
     margin-top: -30px;
     margin-left: -10px;
     margin-right: -10px;
@@ -199,7 +204,8 @@ query Starters($id: ID!) {
     margin-right: .3rem;
   }
   &__header-author {
-    color: rgba(0,0,0,.5);
+    color: currentColor;
+    opacity: .5;
   }
   &__header-platform-logo {
     margin: 0 .5rem 0 0;
@@ -216,7 +222,6 @@ query Starters($id: ID!) {
   &__image {
     img {
       border-radius: 5px;
-      box-shadow: var(--glow);
       border: 1px solid var(--border-color);
       width: 100%;
     }
@@ -243,7 +248,7 @@ query Starters($id: ID!) {
     z-index: 999;
     width: 500px;
     padding: var(--space);
-    background-color: #FFF;
+    background-color: var(--bg);
     box-shadow: var(--glow);
     border-radius: 5px;
     border: 2px solid var(--border-color);
@@ -262,7 +267,7 @@ query Starters($id: ID!) {
 
     &:after {
       border-color: rgba(255, 255, 255, 0);
-      border-bottom-color: #FFF;
+      border-bottom-color: var(--bg);
       border-width: 10px;
       margin-left: -10px;
     }
