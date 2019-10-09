@@ -119,6 +119,8 @@ header {
   border-bottom: 1px solid var(--border-color);
   flex-wrap: nowrap;
   position: sticky;
+  transition: background-color .3s;
+
 
   .header-bar {
     background: linear-gradient(90deg, var(--primary-color) 0%,  #8ED6FB 50%, #D32E9D 100%);
