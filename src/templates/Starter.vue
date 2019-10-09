@@ -194,6 +194,8 @@ query Starters($id: ID!) {
     margin-left: -10px;
     margin-right: -10px;
     z-index: 20;
+    backdrop-filter: blur(4px);
+
 
     @media screen and (min-width: 850px) {
       position: sticky;

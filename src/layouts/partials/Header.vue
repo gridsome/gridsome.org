@@ -114,6 +114,7 @@ header {
   flex-wrap: nowrap;
   position: sticky;
   transition: background-color .3s;
+  backdrop-filter: blur(4px);
 
 
   .header-bar {

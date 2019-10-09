@@ -15,6 +15,8 @@
     padding-bottom: calc(var(--space) / 2);
     background: var(--bg-transparent);
     z-index: 1;
+    backdrop-filter: blur(4px);
+
 
     &-box {
       min-height: 42.22px;
