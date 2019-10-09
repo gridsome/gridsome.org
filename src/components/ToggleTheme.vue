@@ -22,6 +22,7 @@
 
 <script>
 let themes = ['light', 'dark', 'sepia']
+
 export default {
   data() {
     return {
@@ -32,6 +33,7 @@ export default {
   methods: {
     toggleTheme() {
       this.current = (this.current + 1) % 3
+      
       window.__setPreferredTheme(themes[this.current])
       this.theme = themes[this.current]
     }
