@@ -3,13 +3,9 @@
     <div class="header-bar"></div>
     <div class="header-inner container flex gap-30">
 
-      <LazyHydrate on-idle>
-        <Logo/>
-      </LazyHydrate>
+      <Logo/>
 
-      <LazyHydrate on-idle>
-        <Nav class="flex-fit"/>
-      </LazyHydrate>
+      <Nav class="flex-fit"/>
 
       <SearchForm />
 
