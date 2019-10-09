@@ -10,6 +10,16 @@ nav a {
   position: relative;
   font-size: .95rem;
 
+  @media screen and (max-width: 850px) {
+
+    & {
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+
+  }
+
+
   &:after {
     content: "";
     position: absolute;
