@@ -77,11 +77,10 @@ export default {
 <style lang="scss">
 
 .intro {
-  padding: calc(3.333% + var(--space)) 0;
+  padding: calc(2% + var(--space)) 0;
 
   &__title {
     font-size: 3rem;
-    color: var(--dark-bg);
     font-weight: 600;
     margin-left: auto;
     margin-right: auto;
@@ -108,21 +107,6 @@ export default {
 
   &__info {
     font-size: .9rem;
-    color: rgba(0,0,0,.7);
-  }
-
-  &__message {
-    margin-bottom: 1.5rem;
-    a {
-      display: inline-block;
-      background-color: var(--primary-color-dark);
-      text-decoration: none;
-      padding: 4px 15px;
-      border-radius: 99px;
-      &:hover {
-        background-color: rgba(0,0,0,.3);
-      }
-    }
   }
 }
 </style>
