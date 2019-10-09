@@ -13,67 +13,65 @@
 
       <SearchForm />
 
-      <LazyHydrate ssr-only>
-        <nav class="header-actions flex">
-          <ToggleTheme />
+      <nav class="header-actions flex">
+        <ToggleTheme />
 
+        <a
+          aria-label="Twitter"
+          href="//twitter.com/gridsome"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="Follow us on Twitter"
+        >
+          <twitter-logo/>
+        </a>
+
+        <a
+          aria-label="Discord"
+          href="//discord.gg/daeay6n"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="Join our discord"
+        >
+          <discord-logo/>
+        </a>
+
+        <div class="has-dropdown">
           <a
-            aria-label="Twitter"
-            href="//twitter.com/gridsome"
+            aria-label="github"
+            href="//github.com/gridsome/gridsome"
             rel="noopener noreferrer"
             target="_blank"
-            title="Follow us on Twitter"
+            title="Gridsome @ GitHub"
           >
-            <twitter-logo/>
+            <github-logo
+              height="20px"
+              width="20px"
+            />
+            <span
+              class="hide-for-small"
+              style="margin-left:5px;"
+            >v{{ $static.metadata.gridsomeVersion }}</span>
           </a>
-
-          <a
-            aria-label="Discord"
-            href="//discord.gg/daeay6n"
-            rel="noopener noreferrer"
-            target="_blank"
-            title="Join our discord"
-          >
-            <discord-logo/>
-          </a>
-
-          <div class="has-dropdown">
-            <a
-              aria-label="github"
-              href="//github.com/gridsome/gridsome"
-              rel="noopener noreferrer"
-              target="_blank"
-              title="Gridsome @ GitHub"
-            >
-              <github-logo
-                height="20px"
-                width="20px"
-              />
-              <span
-                class="hide-for-small"
-                style="margin-left:5px;"
-              >v{{ $static.metadata.gridsomeVersion }}</span>
+          <div class="dropdown">
+            <a href="//github.com/gridsome/gridsome" rel="noopener noreferrer" target="_blank">
+              Core Repository
             </a>
-            <div class="dropdown">
-              <a href="//github.com/gridsome/gridsome" rel="noopener noreferrer" target="_blank">
-                Core Repository
-              </a>
-              <a href="//github.com/gridsome/gridsome/blob/master/gridsome/CHANGELOG.md" rel="noopener noreferrer" target="_blank">
-                Core Changelog
-              </a>
-              <a href="//github.com/gridsome/gridsome/issues" rel="noopener noreferrer" target="_blank">
-                Core Issues
-              </a>
-               <a href="//github.com/gridsome/gridsome/projects/2" rel="noopener noreferrer" target="_blank">
-                Gridsome Roadmap
-              </a>
-              <a href="//github.com/gridsome/gridsome.org" rel="noopener noreferrer" target="_blank">
-                Website Repository
-              </a>
-            </div>
+            <a href="//github.com/gridsome/gridsome/blob/master/gridsome/CHANGELOG.md" rel="noopener noreferrer" target="_blank">
+              Core Changelog
+            </a>
+            <a href="//github.com/gridsome/gridsome/issues" rel="noopener noreferrer" target="_blank">
+              Core Issues
+            </a>
+             <a href="//github.com/gridsome/gridsome/projects/2" rel="noopener noreferrer" target="_blank">
+              Gridsome Roadmap
+            </a>
+            <a href="//github.com/gridsome/gridsome.org" rel="noopener noreferrer" target="_blank">
+              Website Repository
+            </a>
           </div>
-        </nav>
-      </LazyHydrate>
+        </div>
+      </nav>
     </div>
   </header>
 </template>
