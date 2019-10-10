@@ -45,23 +45,36 @@
         <template v-if="isSingle">
           <div class="plugin-post__meta" v-if="hit">
             <div class="plugin-post__meta_left">
-              <a v-if="hit.repository" :href="hit.repository.url" target="_blank" rel="noopener">
-                <div :is="repositoryIcon(hit.repository)" />
-              </a>
               <div class="plugin-post__users">
                 <span v-for="owner in owners" :key="owner.name">
                   <a :href="owner.link" target="_blank" rel="noopener">
-                    <img v-if="owner.avatar" :src="owner.avatar" :title="owner.name" />
+                    <img class="plugin-post__users-image" v-if="owner.avatar" :src="owner.avatar" :title="owner.name" />
+                    <span class="plugin-post__users-name" v-if="owners.length == 1">
+                      {{ owner.name }}
+
+                      <i v-if="owner.name == 'gridsome'" class="plugin-post__users-tag">Offical Plugin</i>
+                    </span>
                   </a>
                 </span>
               </div>
+
+            
             </div>
             <div class="plugin-post__meta_right">
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                v-if="hit.repository" :href="hit.repository.url"
+                title="View on Github"
+                aria-label="View on Github"
+                class="button button--blank">
+                <div :is="repositoryIcon(hit.repository)" />
+              </a>
               <span>Downloads last month: {{ hit.humanDownloadsLast30Days }}</span>
             </div>
           </div>
 
-          <div class="post plugin-post__content mb" v-if="hit" v-html="content" />
+          <div class="plugin-post__content mb" v-if="hit" v-html="content" />
 
         </template>
         <template v-else>
