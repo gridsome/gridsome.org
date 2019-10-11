@@ -125,6 +125,18 @@ backend:
 # The rest of the configuration...
 ```
 
+For GitLab's Implicit Grant, your `config.yml` should look like that:
+
+```yml
+backend:
+  name: gitlab
+  repo: owner-name/repo-name # Path to your GitLab repository
+  auth_type: implicit
+  app_id: pastYoureGitLabApplicationIdHere # Your GitLab Application ID
+
+# The rest of the configuration...
+```
+
 ## Netlify CMS authentication with GitHub
 
 Before we can start adding posts we'll have to give Netlify access to our Github, this part is **crucial**, please follow the steps closely. More info can be read [here](https://www.netlify.com/docs/authentication-providers/);
@@ -160,6 +172,25 @@ Part 2, Netlify:
 3. Under Authentication Providers, click Install Provider
 4. Select Bitbucket, and enter the Client ID and Client Secret from step 4 in Part 1, Bitbucket. Then click install
 
+## Netlify CMS authentication with GitLab's Implicit Grant
+
+[Implicit Grant](https://docs.gitlab.com/ce/api/oauth2.html#implicit-grant-flow) operates _without_ the need for an authentication server! More info [here](https://www.netlifycms.org/docs/authentication-backends/#client-side-implicit-grant-gitlab). You just need to create an application on GitLab:
+
+1. Head there https://gitlab.com/profile/applications
+2. Put a name, and use `https://your.website.com/admin/` as the Redirect URI
+3. Check the `api` scope only and `Save application`
+
+Paste the resulting Application ID in the `backend.app_id` key of your `config.yml` file as shown above, then set `enableIdentityWidget` to `false` in your `gridsome.config.js` file:
+
+```
+{
+  use: `gridsome-plugin-netlify-cms`,
+  options: {
+    publicPath: `/admin`,
+    enableIdentityWidget: false # do NOT forget that!
+  }
+}
+```
 
 ## Start coding
 
