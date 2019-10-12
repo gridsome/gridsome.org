@@ -4,7 +4,7 @@
 
 ## File-based dynamic routes
 
-Dynamic pages is used for client-side routing. Route parameters can be placed in file and directory names by wrapping the name in square brackets. For example:
+Dynamic pages are used for client-side routing. Route parameters can be placed in file and directory names by wrapping the name in square brackets. For example:
 
 - `src/pages/user/[id].vue` becomes `/user/:id`.
 - `src/pages/user/[id]/settings.vue` becomes `/user/:id/settings`.
@@ -13,7 +13,7 @@ At build time, this will generate `user/_id.html` and `user/_id/settings.html` a
 
 Pages with dynamic routes have lower priority than fixed routes. For example, if you have a `/user/create` and a `/user/:id` route, the `/user/create` route will be prioritized.
 
-Here is a basic page component that uses the `id` prameter from the route to fetch user information client-side:
+Here is a basic page component that uses the `id` parameter from the route to fetch user information on client-side:
 
 ```html
 <template>

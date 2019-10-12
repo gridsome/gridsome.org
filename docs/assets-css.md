@@ -34,7 +34,7 @@ You can also use SASS in **Vue Components** with the `lang="scss"` attribute:
 [Learn more about using Using Pre-Processors in Vue.js](https://vue-loader.vuejs.org/guide/pre-processors.html)
 
 ### Global Preprocessor Files (ie. variables, mixins)
-Often when you're working a project, you'll have a set of variables, mixins, and framework variable overrides that you'll want to be automatically used in your components/layouts so you don't have to keep manually importing them.
+Often when you're working on a project, you'll have a set of variables, mixins, and framework variable overrides that you'll want to be automatically used in your components/layouts so you don't have to keep manually importing them.
 
 Start by installing `style-resources-loader`:
 
@@ -108,7 +108,7 @@ In Vue Components you add styles inside a `<style>` tag.
 
 ## Scoped styles in Components
 
-Its very easy to add scoped styles in vue. Simple add "scoped" to the style tag to automatically add suffix to any CSS class in Markup. This means that styles here will only be applied to current component regardless of the class names you use.
+It's very easy to add scoped styles in vue. Simple add "scoped" to the style tag to automatically add suffix to any CSS class in Markup. This means that styles here will only be applied to current component regardless of the class names you use.
 
 ```html
 <style scoped>
