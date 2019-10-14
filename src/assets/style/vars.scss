@@ -20,7 +20,7 @@
   --space: 25px;
   --space-x2: 50px;
   --code-color: #fdf9f3;
-  --glow: 2px 2px 15px 0 var(--success-bg);
+  --glow: 2px 2px 15px 0 var(--border-color-darker);
 }
 
 @media screen and (max-width: 550px) {
@@ -42,7 +42,7 @@
   --inline-code-bg: rgba(212,53,159,.1);
   --primary-color: #00835C;
   --primary-color-dark: #00A672;
-  --glow: 2px 2px 15px 0 #000;
+  --glow: 2px 2px 15px 0 #071521;
 }
 
 :root [data-theme="sepia"]   {
@@ -55,4 +55,5 @@
   --bg-teritary: #eadec2;
   --border-color: #ded0bf;
   --border-color-darker: #ccbca9;
+  --glow: 2px 2px 15px 0 #ccbca9;
 }

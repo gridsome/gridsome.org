@@ -79,6 +79,6 @@ Read more about how to [query nodes in GraphQL](/docs/querying-data/).
 
 ## Templates for collections
 
-[Templates](/docs/templates/) are used to create single pages for **nodes** in a collection. Nodes needs a corresponding page in order to be presented on its own URL.
+[Templates](/docs/templates/) are used to create single pages for **nodes** in a collection. Nodes need a corresponding page in order to be presented on its own URL.
 
 [Learn more here](/docs/templates/)

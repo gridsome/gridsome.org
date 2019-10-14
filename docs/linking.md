@@ -16,7 +16,7 @@ The following example links to the `src/pages/About.vue` page:
 <g-link to="/about/">About us</g-link>
 ```
 
-Always add a trailing slash when linking to other internal pages. Because the HTML file for the page is a `index.html` file in a directory. Paths generated for nodes already includes a trailing slash.
+Always add a trailing slash when linking to other internal pages. Because the HTML file for the page is a `index.html` file in a directory. Paths generated for nodes already include a trailing slash.
 
 You do not need to include the [`pathPrefix`](/docs/config#pathprefix) option in the `<g-link>` path.
 

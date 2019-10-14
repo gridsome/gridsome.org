@@ -1,5 +1,5 @@
 # Add External Scripts
-It is really easy to use any external javascript with gridsome. Being a Vue based framework any method of importing external scripts in vue works out of the box with Gridsome
+It is really easy to use any external javascript with Gridsome. Being a Vue based framework any method of importing external scripts in vue works out of the box with Gridsome
 
 ## Add to Components
 
@@ -119,7 +119,7 @@ this.$http.get('/'); // TypeError: this.$http.get is not a function
 ```
 Instead, our read-only instance method protects our library, and if you attempt to overwrite it you will get "TypeError: Cannot assign to read only property".
 
-So you can proxy your library to VuePrototype using Object.defineProperty in following way:
+So you can proxy your library to VuePrototype using Object.defineProperty in the following way:
 ```javascript
 //src/main.js
 
@@ -139,7 +139,7 @@ export default function (Vue) {
 ```
 
 ## Without SSR support
-While `gridsome build` gridsome uses server side rendering to create a fully rendered page. So if your Vue component does not support SSR or your external library like `jquery` changes the dom element it won't be rendered properly. For these type of component we suggest you to bind the component inside `<ClientOnly></ClientOnly>` tag and import library inside vue's `mounted()` function.
+While `gridsome build` gridsome uses server side rendering to create a fully rendered page. So if your Vue component does not support SSR or your external library like `jquery` changes the `DOM` element it won't be rendered properly. For these type of component we suggest you to bind the component inside `<ClientOnly></ClientOnly>` tag and import library inside vue's `mounted()` function.
 For Example to use `Vue-carousel` that does not yet support SSR you can do the following
 ```html
 <template>
