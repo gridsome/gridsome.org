@@ -16,7 +16,7 @@ The HTTPS configuration is a bit more complex.
  
       1. Configure a Cloud Storage bucket
       2. Configure a load balancing service
-      3. Create an external adress
+      3. Create an external address
 
 Please follow the steps in the well documented google  [tutorial](https://cloud.google.com/load-balancing/docs/https/adding-a-backend-bucket-to-content-based-load-balancing)
 
@@ -49,5 +49,5 @@ args: ["-m", "rsync", "-r", "-c", "-d", "./dist", "gs://bucket-name"]
 Last build step is to push static files to your bucket
 
 ## Link dns record to reserved external google ip
-You must link these to resolve your domain to our external google ip adress.
+You must link these to resolve your domain to our external google ip address.
 This can be done in your DNS service

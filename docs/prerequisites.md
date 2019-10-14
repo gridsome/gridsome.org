@@ -11,7 +11,7 @@ Visit the [Node.js site](https://nodejs.org/) and follow the instructions to dow
 Open up your terminal.
 - Run `node --version`. (If you’re new to the command line, “run command” means “type node --version in the command prompt, and hit the Enter key”. From here on, this is what we mean by “run command”).
 - Run `npm --version`.
-- **The output of each of those commands should be a version number**. If entering those commands doesn’t show you a version number, go back and make sure you have installed **Node.js**.
+- **The output of each of those commands should be a version number**. If entering those commands don’t show you a version number, go back and make sure you have installed **Node.js**.
 
 
 ### Yarn (Optional)
