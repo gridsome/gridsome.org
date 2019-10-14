@@ -102,4 +102,10 @@
   bio: "Web Developer"
   avatar: ./images/codybarr.jpg
   twitter: "@codybarr"
+
+- id: samuelhorn
+  name: Samuel Horn af Rantzien
+  bio: "Front-end developer & designer"
+  avatar: ./images/samuelhorn.jpg
+  twitter: "@pixelcrook"
  

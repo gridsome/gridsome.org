@@ -1,6 +1,6 @@
 # Gridsome CLI
 
-A command line tool for creating new Gridsome projects. Install Gridsome CLI
+A command-line tool for creating new Gridsome projects. Install Gridsome CLI
 globally with `npm install --global @gridsome/cli`.
 
 ## create
