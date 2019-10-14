@@ -1,6 +1,6 @@
 # Templates
 
-> Templates are used to create single pages for nodes in a [collection](/docs/collections/). Nodes needs a corresponding page in order to be presented on its own URL.
+> Templates are used to create single pages for nodes in a [collection](/docs/collections/). Nodes need a corresponding page in order to be presented on its own URL.
 
 
 ## Setup templates

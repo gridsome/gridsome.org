@@ -165,7 +165,7 @@ Dynamic routing is perfect to use if you need routes for, for example, user acco
 
 #### File-based dynamic routes
 
-Dynamic pages is used for client-side routing. Route parameters can be placed in file and directory names by wrapping the name in square brackets. For example:
+Dynamic pages are used for client-side routing. Route parameters can be placed in file and directory names by wrapping the name in square brackets. For example:
 
 - `src/pages/user/[id].vue` becomes `/user/:id`.
 - `src/pages/user/[id]/settings.vue` becomes `/user/:id/settings`.
