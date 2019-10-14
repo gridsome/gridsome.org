@@ -165,3 +165,11 @@
   tags: storyblok, cms
   platforms: storyblok
   
+- title: Jamdocs
+  description: The ultimate static generated documentation theme for the JAM-stack
+  screenshot: ./screenshots/jamdocs.png
+  repo: samuelhorn/jamdocs
+  preview: https://jamdocs.netlify.com/
+  author: samuelhorn
+  tags: gridsome, docs, documentation, netlify
+  platforms: markdown
