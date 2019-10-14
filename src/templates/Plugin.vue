@@ -78,13 +78,88 @@
 
         </template>
         <template v-else>
-          <div class="plugins-intro container-sm post">
-            <Connect />
+          <div class="plugins-intro">
             <div class="plugins-intro__text">
               <h1>Gridsome Plugins</h1>
-              <p class="lead">Gridsome plugins are NPM packages that you can install to any project. <span class="hide-for-small">Use the search bar to the left to find a plugin.</span></p>
+              <p>Gridsome plugins are NPM packages that you can install to any project.</p>
+             
+              <hr />
 
-              <p>Want to contribute to plugins library? <g-link to="/docs/how-to-create-a-plugin">Learn how to build a plugin</g-link></p>
+              <h5>Data sources <i>Get data from files & APIs</i></h5>
+              
+              <div class="grid-cols grid-cols--3 mb">
+                <Card size="small">source-remark</Card>
+                <Card size="small">source-wordpress</Card>
+                <Card size="small">source-contentful</Card>
+                <Card size="small">source-sanity</Card>
+                <Card size="small">source-datocms</Card>
+                <Card size="small">source-graphql</Card>
+                <Card size="small">source-graphql</Card>
+                <Card size="small">source-instagram</Card>
+                <Card size="small">source-ghost</Card>
+                <Card size="small">source-strapi</Card>
+                <Card size="small">asdf</Card>
+                <Card size="small">asdf</Card>
+                <Card size="small">asdf</Card>
+                <Card size="small">asdf</Card>
+                <Card size="small">asdf</Card>
+              </div>
+
+              <button class="button button--xsmall mb">All data source plugins</button>
+
+              <hr />
+
+              <h5>General <i>General Gridsome Plugins</i></h5>
+              
+              <div class="grid-cols grid-cols--3 mb">
+                <Card size="small">plugin-google-analytics</Card>
+                <Card size="small">plugin-sitemap</Card>
+                <Card size="small">plugin-critical-css</Card>
+                <Card size="small">plugin-tailwindcss</Card>
+                <Card size="small">plugin-netlifycms</Card>
+                <Card size="small">plugin-rss</Card>
+                <Card size="small">plugin-pwa</Card>
+                <Card size="small">plugin-algolia</Card>
+              </div>
+              <button class="button button--xsmall mb">All plugins</button>
+              
+              <hr />
+
+              <h5>Extensions <i>Extend GraphQL fields</i></h5>
+
+              <div class="grid-cols grid-cols--3 mb">
+                <Card size="small">
+                  <strong>extension-remark</strong>
+                  <p>Get Markdown from any field</p>
+                </Card>
+                <Card size="small">
+                  <strong>extension-vue</strong>
+                  <p>Get Vue Components from any fields</p>
+                </Card>
+                <Card size="small">
+                  <strong>extension-image</strong>
+                  <p>Download and optimize images from any field</p>
+                </Card>
+              </div>
+
+              <button class="button button--xsmall mb">All extension plugins</button>
+
+              <hr />
+
+              <h5>Remark <i>Plugins for Markdown content</i></h5>
+              
+              <div class="grid-cols grid-cols--4 mb">
+                <Card size="small">remark-embed</Card>
+                <Card size="small">remark-youtube</Card>
+                <Card size="small">remark-twitter</Card>
+                <Card size="small">remark-prismjs</Card>
+              </div>
+
+              <button class="button button--xsmall mb">All remark plugins</button>
+
+              <hr />
+
+               <p>Want to contribute to plugins library? <g-link to="/docs/how-to-create-a-plugin">Learn how to build a plugin</g-link></p>
             </div>
           </div>
         </template>
@@ -99,7 +174,6 @@ import algoliasearch from 'algoliasearch/lite'
 import GitLabLogo from '~/assets/images/gitlab.svg'
 import GitHubLogo from '~/assets/images/github-logo.svg'
 import BitbucketLogo from '~/assets/images/bitbucket.svg'
-import Connect from '~/components/Connect.vue'
 
 import {
   createInstantSearch,
@@ -124,7 +198,6 @@ const { instantsearch, rootMixin } = createInstantSearch({
 
 export default {
   components: {
-    Connect,
     AisPoweredBy,
     AisSearchBox,
     AisConfigure,

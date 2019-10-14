@@ -5,6 +5,7 @@
 	padding: .34rem 1.2rem;
   font-weight: 500;
   letter-spacing: .5px;
+  background-color: transparent;
   position: relative;
   border:0;
   text-decoration: none;
@@ -49,7 +50,7 @@
   }
 
   &.primary {
-    color:#FFF;
+    color: #FFF;
     background-color: var(--primary-color-dark);
     
     &:after {
