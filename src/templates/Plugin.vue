@@ -241,3 +241,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.plugins__search {
+  transition: background-color .3s;
+}
+</style>

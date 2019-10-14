@@ -113,7 +113,7 @@ header {
   border-bottom: 1px solid var(--border-color);
   flex-wrap: nowrap;
   position: sticky;
-  transition: background-color .3s;
+  transition: background-color .3s, border-color, .3s;
   backdrop-filter: blur(4px);
 
 
