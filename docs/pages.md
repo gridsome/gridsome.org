@@ -48,7 +48,7 @@ module.exports = function (api) {
 
 ## Dynamic routing
 
-Pages can have dynamic routes. Dynamic routes are useful for pages that only need client-side routing. For example user pages that fetches info from an external API in production based on a segment in the URL.
+Pages can have dynamic routes. Dynamic routes are useful for pages that only need client-side routing. For example user pages that fetch info from an external API in production based on a segment in the URL.
 
 Learn more about [dynamic routing](/docs/dynamic-routing/)
 

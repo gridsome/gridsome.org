@@ -33,7 +33,7 @@ svg {
 }
 
 hr {
-  opacity: .3;
+  background-color: var(--border-color)!important;
 }
 
 ::selection { background: var(--select-color); }
