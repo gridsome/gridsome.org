@@ -16,7 +16,7 @@
     background: var(--bg-transparent);
     z-index: 1;
     backdrop-filter: blur(4px);
-
+    transition: background-color .3s;
 
     &-box {
       min-height: 42.22px;
