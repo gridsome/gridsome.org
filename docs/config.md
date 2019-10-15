@@ -255,3 +255,10 @@ Supported loaders are:
 
 - Type `number`
 - Default `8080`
+
+## outDir
+
+- Type `string`
+- Default `'dist'`
+
+Set custom folder for generated files on `gridsome build`.
