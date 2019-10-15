@@ -62,6 +62,7 @@ export default {
     justify-content: space-between;
     font-size: .85rem;
     position: relative;
+    transition: background-color .3s;
   }
 
   &__actions {

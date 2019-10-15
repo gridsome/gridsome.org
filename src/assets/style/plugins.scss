@@ -16,7 +16,7 @@
     background: var(--bg-transparent);
     z-index: 1;
     backdrop-filter: blur(4px);
-
+    transition: background-color .3s;
 
     &-box {
       min-height: 42.22px;
@@ -74,6 +74,7 @@
   padding: calc(var(--space) / 2.5) 4px;
   position: relative;
   border-top: 1px solid var(--border-color);
+  transition: border-color .3s;
   margin-bottom: 0;
 
   &:hover & {
@@ -128,6 +129,7 @@
   &__meta {
     padding-bottom: 15px;
     border-bottom: 1px solid var(--border-color);
+    transition: border-color .3s;
     margin-bottom: var(--space);
     display: flex;
     align-items: center;

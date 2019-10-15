@@ -34,7 +34,7 @@ export default {
     border: 1px solid var(--border-color-darker);
     border-radius: 4px;
     background-color: var(--bg);
-    transition: color.3s, box-shadow .3s, transform .3s;
+    transition: color .3s, box-shadow .3s, transform .3s, background-color .3s, border-color .3s;
     position: relative;
     z-index: 1;
 
@@ -60,6 +60,8 @@ export default {
       border-radius: 4px 4px 0 0;
       overflow: hidden;
       border-bottom: 1px solid var(--border-color);
+      transition: border-color .3s;
+      
       img {
         margin: 0;
         width: 100%;
