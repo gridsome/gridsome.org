@@ -256,9 +256,9 @@ Supported loaders are:
 - Type `number`
 - Default `8080`
 
-## outDir
+## outputDir
 
 - Type `string`
 - Default `'dist'`
 
-Set custom folder for generated files on `gridsome build`.
+The directory where the production build files will be generated in when running `gridsome build`.
