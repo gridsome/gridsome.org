@@ -1,83 +1,79 @@
-# Layouts
+# Layout structure
+There are two kinds of layouts in Gridsome projects.
 
-Layout components are used to wrap pages. Layouts should contain components like headers, footers or sidebars that will be used across the site.
+1. **App layout** - The global layout that usually contains Header & footer.
+2. **Layout components** - Layout components are optional components used to wrap pages & templates. Usually contains sidebar, sub navigation etc.
 
-Layouts are _just_  **.vue components** located in `src/layouts` and need to be [declared as a global](#make-a-layout-global) component or imported per page to be used.
+## App layout
 
-**Every layout requires a `<slot />` component.** This is where the content coming from pages and templates will be inserted. Layouts can have [multiple slots](#multiple-content-slots).
+![App layout](./images/app-layout.png)
+
+
+**App layout is the component that wraps all content.** It usually contains components that are used across the site like **Header & Footer**. App layout requires a `<router-view>` component. This is where the content will be displayed.
+
+App layout is located at `src/App.vue`.
+
+### Basic App layout
+
+### Add page transition
+
+### Passing props
+
+You can pass props to App layout from any page or component. This is useful if you want to change behavior in App layout for a single page.
+
+```html
+<style>
+export default {
+  appProps: {
+    transparentHeader: true
+  }
+}
+</style>
+```
+
+
+## Layout components
+
+![Layout components](./images/layout-component.png)
+
+**Layout components** are layouts that you can import per Page & Template. It usually contains things like a Sub Navigation or a Sidebar. **A layout component requires a `<slot>` component**. This is where the content coming from pages and templates will be inserted. Layouts components can have [multiple slots](#multiple-content-slots).
+
 
 ```html
 <!-- Layout -->
 <template>
   <div>
-    <header />
-    <slot /> <!-- Page content will be inserted here  -->
-    <footer />
+    <aside>
+      Sub Navigation
+    </aside>
+    <slot />
   </div>
 </template>
 ```
 
 
-## Import layouts
-When you have created a layout you need to import it to your pages and templates. This is done inside the `<script>` tag.
-
+### Import a layout component
 ```html
 <!-- Page -->
 <template>
-  <Layout>
+  <SidebarNav>
     Add page content here
-  </Layout>
+  </SidebarNav>
 </template>
 
 <script>
-import Layout from '~/layouts/Default.vue'
+import SidebarNav from '~/components/SidebarNav.vue'
 
 export default {
   components: {
-    Layout
+    SidebarNav
   }
 }
 </script>
 
 ```
 
-
-## Make a layout global
-If you don't want to import the layout into every page or template you can make a layout global. To make a layout global go to `src/main.js` and import your layout file into this file.
-
-For example: 
-```javascript
-// src/main.js
-
-import Layout from '~/layouts/Default.vue'
-```
-
-Then make the layout global inside the export function.
-
-```javascript
-// src/main.js
-
-import Layout from '~/layouts/Default.vue'
-
-export default function (Vue, { head, router, isServer }) {
-  Vue.component('Layout', Layout)
-}
-```
-
-You can now use `<Layout>` anywhere in your Gridsome project without importing it to every page:
-
-```html
-<!-- Page -->
-<template>
-  <Layout>
-    Add page content here
-  </Layout>
-</template>
-
-```
-
-
-## Passing Props to layouts
+### Passing Props
 Since layouts work like components, it is possible to pass Props to layouts. For example a page can look like this:
 
 
@@ -112,7 +108,7 @@ export default {
 </script>
 ```
 
-## Multiple content slots
+### Multiple content slots
 To add multiple slots to a layout you need to name them. In this example we have added a sidebar slot that will only show if the page has sidebar content.
 
 ```html
@@ -140,42 +136,4 @@ Pages can now add content to this slot like this:
     </template>
   </Layout>
 </template>
-```
-
-## Master layout
-You can create a **master layout** by adding a **App.vue** file to `src` root. This will let you keep your header, footer on all pages and add **page transitions**.
-
-A simple **App.vue** file looks like this:
-```html
-<template>
-  <div id="app">
-    <router-view />
-  </div>
-</template>
-```
-
-### Pass props to master layout
-
-```html
-<script>
-  export default {
-    appProps: { transparent: false }
-  }
-</script>
-```
-
-This will let you pass props to master layout from any page.
-
-```html
-<template>
-  <div id="app" :class="{'is-transparent' : transparent}">
-    <router-view />
-  </div>
-</template>
-
-<script>
-  export default {
-    props: ['transparent']
-  }
-</script>
 ```

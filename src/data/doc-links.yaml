@@ -1,13 +1,13 @@
-- title: Prologue
+- title: Documentation
   items:
     - title: Introduction
       link: /docs/
-    - title: Core concepts
-      link: /docs/core-concepts/
-    - title: Fast by default
-      link: /docs/fast-by-default/
-    - title: Deployment
-      link: /docs/deployment/
+    - title: Quick start
+      link: /docs/quick-start
+    - title: Tutorial
+      link: /docs/tutorial
+    - title: Recipes
+      link: /docs/recipes
 
 - title : Basic Gridsome
   items:
@@ -15,14 +15,14 @@
       link: /docs/directory-structure/
     - title: Project configuration
       link: /docs/config/
+    - title: Layout structure
+      link: /docs/layouts/
     - title: Pages
       link: /docs/pages/
     - title: Collections
       link: /docs/collections/
     - title: Templates
       link: /docs/templates/
-    - title: Layouts
-      link: /docs/layouts/
     - title: Components
       link: /docs/components/
     - title: Linking
@@ -102,7 +102,7 @@
     - title: Transformer API
       link: /docs/transformer-api/
 
-- title: Deploy
+- title: Deploying
   items:
     - title: Netlify
       link: /docs/deploy-to-netlify/

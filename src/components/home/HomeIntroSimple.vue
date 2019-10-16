@@ -29,20 +29,19 @@
         </h1>
 
         <p class="intro__lead lead post mb">
-          Gridsome makes it easy for developers to build modern websites, apps & PWAs that are <g-link to="/docs/fast-by-default/">fast by default</g-link> 🚀
+          Gridsome is a free & open source framework that makes it easy to build modern websites & apps that are <g-link to="/docs/fast-by-default/">fast by default</g-link>
         </p>
 
         <p class="intro__links">
           <g-link  to="/docs/" class="button primary button--large">
-            <span>Get started</span>
+            <span>Documentation</span>
           </g-link>
         </p>
 
         <p class="intro__info">
-          <span>Open-source MIT Licensed. </span>
-          <a href="//github.com/gridsome/gridsome" target="_blank" rel="noopener noreferrer">
-            <span>GitHub (v{{ $static.metadata.gridsomeVersion }})</span>
-          </a>
+          <g-link to="/docs/quick-start">Quick start</g-link>
+          <g-link to="/docs/tutorial">Gridsome Tutorial</g-link>
+          <g-link to="/docs/recipes">Recipes</g-link>
         </p>
     </div>
   </Section>
@@ -93,7 +92,7 @@ export default {
   }
 
   &__lead {
-    max-width: 610px;
+    max-width: 650px;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.3rem;
@@ -107,6 +106,10 @@ export default {
 
   &__info {
     font-size: .9rem;
+
+    a {
+      margin: 0 .5rem;
+    }
   }
 }
 </style>

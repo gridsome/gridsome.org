@@ -89,10 +89,14 @@
 }
 
 p {
-  letter-spacing: -.15px;
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+small {
+  line-height: 1.4;
+  display: inline-block;
 }
 
 li {

@@ -117,6 +117,10 @@ export default {
       margin-bottom: .5rem;
     }
 
+    p {
+      z-index: 0;
+    }
+
     p:not(:last-child) {
       margin-bottom: 1.2rem;
     }
