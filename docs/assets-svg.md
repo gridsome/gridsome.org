@@ -95,10 +95,18 @@ And best of all, the SVG for Github/Twitter icons will be the only ones added to
 
 ## Purge CSS
 
-If you are using Purge CSS you have to include Font Awesome classes in the whitelist for the icons to work properly in the producton enviroment. A code example with Tailwind and Purge CSS:
+If you are using Purge CSS you have to include Font Awesome classes in the whitelist for the icons to work properly in the producton enviroment. A code example with Tailwind and Purge CSS for `gridsome.config.js`:
 
 ```js
-chainWebpack: config => {
+class TailwindExtractor {
+  static extract(content) {
+    return content.match(/[A-Za-z0-9-_:\/]+/g) || []
+  }
+}
+
+module.exports = {
+ ...,
+ chainWebpack: config => {
     config.module
       .rule('css')
       .oneOf('normal')
@@ -132,4 +140,5 @@ chainWebpack: config => {
         return options
       })
   }
+}
 ```
