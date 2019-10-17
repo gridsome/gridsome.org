@@ -4,7 +4,7 @@ There are 4 ways of creating routes in Gridsome:
 
 - [Static routes](#static-routes) - For creating static pages like `/about/` or `/blog/`
 
-- [Template routes](#template-routes) - For creating templates for [collections](/docs/collections/). Like `/blog/:title`
+- [Template routes](#template-routes) - For creating templates for [collections](/docs/collections/). Like `/blog/:title/`
 
 - [Dynamic routes](#dynamic-routes) - For creating dynamic pages like `/user/:id/`
 
