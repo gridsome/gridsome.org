@@ -1,11 +1,13 @@
+---
+type: tutorial
+---
+
 # Gridsome Tutorial
 Step-by-step instructions on how to install and build Gridsome projects.
 
 ## Introduction
 This tutorial will help you setup markdown powered blog with Gridsome by using the default starter project.
 The blog will have Posts, Authors, Categories and Tags.
-
-It will cover all the core concepts so you get a basic understanding of all the bits and pieces in a Gridsome project. It's recommended you follow each step carefully. 
 
 You will learn modern web development with tools like Node.js, Vue.js & GraphQL. You don't need to know these tools before getting started. **Following this tutorial is a great way to learn them.**
 
@@ -35,7 +37,7 @@ Skip this if you're already familiar with the command line and have Node.js & Gr
 
 ### Change project title
 
-### Get familiar with App layout
+### Get familiar with the App structure
 
 ### Creating pages
 

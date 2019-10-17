@@ -73,6 +73,13 @@ Collections are stored in a temporary [local GraphQL data layer](/docs/data-laye
 ### Sourcing a collection
 
 
+### Filter by name
+
+### Filter by IDs
+
+### Filter unpublished posts
+
+
 [Learn more about Collections](/docs/collections/)
 
 ## Templates
@@ -99,37 +106,9 @@ query Post($id: ID!) {
 
 [Learn more about Templates](/docs/templates/)
 
-## Layouts
-Layouts are **Vue Components** that are used inside Pages and Templates to wrap the content. A layout usually contains Header & Footer.
 
-Layouts are usually used like this in Pages:
+## Transitions
 
-```html
-<template>
-  <Layout>
-  	<h1>About us</h1>
-  </Layout>
-</template>
+### Page transitions
 
-<script>
-import Layout from '~/layouts/Default.vue'
-
-export default {
-  components: {
-    Layout
-  }
-}
-</script>
-```
-
-🙌 Layouts can also be made [available globally](/docs/layouts#make-a-layout-global), so you don't need to import them per page.
-
-[Learn more about Layouts](/docs/layouts/)
-
-
-## Images
-Gridsome has a built-in `<g-image>` component that outputs an optimized progressive image. It also resizes and crops in real-time when developing if **width** and **height** is changed. `<g-images>` creates a super small **blurred inline base64 image** and then uses IntersectionObserver to lazy load image when in view.
-
-[Learn more about g-image](/docs/images/)
-
-
+### Show/Hide transitions
