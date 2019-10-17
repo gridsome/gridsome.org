@@ -17,18 +17,14 @@
       link: /docs/config/
     - title: App structure
       link: /docs/layouts/
-    - title: Pages
-      link: /docs/pages/
+    - title: Routing
+      link: /docs/routing/
     - title: Collections
       link: /docs/collections/
-    - title: Templates
-      link: /docs/templates/
     - title: Components
       link: /docs/components/
     - title: Linking
       link: /docs/linking/
-    - title: Dynamic Routing
-      link: /docs/dynamic-routing/
     - title: Image processing
       link: /docs/images/
     - title: Populating <head>

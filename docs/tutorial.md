@@ -31,8 +31,6 @@ Skip this if you're already familiar with the command line and have Node.js & Gr
 
 ### ▶︎ Screencast
 
-### Using Gridsome starters
-
 ### Basic folder structure
 
 ### Change project title
@@ -45,9 +43,9 @@ Skip this if you're already familiar with the command line and have Node.js & Gr
 
 ### Add a image
 
-### Build with Components
+### Build with components
 
-### Deploying a Gridsome site
+### Create a layout component
 
 
 ## 3. Styling in Gridsome

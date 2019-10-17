@@ -77,8 +77,11 @@ You can browse available fields by opening the **schema** tab in the [GraphQL ex
 
 Read more about how to [query nodes in GraphQL](/docs/querying-data/).
 
-## Templates for collections
+## Looping a collection
+...
 
-[Templates](/docs/templates/) are used to create single pages for **nodes** in a collection. Nodes need a corresponding page in order to be presented on its own URL.
+## Paginate a collection
+...
 
-[Learn more here](/docs/templates/)
+## Displaying a collection
+...

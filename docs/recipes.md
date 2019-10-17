@@ -68,7 +68,7 @@ Gridsome has a built-in `<g-image>` component that outputs an optimized progress
 
 
 
-## Collections
+## Collections & Nodes
 [Collections](/docs/collections/) are useful if you are going to have blog posts, tags, products etc. on your site. Collections can be sourced from any **Headless CMS, content APIs or Markdown files** by using [Source plugins](/plugins) or the [Data Store API](/docs/data-store-api/).
 
 ![Collections](./images/node-pages.png)
@@ -77,12 +77,9 @@ Collections are stored in a temporary [local GraphQL data layer](/docs/data-laye
 
 ### Sourcing a collection
 
-
-### Filter by name
-
-### Filter by IDs
-
-### Filter unpublished posts
+### Loop a collection
+### Link to a node
+### Template for a node
 
 
 [Learn more about Collections](/docs/collections/)
