@@ -133,7 +133,7 @@ Part 1, GitHub:
 
 1. Open [this](https://github.com/settings/developers) link
 2. Click on "New OAuth App"
-3. Fill in all the fields according to your website and use `https://api.netlify.com/auth/done` as Authorization callback URL
+3. Fill in all the fields according to your website and use `https://api.netlify.com/auth/done` as `authorization` callback URL
 
 Part 2, Netlify:
 
@@ -151,10 +151,11 @@ Part 1, Bitbucket:
 1. Open [this](https://bitbucket.org/account/user) link
   1.1 Under **ACCESS MANAGEMENT** find OAuth link, and open it
 2. Scroll to "OAuth consumers" and click on the button "Add consumer"
-3. Fill in all the fields according to your website and use `https://api.netlify.com/auth/done` as Callback URL
+3. Fill in all the fields according to your website and use `https://api.netlify.com/auth/done` as   `authorization` callback URL
 4. Upon creation you will get the Key and Secret which will be used in Netlify
 
 Part 2, Netlify:
+
 1. Go to your Netlify dashboard and click on your project
 2. Navigate to Settings > Access control > OAuth
 3. Under Authentication Providers, click Install Provider
@@ -163,4 +164,4 @@ Part 2, Netlify:
 
 ## Start coding
 
-Your basic blog scaffold is done now, you can now query data from the GraphQL server just like you're working with the filesystem. For more info read [querying data](https://gridsome.org/docs/querying-data).
+Your basic blog scaffold is done, now you can query data from the GraphQL server just like you're working with the filesystem. For more info read [querying data](https://gridsome.org/docs/querying-data).
