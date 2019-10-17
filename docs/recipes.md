@@ -2,12 +2,11 @@
 
 Quick answers for how to accomplish common tasks with Gridsome.
 
-## App layout
-App layout is the wrapper for the whole site. It's located at `src/App.vue`.
+## App structure
 
-### Basic App layout
+**App.vue** is the wrapper for the whole site. It's located at `src/App.vue`. It usually contains global components like Header & Footer.
 
-### App layout with page transition
+![App layout](./images/app-layout.png)
 
 
 ## Pages
@@ -32,12 +31,18 @@ export default {
 </script>
 ```
 
-### Page with a Query
+### Static routing
 
-### Page with Pagination
+### Dynamic routing
+
+### createPage()
+
+### Custom 404
+
 
 ## Linking
 
+### Link between pages
 
 ### Linking in Components
 ...
