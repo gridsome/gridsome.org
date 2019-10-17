@@ -2,11 +2,11 @@
 
 There are 3 ways of creating routes in Gridsome:
 
-- [File-based pages](#file-based-pages) - For static pages like `/about/` or `/blog/`.
+- [File-based pages](#file-based-pages) - For creating static pages like `/about/` or `/blog/`.
 
-- [Programmatic pages](#programmatic-pages) - For generating pages for [Collections](/docs/collections/) or external APIs.
+- [Programmatic pages](#programmatic-pages) - For creating static pages from [Collections](/docs/collections/) or external APIs.
 
-- [Dynamic routing](#dynamic-routing) - For creating client-side pages like `/user/:id/`
+- [Dynamic routing](#dynamic-routing) - For creating dynamic pages like `/user/:id/`
 
 
 ## File-based pages
@@ -40,28 +40,53 @@ Pages can be created programmatically by using the `createPages` hook in `gridso
 [Collections](/docs/collections) are data added to the [GraphQL data layer](/docs/data-layer).
 
 ````js
-//gridsome.server.js
+// gridsome.server.js
 module.exports = function (api) {
   api.createPages(async ({ graphql, createPage }) => {
     const { data } = await graphql(`{
-      allPosts {
+      allPost {
         edges {
           node {
+            id
            	title
           }
         }
       }
     }`)
 
-    data.allProduct.edges.forEach(({ node }) => {
+    data.allPost.edges.forEach(({ node }) => {
       createPage({
         path: `/blog/${node.title}`,
-        component: './src/components/Posts.vue',
+        component: './src/components/Post.vue',
+        context: { node.id }
       })
     })
   })
 }
 ````
+
+Example Collection component that query the post with the given `id` in `context`:
+
+```html
+<!-- /src/components/Post.vue -->
+<template>
+  <div>
+    <h1 v-html="$page.post.title" />
+    <div v-html="$page.post.content" />
+  </div>
+</template>
+
+<page-query>
+query Post($id: ID!) {
+  post(id: $id) {
+    title
+    content
+  }
+}
+</page-query>
+```
+
+
 
 ### Create pages from external APIs
 
