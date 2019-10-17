@@ -63,7 +63,7 @@ Create a new page.
 
 ### removePage(page)
 
-Removed a page created by `createPage`.
+Removes a page created by `createPage`.
 
 ### removePageByPath(path)
 

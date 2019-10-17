@@ -74,7 +74,7 @@ Crop the image by settings both `width` and `height` attributes. The image will 
 |fit 			 |`"cover"` |How to crop images. See properties below.
 |background|          |Background color for 'contain'
 |immediate |`false`   |Set to `true` to disable lazy-loading
-|blur      |`40`      	|How much in px to blur the image placeholder
+|blur      |`40`      	|How much in pixels to blur the image placeholder
 |quality   |`75`      |The quality of the image. (`0` - `100`).
 
 ## Fit options

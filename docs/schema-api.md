@@ -46,9 +46,9 @@ api.loadSource(({ addSchemaTypes, schema }) => {
 
 - resolvers `object` *Required.*
 
-Resolvers are methods that are executed on each field in the query. The default resolvers for types like `String` or `Int` simply returns the value without any modifications. Resolvers for fields that are referencing another node are interacting with the internal store to return data from the requested node.
+Resolvers are methods that are executed on each field in the query. The default resolvers for types like `String` or `Int` simply return the value without any modifications. Resolvers for fields that are referencing another node are interacting with the internal store to return data from the requested node.
 
-Use the `addSchemaResolvers()` action to add new fields or override existing fields. The resolver method will recieve four arguments that can be used:
+Use the `addSchemaResolvers()` action to add new fields or override existing fields. The resolver method will receive four arguments that can be used:
 
 ```js
 addSchemaResolvers({
@@ -137,7 +137,7 @@ api.loadSource(({ addSchema }) => {
 
 ### @infer
 
-Custom schemas for meta data and collections will not infer any more field types from the source by default. Add the `@infer` extension to add discovered fields that isn't defined in the custom schema.
+Custom schemas for meta data and collections will not infer any more field types from the source by default. Add the `@infer` extension to add discovered fields that aren't defined in the custom schema.
 
 ```graphql
 type Post implements Node @infer {
