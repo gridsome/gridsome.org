@@ -53,7 +53,7 @@ module.exports = function (api) {
 [Read more about the Pages API](/docs/pages-api/)
 
 ## Template routes
-Templates are used to create single pages for nodes in a [collection](/docs/collections). **Template routes** are defined in `gridsome.config.js`.
+[Templates](/docs/templates/) are used to create single pages for nodes in a [collection](/docs/collections/). **Template routes** are defined in `gridsome.config.js`.
 
 ### Setup a route
 
@@ -66,12 +66,13 @@ module.exports = {
 }
 ```
 
-This example shows you how to setup route and template for a [collection](/docs/collections/) named `Post`. A component located at `src/templates/{Collection}.vue` will be used as template if no component is specified.
+This example shows you how to setup route and template for a [collection](/docs/collections/) named `Post`. This will look for and use a template located at `src/templates/Post.vue`.
 
 
-### Example template
+### Example template file
 
 ```html
+<!-- src/templates/Post.vue -->
 <template>
   <div>
     <h1 v-html="$page.post.title" />
