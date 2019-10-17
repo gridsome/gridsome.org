@@ -12,8 +12,6 @@ A basic Gridsome project would be structured like this:
     ├── main.js
     ├── index.html
     ├── App.vue
-    ├── layouts/
-    │   └── Default.vue
     ├── pages/
     │   ├── Index.vue
     │   └── Blog.vue
@@ -41,18 +39,17 @@ This file is optional and is used to hook into various parts of the Gridsome ser
 
 ## The `/src` directory
 
+### App.vue
+
+The `App.vue` file is the main component that wraps all your pages and templates. It usually contains Header & footer.
+
+[Read more about App structure](/docs/layout/)
+
 ### Main.js
 
 Import global styles and scripts here. The file also has an export function that has access to the **Client API**. This file is the place to install Vue plugins, register components and directives, etc.
 
 [Read more about using the Client API in main.js](/docs/client-api/)
-
-### Layouts directory
-
-Create components in this directory if you want to share one or more
-layouts for your pages or templates.
-
-[Read more about layouts](/docs/layouts/)
 
 ### Pages directory
 
@@ -78,11 +75,6 @@ Occasionally you will need to override the base HTML template that Gridsome uses
 
 [Read more about overriding index.html](/docs/overriding-index/)
 
-### Custom App.vue
-
-The `App.vue` file is the main component that wraps all your pages and templates. You can override the default file by having your own `App.vue` file in your `src` directory. Overriding it is useful if you want to have a layout that is shared across all your pages.
-
-[Read more about overriding App.vue](/docs/overriding-app/)
 
 ## The `/static` directory
 

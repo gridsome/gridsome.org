@@ -42,7 +42,7 @@ export default {
 
 [Learn more about Single File Components](https://vuejs.org/v2/guide/single-file-components.html)
 
-## Import to other Pages or Components
+## Import to other pages or components
 When you have created a component you can easily import it into your pages. In Gridsome projects it's recommended to put all your .vue components in the **src/components** folder and import them into **Pages** or **Layouts** like this:
 
 ```html
@@ -61,6 +61,43 @@ export default {
 </script>
 
 ```
+
+## Use components for page layouts
+
+Creating **layout components** are useful if you need to, for example, keep a sidebar across multiple pages.
+Here is an example on how to create and use it:
+
+```html
+<!-- src/components/SidebarLayout.vue -->
+<template>
+  <div>
+    <div class="sidebar"> This is a sidebar </div>
+    <div class="content"><slot /></div>
+  </div>
+</template>
+
+```
+
+Then use import it to any Page likes this:
+
+```html
+<!-- src/pages/Example.vue -->
+<template>
+  <SidebarLayout>
+      This is the page content with a sidebar!
+  </SidebarLayout>
+</template>
+
+<script>
+import SidebarLayout from '~/components/SidebarLayout.vue'
+export default {
+  components: {
+    SidebarLayout
+  }
+}
+</script>
+```
+
 
 ## Add GraphQL to Components
 
