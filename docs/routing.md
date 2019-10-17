@@ -1,15 +1,19 @@
 # Routing
 
-There are 3 ways of creating routes in Gridsome:
+There are 4 ways of creating routes in Gridsome:
 
-- [File-based pages](#file-based-pages) - For creating static pages like `/about/` or `/blog/`.
+- [Static routes](#static-routes) - For creating static pages like `/about/` or `/blog/`
 
-- [Programmatic pages](#programmatic-pages) - For creating static pages from [Collections](/docs/collections/) or external APIs.
+- [Template routes](#template-routes) - For setup templates for [Collections](/docs/collections). Like `/blog/:title`
 
-- [Dynamic routing](#dynamic-routing) - For creating dynamic pages like `/user/:id/`
+- [Dynamic routes](#dynamic-routes) - For creating dynamic pages like `/user/:id/`
+
+- [Error routes](#error-routes) - For `404` pages etc.
 
 
-## File-based pages
+## Static routes
+
+### File-based pages
 
 [Single File Components](https://vuejs.org/v2/guide/single-file-components.html) in the `src/pages` directory will automatically be available with their own URLs. The file location is used to generate the URL and here are a few basic examples:
 
@@ -31,44 +35,43 @@ A simple page component might look like this:
 Pages in `src/pages` are typically used for fixed URLs like `/about` or for listing blog posts at, for example `/blog`. [Read more about how to create pages for single blog posts etc.](/docs/collections/)
 
 
-## Programmatic pages
+### Programmatic pages
 
-Pages can be created programmatically by using the `createPages` hook in `gridsome.server.js`. 
+Pages can be created programmatically by using the `createPages` hook in `gridsome.server.js`.
 
-### Create pages for Collections
-
-[Collections](/docs/collections) are data added to the [GraphQL data layer](/docs/data-layer).
-
-````js
-// gridsome.server.js
+```js
 module.exports = function (api) {
-  api.createPages(async ({ graphql, createPage }) => {
-    const { data } = await graphql(`{
-      allPost {
-        edges {
-          node {
-            id
-           	title
-          }
-        }
-      }
-    }`)
-
-    data.allPost.edges.forEach(({ node }) => {
-      createPage({
-        path: `/blog/${node.title}`,
-        component: './src/components/Post.vue',
-        context: { node.id }
-      })
+  api.createPages(({ createPage }) => {
+    createPage({
+      path: '/my-page',
+      component: './src/templates/MyPage.vue'
     })
   })
 }
-````
+```
 
-Example Collection component that query the post with the given `id` in `context`:
+[Read more about the Pages API](/docs/pages-api/)
+
+## Template routes
+Templates are used to create single pages for nodes in a [collection](/docs/collections). **Template routes** are defined in `gridsome.config.js`.
+
+### Setup a route
+
+```js
+// gridsome.config.js
+module.exports = {
+  templates: {
+    Post: '/blog/:year/:month/:title',
+  }
+}
+```
+
+This example shows you how to setup route and template for a [collection](/docs/collections/) named `Post`. A component located at `src/templates/{Collection}.vue` will be used as template if no component is specified.
+
+
+### Example template
 
 ```html
-<!-- /src/components/Post.vue -->
 <template>
   <div>
     <h1 v-html="$page.post.title" />
@@ -86,42 +89,10 @@ query Post($id: ID!) {
 </page-query>
 ```
 
+Learn more about [templates and routes here](/docs/templates).
 
 
-### Create pages from external APIs
-
-We use `createManagedPages` in this example because we don't need the pages to be re-created on changes. The template also uses the context for rendering data instead of GraphQL results.
-
-```js
-//gridsome.server.js
-module.exports = function (api) {
-  api.createManagedPages(async ({ createPage }) => {
-    const { data } = await axios.get('https://api.example.com/posts')
-
-    data.forEach(item => {
-      createPage({
-        path: `/post/${item.slug}`,
-        component: './src/components/Post.vue',
-        context: {
-          title: item.title,
-          content: item.content
-        }
-      })
-    })
-  })
-}
-```
-
-```html
-<template>
-  <Layout>
-    <h1>{{ $context.title }}</h1>
-    <div v-html="$context.content"></div>
-  </Layout>
-</template>
-```
-
-## Dynamic Routing
+## Dynamic routes
 
 Dynamic routes are useful for pages that only need client-side routing. For example pages that fetches info from an external API in production based on a segment in the URL. Gridsome only generates one HTML file for dynamic routes.
 
@@ -202,9 +173,9 @@ module.exports = {
 ```
 
 
+## Error routes
 
-
-## Custom 404 page
+### 404 page
 
 Create a `src/pages/404.vue` component to have a custom 404 page.
 
