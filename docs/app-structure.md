@@ -9,7 +9,7 @@ A basic app structure looks like this:
 
 This is the file that is used to generate all files.
 
-Gridsome adds **index.html** automatically and is not required in your `/src` folder. You can override it by adding an **index.html** file in `/src` folder with this content:
+Gridsome adds a **index.html** automatically and is not required in your `/src` folder. You can override it by adding an **index.html** file in `/src` folder with this content:
 
 ```html
 <!DOCTYPE html>
@@ -69,22 +69,3 @@ export default {
 ```
 
 *Note: you must restart `gridsome develop` after adding a custom `App.vue` file.*
-
-
-### Passing props
-
-You can pass props to App layout from any page or component. This is useful if you want to change behavior in App layout for a single page.
-
-```html
-<style>
-export default {
-  appProps: {
-    transparentHeader: true
-  }
-}
-</style>
-```
-
-### Add a page transitions
-
-Learn more here [Page Transitions](/docs/page-transitions/)
