@@ -7,11 +7,12 @@ Templates are used to create single pages for nodes in a [collection](/docs/coll
 1. A **template route** defined in `gridsome.config.js`.
 2. A **template component** that is usually located in `src/templates`.
 
-🔥 Gridsome automatically tries to locate the **template component** for a [Collection](/docs/collections) for defined routes. For example `templates: { Post: '/blog/:title' }` will look for and use `src/templates/Post.vue`.
+
 
 ## Template routes
+**Template routes** generates paths to Templates. The **path** generated will be available in the GraphQL schema.
 
-### Example route
+### Setup a template route
 The example below shows you how to setup route and template for a [collection](/docs/collections/) named `Post`. A component located at `src/templates/Post.vue` will be used.
 
 ```js
@@ -23,7 +24,10 @@ module.exports = {
 }
 ```
 
-### Use a custom component
+🔥 Gridsome automatically tries to locate the **template component** for a [Collection](/docs/collections) for defined routes. For example `templates: { Post: '/blog/:title' }` will look for and use `src/templates/Post.vue`.
+
+
+### Set a custom template component
 
 Use the `component` option to link to a custom component.
 
@@ -94,10 +98,14 @@ query Product ($id: ID!) {
 
 ## Template components
 
+**Template components** are what displays the data for a single node.
+
 Pages generated from the `templates` configuration will have the node `id` available as a [query variable](https://graphql.org/learn/queries/#variables) in the `page-query` block. Use the `$id` variable to get the node for the current page:
 
 
-### Example component
+### Setup a template component
+
+The example below shows a Template component that gets a single node from a `Post` collection by using a `$id` node field.
 
 ```html
 <template>
@@ -142,9 +150,10 @@ export default {
 
 ## Linking to a template
 
-Linking to templates are usually done from a **page query loop**. This is easy since template routes are added to the GraphQL schema with a `path` field. Here is an example:
+Linking to templates are usually done from a **query loop** like blog post listing. This is easy since template routes are added to the GraphQL schema with a `path` field. Here is an example:
 
 ```html
+<!-- src/pages/Blog.vue -->
 <template>
   <div>
     <div v-for="{node} in $page.allPost.edges" :key="node.id">
