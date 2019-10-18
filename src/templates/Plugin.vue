@@ -98,11 +98,6 @@
                 <Card size="small">source-instagram</Card>
                 <Card size="small">source-ghost</Card>
                 <Card size="small">source-strapi</Card>
-                <Card size="small">asdf</Card>
-                <Card size="small">asdf</Card>
-                <Card size="small">asdf</Card>
-                <Card size="small">asdf</Card>
-                <Card size="small">asdf</Card>
               </div>
 
               <button class="button button--xsmall mb">All data source plugins</button>
@@ -125,19 +120,19 @@
               
               <hr />
 
-              <h5>Extensions <i>Extend GraphQL fields</i></h5>
+              <h5>GraphQL <i>Plugins that extends the GraphQL Schema</i></h5>
 
               <div class="grid-cols grid-cols--3 mb">
                 <Card size="small">
-                  <strong>extension-remark</strong>
+                  <strong>graphql-remark</strong>
                   <p>Get Markdown from any field</p>
                 </Card>
                 <Card size="small">
-                  <strong>extension-vue</strong>
+                  <strong>graphql-vue</strong>
                   <p>Get Vue Components from any fields</p>
                 </Card>
                 <Card size="small">
-                  <strong>extension-image</strong>
+                  <strong>graphql-image</strong>
                   <p>Download and optimize images from any field</p>
                 </Card>
               </div>
@@ -146,7 +141,7 @@
 
               <hr />
 
-              <h5>Remark <i>Plugins for Markdown content</i></h5>
+              <h5>Remark <i>Plugins that extends Remark plugins</i></h5>
               
               <div class="grid-cols grid-cols--4 mb">
                 <Card size="small">remark-embed</Card>
