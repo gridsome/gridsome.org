@@ -26,8 +26,9 @@ Gridsome adds **index.html** automatically and is not required in your `/src` fo
 
 ## main.js
 
-...
+Import global styles and scripts here. The file also has an export function that has access to the **Client API**. This file is the place to install Vue plugins, register components and directives, etc.
 
+[Read more about using the Client API in main.js](/docs/client-api/)
 
 ## App.vue
 

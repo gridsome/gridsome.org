@@ -72,17 +72,17 @@ component file must match the node type in your GraphQL schema.
 
 [Read more about templates](/docs/templates/)
 
-### Custom index.html
+### index.html (optional)
 
 Occasionally you will need to override the base HTML template that Gridsome uses to generate your pages from. Gridsome makes this really easy. All you have to do is create a new `index.html` file in your `src` directory.
 
-[Read more about overriding index.html](/docs/overriding-index/)
+[Read more about overriding index.html](/docs/app-structure/)
 
-### Custom App.vue
+### App.vue (optional)
 
 The `App.vue` file is the main component that wraps all your pages and templates. You can override the default file by having your own `App.vue` file in your `src` directory. Overriding it is useful if you want to have a layout that is shared across all your pages.
 
-[Read more about overriding App.vue](/docs/overriding-app/)
+[Read more about overriding App.vue](/docs/app-structure/)
 
 ## The `/static` directory
 
