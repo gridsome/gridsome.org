@@ -34,7 +34,7 @@ Import global styles and scripts here. The file also has an export function that
 
 The `App.vue` file is the main component that wraps all your pages and templates. You can override the default file by having your own `App.vue` file in your `src` directory. Overriding it is useful if you want to have a layout that is shared across all your pages. Or if you want to have a `<transition>` component around the `<router-view>`.
 
-Gridsome adds a `App.vue` automatically, but you can override it by adding a `App.vue` file in `src` folder: 
+Gridsome adds a `App.vue` automatically, but you can override it by adding a `App.vue` file in `src` folder with this content: 
 
 ```html
 <template>
