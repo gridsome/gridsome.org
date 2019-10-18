@@ -15,6 +15,8 @@
       link: /docs/directory-structure/
     - title: Project configuration
       link: /docs/config/
+    - title: App structure
+      link: /docs/app-structure/
     - title: Pages
       link: /docs/pages/
     - title: Collections
