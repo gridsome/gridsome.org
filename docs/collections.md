@@ -76,12 +76,3 @@ Each collection type in the schema will have fields that are auto generated base
 You can browse available fields by opening the **schema** tab in the [GraphQL explorer](/docs/data-layer#the-graphql-explorer).
 
 Read more about how to [query nodes in GraphQL](/docs/querying-data/).
-
-## Looping a collection
-...
-
-## Paginate a collection
-...
-
-## Displaying a collection
-...

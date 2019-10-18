@@ -1,17 +1,17 @@
 # Routing
 
-There are 4 ways of creating routes in Gridsome:
+There are 3 ways of creating routes in Gridsome:
 
-- [Static routes](#static-routes) - For creating static pages like `/about/` or `/blog/`
+- [Page routes](#page-routes) - For creating static pages like `/about/` or `/blog/`
 
 - [Template routes](#template-routes) - For creating templates for [collections](/docs/collections/). Like `/blog/:title/`
 
 - [Dynamic routes](#dynamic-routes) - For creating dynamic pages like `/user/:id/`
 
-- [Error routes](#error-routes) - For `404` pages etc.
 
+You can also setup a [custom page for the `404` page](#custom-404-page).
 
-## Static routes
+## Page routes
 
 ### File-based pages
 
@@ -174,9 +174,7 @@ module.exports = {
 ```
 
 
-## Error routes
-
-### 404 page
+## Custom 404 page
 
 Create a `src/pages/404.vue` component to have a custom 404 page.
 
