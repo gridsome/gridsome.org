@@ -116,7 +116,7 @@ Use the context in the page component or as variables in `page-query`.
 </template>
 
 <page-query>
-query MyPage($customValue: String) {
+query ($customValue: String) {
   ...
 }
 </page-query>

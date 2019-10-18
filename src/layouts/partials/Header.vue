@@ -73,7 +73,7 @@
 </template>
 
 <static-query>
-query Header {
+query {
   metadata {
     gridsomeVersion
   }

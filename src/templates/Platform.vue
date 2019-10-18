@@ -23,7 +23,7 @@
 </template>
 
 <page-query>
-query Platform($id: ID!) {
+query ($id: ID!) {
   platform(id: $id) {
     title
     belongsTo(sortBy: "index") {

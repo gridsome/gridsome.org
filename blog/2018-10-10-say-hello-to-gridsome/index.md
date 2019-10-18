@@ -27,7 +27,7 @@ Here is an example on how to query posts from the GraphQL layer in a page:
 </template>
 
 <page-query>
-query Blog {
+query {
   allWordPressPost (limit: 5) {
     edges {
       node {
