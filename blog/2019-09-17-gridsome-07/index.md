@@ -17,7 +17,7 @@ excerpt: "Version 0.7 is finally here! Enjoy Vue Components in Markdown, new Sch
 
 ## Vue Remark plugin
 
-With Gridsome 0.7 follows a new plugin called [@gridsome/vue-remark](/plugins/@gridsome/vue-remark). It let you add Vue Components to Markdown files. This is perfect for Documentation, Design Systems, or portfolio websites. It's an Vue / Gridsome alternative to [MDX](https://mdxjs.com/).
+With Gridsome 0.7 follows a new plugin called [@gridsome/vue-remark](/plugins/@gridsome/vue-remark). It lets you add Vue Components to Markdown files. This is perfect for Documentation, Design Systems, or portfolio websites. It's an Vue / Gridsome alternative to [MDX](https://mdxjs.com/).
 
 
 Here is a quick overview of how it works:
@@ -191,7 +191,7 @@ module.exports = function (api) {
 
 ## Custom App.vue
 
-**App.vue** is the file that wraps your whole website or app. Gridsome usually adds a `App.vue` automatic in the background. This can now be overridden by having your own `App.vue` file in your `src` directory. Overriding it is useful if you want to have a **layout that is shared across all your pages.** Or if you want to have a `<transition>` component around the `<router-view>`.
+**App.vue** is the file that wraps your whole website or app. Gridsome usually adds a `App.vue` automatic in the background. This can now be overridden by having your own `App.vue` file in your `src` directory. Overriding `App.vue` is useful if you want to have a **layout that is shared across all your pages.** Or if you want to have a `<transition>` component around the `<router-view>`.
 
 Here is an example:
 

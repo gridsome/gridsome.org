@@ -16,14 +16,14 @@ export default function (Vue, { head }) {
 ## Self-Hosting Open Source Typefaces
 
 Self-hosting open source fonts, as explained [in the docs](https://github.com/KyleAMathews/typefaces):
-- Self-hosting is significantly faster. Loading a typeface from Google Fonts or other hosted font service adds an extra (blocking) network request. In my testing, I’ve found replacing Google Fonts with a self-hosted font can improve a site’s speedindex by ~300 milliseconds on desktop and 1+ seconds on 3g. This is a big deal.
-- Your fonts load offline. It’s annoying to start working on a web project on the train or airplane and see your interface screwed up because you can’t access Google fonts. I remember once being in this situation and doing everything possible to avoid reloading a project as I knew I’d lose the fonts and be forced to stop working.
-- Go beyond Google Fonts. Some of my favorite typefaces aren’t on Google Fonts like Clear Sans, Cooper Hewitt, and Aleo.
-- All web(site|app) dependencies should be managed through NPM whenever possible. This the modern way.
+- Self-hosting is significantly faster. Loading a typeface from Google Fonts or other hosted font service adds an extra (blocking) network request. While testing, we’ve found replacing Google Fonts with a self-hosted font can improve a site’s speedindex by ~300 milliseconds on desktop and 1+ seconds on 3g. This is a big deal.
+- Your fonts load offline. It’s annoying to start working on a web project on the train or airplane and see your interface screwed up because you can’t access Google Fonts.
+- Go beyond Google Fonts. Some of typefaces aren’t on Google Fonts like Clear Sans, Cooper Hewitt, and Aleo.
+- All web(site|app) dependencies should be managed through NPM whenever possible. This is the modern way.
 
 The Typefaces project has already taken care of scripting all of the Google Fonts and Font Squirrel collections into NPM packages. You can see all of the fonts available [in the repo](https://github.com/KyleAMathews/typefaces).
 
-Once you know what font you want to use, it's just a simple NPM install. For example, if we were going to use Open Sans:
+Once you know what font you want to use, it's just a simple NPM install. For example, if want to use Open Sans:
 
 ```sh
 npm i -d typeface-open-sans

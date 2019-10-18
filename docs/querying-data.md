@@ -133,7 +133,7 @@ query Blog {
 
 ## Query data in any component
 
-Every **Vue component** can have a `<static-query>` block with a GraphQL query to fetch data from data sources. The results will be stored in a `$static` property inside the component. A `<static-query>` is named static as it can not accept any variables.
+Every **Vue component** can have a `<static-query>` block with a GraphQL query to fetch data from data sources. The results will be stored in a `$static` property inside the component. A `<static-query>` is named static as it cannot accept any variable.
 
 ```html
 <template>
