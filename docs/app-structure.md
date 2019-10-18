@@ -5,12 +5,34 @@ A basic app structure looks like this:
 ![App layout](./images/app-layout.png)
 
 
+## index.html
+
+This is the file that is used to generate all files.
+
+Gridsome adds **index.html** automatically and is not required in your `/src` folder. You can override it by adding an **index.html** file in `/src` folder with this content:
+
+```html
+<!DOCTYPE html>
+<html ${htmlAttrs}>
+  <head>
+    ${head}
+  </head>
+  <body ${bodyAttrs}>
+    ${app}
+    ${scripts}
+  </body>
+</html>
+```
+
+## main.js
+
+...
+
+
 ## App.vue
 
 **App.vue is the component that wraps all content.** It usually contains components that are used across the site like **Header & Footer**. It requires a `<router-view>` component for displaying content.
 
-
-### Basic App.vue
 
 ```html
 <template>
@@ -35,15 +57,7 @@ export default {
 ```
 👋 `~/` is an alias to `/src` folder.
 
-### Add page transition
 
-```html
-<template>
-  <transition name="slide-left">
-    <router-view />
-  </transition>
-</template>
-```
 
 ### Passing props to App.vue
 
@@ -59,21 +73,3 @@ export default {
 </style>
 ```
 
-## Index.html
-
-This is the file that is used to generate all files.
-
-Gridsome adds **index.html** automatically and is not required in your `/src` folder. You can override it by adding an **index.html** file in `/src` folder with this content:
-
-```html
-<!DOCTYPE html>
-<html ${htmlAttrs}>
-  <head>
-    ${head}
-  </head>
-  <body ${bodyAttrs}>
-    ${app}
-    ${scripts}
-  </body>
-</html>
-```
