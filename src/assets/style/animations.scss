@@ -33,12 +33,11 @@
 }
 
 @keyframes stroke {
-  to{
-    stroke-dashoffset:-30;
+  to {
+    stroke-dashoffset: -30;
     transform: translateZ(0);
   }
 }
-
 
 @keyframes spin {
   from {
@@ -70,12 +69,12 @@
 }
 
 .rotate-enter-active {
-  transition: color 1s, opacity 1s, transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);  
+  transition: color 1s, opacity 1s, transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   transform: translateY(10px);
   opacity: 0;
 }
 .rotate-leave-active {
-  transition: opacity .6s, transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);;
+  transition: opacity .6s, transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 .rotate-enter-to {
   transform: translateY(0);
@@ -85,18 +84,18 @@
   transform: translateY(-10px);
   opacity: 0;
 }
-.rotate-leave-active{
-  left:0;
-  right:0;
+.rotate-leave-active {
+  left: 0;
+  right: 0;
   position: absolute;
 }
-
 
 .menu-item {
   display: block;
   transition: all 0.3s;
 }
-.menu-item-enter, .menu-item-leave-to {
+.menu-item-enter,
+.menu-item-leave-to {
   opacity: 0 !important;
 }
 .menu-item-leave-active {
