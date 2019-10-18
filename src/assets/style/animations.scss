@@ -75,6 +75,9 @@
 }
 .rotate-leave-active {
   transition: opacity .6s, transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 .rotate-enter-to {
   transform: translateY(0);
@@ -83,11 +86,6 @@
 .rotate-leave-to {
   transform: translateY(-10px);
   opacity: 0;
-}
-.rotate-leave-active {
-  left: 0;
-  right: 0;
-  position: absolute;
 }
 
 .menu-item {
