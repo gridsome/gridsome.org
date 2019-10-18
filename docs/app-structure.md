@@ -32,35 +32,46 @@ Import global styles and scripts here. The file also has an export function that
 
 ## App.vue
 
-**App.vue is the component that wraps all content.** It usually contains components that are used across the site like **Header & Footer**. It requires a `<router-view>` component for displaying content.
+The `App.vue` file is the main component that wraps all your pages and templates. You can override the default file by having your own `App.vue` file in your `src` directory. Overriding it is useful if you want to have a layout that is shared across all your pages. Or if you want to have a `<transition>` component around the `<router-view>`.
 
+Gridsome adds a `App.vue` automatically, but you can override it by adding a `App.vue` file in `src` folder: 
 
 ```html
 <template>
-  <div id="app">
-    <Header /> 
-    <router-view />
-    <Footer />
-  </div>
+  <router-view />
 </template>
 
-<script>
-import Header from '~/components/Header.vue'
-import Footer from '~/components/Footer.vue'
+<static-query>
+query App {
+  metadata {
+    siteName
+    siteDescription
+  }
+}
+</static-query>
 
+<script>
 export default {
-  components: {
-    Header,
-    Footer
+  metaInfo() {
+    return {
+      title: this.$static.metadata.siteName,
+      meta: [
+        {
+          key: 'description',
+          name: 'description',
+          content: this.$static.metadata.siteDescription
+        }
+      ]
+    }
   }
 }
 </script>
 ```
-👋 `~/` is an alias to `/src` folder.
+
+*Note: you must restart `gridsome develop` after adding a custom `App.vue` file.*
 
 
-
-### Passing props to App.vue
+### Passing props
 
 You can pass props to App layout from any page or component. This is useful if you want to change behavior in App layout for a single page.
 
@@ -74,3 +85,6 @@ export default {
 </style>
 ```
 
+### Add a page transitions
+
+Learn more here [Page Transitions](/docs/page-transitions/)
