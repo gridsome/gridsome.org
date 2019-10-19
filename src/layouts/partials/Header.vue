@@ -26,6 +26,7 @@
           aria-label="Discord"
           href="//discord.gg/daeay6n"
           rel="noopener noreferrer"
+          class="hide-for-small"
           target="_blank"
           title="Join our discord"
         >

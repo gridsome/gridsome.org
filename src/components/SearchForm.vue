@@ -54,26 +54,18 @@ export default {
 @import '~docsearch.js/dist/cdn/docsearch.min.css';
 
 .header-search {
-  display: inline-block;
+  display: block;
   margin-bottom: 0;
   font-size: 0.9rem;
+  flex: 1;
+  width: 100%;
 
-  & &__input {
+  @media screen and (max-width: 550px) {
+    & { margin: 0 3px 0 -15px; }
+  }
+
+  .algolia-autocomplete {
     width: 100%;
-    max-width: 260px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .header-search__input {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .header-search {
-    margin-left: auto !important;
-    font-size: 0.9rem;
   }
 }
 
