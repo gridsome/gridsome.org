@@ -5,7 +5,7 @@
 </template>
 
 <page-query>
-query DocPage ($id: ID!) {
+query ($id: ID!) {
   doc: docPage (id: $id) {
     title
     headings (depth: h1) {

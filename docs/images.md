@@ -41,7 +41,7 @@ Local image paths from sources can also be compressed. Options like `width`, `he
 </template>
 
 <page-query>
-query BlogPost ($id: ID!) {
+query ($id: ID!) {
   post: blogPost (id: $id) {
     image (width: 720, height: 200, quality: 90)
   }

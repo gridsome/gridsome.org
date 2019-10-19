@@ -42,7 +42,7 @@ To demonstrate how to use `vue-infinite-loading` let's assume a pretty typical B
 Your paginated `<page-query>` would look something like this:
 
 ```graphql
-query Blog($page: Int) {
+query ($page: Int) {
 	posts: allBlogPost(perPage: 10, page: $page) @paginate {
 		pageInfo {
 			totalPages

@@ -58,7 +58,7 @@ By default it takes any **.md** files in `baseDir` folder and uses them for file
 
 <!-- Front-matter fields can be queried from GraphQL layer -->
 <page-query>
-query Documentation ($id: ID!) {
+query ($id: ID!) {
   documentation(id: $id) {
     title
     excerpt

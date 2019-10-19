@@ -74,7 +74,7 @@ to fetch data from data sources. The results will be stored in a
 </template>
 
 <static-query>
-query Post {
+query {
   post (id: "1") {
     content
   }

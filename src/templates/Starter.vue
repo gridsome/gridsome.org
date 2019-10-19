@@ -165,7 +165,7 @@ export default {
 </script>
 
 <page-query>
-query Starters($id: ID!) {
+query ($id: ID!) {
   starter(id: $id) {
     title
     repo

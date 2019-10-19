@@ -7,7 +7,7 @@ Use the `@paginate` directive in your GraphQL query to add automatic pagination 
 Place the `@paginate` directive after the collection you want to paginate.
 
 ```graphql
-query Blog($page: Int) {
+query ($page: Int) {
   allBlogPost(perPage: 10, page: $page) @paginate {
     pageInfo {
       totalPages
@@ -29,7 +29,7 @@ query Blog($page: Int) {
 Place the `@paginate` directive after the `belongsTo` field you want to paginate.
 
 ```graphql
-query Category($page: Int) {
+query ($page: Int) {
   category {
     title
     belongsTo(perPage: 10, page: $page) @paginate {
@@ -80,7 +80,7 @@ export default {
 </script>
 
 <page-query>
-query Blog($page: Int) {
+query ($page: Int) {
   allBlogPost(perPage: 10, page: $page) @paginate {
     pageInfo {
       totalPages

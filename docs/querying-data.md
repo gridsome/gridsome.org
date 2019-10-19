@@ -19,7 +19,7 @@ Working with GraphQL in Gridsome is easy and you don't need to know much about G
 </template>
 
 <page-query>
-query Posts {
+query {
   posts: allWordPressPost {
     edges {
       node {
@@ -54,7 +54,7 @@ You will notice that some of the root fields in your schema are prefixed with `a
 #### Find nodes sorted by title
 
 ```graphql
-query Posts {
+query {
   allPost(sortBy: "title", order: DESC) {
     edges {
       node {
@@ -68,7 +68,7 @@ query Posts {
 #### Sort a collection by multiple fields
 
 ```graphql
-query Posts {
+query {
   allPost(sort: [{ by: "featured" }, { by: "date" }]) {
     edges {
       node {
@@ -92,7 +92,7 @@ The other fields that do not start with `all` are your single entries. They are 
 #### Example query
 
 ```graphql
-query Post {
+query {
   post(id: "1") {
     title
   }
@@ -118,7 +118,7 @@ to fetch data from data sources. The results will be stored in a
 </template>
 
 <page-query>
-query Blog {
+query {
   posts: allWordPressPost {
     edges {
       node {
@@ -141,7 +141,7 @@ Every **Vue component** can have a `<static-query>` block with a GraphQL query t
 </template>
 
 <static-query>
-query Post {
+query {
   post(id: "1") {
     content
   }

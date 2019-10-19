@@ -14,7 +14,7 @@ The default `App.vue` component inserts the `siteName` and `siteDescription` as 
 </template>
 
 <static-query>
-query App {
+query {
   metadata {
     siteName
     siteDescription

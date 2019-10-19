@@ -17,7 +17,7 @@
 </template>
 
 <page-query>
-query BlogPosts {
+query {
   posts: allBlogPost {
     edges {
       node {

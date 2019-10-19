@@ -30,7 +30,7 @@ Here is an example:
 </template>
 
 <page-query>
-query Post($id: ID!) {
+query ($id: ID!) {
   post(id: $id) {
     title
   }
