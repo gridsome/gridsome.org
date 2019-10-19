@@ -1,5 +1,7 @@
 # App structure
 
+Here is a overview of the App structure of a Gridsome project. With Gridsome every website is an "App" (Single Page App / Progressive Web App).
+
 A basic app structure looks like this:
 
 ![App layout](./images/app-layout.png)
@@ -34,9 +36,12 @@ Import global styles and scripts here. The file also has an export function that
 
 ## App.vue
 
-The `App.vue` file is the main component that wraps all your pages and templates. You can override the default file by having your own `App.vue` file in your `src` directory. Overriding it is useful if you want to have a layout that is shared across all your pages (Like Header & Footer). Or if you want to have a `<transition>` component around the `<router-view>`.
+`App.vue` file is the main component that wraps all your pages and templates. Gridsome adds `App.vue` automatically, but you can override it by adding a `App.vue` file in `src` folder.
 
-Gridsome adds `App.vue` automatically, but you can override it by adding a `App.vue` file in `src` folder with this content: 
+Overriding it is useful if you want to have a layout that is shared across all your pages (Like Header & Footer), or if you want to have a `<transition>` component around the `<router-view>`.
+
+Here is the default `App.vue` component:
+
 
 ```html
 <template>
@@ -46,7 +51,7 @@ Gridsome adds `App.vue` automatically, but you can override it by adding a `App.
 
 <Info>
 
-`<router-view>` is a component that is used for SPA navigation. `<g-link>` replaces the view with the page component for the link without a page refresh. This also means you can have transitions between views.
+`<router-view>` is a component that is used for SPA navigation. `<g-link>` replaces the view without a page refresh. This also means you can have transitions between views.
 
 </Info>
 
