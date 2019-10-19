@@ -30,7 +30,7 @@ Gridsome adds `index.html` automatically, but you can override it by adding a `i
 
 ## main.js
 
-Import global styles and scripts here. The file also has an export function that has access to the **Client API**. This file is the place to install Vue plugins, register components and directives, etc.
+This file is the place to import global CSS, fonts, Vue plugins, components and directives, etc. The file also has an export function that has access to the **Client API**.
 
 [Read more about using the Client API in main.js](/docs/client-api/)
 
@@ -51,7 +51,7 @@ Here is the default `App.vue` component:
 
 <Info>
 
-`<router-view>` is a component that is used for SPA navigation. `<g-link>` replaces the view without a page refresh. This also means you can have transitions between views.
+`<router-view>` is a component that is used for the SPA navigation. `<g-link>` replaces the view without a page refresh. This also means you can have transitions between views.
 
 </Info>
 
