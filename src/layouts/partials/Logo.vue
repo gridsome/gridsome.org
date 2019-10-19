@@ -29,9 +29,9 @@ export default {
   &__svg{
   	max-width: 130px;
   	height: auto;
-    margin-top: -5px;
+    margin-top: -3px;
     &--small {
-      max-width: 30px;
+      max-width: 25px;
     }
   }
  }

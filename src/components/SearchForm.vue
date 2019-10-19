@@ -62,6 +62,16 @@ export default {
 
   @media screen and (max-width: 550px) {
     & { margin: 0 3px 0 -15px; }
+
+    .algolia-autocomplete .ds-dropdown-menu {
+      position: fixed!important;
+      left:0!important;
+      top: var(--header-height)!important;
+      right:50px!important;
+      &:before {
+        display: none!important;
+      }
+    }
   }
 
   .algolia-autocomplete {
