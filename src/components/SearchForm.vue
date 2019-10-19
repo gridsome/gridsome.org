@@ -13,6 +13,7 @@
         type="search"
         @focus="onFocus"
       />
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
     </label>
   </form>
 </template>
@@ -59,6 +60,18 @@ export default {
   font-size: 0.9rem;
   flex: 1;
   width: 100%;
+
+  label {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-icon {
+    margin-left: -1.66rem;
+    width: 1rem;
+    pointer-events: none;
+    opacity: .6;
+  }
 
   @media screen and (max-width: 550px) {
     & { margin: 0 3px 0 -15px; }
