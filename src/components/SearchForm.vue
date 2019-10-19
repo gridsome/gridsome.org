@@ -8,7 +8,7 @@
         ref="input"
         :id="`${id}-input`"
         class="header-search__input"
-        placeholder="Search docs..."
+        placeholder="Search documentation..."
         title="Search docs"
         type="search"
         @focus="onFocus"
