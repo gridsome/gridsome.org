@@ -92,3 +92,53 @@ You can now use the icons anywhere in your components/templates:
 ```
 
 And best of all, the SVG for Github/Twitter icons will be the only ones added to our final build. Make sure you read the docs on [vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome) to get full details on how to use the whole suite of FontAwesome fonts together.
+
+## Purge CSS
+
+If you are using Purge CSS you have to include Font Awesome classes in the whitelist for the icons to work properly in the producton enviroment. A code example with Tailwind and Purge CSS for `gridsome.config.js`:
+
+```js
+class TailwindExtractor {
+  static extract(content) {
+    return content.match(/[A-Za-z0-9-_:\/]+/g) || []
+  }
+}
+
+module.exports = {
+ ...,
+ chainWebpack: config => {
+    config.module
+      .rule('css')
+      .oneOf('normal')
+      .use('postcss-loader')
+      .tap(options => {
+        options.plugins.unshift(...[
+          require('postcss-import'),
+          require('postcss-nested'),
+          require('tailwindcss'),
+        ])
+
+        if (process.env.NODE_ENV === 'production') {
+          options.plugins.push(...[
+            require('@fullhuman/postcss-purgecss')({
+              content: [
+                'src/assets/**/*.css',
+                'src/**/*.vue',
+                'src/**/*.js'
+              ],
+              extractors: [
+                {
+                  extractor: TailwindExtractor,
+                  extensions: ['css', 'vue', 'js']
+                }
+              ],
+              whitelist: ['svg-inline--fa'],
+              whitelistPatterns: [/shiki/, /fa-$/]
+            })
+          ])
+        }
+        return options
+      })
+  }
+}
+```
