@@ -17,10 +17,13 @@
   --mark-color: #fff8ec;
   --border-radius: 5px;
   --success-bg: #5bb19640;
+  --space-half: 12.5px;
   --space: 25px;
   --space-x2: 50px;
   --code-color: #fdf9f3;
   --glow: 2px 2px 15px 0 var(--border-color-darker);
+  --info-border: #91d0f8;
+  --info-bg: rgba(142, 219, 255, 0.1);
 
   @media screen and (max-width: 550px) {
     --space: 20px;

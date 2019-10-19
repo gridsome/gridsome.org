@@ -44,4 +44,10 @@ Gridsome adds `App.vue` automatically, but you can override it by adding a `App.
 </template>
 ```
 
+<Info>
+
+`<router-view>` is a component that is used for SPA navigation. `<g-link>` replaces the view with the page component for the link without a page refresh. This also means you can have transitions between views.
+
+</Info>
+
 *Note: you must restart `gridsome develop` after adding a custom `App.vue` file.*
