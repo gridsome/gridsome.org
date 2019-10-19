@@ -34,7 +34,7 @@ Import global styles and scripts here. The file also has an export function that
 
 ## App.vue
 
-The `App.vue` file is the main component that wraps all your pages and templates. You can override the default file by having your own `App.vue` file in your `src` directory. Overriding it is useful if you want to have a layout that is shared across all your pages. Or if you want to have a `<transition>` component around the `<router-view>`.
+The `App.vue` file is the main component that wraps all your pages and templates. You can override the default file by having your own `App.vue` file in your `src` directory. Overriding it is useful if you want to have a layout that is shared across all your pages (Like Header & Footer). Or if you want to have a `<transition>` component around the `<router-view>`.
 
 Gridsome adds `App.vue` automatically, but you can override it by adding a `App.vue` file in `src` folder with this content: 
 
@@ -42,32 +42,6 @@ Gridsome adds `App.vue` automatically, but you can override it by adding a `App.
 <template>
   <router-view />
 </template>
-
-<static-query>
-query App {
-  metadata {
-    siteName
-    siteDescription
-  }
-}
-</static-query>
-
-<script>
-export default {
-  metaInfo() {
-    return {
-      title: this.$static.metadata.siteName,
-      meta: [
-        {
-          key: 'description',
-          name: 'description',
-          content: this.$static.metadata.siteDescription
-        }
-      ]
-    }
-  }
-}
-</script>
 ```
 
 *Note: you must restart `gridsome develop` after adding a custom `App.vue` file.*
