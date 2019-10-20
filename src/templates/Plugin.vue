@@ -141,7 +141,7 @@
 
               <hr />
 
-              <h5>Remark <i>Plugins that extends Remark plugins</i></h5>
+              <h5>Remark <i>Plugins that extends Remark</i></h5>
               
               <div class="grid-cols grid-cols--4 mb">
                 <Card size="small">remark-embed</Card>
