@@ -1,17 +1,17 @@
 :root {
-  --body-color: hsla(0,0%,0%,0.8);
-  --primary-color: #00A672;
-  --primary-color-dark: #00835C;
+  --body-color: hsla(0, 0%, 0%, 0.8);
+  --primary-color: #00a672;
+  --primary-color-dark: #00835c;
   --header-height: 58px;
-  --bg: #FFF;
+  --bg: #fff;
   --bg-secondary: #f3f5f4;
-  --bg-transparent: rgba(255,255,255,.9);
+  --bg-transparent: rgba(255, 255, 255, .9);
   --bg-teritary: #f3f5f4;
   --dark-bg: #0d2538;
   --code-bg: #0e2233;
-  --select-color: rgba(212,53,159,.2);
+  --select-color: rgba(212, 53, 159, .2);
   --inline-code-text: #b32585;
-  --inline-code-bg: rgba(212,53,159,.03);
+  --inline-code-bg: rgba(212, 53, 159, .03);
   --border-color: #e2ecec;
   --border-color-darker: #cfe6e6;
   --mark-color: #fff8ec;
@@ -21,39 +21,37 @@
   --space-x2: 50px;
   --code-color: #fdf9f3;
   --glow: 2px 2px 15px 0 var(--border-color-darker);
-}
 
-@media screen and (max-width: 550px) {
-  :root {
+  @media screen and (max-width: 550px) {
     --space: 20px;
     --space-x2: 20px;
   }
-}
 
-:root [data-theme="dark"] {
-  --body-color: #ebf4f1;
-  --bg: #091a28;
-  --bg-secondary: #071521;
-  --bg-teritary: #0e2233;
-  --bg-transparent: #091a28E1;
-  --border-color: #0d2538;
-  --border-color-darker: #0d2538;
-  --inline-code-text: #e24cb2;
-  --inline-code-bg: rgba(212,53,159,.1);
-  --primary-color: #00835C;
-  --primary-color-dark: #00A672;
-  --glow: 2px 2px 15px 0 #071521;
-}
+  [data-theme="dark"] {
+    --body-color: #ebf4f1;
+    --bg: #091a28;
+    --bg-secondary: #071521;
+    --bg-teritary: #0e2233;
+    --bg-transparent: #091a28E1;
+    --border-color: #0d2538;
+    --border-color-darker: #0d2538;
+    --inline-code-text: #e24cb2;
+    --inline-code-bg: rgba(212, 53, 159, .1);
+    --primary-color: #00835c;
+    --primary-color-dark: #00a672;
+    --glow: 2px 2px 15px 0 #071521;
+  }
 
-:root [data-theme="sepia"]   {
-  --body-color: #433422;
-  --bg: #f1e7d0;
-  --dark-bg: #111;
-  --code-bg: #222;
-  --bg-transparent: #f1e7d0E1;
-  --bg-secondary: #eae0c9;
-  --bg-teritary: #eadec2;
-  --border-color: #ded0bf;
-  --border-color-darker: #ccbca9;
-  --glow: 2px 2px 15px 0 #ccbca9;
+  [data-theme="sepia"] {
+    --body-color: #433422;
+    --bg: #f1e7d0;
+    --dark-bg: #111;
+    --code-bg: #222;
+    --bg-transparent: #f1e7d0E1;
+    --bg-secondary: #eae0c9;
+    --bg-teritary: #eadec2;
+    --border-color: #ded0bf;
+    --border-color-darker: #ccbca9;
+    --glow: 2px 2px 15px 0 #ccbca9;
+  }
 }

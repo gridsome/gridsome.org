@@ -4,16 +4,31 @@
   overflow: auto;
   position: relative;
   -webkit-overflow-scrolling: touch;
-  padding: 1% 20px 60px 5px;
+  padding: 1% 20px 0 5px;
+
 
 
   @media screen and (min-width: 850px) {
     position: sticky;
     border-right: 1px solid var(--border-color);
+    transition: border-color .3s;
     top: var(--header-height);
     height: calc(100vh + (var(--header-height) * -1) - 5px);
     width: 260px;
     order: 0;
+
+    &:after {
+      content: "";
+      position: sticky;
+      display: block;
+      height: 10vh;
+      pointer-events: none;
+      right: 0;
+      bottom:0;
+      left:0;
+      width: 100%;
+      background: linear-gradient(0deg, var(--bg) 10%, transparent);
+    }
   }
 
   &--right {
@@ -93,6 +108,7 @@
       padding: .4rem 0;
       font-size: .85rem;
       border-top: 1px dashed var(--border-color);
+      transition: border-color .3s;
     }
 
     &__item-depth-3 {
@@ -102,8 +118,6 @@
       font-size: .8rem;
       opacity: .8;
     }
-
-
   }
 
   @media screen and (max-width: 850px) {

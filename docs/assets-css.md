@@ -367,7 +367,7 @@ npm install webpack-node-externals --save-dev
 yarn add webpack-node-externals --dev
 ```
 
-Then modify your gridsome.server.js file to include the webpack-node-externals package, and whitelist Vuetify.
+Then modify your `gridsome.server.js` file to include the webpack-node-externals package, and whitelist Vuetify.
 ```js
 const nodeExternals = require('webpack-node-externals')
 
@@ -388,5 +388,5 @@ module.exports = function (api) {
 }
 ```
 
-Then you should be able to build now! You will find the files in your dist/ folder.
+Then you should be able to build now! You will find the files in your dist/folder.
 

@@ -85,7 +85,7 @@ api.loadSource(({ addCollection, store }) => {
 The field will contain the referenced node fields in the GraphQL schema:
 
 ```graphql
-query BlogPost($id: ID!) {
+query ($id: ID!) {
   blogPost(id: $id) {
     title
     author1 {
@@ -140,7 +140,7 @@ api.loadSource(actions => {
 You will then be able to query that data in the `page-query` and `static-query` tags in your Vue components with a query like this:
 
 ```graphql
-query MyData {
+query {
   allMyData {
     edges {
       node {

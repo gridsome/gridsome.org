@@ -26,6 +26,7 @@
           aria-label="Discord"
           href="//discord.gg/daeay6n"
           rel="noopener noreferrer"
+          class="hide-for-small"
           target="_blank"
           title="Join our discord"
         >
@@ -73,7 +74,7 @@
 </template>
 
 <static-query>
-query Header {
+query {
   metadata {
     gridsomeVersion
   }
@@ -113,7 +114,7 @@ header {
   border-bottom: 1px solid var(--border-color);
   flex-wrap: nowrap;
   position: sticky;
-  transition: background-color .3s;
+  transition: background-color .3s, border-color, .3s;
   backdrop-filter: blur(4px);
 
 

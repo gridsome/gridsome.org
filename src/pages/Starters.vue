@@ -29,7 +29,7 @@ export default {
 </script>
 
 <page-query>
-query Starters {
+query {
   defaultStarters: allStarter (
     sort: [{ by: "index", order: ASC }]
     filter: {

@@ -19,13 +19,13 @@ Learn more about the [Data Store API](/docs/data-store-api/)
 
 ## Create a general plugin
 
-Other plugins that adds functionality should be named `gridsome-plugin-*` or `@username/gridsome-plugin-*`.
+Other plugins that add functionality should be named `gridsome-plugin-*` or `@username/gridsome-plugin-*`.
 
 Learn more about the [Server API](/docs/server-api/) or [Client API](/docs/client-api/)
 
 ## Create a transformer
 
-Transformers doesn't work like the plugins above, but they are used by the source plugins to parse content. They can also add more fields to the GraphQL schema. Transformers must be named `gridsome-transformer-*` or `@username/gridsome-transformer-*` in order to be found by the source plugins.
+Transformers don't work like the plugins above, but they are used by the source plugins to parse content. They can also add more fields to the GraphQL schema. Transformers must be named `gridsome-transformer-*` or `@username/gridsome-transformer-*` in order to be found by the source plugins.
 
 Learn more about the [Transformer API](/docs/transformer-api/)
 

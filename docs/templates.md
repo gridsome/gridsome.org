@@ -5,7 +5,7 @@
 
 ## Setup templates
 
-The example below shows you have to setup route and template for a [collection](/docs/collections/) named `Post`. A component located at `src/templates/{Collection}.vue` will be used as template if no component is specified.
+The example below shows you how to setup route and template for a [collection](/docs/collections/) named `Post`. A component located at `src/templates/{Collection}.vue` will be used as template if no component is specified.
 
 ```js
 // gridsome.config.js
@@ -56,7 +56,7 @@ module.exports = {
 Template paths are available in the GraphQL schema with a `path` field. Use a `to` argument for getting paths to additional templates for a collection.
 
 ```graphql
-query Product ($id: ID!) {
+query ($id: ID!) {
   product(id: $id) {
     path               # path to the default template
     path(to:"reviews") # path to the reviews template
@@ -93,7 +93,7 @@ Pages generated from the `templates` configuration will have the node `id` avail
 </template>
 
 <page-query>
-query Post($id: ID!) {
+query ($id: ID!) {
   post(id: $id) {
     title
     content

@@ -73,8 +73,6 @@ export default {
   }
 
 
-
-
   &[class*='container']  &__inner {
     padding-left: 0;
     padding-right: 0;

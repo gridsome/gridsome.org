@@ -20,6 +20,9 @@
 
 
 <style lang="scss">
+.main-nav {
+  flex-wrap: nowrap;
+}
 @media screen and (max-width: 850px) {
  .main-nav {
     order: 10;

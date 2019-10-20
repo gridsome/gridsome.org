@@ -76,7 +76,7 @@ Read more about the [Vue router](https://router.vuejs.org/api/#router-instance-m
 
 - Type: `Object`
 
-Allows you to manage your websites's metadata.
+Allows you to manage your websites' metadata.
 
 ```js
 export default function (Vue, { head }) {
