@@ -9,6 +9,8 @@
 /docs/install-plugins /docs/plugins 301
 /docs/site-meta-data /docs/metadata 301
 /docs/routing /docs/templates 301
+/docs/overriding-index /docs/app-structure 301
+/docs/overriding-app /docs/app-structure 301
 
 /plugins /plugins/_id_star.html 200
 /plugins/* /plugins/_id_star.html 200

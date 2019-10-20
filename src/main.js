@@ -7,6 +7,7 @@ import DocsLayout from '~/layouts/Docs.vue'
 import Section from '~/components/Section.vue'
 import Feature from '~/components/Feature.vue'
 import Card from '~/components/Card'
+import Info from '~/components/Info'
 
 import VueScrollTo from 'vue-scrollto'
 
@@ -26,6 +27,7 @@ export default function (Vue, { head, router, isServer }) {
   Vue.component('Section', Section)
   Vue.component('Feature', Feature)
   Vue.component('Card', Card)
+  Vue.component('Info', Info)
 
   Vue.use(VueScrollTo)
 
