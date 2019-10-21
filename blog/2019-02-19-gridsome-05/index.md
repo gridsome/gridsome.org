@@ -60,7 +60,7 @@ The [Plugins](/plugins/) page now gets plugins from NPM directory. Any plugin wi
 There are no breaking API changes, but some changes might have consequences:
 
 - External image URLs has previously been converted to objects. Which required you to get the actual URL in a `imageField.src` property. But those fields are no longer converted to objects.
-- Filepaths in front matter or markdown must start with `./` or `../` to be resolved and processed. Which means `image.png` will not be processed, but `./image.png` will be.
+- Filepaths in front matter or markdown must start with `./` or `../` to be resolved and processed which means `image.png` will not be processed, but `./image.png` will be.
 
 
 ## What's next

@@ -17,7 +17,7 @@ You can check out a full working example here: https://gridsome-infinite-loading
 
 ## Install the required dependencies
 
-There are many packages that implement the infinite loading technique but one that works particularly well with Gridsome is [vue-infinite-loading](https://github.com//PeachScript/vue-infinite-loading). To add it to your gridsome project, `cd` into your project's root and run the following:
+There are many packages that implement the infinite loading technique but one that works particularly well with Gridsome is [vue-infinite-loading](https://github.com//PeachScript/vue-infinite-loading). To add it to your Gridsome project, `cd` into your project's root and run the following:
 
 `yarn add vue-infinite-loading`
 
@@ -42,7 +42,7 @@ To demonstrate how to use `vue-infinite-loading` let's assume a pretty typical B
 Your paginated `<page-query>` would look something like this:
 
 ```graphql
-query Blog($page: Int) {
+query ($page: Int) {
 	posts: allBlogPost(perPage: 10, page: $page) @paginate {
 		pageInfo {
 			totalPages

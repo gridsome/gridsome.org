@@ -30,7 +30,7 @@ export default {
 </script>
 
 <static-query>
-query BlogPosts {
+query {
   posts: allBlogPost {
     edges {
       node {

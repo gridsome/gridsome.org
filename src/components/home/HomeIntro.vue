@@ -38,7 +38,7 @@
 </template>
 
 <static-query>
-query HomeIntro {
+query {
   metaData {
     gridsomeVersion
   }

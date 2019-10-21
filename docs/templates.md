@@ -1,6 +1,6 @@
 # Templates
 
-Templates are used to create single pages for nodes in a [collection](/docs/collections/).
+Templates are used to create single pages for nodes in a [collection](/docs/collections/). This can, for example be template for blog posts, author pages, etc.
 
 **To setup a template you need to have:**
 
@@ -27,7 +27,7 @@ module.exports = {
 🔥 Gridsome automatically tries to locate the **template component** for a [Collection](/docs/collections) for defined routes. For example `templates: { Post: '/blog/:title' }` will look for and use `src/templates/Post.vue`.
 
 
-### Set a custom template component
+### Use custom template component
 
 Use the `component` option to link to a custom component.
 
@@ -45,7 +45,7 @@ module.exports = {
 }
 ```
 
-### Setup multiple template routes.
+### Use multiple template routes.
 
 ```js
 // gridsome.config.js
@@ -62,6 +62,17 @@ module.exports = {
         component: './src/templates/ProductReviews.vue'
       }
     ]
+  }
+}
+```
+
+Template paths are available in the GraphQL schema with a `path` field. Use a `to` argument for getting paths to additional templates for a collection.
+
+```graphql
+query ($id: ID!) {
+  product(id: $id) {
+    path               # path to the default template
+    path(to:"reviews") # path to the reviews template
   }
 }
 ```
@@ -116,7 +127,7 @@ The example below shows a Template component that gets a single node from a `Pos
 </template>
 
 <page-query>
-query Post($id: ID!) {
+query ($id: ID!) {
   post(id: $id) {
     title
     content

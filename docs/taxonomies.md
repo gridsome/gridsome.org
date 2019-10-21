@@ -46,7 +46,7 @@ Now, we create a `Tag.vue` file in `src/templates` to have a template for our ta
 </template>
 
 <page-query>
-query Tag($id: ID!) {
+query ($id: ID!) {
   tag(id: $id) {
     title
     belongsTo {
@@ -72,7 +72,7 @@ That's it! The tag page above will show a list of posts with links to them.
 Place the `@paginate` directive after the `belongsTo` field to activate pagination. The query will have a `$page` variable available to pass into the `belongsTo` `page` argument.
 
 ```graphql
-query Tag($id: ID!, $page: Int) {
+query ($id: ID!, $page: Int) {
   tag(id: $id) {
     title
     belongsTo(page: $page) @paginate {

@@ -23,7 +23,7 @@
 </template>
 
 <page-query>
-query BlogPost ($id: ID!) {
+query ($id: ID!) {
   post: blogPost (id: $id) {
     title
     date (format: "D. MMMM YYYY")

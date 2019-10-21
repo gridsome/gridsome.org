@@ -102,7 +102,7 @@
 
 
 <static-query>
-query Example {
+query {
   example (path: "/examples/templates") {
     content
   }

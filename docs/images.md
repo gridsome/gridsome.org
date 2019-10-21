@@ -41,7 +41,7 @@ Local image paths from sources can also be compressed. Options like `width`, `he
 </template>
 
 <page-query>
-query BlogPost ($id: ID!) {
+query ($id: ID!) {
   post: blogPost (id: $id) {
     image (width: 720, height: 200, quality: 90)
   }
@@ -74,7 +74,7 @@ Crop the image by settings both `width` and `height` attributes. The image will 
 |fit 			 |`"cover"` |How to crop images. See properties below.
 |background|          |Background color for 'contain'
 |immediate |`false`   |Set to `true` to disable lazy-loading
-|blur      |`40`      	|How much in px to blur the image placeholder
+|blur      |`40`      	|How much in pixels to blur the image placeholder
 |quality   |`75`      |The quality of the image. (`0` - `100`).
 
 ## Fit options

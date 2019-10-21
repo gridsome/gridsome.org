@@ -63,7 +63,7 @@ Create a new page.
 
 ### removePage(page)
 
-Removed a page created by `createPage`.
+Removes a page created by `createPage`.
 
 ### removePageByPath(path)
 
@@ -116,7 +116,7 @@ Use the context in the page component or as variables in `page-query`.
 </template>
 
 <page-query>
-query MyPage($customValue: String) {
+query ($customValue: String) {
   ...
 }
 </page-query>

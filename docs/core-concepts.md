@@ -1,7 +1,7 @@
 # Core concepts
 
 ## Pages
-[Pages](/docs/pages/) is created by adding **Vue Components** in `src/pages` folder. It uses a file-based routing system. For example, `src/pages/About.vue` will be `mywebsite.com/about`. Pages are used for simple pages and for pages that list collections (Like a `/blog`)
+[Pages](/docs/pages/) are created by adding **Vue Components** in `src/pages` folder. They use a file-based routing system. For example, `src/pages/About.vue` will be `mywebsite.com/about`. Pages are used for simple pages and for pages that list collections (Like a `/blog`)
 
 [Learn more about Pages](/docs/pages/)
 
@@ -30,7 +30,7 @@ Here is an example:
 </template>
 
 <page-query>
-query Post($id: ID!) {
+query ($id: ID!) {
   post(id: $id) {
     title
   }

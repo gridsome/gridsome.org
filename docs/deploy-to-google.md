@@ -18,7 +18,7 @@ The HTTPS configuration is a bit more complex.
       2. Configure a load balancing service
       3. Create an external adress
 
-Please follow the steps in the well documented google  [tutorial](https://cloud.google.com/load-balancing/docs/https/adding-a-backend-bucket-to-content-based-load-balancing)
+Please follow the steps in the well documented Google [tutorial](https://cloud.google.com/load-balancing/docs/https/adding-a-backend-bucket-to-content-based-load-balancing)
 
 ## Set main and error page for bucket
 gsutil web set -m index.html -e 404.html gs://your-bucket-name
@@ -27,7 +27,7 @@ gsutil web set -m index.html -e 404.html gs://your-bucket-name
 
 
 # Google cloud build
-## Setup google Source Repositories 
+## Setup Google Source Repositories 
 [Documentation](https://cloud.google.com/source-repositories/docs/)
 
 ## Add Build trigger
@@ -48,6 +48,6 @@ args: ["-m", "rsync", "-r", "-c", "-d", "./dist", "gs://bucket-name"]
 
 Last build step is to push static files to your bucket
 
-## Link dns record to reserved external google ip
-You must link these to resolve your domain to our external google ip adress.
+## Link DNS record to reserved external Google IP
+You must link these to resolve your domain to our external Google IP adress.
 This can be done in your DNS service

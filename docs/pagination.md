@@ -1,13 +1,13 @@
 # Paginate data
 
-Use the `@paginate` directive in your GraphQL query to add automatic pagination for a list of source nodes. The query will receive a `$page: Int` variable you can use to load sources for a specific page. Default nodes per page is `25`.
+Use the `@paginate` directive in your GraphQL query to add automatic pagination for a list of source nodes. The query will receive a `$page: Int` variable you can use to load sources for a specific page. Default nodes per page are `25`.
 
 ## Paginated collections
 
 Place the `@paginate` directive after the collection you want to paginate.
 
 ```graphql
-query Blog($page: Int) {
+query ($page: Int) {
   allBlogPost(perPage: 10, page: $page) @paginate {
     pageInfo {
       totalPages
@@ -29,7 +29,7 @@ query Blog($page: Int) {
 Place the `@paginate` directive after the `belongsTo` field you want to paginate.
 
 ```graphql
-query Category($page: Int) {
+query ($page: Int) {
   category {
     title
     belongsTo(perPage: 10, page: $page) @paginate {
@@ -80,7 +80,7 @@ export default {
 </script>
 
 <page-query>
-query Blog($page: Int) {
+query ($page: Int) {
   allBlogPost(perPage: 10, page: $page) @paginate {
     pageInfo {
       totalPages
