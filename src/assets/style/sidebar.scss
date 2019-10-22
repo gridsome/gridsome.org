@@ -6,7 +6,18 @@
   -webkit-overflow-scrolling: touch;
   padding: 1% 20px 0 5px;
 
+  @media screen and (max-width: 850px) {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    order: 2;
+    padding-bottom: 150px;
 
+    + .section {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
 
   @media screen and (min-width: 850px) {
     position: sticky;
@@ -24,15 +35,15 @@
       height: 10vh;
       pointer-events: none;
       right: 0;
-      bottom:0;
-      left:0;
+      bottom: 0;
+      left: 0;
       width: 100%;
       background: linear-gradient(0deg, var(--bg) 10%, transparent);
     }
   }
 
   &--right {
-    border-right:0;
+    border-right: 0;
     width: 220px;
     position: sticky;
     padding-top: 6.5%;
@@ -47,7 +58,7 @@
     padding-top: 20px;
     border-top: 1px solid var(--border-color);
     &:first-of-type {
-      border:0;
+      border: 0;
     }
   }
 
@@ -66,7 +77,7 @@
     &.active--exact {
       color: var(--primary-color-dark);
     }
-    
+
     &:hover {
       color: var(--primary-color);
     }
@@ -117,20 +128,6 @@
       padding: .2rem .4rem;
       font-size: .8rem;
       opacity: .8;
-    }
-  }
-
-  @media screen and (max-width: 850px) {
-    & {
-      width: 100%;
-      position: relative;
-      margin:0;
-      order: 2;
-      padding-bottom: 150px;
-     
-    } + .section {
-      margin-left: 0;
-      width: 100%;
     }
   }
 }
