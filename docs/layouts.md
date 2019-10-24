@@ -153,29 +153,3 @@ A simple **App.vue** file looks like this:
   </div>
 </template>
 ```
-
-### Pass props to master layout
-
-```html
-<script>
-  export default {
-    appProps: { transparent: false }
-  }
-</script>
-```
-
-This will let you pass props to master layout from any page.
-
-```html
-<template>
-  <div id="app" :class="{'is-transparent' : transparent}">
-    <router-view />
-  </div>
-</template>
-
-<script>
-  export default {
-    props: ['transparent']
-  }
-</script>
-```
