@@ -263,6 +263,52 @@ Be sure to restart the `gridsome develop` command to ensure the changes are comp
 ## Bulma
 ...plugin coming
 
+## Buefy
+
+[Buefy](https://buefy.org/) provides one of the most comprehensive implementations of Bulma components, styles, and grid system available for Vue.js.
+
+To install use:
+
+```shell
+# With npm
+npm i buefy
+
+# With yarn
+yarn add buefy
+```
+
+Then, register the Buefy plugin in your `main.js` file:
+
+```js
+import Buefy from 'buefy'
+
+import 'buefy/dist/buefy.css'
+
+// Then add it to export function
+
+export default function (Vue) {
+  Vue.use(Buefy)
+}
+```
+
+Buefy doesn't include icon packs in the core bundle, but many of its components use icons. If you'd like to use icons, check out the [Buefy documentation](https://buefy.org/documentation/start) to make sure you choose the right CSS to import. Below is an example of how you might import an icon font with Buefy:
+
+```js
+import Buefy from 'buefy'
+
+import 'buefy/dist/buefy.css'
+
+export default function (Vue) {
+  head.link.push({
+        rel: 'stylesheet',
+        href: 'https://use.fontawesome.com/releases/v5.2.0/css/all.css'
+  })
+
+  Vue.use(Buefy, {
+    defaultIconPack: 'fas' // Font Awesome Solid
+  })
+}
+```
 
 ## Bootstrap
 ...plugin coming
