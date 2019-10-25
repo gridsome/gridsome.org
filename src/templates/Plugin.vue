@@ -52,7 +52,7 @@
                     <span class="plugin-post__users-name" v-if="owners.length == 1">
                       {{ owner.name }}
 
-                      <i v-if="owner.name == 'gridsome'" class="plugin-post__users-tag">Offical Plugin</i>
+                      <i v-if="owner.name == 'gridsome'" class="plugin-post__users-tag">Official Plugin</i>
                     </span>
                   </a>
                 </span>
