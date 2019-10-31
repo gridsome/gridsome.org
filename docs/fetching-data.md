@@ -56,10 +56,10 @@ module.exports = function (api) {
 
 
 ## Import from local files
-*..contribute*
+Each differnt filetype will require its own _transformer_ in order to translate the data you're adding to the data layer into something the GraphQL data layer can read.
 
 ### Markdown
-*..contribute*
+For markdown, you will need to install the `@gridsome/transformer-remark` transformer in order to allow Gridsome to injest your files for use.
 
 ### Images
 *..contribute*
