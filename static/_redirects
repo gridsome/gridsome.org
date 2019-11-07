@@ -1,0 +1,14 @@
+/docs/data-paginate-queries /docs/pagination 301
+/docs/image /docs/images 301
+/docs/link /docs/linking 301
+/docs/contribute /docs/how-to-contribute 301
+/docs/basic-config /docs/config 301
+/docs/data-query-data /docs/querying-data 301
+/docs/data-source-plugin /docs/fetching-data
+/docs/data-custom /docs/fetching-data 301
+/docs/install-plugins /docs/plugins 301
+/docs/site-meta-data /docs/metadata 301
+/docs/routing /docs/templates 301
+
+/plugins /plugins/_id_star.html 200
+/plugins/* /plugins/_id_star.html 200

@@ -10,63 +10,90 @@
   }
 }
 
-
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 var(--primary-link-color);
-  }
-  70% {
-    box-shadow: 0 0 0 10px transparent;
-
+    transform: scale(1);
   }
   100% {
-    box-shadow: 0 0 0 0 transparent;
-
+    transform: scale(2.5);
+    opacity: 0;
   }
 }
 
-@keyframes pulseSvg {
+@keyframes bounce {
   0% {
-    filter: drop-shadow( 0px 0px 10px transparent );
+    transform: scale(1);
   }
-  70% {
-    filter: drop-shadow( 0px 0px 10px var(--primary-link-color) );
-  }
-  100% {
-    filter: drop-shadow( 0px 0px 10px transparent );
-
-  }
-}
-
-
-@keyframes pulseAlt {
-  0% {
-    box-shadow: 0 0 0 0 #E535AB;
-  }
-  70% {
-    box-shadow: 0 0 0 10px transparent;
-
+  50% {
+    transform: scale(1.05);
   }
   100% {
-    box-shadow: 0 0 0 0 transparent;
+    transform: scale(1);
   }
 }
-
 
 @keyframes stroke {
-  to{stroke-dashoffset:-20;}
+  to {
+    stroke-dashoffset: -30;
+    transform: translateZ(0);
+  }
 }
 
-@keyframes stroke-invert {
-  to{stroke-dashoffset:20;}
+@keyframes spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }
 
+@keyframes moveInOutX {
+  from {
+    transform: translateX(-10px);
+  }
+  to {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.rotate-enter-active {
+  transition: color 1s, opacity 1s, transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transform: translateY(10px);
+  opacity: 0;
+}
+.rotate-leave-active {
+  transition: opacity .6s, transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.rotate-enter-to {
+  transform: translateY(0);
+  opacity: 1;
+}
+.rotate-leave-to {
+  transform: translateY(-10px);
+  opacity: 0;
+}
 
 .menu-item {
   display: block;
   transition: all 0.3s;
 }
-.menu-item-enter, .menu-item-leave-to {
+.menu-item-enter,
+.menu-item-leave-to {
   opacity: 0 !important;
 }
 .menu-item-leave-active {

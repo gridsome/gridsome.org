@@ -1,25 +1,43 @@
-# Getting started
-> Gridsome is an open-source, Vue-powered static site generator that builds performance into every website automatically. Gridsome makes it easy and fun for developers to create fast, beautiful websites without needing to become a performance expert. 
+# Introduction
+
+> Gridsome is a free and open source [Vue.js-powered](https://vuejs.org/) framework for building websites & apps that are [fast by default](/docs/fast-by-default/) 🚀.
 
 ## Why Gridsome?
 
+- **Vue.js for frontend** - The simplest & most approachable frontend framework.
 - **Local development with hot-reloading** - See code changes in real-time.
-- **Data source plugins** - Use it for any popular Headless CMSs, APIs or Markdown-files. 
-- **File-based page routing** - Quickly create and manage pages with files.
-- **Vue.js for frontend** - A lightweight and approachable front-end framework.
-- **Auto-optimized code** - Get code-splitting and asset optimization out-of-the-box.
-- **Static files generation** - Deploy securely to any CDN or static web host.
+- **File-based page routing** - Any `Name.vue` file in `src/pages` is a static route.
+- **Dynamic routing** - Any `[param].vue` file in `src/pages` is a dynamic route.
+- **Static file generation** - Deploy securely to any CDN or static web host.
+- **Data sourcing** - Use any Headless CMSs, APIs or Markdown-files for data.
+- **GraphQL data layer** - Simpler data management with a centralized data layer.
+- **Automatic Code Splitting** - Builds ultra performance into every page.
+- **Plugin ecosystem** - Find a plugin for any job.
 
-[Learn more about how Gridsome works](/docs/how-it-works)
 
-## Install Gridsome
+## How it works
+Gridsome **generates static html** that hydrates into a <strong>Vue SPA</strong> once loaded in the browser. This means you can build both **static websites** & **dynamic apps** with Gridsome. It's perfect for your [JAMstack](/docs/jamstack) workflow. 
 
-### Prerequisites
-Gridsome requires **Node.js** and recommends **Yarn**. [How to setup](/docs/prerequisites)
+Gridsome builds one `.html` file and one `.json` file for every page. After first page load it only uses the `.json` files to prefetch and load data for the next pages. It also builds a `.js` bundle for each page that needs it (code splitting).
+
+It uses [vue-router](https://router.vuejs.org/) for SPA routing, and [vue-meta](https://vue-meta.nuxtjs.org/) for managing `<head>`.
+
+Gridsome adds a `57kB min gzip` JS bundle size by default.(vue.js, vue-router, vue-meta and some for image lazy loading).
+
+[Learn more about how it works.](/docs/how-it-works)
+
+
+## Prerequisites
+You should have basic knowledge about HTML, CSS, [Vue.js](https://vuejs.org) and how to use the [Terminal](https://www.linode.com/docs/tools-reference/tools/using-the-terminal/). Knowing how [GraphQL](https://www.graphql.com/) works is a plus, but not required. Gridsome is a great way to learn it.
+
+Gridsome requires [Node.js](https://nodejs.org/) (v8.3+) and recommends [Yarn](https://yarnpkg.com).
+
+## How to install
 
 ### 1. Install Gridsome CLI tool
 
-`npm install --global @gridsome/cli`
+- Using **YARN:**  `yarn global add @gridsome/cli`
+- Using **NPM:**  `npm install --global @gridsome/cli`
 
 ### 2. Create a Gridsome project
 
@@ -33,50 +51,16 @@ Gridsome requires **Node.js** and recommends **Yarn**. [How to setup](/docs/prer
 1. Create `.vue` components in the `/pages` directory to create page routes.
 2. Use `gridsome build` to generate static files in a `/dist` folder
 
-[Learn more about Pages here](/docs/pages)
 
+#### Learn more
+- [Core concepts](/docs/core-concepts/)
+- [How to host & deploy](/docs/deployment/)
 
-## Basic concepts
+import Newsletter from '@/components/Newsletter.vue'
 
-### The GraphQL data layer
-This is where all the data in a Gridsome project is located. Add data from any **data sources** with [Source plugins](/plugins) or with the [Data Store API](/docs/data-store-api). Data can be queried with GraphQL queries. 
-
-The GraphQL data layer makes it very easy to work with data, and you don't need to deal with rest APIs. **You don't need to know much about GraphQL to get started.**
-
-
-[Learn more about Querying data here](/docs/data-query-data).
-
-### Vue.js for templating
-Gridsome uses [Vue.js](https://vuejs.org/) as frontend framework. Vue is an approachable, simple & fun framework for building fast interfaces. Vue now has the most GitHub stars of any JavaScript UI library. Big companies like Alibaba, Adobe, GitLab is using Vue.js. Vue is famous for its intuitive design and shallow learning curve. This means it's easy to train staff in, even non-frontend devs and designers. Since developers will be up-and-running with Vue quickly, training costs will be kept to a minimum.
-
-
-### Built-in Progressive Image support
-Gridsome has a built-in `<g-image>` component with built-in **progressive image support**.
-[Learn more here](/docs/images)
-
-### Page pre-fetching for fast browsing
-Gridsome pre-fetches next pages so browsing around goes fast. It uses the built-in `<g-link>` component to lazy-load prefetching when the link is in view. [Learn more here](/docs/linking).
-
-
-### Deploying
-
-**A Gridsome site is static when deployed**. That means there is no database connection when the site has been deployed - every connection happens at build time only. This makes Gridsome sites very secure. Gridsome builds two versions of every page. One HTML page that search engines can crawl for SEO-purpose, and one JavaScript file that Gridsome uses for SPA after the first page load. Next pages are lazy-loaded in the background. That makes clicking around extremely fast, and your site is 100%-SEO friendly. It even works offline and can be entirely hosted on a CDN.
-
-> To update a live site with the latest content you need to redeploy your site. This is how static site generators work. This can be done automatically with services like [Netlify](https://netlify.com) & [AWS Amplify](https://aws.amazon.com/amplify/console).
-
-- Learn more about [Deploying](/docs/deployment).
-
-### Built-in performance optimization
-
-Gridsome follows the [PRPL-pattern by Google.](https://developers.google.com/web/fundamentals/performance/prpl-pattern/) and optimizes your site automatically. You don't need to be a performance expert to make fast websites with Gridsome. Your site gets almost perfect scores on Google lighthouse out-of-the-box. These are some of the performance steps that Gridsome takes care of:
-
-- Progressive Image support ⚡️ 
-- CSS & JS minification ⚡️ 
-- Code-splitting ⚡️ 
-- HTML compressing ⚡️ 
-- Critical CSS (Plugin) ⚡️ 
-- Full PWA & Offline-support (plugin) ⚡️
-
+<div>
+	<Newsletter/>
+</div>
 
 ## Alternatives
 
@@ -86,8 +70,3 @@ Gridsome follows the [PRPL-pattern by Google.](https://developers.google.com/web
 
 -	**[Gatsby.js](https://www.gatsbyjs.org/)**  Gridsome is highly inspired by Gatsby.js (React.js based), which collects data sources and generates a static site from it. Gridsome is an alternative for Gatsby.js.
 
-
-### Learn more...
-
-- [How it works](/docs/how-it-works)
-- [How to deploy](/docs/deployment)

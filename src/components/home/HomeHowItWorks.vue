@@ -1,222 +1,230 @@
 <template>
-  <Section dots="true" class="post">
+  <Section dots="true" class="post"  dark="true">
 
-      <h2 class="text-center">
-        How Gridsome works
+      <h5 class="text-center">
+        How Gridsome Works
+      </h5>
+
+      <h2 class="text-center primary-color container-sm">
+        01. Bring your data
+      </h2>
+
+      <p class="text-center container-md mb">
+        Pull data from anywhere into a local unified <strong>GraphQL </strong><graph-ql-logo width="24px" height="24px" color="#bf37ff" /> data layer.
+      </p>
+
+      <div class="cms-cols grid-cols grid-cols--collapse grid-cols--3 ">
+        <Card>
+          <h4>Markdown</h4>
+          <p>Any Git-based CMS, Forestry, Netlify CMS, Blogs, Documentation.</p>
+        </Card>
+
+        <Card style="border-radius: 0">
+          <h4>CMSs</h4>
+          <p>Any Headless CMS, Contentful, WordPress, Drupal, DatoCMS, Sanity.io, GraphCMS etc.</p>
+        </Card>
+
+        <Card>
+          <h4>Data</h4>
+          <p>Any APIs, Databases, Google Spreadsheet, AirTable, YAML, CSV, JSON etc.</p>
+        </Card>
+      </div>
+
+      <div class="dots-vertical">
+        <svg  width="100%" height="37" viewBox="0 0 1 37" class="dot">
+          <path d="M0.5 0L0.500002 37"/>
+        </svg>
+      </div>
+
+      <div class="powered-by text-center">
+        <gridsome-logo />
+        <span>Powered by <strong>GraphQL</strong></span>
+      </div>
+
+      <div class="dots-vertical">
+        <svg  width="100%" height="37" viewBox="0 0 1 37" class="dot">
+          <path d="M0.5 0L0.500002 37"/>
+        </svg>
+      </div>
+
+      <h2 class="text-center primary-color container-sm">
+        02. Build with Vue.js
       </h2>
 
       <p class="text-center container-md">
-        Connect to any CMS or data source and use Vue.js for frontend. Deploy to any static web host for super fast, scalable, cheap and secure hosting.
+        <a href="https://vuejs.org/">Vue.js</a> is a very popular, performant and approachable JavaScript framework. Build websites with <strong>Vue Components</strong> as building blocks with instant hot-reloading for any code change.
       </p>
 
-      <div class="source-animation flex flex--align-equal flex--space-between">
-          <div class="well">
-              <div class="well__title">Data sources</div>
-              <h4>CMSs</h4>
-              <p>WordPress, Contentful, Drupal, Prismic, GraphCMS, etc.</p>
+      <Card class="container-sm">
+        <div class="code-example" v-html="$static.example.content" />
+      </Card>
 
-              <h4>Local files</h4>
-              <p>Markdown, YAML, CSV, JSON, Image folders, etc.</p>
-
-              <h4>APIs</h4>
-              <p>AirTable, Google Spreadsheet, MongoDB, Prisma, etc.</p>
-          </div>
-          <div class="dots hide-for-small">
-              <svg  width="100%" height="20" viewBox="0 0 60 20" class="dot">
-                <path d="M1 9.5H99" />
-              </svg>
-          </div>
-
-          <div class="dots-vertical show-for-small">
-              <svg  width="100%" height="37" viewBox="0 0 1 37" class="dot">
-                <path d="M0.5 0L0.500002 37"/>
-              </svg>
-          </div>
-
-          <div class="well" style="min-height: 400px">
-              <div class="well__title">Develop</div>
-              <div class="layers">
-                <div class="layer layer__graphql text-center">
-                  <div class="text-wrapper">
-                    <div class="text">
-                      <graph-ql-logo width="50px" height="50px"  style="color:#fff;" /><br/>
-                      GraphQL <br>data layer
-                    </div>
-                  </div>
-                </div>
-                <div class="layer layer__vue">
-                  <div class="text-wrapper">
-                    <div class="text text-center">
-                        <strong>Vue.js</strong><br/>
-                        webpack<br/>
-                        Hot-reloading<br/>
-                    </div>
-                 </div>
-                </div>
-              </div>
-          </div>
-          <div class="dots hide-for-small">
-             <svg  width="100%" height="20" viewBox="0 0 60 20" class="dot dot--after">
-                <path d="M1 9.5H99" />
-              </svg>
-          </div>
-
-          <div class="dots-vertical show-for-small">
-              <svg  width="100%" height="37" viewBox="0 0 1 37" class="dot dot--after">
-                <path d="M0.5 0L0.500002 37"/>
-              </svg>
-          </div>
-
-          <div class="well">
-              <div class="well__title">Deploy</div>
-              <h4>Static web hosting</h4>
-              <p>Generate static files and deploy to any global CDN or FTP.</p>
-              <p>
-                <g-image alt="deploy-logos" src="~/assets/images/deploy-logos.png" width="480" />
-                <g-link to="/docs/deployment">Learn more about deployment</g-link>
-              </p>
-          </div>
+      <div class="dots-vertical">
+        <svg  width="100%" height="37" viewBox="0 0 1 37" class="dot">
+          <path d="M0.5 0L0.500002 37"/>
+        </svg>
       </div>
+
+
+       <div class="generate-html text-center">
+        <div class="generate-html__logo">
+          <gridsome-logo />
+        </div>
+        <h4>Pre-render HTML</h4>
+        <span>Generate SEO-friendly HTML using the <strong><g-link to="/docs/how-it-works/#the-prpl-pattern">PRPL pattern</g-link></strong></span>
+      </div>
+
+      <div class="dots-vertical">
+        <svg  width="100%" height="37" viewBox="0 0 1 37" class="dot">
+          <path d="M0.5 0L0.500002 37"/>
+        </svg>
+      </div>
+
+
+      <h2 class="text-center primary-color container-sm">
+        03. Deploy
+      </h2>
+
+      <Card class="text-center container-mini mb">
+        <h4>Static Web Hosts</h4>
+        <p> <g-link to="/docs/deploy-to-netlify/">Netlify</g-link>, <g-link to="/docs/deploy-to-amplify/">AWS Amplify</g-link>, <g-link to="/docs/deploy-to-zeit-now/">Zeit Now</g-link>, <g-link to="/docs/deploy-to-amazon-s3/">Amazon S3</g-link>, Surge.sh, Aerobatic, Now.sh & many more.</p>
+      </Card>
+
+      <p class="home-links text-center">
+        <g-link  to="/docs/how-it-works/">
+          Learn more about how it works
+        </g-link>
+      </p>
+
+
   </Section>
 </template>
 
+
+<static-query>
+query {
+  example (path: "/examples/templates") {
+    content
+  }
+}
+</static-query>
+
+
 <script>
 import GraphQlLogo from '~/assets/images/graphql-logo.svg'
+import VueLogo from '~/assets/images/vue-logo.svg'
+import WebpackLogo from '~/assets/images/webpack-logo.svg'
+import GridsomeLogo from '~/assets/images/gridsome-small-white.svg'
+import Bullet from '~/assets/images/bullet.svg'
 
 export default {
   components: {
+    Bullet,
+    VueLogo,
+    GridsomeLogo,
+    WebpackLogo,
     GraphQlLogo
   }
 }
 </script>
 
-<style lang="scss" scoped="scoped">
+<style lang="scss">
 
-.source-animation {
-  overflow: hidden;
-  padding-top: 15px
+.cms-cols {
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
-.well {
-  border-radius: 5px;
-  border: 1px solid var(--border-color);
-  background-color: rgba(255,255,255,.7);
-  width: 100%;
-  padding: var(--space-x2);
-  box-shadow: 1px 2px 5px rgba(0,0,0,.05);
-  position: relative;
-  flex:1;
-  min-width: 280px;
-  margin-bottom: var(--space-x2);
+#app .code-example pre {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  margin:0;
+}
 
+.generate-html {
+  max-width: 230px;
+  margin: 0 auto;
+  font-size: .9rem;
 
-  h4{
+  h4 {
     margin-bottom: .5rem;
   }
 
-  &__title {
-    position: absolute;
-    top:-16px;
-    left:50%;
-    transform: translateX(-50%);
-    background: var(--primary-bg);
-    border: 1px solid var(--border-color);
-    padding: 4px 10px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-size: .8rem;
-    letter-spacing: 1px;
-    font-weight: 600;
+  span {
+    opacity: .8;
   }
 
-  .or {
-    text-transform: uppercase;
-    font-size: .8rem;
-    margin-top: -1rem;
-    margin-bottom: 1rem;
-    opacity: .5;
+  &__logo {
+    background-color: var(--primary-color-dark);
+    width: 50px;
+    height: 50px;
+    padding: 0 10px;
+    border-radius: 99px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+
+    svg {
+      height: 100%;
+      width: 100%;
+      overflow: visible!important;
+
+      path {
+        transform-origin: 50% 50%;
+      }
+
+      path:nth-child(1) {
+        display: none;
+      }
+
+      path:nth-child(3) {
+        animation: spin 1s linear infinite;
+
+      }
+      path:nth-child(4) {
+        animation: spin 1s linear infinite;
+      }
+
+    }
   }
 }
 
-.layers {
-  position: absolute;
-  max-width: 290px;
 
-  width: 85%;
-  top: 50%;
-  left:50%;
-  transform: translateX(-50%) translateY(-50%) rotateX(55deg);
+.powered-by {
+  background-color: var(--primary-color-dark);
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 100%;
+  padding: 10px;
+  z-index: 0;
+  animation: pulse 2s infinite;
 
-
-}
-
-.dots {
-  width: 50px;
-  position: relative;
-}
-
-.dots-vertical {
-  height: 50px;
-  width: 100%;
-  text-align: center;
-  margin-top: -40px;
-
-  .dot {
-    height: 100%;
+  span {
+    display: block;
+    font-size: .85rem;
+    line-height: 1.1;
+    padding: 10px 0 0;
+    color: #fff;
   }
 }
 
 .dot {
-  stroke: #E535AB;
-  stroke-width: 8px;
+  height: 30px;
+  margin: 15px 0;
+  text-align: center;
+  stroke: var(--primary-color);
+  stroke-width: 4px;
   stroke-linecap: round;
-  stroke-dasharray: 0 20;
-  animation: stroke 400ms linear infinite;
+  stroke-dasharray: 0 10;
+  animation: stroke 600ms linear infinite;
+
   &--after {
     stroke: var(--primary-color);
   }
-}
-
-.dots .dot {
-  position: absolute;
-  top: 42%;
-}
-
-.layer {
-  color:#FFF;
-  border-radius: 10px;
-  padding-top: 100%;
-  width: 100%;
-  transform: rotate(-45deg);
-
-  &__graphql {
-    background: linear-gradient(-80deg, #E535AB 0%, rgba(229, 53, 171, 0.49) 100%);
-    animation: pulseAlt 2s infinite;
-    position: relative;
-    padding-top: 80%;
-    width: 80%;
-    margin-left: 10%;
-    z-index: 10;
-    margin-bottom: -5%;
-  }
-
-  &__vue {
-    background: linear-gradient(155.25deg, var(--primary-color) 0%, var(--primary-link-color) 100%);
-    position: relative;
-    animation: pulse 2s infinite;
-    animation-delay: .3s;
-  }
-
-  .text {
-    position: absolute;
-    font-weight: 600;
-    left: 50%;
-    top: 50%;
-    width: 100%;
-    transform: translateX(-50%) translateY(-50%);
-    font-size: 1.4rem;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.1);
-  }
-
 }
 </style>

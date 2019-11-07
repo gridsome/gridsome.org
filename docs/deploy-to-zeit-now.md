@@ -1,29 +1,29 @@
-# Deploy to Zeit Now
+# Deploy to ZEIT Now
 
-Now by Zeit is an excellent deploy & hosting service for static sites. You get global CDN, HTTP/2, custom domains etc.  They also have continuous deployment from a GitHub-repo. They have a free plan with unlimited deployments.
+[ZEIT Now](https://zeit.co) is a cloud platform for websites and serverless APIs, that you can use to deploy your Gridsome projects to your personal domain (or a free `.now.sh` suffixed URL).
 
+This guide will show you how to get started in a few quick steps:
 
-### Deploying from GitHub
-https://zeit.co/docs/v2/integrations/now-for-github
+### Step 1: Installing Now CLI
 
-Add these settings where its needed:
+To install their command-line interface with [npm](https://www.npmjs.com/package/now), run the following command:
 
-- **Build Command:** `npm run build`
-- **Publish directory:** `dist`
+```shell
+npm i -g now
+```
 
+### Step 2: Deploying
 
+You can deploy your application by running the following command in the root of the project directory:
 
-### Deploying with Terminal
+```shell
+now
+```
 
-1. Follow [this guide](https://zeit.co/docs/getting-started/introduction-to-now) to install Now 
-2. Go to your Gridsome project in terminal
-3. Run `gridsome build`to built the site.
-4. Go to the generated dist folder `cd dist`
-5. Type `now` to deploy your site 🎉
+**Alternatively**, you can also use their integration for [GitHub](https://zeit.co/github) or [GitLab](https://zeit.co/gitlab).
 
+That’s all!
 
+Your site will now deploy, and you will receive a link similar to the following: https://gridsome.now-examples.now.sh
 
-### Other Zeit Now guides:
-
-- [Add a domain](https://zeit.co/docs/v2/domains-and-aliases)
-- [Deployment Basics](https://zeit.co/docs/v2/deployments/basics/)
+Out of the box, you are preconfigured for client-side routing compatibility and appropriate default caching headers. This behaviour can be overwritten [like this](https://zeit.co/docs/v2/advanced/routes/).

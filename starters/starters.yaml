@@ -1,0 +1,175 @@
+- title: Default starter
+  repo: gridsome/gridsome-starter-default
+  author: gridsome
+  featured: true
+
+- title: Default WordPress starter
+  repo: gridsome/gridsome-starter-wordpress
+  author: gridsome
+  platforms: wordpress
+  featured: true
+
+- title: Default Contentful starter
+  repo: gridsome/gridsome-starter-contentful
+  author: gridsome
+  tags: markdown, tailwind
+  platforms: contentful
+  featured: true
+
+- title: Gridsome Blog Starter
+  description: Official Markdown Blog Starter
+  screenshot: ./screenshots/gridsome-starter-blog.png
+  repo: gridsome/gridsome-starter-blog
+  preview: https://gridsome-starter-blog.netlify.com/
+  author: gridsome
+  tags: blog, dark mode
+  platforms: markdown
+
+- title: Bleda
+  description: Markdown Blog with Tailwind CSS
+  screenshot: ./screenshots/gridsome-starter-bleda.png
+  repo: hellocosmin/gridsome-starter-bleda
+  preview: https://gridsome-starter-bleda.netlify.com/
+  tags: blog, tailwind
+  platforms: markdown
+  author: cossssmin
+
+- title: CosmicJS Blog
+  description: Gridsome + Cosmic JS
+  screenshot: ./screenshots/gridsome-blog-cosmic-js.png
+  repo: cosmicjs/gridsome-blog
+  preview: https://gridsome-blog-cosmicjs.netlify.com/
+  author: cosmicjs
+  platforms: cosmicjs
+
+- title: Forestry Starter
+  description: Portfolio and Blog
+  screenshot: ./screenshots/gridsome-forestry-starter.jpg
+  repo: itsnwa/gridsome-forestry-starter
+  preview: https://gridsome-forestry.netlify.com
+  author: itsnwa
+  tags: markdown, forestry, portfolio, blog, dark mode
+  platforms: markdown
+
+- title: Bootstrap starter
+  description: Portfolio with Blog
+  screenshot: ./screenshots/gridsome-starter-bootstrap.png
+  repo: LokeCarlsson/gridsome-starter-bootstrap
+  preview: https://gridsome-starter-bootstrap.loke.dev
+  author: lokecarlsson
+  tags: markdown, forestry, portfolio, blog, bootstrap, bootstrap-vue
+  platforms: markdown
+
+- title: Minimal Starter
+  description: Blog with minimalist design
+  screenshot: ./screenshots/gridsome-minimal-blog.png
+  repo: lauragift21/gridsome-minimal-blog
+  preview: https://gridsome-blog-telerik.netlify.com/
+  author: lauragift
+  tags: markdown, minimalistic, blog, gridsome
+  platforms: markdown
+
+- title: Bulma Starter
+  description: Blog starter with Bulma
+  screenshot: ./screenshots/gridsome-bulma.png
+  repo: calebanthony/gridsome-bulma
+  preview: https://calebanthony.github.io/gridsome-bulma
+  author: calebanthony
+  tags: markdown, blog, bulma, eslint
+  platforms: markdown
+
+- title: Bootstrap resume
+  description: Resume/portfolio
+  screenshot: ./screenshots/gridsome-starter-resume.png
+  repo: LokeCarlsson/gridsome-starter-resume
+  preview: https://gridsome-starter-resume.loke.dev
+  author: lokecarlsson
+  tags: resume, portfolio, bootstrap, bootstrap-vue
+  platforms: markdown
+
+- title: Gridsome Portfolio Starter
+  description: Simple portfolio and blog with Tailwind
+  screenshot: ./screenshots/gridsome-portfolio-starter.jpg
+  repo: drehimself/gridsome-portfolio-starter
+  preview: https://gridsome-portfolio-starter.netlify.com/
+  author: drehimself
+  tags: portfolio, markdown, tailwind
+  platforms: markdown
+
+- title: Directus starter
+  description: Gridsome + Directus
+  repo: pienter-tech/gridsome-starter-directus
+  author: pienter
+  tags: directus
+  platforms: directus
+
+- title: Gridsome WordPress and Bootstrap starter
+  description: A BootstrapVue powered Gridsome starter that uses WordPress for content
+  screenshot: ./screenshots/gridsome-starter-wordpress-bootstrap.jpg
+  repo: pehaa/gridsome-starter-wordpress-bootstrap
+  preview: https://wonderful-montalcini-a601bf.netlify.com/
+  author: pehaa
+  tags: wordpress, bootstrap, bootstrapvue
+  platforms: wordpress
+
+- title: Darkfolio
+  description: Portfolio
+  screenshot: ./screenshots/darkfolio.jpg
+  repo: itsnwa/darkfolio
+  preview: https://darkfolio.netlify.com
+  author: itsnwa
+  tags: markdown, forestry, portfolio, dark
+  platforms: markdown
+
+- title: Airtable Events Starter
+  description: A Gridsome starter using Airtable as a CMS to display content
+  screenshot: ./screenshots/airtable-events-starter.png
+  repo: 12vanblart/gridsome-airtable-starter
+  preview: https://gridsomeairtable.netlify.com/
+  author: tvanblargan
+  tags: airtable, events
+  platforms: airtable
+
+- title: Brevifolia
+  description: A markdown blog with a clean layout, configured with Forestry CMS
+  screenshot: ./screenshots/brevifolia-screenshot.jpg
+  repo: kendallstrautman/brevifolia-gridsome-forestry
+  preview: https://brevifolia-gridsome-forestry.netlify.com/
+  author: kendallstrautman
+  tags: blog, forestry, minimalist, markdown
+  platforms: markdown
+
+- title: Buefy
+  description: A example theme of how to use buefy with gridsome
+  screenshot: ./screenshots/gridsome-starter-buefy.png
+  repo: FriendlyUser/gridsome-starter-buefy
+  preview: https://friendlyuser.github.io/gridsome-starter-buefy
+  author: FriendlyUser
+  tags: blog, forestry, minimalist, markdown
+
+- title: Gridsome Agency Starter
+  description: A minimalistic starter theme for an agency built with Bootstrap 4
+  screenshot: ./screenshots/gridsome-agency-starter-bootstrap.jpg
+  repo: adeadedoja/gridsome-agency-starter-bootstrap
+  preview: https://gridsome-agency-starter.netlify.com/
+  author: adeadedoja
+  tags: agency, bootstrap, minimalist, markdown
+  platforms: markdown
+
+- title: Gridsome Storyblok Starter
+  description: A minimalistic starter boilerplate with Storyblok integration
+  screenshot: ./screenshots/gridsome-starter-storyblok.jpg
+  repo: storyblok/storyblok-gridsome-boilerplate
+  preview: 
+  author: emanuelgsouza
+  tags: storyblok, cms
+  platforms: storyblok
+  
+- title: Jamdocs
+  description: The ultimate static generated documentation theme for the JAM-stack
+  screenshot: ./screenshots/jamdocs.png
+  repo: samuelhorn/jamdocs
+  preview: https://jamdocs.netlify.com/
+  author: samuelhorn
+  tags: gridsome, docs, documentation, netlify
+  platforms: markdown

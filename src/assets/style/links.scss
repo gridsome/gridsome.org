@@ -1,20 +1,23 @@
 a {
-  color: rgba(0,0,0,1);
-  text-decoration: none;
-  transition: color .3s, opacity .3s, background .3s;
-  display: inline-block;
+  transition: color .3s, opacity .3s, background .3s, text-decoration .5s;
   position: relative;
-  font-weight: 500;
+  text-decoration: underline;
+  color: var(--primary-color-dark);
+  text-decoration-color: var(--border-color);
 
-
-  .post &:not(.button) {
-    background: linear-gradient(180deg, transparent 60%, var(--success-bg)  60%, var(--success-bg)  87%, transparent 0,);
+  &:hover {
+    color: var(--body-color);
+    text-decoration-color: var(--body-color);
+  }
+  
+  svg + & {
+    margin-left: .5rem;
   }
 
-  .post &:not(.button):hover {
-    background: linear-gradient(180deg, transparent 0%, var(--success-bg)  60%, var(--success-bg)  87%, transparent 0,);
+  code & {
+    color: currentColor;
+    font-weight: bold;
   }
-
 }
 
 a:hover:not(.active) {

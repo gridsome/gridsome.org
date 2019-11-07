@@ -4,16 +4,17 @@
       <slot/>
     </div>
     <div v-if="dots" class="section__dots-bg dots-bg" />
+    <slot name="outer" />
   </section>
 </template>
 
 <script>
 export default {
-  props: ['dark', 'dots', 'container', 'framed', 'primary', 'sway' ],
+  props: ['dark', 'dots', 'container', 'framed', 'secondary'],
   computed: {
     sectionClass() {
       let classes = []
-      if(this.primary) classes.push('section--primary')
+      if(this.secondary) classes.push('section--secondary')
       if(this.dark) classes.push('section--dark')
       return classes
     },
@@ -33,25 +34,34 @@ export default {
 
 <style lang="scss">
 .section {
-  padding: calc(2.5% + var(--space)) 0;
+  padding: calc(2% + var(--space)) 0;
   position: relative;
   width: 100%;
+  flex: 1;
 
-  &--primary {
-    background-color: var(--primary-bg);
+  &--secondary {
+    background-color: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+
+    + .section--secondary {
+      border-top-color: transparent;
+      margin-top: -1px;
+    }
   }
 
 
   &__dots-bg {
     height: 700px;
-    max-width: 1287px;
+    max-width: 1500px;
     max-height: 100%;
     margin: 0 auto;
     position: absolute;
-    bottom: 35px;
-    left: 10px;
-    right: 10px;
+    left:0;
+    right:0;
+    bottom: 0;
     z-index: 1;
+    opacity: 1;
   }
 
 
@@ -61,15 +71,14 @@ export default {
   }
 
   &--dark {
-    color: rgba(255,255,255,.8);
-    text-shadow: 1px 1px 2px rgba(0,0,0,.1);
-    background: var(--secondary-bg);
+    color: #FFF;
+    background: var(--dark-bg);
 
     p {
       color: currentColor;
     }
     
-    h1,h2,h3,h4, a {
+    h1, h2, h3, h4, a {
       color: #FFF;
     }
   }

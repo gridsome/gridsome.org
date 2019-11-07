@@ -1,0 +1,111 @@
+- id: tommyvedvik
+  name: Tommy Vedvik
+  bio: "Co-creator of @gridsome. UX & Design."
+  avatar: ./images/tommyvedvik.jpg
+  twitter: "@tommyvedvik"
+
+- id: hjvedvik
+  name: Hans-Jørgen Vedvik
+  bio: "Co-creator of @gridsome. Developer lead."
+  avatar: ./images/hjvedvik.png
+  twitter: "@hjvedvik"
+
+- id: gridsome
+  name: Gridsome
+  bio: "Official Gridsome Projects"
+  avatar: ../static/logos/logo-circle-light.svg
+  twitter: "@gridsome"
+
+- id: cosmicjs
+  name: Cosmic JS
+  bio: Modern Content Management Solution
+  avatar: ./images/cosmicjs.svg
+  twitter: "@cosmicjs"
+
+- id: cossssmin
+  name: Cosmin Popovici
+  bio: "Developer. Maker of (mostly) email things. #emailgeeks #JAMStack"
+  avatar: ./images/cosmin.png
+  twitter: "@cossssmin"
+
+- id: itsnwa
+  name: Nichlas W. Andersen
+  bio: "Designer / Developer"
+  avatar: ./images/itsnwa.jpg
+  twitter: "@nichlaswa"
+
+- id: lokecarlsson
+  name: Loke Carlsson
+  bio: "Frontend Developer"
+  avatar: ./images/lokecarlsson.png
+  twitter: "@carlssonloke"
+
+- id: lauragift
+  name: Gift Egwuenu
+  bio: "Software Engineer"
+  avatar: ./images/gift.jpeg
+  twitter: "@lauragift21"
+
+- id: calebanthony
+  name: Caleb Anthony
+  bio: "Web Developer"
+  avatar: ./images/calebanthony.png
+
+- id: drehimself
+  name: Andre Madarang
+  bio: "Web Developer"
+  avatar: ./images/drehimself.jpg
+  twitter: "@drehimself"
+
+- id: pienter
+  name: Korneel Eeckhout
+  bio: "Web Developer"
+  avatar: ./images/pienter.jpg
+  
+- id: pehaa
+  name: Paulina Hetman
+  bio: "Web Developer"
+  avatar: ./images/pehaa.png
+  twitter: "@pehaa"
+
+- id: tvanblargan
+  name: Tyler VanBlargan
+  bio: "Web Developer"
+  avatar: ./images/tvanblargan.jpg
+  twitter: "@PichuPlayer"
+
+- id: kendallstrautman
+  name: Kendall Strautman
+  bio: "Frontend Developer"
+  avatar: ./images/kendallstrautman.jpg
+  twitter: "@kendallstraut"
+
+- id: FriendlyUser
+  name: David Li
+  bio: "Software Developer"
+  avatar: ./images/dli.png
+
+- id: adeadedoja
+  name: Adedamola Adedoja
+  bio: "Software Engineer"
+  avatar: ./images/adeadedoja.jpg
+  twitter: "@trussdamola"
+ 
+- id: emanuelgsouza
+  name: Emanuel Gonçalves
+  bio: "Frontend Developer"
+  avatar: ./images/emanuelgsouza.jpg
+  twitter: "@emanuelgsouza"
+
+- id: codybarr
+  name: Cody Barr
+  bio: "Web Developer"
+  avatar: ./images/codybarr.jpg
+  twitter: "@codybarr"
+
+- id: samuelhorn
+  name: Samuel Horn af Rantzien
+  bio: "Front-end developer & designer"
+  avatar: ./images/samuelhorn.jpg
+  twitter: "@pixelcrook"
+ 

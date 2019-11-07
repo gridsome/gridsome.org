@@ -1,0 +1,59 @@
+- id: markdown
+  title: Markdown
+  logo: ./logos/markdown.svg
+
+- id: wordpress
+  title: WordPress
+  logo: ./logos/wordpress.svg
+
+- id: contentful
+  title: Contentful
+  logo: ./logos/contentful.svg
+
+- id: drupal
+  title: Drupal
+  logo: ./logos/drupal.svg
+
+- id: sanity
+  title: Sanity
+  logo: ./logos/sanity.svg
+
+- id: dato-cms
+  title: Dato CMS
+  logo: ./logos/dato.svg
+
+- id: primic
+  title: Prismic
+  logo: ./logos/prismic.svg
+
+- id: storyblok
+  title: Storyblok
+  logo: ./logos/storyblok.svg
+
+- id: cosmicjs
+  title: Cosmic JS
+  logo: ./logos/cosmicjs.svg
+
+- id: ghost
+  title: Ghost
+  logo: ./logos/ghost.svg
+
+- id: shopify
+  title: Shopify
+  logo: ./logos/shopify.svg
+
+- id: airtable
+  title: Airtable
+  logo: ./logos/airtable.svg
+
+- id: craft-cms
+  title: Craft CMS
+  logo: ./logos/craftcms.svg
+
+- id: strapi
+  title: Strapi
+  logo: ./logos/strapi.svg
+
+- id: directus
+  title: Directus
+  logo: ./logos/directus.svg

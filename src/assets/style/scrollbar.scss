@@ -9,11 +9,7 @@
   transition: background-color 2s;
 }
 
-
+.sidebar::-webkit-scrollbar-thumb:hover,
 .sidebar:hover::-webkit-scrollbar-thumb {
-	background:  rgba(0,0,0,.07);
-}
-
-.sidebar::-webkit-scrollbar-thumb:hover {
-	background:  rgba(0,0,0,.15);
+	background:	var(--bg-teritary);
 }

@@ -2,7 +2,7 @@
 title: Populating <head>
 ---
 # Populating `<head>`
-Gridsome uses [vue-meta](https://github.com/declandewet/vue-meta) to populate **Head**.
+Gridsome uses [vue-meta](https://github.com/nuxt/vue-meta) to populate **Head**.
 
 ## Add global head metadata
 Global head metadata is added in `src/main.js` by using `head.{property}.push()`
@@ -18,7 +18,13 @@ export default function (Vue, { head }) {
   // Add an external CSS file
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css'
+    href: 'https://some-server.com/external-styleheet.css'
+  })
+  
+  // Add an external Javascript before the closing </body> tag
+  head.script.push({
+    src: 'https://some-server.com/external-script.js',
+    body: true
   })
 
   // Add a meta tag

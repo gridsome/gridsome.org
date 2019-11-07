@@ -1,6 +1,6 @@
 <template>
-	<div class="newsletter" id="mc_embed_signup">
-		<p>Want to keep up with the latest news, tips & tricks from Gridsome? <br/>Subscribe to the newsletter!</p>
+	<Card class="newsletter" id="mc_embed_signup">
+		<p class="mb-half"><strong>👋 Stay in the loop.</strong> Subscribe to Gridsome newsletter!</p>
 		<form action="https://gridsome.us19.list-manage.com/subscribe/post?u=960a357f3405a688ff935a10e&amp;id=42bbd30818" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletter__form validate" target="_blank" novalidate>
 		<div id="mc_embed_signup_scroll" class="flex">
 			
@@ -9,7 +9,9 @@
 			</div>
 
 			<div class="newsletter__button">
-				<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+				<button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button primary">
+					Subscribe
+				</button>
 			</div>
 
 			<div id="mce-responses" class="clear">
@@ -21,15 +23,22 @@
 	  	</div>
 	   </div>
 		</form>
-	</div>
+		<div class="newsletter__top"></div>
+	</Card>
 </template>
 
 <style lang="scss">
 .newsletter {
-	border: 3px dashed var(--primary-bg);
-  border-radius: 10px;
-  width: 100%;
-  padding: var(--space) var(--space);
+	
+  &__top {
+  	height: 4px;
+  	position: absolute;
+  	top:0;
+  	left:0;
+  	right:0;
+  	background: linear-gradient(90deg, var(--primary-color) 0%, #8ED6FB 50%, #D32E9D 100%);
+  }
+
   &__form {
   	margin-bottom:0;
   }

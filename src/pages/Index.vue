@@ -1,42 +1,71 @@
 <template>
-  <Layout>
-    <home-intro />
-    <home-features />
-    <home-how-it-works />
-    <home-tabs />
-    <home-fast />
-    <home-blog />
+  <Layout class="layout-homepage">
+
+    <LazyHydrate when-idle>
+      <home-intro-simple />
+    </LazyHydrate>
+    
+    <LazyHydrate when-visible>
+      <home-how-it-work-simple />
+    </LazyHydrate>
+    
+    <LazyHydrate when-visible>
+      <home-features />
+    </LazyHydrate>
+
+    <LazyHydrate when-visible>
+      <home-connect />
+    </LazyHydrate>
+
+    <LazyHydrate when-visible>
+      <home-examples />
+    </LazyHydrate>
+
+    <LazyHydrate when-visible>
+      <home-community />
+    </LazyHydrate>
+
+    <LazyHydrate when-visible>
+      <home-blog />
+    </LazyHydrate>
+    
   </Layout>
 </template>
 
 <script>
-
-import HomeIntro from '@/components/home/HomeIntro.vue'
-import HomeFeatures from '@/components/home/HomeFeatures.vue'
-import HomeTabs from '@/components/home/HomeTabs.vue'
-import HomeFast from '@/components/home/HomeFast.vue'
-
+import LazyHydrate from 'vue-lazy-hydration'
+import HomeIntroSimple from '@/components/home/HomeIntroSimple.vue'
+import HomeHowItWorkSimple from '@/components/home/HomeHowItWorkSimple.vue'
 import HomeBlog from '@/components/home/HomeBlog.vue'
-import HomeHowItWorks from '@/components/home/HomeHowItWorks.vue'
+import HomeFeatures from '@/components/home/HomeFeatures.vue'
+import HomeExamples from '@/components/home/HomeExamples.vue'
+import HomeCommunity from '@/components/home/HomeCommunity.vue'
+import HomeConnect from '@/components/home/HomeConnect.vue'
 
 export default {
   components: {
-    HomeIntro,
+    LazyHydrate,
+    HomeIntroSimple,
+    HomeHowItWorkSimple,
+    HomeExamples,
+    HomeCommunity,
+    HomeConnect,
     HomeFeatures,
-    HomeTabs,
-    HomeFast,
-    HomeBlog,
-    HomeHowItWorks,
+    HomeBlog
   },
   
   metaInfo: {
-    title: 'Vue.js-powered static site generator',
-    meta: [
-      { name: 'description', content: 'Gridsome is a Vue-powered static site generator for building CDN-ready websites and apps for any headless CMS, local files or APIs'
-      }
-    ],
+    title: 'Modern Site Generator for Vue.js'
   }
 }
 </script>
+
+<style>
+@media screen and (min-width: 850px) {
+  .layout-homepage header{
+    border-color: transparent;  
+  }
+}
+</style>
 
 
