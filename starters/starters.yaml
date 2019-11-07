@@ -173,3 +173,12 @@
   author: samuelhorn
   tags: gridsome, docs, documentation, netlify
   platforms: markdown
+
+- title: Gridsome Starter Blog Vuetify
+  description: A ready to use Blog starter with Vuetify 2.x
+  screenshot: ./screenshots/gridsome-starter-blog-vuetify.jpg
+  repo: DavidCouronne/gridsome-starter-blog-vuetify
+  preview: https://gridsome-vuetify-blog-starter.netlify.com/
+  author: davidcouronne
+  tags: blog, vuetify, markdown, dark mode
+  platforms: markdown
