@@ -78,6 +78,23 @@ Path parameters are slugified by default, but the original value can be used by 
 - `:object__value` resolves to `node.object.value`
 - `:array__3__id` resolves to `node.array[3].id`
 
+The `path` option can be a function, which receives the node as the first argument and returns a path.
+
+```js
+// gridsome.config.js
+module.exports = {
+  templates: {
+    Post: [
+      {
+        path: (node) => {
+          return `/product/${node.slug}/reviews`
+        }
+      }
+    ]
+  }
+}
+```
+
 Each node will get a `path` field in the GraphQL schema which contains the generated URL.
 
 ## Add data to a template
