@@ -23,7 +23,7 @@
 
   
   h1, h2, h3 {
-    margin-top: 1rem;
+    margin-top: -5rem;
 
     a {
       float: left;
@@ -53,14 +53,21 @@
     &:hover a{
       opacity: 1;
     }
+
+    &::before {
+      content:'';
+      display: block;
+      height: 6rem; // used for anchors under header
+    }
   }
 
   h2 {
     &::before {
       content: " ";
       display: block;
+      height: 4.5rem;
       margin-bottom: 1.5rem;
-      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid red; //var(--border-color);
       transition: border-color .3s;
     }
   }
