@@ -61,7 +61,7 @@
   name: Korneel Eeckhout
   bio: "Web Developer"
   avatar: ./images/pienter.jpg
-  
+
 - id: pehaa
   name: Paulina Hetman
   bio: "Web Developer"
@@ -90,7 +90,7 @@
   bio: "Software Engineer"
   avatar: ./images/adeadedoja.jpg
   twitter: "@trussdamola"
- 
+
 - id: emanuelgsouza
   name: Emanuel Gonçalves
   bio: "Frontend Developer"
@@ -108,4 +108,8 @@
   bio: "Front-end developer & designer"
   avatar: ./images/samuelhorn.jpg
   twitter: "@pixelcrook"
- 
+
+
+- id: travisreynolds
+  name: Travis Reynolds
+  bio: "Frontend Developer"
