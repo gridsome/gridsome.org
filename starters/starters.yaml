@@ -160,11 +160,11 @@
   description: A minimalistic starter boilerplate with Storyblok integration
   screenshot: ./screenshots/gridsome-starter-storyblok.jpg
   repo: storyblok/storyblok-gridsome-boilerplate
-  preview: 
+  preview:
   author: emanuelgsouza
   tags: storyblok, cms
   platforms: storyblok
-  
+
 - title: Jamdocs
   description: The ultimate static generated documentation theme for the JAM-stack
   screenshot: ./screenshots/jamdocs.png
@@ -172,4 +172,13 @@
   preview: https://jamdocs.netlify.com/
   author: samuelhorn
   tags: gridsome, docs, documentation, netlify
+  platforms: markdown
+
+- title: Gridome Bootstrap Portfolio Blog
+  description: Ultimate portfolio blogging site built with markdown, code highlight support.
+  screenshot: ./screenshots/portfolioboostrap.png
+  repo: Karthick-Ramachandran/gridsome-portfolio-starter
+  preview: https://gridsome-bootstrap-starter.netlify.com/
+  author: karthick
+  tags: gridsome, markdown, netlify
   platforms: markdown
