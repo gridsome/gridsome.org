@@ -3,7 +3,7 @@
     
     <transition name="fade">
       <div class="connect__slide" key=1 v-if="activeSlide == 0"><g-image class="connect__logos" src="~/assets/images/connect-logos.png" width="1180" blur="10" retina="true" alt="The Modern Web Logos" /></div>
-      <div  class="connect__slide"key=2 v-else-if="activeSlide == 1"><g-image class="connect__logos" src="~/assets/images/connect-logos-2.png" width="1180" blur="10" retina="true" alt="The Modern Web Logos 2" /></div>
+      <div class="connect__slide" key=2 v-else-if="activeSlide == 1"><g-image class="connect__logos" src="~/assets/images/connect-logos-2.png" width="1180" blur="10" retina="true" alt="The Modern Web Logos 2" /></div>
       <div class="connect__slide" key=3 v-else-if="activeSlide == 2"><g-image class="connect__logos" src="~/assets/images/connect-logos-3.png" width="1180" blur="10" retina="true" alt="The Modern Web Logos 3" /></div>
     </transition>
     
