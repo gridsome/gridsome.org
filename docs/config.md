@@ -256,7 +256,7 @@ Supported loaders are:
 - Type `number`
 - Default `8080`
 
-## outDir
+## outputDir
 
 - Type `string`
 - Default `'dist'`
