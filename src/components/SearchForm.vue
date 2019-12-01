@@ -52,47 +52,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~docsearch.js/dist/cdn/docsearch.min.css';
-
-.header-search {
-  display: block;
-  margin-bottom: 0;
-  font-size: 0.9rem;
-  flex: 1;
-  width: 100%;
-
-  label {
-    display: flex;
-    align-items: center;
-  }
-
-  .search-icon {
-    margin-left: -1.66rem;
-    width: 1rem;
-    pointer-events: none;
-    opacity: .6;
-  }
-
-  @media screen and (max-width: 550px) {
-    & { margin: 0 3px 0 -15px; }
-
-    .algolia-autocomplete .ds-dropdown-menu {
-      position: fixed!important;
-      left:0!important;
-      top: var(--header-height)!important;
-      right:50px!important;
-      &:before {
-        display: none!important;
-      }
-    }
-  }
-
-  .algolia-autocomplete {
-    width: 100%;
-  }
-}
-
-.algolia-autocomplete .algolia-docsearch-suggestion--wrapper {
-  padding-top: 0;
-}
+// @import '~docsearch.js/dist/cdn/docsearch.min.css';
 </style>

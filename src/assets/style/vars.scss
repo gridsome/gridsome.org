@@ -1,6 +1,9 @@
 :root {
   --body-color: hsla(0, 0%, 0%, 0.8);
+  --body-color-dark: #000;
   --primary-color: #00a672;
+  --primary-color-tint: #00a67211;
+
   --primary-color-dark: #00835c;
   --header-height: 58px;
   --bg: #fff;
@@ -15,20 +18,13 @@
   --border-color: #e2ecec;
   --border-color-darker: #cfe6e6;
   --mark-color: #fff8ec;
-  --border-radius: 5px;
   --success-bg: #5bb19640;
-  --space: 25px;
-  --space-x2: 50px;
   --code-color: #fdf9f3;
   --glow: 2px 2px 15px 0 var(--border-color-darker);
 
-  @media screen and (max-width: 550px) {
-    --space: 20px;
-    --space-x2: 20px;
-  }
-
   [data-theme="dark"] {
     --body-color: #ebf4f1;
+    --body-color-dark: #FFF;
     --bg: #091a28;
     --bg-secondary: #071521;
     --bg-teritary: #0e2233;

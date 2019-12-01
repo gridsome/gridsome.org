@@ -38,6 +38,16 @@ module.exports = {
   },
 
   plugins: [
+     {
+      use: 'gridsome-plugin-tailwindcss',
+      options: {
+        tailwindConfig: './tailwind.config.js',
+        shouldPurge: true,
+        shouldImport: true,
+        shouldTimeTravel: true,
+        shouldPurgeUnusedKeyframes: true,
+      }
+    },
     {
       use: '@gridsome/plugin-google-analytics',
       options: {

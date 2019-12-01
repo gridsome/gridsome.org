@@ -14,6 +14,7 @@
     "clipboard-copy": "^3.0.0",
     "docsearch.js": "^2.6.2",
     "gridsome": "^0.7.0",
+    "gridsome-plugin-tailwindcss": "^2.2.27",
     "marked": "^0.6.1",
     "typography": "^0.16.18",
     "vue-instantsearch": "^2.0.0",

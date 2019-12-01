@@ -1,17 +1,11 @@
 <template>
-  <header>
-    <div class="header-bar"></div>
-    <div class="header-inner container flex gap-30">
-
-      <Logo/>
-
-      <Nav class="flex-fit"/>
-
+  <header class="sticky top-0 z-50">
+    <div class="flex bg-light-transparent border-b border-seperator h-16 items-center">
+      <Logo />
+      <Nav />
       <SearchForm />
-
-      <nav class="header-actions flex">
+      <nav class="flex items-center">
         <ToggleTheme />
-
         <a
           aria-label="Twitter"
           href="//twitter.com/gridsome"
@@ -21,7 +15,6 @@
         >
           <twitter-logo/>
         </a>
-
         <a
           aria-label="Discord"
           href="//discord.gg/daeay6n"
@@ -32,7 +25,6 @@
         >
           <discord-logo/>
         </a>
-
         <div class="has-dropdown">
           <a
             aria-label="github"
@@ -40,17 +32,15 @@
             rel="noopener noreferrer"
             target="_blank"
             title="Gridsome @ GitHub"
+            class="flex items-center"
           >
             <github-logo
               height="20px"
               width="20px"
             />
-            <span
-              class="hide-for-small"
-              style="margin-left:5px;"
-            >v{{ $static.metadata.gridsomeVersion }}</span>
+            <span class="hide-for-small">v{{ $static.metadata.gridsomeVersion }}</span>
           </a>
-          <div class="dropdown">
+          <div class="dropdown" hidden>
             <a href="//github.com/gridsome/gridsome" rel="noopener noreferrer" target="_blank">
               Core Repository
             </a>
@@ -69,7 +59,7 @@
           </div>
         </div>
       </nav>
-    </div>
+    </div><!-- inner -->
   </header>
 </template>
 
@@ -104,35 +94,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-header {
-  z-index: 20;
-  position: relative;
-  top: 0;
-  background-color: var(--bg-transparent);
-  border-bottom: 1px solid var(--border-color);
-  flex-wrap: nowrap;
-  position: sticky;
-  transition: background-color .3s, border-color, .3s;
-  backdrop-filter: blur(4px);
-
-
-  .header-bar {
-    background: linear-gradient(90deg, var(--primary-color) 0%,  #8ED6FB 50%, #D32E9D 100%);
-    padding: 2px;
-    text-align: center;
-    color:#FFF;
-    font-size: 1rem;
-
-    a {
-      color: currentColor;
-    }
-  }
-
-  .header-inner {
-    padding: 0 var(--space);
-    min-height: var(--header-height);
-  }
-}
-</style>

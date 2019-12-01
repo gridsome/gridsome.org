@@ -1,36 +1,19 @@
 <template>
-  <nav class="main-nav flex gap-15">
-    <g-link to="/docs/">
+  <nav class="flex items-center">
+    <g-link to="/docs/" class="mr-5 text-gray-600 hover:text-gray-900">
       <span class="main-nav__label">Docs</span>
     </g-link>
 
-    <g-link to="/starters/">
+    <g-link to="/starters/" class="mr-5 text-gray-600 hover:text-gray-900">
       <span class="main-nav__label">Starters</span>
     </g-link>
 
-    <g-link to="/plugins/">
+    <g-link to="/plugins/" class="mr-5 text-gray-600 hover:text-gray-900">
       <span class="main-nav__label">Plugins</span>
     </g-link>
 
-    <g-link to="/blog/">
+    <g-link to="/blog/" class="mr-5 text-gray-600 hover:text-gray-900">
       <span class="main-nav__label">Blog</span>
     </g-link>
   </nav>
 </template>
-
-
-<style lang="scss">
-.main-nav {
-  flex-wrap: nowrap;
-}
-@media screen and (max-width: 850px) {
- .main-nav {
-    order: 10;
-    min-width: 100%;
-    a {
-      padding-top: 5px;
-      padding-bottom: 10px;
-    }
-  }
-}
-</style>
