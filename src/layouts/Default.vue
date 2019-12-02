@@ -1,48 +1,44 @@
 <template>
-    <div id="app" dark>
-      <Header />
-      <main id="main" :class="mainClass">
-        <slot />
-      </main>
-      <LazyHydrate ssr-only v-if="footer !== false">
-        <Footer />
-      </LazyHydrate>
+  <div class="antialiased bg-light text-dark">
+    <Header />
+    <Intro v-if="showIntro" />
+    <div class="mx-auto container flex">
+      <div class="sidebar sticky overflow-y-auto top-0 w-56 pt-16 -mt-16 h-screen border-r border-seperator scroll-touch">
+        <div class="sidebar-inner py-8 px-3">
+          <Nav />
+          <slot name="sidebar" />
+        </div>
+      </div>
+      <div class="flex-1">
+        <div class="py-8 px-10">
+          <slot />
+        </div>
+      </div>
+      <div v-if="$slots.toc" class="sidebar sticky top-0 w-56 pt-16 -mt-16 h-screen">
+        <div class="sidebar-inner py-32 py-8 px-3">
+          Read more...
+          <slot name="toc" />
+        </div>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
-import Header from './partials/Header'
-import Footer from './partials/Footer'
-import LazyHydrate from 'vue-lazy-hydration'
-
+import Header from '@/layouts/partials/Header.vue'
+import Nav from '@/layouts/partials/Nav.vue'
+import Intro from '@/components/Intro.vue'
 export default {
-  props: ['footer', 'primary-bg'],
   components: {
     Header,
-    Footer,
-    LazyHydrate
+    Nav,
+    Intro
   },
-  computed: {
-    mainClass() {
-      let classes = []
-      if(this.primaryBg) classes.push('main--bg-teritary')
-      return classes
-    },
+  props: {
+    showIntro: {
+      type: Boolean,
+      default: false
+    }
   }
 }
 </script>
-
-<style lang="scss">
-#app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-#app main {
-  flex: 1;
-}
-.main--bg-teritary {
-  background-color: var(--bg-teritary);
-}
-</style>

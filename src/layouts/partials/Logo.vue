@@ -1,8 +1,8 @@
 <template>
   <div class="logo" @contextmenu="rightClick" oncontextmenu="return false;">
     <g-link to="/" title="Back to home" class="mr-5 block">
-      <Logo class="h-7 w-auto hidden sm:block" alt="Gridsome.org" />
-      <LogoSmall class="h-7 w-auto sm:hidden" alt="Gridsome.org" />
+      <Logo class="h-6 w-auto hidden sm:block" alt="Gridsome.org" />
+      <LogoSmall class="h-6 w-auto sm:hidden" alt="Gridsome.org" />
     </g-link>
   </div>
 </template>

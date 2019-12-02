@@ -1,8 +1,8 @@
 <template>
-  <header class="sticky top-0 z-50">
-    <div class="flex bg-light-transparent border-b border-seperator h-16 items-center">
+  <header class="sticky top-0 z-50 bg-light-transparent">
+    <div class="fixed top-0 w-full" style="background: linear-gradient(90deg, var(--primary-color) 0%, #8ED6FB 50%, #D32E9D 100%); height: 3px;" />
+    <div class="flex mx-auto container px-3 border-b border-seperator h-16 items-center">
       <Logo />
-      <Nav />
       <SearchForm />
       <nav class="flex items-center">
         <ToggleTheme />

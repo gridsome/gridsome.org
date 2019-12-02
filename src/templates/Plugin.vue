@@ -1,95 +1,90 @@
 <template>
-  <Layout :footer="false">
-    <div class="plugins container flex flex-align-top" style="position: relative;">
-      
-      <AisInstantSearchSsr class="sidebar plugins__sidebar">
-        <AisConfigure
-          :hitsPerPage="hitsPerPage"
-          :analyticsTags="['gridsome']"
-          :filters="filters"
-        />
+  <Layout>
+    <AisInstantSearchSsr slot="sidebar" class="sidebar plugins__sidebar">
+      <AisConfigure
+        :hitsPerPage="hitsPerPage"
+        :analyticsTags="['gridsome']"
+        :filters="filters"
+      />
 
-        <div class="plugins__search">
-          <div class="plugins__search-box">
-            <AisSearchBox placeholder="Search for Gridsome plugins" />
-          </div>
-          <div class="flex flex-space-between">
-            <AisStateResults v-slot="{ nbHits }">
-              <span class="plugins__count small">{{ nbHits }} plugins</span>
-            </AisStateResults>
-            <ClientOnly>
-              <AisPoweredBy />
-            </ClientOnly>
-          </div>
+      <div class="plugins__search">
+        <div class="plugins__search-box">
+          <AisSearchBox placeholder="Search for Gridsome plugins" />
         </div>
+        <div class="flex flex-space-between">
+          <AisStateResults v-slot="{ nbHits }">
+            <span class="plugins__count small">{{ nbHits }} plugins</span>
+          </AisStateResults>
+          <ClientOnly>
+            <AisPoweredBy />
+          </ClientOnly>
+        </div>
+      </div>
 
-        <AisInfiniteHits class="plugins__list">
-          <template v-slot:item="{ item }">
-            <li class="plugin" :class="hitClasses(item)">
-              <AisHighlight class="plugin__name" :hit="item" attribute="name" />
-              <AisHighlight class="plugin__description" :hit="item" attribute="description" />
-              <g-link class="plugin__link" :to="`/plugins/${item.name}`">
-                Read more about {{ item.name }}
-              </g-link>
-            </li>
-          </template>
-          <template v-slot:loadMore="{ refine, isLastPage }">
-            <button v-if="!isLastPage" class="plugins__more button" @click="refine">
-              Show more plugins
-            </button>
-          </template>
-        </AisInfiniteHits>
-      </AisInstantSearchSsr>
+      <AisInfiniteHits class="plugins__list">
+        <template v-slot:item="{ item }">
+          <li class="plugin" :class="hitClasses(item)">
+            <AisHighlight class="plugin__name" :hit="item" attribute="name" />
+            <AisHighlight class="plugin__description" :hit="item" attribute="description" />
+            <g-link class="plugin__link" :to="`/plugins/${item.name}`">
+              Read more about {{ item.name }}
+            </g-link>
+          </li>
+        </template>
+        <template v-slot:loadMore="{ refine, isLastPage }">
+          <button v-if="!isLastPage" class="plugins__more button" @click="refine">
+            Show more plugins
+          </button>
+        </template>
+      </AisInfiniteHits>
+    </AisInstantSearchSsr>
 
-      <Section class="plugin-post" container="md">
-        <template v-if="isSingle">
-          <div class="plugin-post__meta" v-if="hit">
-            <div class="plugin-post__meta_left">
-              <div class="plugin-post__users">
-                <span v-for="owner in owners" :key="owner.name">
-                  <a :href="owner.link" target="_blank" rel="noopener">
-                    <img class="plugin-post__users-image" v-if="owner.avatar" :src="owner.avatar" :title="owner.name" />
-                    <span class="plugin-post__users-name" v-if="owners.length == 1">
-                      {{ owner.name }}
+    <template v-if="isSingle">
+      <div class="plugin-post__meta" v-if="hit">
+        <div class="plugin-post__meta_left">
+          <div class="plugin-post__users">
+            <span v-for="owner in owners" :key="owner.name">
+              <a :href="owner.link" target="_blank" rel="noopener">
+                <img class="plugin-post__users-image" v-if="owner.avatar" :src="owner.avatar" :title="owner.name" />
+                <span class="plugin-post__users-name" v-if="owners.length == 1">
+                  {{ owner.name }}
 
-                      <i v-if="owner.name == 'gridsome'" class="plugin-post__users-tag">Official Plugin</i>
-                    </span>
-                  </a>
+                  <i v-if="owner.name == 'gridsome'" class="plugin-post__users-tag">Official Plugin</i>
                 </span>
-              </div>
-
-            
-            </div>
-            <div class="plugin-post__meta_right">
-              <a
-                rel="noopener noreferrer"
-                target="_blank"
-                v-if="hit.repository" :href="hit.repository.url"
-                title="View on Github"
-                aria-label="View on Github"
-                class="button button--blank">
-                <div :is="repositoryIcon(hit.repository)" />
               </a>
-              <span>Downloads last month: {{ hit.humanDownloadsLast30Days }}</span>
-            </div>
+            </span>
           </div>
 
-          <div class="plugin-post__content mb" v-if="hit" v-html="content" />
+        
+        </div>
+        <div class="plugin-post__meta_right">
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            v-if="hit.repository" :href="hit.repository.url"
+            title="View on Github"
+            aria-label="View on Github"
+            class="button button--blank">
+            <div :is="repositoryIcon(hit.repository)" />
+          </a>
+          <span>Downloads last month: {{ hit.humanDownloadsLast30Days }}</span>
+        </div>
+      </div>
 
-        </template>
-        <template v-else>
-          <div class="plugins-intro container-sm post">
-            <Connect />
-            <div class="plugins-intro__text">
-              <h1>Gridsome Plugins</h1>
-              <p class="lead">Gridsome plugins are NPM packages that you can install to any project. <span class="hide-for-small">Use the search bar to the left to find a plugin.</span></p>
+      <div class="plugin-post__content mb" v-if="hit" v-html="content" />
 
-              <p>Want to contribute to plugins library? <g-link to="/docs/how-to-create-a-plugin">Learn how to build a plugin</g-link></p>
-            </div>
-          </div>
-        </template>
-      </Section>
-     </div>
+    </template>
+    <template v-else>
+      <div class="plugins-intro container-sm post">
+        <Connect />
+        <div class="plugins-intro__text">
+          <h1>Gridsome Plugins</h1>
+          <p class="lead">Gridsome plugins are NPM packages that you can install to any project. <span class="hide-for-small">Use the search bar to the left to find a plugin.</span></p>
+
+          <p>Want to contribute to plugins library? <g-link to="/docs/how-to-create-a-plugin">Learn how to build a plugin</g-link></p>
+        </div>
+      </div>
+    </template>
   </Layout>
 </template>
 

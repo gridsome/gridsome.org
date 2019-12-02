@@ -1,33 +1,29 @@
 <template>
-<div>
-  <LazyHydrate when-idle>
-    <home-intro />
-  </LazyHydrate>
-  
-  <LazyHydrate when-visible>
-    <home-how-it-works />
-  </LazyHydrate>
-  
-  <LazyHydrate when-visible>
-    <home-features />
-  </LazyHydrate>
+<Layout showIntro>
+    <LazyHydrate when-visible>
+      <home-how-it-works />
+    </LazyHydrate>
+    
+    <LazyHydrate when-visible>
+      <home-features />
+    </LazyHydrate>
 
-  <LazyHydrate when-visible>
-    <home-connect />
-  </LazyHydrate>
+    <LazyHydrate when-visible>
+      <home-connect />
+    </LazyHydrate>
 
-  <LazyHydrate when-visible>
-    <home-examples />
-  </LazyHydrate>
+    <LazyHydrate when-visible>
+      <home-examples />
+    </LazyHydrate>
 
-  <LazyHydrate when-visible>
-    <home-community />
-  </LazyHydrate>
+    <LazyHydrate when-visible>
+      <home-community />
+    </LazyHydrate>
 
-  <LazyHydrate when-visible>
-    <home-blog />
-  </LazyHydrate>
-</div>
+    <LazyHydrate when-visible>
+      <home-blog />
+    </LazyHydrate>
+</Layout>
 </template>
 
 <script>
@@ -39,6 +35,7 @@ import HomeFeatures from '@/components/home/HomeFeatures.vue'
 import HomeExamples from '@/components/home/HomeExamples.vue'
 import HomeCommunity from '@/components/home/HomeCommunity.vue'
 import HomeConnect from '@/components/home/HomeConnect.vue'
+import Intro from '@/components/Intro.vue'
 
 export default {
   components: {
@@ -57,13 +54,4 @@ export default {
   }
 }
 </script>
-
-<style>
-@media screen and (min-width: 850px) {
-  .layout-homepage header{
-    border-color: transparent;  
-  }
-}
-</style>
-
 
