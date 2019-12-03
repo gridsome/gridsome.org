@@ -26,17 +26,15 @@
               <div class="px-5 py-3">
                 <h3 class="font-bold mb-1">Framework <span class="text-xs opacity-75 font-thin ml-1">Open Source</span></h3>
                 <p class="text-xs">Build modern JAMstack websites with Vue.js</p>
+                <p class="text-xs opacity-50">gridsome.org</p>
               </div>
               <hr class="opacity-25" />
-              <div class="px-5 py-3">
-                <h3 class="font-bold mb-1">Studio</h3>
+              <div class="px-5 py-3 opacity-50 pointer-events-none">
+                <h3 class="font-bold mb-1">Studio <span class="text-xs opacity-75 font-thin ml-1">Coming soon!</span></h3>
                 <p class="text-xs">Build modern JAMstack websites <strong>without coding</strong></p>
+                <p class="text-xs opacity-50">gridsome.com</p>
               </div>
-              <hr class="opacity-25" />
-              <div class="px-5 py-3 mb-1">
-                <h3 class="font-bold mb-1">Styleguide</h3>
-                <p class="text-xs">Build & manage Tailwind-powered Vue.js Components</p>
-              </div>
+          
             </div>
           </div>
         </Popover>
@@ -72,7 +70,7 @@
             rel="noopener noreferrer"
             target="_blank"
             title="Gridsome @ GitHub"
-            class="font-mono flex items-center text-sm w-full border shadow-strong p-1 px-2 rounded"
+            class="font-mono flex items-center text-sm w-full border bg-light shadow-strong p-1 px-2 rounded"
           >
             <github-logo
               height="20px"

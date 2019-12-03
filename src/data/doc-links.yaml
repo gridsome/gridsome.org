@@ -1,18 +1,15 @@
-- title: Getting started
+- title: Introduction
   items:
-    - title: Intallation
+    - title: Getting started
       link: /docs/
     - title: Upgrade guide
       link: /docs/fast-by-default/
-
-- title: Core Concepts
-  items:
     - title: Fast by default
       link: /docs/fast-by-default/
-    - title: GraphQL data layer
-      link: /docs/fast-by-default/
-    - title: Static site generation
-      link: /docs/deployment/
+    - title: The JAMstack
+      link: /docs/jamstack/
+    - title: Deployment
+      link: /docs/deployment/ 
 
 - title : Basic Gridsome
   items:
