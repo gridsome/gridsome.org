@@ -1,6 +1,6 @@
 <template>
   <header 
-    :class="transparent ? '-mb-header relative' : 'bg-light-transparent sticky'"
+    :class="transparent ? '-mb-header relative' : 'bg-light sticky'"
     class="top-0 z-50">
     <div 
       class="absolute top-0 w-full" 
@@ -11,7 +11,10 @@
     <div class="flex mx-auto container border-b border-seperator h-header items-center">
       <div class="w-sidebar flex items-center">
        <Logo />
-       <span class="text-sm">Framework</span>
+        <button class="font-mono flex items-center text-sm w-full border shadow-strong p-1 px-2 rounded">
+          <span>Framework</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-mr-1 w-4 h-4 opacity-50 feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
       </div>
       <SearchForm class="flex-1 px-20" />
       <nav class="flex items-center justify-end w-sidebar">

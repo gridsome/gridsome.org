@@ -25,8 +25,7 @@
             </p>
 
             <p class="mb-10">
-              <g-link to="/docs/" class="py-3 px-4 rounded border border-dark hover:bg-tint-secondary bg-tint text-light" style="box-shadow: 1px 1px 1px rgba(0,0,0,1)"
->
+              <g-link to="/docs/" class="py-3 px-4 rounded border border-dark hover:bg-tint-secondary shadow-strong bg-tint text-light" >
                 <span class="font-mono">Get started</span>
               </g-link>
             </p>

@@ -6,9 +6,8 @@
       <input
         ref="input"
         :id="`${id}-input`"
-        class="header-search__input w-full border p-1 pl-8 rounded"
-        style="box-shadow: 1px 1px 1px rgba(0,0,0,1)"
-        placeholder="Search Gridsome docs..."
+        class="font-mono text-sm w-full border shadow-strong p-1 pl-8 rounded"
+        placeholder="Search Gridsome documentation (/ to focus)"
         title="Search docs"
         type="search"
         @focus="onFocus"
