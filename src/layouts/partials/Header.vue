@@ -1,10 +1,20 @@
 <template>
-  <header class="sticky top-0 z-50 bg-light-transparent">
-    <div class="fixed top-0 w-full" style="background: linear-gradient(90deg, var(--primary-color) 0%, #8ED6FB 50%, #D32E9D 100%); height: 3px;" />
-    <div class="flex mx-auto container px-3 border-b border-seperator h-16 items-center">
-      <Logo />
-      <SearchForm />
-      <nav class="flex items-center">
+  <header 
+    :class="transparent ? '-mb-header relative' : 'bg-light-transparent sticky'"
+    class="top-0 z-50">
+    <div 
+      class="fixed top-0 w-full" 
+      style="
+      background: linear-gradient(90deg, var(--primary-color) 0%, #8ED6FB 50%, #D32E9D 100%);
+      height: 3px;"
+    />
+    <div class="flex mx-auto container border-b border-seperator h-header items-center">
+      <div class="w-sidebar flex items-center">
+       <Logo />
+       <span class="text-sm">Framework</span>
+      </div>
+      <SearchForm class="flex-1 px-20" />
+      <nav class="flex items-center justify-end w-sidebar">
         <ToggleTheme />
         <a
           aria-label="Twitter"
@@ -82,6 +92,12 @@ import DiscordLogo from '@/assets/images/discord-logo.svg'
 import LazyHydrate from 'vue-lazy-hydration'
 
 export default {
+  props: {
+    transparent: {
+      type: Boolean,
+      default: false
+    }
+  },
   components: {
     Logo,
     GithubLogo,

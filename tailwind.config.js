@@ -14,6 +14,13 @@ module.exports = {
       'placeholder': 'var(--placeholder)',
       'seperator': 'var(--border-color)',
       'seperator-dark': 'var(--border-color-darker)'
+    },
+    extend: {
+      spacing: {
+        'header': '65px',
+        'header-mobile' : '50px',
+        'sidebar' : '220px'
+      }
     }
   },
 }

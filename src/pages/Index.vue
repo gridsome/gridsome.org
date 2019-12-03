@@ -1,34 +1,31 @@
 <template>
-<Layout showIntro>
-    <LazyHydrate when-visible>
-      <home-how-it-works />
-    </LazyHydrate>
-    
-    <LazyHydrate when-visible>
-      <home-features />
-    </LazyHydrate>
+  <Layout transparent-header>
+    <template slot="intro">
+      <Intro />
+    </template>
 
-    <LazyHydrate when-visible>
-      <home-connect />
-    </LazyHydrate>
+    <template slot="sidebar">
+      <template v-if="links" v-for="(group, i1) in links">
+        <h3 class="menu-item" :key="`title-${i1}`">{{ group.title }}</h3>
+        <template v-for="(item, i2) in group.items">
+          <g-link :exact="item.link == '/docs/'" class="menu-item menu-link" :to="item.link" :key="`link-${i1}-${i2}`">
+            {{ item.title }}
+          </g-link>
+        </template>
+      </template>
+    </template>
 
-    <LazyHydrate when-visible>
-      <home-examples />
-    </LazyHydrate>
+    <template slot="toc">
+      <h3>On this page</h3>
+    </template>
 
-    <LazyHydrate when-visible>
-      <home-community />
-    </LazyHydrate>
-
-    <LazyHydrate when-visible>
-      <home-blog />
-    </LazyHydrate>
-</Layout>
+    <h2>Why Gridsome?</h2>
+  </Layout>
 </template>
 
 <script>
+import links from '@/data/doc-links.yaml'
 import LazyHydrate from 'vue-lazy-hydration'
-import HomeIntro from '@/components/home/HomeIntro.vue'
 import HomeHowItWorks from '@/components/home/HomeHowItWorks.vue'
 import HomeBlog from '@/components/home/HomeBlog.vue'
 import HomeFeatures from '@/components/home/HomeFeatures.vue'
@@ -40,13 +37,18 @@ import Intro from '@/components/Intro.vue'
 export default {
   components: {
     LazyHydrate,
-    HomeIntro,
     HomeHowItWorks,
     HomeExamples,
     HomeCommunity,
     HomeConnect,
     HomeFeatures,
-    HomeBlog
+    HomeBlog,
+    Intro
+  },
+  computed: {
+    links () {
+      return links
+    },
   },
   
   metaInfo: {

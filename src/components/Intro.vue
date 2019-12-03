@@ -1,9 +1,9 @@
 <template>
-  <Section class="py-16 border-seperator border-b">
-    <div class="flex px-3">
+  <Section class="pt-header" style="background-color: var(--bg)">
+    <div class="flex py-16">
       <div class="w-5/12">
         <h1 class="text-4xl leading-tight font-bold mb-5 text-label-secondary">
-          <span>Build modern JAMstack<br/> websites with Vue.js</span>
+          <span>Build fast, modern JAMstack<br/> websites with Vue.js</span>
         </h1>
 
         <p class="text-xl mb-5">
@@ -24,6 +24,7 @@
         </p>
       </div>
     </div>
+
   </Section>
 </template>
 

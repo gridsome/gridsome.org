@@ -1,5 +1,5 @@
 <template>
-  <section class="section bg-light z-40" :class="sectionClass">
+  <section class="section z-40 relative" :class="sectionClass">
     <div class="container mx-auto" :class="sectionClassInner">
       <slot/>
     </div>
