@@ -109,7 +109,12 @@
   avatar: ./images/samuelhorn.jpg
   twitter: "@pixelcrook"
 
-
 - id: travisreynolds
   name: Travis Reynolds
   bio: "Frontend Developer"
+
+- id: microflash
+  name: Naiyer Asif
+  bio: "Full-stack developer"
+  avatar: ./images/microflash.png
+  twitter: "@Microflash"

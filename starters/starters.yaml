@@ -182,3 +182,12 @@
   author: travisreynolds
   tags: gridsome, starter, shopify
   platforms: shopify
+
+- title: Jada
+  description: A simple blog starter template for Gridsome
+  screenshot: ./screenshots/gridsome-jada.png
+  repo: Microflash/jada
+  preview: https://gridsome-jada.netlify.com/
+  author: microflash
+  tags: starter, blog, sass
+  platforms: markdown
