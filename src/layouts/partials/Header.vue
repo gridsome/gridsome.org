@@ -10,11 +10,37 @@
     />
     <div class="flex mx-auto container border-b border-seperator h-header items-center">
       <div class="w-sidebar flex items-center">
-       <Logo />
-        <button class="font-mono flex items-center text-sm w-full border shadow-strong p-1 px-2 rounded">
-          <span>Framework</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-mr-1 w-4 h-4 opacity-50 feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
-        </button>
+        
+        <Logo />
+        
+        <Popover class="relative">
+          <div slot="face">
+            <button title="Gridsome Ecosystem" class="font-mono flex items-center text-sm w-full border shadow-strong p-1 px-2 rounded">
+              <span>Framework</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-mr-1 w-4 h-4 opacity-50 feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+          </div>
+
+          <div slot="content">
+            <div class="absolute mt-2 left-0 w-sidebar rounded border shadow-strong bg-light" >
+              <div class="px-5 py-3">
+                <h3 class="font-bold">Framework</h3>
+                <p class="text-xs">Build modern JAMstack websites with Vue.js</p>
+              </div>
+              <hr />
+              <div class="px-5 py-3">
+                <h3 class="font-bold">Studio</h3>
+                <p class="text-xs">Build modern JAMstack websites <strong>without coding</strong></p>
+              </div>
+              <hr />
+              <div class="px-5 py-3">
+                <h3 class="font-bold">Styleguide</h3>
+                <p class="text-xs">Build & manage Tailwind-powered Vue.js Components</p>
+              </div>
+            </div>
+          </div>
+        </Popover>
+      
       </div>
       <SearchForm class="flex-1 px-20" />
       <nav class="flex items-center justify-end w-sidebar">
@@ -93,6 +119,7 @@ import GithubLogo from '@/assets/images/github-logo.svg'
 import TwitterLogo from '@/assets/images/twitter-logo.svg'
 import DiscordLogo from '@/assets/images/discord-logo.svg'
 import LazyHydrate from 'vue-lazy-hydration'
+import Popover from 'vue-popover'
 
 export default {
   props: {
@@ -109,7 +136,8 @@ export default {
     DiscordLogo,
     SearchForm,
     Nav,
-    LazyHydrate
+    LazyHydrate,
+    Popover
   }
 }
 </script>
