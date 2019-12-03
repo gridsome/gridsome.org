@@ -1,11 +1,11 @@
 <template>
   <div class="overflow-hidden max-w-container-outer mx-auto relative  -mb-12">
 
-    <svg class="absolute top-0 left-0 -ml-16" width="795" height="493" viewBox="0 0 795 493" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="absolute top-0 left-0 -ml-16 opacity-75" width="795" height="493" viewBox="0 0 795 493" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle cx="273" cy="-29" r="522" fill="#00A672" fill-opacity="0.06"/>
     </svg>
 
-    <svg class="absolute top-0 right-0 -mr-16" width="355" height="303" viewBox="0 0 355 303" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="absolute top-0 right-0 -mr-16 opacity-75" width="355" height="303" viewBox="0 0 355 303" fill="none" xmlns="http://www.w3.org/2000/svg">
       <circle opacity="0.1" cx="545.5" cy="-242.5" r="545.5" fill="#B02FA3"/>
     </svg>
 
