@@ -17,10 +17,27 @@
 
     <template slot="toc">
       <h3>On this page</h3>
+      <ul>
+        <li>Why Gridsome?</li>
+        <li>How it works</li>
+        <li>What is JAMstack</li>
+        <li>Git-based Workflow</li>
+        <li>Gridsome VS Nuxt</li>
+        <li>Gridsome VS Gatsby</li>
+        <li>Contributors</li>
+        <li>Newsletter</li>
+
+      </ul>
     </template>
 
     <h2 class="text-xl font-bold mb-5">Why Gridsome?</h2>
     <p class="text-xl">Gridsome is a free and open source Vue.js-powered framework for building websites & apps that are fast by default 🚀.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+    <h2 class="text-xl font-bold mb-5">What is JAMstack?</h2>
+
   </Layout>
 </template>
 

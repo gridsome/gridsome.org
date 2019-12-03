@@ -1,20 +1,18 @@
 <template>
   <form
     :id="id"
-    class="header-search w-full"
-  >
-    <label class="flex items-center">
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search-icon feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+    class="header-search w-full flex items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="-mr-8 w-8 z-10 search-icon feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
       <input
         ref="input"
         :id="`${id}-input`"
-        class="header-search__input w-full"
+        class="header-search__input w-full border p-1 pl-8 rounded"
+        style="box-shadow: 1px 1px 1px rgba(0,0,0,1)"
         placeholder="Search Gridsome docs..."
         title="Search docs"
         type="search"
         @focus="onFocus"
       />
-    </label>
   </form>
 </template>
 

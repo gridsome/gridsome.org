@@ -4,16 +4,20 @@
       <span class="main-nav__label">Documentation</span>
     </g-link>
 
-    <g-link to="/tutorial/" class="text-dark font-mono hover:text-gray-900">
-      <span class="main-nav__label">Tutorial</span>
+    <g-link to="/plugins/" class="text-dark font-mono hover:text-gray-900">
+      <span class="main-nav__label">Plugins</span>
     </g-link>
-
+    
     <g-link to="/starters/" class="text-dark font-mono hover:text-gray-900">
       <span class="main-nav__label">Starters</span>
     </g-link>
 
-    <g-link to="/plugins/" class="text-dark font-mono hover:text-gray-900">
-      <span class="main-nav__label">Plugins</span>
+    <g-link to="/showcase/" class="text-dark font-mono hover:text-gray-900">
+      <span class="main-nav__label">Showcase</span>
+    </g-link>
+
+    <g-link to="/tutorial/" class="text-dark font-mono hover:text-gray-900">
+      <span class="main-nav__label">Tutorial</span>
     </g-link>
 
     <g-link to="/blog/" class="text-dark font-mono hover:text-gray-900">

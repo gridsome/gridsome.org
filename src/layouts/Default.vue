@@ -1,5 +1,5 @@
 <template>
-  <div class="antialiased relative bg-tint">
+  <div class="antialiased relative bg-dark">
     <div class="bg-light text-dark mx-auto max-w-container-outer">
       <Header :transparent="transparentHeader" />
 
@@ -19,8 +19,8 @@
             <slot />
           </div>
         </div>
-        <div v-if="$slots.toc" class="sidebar sticky top-0 w-sidebar pt-header -mt-header h-screen">
-          <div class="sidebar-inner py-32 py-8 px-3">
+        <div v-if="$slots.toc" class="sidebar overflow-y-auto sticky top-0 w-sidebar pt-header -mt-header h-screen">
+          <div class="sidebar-inner pt-20 py-8 px-3">
             <div class="uppercase text-xs font-bold mb-3">On this page</div>
             <slot name="toc" />
           </div>

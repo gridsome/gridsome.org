@@ -22,7 +22,7 @@ module.exports = {
         'sidebar' : '240px'
       },
       maxWidth: {
-        'container-outer' : '1470px'
+        'container-outer' : '1480px'
       }
     }
   },
