@@ -19,7 +19,10 @@ module.exports = {
       spacing: {
         'header': '65px',
         'header-mobile' : '50px',
-        'sidebar' : '220px'
+        'sidebar' : '240px'
+      },
+      maxWidth: {
+        'container-outer' : '1470px'
       }
     }
   },

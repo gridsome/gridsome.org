@@ -3,7 +3,7 @@
     :class="transparent ? '-mb-header relative' : 'bg-light-transparent sticky'"
     class="top-0 z-50">
     <div 
-      class="fixed top-0 w-full" 
+      class="absolute top-0 w-full" 
       style="
       background: linear-gradient(90deg, var(--primary-color) 0%, #8ED6FB 50%, #D32E9D 100%);
       height: 3px;"

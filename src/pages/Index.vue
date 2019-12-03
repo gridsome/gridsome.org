@@ -19,7 +19,8 @@
       <h3>On this page</h3>
     </template>
 
-    <h2>Why Gridsome?</h2>
+    <h2 class="text-xl font-bold mb-5">Why Gridsome?</h2>
+    <p class="text-xl">Gridsome is a free and open source Vue.js-powered framework for building websites & apps that are fast by default 🚀.</p>
   </Layout>
 </template>
 
