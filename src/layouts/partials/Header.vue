@@ -22,19 +22,19 @@
           </div>
 
           <div slot="content">
-            <div class="absolute mt-2 left-0 w-sidebar rounded border shadow-strong bg-light" >
+            <div class="absolute mt-2 left-0 w-sidebar border rounded shadow-xl bg-light" >
               <div class="px-5 py-3">
-                <h3 class="font-bold">Framework</h3>
+                <h3 class="font-bold mb-1">Framework <span class="text-xs opacity-75 font-thin ml-1">Open Source</span></h3>
                 <p class="text-xs">Build modern JAMstack websites with Vue.js</p>
               </div>
               <hr />
               <div class="px-5 py-3">
-                <h3 class="font-bold">Studio</h3>
+                <h3 class="font-bold mb-1">Studio</h3>
                 <p class="text-xs">Build modern JAMstack websites <strong>without coding</strong></p>
               </div>
               <hr />
-              <div class="px-5 py-3">
-                <h3 class="font-bold">Styleguide</h3>
+              <div class="px-5 py-3 mb-1">
+                <h3 class="font-bold mb-1">Styleguide</h3>
                 <p class="text-xs">Build & manage Tailwind-powered Vue.js Components</p>
               </div>
             </div>
