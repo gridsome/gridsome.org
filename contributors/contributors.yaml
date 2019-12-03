@@ -109,6 +109,10 @@
   avatar: ./images/samuelhorn.jpg
   twitter: "@pixelcrook"
 
+- id: travisreynolds
+  name: Travis Reynolds
+  bio: "Frontend Developer"
+
 - id: karthick
   name: Karthick
   bio: "Full stack JavaScript developer"
