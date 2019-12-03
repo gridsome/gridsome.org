@@ -15,7 +15,7 @@
           </div>
         </div>
         <div class="flex-1">
-          <div class="py-8 px-20">
+          <div class="py-8 px-24">
             <slot />
           </div>
         </div>

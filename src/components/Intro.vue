@@ -38,7 +38,7 @@
             </p>
         </div>
         <div class="w-3/5">
-          <test class="w-full h-auto mx-auto" style="max-width: 560px"/>
+          <test class="w-full h-auto mx-auto" style="max-width: 510px"/>
         </div>
       </div>
     </Section>

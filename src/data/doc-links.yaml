@@ -1,12 +1,17 @@
-- title: Prologue
+- title: Getting started
   items:
-    - title: Introduction
+    - title: Intallation
       link: /docs/
-    - title: Core concepts
-      link: /docs/core-concepts/
+    - title: Upgrade guide
+      link: /docs/fast-by-default/
+
+- title: Core Concepts
+  items:
     - title: Fast by default
       link: /docs/fast-by-default/
-    - title: Deployment
+    - title: GraphQL data layer
+      link: /docs/fast-by-default/
+    - title: Static site generation
       link: /docs/deployment/
 
 - title : Basic Gridsome

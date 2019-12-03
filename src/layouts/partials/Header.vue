@@ -42,7 +42,7 @@
         </Popover>
       
       </div>
-      <SearchForm class="flex-1 px-20" />
+      <SearchForm class="flex-1 px-24" />
       <nav class="flex items-center justify-end w-sidebar">
         <ToggleTheme class="mx-2" />
         <a
