@@ -13,7 +13,7 @@
         
         <Logo />
         
-        <Popover class="relative">
+        <Popover class="relative" name="Ecosystem">
           <div slot="face">
             <button title="Gridsome Ecosystem" class="font-mono flex items-center text-sm w-full border shadow-strong p-1 px-2 rounded">
               <span>Framework</span>
@@ -27,12 +27,12 @@
                 <h3 class="font-bold mb-1">Framework <span class="text-xs opacity-75 font-thin ml-1">Open Source</span></h3>
                 <p class="text-xs">Build modern JAMstack websites with Vue.js</p>
               </div>
-              <hr />
+              <hr class="opacity-25" />
               <div class="px-5 py-3">
                 <h3 class="font-bold mb-1">Studio</h3>
                 <p class="text-xs">Build modern JAMstack websites <strong>without coding</strong></p>
               </div>
-              <hr />
+              <hr class="opacity-25" />
               <div class="px-5 py-3 mb-1">
                 <h3 class="font-bold mb-1">Styleguide</h3>
                 <p class="text-xs">Build & manage Tailwind-powered Vue.js Components</p>
@@ -44,11 +44,12 @@
       </div>
       <SearchForm class="flex-1 px-20" />
       <nav class="flex items-center justify-end w-sidebar">
-        <ToggleTheme />
+        <ToggleTheme class="mx-2" />
         <a
           aria-label="Twitter"
           href="//twitter.com/gridsome"
           rel="noopener noreferrer"
+          class="mx-2"
           target="_blank"
           title="Follow us on Twitter"
         >
@@ -58,24 +59,25 @@
           aria-label="Discord"
           href="//discord.gg/daeay6n"
           rel="noopener noreferrer"
-          class="hide-for-small"
+          class="hide-for-small mx-2"
           target="_blank"
           title="Join our discord"
         >
           <discord-logo/>
         </a>
-        <div class="has-dropdown">
+        <div class="has-dropdown ml-2">
           <a
             aria-label="github"
             href="//github.com/gridsome/gridsome"
             rel="noopener noreferrer"
             target="_blank"
             title="Gridsome @ GitHub"
-            class="flex items-center"
+            class="font-mono flex items-center text-sm w-full border shadow-strong p-1 px-2 rounded"
           >
             <github-logo
               height="20px"
               width="20px"
+              class="mr-2 opacity-75"
             />
             <span class="hide-for-small">v{{ $static.metadata.gridsomeVersion }}</span>
           </a>

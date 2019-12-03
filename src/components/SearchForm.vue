@@ -6,7 +6,7 @@
       <input
         ref="input"
         :id="`${id}-input`"
-        class="font-mono text-sm w-full border shadow-strong p-1 pl-8 rounded"
+        class="font-mono bg-light text-sm w-full border shadow-strong p-1 pl-8 rounded"
         placeholder="Search Gridsome documentation (/ to focus)"
         title="Search docs"
         type="search"

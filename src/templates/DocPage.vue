@@ -1,15 +1,7 @@
 <template>
-  <Layout>    
-    <template slot="sidebar">
-      <template v-if="links" v-for="(group, i1) in links">
-        <h3 class="menu-item" :key="`title-${i1}`">{{ group.title }}</h3>
-        <template v-for="(item, i2) in group.items">
-          <g-link :exact="item.link == '/docs/'" class="menu-item menu-link" :to="item.link" :key="`link-${i1}-${i2}`">
-            {{ item.title }}
-          </g-link>
-        </template>
-      </template>
-    </template>
+  <Layout>
+    
+    <DocLinks slot="sidebar" />
 
     <template name="default">
       <VueRemarkContent class="post mb"></VueRemarkContent>
@@ -47,19 +39,17 @@ query ($id: ID!) {
 </page-query>
 
 <script>
-import links from '@/data/doc-links.yaml'
 import Intro from '@/components/Intro.vue'
+import DocLinks from '@/components/DocLinks.vue'
 import Github from '~/assets/images/github-logo.svg'
 
 export default {
   components: {
     Intro,
-    Github
+    Github,
+    DocLinks
   },
   computed: {
-    links () {
-      return links
-    },
     subtitles() {
       // Remove h1, h4, h5, h6 titles
       let subtitles = this.$page.doc.subtitles.filter(function(value, index, arr){

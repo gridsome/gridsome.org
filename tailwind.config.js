@@ -22,7 +22,7 @@ module.exports = {
         'sidebar' : '240px'
       },
       maxWidth: {
-        'container-outer' : '1500px'
+        'container-outer' : '1460px'
       },
       boxShadow: {
         'strong' : '1px 1px 1px rgba(0,0,0,1)'
