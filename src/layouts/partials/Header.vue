@@ -1,6 +1,6 @@
 <template>
   <header 
-    :class="transparent ? '-mb-header relative' : 'bg-light sticky'"
+    :class="transparent ? '-mb-header relative' : 'bg-background sticky'"
     class="top-0 z-50">
     <div 
       class="absolute top-0 w-full" 
@@ -31,7 +31,7 @@
               <hr class="opacity-25" />
               <div class="px-5 py-3 opacity-50 pointer-events-none">
                 <h3 class="font-bold mb-1">Studio <span class="text-xs opacity-75 font-thin ml-1">Coming soon</span></h3>
-                <p class="text-xs">Build modern JAMstack websites <strong>without coding</strong></p>
+                <p class="text-xs">Visual JAMstack Website Builder</p>
                 <p class="text-xs opacity-50">gridsome.com</p>
               </div>
             </div>

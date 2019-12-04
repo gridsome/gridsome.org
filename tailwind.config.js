@@ -19,7 +19,7 @@ module.exports = {
     },
     extend: {
       spacing: {
-        'header': '65px',
+        'header': '80px',
         'header-mobile' : '50px',
         'sidebar' : '260px'
       },

@@ -109,3 +109,10 @@
 </svg>
 
 </template>
+
+<style>
+
+[fill="#0F293D"]{
+	fill: var(--body-color)!important;
+}
+</style>
