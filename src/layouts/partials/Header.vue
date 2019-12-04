@@ -22,7 +22,7 @@
           </div>
 
           <div slot="content">
-            <div class="absolute mt-2 left-0 w-sidebar border border-seperator-strong rounded shadow-xl bg-highlight" >
+            <div class="absolute mt-2 left-0 w-sidebar border border-seperator-strong rounded shadow-xl bg-background" >
               <div class="px-5 py-3">
                 <h3 class="font-bold mb-1">Framework <span class="text-xs opacity-75 font-thin ml-1">Open Source</span></h3>
                 <p class="text-xs">A Vue.js-powered Website Generator</p>

@@ -22,9 +22,9 @@
     </template>
 
     <div class="rich-text">
-      <h2 class="text-2xl font-bold mb-5 text-headline">Break free from the CMS limits</h2>
+      <h2 class="text-2xl font-bold mb-5 text-headline">Break free from the monolithic CMS limits</h2>
       <p class="text-xl mb-5">
-        The modern web is decoupled and modular. Gridsome makes it painlessly easy to build websites using data from multiple sources such as Content API's, Headless CMSs & Markdown files. Gridsome pulls in data and generates static, secure HTML files that can be deployed to any global CDN or FTP.
+        Gridsome makes it painlessly easy to build websites using data from multiple sources such as Content API's, Headless CMSs & Markdown-files. Gridsome pulls in data and generates static, secure HTML files that can be deployed to any global CDN or FTP.
       </p>
 
       <h2 class="text-2xl font-bold mb-5 text-headline">Why Gridsome?</h2>

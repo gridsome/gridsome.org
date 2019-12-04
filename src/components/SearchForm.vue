@@ -50,4 +50,8 @@ export default {
 
 <style lang="scss">
 // @import '~docsearch.js/dist/cdn/docsearch.min.css';
+
+.algolia-autocomplete {
+  width: 100%;
+}
 </style>

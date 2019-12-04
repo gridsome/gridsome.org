@@ -25,7 +25,7 @@
 </template>
 
 <script>
-let themes = ['light', 'dark', 'sepia']
+let themes = ['light', 'dark']
 
 export default {
   data() {

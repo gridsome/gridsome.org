@@ -3,7 +3,6 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   theme: {
-  	// Color system: https://medium.com/nodesdigital/dark-mode-working-with-color-systems-e73aeab8dbae
     colors: {
       'background': 'var(--bg)',
       'muted': 'var(--bg-secondary)',
