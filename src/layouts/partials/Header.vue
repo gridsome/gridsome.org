@@ -15,14 +15,14 @@
         
         <Popover class="relative" name="Ecosystem">
           <div slot="face">
-            <button title="Gridsome Ecosystem" class="font-mono flex items-center text-sm w-full border shadow-strong p-1 px-2 rounded">
+            <button title="Gridsome Ecosystem" class="font-mono flex items-center text-sm w-full border border-seperator-strong bg-background hover:bg-muted shadow-strong p-1 px-2 rounded">
               <span>Framework</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="-mr-1 w-4 h-4 opacity-50 feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
             </button>
           </div>
 
           <div slot="content">
-            <div class="absolute mt-2 left-0 w-sidebar border rounded shadow-xl bg-light" >
+            <div class="absolute mt-2 left-0 w-sidebar border border-seperator-strong rounded shadow-xl bg-highlight" >
               <div class="px-5 py-3">
                 <h3 class="font-bold mb-1">Framework <span class="text-xs opacity-75 font-thin ml-1">Open Source</span></h3>
                 <p class="text-xs">A Vue.js-powered Website Generator</p>
@@ -69,7 +69,7 @@
             rel="noopener noreferrer"
             target="_blank"
             title="Gridsome @ GitHub"
-            class="font-mono flex items-center text-sm w-full border bg-light shadow-strong p-1 px-2 rounded"
+            class="font-mono flex items-center text-sm w-full border bg-background shadow-strong p-1 px-2 rounded"
           >
             <github-logo
               height="20px"

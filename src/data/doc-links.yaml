@@ -3,7 +3,7 @@
     - title: Getting started
       link: /docs/
     - title: Upgrade guide
-      link: /docs/fast-by-default/
+      link: /docs/how-to-upgrade/
     - title: Fast by default
       link: /docs/fast-by-default/
     - title: The JAMstack
@@ -17,7 +17,7 @@
       link: /docs/directory-structure/
     - title: Project configuration
       link: /docs/config/
-    - title: Pages
+    - title: Pages & Routing
       link: /docs/pages/
     - title: Collections
       link: /docs/collections/
@@ -134,8 +134,6 @@
   items:
   - title: Prerequisites
     link: /docs/prerequisites/
-  - title: How to upgrade
-    link: /docs/how-to-upgrade/
   - title: Troubleshooting
     link: /docs/troubleshooting/
   - title: Dev tools

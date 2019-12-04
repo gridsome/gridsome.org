@@ -5,18 +5,17 @@ module.exports = {
   theme: {
   	// Color system: https://medium.com/nodesdigital/dark-mode-working-with-color-systems-e73aeab8dbae
     colors: {
-      'light': 'var(--bg)',
-      'light-transparent': 'var(--bg-transparent)',
-    	'light-teritary': 'var(--bg-teritary)',
-      'dark': 'var(--body-color)',
-      'dark-secondary': 'var(--body-color-dark)',
-      'dark-teritary': 'var(--body-color)',
-      'tint': 'var(--primary-color)',
-      'tint-secondary': 'var(--primary-color-dark)',
-      'tint-teritary': 'var(--primary-color-tint)',
-      'placeholder': 'var(--placeholder)',
+      'background': 'var(--bg)',
+      'muted': 'var(--bg-secondary)',
+    	'highlight': 'var(--bg-teritary)',
+      'body': 'var(--body-color)',
+      'headline': 'var(--body-color-dark)',
+      'primary': 'var(--primary-color)',
+      'primary-strong': 'var(--primary-color-dark)',
+      'primary-tint': 'var(--primary-color-tint)',
       'seperator': 'var(--border-color)',
-      'seperator-dark': 'var(--border-color-darker)'
+      'seperator-strong': 'var(--border-color-darker)',
+      'on-dark': '#FFF',
     },
     extend: {
       spacing: {
@@ -28,7 +27,7 @@ module.exports = {
         'container-outer' : '1460px'
       },
       boxShadow: {
-        'strong' : '1px 1px 1px rgba(0,0,0,1)'
+        'strong' : 'var(--shadow-strong)'
       }
     },
     typography: {

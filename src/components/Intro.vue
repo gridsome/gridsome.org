@@ -9,7 +9,7 @@
       <div class="flex items-center">
         <div class="w-2/5 z-20 relative">
             
-            <h1 class="text-4xl leading-tight font-bold mb-5 text-label-secondary">
+            <h1 class="text-4xl leading-tight font-bold mb-5 text-headline">
               <span>Build fast, modern JAMstack<br/> websites with Vue.js</span>
             </h1>
 
@@ -18,11 +18,11 @@
             </p>
 
             <p class="mb-10">
-              <g-link to="/docs/" class="py-3 px-5 rounded border border-dark hover:bg-tint-secondary shadow-strong bg-tint text-light" >
-                <span class="font-mono">Get started</span>
+              <g-link to="/docs/" class="py-3 px-5 rounded border hover:bg-tint-secondary bg-primary hover:bg-primary-strong shadow-strong bg-tint text-light border-seperator-strong" >
+                <span class="font-mono text-on-dark">Get started</span>
               </g-link>
 
-              <g-link to="/docs/" class="py-3 px-5 rounded border border-dark bg-light shadow-strong ml-5" >
+              <g-link to="/docs/" class="py-3 px-5 bg-background hover:bg-muted rounded border border-seperator-strong bg-light shadow-strong ml-5" >
                 <span class="font-mono">Tutorial</span>
               </g-link>
             </p>
