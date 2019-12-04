@@ -8,18 +8,18 @@
     <DocLinks slot="sidebar" />
 
     <template slot="toc">
-      <h3>On this page</h3>
       <ul>
-        <li>Why Gridsome?</li>
-        <li>How it works</li>
-        <li>What is JAMstack</li>
-        <li>The API Economy</li>
-        <li>Gridsome VS Nuxt</li>
-        <li>Gridsome VS Gatsby</li>
-        <li>Contributors</li>
-        <li>Newsletter</li>
+        <li class="text-xs font-mono mb-1 block">Why Gridsome?</li>
+        <li class="text-xs font-mono mb-1 block">How it works</li>
+        <li class="text-xs font-mono mb-1 block">What is JAMstack</li>
+        <li class="text-xs font-mono mb-1 block">The API Economy</li>
+        <li class="text-xs font-mono mb-1 block">Gridsome VS Nuxt</li>
+        <li class="text-xs font-mono mb-1 block">Gridsome VS Gatsby</li>
+        <li class="text-xs font-mono mb-1 block">Contributors</li>
+        <li class="text-xs font-mono mb-1 block">Newsletter</li>
       </ul>
     </template>
+
     <div class="rich-text">
       <h2 class="text-2xl font-bold mb-3">Break free from the CMS limits</h2>
       <p class="text-xl mb-5">

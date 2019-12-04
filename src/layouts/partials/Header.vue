@@ -26,7 +26,7 @@
               <div class="px-5 py-3">
                 <h3 class="font-bold mb-1">Framework <span class="text-xs opacity-75 font-thin ml-1">Open Source</span></h3>
                 <p class="text-xs">Build modern JAMstack websites with Vue.js</p>
-                <p class="text-xs opacity-50">gridsome.org</p>
+                <p class="text-xs opacity-50">gridsome.org (This site)</p>
               </div>
               <hr class="opacity-25" />
               <div class="px-5 py-3 opacity-50 pointer-events-none">
@@ -34,13 +34,20 @@
                 <p class="text-xs">Build modern JAMstack websites <strong>without coding</strong></p>
                 <p class="text-xs opacity-50">gridsome.com</p>
               </div>
+              
+              <hr class="opacity-25" />
+              <div class="px-5 py-3 opacity-50 pointer-events-none">
+                <h3 class="font-bold mb-1">Grid UI <span class="text-xs opacity-75 font-thin ml-1">Coming soon!</span></h3>
+                <p class="text-xs">Vue.js Component library powered by TailwindCSS</p>
+                <p class="text-xs opacity-50">grid-ui.com</p>
+              </div>
           
             </div>
           </div>
         </Popover>
       
       </div>
-      <SearchForm class="flex-1 px-24" />
+      <SearchForm class="flex-1 px-16" />
       <nav class="flex items-center justify-end w-sidebar">
         <ToggleTheme class="mx-2" />
         <a

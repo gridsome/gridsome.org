@@ -22,7 +22,7 @@ module.exports = {
       spacing: {
         'header': '65px',
         'header-mobile' : '50px',
-        'sidebar' : '240px'
+        'sidebar' : '260px'
       },
       maxWidth: {
         'container-outer' : '1460px'

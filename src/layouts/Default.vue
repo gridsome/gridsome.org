@@ -14,8 +14,8 @@
             <slot name="sidebar" />
           </div>
         </div>
-        <div class="flex-1">
-          <div class="py-8 px-24">
+        <div class="w-full flex-1">
+          <div class="py-8 px-16">
             <slot />
           </div>
         </div>
