@@ -11,8 +11,8 @@
       <ul>
         <li class="text-xs font-mono mb-1 block">Why Gridsome?</li>
         <li class="text-xs font-mono mb-1 block">How it works</li>
-        <li class="text-xs font-mono mb-1 block">What is JAMstack</li>
-        <li class="text-xs font-mono mb-1 block">The API Economy</li>
+        <li class="text-xs font-mono mb-1 block">Use Cases</li>
+        <li class="text-xs font-mono mb-1 block">Git-Workflow & JAMstack</li>
         <li class="text-xs font-mono mb-1 block">Gridsome VS Nuxt</li>
         <li class="text-xs font-mono mb-1 block">Gridsome VS Gatsby</li>
         <li class="text-xs font-mono mb-1 block">Contributors</li>
@@ -28,14 +28,13 @@
 
       <h2 class="text-2xl font-bold mb-3">Why Gridsome?</h2>
 
-      <h3 class="text-lg font-bold mb-3">Enjoy modern development tools</h3>
+      <h3 class="text-lg font-bold mb-3">Modern development with Vue.js</h3>
       <p class="mb-5">Build websites with modern tools like Vue.js,  GraphQL & all the power of Node.js & the JavaScript ecosystem. Develop locally and get instant hot-reloading for any code change.</p>
 
-      <h3 class="text-lg font-bold mb-3">Fast by default</h3>
+      <h3 class="text-lg font-bold mb-3">Speed past the competition</h3>
       <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
 
-
-      <h3 class="text-lg font-bold mb-3">Centralized data management</h3>
+      <h3 class="text-lg font-bold mb-3">Centralized data management with GraphQL</h3>
       <p class="mb-5">Gridsome pulls connected data sources into a local, unified GraphQL data layer, where it can be queried, filtered, paginated in any Vue Component by using the same syntax. With Gridsome you take full control of the data, no matter what CMS or source it's coming from.</p>
 
       <h3 class="text-lg font-bold mb-3">Simple, safe deployments</h3>

@@ -8,8 +8,8 @@
     </template>
 
     <template slot="toc">
-      <ul v-if="subtitles.length > 0 && subtitles[0].depth !== 3">
-        <li class="submenu__item text-xs mb-1 block font-mono" :class="{'ml-2 text-xs' : subtitle.depth === 3}" v-for="subtitle in subtitles" :key="subtitle.value">
+      <ul v-if="subtitles.length > 0 && subtitles[0].depth !== 3" class="text-sm">
+        <li class="submenu__item mb-1 block font-mono" :class="{'ml-2 text-xs opacity-75' : subtitle.depth === 3}" v-for="subtitle in subtitles" :key="subtitle.value">
           <a class="submenu__link" :href="subtitle.anchor">
             {{ subtitle.value }}
           </a>

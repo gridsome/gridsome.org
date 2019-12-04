@@ -25,23 +25,15 @@
             <div class="absolute mt-2 left-0 w-sidebar border rounded shadow-xl bg-light" >
               <div class="px-5 py-3">
                 <h3 class="font-bold mb-1">Framework <span class="text-xs opacity-75 font-thin ml-1">Open Source</span></h3>
-                <p class="text-xs">Build modern JAMstack websites with Vue.js</p>
-                <p class="text-xs opacity-50">gridsome.org (This site)</p>
+                <p class="text-xs">A Vue.js-powered Website Generator</p>
+                <p class="text-xs opacity-50">gridsome.org</p>
               </div>
               <hr class="opacity-25" />
               <div class="px-5 py-3 opacity-50 pointer-events-none">
-                <h3 class="font-bold mb-1">Studio <span class="text-xs opacity-75 font-thin ml-1">Coming soon!</span></h3>
+                <h3 class="font-bold mb-1">Studio <span class="text-xs opacity-75 font-thin ml-1">Coming soon</span></h3>
                 <p class="text-xs">Build modern JAMstack websites <strong>without coding</strong></p>
                 <p class="text-xs opacity-50">gridsome.com</p>
               </div>
-              
-              <hr class="opacity-25" />
-              <div class="px-5 py-3 opacity-50 pointer-events-none">
-                <h3 class="font-bold mb-1">Grid UI <span class="text-xs opacity-75 font-thin ml-1">Coming soon!</span></h3>
-                <p class="text-xs">Vue.js Component library powered by TailwindCSS</p>
-                <p class="text-xs opacity-50">grid-ui.com</p>
-              </div>
-          
             </div>
           </div>
         </Popover>

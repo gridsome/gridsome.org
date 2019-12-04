@@ -14,7 +14,7 @@
             <slot name="sidebar" />
           </div>
         </div>
-        <div class="w-full flex-1">
+        <div class="w-full flex-1 overflow-x-auto">
           <div class="py-8 px-16">
             <slot />
           </div>
@@ -28,6 +28,7 @@
       </div>
     </div>
     <Bg class="fixed top-0 w-full h-auto" />
+    <div class="fixed bottom-0 right-0 text-light bg-dark py-1 px-2 rounded m-2 text-xs">Built with Gridsome</div>
   </div>
 </template>
 
