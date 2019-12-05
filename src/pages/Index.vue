@@ -23,37 +23,56 @@
 
     <div class="rich-text">
       <h2 class="text-2xl font-bold mb-5 text-headline">Break free from the monolithic CMS limits</h2>
-      <p class="text-xl mb-5">
-        Gridsome makes it painlessly easy to build websites using data from multiple sources such as Content API's, Headless CMSs & Markdown-files. Gridsome pulls in data and generates static, secure HTML files that can be deployed to any global CDN or FTP.
+      <p class="text-lg mb-8">Gridsome lets you build websites using data from multiple sources such as modern Headless CMS, Content API's & Markdown-files. Gridsome takes your data and generates incredible fast, secure & static HTML files that can be deployed to any global CDN for better and cheaper hosting.
       </p>
 
-      <h2 class="text-2xl font-bold mb-5 text-headline">Why Gridsome?</h2>
-
-      <h3 class="text-lg font-bold mb-3 text-headline">Modern development with Vue.js</h3>
-      <p class="mb-5">Build websites with modern tools like Vue.js,  GraphQL & all the power of Node.js & the JavaScript ecosystem. Develop locally and get instant hot-reloading for any code change.</p>
-
-      <h3 class="text-lg font-bold mb-3 text-headline">Speed past the competition</h3>
-      <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-
-      <h3 class="text-lg font-bold mb-3 text-headline">Centralized data management with GraphQL</h3>
-      <p class="mb-5">Gridsome pulls connected data sources into a local, unified GraphQL data layer, where it can be queried, filtered, paginated in any Vue Component by using the same syntax. With Gridsome you take full control of the data, no matter what CMS or source it's coming from.</p>
-
-      <h3 class="text-lg font-bold mb-3 text-headline">Simple, safe deployments</h3>
-      <p class="mb-5">No servers. No databases. Only files. Deploy your entire site to a CDN and forget about it. A Gridsome site can handle thousands to millions of hits without breaking - and no expensive server costs.</p>
-      
-      <h3 class="text-lg font-bold mb-3 text-headline">Work faster and build better websites</h3>
+      <h2 class="text-xl font-bold mb-5 text-headline">Why Gridsome?</h2>
 
       <ul class="leading-loose mb-10">
+        <li><strong>Vue.js for frontend</strong> - The simplest & most approachable frontend framework.</li>
+        <li><strong>Local development with hot-reloading</strong> - See code changes in real-time.</li>
+        <li><strong>Source any data</strong> - Bring data from your favorite CMS, APIs or Markdown-files.</li>
+        <li><strong>GraphQL data layer</strong> - Centralized data management powered by GraphQL.</li>
+        <li><strong>Fast by default</strong> - Gridsome builds performance into every page automatically.</li>
+        <li><strong>Static file generation</strong> - Deploy fast & securely to any CDN or static web host.</li>
         <li><strong>File-based page routing</strong> - Any Name.vue file in src/pages is a static route.</li>
-        <li><strong>File-based dynamic routing</strong> - Any [param].vue file in src/pages is a dynamic route.</li>
+        <li><strong>Dynamic routing</strong> - Any [param].vue file in src/pages is a dynamic route.</li>
         <li><strong>Automatic Image Optimization</strong>- Compress & Optimize images on-the-fly.</li>
         <li><strong>Automatic Page pre-fetching</strong>- Load next pages in background for faster browsing.</li>
-        <li><strong>Automatic Code Splitting</strong> - Builds ultra performance into every page.</li>
+        <li><strong>Automatic Code Splitting</strong> - Only load what's needed per page.</li>
         <li><strong>Plugin library</strong> - Extend Gridsome with a rich plugin ecosystem.</li>
       </ul>
-    </div>
 
-    <h2 class="text-2xl font-bold mb-5 text-headline">How Gridsome works</h2>
+      <h2 class="text-xl font-bold mb-6 text-headline">How Gridsome works</h2>
+
+      <div class="relative border border-secondary shadow-strong p-4 pt-6 mb-8">
+        <span class="block font-mono text-xs absolute bg-secondary text-on-dark p-1 px-2 -mt-3 ml-3 rounded shadow-strong top-0 left-0">01. Bring your data</span>
+        <p class="text-sm"><strong>Source data from anywhere</strong> Any Headless CMS, Contentful, WordPress, Drupal, Sanity.io, etc. Data Any APIs, Databases, AirTable, YAML, CSV, JSON, etc. Markdown Any Git-based CMS, Forestry, Netlify CMS, Blogs, Documentation.</p>
+      </div>
+
+      <div class="relative border border-secondary shadow-strong p-4 pt-6 mb-5">
+        <span class="block font-mono text-xs absolute bg-secondary text-on-dark p-1 px-2 -mt-3 ml-3 rounded shadow-strong top-0 left-0">02. Build</span>
+        <p class="text-sm"><strong>Build with modern tools</strong> Vue.js, GraphQL, HTML, CSS.</p>
+      </div>
+
+      <div class="relative p-3 mb-5">
+        <p class="text-xs"><strong>Store your Gridsome project on Git</strong>. Changes will be automatically be deployed.</p>
+      </div>
+
+      <div class="relative border border-secondary shadow-strong p-4 pt-6 mb-5">
+        <span class="block font-mono text-xs absolute bg-secondary text-on-dark p-1 px-2 -mt-3 ml-3 rounded shadow-strong top-0 left-0">03. Deploy</span>
+        <p class="text-sm"><strong>Generate & deploy static HTML files - </strong> Netlify, Zeit, AWS</strong></p>
+      </div>
+
+      <p class="mb-5">Gridsome generates static html that hydrates into a Vue SPA once loaded in the browser. This means you can build both static websites & dynamic apps with Gridsome. It's perfect for your JAMstack workflow.</p>
+
+      <p class="mb-5">Gridsome builds one .html file and one .json file for every page. After first page load it only uses the .json files to prefetch and load data for the next pages. It also builds a .js bundle for each page that needs it (code splitting).</p>
+
+      <p class="mb-5">It uses vue-router for SPA routing, and vue-meta for managing </p>
+
+      <p class="mb-5">Gridsome adds a 57kB min gzip JS bundle size by default.(vue.js, vue-router, vue-meta and some for image lazy loading).</p>
+
+    </div>
 
   </Layout>
 </template>

@@ -10,7 +10,7 @@
         <div class="w-2/5 z-20 relative">
             
             <h1 class="text-4xl leading-tight font-bold mb-5 text-headline">
-              <span>Build fast, modern JAMstack<br/> websites with Vue.js</span>
+              <span>A Vue.js powered <br/>Modern Website Generator</span>
             </h1>
 
             <p class="text-xl mb-10">
