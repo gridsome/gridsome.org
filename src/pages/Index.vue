@@ -10,10 +10,9 @@
     <template slot="toc">
       <ul>
         <li class="text-xs font-mono mb-1 block">Why Gridsome?</li>
-        <li class="text-xs font-mono mb-1 block">How it works</li>
-        <li class="text-xs font-mono mb-1 block">Example usage</li>
-        <li class="text-xs font-mono mb-1 block">Static & Dynamic</li>
-        <li class="text-xs font-mono mb-1 block">The JAMstack</li>
+        <li class="text-xs font-mono mb-1 block">How Gridsome Works</li>
+        <li class="text-xs font-mono mb-1 block">Built for JAMstack</li>
+        <li class="text-xs font-mono mb-1 block">Example data sourcing</li>
         <li class="text-xs font-mono mb-1 block">Gridsome VS Nuxt</li>
         <li class="text-xs font-mono mb-1 block">Gridsome VS Gatsby</li>
         <li class="text-xs font-mono mb-1 block">Contributors</li>
@@ -31,10 +30,11 @@
 
       <ul class="leading-loose mb-10">
         <li><strong>Vue.js for frontend</strong> - The simplest & most approachable frontend framework.</li>
-        <li><strong>Local development with hot-reloading</strong> - See code changes in real-time.</li>
+        <li><strong>Fast by default</strong> - Gridsome builds performance into every page automatically.</li>
         <li><strong>Source any data</strong> - Bring data from your favorite CMS, APIs or Markdown-files.</li>
         <li><strong>GraphQL data layer</strong> - Centralized data management powered by GraphQL.</li>
-        <li><strong>Fast by default</strong> - Gridsome builds performance into every page automatically.</li>
+        <li><strong>Built-in pagination & taxonomy support</strong> - Super flexible data handling.</li>
+        <li><strong>Local development with hot-reloading</strong> - See code changes in real-time.</li>
         <li><strong>Gridsome Image</strong>- A built-in component that resizes & optimizes images on-the-fly.</li>
         <li><strong>Gridsome Link</strong>- A built-in component that lazy pre-fetches next pages in background.</li>
         <li><strong>Automatic Code Splitting</strong> - Only load what's needed per page.</li>
@@ -46,23 +46,35 @@
 
       <h2 class="text-xl font-bold mb-6 text-headline">How Gridsome works</h2>
 
-      <div class="relative border border-primary shadow-strong p-4 pt-6 mb-8">
-        <span class="block font-mono text-xs absolute bg-primary text-on-dark p-1 px-2 -mt-3 ml-3 rounded shadow-strong top-0 left-0">01. Bring your data</span>
-        <p class="text-sm"><strong>Source data from anywhere</strong> Any Headless CMS, Contentful, WordPress, Drupal, Sanity.io, etc. Data Any APIs, Databases, AirTable, YAML, CSV, JSON, etc. Markdown Any Git-based CMS, Forestry, Netlify CMS, Blogs, Documentation.</p>
+      <div class="relative border border-primary rounded shadow-strong p-5 mb-8 text-center">
+        <div class="-mt-8 mb-2">
+          <span class="font-mono text-xs inline-block bg-primary text-on-dark p-1 px-2 rounded shadow-strong">01. Bring your data</span>
+        </div>
+        <p class="text-sm">
+          <g-image src="@/assets/images/logos.png" />
+          <p class="mt-4 text-xs text-center">
+            <GraphqlLogo class="w-5 h-5 mr-2 inline-block" /> Gridsome pulls data into a local GraphQL data layer for centralized data managment.
+          </p>
       </div>
 
-      <div class="relative border border-primary shadow-strong p-4 pt-6 mb-5">
-        <span class="block font-mono text-xs absolute bg-primary text-on-dark p-1 px-2 -mt-3 ml-3 rounded shadow-strong top-0 left-0">02. Build</span>
-        <p class="text-sm"><strong>Build with modern tools</strong> Vue.js, GraphQL, HTML, CSS.</p>
+      <div class="relative border border-primary rounded shadow-strong p-5 mb-8 text-center">
+        <div class="-mt-8 mb-2">
+          <span class="font-mono text-xs inline-block bg-primary text-on-dark p-1 px-2 rounded shadow-strong ">02. Build</span>
+        </div>
+        <p class="text-sm text-center">
+          <VueLogo class="w-5 h-5 mr-2 inline-block" />
+          <strong>Build with modern tools</strong> like Vue.js, GraphQL, Webpack.
+        </p>
       </div>
 
-      <div class="relative p-3 mb-5">
-        <p class="text-xs"><strong>Store your Gridsome project on Git</strong>. Changes will be automatically be deployed.</p>
-      </div>
-
-      <div class="relative border border-primary shadow-strong p-4 pt-6 mb-5">
-        <span class="block font-mono text-xs absolute bg-primary text-on-dark p-1 px-2 -mt-3 ml-3 rounded shadow-strong top-0 left-0">03. Deploy</span>
-        <p class="text-sm"><strong>Generate & deploy static HTML files - </strong> Netlify, Zeit, AWS</strong></p>
+      <div class="relative border border-primary rounded shadow-strong p-5 mb-8 mb-5 text-center">
+        <div class="-mt-8 mb-2">
+          <span class="inline-flex font-mono text-xs bg-primary text-on-dark p-1 px-2 rounded shadow-strong">03. Deploy</span>
+        </div>
+        <p class="text-sm">
+          <RocketLogo class="w-5 h-5 mr-2 inline-block" />
+          <strong>Generate & deploy static HTML files - </strong> Netlify, Zeit, AWS</strong>
+        </p>
       </div>
 
       <p class="mb-5">Gridsome generates static html that hydrates into a Vue SPA once loaded in the browser. This means you can build both static websites & dynamic apps with Gridsome. It's perfect for your JAMstack workflow.</p>
@@ -73,7 +85,7 @@
 
       <p class="mb-5">Gridsome adds a 57kB min gzip JS bundle size by default.(vue.js, vue-router, vue-meta and some for image lazy loading).</p>
 
-      <h2 class="text-xl font-bold mb-6 text-headline">Example usage</h2>
+      <h2 class="text-xl font-bold mb-6 text-headline">Example data sourcing</h2>
 
       <p>1. Pull in data from a data source</p>
 
@@ -84,10 +96,10 @@
 
       <p>By default Gridsome takes data and generates static HTML files, but that does not mean you can build dynamic apps & features with Gridsome. A Gridsome site is hydrated into a Vue.js application, so you can do everything a Vue.js app can do.</p>
 
-      <div class="relative border border-secondary bg-secondary-tint shadow-strong pl-10 py-2 my-5">
+      <div class="relative border border-secondary rounded bg-secondary-tint shadow-strong pl-10 py-2 my-5">
         <span class="block font-mono text-xs absolute bg-secondary text-on-dark p-1 px-2 -ml-5 mt-2 rounded shadow-strong top-0 left-0" style="transform: rotate(-5deg);">Tip!</span>
 
-        <p class="text-sm">Data pulled in to GraphQL data layer is always generated as static, SEO readable HTML. <strong>Dynamic data</strong> needs to be fetched client-side inside <strong>mounted()</strong> and is not a part of the generated HTML.</p>
+        <p class="text-sm">Data coming from the <strong>GraphQL data layer</strong> is always generated as static, SEO readable HTML. <strong>Dynamic data</strong> needs to be fetched client-side inside <strong>mounted()</strong> and is not a part of the generated HTML.</p>
       </div>
 
       <p>What you can do with dynamic data in Gridsome</p>
@@ -120,6 +132,10 @@ import HomeCommunity from '@/components/home/HomeCommunity.vue'
 import HomeConnect from '@/components/home/HomeConnect.vue'
 import Intro from '@/components/Intro.vue'
 import DocLinks from '@/components/DocLinks.vue'
+import GithubLogo from '@/assets/images/github-logo.svg'
+import VueLogo from '@/assets/images/vue-logo.svg'
+import GraphqlLogo from '@/assets/images/graphql-logo.svg'
+import RocketLogo from '@/assets/images/rocket.svg'
 
 export default {
   components: {
@@ -131,7 +147,11 @@ export default {
     HomeFeatures,
     HomeBlog,
     Intro,
-    DocLinks
+    DocLinks,
+    GithubLogo,
+    VueLogo,
+    GraphqlLogo,
+    RocketLogo
   },
   
   metaInfo: {
