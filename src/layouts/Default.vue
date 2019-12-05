@@ -1,11 +1,12 @@
 <template>
   <div class="bg-background z-20 relative text-body mx-auto max-w-container-outer shadow">
     <Header :transparent="transparentHeader" />
+
     <slot name="intro" />
 
     <div class="mx-auto container flex z-20">
       <div
-          :class="{'h-screen' : stickySidebar}"
+          :class="{'h-screen' : !isHome}"
           class="sidebar sticky overflow-y-auto top-0 w-sidebar pt-header -mt-header scroll-touch">
         <div class="sidebar-inner py-8 pr-3">
           <Nav />
@@ -42,10 +43,6 @@ export default {
     }
   },
   props: {
-    stickySidebar: {
-      type: Boolean,
-      default: true
-    },
     transparentHeader: {
       type: Boolean,
       default: false
