@@ -66,8 +66,8 @@ module.exports = {
       use: '@gridsome/vue-remark',
       options: {
         index: ['README'],
-        baseDir: './docs',
-        pathPrefix: '/docs',
+        baseDir: './documentation',
+        pathPrefix: '/',
         typeName: 'DocPage',
         template: './src/templates/DocPage.vue',
         plugins: [

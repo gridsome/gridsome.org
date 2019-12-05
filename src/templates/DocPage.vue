@@ -1,6 +1,8 @@
 <template>
-  <Layout>
+  <Layout :transparent-header="$page.doc.intro" :sticky-sidebar="!$page.doc.intro">
     
+    <Intro v-if="$page.doc.intro" slot="intro" />
+
     <DocLinks slot="sidebar" />
 
     <template name="default">
@@ -23,6 +25,7 @@
 query ($id: ID!) {
   doc: docPage (id: $id) {
     title
+    intro
     headings (depth: h1) {
       value
     }
