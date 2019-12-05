@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     colors: {
       'background': 'var(--bg)',
+      'background-dark': 'var(--bg-dark)',
       'muted': 'var(--bg-muted)',
     	'highlight': 'var(--bg-highlight)',
       'body': 'var(--body-color)',
