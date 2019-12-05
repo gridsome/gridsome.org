@@ -113,3 +113,10 @@
 - id: travisreynolds
   name: Travis Reynolds
   bio: "Frontend Developer"
+
+- id: edmundekott
+  name: Edmund Ekott
+  bio: "Frontend Engineer"
+  avatar: ./images/edmund.jpg
+  twitter: "@26th_edmund"
+ 

@@ -182,3 +182,12 @@
   author: travisreynolds
   tags: gridsome, starter, shopify
   platforms: shopify
+
+- title: Gridsome Portfolio Story
+  description: A starter template for designers and developers to tell stories about their work.
+  screenshot: ./screenshots/gridsome-portfolio-story.png
+  repo: Edmund1645/gridsome-portfolio-story
+  preview: https://gridsome-portfolio-story.netlify.com/
+  author: edmundekott
+  tags: gridsome, starter, portfolio
+  platforms: markdown
