@@ -11,6 +11,7 @@
       <ul>
         <li class="text-xs font-mono mb-1 block">Why Gridsome?</li>
         <li class="text-xs font-mono mb-1 block">How it works</li>
+        <li class="text-xs font-mono mb-1 block">Example usage</li>
         <li class="text-xs font-mono mb-1 block">Static & Dynamic</li>
         <li class="text-xs font-mono mb-1 block">The JAMstack</li>
         <li class="text-xs font-mono mb-1 block">Gridsome VS Nuxt</li>
@@ -34,12 +35,12 @@
         <li><strong>Source any data</strong> - Bring data from your favorite CMS, APIs or Markdown-files.</li>
         <li><strong>GraphQL data layer</strong> - Centralized data management powered by GraphQL.</li>
         <li><strong>Fast by default</strong> - Gridsome builds performance into every page automatically.</li>
+        <li><strong>Gridsome Image</strong>- A built-in component that resizes & optimizes images on-the-fly.</li>
+        <li><strong>Gridsome Link</strong>- A built-in component that lazy pre-fetches next pages in background.</li>
+        <li><strong>Automatic Code Splitting</strong> - Only load what's needed per page.</li>
         <li><strong>Static file generation</strong> - Deploy fast & securely to any CDN or static web host.</li>
         <li><strong>File-based page routing</strong> - Any Name.vue file in src/pages is a static route.</li>
         <li><strong>Dynamic routing</strong> - Any [param].vue file in src/pages is a dynamic route.</li>
-        <li><strong>Automatic Image Optimization</strong>- Compress & Optimize images on-the-fly.</li>
-        <li><strong>Automatic Page pre-fetching</strong>- Load next pages in background for faster browsing.</li>
-        <li><strong>Automatic Code Splitting</strong> - Only load what's needed per page.</li>
         <li><strong>Plugin library</strong> - Extend Gridsome with a rich plugin ecosystem.</li>
       </ul>
 
@@ -71,6 +72,12 @@
       <p class="mb-5">It uses vue-router for SPA routing, and vue-meta for managing </p>
 
       <p class="mb-5">Gridsome adds a 57kB min gzip JS bundle size by default.(vue.js, vue-router, vue-meta and some for image lazy loading).</p>
+
+      <h2 class="text-xl font-bold mb-6 text-headline">Example usage</h2>
+
+      <p>1. Pull in data from a data source</p>
+
+      <p>2. Add data from graphQL data layer</p>
 
 
       <h2 class="text-xl font-bold mb-6 text-headline">Static & dynamic data in Gridsome</h2>
