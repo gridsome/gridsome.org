@@ -14,7 +14,7 @@
             </h1>
 
             <p class="text-xl mb-10">
-              Gridsome makes it easy for developers to build modern JAMstack websites & apps that are <g-link to="/docs/fast-by-default/">fast by default</g-link>
+              Gridsome makes it easy for developers to build modern websites, apps & PWAs that are <g-link to="/docs/fast-by-default/">fast by default</g-link>
             </p>
 
             <p class="mb-10">

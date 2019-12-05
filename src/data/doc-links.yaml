@@ -6,6 +6,8 @@
       link: /docs/how-to-upgrade/
     - title: Fast by default
       link: /docs/fast-by-default/
+    - title: The JAMstack
+      link: /docs/jamstack/
     - title: Deployment
       link: /docs/deployment/ 
 
