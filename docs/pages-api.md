@@ -21,7 +21,7 @@ Use the `createPages` hook if you want to create pages. Pages created in this ho
 
 - options `object`
   - **path** `string` *Required.*
-  - **component** `string` *Required.*
+  - **component** `string` *Required.* *Page components go within the templates directory.*
   - context `object` *Optional context for the page and `page-query`.*
   - queryVariables `object`  *Optional context only for `page-query`.*
 
