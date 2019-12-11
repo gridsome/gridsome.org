@@ -1,6 +1,6 @@
 <template>
   <Layout class="has-sidebar starter-page" :footer="false">
-    <div class="container flex flex-align-top">
+    <div class="container flex flex-align-top container-main">
 
       <div class="sidebar">
 

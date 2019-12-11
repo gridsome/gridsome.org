@@ -38,6 +38,7 @@ export default {
   position: relative;
   width: 100%;
   flex: 1;
+  min-width: 0;
 
   &--secondary {
     background-color: var(--bg-secondary);
