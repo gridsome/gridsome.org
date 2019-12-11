@@ -70,8 +70,8 @@ export default {
           $vm.currentText = ($vm.currentText + 1) % 6
           requestAnimationFrame(animate)
         }, 1500)
-      })();
-    })(this);
+      })()
+    })(this)
   },
   destroyed () {
     clearTimeout(this._counter)
