@@ -113,3 +113,8 @@
 - id: travisreynolds
   name: Travis Reynolds
   bio: "Frontend Developer"
+
+- id: noxify
+  name: Marcus Reinhardt
+  bio: "Developer"
+  avatar: ./images/noxify.jpg
