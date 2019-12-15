@@ -113,3 +113,8 @@
 - id: travisreynolds
   name: Travis Reynolds
   bio: "Frontend Developer"
+
+- id: as3k
+  name: Zachary Guerrero
+  bio: "Front-end Developer and Product Designer"
+  avatar: ./images/as3k.jpg

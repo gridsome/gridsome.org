@@ -182,3 +182,11 @@
   author: travisreynolds
   tags: gridsome, starter, shopify
   platforms: shopify
+
+- title: Pug + Stylus + Tailwind Starter
+  description: A fork of the base gridsome starter that has Pug, Stylus, and Talwind CSS as options out of the box
+  repo: as3k/gridsome-starter-pug-stylus
+  preview: 
+  tags: gridsome, starter, pug, stylus, tailwind
+  author: as3k
+  
