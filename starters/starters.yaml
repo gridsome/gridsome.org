@@ -182,3 +182,12 @@
   author: travisreynolds
   tags: gridsome, starter, shopify
   platforms: shopify
+
+- title: Gridsome Skeleventy Starter
+  description: A minimalistic starter boilerplate with tailwindcss
+  screenshot: ./screenshots/gridsome-starter-skeleventy.jpg
+  repo: noxify/gridsome-starter-skeleventy
+  preview: https://gridsome-starter-skeleventy.now.sh/
+  author: noxify
+  tags: gridsome, starter, tailwind, tailwindcss, blog, about
+  platforms: markdown
