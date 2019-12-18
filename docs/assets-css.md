@@ -31,7 +31,7 @@ You can also use SASS in **Vue Components** with the `lang="scss"` attribute:
 </style>
 ```
 
-[Learn more about using Using Pre-Processors in Vue.js](https://vue-loader.vuejs.org/guide/pre-processors.html)
+[Learn more about using using Pre-Processors in Vue.js](https://vue-loader.vuejs.org/guide/pre-processors.html)
 
 ### Global Preprocessor Files (ie. variables, mixins)
 Often when you're working on a project, you'll have a set of variables, mixins, and framework variable overrides that you'll want to be automatically used in your components/layouts so you don't have to keep manually importing them.
@@ -108,7 +108,7 @@ In Vue Components you add styles inside a `<style>` tag.
 
 ## Scoped styles in Components
 
-It's very easy to add scoped styles in vue. Simple add "scoped" to the style tag to automatically add suffix to any CSS class in Markup. This means that styles here will only be applied to current component regardless of the class names you use.
+It's very easy to add scoped styles in Vue. Simple add "scoped" to the style tag to automatically add suffix to any CSS class in Markup. This means that styles here will only be applied to current component regardless of the class names you use.
 
 ```html
 <style scoped>
@@ -137,7 +137,7 @@ Gridsome [Critical CSS plugin](/plugins/@gridsome/plugin-critical) extracts CSS 
 The quickest and easiest way to get up and running with Tailwind CSS in your project is to install it with the [Gridsome Tailwind Plugin](/plugins/gridsome-plugin-tailwindcss). A Gridsome plugin will typically have the majority of the boilerplate and configuration done for you, eliminating a lot of the set up time.
 
 
-### Add TailwindCSS Manully
+### Add TailwindCSS Manually
 
 If you prefer to do the install and configuration on your own, you can add TailwindCSS manually with the following instructions.
 
@@ -356,7 +356,7 @@ npm install vuetify --save
 yarn add vuetify
 ```
 
-Then, you will need to register the Vuetify plugin, include the Vuetify css file, and add a link to the head 
+Then, you will need to register the Vuetify plugin, include the Vuetify CSS file, and add a link to the head 
 for Google's material design icons in your 'main.js' file, with Vuetify 2.0+ you will need to pass a new instance of Vuetify to appOptions. Icons and iconfonts are now built into Vuetify 2.0+. You can install them as a local dependency or add them as a stylesheet in your head from a CDN, more information on Vuetify icon installation is available [here](https://vuetifyjs.com/en/customization/icons):
 
 ```js

@@ -94,7 +94,7 @@ These methods are injected into every component.
 
 ### $fetch(path)
 
-Fetch `page-query` results and [page context](http://localhost:8080/docs/pages-api#the-page-context) from internal pages
+Fetch `page-query` results and [page context](/docs/pages-api#the-page-context) from internal pages
 
 ```js
 export default {

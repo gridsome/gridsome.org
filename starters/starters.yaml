@@ -160,11 +160,11 @@
   description: A minimalistic starter boilerplate with Storyblok integration
   screenshot: ./screenshots/gridsome-starter-storyblok.jpg
   repo: storyblok/storyblok-gridsome-boilerplate
-  preview: 
+  preview:
   author: emanuelgsouza
   tags: storyblok, cms
   platforms: storyblok
-  
+
 - title: Jamdocs
   description: The ultimate static generated documentation theme for the JAM-stack
   screenshot: ./screenshots/jamdocs.png
@@ -172,4 +172,22 @@
   preview: https://jamdocs.netlify.com/
   author: samuelhorn
   tags: gridsome, docs, documentation, netlify
+  platforms: markdown
+
+- title: Shopify Starter
+  description: A minimalistic starter showcasing Shopify & Gridsome working together
+  screenshot: ./screenshots/gridsome-starter-shopify.png
+  repo: thetre97/gridsome-starter-shopify
+  preview: https://gridsome-shopify-starter.netlify.com
+  author: travisreynolds
+  tags: gridsome, starter, shopify
+  platforms: shopify
+
+- title: Gridsome Skeleventy Starter
+  description: A minimalistic starter boilerplate with tailwindcss
+  screenshot: ./screenshots/gridsome-starter-skeleventy.jpg
+  repo: noxify/gridsome-starter-skeleventy
+  preview: https://gridsome-starter-skeleventy.now.sh/
+  author: noxify
+  tags: gridsome, starter, tailwind, tailwindcss, blog, about
   platforms: markdown
