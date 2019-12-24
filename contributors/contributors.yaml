@@ -113,6 +113,11 @@
   name: Travis Reynolds
   bio: "Frontend Developer"
 
+- id: noxify
+  name: Marcus Reinhardt
+  bio: "Developer"
+  avatar: ./images/noxify.jpg
+  
 - id: microflash
   name: Naiyer Asif
   bio: "Full-stack developer"

@@ -183,11 +183,20 @@
   tags: gridsome, starter, shopify
   platforms: shopify
 
+- title: Gridsome Skeleventy Starter
+  description: A minimalistic starter boilerplate with tailwindcss
+  screenshot: ./screenshots/gridsome-starter-skeleventy.jpg
+  repo: noxify/gridsome-starter-skeleventy
+  preview: https://gridsome-starter-skeleventy.now.sh/
+  author: noxify
+  tags: gridsome, starter, tailwind, tailwindcss, blog, about
+  platforms: markdown
+  
 - title: Jada
   description: A simple blog starter template for Gridsome
   screenshot: ./screenshots/gridsome-jada.png
   repo: Microflash/jada
   preview: https://gridsome-jada.netlify.com/
   author: microflash
-  tags: starter, blog, sass
+  tags: gridsome, starter, blog, sass
   platforms: markdown
