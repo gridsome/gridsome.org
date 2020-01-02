@@ -198,5 +198,14 @@
   repo: noxify/gridsome-starter-casper-v2
   preview: https://gridsome-starter-casper-v2.now.sh/
   author: noxify
-  tags: gridsome, starter, tailwind, tailwindcss, blog, about, categories, tags, author, about
+  tags: gridsome, starter, tailwind, tailwindcss, blog, about, categories, tags, author, about, responsive
+  platforms: markdown
+
+- title: Gridsome Articles Starter
+  description: A gridsome starter built with bootstrap
+  screenshot: ./screenshots/gridsome-starter-articles.jpg
+  repo: noxify/gridsome-starter-articles
+  preview: https://gridsome-starter-articles.now.sh/
+  author: noxify
+  tags: gridsome, starter, bootstrap, articles, blog, tutorials, tags, toc, embedding, responsive
   platforms: markdown
