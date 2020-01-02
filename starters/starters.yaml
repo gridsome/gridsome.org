@@ -191,3 +191,12 @@
   author: noxify
   tags: gridsome, starter, tailwind, tailwindcss, blog, about
   platforms: markdown
+
+- title: Gridsome Casper V2 Starter
+  description: A gridsome starter based on Ghost Casper V2 and tailwindcss
+  screenshot: ./screenshots/gridsome-starter-casper-v2.jpg
+  repo: noxify/gridsome-starter-casper-v2
+  preview: https://gridsome-starter-casper-v2.now.sh/
+  author: noxify
+  tags: gridsome, starter, tailwind, tailwindcss, blog, about, categories, tags, author, about
+  platforms: markdown
