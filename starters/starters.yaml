@@ -191,3 +191,12 @@
   author: noxify
   tags: gridsome, starter, tailwind, tailwindcss, blog, about
   platforms: markdown
+
+- title: Jada
+  description: A practical blog starter for Gridsome
+  screenshot: ./screenshots/gridsome-jada.png
+  repo: Microflash/jada
+  preview: https://gridsome-jada.netlify.com/
+  author: microflash
+  tags: gridsome, starter, blog, sass
+  platforms: markdown
