@@ -118,3 +118,8 @@
   name: Marcus Reinhardt
   bio: "Developer"
   avatar: ./images/noxify.jpg
+
+- id: hunsalz
+  name: Markus Hunsalz
+  bio: "Developer"
+  avatar: ./images/hunsalz.jpg
