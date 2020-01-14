@@ -46,7 +46,7 @@ export default {
 </script>
 
 <static-query>
-query Example {
+query {
   examples:	allExample (sortBy: "order", order: ASC)  {
   	edges {
   		node {

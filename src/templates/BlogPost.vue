@@ -1,13 +1,13 @@
 <template>
   <Layout>
-    <Section class="post" container="md" dots="true" >
+    <Section container="md" dots="true" >
 
       <div class="post-header container-md text-center mb-x2">
         <h1 v-html="$page.post.title"/>
         <PostMeta :post="$page.post"/>
       </div>
 
-      <div class="post-content">
+      <div class="post-content post mb-x2">
 
         <g-image v-if="$page.post.poster" quality="1" width="600" :src="$page.post.poster" />
 
@@ -16,13 +16,15 @@
         <div v-html="$page.post.content"/>
 
       </div>
+
+      <Newsletter />
     </Section>
   </Layout>
 </template>
 
 <page-query>
-query BlogPost ($path: String!) {
-  post: blogPost (path: $path) {
+query ($id: ID!) {
+  post: blogPost (id: $id) {
     title
     date (format: "D. MMMM YYYY")
     timeToRead
@@ -40,10 +42,11 @@ query BlogPost ($path: String!) {
 
 <script>
 import PostMeta from '@/components/PostMeta.vue'
-
+import Newsletter from '@/components/Newsletter.vue'
 export default {
   components: {
     PostMeta,
+    Newsletter
   },
   metaInfo () {
     return {

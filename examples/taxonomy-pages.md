@@ -22,7 +22,7 @@ order: 5
 </template>
 
 <page-query>
-query Tag ($id: String!) {
+query ($id: ID!) {
   tag (id: $id) {
     title
     belongsTo {

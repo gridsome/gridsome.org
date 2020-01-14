@@ -10,12 +10,12 @@
 
 <script>
 export default {
-  props: ['dark', 'dots', 'container', 'framed', 'primary', 'sway' ],
+  props: ['dark', 'dots', 'container', 'framed', 'secondary'],
   computed: {
     sectionClass() {
       let classes = []
-      // if(this.primary) classes.push('section--primary')
-      // if(this.dark) classes.push('section--dark')
+      if(this.secondary) classes.push('section--secondary')
+      if(this.dark) classes.push('section--dark')
       return classes
     },
     sectionClassInner() {
@@ -39,12 +39,12 @@ export default {
   width: 100%;
   flex: 1;
 
-  &--primary {
-    background-color: var(--primary-bg);
+  &--secondary {
+    background-color: var(--bg-secondary);
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
 
-    + .section--primary {
+    + .section--secondary {
       border-top-color: transparent;
       margin-top: -1px;
     }

@@ -1,19 +1,19 @@
 <template>
   <Layout class="has-sidebar starter-page" :footer="false">
     <div class="container flex flex-align-top">
-            
+
       <div class="sidebar">
 
           <h3 class="menu-item" >Browse</h3>
 
-          <g-link class="menu-item menu-link" to="/starters">
+          <g-link class="menu-item menu-link" to="/starters/">
             All starters
           </g-link>
 
           <h3 class="menu-item" >Platforms</h3>
 
           <g-link class="menu-item platform-link" v-for="item in platforms"  :key="item.node.id" :to="item.node.path" >
-            <g-image v-if="item.node.logo" :src="item.node.logo" /> 
+            <g-image v-if="item.node.logo" :src="item.node.logo" />
             {{ item.node.title }}
             <span class="platform-count" :class="{'platform-count--fade-out': item.node.belongsTo.totalCount == 0}">
               {{ item.node.belongsTo.totalCount }}
@@ -21,9 +21,9 @@
           </g-link>
 
           <hr />
-          <g-link to="/docs/how-to-contribute#submit-a-starter">Submit a Starter →</g-link>
+          <g-link to="/docs/how-to-contribute/#submit-a-starter">Submit a Starter →</g-link>
       </div>
-    
+
       <Section class="starters-content container flex-fit">
           <slot />
       </Section>
@@ -80,7 +80,8 @@ export default {
 .platform-count {
   margin-left: auto;
   padding: 0.15rem 0.4rem;
-  background-color: var(--inline-code-bg);
+  background-color: var(--bg-teritary);
+  transition: background-color .3s;
   border-radius: .3em;
   font-size: 0.7em;
 

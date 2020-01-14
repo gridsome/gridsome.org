@@ -18,7 +18,7 @@
           <h4>Markdown</h4>
           <p>Any Git-based CMS, Forestry, Netlify CMS, Blogs, Documentation.</p>
         </Card>
-      
+
         <Card style="border-radius: 0">
           <h4>CMSs</h4>
           <p>Any Headless CMS, Contentful, WordPress, Drupal, DatoCMS, Sanity.io, GraphCMS etc.</p>
@@ -65,13 +65,13 @@
         </svg>
       </div>
 
-      
+
        <div class="generate-html text-center">
         <div class="generate-html__logo">
           <gridsome-logo />
         </div>
         <h4>Pre-render HTML</h4>
-        <span>Generate SEO-friendly HTML using the <strong><g-link to="/docs/how-it-works#the-prpl-pattern">PRPL pattern</g-link></strong></span>
+        <span>Generate SEO-friendly HTML using the <strong><g-link to="/docs/how-it-works/#the-prpl-pattern">PRPL pattern</g-link></strong></span>
       </div>
 
       <div class="dots-vertical">
@@ -87,11 +87,11 @@
 
       <Card class="text-center container-mini mb">
         <h4>Static Web Hosts</h4>
-        <p> <g-link to="/docs/deploy-to-netlify">Netlify</g-link>, <g-link to="/docs/deploy-to-amplify">AWS Amplify</g-link>, <g-link to="/docs/deploy-to-zeit-now">Zeit Now</g-link>, <g-link to="/docs/deploy-to-amazon-s3">Amazon S3</g-link>, Surge.sh, Aerobatic, Now.sh & many more.</p>
+        <p> <g-link to="/docs/deploy-to-netlify/">Netlify</g-link>, <g-link to="/docs/deploy-to-amplify/">AWS Amplify</g-link>, <g-link to="/docs/deploy-to-zeit-now/">ZEIT Now</g-link>, <g-link to="/docs/deploy-to-amazon-s3/">Amazon S3</g-link>, Surge.sh, Aerobatic, Now.sh & many more.</p>
       </Card>
 
       <p class="home-links text-center">
-        <g-link  to="/docs/how-it-works">
+        <g-link  to="/docs/how-it-works/">
           Learn more about how it works
         </g-link>
       </p>
@@ -102,7 +102,7 @@
 
 
 <static-query>
-query Example {
+query {
   example (path: "/examples/templates") {
     content
   }
@@ -184,7 +184,7 @@ export default {
       path:nth-child(4) {
         animation: spin 1s linear infinite;
       }
-   
+
     }
   }
 }

@@ -18,7 +18,7 @@ order: 5
 </template>
 
 <page-query>
-query Posts ($page: Int) {
+query ($page: Int) {
   allPost (perPage: 10, page: $page) @paginate {
     pageInfo {
       totalPages

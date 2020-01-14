@@ -1,4 +1,4 @@
-# Deploy to Zeit Now
+# Deploy to ZEIT Now
 
 [ZEIT Now](https://zeit.co) is a cloud platform for websites and serverless APIs, that you can use to deploy your Gridsome projects to your personal domain (or a free `.now.sh` suffixed URL).
 

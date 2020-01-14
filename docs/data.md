@@ -8,7 +8,7 @@ Data from source plugins are stored in an internal data store. You can use [Grap
 
 Start by adding a top-level `<page-query>` block in your Vue component. Then write a [query](https://graphql.github.io/learn/queries/) inside it. The results will be available as a `$page` object in your templates.
 
-Read more about [fetching data](/docs/fetching-data) or the [Data Store API](/docs/data-store-api)
+Read more about [importing data](/docs/fetching-data/) or the [Data Store API](/docs/data-store-api/)
 
 ```html
 <template>
@@ -62,7 +62,7 @@ Every page that is created programmatically can have its own context with any da
 </template>
 ```
 
-Read more about the [Pages API](/docs/pages-api)
+Read more about the [Pages API](/docs/pages-api/)
 
 ## Local JSON and YAML files
 

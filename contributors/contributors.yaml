@@ -61,7 +61,7 @@
   name: Korneel Eeckhout
   bio: "Web Developer"
   avatar: ./images/pienter.jpg
-  
+
 - id: pehaa
   name: Paulina Hetman
   bio: "Web Developer"
@@ -79,4 +79,42 @@
   bio: "Frontend Developer"
   avatar: ./images/kendallstrautman.jpg
   twitter: "@kendallstraut"
-  
+
+- id: FriendlyUser
+  name: David Li
+  bio: "Software Developer"
+  avatar: ./images/dli.png
+
+- id: adeadedoja
+  name: Adedamola Adedoja
+  bio: "Software Engineer"
+  avatar: ./images/adeadedoja.jpg
+  twitter: "@trussdamola"
+
+- id: emanuelgsouza
+  name: Emanuel Gonçalves
+  bio: "Frontend Developer"
+  avatar: ./images/emanuelgsouza.jpg
+  twitter: "@emanuelgsouza"
+
+- id: codybarr
+  name: Cody Barr
+  bio: "Web Developer"
+  avatar: ./images/codybarr.jpg
+  twitter: "@codybarr"
+
+- id: samuelhorn
+  name: Samuel Horn af Rantzien
+  bio: "Front-end developer & designer"
+  avatar: ./images/samuelhorn.jpg
+  twitter: "@pixelcrook"
+
+
+- id: travisreynolds
+  name: Travis Reynolds
+  bio: "Frontend Developer"
+
+- id: noxify
+  name: Marcus Reinhardt
+  bio: "Developer"
+  avatar: ./images/noxify.jpg

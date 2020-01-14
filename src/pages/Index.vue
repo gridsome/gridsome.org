@@ -14,6 +14,10 @@
     </LazyHydrate>
 
     <LazyHydrate when-visible>
+      <home-connect />
+    </LazyHydrate>
+
+    <LazyHydrate when-visible>
       <home-examples />
     </LazyHydrate>
 
@@ -36,6 +40,7 @@ import HomeBlog from '@/components/home/HomeBlog.vue'
 import HomeFeatures from '@/components/home/HomeFeatures.vue'
 import HomeExamples from '@/components/home/HomeExamples.vue'
 import HomeCommunity from '@/components/home/HomeCommunity.vue'
+import HomeConnect from '@/components/home/HomeConnect.vue'
 
 export default {
   components: {
@@ -44,6 +49,7 @@ export default {
     HomeHowItWorkSimple,
     HomeExamples,
     HomeCommunity,
+    HomeConnect,
     HomeFeatures,
     HomeBlog
   },

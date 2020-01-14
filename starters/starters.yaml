@@ -138,4 +138,74 @@
   author: kendallstrautman
   tags: blog, forestry, minimalist, markdown
   platforms: markdown
-  
+
+- title: Buefy
+  description: A example theme of how to use buefy with gridsome
+  screenshot: ./screenshots/gridsome-starter-buefy.png
+  repo: FriendlyUser/gridsome-starter-buefy
+  preview: https://friendlyuser.github.io/gridsome-starter-buefy
+  author: FriendlyUser
+  tags: blog, forestry, minimalist, markdown
+
+- title: Gridsome Agency Starter
+  description: A minimalistic starter theme for an agency built with Bootstrap 4
+  screenshot: ./screenshots/gridsome-agency-starter-bootstrap.jpg
+  repo: adeadedoja/gridsome-agency-starter-bootstrap
+  preview: https://gridsome-agency-starter.netlify.com/
+  author: adeadedoja
+  tags: agency, bootstrap, minimalist, markdown
+  platforms: markdown
+
+- title: Gridsome Storyblok Starter
+  description: A minimalistic starter boilerplate with Storyblok integration
+  screenshot: ./screenshots/gridsome-starter-storyblok.jpg
+  repo: storyblok/storyblok-gridsome-boilerplate
+  preview:
+  author: emanuelgsouza
+  tags: storyblok, cms
+  platforms: storyblok
+
+- title: Jamdocs
+  description: The ultimate static generated documentation theme for the JAM-stack
+  screenshot: ./screenshots/jamdocs.png
+  repo: samuelhorn/jamdocs
+  preview: https://jamdocs.netlify.com/
+  author: samuelhorn
+  tags: gridsome, docs, documentation, netlify
+  platforms: markdown
+
+- title: Shopify Starter
+  description: A minimalistic starter showcasing Shopify & Gridsome working together
+  screenshot: ./screenshots/gridsome-starter-shopify.png
+  repo: thetre97/gridsome-starter-shopify
+  preview: https://gridsome-shopify-starter.netlify.com
+  author: travisreynolds
+  tags: gridsome, starter, shopify
+  platforms: shopify
+
+- title: Gridsome Skeleventy Starter
+  description: A minimalistic starter boilerplate with tailwindcss
+  screenshot: ./screenshots/gridsome-starter-skeleventy.jpg
+  repo: noxify/gridsome-starter-skeleventy
+  preview: https://gridsome-starter-skeleventy.now.sh/
+  author: noxify
+  tags: gridsome, starter, tailwind, tailwindcss, blog, about
+  platforms: markdown
+
+- title: Gridsome Casper V2 Starter
+  description: A gridsome starter based on Ghost Casper V2 and tailwindcss
+  screenshot: ./screenshots/gridsome-starter-casper-v2.jpg
+  repo: noxify/gridsome-starter-casper-v2
+  preview: https://gridsome-starter-casper-v2.now.sh/
+  author: noxify
+  tags: gridsome, starter, tailwind, tailwindcss, blog, about, categories, tags, author, about, responsive
+  platforms: markdown
+
+- title: Gridsome Articles Starter
+  description: A gridsome starter built with bootstrap
+  screenshot: ./screenshots/gridsome-starter-articles.jpg
+  repo: noxify/gridsome-starter-articles
+  preview: https://gridsome-starter-articles.now.sh/
+  author: noxify
+  tags: gridsome, starter, bootstrap, articles, blog, tutorials, tags, toc, embedding, responsive
+  platforms: markdown

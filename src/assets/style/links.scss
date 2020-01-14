@@ -6,12 +6,17 @@ a {
   text-decoration-color: var(--border-color);
 
   &:hover {
-    color: #000;
-    text-decoration-color: #000;
+    color: var(--body-color);
+    text-decoration-color: var(--body-color);
   }
   
   svg + & {
     margin-left: .5rem;
+  }
+
+  code & {
+    color: currentColor;
+    font-weight: bold;
   }
 }
 

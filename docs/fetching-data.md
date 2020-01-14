@@ -1,11 +1,8 @@
-# Fetching data
-Fetch content from local files or external APIs and store the data in a local database. A unified GraphQL Data layer lets you extract only the data you need from the database and use it in your Vue.js components.
+# Importing data
+Gridsome lets you import data from any data source into the [GraphQL data layer](/docs/data-layer/).
 
-![Fetching data](./images/fetching-data.png)
-
-
-## Use data source plugins
-Gridsome data source plugins are added in `gridsome.config.js`. You can find available data source plugins in the [Plugins directory](/plugins).
+## Import with source plugins
+The easiest way to add data to Gridsome is to use **source plugins**. Gridsome data source plugins are added in `gridsome.config.js`. You can find available data source plugins in the [Plugins directory](/plugins).
 
 Here is an example of the [file-system](/plugins/@gridsome/source-filesystem) source added to config:
 
@@ -27,27 +24,26 @@ module.exports = {
 
 Every data source has different options, so take a look at their documentation to learn more.
 
-## Add data from APIs
+## Import from APIs
 
-Gridsome adds data to the GraphQL data layer with the **Data store API** and the `api.loadSource` function. To use the API you need a `gridsome.server.js` file in the root folder of your Gridsome project.
+Import data from any content APIs to the GraphQL data layer with the [Data store API](/docs/data-store-api/). To use the API you need a `gridsome.server.js` file in the root folder of your Gridsome project.
 
-Learn more about the [Data store API here](/docs/data-store-api)
 
-A typical `gridsome.server.js` will look something like this:
+Here is an example `gridsome.server.js` file that imports data:
 
 ```js
 const axios = require('axios')
 
 module.exports = function (api) {
-  api.loadSource(async store => {
+  api.loadSource(async actions => {
     const { data } = await axios.get('https://api.example.com/posts')
 
-    const contentType = store.addContentType({
+    const collection = actions.addCollection({
       typeName: 'BlogPosts'
     })
 
     for (const item of data) {
-      contentType.addNode({
+      collection.addNode({
         id: item.id,
         title: item.title
       })
@@ -59,19 +55,19 @@ module.exports = function (api) {
 > Data is fetched when starting a development server or start of a production build. You need to restart the server for the changes in **gridsome.server.js** to take effect.
 
 
-## Add data from local files
-..
+## Import from local files
+*..contribute*
 
 ### Markdown
-..
+*..contribute*
 
 ### Images
-..
+*..contribute*
 
 ### YAML
-..
+*..contribute*
 
 ### CSV
-..
+*..contribute*
 
 ### JSON
