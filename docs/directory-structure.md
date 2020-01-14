@@ -95,7 +95,7 @@ In Gridsome you can use the aliases `~` or `@` to link to files inside the `/src
 
 ### Assets
 
-Global styles, images, fonts and icons are usually added to a `src/assets` directory.
+Global styles, images, fonts and icons are usually added to a `static/assets` directory.
 
 ### Shared or global components
 
