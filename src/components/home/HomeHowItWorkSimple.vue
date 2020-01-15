@@ -127,9 +127,9 @@ export default {
     border-radius: 100%;
     z-index: 0;
     margin-bottom: 1rem;
-    animation: bounce 2s infinite;
 
     svg {
+      animation: bounce 2s infinite;
       width: 70px;
       height: 70px;
     }
