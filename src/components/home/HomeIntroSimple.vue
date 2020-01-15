@@ -64,9 +64,14 @@ export default {
     }
   },
   mounted () {
-    this._counter = setInterval(() => {
-      this.currentText = (this.currentText + 1) % 6
-    }, 1500)
+    (($vm) => {
+      (function animate () {
+        $vm._counter = setTimeout(() => {
+          $vm.currentText = ($vm.currentText + 1) % 6
+          requestAnimationFrame(animate)
+        }, 1500)
+      })()
+    })(this)
   },
   destroyed () {
     clearTimeout(this._counter)

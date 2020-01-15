@@ -183,6 +183,33 @@
   tags: gridsome, starter, shopify
   platforms: shopify
 
+- title: Gridsome Skeleventy Starter
+  description: A minimalistic starter boilerplate with tailwindcss
+  screenshot: ./screenshots/gridsome-starter-skeleventy.jpg
+  repo: noxify/gridsome-starter-skeleventy
+  preview: https://gridsome-starter-skeleventy.now.sh/
+  author: noxify
+  tags: gridsome, starter, tailwind, tailwindcss, blog, about
+  platforms: markdown
+
+- title: Gridsome Casper V2 Starter
+  description: A gridsome starter based on Ghost Casper V2 and tailwindcss
+  screenshot: ./screenshots/gridsome-starter-casper-v2.jpg
+  repo: noxify/gridsome-starter-casper-v2
+  preview: https://gridsome-starter-casper-v2.now.sh/
+  author: noxify
+  tags: gridsome, starter, tailwind, tailwindcss, blog, about, categories, tags, author, about, responsive
+  platforms: markdown
+
+- title: Gridsome Articles Starter
+  description: A gridsome starter built with bootstrap
+  screenshot: ./screenshots/gridsome-starter-articles.jpg
+  repo: noxify/gridsome-starter-articles
+  preview: https://gridsome-starter-articles.now.sh/
+  author: noxify
+  tags: gridsome, starter, bootstrap, articles, blog, tutorials, tags, toc, embedding, responsive
+  platforms: markdown
+
 - title: Gridsome Portfolio Story
   description: A starter template for designers and developers to tell stories about their work.
   screenshot: ./screenshots/gridsome-portfolio-story.png
