@@ -6,26 +6,26 @@
 
         <h1 class="intro__title">
           <span>A Vue.js framework for</span>
-          <transition name="rotate">
-            <div v-if="currentText == 0" key="0">
+          <transition-group name="rotate" class="intro__keywords">
+            <div v-show="currentText == 0" key="0">
               Static Websites
             </div>
-            <div v-else-if="currentText == 1" key="1">
+            <div v-show="currentText == 1" key="1">
               The JAMstack
             </div>
-            <div v-else-if="currentText == 2" key="2">
+            <div v-show="currentText == 2" key="2">
               Headless CMSs
             </div>
-            <div v-else-if="currentText == 3" key="3">
+            <div v-show="currentText == 3" key="3">
               Markdown files
             </div>
-            <div v-else-if="currentText == 4" key="4">
+            <div v-show="currentText == 4" key="4">
               Modern PWAs
             </div>
-            <div v-else-if="currentText == 5" key="5">
+            <div v-show="currentText == 5" key="5">
               Serverless Apps
             </div>
-          </transition>
+          </transition-group>
         </h1>
 
         <p class="intro__lead lead post mb">
@@ -112,6 +112,11 @@ export default {
 
   &__info {
     font-size: .9rem;
+  }
+
+  &__keywords {
+    position: relative;
+    display: block;
   }
 }
 </style>
