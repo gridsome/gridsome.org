@@ -57,3 +57,7 @@
 - id: directus
   title: Directus
   logo: ./logos/directus.svg
+
+- id: wikidata
+  title: Wikidata
+  logo: ./logos/wikidata.svg

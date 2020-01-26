@@ -209,3 +209,12 @@
   author: noxify
   tags: gridsome, starter, bootstrap, articles, blog, tutorials, tags, toc, embedding, responsive
   platforms: markdown
+
+- title: Gridsome Starter Wikidata
+  description: A starter showcasing Gridsome and an external data source working together
+  screenshot: ./screenshots/gridsome-starter-wikidata-1680x1680.jpg
+  repo: hunsalz/gridsome-starter-wikidata
+  preview: https://hunsalz.github.io/gridsome-starter-wikidata/
+  author: hunsalz
+  tags: gridsome, starter, pwa, wikidata, sparql, filters, grid, dark/light mode, GitHub Actions CI/CD pipeline
+  platforms: wikidata
