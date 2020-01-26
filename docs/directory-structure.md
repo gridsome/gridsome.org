@@ -80,7 +80,7 @@ Occasionally you will need to override the base HTML template that Gridsome uses
 
 ### Custom App.vue
 
-The `App.vue` file is the main component that wraps all your pages and templates. You can override the default file by having your own `App.vue` file in your `src` directory. Overriding it is useful if you want to have a layout that is shared across all your pages.
+The `App.vue` file is the main component that wraps all your pages and templates. You can override the default file by having your own `App.vue` file in your `src` directory. Overriding the default is useful if you want to have a layout that is shared across all your pages.
 
 [Read more about overriding App.vue](/docs/overriding-app/)
 
