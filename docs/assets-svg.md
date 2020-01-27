@@ -95,7 +95,7 @@ And best of all, the SVG for Github/Twitter icons will be the only ones added to
 
 ## Purge CSS
 
-If you are using Purge CSS you have to include Font Awesome classes in the whitelist for the icons to work properly in the producton enviroment. A code example with Tailwind and Purge CSS for `gridsome.config.js`:
+If you are using Purge CSS you have to include Font Awesome classes in the whitelist for the icons to work properly in the production environment. A code example with Tailwind and Purge CSS for `gridsome.config.js`:
 
 ```js
 class TailwindExtractor {
