@@ -210,6 +210,15 @@
   tags: gridsome, starter, bootstrap, articles, blog, tutorials, tags, toc, embedding, responsive
   platforms: markdown
 
+- title: Gridsome Casper V3 Starter
+  description: A gridsome starter based on Ghost Casper V3 and tailwindcss
+  screenshot: ./screenshots/gridsome-starter-casper-v3.jpg
+  repo: noxify/gridsome-starter-casper-v3
+  preview: https://gridsome-starter-casper-v3.now.sh/
+  author: noxify
+  tags: gridsome, starter, tailwind, tailwindcss, blog, about, categories, tags, author, about, responsive
+  platforms: markdown
+
 - title: Gridsome Starter Wikidata
   description: A starter showcasing Gridsome and an external data source working together
   screenshot: ./screenshots/gridsome-starter-wikidata-1680x1680.jpg
