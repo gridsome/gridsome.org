@@ -123,3 +123,9 @@
   name: Markus Hunsalz
   bio: "Developer"
   avatar: ./images/hunsalz.jpg
+
+- id: uninen
+  name: Ville Säävuori
+  bio: "A Web enthusiast, Pythonist, Djangonaut and a DJ."
+  avatar: ./images/uninen.jpg
+  twitter: "@uninen"
