@@ -218,3 +218,11 @@
   author: hunsalz
   tags: gridsome, starter, pwa, wikidata, sparql, filters, grid, dark/light mode, GitHub Actions CI/CD pipeline
   platforms: wikidata
+
+- title: Tulip
+  description: Single page with Tailwind CSS
+  screenshot: ./screenshots/gridsome-starter-tulip.png
+  repo: Uninen/gridsome-starter-tulip
+  preview: https://gridsome-starter-tulip.netlify.com/
+  author: uninen
+  tags: tailwind, minimalistic, simple, singlepage
