@@ -6,6 +6,10 @@
   title: WordPress
   logo: ./logos/wordpress.svg
 
+- id: buttercms
+  title: ButterCMS
+  logo: ./logos/buttercms.png
+
 - id: contentful
   title: Contentful
   logo: ./logos/contentful.svg

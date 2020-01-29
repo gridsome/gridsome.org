@@ -16,6 +16,12 @@
   avatar: ../static/logos/logo-circle-light.svg
   twitter: "@gridsome"
 
+- id: buttercms
+  name: ButterCMS
+  bio: Headless CMS that <3 Gridsome
+  avatar: ./images/buttercms.png
+  twitter: "@buttercms"
+
 - id: cosmicjs
   name: Cosmic JS
   bio: Modern Content Management Solution

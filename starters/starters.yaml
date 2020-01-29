@@ -25,6 +25,14 @@
   tags: blog, dark mode
   platforms: markdown
 
+  - title: ButterCMS Starter Blog + Pages
+  description: CMS Powered Marketing Website with Blog and Pages
+  screenshot: ./screenshots/gridsome-starter-buttercms.png
+  repo: ButterCMS/gridsome-starter-buttercms
+  preview: https://buttercms-gridsome-starter.netlify.com/
+  author: buttercms
+  platforms: buttercms
+
 - title: Bleda
   description: Markdown Blog with Tailwind CSS
   screenshot: ./screenshots/gridsome-starter-bleda.png
