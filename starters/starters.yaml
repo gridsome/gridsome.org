@@ -25,7 +25,7 @@
   tags: blog, dark mode
   platforms: markdown
 
-  - title: ButterCMS Starter Blog + Pages
+- title: ButterCMS Starter Blog + Pages
   description: CMS Powered Marketing Website with Blog and Pages
   screenshot: ./screenshots/gridsome-starter-buttercms.png
   repo: ButterCMS/gridsome-starter-buttercms
