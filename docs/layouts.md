@@ -2,7 +2,7 @@
 
 Layout components are used to wrap pages. Layouts should contain components like headers, footers or sidebars that will be used across the site.
 
-Layouts are _just_  **.vue components** located in `src/layouts` and need to be [declared as a global](#make-a-layout-global) component or imported per page to be used.
+Layouts are _just_ &nbsp;**.vue components** located in `src/layouts` and need to be [declared as a global](#make-a-layout-global) component or imported per page to be used.
 
 **Every layout requires a `<slot />` component.** This is where the content coming from pages and templates will be inserted. Layouts can have [multiple slots](#multiple-content-slots).
 
@@ -143,7 +143,7 @@ Pages can now add content to this slot like this:
 ```
 
 ## Master layout
-You can create a **master layout** by adding a **App.vue** file to `src` root. This will let you keep your header, footer on all pages and add **page transitions**.
+You can create a **master layout** by adding an **App.vue** file to `src` root. This will let you keep your header, footer on all pages and add **page transitions**.
 
 A simple **App.vue** file looks like this:
 ```html
