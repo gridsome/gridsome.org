@@ -144,7 +144,7 @@ Now for the template. One important thing to remember here is that we're going t
 
 We've wrapped our `<infinite-loading>` component in Gridsome's `<ClientOnly>` tag to ensure this works correctly in the production build as well as local development.
 
-The slots included in the `<infinite-loading>` component, as well as the `spinner` prop are optional. You can read more about those in the [API docs](https://peachscript.github.io/vue-infinite-loading/api/) for `vue-infinite-loading`.
+The slots included in the `<infinite-loading>` component, as well as the `spinner` prop, are optional. You can read more about those in the [API docs](https://peachscript.github.io/vue-infinite-loading/api/) for `vue-infinite-loading`.
 
 ## Transitions
 
