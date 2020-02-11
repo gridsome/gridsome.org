@@ -58,8 +58,52 @@ module.exports = function (api) {
 ## Import from local files
 *..contribute*
 
+
 ### Markdown
-*..contribute*
+In order to import data from Markdown files, you'll need both a Gridsome [**source plugin**](https://gridsome.org/plugins/) to read the data source, and a **transformer plugin** to convert the Markdown into HTML.
+
+Here's an example; install both the Gridsome Source Filesystem plugin, and the Remark transformer plugin:
+
+**Yarn:**
+
+```
+yarn add @gridsome/transformer-remark
+yarn add @gridsome/source-filesystem
+```
+
+or **NPM:**
+
+```
+npm install @gridsome/transformer-remark
+npm install @gridsome/source-filesystem
+```
+
+Once they've been added to the project, add the plugin and transformer to your `gridsome.config.js`:
+
+```
+plugins: [
+  {
+    use: '@gridsome/source-filesystem',
+    options: {
+      path: 'posts/**/*.md',
+      typeName: 'markdownPost',
+      remark: {
+        //Config options can be added here
+      }
+    }
+  }
+],
+transformers: {
+  remark: {
+    //Config options can be added here
+  }
+}
+```
+
+Be sure that the `path` property is where the markdown files are located in your project. You'll probably want to add a [template](https://gridsome.org/docs/templates/) to display your markdown files as well.
+
+Also, note that `typeName` will be the unique name of the GraphQL collection, used to query this content. Finally, bear in mind that you'll need to restart the server and refresh the GraphQL playground after making changes.
+
 
 ### Images
 *..contribute*
