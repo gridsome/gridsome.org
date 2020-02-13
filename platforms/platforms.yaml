@@ -61,3 +61,7 @@
 - id: wikidata
   title: Wikidata
   logo: ./logos/wikidata.svg
+
+- id: elastic-path
+  title: Elastic Path
+  logo: ./logos/elastic-path.svg
