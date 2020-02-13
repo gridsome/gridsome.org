@@ -232,7 +232,7 @@
   description: eCommerce starter using Elastic Path Moltin's APIs
   screenshot: ./screenshots/gridsome-starter-moltin.jpg
   repo: Bounteous-Inc/gridsome-starter-moltin
-  preview: https://gridsome-moltin-starter.netlify.com/
+  preview: https://gridsome-starter-moltin.netlify.com/
   author: bounteous
   tags: gridsome, elastic path, moltin, ecommerce, store
   platforms: elastic-path
