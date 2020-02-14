@@ -109,7 +109,6 @@
   avatar: ./images/samuelhorn.jpg
   twitter: "@pixelcrook"
 
-
 - id: travisreynolds
   name: Travis Reynolds
   bio: "Frontend Developer"
@@ -123,6 +122,12 @@
   name: Markus Hunsalz
   bio: "Developer"
   avatar: ./images/hunsalz.jpg
+
+- id: bounteous
+  name: Bounteous
+  bio: "Bounteous creates big-picture digital solutions that help leading companies deliver transformational brand experiences."
+  avatar: ./images/bounteous.jpg
+  twitter: "@Bounteous"
 
 - id: uninen
   name: Ville Säävuori
