@@ -227,3 +227,12 @@
   author: hunsalz
   tags: gridsome, starter, pwa, wikidata, sparql, filters, grid, dark/light mode, GitHub Actions CI/CD pipeline
   platforms: wikidata
+
+- title: Elastic Path Moltin Starter
+  description: eCommerce starter using Elastic Path Moltin's APIs
+  screenshot: ./screenshots/gridsome-starter-moltin.jpg
+  repo: Bounteous-Inc/gridsome-starter-moltin
+  preview: https://gridsome-starter-moltin.netlify.com/
+  author: bounteous
+  tags: gridsome, elastic path, moltin, ecommerce, store
+  platforms: elastic-path
