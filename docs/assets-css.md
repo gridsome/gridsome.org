@@ -458,21 +458,15 @@ yarn add deepmerge fibers sass-loader@7.3.1 vuetify-loader --dev
   also remove `node-sass` package if it's installed, otherwise build will fail.
 2. Configure webpack in `gridsome.server.js`
 ```js
-const nodeExternals = require('webpack-node-externals');
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
 
 module.exports = (api) => {
   api.chainWebpack((config, { isServer }) => {
     config.plugin('vuetify-loader').use(VuetifyLoaderPlugin);
-    if (isServer) {
-      config.externals([
-        nodeExternals({
-          whitelist: [/^vuetify/],
-        }),
-      ]);
-    }
   });
 ```
+>❗️Note: `webpack-node-externals` is not needed in this case.
+
 3. Install plugin in `main.js`
 ```js
 import Vuetify from 'vuetify/lib/framework';
