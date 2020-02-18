@@ -206,7 +206,7 @@ const postcssPlugins = [
 	tailwind(),
 ]
 
-if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
+if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss(require('./purgecss.config.js')))
 
 module.exports = {
     siteName: 'Gridsome',
@@ -225,36 +225,30 @@ module.exports = {
 Finally, create a `purgecss.config.js` file in the root of your project and add the configuration below:
 
 ```javascript
-class TailwindExtractor {
-  static extract(content) {
-    return content.match(/[A-z0-9-:\\/]+/g)
-  }
-}
-
 module.exports = {
-  content: [
-    './src/**/*.vue',
-    './src/**/*.js',
-    './src/**/*.jsx',
-    './src/**/*.html',
-    './src/**/*.pug',
-    './src/**/*.md',
-  ],
-  whitelist: [
-    'body',
-    'html',
-    'img',
-    'a',
-    'g-image',
-    'g-image--lazy',
-    'g-image--loaded',
-  ],
-  extractors: [
-    {
-      extractor: TailwindExtractor,
-      extensions: ['vue', 'js', 'jsx', 'md', 'html', 'pug'],
-    },
-  ],
+    content: [
+        './src/**/*.vue',
+        './src/**/*.js',
+        './src/**/*.jsx',
+        './src/**/*.html',
+        './src/**/*.pug',
+        './src/**/*.md',
+    ],
+    whitelist: [
+        'body',
+        'html',
+        'img',
+        'a',
+        'g-image',
+        'g-image--lazy',
+        'g-image--loaded',
+    ],
+    extractors: [
+        {
+            extractor: content => content.match(/[A-z0-9-:\\/]+/g),
+            extensions: ['vue', 'js', 'jsx', 'md', 'html', 'pug'],
+        },
+    ],
 }
 ```
 
