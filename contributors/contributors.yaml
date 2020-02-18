@@ -128,3 +128,9 @@
   bio: "Bounteous creates big-picture digital solutions that help leading companies deliver transformational brand experiences."
   avatar: ./images/bounteous.jpg
   twitter: "@Bounteous"
+
+- id: storyblok
+  name: Storyblok
+  bio: "The Only #headlessCMS with a Visual Editor and Components as its First-Class Citizens"
+  avatar: ./images/storyblok.svg
+  twitter: "@storyblok"
