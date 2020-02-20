@@ -362,8 +362,13 @@ import DefaultLayout from '~/layouts/Default.vue'
 export default function (Vue, { head }) {
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
+    href: 'https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css',
   })
+  
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900',
+  });
 
   Vue.use(Vuetify)
   
@@ -381,8 +386,13 @@ import DefaultLayout from '~/layouts/Default.vue'
 export default function (Vue, { appOptions, head }) {
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
+    href: 'https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css',
   })
+  
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900',
+  });
   
   const opts = { ... } //opts includes, vuetify themes, icons, etc.
   Vue.use(Vuetify)
@@ -425,6 +435,51 @@ module.exports = function (api) {
   api.loadSource(store => {
     // Use the Data store API here: https://gridsome.org/docs/data-store-api
   })
+}
+```
+
+Or save your bundle size by using [vuetify treeshaking](https://vuetifyjs.com/en/customization/a-la-carte).
+
+1. Install dependencies
+```shell
+# With npm
+npm install deepmerge fibers sass-loader@7.3.1 vuetify-loader --save-dev
+
+# With yarn
+yarn add deepmerge fibers sass-loader@7.3.1 vuetify-loader --dev
+```
+>❗️Note: sass-loader must be lower than 8 version,
+  also remove `node-sass` package if it's installed, otherwise build will fail.
+2. Configure webpack in `gridsome.server.js`
+```js
+const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
+
+module.exports = (api) => {
+  api.chainWebpack((config, { isServer }) => {
+    config.plugin('vuetify-loader').use(VuetifyLoaderPlugin);
+  });
+```
+>❗️Note: `webpack-node-externals` is not needed in this case.
+
+3. Install plugin in `main.js`
+```js
+import Vuetify from 'vuetify/lib/framework';
+import 'vuetify/dist/vuetify.min.css';
+
+export default function (Vue, { appOptions, head }) {
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css',
+  });
+
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900',
+  });
+
+  const opts = {}; // opts includes, vuetify themes, icons, etc.
+  Vue.use(Vuetify);
+  appOptions.vuetify = new Vuetify(opts);
 }
 ```
 
