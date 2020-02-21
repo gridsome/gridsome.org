@@ -2,7 +2,7 @@
   <div id="app" dark>
     <Header />
     <slot />
-    <Footer />
+    <Footer v-if="footer !== false" />
   </div>
 </template>
 
