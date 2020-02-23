@@ -245,3 +245,12 @@
   author: storyblok
   tags: storyblok, cms
   platforms: storyblok
+
+- title: Buefy Starter Blog
+  description: A simple Gridsome blog starter using Buefy
+  screenshot: ./screenshots/gridsome-starter-buefy2.jpg
+  repo: wavrin/buefy-gridsome-blog
+  preview: https://vuefy-gridsome-blog.netlify.com/
+  author: wavrin
+  tags: gridsome, starter, blog, buefy
+  platforms: markdown
