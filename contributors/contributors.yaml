@@ -129,6 +129,12 @@
   avatar: ./images/bounteous.jpg
   twitter: "@Bounteous"
 
+- id: storyblok
+  name: Storyblok
+  bio: "The Only #headlessCMS with a Visual Editor and Components as its First-Class Citizens"
+  avatar: ./images/storyblok.svg
+  twitter: "@storyblok"
+
 - id: uninen
   name: Ville Säävuori
   bio: "A Web enthusiast, Pythonist, Djangonaut and a DJ."

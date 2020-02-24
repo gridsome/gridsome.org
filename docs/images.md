@@ -50,7 +50,7 @@ query ($id: ID!) {
 ```
 
 ## Usage in Markdown
-The [gridsome-transformer-remark](/plugins/transformer-remark) transformer plugin automatically converts normal Markdown images to `g-image` compatible markup.
+The [@gridsome/transformer-remark](/plugins/@gridsome/transformer-remark) transformer plugin automatically converts normal Markdown images to `g-image` compatible markup.
 
 ```md
 ![Alternative text](./image.jpg)

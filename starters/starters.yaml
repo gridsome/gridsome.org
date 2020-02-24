@@ -237,6 +237,15 @@
   tags: gridsome, elastic path, moltin, ecommerce, store
   platforms: elastic-path
 
+- title: Gridsome Storyblok Moon Theme
+  description: A complete website build by Storyblok team with Moon theme
+  screenshot: ./screenshots/gridsome-storyblok-boilerplate-moon.jpg
+  repo: storyblok/storyblok-gridsome-boilerplate-moon
+  preview: https://demo.storyblok.com/
+  author: storyblok
+  tags: storyblok, cms
+  platforms: storyblok
+
 - title: Tulip
   description: Single page with Tailwind CSS
   screenshot: ./screenshots/gridsome-starter-tulip.png
