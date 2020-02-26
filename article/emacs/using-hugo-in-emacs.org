@@ -1,0 +1,66 @@
+---
+
+templateKey: blog-post|doc-page
+title: "using-hugo-in-emacs.org"
+author: "Xing Wenju"
+description: "Some Description"
+date: "2018-02-16T20:03:50-04:00"
+tags:
+ - tag1
+---
+
+** Start the Hugo
+
+
+{{<highlight emacs-lisp>}}
+#+begin_src emacs-lisp :tangle yes
+(defun find-blog-dir ()
+  (interactive)
+  "Open hugo blog files"
+	(find-file "~/Dropbox/xingwenju.com/hugo/content")
+	)
+
+;;;###autoload
+(defun blog-deploy ()
+  "Run hugo and push changes upstream."
+  (interactive)
+  (with-dir blog-public-dir
+            (shell-command "git rm -rf .")
+            (shell-command "git clean -fxd")
+            (with-temp-file "CNAME"
+              (insert "www.xingwenju.com\spacemacs"))
+
+            (with-dir blog-dir (->> blog-public-dir
+                                  (concat "hugo -d ")
+                                  shell-command))
+
+            (shell-command "git add .")
+            (--> (current-time-string)
+               (concat "git commit -m \"" it "\"")
+               (shell-command it))
+            (magit-push-current-to-upstream nil)))
+
+;;;###autoload
+(defun blog-start-server ()
+  "Run hugo server if not already running and open its webpage."
+  (interactive)
+  (with-dir blog-dir
+            (unless (get-process blog-hugo-process)
+              (start-process blog-hugo-process nil "hugo" "server"))
+            (browse-url blog-hugo-server-site)))
+
+;;;###autoload
+(defun blog-end-server ()
+  "End hugo server process if running."
+  (interactive)
+  (--when-let (get-process blog-hugo-process)
+    (delete-process it)))
+
+;;; Bindings
+
+(spacemacs/set-leader-keys
+  "ab" 'blog-deploy
+  "aa" 'blog-start-server
+  "ae" 'blog-end-server)
+#+end_src
+{{</highlight>}}

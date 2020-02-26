@@ -1,0 +1,18 @@
+---
+
+templateKey: blog-post|doc-page
+title: "using-spacemacs-base-in-emacs.org"
+author: "Xing Wenju"
+description: "Some Description"
+date: "2018-02-16T20:03:50-04:00"
+tags:
+ - tag1
+---
+
+
+* Table of Contents                                         :TOC_4_gh:noexport:
+- [[#description][Description]]
+  - [[#describe-spacemacs-distribution-in-this-file][describe spacemacs distribution in this file]]
+
+* Description
+** TODO describe spacemacs distribution in this file

@@ -1,0 +1,230 @@
+---
+
+templateKey: blog-post|doc-page
+title: "using-javascript-in-emacs.org"
+author: "Xing Wenju"
+description: "Some Description"
+date: "2018-02-16T20:03:50-04:00"
+tags:
+ - tag1
+---
+
+** Day 2
+
+*** Javascript mode of emacs
+
+*** Description
+
+	This layer adds support for the JavaScript language using [[https://github.com/mooz/js2-mode][js2-mode]].
+
+**** Features:
+	- Smart code folding
+	- Refactoring: done using [[https://github.com/magnars/js2-refactor.el][]js2-refactor].
+	- Auto-completion and documentation: provided by [[http://ternjs.net/][tern]]
+	- CoffeeScript support
+	- Formatting with [[https://github.com/yasuyk/web-beautify][web-beautify]]
+	- Get the path to a JSON value with [[https://github.com/Sterlingg/json-snatcher][json-snatcher]]
+	- REPL available via [[https://github.com/skeeto/skewer-mode][skewer-mode]] and [[https://github.com/pandeiro/livid-mode][livid-mode]]
+
+*** Install
+	To use this configuration layer, add it to your =~/.spacemacs=. You will need to
+	add =javascript= to the existing =dotspacemacs-configuration-layers= list in
+	this file.
+
+	You will also need to install =tern= to use the auto-completion and
+	documentation features:
+
+	{{<highlight sh>}}
+	#+BEGIN_SRC sh
+		$ npm install -g tern
+	#+END_SRC
+	{{</highlight>}}
+
+	To use the formatting features, install =js-beautify=:
+	{{<highlight sh>}}
+	#+BEGIN_SRC sh
+		$ npm install -g js-beautify
+	#+END_SRC
+	{{</highlight>}}
+
+	To activate error checking using flycheck, install one of the [[http://www.flycheck.org/en/latest/languages.html#javascript][available linters]]
+	such as =ESLint= or =JSHint=:
+	{{<highlight sh>}}
+	#+BEGIN_SRC sh
+		$ npm install -g eslint
+		# or
+		$ npm install -g jshint
+	#+END_SRC
+	{{</highlight>}}
+
+*** Configuration
+**** Tern
+	To make tern re-use the server across multiple different editing sessions (thus
+	creating multiple =.tern-port= files for each document you have open [[http://ternjs.net/doc/manual.html][see here
+	for more details]]):
+
+	The variables provided below can be set when adding the =javascript=
+	configuration layer, as detailed in [[file:../../../doc/DOCUMENTATION.org::Setting%20configuration%20layers%20variables][this]] section of the documentation.
+
+	{{<highlight emacs-lisp>}}
+	#+BEGIN_SRC emacs-lisp
+		(javascript :variables javascript-disable-tern-port-files nil)
+	#+END_SRC
+	{{</highlight>}}
+
+	Windows users may need to set the variable =tern-command= in order for emacs to
+	locate and launch tern server successfully. See [[https://github.com/syl20bnr/spacemacs/issues/5733][this open issue for more
+	details]]. The variable can be set when adding the =javascript= configuration
+	layer:
+
+	{{<highlight emacs-lisp>}}
+	#+BEGIN_SRC emacs-lisp
+		(javascript :variables tern-command '("node" "/path/to/tern/bin/tern"))
+	#+END_SRC
+	{{</highlight>}}
+
+**** Indentation
+	To change how js2-mode indents code, set the variable =js2-basic-offset=, as
+	such:
+
+	{{<highlight emacs-lisp>}}
+	#+BEGIN_SRC emacs-lisp
+		(setq-default js2-basic-offset 2)
+	#+END_SRC
+	{{</highlight>}}
+
+	Similarly, to change how js-mode indents JSON files, set the variable
+	=js-indent-level=, as such:
+
+	{{<highlight emacs-lisp>}}
+	#+BEGIN_SRC emacs-lisp
+		(setq-default js-indent-level 2)
+	#+END_SRC
+	{{</highlight>}}
+
+**** REPL
+	To use the available JS repl, you need a running httpd server and a page loaded
+	with skewer. If a blank page serves your needs, just use the run-skewer command
+	in your javascript buffer. If you want to inject it in your own page, follow
+	[[https://github.com/skeeto/skewer-mode#skewering-with-cors][these instructions]] (install the Greasemonkey script and then click the triangle
+	in the top-right corner - if it turns green, you're good to go).
+
+*** Key Bindings
+
+**** js2-mode
+
+| Key Binding | Description                          |
+|-------------+--------------------------------------|
+| ~SPC m w~   | toggle js2-mode warnings and errors  |
+| ~%~         | jump between blockswith [[https://github.com/redguardtoo/evil-matchit][evil-matchit]] |
+
+**** Folding (js2-mode)
+
+| Key Binding | Description              |
+|-------------+--------------------------|
+| ~SPC m z c~ | zipcode 隐藏元素 hide element |
+| ~SPC m z o~ | zipopen 显示元素 show element |
+| ~SPC m z r~ | 全部显示 show all element    |
+| ~SPC m z e~ | 切换元素 toggle hide/show element |
+| ~SPC m z F~ | 切换函数 toggle hide functions |
+| ~SPC m z C~ | 切换注释 toggle hide comments |
+
+**** Refactoring (js2-refactor)
+
+	Bindings should match the plain emacs assignments.
+
+| Key Binding   | Description                                                                                                    |
+|---------------+----------------------------------------------------------------------------------------------------------------|
+| ~SPC m k~     | 删除到行尾 deletes to the end of the line, but does not cross semantic boundaries                                   |
+|-------------+---------------------------------------------------------------------------------------------------------------------|
+| ~SPC m r 3 i~ | converts ternary operator to if-statement                                                                      |
+| ~SPC m r a g~ | creates a =/* global */= annotation if it is missing, and adds var to point to it                              |
+| ~SPC m r a o~ | 命名参数 replaces arguments to a function call with an object literal of named arguments                           |
+| ~SPC m r b a~ | moves the last child out of current function, if-statement, for-loop or while-loop                             |
+|-------------+----------------------------------------------------------------------------------------------------------------|
+| ~SPC m r c a~ | 多行数组合并 converts a multiline array to one line                                                                  |
+| ~SPC m r c o~ | 多行对象合并 converts a multiline object literal to one line                                                         |
+| ~SPC m r c u~ | 多行函数合并 converts a multiline function to one line (expecting semicolons as statement delimiters)                |
+|-------------+----------------------------------------------------------------------------------------------------------------------|
+| ~SPC m r e a~ | 单行数组拆分多行 converts a one line array to multiline                                                                |
+| ~SPC m r e f~ | 表达式转命名函数 extracts the marked expressions into a new named function                                             |
+| ~SPC m r e m~ | 表达式转新方法 extracts the marked expressions out into a new method in an object literal                             |
+| ~SPC m r e o~ | 单行对象转多行 converts a one line object literal to multiline                                                        |
+| ~SPC m r e u~ | 单行函数转多行 converts a one line function to multiline (expecting semicolons as statement delimiters)               |
+| ~SPC m r e v~ | 将表达式转为变量 takes a marked expression and replaces it with a var                                                  |
+|-------------+----------------------------------------------------------------------------------------------------------------|
+| ~SPC m r i g~ | creates a shortcut for a marked global by injecting it in the wrapping immediately invoked function expression |
+| ~SPC m r i p~ | changes the marked expression to a parameter in a local function                                               |
+| ~SPC m r i v~ | replaces all instances of a variable with its initial value                                                    |
+|-------------+----------------------------------------------------------------------------------------------------------------|
+| ~SPC m r l p~ | 参数转本地变量 changes a parameter to a local var in a local function                                                 |
+| ~SPC m r l t~ | 添加终端日志 adds a console.log statement for what is at point (or region)                                           |
+|-------------+----------------------------------------------------------------------------------------------------------------|
+| ~SPC m r r v~ | 重命名全部变量 renames the variable on point and all occurrences in its lexical scope                                 |
+|-------------+----------------------------------------------------------------------------------------------------------------|
+| ~SPC m r s l~ | moves the next statement into current function, if-statement, for-loop, while-loop                             |
+|-------------+----------------------------------------------------------------------------------------------------------------|
+| ~SPC m r s s~ | 拆分字符串 splits a =String=                                                                                        |
+| ~SPC m r s v~ | 拆分变量 splits a =var= with multiple vars declared into several =var= statements                                  |
+|-------------+------------------------------------------------------------------------------------------------------------|
+| ~SPC m r t f~ | 切换函数声明和表达式 toggle between function declaration and function expression                                         |
+| ~SPC m r u w~ | replaces the parent statement with the selected region                                                         |
+| ~SPC m r v t~ | changes local =var a= to be =this.a= instead                                                                   |
+|-------------+------------------------------------------------------------------------------------------------------------|
+| ~SPC m r w i~ | 整个缓冲区转立即运行函数表达式 wraps the entire buffer in an immediately invoked function expression                          |
+| ~SPC m r w l~ | 选定区域转 for 循环 wraps the region in a for-loop                                                                    |
+| ~SPC m x m j~ | 下移一行 move line down, while keeping commas correctly placed                                                     |
+| ~SPC m x m k~ | 上移一行 move line up, while keeping commas correctly placed                                                       |
+
+**** Formatting (web-beautify)
+
+| Key Binding | Description                                                  |
+|-------------+--------------------------------------------------------------|
+| ~SPC m =~   | 美化格式 beautify code in js2-mode, json-mode, web-mode, and css-mode |
+
+***** Documentation (js-doc)
+
+	You can check more [[https://github.com/mooz/js-doc/][here]]
+
+| Key Binding   | Description                           |
+|---------------+---------------------------------------|
+| ~SPC m r d b~ | 插入文件注释 insert JSDoc comment for current file |
+| ~SPC m r d f~ | 插入函数注释 insert JSDoc comment for function |
+| ~SPC m r d t~ | 插入注释标签 insert tag to comment          |
+| ~SPC m r d h~ | 显示可用注释标签 show list of available jsdoc tags |
+
+**** Auto-complete and documentation (tern)
+
+| Key Binding   | Description                                                                              |
+|---------------+------------------------------------------------------------------------------------------|
+| ~SPC m C-g~   | brings you back to last place you were when you pressed M-..                             |
+| ~SPC m g g~   | 跳转定义 jump to the definition of the thing under the cursor                                |
+| ~SPC m g G~   | 给定名称，跳转到定义 jump to definition for the given name                                         |
+| ~SPC m h d~   | 查找文档 find docs of the thing under the cursor. Press again to open the associated URL (if any) |
+| ~SPC m h t~   | 检查类型 find the type of the thing under the cursor                                         |
+| ~SPC m r r V~ | 重命名变量 rename variable under the cursor using tern                                        |
+
+**** JSON
+
+| Key Binding | Description                        |
+|-------------+------------------------------------|
+| ~SPC m h p~ | Get the path of the value at point |
+
+**** REPL (skewer-mode)
+
+| Key Binding | Description                                                      |
+|-------------+------------------------------------------------------------------|
+| ~SPC m e e~ | 评估最后表达式 evaluates the last expression                            |
+| ~SPC m e E~ | 评估并插入结果 evaluates and inserts the result of the last expression at point  |
+
+| Key Binding | Description                                                                        |
+|-------------+------------------------------------------------------------------------------------|
+| ~SPC m s a~ | 切换热更新测试 Toggle live evaluation of whole buffer in REPL on buffer changes           |
+| ~SPC m s b~ | 将整个缓冲区内容发往测试 send current buffer contents to the skewer REPL                       |
+| ~SPC m s B~ | 将整个缓冲区发往测试，转入插入模式 send current buffer contents to the skewer REPL and switch to it in insert state |
+| ~SPC m s i~ | 启动到测试平台 starts/switch to the skewer REPL                                           |
+| ~SPC m s r~ | 发送选定区域进行测试 send current region to the skewer REPL                                  |
+| ~SPC m s R~ | 发送选定区域进行测试，切换到插入模式 send current region to the skewer REPL and switch to it in insert state |
+| ~SPC m s s~ | 切换到测试区域 switch to REPL                                                             |
+
+	To be continued...

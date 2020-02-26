@@ -1,0 +1,33 @@
+---
+
+templateKey: blog-post|doc-page
+title: "using-interactive-in-emacs.org"
+author: "Xing Wenju"
+description: "Some Description"
+date: "2018-02-16T20:03:50-04:00"
+tags:
+ - tag1
+---
+
+** Using Interactive
+
+{{<highlight emacs-lisp>}}
+#+BEGIN_SRC
+(defun x/hugo-save-current-buffer-as-hugo-post (hugo-post-subdir)
+	"Saving the current buffer as a hugo post
+in a specific hugo post directory"
+	(interactive
+	(let ((hugo-post-subdirs '("emacs" "linux" "hugo")))
+		(list (ido-completing-read "Directory Name:" hugo-post-subdirs))
+		))
+	(progn
+			(setq hugo-post-title
+				(read-from-minibuffer "请输入文件名：" (buffer-name)))
+			(setq hugo-post-dir
+				(concat easy-hugo-basedir easy-hugo-postdir "/" hugo-post-subdir))
+			(write-file (concat hugo-post-dir hugo-post-title))
+			(find-alternate-file-other-window (concat hugo-post-dir hugo-post-title))
+	)
+	)
+#+END_SRC
+{{</highlight>}}

@@ -1,0 +1,13 @@
+---
+title: "Scrapy Venezuela News"
+date: 2018-02-16T13:58:36-04:00
+---
+
+* Codes
+
+** 在scrapy 项目中抓取网页
+
+** 保存到不同的存储中，比如 docx 文件，比如 txt 文件，比如 json 文件，比如 mongo 数据库
+
+** 在 emacs 中插入 txt 中文件，生成一个目录链接
+

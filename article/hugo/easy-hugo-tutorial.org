@@ -1,0 +1,14 @@
+---
+title: "Easy Hugo Tutorial"
+date: "2018-02-16T13:59:46-04:00"
+draft: false
+---
+
+
+* Tutorial
+
+*** Disable =draft= to show the blogs
+
+*** Be careful about the =modal= editing in =evil=
+
+*** Automatically start a new =hugo-blog=

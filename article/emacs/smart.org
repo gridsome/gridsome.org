@@ -1,0 +1,10 @@
+---
+
+templateKey: blog-post|doc-page
+title: "smart.org"
+author: "Xing Wenju"
+description: "Some Description"
+date: "2018-02-16T20:03:50-04:00"
+tags:
+ - tag1
+---

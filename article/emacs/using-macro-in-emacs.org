@@ -1,0 +1,62 @@
+---
+
+templateKey: blog-post|doc-page
+title: "using-macro-in-emacs.org"
+author: "Xing Wenju"
+description: "Some Description"
+date: "2018-02-16T20:03:50-04:00"
+tags:
+ - tag1
+---
+
+#+TITLE: using-macro-in-emacs
+#+DATE: 2018-02-18T16:30:24-04:00
+#+PUBLISHDATE: 2018-02-18T16:30:24-04:00
+#+DRAFT: nil
+#+TAGS: nil, nil
+#+DESCRIPTION: Short description
+
+
+** Codes
+
+*** Define macros
+
+{{<highlight emacs-lisp>}}
+
+#+srcname: define-macros
+#+begin_src emacs-lisp
+
+;;; with-dir
+
+(defmacro do-in-dir (DIR &rest FORMS)
+  "Execute FORMS in DIR."
+  (let ((orig-dir (gensym)))
+    `(prog2
+         (setq ,orig-dir default-directory)
+         (progn (cd ,DIR) ,@FORMS)
+       (cd ,orig-dir))))
+
+#+end_src
+
+#+RESULTS: define-macros
+: do-in-dir
+
+{{</highlight>}}
+
+*** Run macros
+
+
+{{<highlight emacs-lisp>}}
+
+#+srcname: run-macros
+#+begin_src emacs-lisp
+
+(macroexpand '(do-in-dir "~/.emacs.d"))
+
+#+end_src
+
+#+RESULTS: run-macros
+| prog2 | (setq G1829 default-directory) | (progn (cd ~/.emacs.d)) | (cd G1829) |
+
+
+{{</highlight>}}

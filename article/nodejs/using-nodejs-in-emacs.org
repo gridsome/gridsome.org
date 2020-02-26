@@ -1,0 +1,16 @@
+---
+title: "using-nodejs-in-emacs.org"
+author: "xing wenju"
+date: 2018-02-17T10:06:18-04:00
+---
+
+* Table of Contents
+- [[#description][Description]]
+  - [[#features][Features:]]
+
+* Description
+This layer introduces packages that target Node.js. Currently this layer should
+not be used directly, as it will be used by other layers.
+
+** Features:
+- Integration of packages necessary to execute node.js modules from other layers.

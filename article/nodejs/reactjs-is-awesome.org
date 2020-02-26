@@ -1,0 +1,99 @@
+---
+title: "Reactjs Is Awesome"
+date: 2018-02-16T13:58:34-04:00
+---
+
+* Notes
+
+** itchat
+
+** wechaty
+
+** jupyter-notebook
+
+** social media study
+
+** reactjs
+
+** parsel
+
+
+* News
+
+** [[http://www.ultimasnoticias.com.ve/noticias/comunidad/refuerzan-recoleccion-basura-caracas/][Refuerzan recolección de basura en Caracas]]
+Published: 29 diciembre, 2017 6:25 am 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/deportes/yulimar-rojas-una-de-las-grades-deportistas-latinoamericana-de-2017/][Yulimar Rojas se encuentra entre las grandes deportistas de Latinoamérica en 2017]]
+Published: 27 diciembre, 2017 4:21 pm 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/slider-inferior/cristiano-premio-globe-soccer-quinta/][Cristiano gana premio Globe Soccer por quinta vez]]
+Published: 28 diciembre, 2017 4:22 pm 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/slider/se-acabo-la-sequia-melenuda/][Se acabó la sequía melenuda]]
+Published: 28 diciembre, 2017 9:57 am 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/comunidad/metros-caracas-valencia-trabajaran-horario-especial-fin-ano/][Metros de Caracas y Valencia trabajarán en horario especial de fin de año]]
+Published: 28 diciembre, 2017 8:07 pm 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/politica/diosdado-cabello-pide-investigar-banesco-contrabando-efectivo/][Diosdado Cabello pide investigar a Banesco por contrabando de efectivo]]
+Published: 28 diciembre, 2017 8:38 am 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/slider/701277/][Choferes cobran lo que les da la gana de pasaje]]
+Published: 29 diciembre, 2017 6:00 am 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/politica/ley-de-inversion-extranjera-productiva-buscara-reducir-las-importaciones/][Ley de Inversión Extranjera Productiva buscará reducir las importaciones]]
+Published: 28 diciembre, 2017 10:57 am 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/politica/presidente-nicolas-maduro-asegura-2018-sera-ano-victorioso/][Presidente Nicolás Maduro asegura que 2018 será un año victorioso]]
+Published: 28 diciembre, 2017 1:22 pm 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/slider/maduro-encabeza-actos-conmemorativos-la-salutacion-fanb/][Gobierno tomará decisiones “drásticas” para luchar contra el contrabando de extracción]]
+Published: 28 diciembre, 2017 12:24 pm 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/economia/precios-afectan-celebracion-la-tradicional-cena-del-31/][Precios afectan celebración de la tradicional cena del 31]]
+Published: 28 diciembre, 2017 6:00 am 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/sin-categoria/ministro-jorge-rodriguez-ofrecio-balance-en-area-economica-y-social/][Ministro Jorge Rodríguez ofreció balance en área económica y social]]
+Published: 28 diciembre, 2017 2:23 pm 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/economia/rodriguez-detalles-funcionamiento-del-petro-ya-estan-gaceta-oficial/][Rodríguez: Detalles sobre el funcionamiento del petro ya están en Gaceta Oficial]]
+Published: 28 diciembre, 2017 4:51 pm 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/economia/eleazar-diaz-rangel-la-petromoneda/][Eleazar Díaz Rangel | La Petromoneda]]
+Published: 29 diciembre, 2017 6:00 am 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/economia/pinate-ley-inversion-extranjera-permitira-ingreso-divisas/][Piñate: Ley de Inversión Extranjera permitirá el ingreso de divisas]]
+Published: 28 diciembre, 2017 4:58 pm 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/economia/freddy-bernal-2-200-toneladas-pernil-estan-retenidas-colombia/][Freddy Bernal: 2.200 toneladas de pernil están retenidas en Colombia]]
+Published: 28 diciembre, 2017 7:00 pm 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/economia/conatel-se-reunio-empresas-telefonicas/][Conatel se reunió con empresas telefónicas]]
+Published: 27 diciembre, 2017 8:10 pm 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/economia/oficializado-campo-1-del-bloque-ayacucho-respaldo-financiero-del-petro/][Oficializado campo 1 del Bloque Ayacucho como respaldo financiero del Petro]]
+Published: 27 diciembre, 2017 7:12 pm 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/economia/primera-emision-petros-se-anunciara-cuestion-dias/][Primera emisión de petros se anunciará en cuestión de días]]
+Published: 29 diciembre, 2017 6:00 am 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/economia/redoblan-envios-gasolina-occidente/][Redoblan envíos de gasolina a Occidente]]
+Published: 28 diciembre, 2017 6:00 am 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/sin-categoria/padrino-lopez-la-fanb-no-quiere-gobernar-quiere-trabajar-junto-al-pueblo/][Padrino López: La Fanb no quiere gobernar, quiere trabajar junto al pueblo]]
+Published: 27 diciembre, 2017 1:30 pm 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/politica/anc-aprueba-ley-del-regimen-tributario-para-el-desarrollo-del-arco-minero/][ANC aprueba Ley del Régimen Tributario para el Desarrollo del Arco Minero]]
+Published: 27 diciembre, 2017 4:17 pm 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/politica/reverol-afirma-secuestro-ha-disminuido-322-pais/][Reverol afirma que el secuestro ha disminuido 32,2% en todo el país]]
+Published: 27 diciembre, 2017 5:52 pm 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/politica/maduro-denuncio-sabotaje-importacion-pernil-navideno/][Maduro denunció sabotaje en importación de pernil navideño]]
+Published: 27 diciembre, 2017 8:20 pm 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/politica/nicolas-maduro-pide-a-arreaza-responder-a-gobiernos-de-canada-y-brasil/][Nicolás Maduro pide a Arreaza responder a gobiernos de Canadá y Brasil]]
+Published: 27 diciembre, 2017 7:41 pm 
+
+** [[http://www.ultimasnoticias.com.ve/noticias/politica/opositores-liberados-sabran-condiciones-enero/][Opositores liberados sabrán sus condiciones en enero]]
+Published: 28 diciembre, 2017 6:15 am 

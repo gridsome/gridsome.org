@@ -1,0 +1,9 @@
+---
+title: "Cp Work Pedro"
+date: 2018-03-25T23:22:58-04:00
+draft: false
+---
+
+# Using `pedro`
+
+

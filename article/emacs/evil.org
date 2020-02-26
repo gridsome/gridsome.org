@@ -1,0 +1,39 @@
+---
+
+templateKey: blog-post|doc-page
+title: "evil.org"
+author: "Xing Wenju"
+description: "Some Description"
+date: "2018-02-16T20:03:50-04:00"
+tags:
+ - tag1
+---
+
+* Table of Contents                                         :TOC_4_gh:noexport:
+- [[#description][Description]]
+  - [[#features][Features:]]
+- [[#install][Install]]
+- [[#key-bindings][Key bindings]]
+
+* Description
+This layer replaces [[https://github.com/redguardtoo/evil-nerd-commenter][evil-nerd-commenter]] with [[https://github.com/linktohack/evil-commentary][evil-commentary]] for those
+who prefer the behaviour of [[https://github.com/tpope/vim-commentary][vim-commentary]].
+
+** Features:
+- Provides the original vim behaviour for commenting out lines via [[https://github.com/linktohack/evil-commentary][evil-commentary]].
+
+* Install
+To use this configuration layer, add it to your =~/.spacemacs=. You will need to
+add =evil-commentary= to the existing =dotspacemacs-configuration-layers= list in this
+file.
+
+* Key bindings
+
+| Key Binding | Description                        |
+|-------------+------------------------------------|
+| ~SPC ;~     | comment operator                   |
+| ~gcc~       | comment current line               |
+| ~gcap~      | comment paragraphs                 |
+| ~gc~        | comment out the target of a motion |
+| ~gc SPC y~  | comment up to a line with avy      |
+| ~gy~        | comment and yank                   |
