@@ -106,8 +106,8 @@ The following example fetches local JSON data within .vue templates:
 
 ```html
 <template>
-  <ul v-for="user in users">
-    <li v-html="user.name"/>
+  <ul>
+    <li v-for="user in users" :key="user.name">{{ user.name }}</li>
   </ul>
 </template>
 
