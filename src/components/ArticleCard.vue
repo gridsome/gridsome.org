@@ -1,9 +1,9 @@
 <template>
-  <Card class="blog-articles__article">
+  <Card class="articles__article">
     <h3 v-html="article.title"/>
     <ArticleMeta :article="article"/>
     <p v-html="article.fields.excerpt"/>
-    <g-link class="blog-articles__article-link" :to="article.path">
+    <g-link class="articles__article-link" :to="article.path">
       Read more
     </g-link>
   </Card>
@@ -23,12 +23,12 @@ export default {
 </script>
 
 <style lang="scss">
-.blog-articles {
+.articles {
   &__article {
     position: relative;
     margin-bottom: 2rem;
 
-    a:not(.blog-articles__article-link) {
+    a:not(.articles__article-link) {
       position: relative;
       z-index: 1;
     }
