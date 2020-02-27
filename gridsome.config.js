@@ -59,7 +59,7 @@ module.exports = {
         index: ["README"],
         path: "article/**/*.md",
         route: "/article/:slug+",
-        typeName: "ArticlePage",
+        typeName: "ArticlePost",
         remark: {
           plugins: ["@gridsome/remark-prismjs"],
         },

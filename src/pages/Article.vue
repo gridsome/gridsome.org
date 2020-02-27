@@ -13,8 +13,8 @@
 </template>
 
 <page-query>
-query ArticlePages {
-  articles: allArticlePage {
+query ArticlePosts {
+  articles: allArticlePost {
     edges {
       node {
         _id

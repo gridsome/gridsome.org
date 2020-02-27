@@ -10,8 +10,8 @@
 </template>
 
 <page-query>
-query ArticlePage ($path: String!) {
-  article: articlePage (path: $path) {
+query ArticlePost ($path: String!) {
+  article: articlePost (path: $path) {
     title
     date (format: "D. MMMM YYYY")
     timeToRead
