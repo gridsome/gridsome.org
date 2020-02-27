@@ -3,7 +3,7 @@
     <h3 v-html="post.title"/>
     <PostMeta :post="post"/>
     <p v-html="post.fields.excerpt"/>
-    <g-link class="blog-posts__post-link" :to="blog.path">
+    <g-link class="blog-posts__post-link" :to="post.path">
       Read more
     </g-link>
   </Card>
