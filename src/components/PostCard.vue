@@ -1,9 +1,9 @@
 <template>
-  <Card class="blog-posts__article">
+  <Card class="blog-posts__post">
     <h3 v-html="post.title"/>
-    <PostMeta :post="article"/>
+    <PostMeta :post="post"/>
     <p v-html="post.fields.excerpt"/>
-    <g-link class="blog-posts__article-link" :to="article.path">
+    <g-link class="blog-posts__post-link" :to="blog.path">
       Read more
     </g-link>
   </Card>
@@ -28,7 +28,7 @@ export default {
     position: relative;
     margin-bottom: 2rem;
 
-    a:not(.blog-posts__article-link) {
+    a:not(.blog-posts__post-link) {
       position: relative;
       z-index: 1;
     }
