@@ -13,7 +13,7 @@
 </template>
 
 <page-query>
-query ArticlePage {
+query ArticlePages {
   articles: allArticlePage {
     edges {
       node {
