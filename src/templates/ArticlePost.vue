@@ -35,6 +35,9 @@ export default {
       return `https://github.com/gridsome/gridsome.org/blob/master${path}.md`;
     }
   },
+  mouted() {
+    console.log(this.$page);
+  },
   metaInfo() {
     return {
       title: this.$page.article.title,

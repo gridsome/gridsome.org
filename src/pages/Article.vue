@@ -39,6 +39,9 @@ import ArticleCard from "@/components/ArticleCard.vue";
 export default {
   components: {
     ArticleCard
+  },
+  mouted() {
+    console.log(this.$page);
   }
 };
 </script>
