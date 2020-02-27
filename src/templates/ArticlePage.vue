@@ -1,8 +1,8 @@
 <template>
   <Layout>
-    <Section class="post" container="md" dots="true" >
+    <Section class="article" container="md" dots="true" >
       <h1 v-html="$page.article.title"/>
-      <PostMeta :post="$page.article"/>
+      <ArticleMeta :article="$page.article"/>
       <p class="lead" v-html="$page.article.fields.excerpt"/>
       <div v-html="$page.article.content"/>
     </Section>
@@ -25,11 +25,11 @@ query ArticlePage ($path: String!) {
 </page-query>
 
 <script>
-import PostMeta from "@/components/PostMeta.vue";
+import ArticleMeta from "@/components/ArticleMeta.vue";
 
 export default {
   components: {
-    PostMeta,
+    ArticleMeta,
     editLink() {
       const path = this.$page.doc.path;
       return `https://github.com/gridsome/gridsome.org/blob/master${path}.md`;

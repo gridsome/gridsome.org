@@ -1,11 +1,13 @@
-+++
-date = "2018-02-16T14:06:05-04:00"
-title = "Vim is a life style"
-+++
+---
+title: "Vim is a life style"
+author: "linuxing3"
+date:  "2018-02-16"
+excerpt: "vim style editor" 
+---
 
 # vim outstanding configuration file
 
-```
+```vimscript
 " From cowboy configuration
 
 " Use the Solarized Dark theme

@@ -1,9 +1,11 @@
-+++
-title="hexo.md"
-date="2018-02-16T14:05:34-04:00"
-+++
-# Hello World
+---
+title: "hexo.md"
+description: "hexo a blog writer"
+date: "2018-02-16"
+expert: hexo nodejs
+---
 
+# Hello World
 
 Welcome to [Hexo](http://hexo.io/)! This is your very first post. Check [documentation](http://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](http://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
@@ -11,7 +13,7 @@ Welcome to [Hexo](http://hexo.io/)! This is your very first post. Check [documen
 
 ### Create a new post
 
-``` bash
+```bash
 $ hexo new "My New Post"
 ```
 
@@ -19,7 +21,7 @@ More info: [Writing](http://hexo.io/docs/writing.html)
 
 ### Run server
 
-``` bash
+```bash
 $ hexo server
 ```
 
@@ -27,7 +29,7 @@ More info: [Server](http://hexo.io/docs/server.html)
 
 ### Generate static files
 
-``` bash
+```bash
 $ hexo generate
 ```
 
@@ -35,7 +37,7 @@ More info: [Generating](http://hexo.io/docs/generating.html)
 
 ### Deploy to remote sites
 
-``` bash
+```bash
 $ hexo deploy
 ```
 
