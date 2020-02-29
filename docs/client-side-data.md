@@ -78,8 +78,8 @@ The following example fetches local YAML files within .vue templates:
 
 ```html
 <template>
-  <ul v-for="product in products">
-    <li v-html="product.title"/>
+  <ul>
+    <li v-for="product in products" :key="product.title">{{ product.title }}</li>
   </ul>
 </template>
 
