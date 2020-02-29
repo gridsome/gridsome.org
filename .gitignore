@@ -6,5 +6,9 @@ node_modules
 dist
 .cache
 
+# Editors
+.vscode
+.idea
+
 # Local Netlify folder
 .netlify
