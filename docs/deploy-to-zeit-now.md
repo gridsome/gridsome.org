@@ -25,5 +25,3 @@ now
 That’s all!
 
 Your site will now deploy, and you will receive a link similar to the following: https://gridsome.now-examples.now.sh
-
-Out of the box, you are preconfigured for client-side routing compatibility and appropriate default caching headers. This behaviour can be overwritten [like this](https://zeit.co/docs/v2/advanced/routes/).
