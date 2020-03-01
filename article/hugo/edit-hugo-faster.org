@@ -1,0 +1,57 @@
+---
+title: "Edit Hugo Faster"
+date: 2018-02-18T00:27:05-04:00
+draft: false
+---
+
+** For fast hugo, I defined some aliases
+
+   
+
+{{<highlight sh>}}
+
+alias blog_deploy="sh ~/Dropbox/xingwenju.com/hugo/deploy.sh"
+alias blog_new="cd ~/Dropbox/xingwenju.com/hugo && hugo new $1"
+alias blog_gen="cd ~/Dropbox/xingwenju.com/hugo && hugo"
+alias blog_serve="cd ~/Dropbox/xingwenju.com/hugo && hugo server --disableFastRender"
+
+{{</highlight>}}
+
+
+** The Deploy.sh is like this.
+
+{{<highlight sh>}}
+
+#!/bin/bash
+
+echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+
+echo -e "~/Dropbox/xingwenju.com/hugo/"
+
+cd ~/Dropbox/xingwenju.com/hugo
+
+# Build the project.
+hugo # if using a theme, replace by `hugo -t <yourtheme>`
+
+# Go To Public folder
+cd public
+
+# Add changes to git.
+git add -A
+
+# Commit changes.
+msg="rebuilding site `date`"
+if [ $# -eq 1 ]
+then msg="$1"
+fi
+git commit -m "$msg"
+
+# Push source and build repos.
+git push -u origin master
+
+# Come Back
+cd ..
+  
+
+{{</highlight>}}
+

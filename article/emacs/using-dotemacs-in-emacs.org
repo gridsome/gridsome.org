@@ -1,0 +1,105 @@
+---
+
+templateKey: blog-post|doc-page
+title: "using-dotemacs-in-emacs.org"
+author: "Xing Wenju"
+description: "Some Description"
+date: "2018-02-16T20:03:50-04:00"
+tags:
+ - tag1
+---
+
+** Day 1
+
+*** 1. Using the manual to find emacs configuration convention
+
+	1. Keybings is =Ctrl h ?=	for further options
+
+	2. Keybings is =Ctrl h r=	for reading the manual
+
+	{{<highlight emacs-lisp>}}
+	#+begin_src emacs-lisp :tangle yes
+	(info-manual ARG)
+	;; C-h r runs the command info-manual (found in global-map), which is an
+	;; interactive Lisp function in ‘info+.el’.
+	;;
+	;; It is bound to C-h r, <f1> r, <help> r, <menu-bar> <help-menu> <emacs-manual>.
+	;;
+	;;
+	;; Display a manual in Info mode - by default, the Emacs manual.
+	;; With a prefix arg, prompt for the manual name.
+	;; With a numeric prefix arg, only currently visited manuals are
+	;; candidates.
+	#+end_src
+	{{</highlight>}}
+
+	3. Navigating to =emacs-lisp Intro= section
+
+	4. Find the =16.3= chapter =Beginning a dotemacs File=
+
+*** 2. Beginning a dotemacs file
+
+	{{<highlight emacs-lisp>}}
+	#+begin_src emacs-lisp
+			 ;;;; The Help Key
+			 ; Control-h is the help key;
+			 ; after typing control-h, type a letter to
+			 ; indicate the subject about which you want help.
+			 ; For an explanation of the help facility,
+			 ; type control-h two times in a row.
+			 ; To find out about any mode, type control-h m
+			 ; while in that mode.  For example, to find out
+			 ; about mail mode, enter mail mode and then type
+			 ; control-h m.
+	#+end_src
+	{{</highlight>}}
+
+*** 3. Load Path
+
+	If you load many extensions, as I do, then instead of specifying the
+	exact location of the extension file, as shown above, you can specify
+	that directory as part of Emacs’s ‘load-path’.  Then, when Emacs loads a
+	file, it will search that directory as well as its default list of
+	directories.  (The default list is specified in ‘paths.h’ when Emacs is
+	built.)
+
+		 The following command adds your ‘~/emacs’ directory to the existing
+	load path:
+
+	{{<highlight emacs-lisp>}}
+	#+srcname: name
+	#+begin_src emacs-lisp
+			 ;;; Emacs Load Path
+			 (setq load-path (cons "~/emacs" load-path))
+	#+end_src
+	{{</highlight>}}
+
+*** 4. Load file
+
+	 You can use a ‘load’ command to evaluate a complete file and thereby
+	install all the functions and variables in the file into Emacs.  For
+	example:
+
+	{{<highlight emacs-lisp>}}
+	#+srcname: load-file
+	#+begin_src emacs-lisp
+			 (load "~/emacs/slowsplit")
+	#+end_src
+	{{</highlight>}}
+
+*** 5. Keybindings
+
+	Emacs uses “keymaps” to record which keys call which commands.  When you
+	use ‘global-set-key’ to set the keybinding for a single command in all
+	parts of Emacs, you are specifying the keybinding in
+	‘current-global-map’.
+
+	{{<highlight emacs-lisp>}}
+	#+srcname: keybindings
+	#+begin_src emacs-lisp
+			 (global-set-key "\C-x\C-b" 'buffer-menu)
+			 (define-key texinfo-mode-map "\C-c\C-cg" 'texinfo-insert-@group)
+	#+end_src
+	{{</highlight>}}
+
+	To be continued...

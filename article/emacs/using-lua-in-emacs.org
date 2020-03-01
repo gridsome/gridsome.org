@@ -1,0 +1,44 @@
+---
+
+templateKey: blog-post|doc-page
+title: "using-lua-in-emacs.org"
+author: "Xing Wenju"
+description: "Some Description"
+date: "2018-02-16T20:03:50-04:00"
+tags:
+ - tag1
+---
+
+
+* Table of Contents
+- [[#description][Description]]
+  - [[#features][Features:]]
+- [[#install][Install]]
+- [[#key-bindings][Key Bindings]]
+  - [[#commands][Commands]]
+
+* Description
+This layer adds support for editing Lua.
+
+** Features:
+- Editing lua files using [[https://github.com/immerrr/lua-mode][lua-mode]]
+- Sending code to a lua REPL
+- Code linting using [[https://github.com/mpeterv/luacheck][Luacheck]]
+
+* Install
+To use this configuration layer, add it to your =~/.spacemacs=. You will need to
+add =lua= to the existing =dotspacemacs-configuration-layers= list in this
+file.
+
+In order to enable code linting, install [[https://github.com/mpeterv/luacheck][Luacheck]].
+
+* Key Bindings
+** Commands
+
+| Key Binding | Description                                |
+|-------------+--------------------------------------------|
+| ~SPC m d~   | lookup thing at point in lua documentation |
+| ~SPC m s b~ | send buffer contents to REPL               |
+| ~SPC m s f~ | send current function to REPL              |
+| ~SPC m s l~ | send current line to REPL                  |
+| ~SPC m s r~ | send current region to REPL                |

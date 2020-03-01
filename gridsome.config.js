@@ -1,5 +1,5 @@
 module.exports = {
-  siteName: "Linuxing3 Gridsome on Netlify",
+  siteName: "Emacser\'s Chanllenging Life'",
   siteUrl: `https://gridsome.netlify.com`,
   titleTemplate: "%s - Gridsome",
   icon: {
@@ -45,9 +45,21 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "blog/*/index.md",
+        path: "blog/**/index.md",
         route: "/blog/:year/:month/:day/:slug+",
         typeName: "BlogPost",
+        remark: {
+          plugins: ["@gridsome/remark-prismjs"],
+        },
+      },
+    },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        index: ["README"],
+        path: "article/**/*.md",
+        route: "/article/:slug+",
+        typeName: "ArticlePost",
         remark: {
           plugins: ["@gridsome/remark-prismjs"],
         },

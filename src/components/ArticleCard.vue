@@ -1,34 +1,34 @@
 <template>
-  <Card class="blog-posts__post">
-    <h3 v-html="post.title"/>
-    <PostMeta :post="post"/>
-    <p v-html="post.fields.excerpt"/>
-    <g-link class="blog-posts__post-link" :to="post.path">
+  <Card class="articles__article">
+    <h3 v-html="article.title"/>
+    <ArticleMeta :article="article"/>
+    <p v-html="article.fields.excerpt"/>
+    <g-link class="articles__article-link" :to="article.path">
       Read more
     </g-link>
   </Card>
 </template>
 
 <script>
-import PostMeta from "./PostMeta.vue";
+import ArticleMeta from "./ArticleMeta.vue";
 
 export default {
   components: {
-    PostMeta
+    ArticleMeta
   },
   props: {
-    post: { type: Object, required: true }
+    article: { type: Object, required: true }
   }
 };
 </script>
 
 <style lang="scss">
-.blog-posts {
-  &__post {
+.articles {
+  &__article {
     position: relative;
     margin-bottom: 2rem;
 
-    a:not(.blog-posts__post-link) {
+    a:not(.articles__article-link) {
       position: relative;
       z-index: 1;
     }

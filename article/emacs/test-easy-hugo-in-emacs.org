@@ -1,0 +1,78 @@
+---
+
+templateKey: blog-post|doc-page
+title: "test-easy-hugo-in-emacs.org"
+author: "Xing Wenju"
+description: "Some Description"
+date: "2018-02-16T20:03:50-04:00"
+tags:
+ - tag1
+---
+
+** Tips
+
+You can type the post name as =emacs/test-easy-hugo-in-emacs= to put the post in subdirectory
+
+{{<highlight emacs-lisp>}}
+
+#+srcname: easy-hugo-newpost
+#+begin_src emacs-lisp
+
+(defun x/smart-create-hugo-newpost-with-current-buffer (post-file)
+"file needs to have and extension '.md' or '.org' or '.ad' or '.rst' or '.mmark' or '.html'."
+  (interactive (list (read-from-minibuffer
+		      "输入文件名: "
+		      `(,easy-hugo-default-ext . 1) nil nil nil)))
+  (easy-hugo-with-env
+   (let (
+         (filename (expand-file-name post-file easy-hugo-postdir)) ;; file to create
+         (file-ext (file-name-extension post-file)) ;; file extention
+         (current-buffer-file-name (buffer-file-name)) ;; buffer to copy content
+         )
+     ;; Check file extention
+     (when (not (member file-ext easy-hugo--formats))
+       (error "please enter .%s or .org or .%s or .rst or .mmark or .%s file name"
+	      easy-hugo-markdown-extension
+	      easy-hugo-asciidoc-extension
+	      easy-hugo-html-extension))
+     ;; Check target file exists
+     (when (file-exists-p (file-truename filename))
+       (error "%s already exists!" filename))
+     ;; Check if org is supported and defined
+     (if (and (null easy-hugo-org-header)
+	      (<= 0.25 (easy-hugo--version)))
+	 (call-process "hugo" nil "*hugo*" t "new"
+		       (file-relative-name filename
+					   (expand-file-name "content" easy-hugo-basedir)))
+       (progn
+	 (if (or (string-equal file-ext easy-hugo-markdown-extension)
+		 (string-equal file-ext easy-hugo-asciidoc-extension)
+		 (string-equal file-ext "rst")
+		 (string-equal file-ext "mmark")
+		 (string-equal file-ext easy-hugo-html-extension))
+	     (call-process "hugo" nil "*hugo*" t "new"
+			   (file-relative-name filename
+					       (expand-file-name "content" easy-hugo-basedir))))))
+     ;; End of check org support
+
+     ;; Kill temporary buffer
+     (when (get-buffer "*hugo*")
+       (kill-buffer "*hugo*"))
+
+     ;; Open the new post with filename
+     (find-file filename)
+     ;;
+     (when (or easy-hugo-org-header
+	       (and (> 0.25 (easy-hugo--version))
+		    (string-equal file-ext "org")))
+       ;; Insert header
+       (insert (easy-hugo--org-headers (file-name-base post-file)))
+       (goto-char (point-max)))
+       ;; Insert contents from another buffer
+       (insert-file-contents current-buffer-file-name)
+       (goto-char (point-max))
+       (save-buffer)))
+)
+#+end_src
+
+{{</highlight>}}
