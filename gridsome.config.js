@@ -53,17 +53,5 @@ module.exports = {
         },
       },
     },
-    {
-      use: "@gridsome/source-filesystem",
-      options: {
-        index: ["README"],
-        path: "article/**/*.md",
-        route: "/article/:slug+",
-        typeName: "ArticlePost",
-        remark: {
-          plugins: ["@gridsome/remark-prismjs"],
-        },
-      },
-    },
   ],
 };
