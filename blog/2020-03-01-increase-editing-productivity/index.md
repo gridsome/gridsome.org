@@ -1,5 +1,5 @@
 ---
-title: 增加编辑效率
+title: Increase productity of editing 
 date: 2020-03-01
 excerpt: emacs editor
 author: linuxing3
