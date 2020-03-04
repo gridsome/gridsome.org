@@ -142,3 +142,54 @@ module.exports = {
   }
 }
 ```
+
+## Using vue-svg-inline-loader
+Webpack loader used for inline replacement of SVG images with actual content of SVG files in Vue projects. More info on the loader can be found [here](https://github.com/oliverfindl/vue-svg-inline-loader#readme).
+
+First install loader using:
+
+```js
+// NPM
+$ npm install vue-svg-inline-loader --save-dev
+
+// Yarn
+$ yarn add vue-svg-inline-loader --dev
+```
+
+Then you need to modify `gridsome.config.js`:
+
+```js
+module.exports = {
+  chainWebpack: config => {
+    config.module
+    .rule("vue")
+    .use("vue-svg-inline-loader")
+    .loader("vue-svg-inline-loader")
+    .options({ /* ... */ });
+  }
+};
+```
+
+After that you can use your svgs like this:
+
+Basic inline SVG sprite usage with svg-sprite keyword directive:
+
+```html
+<img svg-inline src="~/assets/svg/example.svg" alt="example" />
+```
+
+Which replaces into:
+
+```html
+<svg svg-inline svg-sprite focusable="false" role="presentation" tabindex="-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <use xlink:href="#svg-sprite-md5hash" href="#svg-sprite-md5hash"></use>
+</svg>
+<!-- ... -->
+<!-- will get injected right before root closing tag in Vue component -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none !important;">
+  <symbol id="svg-sprite-md5hash" xmlns="http://www.w3.org/2000/svg" viewBox="...">
+    <path d="..."></path>
+  </symbol>
+  <!-- ... -->
+</svg>
+```
