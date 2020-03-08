@@ -120,6 +120,10 @@
       link: /docs/deploy-to-google/
     - title: Surge.sh
       link: /docs/deploy-to-surge-sh/
+    - title: Heroku
+      link: /docs/deploy-to-heroku/
+    - title: Firebase
+      link: /docs/deploy-to-firebase/
 
 - title: Contribute
   items:
