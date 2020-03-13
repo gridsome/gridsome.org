@@ -114,7 +114,7 @@
       link: /docs/deploy-to-amazon-s3/
     - title: GitLab Pages
       link: /docs/deploy-to-gitlab/
-    - title: Github Pages
+    - title: GitHub Pages
       link: /docs/deploy-to-github/
     - title: Google Cloud Platform
       link: /docs/deploy-to-google/
