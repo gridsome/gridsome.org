@@ -4,7 +4,6 @@
 src/.temp
 node_modules
 dist
-.cache
 
 # Local Netlify folder
 .netlify
