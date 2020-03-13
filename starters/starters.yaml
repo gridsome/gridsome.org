@@ -245,3 +245,12 @@
   author: storyblok
   tags: storyblok, cms
   platforms: storyblok
+
+- title: Docc
+  description: A beautiful starter theme for writing great documentation
+  screenshot: ./screenshots/docc.png
+  repo: mrcrmn/docc
+  preview: https://docc-theme.netlify.com/
+  author: mrcrmn
+  tags: gridsome, starter, documentation, docs, tailwind, dark mode
+  platforms: markdown

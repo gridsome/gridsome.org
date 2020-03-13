@@ -134,3 +134,9 @@
   bio: "The Only #headlessCMS with a Visual Editor and Components as its First-Class Citizens"
   avatar: ./images/storyblok.svg
   twitter: "@storyblok"
+
+- id: mrcrmn
+  name: Marco Reimann
+  bio: "Web Developer"
+  avatar: ./images/mrcrmn.png
+  twitter: "@mrc_rmn"
