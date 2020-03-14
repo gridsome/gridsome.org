@@ -1,31 +1,25 @@
 <template>
-    <div id="app">
-      <Header />
-      <main id="main" :class="mainClass">
-        <slot />
-      </main>
-      <LazyHydrate ssr-only v-if="footer !== false">
-        <Footer />
-      </LazyHydrate>
-    </div>
+  <div id="app" dark>
+    <Header />
+    <slot />
+    <Footer v-if="footer !== false" />
+  </div>
 </template>
 
 <script>
 import Header from './partials/Header'
 import Footer from './partials/Footer'
-import LazyHydrate from 'vue-lazy-hydration'
 
 export default {
   props: ['footer', 'primary-bg'],
   components: {
     Header,
     Footer,
-    LazyHydrate
   },
   computed: {
     mainClass() {
       let classes = []
-      if(this.primaryBg) classes.push('main--primary-bg')
+      if(this.primaryBg) classes.push('main--bg-teritary')
       return classes
     },
   }
@@ -41,16 +35,8 @@ export default {
 
 #app main {
   flex: 1;
-  &:after {
-    content: "";
-    width: 100%;
-    height: 66.66%;
-    bottom:0;
-    position: fixed;
-    background: linear-gradient(#FFF, var(--primary-bg));
-  }
 }
-.main--primary-bg {
-  background-color: var(--primary-bg);
+.main--bg-teritary {
+  background-color: var(--bg-teritary);
 }
 </style>

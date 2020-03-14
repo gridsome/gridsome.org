@@ -77,7 +77,7 @@
   author: calebanthony
   tags: markdown, blog, bulma, eslint
   platforms: markdown
-  
+
 - title: Bootstrap resume
   description: Resume/portfolio
   screenshot: ./screenshots/gridsome-starter-resume.png
@@ -86,4 +86,162 @@
   author: lokecarlsson
   tags: resume, portfolio, bootstrap, bootstrap-vue
   platforms: markdown
-  
+
+- title: Gridsome Portfolio Starter
+  description: Simple portfolio and blog with Tailwind
+  screenshot: ./screenshots/gridsome-portfolio-starter.jpg
+  repo: drehimself/gridsome-portfolio-starter
+  preview: https://gridsome-portfolio-starter.netlify.com/
+  author: drehimself
+  tags: portfolio, markdown, tailwind
+  platforms: markdown
+
+- title: Directus starter
+  description: Gridsome + Directus
+  repo: pienter-tech/gridsome-starter-directus
+  author: pienter
+  tags: directus
+  platforms: directus
+
+- title: Gridsome WordPress and Bootstrap starter
+  description: A BootstrapVue powered Gridsome starter that uses WordPress for content
+  screenshot: ./screenshots/gridsome-starter-wordpress-bootstrap.jpg
+  repo: pehaa/gridsome-starter-wordpress-bootstrap
+  preview: https://wonderful-montalcini-a601bf.netlify.com/
+  author: pehaa
+  tags: wordpress, bootstrap, bootstrapvue
+  platforms: wordpress
+
+- title: Darkfolio
+  description: Portfolio
+  screenshot: ./screenshots/darkfolio.jpg
+  repo: itsnwa/darkfolio
+  preview: https://darkfolio.netlify.com
+  author: itsnwa
+  tags: markdown, forestry, portfolio, dark
+  platforms: markdown
+
+- title: Airtable Events Starter
+  description: A Gridsome starter using Airtable as a CMS to display content
+  screenshot: ./screenshots/airtable-events-starter.png
+  repo: 12vanblart/gridsome-airtable-starter
+  preview: https://gridsomeairtable.netlify.com/
+  author: tvanblargan
+  tags: airtable, events
+  platforms: airtable
+
+- title: Brevifolia
+  description: A markdown blog with a clean layout, configured with Forestry CMS
+  screenshot: ./screenshots/brevifolia-screenshot.jpg
+  repo: kendallstrautman/brevifolia-gridsome-forestry
+  preview: https://brevifolia-gridsome-forestry.netlify.com/
+  author: kendallstrautman
+  tags: blog, forestry, minimalist, markdown
+  platforms: markdown
+
+- title: Buefy
+  description: A example theme of how to use buefy with gridsome
+  screenshot: ./screenshots/gridsome-starter-buefy.png
+  repo: FriendlyUser/gridsome-starter-buefy
+  preview: https://friendlyuser.github.io/gridsome-starter-buefy
+  author: FriendlyUser
+  tags: blog, forestry, minimalist, markdown
+
+- title: Gridsome Agency Starter
+  description: A minimalistic starter theme for an agency built with Bootstrap 4
+  screenshot: ./screenshots/gridsome-agency-starter-bootstrap.jpg
+  repo: adeadedoja/gridsome-agency-starter-bootstrap
+  preview: https://gridsome-agency-starter.netlify.com/
+  author: adeadedoja
+  tags: agency, bootstrap, minimalist, markdown
+  platforms: markdown
+
+- title: Gridsome Storyblok Starter
+  description: A minimalistic starter boilerplate with Storyblok integration
+  screenshot: ./screenshots/gridsome-starter-storyblok.jpg
+  repo: storyblok/storyblok-gridsome-boilerplate
+  preview:
+  author: emanuelgsouza
+  tags: storyblok, cms
+  platforms: storyblok
+
+- title: Jamdocs
+  description: The ultimate static generated documentation theme for the JAM-stack
+  screenshot: ./screenshots/jamdocs.png
+  repo: samuelhorn/jamdocs
+  preview: https://jamdocs.netlify.com/
+  author: samuelhorn
+  tags: gridsome, docs, documentation, netlify
+  platforms: markdown
+
+- title: Shopify Starter
+  description: A minimalistic starter showcasing Shopify & Gridsome working together
+  screenshot: ./screenshots/gridsome-starter-shopify.png
+  repo: thetre97/gridsome-starter-shopify
+  preview: https://gridsome-shopify-starter.netlify.com
+  author: travisreynolds
+  tags: gridsome, starter, shopify
+  platforms: shopify
+
+- title: Gridsome Skeleventy Starter
+  description: A minimalistic starter boilerplate with tailwindcss
+  screenshot: ./screenshots/gridsome-starter-skeleventy.jpg
+  repo: noxify/gridsome-starter-skeleventy
+  preview: https://gridsome-starter-skeleventy.now.sh/
+  author: noxify
+  tags: gridsome, starter, tailwind, tailwindcss, blog, about
+  platforms: markdown
+
+- title: Gridsome Casper V2 Starter
+  description: A gridsome starter based on Ghost Casper V2 and tailwindcss
+  screenshot: ./screenshots/gridsome-starter-casper-v2.jpg
+  repo: noxify/gridsome-starter-casper-v2
+  preview: https://gridsome-starter-casper-v2.now.sh/
+  author: noxify
+  tags: gridsome, starter, tailwind, tailwindcss, blog, about, categories, tags, author, about, responsive
+  platforms: markdown
+
+- title: Gridsome Articles Starter
+  description: A gridsome starter built with bootstrap
+  screenshot: ./screenshots/gridsome-starter-articles.jpg
+  repo: noxify/gridsome-starter-articles
+  preview: https://gridsome-starter-articles.now.sh/
+  author: noxify
+  tags: gridsome, starter, bootstrap, articles, blog, tutorials, tags, toc, embedding, responsive
+  platforms: markdown
+
+- title: Gridsome Casper V3 Starter
+  description: A gridsome starter based on Ghost Casper V3 and tailwindcss
+  screenshot: ./screenshots/gridsome-starter-casper-v3.jpg
+  repo: noxify/gridsome-starter-casper-v3
+  preview: https://gridsome-starter-casper-v3.now.sh/
+  author: noxify
+  tags: gridsome, starter, tailwind, tailwindcss, blog, about, categories, tags, author, about, responsive
+  platforms: markdown
+
+- title: Gridsome Starter Wikidata
+  description: A starter showcasing Gridsome and an external data source working together
+  screenshot: ./screenshots/gridsome-starter-wikidata-1680x1680.jpg
+  repo: hunsalz/gridsome-starter-wikidata
+  preview: https://hunsalz.github.io/gridsome-starter-wikidata/
+  author: hunsalz
+  tags: gridsome, starter, pwa, wikidata, sparql, filters, grid, dark/light mode, GitHub Actions CI/CD pipeline
+  platforms: wikidata
+
+- title: Elastic Path Moltin Starter
+  description: eCommerce starter using Elastic Path Moltin's APIs
+  screenshot: ./screenshots/gridsome-starter-moltin.jpg
+  repo: Bounteous-Inc/gridsome-starter-moltin
+  preview: https://gridsome-starter-moltin.netlify.com/
+  author: bounteous
+  tags: gridsome, elastic path, moltin, ecommerce, store
+  platforms: elastic-path
+
+- title: Gridsome Storyblok Moon Theme
+  description: A complete website build by Storyblok team with Moon theme
+  screenshot: ./screenshots/gridsome-storyblok-boilerplate-moon.jpg
+  repo: storyblok/storyblok-gridsome-boilerplate-moon
+  preview: https://demo.storyblok.com/
+  author: storyblok
+  tags: storyblok, cms
+  platforms: storyblok

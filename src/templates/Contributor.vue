@@ -1,19 +1,22 @@
 <template>
   <Layout>
     <Section container="md" class="blog-posts">
-      
+
       <div class="mb-x2 container-sm text-center author-page">
         <g-image class="author-page__avatar" v-if="$page.contributor.avatar" :key="$page.contributor.id" :src="$page.contributor.avatar"/>
         <h1>{{ $page.contributor.title }}</h1>
         <p v-if="$page.contributor.bio" class="lead container-sm">
           {{ $page.contributor.bio }}
         </p>
+        <a v-if="$page.contributor.twitter" :href="`https://twitter.com/${$page.contributor.twitter}`">
+            {{ $page.contributor.twitter }}
+        </a>
       </div>
 
       <h3 class="text-center" v-if="$page.contributor.posts.edges.length">Blog posts</h3>
 
       <PostCard v-for="edge in $page.contributor.posts.edges" :key="edge.node.id" :post="edge.node"/>
-      
+
       <h3 class="text-center" v-if="$page.contributor.starters.edges.length">Starters</h3>
 
       <div class="grid-cols grid-cols--2">
@@ -24,12 +27,13 @@
 </template>
 
 <page-query>
-query Contributor ($path: String!) {
-  contributor (path: $path) {
+query ($id: ID!) {
+  contributor (id: $id) {
     id
     title
     bio
     avatar (width: 124)
+    twitter
     posts: belongsTo(filter: {typeName: {eq: BlogPost}}) {
       totalCount
       pageInfo {

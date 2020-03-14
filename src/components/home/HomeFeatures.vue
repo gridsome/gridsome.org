@@ -1,5 +1,5 @@
 <template>
-  <Section dots="true" class="post" primary="true">
+  <Section dots="true">
     <div class="homepage-features grid-cols">
 
       <Feature>
@@ -10,7 +10,7 @@
 
       <Feature>
         <h3>Fast by default</h3>
-        <p>Gridsome builds ultra performance into every page by using the <g-link to="/docs/fast-by-default#the-prpl-pattern">PRPL pattern</g-link>. You get <strong>code splitting, asset optimization, progressive images, and link prefetching</strong> out of the box. Gridsome sites gets almost perfect page speed scores by default.
+        <p>Gridsome builds ultra performance into every page by using the <g-link to="/docs/fast-by-default/#the-prpl-pattern">PRPL pattern</g-link>. You get <strong>code splitting, asset optimization, progressive images, and link prefetching</strong> out of the box. Gridsome sites get almost perfect page speed scores by default.
         </p>
       </Feature>
 
@@ -22,14 +22,14 @@
 
       <Feature>
         <h3>Build on the JAMstack</h3>
-        <p>The future of the web is JavaScript, API's, and Markup - <g-link to="/docs/jamstack">the JAMstack</g-link>. Gridsome uses the power of blazing fast static site generation, JavaScript and APIs to create stunning modern web experiences.</p>
+        <p>The future of the web is JavaScript, APIs, and Markup - <g-link to="/docs/jamstack/">the JAMstack</g-link>. Gridsome uses the power of blazing fast static site generation, JavaScript and APIs to create stunning modern web experiences.</p>
       </Feature>
 
 
       <Feature>
         <h3>Simple, safe deployment</h3>
         <p><strong>No servers. No databases. Only files.</strong> Deploy your entire site to a CDN and forget about it. A Gridsome site can handle thousands to millions of hits without breaking - and no expensive server costs.
-        </p>     
+        </p>
       </Feature>
 
       <Feature>
@@ -38,7 +38,7 @@
       </Feature>
 
     </div>
-    
+
   </Section>
 </template>
 

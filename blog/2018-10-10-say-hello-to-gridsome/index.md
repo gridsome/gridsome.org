@@ -27,7 +27,7 @@ Here is an example on how to query posts from the GraphQL layer in a page:
 </template>
 
 <page-query>
-query Blog {
+query {
   allWordPressPost (limit: 5) {
     edges {
       node {
@@ -50,7 +50,7 @@ The GraphQL layer and all the data can be explored in a local GraphQL playground
 
 #### Perfect scores on Google Lighthouse - automagically 💚
 
-One of the main goals of Gridsome is to make a framework that let you build websites that are optimized "out-of-the-box." It follows the [PRPL-pattern by Google.](https://developers.google.com/web/fundamentals/performance/prpl-pattern/) You don't need to be a performance expert to make fast websites with Gridsome. Your site gets almost perfect scores on Google lighthouse out-of-the-box. These are some of the performance steps that Gridsome takes care of:
+One of the main goals of Gridsome is to make a framework that lets you build websites that are optimized "out-of-the-box." It follows the [PRPL-pattern by Google.](https://developers.google.com/web/fundamentals/performance/prpl-pattern/) You don't need to be a performance expert to make fast websites with Gridsome. Your site gets almost perfect scores on Google lighthouse out-of-the-box. These are some of the performance steps that Gridsome takes care of:
 
 - Image compressing & lazy-loading ⚡️ 
 - CSS & JS minification ⚡️ 

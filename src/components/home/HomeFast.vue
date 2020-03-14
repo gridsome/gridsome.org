@@ -18,9 +18,9 @@
         <li><Bullet /> Built-in asset minification</li>
       </ul>
     </div>
-    
+
     <p class="home-links text-center">
-      <g-link  to="/docs" class="button primary button--large">
+      <g-link  to="/docs/" class="button primary button--large">
         Get started
       </g-link>
     </p>

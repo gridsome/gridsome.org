@@ -2,7 +2,7 @@
 
 ## Overview of core tech
 
-## The command line
+## The command-line
 
 ## Install node.js
 Download and install from [NodeJS.org](https://nodejs.org/)

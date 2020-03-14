@@ -1,6 +1,6 @@
 .plugins {
   &__sidebar {
-
+    padding-top: 0;
     @media screen and (min-width: 850px) {
       min-width: 225px;
       width: 340px;
@@ -13,8 +13,10 @@
     margin: 0;
     padding-top: var(--space);
     padding-bottom: calc(var(--space) / 2);
-    background: var(--light-bg-transparent);
+    background: var(--bg-transparent);
     z-index: 1;
+    backdrop-filter: blur(4px);
+    transition: background-color .3s;
 
     &-box {
       min-height: 42.22px;
@@ -72,6 +74,7 @@
   padding: calc(var(--space) / 2.5) 4px;
   position: relative;
   border-top: 1px solid var(--border-color);
+  transition: border-color .3s;
   margin-bottom: 0;
 
   &:hover & {
@@ -123,38 +126,61 @@
 }
 
 .plugin-post {
+  overflow: auto;
+  
   &__meta {
-    padding-bottom: var(--space);
+    padding-bottom: 15px;
     border-bottom: 1px solid var(--border-color);
+    transition: border-color .3s;
     margin-bottom: var(--space);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    a {
-      opacity: .9;
+    font-size: .85rem;
+
+
+    &_left {
+      display: flex;
+      align-items: center;
+
+      a:not(:hover) {
+        color: var(--body-color);
+        text-decoration: none;
+      }
     }
+
+    &_right {
+      display: flex;
+      align-items: center;
+      opacity: .6;
+    }
+
     svg {
-      width: 28px;
-      height: 28px;
-      opacity: .4;
+      width: 20px;
+      height: 20px;
+      color: var(--body-color);
+      margin-right: .7rem;
     }
   }
 
   &__users {
     display: inline-flex;
     align-items: center;
-    margin-left: calc(var(--space) / 2);
-
-    span {
-      display: inline-flex;
-      align-items: center;
-    }
+    margin-right: calc(var(--space) / 2);
 
     img {
-      width: 28px;
-      height: 28px;
-      margin: 0;
+      width: 30px;
+      height: 30px;
+      margin: 0 .3rem 0 0;
       border-radius: 99px;
+    }
+
+    &-tag {
+      background: var(--bg-teritary);
+      opacity: .5;
+      font-size: .75rem;
+      padding: .05rem .15rem;
+      border-radius: 5px;
     }
   }
 

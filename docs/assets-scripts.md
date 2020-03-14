@@ -1,5 +1,5 @@
 # Add External Scripts
-It is really easy to use any external javascript with gridsome. Being a Vue based framework any method of importing external scripts in vue works out of the box with Gridsome
+It is really easy to use any external javascript with Gridsome. Being a Vue based framework any method of importing external scripts in Vue works out of the box with Gridsome
 
 ## Add to Components
 
@@ -31,7 +31,7 @@ export default {
 ```
 
 ### Using an external library 
-If you want to use a external javascript library inside your component you can do so by importing the component and requiring it once vue components are mounted.
+If you want to use a external javascript library inside your component you can do so by importing the component and requiring it once Vue components are mounted.
 
 Example:
 ```html
@@ -64,7 +64,7 @@ If you want scripts to be globally available you usually add them to `src/main.j
 **Note:** Avoid injecting dependencies globally, and use it only if really necessary. Injecting locally into components is considered a better practice for code splitting.
 
 ### Using an external Vue Plugin 
-To use any external vue plugin with gridsome. Just import the required plugin and pass the required plugin to Vue using the following function `Vue.use` inside your main.js file
+To use any external Vue plugin with Gridsome. Just import the required plugin and pass the required plugin to Vue using the following function `Vue.use` inside your main.js file
 
 Example:
 ```javascript
@@ -82,10 +82,10 @@ export default function (Vue) {
 
 }
 ```
-In this example we are importing `VueTypedJs` plugin inside our gridsome project
+In this example we are importing `VueTypedJs` plugin inside our Gridsome project
 
 ### Using an external library 
-To use any external library on our gridsome project you may  proxy it to a property of the Vue prototype object. Since all components inherit their methods from the Vue prototype object this will make your external automatically available across any and all components with no global variables or anything to manually import.
+To use any external library on our Gridsome project you may proxy it to a property of the Vue prototype object. Since all components inherit their methods from the Vue prototype object this will make your external library or libraries automatically available across any and all components with no global variables or anything to manually import.
 
 Example:
 ```javascript
@@ -119,7 +119,7 @@ this.$http.get('/'); // TypeError: this.$http.get is not a function
 ```
 Instead, our read-only instance method protects our library, and if you attempt to overwrite it you will get "TypeError: Cannot assign to read only property".
 
-So you can proxy your library to VuePrototype using Object.defineProperty in following way:
+So you can proxy your library to VuePrototype using Object.defineProperty in the following way:
 ```javascript
 //src/main.js
 
@@ -139,7 +139,7 @@ export default function (Vue) {
 ```
 
 ## Without SSR support
-While `gridsome build` gridsome uses server side rendering to create a fully rendered page. So if your Vue component does not support SSR or your external library like `jquery` changes the dom element it won't be rendered properly. For these type of component we suggest you to bind the component inside `<ClientOnly></ClientOnly>` tag and import library inside vue's `mounted()` function.
+While `gridsome build` Gridsome uses server side rendering to create a fully rendered page. So if your Vue component does not support SSR or your external library like `jquery` changes the `DOM` element it won't be rendered properly. For these type of components we suggest you to bind the component inside `<ClientOnly></ClientOnly>` tag and import library inside Vue's `mounted()` function.
 For Example to use `Vue-carousel` that does not yet support SSR you can do the following
 ```html
 <template>
@@ -173,7 +173,7 @@ For Example to use `Vue-carousel` that does not yet support SSR you can do the f
   }
 </script>
 ```
-This will stop SSR from rendering the component, and component is displayed after the vue components are mounted.
+This will stop SSR from rendering the component, and component is displayed after the Vue components are mounted.
 
 Same way you can use any external library that causes issue in server side rendering like `jquery`
 

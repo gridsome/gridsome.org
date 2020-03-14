@@ -17,7 +17,7 @@ order: 1
 
 <!-- Query from local GraphQL data layer. -->
 <page-query>
-query Posts {
+query {
   allPost {
     edges {
       node {

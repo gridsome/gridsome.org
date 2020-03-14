@@ -1,6 +1,6 @@
 # Add comments to Gridsome
 
-Adding comments to a static site can be easy, you have the option to use either external services that loads an iframe into your site or applications that connects to your Github repository that commits the changes made on your site. We have listed some great services that integrates well with Gridsome.
+Adding comments to a static site can be easy, you have the option to use either external services that load an iframe into your site or applications that connect to your Github repository which commits the changes made on your site. We have listed some great services that integrate well with Gridsome.
 
 ## Disqus
 Disqus is an external service that injects an iframe on your site, one easy way to use Disqus with Gridsome is to use the package [vue-disqus](https://github.com/ktquez/vue-disqus) that provides you with a custom component that you can use across your project.

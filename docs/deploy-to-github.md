@@ -41,7 +41,7 @@ GitHub Pages allows you to have a "Github user page" that acts as a profile/main
   ```js
   siteUrl: 'https://www.yourname.com',
   ```
-* If you are using an apex domain for your GitHub user page (ie. `https://yourname.com` points to all of your GitHub Pages sites), and your Gridsome project is *not* your GitHub user page (not on the root `https://yourname.com` page, but a separate repo), then you will need to make sure `pathPrefix` matches your gridsome project's repo name in `gridsome.config.js`:
+* If you are using an apex domain for your GitHub user page (ie. `https://yourname.com` points to all of your GitHub Pages sites), and your Gridsome project is *not* your GitHub user page (not on the root `https://yourname.com` page, but a separate repo), then you will need to make sure `pathPrefix` matches your Gridsome project's repo name in `gridsome.config.js`:
   ```js
   pathPrefix: '/<your-gridsome-repo-name>',
   ```

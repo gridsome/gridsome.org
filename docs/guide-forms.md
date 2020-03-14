@@ -1,6 +1,6 @@
 # Add a form to Gridsome
 
-Adding forms to a static site is easy, but you need to use an external service. We have listed some great services that integrates well with Gridsome.
+Adding forms to a static site is easy, but you need to use an external service. We have listed some great services that integrate well with Gridsome.
 
 
 ## Formspree
@@ -10,6 +10,10 @@ Read more: [Formspree](https://formspree.io/)
 ## Getform.io
 Getform is a form backend platform that lets you handle your forms on your websites and apps. You can set up a form and start collecting submissions to your form within minutes.
 Read More: [Getform](https://getform.io/)
+
+## Form-Data
+Collect form submissions with spam filtering, email notifications, auto-reply and full automation. Free plan available. 
+Read More: [form-data](https://www.form-data.com/)
 
 ## Netlify Forms
 Netlify offers some sophisticated features to make static site form submissions a breeze.
@@ -51,7 +55,7 @@ First we will start by adding the form to our template tag:
 </form>
 ```
 
-We have include a honeypot input that will lure bots trying to send spam and Netlify will automatically reject them.
+We have included a honeypot input that will lure bots trying to send spam and Netlify will automatically reject them.
 
 Next step is to add our `formData` variable that will hold our data that will be sent to Netlify, this is bound to our inputs to automatically update `formData` when the input is changed.
 

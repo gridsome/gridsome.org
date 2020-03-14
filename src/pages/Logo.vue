@@ -67,7 +67,7 @@
    	 	</div>
 
    	 	<div class="colors__secondary">
-   	 		<span>#00855c</span>
+   	 		<span>#00835C</span>
    	 	</div>
 
       <div class="colors__dark">

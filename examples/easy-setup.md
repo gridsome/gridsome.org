@@ -14,23 +14,15 @@ module.exports = {
       options: {
         host: 'cdn.contentful.com',
         typeName: 'Contentful',
-        routes: {
-          'Team': '/team/:slug',
-          'Events': '/events/:slug'
-        }
       }
     },
-    {
-      use: '@gridsome/source-wordpress',
-      options: {
-        baseUrl: 'YOUR_WEBSITE_URL',
-        typeName: 'WordPress',
-        routes: {
-          post: '/blog/:year/:month/:day/:slug',
-          post_tag: '/blog/tag/:slug' 
-        }
-      }
-    }
-  ]
+  ],
+  // Setup templates for data collections.
+  // This will automatically look for and use
+  // a src/templates/{Collection}.vue file.
+  templates: {
+    ContentfulTeam: '/team/:slug',
+    ContentfulEvent: '/event/:slug',
+  }
 }
 ```

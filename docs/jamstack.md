@@ -1,6 +1,6 @@
 # What is the JAMstack?
 
-> JAMstack is a new way of building websites and apps that delivers better performance, higher security, lower cost of scaling, and a better developer experience. It's a Modern web development architecture based on client-side JavaScript, reusable APIs, and prebuilt Markup.
+> JAMstack is a new way of building websites and apps that delivers better performance, higher security, lower cost of scaling, and a better developer experience. It's a modern web development architecture based on client-side **J**avaScript, reusable **A**PIs, and prebuilt **M**arkup.
 
 
 ## Benefits
@@ -40,7 +40,7 @@ With a JAMstack project, anyone should be able to do a git clone, install any ne
 
 ### Modern Build Tools
 
-Take advantage of the world of modern build tools. It can be a jungle to get oriented in and it’s a fast moving space, but you’ll want to be able to use tomorrow’s web standards today without waiting for tomorrow’s browsers. And that currently means Babel, PostCSS, Webpack, and friends.
+Take advantage of the world of modern build tools. It can be a jungle to get oriented in and it’s a fast-moving space, but you’ll want to be able to use tomorrow’s web standards today without waiting for tomorrow’s browsers. And that currently means Babel, PostCSS, Webpack, and friends.
 
 ### Automated Builds
 
