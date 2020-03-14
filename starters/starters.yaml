@@ -245,3 +245,12 @@
   author: storyblok
   tags: storyblok, cms
   platforms: storyblok
+
+- title: Briefly
+  description: Minimalistic Markdown Blog styled with Tailwind CSS
+  screenshot: ./screenshots/gridsome-starter-briefly.jpg
+  repo: cossssmin/gridsome-starter-briefly
+  preview: https://gridsome-starter-briefly.netlify.com/
+  tags: blog, tailwindcss, pagination, sitemap, rss, analytics, 404, lightbox, highlight
+  platforms: markdown
+  author: cossssmin
