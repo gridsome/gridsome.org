@@ -140,3 +140,8 @@
   bio: "Frontend Web Developer"
   avatar: ./images/brettanda.jpg
   twitter: "@brettanda"
+  
+- id: alexbrown
+  name: Alex Brown
+  bio: "Web Developer"
+  avatar: ./images/alexbrown.jpg
