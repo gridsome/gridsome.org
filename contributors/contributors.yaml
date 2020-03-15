@@ -140,3 +140,8 @@
   bio: "Web Developer"
   avatar: ./images/mrcrmn.png
   twitter: "@mrc_rmn"
+
+- id: alexbrown
+  name: Alex Brown
+  bio: "Web Developer"
+  avatar: ./images/alexbrown.jpg
