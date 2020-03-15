@@ -246,11 +246,11 @@
   tags: storyblok, cms
   platforms: storyblok
 
-- title: Briefly
-  description: Minimalistic Markdown Blog styled with Tailwind CSS
-  screenshot: ./screenshots/gridsome-starter-briefly.jpg
-  repo: cossssmin/gridsome-starter-briefly
-  preview: https://gridsome-starter-briefly.netlify.com/
-  tags: blog, tailwindcss, pagination, sitemap, rss, analytics, 404, lightbox, highlight
+- title: Gridsome Minimal Markdown Starter
+  description: A very minimal starter theme that organizes blog posts by year
+  screenshot: ./screenshots/gridsome-minimal-markdown-blog-840x840.png
+  repo: alexbrown/gridsome-starter-minimal-blog
+  preview: https://gridsome-starter-minimal-blog.netlify.com/
+  author: alexbrown
+  tags: minimal, markdown, starter
   platforms: markdown
-  author: cossssmin
