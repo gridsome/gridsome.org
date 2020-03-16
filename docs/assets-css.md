@@ -443,10 +443,10 @@ Or save your bundle size by using [vuetify treeshaking](https://vuetifyjs.com/en
 1. Install dependencies
 ```shell
 # With npm
-npm install deepmerge fibers sass-loader@7.3.1 vuetify-loader --save-dev
+npm install deepmerge fibers sass sass-loader@7.3.1 vuetify-loader --save-dev
 
 # With yarn
-yarn add deepmerge fibers sass-loader@7.3.1 vuetify-loader --dev
+yarn add deepmerge fibers sass sass-loader@7.3.1 vuetify-loader --dev
 ```
 >❗️Note: sass-loader must be lower than 8 version,
   also remove `node-sass` package if it's installed, otherwise build will fail.
@@ -458,6 +458,7 @@ module.exports = (api) => {
   api.chainWebpack((config, { isServer }) => {
     config.plugin('vuetify-loader').use(VuetifyLoaderPlugin);
   });
+}
 ```
 >❗️Note: `webpack-node-externals` is not needed in this case.
 
@@ -480,6 +481,8 @@ export default function (Vue, { appOptions, head }) {
   const opts = {}; // opts includes, vuetify themes, icons, etc.
   Vue.use(Vuetify);
   appOptions.vuetify = new Vuetify(opts);
+  
+  Vue.component('Layout', DefaultLayout)
 }
 ```
 
