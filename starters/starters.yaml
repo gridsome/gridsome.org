@@ -246,6 +246,15 @@
   tags: storyblok, cms
   platforms: storyblok
 
+- title: Docc
+  description: A beautiful starter theme for writing great documentation
+  screenshot: ./screenshots/docc.png
+  repo: mrcrmn/docc
+  preview: https://docc-theme.netlify.com/
+  author: mrcrmn
+  tags: gridsome, starter, documentation, docs, tailwind, dark mode
+  platforms: markdown
+  
 - title: Gridsome Minimal Markdown Starter
   description: A very minimal starter theme that organizes blog posts by year
   screenshot: ./screenshots/gridsome-minimal-markdown-blog-840x840.png
@@ -254,3 +263,4 @@
   author: alexbrown
   tags: minimal, markdown, starter
   platforms: markdown
+  
