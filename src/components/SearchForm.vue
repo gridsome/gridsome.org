@@ -90,6 +90,10 @@ export default {
   .algolia-autocomplete {
     width: 100%;
   }
+
+  &__input {
+    padding-right: 2.3rem;
+  }
 }
 
 .algolia-autocomplete .algolia-docsearch-suggestion--wrapper {
