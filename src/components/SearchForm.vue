@@ -92,7 +92,7 @@ export default {
   }
 
   &__input {
-    padding-right: 2.3rem;
+    padding-right: 2rem;
   }
 }
 
