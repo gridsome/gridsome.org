@@ -59,7 +59,7 @@ query ($page: Int) {
 }
 ```
 
-This is a pretty typical way to do traditional pagintation, but we're not going to include a pager component in the UI.
+This is a pretty typical way to do traditional paginatation, but we're not going to include a pager component in the UI.
 
 ### `<script>`
 

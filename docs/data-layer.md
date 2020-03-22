@@ -2,7 +2,7 @@
 
 ![Import data](./images/import-data.png)
 
-**The GraphQL data layer is a tool available in development mode**. This is where all the data imported into a Gridsome project is temporary stored. Think of it as a local database that helps you work faster and better with your data.
+**The GraphQL data layer is a tool available in development mode**. This is where all the data imported into a Gridsome project is temporarily stored. Think of it as a local database that helps you work faster and better with your data.
 
 Data coming from the GraphQL data layer is generated into **static content**. There is no real-time connection between the data layer and the source the data is imported from. This means you need to re-generate the website to get the latest data updates.
 
