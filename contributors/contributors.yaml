@@ -140,7 +140,13 @@
   bio: "Frontend Web Developer"
   avatar: ./images/brettanda.jpg
   twitter: "@brettanda"
-  
+
+- id: mrcrmn
+  name: Marco Reimann
+  bio: "Web Developer"
+  avatar: ./images/mrcrmn.png
+  twitter: "@mrc_rmn"
+
 - id: alexbrown
   name: Alex Brown
   bio: "Web Developer"

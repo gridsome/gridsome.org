@@ -253,6 +253,15 @@
   author: brettanda
   tags: markdown, tutorials, blog, about, responsive, tags
   platforms: markdown
+
+- title: Docc
+  description: A beautiful starter theme for writing great documentation
+  screenshot: ./screenshots/docc.png
+  repo: mrcrmn/docc
+  preview: https://docc-theme.netlify.com/
+  author: mrcrmn
+  tags: gridsome, starter, documentation, docs, tailwind, dark mode
+  platforms: markdown
   
 - title: Gridsome Minimal Markdown Starter
   description: A very minimal starter theme that organizes blog posts by year
@@ -262,3 +271,4 @@
   author: alexbrown
   tags: minimal, markdown, starter
   platforms: markdown
+  
