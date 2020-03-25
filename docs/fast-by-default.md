@@ -3,11 +3,11 @@
 
 ## What makes Gridsome sites fast?
 1. [Pre-rendered HTML](#pre-rendered-html). Nothing beats static content in speed.
-2. [Automatic Code Splitting](#the-prpl-pattern) so only what you need is loaded per page.
+2. [Automatic Code Splitting](#automatic-code-splitting) so only what you need is loaded per page.
 2. [Follows the PRPL-pattern](#the-prpl-pattern) for instant page loads.
 3. [Smart link prefetching](#smart-link-prefetching) that uses Intersection Observer to load next pages.
 4. [Progressive Images](#progressive-images) with automatic image compression and lazy loading.
-5. [Vue.js SPA](#progressive-images) for fast browsing with no page refresh.
+5. [Vue.js SPA](#vuejs-spa) for fast browsing with no page refresh.
 
 ## Pre-rendered HTML
 

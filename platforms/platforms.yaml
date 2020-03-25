@@ -57,3 +57,11 @@
 - id: directus
   title: Directus
   logo: ./logos/directus.svg
+
+- id: wikidata
+  title: Wikidata
+  logo: ./logos/wikidata.svg
+
+- id: elastic-path
+  title: Elastic Path
+  logo: ./logos/elastic-path.svg

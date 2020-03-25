@@ -209,9 +209,63 @@
   author: noxify
   tags: gridsome, starter, bootstrap, articles, blog, tutorials, tags, toc, embedding, responsive
   platforms: markdown
+
+- title: Gridsome Casper V3 Starter
+  description: A gridsome starter based on Ghost Casper V3 and tailwindcss
+  screenshot: ./screenshots/gridsome-starter-casper-v3.jpg
+  repo: noxify/gridsome-starter-casper-v3
+  preview: https://gridsome-starter-casper-v3.now.sh/
+  author: noxify
+  tags: gridsome, starter, tailwind, tailwindcss, blog, about, categories, tags, author, about, responsive
+  platforms: markdown
+
+- title: Gridsome Starter Wikidata
+  description: A starter showcasing Gridsome and an external data source working together
+  screenshot: ./screenshots/gridsome-starter-wikidata-1680x1680.jpg
+  repo: hunsalz/gridsome-starter-wikidata
+  preview: https://hunsalz.github.io/gridsome-starter-wikidata/
+  author: hunsalz
+  tags: gridsome, starter, pwa, wikidata, sparql, filters, grid, dark/light mode, GitHub Actions CI/CD pipeline
+  platforms: wikidata
+
+- title: Elastic Path Moltin Starter
+  description: eCommerce starter using Elastic Path Moltin's APIs
+  screenshot: ./screenshots/gridsome-starter-moltin.jpg
+  repo: Bounteous-Inc/gridsome-starter-moltin
+  preview: https://gridsome-starter-moltin.netlify.com/
+  author: bounteous
+  tags: gridsome, elastic path, moltin, ecommerce, store
+  platforms: elastic-path
+
+- title: Gridsome Storyblok Moon Theme
+  description: A complete website build by Storyblok team with Moon theme
+  screenshot: ./screenshots/gridsome-storyblok-boilerplate-moon.jpg
+  repo: storyblok/storyblok-gridsome-boilerplate-moon
+  preview: https://demo.storyblok.com/
+  author: storyblok
+  tags: storyblok, cms
+  platforms: storyblok
+
+- title: Docc
+  description: A beautiful starter theme for writing great documentation
+  screenshot: ./screenshots/docc.png
+  repo: mrcrmn/docc
+  preview: https://docc-theme.netlify.com/
+  author: mrcrmn
+  tags: gridsome, starter, documentation, docs, tailwind, dark mode
+  platforms: markdown
+  
+- title: Gridsome Minimal Markdown Starter
+  description: A very minimal starter theme that organizes blog posts by year
+  screenshot: ./screenshots/gridsome-minimal-markdown-blog-840x840.png
+  repo: alexbrown/gridsome-starter-minimal-blog
+  preview: https://gridsome-starter-minimal-blog.netlify.com/
+  author: alexbrown
+  tags: minimal, markdown, starter
+  platforms: markdown
   
 - title: Jada
-  description: A practical blog starter for Gridsome
+  description: A blog starter for Gridsome
   screenshot: ./screenshots/gridsome-jada.png
   repo: Microflash/jada
   preview: https://gridsome-jada.netlify.com/

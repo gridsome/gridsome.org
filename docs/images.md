@@ -50,7 +50,7 @@ query ($id: ID!) {
 ```
 
 ## Usage in Markdown
-The [gridsome-transformer-remark](/plugins/transformer-remark) transformer plugin automatically converts normal Markdown images to `g-image` compatible markup.
+The [@gridsome/transformer-remark](/plugins/@gridsome/transformer-remark) transformer plugin automatically converts normal Markdown images to `g-image` compatible markup.
 
 ```md
 ![Alternative text](./image.jpg)
@@ -71,10 +71,11 @@ Crop the image by settings both `width` and `height` attributes. The image will 
 |width     |          |Resize image to specified width in pixels
 |height    |          |Crop & resize image to specified height in pixels
 |alt       |          |Alternate text for the image
-|fit 			 |`"cover"` |How to crop images. See properties below.
+|fit       |`"cover"` |How to crop images. See properties below.
+|position  |`"centre"`|Position of the of the visible part for 'cover' or 'contain'. (`top`, `right top`, `right`, `right bottom`, `bottom`, `left bottom`, `left`, `left top`).
 |background|          |Background color for 'contain'
 |immediate |`false`   |Set to `true` to disable lazy-loading
-|blur      |`40`      	|How much in pixels to blur the image placeholder
+|blur      |`40`      |How much in pixels to blur the image placeholder
 |quality   |`75`      |The quality of the image. (`0` - `100`).
 
 ## Fit options

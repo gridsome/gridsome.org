@@ -109,7 +109,6 @@
   avatar: ./images/samuelhorn.jpg
   twitter: "@pixelcrook"
 
-
 - id: travisreynolds
   name: Travis Reynolds
   bio: "Frontend Developer"
@@ -118,6 +117,34 @@
   name: Marcus Reinhardt
   bio: "Developer"
   avatar: ./images/noxify.jpg
+
+- id: hunsalz
+  name: Markus Hunsalz
+  bio: "Developer"
+  avatar: ./images/hunsalz.jpg
+
+- id: bounteous
+  name: Bounteous
+  bio: "Bounteous creates big-picture digital solutions that help leading companies deliver transformational brand experiences."
+  avatar: ./images/bounteous.jpg
+  twitter: "@Bounteous"
+
+- id: storyblok
+  name: Storyblok
+  bio: "The Only #headlessCMS with a Visual Editor and Components as its First-Class Citizens"
+  avatar: ./images/storyblok.svg
+  twitter: "@storyblok"
+
+- id: mrcrmn
+  name: Marco Reimann
+  bio: "Web Developer"
+  avatar: ./images/mrcrmn.png
+  twitter: "@mrc_rmn"
+
+- id: alexbrown
+  name: Alex Brown
+  bio: "Web Developer"
+  avatar: ./images/alexbrown.jpg
 
 - id: microflash
   name: Naiyer Asif

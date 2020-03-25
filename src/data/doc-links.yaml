@@ -118,6 +118,8 @@
       link: /docs/deploy-to-github/
     - title: Google Cloud Platform
       link: /docs/deploy-to-google/
+    - title: Surge.sh
+      link: /docs/deploy-to-surge-sh/
 
 - title: Contribute
   items:
