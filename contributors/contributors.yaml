@@ -145,3 +145,9 @@
   name: Alex Brown
   bio: "Web Developer"
   avatar: ./images/alexbrown.jpg
+
+- id: OziOcb
+  name: Paul Ozyzniewski
+  bio: "Front-end developer & designer"
+  avatar: ./images/paulozyzniewski.jpg
+  twitter: "@OziOcb"
