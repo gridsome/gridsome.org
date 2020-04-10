@@ -48,7 +48,7 @@ Gridsome requires [Node.js](https://nodejs.org/) (v8.3+) and recommends [Yarn](h
 
 ### 3. Next steps
 
-1. Create `.vue` components in the `/pages` directory to create page routes.
+1. Create `.vue` components in the `src/pages` directory to create page routes.
 2. Use `gridsome build` to generate static files in a `/dist` folder
 
 

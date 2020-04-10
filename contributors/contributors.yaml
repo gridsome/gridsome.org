@@ -140,3 +140,15 @@
   bio: "A Web enthusiast, Pythonist, Djangonaut and a DJ."
   avatar: ./images/uninen.jpg
   twitter: "@uninen"
+  
+- id: mrcrmn
+  name: Marco Reimann
+  bio: "Web Developer"
+  avatar: ./images/mrcrmn.png
+  twitter: "@mrc_rmn"
+
+- id: alexbrown
+  name: Alex Brown
+  bio: "Web Developer"
+  avatar: ./images/alexbrown.jpg
+
