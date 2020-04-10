@@ -19,6 +19,8 @@ These services are great for Git-based deploying:
 
 - [GitHub Pages](/docs/deploy-to-github/)
 
+- [Surge.sh](/docs/deploy-to-surge-sh/)
+
 ## Deploy from terminal
 Many services let you deploy your static Gridsome site from the terminal. Here are some:
 
@@ -26,6 +28,7 @@ Many services let you deploy your static Gridsome site from the terminal. Here a
 
 - [ZEIT Now](/docs/deploy-to-zeit-now/)
 
+- [Surge.sh](/docs/deploy-to-surge-sh/)
 
 ## FTP deploying
 
