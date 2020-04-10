@@ -246,6 +246,14 @@
   tags: storyblok, cms
   platforms: storyblok
 
+- title: Tulip
+  description: Single page with Tailwind CSS
+  screenshot: ./screenshots/gridsome-starter-tulip.png
+  repo: Uninen/gridsome-starter-tulip
+  preview: https://gridsome-starter-tulip.netlify.com/
+  author: uninen
+  tags: tailwind, minimalistic, simple, singlepage
+
 - title: Docc
   description: A beautiful starter theme for writing great documentation
   screenshot: ./screenshots/docc.png

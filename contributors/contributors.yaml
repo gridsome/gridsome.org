@@ -135,6 +135,12 @@
   avatar: ./images/storyblok.svg
   twitter: "@storyblok"
 
+- id: uninen
+  name: Ville Säävuori
+  bio: "A Web enthusiast, Pythonist, Djangonaut and a DJ."
+  avatar: ./images/uninen.jpg
+  twitter: "@uninen"
+  
 - id: mrcrmn
   name: Marco Reimann
   bio: "Web Developer"
@@ -145,3 +151,4 @@
   name: Alex Brown
   bio: "Web Developer"
   avatar: ./images/alexbrown.jpg
+
