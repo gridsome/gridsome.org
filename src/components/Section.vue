@@ -37,7 +37,7 @@ export default {
   padding: calc(2% + var(--space)) 0;
   position: relative;
   width: 100%;
-  flex: 1;
+  flex: 1 auto;
 
   &--secondary {
     background-color: var(--bg-secondary);
@@ -77,7 +77,7 @@ export default {
     p {
       color: currentColor;
     }
-    
+
     h1, h2, h3, h4, a {
       color: #FFF;
     }
