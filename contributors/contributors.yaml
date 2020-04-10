@@ -135,6 +135,12 @@
   avatar: ./images/storyblok.svg
   twitter: "@storyblok"
 
+- id: wavrin
+  name: Christopher Wavrin
+  bio: "Developer"
+  avatar: ./images/wavrin.jpg
+  twitter: "@wavrin"
+  
 - id: uninen
   name: Ville Säävuori
   bio: "A Web enthusiast, Pythonist, Djangonaut and a DJ."

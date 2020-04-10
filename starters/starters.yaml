@@ -246,6 +246,15 @@
   tags: storyblok, cms
   platforms: storyblok
 
+- title: Buefy Starter Blog
+  description: A simple Gridsome blog starter using Buefy
+  screenshot: ./screenshots/gridsome-starter-buefy2.jpg
+  repo: wavrin/buefy-gridsome-blog
+  preview: https://vuefy-gridsome-blog.netlify.com/
+  author: wavrin
+  tags: gridsome, starter, blog, buefy
+  platforms: markdown
+
 - title: Tulip
   description: Single page with Tailwind CSS
   screenshot: ./screenshots/gridsome-starter-tulip.png
@@ -271,4 +280,3 @@
   author: alexbrown
   tags: minimal, markdown, starter
   platforms: markdown
-  
