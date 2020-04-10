@@ -37,7 +37,7 @@ export default {
   padding: calc(2% + var(--space)) 0;
   position: relative;
   width: 100%;
-  flex: 1 auto;
+  flex: 1;
 
   &--secondary {
     background-color: var(--bg-secondary);
