@@ -290,3 +290,11 @@
   tags: page transitions, blog, markdown, starter, gsap
   platforms: markdown
 
+- title: Gridsome 💚 Prismic
+  description: A simple Prismic starter for Gridsome
+  screenshot: ./screenshots/gridsome_prismic_840x840.jpg
+  repo: ilrock/gridsome-starter-prismic
+  author: ilrock
+  preview: https://5e92fa4fc739c4000645f643--vibrant-pasteur-05a750.netlify.com/
+  tags: starter, prismic
+  platforms: prismic
