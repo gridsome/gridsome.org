@@ -291,7 +291,7 @@
   platforms: markdown
 
 - title: Gridsome 💚 Prismic
-  description: A simple Prismic starter for Gridsome
+  description: A simple Gridsome starter for Prismic
   screenshot: ./screenshots/gridsome_prismic_840x840.jpg
   repo: ilrock/gridsome-starter-prismic
   author: ilrock
