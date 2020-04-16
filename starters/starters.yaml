@@ -295,6 +295,6 @@
   screenshot: ./screenshots/gridsome_prismic_840x840.jpg
   repo: ilrock/gridsome-starter-prismic
   author: ilrock
-  preview: https://5e92fa4fc739c4000645f643--vibrant-pasteur-05a750.netlify.com/
+  preview: https://vibrant-pasteur-05a750.netlify.app
   tags: starter, prismic
   platforms: prismic
