@@ -12,7 +12,7 @@ If you need dynamic data you should use [client-side data](/docs/client-side-dat
 
 
 
-### Working with data
+## Working with data
  - [How to import data](/docs/fetching-data/).
  - [How to query data](/docs/querying-data/).
  - [How to filter data](/docs/filtering-data/).
@@ -21,7 +21,7 @@ If you need dynamic data you should use [client-side data](/docs/client-side-dat
  - [How to add client-side / dynamic data](/docs/client-side-data/).
 
 
-### The GraphQL explorer
+## The GraphQL explorer
 
 Every Gridsome project has a **GraphQL explorer (Playground)** that can be used to explore and test queries when in development mode. Here you also get a list of all available GraphQL collections. This can usually be opened by going to `http://localhost:8080/___explore`.
 
