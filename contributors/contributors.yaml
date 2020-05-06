@@ -163,3 +163,9 @@
   bio: "Front-end developer & designer"
   avatar: ./images/paulozyzniewski.jpg
   twitter: "@OziOcb"
+  
+- id: kartikpuri95
+  name: Kartik Puri
+  bio: "Full stack developer"
+  avatar: ./images/kartikpuri95.jpeg
+  twitter: "@techob"

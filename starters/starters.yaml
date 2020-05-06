@@ -290,3 +290,11 @@
   tags: page transitions, blog, markdown, starter, gsap
   platforms: markdown
 
+- title: Chop coding minimal blog template
+  description: Blog template with separate page for another series of markdown post excluding the markdown posts in the home page
+  screenshot: ./screenshots/gridsome-starter-minimal-chop-blog-template.png
+  repo: kartikpuri95/gridsome-starter-minimal-chop-blog-template
+  preview: https://www.chopcoding.com/
+  author: kartikpuri95
+  tags: dark theme, blog, markdown, starter, minimal, beautiful
+  platforms: markdown 
