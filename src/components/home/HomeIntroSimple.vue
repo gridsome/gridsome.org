@@ -11,7 +11,7 @@
               Static Websites
             </div>
             <div v-show="currentText == 1" key="1">
-              The JAMstack
+              The Jamstack
             </div>
             <div v-show="currentText == 2" key="2">
               Headless CMSs

@@ -21,8 +21,8 @@
       </Feature>
 
       <Feature>
-        <h3>Build on the JAMstack</h3>
-        <p>The future of the web is JavaScript, APIs, and Markup - <g-link to="/docs/jamstack/">the JAMstack</g-link>. Gridsome uses the power of blazing fast static site generation, JavaScript and APIs to create stunning modern web experiences.</p>
+        <h3>Build on the Jamstack</h3>
+        <p>The future of the web is JavaScript, APIs, and Markup - <g-link to="/docs/jamstack/">the Jamstack</g-link>. Gridsome uses the power of blazing fast static site generation, JavaScript and APIs to create stunning modern web experiences.</p>
       </Feature>
 
 
