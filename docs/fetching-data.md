@@ -77,8 +77,6 @@ Import data from any json file to the GraphQL data layer with the [Data store AP
 Here is an example `gridsome.server.js` file that imports json:
 
 ```js
-const axios = require('axios')
-
 module.exports = function (api) {
   api.loadSource(async actions => {
     const Blogs = require('./src/data/blogs.json');
