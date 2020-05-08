@@ -18,6 +18,7 @@ Schema types can be added as an [SDL](https://graphql.org/learn/schema/) string 
 api.loadSource(({ addSchemaTypes }) => {
   addSchemaTypes(`
     type Post implements Node {
+      id: ID!
       title: String
     }
   `)
