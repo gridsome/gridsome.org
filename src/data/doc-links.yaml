@@ -108,8 +108,8 @@
       link: /docs/deploy-to-netlify/
     - title: AWS Amplify
       link: /docs/deploy-to-amplify/
-    - title: ZEIT Now
-      link: /docs/deploy-to-zeit-now/
+    - title: Vercel (formerly ZEIT Now)
+      link: /docs/deploy-to-vercel/
     - title: Amazon S3
       link: /docs/deploy-to-amazon-s3/
     - title: GitLab Pages
