@@ -26,7 +26,7 @@ The simplest way to use SVG icons in Gridsome is to just add them as normal mark
 You can import SVGs as you do with any other Vue component with `vue-svg-loader`. Start by installing the library:
 
 ```shell
-npm i -D vue-svg-loader
+npm i -D vue-svg-loader @babel/plugin-proposal-object-rest-spread
 ```
 
 You will need to update the webpack config in `gridsome.config.js` to use the new loader:
@@ -38,7 +38,9 @@ module.exports = {
     svgRule
       .use('babel-loader')
       .loader('babel-loader')
-      .end()
+      .options({
+        plugins: ['@babel/plugin-proposal-object-rest-spread'],
+      }).end()
       .use('vue-svg-loader')
       .loader('vue-svg-loader')
   }
