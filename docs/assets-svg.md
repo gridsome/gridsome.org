@@ -34,7 +34,7 @@ You will need to update the webpack config in `gridsome.config.js` to use the ne
 module.exports = {
   chainWebpack: config => {
     const svgRule = config.module.rule('svg')
-    svgRule.uses.clear()    
+    svgRule.uses.clear()
     svgRule
         .use('babel-loader')
         .loader('babel-loader')
