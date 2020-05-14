@@ -3,7 +3,7 @@
     <div class="container text-center ">
 
         <h1 class="intro__title">
-          <span>The Jamstack framework for Vue.js</span>
+          <span>A Jamstack framework for Vue.js</span>
         </h1>
 
         <p class="intro__lead lead post mb">
