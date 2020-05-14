@@ -7,8 +7,7 @@ Add this to `src/main.js` to import a global CSS file.
 ```js
 import '~/assets/styles.css'
 ```
-
-> It's recommended to keep the global styles at minimal and add styles in Vue components instead to get proper code-splitting and Critical CSS support.
+💡 `~` is an alias to project **/src/** folder.
 
 
 ## Use SASS & CSS pre-processors

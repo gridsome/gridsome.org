@@ -39,7 +39,7 @@ query {
   padding: calc(2% + var(--space)) 0;
 
   &__title {
-    font-size: 2.6rem;
+    font-size: 3rem;
     font-weight: 600;
     margin-left: auto;
     margin-right: auto;
