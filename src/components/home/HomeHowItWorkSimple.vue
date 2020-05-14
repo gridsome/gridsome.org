@@ -4,7 +4,7 @@
 
       <Card title="Bring your data">
         <h4>CMSs</h4>
-        <p>Any Headless CMS, Contentful, WordPress, Drupal, Sanity.io, etc.</p>
+        <p>Any Headless CMS, <a href="https://buttercms.com">ButterCMS</a>, Contentful, WordPress, Drupal, Sanity.io, etc.</p>
         <h4>Data</h4>
         <p>Any APIs, Databases, AirTable, YAML, CSV, JSON, etc.</p>
         <h4>Markdown</h4>

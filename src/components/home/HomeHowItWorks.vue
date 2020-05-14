@@ -21,7 +21,7 @@
 
         <Card style="border-radius: 0">
           <h4>CMSs</h4>
-          <p>Any Headless CMS, Contentful, WordPress, Drupal, DatoCMS, Sanity.io, GraphCMS etc.</p>
+          <p>Any Headless CMS, <a href="https://buttercms.com">ButterCMS</a>, Contentful, WordPress, Drupal, DatoCMS, Sanity.io, GraphCMS etc.</p>
         </Card>
 
         <Card>
