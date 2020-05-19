@@ -65,3 +65,7 @@
 - id: elastic-path
   title: Elastic Path
   logo: ./logos/elastic-path.svg
+
+- id: auth0
+  title: Auth0
+  logo: ./logos/auth0.svg

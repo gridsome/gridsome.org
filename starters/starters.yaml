@@ -290,3 +290,11 @@
   tags: page transitions, blog, markdown, starter, gsap
   platforms: markdown
 
+- title: Gridsome Auth0 Starter
+  description: Gridsome starter using Auth0 for the user authentication
+  screenshot: ./screenshots/gridsome-auth0-starter.png
+  repo: jsappme/gridsome-auth0-starter
+  preview: https://gridsome-auth0-starter.netlify.com/
+  author: herve76
+  tags: auth0, user, login, authentication, tailwind
+  platforms: auth0
