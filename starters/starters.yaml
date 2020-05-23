@@ -298,3 +298,12 @@
   author: herve76
   tags: auth0, user, login, authentication, tailwind
   platforms: auth0
+
+- title: Gridsome Hubspot Starter
+  description: Gridsome starter to connect to your Hubspot CRM
+  screenshot: ./screenshots/gridsome-hubspot-starter.png
+  repo: jsappme/gridsome-hubspot-starter
+  preview: https://gridsome-hubspot-starter.netlify.com/
+  author: herve76
+  tags: hubspot, form, tailwind, crm, contact, deal, engagement
+  platforms: hubspot
