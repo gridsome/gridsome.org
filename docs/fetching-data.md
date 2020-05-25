@@ -28,7 +28,6 @@ Every data source has different options, so take a look at their documentation t
 
 Import data from any content APIs to the GraphQL data layer with the [Data store API](/docs/data-store-api/). To use the API you need a `gridsome.server.js` file in the root folder of your Gridsome project.
 
-
 Here is an example `gridsome.server.js` file that imports data:
 
 ```js
@@ -59,7 +58,24 @@ module.exports = function (api) {
 *..contribute*
 
 ### Markdown
-*..contribute*
+Import data into the GraphQL layer from markdown files by using the [transformer-remark](/plugins/@gridsome/transformer-remark) plugin.
+
+```js
+//gridsome.config.js
+module.exports = {
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'blog/**/*.md',
+        typeName: 'Post',
+      },
+    },
+  ],
+};
+```
+
+For more details on how to use this plugin, refer to the [plugin page](/plugins/@gridsome/transformer-remark) on this site.
 
 ### Images
 *..contribute*
@@ -68,7 +84,43 @@ module.exports = function (api) {
 *..contribute*
 
 ### CSV
-*..contribute*
+To import data from a CSV file, use one of the many CSV importers available for NodeJS. In this example, we use [csv-parse](https://www.npmjs.com/package/csv-parse). First we install our new package:
+
+```
+npm install csv-parse
+
+# or
+
+# yarn add csv-parse
+```
+
+Now in the `gridsome.server.js` file in the root of our project we can use `csv-parse`, along with the NodeJS `readFileSync` function, to import and process our data. The data for this example (`posts.csv`) would be a CSV file with a header row.
+
+```js
+//gridsome.server.js
+
+const {readFileSync} = require('fs');
+const parse = require('csv-parse/lib/sync');
+
+module.exports = function (api) {
+  api.loadSource(async (actions) => {
+    const input = readFileSync('./src/data/posts.csv', 'utf8');
+    
+    const Posts = parse(input, {
+      columns: true,
+      skip_empty_lines: true,
+    });
+    
+    const collection = actions.addCollection({
+      typeName: 'Posts',
+    });
+
+    for (const post of Posts) {
+      collection.addNode(post);
+    }
+  })
+}
+```
 
 ### JSON
 Import data from any json file to the GraphQL data layer with the [Data store API](/docs/data-store-api/). To use the API you need a `gridsome.server.js` file in the root folder of your Gridsome project.
