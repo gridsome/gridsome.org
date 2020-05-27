@@ -10,7 +10,9 @@ import '~/assets/styles.css'
 💡 `~` is an alias to project **/src/** folder.
 
 
-## Use SASS & CSS pre-processors
+## Use CSS Pre-Processors
+
+### SASS
 To enable **SASS** you need to run command `npm install -D sass-loader node-sass` to install the required packages.
 
 Now you can import **.scss** files in **src/main.js**:
@@ -23,16 +25,16 @@ You can also use SASS in **Vue Components** with the `lang="scss"` attribute:
 ```html
 <style lang="scss">
 .element {
-	&__nested {
-		color: Yay;
-	}
+    &__nested {
+        color: Yay;
+    }
 }
 </style>
 ```
 
-[Learn more about using using Pre-Processors in Vue.js](https://vue-loader.vuejs.org/guide/pre-processors.html)
+**NOTE:** At this stage your Vue components will not recognize variables and mixins if you do not manually import them into your components. To use variables and mixins in your components without manually importing them first, follow the instructions under **SASS Global Preprocessor Files**.
 
-### Global Preprocessor Files (ie. variables, mixins)
+### SASS Global Preprocessor Files (ie. variables, mixins)
 Often when you're working on a project, you'll have a set of variables, mixins, and framework variable overrides that you'll want to be automatically used in your components/layouts so you don't have to keep manually importing them.
 
 Start by installing `style-resources-loader`:
@@ -86,6 +88,95 @@ module.exports = {
 	}
 }
 ```
+
+[Learn more about using using Pre-Processors in Vue.js](https://vue-loader.vuejs.org/guide/pre-processors.html)
+
+
+### Stylus
+To enable **Stylus** you need to install the required packages: 
+
+```js
+npm install -D stylus stylus-loader
+```
+
+Now you can import **.styl** files in **src/main.js**. Add the following import statement at the top of your **src/main.js** file:
+
+```js
+import '~/assets/styles.styl'
+```
+
+Now you can use Stylus in **Vue Components** with the `lang="stylus"` attribute:
+```html
+<style lang="stylus">
+.layout {
+    &.nested {
+        color: #000;
+    }
+}
+</style>
+```
+
+**NOTE:** At this stage your Vue components will not recognize variables and mixins if you do not manually import them into your components. To use variables and mixins in your components without manually importing them first, follow the instructions under **Stylus Global Preprocessor Files**.
+
+### Stylus Global Preprocessor Files (ie. variables, mixins)
+Often when you're working on a project, you'll have a set of variables, mixins, and framework variable overrides that you'll want to be automatically used in your components/layouts so you don't have to keep manually importing them.
+
+Start by installing `style-resources-loader`:
+
+```js
+npm i -D style-resources-loader
+```
+
+Then you can use the following configs in your `gridsome.config.js` file:
+
+```js
+const path = require("path");
+
+function addStyleResource (rule) {
+  rule.use("style-resource")
+    .loader("style-resources-loader")
+    .options({
+      patterns: [
+        path.resolve(__dirname, "./src/assets/styles.styl"),
+      ],
+    });
+}
+
+module.exports = {
+  siteName: "Gridsome",
+  plugins: [],
+  css: {
+    loaderOptions: {
+      stylus: {
+        test: /\.styl$/,
+        loader: "stylus-loader"
+      }
+    }
+  },
+
+  chainWebpack: config => {
+    const types = ["vue-modules", "vue", "normal-modules", "normal"];
+    
+    types.forEach(type => {
+      addStyleResource(config.module.rule("stylus").oneOf(type));
+    });
+  },
+};
+
+```
+
+Now your variable and mixin imports will work automatically without manual imports:
+
+```html
+<style lang="stylus">
+.layout {
+    color: $text-color;
+}
+</style>
+```
+
+[Learn more about using using Pre-Processors in Vue.js](https://vue-loader.vuejs.org/guide/pre-processors.html)
+
 
 ## Add CSS to Vue Components
 In Vue Components you add styles inside a `<style>` tag.
