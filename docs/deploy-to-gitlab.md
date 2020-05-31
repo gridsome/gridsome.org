@@ -24,6 +24,7 @@ pages:
   script:
     - npm install
     - npm run build
+    - gzip -k -6 $(find public -type f)
   artifacts:
     paths:
       - public
