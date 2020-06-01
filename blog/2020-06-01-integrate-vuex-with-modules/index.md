@@ -561,6 +561,9 @@ or
 gridsome build
 ```
 
+
+At this point the Gridsome will have generated your static site with shopping cart. This obviously needs to be extended for production (i.e. taxes, currency, shipping, handling payments etc) but it should give you good overview and starting point for developing with Gridsome using Vuex with modules.
+
 ## Source Code
 
 The source code for the shopping cart can be downloaded from the following URL:
@@ -568,5 +571,4 @@ The source code for the shopping cart can be downloaded from the following URL:
 
 ## Conclusion
 
-At this point the Gridsome will have generated your static site with shopping cart. This obviously needs to be extended for production (i.e. taxes, currency, shipping, handling payments etc) but it should give you good overview and starting point for developing with Gridsome using Vuex with modules.
-
+Setting up Gridsome with Vuex using modules takes a little bit of work but the benefits of having a centrally stored state for your application / site is usually worth the pain at the start of your project.
