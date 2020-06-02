@@ -1,6 +1,6 @@
 <template>
   <Layout :footer="false">
-    <div class="plugins container flex flex-align-top" style="position: relative;">
+    <div class="plugins container flex flex-align-top container-main" style="position: relative;">
       
       <AisInstantSearchSsr class="sidebar plugins__sidebar">
         <AisConfigure

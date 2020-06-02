@@ -1,6 +1,6 @@
 <template>
   <Layout class="has-sidebar docs-page" :footer="false">
-    <div class="container flex flex-align-top">
+    <div class="container flex flex-align-top container-main">
       <div class="sidebar">
         <template v-if="links" v-for="(group, i1) in links">
           <h3 class="menu-item" :key="`title-${i1}`">{{ group.title }}</h3>
