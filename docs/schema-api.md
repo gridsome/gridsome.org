@@ -64,6 +64,8 @@ addSchemaResolvers({
 - `context` An object with references to the internal store etc.
 - `info` Information about the execution state of the query.
 
+Note that any fields you add via custom resolvers [will not work in the `filter` portion of GraphQL queries](https://github.com/gridsome/gridsome/issues/1196). This is a gap in Gridsome's GraphQL implementation and will be fixed before Gridsome's 1.0 release.
+
 [Read more about GraphQL resolvers](https://graphql.org/learn/execution/#root-fields-resolvers)
 
 #### Add a new field with a custom resolver
