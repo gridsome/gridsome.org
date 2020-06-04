@@ -298,3 +298,12 @@
   author: herve76
   tags: auth0, user, login, authentication, tailwind
   platforms: auth0
+
+- title: Gridsome Starter Strapi
+  description: Gridsome starter blog using Strapi as headless CMS.
+  screenshot: ./screenshots/gridsome-starter-strapi-1680x1680.png
+  repo: lukaskoeller/gridsome-starter-strapi
+  preview: https://gridsome-starter-strapi.netlify.com/
+  author: lukaskoeller
+  tags: strapi, blog, starter, gridsome, simple, 
+  platforms: strapi
