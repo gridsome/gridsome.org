@@ -5,7 +5,7 @@ author: [rasulkireev]
 date: 2020-06-05
 tags: [scripts, gridsome, vue]
 excerpt: 'How do I add script tag to specific pages only? In this post I show how I integrated hypothes.is only on my article pages.'
-canonicalLink: "https://rasulkireev.com/gridsome-page-scripts"
+canonicalLink: 'https://rasulkireev.com/gridsome-page-scripts'
 ---
 
 Let's say you want to add an external library to your Gridsome website. In my case, I really wanted to add [hypothes.is](https://hypothes.is) to my website.
