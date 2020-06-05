@@ -169,3 +169,9 @@
   bio: "Front-end developer & designer"
   avatar: ./images/paulozyzniewski.jpg
   twitter: "@OziOcb"
+
+- id: rasulkireev
+  name: Rasul Kireev
+  bio: "Data Analyst by day and Web Maker bu night. Pythonist and Djangonaut."
+  avatar: ./images/rasulkireev.jpg
+  twitter: "@rasulkireev"
