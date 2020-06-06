@@ -74,8 +74,11 @@ This example adds a new `fullName` field on the `User` type which merges two fie
 api.loadSource(({ addSchemaResolvers }) => {
   addSchemaResolvers({
     User: {
-      fullName(obj) {
-        return `${obj.firstName} ${obj.lastName}`
+      fullName: {
+        type: 'String',
+        resolve(obj) {
+          return `${obj.firstName} ${obj.lastName}`
+        }
       }
     }
   })
@@ -91,6 +94,7 @@ api.loadSource(({ addSchemaResolvers }) => {
   addSchemaResolvers({
     Post: {
       title: {
+        type: 'String',
         args: {
           uppercased: 'Boolean'
         },
