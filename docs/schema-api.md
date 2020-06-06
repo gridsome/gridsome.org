@@ -71,19 +71,14 @@ addSchemaResolvers({
 This example adds a new `fullName` field on the `User` type which merges two fields:
 
 ```js
-api.loadSource(({ addSchemaTypes }) => {
-  addSchemaTypes(`
-      type User implements Node @infer {
-        fullName: String
-      }
-  `);
-});
-
 api.loadSource(({ addSchemaResolvers }) => {
   addSchemaResolvers({
     User: {
-      fullName(obj) {
-        return `${obj.firstName} ${obj.lastName}`
+      fullName: {
+        type: 'String',
+        resolve(obj) {
+          return `${obj.firstName} ${obj.lastName}`
+        }
       }
     }
   })
@@ -95,18 +90,11 @@ api.loadSource(({ addSchemaResolvers }) => {
 This example adds a `title` field on the `Post` type with an argument to uppercase the returned value:
 
 ```js
-api.loadSource(({ addSchemaTypes }) => {
-  addSchemaTypes(`
-      type Post implements Node @infer {
-        title: String
-      }
-  `);
-});
-
 api.loadSource(({ addSchemaResolvers }) => {
   addSchemaResolvers({
     Post: {
       title: {
+        type: 'String',
         args: {
           uppercased: 'Boolean'
         },
