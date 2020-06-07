@@ -36,6 +36,7 @@ query ($id: ID!) {
       avatar (width: 60)
     }
     excerpt
+    canonicalLink
   }
 }
 </page-query>
@@ -56,7 +57,10 @@ export default {
           name: 'description',
           content: this.$page.post.excerpt
         }
-      ]
+      ],
+      link: [
+          { rel: "canonical", href:  this.$page.post.canonicalLink },
+      ],
     }
   }
 }
