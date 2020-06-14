@@ -9,7 +9,7 @@ Here is an example:
 ```js
 module.exports = function (api) {
   api.loadSource(async store => {
-    store.addMetadata('message', 'This is a global text')
+    store.addMetaData('message', 'This is a global text')
   })
 }
 ```
