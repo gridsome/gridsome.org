@@ -32,7 +32,7 @@ export default function (Vue, { head })  {
 Now you are free to use the disqus component anywhere you want, simply use it like this:
 
 ```js
-<vue-disqus shortname="mygridsomesite" :identifier="$page.post.title"></vue-disqus>
+<Disqus shortname="mygridsomesite" :identifier="$page.post.title"></Disqus>
 ```
 
 You need to provide a shortname which you can find on [Disqus](https://disqus.com/) under your site you configured after you signed up. You also need to provide an identifier, in this example we used the blogpost title from the GraphQL query.
