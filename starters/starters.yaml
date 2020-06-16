@@ -298,3 +298,12 @@
   author: herve76
   tags: auth0, user, login, authentication, tailwind
   platforms: auth0
+
+- title: Gridsome Shopify Starter
+  description: Light PWA Headless Gridsome Shopify starter
+  screenshot: ./screenshots/gridsome-shopify-starter.png
+  repo: jsappme/gridsome-shopify-starter
+  preview: https://gridsome-shopify.netlify.com/
+  author: herve76
+  tags: shopify, ecommerce, commerce, cart, bulma, headless, pwa
+  platforms: shopify
