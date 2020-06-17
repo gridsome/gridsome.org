@@ -300,10 +300,10 @@
   platforms: auth0
 
 - title: Gridsome Shopify Starter
-  description: Light PWA Headless Gridsome Shopify starter
+  description: Light PWA Headless Gridsome Shopify starter using TailwindCSS
   screenshot: ./screenshots/gridsome-shopify-starter.png
   repo: jsappme/gridsome-shopify-starter
   preview: https://gridsome-shopify.netlify.com/
   author: herve76
-  tags: shopify, ecommerce, commerce, cart, bulma, headless, pwa
+  tags: shopify, ecommerce, commerce, cart, tailwindcss, headless, pwa
   platforms: shopify
