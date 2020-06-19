@@ -169,3 +169,9 @@
   bio: "Front-end developer & designer"
   avatar: ./images/paulozyzniewski.jpg
   twitter: "@OziOcb"
+
+- id: lukaskoeller
+  name: Lukas Koeller
+  bio: "Frontend Developer & Designer"
+  avatar: ./images/lukaskoeller.jpg
+  twitter: "@KllrLukas"
