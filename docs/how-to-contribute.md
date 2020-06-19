@@ -51,7 +51,7 @@ To add a new blog post to the gridsome.org blog:
 
 **Setup blog post:**
 - Add a new folder following the pattern `/blog/yyyy-mm-dd-title` (for example, 2018-09-14-say-hello-to-gridsome). Within this newly created folder add an `index.md` file.
-- Add `title`, `date`, `author`, and `tags` to the frontmatter of your `index.md`. If you are cross posting your post you can add `canonicalLink` for SEO benefits.
+- Add `title`, `date`, `author`, and `tags` to the frontmatter of your `index.md`.
 - If your blog post contains images add them to your blog post folder and reference them in your post's `index.md`.
 - Ensure any links to **gridsome.org pages** are relative links - `/docs/how-to-contribute` instead of `https://gridsome.org/docs/how-to-contribute`
 - Commit and push to your fork
