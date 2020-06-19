@@ -442,10 +442,10 @@ Or save your bundle size by using [vuetify treeshaking](https://vuetifyjs.com/en
 1. Install dependencies
 ```shell
 # With npm
-npm install deepmerge fibers sass-loader@7.3.1 vuetify-loader --save-dev
+npm install deepmerge fibers sass sass-loader@7.3.1 vuetify-loader --save-dev
 
 # With yarn
-yarn add deepmerge fibers sass-loader@7.3.1 vuetify-loader --dev
+yarn add deepmerge fibers sass sass-loader@7.3.1 vuetify-loader --dev
 ```
 >❗️Note: sass-loader must be lower than 8 version,
   also remove `node-sass` package if it's installed, otherwise build will fail.
