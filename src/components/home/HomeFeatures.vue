@@ -34,7 +34,7 @@
 
       <Feature>
         <h3>SEO-friendly</h3>
-        <p>Gridsome sites loads as static HTML before it hydrates into a fully Vue.js-powered SPA. This makes it possible for search engines able to crawl content and give better SEO ranking, and still have all the power of Vue.js.</p>
+        <p>Gridsome sites load as static HTML before they hydrate into fully Vue.js-powered SPAs. This makes it possible for search engines to be able to crawl content and give better SEO ranking, and still have all the power of Vue.js.</p>
       </Feature>
 
     </div>
