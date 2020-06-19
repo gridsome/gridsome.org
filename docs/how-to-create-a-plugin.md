@@ -37,7 +37,7 @@ Some plugins, like the `@gridsome/transformer-remark`, can have its own plugins.
 
 1. [Create a new Gridsome project](/docs/#2-create-a-gridsome-project) (if you don't want to test with an existing one)
 2. Open a terminal in your plugin project directory
-3. `npm link my-plugin-name` or `yarn link my-plugin-name`
+3. `npm link` or `yarn link`
 4. Open a terminal in your Gridsome project
 5. `npm link my-plugin-name` or `yarn link my-plugin-name`
 6. `gridsome develop`
