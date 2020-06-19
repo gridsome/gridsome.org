@@ -177,3 +177,7 @@ module.exports = function (api) {
   })
 }
 ```
+
+### Preprocessing Markdown Frontmatter
+
+When using plugins such as `@gridsome/vue-remark`, the frontmatter is processed *before* before passed to `vue-remark`. Because of this, it is important to modify any frontmatter data through the Gridsome Server API (as shown above) before it is passed to the transformer.
