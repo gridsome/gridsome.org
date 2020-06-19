@@ -307,3 +307,21 @@
   author: lukaskoeller
   tags: strapi, blog, starter, gridsome, simple, 
   platforms: strapi
+
+- title: Gridsome Shopify Starter
+  description: Light PWA Headless Gridsome Shopify starter using TailwindCSS
+  screenshot: ./screenshots/gridsome-shopify-starter.png
+  repo: jsappme/gridsome-shopify-starter
+  preview: https://gridsome-shopify.netlify.com/
+  author: herve76
+  tags: shopify, ecommerce, commerce, cart, tailwindcss, headless, pwa
+  platforms: shopify
+  
+- title: Gridsome Liebling Starter
+  description: A gridsome starter based on Ghost Liebling and tailwindcss
+  screenshot: ./screenshots/gridsome-starter-liebling.jpg
+  repo: noxify/gridsome-starter-liebling
+  preview: https://gridsome-starter-liebling.now.sh/
+  author: noxify
+  tags: gridsome, starter, tailwind, tailwindcss, megamenu, dark-mode, search, fulltextsearch, blog, about, categories, tags, author, about, responsive
+  platforms: markdown
