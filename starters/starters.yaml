@@ -298,3 +298,12 @@
   author: herve76
   tags: auth0, user, login, authentication, tailwind
   platforms: auth0
+  
+- title: Gridsome Liebling Starter
+  description: A gridsome starter based on Ghost Liebling and tailwindcss
+  screenshot: ./screenshots/gridsome-starter-liebling.jpg
+  repo: noxify/gridsome-starter-liebling
+  preview: https://gridsome-starter-liebling.now.sh/
+  author: noxify
+  tags: gridsome, starter, tailwind, tailwindcss, megamenu, dark-mode, search, fulltextsearch, blog, about, categories, tags, author, about, responsive
+  platforms: markdown
