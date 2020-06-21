@@ -11,7 +11,7 @@ excerpt: 'Infinite loading is an alternative strategy for loading additional nod
 
 Paginating data in Gridsome is easy using the built-in [@paginate directive](/docs/pagination/) and even includes a custom [pager component](/docs/pagination/#pager-component).
 
-Infinite loading provides the same performance as traditional paginatation without requiring any extra navigational UI to be included in a page.
+Infinite loading provides the same performance as traditional pagination without requiring any extra navigational UI to be included in a page.
 
 You can check out a full working example here: https://gridsome-infinite-loading.netlify.com
 
@@ -59,7 +59,7 @@ query ($page: Int) {
 }
 ```
 
-This is a pretty typical way to do traditional pagintation, but we're not going to include a pager component in the UI.
+This is a pretty typical way to do traditional pagination, but we're not going to include a pager component in the UI.
 
 ### `<script>`
 
