@@ -62,6 +62,47 @@ export default {
 
 ```
 
+## Passing Data to Components
+
+To pass data into a **Component**, you must first create a `props` array within the **Component** file along with the corresponding attributes when you call the **Component** within a **Page** or another **Component**.
+
+Here is an example component named `Quote.vue` inside `src/components`:
+
+```html
+<template>
+  <div class="quote">
+    <h2>"{{ quote }}" - {{ author }}</h2>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Quote',
+  props: ['quote', 'author']
+}
+</script>
+```
+
+and passing the data into `Index.vue` within `src/pages`:
+
+```html
+<template>
+  <Quote
+    quote='The greatest glory in living lies not in never falling, but in rising every time we fall.'
+    author='Nelson Mandela'
+   />
+</template>
+
+<script>
+import Quote from '~/components/Quote.vue'
+export default {
+  components: {
+    Quote
+  }
+}
+</script>
+```
+
 ## Add GraphQL to Components
 
 Every **Component** can have a `<static-query>` block with a GraphQL query
