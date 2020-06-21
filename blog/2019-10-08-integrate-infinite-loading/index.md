@@ -17,7 +17,7 @@ You can check out a full working example here: https://gridsome-infinite-loading
 
 ## Install the required dependencies
 
-There are many packages that implement the infinite loading technique but one that works particularly well with Gridsome is [vue-infinite-loading](https://github.com//PeachScript/vue-infinite-loading). To add it to your Gridsome project, `cd` into your project's root and run the following:
+Many packages implement the infinite loading technique but one that works particularly well with Gridsome is [vue-infinite-loading](https://github.com//PeachScript/vue-infinite-loading). To add it to your Gridsome project, `cd` into your project's root and run the following:
 
 `yarn add vue-infinite-loading`
 
@@ -72,7 +72,7 @@ Next, we'll need to add a few things to our `<script>` tag:
 Here's what that would look like:
 
 ```javascript
-// component for displaying our individual blog post previews
+// component for displaying our blog post previews
 import PostCard from '~/components/PostCard.vue'
 
 export default {
@@ -144,7 +144,7 @@ Now for the template. One important thing to remember here is that we're going t
 
 We've wrapped our `<infinite-loading>` component in Gridsome's `<ClientOnly>` tag to ensure this works correctly in the production build as well as local development.
 
-The slots included in the `<infinite-loading>` component as well as the `spinner` prop are optional. You can read more about those in the [API docs](https://peachscript.github.io/vue-infinite-loading/api/) for `vue-infinite-loading`.
+The slots included in the `<infinite-loading>` component, as well as the `spinner` prop, are optional. You can read more about those in the [API docs](https://peachscript.github.io/vue-infinite-loading/api/) for `vue-infinite-loading`.
 
 ## Transitions
 
