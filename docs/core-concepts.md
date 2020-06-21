@@ -63,7 +63,7 @@ export default {
 </script>
 ```
 
-🙌 Layouts can also be made [available globally](/docs/layouts#make-a-layout-global), so you don't need to import them per page.
+🙌 Layouts can also be made [available globally](/docs/layouts#make-a-layout-global), so you don't need to import them per page. Note that the default template created by the Gridsome CLI will use a global layout component.
 
 [Learn more about Layouts](/docs/layouts/)
 

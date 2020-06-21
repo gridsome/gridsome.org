@@ -1,6 +1,6 @@
-# What is the JAMstack?
+# What is the Jamstack?
 
-> JAMstack is a new way of building websites and apps that delivers better performance, higher security, lower cost of scaling, and a better developer experience. It's a modern web development architecture based on client-side **J**avaScript, reusable **A**PIs, and prebuilt **M**arkup.
+> Jamstack is a new way of building websites and apps that delivers better performance, higher security, lower cost of scaling, and a better developer experience. It's a modern web development architecture based on client-side **J**avaScript, reusable **A**PIs, and prebuilt **M**arkup.
 
 
 ## Benefits
@@ -26,17 +26,17 @@ Loose coupling and separation of controls allow for more targeted development an
 
 
 ## Best practices
-When building JAMstack projects, you can really get the most out of the stack if you stick to a few best practices.
+When building Jamstack projects, you can really get the most out of the stack if you stick to a few best practices.
 
 
 ### Entire Project on a CDN
 
-Because JAMstack projects don’t rely on server-side code, they can be distributed instead of living on a single server. Serving directly from a CDN unlocks speeds and performance that can’t be beat. The more of your app you can push to the edge, the better the user experience.
+Because Jamstack projects don’t rely on server-side code, they can be distributed instead of living on a single server. Serving directly from a CDN unlocks speeds and performance that can’t be beat. The more of your app you can push to the edge, the better the user experience.
 
 
 ### Everything Lives in Git
 
-With a JAMstack project, anyone should be able to do a git clone, install any needed dependencies with a standard procedure (like npm install), and be ready to run the full project locally. **No databases to clone, no complex installs.** This reduces contributor friction, and also simplifies staging and testing workflows.
+With a Jamstack project, anyone should be able to do a git clone, install any needed dependencies with a standard procedure (like npm install), and be ready to run the full project locally. **No databases to clone, no complex installs.** This reduces contributor friction, and also simplifies staging and testing workflows.
 
 ### Modern Build Tools
 
@@ -44,7 +44,7 @@ Take advantage of the world of modern build tools. It can be a jungle to get ori
 
 ### Automated Builds
 
-Because JAMstack markup is prebuilt, content changes won’t go live until you run another build. Automating this process will save you lots of frustration. You can do this yourself with webhooks, or use a publishing platform that includes the service automatically.
+Because Jamstack markup is prebuilt, content changes won’t go live until you run another build. Automating this process will save you lots of frustration. You can do this yourself with webhooks, or use a publishing platform that includes the service automatically.
 
 
 

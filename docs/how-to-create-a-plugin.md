@@ -32,3 +32,14 @@ Learn more about the [Transformer API](/docs/transformer-api/)
 ## Plugins for other plugins
 
 Some plugins, like the `@gridsome/transformer-remark`, can have its own plugins. They can be named `gridsome-remark-*` or `@username/gridsome-remark-*`.
+
+## Testing your plugin
+
+1. [Create a new Gridsome project](/docs/#2-create-a-gridsome-project) (if you don't want to test with an existing one)
+2. Open a terminal in your plugin project directory
+3. `npm link my-plugin-name` or `yarn link my-plugin-name`
+4. Open a terminal in your Gridsome project
+5. `npm link my-plugin-name` or `yarn link my-plugin-name`
+6. `gridsome develop`
+
+If you are integrating with the [Server API](/docs/server-api/) in your plugin, restarting the development server is necessary. But, if you are only interacting with the [Client API](/docs/client-api/), your plugin should automatically hot-reload in your development server.

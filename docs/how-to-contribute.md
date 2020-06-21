@@ -1,5 +1,5 @@
 # How to contribute
-> Gridsome is an open-source project built by core maintainers and contributors. We want to make it easy for anyone to contribute to Gridsome. Contribute to core, build plugins, improve documentation or write a blog post. It all helps Gridsome on its mission to simplify JAMstack development.
+> Gridsome is an open-source project built by core maintainers and contributors. We want to make it easy for anyone to contribute to Gridsome. Contribute to core, build plugins, improve documentation or write a blog post. It all helps Gridsome on its mission to simplify Jamstack development.
 
 Read the [code of conduct](/docs/code-of-conduct/).
 
@@ -45,13 +45,13 @@ To add a new blog post to the gridsome.org blog:
 - Run `gridsome develop` to preview the blog at `http://localhost:8000/blog`.
 - The content for the blog lives in the `/blog` folder.
 
-**Create contributor profile:**
+**Create your contributor profile:**
 - Add your avatar image to `/contributors/images`.
 - Add your name and info to `/contributors/contributors.yaml`.
 
 **Setup blog post:**
 - Add a new folder following the pattern `/blog/yyyy-mm-dd-title` (for example, 2018-09-14-say-hello-to-gridsome). Within this newly created folder add an `index.md` file.
-- Add `title`, `date`, `author`, and `tags` to the frontmatter of your `index.md`. If you are cross posting your post you can add `canonicalLink` for SEO benefits.
+- Add `title`, `date`, `author`, and `tags` to the frontmatter of your `index.md`.
 - If your blog post contains images add them to your blog post folder and reference them in your post's `index.md`.
 - Ensure any links to **gridsome.org pages** are relative links - `/docs/how-to-contribute` instead of `https://gridsome.org/docs/how-to-contribute`
 - Commit and push to your fork
@@ -61,25 +61,34 @@ To add a new blog post to the gridsome.org blog:
 
 ## Submit a Starter
 
-Contributing a new starter project is a great way to help other Gridsome users get off the ground quickly. While Starters are owned/maintained under your personal Github account, if you want one listed as an "official" Starter, you must commit the appropriate entry inside the Gridsome.org repo.
+Contributing a new starter project is a great way to help other Gridsome users to get off the ground quickly. If you want to list your project as an "official" Starter, you must commit the appropriate entry inside the Gridsome.org repo. 
+
+To add your Starter to gridsome.org:
+
+**Prepare repository:**
 
 - Clone [the Gridsome.org repo](https://github.com/gridsome/gridsome.org).
 - Run `yarn` to install all of the website's dependencies.
 
-**Create contributor profile:**
+**Create your contributor profile:**
 - Add your avatar image to `/contributors/images`.
 - Add your name and info to `/contributors/contributors.yaml`.
 
-**Add starter:**
+**Add your starter project:**
 - Add starter screenshot to `/starters/screenshots` (840x840px / 1680x1680 for retina).
 - Add starter details to end of this file `/starters/starters.yaml`.
 
-Gridsome Starters use the Github project README file for content.
+**Recommendations to your Starter project**
+
+- Naming convention: `gridsome-starter-<YOUR PROJECT SUFFIX>`
+- Add Netlify [build settings](https://gridsome.org/docs/deploy-to-netlify/) to support "Install now" with Netlify directly out of our Starters section 
+- Your project README is automatically used as Starter description
+
+**Committing your Starter**
 
 - Run `gridsome develop` to preview starter at `http://localhost:8000/starters`.
 - Commit and push to your fork
 - Create a pull request from your branch
-  - We recommend using a prefix of `starter`, like `starter/your-starter-id`.
 
 
 ## Submit to Showcase *

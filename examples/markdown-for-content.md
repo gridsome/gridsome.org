@@ -26,7 +26,7 @@ module.exports = {
     },
   ],
   // Setup templates & routes for the collection.
-  // This will look for scr/templates/{Collection}.vue and use that.
+  // This will look for src/templates/{Collection}.vue and use that.
   templates: {
     Post: '/blog/:year/:month/:title',
     Tag: '/tags/:title'

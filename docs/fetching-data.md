@@ -71,3 +71,23 @@ module.exports = function (api) {
 *..contribute*
 
 ### JSON
+Import data from any json file to the GraphQL data layer with the [Data store API](/docs/data-store-api/). To use the API you need a `gridsome.server.js` file in the root folder of your Gridsome project.
+
+
+Here is an example `gridsome.server.js` file that imports json:
+
+```js
+module.exports = function (api) {
+  api.loadSource(async actions => {
+    const Blogs = require('./src/data/blogs.json');
+
+    const collection = actions.addCollection({
+      typeName: 'BlogPosts'
+    })
+
+    for (const blog of Blogs) {
+      collection.addNode(blog);
+    }
+  })
+}
+```

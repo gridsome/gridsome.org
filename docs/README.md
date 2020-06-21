@@ -1,22 +1,29 @@
 # Introduction
 
-> Gridsome is a free and open source [Vue.js-powered](https://vuejs.org/) framework for building websites & apps that are [fast by default](/docs/fast-by-default/) 🚀.
+> Gridsome is a Vue.js powered [Jamstack](/docs/jamstack) framework for building static generated websites & apps that are [fast by default](/docs/fast-by-default/) 🚀.
 
 ## Why Gridsome?
 
 - **Vue.js for frontend** - The simplest & most approachable frontend framework.
+- **Data sourcing** - Use any Headless CMSs, APIs or Markdown-files for data.
 - **Local development with hot-reloading** - See code changes in real-time.
 - **File-based page routing** - Any `Name.vue` file in `src/pages` is a static route.
 - **Dynamic routing** - Any `[param].vue` file in `src/pages` is a dynamic route.
 - **Static file generation** - Deploy securely to any CDN or static web host.
-- **Data sourcing** - Use any Headless CMSs, APIs or Markdown-files for data.
 - **GraphQL data layer** - Simpler data management with a centralized data layer.
 - **Automatic Code Splitting** - Builds ultra performance into every page.
 - **Plugin ecosystem** - Find a plugin for any job.
 
 
+## What is the Jamstack?
+
+**Gridsome is a Jamstack framework**. Jamstack lets you build fast and secure sites and apps delivered by pre-rendering files and serving them directly from a CDN, removing the requirement to manage or run web servers.
+
+[Learn more about the Jamstack](/docs/jamstack).
+
+
 ## How it works
-Gridsome **generates static html** that hydrates into a <strong>Vue SPA</strong> once loaded in the browser. This means you can build both **static websites** & **dynamic apps** with Gridsome. It's perfect for your [JAMstack](/docs/jamstack) workflow. 
+Gridsome **generates static html** that hydrates into a <strong>Vue SPA</strong> once loaded in the browser. This means you can build both **static websites** & **dynamic apps** with Gridsome.
 
 Gridsome builds one `.html` file and one `.json` file for every page. After first page load it only uses the `.json` files to prefetch and load data for the next pages. It also builds a `.js` bundle for each page that needs it (code splitting).
 
