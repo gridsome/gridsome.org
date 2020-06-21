@@ -57,7 +57,7 @@ module.exports = function (api) {
 }
 ```
 
-... or you could **bypass GraphQL** if you think it's a overkill in some use cases:
+... or you could **bypass GraphQL** if you think it's overkill in some use cases:
 
 ```js
 //gridsome.server.js
