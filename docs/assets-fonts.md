@@ -8,7 +8,7 @@ The easiest way to add a CDN-hosted font is by inserting it directly into your g
 export default function (Vue, { head }) {
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Roboto'
+    href: 'https://fonts.googleapis.com/css2?family=Roboto'
   })
 }
 ```
