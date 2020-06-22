@@ -36,16 +36,16 @@ const axios = require('axios')
 
 module.exports = function (api) {
   api.loadSource(async actions => {
-    const { data } = await axios.get('https://api.example.com/posts')
+    const { posts } = await axios.get('https://api.example.com/posts')
 
     const collection = actions.addCollection({
       typeName: 'BlogPosts'
     })
 
-    for (const item of data) {
+    for (const post of posts) {
       collection.addNode({
-        id: item.id,
-        title: item.title
+        id: post.id,
+        title: post.title
       })
     }
   })
