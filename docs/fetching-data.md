@@ -77,7 +77,7 @@ const fs = require('fs');
 const yaml = require('js-yaml');
 
 let fileContents = fs.readFileSync('./src/data/products.yaml', 'utf8');
-let products = yaml.safeLoad(fileContents).products;
+let { products } = yaml.safeLoad(fileContents);
 
 module.exports = function (api) {
   api.loadSource(async actions => {
