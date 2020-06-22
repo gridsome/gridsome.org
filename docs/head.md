@@ -57,6 +57,24 @@ export default {
 </script>
 ```
 
+If you wish to access `this` or data on a component/page, make `metaInfo` a function:
+```js
+<script>
+export default {
+  name: 'Post Template',
+  metaInfo() {
+    return {
+      title: '`${this.$context.post.name}`',
+      meta: [
+        { name: 'author', content: `${this.$context.post.author}` }
+      ],
+      // etc...
+    }
+  }
+}
+</script>
+```
+
 ## How to overwrite from child component
 
 If you need to overwrite meta tags, add `key` property.  
