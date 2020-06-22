@@ -9,7 +9,7 @@ Here’s an example of a file we’ll call `Card.vue` inside `src/components/`:
 <template>
   <div class="card">
     {{ message }}
-    <button @click="onClick">
+    <button v-on:click="onClick">
       Change
     </button>
   </div>
