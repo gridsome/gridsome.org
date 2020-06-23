@@ -64,9 +64,9 @@ export default {
   name: 'Post Template',
   metaInfo() {
     return {
-      title: '`${this.$context.post.name}`',
+      title: this.$context.post.name,
       meta: [
-        { name: 'author', content: `${this.$context.post.author}` }
+        { name: 'author', content: this.$context.post.author }
       ],
       // etc...
     }
