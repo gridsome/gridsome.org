@@ -46,10 +46,16 @@ export default {
   metaInfo: {
     title: 'About us',
     meta: [
-      { name: 'author', content: 'John Doe' }
+      {
+        name: 'author',
+        content: 'John Doe'
+      }
     ],
     link: [
-      { rel: 'stylesheet', href: '/css/index.css' },
+      {
+        rel: 'stylesheet',
+        href: '/css/index.css'
+      }
     ]
     // etc...
   }
@@ -67,7 +73,11 @@ Gridsome is passing `tagIdKeyName: 'key'` to vue-meta as default option.
 {
   metaInfo: {
     meta: [
-      { key: 'description', name: 'description', content: 'foo' }
+      {
+        key: 'description',
+        name: 'description',
+        content: 'foo'
+      }
     ]
   }
 }
@@ -75,7 +85,11 @@ Gridsome is passing `tagIdKeyName: 'key'` to vue-meta as default option.
 {
   metaInfo: {
     meta: [
-      { key: 'description', name: 'description', content: 'bar' }
+      {
+        key: 'description',
+        name: 'description',
+        content: 'bar'
+      }
     ]
   }
 }
