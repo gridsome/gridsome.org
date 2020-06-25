@@ -13,9 +13,9 @@ You have two options for creating pages in Gridsome:
 [Single File Components](https://vuejs.org/v2/guide/single-file-components.html) in the `src/pages` directory will automatically be available with their own URLs. The file location is used to generate the URL and here are a few basic examples:
 
 - `src/pages/Index.vue` becomes `/` *(The frontpage)*
-- `src/pages/AboutUs.vue` becomes `/about-us`
-- `src/pages/about/Vision.vue` becomes `/about/vision`
-- `src/pages/blog/Index.vue` becomes `/blog`
+- `src/pages/AboutUs.vue` becomes `/about-us/`
+- `src/pages/about/Vision.vue` becomes `/about/vision/`
+- `src/pages/blog/Index.vue` becomes `/blog/`
 
 A simple page component might look like this:
 
@@ -27,7 +27,7 @@ A simple page component might look like this:
 </template>
 ```
 
-Pages in `src/pages` are typically used for fixed URLs like `/about` or for listing blog posts at, for example `/blog`. [Read more about how to create pages for single blog posts etc.](/docs/collections/)
+Pages in `src/pages` are typically used for fixed URLs like `/about/` or for listing blog posts at, for example `/blog/`. [Read more about how to create pages for single blog posts etc.](/docs/collections/)
 
 ## Programmatic pages
 
