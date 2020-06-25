@@ -58,15 +58,16 @@ export default {
 ```
 
 If you wish to access `this` or data on a component/page, make `metaInfo` a function:
+
 ```js
 <script>
 export default {
   name: 'Post Template',
   metaInfo() {
     return {
-      title: this.$context.post.name,
+      title: this.$page.post.name,
       meta: [
-        { name: 'author', content: this.$context.post.author }
+        { name: 'author', content: this.$page.post.author }
       ],
       // etc...
     }
