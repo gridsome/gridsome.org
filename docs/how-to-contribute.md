@@ -42,8 +42,8 @@ To add a new blog post to the gridsome.org blog:
 
 - Clone [the Gridsome.org repo](https://github.com/gridsome/gridsome.org).
 - Run `yarn` to install all of the website's dependencies.
-- Run `gridsome develop` to preview the blog at `http://localhost:8000/blog`.
-- The content for the blog lives in the `/blog/` folder.
+- Run `gridsome develop` to preview the blog at `http://localhost:8000/blog/`.
+- The content for the blog lives in the `/blog` folder.
 
 **Create your contributor profile:**
 - Add your avatar image to `/contributors/images`.
@@ -53,7 +53,7 @@ To add a new blog post to the gridsome.org blog:
 - Add a new folder following the pattern `/blog/yyyy-mm-dd-title` (for example, 2018-09-14-say-hello-to-gridsome). Within this newly created folder add an `index.md` file.
 - Add `title`, `date`, `author`, and `tags` to the frontmatter of your `index.md`.
 - If your blog post contains images add them to your blog post folder and reference them in your post's `index.md`.
-- Ensure any links to **gridsome.org pages** are relative links - `/docs/how-to-contribute` instead of `https://gridsome.org/docs/how-to-contribute`
+- Ensure any links to **gridsome.org pages** are relative links - `/docs/how-to-contribute/` instead of `https://gridsome.org/docs/how-to-contribute/`
 - Commit and push to your fork
 - Create a pull request from your branch
   - We recommend using a prefix of `docs`, like `docs/your-change`.
@@ -86,7 +86,7 @@ To add your Starter to gridsome.org:
 
 **Committing your Starter**
 
-- Run `gridsome develop` to preview starter at `http://localhost:8000/starters`.
+- Run `gridsome develop` to preview starter at `http://localhost:8000/starters/`.
 - Commit and push to your fork
 - Create a pull request from your branch
 
