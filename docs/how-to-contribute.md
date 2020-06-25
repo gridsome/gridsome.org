@@ -43,7 +43,7 @@ To add a new blog post to the gridsome.org blog:
 - Clone [the Gridsome.org repo](https://github.com/gridsome/gridsome.org).
 - Run `yarn` to install all of the website's dependencies.
 - Run `gridsome develop` to preview the blog at `http://localhost:8000/blog`.
-- The content for the blog lives in the `/blog` folder.
+- The content for the blog lives in the `/blog/` folder.
 
 **Create your contributor profile:**
 - Add your avatar image to `/contributors/images`.
