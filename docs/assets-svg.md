@@ -91,7 +91,7 @@ You can now use the icons anywhere in your components/templates:
 <font-awesome :icon="['fab', 'twitter']"/>
 ```
 
-And best of all, the SVG for Github/Twitter icons will be the only ones added to our final build. Make sure you read the docs on [vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome) to get full details on how to use the whole suite of FontAwesome fonts together.
+And best of all, the SVG for GitHub/Twitter icons will be the only ones added to our final build. Make sure you read the docs on [vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome) to get full details on how to use the whole suite of FontAwesome fonts together.
 
 ## Purge CSS
 

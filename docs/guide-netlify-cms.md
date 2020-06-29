@@ -92,7 +92,7 @@ Your `index.js` should look like this:
 import CMS from "netlify-cms"
 ```
 
-Your `config.yml` for Github should look like this:
+Your `config.yml` for GitHub should look like this:
 
 ```yml
 backend:
@@ -127,7 +127,7 @@ backend:
 
 ## Netlify CMS authentication with GitHub
 
-Before we can start adding posts we'll have to give Netlify access to our Github, this part is **crucial**, please follow the steps closely. More info can be read [here](https://www.netlify.com/docs/authentication-providers/);
+Before we can start adding posts we'll have to give Netlify access to our GitHub, this part is **crucial**, please follow the steps closely. More info can be read [here](https://www.netlify.com/docs/authentication-providers/);
 
 Part 1, GitHub:
 
