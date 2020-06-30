@@ -26,7 +26,7 @@ There's a few steps to complete:
 
 **Notes**
 
-GitHub Pages allows you to have a "Github user page" that acts as a profile/main page on `<your-github-username>.github.io` by having a repo named `<your-github-username>.github.io`.
+GitHub Pages allows you to have a "GitHub user page" that acts as a profile/main page on `<your-github-username>.github.io` by having a repo named `<your-github-username>.github.io`.
 * If you are deploying to your GitHub user page (your main site on `<username>.github.io`):
   * Make the following adjustments to your `package.json`:
     ```json
