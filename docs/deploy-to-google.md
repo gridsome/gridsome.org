@@ -4,7 +4,7 @@
 
       1. Create a project op Google Cloud Platform
       2. Have acces to DNS record of your domain
-      
+
 You can host a static website on a Google Cloud Storage bucket for a domain you own.
 
 The downside to this is that you can only use HTTP.
@@ -17,7 +17,7 @@ The HTTPS configuration is a bit more complex.
 ## Use a Cloud Storage bucket as a load balancer backend
 
  Steps:
- 
+
       1. Configure a Cloud Storage bucket
       2. Configure a load balancing service
       3. Create an external address
@@ -31,7 +31,7 @@ gsutil web set -m index.html -e 404.html gs://your-bucket-name
 
 # Google cloud build
 
-## Setup Google Source Repositories 
+## Setup Google Source Repositories
 
 [Documentation](https://cloud.google.com/source-repositories/docs/)
 

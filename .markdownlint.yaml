@@ -7,8 +7,6 @@
 MD001: false
 # ul-indent
 MD007: false
-# no-trailing-spaces
-MD009: false
 # line-length
 MD013: false
 # no-duplicate-heading/no-duplicate-header
