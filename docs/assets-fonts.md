@@ -37,8 +37,8 @@ require('typeface-open-sans')
 
 And you're all done!
 
-
 ## Local Fonts
+
 It's important to note that the [aliases](/docs/directory-structure#aliases) mentioned in the Directory Structure don't work in your `<style>` tags because they aren't included into the Webpack bundle, so you need to use a relative path to them.
 
 Given the following directory:

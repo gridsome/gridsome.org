@@ -17,8 +17,8 @@ Layouts are _just_ &nbsp;**.vue components** located in `src/layouts` and need t
 </template>
 ```
 
-
 ## Import layouts
+
 When you have created a layout you need to import it to your pages and templates. This is done inside the `<script>` tag.
 
 ```html
@@ -41,8 +41,8 @@ export default {
 
 ```
 
-
 ## Make a layout global
+
 If you don't want to import the layout into every page or template you can make a layout global. To make a layout global go to `src/main.js` and import your layout file into this file.
 
 For example: 
@@ -76,8 +76,8 @@ You can now use `<Layout>` anywhere in your Gridsome project without importing i
 
 ```
 
-
 ## Passing Props to layouts
+
 Since layouts work like components, it is possible to pass Props to layouts. For example a page can look like this:
 
 
@@ -113,6 +113,7 @@ export default {
 ```
 
 ## Multiple content slots
+
 To add multiple slots to a layout you need to name them. In this example we have added a sidebar slot that will only show if the page has sidebar content.
 
 ```html
@@ -143,6 +144,7 @@ Pages can now add content to this slot like this:
 ```
 
 ## Master layout
+
 You can create a **master layout** by adding an **App.vue** file to `src` root. This will let you keep your header, footer on all pages and add **page transitions**.
 
 A simple **App.vue** file looks like this:

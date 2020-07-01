@@ -2,8 +2,8 @@
 
 Tools for easier Gridsome development
 
-
 ## ESLint plugin
+
 https://www.npmjs.com/package/eslint-plugin-gridsome
 
 ## Vetur

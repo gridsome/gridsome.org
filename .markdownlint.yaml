@@ -13,8 +13,6 @@ MD009: false
 MD012: false
 # line-length
 MD013: false
-# blanks-around-headings/blanks-around-headers
-MD022: false
 # no-duplicate-heading/no-duplicate-header
 MD024: false
 # single-title/single-h1

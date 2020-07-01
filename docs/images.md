@@ -11,8 +11,6 @@ A typical image component will look like this:
 
 📣 **Only local, relative image paths will be compressed by Gridsome.**
 
- 
-
 ## How it works
 
 - **A IMG element with a source srcset is used.** This means that using several media queries, you load the smallest image that matches your device (e.g. mobile devices get smaller images, desktop devices get larger images, etc.). The images will be resized down to 480, 1024, 1920 and 2560 pixels by default.
@@ -20,7 +18,6 @@ A typical image component will look like this:
 - **A base64 blurred image loaded by default.** This makes: 1) Larger images outside the viewport are not requested until they’re needed, and 2) The blurred image is in a container with the same dimensions as the real image—therefore, no jumping when the image loads.
 
 - **An Intersection Observer** that swaps the base image for the larger image, when the image is in the viewport. (Lazy loading).
-
 
 ## Usage in Vue templates
 
@@ -31,6 +28,7 @@ A `<g-image>` component is available in all your Vue templates and can be used t
 ```
 
 ## Usage via GraphQL
+
 Local image paths from sources can also be compressed. Options like `width`, `height` and `quality` must be set in the query. The field can be passed to `g-image` as the `src` attribute.
 
 ```html
@@ -50,6 +48,7 @@ query ($id: ID!) {
 ```
 
 ## Usage in Markdown
+
 The [@gridsome/transformer-remark](/plugins/@gridsome/transformer-remark) transformer plugin automatically converts normal Markdown images to `g-image` compatible markup.
 
 ```md
@@ -57,6 +56,7 @@ The [@gridsome/transformer-remark](/plugins/@gridsome/transformer-remark) transf
 ```
 
 ## Image cropping
+
 Crop the image by settings both `width` and `height` attributes. The image will be cropped to cover both dimensions by default. Change how to crop with the [`fit`](/docs/images#fit-options) attribute.
 
 ```html
