@@ -24,5 +24,3 @@ If you need dynamic data you should use [client-side data](/docs/client-side-dat
 Every Gridsome project has a **GraphQL explorer (Playground)** that can be used to explore and test queries when in development mode. Here you also get a list of all available GraphQL collections. This can usually be opened by going to `http://localhost:8080/___explore`.
 
 ![graphql-explorer](./images/graphql-explorer.png)
-
-

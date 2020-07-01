@@ -161,7 +161,6 @@ Part 2, Netlify:
 3. Under Authentication Providers, click Install Provider
 4. Select Bitbucket, and enter the Client ID and Client Secret from step 4 in Part 1, Bitbucket. Then click install
 
-
 ## Start coding
 
 Your basic blog scaffold is done, now you can query data from the GraphQL server just like you're working with the filesystem. For more info read [querying data](https://gridsome.org/docs/querying-data).

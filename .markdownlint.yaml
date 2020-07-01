@@ -9,8 +9,6 @@ MD001: false
 MD007: false
 # no-trailing-spaces
 MD009: false
-# no-multiple-blanks
-MD012: false
 # line-length
 MD013: false
 # no-duplicate-heading/no-duplicate-header

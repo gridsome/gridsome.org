@@ -2,7 +2,6 @@
 
 > Jamstack is a new way of building websites and apps that delivers better performance, higher security, lower cost of scaling, and a better developer experience. It's a modern web development architecture based on client-side **J**avaScript, reusable **A**PIs, and prebuilt **M**arkup.
 
-
 ## Benefits
 
 ### ⚡️ Better Performance

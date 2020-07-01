@@ -52,7 +52,6 @@ Gridsome has a built-in `<g-image>` component with automatic progressive image s
 
 In production, the `<g-image>` is served as an ultra-compressed image before the image is lazy-loaded when in view by using **Intersection Observer**.
 
-
 [Learn more about **g-image** here](/docs/images/)
 
 ## Vue.js SPA

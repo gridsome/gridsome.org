@@ -19,7 +19,6 @@ excerpt: "Version 0.7 is finally here! Enjoy Vue Components in Markdown, new Sch
 
 With Gridsome 0.7 follows a new plugin called [@gridsome/vue-remark](/plugins/@gridsome/vue-remark). It lets you add Vue Components to Markdown files. This is perfect for Documentation, Design Systems, or portfolio websites. It's an Vue / Gridsome alternative to [MDX](https://mdxjs.com/).
 
-
 Here is a quick overview of how it works:
 
 1) Install the plugin and add configs:
@@ -43,7 +42,6 @@ In this example `/content/docs/index.md` will be `website.com/docs/`,
 and `/content/docs/install-guide.md` will be `website.com/docs/install-guide/`.
 
 By default it takes any **.md** files in `baseDir` folder and uses them for file-based routing like [Pages](/docs/pages/) works. You can override this by using a `route` config.
-
 
 2) Setup a template and include the `<VueRemarkContent />` component:
 
@@ -94,7 +92,6 @@ Isn't it great? 🥳
 ```
 
 You can use `<page-query>` & `<style>` blocks inside the Markdown files too!
-
 
 Learn more about [@gridsome/vue-remark](/plugins/@gridsome/vue-remark)
 
@@ -264,7 +261,6 @@ The new [Schema API](/docs/schema-api/) is deprecating previous methods for cust
 #### New type for the `$id` variable
 
 The `$id` variable in `<page-query>` for nodes has previously been a `String` type. Even though the `id` field in the schema was of type `ID`. But the `$id` input variable must also be a `ID` type from now on. Gridsome will fix the type for you automatically and show a deprecation notice untill you have updated the query.
-
 
 🙌 You will probably get many deprecated messages on your current Gridsome project, but we think these changes are a right direction as we're getting close to a 1.0 version.
 
