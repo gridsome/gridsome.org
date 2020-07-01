@@ -7,7 +7,6 @@ You have two options for creating pages in Gridsome:
 1. **[Using the file system](#file-based-pages)** - For creating pages with [Single File Components](https://vuejs.org/v2/guide/single-file-components.html)
 2. **[Using the Pages API](#programmatic-pages)** - For creating pages programmatically.
 
-
 ## File-based pages
 
 [Single File Components](https://vuejs.org/v2/guide/single-file-components.html) in the `src/pages` directory will automatically be available with their own URLs. The file location is used to generate the URL and here are a few basic examples:

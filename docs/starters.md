@@ -19,7 +19,6 @@ The default project that is created with Gridsome CLI.
 
 [Learn more](https://github.com/gridsome/gridsome-starter-wordpress)
 
-
 ### Git-repositories
 
 #### gridsome-starter-markdown-blog

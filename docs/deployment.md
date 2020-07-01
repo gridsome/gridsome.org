@@ -6,7 +6,6 @@ To deploy a Gridsome site you need a **static web host**.
 
 The best practice when working with Gridsome sites is to have your project hosted on a Git-service like GitHub and connect a deploy service that builds your site from a selected repository.
 
-
 These services are great for Git-based deploying:
 
 - [Netlify](/docs/deploy-to-netlify/)

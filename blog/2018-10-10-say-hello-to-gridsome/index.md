@@ -13,7 +13,6 @@ With **Gridsome** you get a **universal GraphQL layer** for all your connected d
 
 Here is an example on how to query posts from the GraphQL layer in a page:
 
-
 ```html
 <template>
   <Layout>
@@ -42,11 +41,7 @@ query {
 
 You don't need to know GraphQL or Vue to get started with Gridsome - It's a great way to get introduced to both.
 
-
 The GraphQL layer and all the data can be explored in a local GraphQL playground. The playground is usually located at `https://localhost:8080/___explore` when a Gridsome development project is running.
-
-
-
 
 #### Perfect scores on Google Lighthouse - automagically 💚
 
@@ -59,7 +54,6 @@ One of the main goals of Gridsome is to make a framework that lets you build web
 - Critical CSS (Plugin) ⚡️ 
 - Full PWA & Offline-support (plugin) ⚡️  
 
-
 #### A better way to build websites
 
 Gridsome is built for the Jamstack workflow - a new way to build websites that gives you better performance, higher security, cheaper hosting, and a better developer experience. Generate prerendered (static) pages at build time for SEO-purpose and add powerful dynamic functionality with APIs and Vue.js.
@@ -69,7 +63,6 @@ We believe the SSGs / Jamstack trend is just getting started. When you have firs
 Try running the new Chrome Lighthouse (Audit tab in Developer tools) on a WordPress site - It is impossible to get good scores even with the best caching plugins and hosting. With Gridsome you don't even need caching plugins. Website optimization is taken care of at build time.
 
 This is what we think is very exciting and is why we are building Gridsome. It is the **perfect SPA & PWA front-end solution** for any headless CMS or content APIs.
-
 
 #### Whats next
 

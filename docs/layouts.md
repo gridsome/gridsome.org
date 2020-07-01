@@ -80,7 +80,6 @@ You can now use `<Layout>` anywhere in your Gridsome project without importing i
 
 Since layouts work like components, it is possible to pass Props to layouts. For example a page can look like this:
 
-
 ```html
 <!-- Page -->
 <template>

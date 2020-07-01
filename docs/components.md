@@ -4,7 +4,6 @@ Gridsome uses [Vue Single File Components] (https://vuejs.org/v2/guide/single-fi
 
 Here’s an example of a file we’ll call `Card.vue` inside `src/components/`:
 
-
 ```html
 <template>
   <div class="card">

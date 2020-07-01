@@ -220,4 +220,3 @@ In the same way, you can use any external library that causes issues in server s
 ```
 
 **Note:** You should avoid using external libraries like `jQuery` that manipulate the DOM and try using a Vue Plugin instead.
-

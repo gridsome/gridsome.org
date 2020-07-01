@@ -6,7 +6,6 @@ To get started with Gridsome, you’ll need to make sure you have the following 
 
 Visit the [Node.js site](https://nodejs.org/) and follow the instructions to download and install the recommended version for your operating system. Once you have followed the installation steps, make sure everything was installed properly:
 
-
 Open up your terminal.
 - Run `node --version`. (If you’re new to the command-line, “run command” means “type node --version in the command prompt, and hit the Enter key”. From here on, this is what we mean by “run command”).
 - Run `npm --version`.

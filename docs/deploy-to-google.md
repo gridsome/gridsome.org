@@ -39,7 +39,6 @@ gsutil web set -m index.html -e 404.html gs://your-bucket-name
 
 Create a new [trigger](https://console.cloud.google.com/cloud-build/triggers)
 
-
 Add a cloudbuild.yaml to the root of the project containing
 
 ```

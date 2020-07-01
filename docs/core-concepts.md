@@ -14,8 +14,6 @@
 
 Collections are stored in a temporary [local GraphQL data layer](/docs/data-layer/) and can be [queried anywhere](/docs/querying-data/), [filtered](/docs/filtering-data/), [paginated](/docs/pagination/) or [have relations](/docs/taxonomies/).
 
-
-
 [Learn more about Collections](/docs/collections/)
 
 ## Templates
