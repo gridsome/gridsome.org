@@ -11,4 +11,5 @@ chainWebpack (config) {
 ```
 
 ### Problems after an upgrade
+
 If you have problems after upgrading try remove `.cache` and `node_modules` folder and run `yarn` again. 

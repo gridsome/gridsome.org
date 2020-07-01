@@ -44,7 +44,9 @@ Create firebase.json and .firebaserc at the root of your project with the follow
  }
 }
 ```
+
 ## Step 3: Deploying
+
 Deploying Your Site
 
 ```shell script

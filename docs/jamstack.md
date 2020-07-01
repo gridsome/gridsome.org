@@ -9,30 +9,25 @@
 
 Why wait for pages to build on the fly when you can generate them at deploy time? When it comes to minimizing the time to first byte, nothing beats pre-built files served over a CDN.
 
-
 ### ⚡️ Higher Security
 
 With server-side processes abstracted into microservice APIs, surface areas for attacks are reduced. You can also leverage the domain expertise of specialist third-party services.
-
 
 ### ⚡️ Cheaper, Easier Scaling
 
 When your deployment amounts to a stack of files that can be served anywhere, scaling is a matter of serving those files in more places. CDNs are perfect for this, and often include scaling in all of their plans.
 
-
 ### ⚡️ Better Developer Experience
 
 Loose coupling and separation of controls allow for more targeted development and debugging, and the expanding selection of CMS options for site generators remove the need to maintain a separate stack for content and marketing.
 
-
 ## Best practices
-When building Jamstack projects, you can really get the most out of the stack if you stick to a few best practices.
 
+When building Jamstack projects, you can really get the most out of the stack if you stick to a few best practices.
 
 ### Entire Project on a CDN
 
 Because Jamstack projects don’t rely on server-side code, they can be distributed instead of living on a single server. Serving directly from a CDN unlocks speeds and performance that can’t be beat. The more of your app you can push to the edge, the better the user experience.
-
 
 ### Everything Lives in Git
 
@@ -45,8 +40,6 @@ Take advantage of the world of modern build tools. It can be a jungle to get ori
 ### Automated Builds
 
 Because Jamstack markup is prebuilt, content changes won’t go live until you run another build. Automating this process will save you lots of frustration. You can do this yourself with webhooks, or use a publishing platform that includes the service automatically.
-
-
 
 ## Learn more
 

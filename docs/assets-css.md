@@ -1,7 +1,9 @@
 # Use CSS in Gridsome
+
 Global stylesheets and assets are usually located in the `src/assets` folder and imported into `src/main.js`.
 
 ## Import a global style
+
 Add this to `src/main.js` to import a global CSS file.
 
 ```js
@@ -9,8 +11,8 @@ import '~/assets/styles.css'
 ```
 💡 `~` is an alias to project **/src/** folder.
 
-
 ## Use SASS & CSS pre-processors
+
 To enable **SASS** you need to run command `npm install -D sass-loader node-sass` to install the required packages.
 
 Now you can import **.scss** files in **src/main.js**:
@@ -33,6 +35,7 @@ You can also use SASS in **Vue Components** with the `lang="scss"` attribute:
 [Learn more about using using Pre-Processors in Vue.js](https://vue-loader.vuejs.org/guide/pre-processors.html)
 
 ### Global Preprocessor Files (ie. variables, mixins)
+
 Often when you're working on a project, you'll have a set of variables, mixins, and framework variable overrides that you'll want to be automatically used in your components/layouts so you don't have to keep manually importing them.
 
 Start by installing `style-resources-loader`:
@@ -88,6 +91,7 @@ module.exports = {
 ```
 
 ## Add CSS to Vue Components
+
 In Vue Components you add styles inside a `<style>` tag.
 
 ```html
@@ -125,16 +129,15 @@ This will change the `.card` class in current component automatically to somethi
 
 Gridsome [Critical CSS plugin](/plugins/@gridsome/plugin-critical) extracts CSS from components in selected view port size and adds the CSS inline to `<head>`.
 
-
 ## Add a CSS framework
 
 ## Tailwind
+
 [TailwindCSS](https://tailwindcss.com) is a highly customizable, utility-based CSS framework that gives you all of the building blocks you need to build your project without any opinionated styles you have to fight to override. When using TailwindCSS, it is recommended to use [PostCSS-PurgeCSS](https://github.com/FullHuman/postcss-purgecss) which is a tool used to remove unused css; resulting in tiny file sizes.
 
-
 ### Add TailwindCSS with a Plugin
-The quickest and easiest way to get up and running with Tailwind CSS in your project is to install it with the [Gridsome Tailwind Plugin](/plugins/gridsome-plugin-tailwindcss). A Gridsome plugin will typically have the majority of the boilerplate and configuration done for you, eliminating a lot of the set up time.
 
+The quickest and easiest way to get up and running with Tailwind CSS in your project is to install it with the [Gridsome Tailwind Plugin](/plugins/gridsome-plugin-tailwindcss). A Gridsome plugin will typically have the majority of the boilerplate and configuration done for you, eliminating a lot of the set up time.
 
 ### Add TailwindCSS Manually
 
@@ -254,6 +257,7 @@ module.exports = {
 Be sure to restart the `gridsome develop` command to ensure the changes are compiled in the current build.
 
 ## Bulma
+
 ...plugin coming
 
 ## Buefy
@@ -304,6 +308,7 @@ export default function (Vue) {
 ```
 
 ## Bootstrap
+
 ...plugin coming
 
 ## BootstrapVue
@@ -485,4 +490,3 @@ export default function (Vue, { appOptions, head }) {
 ```
 
 Then you should be able to build now! You will find the files in your dist/folder.
-

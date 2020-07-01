@@ -2,9 +2,11 @@
 title: Populating <head>
 ---
 # Populating `<head>`
+
 Gridsome uses [vue-meta](https://github.com/nuxt/vue-meta) to populate **Head**.
 
 ## Add global head metadata
+
 Global head metadata is added in `src/main.js` by using `head.{property}.push()`
 
 ```js
@@ -36,6 +38,7 @@ export default function (Vue, { head }) {
 ```
 
 ## Add head meta data to pages & templates
+
 Page metadata is added inside page **.vue components**.
 For example, `src/pages/About.vue` would look something like this:
 
@@ -124,4 +127,3 @@ Gridsome is passing `tagIdKeyName: 'key'` to vue-meta as default option.
 |title | Changes title text | [Docs](https://github.com/declandewet/vue-meta#title-string)
 |titleTemplate | Dynamic title text |  [Docs](https://github.com/declandewet/vue-meta#titletemplate-string--function)
 |link  | Adds a link tag | [Docs](https://github.com/declandewet/vue-meta#link-object)
-

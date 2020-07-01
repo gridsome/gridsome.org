@@ -22,6 +22,7 @@ These services are great for Git-based deploying:
 - [Surge.sh](/docs/deploy-to-surge-sh/)
 
 ## Deploy from terminal
+
 Many services let you deploy your static Gridsome site from the terminal. Here are some:
 
 - [Amazon S3](/docs/deploy-to-amazon-s3/)

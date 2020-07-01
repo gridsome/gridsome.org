@@ -14,15 +14,14 @@
 - **Automatic Code Splitting** - Builds ultra performance into every page.
 - **Plugin ecosystem** - Find a plugin for any job.
 
-
 ## What is the Jamstack?
 
 **Gridsome is a Jamstack framework**. Jamstack lets you build fast and secure sites and apps delivered by pre-rendering files and serving them directly from a CDN, removing the requirement to manage or run web servers.
 
 [Learn more about the Jamstack](/docs/jamstack).
 
-
 ## How it works
+
 Gridsome **generates static html** that hydrates into a <strong>Vue SPA</strong> once loaded in the browser. This means you can build both **static websites** & **dynamic apps** with Gridsome.
 
 Gridsome builds one `.html` file and one `.json` file for every page. After first page load it only uses the `.json` files to prefetch and load data for the next pages. It also builds a `.js` bundle for each page that needs it (code splitting).
@@ -33,8 +32,8 @@ Gridsome adds a `57kB min gzip` JS bundle size by default.(vue.js, vue-router, v
 
 [Learn more about how it works.](/docs/how-it-works)
 
-
 ## Prerequisites
+
 You should have basic knowledge about HTML, CSS, [Vue.js](https://vuejs.org) and how to use the [Terminal](https://www.linode.com/docs/tools-reference/tools/using-the-terminal/). Knowing how [GraphQL](https://www.graphql.com/) works is a plus, but not required. Gridsome is a great way to learn it.
 
 Gridsome requires [Node.js](https://nodejs.org/) (v8.3+) and recommends [Yarn](https://yarnpkg.com).
@@ -58,8 +57,8 @@ Gridsome requires [Node.js](https://nodejs.org/) (v8.3+) and recommends [Yarn](h
 1. Create `.vue` components in the `src/pages` directory to create page routes.
 2. Use `gridsome build` to generate static files in a `/dist` folder
 
-
 #### Learn more
+
 - [Core concepts](/docs/core-concepts/)
 - [How to host & deploy](/docs/deployment/)
 
@@ -76,4 +75,3 @@ import Newsletter from '@/components/Newsletter.vue'
 -    **[Nuxt.](https://nuxtjs.org/)** A Universal Vue.js Framework for server-side rendered (SSR) apps and websites. It also has a static site generator feature, but the main focus is SSR.
 
 -  **[Gatsby.js](https://www.gatsbyjs.org/)**  Gridsome is highly inspired by Gatsby.js (React.js based), which collects data sources and generates a static site from it. Gridsome is an alternative for Gatsby.js.
-
