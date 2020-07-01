@@ -29,7 +29,7 @@ To use `vue-infinite-loading` you'll need to add it to your `main.js` file first
 import InfiniteLoading from 'vue-infinite-loading'
 
 export default function(Vue, { router, head, isClient }) {
-	Vue.use(InfiniteLoading)
+  Vue.use(InfiniteLoading)
 }
 ```
 
@@ -43,19 +43,19 @@ Your paginated `<page-query>` would look something like this:
 
 ```graphql
 query ($page: Int) {
-	posts: allBlogPost(perPage: 10, page: $page) @paginate {
-		pageInfo {
-			totalPages
-			currentPage
-		}
-		edges {
-			node {
-				id
-				title
-				path
-			}
-		}
-	}
+  posts: allBlogPost(perPage: 10, page: $page) @paginate {
+    pageInfo {
+      totalPages
+      currentPage
+    }
+    edges {
+      node {
+        id
+        title
+        path
+      }
+    }
+  }
 }
 ```
 
@@ -76,36 +76,36 @@ Here's what that would look like:
 import PostCard from '~/components/PostCard.vue'
 
 export default {
-	components: {
-		PostCard
-	},
-	data() {
-		return {
-			loadedPosts: [],
-			currentPage: 1
-		}
-	},
-	created() {
-		this.loadedPosts.push(...this.$page.posts.edges)
-	},
-	methods: {
-		async infiniteHandler($state) {
-			if (this.currentPage + 1 > this.$page.posts.pageInfo.totalPages) {
-				$state.complete()
-			} else {
-				const { data } = await this.$fetch(
-					`/blog/${this.currentPage + 1}`
-				)
-				if (data.posts.edges.length) {
-					this.currentPage = data.posts.pageInfo.currentPage
-					this.loadedPosts.push(...data.posts.edges)
-					$state.loaded()
-				} else {
-					$state.complete()
-				}
-			}
-		}
-	}
+  components: {
+    PostCard
+  },
+  data() {
+    return {
+      loadedPosts: [],
+      currentPage: 1
+    }
+  },
+  created() {
+    this.loadedPosts.push(...this.$page.posts.edges)
+  },
+  methods: {
+    async infiniteHandler($state) {
+      if (this.currentPage + 1 > this.$page.posts.pageInfo.totalPages) {
+        $state.complete()
+      } else {
+        const { data } = await this.$fetch(
+          `/blog/${this.currentPage + 1}`
+        )
+        if (data.posts.edges.length) {
+          this.currentPage = data.posts.pageInfo.currentPage
+          this.loadedPosts.push(...data.posts.edges)
+          $state.loaded()
+        } else {
+          $state.complete()
+        }
+      }
+    }
+  }
 }
 ```
 
@@ -117,28 +117,28 @@ Now for the template. One important thing to remember here is that we're going t
 
 ```html
 <template>
-	<Layout>
-		<!-- List blog posts -->
-		<div class="posts">
-			<transition-group name="fade">
-				<PostCard
-					v-for="{ node } of loadedPosts"
-					:key="node.id"
-					:post="node"
-				/>
-			</transition-group>
-			<ClientOnly>
-				<infinite-loading @infinite="infiniteHandler" spinner="spiral">
-					<div slot="no-more">
-						You've scrolled through all the posts ;)
-					</div>
-					<div slot="no-results">
-						Sorry, no posts yet :(
-					</div>
-				</infinite-loading>
-			</ClientOnly>
-		</div>
-	</Layout>
+  <Layout>
+    <!-- List blog posts -->
+    <div class="posts">
+      <transition-group name="fade">
+        <PostCard
+          v-for="{ node } of loadedPosts"
+          :key="node.id"
+          :post="node"
+        />
+      </transition-group>
+      <ClientOnly>
+        <infinite-loading @infinite="infiniteHandler" spinner="spiral">
+          <div slot="no-more">
+            You've scrolled through all the posts ;)
+          </div>
+          <div slot="no-results">
+            Sorry, no posts yet :(
+          </div>
+        </infinite-loading>
+      </ClientOnly>
+    </div>
+  </Layout>
 </template>
 ```
 
@@ -153,11 +153,11 @@ As you can see we've wrapped our blog post component in a `<transition-group>` w
 ```css
 .fade-enter-active,
 .fade-leave-active {
-	transition: ease opacity 0.3s;
+  transition: ease opacity 0.3s;
 }
 .fade-enter,
 .fade-leave-to {
-	opacity: 0;
+  opacity: 0;
 }
 ```
 

@@ -23,9 +23,9 @@ You can also use SASS in **Vue Components** with the `lang="scss"` attribute:
 ```html
 <style lang="scss">
 .element {
-	&__nested {
-		color: Yay;
-	}
+  &__nested {
+    color: Yay;
+  }
 }
 </style>
 ```
@@ -63,7 +63,7 @@ function addStyleResource (rule) {
 }
 
 module.exports = {
-	// existing config
+  // existing config
 }
 ```
 
@@ -83,7 +83,7 @@ module.exports = {
     types.forEach(type => {
       addStyleResource(config.module.rule('scss').oneOf(type))
     })
-	}
+  }
 }
 ```
 
@@ -93,9 +93,9 @@ In Vue Components you add styles inside a `<style>` tag.
 ```html
 // Example.vue
 <template>
-	<div class="banner">
-		Hello!
-	</div>
+  <div class="banner">
+    Hello!
+  </div>
 </template>
 
 <style>
@@ -202,7 +202,7 @@ const tailwind = require('tailwindcss')
 const purgecss = require('@fullhuman/postcss-purgecss')
 
 const postcssPlugins = [
-	tailwind(),
+  tailwind(),
 ]
 
 if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss(require('./purgecss.config.js')))

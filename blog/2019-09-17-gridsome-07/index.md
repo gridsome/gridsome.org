@@ -130,7 +130,7 @@ To create a route for a [collection](/docs/collections/) you simply add `Collect
 // gridsome.config.js
 module.exports = {
   templates: {
-  	// These will look for and use src/templates/{name}.vue
+    // These will look for and use src/templates/{name}.vue
     Post: '/blog/:year/:month/:slug',
     Author: '/author/:name',
 

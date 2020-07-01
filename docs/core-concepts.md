@@ -25,7 +25,7 @@ Here is an example:
 <!-- src/templates/Post.vue -->
 <template>
   <Layout>
-  	<h1 v-html="$page.post.title" />
+    <h1 v-html="$page.post.title" />
   </Layout>
 </template>
 
@@ -48,7 +48,7 @@ Layouts are usually used like this in Pages:
 ```html
 <template>
   <Layout>
-  	<h1>About us</h1>
+    <h1>About us</h1>
   </Layout>
 </template>
 
