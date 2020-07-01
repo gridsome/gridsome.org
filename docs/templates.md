@@ -104,8 +104,8 @@ Pages generated from the `templates` configuration will have the node `id` avail
 ```html
 <template>
   <div>
-  	<h1 v-html="$page.post.title" />
-  	<div v-html="$page.post.content" />
+    <h1 v-html="$page.post.title" />
+    <div v-html="$page.post.content" />
   </div>
 </template>
 
