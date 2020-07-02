@@ -4,7 +4,7 @@ It is really easy to use any external or third-party JavaScript with Gridsome. S
 
 ## Add to Components
 
-### Using an external Vue Plugin 
+### Using an external Vue Plugin
 
 If you want to use external Vue plugins inside your component without defining it globally, you can do so by importing the package inside your component and registering it for your component.
 
@@ -32,7 +32,7 @@ export default {
 </script>
 ```
 
-### Using an external library 
+### Using an external library
 
 If you want to use a external JavaScript library inside your component, you can do so by importing the package and requiring it once the Vue components are mounted.
 
@@ -72,7 +72,7 @@ If you want scripts to be globally available you can add them to `src/main.js`.
 To use any external Vue plugin with Gridsome, just import the required plugin and pass the it to Vue using `Vue.use` inside your main.js file:
 
 ```javascript
-//main.js 
+//main.js
 
 import DefaultLayout from '~/layouts/Default.vue'
 import VueTypedJs from 'vue-typed-js'

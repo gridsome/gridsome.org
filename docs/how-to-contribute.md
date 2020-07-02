@@ -60,7 +60,7 @@ To add a new blog post to the gridsome.org blog:
 
 ## Submit a Starter
 
-Contributing a new starter project is a great way to help other Gridsome users to get off the ground quickly. If you want to list your project as an "official" Starter, you must commit the appropriate entry inside the Gridsome.org repo. 
+Contributing a new starter project is a great way to help other Gridsome users to get off the ground quickly. If you want to list your project as an "official" Starter, you must commit the appropriate entry inside the Gridsome.org repo.
 
 To add your Starter to gridsome.org:
 
@@ -80,7 +80,7 @@ To add your Starter to gridsome.org:
 **Recommendations to your Starter project**
 
 - Naming convention: `gridsome-starter-<YOUR PROJECT SUFFIX>`
-- Add Netlify [build settings](https://gridsome.org/docs/deploy-to-netlify/) to support "Install now" with Netlify directly out of our Starters section 
+- Add Netlify [build settings](https://gridsome.org/docs/deploy-to-netlify/) to support "Install now" with Netlify directly out of our Starters section
 - Your project README is automatically used as Starter description
 
 **Committing your Starter**

@@ -45,7 +45,7 @@ export default {
 
 If you don't want to import the layout into every page or template you can make a layout global. To make a layout global go to `src/main.js` and import your layout file into this file.
 
-For example: 
+For example:
 ```javascript
 // src/main.js
 
@@ -89,7 +89,7 @@ Since layouts work like components, it is possible to pass Props to layouts. For
 </template>
 ```
 
-This will pass a Prop to a layout with `sidebar = true`. In the **Layout component** this could look like this: 
+This will pass a Prop to a layout with `sidebar = true`. In the **Layout component** this could look like this:
 
 ```html
 <!-- Layout -->

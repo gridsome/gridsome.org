@@ -47,6 +47,6 @@ Done 🙂
 > If this is your first time using Surge, you'll be prompted to create a (free) account from the command line. This will only happen once.
 >
 
---- 
+---
 
 ⚠️ Consult the [Surge Docs](https://surge.sh/help/) for information about how to customize your deployment further. Remember that each time you redeploy your site, you will need to rerun `gridsome build` first.

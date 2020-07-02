@@ -77,7 +77,7 @@ module.exports = {
   chainWebpack (config) {
     // Load variables for all vue-files
     const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
-    
+
     types.forEach(type => {
       addStyleResource(config.module.rule('sass').oneOf(type))
     })
@@ -176,7 +176,7 @@ import DefaultLayout from '~/layouts/Default.vue'
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
     Vue.component('Layout', DefaultLayout)
-    
+
 }
 ```
 
@@ -354,8 +354,7 @@ npm install vuetify --save
 yarn add vuetify
 ```
 
-Then, you will need to register the Vuetify plugin, include the Vuetify CSS file, and add a link to the head 
-for Google's material design icons in your 'main.js' file, with Vuetify 2.0+ you will need to pass a new instance of Vuetify to appOptions. Icons and iconfonts are now built into Vuetify 2.0+. You can install them as a local dependency or add them as a stylesheet in your head from a CDN, more information on Vuetify icon installation is available [here](https://vuetifyjs.com/en/customization/icons):
+Then, you will need to register the Vuetify plugin, include the Vuetify CSS file, and add a link to the head for Google's material design icons in your 'main.js' file, with Vuetify 2.0+ you will need to pass a new instance of Vuetify to appOptions. Icons and iconfonts are now built into Vuetify 2.0+. You can install them as a local dependency or add them as a stylesheet in your head from a CDN, more information on Vuetify icon installation is available [here](https://vuetifyjs.com/en/customization/icons):
 
 ```js
 // v1.5
@@ -408,8 +407,7 @@ export default function (Vue, { appOptions, head }) {
 }
 ```
 
-Finally, there is one last thing you will need in order to build your application with Vuetify. 
-You will need to whitelist Vuetify in webpack in order to build. 
+Finally, there is one last thing you will need in order to build your application with Vuetify. You will need to whitelist Vuetify in webpack in order to build.
 
 First, install the webpack-node-externals plugin:
 
