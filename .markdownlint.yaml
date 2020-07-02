@@ -35,7 +35,5 @@ MD037: false
 MD040: false
 # first-line-heading/first-line-h1
 MD041: false
-# code-block-style
-MD046: false
 # single-trailing-newline
 MD047: false
