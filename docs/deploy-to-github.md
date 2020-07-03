@@ -1,4 +1,4 @@
-# Deploy to GitHub pages
+# Deploy to GitHub Pages
 
 GitHub Pages allows you to deploy your site to GitHub's free static site hosting service.
 
