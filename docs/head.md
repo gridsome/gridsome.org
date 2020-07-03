@@ -23,7 +23,7 @@ export default function (Vue, { head }) {
     href: 'https://some-server.com/external-styleheet.css'
   })
   
-  // Add an external Javascript before the closing </body> tag
+  // Add an external JavaScript before the closing </body> tag
   head.script.push({
     src: 'https://some-server.com/external-script.js',
     body: true
