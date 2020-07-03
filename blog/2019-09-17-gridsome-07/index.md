@@ -260,7 +260,7 @@ The new [Schema API](/docs/schema-api/) is deprecating previous methods for cust
 
 #### New type for the `$id` variable
 
-The `$id` variable in `<page-query>` for nodes has previously been a `String` type. Even though the `id` field in the schema was of type `ID`. But the `$id` input variable must also be a `ID` type from now on. Gridsome will fix the type for you automatically and show a deprecation notice untill you have updated the query.
+The `$id` variable in `<page-query>` for nodes has previously been a `String` type. Even though the `id` field in the schema was of type `ID`. But the `$id` input variable must also be a `ID` type from now on. Gridsome will fix the type for you automatically and show a deprecation notice until you have updated the query.
 
 🙌 You will probably get many deprecated messages on your current Gridsome project, but we think these changes are a right direction as we're getting close to a 1.0 version.
 
