@@ -3,7 +3,7 @@
 ## Prerequisites
 
 1. Create a project op Google Cloud Platform
-2. Have acces to DNS record of your domain
+2. Have access to DNS record of your domain
 
 You can host a static website on a Google Cloud Storage bucket for a domain you own.
 
