@@ -178,7 +178,7 @@
   description: A minimalistic starter showcasing Shopify & Gridsome working together
   screenshot: ./screenshots/gridsome-starter-shopify.png
   repo: thetre97/gridsome-starter-shopify
-  preview: https://gridsome-shopify-starter.netlify.com
+  preview: https://gridsome-starter-shopify.vercel.app
   author: travisreynolds
   tags: gridsome, starter, shopify
   platforms: shopify
@@ -325,3 +325,12 @@
   author: noxify
   tags: gridsome, starter, tailwind, tailwindcss, megamenu, dark-mode, search, fulltextsearch, blog, about, categories, tags, author, about, responsive
   platforms: markdown
+  
+- title: Shopify Starter
+  description: A minimalistic starter showcasing Shopify & Gridsome working together
+  screenshot: ./screenshots/gridsome-starter-shopify-account.png
+  repo: thetre97/gridsome-starter-shopify-account
+  preview: https://gridsome-starter-shopify-account.vercel.app
+  author: travisreynolds
+  tags: gridsome, starter, shopify, ecommerce, account
+  platforms: shopify
