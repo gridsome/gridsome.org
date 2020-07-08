@@ -11,7 +11,7 @@
         </h1>
 
         <p class="home-links">
-          <g-link  to="/docs/" class="button primary button--large">
+          <g-link  to="https://gridsomify.com" class="button primary button--large">
             Get started
           </g-link>
         </p>

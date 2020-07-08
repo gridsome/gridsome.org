@@ -20,7 +20,7 @@
     </div>
 
     <p class="home-links text-center">
-      <g-link  to="/docs/" class="button primary button--large">
+      <g-link  to="https://gridsomify.com" class="button primary button--large">
         Get started
       </g-link>
     </p>
