@@ -1,6 +1,6 @@
 <template>
   <nav class="main-nav flex gap-15">
-    <g-link to="https://gridsomify.com">
+    <g-link to="/docs/">
       <span class="main-nav__label">Docs</span>
     </g-link>
 
