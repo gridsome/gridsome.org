@@ -17,8 +17,8 @@
             rel="noopener noreferrer"
             target="_blank"
             :href="githubUrl"
-            title="View on Github"
-            aria-label="View on Github"
+            title="View on GitHub"
+            aria-label="View on GitHub"
             class="button button--blank">
             <github-icon />
           </a>

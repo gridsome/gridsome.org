@@ -57,7 +57,7 @@ module.exports = function (api) {
 }
 ```
 
-... or you could **bypass GraphQL** if you think it's a overkill in some use cases:
+... or you could **bypass GraphQL** if you think it's overkill in some use cases:
 
 ```js
 //gridsome.server.js
@@ -93,6 +93,7 @@ Add data by using `$context` in Vue component.
 Read more about the [Pages API](/docs/pages-api/)
 
 ## New function for fetching internal pages
+
 A new function available in [Client API](/docs/client-api/) lets you fetch internal pages. This is perfect for building lightboxes or «Click for more» pagination etc.
 
 ```js
@@ -115,7 +116,6 @@ export default {
 
 Learn more about [fetching internal pages](/docs/client-side-data/)
 
-
 ## Faster build times and smaller core JS bundle size
 
 Gridsome has been importing `page-query` data with webpack dynamic imports which means that webpack had to compile every JSON file into a JavaScript chunk. Having lots of pages would increase build times unnecessary. From now on, page data will be stored as raw JSON files without interference from webpack. And each file is prefetched and loaded on demand for each page. The overall JavaScript size is reduced by about 30% in most cases.
@@ -131,8 +131,8 @@ Gridsome has been importing `page-query` data with webpack dynamic imports which
 | `page-query.js` size | 510kb | *removed* |
 | Size of all JS chunks | 1000kb (excl. data chunks) | **570kb** (total) |
 
-
 ## New website design and starters library
+
 We redesigned https://gridsome.org to be more lightweight & clean. This is a website you will spend a lot of time at if you're developing Gridsome projects. We wanted it to require as little CPU power as possible. The old website killed CPUs with SVG path animations.
 
 We also added a [Starter library](/starters) to help anyone get quickly up and running with Gridsome.
@@ -158,7 +158,6 @@ We also added a [Starter library](/starters) to help anyone get quickly up and r
 - Render the current state in markup to prevent initial request.
 
 You will find all the changes in the [changelog](https://github.com/gridsome/gridsome/blob/master/gridsome/CHANGELOG.md)
-
 
 ## 3000 GitHub Stars 🌟🎉
 

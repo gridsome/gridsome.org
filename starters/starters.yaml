@@ -246,6 +246,32 @@
   tags: storyblok, cms
   platforms: storyblok
 
+- title: Buefy Starter Blog
+  description: A simple Gridsome blog starter using Buefy
+  screenshot: ./screenshots/gridsome-starter-buefy2.jpg
+  repo: wavrin/buefy-gridsome-blog
+  preview: https://vuefy-gridsome-blog.netlify.com/
+  author: wavrin
+  tags: gridsome, starter, blog, buefy
+  platforms: markdown
+
+- title: Tulip
+  description: Single page with Tailwind CSS
+  screenshot: ./screenshots/gridsome-starter-tulip.png
+  repo: Uninen/gridsome-starter-tulip
+  preview: https://gridsome-starter-tulip.netlify.com/
+  author: uninen
+  tags: tailwind, minimalistic, simple, singlepage
+
+- title: Docc
+  description: A beautiful starter theme for writing great documentation
+  screenshot: ./screenshots/docc.png
+  repo: mrcrmn/docc
+  preview: https://docc-theme.netlify.com/
+  author: mrcrmn
+  tags: gridsome, starter, documentation, docs, tailwind, dark mode
+  platforms: markdown
+
 - title: Gridsome Minimal Markdown Starter
   description: A very minimal starter theme that organizes blog posts by year
   screenshot: ./screenshots/gridsome-minimal-markdown-blog-840x840.png
@@ -253,4 +279,49 @@
   preview: https://gridsome-starter-minimal-blog.netlify.com/
   author: alexbrown
   tags: minimal, markdown, starter
+  platforms: markdown
+
+- title: Gridsome and Markdown Starter Kit (+Page Transitions)
+  description: Blog with cool page transitions
+  screenshot: ./screenshots/gridsome-and-markdown-starter-kit-paulozyzniewski-1680x1680.jpg
+  repo: OziOcb/Gridsome-and-Markdown-Starter-Kit
+  preview: https://gridsome-and-markdown-starter-kit.netlify.com/
+  author: OziOcb
+  tags: page transitions, blog, markdown, starter, gsap
+  platforms: markdown
+
+- title: Gridsome Auth0 Starter
+  description: Gridsome starter using Auth0 for the user authentication
+  screenshot: ./screenshots/gridsome-auth0-starter.png
+  repo: jsappme/gridsome-auth0-starter
+  preview: https://gridsome-auth0-starter.netlify.com/
+  author: herve76
+  tags: auth0, user, login, authentication, tailwind
+  platforms: auth0
+
+- title: Gridsome Starter Strapi
+  description: Gridsome starter blog using Strapi as headless CMS.
+  screenshot: ./screenshots/gridsome-starter-strapi-1680x1680.png
+  repo: lukaskoeller/gridsome-starter-strapi
+  preview: https://gridsome-starter-strapi.netlify.com/
+  author: lukaskoeller
+  tags: strapi, blog, starter, gridsome, simple, 
+  platforms: strapi
+
+- title: Gridsome Shopify Starter
+  description: Light PWA Headless Gridsome Shopify starter using TailwindCSS
+  screenshot: ./screenshots/gridsome-shopify-starter.png
+  repo: jsappme/gridsome-shopify-starter
+  preview: https://gridsome-shopify.netlify.com/
+  author: herve76
+  tags: shopify, ecommerce, commerce, cart, tailwindcss, headless, pwa
+  platforms: shopify
+  
+- title: Gridsome Liebling Starter
+  description: A gridsome starter based on Ghost Liebling and tailwindcss
+  screenshot: ./screenshots/gridsome-starter-liebling.jpg
+  repo: noxify/gridsome-starter-liebling
+  preview: https://gridsome-starter-liebling.now.sh/
+  author: noxify
+  tags: gridsome, starter, tailwind, tailwindcss, megamenu, dark-mode, search, fulltextsearch, blog, about, categories, tags, author, about, responsive
   platforms: markdown

@@ -18,6 +18,7 @@ module.exports = {
 Set a name for your project. The name is typically used in the title tag.
 
 ## siteDescription
+
 - Type `string`
 - Default `''`
 
@@ -77,6 +78,7 @@ module.exports = {
 Define routes and templates for collections.
 
 [Read more about using templates](/docs/templates/)
+
 ## metadata
 
 - Type `object`
