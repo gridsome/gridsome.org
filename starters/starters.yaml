@@ -290,6 +290,60 @@
   tags: page transitions, blog, markdown, starter, gsap
   platforms: markdown
 
+- title: Gridsome Auth0 Starter
+  description: Gridsome starter using Auth0 for the user authentication
+  screenshot: ./screenshots/gridsome-auth0-starter.png
+  repo: jsappme/gridsome-auth0-starter
+  preview: https://gridsome-auth0-starter.netlify.com/
+  author: herve76
+  tags: auth0, user, login, authentication, tailwind
+  platforms: auth0
+
+- title: Gridsome Starter Strapi
+  description: Gridsome starter blog using Strapi as headless CMS.
+  screenshot: ./screenshots/gridsome-starter-strapi-1680x1680.png
+  repo: lukaskoeller/gridsome-starter-strapi
+  preview: https://gridsome-starter-strapi.netlify.com/
+  author: lukaskoeller
+  tags: strapi, blog, starter, gridsome, simple,
+  platforms: strapi
+
+- title: Gridsome Shopify Starter
+  description: Light PWA Headless Gridsome Shopify starter using TailwindCSS
+  screenshot: ./screenshots/gridsome-shopify-starter.png
+  repo: jsappme/gridsome-shopify-starter
+  preview: https://gridsome-shopify.netlify.com/
+  author: herve76
+  tags: shopify, ecommerce, commerce, cart, tailwindcss, headless, pwa
+  platforms: shopify
+
+- title: Gridsome Liebling Starter
+  description: A gridsome starter based on Ghost Liebling and tailwindcss
+  screenshot: ./screenshots/gridsome-starter-liebling.jpg
+  repo: noxify/gridsome-starter-liebling
+  preview: https://gridsome-starter-liebling.now.sh/
+  author: noxify
+  tags: gridsome, starter, tailwind, tailwindcss, megamenu, dark-mode, search, fulltextsearch, blog, about, categories, tags, author, about, responsive
+  platforms: markdown
+
+- title: Gridsome Hubspot Starter
+  description: Gridsome starter to connect to your Hubspot CRM
+  screenshot: ./screenshots/gridsome-hubspot-starter.png
+  repo: jsappme/gridsome-hubspot-starter
+  preview: https://gridsome-hubspot-starter.netlify.com/
+  author: herve76
+  tags: hubspot, form, tailwind, crm, contact, deal, engagement
+  platforms: hubspot
+
+- title: Gridsome Starter Handy
+  description: A basic starter project with all of the packages that I would normally use. Great for headless local business sites, and side projects.
+  screenshot: ./screenshots/gridsome-starter-handy-1680x1680.jpg
+  repo: brettwray/gridsome-starter
+  preview: https://gridsome-starter-handy.netlify.app/
+  author: brettwray
+  tags: netlifycms, buefy, postcss, purgecss, mdi, responsive, simple, starter, blog, vuex, markdown
+  platforms: netlifycms
+
 - title: Gridsome 💚 Prismic
   description: A minimal Gridsome starter for Prismic
   screenshot: ./screenshots/gridsome_prismic_840x840.jpg

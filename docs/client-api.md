@@ -100,8 +100,8 @@ Fetch `page-query` results and [page context](/docs/pages-api#the-page-context) 
 export default {
   data () {
     return {
-      otherPageData: null
-      otherPageContext: null
+      otherPageData: null,
+      otherPageContext: null,
     }
   },
   async mounted () {
@@ -113,7 +113,7 @@ export default {
     } catch (error) {
       console.log(error)
     }
-  }
+  },
 }
 ```
 
@@ -152,4 +152,3 @@ if (process.isServer) {
   // server only code
 }
 ```
-

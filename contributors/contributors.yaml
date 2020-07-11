@@ -51,6 +51,12 @@
   bio: "Web Developer"
   avatar: ./images/calebanthony.png
 
+- id: herve76
+  name: Hervé Fulchiron
+  bio: "Full Stack Developer"
+  avatar: ./images/herve76.jpg
+  twitter: "@herve76"
+
 - id: drehimself
   name: Andre Madarang
   bio: "Web Developer"
@@ -163,6 +169,17 @@
   bio: "Front-end developer & designer"
   avatar: ./images/paulozyzniewski.jpg
   twitter: "@OziOcb"
+
+- id: lukaskoeller
+  name: Lukas Koeller
+  bio: "Frontend Developer & Designer"
+  avatar: ./images/lukaskoeller.jpg
+  twitter: "@KllrLukas"
+
+- id: brettwray
+  name: Brett Wray
+  bio: "Developer of things."
+  avatar: ./images/brettwray.jpg
 
 - id: ilrock
   name: Andrea Rocca

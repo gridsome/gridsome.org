@@ -21,8 +21,8 @@
       </Feature>
 
       <Feature>
-        <h3>Build on the JAMstack</h3>
-        <p>The future of the web is JavaScript, APIs, and Markup - <g-link to="/docs/jamstack/">the JAMstack</g-link>. Gridsome uses the power of blazing fast static site generation, JavaScript and APIs to create stunning modern web experiences.</p>
+        <h3>Build on the Jamstack</h3>
+        <p>The future of the web is JavaScript, APIs, and Markup - <g-link to="/docs/jamstack/">the Jamstack</g-link>. Gridsome uses the power of blazing fast static site generation, JavaScript and APIs to create stunning modern web experiences.</p>
       </Feature>
 
 
@@ -34,7 +34,7 @@
 
       <Feature>
         <h3>SEO-friendly</h3>
-        <p>Gridsome sites loads as static HTML before it hydrates into a fully Vue.js-powered SPA. This makes it possible for search engines able to crawl content and give better SEO ranking, and still have all the power of Vue.js.</p>
+        <p>Gridsome sites load as static HTML before they hydrate into fully Vue.js-powered SPAs. This makes it possible for search engines to be able to crawl content and give better SEO ranking, and still have all the power of Vue.js.</p>
       </Feature>
 
     </div>

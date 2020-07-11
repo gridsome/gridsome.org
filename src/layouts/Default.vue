@@ -1,7 +1,7 @@
 <template>
   <div id="app" dark>
     <Header />
-    <slot />
+    <slot></slot>
     <Footer v-if="footer !== false" />
   </div>
 </template>
