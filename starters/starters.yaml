@@ -343,3 +343,12 @@
   author: brettwray
   tags: netlifycms, buefy, postcss, purgecss, mdi, responsive, simple, starter, blog, vuex, markdown
   platforms: netlifycms
+
+- title: Gridsome 💚 Prismic
+  description: A minimal Gridsome starter for Prismic
+  screenshot: ./screenshots/gridsome_prismic_840x840.jpg
+  repo: ilrock/gridsome-starter-prismic
+  author: ilrock
+  preview: https://vibrant-pasteur-05a750.netlify.app
+  tags: starter, prismic
+  platforms: prismic

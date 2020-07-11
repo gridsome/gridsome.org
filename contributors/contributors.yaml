@@ -180,3 +180,9 @@
   name: Brett Wray
   bio: "Developer of things."
   avatar: ./images/brettwray.jpg
+
+- id: ilrock
+  name: Andrea Rocca
+  bio: "Full-stack developer"
+  avatar: ./images/ilrock.jpeg
+  twitter: "@ilrock__"
