@@ -123,7 +123,7 @@ Gridsome is passing `tagIdKeyName: 'key'` to vue-meta as default option.
 |----------|-------|---------------
 |style | Adds a style tag |[Docs](https://github.com/declandewet/vue-meta#style-object)
 |script | Adds a script tag | [Docs](https://github.com/declandewet/vue-meta#script-object)
-|meta  | Adds a meta tag | [Docs](https://github.com/declandewet/vue-meta#meta-object)
+|meta | Adds a meta tag | [Docs](https://github.com/declandewet/vue-meta#meta-object)
 |title | Changes title text | [Docs](https://github.com/declandewet/vue-meta#title-string)
-|titleTemplate | Dynamic title text |  [Docs](https://github.com/declandewet/vue-meta#titletemplate-string--function)
-|link  | Adds a link tag | [Docs](https://github.com/declandewet/vue-meta#link-object)
+|titleTemplate | Dynamic title text | [Docs](https://github.com/declandewet/vue-meta#titletemplate-string--function)
+|link | Adds a link tag | [Docs](https://github.com/declandewet/vue-meta#link-object)

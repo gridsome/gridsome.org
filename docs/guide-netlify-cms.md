@@ -151,7 +151,7 @@ Part 1, Bitbucket:
 1. Open [this](https://bitbucket.org/account/user) link
   1.1 Under **ACCESS MANAGEMENT** find OAuth link, and open it
 2. Scroll to "OAuth consumers" and click on the button "Add consumer"
-3. Fill in all the fields according to your website and use `https://api.netlify.com/auth/done` as   `authorization` callback URL
+3. Fill in all the fields according to your website and use `https://api.netlify.com/auth/done` as `authorization` callback URL
 4. Upon creation you will get the Key and Secret which will be used in Netlify
 
 Part 2, Netlify:

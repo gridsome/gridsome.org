@@ -12,7 +12,7 @@ The Schema API can be used in the `loadSource` and `createSchema` hooks.
 
 - types `string | array` *Required.*
 
-Schema types can be added as an [SDL](https://graphql.org/learn/schema/) string or by using the  [factory methods](/docs/schema-api/#factory-methods). Types for collections **must** implement the `Node` interface. And Gridsome will not infer field types for custom fields unless the [`@infer`](/docs/schema-api/#infer) directive is used.
+Schema types can be added as an [SDL](https://graphql.org/learn/schema/) string or by using the [factory methods](/docs/schema-api/#factory-methods). Types for collections **must** implement the `Node` interface. And Gridsome will not infer field types for custom fields unless the [`@infer`](/docs/schema-api/#infer) directive is used.
 
 ```js
 api.loadSource(({ addSchemaTypes }) => {

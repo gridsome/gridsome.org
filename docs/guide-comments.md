@@ -27,7 +27,7 @@ After it has been added to your package.json and installed you need to import vu
 ```js
 import VueDisqus from 'vue-disqus'
 
-export default function (Vue, { head })  {
+export default function (Vue, { head }) {
   Vue.use(VueDisqus)
 }
 ```
