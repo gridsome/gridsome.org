@@ -39,13 +39,3 @@ gridsome-helper-json support `<g-image>`, `<g-link>` and `<Pager>`.
 ![autocompletion-tag](./images/autocompletion-tag.png)
 
 ![autocompletion-attribute](./images/autocompletion-attribute.png)
-
-
-
-2. Add suffix `.vue` where import syntax.
-
-```js
-import VueFile from "@/path/to/VueFile.vue";
-```
-
-![path-mapping](./images/path-mapping.gif)
