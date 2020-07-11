@@ -146,13 +146,13 @@
   bio: "Developer"
   avatar: ./images/wavrin.jpg
   twitter: "@wavrin"
-  
+
 - id: uninen
   name: Ville Säävuori
   bio: "A Web enthusiast, Pythonist, Djangonaut and a DJ."
   avatar: ./images/uninen.jpg
   twitter: "@uninen"
-  
+
 - id: mrcrmn
   name: Marco Reimann
   bio: "Web Developer"
@@ -175,3 +175,8 @@
   bio: "Frontend Developer & Designer"
   avatar: ./images/lukaskoeller.jpg
   twitter: "@KllrLukas"
+
+- id: brettwray
+  name: Brett Wray
+  bio: "Developer of things."
+  avatar: ./images/brettwray.jpg
