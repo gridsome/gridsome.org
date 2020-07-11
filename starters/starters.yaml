@@ -326,6 +326,15 @@
   tags: gridsome, starter, tailwind, tailwindcss, megamenu, dark-mode, search, fulltextsearch, blog, about, categories, tags, author, about, responsive
   platforms: markdown
 
+- title: Gridsome Hubspot Starter
+  description: Gridsome starter to connect to your Hubspot CRM
+  screenshot: ./screenshots/gridsome-hubspot-starter.png
+  repo: jsappme/gridsome-hubspot-starter
+  preview: https://gridsome-hubspot-starter.netlify.com/
+  author: herve76
+  tags: hubspot, form, tailwind, crm, contact, deal, engagement
+  platforms: hubspot
+
 - title: Gridsome Starter Handy
   description: A basic starter project with all of the packages that I would normally use. Great for headless local business sites, and side projects.
   screenshot: ./screenshots/gridsome-starter-handy-1680x1680.jpg
