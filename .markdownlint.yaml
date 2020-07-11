@@ -31,8 +31,6 @@ MD034: false
 MD036: false
 # no-space-in-emphasis
 MD037: false
-# fenced-code-language
-MD040: false
 # first-line-heading/first-line-h1
 MD041: false
 # single-trailing-newline

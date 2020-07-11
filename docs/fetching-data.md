@@ -92,7 +92,7 @@ For more details on how to use this plugin, refer to the [plugin page](/plugins/
 
 To import data from a CSV file, use one of the many CSV importers available for NodeJS. In this example, we use [csv-parse](https://www.npmjs.com/package/csv-parse). First we install our new package:
 
-```
+```shell
 npm install csv-parse
 
 # or
