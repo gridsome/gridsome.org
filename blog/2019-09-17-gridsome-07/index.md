@@ -13,7 +13,7 @@ excerpt: "Version 0.7 is finally here! Enjoy Vue Components in Markdown, new Sch
 - [Custom App.vue](#custom-appvue): Use to create a global layout that can have full-page transitions.
 - [Deprecation notices](#deprecation-notices): Better deprecation messages in terminal.
 - [Shareable Network URL](#shareable-network-url): Perfect for mobile live preview with hot-reloading.
--  4000+ [GitHub Stars 🌟](https://github.com/gridsome/gridsome).
+- 4000+ [GitHub Stars 🌟](https://github.com/gridsome/gridsome).
 
 ## Vue Remark plugin
 
@@ -121,7 +121,7 @@ Previously, each collection has been given a route in order to assign it to a te
 
 > This gives better overview of all template routes, and you can also have multiple templates and routes for one collection. For example `/product/:slug` + `/product/:slug/reviews`.
 
-To create a route for a [collection](/docs/collections/) you simply add `CollectionName: '/any/route/:title'` to the new [templates](/docs/templates/)  config. A Vue component in `src/templates` with the same name as the collection will be used as template by default. Here are some examples:
+To create a route for a [collection](/docs/collections/) you simply add `CollectionName: '/any/route/:title'` to the new [templates](/docs/templates/) config. A Vue component in `src/templates` with the same name as the collection will be used as template by default. Here are some examples:
 
 ```js
 // gridsome.config.js
@@ -248,7 +248,7 @@ Routes for pages in `./src/pages` and all templates will include a trailing slas
 There are some methods and GraphQL fields that have been renamed. Using the old names will not break your site, but will show deprecation notices in the terminal:
 
 - Use `addMetadata()` instead of `addMetaData()`.
-- Use `addCollection()` instead of  `addContentType()`.
+- Use `addCollection()` instead of `addContentType()`.
 - Use `metadata` instead of `metaData` in the GraphQL schema and project config.
 
 #### Deprecated collection methods
