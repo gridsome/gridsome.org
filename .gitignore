@@ -5,10 +5,8 @@ src/.temp
 node_modules
 dist
 
-# NOTE(mtlynch): I'm not sure why the Gridsome convention is to omit
-# package-lock.json from source control, but it is. We can revisit this decision
-# later, but for now, we include package-lock.json here so that contributors
-# don't accidentally include it in commits.
+# yarn.lock is the authoritative lock file for the repo, so ignore
+# any package-lock.json file that npm generates.
 package-lock.json
 
 # Local Netlify folder
