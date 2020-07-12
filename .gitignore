@@ -5,5 +5,9 @@ src/.temp
 node_modules
 dist
 
+# yarn.lock is the authoritative lock file for the repo, so ignore
+# any package-lock.json file that npm generates.
+package-lock.json
+
 # Local Netlify folder
 .netlify
