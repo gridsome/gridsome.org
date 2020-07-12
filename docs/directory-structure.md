@@ -2,7 +2,7 @@
 
 A basic Gridsome project would be structured like this:
 
-```
+```text
 .
 ├── package.json
 ├── gridsome.config.js
