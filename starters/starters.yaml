@@ -352,3 +352,12 @@
   preview: https://vibrant-pasteur-05a750.netlify.app
   tags: starter, prismic
   platforms: prismic
+
+- title: Gridsome Starter Unalike
+  description: A simple publication using the public API for Unalike.
+  screenshot: ./screenshots/gridsome-starter-unalike-publication-840x840.jpg
+  repo: createunalike/gridsome-starter-unalike-publication
+  author: zacprosser
+  preview: https://gridsome-starter-unalike-publication.netlify.app
+  tags: starter, unalike
+  platforms: unalike
