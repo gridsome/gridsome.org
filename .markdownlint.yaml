@@ -3,6 +3,11 @@
 # Markdown files don't need to observe a line length limit.
 MD013: false
 
+# no-duplicate-heading/no-duplicate-header
+# It's acceptable to have duplicate headers in the same file sometimes, like
+# when multiple sections have a subsection called "### Example".
+MD024: false
+
 # no-trailing-punctuation
 # Without this rule suppression, the linter flags trailing punctuation in
 # headers like "## What makes Gridsome sites fast?" but we allow headers
@@ -31,8 +36,6 @@ MD033:
 MD001: false
 # ul-indent
 MD007: false
-# no-duplicate-heading/no-duplicate-header
-MD024: false
 # single-title/single-h1
 MD025: false
 # ol-prefix
