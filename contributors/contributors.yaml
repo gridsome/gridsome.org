@@ -186,3 +186,9 @@
   bio: "Full-stack developer"
   avatar: ./images/ilrock.jpeg
   twitter: "@ilrock__"
+
+- id: zacprosser
+  name: Zac Prosser
+  bio: "Media maker"
+  avatar: ./images/zacprosser.jpg
+  twitter: "@ilrock__"
