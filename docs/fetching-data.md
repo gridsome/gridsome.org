@@ -86,19 +86,32 @@ For more details on how to use this plugin, refer to the [plugin page](/plugins/
 
 ### YAML
 
-Import data from any yaml file to the GraphQL data layer with the [Data store API](/docs/data-store-api/). To use the API you need a `gridsome.server.js` file in the root folder of your Gridsome project.  First, though, you need to install the node packages `fs` and `js-yaml` into your project. Run the following command to install them:
+Import data from any yaml file to the GraphQL data layer with the [Data store API](/docs/data-store-api/). To use the API you need a `gridsome.server.js` file in the root folder of your Gridsome project.
 
-`npm install fs js-yaml --save`
+First, install the node package `js-yaml` into your project:
 
+```shell
+npm install js-yaml --save-dev
+```
 
-Here is an example `gridsome.server.js` file that imports the yaml files:
+Here's a sample YAML file you can import:
+
+```yaml
+# src/data/products.yaml
+- name: Cheerios
+  price: 2.99
+- name: Lucky Charms
+  price: 3.99
+```
+
+And this is an example `gridsome.server.js` file that imports the data from the yaml file above:
 
 ```js
 const fs = require('fs');
 const yaml = require('js-yaml');
 
-let fileContents = fs.readFileSync('./src/data/products.yaml', 'utf8');
-let { products } = yaml.safeLoad(fileContents);
+const fileContents = fs.readFileSync('./src/data/products.yaml', 'utf8');
+const products = yaml.safeLoad(fileContents);
 
 module.exports = function (api) {
   api.loadSource(async actions => {
