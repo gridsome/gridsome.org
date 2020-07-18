@@ -46,8 +46,6 @@ MD030: false
 MD031: false
 # blanks-around-lists
 MD032: false
-# no-bare-urls
-MD034: false
 # no-emphasis-as-heading/no-emphasis-as-header
 MD036: false
 # no-space-in-emphasis
