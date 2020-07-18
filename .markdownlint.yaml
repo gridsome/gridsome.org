@@ -14,17 +14,17 @@ MD024: false
 # like that.
 MD026: false
 
-# no-bare-urls
-# The linter flags http://example.com and wants them formatted like
-# <http://example.com>, but this doesn't improve readability.
-MD034: false
-
 # no-inline-html
 MD033:
   # We use inline HTML to embed the Newsletter component in a page.
   allowed_elements:
     - div
     - Newsletter
+
+# no-bare-urls
+# The linter flags http://example.com and wants them formatted like
+# <http://example.com>, but this doesn't improve readability.
+MD034: false
 
 # Note: Because this repo started without a linter, the rules below are
 # suppressed for compatibility with legacy code, but we should either fix the
