@@ -22,7 +22,7 @@
 
 ## How it works
 
-Gridsome **generates static html** that hydrates into a <strong>Vue SPA</strong> once loaded in the browser. This means you can build both **static websites** & **dynamic apps** with Gridsome.
+Gridsome **generates static html** that hydrates into a **Vue SPA** once loaded in the browser. This means you can build both **static websites** & **dynamic apps** with Gridsome.
 
 Gridsome builds one `.html` file and one `.json` file for every page. After first page load it only uses the `.json` files to prefetch and load data for the next pages. It also builds a `.js` bundle for each page that needs it (code splitting).
 

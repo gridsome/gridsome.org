@@ -42,10 +42,7 @@ surge dist/
 
 Done 🙂
 
->
-> __Note__: <br/>
-> If this is your first time using Surge, you'll be prompted to create a (free) account from the command line. This will only happen once.
->
+> **Note**: If this is your first time using Surge, you'll be prompted to create a (free) account from the command line. This will only happen once.
 
 ---
 

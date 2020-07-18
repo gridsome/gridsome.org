@@ -24,7 +24,11 @@ MD031: false
 # blanks-around-lists
 MD032: false
 # no-inline-html
-MD033: false
+MD033:
+  # We use inline HTML to embed the Newsletter component in a page.
+  allowed_elements:
+    - div
+    - Newsletter
 # no-bare-urls
 MD034: false
 # no-emphasis-as-heading/no-emphasis-as-header
