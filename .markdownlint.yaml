@@ -1,4 +1,8 @@
 ---
+# line-length
+# Markdown files don't need to observe a line length limit.
+MD013: false
+
 # no-trailing-punctuation
 # Without this rule suppression, the linter flags trailing punctuation in
 # headers like "## What makes Gridsome sites fast?" but we allow headers
@@ -27,8 +31,6 @@ MD033:
 MD001: false
 # ul-indent
 MD007: false
-# line-length
-MD013: false
 # no-duplicate-heading/no-duplicate-header
 MD024: false
 # single-title/single-h1
