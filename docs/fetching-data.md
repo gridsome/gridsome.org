@@ -118,7 +118,7 @@ module.exports = function (api) {
     const collection = actions.addCollection({
       typeName: 'Products'
     })
-    
+
     for (const product of products) {
       collection.addNode(product);
     }
