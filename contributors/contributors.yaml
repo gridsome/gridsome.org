@@ -192,3 +192,9 @@
   bio: "Media maker"
   avatar: ./images/zacprosser.jpg
   twitter: "@ilrock__"
+
+- id: edmundekott
+  name: Edmund Ekott
+  bio: 'Frontend Engineer'
+  avatar: ./images/edmundekott.jpg
+  twitter: "@26th_edmund"
