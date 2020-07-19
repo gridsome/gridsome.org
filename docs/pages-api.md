@@ -131,11 +131,13 @@ query ($customValue: String) {
 module.exports = function (api) {
   api.createPages(async ({ graphql, createPage }) => {
     const { data } = await graphql(`{
-      allProduct {
-        edges {
-          node {
-            id
-            slug
+      query{
+        allProduct {
+          edges {
+            node {
+              id
+              slug
+            }
           }
         }
       }
