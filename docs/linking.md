@@ -45,6 +45,6 @@ To link to **#anchor** links you need to use the normal `<a href="#anchor">` tag
 |Property |Default|Description|
 |---------|-------|-----------|
 |to       |*required*|[Guide →](https://router.vuejs.org/api/#to)|
-|exact    |				|[Guide →](https://router.vuejs.org/api/#exact)|
-|active-class|active				|[Guide →](https://router.vuejs.org/api/#active-class)|
-|exact-active-class|active--exact				|[Guide →](https://router.vuejs.org/api/#exact-active-class)|
+|exact    |        |[Guide →](https://router.vuejs.org/api/#exact)|
+|active-class|active        |[Guide →](https://router.vuejs.org/api/#active-class)|
+|exact-active-class|active--exact        |[Guide →](https://router.vuejs.org/api/#exact-active-class)|

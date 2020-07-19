@@ -1,20 +1,20 @@
 # Add SVG icons
 
-
 ## As plain markup
+
 The simplest way to use SVG icons in Gridsome is to just add them as normal markup. This gives a lot of flexibility with the power of Vue.  Here is an example where we have added an icon from https://feathericons.com/ as markup.
 
 ```html
 <template>
- <svg 
-  xmlns="http://www.w3.org/2000/svg" 
-  width="24" height="24" 
-  viewBox="0 0 24 24" 
-  fill="none" 
-  stroke="currentColor" 
-  stroke-width="2" 
-  stroke-linecap="round" 
-  stroke-linejoin="round" 
+ <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24" height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
   class="feather feather-bell">
     <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
     <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
@@ -23,6 +23,7 @@ The simplest way to use SVG icons in Gridsome is to just add them as normal mark
 ```
 
 ## Using SVGs as Components
+
 You can import SVGs as you do with any other Vue component with `vue-svg-loader`. Start by installing the library:
 
 ```shell
@@ -91,11 +92,11 @@ You can now use the icons anywhere in your components/templates:
 <font-awesome :icon="['fab', 'twitter']"/>
 ```
 
-And best of all, the SVG for Github/Twitter icons will be the only ones added to our final build. Make sure you read the docs on [vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome) to get full details on how to use the whole suite of FontAwesome fonts together.
+And best of all, the SVG for GitHub/Twitter icons will be the only ones added to our final build. Make sure you read the docs on [vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome) to get full details on how to use the whole suite of FontAwesome fonts together.
 
 ## Purge CSS
 
-If you are using Purge CSS you have to include Font Awesome classes in the whitelist for the icons to work properly in the producton enviroment. A code example with Tailwind and Purge CSS for `gridsome.config.js`:
+If you are using Purge CSS you have to include Font Awesome classes in the whitelist for the icons to work properly in the production environment. A code example with Tailwind and Purge CSS for `gridsome.config.js`:
 
 ```js
 class TailwindExtractor {

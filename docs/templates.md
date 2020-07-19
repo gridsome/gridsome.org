@@ -2,7 +2,6 @@
 
 > Templates are used to create single pages for nodes in a [collection](/docs/collections/). Nodes need a corresponding page in order to be presented on its own URL.
 
-
 ## Setup templates
 
 The example below shows you how to setup route and template for a [collection](/docs/collections/) named `Post`. A component located at `src/templates/{Collection}.vue` will be used as template if no component is specified.
@@ -104,8 +103,8 @@ Pages generated from the `templates` configuration will have the node `id` avail
 ```html
 <template>
   <div>
-  	<h1 v-html="$page.post.title" />
-  	<div v-html="$page.post.content" />
+    <h1 v-html="$page.post.title" />
+    <div v-html="$page.post.content" />
   </div>
 </template>
 
