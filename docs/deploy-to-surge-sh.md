@@ -19,7 +19,7 @@ npm install -g surge
 To install the surge CLI with `yarn`, paste the following into your terminal:
 
 ```shell
-yarn global add  surge
+yarn global add surge
 ```
 
 ## Step 2: Preparing to deploy
@@ -42,10 +42,7 @@ surge dist/
 
 Done 🙂
 
->
-> __Note__: <br/>
-> If this is your first time using Surge, you'll be prompted to create a (free) account from the command line. This will only happen once.
->
+> **Note**: If this is your first time using Surge, you'll be prompted to create a (free) account from the command line. This will only happen once.
 
 ---
 

@@ -11,7 +11,7 @@ Layouts are _just_ &nbsp;**.vue components** located in `src/layouts` and need t
 <template>
   <div>
     <header />
-    <slot></slot> <!-- Page content will be inserted here  -->
+    <slot></slot> <!-- Page content will be inserted here -->
     <footer />
   </div>
 </template>
@@ -119,9 +119,9 @@ To add multiple slots to a layout you need to name them. In this example we have
 <!-- Layout -->
 <template>
   <div>
-    <slot /> <!-- Default slot  -->
+    <slot /> <!-- Default slot -->
     <div class="sidebar" v-if="$slots.sidebar">
-      <slot name="sidebar"></slot> <!-- Sidebar slot  -->
+      <slot name="sidebar"></slot> <!-- Sidebar slot -->
     </div>
   </div>
 </template>

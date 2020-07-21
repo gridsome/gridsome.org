@@ -69,3 +69,11 @@
 - id: auth0
   title: Auth0
   logo: ./logos/auth0.svg
+
+- id: hubspot
+  title: Hubspot
+  logo: ./logos/hubspot.svg
+
+- id: unalike
+  title: Unalike
+  logo: ./logos/unalike.svg
