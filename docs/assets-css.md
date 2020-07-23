@@ -407,7 +407,7 @@ export default function (Vue, { appOptions, head }) {
 }
 ```
 
-Finally, there is one last thing you will need in order to build your application with Vuetify. You will need to whitelist Vuetify in webpack in order to build.
+Finally, there is one last thing you will need in order to build your application with Vuetify. You will need to allowlist Vuetify in webpack in order to build.
 
 First, install the webpack-node-externals plugin:
 
@@ -419,7 +419,7 @@ npm install webpack-node-externals --save-dev
 yarn add webpack-node-externals --dev
 ```
 
-Then modify your `gridsome.server.js` file to include the webpack-node-externals package, and whitelist Vuetify.
+Then modify your `gridsome.server.js` file to include the webpack-node-externals package, and allowlist Vuetify.
 ```js
 const nodeExternals = require('webpack-node-externals')
 
@@ -428,7 +428,7 @@ module.exports = function (api) {
     if (isServer) {
       config.externals([
         nodeExternals({
-          whitelist: [/^vuetify/]
+          allowlist: [/^vuetify/]
         })
       ])
     }
@@ -439,6 +439,7 @@ module.exports = function (api) {
   })
 }
 ```
+>❗️Note: Before webpack-node-externals version 2.4, use whitelist instead of allowlist.
 
 Or save your bundle size by using [vuetify treeshaking](https://vuetifyjs.com/en/customization/a-la-carte).
 
