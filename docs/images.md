@@ -72,7 +72,7 @@ Crop the image by settings both `width` and `height` attributes. The image will 
 |height    |          |Crop & resize image to specified height in pixels
 |alt       |          |Alternate text for the image
 |fit       |`"cover"` |How to crop images. See properties below.
-|position  |`"centre"`|Position of the of the visible part for 'cover' or 'contain'. (`top`, `right top`, `right`, `right bottom`, `bottom`, `left bottom`, `left`, `left top`).
+|position  |`"center"`|Position of the of the visible part for 'cover' or 'contain'. (`top`, `right top`, `right`, `right bottom`, `bottom`, `left bottom`, `left`, `left top`).
 |background|          |Background color for 'contain'
 |immediate |`false`   |Set to `true` to disable lazy-loading
 |blur      |`40`      |How much in pixels to blur the image placeholder
