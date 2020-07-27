@@ -134,7 +134,7 @@ query {
 ## Multiple Queries in Page components
 
 If you need to make multiple GraphQL queries, here is how you do it. The results will be stored in a
-`$page` property inside the page component and you can further differentiae by specifying the query name.
+`$page` property inside the page component and you can further differentiate by specifying the query name.
 
 ```html
 <template>
