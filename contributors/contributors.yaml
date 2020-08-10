@@ -198,3 +198,9 @@
   bio: 'Frontend Engineer'
   avatar: ./images/edmundekott.jpg
   twitter: "@26th_edmund"
+
+- id: bradsiefert
+  name: Brad Siefert
+  bio: "UI/UX Designer and frontend developer from Chicago"
+  avatar: ./images/bradsiefert.jpg
+  twitter: "@bksiefert"

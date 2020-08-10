@@ -370,3 +370,12 @@
   author: edmundekott
   tags: gridsome, starter, portfolio
   platforms: markdown
+
+- title: Gridsome Neumorphic Starter
+  description: A blog starter theme for Gridsome with a minimalistic, you might even say, neumorphic design.
+  screenshot: ./screenshots/gridsome-starter-neumorphic-1680.png
+  repo: bradsiefert/gridsome-starter-neumorphic
+  preview: https://gridsome-neumorphic-starter.netlify.app/
+  author: bradsiefert
+  tags: gridsome, blog, neumorphic, darkmode
+  platforms: markdown
