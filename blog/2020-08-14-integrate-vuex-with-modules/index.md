@@ -2,9 +2,9 @@
 title: How to integrate Vuex with Modules with Gridsome - Shopping Cart Example
 slug: vuex-modules-with-gridsome
 author: [dozy.io]
-date: 2020-06-01
+date: 2020-08-14
 tags: ['vuex']
-excerpt: 'Vuex coupled with Gridsome provides a state management pattern you can use across your static site. This post will expand on default documentation to explain how you can use Vuex to seperate your sites state into modules.'
+excerpt: 'Vuex coupled with Gridsome provides a state management pattern you can use across your static site. This post will expand on default documentation to explain how you can use Vuex to separate your sites state into modules.'
 ---
 
 ## What is Vuex? Why should I use it with Gridsome?
@@ -121,7 +121,7 @@ At this point we have Vuex setup using modules within Gridsome!
 
 ## Shopping Cart Example
 
-The following shopping cart example will show how to setup products using markdown with shopping cart functionality and state managed by Vuex. For the Vuex state to be persistant across page reloads and also across tabs we'll install `vuex-persistedstate` and `vuex-shared-mutations`.
+The following shopping cart example will show how to setup products using Markdown files with shopping cart functionality and state managed by Vuex. For the Vuex state to be persistant across page reloads and also across tabs we'll install `vuex-persistedstate` and `vuex-shared-mutations`.
 
 #### Step 1 - Install dependencies
 
@@ -174,7 +174,7 @@ module.exports = {
       siteName: 'Gridsome With Vuex Modules - Shopping Cart Example',
       plugins: [
           {
-              // Create products from markdown files
+              // Create products from Markdown files
               use: '@gridsome/source-filesystem',
               options: {
                   typeName: 'Product',
