@@ -74,11 +74,11 @@
   avatar: ./images/pehaa.png
   twitter: "@pehaa"
 
-- id: tvanblargan
-  name: Tyler VanBlargan
+- id: terabytetiger
+  name: Tyler V
   bio: "Web Developer"
-  avatar: ./images/tvanblargan.jpg
-  twitter: "@PichuPlayer"
+  avatar: ./images/terabytetiger.jpg
+  twitter: "@TerabyteTiger"
 
 - id: kendallstrautman
   name: Kendall Strautman
@@ -195,6 +195,6 @@
 
 - id: edmundekott
   name: Edmund Ekott
-  bio: 'Frontend Engineer'
+  bio: "Frontend Engineer"
   avatar: ./images/edmundekott.jpg
   twitter: "@26th_edmund"
