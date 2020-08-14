@@ -370,3 +370,12 @@
   author: edmundekott
   tags: gridsome, starter, portfolio
   platforms: markdown
+
+- title: Gridsome Netlify-CMS Buefy
+  description: A simple blog starter using buefy, markdown, and netlify-cms.
+  screenshot: ./screenshots/gridsome-starter-netlifycms-buefy.png
+  repo: chad-collins/gridsome-starter-netlifycms-buefy
+  preview: https://gridsome-starter.chadcollins.net
+  author: chadcollins
+  tags: gridsome, starter, buefy, netlify, markdown
+  platforms: markdown

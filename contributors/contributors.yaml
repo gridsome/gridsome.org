@@ -198,3 +198,9 @@
   bio: "Frontend Engineer"
   avatar: ./images/edmundekott.jpg
   twitter: "@26th_edmund"
+
+- id: chadcollins
+  name: Chad Collins
+  bio: "Full-Stack Developer"
+  avatar: ./images/chadcollins.png
+  twitter: "@chadcodes"
