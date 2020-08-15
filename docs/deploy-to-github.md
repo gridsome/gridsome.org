@@ -41,6 +41,11 @@ GitHub Pages allows you to have a "GitHub user page" that acts as a profile/main
   ```js
   siteUrl: 'https://www.yourname.com',
   ```
+  * In addition to this, you will want to create a `CNAME` file inside `/static` to avoid a known issue in GitHub Pages that results in the deployment [incorrectly overwriting the custom domain](https://github.com/tschaub/gh-pages/issues/213) setting within GitHub user settings.
+    ```js
+    // CNAME
+    custom.domain.com
+    ```
 * If you are using an apex domain for your GitHub user page (ie. `https://yourname.com` points to all of your GitHub Pages sites), and your Gridsome project is *not* your GitHub user page (not on the root `https://yourname.com` page, but a separate repo), then you will need to make sure `pathPrefix` matches your Gridsome project's repo name in `gridsome.config.js`:
   ```js
   pathPrefix: '/<your-gridsome-repo-name>',
