@@ -379,3 +379,20 @@
   author: chadcollins
   tags: gridsome, starter, buefy, netlify, markdown
   platforms: markdown
+
+- title: Gridsome Strapi Portfolio
+  description: A simple portfolio starter using Strapi and Gridsome
+  screenshot: ./screenshots/gridsome-starter-portfolio-strapi.png
+  repo: strapi/strapi-starter-gridsome-portfolio
+  preview: https://strapi-starter-gridsome-portfolio.vercel.app/
+  author: remi2j
+  tags: gridsome, starter, strapi, portfolio
+  platforms: strapi
+
+- title: Gridsome Strapi Blog
+  description: A simple blog starter using Strapi and Gridsome
+  screenshot: ./screenshots/gridsome-starter-blog-strapi.png
+  repo: strapi/strapi-starter-gridsome-blog
+  author: mcastres
+  tags: gridsome, starter, strapi, blog
+  platforms: strapi
