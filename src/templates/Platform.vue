@@ -61,6 +61,11 @@ export default {
   components: {
     Starters,
     StarterCard
+  },
+  metaInfo () {
+    return {
+      title: `${this.$page.platform.title} starters`
+    }
   }
 }
 </script>
