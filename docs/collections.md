@@ -4,11 +4,11 @@
 
 ## Adding a collection
 
-Collections can be added by [source plugins]() or you can do it yourself with the [Data Store API](/docs/data-store-api/). The collections are stored in a local in-memory data store during `development` and `build`. Nodes can be **sourced** from local files (Markdown, JSON, YAML etc.) or any external APIs.
+Collections can be added by [source plugins](/plugins/) or you can do it yourself with the [Data Store API](/docs/data-store-api/). The collections are stored in a local in-memory data store during `development` and `build`. Nodes can be **sourced** from local files (Markdown, JSON, YAML etc.) or any external APIs.
 
 ![Collections](./images/node-pages.png)
 
-### Add collections with Source plugins
+## Add collections with Source plugins
 
 The easiest way to add collections to Gridsome is with **source plugins**. This example creates collections from a **WordPress site**. The `typeName` option for source plugins are usually for prefixing collection names that the plugin adds.
 
@@ -29,8 +29,7 @@ module.exports = {
 
 You can browse **source plugins** on the [plugin page](/plugins).
 
-
-### Add collections with Data Store API
+## Add collections with Data Store API
 
 You can manually add collections from any external APIs. This example creates a collection named `Post` that fetches content from an API and adds the results as nodes to the collection.
 
@@ -57,17 +56,16 @@ module.exports = function (api) {
 
 Learn more about the [Data Store API](/docs/data-store-api/).
 
-
 ## Collections in GraphQL
 
-Each collection will add two root fields to the [GraphQL schema](/docs/data-layer/) that are used to retrieve nodes in your pages. The field names are auto generated based on the collection name. If you name the collection `Post`, you will have these fields available in the schema:
+Each collection will add two root fields to the [GraphQL schema](/docs/data-layer/) that are used to retrieve nodes in your pages. The field names are auto-generated based on the collection name. If you name the collection `Post`, you will have these fields available in the schema:
 
 - `post` Get a single node by `id`.
 - `allPost` Get a list of nodes. *(Can be sorted and filtered.)*
 
 #### Automatic schema generation
 
-Each collection type in the schema will have fields that are auto generated based on discovered data on startup. That's great for simple projects but will often lead to errors with for example missing fields because content has been removed in an external source. You can use the [Schema API](/docs/schema-api/) to define your own schema that will persist when data changes.
+Each collection type in the schema will have fields that are auto-generated based on discovered data on startup. That's great for simple projects but will often lead to errors with for example missing fields because content has been removed in an external source. You can use the [Schema API](/docs/schema-api/) to define your own schema that will persist when data changes.
 
 *Custom schema types for a collection **must** implement the `Node` interface.*
 
@@ -79,6 +77,6 @@ Read more about how to [query nodes in GraphQL](/docs/querying-data/).
 
 ## Templates for collections
 
-[Templates](/docs/templates/) are used to create single pages for **nodes** in a collection. Nodes needs a corresponding page in order to be presented on its own URL.
+[Templates](/docs/templates/) are used to create single pages for **nodes** in a collection. Nodes need a corresponding page in order to be presented on its own URL.
 
 [Learn more here](/docs/templates/)

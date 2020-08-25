@@ -12,12 +12,13 @@ The Schema API can be used in the `loadSource` and `createSchema` hooks.
 
 - types `string | array` *Required.*
 
-Schema types can be added as an [SDL](https://graphql.org/learn/schema/) string or by using the  [factory methods](/docs/schema-api/#factory-methods). Types for collections **must** implement the `Node` interface. And Gridsome will not infer field types for custom fields unless the [`@infer`](/docs/schema-api/#infer) directive is used.
+Schema types can be added as an [SDL](https://graphql.org/learn/schema/) string or by using the [factory methods](/docs/schema-api/#factory-methods). Types for collections **must** implement the `Node` interface. And Gridsome will not infer field types for custom fields unless the [`@infer`](/docs/schema-api/#infer) directive is used.
 
 ```js
 api.loadSource(({ addSchemaTypes }) => {
   addSchemaTypes(`
     type Post implements Node {
+      id: ID!
       title: String
     }
   `)
@@ -46,9 +47,9 @@ api.loadSource(({ addSchemaTypes, schema }) => {
 
 - resolvers `object` *Required.*
 
-Resolvers are methods that are executed on each field in the query. The default resolvers for types like `String` or `Int` simply returns the value without any modifications. Resolvers for fields that are referencing another node are interacting with the internal store to return data from the requested node.
+Resolvers are methods that are executed on each field in the query. The default resolvers for types like `String` or `Int` simply return the value without any modifications. Resolvers for fields that are referencing another node are interacting with the internal store to return data from the requested node.
 
-Use the `addSchemaResolvers()` action to add new fields or override existing fields. The resolver method will recieve four arguments that can be used:
+Use the `addSchemaResolvers()` action to add new fields or override existing fields. The resolver method will receive four arguments that can be used:
 
 ```js
 addSchemaResolvers({
@@ -63,6 +64,8 @@ addSchemaResolvers({
 - `context` An object with references to the internal store etc.
 - `info` Information about the execution state of the query.
 
+Note that any fields you add via custom resolvers [will not work in the `filter` portion of GraphQL queries](https://github.com/gridsome/gridsome/issues/1196). This is a gap in Gridsome's GraphQL implementation and will be fixed before Gridsome's 1.0 release.
+
 [Read more about GraphQL resolvers](https://graphql.org/learn/execution/#root-fields-resolvers)
 
 #### Add a new field with a custom resolver
@@ -73,8 +76,11 @@ This example adds a new `fullName` field on the `User` type which merges two fie
 api.loadSource(({ addSchemaResolvers }) => {
   addSchemaResolvers({
     User: {
-      fullName(obj) {
-        return `${obj.firstName} ${obj.lastName}`
+      fullName: {
+        type: 'String',
+        resolve(obj) {
+          return `${obj.firstName} ${obj.lastName}`
+        }
       }
     }
   })
@@ -90,6 +96,7 @@ api.loadSource(({ addSchemaResolvers }) => {
   addSchemaResolvers({
     Post: {
       title: {
+        type: 'String',
         args: {
           uppercased: 'Boolean'
         },
@@ -137,7 +144,7 @@ api.loadSource(({ addSchema }) => {
 
 ### @infer
 
-Custom schemas for meta data and collections will not infer any more field types from the source by default. Add the `@infer` extension to add discovered fields that isn't defined in the custom schema.
+Custom schemas for meta data and collections will not infer any more field types from the source by default. Add the `@infer` extension to add discovered fields that aren't defined in the custom schema.
 
 ```graphql
 type Post implements Node @infer {

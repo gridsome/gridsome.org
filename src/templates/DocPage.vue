@@ -1,17 +1,18 @@
 <template>
-  <DocsLayout :subtitles="$page.doc.subtitles" :links="links">
+  <DocsLayout :subtitles="subtitles" :links="links">
     <VueRemarkContent class="post mb"></VueRemarkContent>
   </DocsLayout>
 </template>
 
 <page-query>
-query DocPage ($id: ID!) {
+query ($id: ID!) {
   doc: docPage (id: $id) {
     title
     headings (depth: h1) {
       value
     }
-    subtitles: headings (depth: h2) {
+    subtitles: headings {
+      depth
       value
       anchor
     }
@@ -26,6 +27,13 @@ export default {
   computed: {
     links () {
       return links
+    },
+    subtitles() {
+      // Remove h1, h4, h5, h6 titles
+      let subtitles = this.$page.doc.subtitles.filter(function(value, index, arr){
+        return [2,3].includes(value.depth)
+      })
+      return subtitles
     }
   },
   metaInfo () {

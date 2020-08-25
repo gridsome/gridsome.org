@@ -10,7 +10,6 @@
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
     "algoliasearch": "^3.32.0",
-    "babel-runtime": "^6.26.0",
     "clipboard-copy": "^3.0.0",
     "docsearch.js": "^2.6.2",
     "gridsome": "^0.7.0",
@@ -22,18 +21,21 @@
     "vue-scrollto": "^2.13.0"
   },
   "devDependencies": {
-    "@gridsome/plugin-critical": "^0.1.2",
-    "@gridsome/remark-prismjs": "^0.2.0",
+    "@gridsome/plugin-critical": "^0.2.0",
+    "@gridsome/remark-prismjs": "^0.4.0",
     "@gridsome/source-filesystem": "^0.6.0",
-    "@gridsome/transformer-remark": "^0.3.3",
-    "@gridsome/vue-remark": "^0.1.0",
-    "execa": "^1.0.0",
-    "fs-extra": "^7.0.1",
-    "js-yaml": "^3.13.1",
-    "node-sass": "^4.9.3",
-    "raw-loader": "^0.5.1",
+    "@gridsome/transformer-remark": "^0.6.2",
+    "@gridsome/vue-remark": "^0.2.4",
+    "execa": "^4.0.2",
+    "fs-extra": "^9.0.1",
+    "js-yaml": "^3.14.0",
+    "node-sass": "^4.14.1",
+    "raw-loader": "^4.0.1",
     "sass-loader": "^7.1.0",
-    "svg-to-vue-component": "^0.2.2",
+    "svg-to-vue-component": "^0.3.8",
     "webpack-node-externals": "^1.7.2"
+  },
+  "engines": {
+    "node": ">=12"
   }
 }

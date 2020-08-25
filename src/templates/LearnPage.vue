@@ -5,7 +5,7 @@
 </template>
 
 <page-query>
-query LearnPage ($id: ID!) {
+query ($id: ID!) {
   doc: learnPage (id: $id) {
     path
     content

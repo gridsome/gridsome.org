@@ -1,9 +1,8 @@
 # How it works
 
-Gridsome is a modern website development framework for creating fast and secure websites that can be deployed anywhere. Static HTML files are generated to create SEO-friendly markup that hydrates into a <strong>Vue.js-powered SPA</strong> once loaded in the browser.
+Gridsome is a modern website development framework for creating fast and secure websites that can be deployed anywhere. Static HTML files are generated to create SEO-friendly markup that hydrates into a **Vue.js-powered SPA** once loaded in the browser.
 
 Source plugins fetch content from local files or external APIs and store the data in a local database. A unified GraphQL data layer lets you extract only the data you need from the database and use it in your Vue.js components. The data is generated and stored as static JSON at build time.
-
 
 ![How it works](./images/how-it-works.png)
 
@@ -11,7 +10,6 @@ There are two ways to run Gridsome:
 
 - `gridsome develop` - Starts a **local development server**.
 - `gridsome build` - Generates **production ready** static files.
-
 
 ## Gridsome develop
 
@@ -26,7 +24,6 @@ The `gridsome develop` command starts a **local development server** with hot-re
 3. **Create GraphQL schema** - Generates the GraphQL schema from node types in the store.
 4. **Generate code** - Generates runtime code like routes, plugins, etc.
 5. **Bootstrap finish** - Starts the development server and shows the URLs in your console.
-
 
 ## Gridsome build
 
@@ -47,5 +44,4 @@ The `gridsome build` command prepares a project for **production**. This means i
 9. **Process files** - Local files are copied to the `dist` folder.
 10. **Process images** - Local images are processed and copied to the `dist` folder.
 
-
-> Services like **Netlify** and **Zeit Now** let you run `gridsome build` automatically from a **Git-repository** and host the generated files on a CDN for you. These services also have hooks that enable you to re-build the site after a Git-commit. Learn more about Git-based [deployment here](/docs/deployment/).
+> Services like **Netlify** and **Vercel (formerly ZEIT Now)** let you run `gridsome build` automatically from a **Git-repository** and host the generated files on a CDN for you. These services also have hooks that enable you to re-build the site after a Git-commit. Learn more about Git-based [deployment here](/docs/deployment/).

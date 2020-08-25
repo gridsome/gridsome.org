@@ -23,7 +23,7 @@ Use the `createPages` hook if you want to create pages. Pages created in this ho
   - **path** `string` *Required.*
   - **component** `string` *Required.*
   - context `object` *Optional context for the page and `page-query`.*
-  - queryVariables `object`  *Optional context only for `page-query`.*
+  - queryVariables `object` *Optional context only for `page-query`.*
 
 ```js
 module.exports = function (api) {
@@ -57,13 +57,13 @@ module.exports = function (api) {
   - **path** `string` *Required. Can be a fixed or dynamic route.*
   - **component** `string` *Required.*
   - context `object` *Optional context for the page and `page-query`.*
-  - queryVariables `object`  *Optional context only for `page-query`.*
+  - queryVariables `object` *Optional context only for `page-query`.*
 
 Create a new page.
 
 ### removePage(page)
 
-Removed a page created by `createPage`.
+Removes a page created by `createPage`.
 
 ### removePageByPath(path)
 
@@ -116,7 +116,7 @@ Use the context in the page component or as variables in `page-query`.
 </template>
 
 <page-query>
-query MyPage($customValue: String) {
+query ($customValue: String) {
   ...
 }
 </page-query>
@@ -139,7 +139,7 @@ module.exports = function (api) {
           }
         }
       }
-    `)
+    }`)
 
     data.allProduct.edges.forEach(({ node }) => {
       createPage({

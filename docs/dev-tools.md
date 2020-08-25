@@ -2,8 +2,8 @@
 
 Tools for easier Gridsome development
 
-
 ## ESLint plugin
+
 https://www.npmjs.com/package/eslint-plugin-gridsome
 
 ## Vetur
@@ -39,30 +39,3 @@ gridsome-helper-json support `<g-image>`, `<g-link>` and `<Pager>`.
 ![autocompletion-tag](./images/autocompletion-tag.png)
 
 ![autocompletion-attribute](./images/autocompletion-attribute.png)
-
-### Path mapping
-
-Gridsome can use Webpack's alias.  
-Vetur provide [path mapping](https://github.com/vuejs/vetur/blob/master/docs/setup.md#path-mapping).
-
-1. At project root create a `jsconfig.json`.
-
-```json
-{
-  "include": ["./src/**/*"],
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
-  }
-}
-```
-
-2. Add suffix `.vue` where import syntax.
-
-```js
-import VueFile from "@/path/to/VueFile.vue";
-```
-
-![path-mapping](./images/path-mapping.gif)

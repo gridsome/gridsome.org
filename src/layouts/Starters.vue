@@ -80,7 +80,8 @@ export default {
 .platform-count {
   margin-left: auto;
   padding: 0.15rem 0.4rem;
-  background-color: var(--inline-code-bg);
+  background-color: var(--bg-teritary);
+  transition: background-color .3s;
   border-radius: .3em;
   font-size: 0.7em;
 

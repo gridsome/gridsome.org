@@ -6,6 +6,7 @@
   &,
   &-md,
   &-full,
+  &-base,
   &-sm,
   &-mini {
     padding: 0 var(--space);
@@ -13,8 +14,8 @@
     margin-right: auto;
     width: 100%;
   }
-
   &-md { max-width: 760px }
+  &-base { max-width: 680px }
   &-sm { max-width: 630px }
   &-mini { max-width: 460px }
 

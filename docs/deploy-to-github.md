@@ -1,4 +1,4 @@
-# Deploy to GitHub pages
+# Deploy to GitHub Pages
 
 GitHub Pages allows you to deploy your site to GitHub's free static site hosting service.
 
@@ -26,7 +26,7 @@ There's a few steps to complete:
 
 **Notes**
 
-GitHub Pages allows you to have a "Github user page" that acts as a profile/main page on `<your-github-username>.github.io` by having a repo named `<your-github-username>.github.io`.
+GitHub Pages allows you to have a "GitHub user page" that acts as a profile/main page on `<your-github-username>.github.io` by having a repo named `<your-github-username>.github.io`.
 * If you are deploying to your GitHub user page (your main site on `<username>.github.io`):
   * Make the following adjustments to your `package.json`:
     ```json
@@ -41,7 +41,7 @@ GitHub Pages allows you to have a "Github user page" that acts as a profile/main
   ```js
   siteUrl: 'https://www.yourname.com',
   ```
-* If you are using an apex domain for your GitHub user page (ie. `https://yourname.com` points to all of your GitHub Pages sites), and your Gridsome project is *not* your GitHub user page (not on the root `https://yourname.com` page, but a separate repo), then you will need to make sure `pathPrefix` matches your gridsome project's repo name in `gridsome.config.js`:
+* If you are using an apex domain for your GitHub user page (ie. `https://yourname.com` points to all of your GitHub Pages sites), and your Gridsome project is *not* your GitHub user page (not on the root `https://yourname.com` page, but a separate repo), then you will need to make sure `pathPrefix` matches your Gridsome project's repo name in `gridsome.config.js`:
   ```js
   pathPrefix: '/<your-gridsome-repo-name>',
   ```

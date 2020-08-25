@@ -38,7 +38,7 @@
 </template>
 
 <static-query>
-query HomeIntro {
+query {
   metaData {
     gridsomeVersion
   }
@@ -50,7 +50,7 @@ import LinesOut from '~/assets/images/home-lines-out.svg'
 import LinesIn from '~/assets/images/home-lines-in.svg'
 import Logo from '~/assets/images/home-logo.svg'
 
-const words = ['insanely fast', 'JAMstack', 'static & secure', 'future-ready']
+const words = ['insanely fast', 'Jamstack', 'static & secure', 'future-ready']
 
 export default {
   components: {
@@ -69,18 +69,7 @@ export default {
 </script>
 
 <style lang="scss">
-
-@keyframes Type {
-  from  {
-    transform: translateX(-5px);
-    color: var(--primary-color);
-  } to  {
-    color: currentColor;
-  }
-}
-
 .home-intro {
-  padding: 1.5% 0!important;
 
   .vue-typer {
     display: inline-block;

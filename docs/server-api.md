@@ -69,7 +69,7 @@ api.createSchema(({ addSchema, graphql }) => {
 
 ## api.onCreateNode(fn)
 
-Modify or remove a node before its added to the collection.
+Modify or remove a node before its added to the collection. Note that the callback function must be synchronous.
 
 ```js
 api.onCreateNode(options => {

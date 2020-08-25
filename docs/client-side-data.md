@@ -41,7 +41,28 @@ Read more about the [$fetch() method](/docs/client-api#fetchpath).
 
 ## Fetch from REST API
 
-....Contributions are welcome!
+```js
+import axios from 'axios'
+
+export default {
+  data () {
+    return {
+      todos: null
+    }
+  },
+  async mounted () {
+    try {
+      const results = await axios.get(
+        'https://jsonplaceholder.typicode.com/todos'
+      )
+
+      this.todos = results.data
+    } catch (error) {
+      console.log(error)
+    }
+  }
+}
+```
 
 ## Fetch from GraphQL API
 
@@ -57,8 +78,8 @@ The following example fetches local YAML files within .vue templates:
 
 ```html
 <template>
-  <ul v-for="product in products">
-    <li v-html="product.title"/>
+  <ul>
+    <li v-for="product in products" :key="product.title">{{ product.title }}</li>
   </ul>
 </template>
 
@@ -85,8 +106,8 @@ The following example fetches local JSON data within .vue templates:
 
 ```html
 <template>
-  <ul v-for="user in users">
-    <li v-html="user.name"/>
+  <ul>
+    <li v-for="user in users" :key="user.name">{{ user.name }}</li>
   </ul>
 </template>
 
