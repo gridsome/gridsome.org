@@ -204,3 +204,15 @@
   bio: "Full-Stack Developer"
   avatar: ./images/chadcollins.png
   twitter: "@chadcodes"
+
+- id: remi2j
+  name: Remi de Juvigny
+  bio: "Software Engineer"
+  avatar: ./images/remi2j.jpeg
+  twitter: "@remidej"
+
+- id: mcastres
+  name: Maxime Castres
+  bio: "Growth Hacker"
+  avatar: ./images/mcastres.jpeg
+  twitter: "@MaxCastres"
