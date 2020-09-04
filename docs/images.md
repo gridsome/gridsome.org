@@ -29,7 +29,7 @@ A `<g-image>` component is available in all your Vue templates and can be used t
 
 ### Dynamic Image Paths in Vue Templates
 
-In some instances, dynamic image paths will not construct your image properly. In this case, you need to require the asset manually by setting up a resolve alais in your config. 
+In some instances, dynamic image paths will not construct your image properly. In this case, you need to require the asset manually by setting up a resolve alais in your config.
 
 ```js
 module.exports = {
@@ -40,7 +40,7 @@ module.exports = {
 }
 ```
 
-Next, add your `g-image` using `require()` in the `src` tag. 
+Next, add your `g-image` using `require()` in the `src` tag.
 
 ```html
 <g-image :src="require(`!!assets-loader!@images/${imageUrl}`)"/>
