@@ -29,7 +29,7 @@ A `<g-image>` component is available in all your Vue templates and can be used t
 
 ### Dynamic Image Paths in Vue Templates
 
-In some instances, dynamic image paths will not construct your image properly. In this case, you need to require the asset manually by setting up a resolve alais in your config.
+In some instances, dynamic image paths will not construct your image properly. In this case, you need to require the asset manually by setting up a resolve alias in your config.
 
 ```js
 module.exports = {
