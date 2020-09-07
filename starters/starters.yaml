@@ -202,12 +202,12 @@
   platforms: markdown
 
 - title: Gridsome Articles Starter
-  description: A gridsome starter built with bootstrap
+  description: A gridsome starter built with tailwindcss
   screenshot: ./screenshots/gridsome-starter-articles.jpg
   repo: jammeryhq/gridsome-starter-articles
   preview: https://articles.jammeryhq.com
   author: jammeryhq
-  tags: gridsome, starter, bootstrap, articles, blog, tutorials, tags, toc, embedding, responsive
+  tags: gridsome, starter, tailwind, articles, blog, tutorials, tags, toc, embedding, responsive, flexsearch
   platforms: markdown
 
 - title: Gridsome Casper V3 Starter
