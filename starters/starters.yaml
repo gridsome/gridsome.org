@@ -186,36 +186,36 @@
 - title: Gridsome Skeleventy Starter
   description: A minimalistic starter boilerplate with tailwindcss
   screenshot: ./screenshots/gridsome-starter-skeleventy.jpg
-  repo: noxify/gridsome-starter-skeleventy
-  preview: https://gridsome-starter-skeleventy.now.sh/
-  author: noxify
+  repo: jammeryhq/gridsome-starter-skeleventy
+  preview: https://skeleventy.jammeryhq.com
+  author: jammeryhq
   tags: gridsome, starter, tailwind, tailwindcss, blog, about
   platforms: markdown
 
 - title: Gridsome Casper V2 Starter
   description: A gridsome starter based on Ghost Casper V2 and tailwindcss
   screenshot: ./screenshots/gridsome-starter-casper-v2.jpg
-  repo: noxify/gridsome-starter-casper-v2
-  preview: https://gridsome-starter-casper-v2.now.sh/
-  author: noxify
+  repo: jammeryhq/gridsome-starter-casper-v2
+  preview: https://gridsome-starter-casper-v2.jammeryhq.vercel.app/
+  author: jammeryhq
   tags: gridsome, starter, tailwind, tailwindcss, blog, about, categories, tags, author, about, responsive
   platforms: markdown
 
 - title: Gridsome Articles Starter
-  description: A gridsome starter built with bootstrap
+  description: A gridsome starter built with tailwindcss
   screenshot: ./screenshots/gridsome-starter-articles.jpg
-  repo: noxify/gridsome-starter-articles
-  preview: https://gridsome-starter-articles.now.sh/
-  author: noxify
-  tags: gridsome, starter, bootstrap, articles, blog, tutorials, tags, toc, embedding, responsive
+  repo: jammeryhq/gridsome-starter-articles
+  preview: https://articles.jammeryhq.com
+  author: jammeryhq
+  tags: gridsome, starter, tailwind, articles, blog, tutorials, tags, toc, embedding, responsive, flexsearch
   platforms: markdown
 
 - title: Gridsome Casper V3 Starter
   description: A gridsome starter based on Ghost Casper V3 and tailwindcss
   screenshot: ./screenshots/gridsome-starter-casper-v3.jpg
-  repo: noxify/gridsome-starter-casper-v3
-  preview: https://gridsome-starter-casper-v3.now.sh/
-  author: noxify
+  repo: jammeryhq/gridsome-starter-casper-v3
+  preview: https://casper.jammeryhq.com
+  author: jammeryhq
   tags: gridsome, starter, tailwind, tailwindcss, blog, about, categories, tags, author, about, responsive
   platforms: markdown
 
@@ -320,9 +320,9 @@
 - title: Gridsome Liebling Starter
   description: A gridsome starter based on Ghost Liebling and tailwindcss
   screenshot: ./screenshots/gridsome-starter-liebling.jpg
-  repo: noxify/gridsome-starter-liebling
-  preview: https://gridsome-starter-liebling.now.sh/
-  author: noxify
+  repo: jammery/gridsome-starter-liebling
+  preview: https://liebling.jammeryhq.com/
+  author: jammeryhq
   tags: gridsome, starter, tailwind, tailwindcss, megamenu, dark-mode, search, fulltextsearch, blog, about, categories, tags, author, about, responsive
   platforms: markdown
 
