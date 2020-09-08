@@ -320,7 +320,7 @@
 - title: Gridsome Liebling Starter
   description: A gridsome starter based on Ghost Liebling and tailwindcss
   screenshot: ./screenshots/gridsome-starter-liebling.jpg
-  repo: jammery/gridsome-starter-liebling
+  repo: jammeryhq/gridsome-starter-liebling
   preview: https://liebling.jammeryhq.com/
   author: jammeryhq
   tags: gridsome, starter, tailwind, tailwindcss, megamenu, dark-mode, search, fulltextsearch, blog, about, categories, tags, author, about, responsive
