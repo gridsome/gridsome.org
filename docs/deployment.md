@@ -6,26 +6,29 @@ To deploy a Gridsome site you need a **static web host**.
 
 The best practice when working with Gridsome sites is to have your project hosted on a Git-service like GitHub and connect a deploy service that builds your site from a selected repository.
 
-
 These services are great for Git-based deploying:
 
 - [Netlify](/docs/deploy-to-netlify/)
 
 - [AWS Amplify](/docs/deploy-to-amplify/)
 
-- [ZEIT Now](/docs/deploy-to-zeit-now/)
+- [Vercel](/docs/deploy-to-vercel/)
 
 - [GitLab Pages](/docs/deploy-to-gitlab/)
 
 - [GitHub Pages](/docs/deploy-to-github/)
 
+- [Surge.sh](/docs/deploy-to-surge-sh/)
+
 ## Deploy from terminal
+
 Many services let you deploy your static Gridsome site from the terminal. Here are some:
 
 - [Amazon S3](/docs/deploy-to-amazon-s3/)
 
-- [ZEIT Now](/docs/deploy-to-zeit-now/)
+- [Vercel](/docs/deploy-to-vercel/)
 
+- [Surge.sh](/docs/deploy-to-surge-sh/)
 
 ## FTP deploying
 

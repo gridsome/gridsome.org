@@ -1,8 +1,8 @@
 <template>
   <Starters>
     <h1>Gridsome Starters</h1>
-    <p class="mb-x2">Kickstart your Gridsome website with premade projects.</p> 
-    
+    <p class="mb-x2">Kickstart your Gridsome website with premade projects.</p>
+
     <div class="grid-cols grid-cols--3 mb">
       <StarterCard v-for="starter in $page.defaultStarters.edges" :key="starter.node.id" :node="starter.node"  />
     </div>
@@ -24,6 +24,9 @@ export default {
   components: {
     Starters,
     StarterCard
+  },
+  metaInfo: {
+    title: 'Starters'
   }
 }
 </script>
@@ -59,7 +62,7 @@ query {
   },
   starters: allStarter (
     sortBy: "index"
-    order: ASC
+    order: DESC
     filter: {
       featured: {
         ne: true

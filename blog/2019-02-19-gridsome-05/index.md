@@ -62,7 +62,6 @@ There are no breaking API changes, but some changes might have consequences:
 - External image URLs has previously been converted to objects. Which required you to get the actual URL in a `imageField.src` property. But those fields are no longer converted to objects.
 - Filepaths in front matter or markdown must start with `./` or `../` to be resolved and processed which means `image.png` will not be processed, but `./image.png` will be.
 
-
 ## What's next
 
 - Download and process external images.
@@ -74,7 +73,6 @@ There are no breaking API changes, but some changes might have consequences:
 - Move the [gridsome.org](https://gridsome.org) repository into core repository for easier contribution.
 - Create a starter gallery where anyone can submit a starter.
 - Docs docs docs!
-
 
 Thanks for all contributions to documentation, features, bugfixes and plugins so far!
 

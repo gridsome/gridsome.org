@@ -2,7 +2,7 @@
 
 A basic Gridsome project would be structured like this:
 
-```
+```text
 .
 ├── package.json
 ├── gridsome.config.js
@@ -89,6 +89,7 @@ The `App.vue` file is the main component that wraps all your pages and templates
 Files in this directory will be copied directly to `dist` during build. For example, **/static/robots.txt** will be located at https://yoursite.com/robots.txt
 
 ## Aliases
+
 In Gridsome you can use the aliases `~` or `@` to link to files inside the `/src` folder. For example, you can import a Vue component by using `import Card from '~/components/Card'`
 
 ## Recommendation

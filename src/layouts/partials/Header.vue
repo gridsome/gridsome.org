@@ -35,7 +35,7 @@
 
         <div class="has-dropdown">
           <a
-            aria-label="github"
+            aria-label="GitHub"
             href="//github.com/gridsome/gridsome"
             rel="noopener noreferrer"
             target="_blank"
