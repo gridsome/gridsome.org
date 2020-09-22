@@ -12,4 +12,4 @@ jobs:
       with:
         node-version: '12.x'
     - run: npm install -g markdownlint-cli@0.23.2
-    - run: markdownlint '**/*.md' --ignore node_modules
+    - run: markdownlint '**/*.md' --ignore node_modules --config .github/.markdownlint.yaml

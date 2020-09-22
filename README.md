@@ -15,11 +15,11 @@ npm install -g markdownlint-cli@0.23.2
 You can check your changes for linter errors by running:
 
 ```shell
-markdownlint '**/*.md' --ignore node_modules
+markdownlint '**/*.md' --ignore node_modules --config .github/.markdownlint.yaml
 ```
 
 The linter can automatically fix certain classes of failure. To accept these fixes, run:
 
 ```shell
-markdownlint '**/*.md' --ignore node_modules --fix
+markdownlint '**/*.md' --ignore node_modules --config .github/.markdownlint.yaml --fix
 ```
