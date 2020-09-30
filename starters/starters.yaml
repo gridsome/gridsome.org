@@ -396,3 +396,13 @@
   author: mcastres
   tags: gridsome, starter, strapi, blog
   platforms: strapi
+  
+- title: Buefy
+  description: Buefy Portfolio Starter
+  screenshot: ./screenshots/gridsome-starter-buefolio.png
+  repo: yanuaraditia/gridsome-starter-buefolio
+  preview: https://buefolio.vercel.app
+  author: yanuaraditia
+  tags: markdown, portfolio, bulma, buefy, buefolio
+  platforms: markdown
+
