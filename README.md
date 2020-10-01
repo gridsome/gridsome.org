@@ -1,8 +1,8 @@
-# gridsome.org
+# gridsome.org  
 
 This is the Git repository for gridsome.org. Feel free to contribute 🥳
 
-## Linting Markdown
+## Linting Markdown and information
 
 We use [markdownlint-cli](https://www.npmjs.com/package/markdownlint-cli) to enforce style consistency rules on the documentation. The linter runs automatically on every push and pull request via [GitHub Actions](https://docs.github.com/en/actions).
 
