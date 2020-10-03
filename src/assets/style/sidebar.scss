@@ -43,12 +43,13 @@
     font-size: .8rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin: 15px 0 15px;
-    padding-top: 20px;
+    margin-bottom: 0;
+    padding: 10px 0px;
     border-top: 1px solid var(--border-color);
-    &:first-of-type {
-      border:0;
-    }
+  }
+
+  .menu-section:first-of-type h3 {
+    border: 0;
   }
 
   p {
@@ -60,13 +61,12 @@
     color: currentColor;
     opacity: 1;
     font-weight: 400;
-    display: flex;
     text-decoration: none;
 
     &.active--exact {
       color: var(--primary-color-dark);
     }
-    
+
     &:hover {
       color: var(--primary-color);
     }
@@ -127,7 +127,7 @@
       margin:0;
       order: 2;
       padding-bottom: 150px;
-     
+
     } + .section {
       margin-left: 0;
       width: 100%;
