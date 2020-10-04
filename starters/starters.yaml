@@ -333,7 +333,7 @@
   preview: https://gridsome-hubspot-starter.netlify.com/
   author: herve76
   tags: hubspot, form, tailwind, crm, contact, deal, engagement
-  platforms: hubspot
+  platforms: hubspottailwindcss
 
 - title: Gridsome Starter Handy
   description: A basic starter project with all of the packages that I would normally use. Great for headless local business sites, and side projects.
@@ -396,3 +396,12 @@
   author: mcastres
   tags: gridsome, starter, strapi, blog
   platforms: strapi
+
+- title: Gridsome TailwindCSS & Markdown Starter
+  description: A barebones Gridsome starter using TailwindCSS and Markdown, with an almost-blank starting page and simple blog feed.
+  screenshot: ./screenshots/gridsome-minimal-tailwind-1680.png
+  repo: knightspore/gridsome-tailwindcss-markdown-starter
+  author: ciaran
+  tags: gridsome, starter, tailwindcss, markdown, blog, minimal
+  platforms: markdown
+  

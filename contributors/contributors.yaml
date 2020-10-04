@@ -216,3 +216,9 @@
   bio: "Growth Hacker"
   avatar: ./images/mcastres.jpeg
   twitter: "@MaxCastres"
+
+- id: ciaran
+  name: Ciaran Slemon
+  bio: "SEO, Designer, Developer"
+  avatar: ./images/ciaran.jpg
+  twitter: "@parabyl"
