@@ -217,6 +217,12 @@
   avatar: ./images/mcastres.jpeg
   twitter: "@MaxCastres"
 
+- id: jammeryhq
+  name: JammeryHQ
+  bio: "Fast-track your JAMstack development & learning"
+  avatar: ./images/jammeryhq.png
+  twitter: "@jammeryhq"
+
 - id: ciaran
   name: Ciaran Slemon
   bio: "SEO, Designer, Developer"

@@ -1,27 +1,15 @@
 # Deploy to Vercel
 
-[Vercel](https://vercel.com) (formerly ZEIT) is a cloud platform for websites and serverless APIs, that you can use to deploy your Gridsome projects to your personal domain (or a free `.now.sh` suffixed URL).
+## Overview
 
-This guide will show you how to get started in a few quick steps:
+[Vercel](https://vercel.com) is a cloud platform that enables developers to host Jamstack websites and web services that deploy instantly, scale automatically, and require no supervision, all with zero configuration. They provide a global edge network, SSL encryption, asset compression, cache invalidation, and more.
 
-### Step 1: Installing Now CLI
+## Deploying your Gridsome Website to Vercel
 
-To install their command-line interface with [npm](https://www.npmjs.com/package/now), run the following command:
+To deploy your Gridsome app with a [Vercel for Git Integration](https://vercel.com/docs/git-integrations), push your code to a repository on Github, Gitlab, or Bitbucket.
 
-```shell
-npm i -g now
-```
+Import the project into Vercel using the [Import Flow](https://vercel.com/import/git). During the import, you will find all relevant [options](https://vercel.com/docs/build-step#build-&-development-settings) preconfigured for you.
 
-### Step 2: Deploying
+After your project has been imported, all subsequent user pushes to branches will generate [Preview Deployments](https://vercel.com/docs/platform/deployments#preview), and all users changes made to the [Production Branch](https://vercel.com/docs/git-integrations#production-branch) (commonly "main") will result in a [Production Deployment](https://vercel.com/docs/platform/deployments#production).
 
-You can deploy your application by running the following command in the root of the project directory:
-
-```shell
-now
-```
-
-**Alternatively**, you can also use their integration for [GitHub](https://vercel.com/github) or [GitLab](https://vercel.com/gitlab).
-
-That’s all!
-
-Your site will now deploy, and you will receive a link similar to the following: https://gridsome.now-examples.now.sh
+Once deployed, you will get a URL to see your app live, such as the following: <https://gridsome.now-examples.now.sh>.

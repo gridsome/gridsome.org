@@ -44,4 +44,4 @@ The `gridsome build` command prepares a project for **production**. This means i
 9. **Process files** - Local files are copied to the `dist` folder.
 10. **Process images** - Local images are processed and copied to the `dist` folder.
 
-> Services like **Netlify** and **Vercel (formerly ZEIT Now)** let you run `gridsome build` automatically from a **Git-repository** and host the generated files on a CDN for you. These services also have hooks that enable you to re-build the site after a Git-commit. Learn more about Git-based [deployment here](/docs/deployment/).
+> Services like **Netlify** and **Vercel** let you run `gridsome build` automatically from a **Git-repository** and host the generated files on a CDN for you. These services also have hooks that enable you to re-build the site after a Git-commit. Learn more about Git-based [deployment here](/docs/deployment/).
