@@ -333,7 +333,7 @@
   preview: https://gridsome-hubspot-starter.netlify.com/
   author: herve76
   tags: hubspot, form, tailwind, crm, contact, deal, engagement
-  platforms: hubspottailwindcss
+  platforms: hubspot
 
 - title: Gridsome Starter Handy
   description: A basic starter project with all of the packages that I would normally use. Great for headless local business sites, and side projects.
