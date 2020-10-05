@@ -396,3 +396,12 @@
   author: mcastres
   tags: gridsome, starter, strapi, blog
   platforms: strapi
+
+- title: Gridsome Kontent Starter
+  description: Lumen blog template implemented using Gridsome and Kentico Kontent
+  screenshot: ./screenshots/gridsome-starter-kontent-lumen.jpg
+  repo: ondrabus/gridsome-starter-kontent-lumen
+  author: ondrabus
+  tags: gridsome, starter, kentico, kontent, blog
+  platforms: kontent
+  
