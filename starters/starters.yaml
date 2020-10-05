@@ -397,6 +397,24 @@
   tags: gridsome, starter, strapi, blog
   platforms: strapi
 
+- title: Buefy
+  description: Buefy Portfolio Starter
+  screenshot: ./screenshots/gridsome-starter-buefolio.png
+  repo: yanuaraditia/gridsome-starter-buefolio
+  preview: https://buefolio.vercel.app
+  author: yanuaraditia
+  tags: markdown, portfolio, bulma, buefy, buefolio
+  platforms: markdown
+
+
+- title: Gridsome Kontent Starter
+  description: Lumen blog template implemented using Gridsome and Kentico Kontent
+  screenshot: ./screenshots/gridsome-starter-kontent-lumen.jpg
+  repo: ondrabus/gridsome-starter-kontent-lumen
+  author: ondrabus
+  tags: gridsome, starter, kentico, kontent, blog
+  platforms: kontent
+
 - title: Gridsome TailwindCSS & Markdown Starter
   description: A barebones Gridsome starter using TailwindCSS and Markdown, with an almost-blank starting page and simple blog feed.
   screenshot: ./screenshots/gridsome-minimal-tailwind-1680.png
@@ -405,4 +423,3 @@
   author: ciaran
   tags: gridsome, starter, tailwindcss, markdown, blog, minimal
   platforms: markdown
-  
