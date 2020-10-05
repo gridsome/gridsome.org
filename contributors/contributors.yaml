@@ -223,8 +223,16 @@
   avatar: ./images/jammeryhq.png
   twitter: "@jammeryhq"
   
+
+- id: yanuaraditia
+  name: Yanuar Aditia
+  bio: "Coding terus kapan kawin"
+  avatar: ./images/yanuaraditia.jpg
+  twitter: "@yanuar_aditia"
+
 - id: ondrabus
   name: Ondrej Polesny
   bio: "Dev Evangelist"
   avatar: ./images/ondrabus.jpg
   twitter: "@ondrabus"
+
