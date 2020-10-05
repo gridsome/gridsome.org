@@ -401,6 +401,7 @@
   description: A barebones Gridsome starter using TailwindCSS and Markdown, with an almost-blank starting page and simple blog feed.
   screenshot: ./screenshots/gridsome-minimal-tailwind-1680.png
   repo: knightspore/gridsome-tailwindcss-markdown-starter
+  preview: https://gridsome-tailwind-markdown-starter.netlify.app/
   author: ciaran
   tags: gridsome, starter, tailwindcss, markdown, blog, minimal
   platforms: markdown
