@@ -396,7 +396,7 @@
   author: mcastres
   tags: gridsome, starter, strapi, blog
   platforms: strapi
-  
+
 - title: Buefy
   description: Buefy Portfolio Starter
   screenshot: ./screenshots/gridsome-starter-buefolio.png
@@ -405,4 +405,14 @@
   author: yanuaraditia
   tags: markdown, portfolio, bulma, buefy, buefolio
   platforms: markdown
+
+
+- title: Gridsome Kontent Starter
+  description: Lumen blog template implemented using Gridsome and Kentico Kontent
+  screenshot: ./screenshots/gridsome-starter-kontent-lumen.jpg
+  repo: ondrabus/gridsome-starter-kontent-lumen
+  author: ondrabus
+  tags: gridsome, starter, kentico, kontent, blog
+  platforms: kontent
+  
 
