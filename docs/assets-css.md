@@ -154,7 +154,11 @@ yarn add tailwindcss
 
 To install PostCSS-PurgeCSS:
 ```shell
+# Using npm
 npm i -D @fullhuman/postcss-purgecss
+
+# Using Yarn
+yarn add --dev @fullhuman/postcss-purgecss
 ```
 
 Then, create a `main.css` file in the root of your `/src` directory and add the following:
