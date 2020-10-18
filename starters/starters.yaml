@@ -406,7 +406,6 @@
   tags: markdown, portfolio, bulma, buefy, buefolio
   platforms: markdown
 
-
 - title: Gridsome Kontent Starter
   description: Lumen blog template implemented using Gridsome and Kentico Kontent
   screenshot: ./screenshots/gridsome-starter-kontent-lumen.jpg
@@ -414,5 +413,12 @@
   author: ondrabus
   tags: gridsome, starter, kentico, kontent, blog
   platforms: kontent
-  
 
+- title: devB
+  description: Full-stack developer blog starter with Gridsome ❤️ TailwindCSS
+  screenshot: ./screenshots/gridsome-devb.png
+  repo: barisaksu/devB
+  preview: https://baris.gitlab.io/devb/
+  author: barisaksu
+  tags: gridsome, starter, developer, tailwindcss, markdown, blog
+  platforms: markdown
