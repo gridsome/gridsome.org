@@ -17,7 +17,7 @@ After you created your GitHub repository and commited your code, you can create 
 2. Select **Create a Resource**
 3. Search for **Static Web Apps**
 4. Select **Static Web Apps (Preview)**
-5. Selecte **Create**
+5. Select **Create**
 
 In the *Basics* section, begin by configuring your new app and linking it to a GitHub repository.
 
@@ -28,7 +28,7 @@ In the *Basics* section, begin by configuring your new app and linking it to a G
 3. Name the app as you wish (e.g. *my-first-static-web-app*)
    - Valid characters are ```a-z``` (case insensitive), ```0-9```, and ```-```.
 4. Select a *Region* closest to you
-5. Select the **Free** *SKU*
+5. Select the **Free** SKU
 6. Select the **Sign-in with GitHub** button and authenticate with GitHub
 
 After you sign in with GitHub, enter the repository information.
