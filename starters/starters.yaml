@@ -406,7 +406,6 @@
   tags: markdown, portfolio, bulma, buefy, buefolio
   platforms: markdown
 
-
 - title: Gridsome Kontent Starter
   description: Lumen blog template implemented using Gridsome and Kentico Kontent
   screenshot: ./screenshots/gridsome-starter-kontent-lumen.jpg
@@ -414,5 +413,12 @@
   author: ondrabus
   tags: gridsome, starter, kentico, kontent, blog
   platforms: kontent
-  
 
+- title: Gridsome Ecommerce BagelDB Starter
+  description: Ecommerce starter example for BagelDB
+  screenshot: ./screenshots/gridsome-starter-bageldb-ecommerce.png
+  repo: bageldb/gridsome-starter-ecommerce-bageldb
+  preview: https://gridsome-ecommerce.netlify.app/
+  author: bageldb
+  tags: gridsome, starter, BagelDB, ecommerce
+  platforms: bageldb

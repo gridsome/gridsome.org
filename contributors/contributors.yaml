@@ -216,13 +216,12 @@
   bio: "Growth Hacker"
   avatar: ./images/mcastres.jpeg
   twitter: "@MaxCastres"
-  
+
 - id: jammeryhq
   name: JammeryHQ
   bio: "Fast-track your JAMstack development & learning"
   avatar: ./images/jammeryhq.png
   twitter: "@jammeryhq"
-  
 
 - id: yanuaraditia
   name: Yanuar Aditia
@@ -236,3 +235,8 @@
   avatar: ./images/ondrabus.jpg
   twitter: "@ondrabus"
 
+- id: bageldb
+  name: BagelDB
+  bio: "Database and content management for apps"
+  avatar: ./images/bageldb.png
+  twitter: "@bagel_db"
