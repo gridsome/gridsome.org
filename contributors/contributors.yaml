@@ -235,8 +235,15 @@
   avatar: ./images/ondrabus.jpg
   twitter: "@ondrabus"
 
+
 - id: bageldb
   name: BagelDB
   bio: "Database and content management for apps"
   avatar: ./images/bageldb.png
   twitter: "@bagel_db"
+
+- id: arturoalviar
+  name: Arturo Alviar
+  bio: "Front End Developer & Designer"
+  avatar: ./images/arturoalviar.jpg
+  twitter: "@arturoalviar"
