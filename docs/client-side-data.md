@@ -66,7 +66,57 @@ export default {
 
 ## Fetch from GraphQL API
 
-....Contributions are welcome!
+For accessing a GraphQL API from the client-side, the easiest way is to use ApolloClient from the package `apollo-boost`. To use it first install the following packages with: `npm install apollo-boost graphql --save` or `yarn add apollo-boost graphql`.
+
+After this you can use it in your component as following, here a example for accessing github is used:
+
+```
+import ApolloClient, {gql} from 'apollo-boost';
+
+export default {
+  data () {
+    return {
+      githubData: null
+    }
+  },
+  async mounted () {
+    const client = new ApolloClient({
+      uri: 'https://api.github.com/graphql',
+    });
+    // For the Github API also a bearer token is needed, but in favor of expressiveness I removed it from here
+    
+    const yourQuery = gql`
+    {
+      repository(owner: "octocat", name: "Hello-World") {
+        issues(last: 20, states: CLOSED) {
+          edges {
+            node {
+              title
+              url
+              labels(first: 5) {
+                edges {
+                  node {
+                    name
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }`;
+    
+    try {
+      const response = await client.query({
+        query: yourQuery
+      });
+      this.githubData = response;
+    } catch (error) {
+      console.log(error)
+    }
+  }
+}
+```
 
 ## Fetch from local YAML files
 
