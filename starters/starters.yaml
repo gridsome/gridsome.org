@@ -414,6 +414,15 @@
   author: ondrabus
   tags: gridsome, starter, kentico, kontent, blog
   platforms: kontent
+  
+- title: Gridsome Sanity Akarui
+  description: Akarui is a Gridsome starter that helps you get up and running with Sanity.io
+  screenshot: ./screenshots/gridsome-starter-sanity-akarui.png
+  repo: arturoalviar/gridsome-starter-sanity-akarui
+  preview: https://akarui.netlify.app
+  author: arturoalviar
+  tags: gridsome, starter, sanity, blog, portfolio, tailwind, tailwindcss, dark theme, responsive
+  platforms: sanity
 
 - title: Gridsome TailwindCSS & Markdown Starter
   description: A barebones Gridsome starter using TailwindCSS and Markdown, with an almost-blank starting page and simple blog feed.
