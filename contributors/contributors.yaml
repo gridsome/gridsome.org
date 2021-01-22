@@ -236,3 +236,8 @@
   avatar: ./images/ondrabus.jpg
   twitter: "@ondrabus"
 
+- id: daniloraisi
+  name: Danilo Raisi
+  bio: "Software Engineer"
+  avatar: ./images/daniloraisi.jpeg
+  twitter: "@daniloraisi"
