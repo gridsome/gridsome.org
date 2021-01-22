@@ -6,7 +6,7 @@
 
 ## Deploying your Gridsome Website to Vercel
 
-To deploy your Gridsome app with a [Vercel for Git Integration](https://vercel.com/docs/git-integrations), push your code to a repository on Github, Gitlab, or Bitbucket.
+To deploy your Gridsome app with a [Vercel for Git Integration](https://vercel.com/docs/git-integrations), push your code to a repository on GitHub, GitLab, or Bitbucket.
 
 Import the project into Vercel using the [Import Flow](https://vercel.com/import/git). During the import, you will find all relevant [options](https://vercel.com/docs/build-step#build-&-development-settings) preconfigured for you.
 
