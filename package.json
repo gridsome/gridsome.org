@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
+    "@gridsome/plugin-sitemap": "^0.4.0",
     "algoliasearch": "^3.32.0",
     "clipboard-copy": "^3.0.0",
     "docsearch.js": "^2.6.2",
