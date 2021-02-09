@@ -413,6 +413,14 @@
   author: ondrabus
   tags: gridsome, starter, kentico, kontent, blog
   platforms: kontent
+
+- title: Default Starter with Kontent
+  description: Clone of the Default starter utilizing Kentico Kontent as a data source via source plugin for Kontent
+  screenshot: ./screenshots/gridsome-starter-default-kontent.png
+  repo: Simply007/gridsome-starter-default-kontent
+  author: chrastinaondrej
+  tags: gridsome, starter, kentico, kontent
+  platforms: kontent
   
 - title: Gridsome Sanity Akarui
   description: Akarui is a Gridsome starter that helps you get up and running with Sanity.io

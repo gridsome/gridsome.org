@@ -236,9 +236,16 @@
   avatar: ./images/ondrabus.jpg
   twitter: "@ondrabus"
 
+- id: chrastinaondrej
+  name: Ondrej Chrastina
+  bio: "Developer Advocate"
+  avatar: ./images/chrastinaondrej.jpg
+  twitter: "@ChrastinaOndrej"
+
 - id: arturoalviar
   name: Arturo Alviar
   bio: "Front End Developer & Designer"
   avatar: ./images/arturoalviar.jpg
   twitter: "@arturoalviar"
+
 
