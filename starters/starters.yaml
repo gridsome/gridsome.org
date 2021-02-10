@@ -422,3 +422,12 @@
   author: arturoalviar
   tags: gridsome, starter, sanity, blog, portfolio, tailwind, tailwindcss, dark theme, responsive
   platforms: sanity
+
+- title: Gridsome Algrid
+  description: Algrid is a simple starter for creating blogs using Gridsome.
+  screenshot: ./screenshots/gridsome-starter-algrid-1680x1680.jpg
+  repo: gollowars/gridsome-starter-algrid
+  preview: https://algrid.netlify.app/
+  author: gollowars
+  tags: gridsome, starter, algolia, Infinite Scroll, Vuex
+  platforms: markdown
