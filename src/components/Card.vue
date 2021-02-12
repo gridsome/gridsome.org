@@ -10,7 +10,7 @@
       <g-image :src="image" />
     </div>
     <div class="card__inner">
-      <slot />
+      <slot></slot>
     </div>
     <slot name="outer" />
   </div>
@@ -33,11 +33,10 @@ export default {
   .card {
     border: 1px solid var(--border-color-darker);
     border-radius: 4px;
-    background-color: var(--light-bg);
-    transition: color.3s, box-shadow .3s, transform .3s;
+    background-color: var(--bg);
+    transition: color .3s, box-shadow .3s, transform .3s, background-color .3s, border-color .3s;
     position: relative;
     z-index: 1;
-    box-shadow: 1px 1px 5px 0 #5bb19620;
 
 
     &__title {
@@ -61,6 +60,8 @@ export default {
       border-radius: 4px 4px 0 0;
       overflow: hidden;
       border-bottom: 1px solid var(--border-color);
+      transition: border-color .3s;
+      
       img {
         margin: 0;
         width: 100%;

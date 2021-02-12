@@ -57,11 +57,12 @@ export default {
 
   &__footer {
     display: flex;
-    background-color: #FFF;
+    background-color: var(--bg);
     align-items: center;
     justify-content: space-between;
     font-size: .85rem;
     position: relative;
+    transition: background-color .3s;
   }
 
   &__actions {
@@ -82,5 +83,4 @@ export default {
     }
   }
 }
-</style>
 </style>

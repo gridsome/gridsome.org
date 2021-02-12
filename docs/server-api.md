@@ -36,14 +36,52 @@ module.exports = MyPlugin
 
 ## api.loadSource(fn)
 
-Load data from local files or external APIs and create content types and nodes of it. The data will then be available in your GraphQL queries.
+Load data from local files or external APIs and create collections for it. The data will then be available in your GraphQL queries.
 
 ```js
 module.exports = function (api) {
-  api.loadSource(store => {
+  api.loadSource(actions => {
     // Use Data Store API here
   })
 }
+```
+
+[Read more about the Data Store API](/docs/data-store-api/)
+
+## api.createSchema(fn)
+
+Create a custom GraphQL schema which will be merged with the Gridsome schema.
+
+```js
+api.createSchema(({ addSchema, graphql }) => {
+  addSchema(new graphql.GraphQLSchema({
+    query: new graphql.GraphQLObjectType({
+      name: 'CustomRootQuery',
+      fields: {
+        // ...
+      }
+    })
+  }))
+})
+```
+
+[Read more about the Schema API](/docs/schema-api/)
+
+## api.onCreateNode(fn)
+
+Modify or remove a node before its added to the collection. Note that the callback function must be synchronous.
+
+```js
+api.onCreateNode(options => {
+  if (options.internal.typeName === 'Post' && !options.published) {
+     // return null to filter it out
+    return null
+  }
+  // modify the options directly
+  options.slug = slugify(options.title)
+  // or return new options
+  return { ...options, slug: '...' }
+})
 ```
 
 ## api.createPages(fn)
@@ -52,13 +90,13 @@ Create pages programmatically from nodes or other data. The handler for this hoo
 
 ```js
 module.exports = function (api) {
-  api.createPages(pages => {
+  api.createPages(actions => {
     // Create pages
   })
 }
 ```
 
-[Read more about the Pages API](/docs/pages-api)
+[Read more about the Pages API](/docs/pages-api/)
 
 ## api.createManagedPages(fn)
 
@@ -66,19 +104,19 @@ Create, update and remove pages programmatically from nodes or other data. Unlik
 
 ```js
 module.exports = function (api) {
-  api.createManagedPages(pages => {
+  api.createManagedPages(actions => {
     // Create, update or remove pages
   })
 }
 ```
 
-[Read more about the Pages API](/docs/pages-api#create-managed-pages)
+[Read more about the Pages API](/docs/pages-api/#create-managed-pages)
 
 ## api.configureWebpack(fn)
 
-Configure the internal webpack config. 
+Configure the internal webpack config.
 
-The object will be merged with the internal config if it is an object. 
+The object will be merged with the internal config if it is an object.
 
 ```js
 api.configureWebpack({
@@ -117,23 +155,6 @@ api.configureServer(app => {
 ```
 
 Read more about the [Express Application API](https://expressjs.com/en/api.html#app)
-
-## api.createSchema(fn)
-
-Create a custom GraphQL schema which will be merged with the Gridsome schema.
-
-```js
-api.createSchema(({ addSchema, graphql }) => {
-  addSchema(new graphql.GraphQLSchema({
-    query: new graphql.GraphQLObjectType({
-      name: 'CustomRootQuery',
-      fields: {
-        // ...
-      }
-    })
-  }))
-})
-```
 
 ## api.setClientOptions(options)
 

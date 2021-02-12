@@ -4,7 +4,7 @@
 
       <Card title="Bring your data">
         <h4>CMSs</h4>
-        <p>Any Headless CMS, Contentful, WordPress, Drupal, Sanity.io, etc.</p>      
+        <p>Any Headless CMS, Contentful, WordPress, Drupal, Sanity.io, etc.</p>
         <h4>Data</h4>
         <p>Any APIs, Databases, AirTable, YAML, CSV, JSON, etc.</p>
         <h4>Markdown</h4>
@@ -25,7 +25,7 @@
         </div>
 
         <p class="works__powered-by">
-         Centralized data management <br/>powered by <strong>GraphQL </strong>
+          Powered by <br/><strong>GraphQL </strong>
           <graph-ql-logo width="15" height="18" />
         </p>
 
@@ -34,25 +34,25 @@
           <li><vue-logo width="28" height="28" alt="Vue" /> Vue.js</li>
           <li>CSS</li>
         </ul>
-  
+
         <template slot="outer">
           <Dots class="hide-for-small"/>
           <Dots class="dots--vertical show-for-small"/>
         </template>
       </Card>
 
-      <Card title="Deploy">        
+      <Card title="Deploy">
         <h4>Static Web Hosts & CDNs</h4>
         <p>
-          <g-link to="/docs/deploy-to-netlify">Netlify</g-link>, <g-link to="/docs/deploy-to-amplify">AWS Amplify</g-link>, <g-link to="/docs/deploy-to-zeit-now">Zeit Now</g-link>, <g-link to="/docs/deploy-to-amazon-s3">Amazon S3</g-link>, Surge.sh, Aerobatic, Now.sh & many more.
+          <g-link to="/docs/deploy-to-netlify/">Netlify</g-link>, <g-link to="/docs/deploy-to-amplify/">AWS Amplify</g-link>, <g-link to="/docs/deploy-to-vercel/">Vercel</g-link>, <g-link to="/docs/deploy-to-amazon-s3/">Amazon S3</g-link>, <g-link to="/docs/deploy-to-surge-sh/">Surge.sh</g-link>, Aerobatic & many more.
         </p>
 
         <ul class="bullet-list mb">
-          <li><Bullet /><g-link to="/docs/fast-by-default#pre-rendered-html">Pre-rendered HTML</g-link></li>
-          <li><Bullet /><g-link to="/docs/fast-by-default#automatic-code-splitting">Automatic Code Splitting</g-link></li>
-          <li><Bullet /><g-link to="/docs/fast-by-default#the-prpl-pattern">Follows PRPL-pattern</g-link></li>
-          <li><Bullet /><g-link to="/docs/fast-by-default#smart-link-prefetching">Smart link prefetching</g-link></li>
-          <li><Bullet /><g-link to="/docs/fast-by-default#progressive-images">Progressive Images</g-link></li>
+          <li><Bullet /><g-link to="/docs/fast-by-default/#pre-rendered-html">Pre-rendered HTML</g-link></li>
+          <li><Bullet /><g-link to="/docs/fast-by-default/#automatic-code-splitting">Automatic Code Splitting</g-link></li>
+          <li><Bullet /><g-link to="/docs/fast-by-default/#the-prpl-pattern">Follows PRPL-pattern</g-link></li>
+          <li><Bullet /><g-link to="/docs/fast-by-default/#smart-link-prefetching">Smart link prefetching</g-link></li>
+          <li><Bullet /><g-link to="/docs/fast-by-default/#progressive-images">Progressive Images</g-link></li>
         </ul>
       </Card>
 
@@ -100,8 +100,7 @@ export default {
 
   &__tools {
     font-weight: 500;
-    background-color: rgba(255,255,255,.9);
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid var(--border-color);
     max-width: 230px;
     border-radius: 4px;
     z-index: 9;

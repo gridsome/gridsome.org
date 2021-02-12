@@ -12,7 +12,7 @@
         <Feature>
         <h4>SEO-friendly SPA</h4>
         <p>
-          Gridsome outputs normal SEO-friendly HTML. After first page is loaded the websites hydrates into a fully Vue.js-powered SPA. Next pages are prefeched so browsing around is super fast.
+          Gridsome outputs normal SEO-friendly HTML. After first page is loaded the websites hydrates into a fully Vue.js-powered SPA. Next pages are prefetched so browsing around is super fast.
         </p>
       </Feature>
       </div>

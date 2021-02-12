@@ -45,23 +45,36 @@
         <template v-if="isSingle">
           <div class="plugin-post__meta" v-if="hit">
             <div class="plugin-post__meta_left">
-              <a v-if="hit.repository" :href="hit.repository.url" target="_blank" rel="noopener">
-                <div :is="repositoryIcon(hit.repository)" />
-              </a>
               <div class="plugin-post__users">
                 <span v-for="owner in owners" :key="owner.name">
                   <a :href="owner.link" target="_blank" rel="noopener">
-                    <img v-if="owner.avatar" :src="owner.avatar" :title="owner.name" />
+                    <img class="plugin-post__users-image" v-if="owner.avatar" :src="owner.avatar" :title="owner.name" />
+                    <span class="plugin-post__users-name" v-if="owners.length == 1">
+                      {{ owner.name }}
+
+                      <i v-if="owner.name == 'gridsome'" class="plugin-post__users-tag">Official Plugin</i>
+                    </span>
                   </a>
                 </span>
               </div>
+
+            
             </div>
             <div class="plugin-post__meta_right">
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                v-if="hit.repository" :href="hit.repository.url"
+                title="View on GitHub"
+                aria-label="View on GitHub"
+                class="button button--blank">
+                <div :is="repositoryIcon(hit.repository)" />
+              </a>
               <span>Downloads last month: {{ hit.humanDownloadsLast30Days }}</span>
             </div>
           </div>
 
-          <div class="post plugin-post__content mb" v-if="hit" v-html="content" />
+          <div class="plugin-post__content mb" v-if="hit" v-html="content" />
 
         </template>
         <template v-else>
@@ -69,7 +82,7 @@
             <Connect />
             <div class="plugins-intro__text">
               <h1>Gridsome Plugins</h1>
-              <p class="lead">Gridsome plugins are NPM packages that you can install to any project. This is currently a small, but growing library. <span class="hide-for-small">Use the search bar to the left to find a plugin.</span></p>
+              <p class="lead">Gridsome plugins are NPM packages that you can install to any project. <span class="hide-for-small">Use the search bar to the left to find a plugin.</span></p>
 
               <p>Want to contribute to plugins library? <g-link to="/docs/how-to-create-a-plugin">Learn how to build a plugin</g-link></p>
             </div>
@@ -140,8 +153,7 @@ export default {
 
   computed: {
     isSingle () {
-      const { id } = this.$route.params
-      return id && id !== '1' // the dummy id
+      return Boolean(this.$route.params.id)
     },
 
     owners () {
@@ -162,7 +174,9 @@ export default {
     },
 
     content () {
-      return this.hit.readme ? markdown(this.hit.readme) : ''
+      return this.hit && this.hit.readme
+        ? markdown(this.hit.readme)
+        : ''
     }
   },
 
@@ -206,9 +220,7 @@ export default {
         query: name
       }])
 
-      this.hit = results.hits.length && results.hits[0].name === name
-        ? results.hits[0]
-        : null
+      this.hit = results.hits.find(hit => hit.name === name)
     },
 
     hitClasses (hit) {
