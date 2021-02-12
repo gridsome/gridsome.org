@@ -246,6 +246,14 @@
   tags: storyblok, cms
   platforms: storyblok
 
+- title: Developer Bacon Theme
+  description: An older version of the Developer Bacon website made with Markdown
+  repo: brettanda/developerbacon-template
+  preview: https://developerbacon-template.netlify.com/
+  author: brettanda
+  tags: markdown, tutorials, blog, about, responsive, tags
+  platforms: markdown
+
 - title: Buefy Starter Blog
   description: A simple Gridsome blog starter using Buefy
   screenshot: ./screenshots/gridsome-starter-buefy2.jpg
