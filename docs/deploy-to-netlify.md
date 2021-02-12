@@ -18,7 +18,7 @@ Alternatively, deploy using a .toml file:
   ```
 
 Create a file in the root of your project called `netlify.toml` this file should have the above configuation. More infomation on `netlify.toml` files can be found in the [Netlify docs](https://www.netlify.com/docs/netlify-toml-reference/).
- 
+
 **Note:**
 
 You do not need to setup any redirect rules for a Gridsome site to work with Netlify. Gridsome generates HTML files for every path on your site so rewrite rules aren't necessary (except for dynamic pages).
