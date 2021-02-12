@@ -199,6 +199,12 @@
   avatar: ./images/edmundekott.jpg
   twitter: "@26th_edmund"
 
+- id: bradsiefert
+  name: Brad Siefert
+  bio: "UI/UX Designer and frontend developer from Chicago"
+  avatar: ./images/bradsiefert.jpg
+  twitter: "@bksiefert"
+
 - id: chadcollins
   name: Chad Collins
   bio: "Full-Stack Developer"
@@ -211,3 +217,56 @@
   avatar: ./images/rcheuk.png
   twitter: "@rachel_cheuk"
   
+- id: remi2j
+  name: Remi de Juvigny
+  bio: "Software Engineer"
+  avatar: ./images/remi2j.jpeg
+  twitter: "@remidej"
+
+- id: mcastres
+  name: Maxime Castres
+  bio: "Growth Hacker"
+  avatar: ./images/mcastres.jpeg
+  twitter: "@MaxCastres"
+
+- id: jammeryhq
+  name: JammeryHQ
+  bio: "Fast-track your JAMstack development & learning"
+  avatar: ./images/jammeryhq.png
+  twitter: "@jammeryhq"
+
+- id: yanuaraditia
+  name: Yanuar Aditia
+  bio: "Coding terus kapan kawin"
+  avatar: ./images/yanuaraditia.jpg
+  twitter: "@yanuar_aditia"
+
+- id: ondrabus
+  name: Ondrej Polesny
+  bio: "Dev Evangelist"
+  avatar: ./images/ondrabus.jpg
+  twitter: "@ondrabus"
+
+- id: barisaksu
+  name: Barış Aksu
+  bio: "A passionate full-stack web developer"
+  avatar: ./images/barisaksu.png
+  twitter: "@barisaksu"
+
+- id: arturoalviar
+  name: Arturo Alviar
+  bio: "Front End Developer & Designer"
+  avatar: ./images/arturoalviar.jpg
+  twitter: "@arturoalviar"
+
+- id: ciaran
+  name: Ciaran Slemon
+  bio: "SEO, Designer, Developer"
+  avatar: ./images/ciaran.jpg
+  twitter: "@parabyl"
+
+- id: daniloraisi
+  name: Danilo Raisi
+  bio: "Software Engineer"
+  avatar: ./images/daniloraisi.jpeg
+  twitter: "@daniloraisi"

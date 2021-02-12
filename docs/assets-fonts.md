@@ -50,6 +50,7 @@ Given the following directory:
     │   └── Default.vue
     └── assets/
         └── Helvetica.ttf
+        └── Northwell.otf
 ```
 
 You would import your font like this from `Default.vue`:
