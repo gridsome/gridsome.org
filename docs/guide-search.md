@@ -81,6 +81,7 @@ export default {
       .catch(onCatch)
   }
 }
+</script>
 
 <style>
 .results {
