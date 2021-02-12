@@ -1,7 +1,7 @@
 # Add SVG icons
 
-
 ## As plain markup
+
 The simplest way to use SVG icons in Gridsome is to just add them as normal markup. This gives a lot of flexibility with the power of Vue.  Here is an example where we have added an icon from https://feathericons.com/ as markup.
 
 ```html
@@ -23,6 +23,7 @@ The simplest way to use SVG icons in Gridsome is to just add them as normal mark
 ```
 
 ## Using SVGs as Components
+
 You can import SVGs as you do with any other Vue component with `vue-svg-loader`. Start by installing the library:
 
 ```shell
@@ -148,6 +149,7 @@ module.exports = {
 ```
 
 ## Using vue-svg-inline-loader
+
 Webpack loader used for inline replacement of SVG images with actual content of SVG files in Vue projects. More info on the loader can be found [here](https://github.com/oliverfindl/vue-svg-inline-loader#readme).
 
 First install loader using:
