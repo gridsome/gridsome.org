@@ -70,7 +70,7 @@
   items:
     - title: Add a form
       link: /docs/guide-forms/
-    - title: Add a search *
+    - title: Add a search
       link: /docs/guide-search/
     - title: Add comments
       link: /docs/guide-comments/
