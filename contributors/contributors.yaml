@@ -247,3 +247,9 @@
   bio: "Frontend Engineer"
   avatar: ./images/gollowars.jpg
   twitter: "@gollowars"
+
+- id: daniloraisi
+  name: Danilo Raisi
+  bio: "Software Engineer"
+  avatar: ./images/daniloraisi.jpeg
+  twitter: "@daniloraisi"
