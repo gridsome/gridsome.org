@@ -246,3 +246,9 @@
   bio: "SEO, Designer, Developer"
   avatar: ./images/ciaran.jpg
   twitter: "@parabyl"
+
+- id: daniloraisi
+  name: Danilo Raisi
+  bio: "Software Engineer"
+  avatar: ./images/daniloraisi.jpeg
+  twitter: "@daniloraisi"
