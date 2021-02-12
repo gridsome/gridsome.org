@@ -3,7 +3,7 @@
     <div class="home-cols grid-cols grid-cols--2 grid-cols--gap-small">
       <div class="home-cols__left">
 
-        <h1 class="home-title"> 
+        <h1 class="home-title">
             Build <br class="show-for-small" />
             <VueTyper :text="words" :type-delay="30" initial-action="erasing" caret-animation="smooth" />
             <br /> websites & apps
@@ -11,7 +11,7 @@
         </h1>
 
         <p class="home-links">
-          <g-link  to="/docs" class="button primary button--large">
+          <g-link  to="/docs/" class="button primary button--large">
             Get started
           </g-link>
         </p>
@@ -22,7 +22,7 @@
             <span>GitHub (v{{ $static.metaData.gridsomeVersion }})</span>
           </a>
         </p>
-        
+
       </div>
       <div class="home-cols__right">
         <div class="home-anim">
@@ -38,7 +38,7 @@
 </template>
 
 <static-query>
-query HomeIntro {
+query {
   metaData {
     gridsomeVersion
   }
@@ -50,7 +50,7 @@ import LinesOut from '~/assets/images/home-lines-out.svg'
 import LinesIn from '~/assets/images/home-lines-in.svg'
 import Logo from '~/assets/images/home-logo.svg'
 
-const words = ['insanely fast', 'JAMstack', 'static & secure', 'future-ready']
+const words = ['insanely fast', 'Jamstack', 'static & secure', 'future-ready']
 
 export default {
   components: {
@@ -69,18 +69,7 @@ export default {
 </script>
 
 <style lang="scss">
-
-@keyframes Type {
-  from  {
-    transform: translateX(-5px);
-    color: var(--primary-color);
-  } to  { 
-    color: currentColor;
-  }
-}
-
 .home-intro {
-  padding: 1.5% 0!important;
 
   .vue-typer {
     display: inline-block;
@@ -90,7 +79,7 @@ export default {
     .custom.char {
       color: #FFF;
     }
-    
+
     .custom.char.typed {
       animation: Type .3s;
     }

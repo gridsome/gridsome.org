@@ -1,12 +1,12 @@
 <template>
-  <Section dots="true" primary="true">
+  <Section dots="true" secondary="true">
     <div class="container text-center container-sm mb">
       <h2>Latest from Gridsome blog</h2>
     </div>
     <div class="blog-posts container container-md">
       <PostCard v-for="edge in $static.posts.edges" :key="edge.node.id" :post="edge.node"/>
     </div>
-    <div class="container text-center container-sm mb">
+    <div class="container container-md mb">
       <Newsletter />
     </div>
 
@@ -30,7 +30,7 @@ export default {
 </script>
 
 <static-query>
-query BlogPosts {
+query {
   posts: allBlogPost {
     edges {
       node {

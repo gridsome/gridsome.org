@@ -41,11 +41,42 @@ Read more about the [$fetch() method](/docs/client-api#fetchpath).
 
 ## Fetch from REST API
 
-....Contributions are welcome!
+```js
+import axios from 'axios'
+
+export default {
+  data () {
+    return {
+      todos: null
+    }
+  },
+  async mounted () {
+    try {
+      const results = await axios.get(
+        'https://jsonplaceholder.typicode.com/todos'
+      )
+
+      this.todos = results.data
+    } catch (error) {
+      console.log(error)
+    }
+  }
+}
+```
 
 ## Fetch from GraphQL API
 
-....Contributions are welcome!
+```js
+import {GraphQLClient} from 'graphql-request';
+
+export default {
+  async mounted() {
+    const client = new GraphQLClient('https://countries.trevorblades.com/');
+    const countries = await client.request('{ countries { name } }');
+  }
+}
+
+```
 
 ## Fetch from local YAML files
 
@@ -57,8 +88,8 @@ The following example fetches local YAML files within .vue templates:
 
 ```html
 <template>
-  <ul v-for="product in products">
-    <li v-html="product.title"/>
+  <ul>
+    <li v-for="product in products" :key="product.title">{{ product.title }}</li>
   </ul>
 </template>
 
@@ -80,13 +111,13 @@ export default {
 The following example fetches local JSON data within .vue templates:
 
 1. Create a JSON file in `/src/data` folder. For example: `users.json`
-2. Add `import products from @/data/users.json` before `export default` function.
+2. Add `import users from @/data/users.json` before `export default` function.
 3. Add the data from the JSON file to the data layer by creating a new object key `users` and defining it with the just imported `users`. Since the object key and the value are the same, we can destructure to just `users`.
 
 ```html
 <template>
-  <ul v-for="user in users">
-    <li v-html="user.name"/>
+  <ul>
+    <li v-for="user in users" :key="user.name">{{ user.name }}</li>
   </ul>
 </template>
 

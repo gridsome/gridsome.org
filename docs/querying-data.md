@@ -1,6 +1,6 @@
 # Querying data
 
-You can query fetched data into any **Page, Template or Component**. Queries are added with a `<page-query>` or `<static-query>` block in Vue Components.
+You can query data from the GraphQL data layer into any **Page, Template or Component**. Queries are added with a `<page-query>` or `<static-query>` block in Vue Components.
 
 - Use `<page-query>` in **Pages & Templates**.
 - Use `<static-query>` in **Components**.
@@ -14,15 +14,15 @@ Working with GraphQL in Gridsome is easy and you don't need to know much about G
   <div>
     <div v-for="edge in $page.posts.edges" :key="edge.node.id">
       <h2>{{ edge.node.title }}</h2>
-    </div>    
+    </div>
   </div>
 </template>
 
 <page-query>
-query Posts {
+query {
   posts: allWordPressPost {
     edges {
-      node { 
+      node {
         id
         title
       }
@@ -38,7 +38,7 @@ query Posts {
 
 ## Querying collections
 
-Every content type has a collection and a single entry in the GraphQL schema. You will notice that some of the root fields in your schema are prefixed with `all`. They are the collections for each of your content types and you can use them in your pages to create lists of single entries.
+You will notice that some of the root fields in your schema are prefixed with `all`. Use them to get lists of nodes in a collection.
 
 | Argument | Default | Description |
 |----------|---------|-------------|
@@ -49,12 +49,12 @@ Every content type has a collection and a single entry in the GraphQL schema. Yo
 | **limit** | | How many nodes to get.
 | **page** | | Which page to get.
 | **perPage** | | How many nodes to show per page. Omitted if no `page` argument is provided.
-| **filter** | `{}` | [Read more](/docs/filtering-data).
+| **filter** | `{}` | [Read more](/docs/filtering-data/).
 
 #### Find nodes sorted by title
 
 ```graphql
-query Posts {
+query {
   allPost(sortBy: "title", order: DESC) {
     edges {
       node {
@@ -105,20 +105,14 @@ The other fields that do not start with `all` are your single entries. They are 
 #### Example query
 
 ```graphql
-query Post {
+query {
   post(id: "1") {
     title
   }
 }
 ```
 
-## Explore & test queries
-
-Every Gridsome project has a **GraphQL explorer (Playground)** that can be used to explore and test queries when in development mode. Here you also get a list of all available GraphQL collections. This can usually be opened by going to `http://localhost:8080/___explore`.
-
-![graphql-explorer](./images/graphql-explorer.png)
-
-## Query data in Pages
+## Query data in Page components
 
 Every **page** can have a `<page-query>` block with a GraphQL query
 to fetch data from data sources. The results will be stored in a
@@ -137,7 +131,7 @@ to fetch data from data sources. The results will be stored in a
 </template>
 
 <page-query>
-query Blog {
+query {
   posts: allWordPressPost {
     edges {
       node {
@@ -150,44 +144,45 @@ query Blog {
 </page-query>
 ```
 
-## Query data in Templates
+## Multiple Queries in Page components
 
-Templates are used for page layout for the *single* endpoint of a data source like for example a WordPress blog post. If you have a node type called `WordPressPost`, then you can create a file
-in `src/templates/WordPressPost.vue`.
-
-The `page-query` in templates also has a set of variables that can be used in the query. Any custom fields from the current `node` are available as variables. Access field values in deep objects or arrays by separating properties or indexes with double underscores (`__`).
-
-- `$id` resolves to `node.id`
-- `$value` resolves to `node.fields.value`
-- `$object__value` resolves to `node.fields.object.value`
-- `$array__3__id` resolves to `node.fields.array[3].id`
+If you need to make multiple GraphQL queries, here is how you do it. The results will be stored in a
+`$page` property inside the page component and you can further differentiate by specifying the query name.
 
 ```html
 <template>
-  <Layout :title="$page.post.title">
-    <div v-html="$page.post.content"/>
+  <Layout>
+    <h2>Latest blog posts</h2>
     <ul>
-      <li v-for="edge in $page.related" :key="edge.node.id">
-        <g-link :to="edge.node.path">
-          {{ edge.node.title }}
-        </g-link>
+      <li v-for="edge in $page.posts.edges" :key="edge.node.id">
+        {{ edge.node.title }}
+      </li>
+    </ul>
+
+    <h2>Latest book reviews</h2>
+    <ul>
+      <li v-for="edge in $page.books.edges" :key="edge.node.id">
+        {{ edge.node.title }}
       </li>
     </ul>
   </Layout>
 </template>
 
 <page-query>
-query Post($id: String!, $group: String!) {
-  post(id: $id) {
-    title
-    content
-  }
-  related: allPost(filter: { group: { eq: $group }}) {
+query {
+  posts: allWordPressPost {
     edges {
       node {
         id
         title
-        path
+      }
+    }
+  }
+  books: allBooks {
+    edges {
+      node {
+        id
+        title
       }
     }
   }
@@ -195,9 +190,9 @@ query Post($id: String!, $group: String!) {
 </page-query>
 ```
 
-## Query data in Components
+## Query data in any component
 
-Every **Component** can have a `<static-query>` block with a GraphQL query to fetch data from data sources. The results will be stored in a `$static` property inside the component. A `<static-query>` is named static as it can not accept any variables.
+Every **Vue component** can have a `<static-query>` block with a GraphQL query to fetch data from data sources. The results will be stored in a `$static` property inside the component. A `<static-query>` is named static as it cannot accept any variable.
 
 ```html
 <template>
@@ -205,10 +200,39 @@ Every **Component** can have a `<static-query>` block with a GraphQL query to fe
 </template>
 
 <static-query>
-query Post {
+query {
   post(id: "1") {
     content
   }
 }
 </static-query>
+```
+
+### Functional component support
+
+In functional components a `$static` property is exposed within the `render` function at `context.data.$static`
+
+```html
+<static-query>
+query {
+  post(id: "1") {
+    content
+  }
+}
+</static-query>
+
+<script>
+export default {
+  functional: true,
+  render(createElement, context) {
+    const { content } = context.data.$static.post
+  
+    return createElement('div', {
+      domProps: {
+        innerHTML: content
+      },
+    })
+  }
+}
+</script>
 ```

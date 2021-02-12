@@ -1,7 +1,7 @@
 <template>
 	<Section dots="true">
 		<h2 class="container text-center">
-      Make website building fun again
+      A better way to build websites & apps
     </h2>
     <p class="lead text-center container-md">
     	Gridsome makes it simple & fast to build modern websites for any data source.
@@ -12,7 +12,7 @@
 		</div>
 
     <p class="home-links text-center ">
-      <g-link  to="/docs" class="button primary button--large">
+      <g-link  to="/docs/" class="button primary button--large">
         Get started
       </g-link>
     </p>

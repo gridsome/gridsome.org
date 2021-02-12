@@ -1,17 +1,17 @@
 # Taxonomy pages
 
-Fields in the GraphQL schema can have references to other nodes. That's a great way to organize pages and have links between them. Every node has a `belongsTo` field which is able to list all other nodes referencing it. The `belongsTo` field works like the [content type collections](/docs/querying-data#content-type-collections) with `totalCount`, `pageInfo` and `edges`, but the `edges` field is always a [union field](https://graphql.org/learn/schema/#union-types) which can be any node type.
+Fields in the GraphQL schema can have references to other nodes. That's a great way to organize pages and have links between them. Every node has a `belongsTo` field which is able to list all other nodes referencing it. The `belongsTo` field works like the [collections](/docs/querying-data#querying-collections) with `totalCount`, `pageInfo` and `edges`, but the `edges` field is always a [union field](https://graphql.org/learn/schema/#union-types) which can be any node type.
 
-Read more about [referencing other nodes](/docs/data-store-api#referencing-other-nodes) if you haven't yet.
+Read more about [referencing other nodes](/docs/data-store-api/#referencing-other-nodes) if you haven't yet.
 
 ## Creating a taxonomy page
 
-In this example we are going to create two content types, a `Post` and a `Tag` types. We do that in the `loadSource` hook in our `gridsome.server.js` file. The `Post` nodes will have a `tags` field which will be an array of `Tag` ids.
+In this example we are going to create two collections, a `Post` and a `Tag` types. We do that in the `loadSource` hook in our `gridsome.server.js` file. The `Post` nodes will have a `tags` field which will be an array of `Tag` ids.
 
 ```js
-api.loadSource(store => {
-  const posts = store.addContentType('Post')
-  const tags = store.addContentType('Tag')
+api.loadSource(actions => {
+  const posts = actions.addCollection('Post')
+  const tags = actions.addCollection('Tag')
 
   // makes all ids in the `tags` field reference a `Tag`
   posts.addReference('tags', 'Tag')
@@ -46,7 +46,7 @@ Now, we create a `Tag.vue` file in `src/templates` to have a template for our ta
 </template>
 
 <page-query>
-query Tag($id: String!) {
+query ($id: ID!) {
   tag(id: $id) {
     title
     belongsTo {
@@ -72,7 +72,7 @@ That's it! The tag page above will show a list of posts with links to them.
 Place the `@paginate` directive after the `belongsTo` field to activate pagination. The query will have a `$page` variable available to pass into the `belongsTo` `page` argument.
 
 ```graphql
-query Tag($id: String!, $page: Int) {
+query ($id: ID!, $page: Int) {
   tag(id: $id) {
     title
     belongsTo(page: $page) @paginate {

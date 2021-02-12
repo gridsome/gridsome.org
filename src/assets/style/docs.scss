@@ -1,4 +1,8 @@
-.docs-page .post {
+.section.doc-content {
+  padding-top: 2%;
+}
+
+.post {
 
   max-width: 100%;
 
@@ -21,6 +25,7 @@
   h1, h2, h3 {
     padding-top: 6rem;
     margin-top: -5rem;
+
 
     a {
       float: left;
@@ -58,6 +63,7 @@
       display: block;
       margin-bottom: 1.5rem;
       border-top: 1px solid var(--border-color);
+      transition: border-color .3s;
     }
   }
   
@@ -109,7 +115,6 @@
   }
 
   &__link {
-    padding: 0;
-    color: var(--primary-color-dark);
+    border: 1px solid var(--border-color);
   }
 }

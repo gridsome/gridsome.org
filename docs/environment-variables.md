@@ -10,7 +10,7 @@ DB_USER=root
 DB_PASS=s1mpl3
 ```
 
-## Usage on the server 
+## Usage on the server
 
 All variables will be available as `process.env.{name}` on the server.
 
@@ -28,7 +28,7 @@ module.exports = {
 }
 ```
 
-## Usage in the browser 
+## Usage in the browser
 
 While all the variables are available on the server, only variables prefixed with `GRIDSOME_` are available in the browser for security reasons. As you see in the example above, only `GRIDSOME_API_URL` is prefixed. That is because we don't want to have `DB_USER` and `DB_PASS` compiled into our JavaScript.
 

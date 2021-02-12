@@ -10,7 +10,7 @@ If you are deploying to `https://<USERNAME or GROUP>.gitlab.io/`, you can omit `
 
 If you are deploying to `https://<USERNAME or GROUP>.gitlab.io/<REPO>/`, (i.e. your repository is at `https://gitlab.com/<USERNAME>/<REPO>`), set `pathPrefix` to `"/<REPO>/"`
 
-2. Set `outDir` in `gridsome.config.js` to 'public'.
+2. Set `outputDir` in `gridsome.config.js` to 'public'.
 
 3. Create a `.gitlab-ci.yml` file in the root of your project with the content below. This will build and deploy your site whenever you make changes to your content.
 

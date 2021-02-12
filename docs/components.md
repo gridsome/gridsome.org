@@ -4,7 +4,6 @@ Gridsome uses [Vue Single File Components] (https://vuejs.org/v2/guide/single-fi
 
 Here’s an example of a file we’ll call `Card.vue` inside `src/components/`:
 
-
 ```html
 <template>
   <div class="card">
@@ -43,6 +42,7 @@ export default {
 [Learn more about Single File Components](https://vuejs.org/v2/guide/single-file-components.html)
 
 ## Import to other Pages or Components
+
 When you have created a component you can easily import it into your pages. In Gridsome projects it's recommended to put all your .vue components in the **src/components** folder and import them into **Pages** or **Layouts** like this:
 
 ```html
@@ -74,7 +74,7 @@ to fetch data from data sources. The results will be stored in a
 </template>
 
 <static-query>
-query Post {
+query {
   post (id: "1") {
     content
   }

@@ -5,12 +5,13 @@
 	padding: .34rem 1.2rem;
   font-weight: 500;
   letter-spacing: .5px;
+  background-color: transparent;
   position: relative;
   border:0;
   text-decoration: none;
   overflow: hidden;
   border-radius: 5px;
-  color: var(--primary-color);
+  color: var(--primary-color-dark);
   transition: transform .2s, background .3s, box-shadow .3s, color .3s;
 
   > span {
@@ -49,8 +50,9 @@
   }
 
   &.primary {
-    color:#FFF;
+    color: #FFF;
     background-color: var(--primary-color-dark);
+    
     &:after {
       border-color: rgba(0,0,0,.1);
     }
@@ -98,7 +100,8 @@
     box-shadow: none!important;
 
     &:not(:hover) {
-      color: rgba(0,0,0,.5);
+      color: currentColor;
+      opacity: .6;
     }
     &:after {
       display: none;
