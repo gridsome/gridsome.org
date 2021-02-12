@@ -9,3 +9,7 @@ To deploy your Gridsome site to Netlify, go to the create a new site page, selec
 Add these build settings:
 - **Build Command:** `gridsome build`
 - **Publish directory:** `dist`
+
+**Note:**
+
+You do not need to setup any redirect rules for a Gridsome site to work with Netlify. Gridsome generates HTML files for every path on your site so rewrite rules aren't necessary (except for dynamic pages).

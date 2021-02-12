@@ -2,9 +2,9 @@
   <Starters class="starter">
       <div class="starter__header flex">
         <g-image class="starter__header-platform-logo" v-if="$page.starter.platforms" :src="$page.starter.platforms.logo" />
-        
+
         <strong class="starter__header-title">{{ $page.starter.title }}</strong>
-       
+
         <g-link
           v-if="$page.starter.author.path"
           :to="$page.starter.author.path"
@@ -17,8 +17,8 @@
             rel="noopener noreferrer"
             target="_blank"
             :href="githubUrl"
-            title="View on Github"
-            aria-label="View on Github"
+            title="View on GitHub"
+            aria-label="View on GitHub"
             class="button button--blank">
             <github-icon />
           </a>
@@ -135,6 +135,12 @@ export default {
     }
   },
 
+  metaInfo () {
+    return {
+      title: this.$page.starter.title
+    }
+  },
+
   async mounted () {
     const { repo } = this.$page.starter
     const url = `https://api.github.com/repos/${repo}/readme`
@@ -165,7 +171,7 @@ export default {
 </script>
 
 <page-query>
-query Starters($id: ID!) {
+query ($id: ID!) {
   starter(id: $id) {
     title
     repo

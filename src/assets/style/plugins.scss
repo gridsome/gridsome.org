@@ -83,7 +83,7 @@
     }
   }
 
-  &--active  {
+  &--active {
     & .plugin__name {
       color: var(--primary-color);
     }
@@ -121,7 +121,7 @@
 
   .connect {
     max-width: 500px;
-    margin:0 auto;
+    margin: 0 auto;
   }
 }
 
@@ -135,7 +135,6 @@
     align-items: center;
     justify-content: space-between;
     font-size: .85rem;
-
 
     &_left {
       display: flex;
@@ -181,6 +180,4 @@
       border-radius: 5px;
     }
   }
-
-  &__content {  }
 }

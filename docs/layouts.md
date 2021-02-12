@@ -2,23 +2,23 @@
 
 Layout components are used to wrap pages. Layouts should contain components like headers, footers or sidebars that will be used across the site.
 
-Layouts are _just_  **.vue components** located in `src/layouts` and need to be [declared as a global](#make-a-layout-global) component or imported per page to be used.
+Layouts are _just_ &nbsp;**.vue components** located in `src/layouts` and need to be [declared as a global](#make-a-layout-global) component or imported per page to be used.
 
-**Every layout requires a `<slot />` component.** This is where the content coming from pages and templates will be inserted. Layouts can have [multiple slots](#multiple-content-slots).
+**Every layout requires a `<slot>` component.** This is where the content coming from pages and templates will be inserted. Layouts can have [multiple slots](#multiple-content-slots).
 
 ```html
 <!-- Layout -->
 <template>
   <div>
     <header />
-    <slot /> <!-- Page content will be inserted here  -->
+    <slot></slot> <!-- Page content will be inserted here -->
     <footer />
   </div>
 </template>
 ```
 
-
 ## Import layouts
+
 When you have created a layout you need to import it to your pages and templates. This is done inside the `<script>` tag.
 
 ```html
@@ -41,11 +41,11 @@ export default {
 
 ```
 
-
 ## Make a layout global
+
 If you don't want to import the layout into every page or template you can make a layout global. To make a layout global go to `src/main.js` and import your layout file into this file.
 
-For example: 
+For example:
 ```javascript
 // src/main.js
 
@@ -76,10 +76,9 @@ You can now use `<Layout>` anywhere in your Gridsome project without importing i
 
 ```
 
-
 ## Passing Props to layouts
-Since layouts work like components, it is possible to pass Props to layouts. For example a page can look like this:
 
+Since layouts work like components, it is possible to pass Props to layouts. For example a page can look like this:
 
 ```html
 <!-- Page -->
@@ -90,14 +89,14 @@ Since layouts work like components, it is possible to pass Props to layouts. For
 </template>
 ```
 
-This will pass a Prop to a layout with `sidebar = true`. In the **Layout component** this could look like this: 
+This will pass a Prop to a layout with `sidebar = true`. In the **Layout component** this could look like this:
 
 ```html
 <!-- Layout -->
 <template>
   <div>
     <div class="main-content">
-      <slot />
+      <slot></slot>
     </div>
     <div v-if="sidebar">
       Lets show the sidebar!
@@ -113,15 +112,16 @@ export default {
 ```
 
 ## Multiple content slots
+
 To add multiple slots to a layout you need to name them. In this example we have added a sidebar slot that will only show if the page has sidebar content.
 
 ```html
 <!-- Layout -->
 <template>
   <div>
-    <slot /> <!-- Default slot  -->
+    <slot /> <!-- Default slot -->
     <div class="sidebar" v-if="$slots.sidebar">
-      <slot name="sidebar" /> <!-- Sidebar slot  -->
+      <slot name="sidebar"></slot> <!-- Sidebar slot -->
     </div>
   </div>
 </template>
@@ -143,7 +143,8 @@ Pages can now add content to this slot like this:
 ```
 
 ## Master layout
-You can create a **master layout** by adding a **App.vue** file to `src` root. This will let you keep your header, footer on all pages and add **page transitions**.
+
+You can create a **master layout** by adding an **App.vue** file to `src` root. This will let you keep your header, footer on all pages and add **page transitions**.
 
 A simple **App.vue** file looks like this:
 ```html
@@ -152,30 +153,4 @@ A simple **App.vue** file looks like this:
     <router-view />
   </div>
 </template>
-```
-
-### Pass props to master layout
-
-```html
-<script>
-  export default {
-    appProps: { transparent: false }
-  }
-</script>
-```
-
-This will let you pass props to master layout from any page.
-
-```html
-<template>
-  <div id="app" :class="{'is-transparent' : transparent}">
-    <router-view />
-  </div>
-</template>
-
-<script>
-  export default {
-    props: ['transparent']
-  }
-</script>
 ```

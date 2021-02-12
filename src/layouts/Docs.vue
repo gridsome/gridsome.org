@@ -12,7 +12,7 @@
         </template>
       </div>
       <Section class="doc-content flex-fit" container="base">
-        <slot />
+        <slot></slot>
         <p>
           <a :href="editLink" target="_blank" class="github-edit-link">
             <Github />

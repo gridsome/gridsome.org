@@ -2,26 +2,32 @@
 
 Adding forms to a static site is easy, but you need to use an external service. We have listed some great services that integrate well with Gridsome.
 
-
 ## Formspree
-Formspree is a contact form service that lets you handle form submission and it integrates seamlessly with your static sites 
+
+Formspree is a contact form service that lets you handle form submission and it integrates seamlessly with your static sites.
+
 Read more: [Formspree](https://formspree.io/)
 
 ## Getform.io
+
 Getform is a form backend platform that lets you handle your forms on your websites and apps. You can set up a form and start collecting submissions to your form within minutes.
+
 Read More: [Getform](https://getform.io/)
 
 ## Form-Data
-Collect form submissions with spam filtering, email notifications, auto-reply and full automation. Free plan available. 
+
+Collect form submissions with spam filtering, email notifications, auto-reply and full automation. Free plan available.
+
 Read More: [form-data](https://www.form-data.com/)
 
 ## Netlify Forms
+
 Netlify offers some sophisticated features to make static site form submissions a breeze.
 
 First we will start by adding the form to our template tag:
 
 ```html
-<form 
+<form
   name="contact"
   method="post"
   v-on:submit.prevent="handleSubmit"
@@ -67,7 +73,7 @@ data() {
 }
 ```
 
-Last step is to add our submit handler to send the data to Netlify. This is done by listening to the form submit action and using fetch to post the data in `formData`. We also have a encode method that will make sure our data is properly formatted when we post it. 
+Last step is to add our submit handler to send the data to Netlify. This is done by listening to the form submit action and using fetch to post the data in `formData`. We also have a encode method that will make sure our data is properly formatted when we post it.
 
 In this example shown below we are redirecting the user to the route `/success` if the post was successful, this can be changed into any action you want. But in this case you need to make sure you have a page set up on that route to present a success message for the user.
 
@@ -96,5 +102,6 @@ methods: {
 Read more: [Netlify Forms](https://www.netlify.com/docs/form-handling/)
 
 ## Basin
+
 Basin helps you manage form submission and track conversions with no backend coding required. It offers great features that integrate excellently with your static sites.
 Read More: [Basin](https://usebasin.com/)

@@ -9,7 +9,7 @@ You can query data from the GraphQL data layer into any **Page, Template or Comp
 
 Working with GraphQL in Gridsome is easy and you don't need to know much about GraphQL. Here is an example of how to use GraphQL in `page-query` for a page:
 
-```html
+```vue
 <template>
   <div>
     <div v-for="edge in $page.posts.edges" :key="edge.node.id">
@@ -19,7 +19,7 @@ Working with GraphQL in Gridsome is easy and you don't need to know much about G
 </template>
 
 <page-query>
-query Posts {
+query {
   posts: allWordPressPost {
     edges {
       node {
@@ -54,7 +54,7 @@ You will notice that some of the root fields in your schema are prefixed with `a
 #### Find nodes sorted by title
 
 ```graphql
-query Posts {
+query {
   allPost(sortBy: "title", order: DESC) {
     edges {
       node {
@@ -68,7 +68,7 @@ query Posts {
 #### Sort a collection by multiple fields
 
 ```graphql
-query Posts {
+query {
   allPost(sort: [{ by: "featured" }, { by: "date" }]) {
     edges {
       node {
@@ -92,7 +92,7 @@ The other fields that do not start with `all` are your single entries. They are 
 #### Example query
 
 ```graphql
-query Post {
+query {
   post(id: "1") {
     title
   }
@@ -118,8 +118,54 @@ to fetch data from data sources. The results will be stored in a
 </template>
 
 <page-query>
-query Blog {
+query {
   posts: allWordPressPost {
+    edges {
+      node {
+        id
+        title
+      }
+    }
+  }
+}
+</page-query>
+```
+
+## Multiple Queries in Page components
+
+If you need to make multiple GraphQL queries, here is how you do it. The results will be stored in a
+`$page` property inside the page component and you can further differentiate by specifying the query name.
+
+```html
+<template>
+  <Layout>
+    <h2>Latest blog posts</h2>
+    <ul>
+      <li v-for="edge in $page.posts.edges" :key="edge.node.id">
+        {{ edge.node.title }}
+      </li>
+    </ul>
+
+    <h2>Latest book reviews</h2>
+    <ul>
+      <li v-for="edge in $page.books.edges" :key="edge.node.id">
+        {{ edge.node.title }}
+      </li>
+    </ul>
+  </Layout>
+</template>
+
+<page-query>
+query {
+  posts: allWordPressPost {
+    edges {
+      node {
+        id
+        title
+      }
+    }
+  }
+  books: allBooks {
     edges {
       node {
         id
@@ -141,10 +187,39 @@ Every **Vue component** can have a `<static-query>` block with a GraphQL query t
 </template>
 
 <static-query>
-query Post {
+query {
   post(id: "1") {
     content
   }
 }
 </static-query>
+```
+
+### Functional component support
+
+In functional components a `$static` property is exposed within the `render` function at `context.data.$static`
+
+```html
+<static-query>
+query {
+  post(id: "1") {
+    content
+  }
+}
+</static-query>
+
+<script>
+export default {
+  functional: true,
+  render(createElement, context) {
+    const { content } = context.data.$static.post
+  
+    return createElement('div', {
+      domProps: {
+        innerHTML: content
+      },
+    })
+  }
+}
+</script>
 ```

@@ -2,7 +2,6 @@
 
 > Templates are used to create single pages for nodes in a [collection](/docs/collections/). Nodes need a corresponding page in order to be presented on its own URL.
 
-
 ## Setup templates
 
 The example below shows you how to setup route and template for a [collection](/docs/collections/) named `Post`. A component located at `src/templates/{Collection}.vue` will be used as template if no component is specified.
@@ -56,7 +55,7 @@ module.exports = {
 Template paths are available in the GraphQL schema with a `path` field. Use a `to` argument for getting paths to additional templates for a collection.
 
 ```graphql
-query Product ($id: ID!) {
+query ($id: ID!) {
   product(id: $id) {
     path               # path to the default template
     path(to:"reviews") # path to the reviews template
@@ -78,6 +77,23 @@ Path parameters are slugified by default, but the original value can be used by 
 - `:object__value` resolves to `node.object.value`
 - `:array__3__id` resolves to `node.array[3].id`
 
+The `path` option can be a function, which receives the node as the first argument and returns a path.
+
+```js
+// gridsome.config.js
+module.exports = {
+  templates: {
+    Post: [
+      {
+        path: (node) => {
+          return `/product/${node.slug}/reviews`
+        }
+      }
+    ]
+  }
+}
+```
+
 Each node will get a `path` field in the GraphQL schema which contains the generated URL.
 
 ## Add data to a template
@@ -87,13 +103,13 @@ Pages generated from the `templates` configuration will have the node `id` avail
 ```html
 <template>
   <div>
-  	<h1 v-html="$page.post.title" />
-  	<div v-html="$page.post.content" />
+    <h1 v-html="$page.post.title" />
+    <div v-html="$page.post.content" />
   </div>
 </template>
 
 <page-query>
-query Post($id: ID!) {
+query ($id: ID!) {
   post(id: $id) {
     title
     content

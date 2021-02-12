@@ -27,7 +27,7 @@
 </template>
 
 <page-query>
-query Contributor ($id: ID!) {
+query ($id: ID!) {
   contributor (id: $id) {
     id
     title

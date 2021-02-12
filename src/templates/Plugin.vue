@@ -52,7 +52,7 @@
                     <span class="plugin-post__users-name" v-if="owners.length == 1">
                       {{ owner.name }}
 
-                      <i v-if="owner.name == 'gridsome'" class="plugin-post__users-tag">Offical Plugin</i>
+                      <i v-if="owner.name == 'gridsome'" class="plugin-post__users-tag">Official Plugin</i>
                     </span>
                   </a>
                 </span>
@@ -65,8 +65,8 @@
                 rel="noopener noreferrer"
                 target="_blank"
                 v-if="hit.repository" :href="hit.repository.url"
-                title="View on Github"
-                aria-label="View on Github"
+                title="View on GitHub"
+                aria-label="View on GitHub"
                 class="button button--blank">
                 <div :is="repositoryIcon(hit.repository)" />
               </a>

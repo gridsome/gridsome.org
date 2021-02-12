@@ -18,6 +18,7 @@ module.exports = {
 Set a name for your project. The name is typically used in the title tag.
 
 ## siteDescription
+
 - Type `string`
 - Default `''`
 
@@ -77,6 +78,7 @@ module.exports = {
 Define routes and templates for collections.
 
 [Read more about using templates](/docs/templates/)
+
 ## metadata
 
 - Type `object`
@@ -256,9 +258,9 @@ Supported loaders are:
 - Type `number`
 - Default `8080`
 
-## outDir
+## outputDir
 
 - Type `string`
 - Default `'dist'`
 
-Set custom folder for generated files on `gridsome build`.
+The directory where the production build files will be generated in when running `gridsome build`.
