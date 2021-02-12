@@ -24,7 +24,7 @@ There's a few steps to complete:
 
 5. Go to GitHub's website and make sure your Repo's settings under "GitHub Pages" show the `gh-pages` branch under "Source".
 
-**Notes**
+### Notes
 
 GitHub Pages allows you to have a "GitHub user page" that acts as a profile/main page on `<your-github-username>.github.io` by having a repo named `<your-github-username>.github.io`.
 
