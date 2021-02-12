@@ -9,7 +9,7 @@ You can query data from the GraphQL data layer into any **Page, Template or Comp
 
 Working with GraphQL in Gridsome is easy and you don't need to know much about GraphQL. Here is an example of how to use GraphQL in `page-query` for a page:
 
-```vue
+```html
 <template>
   <div>
     <div v-for="edge in $page.posts.edges" :key="edge.node.id">
@@ -68,8 +68,22 @@ query {
 #### Sort a collection by multiple fields
 
 ```graphql
-query {
-  allPost(sort: [{ by: "featured" }, { by: "date" }]) {
+query Posts {
+  allPost(sort: [{ by: "title" }, { by: "date" }]) {
+    edges {
+      node {
+        title
+      }
+    }
+  }
+}
+```
+
+#### Sort a collection by multiple fields and different ordering
+
+```graphql
+query Posts {
+  allPost(sort: [{ by: "date", order: DESC }, { by: "title", order: ASC }]) {
     edges {
       node {
         title
