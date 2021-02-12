@@ -48,7 +48,7 @@ Gridsome requires [Node.js](https://nodejs.org/) (v8.3+) and recommends [Yarn](h
 ### 2. Create a Gridsome project
 
 1. `gridsome create my-gridsome-site` to create a new project </li>
-2. `cd my-gridsome-site` to open folder
+2. `cd my-gridsome-site` to move into project directory
 3. `gridsome develop` to start local dev server at `http://localhost:8080`
 4. Happy coding 🎉🙌
 
