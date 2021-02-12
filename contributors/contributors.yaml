@@ -265,6 +265,12 @@
   avatar: ./images/arturoalviar.jpg
   twitter: "@arturoalviar"
 
+- id: gollowars
+  name: Gollowars
+  bio: "Frontend Engineer"
+  avatar: ./images/gollowars.jpg
+  twitter: "@gollowars"
+
 - id: ciaran
   name: Ciaran Slemon
   bio: "SEO, Designer, Developer"
