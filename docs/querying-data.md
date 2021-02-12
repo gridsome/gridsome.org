@@ -83,7 +83,7 @@ query Posts {
 
 ```graphql
 query Posts {
-  allPost(sort: [{ by: "date", order: DESC }, { by: "title", order: DESC }]) {
+  allPost(sort: [{ by: "date", order: DESC }, { by: "title", order: ASC }]) {
     edges {
       node {
         title
