@@ -4,7 +4,7 @@
 
 ## Adding a collection
 
-Collections can be added by [source plugins](/plugins/@gridsome/source-filesystem) or you can do it yourself with the [Data Store API](/docs/data-store-api/). The collections are stored in a local in-memory data store during `development` and `build`. Nodes can be **sourced** from local files (Markdown, JSON, YAML etc.) or any external APIs.
+Collections can be added by [source plugins](/plugins) or you can do it yourself with the [Data Store API](/docs/data-store-api/). The collections are stored in a local in-memory data store during `development` and `build`. Nodes can be **sourced** from local files (Markdown, JSON, YAML etc.) or any external APIs.
 
 ![Collections](./images/node-pages.png)
 
