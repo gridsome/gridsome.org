@@ -8,6 +8,7 @@ Currently [Algolia](https://www.algolia.com) offers up to 10,000 search requests
 
 1. Create a free Algolia account.
 2. Install [gridsome-plugin-algolia](https://gridsome.org/plugins/gridsome-plugin-algolia):
+
 ```sh
 # NPM
 npm install --save gridsome-plugin-algolia
@@ -18,6 +19,7 @@ yarn add gridsome-plugin-algolia
 
 3. Follow the setup instructions on the plugin page for setting up the Algolia indexing process.
 4. Create the UI using `algoliasearch` and `vue-instantsearch`:
+
 ```sh
 # NPM
 npm install --save algoliasearch vue-instantsearch
