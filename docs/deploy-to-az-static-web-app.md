@@ -37,7 +37,7 @@ After you sign in with GitHub, enter the repository information.
 
 1. Select your *Organization*
 2. Select your repository from the *Repository* drop-down
-3. Select **master** (or **main**) from the *Branch* drop-down
+3. Select your production branch from the *Branch* drop-down
 4. In the *Build Details* section, add configuration details to build your Gridsome website
    - In our case, we can use **Vue.js**, as Gridsome uses the same structure to build
      - Keep the default value in the *App location* box
@@ -68,6 +68,6 @@ The Static Web Apps overview window displays a series of links that help you int
 1. The banner at the top of Overview takes you  to the GitHub Actions running against your repository. Once you verify the deployment is complete, you can navigate using the generated URL.
 2. You can click on the *URL* link to open your website.
 
-You can check other docs and tutorials regarding Azure Static Web Apps directly from Azure Documentation
+You can check other docs and tutorials regarding Azure Static Web Apps directly from Azure Documentation:
 
 [Azure Static Web Apps Documentation](https://docs.microsoft.com/en-us/azure/static-web-apps/)
