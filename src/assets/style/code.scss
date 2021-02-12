@@ -13,7 +13,6 @@ h1, h2, h3, h4 {
     line-height: 1.5;
     direction: ltr;
     text-align: left;
-    white-space: pre-wrap;
     word-spacing: normal;
     word-break: normal;
     tab-size: 2;
@@ -42,10 +41,10 @@ h1, h2, h3, h4 {
 
   // Inline code
   :not(pre) > code {
-    border-radius: .3em;
-    color: #405a74;
-    padding: 0.25rem 0.5rem;
-    font-size: .8em;
+    color: var(--inline-code-text);
+    padding: 0.2rem 0.33rem;
+    vertical-align: 1%;
+    font-size: .78em;
     background-color: var(--inline-code-bg);
   }
 }

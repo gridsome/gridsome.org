@@ -1,12 +1,12 @@
 ---
-title: Generate custom pages
+title: Programmatically generate pages 
 filepath: gridsome.server.js
 filetype: js
 order: 10
 ---
 ```js
-// The Pages API let you create pages without using GraphQL,
-// and create pages programmatically 
+// The Pages API lets you create pages without using GraphQL,
+// and create pages programmatically
 const axios = require('axios')
 
 module.exports = function (api) {

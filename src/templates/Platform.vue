@@ -12,10 +12,10 @@
 
     <hr />
     <p>
-      Feel free to join the 
+      Feel free to join the
       <a href="//discord.gg/daeay6n" rel="noopener noreferrer" target="_blank">
         #{{ $page.platform.title }}
-      </a> 
+      </a>
       community channel in Gridsome Discord.
     </p>
 
@@ -23,7 +23,7 @@
 </template>
 
 <page-query>
-query Platform($id: String!) {
+query ($id: ID!) {
   platform(id: $id) {
     title
     belongsTo(sortBy: "index") {
@@ -61,6 +61,11 @@ export default {
   components: {
     Starters,
     StarterCard
+  },
+  metaInfo () {
+    return {
+      title: `${this.$page.platform.title} starters`
+    }
   }
 }
 </script>
