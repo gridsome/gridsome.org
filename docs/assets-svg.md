@@ -27,10 +27,10 @@ The simplest way to use SVG icons in Gridsome is to just add them as normal mark
 You can import SVGs as you do with any other Vue component with `vue-svg-loader`. Start by installing the library:
 
 ```shell
-// NPM
+# NPM
 npm i -D vue-svg-loader
 
-// Yarn
+# Yarn
 yarn add -D vue-svg-loader
 ```
 
@@ -64,7 +64,11 @@ Then you can import your SVGs from within your Vue templates like any Vue compon
 FontAwesome is one of the most popular icon libraries out there, and with version 5, they've made it incredibly easy to use with Vue without bloating your codebase with a lot of icons/styles you're not using. We can start implementing it in our Gridsome site by installing a few needed items:
 
 ```shell
+# NPM
 npm i -D @fortawesome/{vue-fontawesome,fontawesome-svg-core,free-brands-svg-icons}
+
+# Yarn
+yarn add -D @fortawesome/{vue-fontawesome,fontawesome-svg-core,free-brands-svg-icons}
 ```
 
 The `@organization/{package,package}` is a shorthand format for installing multiple packages within an organization. The above is equivalent to:
@@ -155,10 +159,10 @@ Webpack loader used for inline replacement of SVG images with actual content of 
 First install loader using:
 
 ```shell
-// NPM
+# NPM
 npm i -D vue-svg-inline-loader
 
-// Yarn
+# Yarn
 yarn add -D vue-svg-inline-loader
 ```
 
