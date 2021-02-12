@@ -12,7 +12,7 @@ A transformer must have a static `mimeTypes` method which returns an array of [m
 
 ### `transformer.parse(source)`
 
-A transformer must also implement a `parse` method that will be executed be source plugins to parse content. The method must return a node.
+A transformer must also implement a `parse` method that will be executed by source plugins to parse content. The method must return a node.
 
 ## Add GraphQL fields
 

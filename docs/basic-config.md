@@ -2,9 +2,7 @@
 
 Every Gridsome project has a `/gridsome.config.js` file. This is where plugin options and global projects settings are located.
 
-
 [For complete config API go here](/docs/config/)
-
 
 ```js
 module.exports = {
@@ -19,5 +17,3 @@ module.exports = {
   ],
 }
 ```
-
-
