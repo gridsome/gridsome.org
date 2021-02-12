@@ -371,6 +371,14 @@
   tags: gridsome, starter, portfolio
   platforms: markdown
 
+- title: Gridsome Neumorphic Starter
+  description: A blog starter theme for Gridsome with a minimalistic, you might even say, neumorphic design.
+  screenshot: ./screenshots/gridsome-starter-neumorphic-1680.png
+  repo: bradsiefert/gridsome-starter-neumorphic
+  preview: https://gridsome-neumorphic-starter.netlify.app/
+  author: bradsiefert
+  tags: gridsome, blog, neumorphic, darkmode
+
 - title: Gridsome Netlify-CMS Buefy
   description: A simple blog starter using buefy, markdown, and netlify-cms.
   screenshot: ./screenshots/gridsome-starter-netlifycms-buefy.png
@@ -397,7 +405,7 @@
   tags: gridsome, starter, strapi, blog
   platforms: strapi
 
-- title: Buefy
+- title: Buefy Portfolio
   description: Buefy Portfolio Starter
   screenshot: ./screenshots/gridsome-starter-buefolio.png
   repo: yanuaraditia/gridsome-starter-buefolio
@@ -413,8 +421,7 @@
   author: ondrabus
   tags: gridsome, starter, kentico, kontent, blog
   platforms: kontent
-
-
+  
 - title: Gridsome Ecommerce BagelDB Starter
   description: Ecommerce starter example for BagelDB
   screenshot: ./screenshots/gridsome-starter-bageldb-ecommerce.png
@@ -423,7 +430,15 @@
   author: bageldb
   tags: gridsome, starter, BagelDB, ecommerce
   platforms: bageldb
-  
+
+- title: Gridsome devB Starter
+  description: Full-stack developer blog starter with Gridsome ❤️ TailwindCSS
+  screenshot: ./screenshots/gridsome-devb.png
+  repo: barisaksu/devB
+  preview: https://baris.gitlab.io/devb/
+  author: barisaksu
+  tags: gridsome, starter, developer, tailwindcss, markdown, blog
+
 - title: Gridsome Sanity Akarui
   description: Akarui is a Gridsome starter that helps you get up and running with Sanity.io
   screenshot: ./screenshots/gridsome-starter-sanity-akarui.png
@@ -432,3 +447,29 @@
   author: arturoalviar
   tags: gridsome, starter, sanity, blog, portfolio, tailwind, tailwindcss, dark theme, responsive
   platforms: sanity
+
+- title: Gridsome TailwindCSS & Markdown Starter
+  description: A barebones Gridsome starter using TailwindCSS and Markdown, with an almost-blank starting page and simple blog feed.
+  screenshot: ./screenshots/gridsome-minimal-tailwind-1680.png
+  repo: knightspore/gridsome-tailwindcss-markdown-starter
+  preview: https://gridsome-tailwind-markdown-starter.netlify.app/
+  author: ciaran
+  tags: gridsome, starter, tailwindcss, markdown, blog, minimal
+  platforms: markdown
+
+- title: Forestry + FontAwesome + Tailwind 
+  description: Tailwind, FontAwesome, and Forestry integration. A simple starter blog on Gridsome.
+  screenshot: ./screenshots/forestry-tw-fa-starter.png
+  repo: meditatingdragon/gridsome-tw-fa-forestry-starter
+  preview: https://wizardly-payne-28c7e2.netlify.com/
+  author: rcheuk
+  tags: blog, forestry, minimalist, markdown, tailwind, fontawesome
+  platforms: markdown
+  
+- title: Vuetify Blog Starter
+  description: This is a blog starter built with Vuetify and FontAwesome icons. 
+  screenshot: ./screenshots/vuetify-starter.png
+  repo: meditatingdragon/starter-gridsome-vuetify
+  preview: https://festive-lalande-6eaf50.netlify.com/
+  author: rcheuk
+  tags: blog, vuetify markdown, fontawesome
