@@ -1,8 +1,9 @@
 <template>
   <Layout>
-     <Section container="md" class="blog-posts" dots="top">
-      <div class="mb container-sm text-center">
-        <h1>Gridsome blog</h1>
+     <Section container="md" class="blog-posts">
+      <div class="mb-x2 container-sm text-center">
+        <h1>Gridsome Blog</h1>
+        <p style="opacity: .8">Follow our mission to make the easiest and most fun framework for building modern websites & apps that are fast by default.</p>
       </div>
       <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
 
@@ -13,10 +14,10 @@
 
     </Section>
   </Layout>
-</template> 
+</template>
 
 <page-query>
-query BlogPosts {
+query {
   posts: allBlogPost {
     edges {
       node {

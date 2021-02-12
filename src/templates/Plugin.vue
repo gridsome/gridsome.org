@@ -1,6 +1,7 @@
 <template>
   <Layout :footer="false">
-    <div class="plugins container container-main flex gap-60 flex-align-top">
+    <div class="plugins container flex flex-align-top" style="position: relative;">
+      
       <AisInstantSearchSsr class="sidebar plugins__sidebar">
         <AisConfigure
           :hitsPerPage="hitsPerPage"
@@ -44,31 +45,44 @@
         <template v-if="isSingle">
           <div class="plugin-post__meta" v-if="hit">
             <div class="plugin-post__meta_left">
-              <a v-if="hit.repository" :href="hit.repository.url" target="_blank" rel="noopener">
-                <div :is="repositoryIcon(hit.repository)" />
-              </a>
               <div class="plugin-post__users">
                 <span v-for="owner in owners" :key="owner.name">
                   <a :href="owner.link" target="_blank" rel="noopener">
-                    <img v-if="owner.avatar" :src="owner.avatar" :title="owner.name" />
+                    <img class="plugin-post__users-image" v-if="owner.avatar" :src="owner.avatar" :title="owner.name" />
+                    <span class="plugin-post__users-name" v-if="owners.length == 1">
+                      {{ owner.name }}
+
+                      <i v-if="owner.name == 'gridsome'" class="plugin-post__users-tag">Official Plugin</i>
+                    </span>
                   </a>
                 </span>
               </div>
+
+            
             </div>
             <div class="plugin-post__meta_right">
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                v-if="hit.repository" :href="hit.repository.url"
+                title="View on GitHub"
+                aria-label="View on GitHub"
+                class="button button--blank">
+                <div :is="repositoryIcon(hit.repository)" />
+              </a>
               <span>Downloads last month: {{ hit.humanDownloadsLast30Days }}</span>
             </div>
           </div>
 
-          <VueMarkdown class="post plugin-post__content mb" v-if="hit" :source="hit.readme" />
+          <div class="plugin-post__content mb" v-if="hit" v-html="content" />
 
         </template>
         <template v-else>
-          <div class="plugins-intro post">
-            <g-image class="plugins-intro__image" blur="10" src="~/assets/images/plugins.png" />
+          <div class="plugins-intro container-sm post">
+            <Connect />
             <div class="plugins-intro__text">
               <h1>Gridsome Plugins</h1>
-              <p class="lead">Gridsome plugins are NPM packages that you can install to any project. This is hitly a small, but growing library. <span class="hide-for-small">Use the search bar to the left to find a plugin.</span></p>
+              <p class="lead">Gridsome plugins are NPM packages that you can install to any project. <span class="hide-for-small">Use the search bar to the left to find a plugin.</span></p>
 
               <p>Want to contribute to plugins library? <g-link to="/docs/how-to-create-a-plugin">Learn how to build a plugin</g-link></p>
             </div>
@@ -80,12 +94,23 @@
 </template>
 
 <script>
-import VueMarkdown from 'vue-markdown'
+import markdown from '../utils/markdown'
 import algoliasearch from 'algoliasearch/lite'
 import GitLabLogo from '~/assets/images/gitlab.svg'
 import GitHubLogo from '~/assets/images/github-logo.svg'
 import BitbucketLogo from '~/assets/images/bitbucket.svg'
-import { createInstantSearch } from 'vue-instantsearch'
+import Connect from '~/components/Connect.vue'
+
+import {
+  createInstantSearch,
+  AisInstantSearchSsr,
+  AisStateResults,
+  AisInfiniteHits,
+  AisHighlight,
+  AisConfigure,
+  AisSearchBox,
+  AisPoweredBy
+} from 'vue-instantsearch'
 
 const searchClient = algoliasearch(
   'OFCNCOG2CU',
@@ -99,7 +124,14 @@ const { instantsearch, rootMixin } = createInstantSearch({
 
 export default {
   components: {
-    VueMarkdown
+    Connect,
+    AisPoweredBy,
+    AisSearchBox,
+    AisConfigure,
+    AisHighlight,
+    AisInfiniteHits,
+    AisStateResults,
+    AisInstantSearchSsr
   },
 
   mixins: [rootMixin],
@@ -121,8 +153,7 @@ export default {
 
   computed: {
     isSingle () {
-      const { id } = this.$route.params
-      return id && id !== '1' // the dummy id
+      return Boolean(this.$route.params.id)
     },
 
     owners () {
@@ -140,6 +171,12 @@ export default {
             return owner
           })
         : []
+    },
+
+    content () {
+      return this.hit && this.hit.readme
+        ? markdown(this.hit.readme)
+        : ''
     }
   },
 
@@ -183,9 +220,7 @@ export default {
         query: name
       }])
 
-      this.hit = results.hits.length && results.hits[0].name === name
-        ? results.hits[0]
-        : null
+      this.hit = results.hits.find(hit => hit.name === name)
     },
 
     hitClasses (hit) {

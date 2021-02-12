@@ -1,132 +1,146 @@
-- title: Introduction
+- title: Prologue
   items:
-    - title: Prerequisites
-      link: /docs/prerequisites
-    - title: Getting started
-      link: /docs
-    - title: How it works
-      link: /docs/how-it-works
-    - title: Starter kits
-      link: /docs/starters
+    - title: Introduction
+      link: /docs/
+    - title: Core concepts
+      link: /docs/core-concepts/
+    - title: Fast by default
+      link: /docs/fast-by-default/
     - title: Deployment
-      link: /docs/deployment
+      link: /docs/deployment/
 
 - title : Basic Gridsome
   items:
     - title: Directory structure
-      link: /docs/directory-structure
+      link: /docs/directory-structure/
     - title: Project configuration
-      link: /docs/config
+      link: /docs/config/
     - title: Pages
-      link: /docs/pages
+      link: /docs/pages/
+    - title: Collections
+      link: /docs/collections/
     - title: Templates
-      link: /docs/templates
+      link: /docs/templates/
     - title: Layouts
-      link: /docs/layouts
-    - title: Routing
-      link: /docs/routing
+      link: /docs/layouts/
     - title: Components
-      link: /docs/components
-    - title: Plugins
-      link: /docs/plugins
+      link: /docs/components/
     - title: Linking
-      link: /docs/linking
-    - title: Images
-      link: /docs/images
-    - title: Page transitions
-      link: /docs/page-transitions
+      link: /docs/linking/
+    - title: Dynamic Routing
+      link: /docs/dynamic-routing/
+    - title: Image processing
+      link: /docs/images/
     - title: Populating <head>
-      link: /docs/head
-    - title: body & html attributes
-      link: /docs/body-html-attributes
-    - title: Environment variables
-      link: /docs/environment-variables
-    - title: Overriding Index.html
-      link: /docs/overriding-index
+      link: /docs/head/
+    - title: Environment Variables
+      link: /docs/environment-variables/
 
 - title : Working with data
   items:
-    - title: Fetching data
-      link: /docs/fetching-data
+    - title: GraphQL data layer
+      link: /docs/data-layer/
+    - title: Importing data
+      link: /docs/fetching-data/
     - title: Querying data
-      link: /docs/querying-data
+      link: /docs/querying-data/
     - title: Filtering data
-      link: /docs/filtering-data
+      link: /docs/filtering-data/
     - title: Taxonomy pages
-      link: /docs/taxonomies
-    - title: Paginated data
-      link: /docs/pagination
-    - title: Add global meta data
-      link: /docs/site-meta-data
-    - title: Add dynamic data *
-      link: /docs/data-dynamic
+      link: /docs/taxonomies/
+    - title: Paginate data
+      link: /docs/pagination/
+    - title: Global metadata
+      link: /docs/metadata/
+    - title: Client-side data
+      link: /docs/client-side-data/
 
 - title : Styles and Assets
   items:
     - title: Use CSS in Gridsome
-      link: /docs/assets-css
+      link: /docs/assets-css/
     - title: Add custom fonts
-      link: /docs/assets-fonts
+      link: /docs/assets-fonts/
     - title: Add external scripts
-      link: /docs/assets-scripts
+      link: /docs/assets-scripts/
     - title: Add SVG icons
-      link: /docs/assets-svg
+      link: /docs/assets-svg/
 
 - title : Guides
   items:
-    - title: Add a form *
-      link: /docs/guide-forms
+    - title: Add a form
+      link: /docs/guide-forms/
     - title: Add a search *
-      link: /docs/guide-search
-    - title: Add comments *
-      link: /docs/guide-comments
+      link: /docs/guide-search/
+    - title: Add comments
+      link: /docs/guide-comments/
     - title: Add Netlify CMS
-      link: /docs/guide-netlify-cms
+      link: /docs/guide-netlify-cms/
+    - title: Overriding index.html
+      link: /docs/overriding-index/
+    - title: Overriding App.vue
+      link: /docs/overriding-app/
+    - title: Page transitions
+      link: /docs/page-transitions/
+    - title: body & html attributes
+      link: /docs/body-html-attributes/
 
 - title: API Reference
   items:
     - title: Gridsome CLI
-      link: /docs/gridsome-cli
+      link: /docs/gridsome-cli/
     - title: Server API
-      link: /docs/server-api
+      link: /docs/server-api/
     - title: Data store API
-      link: /docs/data-store-api
+      link: /docs/data-store-api/
+    - title: Schema API
+      link: /docs/schema-api/
+    - title: Pages API
+      link: /docs/pages-api/
     - title: Client API
-      link: /docs/client-api
+      link: /docs/client-api/
     - title: Transformer API
-      link: /docs/transformer-api
+      link: /docs/transformer-api/
 
 - title: Deploy
   items:
     - title: Netlify
-      link: /docs/deploy-to-netlify
+      link: /docs/deploy-to-netlify/
     - title: AWS Amplify
-      link: /docs/deploy-to-amplify
-    - title: Zeit Now
-      link: /docs/deploy-to-zeit-now
+      link: /docs/deploy-to-amplify/
+    - title: Vercel
+      link: /docs/deploy-to-vercel/
     - title: Amazon S3
-      link: /docs/deploy-to-amazon-s3
+      link: /docs/deploy-to-amazon-s3/
     - title: GitLab Pages
-      link: /docs/deploy-to-gitlab
-    - title: Github Pages
-      link: /docs/deploy-to-github
+      link: /docs/deploy-to-gitlab/
+    - title: GitHub Pages
+      link: /docs/deploy-to-github/
+    - title: Google Cloud Platform
+      link: /docs/deploy-to-google/
+    - title: Surge.sh
+      link: /docs/deploy-to-surge-sh/
+    - title: Azure Static Web Apps
+      link: /docs/deploy-to-az-static-web-app/
 
 - title: Contribute
   items:
     - title: How to contribute
-      link: /docs/how-to-contribute
+      link: /docs/how-to-contribute/
     - title: How to create a plugin
-      link: /docs/how-to-create-a-plugin
+      link: /docs/how-to-create-a-plugin/
     - title: Code of conduct
-      link: /docs/code-of-conduct
+      link: /docs/code-of-conduct/
 
 - title: Help
   items:
+  - title: Prerequisites
+    link: /docs/prerequisites/
   - title: How to upgrade
-    link: /docs/how-to-upgrade
+    link: /docs/how-to-upgrade/
   - title: Troubleshooting
-    link: /docs/troubleshooting
+    link: /docs/troubleshooting/
   - title: Dev tools
-    link: /docs/dev-tools
+    link: /docs/dev-tools/
   - title: FAQ
-    link: /docs/faq
+    link: /docs/faq/

@@ -1,7 +1,7 @@
 <template>
-  <div class="feature">
+  <div class="feature text-center">
     <div class="feature__inner">
-      <slot />
+      <slot></slot>
     </div>
   </div>
 </template>
@@ -21,23 +21,17 @@ export default {
 
 <style lang="scss">
   .feature {
-    text-align:center; 
+    margin-bottom: var(--space-x2);
+    padding: 0 var(--space);
 
-    svg.icon {
-      width: 32px;
-      height: 32px;
-      margin: 0 auto var(--space);
-      opacity: .5;
-      stroke-width: 1.6!important;
-      path {
-        stroke-width: 1.6!important;
-      }
+    svg {
+      margin-top: -.25rem;
     }
 
     h3 {
-      margin-bottom: 1rem;
-      padding: 0 1rem;
+      margin-bottom: .5rem;
       line-height: 1.4;
     }
+    
   }
 </style>

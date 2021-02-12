@@ -1,14 +1,19 @@
 <template>
-  <Section dots="true" primary="true">
+  <Section dots="true" secondary="true">
     <div class="container text-center container-sm mb">
-      <h2>Latest posts</h2>
+      <h2>Latest from Gridsome blog</h2>
     </div>
     <div class="blog-posts container container-md">
       <PostCard v-for="edge in $static.posts.edges" :key="edge.node.id" :post="edge.node"/>
     </div>
-    <div class="container text-center container-sm md">
+    <div class="container container-md mb">
       <Newsletter />
     </div>
+
+    <div class="container text-center">
+      <g-image width="400" alt="Performance Matters" style="width: 200px; margin:0" src="~/assets/images/perfmatters.svg" />
+    </div>
+
   </Section>
 </template>
 
@@ -25,7 +30,7 @@ export default {
 </script>
 
 <static-query>
-query BlogPosts {
+query {
   posts: allBlogPost {
     edges {
       node {

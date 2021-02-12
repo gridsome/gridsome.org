@@ -1,9 +1,13 @@
-.docs-page .post {
+.section.doc-content {
+  padding-top: 2%;
+}
+
+.post {
 
   max-width: 100%;
 
   ul li {
-    margin-bottom: .2rem;
+    margin-bottom: .5rem;
   }
 
   p > img {
@@ -22,6 +26,7 @@
     padding-top: 6rem;
     margin-top: -5rem;
 
+
     a {
       float: left;
       top: 0.12em;
@@ -30,7 +35,7 @@
       text-align: center;
       width: 0.8em;
       opacity: 0.0;
-      color: var(--primary-link-color);
+      color: var(--primary-color-dark);
       box-shadow: none;
       background: none;
 
@@ -58,6 +63,7 @@
       display: block;
       margin-bottom: 1.5rem;
       border-top: 1px solid var(--border-color);
+      transition: border-color .3s;
     }
   }
   
@@ -88,7 +94,7 @@
   padding-top: 1rem;
   
   &:not(:hover) {
-    color: var(--primary-link-color);
+    color: var(--primary-color-dark);
   }
 
   svg {
@@ -109,7 +115,6 @@
   }
 
   &__link {
-    padding: 0;
-    color: var(--primary-link-color);
+    border: 1px solid var(--border-color);
   }
 }

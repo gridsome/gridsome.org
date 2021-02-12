@@ -1,10 +1,12 @@
 # Add External Scripts
-It is really easy to use any external javascript with gridsome. Being a Vue based framework any method of importing external scripts in vue works out of the box with Gridsome
+
+It is really easy to use any external or third-party JavaScript with Gridsome. Since Gridsome is built on Vue, any method of importing external scripts in Vue works out-of-the-box with Gridsome.
 
 ## Add to Components
 
-### Using an external Vue Plugin 
-If you want to use external Vue plugins inside your component without defining it globally you can do so by importing it inside your component and registering it for your component.
+### Using an external Vue Plugin
+
+If you want to use external Vue plugins inside your component without defining it globally, you can do so by importing the package inside your component and registering it for your component.
 
 Example:
 ```html
@@ -30,8 +32,9 @@ export default {
 </script>
 ```
 
-### Using an external library 
-If you want to use a external javascript library inside your component you can do so by importing the component and requiring it once vue components are mounted.
+### Using an external library
+
+If you want to use a external JavaScript library inside your component, you can do so by importing the package and requiring it once the Vue components are mounted.
 
 Example:
 ```html
@@ -52,24 +55,24 @@ export default {
     }
   },
   mounted() {
-    moment = require('moment')
-    this.theTime = 'The time is '.moment().format("HH:mm")
+    this.theTime = 'The time is ' + moment().format("HH:mm")
   }
 }
 </script>
 ```
 
 ## Add globally
-If you want scripts to be globally available you usually add them to `src/main.js`.
+
+If you want scripts to be globally available you can add them to `src/main.js`.
 
 **Note:** Avoid injecting dependencies globally, and use it only if really necessary. Injecting locally into components is considered a better practice for code splitting.
 
-### Using an external Vue Plugin 
-To use any external vue plugin with gridsome. Just import the required plugin and pass the required plugin to Vue using the following function `Vue.use` inside your main.js file
+### Using an external Vue Plugin
 
-Example:
+To use any external Vue plugin with Gridsome, just import the required plugin and pass the it to Vue using `Vue.use` inside your main.js file:
+
 ```javascript
-//main.js 
+//main.js
 
 import DefaultLayout from '~/layouts/Default.vue'
 import VueTypedJs from 'vue-typed-js'
@@ -83,10 +86,12 @@ export default function (Vue) {
 
 }
 ```
-In this example we are importing `VueTypedJs` plugin inside our gridsome project
 
-### Using an external library 
-To use any external library on our gridsome project you may  proxy it to a property of the Vue prototype object. Since all components inherit their methods from the Vue prototype object this will make your external automatically available across any and all components with no global variables or anything to manually import.
+In this example we are importing the `VueTypedJs` plugin inside our Gridsome project.
+
+### Using an external library
+
+To use any external library on our Gridsome project, you may proxy it to a property of the Vue prototype object. Since all components inherit their methods from the Vue prototype object this will make your external library or libraries automatically available across any and all components with no global variables or anything to manually import.
 
 Example:
 ```javascript
@@ -103,7 +108,9 @@ export default function (Vue) {
   Vue.prototype.$moment = moment
 }
 ```
-In this example we have imported moment.js library into our project, now you may use the library in any page 
+
+In this example we have imported moment.js library into our project, now you may use the library in any page:
+
 ```javascript
 export default {
   mounted() {
@@ -111,16 +118,20 @@ export default {
   }
 }
 ```
-Note: You could do it this way, but by using Object.defineProperty instead we are able to define our property with a descriptor. A descriptor allows us to set some low-level details such as whether or not our property is writeable and whether it shows up during enumeration in a for loop and more. It gives us a distinct advantage that properties created with a descriptor are read-only by default.
 
-Some coffee-deprived developer won't be able to do something silly like this in a component and break everything:
+Note: You could do it this way, but by using `Object.defineProperty` instead we are able to define our property with a descriptor. A descriptor allows us to set low-level details such as whether or not our property is writable and whether it shows up during enumeration in a `for` loop and more.
+
+Properties created with a descriptor are immutable by default. Some coffee-deprived developer won't be able to do something silly like this in a component and break everything:
+
 ```javascript
 this.$http = 'Assign some random thing to the instance method';
 this.$http.get('/'); // TypeError: this.$http.get is not a function
 ```
-Instead, our read-only instance method protects our library, and if you attempt to overwrite it you will get "TypeError: Cannot assign to read only property".
 
-So you can proxy your library to VuePrototype using Object.defineProperty in following way:
+Instead, our immutable instance method protects our library, and if you attempt to overwrite it you will get a `TypeError: Cannot assign to read only property`.
+
+So you can proxy your library to `VuePrototype` using `Object.defineProperty` in the following way:
+
 ```javascript
 //src/main.js
 
@@ -140,8 +151,11 @@ export default function (Vue) {
 ```
 
 ## Without SSR support
-While `gridsome build` gridsome uses server side rendering to create a fully rendered page. So if your Vue component does not support SSR or your external library like `jquery` changes the dom element it won't be rendered properly. For these type of component we suggest you to bind the component inside `<ClientOnly></ClientOnly>` tag and import library inside vue's `mounted()` function.
-For Example to use `Vue-carousel` that does not yet support SSR you can do the following
+
+`gridsome build` uses server-side rendering (SSR) to create a fully rendered page. If your Vue component does not support SSR or an external library (such as `jQuery`) changes the `DOM` element it won't be rendered properly. For these type of components, we suggest you to encapsulate the component inside `<ClientOnly></ClientOnly>` tags and import the library inside Vue's `mounted()` handler.
+
+For example, to use `vue-carousel` (that does not yet support SSR) you can do the following:
+
 ```html
 <template>
   <Layout>
@@ -174,9 +188,10 @@ For Example to use `Vue-carousel` that does not yet support SSR you can do the f
   }
 </script>
 ```
-This will stop SSR from rendering the component, and component is displayed after the vue components are mounted.
 
-Same way you can use any external library that causes issue in server side rendering like `jquery`
+This will stop SSR from rendering the component, and component is displayed after the Vue components are mounted.
+
+In the same way, you can use any external library that causes issues in server side rendering like `jQuery`:
 
 ```html
 <template>
@@ -194,7 +209,7 @@ Same way you can use any external library that causes issue in server side rende
     mounted() {
       //require our external library and load it in window
       window.owl = require('owl-carousel')
-      widows.$ = require('jquery')
+      window.$ = require('jquery')
   
       // This works now
       $('.some-carousel').owlCarousel()
@@ -204,5 +219,4 @@ Same way you can use any external library that causes issue in server side rende
 </script>
 ```
 
-Note: You should avoid using external library like `jquery` that manipulates the DOM and try using a Vue Plugin instead.
-
+**Note:** You should avoid using external libraries like `jQuery` that manipulate the DOM and try using a Vue Plugin instead.

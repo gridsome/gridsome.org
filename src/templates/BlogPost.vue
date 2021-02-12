@@ -1,24 +1,30 @@
 <template>
   <Layout>
-    <Section class="post" container="md" dots="true" >
+    <Section container="md" dots="true" >
 
-      <div class="post-header container-sm text-center mb">
+      <div class="post-header container-md text-center mb-x2">
         <h1 v-html="$page.post.title"/>
         <PostMeta :post="$page.post"/>
       </div>
 
-      <g-image v-if="$page.post.poster" quality="1" width="600" :src="$page.post.poster" />
+      <div class="post-content post mb-x2">
 
-      <p class="lead" v-html="$page.post.excerpt"/>
+        <g-image v-if="$page.post.poster" quality="1" width="600" :src="$page.post.poster" />
 
-      <div v-html="$page.post.content"/>
+        <p class="lead" v-html="$page.post.excerpt"/>
+
+        <div v-html="$page.post.content"/>
+
+      </div>
+
+      <Newsletter />
     </Section>
   </Layout>
 </template>
 
 <page-query>
-query BlogPost ($path: String!) {
-  post: blogPost (path: $path) {
+query ($id: ID!) {
+  post: blogPost (id: $id) {
     title
     date (format: "D. MMMM YYYY")
     timeToRead
@@ -36,10 +42,11 @@ query BlogPost ($path: String!) {
 
 <script>
 import PostMeta from '@/components/PostMeta.vue'
-
+import Newsletter from '@/components/Newsletter.vue'
 export default {
   components: {
     PostMeta,
+    Newsletter
   },
   metaInfo () {
     return {
@@ -54,12 +61,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-@media screen and (min-width: 750px) {
-  p > img {
-    max-width: 120%;
-    margin-left: -10%;
-  }
-}
-</style>

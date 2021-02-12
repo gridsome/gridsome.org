@@ -1,21 +1,66 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 @font-face {
   font-family: Jost;
-  src: url(../fonts/Jost-400-Book.otf);
-  font-weight: normal;
+  src: local('Jost'), url(../fonts/Jost-400-Book.otf);
+  font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: Jost;
-  src: url(../fonts/Jost-500-Medium.otf);
-  font-weight: bold;
+  src: local('Jost'), url(../fonts/Jost-400-BookItalic.otf);
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Jost;
+  src: local('Jost'), url(../fonts/Jost-500-Medium.otf);
+  font-weight: 500;
   font-display: swap;
 }
+
+@font-face {
+  font-family: Jost;
+  src: local('Jost'), url(../fonts/Jost-500-MediumItalic.otf);
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Jost;
+  src: local('Jost'), url(../fonts/Jost-600-Semi.otf);
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Jost;
+  src: local('Jost'), url(../fonts/Jost-600-SemiItalic.otf);
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Jost;
+  src: local('Jost'), url(../fonts/Jost-700-Bold.otf);
+  font-weight: 700;
+  font-display: swap;
+}
+
+
 
 /* Smaller text for mobile */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 550px) {
   html {
-    font-size: 99%;
+    font-size: 100%!important;
   }
 }
 
@@ -27,17 +72,26 @@
   font-size: 0.8em;
 }
 
-h1,
-h2,
-.lead {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#app strong {
+  font-weight: 500;
+}
+
+
+
+#app h5 {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .5px;
+}
+
+#app .primary-color {
+  color: var(--primary-color);
 }
 
 p {
   letter-spacing: -.15px;
   &:last-child {
-    margin: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -50,3 +104,11 @@ li {
   text-transform: uppercase;
 }
 
+
+h1, h2, h3 {
+  small {
+    font-weight: normal;
+    opacity: .8;
+    margin: 0 1rem;
+  }
+}

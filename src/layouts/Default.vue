@@ -1,9 +1,7 @@
 <template>
-  <div id="app">
+  <div id="app" dark>
     <Header />
-    <main>
-      <slot />
-    </main>
+    <slot></slot>
     <Footer v-if="footer !== false" />
   </div>
 </template>
@@ -13,15 +11,22 @@ import Header from './partials/Header'
 import Footer from './partials/Footer'
 
 export default {
-  props: ['footer'],
+  props: ['footer', 'primary-bg'],
   components: {
     Header,
-    Footer
+    Footer,
+  },
+  computed: {
+    mainClass() {
+      let classes = []
+      if(this.primaryBg) classes.push('main--bg-teritary')
+      return classes
+    },
   }
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
   display: flex;
   flex-direction: column;
@@ -30,5 +35,8 @@ export default {
 
 #app main {
   flex: 1;
+}
+.main--bg-teritary {
+  background-color: var(--bg-teritary);
 }
 </style>

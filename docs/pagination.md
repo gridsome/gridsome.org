@@ -1,14 +1,14 @@
-# Paginated queries
+# Paginate data
 
-Use the `@paginate` directive in your GraphQL query to add automatic pagination for a list of source nodes. The query will receive a `$page: Int` variable you can use to load sources for a specific page. Default nodes per page is `25`.
+Use the `@paginate` directive in your GraphQL query to add automatic pagination for a collection. The query will receive a `$page: Int` variable you can use to load sources for a specific page. Default nodes per page are `25`.
 
 ## Paginated collections
 
 Place the `@paginate` directive after the collection you want to paginate.
 
 ```graphql
-query Blog ($page: Int) {
-  allBlogPost (perPage: 10, page: $page) @paginate {
+query ($page: Int) {
+  allBlogPost(perPage: 10, page: $page) @paginate {
     pageInfo {
       totalPages
       currentPage
@@ -29,17 +29,17 @@ query Blog ($page: Int) {
 Place the `@paginate` directive after the `belongsTo` field you want to paginate.
 
 ```graphql
-query Category ($page: Int) {
+query ($page: Int) {
   category {
     title
-    belongsTo (perPage: 10, page: $page) @paginate {
+    belongsTo(perPage: 10, page: $page) @paginate {
       pageInfo {
         totalPages
         currentPage
       }
       edges {
         node {
-          ...on Post {
+          ... on Post {
             id
             title
             path
@@ -53,7 +53,7 @@ query Category ($page: Int) {
 
 ## Pager component
 
-Gridsome has a built-in `Pager` component for easy pagination. Import it from `gridsome` in our components to use it. The component neads at least the `pageInfo.totalPages` and `pageInfo.currentPage` fields to render correctly.
+Gridsome has a built-in `Pager` component for easy pagination. Import it from `gridsome` in our components to use it. The component needs at least the `pageInfo.totalPages` and `pageInfo.currentPage` fields to render correctly.
 
 #### Example usage
 
@@ -80,8 +80,8 @@ export default {
 </script>
 
 <page-query>
-query Blog ($page: Int) {
-  allBlogPost (perPage: 10, page: $page) @paginate {
+query ($page: Int) {
+  allBlogPost(perPage: 10, page: $page) @paginate {
     pageInfo {
       totalPages
       currentPage
@@ -97,13 +97,12 @@ query Blog ($page: Int) {
 </page-query>
 ```
 
-#### Options
-
 |Property         |Default| |
 |-----------------|-------|-|
 |info             |*required* |Page info from GraphQL result with *totalPages*
 |showLinks        |true |Show navigation links
 |showNavigation   |true |Show previous and next links
+|range            |5|How many links to show
 |linkClass        ||Add custom classes to the links
 |firstLabel       |«
 |prevLabel        |‹
