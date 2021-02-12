@@ -120,6 +120,8 @@
       link: /docs/deploy-to-google/
     - title: Surge.sh
       link: /docs/deploy-to-surge-sh/
+    - title: Azure Static Web Apps
+      link: /docs/deploy-to-az-static-web-app/
 
 - title: Contribute
   items:

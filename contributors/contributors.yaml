@@ -242,3 +242,8 @@
   avatar: ./images/arturoalviar.jpg
   twitter: "@arturoalviar"
 
+- id: daniloraisi
+  name: Danilo Raisi
+  bio: "Software Engineer"
+  avatar: ./images/daniloraisi.jpeg
+  twitter: "@daniloraisi"
