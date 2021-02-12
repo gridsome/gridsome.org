@@ -10,14 +10,15 @@ Add these build settings:
 - **Build Command:** `gridsome build`
 - **Publish directory:** `dist`
 
-Alternatively, deploy using a .toml file:
-  ```toml
+Alternatively, you can deploy using a `netlify.toml` file. Create a file in the root of your project called `netlify.toml`, with the following configuation.
+
+```toml
   [build]
     publish = "dist"
     command = "gridsome build"
-  ```
+```
 
-Create a file in the root of your project called `netlify.toml` this file should have the above configuation. More infomation on `netlify.toml` files can be found in the [Netlify docs](https://www.netlify.com/docs/netlify-toml-reference/).
+More infomation on `netlify.toml` files can be found in the [Netlify docs](https://www.netlify.com/docs/netlify-toml-reference/).
 
 **Note:**
 
