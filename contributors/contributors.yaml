@@ -216,13 +216,12 @@
   bio: "Growth Hacker"
   avatar: ./images/mcastres.jpeg
   twitter: "@MaxCastres"
-  
+
 - id: jammeryhq
   name: JammeryHQ
   bio: "Fast-track your JAMstack development & learning"
   avatar: ./images/jammeryhq.png
   twitter: "@jammeryhq"
-  
 
 - id: yanuaraditia
   name: Yanuar Aditia
@@ -241,6 +240,12 @@
   bio: "Front End Developer & Designer"
   avatar: ./images/arturoalviar.jpg
   twitter: "@arturoalviar"
+
+- id: ciaran
+  name: Ciaran Slemon
+  bio: "SEO, Designer, Developer"
+  avatar: ./images/ciaran.jpg
+  twitter: "@parabyl"
 
 - id: daniloraisi
   name: Danilo Raisi
