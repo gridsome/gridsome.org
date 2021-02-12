@@ -120,6 +120,8 @@
       link: /docs/deploy-to-google/
     - title: Surge.sh
       link: /docs/deploy-to-surge-sh/
+    - title: 21YunBox
+      link: /docs/deploy-to-21yunbox/
     - title: Azure Static Web Apps
       link: /docs/deploy-to-az-static-web-app/
 
