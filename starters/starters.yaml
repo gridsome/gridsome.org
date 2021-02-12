@@ -440,7 +440,7 @@
   platforms: sanity
 
 - title: Gridsome Algrid
-  description: Algrid is a simple starter for creating blogs using Algolia and implementing infinite scroll.
+  description: Algrid is a simple starter for creating blogs using Algolia for search, and implementing infinite scroll.
   screenshot: ./screenshots/gridsome-starter-algrid-1680x1680.jpg
   repo: gollowars/gridsome-starter-algrid
   preview: https://algrid.netlify.app/
