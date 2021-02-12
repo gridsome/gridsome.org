@@ -51,7 +51,7 @@ That's it! Now we can use a `v-model` in our html template to bind the search al
 <input type="text" name="search" id="search" placeholder="Type something..." v-model="search">
 
 <article v-for="post in searchResults" :key="post.node.id">
-    <h1><g-link :to="post.node.path">{{ post.node.title }}</g-link></h1>    
+    <h1><g-link :to="post.node.path">{{ post.node.title }}</g-link></h1>
     <p>{{ post.node.excerpt }}</p>
     <p>{{ post.node.date }}</p>
 </article>
@@ -62,7 +62,7 @@ You can enhance the user experience by adding a simple *empty state* text in cas
 ```html
 <div v-if="searchResults.length > 0">
     <article v-for="post in searchResults" :key="post.node.id">
-        <h1><g-link :to="post.node.path">{{ post.node.title }}</g-link></h1>    
+        <h1><g-link :to="post.node.path">{{ post.node.title }}</g-link></h1>
         <p>{{ post.node.excerpt }}</p>
         <p>{{ post.node.date }}</p>
     </article>
