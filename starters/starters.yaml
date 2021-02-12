@@ -447,3 +447,20 @@
   author: ciaran
   tags: gridsome, starter, tailwindcss, markdown, blog, minimal
   platforms: markdown
+
+- title: Forestry + FontAwesome + Tailwind 
+  description: Tailwind, FontAwesome, and Forestry integration. A simple starter blog on Gridsome.
+  screenshot: ./screenshots/forestry-tw-fa-starter.png
+  repo: meditatingdragon/gridsome-tw-fa-forestry-starter
+  preview: https://wizardly-payne-28c7e2.netlify.com/
+  author: rcheuk
+  tags: blog, forestry, minimalist, markdown, tailwind, fontawesome
+  platforms: markdown
+  
+- title: Vuetify Blog Starter
+  description: This is a blog starter built with Vuetify and FontAwesome icons. 
+  screenshot: ./screenshots/vuetify-starter.png
+  repo: meditatingdragon/starter-gridsome-vuetify
+  preview: https://festive-lalande-6eaf50.netlify.com/
+  author: rcheuk
+  tags: blog, vuetify markdown, fontawesome
