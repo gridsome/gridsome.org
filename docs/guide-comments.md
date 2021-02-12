@@ -3,9 +3,11 @@
 Adding comments to a static site can be easy, you have the option to use either external services that load an iframe into your site or applications that connect to your Github repository which commits the changes made on your site. We have listed some great services that integrate well with Gridsome.
 
 ## Disqus
+
 Disqus is an external service that injects an iframe on your site, one easy way to use Disqus with Gridsome is to use the package [vue-disqus](https://github.com/ktquez/vue-disqus) that provides you with a custom component that you can use across your project.
 
 #### Sign up on Disqus
+
 First step is to sign up for an account on [Disqus](https://disqus.com/). When presented with the option you want to choose 'I want to install Disqus on my site'. Continue by filling in all necessary information about your site and when you are asked 'What platform is your site on?', pick 'Universal Code' at the bottom of the page. 
 
 Complete the setup of your site and take note of your `Shortname` because this will be used later.
@@ -13,6 +15,7 @@ Complete the setup of your site and take note of your `Shortname` because this w
 ![shortname](https://i.imgur.com/Ui1aoYi.png) 
 
 #### Install vue-disqus
+
 You can use vue-disqus for easier implementation or use disqus directly, but this guide is using vue-disqus.
 
 `yarn add vue-disqus`
@@ -40,10 +43,12 @@ You need to provide a shortname which you can find on [Disqus](https://disqus.co
 Read more: [Disqus](https://disqus.com/)
 
 ## Staticman
+
 Staticman is an application that you connect to your Github repository which commits comments or any other type of user input to your site that you have configured.
 Read more: [Staticman](https://staticman.net/)
 
 ## Vssue
+
 [Vssue](https://vssue.js.org/guide/) is a Vue component / plugin, which can enable comments for your static pages. It stores comments in the issue system of code hosting platforms (e.g. Github, Gitlab, Bitbucket, Gitee, etc.)
 
 Go to [Vssue docs](https://vssue.js.org/guide/gridsome.html) for how to use it in Gridsome.
