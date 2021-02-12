@@ -421,6 +421,14 @@
   author: ondrabus
   tags: gridsome, starter, kentico, kontent, blog
   platforms: kontent
+
+- title: Gridsome devB Starter
+  description: Full-stack developer blog starter with Gridsome ❤️ TailwindCSS
+  screenshot: ./screenshots/gridsome-devb.png
+  repo: barisaksu/devB
+  preview: https://baris.gitlab.io/devb/
+  author: barisaksu
+  tags: gridsome, starter, developer, tailwindcss, markdown, blog
   
 - title: Gridsome Sanity Akarui
   description: Akarui is a Gridsome starter that helps you get up and running with Sanity.io

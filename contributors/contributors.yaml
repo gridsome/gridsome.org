@@ -241,6 +241,12 @@
   avatar: ./images/ondrabus.jpg
   twitter: "@ondrabus"
 
+- id: barisaksu
+  name: Barış Aksu
+  bio: "A passionate full-stack web developer"
+  avatar: ./images/barisaksu.png
+  twitter: "@barisaksu"
+
 - id: arturoalviar
   name: Arturo Alviar
   bio: "Front End Developer & Designer"
