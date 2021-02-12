@@ -11,6 +11,7 @@ First, you need to make a few preparations:
 1. Create a Firebase account [here](https://firebase.google.com/).
 
 1. Run firebase login and fill in your Firebase credentials:
+
 ```shell script
 firebase login
 ```
@@ -35,6 +36,7 @@ Create firebase.json and .firebaserc at the root of your project with the follow
  }
 }
 ```
+
 ``.firebaserc:``
 
 ```shell script

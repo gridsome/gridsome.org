@@ -46,10 +46,12 @@ To add a new blog post to the gridsome.org blog:
 - The content for the blog lives in the `/blog` folder.
 
 **Create your contributor profile:**
+
 - Add your avatar image to `/contributors/images`.
 - Add your name and info to `/contributors/contributors.yaml`.
 
 **Setup blog post:**
+
 - Add a new folder following the pattern `/blog/yyyy-mm-dd-title` (for example, 2018-09-14-say-hello-to-gridsome). Within this newly created folder add an `index.md` file.
 - Add `title`, `date`, `author`, and `tags` to the frontmatter of your `index.md`.
 - If your blog post contains images add them to your blog post folder and reference them in your post's `index.md`.
@@ -70,10 +72,12 @@ To add your Starter to gridsome.org:
 - Run `yarn` to install all of the website's dependencies.
 
 **Create your contributor profile:**
+
 - Add your avatar image to `/contributors/images`.
 - Add your name and info to `/contributors/contributors.yaml`.
 
 **Add your starter project:**
+
 - Add starter screenshot to `/starters/screenshots` (840x840px / 1680x1680 for retina).
 - Add starter details to end of this file `/starters/starters.yaml`.
 

@@ -7,6 +7,7 @@ A typical image component will look like this:
 ```html
 <g-image src="~/image.png" width="500"/>
 ```
+
 💡 `~` is an alias to **/src/** folder.
 
 📣 **Only local, relative image paths will be compressed by Gridsome.**

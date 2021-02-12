@@ -38,6 +38,7 @@ module.exports = {
   ]
 }
 ```
+
 In this example `/content/docs/index.md` will be `website.com/docs/`,
 and `/content/docs/install-guide.md` will be `website.com/docs/install-guide/`.
 
@@ -151,6 +152,7 @@ module.exports = {
 ```
 
 **This means:**
+
 - [Source plugins](/plugins) & the [Data store API](/docs/data-store-api/) are only responsible for creating [Collections](/docs/collections/).
 - The new [Templates](/docs/templates/) config are used to setup **templates and routes** for collections.
 

@@ -35,6 +35,7 @@ yarn add -D vue-svg-loader
 ```
 
 You will need to update the webpack config in `gridsome.config.js` to use the new loader:
+
 ```js
 module.exports = {
   chainWebpack: config => {
@@ -48,6 +49,7 @@ module.exports = {
 ```
 
 Then you can import your SVGs from within your Vue templates like any Vue component:
+
 ```html
 <script>
   import Brand from '~/assets/svgs/Brand.svg'

@@ -9,6 +9,7 @@ It is really easy to use any external or third-party JavaScript with Gridsome. S
 If you want to use external Vue plugins inside your component without defining it globally, you can do so by importing the package inside your component and registering it for your component.
 
 Example:
+
 ```html
 <template>
   <Carousel>
@@ -37,6 +38,7 @@ export default {
 If you want to use a external JavaScript library inside your component, you can do so by importing the package and requiring it once the Vue components are mounted.
 
 Example:
+
 ```html
 //MyComponent.vue
 <template>
@@ -94,6 +96,7 @@ In this example we are importing the `VueTypedJs` plugin inside our Gridsome pro
 To use any external library on our Gridsome project, you may proxy it to a property of the Vue prototype object. Since all components inherit their methods from the Vue prototype object this will make your external library or libraries automatically available across any and all components with no global variables or anything to manually import.
 
 Example:
+
 ```javascript
 //main.js
 

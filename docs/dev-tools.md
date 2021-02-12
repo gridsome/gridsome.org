@@ -43,6 +43,7 @@ Detail is [here](https://github.com/vuejs/vetur/issues/975#issuecomment-46119703
 
 1. Install [GraphQL](https://marketplace.visualstudio.com/items?itemName=kumar-harsh.graphql-for-vscode)
 2. Add this item in `settings.json`
+
 ```json
 {
   ... ,
