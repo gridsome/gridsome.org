@@ -22,8 +22,6 @@ These services are great for Git-based deploying:
 
 - [Azure Static Web Apps](/docs/deploy-to-az-static-web-app/)
 
-- [GitHub Pages](/docs/deploy-to-github)
-
 ## Deploy from terminal
 
 Many services let you deploy your static Gridsome site from the terminal. Here are some:
