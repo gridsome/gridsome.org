@@ -24,6 +24,9 @@ export default {
   components: {
     Starters,
     StarterCard
+  },
+  metaInfo: {
+    title: 'Starters'
   }
 }
 </script>

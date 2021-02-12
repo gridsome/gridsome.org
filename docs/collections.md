@@ -29,7 +29,6 @@ module.exports = {
 
 You can browse **source plugins** on the [plugin page](/plugins).
 
-
 ## Add collections with Data Store API
 
 You can manually add collections from any external APIs. This example creates a collection named `Post` that fetches content from an API and adds the results as nodes to the collection.
@@ -56,7 +55,6 @@ module.exports = function (api) {
 ```
 
 Learn more about the [Data Store API](/docs/data-store-api/).
-
 
 ## Collections in GraphQL
 

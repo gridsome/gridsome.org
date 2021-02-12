@@ -1,7 +1,9 @@
 # Fast by default
+
 > Gridsome builds ultra performance into every page automatically. You get code splitting, asset optimization, progressive images, and link prefetching out of the box. With Gridsome you get almost perfect page speed scores by default.
 
 ## What makes Gridsome sites fast?
+
 1. [Pre-rendered HTML](#pre-rendered-html). Nothing beats static content in speed.
 2. [Automatic Code Splitting](#automatic-code-splitting) so only what you need is loaded per page.
 2. [Follows the PRPL-pattern](#the-prpl-pattern) for instant page loads.
@@ -21,10 +23,9 @@ A static site gives you many benefits:
 
 - ⚡️ **Cheaper, Easier Scaling.** When your deployment amounts to a stack of files that can be served anywhere, scaling is a matter of serving those files in more places. CDNs are perfect for this, and often include scaling in all of their plans.
 
-
 ## Automatic Code splitting
-Every `import` you declare gets bundled and served with each page. That means pages never load unnecessary code while browsing around.
 
+Every `import` you declare gets bundled and served with each page. That means pages never load unnecessary code while browsing around.
 
 ## The PRPL pattern
 
@@ -37,9 +38,8 @@ PRPL is a pattern for structuring and serving Progressive Web Apps (PWAs), with 
 
 Learn more about [PRPL pattern](https://developers.google.com/web/fundamentals/performance/prpl-pattern/)
 
-
-
 ## Smart link prefetching
+
 Gridsome prefetches internal links in the background so browsing around goes insanely fast. It uses the built-in `<g-link>` component and **Intersection Observer** to prefetch when the link is in view.
 
 Gridsome builds two files of every page. A static HTML and a small JavaScript file. When the website hydrates into a Vue.js-SPA, the link prefetching only loads the JavaScript to render the next page. This results in a faster and smoother browsing experience.
@@ -47,15 +47,15 @@ Gridsome builds two files of every page. A static HTML and a small JavaScript fi
 [Learn more about **g-link** here](/docs/linking/).
 
 ## Progressive Images
+
 Gridsome has a built-in `<g-image>` component with automatic progressive image support. In **development** it lets you do real-time image processing, like resizing and cropping.
 
 In production, the `<g-image>` is served as an ultra-compressed image before the image is lazy-loaded when in view by using **Intersection Observer**.
 
-
 [Learn more about **g-image** here](/docs/images/)
 
-
 ## Vue.js SPA
+
 The `gridsome build` command generates **SEO-friendly HTML files** that can be hosted anywhere. These HTML files are optimized to load as fast as possible. After the HTML is loaded Vue.js takes over the HTML and **hydrates into a fully Vue-powered SPA.**
 
 **When SPA kicks in it only loads small code-splitted JS chunks for next pages.**

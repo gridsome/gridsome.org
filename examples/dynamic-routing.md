@@ -8,8 +8,8 @@ order: 4
 ```html
 <template>
   <div v-if="user">
-  	<!-- Add a [param].vue file in src/pages 
-  			 folder to create a dynamic route -->
+    <!-- Add a [param].vue file in src/pages 
+         folder to create a dynamic route -->
     <h1>{{ user.name }}</h1>
   </div>
 </template>

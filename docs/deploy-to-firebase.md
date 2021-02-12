@@ -15,7 +15,7 @@ First, you need to make a few preparations:
 firebase login
 ```
 
-## Step2: Preparing to deploy 
+## Step2: Preparing to deploy
 
 Build a site by running this command in your project's root directory:
 
@@ -44,7 +44,9 @@ Create firebase.json and .firebaserc at the root of your project with the follow
  }
 }
 ```
+
 ## Step 3: Deploying
+
 Deploying Your Site
 
 ```shell script
