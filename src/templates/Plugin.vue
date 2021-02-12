@@ -143,13 +143,6 @@ export default {
     }
   },
 
-  serverPrefetch () {
-    return this.instantsearch.findResultsState({
-      hitsPerPage: this.hitsPerPage,
-      filters: this.filters
-    })
-  },
-
   computed: {
     isSingle () {
       return Boolean(this.$route.params.id)
