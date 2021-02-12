@@ -83,7 +83,7 @@
     }
   }
 
-  &--active  {
+  &--active {
     & .plugin__name {
       color: var(--primary-color);
     }
@@ -121,13 +121,11 @@
 
   .connect {
     max-width: 500px;
-    margin:0 auto;
+    margin: 0 auto;
   }
 }
 
 .plugin-post {
-  overflow: auto;
-  
   &__meta {
     padding-bottom: 15px;
     border-bottom: 1px solid var(--border-color);
@@ -137,7 +135,6 @@
     align-items: center;
     justify-content: space-between;
     font-size: .85rem;
-
 
     &_left {
       display: flex;
@@ -183,6 +180,4 @@
       border-radius: 5px;
     }
   }
-
-  &__content {  }
 }

@@ -16,4 +16,4 @@ Here are some cool features Gridsome brings to the table:
 - **Data source plugins** - Easy to connect to any CMS or data source
 - **Excellent** **plugin system** - Find plugins for any job
 
-Sounds like fun? This tutorial will cover the basic of all these topics. Fasten your seat belts and get started 🚀 
+Sounds like fun? This tutorial will cover the basic of all these topics. Fasten your seat belts and get started 🚀

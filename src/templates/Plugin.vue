@@ -65,8 +65,8 @@
                 rel="noopener noreferrer"
                 target="_blank"
                 v-if="hit.repository" :href="hit.repository.url"
-                title="View on Github"
-                aria-label="View on Github"
+                title="View on GitHub"
+                aria-label="View on GitHub"
                 class="button button--blank">
                 <div :is="repositoryIcon(hit.repository)" />
               </a>

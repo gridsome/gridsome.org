@@ -53,7 +53,8 @@ module.exports = {
     {
       use: `gridsome-plugin-netlify-cms`,
       options: {
-        publicPath: `/admin`
+        publicPath: `/admin`,
+        modulePath: `src/admin/index.js`
       }
     },
   ]
@@ -92,7 +93,7 @@ Your `index.js` should look like this:
 import CMS from "netlify-cms"
 ```
 
-Your `config.yml` for Github should look like this:
+Your `config.yml` for GitHub should look like this:
 
 ```yml
 backend:
@@ -127,7 +128,7 @@ backend:
 
 ## Netlify CMS authentication with GitHub
 
-Before we can start adding posts we'll have to give Netlify access to our Github, this part is **crucial**, please follow the steps closely. More info can be read [here](https://www.netlify.com/docs/authentication-providers/);
+Before we can start adding posts we'll have to give Netlify access to our GitHub, this part is **crucial**, please follow the steps closely. More info can be read [here](https://www.netlify.com/docs/authentication-providers/);
 
 Part 1, GitHub:
 
@@ -151,7 +152,7 @@ Part 1, Bitbucket:
 1. Open [this](https://bitbucket.org/account/user) link
   1.1 Under **ACCESS MANAGEMENT** find OAuth link, and open it
 2. Scroll to "OAuth consumers" and click on the button "Add consumer"
-3. Fill in all the fields according to your website and use `https://api.netlify.com/auth/done` as   `authorization` callback URL
+3. Fill in all the fields according to your website and use `https://api.netlify.com/auth/done` as `authorization` callback URL
 4. Upon creation you will get the Key and Secret which will be used in Netlify
 
 Part 2, Netlify:
@@ -160,7 +161,6 @@ Part 2, Netlify:
 2. Navigate to Settings > Access control > OAuth
 3. Under Authentication Providers, click Install Provider
 4. Select Bitbucket, and enter the Client ID and Client Secret from step 4 in Part 1, Bitbucket. Then click install
-
 
 ## Start coding
 

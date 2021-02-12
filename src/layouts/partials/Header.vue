@@ -35,7 +35,7 @@
 
         <div class="has-dropdown">
           <a
-            aria-label="github"
+            aria-label="GitHub"
             href="//github.com/gridsome/gridsome"
             rel="noopener noreferrer"
             target="_blank"
@@ -115,7 +115,6 @@ header {
   flex-wrap: nowrap;
   position: sticky;
   transition: background-color .3s, border-color, .3s;
-  backdrop-filter: blur(4px);
 
 
   .header-bar {
@@ -133,6 +132,14 @@ header {
   .header-inner {
     padding: 0 var(--space);
     min-height: var(--header-height);
+  }
+
+  @media screen and (min-width: 992px) and (max-resolution: 1) {
+    backdrop-filter: blur(4px);
+  }
+
+  @media screen and (min-width: 992px) and (-webkit-max-device-pixel-ratio: 1) {
+    backdrop-filter: blur(4px);
   }
 }
 </style>

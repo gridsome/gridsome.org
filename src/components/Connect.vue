@@ -1,11 +1,11 @@
 <template>
   <div class="connect">
     
-    <transition name="fade">
-      <div class="connect__slide" key=1 v-if="activeSlide == 0"><g-image class="connect__logos" src="~/assets/images/connect-logos.png" width="1180" blur="10" retina="true" alt="The Modern Web Logos" /></div>
-      <div class="connect__slide" key=2 v-else-if="activeSlide == 1"><g-image class="connect__logos" src="~/assets/images/connect-logos-2.png" width="1180" blur="10" retina="true" alt="The Modern Web Logos 2" /></div>
-      <div class="connect__slide" key=3 v-else-if="activeSlide == 2"><g-image class="connect__logos" src="~/assets/images/connect-logos-3.png" width="1180" blur="10" retina="true" alt="The Modern Web Logos 3" /></div>
-    </transition>
+    <transition-group name="fade">
+      <div class="connect__slide" key=1 v-show="activeSlide == 0"><g-image class="connect__logos" src="~/assets/images/connect-logos.png" width="1180" blur="10" retina="true" alt="The Modern Web Logos" /></div>
+      <div class="connect__slide" key=2 v-show="activeSlide == 1"><g-image class="connect__logos" src="~/assets/images/connect-logos-2.png" width="1180" blur="10" retina="true" alt="The Modern Web Logos 2" /></div>
+      <div class="connect__slide" key=3 v-show="activeSlide == 2"><g-image class="connect__logos" src="~/assets/images/connect-logos-3.png" width="1180" blur="10" retina="true" alt="The Modern Web Logos 3" /></div>
+    </transition-group>
     
     <g-image class="connect__main" src="~/assets/images/connect-bg.png" width="1180" blur="10" retina="true" alt="The Modern Web Background" />
 
@@ -32,9 +32,14 @@ export default {
   },
 
   mounted () {
-    this._counter = setInterval(() => {
-      this.activeSlide = (this.activeSlide + 1) % 3
-    }, 1500)
+    (($vm) => {
+      (function animate () {
+        $vm._counter = setTimeout(() => {
+          $vm.activeSlide = ($vm.activeSlide + 1) % 3
+          requestAnimationFrame(animate)
+        }, 1500)
+      })()
+    })(this)
   },
 
   destroyed () {
