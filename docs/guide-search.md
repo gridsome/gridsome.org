@@ -106,7 +106,7 @@ export default {
 
 When including the search component on your page, use [LazyHydrate](https://github.com/maoberlehner/vue-lazy-hydration) to only import it when needed. eg.
 
-```
+```html
 <template>
   <div>
     <h1>Search</h1>
