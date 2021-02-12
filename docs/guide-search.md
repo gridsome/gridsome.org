@@ -16,9 +16,7 @@ Currently Algolia offers up to 50,000 operations for free which should be enough
 
 Create a Search component that you can include anywhere in your site:
 
-```
-// /components/Search.vue
-
+```html
 <template>
   <ClientOnly>
     <ais-instant-search
