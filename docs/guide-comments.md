@@ -8,7 +8,7 @@ Disqus is an external service that injects an iframe on your site, one easy way 
 
 #### Sign up on Disqus
 
-First step is to sign up for an account on [Disqus](https://disqus.com/). When presented with the option you want to choose 'I want to install Disqus on my site'. Continue by filling in all necessary information about your site and when you are asked 'What platform is your site on?', pick 'Universal Code' at the bottom of the page. 
+First step is to sign up for an account on [Disqus](https://disqus.com/). When presented with the option you want to choose 'I want to install Disqus on my site'. Continue by filling in all necessary information about your site and when you are asked 'What platform is your site on?', pick 'Universal Code' at the bottom of the page.
 
 Complete the setup of your site and take note of your `Shortname` because this will be used later.
 
