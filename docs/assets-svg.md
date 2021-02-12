@@ -152,7 +152,7 @@ Webpack loader used for inline replacement of SVG images with actual content of 
 
 First install loader using:
 
-```js
+```shell
 // NPM
 npm i -D vue-svg-inline-loader
 
