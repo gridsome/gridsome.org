@@ -2,7 +2,7 @@
 
 ## Using Algolia
 
-Currently [Algolia](https://www.algolia.com/) offers up to 10,000 search requests for free, which should be enough for any site with low traffic - especially if search isn't used as often.
+Currently [Algolia](https://www.algolia.com) offers up to 10,000 search requests for free, which should be enough for any site with low traffic - especially if search isn't used as often.
 
 ### Setup
 
