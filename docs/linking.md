@@ -2,7 +2,7 @@
 
 The `<g-link>` component is available globally in all your Pages, Templates & Components. It's a wrapper for [router-link](https://router.vuejs.org/api/#router-link-props) from Vue Router.
 
-### Smart link prefetching
+## How it works
 
 `<g-link>` uses IntersectionObserver to prefetch linked pages when link is in view. **This makes browsing around in a Gridsome site very fast because the clicked page is already downloaded.**
 
@@ -16,7 +16,7 @@ The following example links to the `src/pages/About.vue` page:
 <g-link to="/about/">About us</g-link>
 ```
 
-Always add a trailing slash when linking to other internal pages. Because the HTML file for the page is a `index.html` file in a directory. Paths generated for nodes already includes a trailing slash.
+Always add a trailing slash when linking to other internal pages. Because the HTML file for the page is a `index.html` file in a directory. Paths generated for nodes already include a trailing slash.
 
 You do not need to include the [`pathPrefix`](/docs/config#pathprefix) option in the `<g-link>` path.
 
@@ -45,6 +45,6 @@ To link to **#anchor** links you need to use the normal `<a href="#anchor">` tag
 |Property |Default|Description|
 |---------|-------|-----------|
 |to       |*required*|[Guide →](https://router.vuejs.org/api/#to)|
-|exact    |				|[Guide →](https://router.vuejs.org/api/#exact)|
-|active-class|active				|[Guide →](https://router.vuejs.org/api/#active-class)|
-|exact-active-class|active--exact				|[Guide →](https://router.vuejs.org/api/#exact-active-class)|
+|exact    |        |[Guide →](https://router.vuejs.org/api/#exact)|
+|active-class|active        |[Guide →](https://router.vuejs.org/api/#active-class)|
+|exact-active-class|active--exact        |[Guide →](https://router.vuejs.org/api/#exact-active-class)|

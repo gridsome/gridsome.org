@@ -23,7 +23,7 @@
 </template>
 
 <page-query>
-query Platform($id: ID!) {
+query ($id: ID!) {
   platform(id: $id) {
     title
     belongsTo(sortBy: "index") {
@@ -61,6 +61,11 @@ export default {
   components: {
     Starters,
     StarterCard
+  },
+  metaInfo () {
+    return {
+      title: `${this.$page.platform.title} starters`
+    }
   }
 }
 </script>

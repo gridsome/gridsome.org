@@ -1,6 +1,6 @@
 # Project configuration
 
-Gridsome requires `gridsome.config.js` to work. Plugin and project settings are located here. A basic configuration file would look something like this:
+Gridsome requires `gridsome.config.js` to work. Plugins and project settings are located here. A basic configuration file would look something like this:
 
 ```js
 module.exports = {
@@ -18,6 +18,7 @@ module.exports = {
 Set a name for your project. The name is typically used in the title tag.
 
 ## siteDescription
+
 - Type `string`
 - Default `''`
 
@@ -43,7 +44,7 @@ subdirectory called `my-app`.
 - Default `%s - <siteName>`
 
 Set a template for the title tag. The `%s` placeholder is replaced with title
-from metaInfo you set in your pages.
+from metaInfo that you set in your pages.
 
 ## plugins
 
@@ -67,7 +68,7 @@ module.exports = {
 }
 ```
 
-[Read more about how to use plugins](/docs/plugins/)
+[Read more about how to use plugins](/plugins/)
 
 ## templates
 
@@ -77,6 +78,7 @@ module.exports = {
 Define routes and templates for collections.
 
 [Read more about using templates](/docs/templates/)
+
 ## metadata
 
 - Type `object`
@@ -255,3 +257,10 @@ Supported loaders are:
 
 - Type `number`
 - Default `8080`
+
+## outputDir
+
+- Type `string`
+- Default `'dist'`
+
+The directory where the production build files will be generated in when running `gridsome build`.

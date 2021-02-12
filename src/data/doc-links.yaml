@@ -1,15 +1,11 @@
-- title: Introduction
+- title: Prologue
   items:
-    - title: Getting started
+    - title: Introduction
       link: /docs/
     - title: Core concepts
       link: /docs/core-concepts/
     - title: Fast by default
       link: /docs/fast-by-default/
-    - title: How it works
-      link: /docs/how-it-works/
-    - title: The JAMstack
-      link: /docs/jamstack/
     - title: Deployment
       link: /docs/deployment/
 
@@ -112,16 +108,20 @@
       link: /docs/deploy-to-netlify/
     - title: AWS Amplify
       link: /docs/deploy-to-amplify/
-    - title: ZEIT Now
-      link: /docs/deploy-to-zeit-now/
+    - title: Vercel
+      link: /docs/deploy-to-vercel/
     - title: Amazon S3
       link: /docs/deploy-to-amazon-s3/
     - title: GitLab Pages
       link: /docs/deploy-to-gitlab/
-    - title: Github Pages
+    - title: GitHub Pages
       link: /docs/deploy-to-github/
     - title: Google Cloud Platform
       link: /docs/deploy-to-google/
+    - title: Surge.sh
+      link: /docs/deploy-to-surge-sh/
+    - title: Azure Static Web Apps
+      link: /docs/deploy-to-az-static-web-app/
 
 - title: Contribute
   items:

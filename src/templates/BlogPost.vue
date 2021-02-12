@@ -7,7 +7,7 @@
         <PostMeta :post="$page.post"/>
       </div>
 
-      <div class="post-content post">
+      <div class="post-content post mb-x2">
 
         <g-image v-if="$page.post.poster" quality="1" width="600" :src="$page.post.poster" />
 
@@ -16,12 +16,14 @@
         <div v-html="$page.post.content"/>
 
       </div>
+
+      <Newsletter />
     </Section>
   </Layout>
 </template>
 
 <page-query>
-query BlogPost ($id: ID!) {
+query ($id: ID!) {
   post: blogPost (id: $id) {
     title
     date (format: "D. MMMM YYYY")
@@ -40,10 +42,11 @@ query BlogPost ($id: ID!) {
 
 <script>
 import PostMeta from '@/components/PostMeta.vue'
-
+import Newsletter from '@/components/Newsletter.vue'
 export default {
   components: {
     PostMeta,
+    Newsletter
   },
   metaInfo () {
     return {

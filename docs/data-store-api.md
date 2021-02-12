@@ -42,8 +42,7 @@ Get a collection previously created.
 ```js
 api.loadSource(actions => {
   const posts = actions.addCollection({
-    typeName: 'BlogPost',
-    route: '/blog/:year/:title'
+    typeName: 'BlogPost'
   })
 
   posts.addNode({
@@ -86,7 +85,7 @@ api.loadSource(({ addCollection, store }) => {
 The field will contain the referenced node fields in the GraphQL schema:
 
 ```graphql
-query BlogPost($id: ID!) {
+query ($id: ID!) {
   blogPost(id: $id) {
     title
     author1 {
@@ -141,7 +140,7 @@ api.loadSource(actions => {
 You will then be able to query that data in the `page-query` and `static-query` tags in your Vue components with a query like this:
 
 ```graphql
-query MyData {
+query {
   allMyData {
     edges {
       node {
@@ -178,3 +177,7 @@ module.exports = function (api) {
   })
 }
 ```
+
+### Preprocessing Markdown Frontmatter
+
+When using plugins such as `@gridsome/vue-remark`, the frontmatter is processed *before* being passed to `vue-remark`. Because of this, it is important to modify any frontmatter data through the Gridsome Server API (as shown above) before it is passed to the transformer.

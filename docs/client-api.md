@@ -76,7 +76,7 @@ Read more about the [Vue router](https://router.vuejs.org/api/#router-instance-m
 
 - Type: `Object`
 
-Allows you to manage your websites's metadata.
+Allows you to manage your websites' metadata.
 
 ```js
 export default function (Vue, { head }) {
@@ -94,14 +94,14 @@ These methods are injected into every component.
 
 ### $fetch(path)
 
-Fetch `page-query` results and [page context](http://localhost:8080/docs/pages-api#the-page-context) from internal pages
+Fetch `page-query` results and [page context](/docs/pages-api#the-page-context) from internal pages
 
 ```js
 export default {
   data () {
     return {
-      otherPageData: null
-      otherPageContext: null
+      otherPageData: null,
+      otherPageContext: null,
     }
   },
   async mounted () {
@@ -113,7 +113,7 @@ export default {
     } catch (error) {
       console.log(error)
     }
-  }
+  },
 }
 ```
 
@@ -152,4 +152,3 @@ if (process.isServer) {
   // server only code
 }
 ```
-
