@@ -421,6 +421,15 @@
   author: ondrabus
   tags: gridsome, starter, kentico, kontent, blog
   platforms: kontent
+  
+- title: Gridsome Ecommerce BagelDB Starter
+  description: Ecommerce starter example for BagelDB
+  screenshot: ./screenshots/gridsome-starter-bageldb-ecommerce.png
+  repo: bageldb/gridsome-starter-ecommerce-bageldb
+  preview: https://gridsome-ecommerce.netlify.app/
+  author: bageldb
+  tags: gridsome, starter, BagelDB, ecommerce
+  platforms: bageldb
 
 - title: Gridsome devB Starter
   description: Full-stack developer blog starter with Gridsome ❤️ TailwindCSS
@@ -429,7 +438,7 @@
   preview: https://baris.gitlab.io/devb/
   author: barisaksu
   tags: gridsome, starter, developer, tailwindcss, markdown, blog
-  
+
 - title: Gridsome Sanity Akarui
   description: Akarui is a Gridsome starter that helps you get up and running with Sanity.io
   screenshot: ./screenshots/gridsome-starter-sanity-akarui.png

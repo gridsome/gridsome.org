@@ -247,6 +247,12 @@
   avatar: ./images/ondrabus.jpg
   twitter: "@ondrabus"
 
+- id: bageldb
+  name: BagelDB
+  bio: "Database and content management for apps"
+  avatar: ./images/bageldb.png
+  twitter: "@bagel_db"
+
 - id: barisaksu
   name: Barış Aksu
   bio: "A passionate full-stack web developer"
