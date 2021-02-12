@@ -42,7 +42,7 @@ GitHub Pages allows you to have a "GitHub user page" that acts as a profile/main
   siteUrl: 'https://www.yourname.com',
   ```
   * In addition to this, you will want to create a `CNAME` file inside `/static` to avoid a known issue in GitHub Pages that results in the deployment [incorrectly overwriting the custom domain](https://github.com/tschaub/gh-pages/issues/213) setting within GitHub user settings.
-    ```
+    ```txt
     // CNAME
     custom.domain.com
     ```
