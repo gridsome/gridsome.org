@@ -20,6 +20,8 @@ These services are great for Git-based deploying:
 
 - [Surge.sh](/docs/deploy-to-surge-sh/)
 
+- [Azure Static Web Apps](/docs/deploy-to-az-static-web-app/)
+
 ## Deploy from terminal
 
 Many services let you deploy your static Gridsome site from the terminal. Here are some:
