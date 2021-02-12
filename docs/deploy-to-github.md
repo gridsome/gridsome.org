@@ -32,7 +32,7 @@ GitHub Pages allows you to have a "GitHub user page" that acts as a profile/main
     ```js
     - pathPrefix: '/<your-gridsome-repo-name>',
     ```
-  * Now when you run the `npm run deploy` command, your project will be built and the contents of the `dist` folder will be pushed to the `gh-pages` branch which is where your "Github user page" will deploy from.
+  * Now when you run the `npm run deploy` command, your project will be built and the contents of the `dist` folder will be pushed to the `gh-pages` branch which is where your "GitHub user page" will deploy from.
   * This also allows you to keep track of your project on the `master` branch (or any branch you want) while `gh-pages` only contains your built files.
 * If you are using a custom URL such as `www.yourname.com` you will need to change `gridsome.config.js` to:
   ```js

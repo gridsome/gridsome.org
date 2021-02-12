@@ -66,7 +66,17 @@ export default {
 
 ## Fetch from GraphQL API
 
-....Contributions are welcome!
+```js
+import {GraphQLClient} from 'graphql-request';
+
+export default {
+  async mounted() {
+    const client = new GraphQLClient('https://countries.trevorblades.com/');
+    const countries = await client.request('{ countries { name } }');
+  }
+}
+
+```
 
 ## Fetch from local YAML files
 

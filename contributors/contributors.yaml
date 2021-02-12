@@ -199,6 +199,12 @@
   avatar: ./images/edmundekott.jpg
   twitter: "@26th_edmund"
 
+- id: bradsiefert
+  name: Brad Siefert
+  bio: "UI/UX Designer and frontend developer from Chicago"
+  avatar: ./images/bradsiefert.jpg
+  twitter: "@bksiefert"
+
 - id: chadcollins
   name: Chad Collins
   bio: "Full-Stack Developer"
@@ -240,3 +246,21 @@
   bio: "A passionate full-stack web developer"
   avatar: ./images/barisaksu.png
   twitter: "@barisaksu"
+
+- id: arturoalviar
+  name: Arturo Alviar
+  bio: "Front End Developer & Designer"
+  avatar: ./images/arturoalviar.jpg
+  twitter: "@arturoalviar"
+
+- id: ciaran
+  name: Ciaran Slemon
+  bio: "SEO, Designer, Developer"
+  avatar: ./images/ciaran.jpg
+  twitter: "@parabyl"
+
+- id: daniloraisi
+  name: Danilo Raisi
+  bio: "Software Engineer"
+  avatar: ./images/daniloraisi.jpeg
+  twitter: "@daniloraisi"
