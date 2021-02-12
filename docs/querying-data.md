@@ -9,7 +9,7 @@ You can query data from the GraphQL data layer into any **Page, Template or Comp
 
 Working with GraphQL in Gridsome is easy and you don't need to know much about GraphQL. Here is an example of how to use GraphQL in `page-query` for a page:
 
-```vue
+```html
 <template>
   <div>
     <div v-for="edge in $page.posts.edges" :key="edge.node.id">
@@ -193,33 +193,4 @@ query {
   }
 }
 </static-query>
-```
-
-### Functional component support
-
-In functional components a `$static` property is exposed within the `render` function at `context.data.$static`
-
-```html
-<static-query>
-query {
-  post(id: "1") {
-    content
-  }
-}
-</static-query>
-
-<script>
-export default {
-  functional: true,
-  render(createElement, context) {
-    const { content } = context.data.$static.post
-  
-    return createElement('div', {
-      domProps: {
-        innerHTML: content
-      },
-    })
-  }
-}
-</script>
 ```
