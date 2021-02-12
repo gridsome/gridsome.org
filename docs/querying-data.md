@@ -91,6 +91,7 @@ query Posts {
     }
   }
 }
+```
 
 ## Querying single nodes
 
