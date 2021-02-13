@@ -162,7 +162,6 @@ to install autoPrefixer:
 npm i -D autoprefixer@9.8.6
 ```
 
-
 Then, create a `main.css` file in the root of your `/src` directory and add the following:
 ```css
 @tailwind base;
@@ -202,8 +201,7 @@ module.exports = {
 }
 ```
 
-since we are using the `purgeCss` we don't need to set the [purge config](https://tailwindcss.com/docs/optimizing-for-production#removing-unused-css) in the `tailwind.config.js`, but when we try to create a build, the tailwind will warn us about it (which you can ignore), but if you'd like to disable the warning you can set `purge` to `false`. 
-
+since we are using the `purgeCss` we don't need to set the [purge config](https://tailwindcss.com/docs/optimizing-for-production#removing-unused-css) in the `tailwind.config.js`, but when we try to create a build, the tailwind will warn us about it (which you can ignore), but if you'd like to disable the warning you can set `purge` to `false`.
 
 ```javascript {2}
 module.exports = {
@@ -218,18 +216,17 @@ module.exports = {
 
 Learn more about customizing your TailwindCSS installation in Tailwind's [configuration documentation](https://tailwindcss.com/docs/configuration/)
 
-next, add a `.browserslistrc` to the root of your project. we need it for [autoprefixer](https://github.com/postcss/autoprefixer#readme). 
+next, add a `.browserslistrc` to the root of your project. we need it for [autoprefixer](https://github.com/postcss/autoprefixer#readme).
 
-and set the content to: 
+and set the content to:
 
-```
+```text
 >0.2%
 not dead
 not op_mini all
 ```
 
 here, we are targeting any browser that has more than 0.2% usage worldwide and it's not dead and it's not any version of opera mini. Learn more about [browserLint] (https://github.com/browserslist/browserslist#environment-variables) syntax in their documentation.
-
 
 Next, create a `purgecss.config.js` file in the root of your project and add the configuration below:
 
