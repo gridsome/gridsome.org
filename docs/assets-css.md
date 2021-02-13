@@ -202,7 +202,7 @@ module.exports = {
 }
 ```
 
-since we are using the `purgeCss` we don't need to set the [purge config](https://tailwindcss.com/docs/optimizing-for-production#removing-unused-css) in the `tailwind.config.js`, but when we try to create a build, the tailwind will warn us about it (which you can ignore), but if you'd like to disable the warning you can set it to `false`. 
+since we are using the `purgeCss` we don't need to set the [purge config](https://tailwindcss.com/docs/optimizing-for-production#removing-unused-css) in the `tailwind.config.js`, but when we try to create a build, the tailwind will warn us about it (which you can ignore), but if you'd like to disable the warning you can set `purge` to `false`. 
 
 
 ```javascript {2}
