@@ -173,7 +173,7 @@ Then, create a `main.css` file in the root of your `/src` directory and add the 
 ```
 
 Now import the `main.css` file into your project. In the `main.js` file add `require('~/main.css')`. Afterwards, your `main.js` file should look something like this:
-```javascript {1}
+```javascript {1,2}
 // Import global styles
 require('~/main.css')
 
