@@ -261,7 +261,7 @@ module.exports = {
 }
 ```
 
-Finally, `gridsome.config.js` needs to be updated to add our TailwindCSS and PurgeCSS configuration:
+Finally, `gridsome.config.js` needs to be updated to add our TailwindCSS, PurgeCSS and AutoPrefixer configuration:
 
 ```javascript
 const tailwind = require('tailwindcss');
