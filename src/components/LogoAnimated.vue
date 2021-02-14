@@ -63,7 +63,7 @@ export default {
 $easing: cubic-bezier(0.19, 1, 0.22, 1);
 
 .animated-logo {
-	width: 80px; 
+	width: 80px;
 	margin: 0 auto 1.5rem;
 	cursor: pointer;
 	svg {

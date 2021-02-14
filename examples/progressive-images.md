@@ -12,7 +12,7 @@ order: 10
 
     <g-image src="~/assets/images.jpg" width="500" />
 
-    <!-- This will render a small 
+    <!-- This will render a small
     ultra-compressed, blurred inline base64 image
     before it's lazy loaded into view with
     Intersection Observer -->

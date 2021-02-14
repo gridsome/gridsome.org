@@ -3,7 +3,7 @@
 		<p class="mb-half"><strong>👋 Stay in the loop.</strong> Subscribe to Gridsome newsletter!</p>
 		<form action="https://gridsome.us19.list-manage.com/subscribe/post?u=960a357f3405a688ff935a10e&amp;id=42bbd30818" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletter__form validate" target="_blank" novalidate>
 		<div id="mc_embed_signup_scroll" class="flex">
-			
+
 			<div class="newsletter__field mc-field-group flex-fit" style="margin-right: 15px">
 				<input  type="email" aria-label="Email" placeholder="your@email.com" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 			</div>
@@ -29,7 +29,7 @@
 
 <style lang="scss">
 .newsletter {
-	
+
   &__top {
   	height: 4px;
   	position: absolute;
@@ -50,7 +50,7 @@
   	margin: 0 auto;
   	margin-bottom: 1rem;
   }
-  
+
   p {
   	margin-bottom: .5rem;
   }

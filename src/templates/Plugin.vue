@@ -1,7 +1,7 @@
 <template>
   <Layout :footer="false">
     <div class="plugins container flex flex-align-top" style="position: relative;">
-      
+
       <AisInstantSearchSsr class="sidebar plugins__sidebar">
         <AisConfigure
           :hitsPerPage="hitsPerPage"
@@ -58,7 +58,7 @@
                 </span>
               </div>
 
-            
+
             </div>
             <div class="plugin-post__meta_right">
               <a

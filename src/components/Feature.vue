@@ -32,6 +32,6 @@ export default {
       margin-bottom: .5rem;
       line-height: 1.4;
     }
-    
+
   }
 </style>

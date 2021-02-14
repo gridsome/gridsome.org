@@ -142,7 +142,7 @@ import moment from 'moment';
 export default function (Vue) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
-  
+
   //Use Moment.Js library inside our project
   Object.defineProperty(Vue.prototype, '$moment', {
     value: moment
@@ -203,17 +203,17 @@ In the same way, you can use any external library that causes issues in server s
 
 <script>
   // import $ from 'jquery'; //import it inside main.js
-  
+
   export default {
     name: 'Index',
     mounted() {
       //require our external library and load it in window
       window.owl = require('owl-carousel')
       window.$ = require('jquery')
-  
+
       // This works now
       $('.some-carousel').owlCarousel()
-  
+
     }
   }
 </script>

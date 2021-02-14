@@ -227,7 +227,7 @@ export default {
   functional: true,
   render(createElement, context) {
     const { content } = context.data.$static.post
-  
+
     return createElement('div', {
       domProps: {
         innerHTML: content

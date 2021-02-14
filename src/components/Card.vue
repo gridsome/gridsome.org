@@ -61,7 +61,7 @@ export default {
       overflow: hidden;
       border-bottom: 1px solid var(--border-color);
       transition: border-color .3s;
-      
+
       img {
         margin: 0;
         width: 100%;

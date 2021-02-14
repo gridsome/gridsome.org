@@ -1,7 +1,7 @@
 <template>
   <Section dots="true">
     <div class="homepage-features container post">
-      
+
       <div class="grid-cols grid-cols--2 mb">
         <div style="order:2">
           <h3>All your data in one place</h3>
@@ -37,7 +37,7 @@
         <div>
           <div v-html="$static.example.content" />
         </div>
-   
+
       </div>
 
 
@@ -57,7 +57,7 @@
         <div>
           <g-image alt="Safe deployment" width="1100" src="~/assets/images/static.png" />
         </div>
-   
+
       </div>
 
     </div>

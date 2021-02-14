@@ -367,14 +367,14 @@ export default function (Vue, { head }) {
     rel: 'stylesheet',
     href: 'https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css',
   })
-  
+
   head.link.push({
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900',
   });
 
   Vue.use(Vuetify)
-  
+
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
 }
@@ -391,17 +391,17 @@ export default function (Vue, { appOptions, head }) {
     rel: 'stylesheet',
     href: 'https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css',
   })
-  
+
   head.link.push({
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900',
   });
-  
+
   const opts = { ... } //opts includes, vuetify themes, icons, etc.
   Vue.use(Vuetify)
-  
+
   appOptions.vuetify = new Vuetify(opts);
-  
+
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
 }

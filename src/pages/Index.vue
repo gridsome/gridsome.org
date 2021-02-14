@@ -4,11 +4,11 @@
     <LazyHydrate when-idle>
       <home-intro-simple />
     </LazyHydrate>
-    
+
     <LazyHydrate when-visible>
       <home-how-it-work-simple />
     </LazyHydrate>
-    
+
     <LazyHydrate when-visible>
       <home-features />
     </LazyHydrate>
@@ -28,7 +28,7 @@
     <LazyHydrate when-visible>
       <home-blog />
     </LazyHydrate>
-    
+
   </Layout>
 </template>
 
@@ -53,7 +53,7 @@ export default {
     HomeFeatures,
     HomeBlog
   },
-  
+
   metaInfo: {
     title: 'Modern Site Generator for Vue.js'
   }
@@ -63,7 +63,7 @@ export default {
 <style>
 @media screen and (min-width: 850px) {
   .layout-homepage header{
-    border-color: transparent;  
+    border-color: transparent;
   }
 }
 </style>
