@@ -216,7 +216,7 @@
   bio: "Web Developer"
   avatar: ./images/rcheuk.png
   twitter: "@rachel_cheuk"
-  
+
 - id: remi2j
   name: Remi de Juvigny
   bio: "Software Engineer"
@@ -282,3 +282,9 @@
   bio: "Software Engineer"
   avatar: ./images/daniloraisi.jpeg
   twitter: "@daniloraisi"
+
+- id: phoenix741
+  name: Ulrich Vandenhekke
+  bio: "Tech Leader"
+  avatar: "./images/phoenix741.jpg"
+  twitter: "@ulrichvdh"

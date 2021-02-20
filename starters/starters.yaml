@@ -421,7 +421,7 @@
   author: ondrabus
   tags: gridsome, starter, kentico, kontent, blog
   platforms: kontent
-  
+
 - title: Gridsome Ecommerce BagelDB Starter
   description: Ecommerce starter example for BagelDB
   screenshot: ./screenshots/gridsome-starter-bageldb-ecommerce.png
@@ -466,7 +466,7 @@
   tags: gridsome, starter, tailwindcss, markdown, blog, minimal
   platforms: markdown
 
-- title: Forestry + FontAwesome + Tailwind 
+- title: Forestry + FontAwesome + Tailwind
   description: Tailwind, FontAwesome, and Forestry integration. A simple starter blog on Gridsome.
   screenshot: ./screenshots/forestry-tw-fa-starter.png
   repo: meditatingdragon/gridsome-tw-fa-forestry-starter
@@ -474,11 +474,20 @@
   author: rcheuk
   tags: blog, forestry, minimalist, markdown, tailwind, fontawesome
   platforms: markdown
-  
+
 - title: Vuetify Blog Starter
-  description: This is a blog starter built with Vuetify and FontAwesome icons. 
+  description: This is a blog starter built with Vuetify and FontAwesome icons.
   screenshot: ./screenshots/vuetify-starter.png
   repo: meditatingdragon/starter-gridsome-vuetify
   preview: https://festive-lalande-6eaf50.netlify.com/
   author: rcheuk
   tags: blog, vuetify markdown, fontawesome
+  platforms: markdown
+
+- title: Flex Markdown Starter
+  description: Starter based on the flex starter of alexandrevicenzi/Flex.
+  screenshot: ./screenshots/gridsome-starter-flex-markdown.png
+  repo: phoenix741/gridsome-flex-markdown-starter
+  author: phoenix741
+  tags: blog, markdown, fontawesome
+  platforms: markdown
