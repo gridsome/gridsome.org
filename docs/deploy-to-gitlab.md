@@ -24,7 +24,7 @@ pages:
   script:
     - npm install
     - npm run build
-    # this gzips all files, so Gitlab can serve compressed assets. optional
+    # Optional: this gzips all files, so Gitlab can serve compressed assets.
     - gzip -k -6 $(find public -type f)
   artifacts:
     paths:
