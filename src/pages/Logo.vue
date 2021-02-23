@@ -103,7 +103,7 @@
 		max-width: 320px;
 		width: 100%;
 		margin: 0 auto;
-	} 
+	}
 }
 
 .colors {

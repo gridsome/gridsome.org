@@ -21,7 +21,7 @@
     }
   }
 
-  
+
   h1, h2, h3 {
     padding-top: 6rem;
     margin-top: -5rem;
@@ -66,7 +66,7 @@
       transition: border-color .3s;
     }
   }
-  
+
   h3 { opacity: .9 }
 
   h4, h5, h6 { opacity: .8 }
@@ -92,7 +92,7 @@
   display: flex;
   align-items: center;
   padding-top: 1rem;
-  
+
   &:not(:hover) {
     color: var(--primary-color-dark);
   }

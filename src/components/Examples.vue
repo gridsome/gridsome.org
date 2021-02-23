@@ -6,26 +6,26 @@
 				<div></div>
 				<div></div>
 			</div>
-			<a href="#" 
-				:class="{active: index == current}" 
-				@click.prevent="current = index" 
+			<a href="#"
+				:class="{active: index == current}"
+				@click.prevent="current = index"
 				v-for="({ node }, index) in $static.examples.edges">
 				{{ node.title }}
 			</a>
 		</div>
 		<div class="examples__frame">
-			<div class="examples__header flex hide-for-small" 
-				v-for="({ node }, index) in $static.examples.edges" 
-				v-if="index == current" 
+			<div class="examples__header flex hide-for-small"
+				v-for="({ node }, index) in $static.examples.edges"
+				v-if="index == current"
 				:key="index">
 				<div class="examples__header-title">
 					<div> {{ node.filepath }} </div>
 				</div>
 			</div>
 			<transition name="slide">
-				<div class="examples__code" 
-					v-for="({ node }, index) in $static.examples.edges" 
-					v-if="index == current" 
+				<div class="examples__code"
+					v-for="({ node }, index) in $static.examples.edges"
+					v-if="index == current"
 					:key="index">
 					<div v-html="node.content" />
 				</div>

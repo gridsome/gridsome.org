@@ -55,7 +55,7 @@ export default {
 
 		&__item {
 			font-size: .9rem;
-			
+
 			svg {
 				float: right;
 				margin-top: -12px;

@@ -34,12 +34,13 @@ module.exports = {
 
 ## Vetur
 
-[Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) is Vue tooling for VS Code.  
+[Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) is Vue tooling for VS Code.
+
 Vetur works perfect with Gridsome.
 
 ### GraphQL syntax for `<page-query>` and `<static-query>`
 
-Detail is [here](https://github.com/vuejs/vetur/issues/975#issuecomment-461197031)  
+Detail is [here](https://github.com/vuejs/vetur/issues/975#issuecomment-461197031)
 
 1. Install [GraphQL](https://marketplace.visualstudio.com/items?itemName=kumar-harsh.graphql-for-vscode)
 2. Add this item in `settings.json`

@@ -22,7 +22,7 @@ export default function (Vue, { head }) {
     rel: 'stylesheet',
     href: 'https://some-server.com/external-styleheet.css'
   })
-  
+
   // Add an external JavaScript before the closing </body> tag
   head.script.push({
     src: 'https://some-server.com/external-script.js',
@@ -87,8 +87,9 @@ export default {
 
 ## How to overwrite from child component
 
-If you need to overwrite meta tags, add `key` property.  
-Gridsome is passing `tagIdKeyName: 'key'` to vue-meta as default option.  
+If you need to overwrite meta tags, add `key` property.
+
+Gridsome is passing `tagIdKeyName: 'key'` to vue-meta as default option.
 
 ```js
 // parent component

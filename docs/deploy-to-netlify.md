@@ -18,7 +18,7 @@ Alternatively, you can deploy using a `netlify.toml` file. Create a file in the 
     command = "gridsome build"
 ```
 
-More infomation on `netlify.toml` files can be found in the [Netlify docs](https://www.netlify.com/docs/netlify-toml-reference/).
+More information on `netlify.toml` files can be found in the [Netlify docs](https://www.netlify.com/docs/netlify-toml-reference/).
 
 **Note:**
 

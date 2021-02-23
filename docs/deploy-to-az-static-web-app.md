@@ -11,7 +11,7 @@ Azure Static Web Apps publishes a website to a prodution environment by building
 
 ### Create a static web app
 
-After you created your GitHub repository and commited your code, you can create a static web app from the Azure portal.
+After you created your GitHub repository and committed your code, you can create a static web app from the Azure portal.
 
 1. Navigate to the [Azure Portal](https://portal.azure.com)
 2. Select **Create a Resource**
@@ -57,7 +57,7 @@ After you sign in with GitHub, enter the repository information.
 
 ## View the website
 
-When you create an Azure Static Web App, Azure resources are provisined to make up your app. Also a GitHub Action workflow is created and commited to your repository. This workflow builds and publishes your application.
+When you create an Azure Static Web App, Azure resources are provisioned to make up your app. Also a GitHub Action workflow is created and committed to your repository. This workflow builds and publishes your application.
 
 Before you can navigate to your new static site, the deployment build must first finish running.
 

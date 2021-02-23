@@ -2,12 +2,12 @@
        <Feature>
         <h4>Easy, local development</h4>
           <p>Enjoy modern dev tools like Vue.js, GraphQL & webpack. Get instant <strong>hot-reloading</strong> for any data change while developing locally. <strong>Gridsome makes building websites fun again.</strong>
-        </p>     
+        </p>
       </Feature>
         <Feature>
         <h4>Performance taken care of</h4>
            <p>Gridsome builds the fastest possible websites. You get <strong>code-splitting & progressive image support</strong> built-in to get close to <strong>perfect page speed scores.</strong>
-        </p>      
+        </p>
       </Feature>
         <Feature>
         <h4>SEO-friendly SPA</h4>

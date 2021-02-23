@@ -10,7 +10,7 @@ Global body or head attributes are added in `src/main.js`.
 export default function (Vue, { head }) {
   // Add attributes to HTML tag
   head.htmlAttrs = { lang: 'en' }
-  
+
   // Add attributes to BODY tag
   head.bodyAttrs = { class: 'custom-body-class' }
 }
