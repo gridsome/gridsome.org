@@ -13,7 +13,15 @@ import '~/assets/styles.css'
 
 ## Use SASS & CSS pre-processors
 
-To enable **SASS** you need to run command `npm install -D sass-loader node-sass` to install the required packages.
+To enable **SASS** you need to install the required packages.
+
+```shell
+# Using npm
+npm install -D sass-loader node-sass
+
+# Using Yarn
+yarn add -D sass-loader node-sass
+```
 
 Now you can import **.scss** files in **src/main.js**:
 
@@ -40,8 +48,12 @@ Often when you're working on a project, you'll have a set of variables, mixins, 
 
 Start by installing `style-resources-loader`:
 
-```js
+```shell
+# Using npm
 npm i -D style-resources-loader
+
+# Using Yarn
+yarn add -D style-resources-loader
 ```
 
 You'll need to add the following block to the top of your `gridsome.config.js` file before the existing `module.exports`:
@@ -158,7 +170,7 @@ To install PostCSS-PurgeCSS:
 npm i -D @fullhuman/postcss-purgecss
 
 # Using Yarn
-yarn add --dev @fullhuman/postcss-purgecss
+yarn add -D @fullhuman/postcss-purgecss
 ```
 
 Then, create a `main.css` file in the root of your `/src` directory and add the following:
@@ -274,7 +286,7 @@ To install use:
 # With npm
 npm i buefy
 
-# With yarn
+# With Yarn
 yarn add buefy
 ```
 
@@ -325,7 +337,7 @@ To install use:
 # With npm
 npm i vue bootstrap-vue bootstrap
 
-# With yarn
+# With Yarn
 yarn add vue bootstrap-vue bootstrap
 ```
 
@@ -354,7 +366,7 @@ To install use:
 # With npm
 npm install vuetify --save
 
-# With yarn
+# With Yarn
 yarn add vuetify
 ```
 
@@ -417,10 +429,10 @@ First, install the webpack-node-externals plugin:
 
 ```shell
 # With npm
-npm install webpack-node-externals --save-dev
+npm install -D webpack-node-externals
 
-# With yarn
-yarn add webpack-node-externals --dev
+# With Yarn
+yarn add -D webpack-node-externals
 ```
 
 Then modify your `gridsome.server.js` file to include the webpack-node-externals package, and allowlist Vuetify.
@@ -450,10 +462,10 @@ Or save your bundle size by using [vuetify treeshaking](https://vuetifyjs.com/en
 1. Install dependencies
 ```shell
 # With npm
-npm install deepmerge fibers sass sass-loader@7.3.1 vuetify-loader --save-dev
+npm install -D deepmerge fibers sass sass-loader@7.3.1 vuetify-loader
 
-# With yarn
-yarn add deepmerge fibers sass sass-loader@7.3.1 vuetify-loader --dev
+# With Yarn
+yarn add -D deepmerge fibers sass sass-loader@7.3.1 vuetify-loader
 ```
 >❗️Note: sass-loader must be lower than 8 version,
   also remove `node-sass` package if it's installed, otherwise build will fail.
