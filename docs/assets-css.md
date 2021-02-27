@@ -283,10 +283,10 @@ Be sure to restart the `gridsome develop` command to ensure the changes are comp
 To install use:
 
 ```shell
-# With npm
+# Using npm
 npm i buefy
 
-# With Yarn
+# Using Yarn
 yarn add buefy
 ```
 
@@ -334,10 +334,10 @@ export default function (Vue) {
 To install use:
 
 ```shell
-# With npm
+# Using npm
 npm i vue bootstrap-vue bootstrap
 
-# With Yarn
+# Using Yarn
 yarn add vue bootstrap-vue bootstrap
 ```
 
@@ -363,10 +363,10 @@ export default function (Vue) {
 To install use:
 
 ```shell
-# With npm
+# Using npm
 npm install vuetify --save
 
-# With Yarn
+# Using Yarn
 yarn add vuetify
 ```
 
@@ -428,10 +428,10 @@ Finally, there is one last thing you will need in order to build your applicatio
 First, install the webpack-node-externals plugin:
 
 ```shell
-# With npm
+# Using npm
 npm install -D webpack-node-externals
 
-# With Yarn
+# Using Yarn
 yarn add -D webpack-node-externals
 ```
 
@@ -461,10 +461,10 @@ Or save your bundle size by using [vuetify treeshaking](https://vuetifyjs.com/en
 
 1. Install dependencies
 ```shell
-# With npm
+# Using npm
 npm install -D deepmerge fibers sass sass-loader@7.3.1 vuetify-loader
 
-# With Yarn
+# Using Yarn
 yarn add -D deepmerge fibers sass sass-loader@7.3.1 vuetify-loader
 ```
 >❗️Note: sass-loader must be lower than 8 version,
