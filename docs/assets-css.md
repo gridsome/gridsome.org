@@ -13,7 +13,7 @@ import '~/assets/styles.css'
 
 ## Use SASS & CSS pre-processors
 
-To enable **SASS** you need to install the required packages.
+To enable **SASS** you need to install the required packages:
 
 ```shell
 # Using npm
