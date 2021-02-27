@@ -488,6 +488,7 @@
   description: Starter based on the flex starter of alexandrevicenzi/Flex.
   screenshot: ./screenshots/gridsome-starter-flex-markdown.png
   repo: phoenix741/gridsome-flex-markdown-starter
+  preview: https://phoenix741.github.io/gridsome-flex-markdown-starter/
   author: phoenix741
   tags: blog, markdown, fontawesome
   platforms: markdown
