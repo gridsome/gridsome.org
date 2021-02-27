@@ -152,11 +152,6 @@ npm install tailwindcss
 yarn add tailwindcss
 ```
 
-To install PostCSS-PurgeCSS:
-```shell
-npm i -D @fullhuman/postcss-purgecss
-```
-
 Then, create a `main.css` file in the root of your `/src` directory and add the following:
 ```css
 @tailwind base;
@@ -198,17 +193,14 @@ module.exports = {
 
 Learn more about customizing your TailwindCSS installation in Tailwind's [configuration documentation](https://tailwindcss.com/docs/configuration/)
 
-Next, `gridsome.config.js` needs to be updated to add our TailwindCSS and PurgeCSS configuration:
+Finally, `gridsome.config.js` needs to be updated to add our TailwindCSS configuration:
 
 ```javascript
 const tailwind = require('tailwindcss')
-const purgecss = require('@fullhuman/postcss-purgecss')
 
 const postcssPlugins = [
   tailwind(),
 ]
-
-if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss(require('./purgecss.config.js')))
 
 module.exports = {
     siteName: 'Gridsome',
@@ -222,36 +214,6 @@ module.exports = {
     },
 }
 
-```
-
-Finally, create a `purgecss.config.js` file in the root of your project and add the configuration below:
-
-```javascript
-module.exports = {
-    content: [
-        './src/**/*.vue',
-        './src/**/*.js',
-        './src/**/*.jsx',
-        './src/**/*.html',
-        './src/**/*.pug',
-        './src/**/*.md',
-    ],
-    whitelist: [
-        'body',
-        'html',
-        'img',
-        'a',
-        'g-image',
-        'g-image--lazy',
-        'g-image--loaded',
-    ],
-    extractors: [
-        {
-            extractor: content => content.match(/[A-z0-9-:\\/]+/g),
-            extensions: ['vue', 'js', 'jsx', 'md', 'html', 'pug'],
-        },
-    ],
-}
 ```
 
 Be sure to restart the `gridsome develop` command to ensure the changes are compiled in the current build.
