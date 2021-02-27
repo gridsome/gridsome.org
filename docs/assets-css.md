@@ -154,7 +154,12 @@ yarn add tailwindcss
 
 To install PostCSS-PurgeCSS:
 ```shell
-npm i -D @fullhuman/postcss-purgecss
+npm i -D @fullhuman/postcss-purgecss@2.x.x
+```
+
+to install autoPrefixer:
+```shell
+npm i -D autoprefixer@9.8.6
 ```
 
 Then, create a `main.css` file in the root of your `/src` directory and add the following:
@@ -167,7 +172,7 @@ Then, create a `main.css` file in the root of your `/src` directory and add the 
 ```
 
 Now import the `main.css` file into your project. In the `main.js` file add `require('~/main.css')`. Afterwards, your `main.js` file should look something like this:
-```javascript
+```javascript {1,2}
 // Import global styles
 require('~/main.css')
 
@@ -196,35 +201,34 @@ module.exports = {
 }
 ```
 
-Learn more about customizing your TailwindCSS installation in Tailwind's [configuration documentation](https://tailwindcss.com/docs/configuration/)
+since we are using the `purgeCss` we don't need to set the [purge config](https://tailwindcss.com/docs/optimizing-for-production#removing-unused-css) in the `tailwind.config.js`, but when we try to create a build, the tailwind will warn us about it (which you can ignore), but if you'd like to disable the warning you can set `purge` to `false`.
 
-Next, `gridsome.config.js` needs to be updated to add our TailwindCSS and PurgeCSS configuration:
-
-```javascript
-const tailwind = require('tailwindcss')
-const purgecss = require('@fullhuman/postcss-purgecss')
-
-const postcssPlugins = [
-  tailwind(),
-]
-
-if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss(require('./purgecss.config.js')))
-
+```javascript {2}
 module.exports = {
-    siteName: 'Gridsome',
-    plugins: [],
-    css: {
-        loaderOptions: {
-            postcss: {
-                plugins: postcssPlugins,
-            },
-        },
+    purge: false
+    theme: {
+        extend: {}
     },
+    variants: {},
+    plugins: []
 }
-
 ```
 
-Finally, create a `purgecss.config.js` file in the root of your project and add the configuration below:
+Learn more about customizing your TailwindCSS installation in Tailwind's [configuration documentation](https://tailwindcss.com/docs/configuration/)
+
+next, add a `.browserslistrc` to the root of your project. we need it for [autoprefixer](https://github.com/postcss/autoprefixer#readme).
+
+and set the content to:
+
+```text
+>0.2%
+not dead
+not op_mini all
+```
+
+here, we are targeting any browser that has more than 0.2% usage worldwide and it's not dead and it's not any version of opera mini. Learn more about [browserLint] (https://github.com/browserslist/browserslist#environment-variables) syntax in their documentation.
+
+Next, create a `purgecss.config.js` file in the root of your project and add the configuration below:
 
 ```javascript
 module.exports = {
@@ -252,6 +256,34 @@ module.exports = {
         },
     ],
 }
+```
+
+Finally, `gridsome.config.js` needs to be updated to add our TailwindCSS, PurgeCSS and AutoPrefixer configuration:
+
+```javascript
+const tailwind = require('tailwindcss');
+const purgeCss = require('@fullhuman/postcss-purgecss');
+const autoPrefixer = require('autoprefixer');
+
+const postcssPlugins = [tailwind()];
+
+if (process.env.NODE_ENV === 'production') {
+  postcssPlugins.push(purgeCss(require('./purgecss.config.js')));
+  postcssPlugins.push(autoPrefixer());
+}
+
+module.exports = {
+    siteName: 'Gridsome',
+    plugins: [],
+    css: {
+        loaderOptions: {
+            postcss: {
+                plugins: postcssPlugins,
+            },
+        },
+    },
+}
+
 ```
 
 Be sure to restart the `gridsome develop` command to ensure the changes are compiled in the current build.
