@@ -462,6 +462,7 @@ module.exports = (api) => {
   api.chainWebpack((config, { isServer }) => {
     config.plugin('vuetify-loader').use(VuetifyLoaderPlugin);
   });
+}
 ```
 
 >❗️Note: `webpack-node-externals` is not needed in this case.
@@ -485,6 +486,8 @@ export default function (Vue, { appOptions, head }) {
   const opts = {}; // opts includes, vuetify themes, icons, etc.
   Vue.use(Vuetify);
   appOptions.vuetify = new Vuetify(opts);
+  
+  Vue.component('Layout', DefaultLayout)
 }
 ```
 
