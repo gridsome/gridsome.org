@@ -136,11 +136,13 @@ query MyPage {
 export default {
   name: 'MyPage',
   metaInfo() {
-    title: this.$page.title,
-    meta: [
-      { name: 'description', content: this.$page.description }
-    ]
-    // etc...
+    return {
+      title: this.$page.title,
+      meta: [
+        { name: 'description', content: this.$page.description }
+      ]
+      // etc...
+    }
   }
 }
 </script>
