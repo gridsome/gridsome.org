@@ -22,6 +22,7 @@ npm install -D sass-loader@^10.1.1 node-sass
 # Using Yarn
 yarn add -D sass-loader@^10.1.1 node-sass
 ```
+The tag of version 10 for sass-loader is needed since version 11 is released because this version requires Webpack 5. Gridsome does not yet support webpack 5.
 
 Now you can import **.scss** files in **src/main.js**:
 
