@@ -17,10 +17,10 @@ To enable **SASS** you need to install the required packages:
 
 ```shell
 # Using npm
-npm install -D sass-loader node-sass
+npm install -D sass-loader@^10.1.1 node-sass
 
 # Using Yarn
-yarn add -D sass-loader node-sass
+yarn add -D sass-loader@^10.1.1 node-sass
 ```
 
 Now you can import **.scss** files in **src/main.js**:
