@@ -4,7 +4,7 @@ With this guide, we would create a Serveless CMS-Powered blog using the ButterCM
 
 ## What is ButterCMS
 
-Butter is a headless CMS that lets you manage content using our dashboard and integrate it into your gridsome website/blog with their content APIs. You can use ButterCMS for new projects as well as add it to existing codebases.
+[Butter is a headless CMS](https://buttercms.com) that lets you manage content using our dashboard and integrate it into your gridsome website/blog with their content APIs. You can use ButterCMS for new projects as well as add it to existing codebases.
 ButterCMS provides a user-friendly UI for managing marketing sites, blogging, and custom content scenarios. We can be used for SEO landing pages, customer case studies, company news & updates, events + webinar pages, education center, location pages, knowledgebases, and more.
 
 ## Prerequisites
