@@ -17,11 +17,12 @@ To enable **SASS** you need to install the required packages:
 
 ```shell
 # Using npm
-npm install -D sass-loader node-sass
+npm install -D sass-loader@^10.1.1 node-sass
 
 # Using Yarn
-yarn add -D sass-loader node-sass
+yarn add -D sass-loader@^10.1.1 node-sass
 ```
+The tag of version 10 for `sass-loader` is needed, since version 11 requires Webpack 5 - which Gridsome does not yet support.
 
 Now you can import **.scss** files in **src/main.js**:
 
