@@ -492,3 +492,11 @@
   author: phoenix741
   tags: blog, markdown, fontawesome
   platforms: markdown
+
+- title: Chakra UI Starter
+  description: A starter with Chakra-UI component library with less boilerplate
+  screenshot: ./screenshots/gridsome-starter-chakra-ui.png
+  repo: ashalfarhan/gridsome-starter-chakra-ui
+  preview: https://gridsome-starter-chakra-ui.netlify.app/
+  author: ashalfarhan
+  tags: chakra-ui, emotion
