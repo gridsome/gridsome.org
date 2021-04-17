@@ -500,3 +500,11 @@
   preview: https://gridsome-starter-chakra-ui.netlify.app/
   author: ashalfarhan
   tags: chakra-ui, emotion
+
+- title: Gridsome BLNK Starter
+  description: BLNK is a skeleton starter for Gridsome.
+  screenshot: ./screenshots/gridsome-starter-blnk-840x840.jpg
+  repo: angiemvella/gridsome-starter-blnk
+  preview: https://gridsome-starter-blnk.netlify.app
+  author: angiemvella
+  tags: gridsome, starter, blank, markdown, tailwind, fontawesome, minimal
