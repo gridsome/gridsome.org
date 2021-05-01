@@ -294,3 +294,9 @@
   bio: "Love Fishes"
   avatar: "./images/ashalfarhan.jpg"
   twitter: "@ashal_farhan"
+
+- id: angiemvella
+  name: Angie Vella
+  bio: "Full-Stack Designer"
+  avatar: "./images/angiemvella.jpg"
+  twitter: "@angiemvella"
