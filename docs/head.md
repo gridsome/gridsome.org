@@ -2,9 +2,11 @@
 title: Populating <head>
 ---
 # Populating `<head>`
+
 Gridsome uses [vue-meta](https://github.com/nuxt/vue-meta) to populate **Head**.
 
 ## Add global head metadata
+
 Global head metadata is added in `src/main.js` by using `head.{property}.push()`
 
 ```js
@@ -21,7 +23,7 @@ export default function (Vue, { head }) {
     href: 'https://some-server.com/external-styleheet.css'
   })
   
-  // Add an external Javascript before the closing </body> tag
+  // Add an external JavaScript before the closing </body> tag
   head.script.push({
     src: 'https://some-server.com/external-script.js',
     body: true
@@ -36,6 +38,7 @@ export default function (Vue, { head }) {
 ```
 
 ## Add head meta data to pages & templates
+
 Page metadata is added inside page **.vue components**.
 For example, `src/pages/About.vue` would look something like this:
 
@@ -46,12 +49,37 @@ export default {
   metaInfo: {
     title: 'About us',
     meta: [
-      { name: 'author', content: 'John Doe' }
+      {
+        name: 'author',
+        content: 'John Doe'
+      }
     ],
     link: [
-      { rel: 'stylesheet', href: '/css/index.css' },
+      {
+        rel: 'stylesheet',
+        href: '/css/index.css'
+      }
     ]
     // etc...
+  }
+}
+</script>
+```
+
+If you wish to access `this` or data on a component/page, make `metaInfo` a function:
+
+```js
+<script>
+export default {
+  name: 'Post Template',
+  metaInfo() {
+    return {
+      title: this.$page.post.name,
+      meta: [
+        { name: 'author', content: this.$page.post.author }
+      ],
+      // etc...
+    }
   }
 }
 </script>
@@ -67,7 +95,11 @@ Gridsome is passing `tagIdKeyName: 'key'` to vue-meta as default option.
 {
   metaInfo: {
     meta: [
-      { key: 'description', name: 'description', content: 'foo' }
+      {
+        key: 'description',
+        name: 'description',
+        content: 'foo'
+      }
     ]
   }
 }
@@ -75,20 +107,54 @@ Gridsome is passing `tagIdKeyName: 'key'` to vue-meta as default option.
 {
   metaInfo: {
     meta: [
-      { key: 'description', name: 'description', content: 'bar' }
+      {
+        key: 'description',
+        name: 'description',
+        content: 'bar'
+      }
     ]
   }
 }
+```
+
+## Using props and data in metaInfo
+
+If you need to reference `this` in order to access props or data, simply declare metaInfo as a function instead of an object.
+For example, if you want to use GraphQL data for metadata on a page, `src/pages/MyPage.vue` would look something like this:
+
+```html
+<page-query>
+query MyPage {
+  page(id: "1") {
+    title
+    description
+  }
+}
+</page-query>
+
+<script>
+export default {
+  name: 'MyPage',
+  metaInfo() {
+    return {
+      title: this.$page.title,
+      meta: [
+        { name: 'description', content: this.$page.description }
+      ]
+      // etc...
+    }
+  }
+}
+</script>
 ```
 
 ## Available Properties
 
 |Property  | Description | Link
 |----------|-------|---------------
-|style | Adds a style tag |[Docs](https://github.com/declandewet/vue-meta#style-object)
-|script | Adds a script tag | [Docs](https://github.com/declandewet/vue-meta#script-object)
-|meta  | Adds a meta tag | [Docs](https://github.com/declandewet/vue-meta#meta-object)
-|title | Changes title text | [Docs](https://github.com/declandewet/vue-meta#title-string)
-|titleTemplate | Dynamic title text |  [Docs](https://github.com/declandewet/vue-meta#titletemplate-string--function)
-|link  | Adds a link tag | [Docs](https://github.com/declandewet/vue-meta#link-object)
-
+|style | Adds a style tag |[Docs](https://vue-meta.nuxtjs.org/api/#style)
+|script | Adds a script tag | [Docs](https://vue-meta.nuxtjs.org/api/#script)
+|meta | Adds a meta tag | [Docs](https://vue-meta.nuxtjs.org/api/#meta)
+|title | Changes title text | [Docs](https://vue-meta.nuxtjs.org/api/#title)
+|titleTemplate | Dynamic title text | [Docs](https://vue-meta.nuxtjs.org/api/#titletemplate)
+|link | Adds a link tag | [Docs](https://vue-meta.nuxtjs.org/api/#link)

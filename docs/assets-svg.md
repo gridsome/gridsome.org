@@ -1,20 +1,20 @@
 # Add SVG icons
 
-
 ## As plain markup
+
 The simplest way to use SVG icons in Gridsome is to just add them as normal markup. This gives a lot of flexibility with the power of Vue.  Here is an example where we have added an icon from https://feathericons.com/ as markup.
 
 ```html
 <template>
- <svg 
-  xmlns="http://www.w3.org/2000/svg" 
-  width="24" height="24" 
-  viewBox="0 0 24 24" 
-  fill="none" 
-  stroke="currentColor" 
-  stroke-width="2" 
-  stroke-linecap="round" 
-  stroke-linejoin="round" 
+ <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="24" height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
   class="feather feather-bell">
     <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
     <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
@@ -23,10 +23,15 @@ The simplest way to use SVG icons in Gridsome is to just add them as normal mark
 ```
 
 ## Using SVGs as Components
+
 You can import SVGs as you do with any other Vue component with `vue-svg-loader`. Start by installing the library:
 
 ```shell
+# NPM
 npm i -D vue-svg-loader
+
+# Yarn
+yarn add -D vue-svg-loader
 ```
 
 You will need to update the webpack config in `gridsome.config.js` to use the new loader:
@@ -59,7 +64,11 @@ Then you can import your SVGs from within your Vue templates like any Vue compon
 FontAwesome is one of the most popular icon libraries out there, and with version 5, they've made it incredibly easy to use with Vue without bloating your codebase with a lot of icons/styles you're not using. We can start implementing it in our Gridsome site by installing a few needed items:
 
 ```shell
+# NPM
 npm i -D @fortawesome/{vue-fontawesome,fontawesome-svg-core,free-brands-svg-icons}
+
+# Yarn
+yarn add -D @fortawesome/{vue-fontawesome,fontawesome-svg-core,free-brands-svg-icons}
 ```
 
 The `@organization/{package,package}` is a shorthand format for installing multiple packages within an organization. The above is equivalent to:
@@ -91,7 +100,7 @@ You can now use the icons anywhere in your components/templates:
 <font-awesome :icon="['fab', 'twitter']"/>
 ```
 
-And best of all, the SVG for Github/Twitter icons will be the only ones added to our final build. Make sure you read the docs on [vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome) to get full details on how to use the whole suite of FontAwesome fonts together.
+And best of all, the SVG for GitHub/Twitter icons will be the only ones added to our final build. Make sure you read the docs on [vue-fontawesome](https://github.com/FortAwesome/vue-fontawesome) to get full details on how to use the whole suite of FontAwesome fonts together.
 
 ## Purge CSS
 
@@ -141,4 +150,56 @@ module.exports = {
       })
   }
 }
+```
+
+## Using vue-svg-inline-loader
+
+Webpack loader used for inline replacement of SVG images with actual content of SVG files in Vue projects. More info on the loader can be found [here](https://github.com/oliverfindl/vue-svg-inline-loader#readme).
+
+First install loader using:
+
+```shell
+# NPM
+npm i -D vue-svg-inline-loader
+
+# Yarn
+yarn add -D vue-svg-inline-loader
+```
+
+Then you need to modify `gridsome.config.js`:
+
+```js
+module.exports = {
+  chainWebpack: config => {
+    config.module
+    .rule("vue")
+    .use("vue-svg-inline-loader")
+    .loader("vue-svg-inline-loader")
+    .options({ /* ... */ });
+  }
+};
+```
+
+After that you can use your svgs like this:
+
+Basic inline SVG sprite usage with svg-sprite keyword directive:
+
+```html
+<img svg-inline src="~/assets/svg/example.svg" alt="example" />
+```
+
+Which replaces into:
+
+```html
+<svg svg-inline svg-sprite focusable="false" role="presentation" tabindex="-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <use xlink:href="#svg-sprite-md5hash" href="#svg-sprite-md5hash"></use>
+</svg>
+<!-- ... -->
+<!-- will get injected right before root closing tag in Vue component -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none !important;">
+  <symbol id="svg-sprite-md5hash" xmlns="http://www.w3.org/2000/svg" viewBox="...">
+    <path d="..."></path>
+  </symbol>
+  <!-- ... -->
+</svg>
 ```

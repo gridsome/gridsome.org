@@ -1,18 +1,28 @@
 # Use CSS in Gridsome
+
 Global stylesheets and assets are usually located in the `src/assets` folder and imported into `src/main.js`.
 
 ## Import a global style
+
 Add this to `src/main.js` to import a global CSS file.
 
 ```js
 import '~/assets/styles.css'
 ```
-
-> It's recommended to keep the global styles at minimal and add styles in Vue components instead to get proper code-splitting and Critical CSS support.
-
+💡 `~` is an alias to project **/src/** folder.
 
 ## Use SASS & CSS pre-processors
-To enable **SASS** you need to run command `npm install -D sass-loader node-sass` to install the required packages.
+
+To enable **SASS** you need to install the required packages:
+
+```shell
+# Using npm
+npm install -D sass-loader@^10.1.1 node-sass
+
+# Using Yarn
+yarn add -D sass-loader@^10.1.1 node-sass
+```
+The tag of version 10 for `sass-loader` is needed, since version 11 requires Webpack 5 - which Gridsome does not yet support.
 
 Now you can import **.scss** files in **src/main.js**:
 
@@ -24,9 +34,9 @@ You can also use SASS in **Vue Components** with the `lang="scss"` attribute:
 ```html
 <style lang="scss">
 .element {
-	&__nested {
-		color: Yay;
-	}
+  &__nested {
+    color: Yay;
+  }
 }
 </style>
 ```
@@ -34,12 +44,17 @@ You can also use SASS in **Vue Components** with the `lang="scss"` attribute:
 [Learn more about using using Pre-Processors in Vue.js](https://vue-loader.vuejs.org/guide/pre-processors.html)
 
 ### Global Preprocessor Files (ie. variables, mixins)
+
 Often when you're working on a project, you'll have a set of variables, mixins, and framework variable overrides that you'll want to be automatically used in your components/layouts so you don't have to keep manually importing them.
 
 Start by installing `style-resources-loader`:
 
-```js
+```shell
+# Using npm
 npm i -D style-resources-loader
+
+# Using Yarn
+yarn add -D style-resources-loader
 ```
 
 You'll need to add the following block to the top of your `gridsome.config.js` file before the existing `module.exports`:
@@ -64,7 +79,7 @@ function addStyleResource (rule) {
 }
 
 module.exports = {
-	// existing config
+  // existing config
 }
 ```
 
@@ -75,7 +90,7 @@ module.exports = {
   chainWebpack (config) {
     // Load variables for all vue-files
     const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
-    
+
     types.forEach(type => {
       addStyleResource(config.module.rule('sass').oneOf(type))
     })
@@ -84,19 +99,20 @@ module.exports = {
     types.forEach(type => {
       addStyleResource(config.module.rule('scss').oneOf(type))
     })
-	}
+  }
 }
 ```
 
 ## Add CSS to Vue Components
+
 In Vue Components you add styles inside a `<style>` tag.
 
 ```html
 // Example.vue
 <template>
-	<div class="banner">
-		Hello!
-	</div>
+  <div class="banner">
+    Hello!
+  </div>
 </template>
 
 <style>
@@ -126,16 +142,15 @@ This will change the `.card` class in current component automatically to somethi
 
 Gridsome [Critical CSS plugin](/plugins/@gridsome/plugin-critical) extracts CSS from components in selected view port size and adds the CSS inline to `<head>`.
 
-
 ## Add a CSS framework
 
 ## Tailwind
-[TailwindCSS](https://tailwindcss.com) is a highly customizable, utility-based CSS framework that gives you all of the building blocks you need to build your project without any opinionated styles you have to fight to override. When using TailwindCSS, it is recommended to use [PostCSS-PurgeCSS](https://github.com/FullHuman/postcss-purgecss) which is a tool used to remove unused css; resulting in tiny file sizes.
 
+[TailwindCSS](https://tailwindcss.com) is a highly customizable, utility-based CSS framework that gives you all of the building blocks you need to build your project without any opinionated styles you have to fight to override. When using TailwindCSS, it is recommended to use [PostCSS-PurgeCSS](https://github.com/FullHuman/postcss-purgecss) which is a tool used to remove unused CSS; resulting in tiny file sizes.
 
 ### Add TailwindCSS with a Plugin
-The quickest and easiest way to get up and running with Tailwind CSS in your project is to install it with the [Gridsome Tailwind Plugin](/plugins/gridsome-plugin-tailwindcss). A Gridsome plugin will typically have the majority of the boilerplate and configuration done for you, eliminating a lot of the set up time.
 
+The quickest and easiest way to get up and running with Tailwind CSS in your project is to install it with the [Gridsome Tailwind Plugin](/plugins/gridsome-plugin-tailwindcss). A Gridsome plugin will typically have the majority of the boilerplate and configuration done for you, eliminating a lot of the set up time.
 
 ### Add TailwindCSS Manually
 
@@ -152,7 +167,11 @@ yarn add tailwindcss
 
 To install PostCSS-PurgeCSS:
 ```shell
+# Using npm
 npm i -D @fullhuman/postcss-purgecss
+
+# Using Yarn
+yarn add -D @fullhuman/postcss-purgecss
 ```
 
 Then, create a `main.css` file in the root of your `/src` directory and add the following:
@@ -174,7 +193,7 @@ import DefaultLayout from '~/layouts/Default.vue'
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
     Vue.component('Layout', DefaultLayout)
-    
+
 }
 ```
 
@@ -203,7 +222,7 @@ const tailwind = require('tailwindcss')
 const purgecss = require('@fullhuman/postcss-purgecss')
 
 const postcssPlugins = [
-	tailwind(),
+  tailwind(),
 ]
 
 if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss(require('./purgecss.config.js')))
@@ -255,6 +274,7 @@ module.exports = {
 Be sure to restart the `gridsome develop` command to ensure the changes are compiled in the current build.
 
 ## Bulma
+
 ...plugin coming
 
 ## Buefy
@@ -264,10 +284,10 @@ Be sure to restart the `gridsome develop` command to ensure the changes are comp
 To install use:
 
 ```shell
-# With npm
+# Using npm
 npm i buefy
 
-# With yarn
+# Using Yarn
 yarn add buefy
 ```
 
@@ -305,6 +325,7 @@ export default function (Vue) {
 ```
 
 ## Bootstrap
+
 ...plugin coming
 
 ## BootstrapVue
@@ -314,10 +335,10 @@ export default function (Vue) {
 To install use:
 
 ```shell
-# With npm
+# Using npm
 npm i vue bootstrap-vue bootstrap
 
-# With yarn
+# Using Yarn
 yarn add vue bootstrap-vue bootstrap
 ```
 
@@ -343,15 +364,14 @@ export default function (Vue) {
 To install use:
 
 ```shell
-# With npm
+# Using npm
 npm install vuetify --save
 
-# With yarn
+# Using Yarn
 yarn add vuetify
 ```
 
-Then, you will need to register the Vuetify plugin, include the Vuetify CSS file, and add a link to the head 
-for Google's material design icons in your 'main.js' file, with Vuetify 2.0+ you will need to pass a new instance of Vuetify to appOptions. Icons and iconfonts are now built into Vuetify 2.0+. You can install them as a local dependency or add them as a stylesheet in your head from a CDN, more information on Vuetify icon installation is available [here](https://vuetifyjs.com/en/customization/icons):
+Then, you will need to register the Vuetify plugin, include the Vuetify CSS file, and add a link to the head for Google's material design icons in your 'main.js' file, with Vuetify 2.0+ you will need to pass a new instance of Vuetify to appOptions. Icons and iconfonts are now built into Vuetify 2.0+. You can install them as a local dependency or add them as a stylesheet in your head from a CDN, more information on Vuetify icon installation is available [here](https://vuetifyjs.com/en/customization/icons):
 
 ```js
 // v1.5
@@ -367,7 +387,7 @@ export default function (Vue, { head }) {
   
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900',
+    href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900',
   });
 
   Vue.use(Vuetify)
@@ -404,20 +424,19 @@ export default function (Vue, { appOptions, head }) {
 }
 ```
 
-Finally, there is one last thing you will need in order to build your application with Vuetify. 
-You will need to whitelist Vuetify in webpack in order to build. 
+Finally, there is one last thing you will need in order to build your application with Vuetify. You will need to allowlist Vuetify in webpack in order to build.
 
 First, install the webpack-node-externals plugin:
 
 ```shell
-# With npm
-npm install webpack-node-externals --save-dev
+# Using npm
+npm install -D webpack-node-externals
 
-# With yarn
-yarn add webpack-node-externals --dev
+# Using Yarn
+yarn add -D webpack-node-externals
 ```
 
-Then modify your `gridsome.server.js` file to include the webpack-node-externals package, and whitelist Vuetify.
+Then modify your `gridsome.server.js` file to include the webpack-node-externals package, and allowlist Vuetify.
 ```js
 const nodeExternals = require('webpack-node-externals')
 
@@ -426,7 +445,7 @@ module.exports = function (api) {
     if (isServer) {
       config.externals([
         nodeExternals({
-          whitelist: [/^vuetify/]
+          allowlist: [/^vuetify/]
         })
       ])
     }
@@ -437,19 +456,21 @@ module.exports = function (api) {
   })
 }
 ```
+>❗️Note: Before webpack-node-externals version 2.4, use whitelist instead of allowlist.
 
 Or save your bundle size by using [vuetify treeshaking](https://vuetifyjs.com/en/customization/a-la-carte).
 
 1. Install dependencies
 ```shell
-# With npm
-npm install deepmerge fibers sass-loader@7.3.1 vuetify-loader --save-dev
+# Using npm
+npm install -D deepmerge fibers sass sass-loader@7.3.1 vuetify-loader
 
-# With yarn
-yarn add deepmerge fibers sass-loader@7.3.1 vuetify-loader --dev
+# Using Yarn
+yarn add -D deepmerge fibers sass sass-loader@7.3.1 vuetify-loader
 ```
 >❗️Note: sass-loader must be lower than 8 version,
   also remove `node-sass` package if it's installed, otherwise build will fail.
+
 2. Configure webpack in `gridsome.server.js`
 ```js
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
@@ -459,6 +480,7 @@ module.exports = (api) => {
     config.plugin('vuetify-loader').use(VuetifyLoaderPlugin);
   });
 ```
+
 >❗️Note: `webpack-node-externals` is not needed in this case.
 
 3. Install plugin in `main.js`
@@ -484,4 +506,3 @@ export default function (Vue, { appOptions, head }) {
 ```
 
 Then you should be able to build now! You will find the files in your dist/folder.
-

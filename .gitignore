@@ -4,7 +4,10 @@
 src/.temp
 node_modules
 dist
-.cache
+
+# yarn.lock is the authoritative lock file for the repo, so ignore
+# any package-lock.json file that npm generates.
+package-lock.json
 
 # Editors
 .vscode

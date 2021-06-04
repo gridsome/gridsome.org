@@ -2,7 +2,7 @@ const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
   siteName: 'Gridsome',
-  siteUrl: `https://www.gridsome.org`,
+  siteUrl: `https://gridsome.org`,
   titleTemplate: '%s - Gridsome',
   siteDescription: 'Gridsome is a free & open source Vue.js-powered framework for building websites & apps that are fast by default 🚀.',
 

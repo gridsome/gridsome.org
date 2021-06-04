@@ -9,7 +9,7 @@ order: 3
   <Layout>
     <!-- Any .vue file in /src/pages will be a route. -->
     <!-- This page will be 'mysite.com/hello-world' -->
-  	<h1>Hello World!</h1>
+    <h1>Hello World!</h1>
   </Layout>
 </template>
 

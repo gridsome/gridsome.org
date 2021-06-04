@@ -70,7 +70,7 @@
   items:
     - title: Add a form
       link: /docs/guide-forms/
-    - title: Add a search *
+    - title: Add a search
       link: /docs/guide-search/
     - title: Add comments
       link: /docs/guide-comments/
@@ -108,13 +108,13 @@
       link: /docs/deploy-to-netlify/
     - title: AWS Amplify
       link: /docs/deploy-to-amplify/
-    - title: ZEIT Now
-      link: /docs/deploy-to-zeit-now/
+    - title: Vercel
+      link: /docs/deploy-to-vercel/
     - title: Amazon S3
       link: /docs/deploy-to-amazon-s3/
     - title: GitLab Pages
       link: /docs/deploy-to-gitlab/
-    - title: Github Pages
+    - title: GitHub Pages
       link: /docs/deploy-to-github/
     - title: Google Cloud Platform
       link: /docs/deploy-to-google/
@@ -124,6 +124,10 @@
       link: /docs/deploy-to-heroku/
     - title: Firebase
       link: /docs/deploy-to-firebase/
+    - title: 21YunBox
+      link: /docs/deploy-to-21yunbox/
+    - title: Azure Static Web Apps
+      link: /docs/deploy-to-az-static-web-app/
 
 - title: Contribute
   items:
