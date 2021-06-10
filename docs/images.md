@@ -55,6 +55,13 @@ The [@gridsome/transformer-remark](/plugins/@gridsome/transformer-remark) transf
 ![Alternative text](./image.jpg)
 ```
 
+## Usage in CSS
+Referencing [#411](https://github.com/gridsome/gridsome/issues/411), image that needs to be called via CSS should be called like the example below ( please note the `~@` ):
+
+```css
+background-image: url('~@/path/to/image.png')
+```
+
 ## Image cropping
 
 Crop the image by settings both `width` and `height` attributes. The image will be cropped to cover both dimensions by default. Change how to crop with the [`fit`](/docs/images#fit-options) attribute.
