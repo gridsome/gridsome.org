@@ -1,5 +1,6 @@
 ---
 title: Say hello to Gridsome 👶🎉💚
+slug: say-hello-to-gridsome
 author: [tommyvedvik]
 date: 2018-10-10
 excerpt: "A new static site generator baby is born. It's highly inspired by Gatsby.js (React based) but built on top of Vue.js. We have been working on it for a year and will have a beta ready soon. You can expect this baby to grow up fast!"
@@ -52,7 +53,7 @@ One of the main goals of Gridsome is to make a framework that lets you build web
 - Code-splitting ⚡️
 - HTML compressing ⚡️
 - Critical CSS (Plugin) ⚡️
-- Full PWA & Offline-support (plugin) ⚡️  
+- Full PWA & Offline-support (plugin) ⚡️
 
 #### A better way to build websites
 

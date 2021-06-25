@@ -4,7 +4,33 @@ Tools for easier Gridsome development
 
 ## ESLint plugin
 
-https://www.npmjs.com/package/eslint-plugin-gridsome
+An official ESLint plugin is available: https://www.npmjs.com/package/eslint-plugin-gridsome
+
+To configure this, first install the necessary plugins:
+
+```sh
+# NPM
+npm i -D eslint eslint-plugin-gridsome vue-eslint-parser
+
+# Yarn
+yarn add -D eslint eslint-plugin-gridsome vue-eslint-parser
+```
+
+Then add this code to `.eslintrc.js`:
+
+```js
+module.exports = {
+  env: {
+    node: true,
+    es6: true
+  },
+  plugins: ["gridsome"],
+  rules: {
+    "gridsome/format-query-block": "error"
+  },
+  parser: "vue-eslint-parser"
+}
+```
 
 ## Vetur
 

@@ -68,8 +68,22 @@ query {
 #### Sort a collection by multiple fields
 
 ```graphql
-query {
-  allPost(sort: [{ by: "featured" }, { by: "date" }]) {
+query Posts {
+  allPost(sort: [{ by: "title" }, { by: "date" }]) {
+    edges {
+      node {
+        title
+      }
+    }
+  }
+}
+```
+
+#### Sort a collection by multiple fields and different ordering
+
+```graphql
+query Posts {
+  allPost(sort: [{ by: "date", order: DESC }, { by: "title", order: ASC }]) {
     edges {
       node {
         title
@@ -193,4 +207,33 @@ query {
   }
 }
 </static-query>
+```
+
+### Functional component support
+
+In functional components a `$static` property is exposed within the `render` function at `context.data.$static`
+
+```html
+<static-query>
+query {
+  post(id: "1") {
+    content
+  }
+}
+</static-query>
+
+<script>
+export default {
+  functional: true,
+  render(createElement, context) {
+    const { content } = context.data.$static.post
+  
+    return createElement('div', {
+      domProps: {
+        innerHTML: content
+      },
+    })
+  }
+}
+</script>
 ```

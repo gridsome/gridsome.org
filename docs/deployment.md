@@ -12,7 +12,7 @@ These services are great for Git-based deploying:
 
 - [AWS Amplify](/docs/deploy-to-amplify/)
 
-- [Vercel (formerly ZEIT Now)](/docs/deploy-to-vercel/)
+- [Vercel](/docs/deploy-to-vercel/)
 
 - [GitLab Pages](/docs/deploy-to-gitlab/)
 
@@ -20,13 +20,15 @@ These services are great for Git-based deploying:
 
 - [Surge.sh](/docs/deploy-to-surge-sh/)
 
+- [Azure Static Web Apps](/docs/deploy-to-az-static-web-app/)
+
 ## Deploy from terminal
 
 Many services let you deploy your static Gridsome site from the terminal. Here are some:
 
 - [Amazon S3](/docs/deploy-to-amazon-s3/)
 
-- [Vercel (formerly ZEIT Now)](/docs/deploy-to-vercel/)
+- [Vercel](/docs/deploy-to-vercel/)
 
 - [Surge.sh](/docs/deploy-to-surge-sh/)
 

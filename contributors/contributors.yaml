@@ -74,11 +74,11 @@
   avatar: ./images/pehaa.png
   twitter: "@pehaa"
 
-- id: tvanblargan
-  name: Tyler VanBlargan
+- id: terabytetiger
+  name: Tyler V
   bio: "Web Developer"
-  avatar: ./images/tvanblargan.jpg
-  twitter: "@PichuPlayer"
+  avatar: ./images/terabytetiger.jpg
+  twitter: "@TerabyteTiger"
 
 - id: kendallstrautman
   name: Kendall Strautman
@@ -195,6 +195,108 @@
 
 - id: edmundekott
   name: Edmund Ekott
-  bio: 'Frontend Engineer'
+  bio: "Frontend Engineer"
   avatar: ./images/edmundekott.jpg
   twitter: "@26th_edmund"
+
+- id: bradsiefert
+  name: Brad Siefert
+  bio: "UI/UX Designer and frontend developer from Chicago"
+  avatar: ./images/bradsiefert.jpg
+  twitter: "@bksiefert"
+
+- id: chadcollins
+  name: Chad Collins
+  bio: "Full-Stack Developer"
+  avatar: ./images/chadcollins.png
+  twitter: "@chadcodes"
+
+- id: rcheuk
+  name: Rachel Cheuk
+  bio: "Web Developer"
+  avatar: ./images/rcheuk.png
+  twitter: "@rachel_cheuk"
+
+- id: remi2j
+  name: Remi de Juvigny
+  bio: "Software Engineer"
+  avatar: ./images/remi2j.jpeg
+  twitter: "@remidej"
+
+- id: mcastres
+  name: Maxime Castres
+  bio: "Growth Hacker"
+  avatar: ./images/mcastres.jpeg
+  twitter: "@MaxCastres"
+
+- id: jammeryhq
+  name: JammeryHQ
+  bio: "Fast-track your JAMstack development & learning"
+  avatar: ./images/jammeryhq.png
+  twitter: "@jammeryhq"
+
+- id: yanuaraditia
+  name: Yanuar Aditia
+  bio: "Coding terus kapan kawin"
+  avatar: ./images/yanuaraditia.jpg
+  twitter: "@yanuar_aditia"
+
+- id: ondrabus
+  name: Ondrej Polesny
+  bio: "Dev Evangelist"
+  avatar: ./images/ondrabus.jpg
+  twitter: "@ondrabus"
+
+- id: bageldb
+  name: BagelDB
+  bio: "Database and content management for apps"
+  avatar: ./images/bageldb.png
+  twitter: "@bagel_db"
+
+- id: barisaksu
+  name: Barış Aksu
+  bio: "A passionate full-stack web developer"
+  avatar: ./images/barisaksu.png
+  twitter: "@barisaksu"
+
+- id: arturoalviar
+  name: Arturo Alviar
+  bio: "Front End Developer & Designer"
+  avatar: ./images/arturoalviar.jpg
+  twitter: "@arturoalviar"
+
+- id: gollowars
+  name: Gollowars
+  bio: "Frontend Engineer"
+  avatar: ./images/gollowars.jpg
+  twitter: "@gollowars"
+
+- id: ciaran
+  name: Ciaran Slemon
+  bio: "SEO, Designer, Developer"
+  avatar: ./images/ciaran.jpg
+  twitter: "@parabyl"
+
+- id: daniloraisi
+  name: Danilo Raisi
+  bio: "Software Engineer"
+  avatar: ./images/daniloraisi.jpeg
+  twitter: "@daniloraisi"
+
+- id: phoenix741
+  name: Ulrich Vandenhekke
+  bio: "Tech Leader"
+  avatar: "./images/phoenix741.jpg"
+  twitter: "@ulrichvdh"
+
+- id: ashalfarhan
+  name: Ashal Farhan
+  bio: "Love Fishes"
+  avatar: "./images/ashalfarhan.jpg"
+  twitter: "@ashal_farhan"
+
+- id: angiemvella
+  name: Angie Vella
+  bio: "Full-Stack Designer"
+  avatar: "./images/angiemvella.jpg"
+  twitter: "@angiemvella"

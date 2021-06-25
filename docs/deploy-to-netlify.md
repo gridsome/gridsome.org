@@ -10,6 +10,16 @@ Add these build settings:
 - **Build Command:** `gridsome build`
 - **Publish directory:** `dist`
 
+Alternatively, you can deploy using a `netlify.toml` file. Create a file in the root of your project called `netlify.toml`, with the following configuation.
+
+```toml
+  [build]
+    publish = "dist"
+    command = "gridsome build"
+```
+
+More infomation on `netlify.toml` files can be found in the [Netlify docs](https://www.netlify.com/docs/netlify-toml-reference/).
+
 **Note:**
 
 You do not need to setup any redirect rules for a Gridsome site to work with Netlify. Gridsome generates HTML files for every path on your site so rewrite rules aren't necessary (except for dynamic pages).

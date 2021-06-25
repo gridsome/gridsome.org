@@ -44,5 +44,13 @@ Read more: [Disqus](https://disqus.com/)
 
 ## Staticman
 
-Staticman is an application that you connect to your GitHub repository which commits comments or any other type of user input to your site that you have configured.
+Staticman is an application that you connect to your Github repository which commits comments or any other type of user input to your site that you have configured.
 Read more: [Staticman](https://staticman.net/)
+
+## Vssue
+
+[Vssue](https://vssue.js.org/guide/) is a Vue component / plugin, which can enable comments for your static pages. It stores comments in the issue system of code hosting platforms (e.g. Github, Gitlab, Bitbucket, Gitee, etc.)
+
+Go to [Vssue docs](https://vssue.js.org/guide/gridsome.html) for how to use it in Gridsome.
+
+Read more: [Vssue](https://vssue.js.org/)

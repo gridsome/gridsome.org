@@ -2,9 +2,9 @@
   <Starters class="starter">
       <div class="starter__header flex">
         <g-image class="starter__header-platform-logo" v-if="$page.starter.platforms" :src="$page.starter.platforms.logo" />
-        
+
         <strong class="starter__header-title">{{ $page.starter.title }}</strong>
-       
+
         <g-link
           v-if="$page.starter.author.path"
           :to="$page.starter.author.path"
@@ -132,6 +132,12 @@ export default {
     },
     codeSandboxUrl () {
       return `https://codesandbox.io/s/github/${this.$page.starter.repo}`
+    }
+  },
+
+  metaInfo () {
+    return {
+      title: this.$page.starter.title
     }
   },
 

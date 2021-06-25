@@ -77,3 +77,11 @@
 - id: unalike
   title: Unalike
   logo: ./logos/unalike.svg
+
+- id: kontent
+  title: Kentico Kontent
+  logo: ./logos/kontent.svg
+
+- id: bageldb
+  title: BagelDB
+  logo: ./logos/bageldb.svg
