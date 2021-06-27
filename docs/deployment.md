@@ -27,6 +27,7 @@ These services are great for Git-based deploying:
 Many services let you deploy your static Gridsome site from the terminal. Here are some:
 
 - [Amazon S3](/docs/deploy-to-amazon-s3/)
+- [Netlify](/docs/deploy-to-netlify/)
 
 - [Vercel](/docs/deploy-to-vercel/)
 
