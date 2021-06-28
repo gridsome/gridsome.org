@@ -165,13 +165,13 @@ module.exports = function (api) {
 
     const collection = actions.addCollection('Post')
 
-    for (const item of data) {
+    for (const { id, title, slug, date, content } of data) {
       collection.addNode({
-        id: item.id,
-        title: item.title,
-        slug: item.slug,
-        date: item.date,
-        content: item.content
+        id,
+        title,
+        slug,
+        date,
+        content
       })
     }
   })
