@@ -20,6 +20,9 @@ Always add a trailing slash when linking to other internal pages. Because the HT
 
 You do not need to include the [`pathPrefix`](/docs/config#pathprefix) option in the `<g-link>` path.
 
+### Link from parent to children pages
+To link from `~/src/pages/about/Index.vue` to `~/src/pages/about/Careers.vue` use `<g-link :to="'careers'" append />`.
+
 ### Link to external pages
 
 To link to external links you need to use the normal tag:
