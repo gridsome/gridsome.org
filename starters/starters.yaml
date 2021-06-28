@@ -508,3 +508,12 @@
   preview: https://gridsome-starter-blnk.netlify.app
   author: angiemvella
   tags: gridsome, starter, blank, markdown, tailwind, fontawesome, minimal
+
+- title: TW Blog - The Tailwind + Markdown Gridsome Blog
+  description: A Gridsome starter using Tailwind and Markdown to create a simple portfolio blog.
+  screenshot: ./screenshots/gridsome-starter-twBlog-SampleImage.png
+  repo: terabytetiger/gridsome-starter-twblog
+  preview: https://twblog.terabytetiger.com
+  author: terabytetiger
+  tags: blog
+  platforms: markdown
