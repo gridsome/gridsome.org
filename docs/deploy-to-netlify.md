@@ -37,7 +37,7 @@ npm install netlify-cli -g
 
 ```
 
-Login into your Netlify account via the CLI.
+Log in to your Netlify account via the CLI.
 
 ```bash
 netlify login
