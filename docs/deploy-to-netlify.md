@@ -34,28 +34,24 @@ Install the Netlify CLI.
 
 ```bash
 npm install netlify-cli -g
-
 ```
 
 Log in to your Netlify account via the CLI.
 
 ```bash
 netlify login
-
 ```
 
 In your project's folder run the deploy command.
 
 ```bash
 netlify deploy
-
 ```
 
 The default command `netlify deploy` will deploy a draft of the site. To deploy a live version, specify the prod flag.
 
 ```bash
 netlify deploy --prod
-
 ```
 
 **Note:**
