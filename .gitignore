@@ -9,5 +9,9 @@ dist
 # any package-lock.json file that npm generates.
 package-lock.json
 
+# Editors
+.vscode
+.idea
+
 # Local Netlify folder
 .netlify
