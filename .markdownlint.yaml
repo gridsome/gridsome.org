@@ -26,29 +26,15 @@ MD033:
 # <http://example.com>, but this doesn't improve readability.
 MD034: false
 
-# Note: Because this repo started without a linter, the rules below are
-# suppressed for compatibility with legacy code, but we should either fix the
-# linter errors and remove the exceptions or explicitly choose to ignore the
-# rule permanently and move it to the list above with an explanation of why we
-# ignore the rule.
-
 # heading-increment/header-increment
+# As there are often multiple sections in a page, they don't always sequentially decrement,
+# so we allow this
 MD001: false
-# ul-indent
-MD007: false
-# single-title/single-h1
-MD025: false
+
 # ol-prefix
+# Some lists are seperated by multiple lines (for example code blocks in-between)
 MD029: false
-# list-marker-space
-MD030: false
-# blanks-around-fences
-MD031: false
-# blanks-around-lists
-MD032: false
+
 # no-emphasis-as-heading/no-emphasis-as-header
+# Sometimes an emphasis is used inbetween sections, but not actually as a header - so we allow this.
 MD036: false
-# no-space-in-emphasis
-MD037: false
-# first-line-heading/first-line-h1
-MD041: false

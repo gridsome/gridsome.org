@@ -17,6 +17,7 @@ Read more about [Filtering data](/docs/filtering-data/)
 All references in the GraphQL schema has been a one-way relation. This release introduces a new field called `belongsTo` for all content types. The field will list all nodes that have a reference back to the current node which makes it very useful to create taxonomy pages etc. The field can also take the same arguments as a collection. And the `@paginate` directive can be used to automatically paginate the results.
 
 For example, this can be used to:
+
 - List blog posts for an author.
 - List posts for a tag or category.
 

@@ -16,6 +16,7 @@ export default function (Vue, { head }) {
 ## Self-Hosting Open Source Typefaces
 
 Self-hosting open source fonts, as explained [in the docs](https://github.com/KyleAMathews/typefaces):
+
 - Self-hosting is significantly faster. Loading a typeface from Google Fonts or other hosted font service adds an extra (blocking) network request. While testing, we’ve found replacing Google Fonts with a self-hosted font can improve a site’s speedindex by ~300 milliseconds on desktop and 1+ seconds on 3g. This is a big deal.
 - Your fonts load offline. It’s annoying to start working on a web project on the train or airplane and see your interface screwed up because you can’t access Google Fonts.
 - Go beyond Google Fonts. Some typefaces aren’t on Google Fonts like Clear Sans, Cooper Hewitt, and Aleo.

@@ -13,6 +13,7 @@ module.exports = function (api) {
   })
 }
 ```
+
 The metadata will be available inside the **metadata** GraphQL root field. Metadata can be [fetched](/docs/fetching-data/) like any other data.
 
 Here is an example on how it could be used in a Vue Component:

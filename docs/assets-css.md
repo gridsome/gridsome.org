@@ -9,6 +9,7 @@ Add this to `src/main.js` to import a global CSS file.
 ```js
 import '~/assets/styles.css'
 ```
+
 💡 `~` is an alias to project **/src/** folder.
 
 ## Use SASS & CSS pre-processors
@@ -31,6 +32,7 @@ import '~/assets/styles.scss'
 ```
 
 You can also use SASS in **Vue Components** with the `lang="scss"` attribute:
+
 ```html
 <style lang="scss">
 .element {
@@ -157,6 +159,7 @@ The quickest and easiest way to get up and running with Tailwind CSS in your pro
 If you prefer to do the install and configuration on your own, you can add TailwindCSS manually with the following instructions.
 
 To install TailwindCSS (choose one):
+
 ```shell
 # Using npm
 npm install tailwindcss
@@ -166,6 +169,7 @@ yarn add tailwindcss
 ```
 
 To install PostCSS-PurgeCSS:
+
 ```shell
 # Using npm
 npm i -D @fullhuman/postcss-purgecss
@@ -175,6 +179,7 @@ yarn add -D @fullhuman/postcss-purgecss
 ```
 
 Then, create a `main.css` file in the root of your `/src` directory and add the following:
+
 ```css
 @tailwind base;
 
@@ -184,6 +189,7 @@ Then, create a `main.css` file in the root of your `/src` directory and add the 
 ```
 
 Now import the `main.css` file into your project. In the `main.js` file add `require('~/main.css')`. Afterwards, your `main.js` file should look something like this:
+
 ```javascript
 // Import global styles
 require('~/main.css')
@@ -198,11 +204,13 @@ export default function (Vue, { router, head, isClient }) {
 ```
 
 Optionally, if you would like to customize your TailwindCSS installation, you can generate a TailwindCSS config file using:
+
 ```shell
 npx tailwind init
 ```
 
 Which will generate a minimal `tailwind.config.js` file at the root of your project that contains:
+
 ```javascript
 module.exports = {
     theme: {
@@ -437,6 +445,7 @@ yarn add -D webpack-node-externals
 ```
 
 Then modify your `gridsome.server.js` file to include the webpack-node-externals package, and allowlist Vuetify.
+
 ```js
 const nodeExternals = require('webpack-node-externals')
 
@@ -456,11 +465,13 @@ module.exports = function (api) {
   })
 }
 ```
+
 >❗️Note: Before webpack-node-externals version 2.4, use whitelist instead of allowlist.
 
 Or save your bundle size by using [vuetify treeshaking](https://vuetifyjs.com/en/customization/a-la-carte).
 
 1. Install dependencies
+
 ```shell
 # Using npm
 npm install -D deepmerge fibers sass sass-loader@7.3.1 vuetify-loader
@@ -468,10 +479,12 @@ npm install -D deepmerge fibers sass sass-loader@7.3.1 vuetify-loader
 # Using Yarn
 yarn add -D deepmerge fibers sass sass-loader@7.3.1 vuetify-loader
 ```
+
 >❗️Note: sass-loader must be lower than 8 version,
   also remove `node-sass` package if it's installed, otherwise build will fail.
 
 2. Configure webpack in `gridsome.server.js`
+
 ```js
 const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
 
@@ -484,6 +497,7 @@ module.exports = (api) => {
 >❗️Note: `webpack-node-externals` is not needed in this case.
 
 3. Install plugin in `main.js`
+
 ```js
 import Vuetify from 'vuetify/lib/framework';
 import 'vuetify/dist/vuetify.min.css';

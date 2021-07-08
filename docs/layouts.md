@@ -46,6 +46,7 @@ export default {
 If you don't want to import the layout into every page or template you can make a layout global. To make a layout global go to `src/main.js` and import your layout file into this file.
 
 For example:
+
 ```javascript
 // src/main.js
 
@@ -147,6 +148,7 @@ Pages can now add content to this slot like this:
 You can create a **master layout** by adding an **App.vue** file to `src` root. This will let you keep your header, footer on all pages and add **page transitions**.
 
 A simple **App.vue** file looks like this:
+
 ```html
 <template>
   <div id="app">
