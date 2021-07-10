@@ -8,6 +8,8 @@
       link: /docs/fast-by-default/
     - title: Deployment
       link: /docs/deployment/
+    - title: Recipes
+      link: /docs/recipes/
 
 - title : Basic Gridsome
   items:
