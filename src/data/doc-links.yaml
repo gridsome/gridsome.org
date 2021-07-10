@@ -2,6 +2,8 @@
   items:
     - title: Introduction
       link: /docs/
+    - title: Tutorial
+      link: /docs/tutorial/
     - title: Core concepts
       link: /docs/core-concepts/
     - title: Fast by default
