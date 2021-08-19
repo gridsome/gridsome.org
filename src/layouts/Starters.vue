@@ -13,7 +13,7 @@
           <h3 class="menu-item" >Platforms</h3>
 
           <g-link class="menu-item platform-link" v-for="item in platforms"  :key="item.node.id" :to="item.node.path" >
-            <g-image v-if="item.node.logo" :src="item.node.logo" />
+            <g-image v-if="item.node.logo" :src="item.node.logo" :alt="node.title"/>
             {{ item.node.title }}
             <span class="platform-count" :class="{'platform-count--fade-out': item.node.belongsTo.totalCount == 0}">
               {{ item.node.belongsTo.totalCount }}
