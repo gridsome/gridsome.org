@@ -28,7 +28,7 @@ module.exports = function (api) {
     // contributors
     const authorsPath = path.join(__dirname, 'contributors/contributors.yaml')
     const authorsRaw = await fs.readFile(authorsPath, 'utf8')
-    const authorsJson = yaml.safeLoad(authorsRaw)
+    const authorsJson = yaml.load(authorsRaw)
     const authors = addCollection('Contributor')
 
     authorsJson.forEach(({ id, name: title, ...fields }) => {
@@ -45,7 +45,7 @@ module.exports = function (api) {
     // Starters
     const startersPath = path.join(__dirname, 'starters/starters.yaml')
     const startersRaw = await fs.readFile(startersPath, 'utf8')
-    const startersJson = yaml.safeLoad(startersRaw)
+    const startersJson = yaml.load(startersRaw)
     const starters = addCollection('Starter')
 
     // Connect author field to Contributors & Platforms
@@ -65,7 +65,7 @@ module.exports = function (api) {
     // Platforms
     const platformsPath = path.join(__dirname, 'platforms/platforms.yaml')
     const platformsRaw = await fs.readFile(platformsPath, 'utf8')
-    const platformsJson = yaml.safeLoad(platformsRaw)
+    const platformsJson = yaml.load(platformsRaw)
     const platforms = addCollection('Platform')
 
     // Connect author field to Contributors

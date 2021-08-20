@@ -89,7 +89,6 @@ import ToggleTheme from '@/components/ToggleTheme.vue'
 import GithubLogo from '@/assets/images/github-logo.svg'
 import TwitterLogo from '@/assets/images/twitter-logo.svg'
 import DiscordLogo from '@/assets/images/discord-logo.svg'
-import LazyHydrate from 'vue-lazy-hydration'
 
 export default {
   components: {
@@ -99,8 +98,7 @@ export default {
     ToggleTheme,
     DiscordLogo,
     SearchForm,
-    Nav,
-    LazyHydrate
+    Nav
   }
 }
 </script>

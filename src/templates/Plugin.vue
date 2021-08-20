@@ -102,7 +102,7 @@ import BitbucketLogo from '~/assets/images/bitbucket.svg'
 import Connect from '~/components/Connect.vue'
 
 import {
-  createInstantSearch,
+  createServerRootMixin,
   AisInstantSearchSsr,
   AisStateResults,
   AisInfiniteHits,
@@ -116,12 +116,6 @@ const searchClient = algoliasearch(
   'OFCNCOG2CU',
   'e0925566b9cfa7d0d21586a0b365d78c'
 )
-
-const { instantsearch, rootMixin } = createInstantSearch({
-  indexName: 'npm-search',
-  searchClient
-})
-
 export default {
   components: {
     Connect,
@@ -134,7 +128,12 @@ export default {
     AisInstantSearchSsr
   },
 
-  mixins: [rootMixin],
+  mixins: [
+    createServerRootMixin({
+      indexName: 'npm-search',
+      searchClient
+    })
+  ],
 
   data () {
     return {
@@ -142,13 +141,6 @@ export default {
       hitsPerPage: 50,
       filters: 'keywords:gridsome-plugin AND deprecated:false'
     }
-  },
-
-  serverPrefetch () {
-    return instantsearch.findResultsState({
-      hitsPerPage: this.hitsPerPage,
-      filters: this.filters
-    })
   },
 
   computed: {
