@@ -97,21 +97,23 @@ query ($page: Int) {
 </page-query>
 ```
 
-|Property         |Default| |
-|-----------------|-------|-|
-|info             |*required* |Page info from GraphQL result with *totalPages*
-|showLinks        |true |Show navigation links
-|showNavigation   |true |Show previous and next links
-|range            |5|How many links to show
-|linkClass        ||Add custom classes to the links
-|firstLabel       |«
-|prevLabel        |‹
-|nextLabel        |›
-|lastLabel        |»
-|ariaLabel        |Pagination Navigation
-|ariaLinkLabel    |Go to page %n
-|ariaFirstLabel   |Go to first page
-|ariaCurrentLabel |Current page. Page %n
-|ariaPrevLabel    |Go to previous page. Page %n
-|ariaNextLabel    |Go to next page. Page %n
-|ariaLastLabel    |Go to last page. Page %n
+|Property             |Default| |
+|---------------------|-------|-|
+|info                 |*required* |Page info from GraphQL result with *totalPages*
+|showLinks            |true |Show navigation links
+|showNavigation       |true |Show previous and next links
+|range                |5|How many links to show
+|linkClass            ||Add custom classes to the links
+|activeLinkClass      ||Add custom classes to the active link
+|exactActiveLinkClass ||Add custom classes to the exact active link
+|firstLabel           |«
+|prevLabel            |‹
+|nextLabel            |›
+|lastLabel            |»
+|ariaLabel            |Pagination Navigation
+|ariaLinkLabel        |Go to page %n
+|ariaFirstLabel       |Go to first page
+|ariaCurrentLabel     |Current page. Page %n
+|ariaPrevLabel        |Go to previous page. Page %n
+|ariaNextLabel        |Go to next page. Page %n
+|ariaLastLabel        |Go to last page. Page %n
