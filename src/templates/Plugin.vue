@@ -1,7 +1,7 @@
 <template>
   <Layout :footer="false">
     <div class="plugins container flex flex-align-top" style="position: relative;">
-      
+
       <AisInstantSearchSsr class="sidebar plugins__sidebar">
         <AisConfigure
           :hitsPerPage="hitsPerPage"
@@ -48,7 +48,7 @@
               <div class="plugin-post__users">
                 <span v-for="owner in owners" :key="owner.name">
                   <a :href="owner.link" target="_blank" rel="noopener">
-                    <img class="plugin-post__users-image" v-if="owner.avatar" :src="owner.avatar" :title="owner.name" />
+                    <img class="plugin-post__users-image" v-if="owner.avatar" :src="owner.avatar" :alt="owner.name" />
                     <span class="plugin-post__users-name" v-if="owners.length == 1">
                       {{ owner.name }}
 
@@ -58,7 +58,7 @@
                 </span>
               </div>
 
-            
+
             </div>
             <div class="plugin-post__meta_right">
               <a

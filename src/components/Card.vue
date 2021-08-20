@@ -7,7 +7,7 @@
       <span>{{ title }}</span>
     </div>
     <div v-if="image" class="card__image">
-      <g-image :src="image" />
+      <g-image :src="image" aria-hidden="true" />
     </div>
     <div class="card__inner">
       <slot></slot>
@@ -61,7 +61,7 @@ export default {
       overflow: hidden;
       border-bottom: 1px solid var(--border-color);
       transition: border-color .3s;
-      
+
       img {
         margin: 0;
         width: 100%;

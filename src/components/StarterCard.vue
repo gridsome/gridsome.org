@@ -9,7 +9,7 @@
         By {{ node.author.title }}
       </div>
       <div class="starter__platform">
-        <g-image v-if="node.platforms" :src="node.platforms.logo" />
+        <g-image v-if="node.platforms" :src="node.platforms.logo" :alt="node.platforms.title" />
       </div>
     </div>
   </Card>
