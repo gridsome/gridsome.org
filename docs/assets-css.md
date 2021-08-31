@@ -17,10 +17,10 @@ To enable **SASS** you need to install the required packages:
 
 ```shell
 # Using npm
-npm install -D sass-loader@^10.1.1 node-sass
+npm install -D sass-loader@^10.1.1 sass
 
 # Using Yarn
-yarn add -D sass-loader@^10.1.1 node-sass
+yarn add -D sass-loader@^10.1.1 sass
 ```
 The tag of version 10 for `sass-loader` is needed, since version 11 requires Webpack 5 - which Gridsome does not yet support.
 
@@ -469,7 +469,7 @@ npm install -D deepmerge fibers sass sass-loader@7.3.1 vuetify-loader
 yarn add -D deepmerge fibers sass sass-loader@7.3.1 vuetify-loader
 ```
 >❗️Note: sass-loader must be lower than 8 version,
-  also remove `node-sass` package if it's installed, otherwise build will fail.
+  also remove `sass` package if it's installed, otherwise build will fail.
 
 2. Configure webpack in `gridsome.server.js`
 ```js
