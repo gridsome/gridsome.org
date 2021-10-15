@@ -468,8 +468,8 @@ npm install -D deepmerge fibers sass sass-loader@7.3.1 vuetify-loader
 # Using Yarn
 yarn add -D deepmerge fibers sass sass-loader@7.3.1 vuetify-loader
 ```
->❗️Note: sass-loader must be lower than 8 version,
-  also remove `sass` package if it's installed, otherwise build will fail.
+>❗️Note: `sass-loader` must be lower than 8 version,
+  also remove `node-sass` package if it's installed, otherwise build will fail.
 
 2. Configure webpack in `gridsome.server.js`
 ```js
