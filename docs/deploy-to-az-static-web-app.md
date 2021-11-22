@@ -1,4 +1,4 @@
-# Deploy to Azure Static Web Apps (preview)
+# Deploy to Azure Static Web Apps
 
 ## Prerequisites
 
@@ -16,7 +16,7 @@ After you created your GitHub repository and commited your code, you can create 
 1. Navigate to the [Azure Portal](https://portal.azure.com)
 2. Select **Create a Resource**
 3. Search for **Static Web Apps**
-4. Select **Static Web Apps (Preview)**
+4. Select **Static Web Apps**
 5. Select **Create**
 
 In the *Basics* section, begin by configuring your new app and linking it to a GitHub repository.
@@ -70,4 +70,4 @@ The Static Web Apps overview window displays a series of links that help you int
 
 You can check other docs and tutorials regarding Azure Static Web Apps directly from Azure Documentation:
 
-[Azure Static Web Apps Documentation](https://docs.microsoft.com/en-us/azure/static-web-apps/)
+[Azure Static Web Apps Documentation](https://docs.microsoft.com/azure/static-web-apps/)
