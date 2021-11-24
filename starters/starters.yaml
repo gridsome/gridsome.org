@@ -518,6 +518,15 @@
   tags: blog
   platforms: markdown
 
+- title: Gridsome Geek Blog
+  description: Geek Blog built with Gridsome, Windi CSS and more with Markdown Support.
+  screenshot: ./screenshots/gridsome-starter-geek-blog.png
+  repo: xqsit94/gridsome-starter-geek-blog
+  preview: https://gridsome-geek-blog.netlify.app
+  author: xqsit94
+  tags: blog
+  platforms: markdown
+
 - title: Gridsome Strapi Starter +  Tailwind CSS + Typescript + Internationalization
   description: A Gridsome starter using Strapi CMS, Tailwind CSS with Blog templates, Internationalization and Typescript support
   screenshot: ./screenshots/gridsome-starter-tailwind-strapi-840x840.jpg
