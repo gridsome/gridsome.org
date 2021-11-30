@@ -306,3 +306,10 @@
   bio: "Web Dev"
   avatar: "./images/xqsit94.png"
   twitter: "@xqsit94"
+
+- id: coolhandcode
+  name: Jon Hill
+  bio: "Developer"
+  avatar: "./images/jonhill.jpg"
+  twitter: "@jon1010hill"
+
