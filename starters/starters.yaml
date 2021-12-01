@@ -527,6 +527,16 @@
   tags: blog
   platforms: markdown
 
+
+- title: Gridsome Starter Portfolio
+  description: A Gridsome starter using Windi CSS and Markdown to create a portfolio page.
+  screenshot: ./screenshots/gridsome-starter-scroll-1680x1680.jpg
+  repo: ionos-deploy-now/gridsome-starter-scroll
+  preview: https://gridsome-starter-scroll.deploy-now.site/
+  author: hunsalz
+  tags: gridsome, starter, windicss, portfolio
+  platforms: markdown
+
 - title: Gridsome Strapi Starter +  Tailwind CSS + Typescript + Internationalization
   description: A Gridsome starter using Strapi CMS, Tailwind CSS with Blog templates, Internationalization and Typescript support
   screenshot: ./screenshots/gridsome-starter-tailwind-strapi-840x840.jpg
@@ -535,4 +545,3 @@
   author: coolhandcode
   tags: blog, gridsome, tailwind, strapi, typescript
   platforms: strapi
-
