@@ -77,7 +77,7 @@ export default {
     p {
       color: currentColor;
     }
-
+    
     h1, h2, h3, h4, a {
       color: #FFF;
     }
