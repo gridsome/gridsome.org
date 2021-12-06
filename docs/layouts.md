@@ -99,7 +99,7 @@ This will pass a Prop to a layout with `sidebar = true`. In the **Layout compone
       <slot></slot>
     </div>
     <div v-if="sidebar">
-      Lets show the sidebar!
+      Let's show the sidebar!
     </div>
   </div>
 </template>
