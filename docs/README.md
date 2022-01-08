@@ -36,7 +36,7 @@ Gridsome adds a `57kB min gzip` JS bundle size by default.(vue.js, vue-router, v
 
 You should have basic knowledge about HTML, CSS, [Vue.js](https://vuejs.org) and how to use the [Terminal](https://www.linode.com/docs/tools-reference/tools/using-the-terminal/). Knowing how [GraphQL](https://www.graphql.com/) works is a plus, but not required. Gridsome is a great way to learn it.
 
-Gridsome requires [Node.js](https://nodejs.org/) (v8.3+) and recommends [Yarn](https://yarnpkg.com).
+Gridsome requires [Node.js](https://nodejs.org/) (8.3<x<17) and recommends [Yarn](https://yarnpkg.com).
 
 ## How to install
 
