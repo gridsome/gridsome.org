@@ -38,6 +38,12 @@ You should have basic knowledge about HTML, CSS, [Vue.js](https://vuejs.org) and
 
 Gridsome requires [Node.js](https://nodejs.org/) (v8.3+) and recommends [Yarn](https://yarnpkg.com).
 
+### Apple M1 with MacOS Monterey
+Gridsome requires [Node.js](https://nodejs.org/) (v16.13+ < v17.3) and recommends [Yarn](https://yarnpkg.com).
+If you are facing any issue with the sharp node library, please check those recommendations:
+- https://github.com/gridsome/gridsome/issues/1596#issuecomment-1007702516
+- https://github.com/gridsome/gridsome/issues/1596#issuecomment-1011019733
+
 ## How to install
 
 ### 1. Install Gridsome CLI tool
