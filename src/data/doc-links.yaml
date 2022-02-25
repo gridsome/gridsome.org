@@ -124,8 +124,8 @@
       link: /docs/deploy-to-21yunbox/
     - title: Azure Static Web Apps
       link: /docs/deploy-to-az-static-web-app/
-    - title: Deploy Now
-      link: /docs/deploy-to-deploy-now/
+    - title: IONOS Deploy Now
+      link: /docs/deploy-to-ionos-deploy-now/
 
 - title: Contribute
   items:
