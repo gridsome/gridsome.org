@@ -21,4 +21,4 @@ Push your code to GitHub, sign in into your [Deploy Now](https://ionos.space/) a
 
 All subsequent Git pushes trigger re-deployments via [GitHub Actions](https://github.com/features/actions). Workflows can be further customized directly in your repository. Deploy Now automatically creates staging deployments from additional branches you can use to preview changes before merging them to main.
 
-Missing a feature? [Let us know](https://github.com/ionos-deploy-now/ionos-deploy-now/issues/new/choose).
+Missing a feature? Open a [feature request](https://github.com/ionos-deploy-now/ionos-deploy-now/issues/new/choose) for Deploy Now.
