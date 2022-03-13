@@ -34,6 +34,8 @@ Many services let you deploy your static Gridsome site from the terminal. Here a
 
 - [Surge.sh](/docs/deploy-to-surge-sh/)
 
+- [Layer0](/docs/deploy-to-layer0/)
+
 ## FTP deploying
 
 To host your site on traditional hosting via FTP you need to manually build your project from the terminal.
