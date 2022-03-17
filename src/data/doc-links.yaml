@@ -84,6 +84,8 @@
       link: /docs/page-transitions/
     - title: body & html attributes
       link: /docs/body-html-attributes/
+    - title: Create Serverless Blog
+      link: /docs/guide-serverless-blog/
 
 - title: API Reference
   items:
