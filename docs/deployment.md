@@ -32,7 +32,6 @@ Many services let you deploy your static Gridsome site from the terminal. Here a
 
 - [Vercel](/docs/deploy-to-vercel/)
 
-- [Surge.sh](/docs/deploy-to-surge-sh/)
 
 - [Layer0](/docs/deploy-to-layer0/)
 
