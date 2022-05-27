@@ -105,3 +105,9 @@ Read more: [Netlify Forms](https://www.netlify.com/docs/form-handling/)
 
 Basin helps you manage form submission and track conversions with no backend coding required. It offers great features that integrate excellently with your static sites.
 Read More: [Basin](https://usebasin.com/)
+
+## Web3Forms
+
+Contact Form API for Static Websites - Receive form submissions directly in your email inbox without any server or back-end code. No Signup or Login Needed. Its free upto 250 submissions per month!
+
+Read more: [Web3Forms](https://web3forms.com/)
