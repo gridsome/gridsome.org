@@ -52,12 +52,15 @@
                 </code>
               </div>
               <hr />
-              <div class="deploy-buttons flex">
+              <div class="deploy-buttons flex flex_space-between">
                 <a class="button button--small" :href="codeSandboxUrl">
                   <CodeSandboxLogo alt="CodeSandbox" height="16" /> Open in CodeSandbox
                 </a>
                 <a class="button button--small" :href="netlifyDeployUrl">
                   <NetlifyLogo alt="Netlify" /> Deploy to Netlify
+                </a>
+                <a class="button button--small" :href="ionosDeployUrl">
+                  <DeployToIonosLogo alt="Deploy To Ionos" /> Deploy to IONOS
                 </a>
               </div>
             </div>
@@ -97,6 +100,7 @@ import Skeleton from '~/components/Skeleton.vue'
 import ClipboardIcon from '~/assets/images/icon-clipboard.svg'
 import GithubIcon from '~/assets/images/github-logo.svg'
 import NetlifyLogo from '~/assets/images/logo-netlify-small.svg'
+import DeployToIonosLogo from '~/assets/images/logo-deploy-to-ionos.svg'
 import CodeSandboxLogo from '~/assets/images/logo-codesandbox.svg'
 import Popover from 'vue-popover'
 
@@ -108,6 +112,7 @@ export default {
     Skeleton,
     ClipboardIcon,
     NetlifyLogo,
+    DeployToIonosLogo,
     CodeSandboxLogo,
     Popover,
     GithubIcon
@@ -132,6 +137,9 @@ export default {
     },
     codeSandboxUrl () {
       return `https://codesandbox.io/s/github/${this.$page.starter.repo}`
+    },
+    ionosDeployUrl () {
+      return `https://ionos.space/setup?repo=https://github.com/${this.$page.starter.repo}`
     }
   },
 
@@ -236,10 +244,13 @@ query ($id: ID!) {
   }
 }
 
+.flex_space-between {
+  justify-content: space-between;
+}
+
 .deploy-buttons {
   .button {
     margin-bottom: 0;
-    margin-right: 1rem;
     svg {
       width: 20px;
       height: 20px;
@@ -254,7 +265,7 @@ query ($id: ID!) {
     top: 87%;
     right: -15px;
     z-index: 999;
-    width: 500px;
+    width: 660px;
     padding: var(--space);
     background-color: var(--bg);
     box-shadow: var(--glow);
