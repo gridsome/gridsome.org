@@ -6,12 +6,13 @@
 				<div></div>
 				<div></div>
 			</div>
-			<a href="#" 
+			<div
+			    class="examples__sidebar-tab"
 				:class="{active: index == current}" 
 				@click.prevent="current = index" 
 				v-for="({ node }, index) in $static.examples.edges">
 				{{ node.title }}
-			</a>
+			</div>
 		</div>
 		<div class="examples__frame">
 			<div class="examples__header flex hide-for-small" 
@@ -118,7 +119,7 @@ query {
 		max-width: 280px;
 		padding: var(--space);
 		font-size: .95rem;
-		a {
+		&-tab {
 			color: #FFF;
 			text-decoration: none;
 			background-color: transparent;
@@ -128,6 +129,7 @@ query {
 			width: 100%;
 			margin: 0 8px 8px 0;
 			display: inline-block;
+			cursor: pointer;
 			&:hover {
 				background-color: rgba(255, 255, 255, .1);
 			}
