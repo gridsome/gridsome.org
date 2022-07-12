@@ -1,0 +1,26 @@
+{
+  "ignorePatterns": [
+    {
+      "pattern": "^https?:\/\/localhost.*"
+    }
+  ],
+  "replacementPatterns": [
+    {
+      "pattern": "^\/blog",
+      "replacement": "https://gridsome.org/blog"
+    },
+    {
+      "pattern": "^\/docs",
+      "replacement": "https://gridsome.org/docs"
+    },
+    {
+      "pattern": "^\/plugins",
+      "replacement": "https://gridsome.org/plugins"
+    },
+    {
+      "pattern": "^\/starters",
+      "replacement": "https://gridsome.org/starters"
+    }
+  ],
+  "aliveStatusCodes": [200, 206]
+}
