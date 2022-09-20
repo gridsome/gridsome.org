@@ -103,5 +103,6 @@ Read more: [Netlify Forms](https://www.netlify.com/docs/form-handling/)
 
 ## Basin
 
-Basin helps you manage form submission and track conversions with no backend coding required. It offers great features that integrate excellently with your static sites.
+Basin lets you to build forms your way in the frontend and gives you built-in submission handling, spam protection, data storage, and workflow automation without the engineering lift. It offers flexible plans and great features that integrate excellently with your static sites.
+
 Read More: [Basin](https://usebasin.com/)
