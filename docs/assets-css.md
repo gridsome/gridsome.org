@@ -356,6 +356,37 @@ export default function (Vue) {
   Vue.use(BootstrapVue)
 }
 ```
+## ElementUI
+
+[Element UI](https://element.eleme.cn/#/en-US), which is so-called "The world's most popular Vue UI framework" ([52.9k stars](https://github.com/ElemeFE/element) by 5th Dec, 2022), is developed by a front-end team of [ele.me](https://ele.me) company in China. This UI framework is taken widely by projects like backend systems, official website, and so on. It is available for `Vue.js` 2.5+. It is easy to use and boasts complete documents.
+
+> tips:
+> The Element team also developed an another UI framework called "Element plus".
+> The "Element plus" can only support Vue 3+ !
+> The Vue 2.x version's name is only "Element UI".
+
+To install, use:
+
+```shell
+# Using npm
+npm i element-ui -S
+
+# Using Yarn
+yarn add element-ui
+```
+
+Then, register ElementUI plugin in your `main.js` file:
+
+```js
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+
+// Then add it to export function
+
+export default (Vue) => {
+    Vue.use(ElementUI);
+}
+```
 
 ## Vuetify
 
