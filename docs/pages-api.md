@@ -68,10 +68,26 @@ Removes a page created by `createPage`.
 ### removePageByPath(path)
 
 Removes a page matching the provided path.
+```js
+//gridsome.server.js
+module.exports = function (api) {
+  api.createManagedPages(({ removePageByPath }) => {
+    removePageByPath('/my-page')
+  })
+}
+```
 
 ### removePagesByComponent(path)
 
 Removes all pages matching the provided component path.
+```js
+//gridsome.server.js
+module.exports = function (api) {
+  api.createManagedPages(({ removePagesByComponent }) => {
+    removePagesByComponent('./src/pages/MyPage.vue')
+  })
+}
+```
 
 ### findAndRemovePages(query)
 
