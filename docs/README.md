@@ -75,3 +75,7 @@ import Newsletter from '@/components/Newsletter.vue'
 - **[Nuxt.](https://nuxtjs.org/)** A Universal Vue.js Framework for server-side rendered (SSR) apps and websites. It also has a static site generator feature, but the main focus is SSR.
 
 - **[Gatsby.js](https://www.gatsbyjs.org/)** Gridsome is highly inspired by Gatsby.js (React.js based), which collects data sources and generates a static site from it. Gridsome is an alternative for Gatsby.js.
+
+
+- **[VitePress](https://vitepress.vuejs.org/ )** VitePress is VuePress' little brother, built on top of Vite.VitePress is currently in alpha status. It is already suitable for out-of-the-box documentation use, but the config and theming API may still change between minor releases. Nearly instant server start, an on-demand compilation that only compiles the page being served, and lightning-fast HMR
+
